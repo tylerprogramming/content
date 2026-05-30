@@ -211,8 +211,6 @@ Whisper transcripts of YouTube videos (yours + competitors). ~67 transcript file
 | REORG-plan.md | Folder reorg plan (executed 2026-05-23) |
 | filming-schedules/ | Past weekly filming schedules |
 | shorts-schedules/ | Past weekly shorts schedules |
-| schedule/ | Active scheduling docs |
-| _bundles/ | Past content bundle deliverables |
 
 ---
 
