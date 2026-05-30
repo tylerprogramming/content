@@ -257,44 +257,44 @@ Same pattern as today's path update. Run sed across:
 
 ```bash
 # Pattern substitutions needed:
-# ~/content/yt-research → ~/content/research
+# ~/content/research → ~/content/research
 # ~/content/scripts → ~/content/transcripts
-# ~/content/linkedin → ~/content/platform/linkedin
-# ~/content/skool → ~/content/platform/skool
-# ~/content/pinterest → ~/content/platform/pinterest
-# ~/content/instagram → ~/content/platform/instagram
-# ~/content/flash-video → ~/content/platform/flash-video
-# ~/content/shorts → ~/content/platform/shorts
+# ~/content/platform/linkedin → ~/content/platform/linkedin
+# ~/content/platform/skool → ~/content/platform/skool
+# ~/content/platform/pinterest → ~/content/platform/pinterest
+# ~/content/platform/instagram → ~/content/platform/instagram
+# ~/content/platform/flash-video → ~/content/platform/flash-video
+# ~/content/platform/shorts → ~/content/platform/shorts
 
 find ~/.claude/skills ~/.claude/projects/-Users-tylerreed/memory ~/content -type f \( -name "*.md" -o -name "*.py" \) -exec sed -i '' \
-  -e 's|~/content/yt-research|~/content/research|g' \
+  -e 's|~/content/research|~/content/research|g' \
   -e 's|~/content/scripts|~/content/transcripts|g' \
-  -e 's|~/content/linkedin|~/content/platform/linkedin|g' \
-  -e 's|~/content/skool|~/content/platform/skool|g' \
-  -e 's|~/content/pinterest|~/content/platform/pinterest|g' \
-  -e 's|~/content/instagram|~/content/platform/instagram|g' \
-  -e 's|~/content/flash-video|~/content/platform/flash-video|g' \
-  -e 's|~/content/shorts|~/content/platform/shorts|g' \
-  -e 's|/Users/tylerreed/content/yt-research|/Users/tylerreed/content/research|g' \
+  -e 's|~/content/platform/linkedin|~/content/platform/linkedin|g' \
+  -e 's|~/content/platform/skool|~/content/platform/skool|g' \
+  -e 's|~/content/platform/pinterest|~/content/platform/pinterest|g' \
+  -e 's|~/content/platform/instagram|~/content/platform/instagram|g' \
+  -e 's|~/content/platform/flash-video|~/content/platform/flash-video|g' \
+  -e 's|~/content/platform/shorts|~/content/platform/shorts|g' \
+  -e 's|/Users/tylerreed/content/research|/Users/tylerreed/content/research|g' \
   -e 's|/Users/tylerreed/content/scripts|/Users/tylerreed/content/transcripts|g' \
-  -e 's|/Users/tylerreed/content/linkedin|/Users/tylerreed/content/platform/linkedin|g' \
-  -e 's|/Users/tylerreed/content/skool|/Users/tylerreed/content/platform/skool|g' \
-  -e 's|/Users/tylerreed/content/pinterest|/Users/tylerreed/content/platform/pinterest|g' \
-  -e 's|/Users/tylerreed/content/instagram|/Users/tylerreed/content/platform/instagram|g' \
-  -e 's|/Users/tylerreed/content/flash-video|/Users/tylerreed/content/platform/flash-video|g' \
-  -e 's|/Users/tylerreed/content/shorts|/Users/tylerreed/content/platform/shorts|g' \
+  -e 's|/Users/tylerreed/content/platform/linkedin|/Users/tylerreed/content/platform/linkedin|g' \
+  -e 's|/Users/tylerreed/content/platform/skool|/Users/tylerreed/content/platform/skool|g' \
+  -e 's|/Users/tylerreed/content/platform/pinterest|/Users/tylerreed/content/platform/pinterest|g' \
+  -e 's|/Users/tylerreed/content/platform/instagram|/Users/tylerreed/content/platform/instagram|g' \
+  -e 's|/Users/tylerreed/content/platform/flash-video|/Users/tylerreed/content/platform/flash-video|g' \
+  -e 's|/Users/tylerreed/content/platform/shorts|/Users/tylerreed/content/platform/shorts|g' \
   {} \;
 
 # Also separately handle the global CLAUDE.md
 sed -i '' \
-  -e 's|~/content/yt-research|~/content/research|g' \
+  -e 's|~/content/research|~/content/research|g' \
   -e 's|~/content/scripts|~/content/transcripts|g' \
-  -e 's|~/content/linkedin|~/content/platform/linkedin|g' \
-  -e 's|~/content/skool|~/content/platform/skool|g' \
-  -e 's|~/content/pinterest|~/content/platform/pinterest|g' \
-  -e 's|~/content/instagram|~/content/platform/instagram|g' \
-  -e 's|~/content/flash-video|~/content/platform/flash-video|g' \
-  -e 's|~/content/shorts|~/content/platform/shorts|g' \
+  -e 's|~/content/platform/linkedin|~/content/platform/linkedin|g' \
+  -e 's|~/content/platform/skool|~/content/platform/skool|g' \
+  -e 's|~/content/platform/pinterest|~/content/platform/pinterest|g' \
+  -e 's|~/content/platform/instagram|~/content/platform/instagram|g' \
+  -e 's|~/content/platform/flash-video|~/content/platform/flash-video|g' \
+  -e 's|~/content/platform/shorts|~/content/platform/shorts|g' \
   ~/.claude/CLAUDE.md
 ```
 

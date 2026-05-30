@@ -54,7 +54,7 @@
 
 > And here's what I get.
 
-[SHOW: Open the generated report at `~/content/yt-research/2026-02-24-claude-code.md`. Show the summary table.]
+[SHOW: Open the generated report at `~/content/research/2026-02-24-claude-code.md`. Show the summary table.]
 
 > A clean markdown report. Every video — title, channel, views, likes, comments, duration, upload date, and a link.
 >
@@ -88,7 +88,7 @@
 
 > And here's what I get.
 
-[SHOW: Open the transcript at `~/content/scripts/transcript_VIDEO_ID.txt`. Show the full text.]
+[SHOW: Open the transcript at `~/content/transcripts/transcript_VIDEO_ID.txt`. Show the full text.]
 
 > A complete word-for-word transcript of the video. Now I can actually study what's working.
 >

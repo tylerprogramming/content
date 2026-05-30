@@ -28,7 +28,7 @@ Look at this output. Top videos, view counts, title formulas that are working, t
 
 This used to take me two hours. Manually searching, opening tabs, taking notes. Now it's 30 seconds and I've got a research doc ready to go.
 
-The report goes straight to ~/content/yt-research/ so I can reference it any time.
+The report goes straight to ~/content/research/ so I can reference it any time.
 
 /yt-search is one of 20 skills I've built into my Claude Code setup. Each one replaces a workflow I used to do manually.
 
@@ -70,7 +70,7 @@ This used to take me TWO HOURS. Manually searching, opening tabs, taking notes.
 
 Now: 30 seconds. Full research doc. Ready to go.
 
-Report saves to ~/content/yt-research/ automatically.
+Report saves to ~/content/research/ automatically.
 
 /yt-search is one of 20 skills in my Claude Code setup. Each one replaces a workflow I used to do manually.
 

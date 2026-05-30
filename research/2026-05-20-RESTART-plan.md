@@ -38,9 +38,9 @@ The whole goal this week: **publish ONE long-form video that drives Skool waitli
 
 That's it. Nothing else is mandatory.
 
-**Locked video (May 20):** `~/content/youtube/3-skills-and-build/` — "3 Claude Code Skills That Run My Week + How to Build Your Own (Live)" — ~30 minutes — combines 3 skill demos + live build of `/meeting-notes`.
+**Locked video (May 20):** `~/content/youtube/067-3-skills-and-build/` — "3 Claude Code Skills That Run My Week + How to Build Your Own (Live)" — ~30 minutes — combines 3 skill demos + live build of `/meeting-notes`.
 
-**Next video after this:** the 50-min full course version (all 7 skills + live build), already structured in `~/content/yt-research/2026-05-20-LEVERAGE-be-better.md`. Saved for video #2 once the restart muscle is back.
+**Next video after this:** the 50-min full course version (all 7 skills + live build), already structured in `~/content/research/2026-05-20-LEVERAGE-be-better.md`. Saved for video #2 once the restart muscle is back.
 
 ### Tonight (Wed May 20, 30-60 min)
 
@@ -197,6 +197,6 @@ That's tonight's win. Nothing else.
 
 - Harut session: today's query — full response saved in conversation
 - Email source: "How to Replace Your Salary With YouTube Automation in 12 Months" (received 2026-05-20)
-- 10-video lineup: `~/content/yt-research/2026-05-17-MASTER-claude-banger-ideas.md`
+- 10-video lineup: `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md`
 - This week's recommended script: `~/content/youtube/mastering-claude-code/script.md`
 - Skool monetization plan reference: `project_monetization.md` memory

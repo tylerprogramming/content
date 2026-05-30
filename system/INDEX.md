@@ -9,8 +9,8 @@ This is the evergreen front door for the YouTube/content system. Whenever you're
 | Folder | What lives there |
 |---|---|
 | `~/content/youtube/` | Video packages (scripts, titles, hooks, filming guides) — one folder per video. Plus `status.md` (current pipeline) and `video-ideas.md` (idea tracker) |
-| `~/content/yt-research/` | Competitive research (yt-search reports + thumbnails), master plans, audits, this index |
-| `~/content/scripts/` | Whisper transcripts of YouTube videos (yours + competitors') |
+| `~/content/research/` | Competitive research (yt-search reports + thumbnails), master plans, audits, this index |
+| `~/content/transcripts/` | Whisper transcripts of YouTube videos (yours + competitors') |
 | `~/content/` | Cross-platform output — LinkedIn / Instagram / Pinterest / flash videos. Organized by date and platform |
 | `~/.claude/skills/` | The 43 Claude Code skills that power all of the above |
 
@@ -19,8 +19,8 @@ This is the evergreen front door for the YouTube/content system. Whenever you're
 ## The 3 Files You Open First
 
 1. **`~/content/youtube/status.md`** — current pipeline state. What you're recording next, what's queued, what needs decisions. **Open this first every Monday morning.**
-2. **`~/content/yt-research/2026-05-20-RESTART-plan.md`** — this week's restart plan. Saturday recording, perfectionism rules, 90-day priority.
-3. **`~/content/yt-research/2026-05-20-LEVERAGE-be-better.md`** — the 8 levers that separate 800K from 8K. Pre-flight checklist before every recording.
+2. **`~/content/research/2026-05-20-RESTART-plan.md`** — this week's restart plan. Saturday recording, perfectionism rules, 90-day priority.
+3. **`~/content/research/2026-05-20-LEVERAGE-be-better.md`** — the 8 levers that separate 800K from 8K. Pre-flight checklist before every recording.
 
 ---
 
@@ -36,13 +36,13 @@ This is the evergreen front door for the YouTube/content system. Whenever you're
 → Same folder as the script. Each package has: `titles.md`, `hooks.md`, `script.md`, `filming-guide.md`, `description.md`, sometimes `seo.md`, sometimes `thumbnail-final.png`
 
 ### "What research backs my topic?"
-→ `~/content/yt-research/2026-05-17-claude-*.md` (5 reports from May 17) + thumbnails folders
+→ `~/content/research/2026-05-17-claude-*.md` (5 reports from May 17) + thumbnails folders
 
 ### "What's the 90-day priority?"
-→ `~/content/yt-research/2026-05-20-RESTART-plan.md` (top section)
+→ `~/content/research/2026-05-20-RESTART-plan.md` (top section)
 
 ### "Where are my published video transcripts?"
-→ `~/content/scripts/transcript_<video_id>.txt`
+→ `~/content/transcripts/transcript_<video_id>.txt`
 
 ### "Where are competitor transcripts?"
 → Same place. `transcript_z9rdrNrkvDY.txt` = Jeff Su Cowork. `transcript_Xg55nTrbYYY.txt` = Productive Dude.
@@ -65,11 +65,11 @@ This is the evergreen front door for the YouTube/content system. Whenever you're
 
 | File | What it covers |
 |---|---|
-| `~/content/yt-research/2026-05-17-MASTER-claude-banger-ideas.md` | The 10-video lineup (updated with R1/R2 restart pivot) |
-| `~/content/yt-research/2026-05-17-AUDIT-existing-packages.md` | Per-package verdict on the 7 existing scripts — what's ready, what needs fixes |
-| `~/content/yt-research/2026-05-17-BREAKDOWN-and-2-week-plan.md` | Original 2-week plan from research session |
-| `~/content/yt-research/2026-05-20-RESTART-plan.md` | The restart strategy + 90-day priority |
-| `~/content/yt-research/2026-05-20-LEVERAGE-be-better.md` | The 8 levers — pre-flight checklist before every recording |
+| `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md` | The 10-video lineup (updated with R1/R2 restart pivot) |
+| `~/content/research/2026-05-17-AUDIT-existing-packages.md` | Per-package verdict on the 7 existing scripts — what's ready, what needs fixes |
+| `~/content/research/2026-05-17-BREAKDOWN-and-2-week-plan.md` | Original 2-week plan from research session |
+| `~/content/research/2026-05-20-RESTART-plan.md` | The restart strategy + 90-day priority |
+| `~/content/research/2026-05-20-LEVERAGE-be-better.md` | The 8 levers — pre-flight checklist before every recording |
 
 ---
 
@@ -148,7 +148,7 @@ That doc is the single source of truth. Don't try to keep this index in sync wit
 The order to read when you don't know what to do:
 
 1. `~/content/youtube/status.md` — what's next?
-2. `~/content/yt-research/2026-05-20-RESTART-plan.md` — what does this week look like?
-3. `~/content/yt-research/2026-05-20-LEVERAGE-be-better.md` — am I about to make a video that performs?
+2. `~/content/research/2026-05-20-RESTART-plan.md` — what does this week look like?
+3. `~/content/research/2026-05-20-LEVERAGE-be-better.md` — am I about to make a video that performs?
 
 If you've read all 3 and still stuck, the answer is usually: **pick one task, set a 30-minute timer, ship the imperfect version.**

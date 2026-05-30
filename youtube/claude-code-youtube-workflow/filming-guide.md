@@ -12,8 +12,8 @@
 - [ ] Clear terminal history so it looks fresh
 
 ### Files to Have Ready
-- [ ] The `/yt-search` report already generated at `~/content/yt-research/2026-02-24-claude-code.md` — this is your demo artifact
-- [ ] A transcript already generated at `~/content/scripts/` for the demo (run `/transcribe` on a top video from your search results)
+- [ ] The `/yt-search` report already generated at `~/content/research/2026-02-24-claude-code.md` — this is your demo artifact
+- [ ] A transcript already generated at `~/content/transcripts/` for the demo (run `/transcribe` on a top video from your search results)
 - [ ] The video package for THIS video at `~/content/youtube/claude-code-youtube-workflow/` — this is the meta reveal
 - [ ] Have VS Code or your editor open with `~/.claude/skills/` visible in the sidebar
 
@@ -64,7 +64,7 @@
 > "It's hitting YouTube through yt-dlp, pulling the 50 most recent results, filtering to the last 30 days, and sorting by views."
 
 **After it finishes:**
-1. Open the report: show `~/content/yt-research/2026-02-24-claude-code.md` in your editor
+1. Open the report: show `~/content/research/2026-02-24-claude-code.md` in your editor
 2. Scroll through the summary table slowly — let the viewer read the top 5-6 entries
 3. Point out specific data: Nick Saraev at 266K, Lenny's Podcast at 215K
 4. Call out the gap: "Nobody's showing Claude Code for content creation"
@@ -85,13 +85,13 @@
 ```
 (Use a real video URL from your /yt-search results — pick one of the top performers)
 
-**What happens next:** The skill downloads the audio via yt-dlp, transcribes with Whisper, and saves to `~/content/scripts/`.
+**What happens next:** The skill downloads the audio via yt-dlp, transcribes with Whisper, and saves to `~/content/transcripts/`.
 
 **While waiting (~1-2 minutes):** Talk about why transcripts matter.
 > "I can see what's getting views, but I want to know exactly what they're saying."
 
 **After it finishes:**
-1. Open the transcript at `~/content/scripts/transcript_VIDEO_ID.txt`
+1. Open the transcript at `~/content/transcripts/transcript_VIDEO_ID.txt`
 2. Quick scroll through — show it's complete
 
 **Part 2: Have the conversation (THIS IS THE PAYOFF)**
@@ -195,8 +195,8 @@
 ```
 
 **On-screen option 2:** Show the four output folders side-by-side in your editor:
-- `~/content/yt-research/`
-- `~/content/scripts/`
+- `~/content/research/`
+- `~/content/transcripts/`
 - `~/content/youtube/claude-code-youtube-workflow/`
 - `~/content/youtube/thumbnails/`
 

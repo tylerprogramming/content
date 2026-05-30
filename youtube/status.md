@@ -9,7 +9,7 @@
 
 | When | What | Where |
 |---|---|---|
-| **Fri May 22, 4-5 PM** | Prep — read script, generate thumbnail, smoke-test demos | `~/content/youtube/3-skills-and-build/` |
+| **Fri May 22, 4-5 PM** | Prep — read script, generate thumbnail, smoke-test demos | `~/content/youtube/067-3-skills-and-build/` |
 | **Sat May 23, 1-3 PM** | First record block — cold open + Skill 1 demo | Same |
 | **Sat May 23, 7-11 PM** | Main record block — Skills 2 + 3, AHA, live build, CTA | Same |
 | **Sun May 24, 7 AM-noon** | Edit + automation pass + upload | Same |
@@ -158,12 +158,12 @@ This is the target steady-state. NOT the restart week. Restart week = 1 long-for
 
 ## Reference Docs
 
-- **Restart plan (this week):** `~/content/yt-research/2026-05-20-RESTART-plan.md`
-- **8 levers (be-better):** `~/content/yt-research/2026-05-20-LEVERAGE-be-better.md`
-- **Master plan (10-video lineup):** `~/content/yt-research/2026-05-17-MASTER-claude-banger-ideas.md`
-- **Existing-package audit:** `~/content/yt-research/2026-05-17-AUDIT-existing-packages.md`
-- **Research from May 17:** `~/content/yt-research/2026-05-17-claude-*.md`
-- **File index (this whole system):** `~/content/yt-research/INDEX.md`
+- **Restart plan (this week):** `~/content/research/2026-05-20-RESTART-plan.md`
+- **8 levers (be-better):** `~/content/research/2026-05-20-LEVERAGE-be-better.md`
+- **Master plan (10-video lineup):** `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md`
+- **Existing-package audit:** `~/content/research/2026-05-17-AUDIT-existing-packages.md`
+- **Research from May 17:** `~/content/research/2026-05-17-claude-*.md`
+- **File index (this whole system):** `~/content/research/INDEX.md`
 
 ---
 

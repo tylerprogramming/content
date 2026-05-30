@@ -52,7 +52,7 @@
 - **Topic:** Full social media workflow from research to publishing - the hour-long deep dive
 - **Angle:** Show the actual pipeline: /yt-search, /content, /shorts, Blotato scheduling, LinkedIn carousels, Instagram carousels, Skool posts. Nobody else is doing this at scale.
 - **Target Audience:** Content creators, YouTubers, solopreneurs who want to scale content without a team
-- **Research:** [Social Media AI Research](~/content/yt-research/2026-03-29-social-media-marketing-ai-automation-content-creator.md)
+- **Research:** [Social Media AI Research](~/content/research/2026-03-29-social-media-marketing-ai-automation-content-creator.md)
 - **Notes:** Social media AI space is wide open (only 3 competitors, top one has 80K views). This is Tyler's unique angle - content creator using Claude Code, not just a developer. Update number as pipeline grows.
 - **Date Added:** 2026-03-29
 
@@ -62,7 +62,7 @@
 - **Topic:** Claude Code from the content creator perspective, not the developer perspective
 - **Angle:** Skills, carousels, scheduling, Skool automation - all from the terminal. Untouched niche. Every other Claude Code tutorial is about building apps.
 - **Target Audience:** Content creators, YouTubers, coaches who aren't developers but want to use Claude Code
-- **Research:** [Claude Code Research](~/content/yt-research/2026-03-29-claude-code-tutorial-2025-2026.md)
+- **Research:** [Claude Code Research](~/content/research/2026-03-29-claude-code-tutorial-2025-2026.md)
 - **Notes:** Gap in the market - beginner tutorials are saturated but nobody targets non-dev creators.
 - **Date Added:** 2026-03-29
 
@@ -90,7 +90,7 @@
 - **Topic:** Use Claude Code + Remotion to create/edit videos programmatically. Build a skill that generates video content from scripts.
 - **Angle:** Trending topic - Sabrina Ramonov got 69K views in 9 days on this. Giovanni Beggiato got 17K. Growing fast with only 5 videos in the space. Could tie into the content creator workflow.
 - **Target Audience:** Content creators, Claude Code users, video editors wanting automation
-- **Research:** [Remotion AI Research](~/content/yt-research/2026-03-29-remotion-ai-video-editing.md)
+- **Research:** [Remotion AI Research](~/content/research/2026-03-29-remotion-ai-video-editing.md)
 - **Notes:** Consider transcribing Sabrina's video and Giovanni's to understand their approach before filming. Could become a Claude Code skill (/video or /edit).
 - **Date Added:** 2026-03-29
 

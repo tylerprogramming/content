@@ -308,15 +308,15 @@ This week's news shorts to record now (using current Claude landscape):
 - `[SHOW:]` and `[NOTE:]` cues for the editor
 - No em dashes (Tyler's standing rule)
 
-Existing 6 packages audited at `~/content/yt-research/2026-05-17-AUDIT-existing-packages.md` — 3 are ready-to-film, 2 need minor fixes, 1 needs a content decision from Tyler.
+Existing 6 packages audited at `~/content/research/2026-05-17-AUDIT-existing-packages.md` — 3 are ready-to-film, 2 need minor fixes, 1 needs a content decision from Tyler.
 
 ---
 
 ## File Paths
 
-- Reports: `~/content/yt-research/2026-05-17-claude-{code,courses,cowork,ai,tutorial}.md`
-- Thumbnails: `~/content/yt-research/2026-05-17-claude-{code,courses,cowork,ai,tutorial}-thumbnails/`
-- This master plan: `~/content/yt-research/2026-05-17-MASTER-claude-banger-ideas.md`
+- Reports: `~/content/research/2026-05-17-claude-{code,courses,cowork,ai,tutorial}.md`
+- Thumbnails: `~/content/research/2026-05-17-claude-{code,courses,cowork,ai,tutorial}-thumbnails/`
+- This master plan: `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md`
 
 ## Next Steps (when ready)
 

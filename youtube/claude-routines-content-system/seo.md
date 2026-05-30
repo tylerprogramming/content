@@ -1,7 +1,7 @@
 # SEO — Claude Routines + Claude Code Video
 
 **Final video runtime:** 19:21
-**Research source:** `~/content/yt-research/2026-04-15-claude-routines.md` (12 competitor videos)
+**Research source:** `~/content/research/2026-04-15-claude-routines.md` (12 competitor videos)
 
 ---
 

@@ -11,7 +11,7 @@
 ## Friday Prep Block (4:00-5:00 PM)
 
 - [ ] Read this script aloud once. Mark beats. Time it. (20 min)
-- [ ] Open `/thumbnail` skill. Generate 4 Nano Banana Pro variants on the brief in `titles.md`. Pick 1. Save to `~/content/youtube/3-skills-and-build/thumbnail-final.png`. **Hard cap: 30 min.**
+- [ ] Open `/thumbnail` skill. Generate 4 Nano Banana Pro variants on the brief in `titles.md`. Pick 1. Save to `~/content/youtube/067-3-skills-and-build/thumbnail-final.png`. **Hard cap: 30 min.**
 - [ ] Verify the meeting-notes folder is deleted: `rm -rf ~/.claude/skills/meeting-notes/`
 - [ ] Verify `~/notes/meetings/` is empty or moved aside
 - [ ] Run `/yt-search claude code` once Friday afternoon. Read the report. Confirm Alberta Tech appears as a top result.

@@ -52,7 +52,7 @@ Ideas #1-4 in `~/content/youtube/video-ideas.md`
 | #51 - 5 features | `/Volumes/Tyler 8TB/_camtasia_projects/shorts/#51...` | YT/TT/IG/LI | Failed (file too large for Drive) - upload manually |
 
 ### Captioned & Organized - 2026-04-19 Batch (ready to schedule)
-See `~/content/shorts/status.md` for full table.
+See `~/content/platform/shorts/status.md` for full table.
 
 | Short | Folder | Status |
 |-------|--------|--------|
@@ -70,10 +70,10 @@ See `~/content/shorts/status.md` for full table.
 ### Scripts Ready, Need to Film
 | Short | Script | Post Day |
 |-------|--------|----------|
-| Custom GPT one command | `~/content/shorts/custom-gpt-one-command.md` | Wed Apr 9 |
-| CLAUDE.md file | `~/content/shorts/claudemd-file.md` | Thu Apr 10 |
-| Remotion free editing | `~/content/shorts/remotion-free-editing.md` | Fri Apr 11 |
-| Skool automation | `~/content/shorts/skool-automation.md` | Sat Apr 12 |
+| Custom GPT one command | `~/content/platform/shorts/custom-gpt-one-command.md` | Wed Apr 9 |
+| CLAUDE.md file | `~/content/platform/shorts/claudemd-file.md` | Thu Apr 10 |
+| Remotion free editing | `~/content/platform/shorts/remotion-free-editing.md` | Fri Apr 11 |
+| Skool automation | `~/content/platform/shorts/skool-automation.md` | Sat Apr 12 |
 
 ---
 
@@ -82,15 +82,15 @@ See `~/content/shorts/status.md` for full table.
 ### Text Posts
 | Slug | Topic | File | Status |
 |------|-------|------|--------|
-| 5-features | 5 features you're not using | `~/content/linkedin/text-posts/5-features.md` | Posted |
-| custom-gpt | Built 6 GPTs for Kourse | `~/content/linkedin/text-posts/custom-gpt.md` | Scheduled (Blotato) |
-| one-file | One file changed how I use AI | `~/content/linkedin/text-posts/one-file.md` | Ready |
+| 5-features | 5 features you're not using | `~/content/platform/linkedin/text-posts/5-features.md` | Posted |
+| custom-gpt | Built 6 GPTs for Kourse | `~/content/platform/linkedin/text-posts/custom-gpt.md` | Scheduled (Blotato) |
+| one-file | One file changed how I use AI | `~/content/platform/linkedin/text-posts/one-file.md` | Ready |
 
 ### Carousel PDFs
 | Slug | Topic | File | Status |
 |------|-------|------|--------|
-| claude-code-setup | How to Set Up Claude Code | `~/content/linkedin/carousels/claude-code-setup/final/` | Posted |
-| 5-features | 5 features you're not using | `~/content/linkedin/carousels/5-features/final/` | Ready |
+| claude-code-setup | How to Set Up Claude Code | `~/content/platform/linkedin/carousels/claude-code-setup/final/` | Posted |
+| 5-features | 5 features you're not using | `~/content/platform/linkedin/carousels/5-features/final/` | Ready |
 
 ---
 
@@ -99,21 +99,21 @@ See `~/content/shorts/status.md` for full table.
 ### Carousels
 | Slug | Topic | File | Status |
 |------|-------|------|--------|
-| claude-code-setup | How to Set Up Claude Code | `~/content/instagram/carousels/claude-code-setup/final/` | Ready |
-| 5-features | 5 features you're not using | `~/content/instagram/carousels/5-features/final/` | Ready |
+| claude-code-setup | How to Set Up Claude Code | `~/content/platform/instagram/carousels/claude-code-setup/final/` | Ready |
+| 5-features | 5 features you're not using | `~/content/platform/instagram/carousels/5-features/final/` | Ready |
 
 ---
 
 ## Pinterest (warmup - manual posting)
 
-### Warmup Plan: `~/content/pinterest/warmup-plan.md`
+### Warmup Plan: `~/content/platform/pinterest/warmup-plan.md`
 
 | Day | Pin | Folder | Status |
 |-----|-----|--------|--------|
-| 1 (Apr 4) | 5 Skills That Automate Content | `~/content/pinterest/day1-5-skills/` | Ready |
-| 2 (Apr 5) | What is Claude Code? | `~/content/pinterest/day2-what-is-claude-code/` | Ready |
-| 3 (Apr 6) | CLAUDE.md: One File | `~/content/pinterest/day3-claudemd/` | Ready |
-| 4 (Apr 7) | 3 Types of AI Memory | `~/content/pinterest/day4-3-types-memory/` | Ready |
+| 1 (Apr 4) | 5 Skills That Automate Content | `~/content/platform/pinterest/day1-5-skills/` | Ready |
+| 2 (Apr 5) | What is Claude Code? | `~/content/platform/pinterest/day2-what-is-claude-code/` | Ready |
+| 3 (Apr 6) | CLAUDE.md: One File | `~/content/platform/pinterest/day3-claudemd/` | Ready |
+| 4 (Apr 7) | 3 Types of AI Memory | `~/content/platform/pinterest/day4-3-types-memory/` | Ready |
 | 5-14 | See warmup-plan.md | Not generated yet | Planned |
 
 ---
@@ -123,7 +123,7 @@ See `~/content/shorts/status.md` for full table.
 ### Community Posts
 | Slug | Topic | File | Status |
 |------|-------|------|--------|
-| 5-features | 5 features most people skip | `~/content/skool/5-features.md` | Ready |
+| 5-features | 5 features most people skip | `~/content/platform/skool/5-features.md` | Ready |
 | youtube-workflow | Content pipeline video | Posted via API | Done |
 
 ### Classroom
@@ -160,18 +160,18 @@ See `~/content/shorts/status.md` for full table.
 ## Research Files
 | Topic | File |
 |-------|------|
-| Claude Code tutorials landscape | `~/content/yt-research/2026-03-29-claude-code-tutorial-2025-2026.md` |
-| Social media AI automation | `~/content/yt-research/2026-03-29-social-media-marketing-ai-automation-content-creator.md` |
-| Remotion AI video editing | `~/content/yt-research/2026-03-29-remotion-ai-video-editing.md` |
-| Claude Code latest | `~/content/yt-research/2026-04-03-claude-code.md` |
+| Claude Code tutorials landscape | `~/content/research/2026-03-29-claude-code-tutorial-2025-2026.md` |
+| Social media AI automation | `~/content/research/2026-03-29-social-media-marketing-ai-automation-content-creator.md` |
+| Remotion AI video editing | `~/content/research/2026-03-29-remotion-ai-video-editing.md` |
+| Claude Code latest | `~/content/research/2026-04-03-claude-code.md` |
 
 ## Key Transcripts
 | Video | Transcript | Views |
 |-------|-----------|-------|
-| Tech With Tim - Claude Code Tutorial | `~/content/scripts/transcript_ntDIxaeo3Wg.txt` | 509K |
-| HubSpot - 32 Social Posts in 10 Min | `~/content/scripts/transcript_ngXvG87RZOA.txt` | 80K |
-| Sabrina Ramonov - Remotion | `~/content/scripts/transcript_M4cmrdoUKxI.txt` | 69K |
-| Tyler - 23 Concepts | `~/content/scripts/transcript_chapters_audio_21_claude_code_concepts.txt` | - |
+| Tech With Tim - Claude Code Tutorial | `~/content/transcripts/transcript_ntDIxaeo3Wg.txt` | 509K |
+| HubSpot - 32 Social Posts in 10 Min | `~/content/transcripts/transcript_ngXvG87RZOA.txt` | 80K |
+| Sabrina Ramonov - Remotion | `~/content/transcripts/transcript_M4cmrdoUKxI.txt` | 69K |
+| Tyler - 23 Concepts | `~/content/transcripts/transcript_chapters_audio_21_claude_code_concepts.txt` | - |
 
 ---
 

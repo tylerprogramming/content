@@ -170,5 +170,5 @@ TUE-SUN
 | Long-form social posts | `~/content/youtube/<slug>/social/` |
 | Short scripts (current week) | `~/content/youtube/shorts/2026-03-23/` |
 | Standalone posts (current week) | `~/content/2026-03-23/` |
-| YT research | `~/content/yt-research/` |
+| YT research | `~/content/research/` |
 | Filming schedule | `~/content/2026-03-23/filming-schedule.md` |

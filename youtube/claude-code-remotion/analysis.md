@@ -1,7 +1,7 @@
 # Source Video Analysis
 
 ## Sources
-- Transcript: `~/content/scripts/transcript_M4cmrdoUKxI.txt`
+- Transcript: `~/content/transcripts/transcript_M4cmrdoUKxI.txt`
 - Video: [Sabrina Ramonov - Claude Code + Remotion](https://youtu.be/M4cmrdoUKxI) (69K views)
 - Giovanni Beggiato's video (17K views)
 

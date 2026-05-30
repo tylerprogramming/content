@@ -1,7 +1,7 @@
 # Source Video Analysis
 
 ## Source
-Transcript: `~/content/scripts/transcript_iLMYYGCH_K4.txt`
+Transcript: `~/content/transcripts/transcript_iLMYYGCH_K4.txt`
 
 ## Structure Breakdown
 

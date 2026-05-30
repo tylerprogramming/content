@@ -34,13 +34,13 @@ Top-level tracker for the Skool relaunch. Points to everything else.
 
 Tyler's monthly live load: ~8 hours.
 
-**May event IDs:** `~/content/skool/may-events.json`
+**May event IDs:** `~/content/platform/skool/may-events.json`
 
 ---
 
 ## THE 14-DAY SHIP CHALLENGE
 
-The backbone path for every new free member. Detailed in `~/content/skool/launch-drafts-v2.md`.
+The backbone path for every new free member. Detailed in `~/content/platform/skool/launch-drafts-v2.md`.
 
 **Completion = 3 things:**
 1. Automation deployed in their business
@@ -58,14 +58,14 @@ The backbone path for every new free member. Detailed in `~/content/skool/launch
 
 | File | Purpose |
 |---|---|
-| `~/content/skool/STATE.md` | This file - top-level tracker |
-| `~/content/skool/launch-drafts-v2.md` | Pinned post + About page + VSL script (v2, Harut-edited). **USE THIS, NOT v1** |
-| `~/content/skool/launch-drafts.md` | v1 drafts (kept for history, do not ship) |
-| `~/content/skool/14-day-drip-and-roundup.md` | 4 email drips (Day 0/7/14/16) + weekly Builder Roundup post template |
-| `~/content/skool/restructure-plan.md` | Original 7-day sprint plan (partially outdated - still has $27→$47 step we're NOT doing right now) |
-| `~/content/skool/filming-schedule.md` | What to film for the new courses |
-| `~/content/skool/5-features.md` | (existing) |
-| `~/content/skool/may-events.json` | Skool calendar event IDs for May 2026 (created via API 4/20) |
+| `~/content/platform/skool/STATE.md` | This file - top-level tracker |
+| `~/content/platform/skool/launch-drafts-v2.md` | Pinned post + About page + VSL script (v2, Harut-edited). **USE THIS, NOT v1** |
+| `~/content/platform/skool/launch-drafts.md` | v1 drafts (kept for history, do not ship) |
+| `~/content/platform/skool/14-day-drip-and-roundup.md` | 4 email drips (Day 0/7/14/16) + weekly Builder Roundup post template |
+| `~/content/platform/skool/restructure-plan.md` | Original 7-day sprint plan (partially outdated - still has $27→$47 step we're NOT doing right now) |
+| `~/content/platform/skool/filming-schedule.md` | What to film for the new courses |
+| `~/content/platform/skool/5-features.md` | (existing) |
+| `~/content/platform/skool/may-events.json` | Skool calendar event IDs for May 2026 (created via API 4/20) |
 
 ---
 

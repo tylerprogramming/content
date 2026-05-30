@@ -165,7 +165,7 @@
 
 ## Research Files
 
-All reports saved to `~/content/yt-research/`:
+All reports saved to `~/content/research/`:
 - `2026-04-13-ai-ugc.md` + `.json` + thumbnails
 - `2026-04-13-ugc.md` + `.json` + thumbnails
 - `2026-04-13-kling.md` + `.json` + thumbnails

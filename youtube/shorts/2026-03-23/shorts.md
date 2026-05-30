@@ -1,7 +1,7 @@
 # Shorts — Week of 2026-03-23
 
 **Topic:** Claude Code — beginner concepts + skills
-**Source research:** ~/content/yt-research/2026-03-22-claude-code-beginner.md + 2026-03-22-claude-code-skills.md
+**Source research:** ~/content/research/2026-03-22-claude-code-beginner.md + 2026-03-22-claude-code-skills.md
 **Links in descriptions → main videos:**
 - Concepts video: "10 Claude Code Concepts I Wish I Knew From the Start"
 - Skills video: "I Built a Claude Code Skill from Scratch (Watch Me Do It)"

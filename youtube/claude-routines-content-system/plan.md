@@ -8,8 +8,8 @@
 
 ## Reference Sources
 
-- **Structure model:** Dan Martell — `~/content/scripts/transcript_XRU-CjzYt_o.txt` (numbered 6-point structure, shock hook, personal authority, demo → business value → lead magnet → CTA)
-- **Content cues:** Nick Saraev — `~/content/scripts/transcript_j3aXJNu9804.txt` (routine build walkthrough, API triggers, n8n comparison, 3 demos)
+- **Structure model:** Dan Martell — `~/content/transcripts/transcript_XRU-CjzYt_o.txt` (numbered 6-point structure, shock hook, personal authority, demo → business value → lead magnet → CTA)
+- **Content cues:** Nick Saraev — `~/content/transcripts/transcript_j3aXJNu9804.txt` (routine build walkthrough, API triggers, n8n comparison, 3 demos)
 - **Tone model:** Tyler's AntiGravity video + existing scripts — confident but not arrogant, credentials as facts, short sentences, "right?" and "okay" as checkpoints, teaches technical terms simply
 - **Thumbnail reference:** `~/content/youtube/claude-routines-content-system/reference-thumbnails/nick-saraev.webp`
 

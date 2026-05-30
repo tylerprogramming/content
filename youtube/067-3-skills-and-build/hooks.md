@@ -6,7 +6,7 @@
 
 ## Hook A (RECOMMENDED) — Triple Receipt
 
-[SHOW: Split screen montage — left third: terminal running `/yt-search` and a folder filling up with thumbnails. Middle third: `/transcribe` showing a transcript file landing in `~/content/scripts/`. Right third: `/yt` running and a video package folder cascading with files (analysis.md, titles.md, script.md, etc.). All three appearing in parallel over 6 seconds.]
+[SHOW: Split screen montage — left third: terminal running `/yt-search` and a folder filling up with thumbnails. Middle third: `/transcribe` showing a transcript file landing in `~/content/transcripts/`. Right third: `/yt` running and a video package folder cascading with files (analysis.md, titles.md, script.md, etc.). All three appearing in parallel over 6 seconds.]
 
 > *(VO at 0:03)*
 > Research, transcripts, video packages. Three Claude Code skills, three outputs, total time about 8 minutes.

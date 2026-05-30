@@ -1,7 +1,7 @@
 # SEO Analysis: 7 Claude Code Skills That Run My Business
 
 **Date:** 2026-05-17
-**Source data:** `~/content/yt-research/2026-05-17-claude-code.md` (33 videos / 60 days)
+**Source data:** `~/content/research/2026-05-17-claude-code.md` (33 videos / 60 days)
 
 ---
 

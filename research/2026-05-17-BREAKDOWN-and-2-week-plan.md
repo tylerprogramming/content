@@ -1,7 +1,7 @@
 # Session Breakdown + 2-Week Action Plan
 
 **Date:** 2026-05-17
-**Master plan:** `~/content/yt-research/2026-05-17-MASTER-claude-banger-ideas.md`
+**Master plan:** `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md`
 
 ---
 
@@ -13,7 +13,7 @@
 - `claude cowork` — 32 videos (Jeff Su 803K is the top)
 - `claude ai` — 16 videos (SAMTIME DB story 485K, news angle proven)
 - `claude tutorial` — 4 videos
-- All reports + thumbnails saved at `~/content/yt-research/2026-05-17-*`
+- All reports + thumbnails saved at `~/content/research/2026-05-17-*`
 
 ### Skill audit
 - **Confirmed: 43 actual skills** at `~/.claude/skills/` (not 26 or 13)
@@ -39,9 +39,9 @@ SEO files added to all 3 new packages with competitive analysis, primary keyword
 
 ### Reference transcripts pulled
 For inspiration / structure stealing on the unscripted videos still ahead:
-- Jeff Su "Learn 80% of Claude Cowork" (803K, 18:54) — `~/content/scripts/transcript_z9rdrNrkvDY.txt` ✅
-- Productive Dude "FULL Claude Tutorial" (346K, 1h52) — `~/content/scripts/transcript_Xg55nTrbYYY.txt` (running, long video)
-- Nick Saraev "Claude Code Advanced Full Course" (183K, 3hr) — `~/content/scripts/transcript_UPtmKh1vMN8.txt` (running, very long)
+- Jeff Su "Learn 80% of Claude Cowork" (803K, 18:54) — `~/content/transcripts/transcript_z9rdrNrkvDY.txt` ✅
+- Productive Dude "FULL Claude Tutorial" (346K, 1h52) — `~/content/transcripts/transcript_Xg55nTrbYYY.txt` (running, long video)
+- Nick Saraev "Claude Code Advanced Full Course" (183K, 3hr) — `~/content/transcripts/transcript_UPtmKh1vMN8.txt` (running, very long)
 
 ### Memory saved
 New project memory: `project_news_shorts_series.md` — locks in the recurring Tuesday short format so future sessions know about it.
@@ -168,13 +168,13 @@ That's roughly **44+ pieces of content** in 4 weeks, all from the foundation lai
 ## Part 7 — Files Created Today (Index)
 
 **Research:**
-- `~/content/yt-research/2026-05-17-claude-code.md` (+ json + thumbnails folder)
-- `~/content/yt-research/2026-05-17-claude-courses.md` (+ json + thumbnails)
-- `~/content/yt-research/2026-05-17-claude-cowork.md` (+ json + thumbnails)
-- `~/content/yt-research/2026-05-17-claude-ai.md` (+ json + thumbnails)
-- `~/content/yt-research/2026-05-17-claude-tutorial.md` (+ json + thumbnails)
-- `~/content/yt-research/2026-05-17-MASTER-claude-banger-ideas.md`
-- `~/content/yt-research/2026-05-17-BREAKDOWN-and-2-week-plan.md` (this file)
+- `~/content/research/2026-05-17-claude-code.md` (+ json + thumbnails folder)
+- `~/content/research/2026-05-17-claude-courses.md` (+ json + thumbnails)
+- `~/content/research/2026-05-17-claude-cowork.md` (+ json + thumbnails)
+- `~/content/research/2026-05-17-claude-ai.md` (+ json + thumbnails)
+- `~/content/research/2026-05-17-claude-tutorial.md` (+ json + thumbnails)
+- `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md`
+- `~/content/research/2026-05-17-BREAKDOWN-and-2-week-plan.md` (this file)
 
 **Video packages (new, this session):**
 - `~/content/youtube/7-skills-run-my-business/` (titles, hooks, script, filming-guide, description, seo)
@@ -185,9 +185,9 @@ That's roughly **44+ pieces of content** in 4 weeks, all from the foundation lai
 - `~/content/youtube/shorts/news-series-may-2026/` (README + 5 short scripts)
 
 **Reference transcripts:**
-- `~/content/scripts/transcript_z9rdrNrkvDY.txt` — Jeff Su Cowork 803K (✅ done)
-- `~/content/scripts/transcript_Xg55nTrbYYY.txt` — Productive Dude Tutorial (running)
-- `~/content/scripts/transcript_UPtmKh1vMN8.txt` — Nick Saraev 3hr Course (running)
+- `~/content/transcripts/transcript_z9rdrNrkvDY.txt` — Jeff Su Cowork 803K (✅ done)
+- `~/content/transcripts/transcript_Xg55nTrbYYY.txt` — Productive Dude Tutorial (running)
+- `~/content/transcripts/transcript_UPtmKh1vMN8.txt` — Nick Saraev 3hr Course (running)
 
 **Memory:**
 - `~/.claude/projects/-Users-tylerreed/memory/project_news_shorts_series.md`

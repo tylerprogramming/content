@@ -76,7 +76,7 @@
 
 > About a minute. Let me open the report.
 
-[SHOW: VS Code opening `~/content/yt-research/2026-05-17-claude-code.md` — scroll through the table of titles, views, durations.]
+[SHOW: VS Code opening `~/content/research/2026-05-17-claude-code.md` — scroll through the table of titles, views, durations.]
 
 > 33 videos. Sorted by views. I can see in 30 seconds what title formulas are working, who's making them, what durations are hitting.
 
@@ -120,14 +120,14 @@
 
 > Done in about 90 seconds for a 12-minute video.
 
-[SHOW: Open `~/content/scripts/transcript_LACyqdAfnaw.txt` in VS Code.]
+[SHOW: Open `~/content/transcripts/transcript_LACyqdAfnaw.txt` in VS Code.]
 
 > Now I can read the entire video in 5 minutes. I can ask Claude — what was the hook, how did they structure it, what's the call to action — without watching anything.
 
 [SHOW: Type into Claude Code chat:]
 
 ```
-read ~/content/scripts/transcript_LACyqdAfnaw.txt and tell me the hook, the 3 main beats, and the CTA in bullet form
+read ~/content/transcripts/transcript_LACyqdAfnaw.txt and tell me the hook, the 3 main beats, and the CTA in bullet form
 ```
 
 [SHOW: Claude's response appearing — bullet breakdown.]
@@ -159,7 +159,7 @@ read ~/content/scripts/transcript_LACyqdAfnaw.txt and tell me the hook, the 3 ma
 [SHOW: Terminal]
 
 ```
-/yt ~/content/scripts/transcript_LACyqdAfnaw.txt
+/yt ~/content/transcripts/transcript_LACyqdAfnaw.txt
 ```
 
 > Point the skill at the transcript I just pulled.

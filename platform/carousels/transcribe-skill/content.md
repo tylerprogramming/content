@@ -16,7 +16,7 @@ It downloads the audio, runs it through OpenAI Whisper, and saves a clean text t
 **What /transcribe actually does:**
 1. Downloads audio from any YouTube URL
 2. Transcribes with OpenAI Whisper
-3. Saves to ~/content/scripts/transcript_[id].txt
+3. Saves to ~/content/transcripts/transcript_[id].txt
 4. Works on local video files too
 5. Full text, ready for analysis
 

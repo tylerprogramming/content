@@ -13,7 +13,7 @@ Post 1 pin per day manually. After warmup, connect Blotato.
 
 ## Day 1 (Apr 3) - DONE
 **5 Claude Code Skills That Automate Your Content**
-- File: ~/content/pinterest/2026-04-03-5-skills-infographic/thumbnail_225133392_1.png
+- File: ~/content/platform/pinterest/2026-04-03-5-skills-infographic/thumbnail_225133392_1.png
 - Board: AI Content Creation
 - Link to: YouTube workflow video
 

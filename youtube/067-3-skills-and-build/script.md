@@ -9,7 +9,7 @@
 
 ## [0:00 - 0:25] Triple Receipt Hook
 
-[SHOW: Split-screen montage in three vertical bands. Left band: terminal running `/yt-search claude code`, then a folder filling up with PNG thumbnails. Middle band: `/transcribe https://...` running, then a transcript file appearing in `~/content/scripts/`. Right band: `/yt ~/content/scripts/transcript_xxx.txt` running, then a package folder filling with files. All three layered, appearing in parallel over 6 seconds.]
+[SHOW: Split-screen montage in three vertical bands. Left band: terminal running `/yt-search claude code`, then a folder filling up with PNG thumbnails. Middle band: `/transcribe https://...` running, then a transcript file appearing in `~/content/transcripts/`. Right band: `/yt ~/content/transcripts/transcript_xxx.txt` running, then a package folder filling with files. All three layered, appearing in parallel over 6 seconds.]
 
 > *(VO at 0:03)*
 > Research, transcripts, video packages. Three Claude Code skills, three outputs, total time about 8 minutes.
@@ -63,7 +63,7 @@
 
 > About a minute. Let me open the report.
 
-[SHOW: VS Code opening `~/content/yt-research/<today>-claude-code.md` — scroll through the table of titles, views, durations.]
+[SHOW: VS Code opening `~/content/research/<today>-claude-code.md` — scroll through the table of titles, views, durations.]
 
 > 33 videos in the last 30 days. Sorted by views. I can see in 30 seconds what title formulas are working, who's making them, what durations are hitting.
 
@@ -105,14 +105,14 @@
 
 > About 90 seconds for a 12-minute video.
 
-[SHOW: Open `~/content/scripts/transcript_LACyqdAfnaw.txt` in VS Code.]
+[SHOW: Open `~/content/transcripts/transcript_LACyqdAfnaw.txt` in VS Code.]
 
 > Full transcript with timestamps. Now I can read the whole video in 5 minutes.
 
 [SHOW: Type into Claude Code chat:]
 
 ```
-read ~/content/scripts/transcript_LACyqdAfnaw.txt and tell me the hook, the 3 main beats, and the CTA in bullet form
+read ~/content/transcripts/transcript_LACyqdAfnaw.txt and tell me the hook, the 3 main beats, and the CTA in bullet form
 ```
 
 [SHOW: Claude's response appearing — bullet breakdown.]
@@ -144,7 +144,7 @@ read ~/content/scripts/transcript_LACyqdAfnaw.txt and tell me the hook, the 3 ma
 [SHOW: Terminal]
 
 ```
-/yt ~/content/scripts/transcript_LACyqdAfnaw.txt
+/yt ~/content/transcripts/transcript_LACyqdAfnaw.txt
 ```
 
 > Point the skill at the transcript I just pulled.

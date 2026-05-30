@@ -1,7 +1,7 @@
 # Source Video Analysis
 
 ## Source
-Transcript: `~/content/scripts/transcript_cCIiRnlyipE.txt`
+Transcript: `~/content/transcripts/transcript_cCIiRnlyipE.txt`
 Video: [Jack Roberts - AntiGravity Hidden Systems](https://youtu.be/cCIiRnlyipE)
 
 ## Structure Breakdown

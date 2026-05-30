@@ -18,7 +18,7 @@ It searches YouTube by keyword, pulls the top videos sorted by views, and saves 
 2. Sorts results by view count
 3. Pulls titles, views, publish dates
 4. Downloads competitor thumbnails
-5. Saves a full report to ~/content/yt-research/
+5. Saves a full report to ~/content/research/
 
 ## Slide 5 - Results
 **From 2 hours to 30 seconds**
