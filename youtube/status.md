@@ -32,6 +32,11 @@
 | R6 | How I Create 100+ Pieces of Content a Week | `100-pieces-content-pipeline/` | Script ready, number reconcile needed (100+ vs 32) |
 | R7 | Claude Code for Content Creators (Not Devs) | `claude-code-for-creators/` | Script ready, cold-open restructure recommended |
 | R8 | Claude Code + Remotion: Automate Video Editing | `claude-code-remotion/` | Script ready (skill count fixed today) |
+| R9 | I Shipped 5 Landing Pages in One Afternoon with Claude Design | `claude-design-5-landing-pages/` | Script ready (Claude Design slate 2 of 4) |
+| R10 | I Rebuilt Stripe's Homepage in Claude Design in 20 Min | `claude-design-rebuild-stripe/` | Script ready (Claude Design slate 3 of 4) |
+| R11 | Claude Design + Kling 3 = Animated Landing Pages | `claude-design-kling-animated-hero/` | Script ready (Claude Design slate 4 of 4) |
+
+**Total queued = 10 long-forms (R2-R11) ≈ 5-6 weeks of content at 2 long-forms per week.**
 
 ---
 
