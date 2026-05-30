@@ -49,3 +49,6 @@ submagic/
 .env
 .env.local
 *.log
+
+# Tyler's call — custom GPTs stay local only
+custom-gpts/
