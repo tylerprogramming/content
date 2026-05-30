@@ -1,0 +1,163 @@
+[00:00] Normally when we want to use Cloud Code, we have to do so in a chat window like this on
+[00:03] our local machine, or we could obviously pull up the terminal, type in Cloud, and then access
+[00:08] it this way.
+[00:09] But now we're able to type in this command, Cloud Remote-Control, and that basically gives
+[00:12] us this QR code, which we can use to remote into this from our phone or anywhere else.
+[00:18] So if I go ahead and scan this QR code right here, it opens up my remote control session
+[00:21] of my Herc 2.0 project.
+[00:24] And so what I can do is shoot off this message in this session that says, run a comment analysis
+[00:28] from my YouTube videos and ideate new topics.
+[00:30] And this is actually going to do it really, really well, because in this project, my Herc
+[00:34] 2.0 personal assistant, it's got these different agents, it's got these different skills, and
+[00:38] it can actually use all of these from my phone.
+[00:41] So you can see it says, let me kick off the idea mining process.
+[00:44] I'll check the data freshness first, and then I'll spin up those agents in parallel.
+[00:47] It has context of my business, my current priorities, what I'm working on, and it's
+[00:51] going to make this way better.
+[00:53] So I basically now have Cloud Code in my pocket.
+[00:55] It's doing the exact same things on here, as you can see.
+[00:57] And I could go off to lunch, I could go to the gym, and I could still keep working and
+[01:01] checking in on my Cloud Code.
+[01:12] Okay, so that just finished up.
+[01:13] It ran a YouTube analyzer agent and my research agent.
+[01:16] And now we have a full brief for February 25th with top video ideas.
+[01:20] As you can see, it's going through what's trending, but it's also looking at my comments.
+[01:23] What else is cool is if I close out of this terminal here, even though this is still running,
+[01:26] and I go to my past conversations, you can see this is exactly what I just triggered
+[01:30] from my phone.
+[01:31] And I could now pick up the conversation over here, and then I could jump back over to my
+[01:34] phone, and I could just keep working all the time, as long as I'm able to maintain an internet
+[01:38] connection.
+[01:39] So this is all thanks to Cloud Code's new feature, the remote control.
+[01:42] So that's exactly what I'm going to be talking to you guys about today, showing you how to
+[01:45] set it up, going over some things you need to know, and why this is exciting.
+[01:49] So my one sentence overview here is that you start a coding task on your computer, and
+[01:53] you're kind of desk bound.
+[01:54] But then using the remote control, you can control it from anywhere.
+[01:57] You could be having lunch, having a cup of coffee, going on a walk, and all of your different
+[02:01] agents can be running for you.
+[02:02] The work keeps going.
+[02:04] And what's so great about this is that the setup literally could not be simpler.
+[02:07] You type a command, you scan a code, and then you're connected.
+[02:10] So heading over to the official Cloud Code docs right here for the new remote control,
+[02:13] it says that you're able to continue a local Cloud Code session from your phone, tablet,
+[02:17] or any browser.
+[02:18] When you start this session, Cloud stays running locally, so nothing ever moves to the cloud.
+[02:22] So like I mentioned in the demo, I was working in this local project, so I had access to
+[02:26] all of this context and all of these skills and rules.
+[02:30] And you can work from both services at once.
+[02:32] The entire conversation stays synced.
+[02:35] The requirements are you have to have a pro or max plan.
+[02:37] You can't use an API key.
+[02:39] And then all you have to do pretty much is you run Cloud, and you log in, and then you
+[02:43] just have to give that workspace trust.
+[02:45] And then if you're already in an existing session, you just do slash remote control.
+[02:49] And if you want to start a new session, you just do Cloud remote dash control, like you
+[02:52] guys saw in my demo.
+[02:54] So you guys can search more through these docs, it'll explain pretty much everything
+[02:57] about this.
+[02:58] But like I said, it's super, super simple.
+[03:00] It's literally just these four steps, and you're all set.
+[03:03] Now one thing to keep in mind is the session URL, don't put that on the internet, don't
+[03:07] show that to people, or the QR code.
+[03:09] So if I was to open up a new terminal, and I wanted to just go ahead and do a Cloud remote
+[03:13] control, you guys can see that we get right here, this actual URL.
+[03:17] And I could hit space if I want the QR code, but this URL works too.
+[03:20] So if I follow this link, this will basically open this up in my web browser right here
+[03:25] on my desktop, or I could put this in my phone, and then I'd be able to connect to the remote
+[03:28] control session.
+[03:29] As you can see, here's all the ones I was doing during testing.
+[03:31] And we still have some active sessions right here.
+[03:33] But the point is, anyone could go to this link and then control your local files.
+[03:37] So just don't give that to people.
+[03:39] Now I will say I tried logging in from like a different Cloud account with a different
+[03:43] email, and it was taking a long time to connect, and I'm not convinced it would actually let
+[03:47] me in.
+[03:48] But I would still just say, don't share that URL.
+[03:50] But you just need to be mindful of what sessions you have open.
+[03:53] As you can see, if they're disconnected, it won't let you chat.
+[03:55] But if they're connected, you can see that they still technically could access stuff.
+[03:59] Okay, so some real quick things to know, or maybe just to hammer home.
+[04:02] The first one would be if you're having trouble, then try to update things, try to update your
+[04:05] Cloud code or the app on your phone, or maybe some settings on your computer.
+[04:09] Just try to update some things before you assume the worst has happened.
+[04:12] The first question I wanted to address, which we already kind of covered is that, is this
+[04:15] running in the Cloud?
+[04:16] No, your phone is just the window to what's actually happening locally, which is different
+[04:20] from Cloud code on the web, which is running on Anthropic servers.
+[04:23] But of course, the AI models are connecting to Anthropic servers through API, but the
+[04:28] files and everything like that, that is still all local.
+[04:31] Nano Banana had a really hard time here spelling Anthropic, as you can see.
+[04:34] But it got it right, right there.
+[04:35] So I don't know.
+[04:37] Question two is what has to stay on?
+[04:38] So you have to maintain internet connection.
+[04:40] If you don't have connection for like 10 minutes, I think that's when you get disconnected.
+[04:43] Your laptop or desktop needs to stay on.
+[04:46] I think sleep is okay, but it has to stay on.
+[04:48] And the terminal has to stay open.
+[04:50] Meaning if you want it to go away for like a couple hours, you might be fine.
+[04:53] You might just want to change the settings on your laptop so it doesn't shut off.
+[04:56] But if you want it to go away for like a week, which this product definitely isn't built
+[04:59] for that, you would also have to make sure that things aren't getting updated and automatically
+[05:03] restarting and that your internet connection is going to be good, stuff like that.
+[05:06] Now, because of that, unfortunately, we can only start new sessions for remote control
+[05:10] from our terminal.
+[05:12] So if you're away from your computer and there's not a session running, you couldn't start
+[05:14] a new one.
+[05:15] If your computer falls asleep, the session dies.
+[05:17] If there's no terminal running locally, there's nothing that your phone or the remote can
+[05:20] actually connect to.
+[05:21] And that's what I would really love to see next.
+[05:23] Obviously, there are some ways that you can sort of Frankenstein your solution to wrap
+[05:27] up cloud code so you can access it anywhere and start up conversations anywhere.
+[05:30] But I would love to see this native and that is really what I hope comes soon.
+[05:34] The next question is who can use this, which is also pretty much all this is covered in
+[05:38] the docs.
+[05:39] But you have to be on the pro or max plan.
+[05:40] So the pro is the around 20 bucks a month.
+[05:43] The max is either 100 or 200 and you can't be on a team or enterprise plan yet.
+[05:47] I'm sure it'll come soon, but right now it has to be personal plan.
+[05:50] And of course, you cannot authenticate through APIs.
+[05:53] And finally, I just wanted to say this one more time, do not show people the QR code
+[05:57] or the session URL unless that session has been killed already.
+[06:00] Because if you can just click on a link and access all your local files, then so can anyone
+[06:04] else that has that link.
+[06:05] Because if you remember, there wasn't two factor authentication, there wasn't a password.
+[06:08] You basically just opened it up.
+[06:10] Now I will say I tried logging in from like a different cloud account with a different
+[06:14] email and it was taking a long time to connect and I'm not convinced it would actually let
+[06:18] me in, but I would still just say, don't share that URL.
+[06:22] And I wanted to end off this video just by talking about like, why is this exciting and
+[06:25] kind of what's going on with Anthropic.
+[06:27] So I found this article right here that I thought had some cool stats.
+[06:30] And I just pulled out a few of the ones that I thought were kind of cool to highlight,
+[06:33] but I'll link the full article in the description.
+[06:36] The $2.5 billion agent, the launch of remote control serves as an escalation force in what
+[06:40] has become a dominant business for Anthropic.
+[06:43] Cloud Code has now hit in just basically a year, $2.5 billion annualized run rate, which
+[06:48] has more than doubled since the start of this year.
+[06:51] So, you know, in the past two months, they're currently having their ChatGBT moment surging
+[06:55] to 29 million daily installs within Visual Studio Code.
+[06:59] So super cool.
+[07:01] And this statistic might actually feel fake, but moving towards everything sort of being
+[07:06] vibe coded and all the stuff I've heard about Anthropic engineers, not really coding anymore
+[07:10] and having a ton of code reviewer agents as well that are catching things that humans
+[07:14] are missing.
+[07:15] But apparently we're entering this era where AI tools are writing roughly 41% of all code.
+[07:19] And I imagine over the next few months that we'll definitely be able to bump over 50%
+[07:23] of code being written by AI.
+[07:25] And obviously we've seen this all over with how quick POCs and startups and, you know,
+[07:30] different products all being written with AI coding tools.
+[07:33] Anyways, I know it was a quick one, but I just wanted to show you guys how this kind
+[07:35] of stuff works and what I thought about it.
+[07:37] If you love nerding out about this kind of stuff, then definitely check out my plus group.
+[07:41] The link for this is down in the description.
+[07:43] We've got over 3000 members who are building with AI every day, building businesses with
+[07:46] AI, and it's a great place to be if you have similar goals.
+[07:49] So I'd love to see you guys in this community, but that's going to do it for today.
+[07:52] If you enjoyed the video or you learned something new, please give it a like.
+[07:54] Definitely helps me out a ton.
+[07:55] And as always, I appreciate you guys making it to the end of the video.
+[07:58] I'll see you on the next one.
+[07:59] Thanks, everyone.

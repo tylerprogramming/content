@@ -1,0 +1,206 @@
+[00:00] I transcribe YouTube videos in seconds.
+[00:02] I also journal every day without opening an app, and I have Collat help me script out
+[00:06] videos just like this one, and I built each of these in just a few minutes.
+[00:10] They're called skills, so I'm going to show you how they work, and then we're going to
+[00:13] build our own from scratch.
+[00:15] Okay, so I watch a lot of YouTube videos for research, but I can't actually spend the time
+[00:20] to watch all of them even at a faster speed, so I need to get the full transcript from
+[00:24] them and then summarize it and see what they talked about.
+[00:27] So what I did was I created a skill for that, so if I type slash transcribe, then I just
+[00:32] paste in a YouTube video, what it's going to do is the skill that I built, it's going
+[00:36] to go ahead and transcribe all of that now, and then whenever it's done, I get a transcription
+[00:41] complete.
+[00:42] It gives me the video title, the summary, and just a few things about it, and then it
+[00:46] shows up in a scripts folder on my computer.
+[00:49] Okay, and next I want to keep track of what I've done the day before, what I'm doing today,
+[00:53] and then maybe any blockers or what I need to do.
+[00:56] So kind of like a standup in an engineering meeting.
+[00:58] So I created a journal skill for that, and what it's going to do is ask me what I accomplished
+[01:02] today or yesterday, and then whenever it's done, it's going to save everything in a markdown
+[01:07] file in another folder.
+[01:09] And then finally, I have my YouTube skill, and it takes a few minutes to actually go
+[01:14] through one, so what I've done for this actual video is I took a transcript from a separate
+[01:20] video, I had it analyze everything about that, and then I had it create hooks based
+[01:26] on what I told it that I want to talk about, because I like the structure of that video,
+[01:30] and so here it gave me three hooks, it actually gave me a script, and see, I basically said
+[01:35] this in the very beginning, and then it goes through step-by-step on everything, what I
+[01:40] want to say throughout the video, okay, and then it comes up with some titles for me,
+[01:45] and then I can keep talking.
+[01:47] I can have it go back to this specific folder with everything here, and I can talk with
+[01:52] it, maybe have it research some more video titles or hook ideas.
+[01:56] Okay, so now we know this is called a skill, but what actually are these things that I'm
+[02:02] talking about?
+[02:03] Well, a skill is essentially a saved way of working with Claude.
+[02:07] That's it.
+[02:08] Instead of explaining what you want every single time, you write it down once, and then
+[02:11] Claude will remember that.
+[02:13] So let me show you what one actually looks like.
+[02:15] Okay, so I have a few here, as you can see, but let's take a look at the transcribed one.
+[02:20] It's relatively simple.
+[02:21] So each of them, this is my Claude skills folder on my machine.
+[02:26] Now there are two distinctions.
+[02:28] One, there are global skills, and then there are project level skills.
+[02:32] So whatever project you're creating, you will only use skills for that project.
+[02:36] That's the only visible way that you'll be able to use them is through that project.
+[02:40] But these are my global skills, and all of them have a skill.md or a markdown file.
+[02:47] So there's a couple of real basic things you need, and that's essentially a name for it,
+[02:52] and then a description of what it's doing, okay?
+[02:55] And then typically you have some instructions on what it's supposed to do.
+[03:00] Nothing crazy here, and so if I look at the transcribed video file or Python file, this
+[03:06] is what it generated to take in a YouTube link, essentially, create an MP3 from that,
+[03:14] and then transcribe that, just like you would with any speech-to-text model.
+[03:19] So let's take a look at another one, right?
+[03:20] This is called a quiz skill, right?
+[03:23] So it's going to read some document, and then just basically quiz me on this.
+[03:26] Now there's no Python file here.
+[03:29] Basically Claude is going to look at the document, and then it kind of goes through this, like
+[03:34] if it's something for a mock interview, if it's a rapid-fire quiz, something with deep
+[03:38] practice, study review, and tells it how to wrap it up once it thinks I'm done, or maybe
+[03:44] I prompt it to, and here are the rules.
+[03:46] So this is just a markdown file giving direction to Claude whenever I want to use the skill
+[03:51] with some document.
+[03:52] The question might be, why bother with skills?
+[03:55] Well, because without skills, you're starting from zero every time.
+[03:58] Even if you want to do some of these things that don't require a Python file to execute,
+[04:02] to do something with a document or do something externally, well, you got to open Claude,
+[04:08] explain what you want, and then I'll have to go through the process every time, and
+[04:11] then it may not even do that every time because it might have different interpretations depending
+[04:15] on how you prompt that.
+[04:16] Well, with skills, you can explain once, and you can even talk to Claude with natural language,
+[04:20] and it will then figure out what skill you're talking about whenever you talk to it.
+[04:25] You want to build tools that grow with you, and so it's going to lead me into the next
+[04:29] part, which is we're going to now create a skill together.
+[04:31] Okay.
+[04:32] Well, the first step is what I have here is for the meal planner, I have just a bunch
+[04:36] of recipes that, let's be honest, I had Claude create these markdown files for me, which
+[04:41] are just a bunch of recipes with ingredients, instructions, and just how much time it takes
+[04:46] to make these.
+[04:47] Okay.
+[04:48] So there's nothing super complicated.
+[04:49] You can have a lot more.
+[04:50] I have about 15 here, I think.
+[04:52] So what I want to do is I just want to say, I just want to type in, give me a meal plan
+[04:56] for the week.
+[04:58] Friday's movie night.
+[04:59] So we need finger food.
+[05:00] Sunday's pizza.
+[05:01] Give me a meal plan and a shopping list as a, as separate files and use my ingredients
+[05:09] in the recipe folder folder here.
+[05:13] So basically before you say, Hey, I want you to create a skill that does all of this.
+[05:18] Generally, what you would do is you would talk about what you kind of wanted to do.
+[05:24] And then at the end, we were going to say, now create this skill for me.
+[05:28] So what it's doing right now is it's searching through all, yeah, there's 15, 15 files here.
+[05:33] So it's searching through all of these deciding, you know, looking at everything.
+[05:37] And now it's going to go ahead and put the meal plan and a shopping list for me together
+[05:41] for the week.
+[05:42] Okay.
+[05:43] So here's going to create a meal plan markdown file.
+[05:46] So it's going to go ahead and write that somewhere here.
+[05:48] It's also going to create a shopping list markdown file for me.
+[05:52] So it's going through all of this right now.
+[05:54] Okay.
+[05:55] So we like that.
+[05:56] So yes.
+[05:57] And then it's going to keep going.
+[05:59] And then once we're, once it's done, we can also keep talking to those two, right?
+[06:04] The best, the best thing about this is that we can keep talking to it.
+[06:08] Now what I've kind of noticed is that, yeah, it has like, you know, Wednesday, a meal plan,
+[06:14] right?
+[06:15] But for what one meal.
+[06:16] So I needed to also add breakfast or let's, let's do, let's make sure we have, make sure
+[06:23] we have breakfast, lunch and dinner meals for each day, please.
+[06:30] Okay.
+[06:31] So it's okay that it didn't give me exactly what I wanted, but now I'm just telling it
+[06:36] now update it with these as well.
+[06:38] And that's probably, and that's because I didn't prompt it.
+[06:41] I didn't prompt it well in the very beginning when I wanted to do, when I was asking you
+[06:44] to do this for me.
+[06:45] Okay.
+[06:46] So this is a little bit better, right?
+[06:47] So for Monday we have oats for breakfast, lunch, uh, toast, and then chicken stir fry
+[06:52] for dinner.
+[06:53] Okay.
+[06:54] So, and then you can balance this out, right?
+[06:55] I'd probably need to eat a little bit more, um, than just this, but this is a start.
+[07:01] And the great thing is, like I mentioned, we can come back and you're updated when we
+[07:04] ask it again to with this skill to create a meat or weekly meal plan maybe for the following
+[07:09] week.
+[07:10] Okay.
+[07:11] So it says that this is all done.
+[07:12] Now what I, now what I need you to do is to create a skill based on what we just did for
+[07:21] meal planning.
+[07:22] Okay.
+[07:23] So now what it's going to know to do is to take everything it did, and then we're going
+[07:28] to actually create a skill.
+[07:30] Now this is going, I'm going to tell it to be a global skill.
+[07:33] Sometimes it asks you if it wants to be a global skill or if it's just going to be a
+[07:37] project level skill.
+[07:39] Okay.
+[07:40] So what it did was it explored all of the skills that I currently have.
+[07:43] Now it knows, now it just kind of has an understanding of what the skill format is like.
+[07:48] So it's going to go ahead and do everything we just did and then put that into a skill,
+[07:53] a skill markdown file.
+[07:54] Okay.
+[07:55] So here's the plan.
+[07:56] You know, here's the context, uh, what the skill does.
+[07:58] So this is basically at the end, it's going to save, create a meal plan and shopping list.
+[08:02] It's going to put it into my global skills, right?
+[08:05] I know that's on, that will be on your machine dot Claude slash skills.
+[08:10] And then the skill flow, it can discover recipes and a markdown file.
+[08:14] And then it's telling me I need to, I'm going to run a meal plan skill to be able to do
+[08:19] that.
+[08:20] Now we have this meal plan skill that we can use for whenever I want to get something ready
+[08:26] for the week.
+[08:28] And then here's, here's basically the instructions that we need.
+[08:31] Now we don't need, uh, we don't need to have a Python file that does something for us.
+[08:36] We could tell Claude to maybe search online for specific, uh, recipes, foods, or something
+[08:43] that we want to integrate.
+[08:45] And we can just update the skill to do that.
+[08:47] And what's great is because now this is global.
+[08:49] If I type slash meal, you can see the skill is now available for me to use because it's
+[08:55] in my global Claude skills.
+[08:56] Well, now let's go ahead and just test out our new skill.
+[08:58] So I'm going to say slash meal plan, create a meal plan with four meals each day where
+[09:02] Sunday is a cheat day.
+[09:04] So this is kind of what it looks like right now.
+[09:06] I'm just going to ask, um, like ask me dietary restrictions.
+[09:09] I say no.
+[09:10] How many servings?
+[09:11] This is just for me, uh, my fourth meal slot.
+[09:14] Let's do, let's do an afternoon snack.
+[09:17] Yeah.
+[09:18] I'm gonna submit those answers.
+[09:19] Okay.
+[09:20] So it's going to ask me questions and this is great, right?
+[09:22] Because I didn't actually ask you to do that.
+[09:24] Claude decided that would probably be needed for the skill.
+[09:27] And so because I saw this, well, maybe I like, maybe I want a couple more questions now and
+[09:32] I can just simply go back and add those.
+[09:34] Okay.
+[09:36] So it's finished.
+[09:37] It got the shopping list and the meal plan.
+[09:39] So if we look here, uh, at my meal plan for Monday, I actually have four meals now, breakfast,
+[09:45] lunch, snack, and dinner.
+[09:46] And I had that in all of these and it kind of just tells me which, it would tell me which
+[09:51] markdown file for the recipe that I need.
+[09:53] Okay, great.
+[09:54] And then also my shopping list is here and then it just kind of tells me if I'm out what
+[09:59] I need to basically make all this food for the week.
+[10:03] Okay.
+[10:04] So that's skills.
+[10:05] Okay.
+[10:06] So we saw three of mine.
+[10:07] We talked about transcribing videos, how to journal every day, and then how I actually
+[10:10] do the research to create all the scripts for what I'm, for what I'm going to be making
+[10:15] so that you can watch.
+[10:16] Okay.
+[10:17] So then we also created one and saw how it works actually under the hood pattern is pretty
+[10:21] simple, right?
+[10:22] Do something, do something with Claude.
+[10:23] You'd like it, make a skill out of it, and then you can reuse it whenever you want.
+[10:27] Look, thanks for watching all to be available down in the description below for in my, in
+[10:32] my free school community.
+[10:33] So please go there.
+[10:35] I also have something where I build once a month where we have a live build.
+[10:39] I go through the whole process of what I'm doing.
+[10:41] You see me doing it live and here are some more videos for you to watch right now.

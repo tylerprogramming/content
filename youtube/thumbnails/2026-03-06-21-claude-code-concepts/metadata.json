@@ -1,0 +1,68 @@
+{
+  "generations": [
+    {
+      "prompt": "A massive glowing brain made of circuit board patterns and code snippets floating above an open laptop, dark background with electric blue and orange lighting, futuristic sci-fi atmosphere, hyper detailed, 8k render",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-06T16:15:25.837454",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1772831722579-ez399o1ihci.png"
+      ]
+    },
+    {
+      "prompt": "A person sitting at a desk with a glowing terminal screen showing code, dramatic lighting with blue and purple hues, the terminal fills the frame with bright text streaming across it, cinematic composition, wide angle shot, clean modern desk setup",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-06T16:15:34.757019",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1772831728213-e5o3cq04gxh.png"
+      ]
+    },
+    {
+      "prompt": "A dramatic split screen composition, left side shows a confused person at a blank terminal screen in dim red light, right side shows a confident person with a glowing productive terminal full of code in bright green light, before and after transformation concept, cinematic lighting",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-06T16:15:38.193977",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1772831732606-19ga9eumuo1i.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail layout: A man with short dark hair and light beard wearing a black t-shirt positioned on the left side of the frame, pointing with one hand toward the right side. He has an engaged, confident expression. Dark warm brown/copper background. Behind him on the right side are 5 rounded square icons representing coding concepts: Skills (a star or wand icon), Hooks (chain link icon), MCP Servers (connected nodes icon), Plan Mode (clipboard/checklist icon), and Sub-agents (people network icon). Each icon has a label below it. Large elegant serif text reading Claude at the top center. Very large bold white text reading 21 CONCEPTS across the bottom of the thumbnail. The Claude AI sunburst logo appears in the top left corner. Cinematic warm lighting with copper and brown tones throughout.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 3,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-06T16:27:10.936516",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1772832271920-1hxhrueypry.png",
+        "https://tempfile.aiquickdraw.com/images/1772832352491-ggwiuhjbjpl.png",
+        "https://tempfile.aiquickdraw.com/images/1772832423194-ix09075cgl.png"
+      ]
+    }
+  ]
+}

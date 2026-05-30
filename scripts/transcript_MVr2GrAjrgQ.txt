@@ -1,0 +1,542 @@
+[00:00] I was watching some Claude code tutorials on YouTube, and one thing that I didn't
+[00:03] like was when they were explaining a concept, they weren't showing you through
+[00:06] the terminal live as they were demoing it, what was actually happening.
+[00:10] And so today we're going to go through 23 Claude concepts as we're doing it live
+[00:15] so that you can see exactly how they work.
+[00:17] And let's get started with the first one.
+[00:19] And that is what is Claude code?
+[00:21] Well, at the very basic, it is an AI coding tool, right?
+[00:24] It's just one of the many tools that are out there, but in my opinion, this is the
+[00:27] best that I have been using for quite some time now.
+[00:29] Well, at the core Claude is an AI agent tool that you can download and install
+[00:34] on your computer, and it can do many things.
+[00:37] It can create files, build websites, install packages, run commands.
+[00:41] It can do a lot.
+[00:42] Now that we have skills that we're going to go over, there are so many things
+[00:45] that we can do with Claude code locally.
+[00:47] And if you're using end to end, if you're, if you've never heard of that
+[00:49] before is a no code or low code platform, it can create workflows there that can
+[00:54] then automatically be installed on your server.
+[00:57] So it can do a lot more than a chat bot.
+[01:00] Like you might think of a chat GPT, or if you're on Claude.ai's
+[01:04] website, or maybe using Gemini.
+[01:06] And this leads me to the second concept, which is the terminal.
+[01:09] So what I have open up here is the terminal on Mac is terminal on windows.
+[01:13] You might type in command prompt and they'll open up, but this is a terminal.
+[01:16] Okay.
+[01:16] And this is just another way to type commands.
+[01:19] So for instance, the very first one to even open up Claude code,
+[01:22] you would just type in Claude.
+[01:23] Okay.
+[01:23] Once it's installed, which I have another video that you can watch right up
+[01:26] here on how to do that, but now that we're in Claude code, we can
+[01:30] now have it run commands skills.
+[01:32] We can check our usage.
+[01:34] We can do a lot of things.
+[01:35] We can, we can just chat with it if you really want to, but we
+[01:38] have to create things as well.
+[01:39] But don't get too overwhelmed by this.
+[01:41] If you never really use this, this is just a way that we can
+[01:44] interact with the Claude code.
+[01:45] That's it.
+[01:46] Okay.
+[01:46] And this has come to the third concept is how we went to prompt with Claude code.
+[01:50] Okay.
+[01:50] So like I said, it can build many things.
+[01:52] You may have seen other people using it to build great things.
+[01:55] But if I were just to say something like build me a website, it would build something.
+[02:01] It would be a generic website.
+[02:02] I don't even know a hundred percent know what it would do.
+[02:04] It would be different for you and me when we do this.
+[02:07] Right.
+[02:07] Uh, but what we could do though, is we could be very specific
+[02:11] about how or what we want to create.
+[02:13] So instead I could prompt it to say, Hey, build me a one page landing
+[02:16] page for consulting business with a green color scheme, a contact
+[02:19] form and three service cards.
+[02:21] Okay.
+[02:21] So now it's going to give me a better result of what I actually wanted to build.
+[02:26] And this is just in general, when you're prompting with any model, the
+[02:29] more specific you are about what you actually want, the better results
+[02:32] you're going to get, and this is great because this actually leads me into
+[02:34] the fourth concept, which is permissions.
+[02:36] Okay.
+[02:36] So in this same prompt, we want to build a one page landing page.
+[02:40] It, it decided the easiest way would be just to build a single HTML file.
+[02:43] So here is the code to build that.
+[02:46] And so then what's asking me though, do I want you to create the index dot HTML?
+[02:51] So I can either say yes, or I can say yes and allow all edits during the session
+[02:56] while I have this Claude code session open.
+[02:58] So I'm just going to say yes.
+[02:59] Okay.
+[02:59] And once it created it, here is a very basic, I mean, here's a basic
+[03:03] HTML page with the contact form.
+[03:05] There were three service cards here.
+[03:07] Uh, here's just some generic information and here, how here's
+[03:11] how to get a free consultation.
+[03:12] You know, but that was, that took like, I think less than
+[03:14] two minutes to actually make him.
+[03:15] And so this is the fifth concept and this is tool use.
+[03:18] Okay.
+[03:19] So Claude has built in tools that it can use.
+[03:21] For instance, I said, I actually want you to move the CSS into another file.
+[03:25] So what it did is it's using a read tool so they can see, uh, what the
+[03:30] contents of that indexed HTML that we had just created.
+[03:33] So then again, this is the permissions we had just talked about.
+[03:36] So I'm going to allow it to proceed.
+[03:37] And the reading tool is, is, is it will read is a tool.
+[03:41] It also will have one for right there's bash, you know, searching the web.
+[03:45] There are, there are a lot that can be used here and those are
+[03:48] built in tools within Claude code.
+[03:50] And so again, here's the permission is I asked me if it
+[03:53] can create the styles dot CSS.
+[03:55] Yes.
+[03:55] And then they, everything will be the same.
+[03:57] I just had it move code over to another file.
+[03:59] Now for concept six, this is the context window.
+[04:02] Now about two years ago, maybe a little bit less, there was, we had a
+[04:06] con a context window of 4,000 tokens, meaning that the memory of what you
+[04:11] were doing, it could only remember up to 4,000 tokens, which isn't a lot,
+[04:15] especially now in hindsight, when we have like 200,000, 1 million context,
+[04:21] it all depends on the AI model, what it can do, right.
+[04:24] But as far as Claude code goes, you know, it's the, it is an important concept
+[04:28] because this is basically like it's short-term memory.
+[04:30] So every message you send, every file that reads all the responses, these
+[04:34] accumulate into a context window.
+[04:36] And if you type slash context inside of Claude code, you can kind of see this.
+[04:41] You can get a little more information about it.
+[04:43] So right now my context usage, so this is, you know, this is kind of telling
+[04:48] me about how much I have left here.
+[04:50] So I have free space, 135,000 tokens, which is about 67%, right?
+[04:55] So, and then it kind of estimate based on certain aspects of Claude code, how
+[04:59] much of that I've used per each of those like memory files, skills, system tools.
+[05:06] Here's the AI model, Cloud Opus four, six, et cetera, right?
+[05:09] So here we can see within the session, how much our context window
+[05:13] or how much of it we've used so far.
+[05:15] And in a few concepts, I'll explain how to kind of manage this a little bit better.
+[05:18] And so now for concept number seven, this is the Claude Markdown file.
+[05:21] And this is one of the more important ones that you really need to understand
+[05:24] when you're dealing with the Claude code ecosystem, right?
+[05:27] So this is basically a Markdown file that you give a bunch of rules, what
+[05:31] you want for the project, et cetera.
+[05:33] And you're going to just put this in the file.
+[05:35] And whenever you go to create something within that project folder, Claude code
+[05:38] is going to know to read that first, to understand what you really want.
+[05:42] So here have an example.
+[05:43] This is a Claude Markdown file that I want it, how I want to create the
+[05:47] front end for whatever I'm going to do.
+[05:49] So when it creates this front end, it's going to use react invite with
+[05:52] shad C and slash UI and use tailwind CSS.
+[05:54] But I do have specific like dependencies, specific versions that I like, or what
+[06:00] that I want to use, how I want the structure, everything, et cetera.
+[06:04] Here are a bunch of things that I did have AI helped me create on how I wanted
+[06:08] to run and install whenever it creates something for this project, it'll
+[06:13] reference this and know what to do.
+[06:15] So if you don't have a Claude Markdown file, we'll just kind of be guessing
+[06:18] its own thing solely based on your prompt.
+[06:21] But if you have a Claude Markdown file in the project folder, you're
+[06:23] asking it to do something in, they know we'll reference this
+[06:26] and you can use that forever.
+[06:27] Now for concept number eight, Claude has this concept of automatic memory.
+[06:31] So as you are dealing with Claude, you can ask it to remember certain
+[06:35] things so that the next time you do something, it will do that.
+[06:38] So let's say you always code and JavaScript, and then you want to
+[06:41] use a testing framework like just, well, you can have it remember that
+[06:44] so that the next time you need to write test cases, it'll know that
+[06:48] you use JavaScript and we'll use that framework for that.
+[06:50] Okay.
+[06:50] So here's an example.
+[06:52] What I'm going to do is I want to say, remember that.
+[06:54] Remember that I prefer to use bun instead of NPM.
+[06:57] So I'm going to just have to remember this it's caramelizing now.
+[07:02] Okay.
+[07:02] So it said, got it.
+[07:03] I'll use bun instead of NPM going forward.
+[07:05] Now what I'm going to do is I want to exit this section, exit that session,
+[07:10] and then I want to open a new one and now I'm asking it to install
+[07:13] a linter package for me.
+[07:15] Now it's topsy-turvying and what it should do is hopefully installs it with bun.
+[07:20] And there we go.
+[07:20] It says bun add globe globally, add ESLint using bun, not NPM,
+[07:26] which would be the default.
+[07:27] Okay.
+[07:27] And this is how that memory kind of works.
+[07:29] You can ask it to remember things about yourself and it'll
+[07:32] know that for the future.
+[07:33] Okay.
+[07:33] So now moving on to the next concept, which are Claude code family of models.
+[07:37] Now when we say Claude code, that is a tool.
+[07:39] Claude has the family of AI models, AI models underneath Anthropic, right?
+[07:45] So within Claude code, if I can speak, you type in slash model.
+[07:50] And then what you can do is you can kind of just see a couple of models here.
+[07:53] So Haiku is the fastest for quick answers.
+[07:56] Sonnet is what you can generally use every day.
+[08:00] But Opus 4.6 is the most capable.
+[08:03] It does use up more tokens because it's considered to be more for more complex
+[08:08] work, but I could just switch to Sonnet or, you know, if I want to come back
+[08:12] here, I could switch to, and then I can actually give it a specific model name.
+[08:17] If I want to, so I can go to their Anthropics website or somewhere, look
+[08:20] at all the models that they have and just put one in here specifically.
+[08:23] All right.
+[08:23] So for concept number 10, this is the init command.
+[08:27] So if I type slash init, right, I am in my skills, my actual global skills folder.
+[08:32] I don't have a Claude Markdown file, but if you see here, slash init will
+[08:35] initialize a new Claude Markdown file with code-based documentation.
+[08:39] So it's going to scan everything.
+[08:40] I don't have some code in there.
+[08:42] What this will do, this Claude Markdown file will understand everything I'm
+[08:45] doing within this project folder, read it, and then create a Markdown file.
+[08:49] For future use, basically, so that it can reference and know when I
+[08:53] want to do more with this project, it can reference that to see what I've
+[08:56] already done and then add more based on what I've already done as well.
+[08:59] Here is basically, it scanned everything like in my skills folder.
+[09:04] And then now it's going to, it's asking me to create the Claude Markdown file.
+[09:08] And so it has, and so now here it is.
+[09:11] This is what the repo is.
+[09:12] This is basically all my global skills that I currently have and just
+[09:16] describing all of them as a general, not all of them, I guess, but a general
+[09:19] thing about them or how they're set up.
+[09:22] Okay.
+[09:22] And this is, this is great.
+[09:24] And you should do this at the beginning of every project.
+[09:26] If you already have something there, of course, if you have an empty
+[09:28] project, the Claude Markdown file isn't going to do much if you type slash init.
+[09:32] Okay.
+[09:32] So for the next concept, and this is also an important one, this is plan mode.
+[09:36] Okay.
+[09:36] So if I type shift tab, you can see it says accept edits on right here.
+[09:42] It says shift tab to cycle, maybe different on windows, but if I type
+[09:45] shift tab again, it says plan mode on.
+[09:48] Now, what this means is if I ask you to create something, it won't actually
+[09:53] create it to actually plan it out, come up with some documentation on telling
+[09:57] you what it's going to do, and then you can tell it to execute that.
+[10:00] And so instead of creating the code, here's the plan.
+[10:03] So the plan is the consulting business landing page.
+[10:05] Here's the context.
+[10:06] Here's the approach that just wants to create a single HTML file.
+[10:10] Here's where it'll create it.
+[10:12] Here are the page structure, the design, and then verification.
+[10:14] So what I can do now that I can say, yes, clear all the contexts that I currently
+[10:18] have in this session and just accept all edits, or I can just not do that and just
+[10:23] accept all the edits or still manually approve all the edits or tell it to do
+[10:27] something different once I've seen the design or the plan that it has, maybe
+[10:31] a one thing split out more, right?
+[10:32] But this is planning something before you doing is very crucial.
+[10:36] Okay.
+[10:36] I really can't understate that enough.
+[10:38] It is, or overstate that enough.
+[10:40] It is very crucial that a lot of times that you plan, of course, you're
+[10:43] just asking questions, you know, just chatting, don't, don't worry about it.
+[10:46] But if you're really creating a project plan mode, we'll help you see what it
+[10:49] wants to do, then that can, like, you can give you some sort of back and forth.
+[10:52] Okay.
+[10:53] So we're about the halfway point.
+[10:54] So this is concept number 12 and this is, these are two
+[10:56] commands, compact and clear.
+[10:58] Okay.
+[10:58] So if I had a big, you know, if I had a lot going on with my context and I'm
+[11:04] almost out of the context window usage, well, I can type slash clear, which just
+[11:10] the whole conversation history and freeze up contact context, or I can type slash
+[11:15] compact, as you can see here, it says clear conversation history, but keep a
+[11:19] summary of our conversation history in a context.
+[11:23] So if I type slash compact, it's not going to remove everything, but it's just
+[11:27] going to make a, give me a summary of everything.
+[11:29] So like say you use 90% of your context window, this will compact it to be very
+[11:34] small, still reference a summary of what you were doing, and then you can have a
+[11:37] lot more, you know, a lot more space to use up for memory for your context or
+[11:41] whatever project you're doing.
+[11:42] And it gives you a reference of where that summary is.
+[11:45] Of course, if I just said slash, well, if I go to slash context now that we saw
+[11:50] earlier, you know, I'm only using 9%.
+[11:54] Now, if I do slash clear, just clears everything.
+[11:57] If I go back to slash context, now it cleared up a little bit more.
+[12:00] Like some of the percentage is just stuff that it has to read, right?
+[12:04] Like system tools here is 4.4%, but it was nine.
+[12:07] So it just cleared up that little bit that we were just talking about here.
+[12:10] Okay.
+[12:10] So concept number 13, we have session history.
+[12:12] So let's say I go out of all this, right?
+[12:15] And you see right here, it says Claude resume and then gives a unique ID.
+[12:19] Okay.
+[12:19] So I could just do this, copy this and say, Claude resume this session.
+[12:25] Now this is the session that we just had, right?
+[12:28] So my last command was slash clear, or if I go out of this, if I go out of this
+[12:32] again, press control C twice, I can say slash, or I can type Claude dash, dash
+[12:37] resume, and then what this will do is this is going to give me, you know, from
+[12:43] like, here we had the bun test, a member.
+[12:45] This is where we told it to remember that I prefer using bun.
+[12:48] There's some things I did earlier, but these are like, uh, uh, these
+[12:51] sessions that I had today.
+[12:54] Uh, then also actually from two weeks ago, and even save some of those, right?
+[12:57] These are sessions that I've had that I can resume.
+[12:59] So it saves your session.
+[13:00] Doesn't just remove it completely.
+[13:02] So you can go back to each one of these.
+[13:04] I can just kind of scroll down and we could continue one of these where we left off.
+[13:08] This next concept is the rewind concept.
+[13:10] So let me explain, let's say you're coding a lot.
+[13:13] Your project is getting big and you're in this session, but all of a sudden
+[13:16] somewhere along the line, it crashes and you just started hitting enter.
+[13:20] Cause you're tired and accepted everything.
+[13:21] And it just destroyed everything.
+[13:24] What Claude code does, it'll save checkpoints or basically snapshots of
+[13:27] certain points of whenever you're working with Claude code.
+[13:30] So what you can do is you can type slash rewind another command slash rewind.
+[13:34] So we type slash rewind.
+[13:36] We can go back to where, for instance, uh, I had two file changes here.
+[13:41] The initial prompt that I gave was to build me a one page landing page for
+[13:44] consulting business, the green color scheme, contact form, and three service cards.
+[13:47] Okay.
+[13:47] That's when it created just the index HTML.
+[13:49] And then I had to move everything over to, or move the design over to a CSS file.
+[13:54] So I could go back here to this one and I could say restore code and
+[13:59] conversation, or just restore the code from here or do other things.
+[14:02] So if I say restore code in conversation, then what it'll do is I'll have the
+[14:07] code that it created for this ready.
+[14:11] And so then I won't have the CSS so that I could go back to a certain
+[14:15] point and then, you know, continue from here.
+[14:17] Okay.
+[14:17] So for the next concept, sometimes you might have trouble or you give it like,
+[14:21] Hey, I want you to find this file.
+[14:22] I don't know exactly where it is on my computer system, but I just want you to
+[14:25] find it, or you have part of the name of it.
+[14:27] Well, instead, what you can do is you can type at, and then you can start,
+[14:31] uh, start going through your file path like this, right?
+[14:33] So I'm going to say users slot users slash, and then it'll kind
+[14:37] of like, give me some help here.
+[14:40] So I can say skills, you know, go there.
+[14:43] And then I can say, Oh, what's in here.
+[14:45] What's in this skills for it.
+[14:46] And that can kind of traverse through this way to find whatever
+[14:49] it is I'm looking for.
+[14:50] Right.
+[14:50] So this is just another way to kind of search for your files inside
+[14:54] of your computer with cloud code.
+[14:55] Okay.
+[14:55] So the next one, you may already be using a lot, but just, if you haven't,
+[14:59] this is very powerful and I actually do use this quite a bit, and this
+[15:01] is with screenshots and images.
+[15:03] So for instance, here, I had a skill that uses kind of AI to generate
+[15:07] this image for actually this video.
+[15:10] So you will see something similar to this, but the problem is this is 21
+[15:14] concepts and I actually created 23.
+[15:16] So I need to create, I needed to edit this 21 to be a 23.
+[15:22] And so what I could do is I can, you know, screenshot this, paste it in there
+[15:26] and say, Hey, use my thumbnail skill like this.
+[15:28] So let me just take a screenshot of this instead of actually giving it the file.
+[15:31] So I can take the screenshot right here.
+[15:33] I want to open up my cloud code.
+[15:35] I have this right here.
+[15:37] And so, okay.
+[15:39] So now you see what it did was it has the image one right here.
+[15:44] I took the screenshot, I just moved it over here and now it
+[15:46] has that image right here.
+[15:48] Right.
+[15:49] So what I want to do now is say, use my thumbnail, thumbnail skill to
+[15:55] replace the 21 in the image to be 23.
+[16:02] Now, I don't know if this is going to work exactly per se, right.
+[16:04] I'm just doing something very simple, but this is just the concept where you
+[16:06] can, you can have a screenshot or image of something and then just say, you
+[16:11] know, just do, just do this or read this image, tell me what it is.
+[16:14] So like, if you are tracking things like maybe tracking nutrition, you see, or
+[16:18] you see a recipe online, give the screenshot of the recipe, paste it in
+[16:21] here, or just drag it in here.
+[16:23] And then, uh, and then it can describe it for you, all of these awesome things.
+[16:28] Right.
+[16:28] But this is very simple and this is a great thing you should
+[16:31] start doing if you're not already.
+[16:32] Now, throughout this video, we've been using commands or what
+[16:36] you may see online slash commands.
+[16:38] That just means that type slash and then a bunch of these commands come up.
+[16:42] Right.
+[16:42] So if I type slash help, um, this will just give me like all the commands.
+[16:45] So here, right up here, right.
+[16:47] Kind of a separate, like a, another like part of the UI of the terminal.
+[16:51] So if I go over to commands, you can just start putting the arrow down or arrow up
+[16:56] and you can see all of the commands that you have, there are a lot here, right?
+[17:00] So just, you know, you don't have to use all of these.
+[17:02] I don't use all of them.
+[17:03] Right.
+[17:03] But you can start playing around with them to get familiar with cloud code.
+[17:07] And there are a lot of these are wonderful commands that you can, and
+[17:11] I would recommend start to use, but this is what we've been using
+[17:14] all throughout this video.
+[17:15] Okay.
+[17:16] So the next concept, which is a little bit more advanced, I'm not
+[17:18] getting too much, I'm not going to get too much into this, but I do have
+[17:21] other videos about it are the MCP servers.
+[17:23] So you can install MCP servers within cloud code and then use them.
+[17:27] And the one that I use, and I think is one of the better MCP servers,
+[17:31] especially if you're a content creator.
+[17:33] So what you can first do is type slash MCP.
+[17:35] This is going to show you all the servers that you currently have.
+[17:38] So you can, you can use an 810 here.
+[17:41] I have one for Google calendar, I have one for Gmail, but I also have one
+[17:45] for blow data, which is going to help me, which is gonna help me like, you
+[17:49] know, figure out how I want to upload a certain, you know, certain content to
+[17:53] all these different platforms that I have.
+[17:54] Right.
+[17:55] So if I want to do YouTube, Tik TOK, Instagram, LinkedIn, I can post it here.
+[17:59] I can have MCP server connect to all those.
+[18:01] And once I have like the texts that I like, then it'll just send it out for me.
+[18:04] Right.
+[18:04] That's what an MCP server here can do.
+[18:07] Right.
+[18:07] So once you have installed, for instance, here, I can see all
+[18:10] the tools that I have available.
+[18:11] So here I can get my get post status.
+[18:14] I can create something, right.
+[18:16] I can get a user, I can list my accounts.
+[18:18] Right.
+[18:19] So this supports Twitter, Facebook and everything.
+[18:21] Right.
+[18:21] So if you want to get more into MCP servers, you know, then I will
+[18:25] have some videos for you to watch, but you're already with cloud code, right?
+[18:29] And you can use MCP servers to connect to the outside APIs that
+[18:33] you need to do something with.
+[18:34] Okay.
+[18:34] So the next concept is called sub agents.
+[18:37] So as your tasks get more and more complex, you know, uh, cloud code
+[18:40] will end up spinning up instances of sub agents to handle those tasks in parallel.
+[18:45] So for instance, I wanted three variants of that thumbnail that we just talked
+[18:49] about, so it had three different sub agents were launched one to
+[18:52] generate each of those thumbnails.
+[18:54] Okay.
+[18:54] What it's saying here is that it wants to give me a bash
+[18:56] command for each of those.
+[18:58] So basically it's going to run all three.
+[19:01] So here agent variant three completed, and then, uh, the
+[19:05] other ones are still failing.
+[19:06] So, you know, that's fine.
+[19:08] We'll, we'll figure this out.
+[19:09] But just to show you that you can have, or cloud code will have multiple
+[19:12] sub agents, depending on, you know, if something is very complex or needs
+[19:17] might take a long time, then it will take care of that for you.
+[19:20] Okay.
+[19:20] So for one of the last concept that we're going to learn is hooks.
+[19:23] And this is, I say this for last, because this is a little bit more
+[19:25] advanced and I'm not going to get super into this, but if you type
+[19:27] slash hooks into the command line, you know, this is the configuration
+[19:31] for handling all the tool events.
+[19:33] Okay.
+[19:33] So what's the tool event?
+[19:34] Well, a tool event is say you, you, uh, have a prompt here.
+[19:38] Well, there's one for when a user submits a prompt.
+[19:40] Well, when you need to execute a tool, such as reading a file, well, we can
+[19:45] have a hook before and after that to do something, right?
+[19:48] So for instance, if we want to use your submits a prompt, right.
+[19:51] I can add a new hook here in this command.
+[19:54] I can have it do something, right?
+[19:55] So I can have it run a Python script.
+[19:58] I can have it run a shell script, do lots of different things.
+[20:02] And what the difference is, these are just scripts, right?
+[20:05] So there's no AI involved in here involved with this, right?
+[20:08] This is just scripts that you have locally in your computer that
+[20:10] can run during these events.
+[20:12] And they're very powerful, but like I said, this is more advanced.
+[20:15] And so this is really requires a separate video by itself to explain,
+[20:18] but just so you know, and can reference this if you ever see
+[20:21] this come up in the future.
+[20:22] Okay.
+[20:22] Now we are in the second to last one.
+[20:24] And this is where this concept is.
+[20:26] You create your own custom agents.
+[20:28] Okay.
+[20:29] So we can have these, we have agents that we've seen sub-agents
+[20:32] that spawn and do things for us, but they're not very specific,
+[20:35] but we can create our own agent.
+[20:37] So how we do this is you can type slash agents.
+[20:41] Okay.
+[20:41] This is going to manage all of our agents, right?
+[20:43] So here are two like agents that I had just for example, right?
+[20:47] So there's built in ones, right?
+[20:49] There's a plan agent, a cloud code guide, agent, explore, et cetera.
+[20:53] Right.
+[20:53] But I have a code quality reviewer and a code reviewer, right?
+[20:57] These are very similar.
+[20:59] But you can create your own agent.
+[21:01] So this is for the project.
+[21:03] This is a personal, et cetera, right?
+[21:05] We can choose a location and then we can have it generate with Claude.
+[21:09] And then basically we can just tell it whatever we want to do it.
+[21:12] So help me write unit tests for JavaScript code.
+[21:19] Okay.
+[21:20] So now it's going to generate an agent from that very simple descriptions.
+[21:22] This won't be the best agent, right?
+[21:24] But this is just an idea that we could use this agent now for whenever
+[21:29] we are building our project.
+[21:31] And so I can give it tools that I want to use.
+[21:33] Here is the model that we use.
+[21:34] So yeah, actually I can just do this one, have haiku a color.
+[21:38] Let's just, I don't know.
+[21:39] Let's give it green.
+[21:40] Um, and just yet in memory, right?
+[21:42] Okay.
+[21:43] So here's the description.
+[21:44] So the name JS JavaScript unit test writer, here's the description of it.
+[21:48] Here's basically the system prompt and I'm just going to press enter to save and great.
+[21:52] So now I have a project agent here.
+[21:55] So what I can do is say, use JavaScript test.
+[22:00] Uh, I already forgot.
+[22:01] Oh, it's right here.
+[22:02] Thank goodness.
+[22:03] Unit test writer.
+[22:05] Okay.
+[22:05] So now in this project, I don't actually think, I don't think, I don't think I
+[22:08] have any, um, but it's saying now I can help with that.
+[22:12] What JavaScript type script code would you like me to write unit test for it?
+[22:15] Please share the code or file path.
+[22:16] Now I don't have any off right here to use, but I just created, created my own
+[22:21] specifically for JavaScript writing JavaScript unit test.
+[22:23] And you can be very specific with your prompts to have it, make sure that
+[22:26] they are going to be generated much better, have better quality.
+[22:30] Okay.
+[22:30] For the last concept, and this is something that was similar, and I'm
+[22:32] going to actually have a video just a little bit, that's a little bit longer,
+[22:35] but this is going to be about remote control, which just recently came out.
+[22:38] With cloud code.
+[22:39] I think this is really awesome.
+[22:40] So basically what's going to happen is if I type slash RC, right.
+[22:43] So it's the connect this terminal to remote console session, remote control sessions.
+[22:48] Okay.
+[22:49] This means that I can now go to Claude code on the web.
+[22:52] So Claude that AI.
+[22:53] So if I were to copy this, I now have not only my terminal,
+[22:57] but also on my Claude web.
+[22:59] And so I can say, hello there.
+[23:02] Okay.
+[23:02] So what you'll see here on the right-hand side, I said, hello there,
+[23:05] but also in the terminal, it will update.
+[23:06] It just takes a few seconds.
+[23:07] Okay.
+[23:07] So we can have this conversation, but that's not the best thing.
+[23:10] I said, you know, this is remote control.
+[23:12] So if I type slash Q R or I'm sorry, slash RC again, but I can go here
+[23:18] to show QR code, what you can do is you'll scan this with your phone.
+[23:24] And then inside of the actual mobile app, if you have it, of course,
+[23:27] then you'll go to the same place.
+[23:29] You'll go to slash you go to code on the, on the mobile app.
+[23:33] You'll see the same thing.
+[23:34] Use JS unit test writer, and you can also chat there.
+[23:38] And it's the same exact thing.
+[23:40] Okay.
+[23:40] And now I'm going to say hi from my phone.
+[23:44] And as you can see, I'm not typing it on the terminal.
+[23:47] Whoops.
+[23:47] I'm not typing it on the terminal or over here, but I said hi from my phone.
+[23:52] And then you also notice that populated here over here.
+[23:54] Hi from my phone.
+[23:55] Okay.
+[23:56] So that was 23 concepts within cloud code explained.
+[23:59] I hope you really enjoyed this.
+[24:01] I hope you learned something.
+[24:02] And of course you have any questions, please, in the comments section below,
+[24:04] I also have a free school community where I have a lot more about AI, no
+[24:08] code, low code, how to code using coding frameworks, you know, all that there for
+[24:14] So please join and be with a growing community so we can all learn how to do
+[24:18] this and how to make money from it.
+[24:20] Okay.
+[24:20] So thank you again for watching here.
+[24:22] Some more videos and everything in the description below.
+[24:25] Thank you.
+[24:25] I'll see you next time.

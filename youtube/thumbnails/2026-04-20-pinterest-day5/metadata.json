@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio, keep the exact same design system as the reference image: light lavender periwinkle background with subtle circuit pattern texture, bold dark navy blue all-caps headline at top split across two lines, 5 horizontal cards stacked vertically each with a square purple-gradient icon on the left then bold uppercase skill name, one-line descriptor, and 3 checkmark bullet points, and '@tylerreedai' small handle at bottom center. Change ONLY the content to this new pin about the yt-search skill: Headline 'HOW TO RESEARCH YOUTUBE TOPICS WITH CLAUDE CODE'. Card 1 magnifying-glass icon 'KEYWORD SEARCH - Find any topic fast / any search query / runs in 30 seconds / uses yt-dlp under the hood'. Card 2 bar-chart icon 'VIEW SORTING - Top videos ranked / sorted by view count / latest videos first / surfaces winners'. Card 3 magnifier-chart icon 'COMPETITOR ANALYSIS - Full channel data / hooks and titles / retention patterns / what is working now'. Card 4 lightbulb icon 'CONTENT GAPS - Missing angles / underserved topics / opportunities only you spot / fresh video ideas'. Card 5 dollar-sign icon 'ZERO COST - No API required / free forever / no subscription / no credits burned'. Handle '@tylerreedai' at bottom.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/pin.png"
+      ],
+      "generated_at": "2026-04-20T15:03:56.652058",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776711829585-4kt05r9x346.png"
+      ]
+    }
+  ]
+}

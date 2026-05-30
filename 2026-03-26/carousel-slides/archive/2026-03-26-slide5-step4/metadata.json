@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "LinkedIn carousel slide design with dark navy blue background (#1a1f36). Top left corner has a small rounded badge that says STEP 4 with an orange (#fb923c) background and dark text. Below the badge is a large bold white uppercase heading CREATE YOUR CLAUDE.MD where CLAUDE.MD is in orange accent (#fb923c). Below the heading are numbered steps in white text: 1. Create a file called CLAUDE.md in your home directory, 2. Add rules, workflow context, and preferences, 3. Claude reads this automatically every session. In the bottom half of the slide, place the reference screenshot image exactly as provided inside a macOS style window frame with the red yellow green traffic light dots. The screenshot shows VS Code with a CLAUDE.md file open showing Global Instructions and a Custom Skills table with 20 skills listed. Page counter 5 / 7 in small text in the top right corner. Clean minimal professional tech design.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claudemd-vscode.png"
+      ],
+      "generated_at": "2026-03-26T12:44:48.112318",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774543483514_g3rhxo.png"
+      ]
+    }
+  ]
+}

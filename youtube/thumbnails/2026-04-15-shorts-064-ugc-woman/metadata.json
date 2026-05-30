@@ -1,0 +1,20 @@
+{
+  "generations": [
+    {
+      "prompt": "Professional woman in her late 20s, natural lighting, holding a white coffee mug, soft smile, clean background, UGC style iPhone selfie angle",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "9:16",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-15T07:32:56.395545",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/a89fa60b86e7335b8c9511b945d76bbf_1776252656_11ik2c1m.png",
+        "https://tempfile.aiquickdraw.com/h/36803594921ae40f6898ace9a7d49c47_1776252771.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "LinkedIn carousel slide design. Dark navy blue background (#1a1f36). At the top left, a small rounded blue badge. Below that, large bold white uppercase heading: 1. PLAN MODE. Below the heading, white body text on the dark background: Hit Shift+Tab before building anything. Claude shows you the full plan first - what it will create, where files go, the structure. Review it, adjust it, then execute. Stop letting it build blind.. Page counter 2/7 in small text top right. Clean minimal professional tech design.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-28T06:22:54.651042",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774693370574_1e947t.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "generations": [
+    {
+      "prompt": "Professional man in his late 30s, medium crop right-aligned in frame, confident friendly expression looking at camera with slight smile, warm terracotta and burnt orange studio background with subtle grainy texture, soft studio lighting from the left, clean minimal composition with two-thirds negative space on the left side of the frame for text overlay, photorealistic YouTube thumbnail style, high contrast, sharp focus on face",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-04-19T09:57:51.725757",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776607067724-l5bj1w9j5h8.png"
+      ]
+    },
+    {
+      "prompt": "Professional man in his late 30s positioned in the bottom-right third of the frame looking up with a focused impressed expression, behind him a glowing golden energy bridge connecting two floating dark UI cards suspended in space, left card shows a clean design interface with a palette icon, right card shows a dark code terminal with glowing text, dramatic cinematic lighting, deep dark blue-black background, warm gold and orange accent lighting along the energy bridge, sparks and light particles flowing between the cards, photorealistic YouTube thumbnail style, high contrast, movie-poster feel",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-04-19T09:57:55.108837",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776607070055-jpxfw9wn2bp.png"
+      ]
+    },
+    {
+      "prompt": "Professional man in his late 30s centered in frame medium crop facing camera, slight smile with raised eyebrows in an impressed expression, behind him a clean vertical split of the frame, left half shows a design prompt interface on a warm cream background, right half shows a finished polished landing page rendered in a browser window on a dark background, subtle glow on the seam between the two halves, soft studio lighting on the subject, photorealistic YouTube thumbnail style, warm color grading, high contrast, sharp focus on face",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-04-19T09:58:08.273958",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776607084600-5grnbg1n29a.png"
+      ]
+    },
+    {
+      "prompt": "Keep everything exactly the same as the reference image including the man, his expression and pose, the glowing golden energy bridge, the sparks and particles, the dark space background, the design palette window on the left, and the composition. ONLY fix the code shown inside the dark terminal window on the right so it looks like real readable code rather than nonsense characters. The terminal should show clean syntax-highlighted JavaScript or React code with proper indentation, function names, and brackets that looks legitimate. Do not change anything else about the image.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_095705588.png"
+      ],
+      "generated_at": "2026-04-19T10:22:18.898056",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776608534553-rs54nbdunx.png"
+      ]
+    },
+    {
+      "prompt": "Professional man in his late 30s positioned in the right third of the frame, medium crop from chest up, confident friendly expression with a slight smile looking directly at camera, warm terracotta and rust-orange studio background with subtle grainy texture, soft studio lighting from the left, on the left two-thirds of the frame there is a clean cream-colored rectangular card floating in the center-left showing the text 'Claude Design' in elegant serif font with 'by Anthropic Labs' smaller below it and a small 'Research Preview' pill badge to the right, a small orange color palette icon sits to the left of the Claude Design text inside the card, a small hand-drawn yellow crown doodle sits on the top-left corner of the card, clean minimal composition with lots of breathing room above the card for a text headline overlay, photorealistic YouTube thumbnail style, high contrast, sharp focus on face",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/chase-ai-claude-design.webp"
+      ],
+      "generated_at": "2026-04-19T10:22:22.022283",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776608536308-8baqobmb9zm.png"
+      ]
+    },
+    {
+      "prompt": "Keep everything in this image exactly the same including the man's face expression and pose, the glowing golden energy bridge with sparks and particles, the dark space background with blue nebula, the dark terminal window on the right with its React code, and the overall composition. ONLY change the design application window on the left side: replace the gibberish browser tab text and any scrambled labels inside the window with clean readable polished English words. The browser tab should say 'Claude Design'. Inside the window keep the dark card showing 'Palette' with the orange color palette icon but make any other labels or text clear readable words like 'Typography', 'Colors', or 'Components'. Do not change anything else.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_102119334.png"
+      ],
+      "generated_at": "2026-04-19T14:32:21.278558",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776623538028-j3pjxjd2mzi.png"
+      ]
+    },
+    {
+      "prompt": "Keep everything in this image exactly the same including the warm terracotta textured background, the cream-colored Claude Design card showing 'Claude Design by Anthropic Labs' with the orange palette icon and the 'Research Preview' pill badge, the small yellow hand-drawn crown doodle on the top-left corner of the card, the overall composition, and the man's face expression with his confident slight smile. ONLY change the size and position of the man so he is slightly larger and shifted a bit further right and up, so his full shoulders and chest are clearly visible in the frame without any vertical cut-off line intersecting his shoulder. His face should remain clearly the focal point on the right side but his body should not be awkwardly cropped by the card edge. Do not change anything else about the background, the card, the crown, the lighting, or his appearance.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_102122791.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-04-19T14:32:33.330087",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776623548862-4pvibiio6g5.png"
+      ]
+    }
+  ]
+}

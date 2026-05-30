@@ -1,0 +1,1906 @@
+[00:00] This video will teach you
+[00:01] cloud code. I'll go over
+[00:02] everything and assume no
+[00:04] prior knowledge. I'll
+[00:05] walk you through the
+[00:05] setup and installation
+[00:07] step-by-step. I'll show
+[00:08] you how to utilize the
+[00:09] tool, the best
+[00:10] practices, multiple
+[00:12] features. And by the end
+[00:13] of the video, you'll be
+[00:14] comfortable using this
+[00:15] tool to generate some
+[00:16] pretty insane outputs and
+[00:18] awesome coding projects.
+[00:19] So with that said, let's
+[00:20] get into it. So without
+[00:22] getting into too many
+[00:22] details, cloud code is
+[00:24] effectively a command
+[00:25] line or terminal
+[00:27] application that allows
+[00:28] you to generate code,
+[00:30] debug projects, make
+[00:31] websites, create
+[00:32] applications, whatever it
+[00:34] is that you want. It is
+[00:35] effectively anthropics
+[00:36] version of, you know,
+[00:37] cursor or something,
+[00:38] right? Where you can
+[00:39] generate a bunch of code
+[00:41] using the terminal. Now
+[00:42] this is prompt based
+[00:43] coding, which means you
+[00:44] don't need to actually
+[00:45] write any of the code
+[00:46] yourself. You simply type
+[00:48] to an AI agent, you tell
+[00:49] it what your desired
+[00:50] output is, and then it
+[00:51] goes ahead and starts
+[00:52] coding. Now, oftentimes
+[00:54] cloud code will be used
+[00:55] in combination with
+[00:56] other developer tools.
+[00:57] And I'll show you a few
+[00:58] of them in this video,
+[00:59] but generally speaking,
+[01:00] you do not need to be an
+[01:01] expert to use this. And
+[01:03] even as a complete
+[01:03] beginner, you can create
+[01:04] some really cool
+[01:05] projects. So with that
+[01:06] said, let's look at how
+[01:07] we set it up. Now, in
+[01:09] order to get cloud code
+[01:10] working, you are going
+[01:11] to need a cloud
+[01:12] subscription, which is
+[01:13] paid. So you're going
+[01:14] to need a pro max teams
+[01:15] or enterprise
+[01:16] subscription, or an API
+[01:18] key with some tokens or
+[01:19] credits from the cloud
+[01:20] console. Now, I would
+[01:22] suggest that if you're
+[01:22] just looking to mess
+[01:23] around with this, get
+[01:24] the cheapest plan from
+[01:25] cloud, you will run out
+[01:26] of credits pretty
+[01:27] quickly. If you are
+[01:28] using this for very
+[01:29] heavy work, but of
+[01:30] course, test it first
+[01:31] before you start going
+[01:31] and buying a bunch of
+[01:32] different credits, it
+[01:33] also matters what model
+[01:34] you're using, which
+[01:35] we'll talk about later,
+[01:36] which will determine
+[01:37] what the overall price
+[01:38] for all of the prompts
+[01:39] that you send is going
+[01:40] to be. Now, generally
+[01:41] you're not going to be
+[01:42] overbilled. You'll just
+[01:42] run out of credits. Then
+[01:43] you would have to buy
+[01:44] more. So don't worry
+[01:45] about that. Okay. Now
+[01:46] to install, this is
+[01:47] going to require that we
+[01:48] work directly inside of
+[01:49] the terminal. So what
+[01:50] we're going to do is
+[01:51] we're going to open up a
+[01:52] terminal or a command
+[01:53] prompt or a PowerShell
+[01:54] instance, depending on
+[01:56] the operating system
+[01:57] that you're working on.
+[01:58] Now, if you are on
+[01:59] windows, then I'm going
+[02:00] to suggest that you open
+[02:01] up PowerShell. So you
+[02:02] can go to the windows
+[02:03] search bar, search for
+[02:04] PowerShell, and then
+[02:05] open up a terminal like
+[02:06] this, and I'll just put
+[02:07] it on the right hand
+[02:08] side of my screen. Now,
+[02:10] if you're on Mac or
+[02:10] Linux, then open up a
+[02:12] normal terminal. So just
+[02:13] type terminal in the
+[02:14] spotlight search, and
+[02:15] then you'll be in an
+[02:15] environment where you
+[02:16] can start using cloud
+[02:17] code. Now, in order to
+[02:19] install this, I'm going
+[02:20] to leave this
+[02:20] documentation in the
+[02:21] description, which gives
+[02:22] you the commands that
+[02:23] you can simply copy
+[02:24] depending on your
+[02:25] operating system. So if
+[02:26] you are on Mac or Linux,
+[02:27] then you can copy this
+[02:28] curl command right here,
+[02:30] just paste it into your
+[02:31] terminal and run it. If
+[02:32] you are on windows and
+[02:33] you're using PowerShell,
+[02:35] as I suggested, then you
+[02:36] can copy this IRM
+[02:37] command. You can paste
+[02:39] it, hit enter, and it
+[02:40] should install cloud
+[02:41] code for you. If you're
+[02:43] using the command
+[02:43] prompt, maybe you're on
+[02:44] an older version of
+[02:45] windows. Then you can
+[02:46] copy this version right
+[02:47] here, paste it in the
+[02:48] command prompt. Again,
+[02:49] it will install the tool
+[02:51] cloud code is not a
+[02:52] desktop application. It
+[02:53] actually runs directly
+[02:54] inside of your shell or
+[02:56] your terminal. So in
+[02:57] order to use this in the
+[02:58] future, you will need to
+[02:59] open up PowerShell again
+[03:01] or terminal again, or
+[03:02] use this from some kind
+[03:03] of tool in order to
+[03:04] actually interact with
+[03:05] cloud and generate code.
+[03:07] Now, once it says it's
+[03:08] installed, the way that
+[03:09] you can test this is by
+[03:09] simply typing cloud in
+[03:11] your terminal. So if you
+[03:12] type cloud, you should
+[03:13] get some kind of output
+[03:14] here. Now, when you first
+[03:16] run this, it will ask you
+[03:17] to authenticate with
+[03:18] your anthropic or cloud
+[03:19] account. So just do
+[03:20] that, go into your
+[03:21] browser, sign into your
+[03:22] account, and then
+[03:23] you'll be good to go.
+[03:24] Now, also, whenever you
+[03:25] run this for the first
+[03:26] time and you type that
+[03:27] command, it's going to
+[03:27] ask you to trust the
+[03:28] current folder that
+[03:29] you're inside of. So
+[03:30] we're going to go ahead
+[03:31] and press on. Yes, I
+[03:32] trust the folder. And
+[03:33] then it's going to bring
+[03:33] up the cloud code UI.
+[03:35] Now, at this point, you
+[03:36] should have got cloud
+[03:36] code installed. And just
+[03:38] remember, if you were to
+[03:39] close the terminal or the
+[03:40] PowerShell, you would
+[03:41] have to reopen this,
+[03:42] right? I'm just going to
+[03:43] zoom in. And then again,
+[03:44] type cloud, and then you
+[03:46] can press enter. And
+[03:46] again, you'll get back
+[03:47] into that user
+[03:48] interface. So don't
+[03:49] worry if you lose it.
+[03:51] Now, for some of you
+[03:51] that are complete
+[03:52] beginners, and already
+[03:53] this is a little bit
+[03:54] intimidating. Anthropic
+[03:55] actually did create an
+[03:56] easier way to write code
+[03:58] using cloud. It is not
+[03:59] the same thing as cloud
+[04:00] code, but it is very
+[04:01] similar. And you can
+[04:02] access that by
+[04:03] downloading the desktop
+[04:05] app for cloud. So if you
+[04:06] have an account with
+[04:07] them, you can just
+[04:08] download the desktop app.
+[04:09] If you do that, the app
+[04:10] will look something like
+[04:11] this from here. What
+[04:13] you'll be able to do is
+[04:14] switch between this chat
+[04:16] and this code mode. And
+[04:17] if you go into the
+[04:18] coding mode here, you'll
+[04:19] be able to select a
+[04:20] project. You can write a
+[04:22] prompt directly inside
+[04:23] of here. You can change
+[04:24] the mode like coding,
+[04:25] asking planning, right?
+[04:27] You can add different
+[04:28] files. You can connect
+[04:29] it to GitHub. You can
+[04:30] choose your model and
+[04:31] it's a lot simpler and
+[04:32] easier to use. So again,
+[04:33] if you're a beginner,
+[04:34] you can just use this,
+[04:35] but if you want to get
+[04:36] any serious work done,
+[04:37] the CLI or the command
+[04:39] line tool, which I'm
+[04:39] showing you is what
+[04:41] you're going to want to
+[04:41] set up and have on your
+[04:42] machine. Now, if you've
+[04:43] been programming for a
+[04:44] while, you probably know
+[04:45] the job market is tough
+[04:46] recently, and you may
+[04:47] feel like traditional
+[04:48] resumes just don't show
+[04:50] who you really are as a
+[04:51] creator or a
+[04:52] technologist. Now that's
+[04:53] where dink.me comes in.
+[04:56] It's a brand new AI
+[04:57] native career network
+[04:58] built for the real era
+[05:00] of real work, real
+[05:01] projects, real impact,
+[05:03] not just job titles. Now,
+[05:05] instead of a static
+[05:06] resume, dink gives you a
+[05:07] living identity card,
+[05:08] your dink card that
+[05:10] automatically showcases
+[05:11] your code, papers,
+[05:12] citations, and
+[05:13] measurable impact across
+[05:15] platforms like GitHub
+[05:16] and Google scholar
+[05:17] recruiters, professors,
+[05:19] and startups can
+[05:19] discover what you've
+[05:20] actually done, not just
+[05:22] what you wrote on paper.
+[05:23] Now that's what dink
+[05:24] does for you, but for
+[05:25] companies, dink is an AI
+[05:27] powered talent engine
+[05:28] that analyzes and
+[05:29] compares researchers and
+[05:30] engineers in seconds. It
+[05:32] helps teams spot the best
+[05:33] fits faster than
+[05:34] traditional recruiting
+[05:35] tools. Now, the best
+[05:36] part of all of this is
+[05:37] that you can claim your
+[05:38] dink card for free,
+[05:40] start building your
+[05:40] personal identity in
+[05:42] minutes and let your work
+[05:43] speak for itself in a
+[05:44] world where resumes get
+[05:45] screened for six seconds
+[05:47] before a decision. Now
+[05:48] here, you can even see
+[05:49] my dink card right here
+[05:50] has all of my details,
+[05:52] information that you
+[05:52] wouldn't see on a
+[05:53] resume, my whole career
+[05:55] trajectory, my GitHub,
+[05:56] the number of stars, my
+[05:57] YouTube channel,
+[05:58] Instagram, all of that
+[05:59] stuff is here as well as
+[06:00] networks, career
+[06:02] trajectory, Twitter, and
+[06:03] anything else that you
+[06:04] want to include. Now you
+[06:05] can get started with
+[06:06] dink today for free by
+[06:08] clicking the link in the
+[06:08] description and a
+[06:09] massive thanks to them
+[06:10] for sponsoring today's
+[06:11] video. Let's get back
+[06:13] into it. Now with that
+[06:14] in mind, before you just
+[06:15] go crazy here with
+[06:16] Claude, what I'm going
+[06:17] to suggest that you do is
+[06:18] install a get on your
+[06:20] computer. Now get is a
+[06:21] tool that's going to
+[06:22] allow you to essentially
+[06:23] kind of checkpoint what
+[06:25] Claude is doing and
+[06:26] revert back to a
+[06:27] previous version of your
+[06:28] code base. In case it
+[06:29] makes any mistakes, you
+[06:30] won't have it by
+[06:31] default on your
+[06:31] machines. You do need to
+[06:33] install it. Now you can
+[06:34] do that by going to the
+[06:35] link that I'll put in the
+[06:36] description where you
+[06:36] can download this for
+[06:37] windows, Mac, or Linux.
+[06:40] However, because we have
+[06:41] Claude code, we actually
+[06:42] can just ask Claude code.
+[06:44] Can you install get for
+[06:46] me? Now, if you do that,
+[06:48] it should actually think
+[06:49] about the commands that
+[06:49] it's going to need to
+[06:50] run to install this for
+[06:52] it should likely ask you
+[06:53] for permission. So you
+[06:54] can see here is asking
+[06:55] for permission to run a
+[06:56] command. I'm going to go
+[06:57] yes. And don't ask for
+[06:58] this command again. And
+[07:00] then it's going to
+[07:00] actually run the command
+[07:01] to install that tool for
+[07:02] you. Now, for some
+[07:03] reason that doesn't work
+[07:05] than what you can do is
+[07:05] just install it directly
+[07:06] from the website right
+[07:07] here. Okay. So in my
+[07:08] case, it actually gave me
+[07:09] an error that said that I
+[07:10] need to be running
+[07:11] PowerShell as an
+[07:12] administrator in order to
+[07:13] actually run this
+[07:14] command. So if you get an
+[07:15] error like that, no
+[07:16] worries. What you can do
+[07:17] is you can just open
+[07:19] PowerShell by pressing
+[07:20] right click and then run
+[07:21] as administrator. Now, if
+[07:23] you're running this in
+[07:23] Mac, it should be good to
+[07:25] go by default, but here,
+[07:26] what I'm going to do is
+[07:27] just type Claude. Okay.
+[07:29] I'm going to go, yes, I
+[07:30] trust this folder and
+[07:31] then same thing, install
+[07:33] get for me. And then
+[07:34] let's see if it's able to
+[07:35] do it. Now that I gave it
+[07:36] the permissions. All
+[07:37] right. So I just got
+[07:37] installed. I'm not going
+[07:38] to go through the whole
+[07:39] process. And the next
+[07:40] thing that I do recommend
+[07:41] that you do is create a
+[07:42] GitHub account. The
+[07:44] reason why we'll want to
+[07:44] make a GitHub account is
+[07:45] we're going to connect
+[07:46] Claude to GitHub so that
+[07:48] it's able to actually
+[07:49] create new repositories
+[07:50] for us and save all of
+[07:52] the code that we're
+[07:53] writing from the very
+[07:54] beginnings that we don't
+[07:55] lose anything. Now,
+[07:56] GitHub is essentially a
+[07:57] website or kind of a
+[07:59] remote location where we
+[08:00] can store different code.
+[08:02] So rather than just
+[08:03] having it on our own
+[08:04] computer, we can store it
+[08:05] with GitHub where we can
+[08:06] access it from another
+[08:07] machine. We can share it
+[08:09] with another developer.
+[08:10] And more importantly, if
+[08:11] we lose access to maybe
+[08:12] our own computer, or
+[08:13] maybe we delete the
+[08:14] folder or Claude messes
+[08:15] up or something, we can
+[08:17] always get the
+[08:17] repository or the code
+[08:18] again, by going to this
+[08:20] website. So go to
+[08:21] GitHub, make an account.
+[08:22] It is completely free.
+[08:23] And I'm going to just
+[08:24] quickly show you how to
+[08:25] connect your GitHub
+[08:26] account to your terminal
+[08:27] here locally, so that
+[08:29] you're able to use it
+[08:30] kind of with Claude.
+[08:31] All right. So in order to
+[08:32] connect Git, which is
+[08:33] running on our local
+[08:34] computer to GitHub,
+[08:35] which is running in the
+[08:36] web, what we need to do
+[08:37] is run the following
+[08:38] command, which is GH
+[08:40] off login. Now notice
+[08:42] that I didn't know how to
+[08:42] do this. So I just asked
+[08:43] Claude code and it told
+[08:45] me exactly what to run.
+[08:46] So what I'm going to do
+[08:47] is type GH off log in
+[08:49] like, so, and then it
+[08:50] should run this command
+[08:52] for me and allow me to
+[08:53] connect to GitHub. Okay.
+[08:54] So you can see that it's
+[08:55] going to ask to run the
+[08:56] command. So let's go
+[08:57] ahead and type on yes.
+[08:59] And in this case, GH was
+[09:00] not found. So it should
+[09:01] go ahead and install
+[09:02] that for me. So I'm just
+[09:03] going to type option C
+[09:04] so it can install that
+[09:05] tool for me. Okay. So it
+[09:06] looks like it was able
+[09:07] to install that. And
+[09:08] then I'm going to go yes,
+[09:09] so that it can run that
+[09:09] command. All right. So
+[09:10] notice it's giving me
+[09:11] some output here where
+[09:12] it says it wants me to
+[09:13] go to this URL and then
+[09:14] type in our one time
+[09:16] code. So what we're
+[09:17] going to do here is go,
+[09:18] we're going to select
+[09:19] accounts. I'm going to
+[09:19] go with tech with Tim,
+[09:21] and then I'm going to
+[09:22] copy this code that it's
+[09:23] given me here. So just
+[09:24] copy that and paste it
+[09:26] and press continue. And
+[09:27] that should then
+[09:28] authorize GitHub here in
+[09:30] our terminal. Now, in
+[09:31] order to do that, I need
+[09:32] to just off with
+[09:33] mobile. So let me do
+[09:34] that. All right. So it
+[09:34] looks like we are all
+[09:35] authenticated. Now you
+[09:36] can see that I was
+[09:37] logged in as tech with
+[09:38] Tim, and now we have
+[09:39] GitHub set up. I know it
+[09:40] is a little bit of a pain
+[09:41] to do this at the
+[09:42] beginning, but trust me,
+[09:43] it is absolutely worth
+[09:44] it because now anytime
+[09:45] we use Claude, it can
+[09:46] automatically save the
+[09:48] code for us. A lot of
+[09:49] other tutorials don't
+[09:50] cover this. That's why
+[09:51] you're watching mine
+[09:51] because I want to go
+[09:52] through it step-by-step
+[09:53] and I want you to get
+[09:54] set up in one single
+[09:55] video. Now I promise we
+[09:57] can move on to some more
+[09:58] features. Okay. So let
+[10:00] me close my browser.
+[10:01] Let's open up Claude
+[10:02] code a little bit
+[10:02] larger, and I want to
+[10:04] show you how most
+[10:04] developers actually work
+[10:06] with Claude code. Now,
+[10:07] rather than just using
+[10:08] the terminal here, a lot
+[10:10] of times you're going to
+[10:10] use this with a
+[10:11] development environment.
+[10:12] What I mean by that is
+[10:13] you're likely going to
+[10:14] use an editor like VS
+[10:16] code or cursor or jet
+[10:18] brains IDEs or
+[10:19] something along those
+[10:20] lines. So you can
+[10:20] actually see what Claude
+[10:22] code is doing and not
+[10:23] just have this terminal
+[10:24] view. So for example, a
+[10:26] very popular editor is
+[10:27] visual studio code, a
+[10:29] recent version of that,
+[10:30] which is kind of AI
+[10:31] enabled is cursor. So
+[10:33] for example, you could
+[10:34] open up cursor. I'm just
+[10:35] going to open up an
+[10:35] editor right here. And if
+[10:37] you want a
+[10:37] recommendation, I would
+[10:38] suggest just download
+[10:39] cursor, because this is
+[10:41] the best one to use for
+[10:42] right now that also has
+[10:43] its own AI features, but
+[10:44] we can augment that by
+[10:46] just using Claude code.
+[10:47] So you can see that I
+[10:48] have a, what is it kind
+[10:49] of like a repository
+[10:50] setup. Now, when you
+[10:52] open up one of these
+[10:53] applications, so let's
+[10:54] say you download cursor
+[10:55] or you download VS
+[10:56] code, or you get any
+[10:57] code editor on your
+[10:58] computer. What you can
+[11:00] do is you can go to a
+[11:01] file. You can go to open
+[11:03] folder. You can go to
+[11:05] your desktop or any
+[11:06] location that you're
+[11:07] going to be able to find
+[11:07] in the future. And we
+[11:09] can do something like
+[11:09] Claude code test, and
+[11:11] I'm just going to make a
+[11:12] new folder. Uh, how do I
+[11:14] already have a folder
+[11:15] cloud code test? Okay.
+[11:16] Well, that was not what
+[11:18] I wanted. So let's go
+[11:20] Claude code test two.
+[11:22] All right. So I'm going
+[11:23] to make a new folder.
+[11:24] The reason I'm making a
+[11:25] new folder is this is
+[11:26] where I want my coding
+[11:27] project to live. I'm
+[11:29] going to select that and
+[11:30] then I'm going to open
+[11:30] it. So again, I've just
+[11:31] opened my code editor.
+[11:32] It doesn't matter which
+[11:33] one you're using. You
+[11:34] can ignore all of the
+[11:35] crazy features from
+[11:36] cursor here, and we can
+[11:37] close some of these
+[11:38] windows and kind of just
+[11:39] hide them. And what we
+[11:41] can do is we can open up
+[11:42] the terminal directly
+[11:43] inside of here. So if
+[11:45] you're working inside of
+[11:46] cursor or VS code or
+[11:47] windsurf, so something
+[11:49] that is like a VS code
+[11:51] fork, because a lot of
+[11:52] these editors are based
+[11:53] on visual studio code.
+[11:55] What you can do to open
+[11:56] the terminal is you can
+[11:57] try to find kind of like
+[11:57] a drag bar at the bottom
+[11:59] of the screen, but you
+[11:59] can see I'm having
+[12:01] trouble finding it here.
+[12:02] Instead, you can hit
+[12:03] control and then back
+[12:05] tick on your keyboard or
+[12:06] command and then back
+[12:07] tick on your keyboard.
+[12:08] And it should open up a
+[12:09] terminal directly inside
+[12:11] of this folder that you
+[12:12] opened for you. Now, if
+[12:14] that's difficult for you,
+[12:15] you can hit control
+[12:16] shift P or command
+[12:18] shift P if you're on
+[12:20] back and you can type
+[12:21] terminal and then create
+[12:23] new terminal and then
+[12:24] just choose one of the
+[12:25] instances. So command
+[12:26] prompt or PowerShell, if
+[12:28] you're on Mac or Linux,
+[12:29] again, you just choose
+[12:30] probably the first one
+[12:30] that pops up. So let's
+[12:32] say I do that and you can
+[12:33] see, it makes a new
+[12:34] terminal for me and I'll
+[12:35] be able to see it on my
+[12:36] screen. Now, if you want
+[12:37] to see the left-hand
+[12:38] sidebar, which is the
+[12:39] file viewer, you can
+[12:41] press this button right
+[12:42] here. Again, this is in
+[12:42] cursor, but you can do
+[12:44] this in another editor
+[12:45] as well. And you'll be
+[12:46] able to now see all of
+[12:47] the files that Claude
+[12:48] code will generate for
+[12:49] us in one minute. Now,
+[12:51] again, if you can't find
+[12:52] this button, you can hit
+[12:53] control B or command B
+[12:56] on your keyboard, and
+[12:57] that will toggle the
+[12:57] file view on the left
+[12:59] hand side. Now, I know
+[13:00] it seems complicated,
+[13:01] but most of the time
+[13:02] you're going to want to
+[13:02] work like this because
+[13:04] you want to see the
+[13:05] files and actually know
+[13:06] what Claude code is
+[13:06] doing, especially if
+[13:08] you're unfamiliar with
+[13:08] the terminal, I would
+[13:09] highly suggest opening
+[13:11] this in some kind of
+[13:12] user interface like
+[13:13] we've done here. So you
+[13:14] actually know what's
+[13:15] going on. Okay. So now
+[13:17] we're inside of a
+[13:18] terminal. This is the
+[13:19] exact same environment.
+[13:20] I was just showing you
+[13:21] before, except it's now
+[13:22] in this code editor,
+[13:24] right? And again, this
+[13:24] code editor is called
+[13:25] cursor in case anyone is
+[13:27] confused. If you just go,
+[13:29] you can type cursor
+[13:31] download on the
+[13:31] internet and you can
+[13:32] download it super
+[13:33] easily. Just open it up.
+[13:35] And literally all you
+[13:36] have to do is just go
+[13:36] file, open folder, open
+[13:39] a new location, and you
+[13:40] can start writing code.
+[13:41] So from this terminal,
+[13:42] we're going to type
+[13:42] Claude. Now, when we
+[13:44] type Claude, it's going
+[13:45] to open up Claude code
+[13:46] just like it did before,
+[13:47] but now in this
+[13:47] location. So same thing,
+[13:49] I'm going to trust the
+[13:49] folder. And now I have
+[13:50] Claude code in my
+[13:52] terminal and I can start
+[13:53] getting it to actually
+[13:54] generate some stuff. So
+[13:55] now we're going to
+[13:55] actually start using it.
+[13:56] We're going to start
+[13:57] building a project and
+[13:58] I'm going to start
+[13:58] walking through a lot of
+[13:59] the features that it
+[14:00] has. Now you'll actually
+[14:01] notice that because I'm
+[14:02] using it in this editor
+[14:03] now, it's detected that.
+[14:05] And it's telling me that
+[14:06] I can actually have some
+[14:07] special features here in
+[14:09] Claude code because I'm
+[14:10] working in cursor. So
+[14:11] what I'm going to do is
+[14:12] just go ahead and press
+[14:13] enter. And now we can
+[14:15] just start working, but
+[14:16] again, it's going to be
+[14:16] able to reference the
+[14:17] files that we actually
+[14:18] looking at in cursor. Um,
+[14:20] it's going to show us the
+[14:21] changes that it's making
+[14:23] is very powerful. All
+[14:24] right. So without
+[14:24] further ado, let's get
+[14:26] this to do something. And
+[14:27] let's say that we just
+[14:28] want to create a simple
+[14:29] web-based game. Let's go
+[14:31] with something really,
+[14:32] really simple for right
+[14:33] now, like maybe tic-tac-
+[14:34] toe and just ask it to
+[14:36] make that game. So I'm
+[14:37] going to say make tick
+[14:39] tack toe that I can play
+[14:42] on the web. Okay. And
+[14:43] I'm going to start going
+[14:44] through all of the other
+[14:45] configurations and
+[14:46] settings, but for now,
+[14:47] let's just run this. So
+[14:47] we can see some kind of
+[14:48] output and know that
+[14:50] we're actually getting
+[14:50] some result. Okay. So
+[14:52] you can see that it's
+[14:52] going to start doing
+[14:53] this and generating some
+[14:54] output. Now, something
+[14:56] worth noting here is
+[14:57] that if you wanted to,
+[14:58] you actually could run
+[15:00] Claude code multiple
+[15:01] times in parallel. So
+[15:03] while I was creating
+[15:03] tic-tac-toe, for
+[15:04] example, I could create
+[15:05] a another game. I could
+[15:07] audit the code base. I
+[15:08] could, you know, change
+[15:09] something, whatever. And
+[15:10] that's one of the things
+[15:11] that makes this quite
+[15:12] powerful. I'm not going
+[15:13] to do that right now,
+[15:14] because again, we're
+[15:15] still at the beginner
+[15:16] level, but you get the
+[15:18] idea. Okay. So you can
+[15:19] see that it's generated
+[15:20] some code for me here.
+[15:21] It's kind of giving it
+[15:22] right in the terminal
+[15:23] and it's asking me to
+[15:25] allow it to create
+[15:26] tic-tac-toe. Now, what
+[15:27] I'm going to do is just
+[15:28] go here and I'm going to
+[15:29] go. Yes. Allow all edits
+[15:31] during the session and
+[15:32] notice I'm using my arrow
+[15:33] keys here to navigate.
+[15:34] So I'm going to press
+[15:35] enter. So I can just go
+[15:36] ahead and start writing
+[15:37] this without asking me
+[15:38] for permission. Okay. So
+[15:39] you can see that it says
+[15:40] it has created this for
+[15:41] me. And it's telling me
+[15:42] that the way that I can
+[15:43] run this is to start the
+[15:45] tic-tac-toe dot HTML or
+[15:47] double click the file in
+[15:48] the file explorer. So
+[15:49] I'm just going to say
+[15:50] start tic-tac-toe dot
+[15:54] HTML. Uh, I'm not sure
+[15:56] if that's actually the
+[15:57] correct command, but
+[15:57] let's just run that and
+[15:58] see if that's going to
+[15:59] do anything for me. It
+[16:01] says open it in the
+[16:02] default browser. Yes.
+[16:03] And don't ask again for
+[16:04] this. And let's see if
+[16:06] it can open this up for
+[16:07] me and I can run it.
+[16:08] Okay. And you can see
+[16:09] this is my browser and
+[16:11] we have tic-tac-toe,
+[16:12] which has now been
+[16:13] created, which looks
+[16:14] pretty good. We can
+[16:15] generate a new game. You
+[16:16] get the idea. Now, the
+[16:17] one thing that I want to
+[16:18] bring your attention to
+[16:19] here is that as soon as
+[16:20] we started running this,
+[16:21] a doc Claude folder was
+[16:23] automatically created for
+[16:24] us in the directory where
+[16:26] we're working, as well as
+[16:27] the code that was
+[16:28] generated, right? So you
+[16:29] can see tic-tac-toe now
+[16:31] has been written. So this
+[16:32] is pretty cool. And this
+[16:33] is the reason why you
+[16:35] would do this inside of a
+[16:36] code editor. So you're
+[16:37] able to actually see the
+[16:38] changes in the codes
+[16:39] being generated in real
+[16:41] time. Again, you don't
+[16:42] need to do that, but
+[16:43] that's what many people
+[16:44] like to do when they're
+[16:46] using a tool like this.
+[16:47] Okay. So we've got
+[16:48] something created. Now we
+[16:49] need to start going
+[16:49] through a lot of the
+[16:50] different configuration
+[16:51] and setups. Now keep in
+[16:52] mind, if you don't know
+[16:53] how to do something, just
+[16:55] ask Claude to help you.
+[16:56] It can help you. It can
+[16:57] change configurations. It
+[16:58] can set stuff up for you,
+[17:00] but of course it's useful
+[17:01] to know the basics. So
+[17:02] even side of here, as you
+[17:03] already saw, you can just
+[17:04] type human language and
+[17:06] you will get some
+[17:06] output. However, you can
+[17:08] also type slash help.
+[17:10] Let's start with that.
+[17:11] And this is going to give
+[17:12] you a general kind of
+[17:13] shortcut or list of
+[17:14] commands and things you
+[17:15] can do in Claude. So you
+[17:16] can see that I can toggle
+[17:17] between a few different
+[17:18] things here. And you'll
+[17:19] notice that if I put an
+[17:20] exclamation point, this
+[17:22] is going to put me in
+[17:22] bash mode. If I do a
+[17:24] slash, this is going to
+[17:24] allow me to type
+[17:25] different commands. If I
+[17:27] do an at, this is going
+[17:28] to allow me to reference
+[17:29] various files or paths.
+[17:30] If I do an ampersand,
+[17:32] this is going to be for
+[17:33] background tasks or key
+[17:34] binds or whatever that
+[17:35] says. I think so for
+[17:36] background, new line,
+[17:37] not exactly sure what
+[17:38] that means. Actually,
+[17:39] I've never used the
+[17:39] ampersand continuing. We
+[17:41] go to commands. And if I
+[17:42] scroll down here, you
+[17:43] can see there's a ton of
+[17:44] different commands that
+[17:45] I can run. We cannot
+[17:46] possibly go over all of
+[17:48] them in this video, but
+[17:49] I will show you a bunch
+[17:50] of them that are useful.
+[17:51] So if you're ever like,
+[17:52] how do I do something?
+[17:53] Or I wonder what's
+[17:54] possible type slash
+[17:55] commands, and you can
+[17:56] see a bunch of stuff
+[17:58] pops up and you're
+[17:59] probably going to learn
+[18:00] something just by
+[18:00] looking through this
+[18:01] menu and then custom
+[18:02] commands. Of course you
+[18:03] can make your own
+[18:04] commands. We're not
+[18:04] going to go over that
+[18:05] right now. Okay. So
+[18:07] first thing that you
+[18:07] want to be aware of is
+[18:08] the different modes
+[18:09] that you can use inside
+[18:11] of Claude code. You can
+[18:12] have a planning mode.
+[18:13] You can have an asking
+[18:14] mode and you can have a
+[18:15] coding mode. Now the
+[18:17] ask mode is the default
+[18:18] mode where it's going to
+[18:19] ask you before it does
+[18:20] something. So you can
+[18:21] see it asked before it
+[18:22] generated a command. It
+[18:23] asked before it wrote
+[18:24] code, right? The code
+[18:25] mode, it's just going to
+[18:26] code by default. It's
+[18:27] not going to ask you for
+[18:28] permission. And the
+[18:29] planning mode is going
+[18:29] to create a detailed
+[18:30] plan that Claude will
+[18:31] follow so that it has a
+[18:33] little bit more
+[18:33] structure. In order to
+[18:34] change the mode, you
+[18:35] can hit shift and then
+[18:37] tab on your keyboard. So
+[18:38] shift and tab, you can
+[18:39] see it showing shift tab
+[18:40] to cycle. We have plan
+[18:41] mode. We have the
+[18:43] normal mode, right?
+[18:43] Which is this. And then
+[18:44] we have the coding mode,
+[18:45] which is kind of except
+[18:47] edits on. So here
+[18:48] planning mode, right?
+[18:49] Except edits. It's just
+[18:50] going to do the thing.
+[18:51] And then the ask mode is
+[18:52] the default mode where
+[18:53] it's not showing you
+[18:54] anything there again to
+[18:55] do that is shift and
+[18:57] then tap. Now, if you
+[18:58] want to see the
+[18:58] shortcuts, you can type
+[18:59] again, the question
+[19:00] mark, and you can see
+[19:01] the different shortcuts
+[19:02] that you can use, and it
+[19:03] will start showing you
+[19:04] all of the different
+[19:05] ones that you can put
+[19:06] directly inside of
+[19:07] here. Okay. So that is
+[19:08] how you change the
+[19:10] mode. So the first mode
+[19:11] that I want to change
+[19:12] into is the planning
+[19:13] mode. And I want to show
+[19:14] you a few other
+[19:14] shortcuts. Let's say you
+[19:16] write something super
+[19:17] long here, and you don't
+[19:18] want to have to just
+[19:19] like erase all of it.
+[19:20] Well, what you can do is
+[19:21] hit escape twice on your
+[19:22] keyboard. So escape,
+[19:23] escape, and that's going
+[19:24] to clear whatever is
+[19:25] currently inside of this
+[19:26] window. So escape,
+[19:27] escape. If you want to
+[19:28] go back to the previous
+[19:29] thing that you typed,
+[19:30] you can use the up arrow
+[19:31] key. So you can actually
+[19:32] toggle through the
+[19:33] previous commands you
+[19:34] ran by using the up and
+[19:35] the down arrow keys in
+[19:37] your terminal. There's
+[19:38] actually more shortcuts
+[19:39] that exist there, but if
+[19:40] you just want to cycle
+[19:41] through the previous
+[19:41] commands, in case you're
+[19:42] repeating something, you
+[19:43] don't need to type it
+[19:44] again. You can just
+[19:45] cycle with the up and
+[19:47] the down arrow key. Now,
+[19:48] another thing worth
+[19:49] noting is that sometimes
+[19:50] you want to actually
+[19:50] create a line break in
+[19:52] the prompt. So for
+[19:54] example, I have like
+[19:54] hello, and then I want
+[19:55] to go down to the next
+[19:57] line, right? I don't
+[19:58] want to press enter
+[19:59] because if I press enter,
+[19:59] it's going to submit the
+[20:00] command, but I want to
+[20:01] move actually down and
+[20:03] have like kind of
+[20:04] multiple lines. So in
+[20:05] order to do that, you
+[20:06] hit the alt or the
+[20:07] option key, and then
+[20:08] you just press enter. So
+[20:09] you can see that what I
+[20:10] did on my keyboard here
+[20:11] is I just pressed alt.
+[20:12] So I'm holding alt on
+[20:13] windows. If you're on
+[20:14] Mac, it might be option.
+[20:15] And then I press enter
+[20:16] and I can actually go
+[20:17] down to the next line so
+[20:18] that I can have things
+[20:19] on multiple lines. And
+[20:21] then again, I can clear
+[20:21] that by hitting escape
+[20:22] twice. So again, that's
+[20:23] alt or option. You hold
+[20:25] that down and then press
+[20:26] enter. Okay. So we're in
+[20:27] the planning mode. Now
+[20:28] we've learned the
+[20:28] commands. We have a
+[20:29] general kind of lay of
+[20:30] the land when it comes
+[20:31] to using this. And we
+[20:32] have to first decide
+[20:33] what it is that we
+[20:34] actually want to create.
+[20:35] So the most important
+[20:37] part about AI coding is
+[20:38] actually knowing what
+[20:39] you want. If you don't
+[20:40] know what you want and
+[20:41] you let the agent steer
+[20:42] you, you're going to get
+[20:43] horrible, crazy results
+[20:44] that take you forever to
+[20:46] debug and change. But if
+[20:47] you're very clear and
+[20:48] specific on what you
+[20:49] want and you have to do
+[20:50] one small task at a time,
+[20:52] you can get fantastic
+[20:53] results and create
+[20:54] amazing stuff. So this
+[20:56] is just a tutorial. I
+[20:56] don't have anything
+[20:57] crazy that I want to
+[20:58] build, but I definitely
+[20:59] still want to come up
+[21:00] with a plan for what it
+[21:01] is that I want to do. So
+[21:02] I always start in the
+[21:03] plan mode. And what I'm
+[21:05] going to do is actually
+[21:05] stream my thoughts into
+[21:07] Claude and ask it to
+[21:09] come up with a plan to
+[21:10] create this project. I
+[21:12] don't need to know the
+[21:12] code base. I don't need
+[21:13] to know the languages. I
+[21:14] don't need to have done
+[21:15] research. It's
+[21:15] obviously helpful if you
+[21:17] do those things, but if
+[21:18] you just want to start
+[21:19] completely from scratch,
+[21:20] we can do that. So let's
+[21:22] just stream our
+[21:22] thoughts. In order to do
+[21:24] that, I am actually
+[21:25] going to use a
+[21:25] dictation tool on my
+[21:26] computer called whisper
+[21:27] flow. So rather than
+[21:28] typing, I'm going to
+[21:29] speak into my mic. I
+[21:31] want to create a simple
+[21:32] top-down shooter game
+[21:33] that is a runnable in
+[21:34] the browser. I want to
+[21:35] have some sprites or at
+[21:36] least cool kind of like
+[21:38] character animations. I
+[21:39] want my character to
+[21:40] have a gun. I want
+[21:41] enemies to kind of be
+[21:42] coming at him from
+[21:43] different angles. I want
+[21:44] to be able to move the
+[21:45] arrow keys and then use
+[21:46] my mouse to kind of
+[21:47] point and click at the
+[21:48] different enemies and
+[21:49] shoot them. We should
+[21:50] have levels. We should
+[21:51] progress clearly. We
+[21:52] should have a menu
+[21:52] screen. We should keep
+[21:53] it relatively simple and
+[21:55] kind of like 2d retro
+[21:56] style. Okay. So that is
+[21:59] my thought process. So
+[22:00] I've just streamed that
+[22:01] into Claude and then
+[22:03] same thing. I'm going to
+[22:03] hold Alt and go down.
+[22:04] I'm just going to put
+[22:05] kind of a little
+[22:06] separator and I'm going
+[22:07] to say, create a plan
+[22:09] for this game. And then
+[22:10] we'll start executing
+[22:11] and coding it. So I'm
+[22:13] just instructing it,
+[22:14] even though it's in the
+[22:14] plan mode, you know, I
+[22:15] want to plan this out
+[22:16] before I proceed. And
+[22:17] you can use this to plan
+[22:18] features, not just
+[22:19] entire apps like I'm
+[22:20] doing right here. Okay.
+[22:22] So I'm going to go ahead
+[22:22] and press on enter here
+[22:24] and it should start
+[22:25] generating the plan for
+[22:26] me. Let's give that a
+[22:27] second to make it. Okay.
+[22:28] Now, just while this is
+[22:29] running, I want to point
+[22:30] your attention to a few
+[22:31] things here. So first
+[22:32] you can actually see how
+[22:33] long it's taking to run
+[22:34] as well as the number of
+[22:35] tokens that are being
+[22:36] used when it's doing
+[22:37] this generation. So if
+[22:38] you really care about
+[22:39] the cost, obviously
+[22:40] something to pay
+[22:40] attention to. Now, you
+[22:41] also notice that this is
+[22:42] able to use tools.
+[22:44] There's some tools that
+[22:44] are built into Claude.
+[22:46] There's other tools that
+[22:46] you can actually install
+[22:47] yourself if you want to
+[22:48] make this more capable.
+[22:49] So for example, if I hit
+[22:50] control, Oh, which it's
+[22:52] showing me right here,
+[22:53] it's going to expand
+[22:54] this so that it's
+[22:55] actually showing me, you
+[22:56] know, exactly what's
+[22:57] happening. Uh, and I can
+[22:58] see what it is that's
+[23:00] kind of going on here.
+[23:01] Right? So it says, okay,
+[23:01] I'm thinking the user
+[23:03] wants to create a game.
+[23:04] All right. This is a fun
+[23:05] project. Okay. Here's
+[23:06] what I want to do.
+[23:07] Blah, blah, blah, blah,
+[23:08] blah, whatever. Right.
+[23:09] And then if I want to go
+[23:10] back, I can do control.
+[23:11] Oh, and it brings me
+[23:12] back here to where I can
+[23:13] kind of see what it's
+[23:14] doing in the plan that
+[23:15] it's generating. So if
+[23:16] you want to open it in
+[23:17] like verbose mode where
+[23:19] you see the logs, it's
+[23:20] control. Oh, now you
+[23:21] also can have this
+[23:22] trigger to run in the
+[23:23] background. I'm not
+[23:24] going to do that right
+[23:25] now, but if you hit
+[23:26] control B or command B,
+[23:28] depending on your
+[23:28] operating system, you
+[23:29] can trigger this to run
+[23:30] as a background session.
+[23:32] And then that way you
+[23:33] can actually just use
+[23:33] cloud code for
+[23:34] something else in this
+[23:35] same terminal view,
+[23:36] while this is going on
+[23:37] in the background. And
+[23:38] again, you can have as
+[23:38] many background tasks
+[23:40] as you want running at
+[23:41] the same time. Okay. So
+[23:42] the plan was created.
+[23:43] However, it's asking me
+[23:44] a few questions here
+[23:45] that I need to answer.
+[23:46] So I'm going to go with
+[23:47] no sounds for now. So
+[23:48] let's answer that. And
+[23:50] then it's also asking
+[23:50] me what the game size
+[23:51] and I'm just going to
+[23:52] go full screen. Actually,
+[23:53] you know what, let's go
+[23:54] 800 by 600, just to make
+[23:55] it easier. And I'm
+[23:56] going to submit my
+[23:57] answers to cloud. So
+[23:58] another cool thing that
+[23:58] it does is it clarifies
+[24:00] with you before it
+[24:01] actually starts going
+[24:02] and generating all of
+[24:03] the tasks. Now, while
+[24:04] this is running, I will
+[24:06] show you that you can
+[24:07] change the model that's
+[24:08] being used here. So by
+[24:10] default, I believe this
+[24:11] is going to use the most
+[24:12] powerful model or
+[24:13] actually, let me just
+[24:13] answer this first and
+[24:14] then we'll go into the
+[24:15] model. So Claude has
+[24:16] written a plan and it's
+[24:17] ready to execute. Would
+[24:18] you like to proceed?
+[24:19] Yes. Auto accept. Yes.
+[24:20] Manually prove edits
+[24:21] type here to tell Claude
+[24:22] what to change. Okay. So
+[24:23] I'm going to go. Yes.
+[24:24] Clear the context and
+[24:25] auto accept edits. Now,
+[24:27] when you clear the
+[24:27] context, what that's
+[24:28] going to do is
+[24:29] essentially remove all
+[24:30] of the previous stuff
+[24:31] that you've messaged
+[24:32] Claude with. So it's no
+[24:33] longer being included in
+[24:35] the API request to
+[24:36] Claude, and it's just
+[24:37] going to go based off
+[24:38] the plan. This is good
+[24:39] to save tokens, but if
+[24:40] you want it to keep the
+[24:42] context, then you could
+[24:43] do that right by auto
+[24:44] accepting the edits,
+[24:45] et cetera. So I'm going
+[24:46] to go, yes, clear the
+[24:47] context and auto accept
+[24:49] this. And you can see
+[24:50] that it is going to
+[24:51] start actually
+[24:52] generating this and
+[24:53] going through the plan.
+[24:54] So this is the plan to
+[24:55] implement. And there you
+[24:56] go. It's going to start
+[24:56] building. Now, while it
+[24:58] does that, I did want to
+[24:58] talk about the models.
+[24:59] So it can be quite
+[25:01] expensive to run this
+[25:02] and you can very quickly
+[25:03] run through your usage.
+[25:04] So if you want to make
+[25:05] this more affordable for
+[25:06] yourself, you can change
+[25:08] the model that's being
+[25:09] used here. So if you type
+[25:10] slash model here and
+[25:11] Claude is not currently
+[25:12] doing something, it will
+[25:13] bring you into an
+[25:14] interactive window that
+[25:15] will allow you to change
+[25:16] the model. So let's
+[25:17] actually just do this
+[25:18] from another Claude
+[25:19] code here. So I'm going
+[25:20] to go slash model. And
+[25:21] when I do that, it's
+[25:22] going to give us three
+[25:22] options. Okay. So Opus
+[25:24] Sonnet and Haiku, or
+[25:25] however you pronounce
+[25:26] that. Now you can see
+[25:27] the three different
+[25:28] models here. So Opus is
+[25:30] going to be your most
+[25:31] powerful model. And as
+[25:32] it says, it's for more
+[25:33] complex work, this will
+[25:34] be the most expensive,
+[25:35] but also just the best,
+[25:36] generally speaking,
+[25:38] Sonnet is kind of a
+[25:39] middle ground model. So
+[25:40] if you're doing some
+[25:40] tasks that don't have
+[25:41] extreme complexity,
+[25:43] don't require a bunch of
+[25:44] tool calling, you can
+[25:45] select this one by just
+[25:46] pressing enter. And if
+[25:48] you want a faster model,
+[25:49] that's going to give you
+[25:50] quick answers and be
+[25:50] significantly less
+[25:51] expensive. Then you can
+[25:52] switch over to Haiku.
+[25:54] Cool. So now we've gone
+[25:55] back to our first kind
+[25:56] of cloud code instance
+[25:57] here, and you can see
+[25:58] that it says it's
+[25:59] implemented these
+[25:59] features in the shooter
+[26:01] dot HTML file. So what
+[26:03] I'm going to do now is
+[26:04] just say, run the
+[26:06] shooter file. Okay. And
+[26:08] I'm just going to have
+[26:08] it run this and open it
+[26:09] in the browser for me.
+[26:10] So I can actually see
+[26:11] what it looks like. And
+[26:11] then of course, if we
+[26:12] have revisions, let's go
+[26:13] yes. And don't ask for
+[26:14] start commands. Uh, Oh,
+[26:16] it says it cannot find
+[26:17] that for some reason.
+[26:18] Okay. Uh, let's see if
+[26:20] it can run it again.
+[26:21] Okay. And sorry, I've
+[26:21] got this running now for
+[26:22] some reason I made a
+[26:23] mistake and you can see
+[26:24] we have this kind of
+[26:25] retro shooter, which I
+[26:26] think looks pretty cool
+[26:28] in my opinion. And I can
+[26:29] kind of move around. I
+[26:30] can shoot. We have like
+[26:31] this wave of enemies
+[26:33] that's coming. Okay,
+[26:36] cool. And that's, I mean
+[26:37] like literally exactly
+[26:38] what I asked it to build,
+[26:40] which is pretty good. I
+[26:42] would say for a first
+[26:44] iteration. So we also
+[26:45] have health, right? We
+[26:46] have like the menu bar,
+[26:47] a bunch of that stuff.
+[26:48] We could obviously add,
+[26:49] add sound effects. Cool.
+[26:52] Okay. So let's close
+[26:53] that. And if we wanted
+[26:55] to make revisions and
+[26:55] same thing, we could
+[26:56] just do something like,
+[26:57] you know, add power ups
+[27:01] to this app. And then it
+[27:04] would go ahead and be
+[27:04] able to do that. Now,
+[27:05] before we do that
+[27:07] though, I want to talk
+[27:08] about get and GitHub. So
+[27:10] if you're going to be
+[27:11] working on a large
+[27:12] project, I highly
+[27:13] recommend that you
+[27:14] instruct cloud code to
+[27:15] create a new GitHub
+[27:16] repository and to make
+[27:18] commits and save all of
+[27:20] the changes that it's
+[27:21] making. So the way to do
+[27:22] that would be something
+[27:22] like this from now on,
+[27:25] I would like you to
+[27:25] make a new Git
+[27:26] repository for this
+[27:28] project. I would like
+[27:29] you then to make clean
+[27:30] commit messages, save
+[27:31] them locally, and then
+[27:32] push them to GitHub so
+[27:34] that we always have a
+[27:35] saved version of the
+[27:36] project. And it's easy
+[27:37] for us to revert back in
+[27:39] case we make any
+[27:39] changes. So set up a
+[27:41] GitHub repository,
+[27:42] configure everything and
+[27:43] just use getting GitHub
+[27:44] for the rest of the
+[27:45] project. So we're going
+[27:46] to tell it that let's go
+[27:47] ahead and press on enter
+[27:49] and we'll just start
+[27:49] running all of the
+[27:50] commands that's needed
+[27:51] to set that up. So you
+[27:52] don't really need to do
+[27:52] anything here. It
+[27:53] should just know what to
+[27:54] do. So same thing.
+[27:55] We're just going to say
+[27:55] yes, and allow this to
+[27:57] go and it will start
+[27:58] setting it up. Okay. So
+[28:00] it took a second here,
+[28:00] but it did work. And
+[28:02] actually, if I open up
+[28:03] this URL now in my
+[28:05] browser, we should be
+[28:06] able to see the get
+[28:07] repository that it
+[28:08] created again, notice it
+[28:09] automatically created
+[28:10] for us. And you can see
+[28:11] now we have us as well
+[28:13] as Claude that are
+[28:13] adding commits to this
+[28:14] repository. So now it is
+[28:16] saved and all of the
+[28:17] work is going to be done
+[28:18] automatically with what
+[28:20] do you call it? Uh, get
+[28:20] and GitHub. Okay. Now
+[28:22] let's go through a few
+[28:23] other things that are
+[28:24] worth noting. So I just
+[28:25] told it, right? Like
+[28:26] always use get and get
+[28:28] up for this project and
+[28:29] automatically make the
+[28:30] commits. Now, sometimes
+[28:31] it will do that just
+[28:32] automatically. But the
+[28:34] thing with Claude is
+[28:35] that as soon as I exit
+[28:36] this, so I go like slash
+[28:37] exit, right? And if I
+[28:38] just go Claude again,
+[28:39] and I start what's a new
+[28:41] session, I've just lost
+[28:42] all of the context and
+[28:44] the history of what was
+[28:45] happening inside of
+[28:46] here. So if I ask it
+[28:48] like, what did you do
+[28:50] last or something like
+[28:52] that? It can look at the
+[28:53] get history, but it's
+[28:54] not going to really know
+[28:55] what happened. You can
+[28:56] see it says, this is the
+[28:57] start of our
+[28:57] conversation. So I
+[28:58] haven't done anything
+[28:59] yet, right? Because we
+[29:00] started a new session.
+[29:01] So that's an important
+[29:02] thing to understand
+[29:03] about Claude sessions is
+[29:04] that you don't have this
+[29:05] kind of like unlimited
+[29:06] memory, like you might
+[29:07] have in some other tools.
+[29:08] And that's where we're
+[29:10] going to get into
+[29:11] talking about the Claude
+[29:12] MD file. Now the Claude
+[29:14] MD file is something that
+[29:15] will allow you to have
+[29:17] persistent memory. So
+[29:18] Claude kind of knows the
+[29:19] rules of your code base.
+[29:21] It knows what it's done
+[29:22] before, what it should
+[29:23] and what it shouldn't do.
+[29:24] And you can set it up to
+[29:25] be really complex and
+[29:26] advanced so that you
+[29:27] don't need to keep
+[29:28] instructing it to do the
+[29:29] same thing. Because
+[29:30] again, if I start
+[29:31] working right now, it's
+[29:32] not going to
+[29:32] automatically commit this
+[29:33] to get in GitHub, like I
+[29:35] want it to do. So in
+[29:36] order to create a Claude
+[29:38] MD file, what you can do
+[29:39] is type this slash a knit
+[29:41] command. When you type
+[29:42] slash a knit, what it's
+[29:43] going to do is
+[29:43] automatically create
+[29:44] Claude dot MD for you.
+[29:46] And in the Claude MD, it
+[29:48] will actually put in
+[29:49] different information
+[29:50] based on the analysis
+[29:51] that it has of your code
+[29:53] base. Now you of course
+[29:54] can modify this Claude
+[29:55] dot MD file, and I'll
+[29:56] show you how to do that
+[29:57] in one second, but this
+[29:58] is effectively, again,
+[29:59] the persistent memory
+[30:01] for Claude when it's
+[30:02] working in your code
+[30:03] base. And we'll give it
+[30:04] a second here to
+[30:05] generate that MD file.
+[30:06] So let's go, yes, go
+[30:07] ahead and create that
+[30:09] for us. Okay. Yes. Go
+[30:11] ahead and make that, uh,
+[30:12] so that we'll have that
+[30:13] file there and it will
+[30:14] always reference it when
+[30:15] we create a new
+[30:15] session. Okay. So you
+[30:16] can see that it is
+[30:17] showing me what the
+[30:18] Claude MD file will look
+[30:19] like that it's going to
+[30:21] create here where it
+[30:21] goes over like project
+[30:22] overview, running the
+[30:23] game development, set
+[30:24] up, you know, whatever,
+[30:25] all of this kind of
+[30:26] stuff. So I'm going to
+[30:27] go yes, and allow edits
+[30:28] during this session. And
+[30:29] then it's going to
+[30:30] create this Claude dot
+[30:31] markdown file for me.
+[30:33] Now, if we go through
+[30:33] here, okay, let's see if
+[30:35] it has anything else
+[30:36] design pattern, color
+[30:37] scheme, get workflow.
+[30:38] Okay, cool. Awesome.
+[30:40] And then it explains
+[30:41] kind of all of this
+[30:42] stuff. So now if
+[30:43] there's some specific
+[30:44] things that I always
+[30:45] want Claude to do in the
+[30:45] project, I can just
+[30:46] tell it that. So I'm
+[30:47] going to say update the
+[30:48] Claude dot MD file to
+[30:50] indicate that as you do
+[30:51] work, you need to
+[30:52] commit things to get
+[30:53] and push them to get
+[30:54] hub regularly with
+[30:55] clean commit messages.
+[30:56] So we never lose the
+[30:57] status or work that
+[30:58] we've done. Okay. So
+[30:59] let's go ahead and
+[31:00] press on enter here. And
+[31:02] you can see, I said,
+[31:03] you know, Claude dot MD
+[31:04] whisper actually picked
+[31:05] up that this was a file
+[31:06] and it automatically
+[31:07] tagged it for me. And
+[31:08] now you can see it's
+[31:09] making changes, right.
+[31:10] And then updating that
+[31:11] in Claude dot MD. And
+[31:13] if we scroll down here,
+[31:14] it explains what it
+[31:15] needs to do. So now if
+[31:17] we were to restart this,
+[31:19] so let's go slash exit to
+[31:21] get out of that. Okay.
+[31:23] And go Claude. I'm just
+[31:25] going to say, what do
+[31:26] you know about this
+[31:28] project? Okay. And it
+[31:31] should be able to look
+[31:32] in this Claude dot MD
+[31:33] file and give me some
+[31:34] information. Okay. And
+[31:35] you can see it reads the
+[31:36] Claude dot MD file
+[31:37] because it knows to go
+[31:37] there and it gets us all
+[31:39] of that persistent info.
+[31:40] All right. So now that
+[31:40] we've gone over that, I
+[31:41] want to talk about
+[31:42] tasks. Now, if you run
+[31:43] at the slash tasks
+[31:45] command, this will show
+[31:46] you any background tasks
+[31:48] that are running. Now,
+[31:49] background tasks are
+[31:50] typically going to be
+[31:50] things like web servers
+[31:52] that are running
+[31:53] continuously and that
+[31:54] you don't want to block
+[31:55] the execution of your
+[31:56] Claude code instance.
+[31:58] So right now, if we want
+[31:59] to get out of this, I'm
+[31:59] just going to press
+[32:00] escape to get out of
+[32:01] that there. And you
+[32:02] could see that I've kind
+[32:03] of got out of the
+[32:03] dialogue. Now tasks
+[32:04] might be something like
+[32:06] a web server, a front
+[32:07] end, I don't know, like
+[32:09] react website that's
+[32:10] running, whatever. There
+[32:11] can be all kinds of
+[32:12] background tasks. And by
+[32:13] default, Claude will put
+[32:15] some of them into the
+[32:15] background, but you can
+[32:16] also put them in the
+[32:17] background yourself. So
+[32:19] what I want to show you
+[32:19] is if I do something
+[32:20] like, you know, run a
+[32:22] web server to host my
+[32:24] two sites or host my two
+[32:26] games, what's going to
+[32:28] happen here is Claude is
+[32:29] going to detect that
+[32:30] this is a task that
+[32:31] would be blocking
+[32:32] blocking means that if
+[32:33] we just ran it in this
+[32:34] terminal, that it's
+[32:36] going to block us being
+[32:37] able to do anything
+[32:38] else. So you can see
+[32:39] that we now see one
+[32:40] bash, which means that
+[32:41] there's a task that's
+[32:42] happening. And it says
+[32:43] it's running this in the
+[32:44] background. So if we
+[32:45] want to see that we can
+[32:46] hit control T, which
+[32:48] will show the different
+[32:49] tasks. We can go to the
+[32:50] bash and hit enter to
+[32:51] view it. If we go back,
+[32:53] we also can type slash
+[32:54] tasks, and then it's
+[32:56] going to show the tasks
+[32:57] that's running and how
+[32:58] long it's been running
+[32:58] for. Now, from here, if
+[33:00] we want to kill this
+[33:01] task, so I no longer
+[33:02] want the web browser to
+[33:03] be running. For
+[33:04] example, I can press K
+[33:06] and that's going to kill
+[33:06] it for me. And then I
+[33:08] can go back just by
+[33:09] hitting enter. Okay. And
+[33:11] you can see background
+[33:12] command was killed
+[33:13] right now, for some
+[33:14] reason, it's going to go
+[33:15] and generate this again,
+[33:16] I think, but if I wanted
+[33:17] to stop this, then what
+[33:18] I could do is press
+[33:20] escape. So for example,
+[33:21] if I do something like
+[33:22] hello, and then I press
+[33:22] escape super fast,
+[33:24] you'll see it's
+[33:24] interrupts that command.
+[33:25] So if you want to stop
+[33:27] the execution of
+[33:27] something in lifetime,
+[33:29] press escape, I probably
+[33:30] should have mentioned
+[33:30] that earlier, but I
+[33:31] honestly just forgot.
+[33:32] But that's something to
+[33:33] know. Okay. So those are
+[33:35] tasks. Again, these are
+[33:36] things that are kind of
+[33:37] like running in the
+[33:37] background that are
+[33:38] typically these long
+[33:39] running operations. Now,
+[33:41] however, if you do want
+[33:42] to create kind of
+[33:43] parallel Claude bots
+[33:45] that are like writing
+[33:46] code or doing different
+[33:47] operations for you,
+[33:48] where they're touching
+[33:49] files or modifying
+[33:50] things. And that's where
+[33:51] we get into agents. So
+[33:53] if you go to slash
+[33:54] agents, you can create
+[33:55] agents and these agents
+[33:57] can perform special
+[33:58] tasks and you can
+[33:59] delegate tasks to them.
+[34:01] So for example, you
+[34:01] could have an agent that
+[34:03] is handling or doing a
+[34:04] styling, right? Or like
+[34:05] changing the user
+[34:06] interface and agent
+[34:07] responsible for the
+[34:08] backends. Okay. I'm not
+[34:09] going to get into all
+[34:10] the details of how to
+[34:11] set this up because it
+[34:12] does get a little bit
+[34:13] complex and kind of
+[34:14] beyond the scope of this
+[34:14] tutorial, but I want to
+[34:16] show you things like
+[34:17] that do exist. And we
+[34:18] also have things like
+[34:19] MCP. If you want to
+[34:21] connect to, for
+[34:21] example, notion or
+[34:23] Gmail or Google drive,
+[34:24] or you want to connect
+[34:25] to a bunch of other
+[34:26] services, you can do
+[34:27] that right from an MCP
+[34:29] server inside of Claude,
+[34:31] which really expands its
+[34:32] capabilities. Again,
+[34:33] let's get out of that.
+[34:34] Let's go through slash.
+[34:35] You can see there's a
+[34:36] bunch of other stuff
+[34:37] that you can do here.
+[34:38] You can set up hooks,
+[34:39] for example, that will
+[34:40] automatically run code
+[34:41] for you or different
+[34:42] tasks. You can set up
+[34:43] key binds memory, you
+[34:45] know, all of this kind
+[34:46] of stuff. So just go
+[34:48] through it, have a look.
+[34:49] And another thing
+[34:50] that's useful is skills.
+[34:52] So you can actually
+[34:52] create skills that are
+[34:54] essentially repeatable
+[34:55] tasks that Claude does
+[34:56] all of the time. So
+[34:57] rather than creating an
+[34:58] agent, you can create a
+[35:00] skill and then you can
+[35:01] run a particular skill
+[35:02] by just saying, Hey, you
+[35:03] know, run this skill
+[35:04] that I've taught you how
+[35:05] to do. It will go look
+[35:06] up the skill and then be
+[35:07] able to run it
+[35:08] continually. So you can
+[35:09] see how powerful this
+[35:10] can get if you really go
+[35:12] through the full
+[35:12] configuration. But at
+[35:13] this point, if you
+[35:14] followed along, you know
+[35:16] how to use Claude code
+[35:17] better than 99% of
+[35:18] people. I showed you all
+[35:19] of the core
+[35:20] functionality and
+[35:20] features, and you can go
+[35:22] out and start coding
+[35:22] effectively, whatever you
+[35:24] want, because now you
+[35:25] know how to navigate
+[35:26] this tool. I know this
+[35:27] was long. I know it's a
+[35:28] bit complex, but I
+[35:29] wanted you to get the
+[35:30] proper setups. You
+[35:31] didn't need to watch a
+[35:32] bunch of other videos.
+[35:33] If you guys have other
+[35:34] questions or you want
+[35:35] more tutorials on
+[35:36] Claude code, then
+[35:37] definitely let me know.
+[35:38] And I will see you in
+[35:39] another video.
+[35:46] Transcribed by https://otter.ai

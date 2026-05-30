@@ -1,0 +1,250 @@
+[00:00] So the updates never stop.
+[00:02] Anthropic just released Cloud Design,
+[00:05] which now gives us an interface to create web apps,
+[00:09] websites, pretty much whatever we want via the Cloud interface.
+[00:13] This is their version of Google Stitch.
+[00:16] As you can see from this demo video,
+[00:18] it's all about giving you the ability to tweak
+[00:20] everything from the macro to the micro with these designs.
+[00:23] We're not talking about just web apps,
+[00:25] we're also talking about mobile designs as well.
+[00:27] It's funny because when we talk about
+[00:28] Anthropic and Cloud Code,
+[00:30] one of its biggest weaknesses is front-end design.
+[00:32] So to see that they're now coming out with
+[00:34] a full-fledged application that
+[00:37] handles this weakness is pretty cool.
+[00:39] So in this video, I'm going to show you how it works.
+[00:41] We're going to do a quick demo
+[00:42] so you can jump in there yourself.
+[00:43] Now, Cloud Design was created with Opus 4.7 in mind,
+[00:46] and it's available if you're on
+[00:48] anything from the Pro Max to Enterprise.
+[00:51] This does everything from prototypes,
+[00:52] to mock-ups, to PowerPoint presentations.
+[00:54] It's something we can export into things like
+[00:57] Microsoft PowerPoint or send it to Canva.
+[00:59] Now, one of the cool things about this is brand design.
+[01:01] So you can give this a code base,
+[01:03] say the code base of your website,
+[01:05] and it will pull all of the brand assets from the website,
+[01:09] so it can match things like colors and
+[01:10] typography to the design you're working on.
+[01:12] So to get started, you just need to head to
+[01:14] cloud.ai.design and it will take
+[01:16] you to a webpage that looks like this.
+[01:18] Now, right away on the left, we have a few different options,
+[01:20] prototype, slide deck,
+[01:22] you can use a template or other.
+[01:23] Down here on the bottom, like I was talking about,
+[01:25] we have the ability to create a design system.
+[01:27] So if I go to setup design system,
+[01:29] I can give it something like my company name,
+[01:33] and then I can provide examples of my design system.
+[01:36] You don't have to do this,
+[01:37] but this will help if you already have
+[01:39] something you're trying to match it to.
+[01:41] So you can give it the link to your GitHub,
+[01:43] you can actually drag the folder.
+[01:45] So if you have the code base on your actual computer,
+[01:48] you can drag it here, or you can just add
+[01:49] the fonts, logos, and assets,
+[01:51] as well as any other notes.
+[01:52] So what I did is I just selected the folder on
+[01:54] my computer with assets to my website,
+[01:57] and then I just hit continue to generation.
+[01:59] When you do this, especially if it's a larger code base,
+[02:01] first of all, it's not going to upload the entire code base,
+[02:03] it's gonna figure out which files actually make sense.
+[02:05] And secondly, you'll get a pop-up window that says,
+[02:07] hey, this can take 15 to 20 minutes
+[02:09] as it goes through all your files.
+[02:11] Now, if you wanna do something from scratch,
+[02:12] you can totally do that as well.
+[02:13] So we'll just start a new prototype,
+[02:16] we'll call it Chase Demo,
+[02:17] and we have two options.
+[02:18] You have just a rough wireframe,
+[02:20] or we can go straight into a high-fidelity mockup.
+[02:23] So we'll do the mockup.
+[02:25] That's gonna take you to this page,
+[02:26] and again, definitely getting some Stitch vibes here.
+[02:28] So I'm gonna tell it,
+[02:29] let's design an interactive, dark-themed graphic
+[02:31] showing how culture flows between cities,
+[02:33] a rotating globe with the cities connected by glowing path.
+[02:35] This is the same thing they did in the demo,
+[02:37] but I'm interested to see if what we get here
+[02:40] actually matches the asset they showed us in the video,
+[02:43] and what sort of differences we're gonna see.
+[02:45] How much did they hype it up in their ad?
+[02:47] So we're gonna go ahead and send it,
+[02:48] and by the way, you can see here,
+[02:50] we can also choose things like the model,
+[02:52] you can attach stuff,
+[02:54] so you can actually do voice here
+[02:55] and import whatever you want.
+[02:55] So right away, it starts asking us some questions,
+[02:57] which I really like.
+[02:58] This is almost similar to plan mode inside of Cloud Code.
+[03:02] So what kind of culture do we think?
+[03:04] Let's just do mixed, globe style.
+[03:08] Let's do, let's do this, flow path.
+[03:13] That looks cool.
+[03:14] What do we wanna do for color palette?
+[03:16] Let's do multi-hue, and right away,
+[03:19] I love the fact that we're now getting these prompts.
+[03:21] If I go into stitched, I'm not really going to get this.
+[03:24] If I go into other things, I'm not really gonna get this.
+[03:26] One of the most powerful things inside of Cloud Code,
+[03:29] and we've talked about this in other web design lessons,
+[03:31] is having this back and forth
+[03:33] to kind of figure out these blind spots in our plan,
+[03:37] and the fact that it's asking all these questions is huge.
+[03:39] It's asking me quite a few.
+[03:40] Even normal plan mode in Cloud Code only asks like three.
+[03:44] So we'll drag to rotate.
+[03:45] What city should we feature?
+[03:47] Let's do top 10.
+[03:49] How much UI?
+[03:50] Let's do full dashboard.
+[03:53] Overall mood, let's do editorial.
+[03:58] We'll keep with editorial.
+[04:00] What should be tweakable?
+[04:02] Ooh, we'll do flow color palette.
+[04:07] Let it do three things.
+[04:08] Let's continue.
+[04:09] And then over on the left, once we answer those questions,
+[04:11] it sets up its progress.
+[04:12] Again, similar to what we would see in Cloud Code
+[04:15] if we had it on plan mode and had it do stuff.
+[04:17] And by the way, this is obviously something
+[04:19] that you have to be on the web app to do.
+[04:22] This isn't something that's available in the terminal
+[04:24] for obvious reasons due to the graphical nature.
+[04:27] And from what I'm reading,
+[04:29] I don't think this is ever gonna be implemented
+[04:30] into the desktop app, or maybe it will at some point.
+[04:33] But as of right now, you have to do it through cloud.ai.
+[04:35] Now, as this is building,
+[04:36] let's talk about some of the questions you might have,
+[04:38] which is like, how is this any different
+[04:39] from me giving it this prompt right here
+[04:41] into the chat window or pulling up Cloud Code
+[04:43] and just saying, hey, I want you
+[04:45] to build this interactive thing?
+[04:47] Well, and having it just, you know,
+[04:48] create some sort of web app out of that.
+[04:50] The answer is, if we get super reductive, nothing really.
+[04:54] Like, right, it's just writing code.
+[04:55] It's gonna be the same thing.
+[04:56] The difference is, and again,
+[04:58] if you've done any sort of front-end design in any capacity,
+[05:00] even if it's just a simple landing page,
+[05:02] you understand the power of being able
+[05:04] to visually see these things and compare them.
+[05:05] That's why, you know, Google Stitch is so cool.
+[05:08] Because the awesome thing about Stitch
+[05:09] isn't even necessarily design philosophy,
+[05:11] although I think it's really good.
+[05:12] It's the fact that I have a UI
+[05:13] where I can visually see a bunch of options
+[05:15] and edit it in this manner.
+[05:17] And then when I like it, pull it into code.
+[05:18] When I'm doing everything code-first
+[05:20] from a design perspective, it's tough.
+[05:22] It's kind of janky.
+[05:23] It's kind of hard to take a visual medium
+[05:26] and put that into natural language,
+[05:28] which gets turned into code,
+[05:29] which gets turned into a visual,
+[05:31] and really nail it, especially at the beginning.
+[05:33] Like, I need to see things visually.
+[05:34] At least for me, I need to see options.
+[05:36] And so having this is awesome.
+[05:38] This is a great step forward for Anthropic and Cloud Code.
+[05:41] Because this has been a real weak point.
+[05:42] That's why you see apps like Pencil
+[05:45] and things like that becoming so popular,
+[05:47] because it gives you that visual medium
+[05:48] to deal with these sort of things.
+[05:49] And also, quick note, like you can see down here,
+[05:51] like these are full-fleshed applications.
+[05:53] It's essentially prototyping.
+[05:55] So you can have these things call APIs.
+[05:58] You should be thinking this more,
+[06:00] not just as like a visual design Canva thing.
+[06:03] You should be thinking of this more
+[06:04] in terms of like Google Studio,
+[06:05] like Google AI Studio type deal.
+[06:07] So here's what it came back with.
+[06:08] Kind of went with editorial style.
+[06:10] We can see the globe right here.
+[06:12] I can drag it with the mouse.
+[06:14] We can do the rotation speed,
+[06:16] change glow intensity,
+[06:18] change the palette, that's kind of cool.
+[06:21] And then it kind of has like little write-ups over here.
+[06:25] Now let's talk about being able to edit this thing.
+[06:27] First of all, we have this little tweaks thing up here.
+[06:30] So the tweaks just has to do with
+[06:32] rotation speed and all that.
+[06:34] I can leave comments, I can edit, I can draw.
+[06:37] And then we can also do things like full screen
+[06:39] to see what this would look like for real.
+[06:41] Oh, that's kind of interesting, full screen.
+[06:42] That looks much better actually.
+[06:44] But let's say I wanted to make an edit to this thing.
+[06:46] Obviously we could just go back
+[06:47] into the omp window and prompt it.
+[06:50] If I go to edit, I can get a lot more granular.
+[06:55] This kind of reminds me of like cursors editor
+[06:58] or even something like lovable.
+[06:59] So I can, you know, actually select
+[07:02] the individual cities themselves.
+[07:04] I select the globe at large, it'll bring it up here.
+[07:07] And I can change things like the color,
+[07:11] that looks hideous, you know, the height and all that.
+[07:14] I have the ability to get very, very specific
+[07:16] with what I want to change, which again, is great.
+[07:18] Better than me saying in text,
+[07:19] hey, I want to change the size of this.
+[07:21] Well, I can just select it in here and edit it that way.
+[07:24] We could also do comments.
+[07:25] So I can click on any particular thing.
+[07:27] Same thing with edit, but instead of actually changing,
+[07:30] hey, these specific numbers, I can click on the globe
+[07:33] and leave a comment and be like,
+[07:34] can we make the globe larger?
+[07:39] You know, send to cloud.
+[07:40] And it creates a queue of comments
+[07:41] if you don't want to send it to cloud right away.
+[07:43] But at any point, you can then send it to cloud
+[07:45] and we'll start working.
+[07:46] On top of that, we can also draw.
+[07:48] So I can be like, all right,
+[07:50] well, I just want like a moon over here, you know.
+[07:52] Let's get a moon.
+[07:53] I want to see like Artemis too over here flying around.
+[07:56] Stuff like that.
+[07:56] Then over here, we also have the design file.
+[07:58] So you can actually take a look
+[08:00] at the code underneath the hood.
+[08:02] And lastly, we have the ability to export
+[08:04] and share this thing.
+[08:05] So if I click export, I can download it as a zip.
+[08:07] I can export it as a PDF, PowerPoint, send it to Canva.
+[08:11] Or what's also super cool is I can hand this
+[08:13] over to Cloud Code.
+[08:14] And it gives me the command to bring this
+[08:15] inside of Cloud Code, which is great.
+[08:17] So that's where I'm going to leave you for today.
+[08:18] I know that was kind of down and dirty,
+[08:19] but just kind of wanted to show you
+[08:21] how to navigate this thing and what's possible.
+[08:23] Definitely expect a deep dive in the next day or so,
+[08:26] showing you how you can get the most out of this.
+[08:29] As always, let me know what you thought.
+[08:31] If you want to get your hands on the Chase AI Masterclass,
+[08:33] that's down in the pinned comments,
+[08:34] and I'll see you around.

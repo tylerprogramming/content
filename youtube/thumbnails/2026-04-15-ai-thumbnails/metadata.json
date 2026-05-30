@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "A highly excited person with an amazed expression pointing dramatically at a large glowing monitor displaying a grid of vibrant AI-generated images. Dark studio background with deep blue accent lighting and subtle neon blue rim light on the subject. High contrast cinematic lighting, photorealistic, dramatic shadows, the screen casting colorful light onto the person's face. Clean composition with the person on the right third, screen on the left, plenty of dark space for text overlay.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 3,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-15T16:30:40.128894",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776284780992-1d5iqwmgtur.png",
+        "https://tempfile.aiquickdraw.com/r/5c0923a301702b173a5799927f9d3f48_1776284870_nv333rld.png",
+        "https://tempfile.aiquickdraw.com/r/6d9498f30281ee2b7a293861d4435ac8_1776285036_dl2xdiby.png"
+      ]
+    }
+  ]
+}

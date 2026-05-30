@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Semi-realistic illustration of a young man with slicked-back dark hair and short beard wearing a black t-shirt, seated at a laptop keyboard, facing directly toward the viewer with a relaxed confident smile. Clean bright white studio background, soft even lighting. Style is slightly illustrative with bold clean outlines and slightly simplified features \u2014 graphic novel meets clean studio portrait, not wild pop art colors. Recognizable as a real person. At the very bottom of the image in clean bold sans-serif text: 'Save  \u2022  Repost  \u2022  Follow @tylerreedai'",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "jpg",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-15T12:18:24.486851",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773591501626-oywgvu8vg2o.jpeg"
+      ]
+    }
+  ]
+}

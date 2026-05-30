@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Clean white background with subtle texture. Dark terminal screenshot centered showing Claude Code after /btw answer with full Hono response. Bold dark charcoal text at top: 'No interruptions. No clutter.' Yellow accent text: '/btw \u2014 new in Claude Code'. Minimal clean social card.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "jpg",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/btw-ss4.png"
+      ],
+      "generated_at": "2026-03-16T17:12:26.439150",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773695538396-lkh5acw0li.jpeg"
+      ]
+    }
+  ]
+}

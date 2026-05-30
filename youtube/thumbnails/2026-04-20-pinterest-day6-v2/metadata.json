@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase platform name, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Headline: '1 COMMAND WRITES POSTS FOR 5 PLATFORMS'. Card 1 X bird icon 'X TWITTER - Punchy single posts / 230-character limit / no hashtags used / platform-native voice'. Card 2 LinkedIn icon 'LINKEDIN - Long-form narrative / no bold markdown / teach do not sell / personal story hooks'. Card 3 Instagram icon 'INSTAGRAM - Carousel caption / 5 hashtags exactly / save-worthy framing / mobile-first copy'. Card 4 YouTube play icon 'YT COMMUNITY - Poll or text post / subscriber question / channel engagement / short punchy prompt'. Card 5 graduation cap icon 'SKOOL - Community post / value-first hook / call to comment / discussion starter'. Clean minimalist style, warm Anthropic Claude brand aesthetic.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:08:28.789408",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776712105268-gmghvnp2fhn.png"
+      ]
+    }
+  ]
+}

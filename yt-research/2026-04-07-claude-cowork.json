@@ -1,0 +1,128 @@
+{
+  "query": "claude cowork",
+  "total_found": 100,
+  "days": 90,
+  "top_n": 10,
+  "videos": [
+    {
+      "title": "Claude COWORK Clearly Explained (& how to use it for beginners)",
+      "channel": "Eliot Prince",
+      "views": 856747,
+      "likes": 11283,
+      "comments": 353,
+      "upload_date": "20260216",
+      "duration": "18:28",
+      "url": "https://youtube.com/watch?v=ZeWfksNXlbU",
+      "description": "Claude Cowork Tutorial for Beginners.\n\nGrab the full walkthrough inside my AI Recipe Vault: https://eliotprince.com/ai-recipe-vault/\n\nI'll be honest \u2014 even I feel overwhelmed right now. And it's literally my job to stay on top of all the newest AI releases. So if you're sat at home watching this and",
+      "id": "ZeWfksNXlbU"
+    },
+    {
+      "title": "Introducing Cowork: Claude Code for the rest of your work",
+      "channel": "Anthropic",
+      "views": 505563,
+      "likes": 6319,
+      "comments": 374,
+      "upload_date": "20260112",
+      "duration": "1:09",
+      "url": "https://youtube.com/watch?v=UAmKyyZ-b9E",
+      "description": "Claude Cowork lets you hand off your most time-consuming tasks to Claude, and come back to finished outputs. Describe what you need, point Claude at your sources, and walk away.\n\nCowork pulls from your local files, cloud tools, and the web, then synthesizes everything into polished deliverables: spr",
+      "id": "UAmKyyZ-b9E"
+    },
+    {
+      "title": "What Claude Cowork Actually Does (And Why It's Different)",
+      "channel": "Tiago Forte",
+      "views": 362349,
+      "likes": 6967,
+      "comments": 267,
+      "upload_date": "20260217",
+      "duration": "16:02",
+      "url": "https://youtube.com/watch?v=_42sUaf037k",
+      "description": "\ud83d\udce5 Get Started With Claude Cowork (FREE GUIDE): https://bit.ly/466YUul\n\nClaude Cowork is a brand new tool from Anthropic that lets you collaborate with AI on a shared set of files. Instead of just talking, it can read your documents, do research, ask follow-up questions, and create real deliverables ",
+      "id": "_42sUaf037k"
+    },
+    {
+      "title": "I got a private lesson on Claude Cowork & Claude Code",
+      "channel": "Greg Isenberg",
+      "views": 338698,
+      "likes": 5923,
+      "comments": 237,
+      "upload_date": "20260123",
+      "duration": "42:07",
+      "url": "https://youtube.com/watch?v=DW4a1Cm8nG4",
+      "description": "In this episode, I sit down with Boris, the creator of Claude Code and one of the key builders behind Claude Cowork, to unpack what Cowork actually unlocks and how people use it in the real world. He walks through a hands-on demo where Cowork organizes files, extracts receipt data, builds a clean sp",
+      "id": "DW4a1Cm8nG4"
+    },
+    {
+      "title": "How to Use Claude Cowork Better Than 99% of People (Full Guide)",
+      "channel": "Ben AI",
+      "views": 268874,
+      "likes": 4465,
+      "comments": 199,
+      "upload_date": "20260131",
+      "duration": "21:07",
+      "url": "https://youtube.com/watch?v=HTu1OGWAn5w",
+      "description": "Join my AI Accelerator to build an AI business fast \u2935\ufe0f\nhttps://c.benai.co/htucc-acc\n\nWork with my AI Agency \u2935\ufe0f\nhttps://c.benai.co/htucc-agency\n\nGet our SEO Solution \u2935\ufe0f\nhttps://c.benai.co/htucc-seo\n\nGet our Recruiting Solution \u2935\ufe0f\nhttps://c.benai.co/htucc-recruit\n\nWe are hiring Marketers and Engineers",
+      "id": "HTu1OGWAn5w"
+    },
+    {
+      "title": "How I Use Claude Cowork to Automate 99% Of My Life (Full Guide)",
+      "channel": "Paul J Lipsky",
+      "views": 259731,
+      "likes": 5574,
+      "comments": 574,
+      "upload_date": "20260308",
+      "duration": "32:58",
+      "url": "https://youtube.com/watch?v=cJ2QCyr3yzU",
+      "description": "Try i10x: https://i10x.ai?fpr=paul53\nSave 15% with code \"PJL15\"\n\nNote: Claude changed recently and plugin may not work now. I made an update video here: https://youtu.be/aY-i_5QVKtI?si=NS4zbmMinyQGtgaR\n\nThe plugin: https://drive.google.com/file/d/12G7xCTqSQvV5xlNlXZMhJ6vVGBAWdOft/view?usp=sharing\n(C",
+      "id": "cJ2QCyr3yzU"
+    },
+    {
+      "title": "5 INSANE Claude Cowork use cases (Build Anything)",
+      "channel": "Jack Roberts",
+      "views": 199484,
+      "likes": 3141,
+      "comments": 91,
+      "upload_date": "20260216",
+      "duration": "26:07",
+      "url": "https://youtube.com/watch?v=EZdSVpgtjG0",
+      "description": "\ud83d\udcc8 ALL Systems: https://bit.ly/4kol0y5\n\ud83c\udf99\ufe0f Type with your Voice: https://glaido.com\n\ud83e\udd29 My Goofy pod: https://bit.ly/46nLQ3U\n\n\ud83e\udd16 Claude Opus 4.6 - https://claude.ai/\n\ud83d\udee0\ufe0f Claude Desktop App - https://claude.ai/download\n\ud83d\udce1 Model Context Protocol (MCP) - https://modelcontextprotocol.io/\n\ud83c\udfd7\ufe0f Google Cloud Consol",
+      "id": "EZdSVpgtjG0"
+    },
+    {
+      "title": "How to Use Claude Cowork Better Than 99% of People",
+      "channel": "Brock Mesarich | AI for Non Techies",
+      "views": 179299,
+      "likes": 4333,
+      "comments": 226,
+      "upload_date": "20260305",
+      "duration": "20:43",
+      "url": "https://youtube.com/watch?v=f95-O8C88uw",
+      "description": "\ud83d\udcda Skool Community with All of My Cowork Resources: https://bit.ly/4boAe3j\n\u2705 Build Claude Systems with My Team: https://bit.ly/4bRondh\n\nImport Memory to Claude: https://claude.com/import-memory\nDownload Claude Cowork: https://claude.com/download\nZapier MCP: https://bit.ly/4balTGt\n\nClaude Cowork is th",
+      "id": "f95-O8C88uw"
+    },
+    {
+      "title": "Master Claude Cowork in 28 Minutes",
+      "channel": "Ali H. Salem",
+      "views": 169265,
+      "likes": 3290,
+      "comments": 115,
+      "upload_date": "20260315",
+      "duration": "28:56",
+      "url": "https://youtube.com/watch?v=qytf1OF4sLk",
+      "description": "\ud83c\udfa5 Master Claude Cowork in 28 Minutes\n\nWant to learn how to use Claude Cowork from scratch? In this video, I walk you through a practical Claude Cowork tutorial that shows exactly what Claude Cowork is, how to set it up, and how to use it to automate real work.\n\nClaude Cowork is Anthropic\u2019s execution",
+      "id": "qytf1OF4sLk"
+    },
+    {
+      "title": "Claude Cowork Full Tutorial: How to Use Claude Cowork Better Than 99% of People",
+      "channel": "Bart Slodyczka",
+      "views": 166691,
+      "likes": 3024,
+      "comments": 110,
+      "upload_date": "20260316",
+      "duration": "14:23",
+      "url": "https://youtube.com/watch?v=vMo-yRCN3QM",
+      "description": "In this video, I break down everything you need to know to use Claude Cowork like a pro \u2014 from setting it up for the first time to building a structured workspace with context files that make Claude smarter with every task. I then show you how to create reusable Skills, connect third-party apps like",
+      "id": "vMo-yRCN3QM"
+    }
+  ]
+}

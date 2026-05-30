@@ -1,0 +1,298 @@
+[00:00] The most powerful thing I do with AI has nothing to do with code and it takes about 60 seconds
+[00:07] and most people haven't even tried it yet.
+[00:10] It's called a skill and skills are embarrassingly simple to create and unreasonably powerful
+[00:16] once you have them.
+[00:17] By the end of this, you're going to know how to work with AI on anything, not software,
+[00:22] not code, just work, and how to make sure it never forgets how.
+[00:27] That second part, that's skills.
+[00:29] But first, let me show you what I mean by anything.
+[00:32] Here's the thing.
+[00:33] The best AI tools in the world right now happen to be engineering tools.
+[00:38] Cloud Code, Codex CLI, you know, tools like that.
+[00:41] They were built for developers, but the work you can do with them is not just engineering.
+[00:46] It's just about any work.
+[00:49] This is simply working in a folder.
+[00:51] You open a folder, put your stuff in it, open an AI agent into it, and start talking.
+[00:57] I use Cloud Code inside of VS Code.
+[01:00] There's an extension, I think, I'll link to it in the description that'll get you started.
+[01:05] But the tools don't really matter, the pattern does.
+[01:08] So let me show you three examples, none of them involve writing code.
+[01:13] Okay, so here is kind of a normal scenario.
+[01:16] I've got meeting transcripts here from a meeting that I took and I just dropped that meeting
+[01:21] transcript into a folder.
+[01:23] This is kind of a real scenario.
+[01:24] You had a meeting, you got a transcript, and now what?
+[01:27] As I said, this is Visual Studio Code, or in fact, in this case, it's Cursor.
+[01:31] I'm going to use the plugin for Cloud Code.
+[01:35] You can get that installed with all the extensions that you'd find inside of one of these tools.
+[01:41] And inside of here, I'm going to ask the system to read this file and give me a few output
+[01:47] files.
+[01:48] Okay, read the transcript, and I need three different things.
+[01:52] I need a visual timeline showing the dependency graph between all of the different items,
+[01:59] a to-do list about who owes what and by when, and kind of clean meeting minutes.
+[02:06] Can you write each one of these as a separate file?
+[02:09] So the real trick here is that I'm asking it to write files.
+[02:12] It won't write files on its own, generally, so you really have to kind of tell it to at
+[02:17] this point.
+[02:18] We'll find out how you don't have to tell it things all the time in a second, but right
+[02:22] now I'm telling it to write files, and that's the fundamental difference.
+[02:25] In the end of this, I'm going to have artifacts, not just answers.
+[02:29] And those artifacts can be kept up to date or versioned.
+[02:32] I can hand them off.
+[02:33] I can recontextualize with them later.
+[02:35] This is really a fundamental difference than what you get when you're working with a chatbot.
+[02:40] Okay, and once it finishes, not surprisingly, of course, it creates the different files.
+[02:45] We can flip through them and see these were the meeting minutes, the conversation that
+[02:48] occurred, all of the things that happened, the to-dos that were broken down by the person
+[02:54] that owned each one of those to-do items.
+[02:57] You might have seen things like this before, but this is obviously fully craftable by what
+[03:00] you might actually want.
+[03:02] And in fact, the last thing we asked for, which was some kind of dependency graph or
+[03:06] Gantt style chart or something like that, showing the basic build out here.
+[03:11] But so here's one of the things that's kind of neat.
+[03:13] So Jake is thinking about taking a, let's say a vacation for two weeks, starting Monday.
+[03:19] Can you write a second version of all of these files reflecting that?
+[03:24] Okay.
+[03:25] And there it finished.
+[03:26] And we can take a look at this one and see that it has changed and it's moved Jake's
+[03:33] vacation out of the way and moved everything back into place relative to that.
+[03:38] So you can just make changes using AI to the data that's already sitting there at rest.
+[03:45] And that's really a major unlock.
+[03:46] Okay.
+[03:47] Here's another one really quick.
+[03:48] This is one that I actually needed to do.
+[03:50] This was real work that I had.
+[03:52] I have, not surprisingly, a lot of headshots to kind of use on thumbnails, as you guys
+[03:57] have seen, and they all have backgrounds.
+[04:00] Pretty irritating to have to work with each one of them when you want to change them.
+[04:03] So I decided to pull them all here into a folder and just talk to Claude.
+[04:08] Okay.
+[04:09] Do me a favor and just drop all of the backgrounds on these and put them in the transparent folder.
+[04:14] That's it.
+[04:15] And there it goes.
+[04:16] Ripping off all of the backgrounds.
+[04:18] Okay.
+[04:19] Let's see how it does.
+[04:20] Perfect.
+[04:21] Just like we expect.
+[04:23] Excellent.
+[04:25] Okay.
+[04:26] And here's another one.
+[04:27] If you're not convinced yet, all the recipes in one folder, you can see it's got all the
+[04:32] ingredients, all of the different serving size, how to create them, all that sort of
+[04:36] thing.
+[04:37] And all I'm going to do is drop into Claude code here.
+[04:40] And I'm going to just simply say, give me a meal plan for the week.
+[04:45] Tuesday nights, we have tacos.
+[04:47] Friday night is movie night.
+[04:49] So it needs to be something that we can eat with our hands because we eat in the dark.
+[04:53] And Sunday night is pizza night.
+[04:55] So give me a meal plan and a shopping list in different files.
+[04:59] Okay.
+[05:00] All right.
+[05:01] So what does it give us for the meal plan?
+[05:03] It got Tuesday for tacos.
+[05:04] Of course, it got chicken wings for movie night.
+[05:07] I'm not sure I really want to eat chicken wings in the dark.
+[05:11] I'm sure I could.
+[05:12] And then Sunday we get pepperoni and sausage pizza.
+[05:14] Ooh, looking forward to that.
+[05:16] All right.
+[05:17] And so what does this look like?
+[05:18] What did it create?
+[05:19] Remember, we asked for the meal plan itself.
+[05:22] And that looks like we just saw pretty much.
+[05:26] And then the shopping list.
+[05:28] And so here is our shopping list for the week.
+[05:31] As you can imagine, excellent.
+[05:33] Excellent.
+[05:34] Okay.
+[05:35] So that was great, right?
+[05:36] We got a one-week meal plan, a shopping list, all of that done.
+[05:40] It was pulled from our actual recipes, fantastic.
+[05:44] But it feels like kind of a one-shot thing, right?
+[05:47] I got what I needed, but next week I'm going to have to ask for everything all over again.
+[05:52] I'm going to have to explain Taco Tuesdays and Friday night in the dark and that we want
+[05:57] a shopping list and we want the meal plan as well.
+[06:02] And it feels like we're going to have to do that every single time, right?
+[06:06] Well, unless, unless I turn this into something more and now begins the really exciting part.
+[06:14] So I've told it, okay, so here's what I actually want.
+[06:17] I want to be able to track which recipes we liked, which ones we didn't.
+[06:21] I want to keep track of which ones we used and when we use them.
+[06:25] So we're not eating the same thing every week, unless it's a favorite.
+[06:29] And I also want a shopping list and a meal plan, and I don't want to have to explain
+[06:32] Taco Tuesdays and movie Fridays and Saturday pizza stuff.
+[06:37] So that's basically what I told it that I need.
+[06:40] Now, excitingly, in this example, I didn't say anything about, I want to create a skill.
+[06:46] I would say you want to say, I want to create a skill, but you'll notice that Cloud Code
+[06:51] is smart enough to then go take an exploration of its own skills capability.
+[06:56] And all of these systems know how to write skills themselves.
+[06:59] These skills are actual real unlocks you'll see in a second.
+[07:03] This thing is just going to build a whole system for me to do this every single time.
+[07:07] So as I mentioned, we're building a skill and a skill is just a saved kind of way of
+[07:12] working.
+[07:13] That's all.
+[07:14] It's the best thing to think of it.
+[07:15] Before this, I could come in and ask for a meal plan anytime.
+[07:19] It would do it, but I'd have to re-specify everything.
+[07:21] Now, once we have a skill, it will know the rules that I want to work with this system.
+[07:27] Even though it's just a folder, it's becoming a system.
+[07:30] Okay.
+[07:31] And that's it.
+[07:32] Let's get to a clear context so that we can say, I'm sorry to say last week, people didn't
+[07:36] love the spaghetti, so maybe we should reduce that.
+[07:39] But the pizza was great.
+[07:41] And that's it.
+[07:42] So now this whole system has these kinds of rules.
+[07:45] And if you see, I've exploded this dot cloud folder up here.
+[07:48] I just wanted to show you inside of here was the skill that it created.
+[07:51] And really all this is creating for you is a set of Markdown files.
+[07:55] It can do a lot more than that, but generally skills are Markdown files are basically prompts
+[08:00] with rules in them and workflow.
+[08:03] And that's really all we're setting up here is a set of utilities or tools or process
+[08:09] flows that you want to define for each system.
+[08:12] It's kind of fascinating.
+[08:14] Okay.
+[08:15] So let me pull back for a second.
+[08:16] It's not that skills themselves are the power move.
+[08:20] It's that you can now work on any surface area with AI, any kind of work, any kind of
+[08:25] problem in a way that's repeatable.
+[08:28] Skills are how you make it repeatable.
+[08:31] And they're not one thing.
+[08:32] A skill could be what we just built, a meal planning system that tracks things.
+[08:37] Or it could be dead simple, a skill that tells you the time and five time zones every time
+[08:41] you ask.
+[08:43] One function, one answer, done.
+[08:45] Or it could be deeply complex, kind of a multi-step workflow that knows your state, asks you questions,
+[08:52] runs off and does work and comes back when it's done.
+[08:56] All of that is possible inside a skill and they're live.
+[09:00] If something's not right, you just say, Hey, update that skill.
+[09:03] I need it to also do something else.
+[09:05] And it does, as you just saw, you're editing software by having a conversation about it
+[09:10] and kind of with it.
+[09:12] Now you can download skills from the internet.
+[09:14] Absolutely.
+[09:15] And some of them are great.
+[09:16] But here's what I'd rather you walk away with.
+[09:19] Build your own.
+[09:21] Because your needs are specific.
+[09:23] The skill you need for your family's meal planning or your team's meetings or your personal
+[09:27] contacts, nobody on the internet has written that for you.
+[09:32] They've written it for themselves.
+[09:33] And once you've built 10 or 15 of these things, you'll realize something.
+[09:37] You're in charge of your environment.
+[09:39] Here's how I think about it.
+[09:41] There's a progression with AI.
+[09:43] First you're amazed that prompts work at all.
+[09:46] Then you get past that.
+[09:49] You're working with it regularly.
+[09:51] And then you hit this moment where you can go, Ah, I can package this thing, put it together.
+[09:56] I can give it a name, save it, reuse it.
+[10:00] And that's skills.
+[10:01] That's the phase most people haven't gotten to yet.
+[10:04] And every day you stay in phase two, you're resolving problems.
+[10:08] Your AI is already solved for you.
+[10:10] So let me show you one more and this time let's do it from scratch.
+[10:14] So I've put together a simple little PRD that describes what I'm really looking for and
+[10:20] a couple of the concepts.
+[10:21] So I am going to create something called the people directory.
+[10:24] I'm going to call it peeps.
+[10:26] And basically it's going to keep track of friends and family and their birthdays and
+[10:30] their kids names and all kinds of things.
+[10:33] Really it's going to be super open ended, which is really what's great about all of
+[10:37] this AI software.
+[10:38] And I did describe some of this earlier into a prompt and then said, give me a lightweight
+[10:44] PRD that can just describe what I'm looking for.
+[10:46] And you'll see down below the actions that came up with is I can add a person, edit a
+[10:50] person, look them up, search them, look for next birthdays and ask questions about it.
+[10:55] And those will be each one of the independent actions.
+[10:57] There will be that many kind of actions in that action folder that we were just looking
+[11:01] at.
+[11:02] So let's give this a shot.
+[11:03] All right.
+[11:04] Use the PRD MD to build a skill for us.
+[11:06] Okay.
+[11:07] So while this one's building, I wanted to show you that this one I'm actually building
+[11:12] globally.
+[11:13] So with cloud code, at least not with all of these editors, by the way, a lot of editors
+[11:18] can do skills these days.
+[11:19] A lot of these systems now support skills.
+[11:21] It's not just a cloud code thing, but with cloud code, cloud has this concept of being
+[11:26] able to store something within a project.
+[11:28] We were just looking at a skill inside of a project folder that's only found within
+[11:34] that project.
+[11:35] So if I start cloud code somewhere else, it can't do anything with my meal plan stuff.
+[11:39] This one though, I'm thinking, okay, if I'm going to keep track of people, I may as well
+[11:43] have this anywhere.
+[11:44] And any instance of cloud that I'm in, I can ask a quick question to do slash peeps or
+[11:49] something like that and say, uh, what is Evan's birthday?
+[11:53] And it'll give me back that information.
+[11:55] And if I want to store information on them, it'll also store globally because I've told
+[12:00] it that I want to under my home directory to have a people folder.
+[12:03] This is all just part of the instruction I've given it.
+[12:06] It's super lightweight.
+[12:07] I haven't done much other than saying I want it global and I've given it a location for
+[12:11] it to store and read from.
+[12:13] Okay.
+[12:14] And just to show you that these things don't always listen to us.
+[12:17] I know you experienced this all the time.
+[12:19] I experienced it as well.
+[12:21] It actually did write it here locally inside of the folder that we're building in.
+[12:25] What I'm going to do is put this inside of my global cloud folder and I'll describe that
+[12:30] to you in a second.
+[12:32] So I'm going to come to the skills folder and drop the peeps folder inside of it.
+[12:36] So this is now the skill that we'll be dealing with and I can delete it from here, continue
+[12:41] the conversation that we were in, and now it's saying I can do slash peeps to get an
+[12:46] overview or I can add somebody.
+[12:50] I can edit somebody, I can look them up, search for them, look for birthdays, those sorts
+[12:55] of things.
+[12:56] So let's say, let me create five fake friends.
+[13:00] Ah, the number of times I've done this.
+[13:03] So of course we're using the skill.
+[13:06] It's of course updating the data that we have here and has information on each one of the
+[13:12] people.
+[13:13] This is that folder, that people folder in my home directory.
+[13:16] So if I said peeps birthday, it will look through all my sort of peeps, all birthdays
+[13:23] this year.
+[13:25] Looks like Luna is having the next.
+[13:27] Luna, her name is Lulu, her nickname's Lulu.
+[13:30] She likes pressing wildflowers, tiny terrariums, and roller skating at sunset.
+[13:36] Okay.
+[13:38] And it's 67 days away.
+[13:39] So there you go.
+[13:40] Now admittedly, I'm going to be able to keep track of almost anything with this because
+[13:45] this is open-ended software.
+[13:46] It is not structured and strict.
+[13:49] It's file-based software.
+[13:50] So they'll be able to write anything it needs inside of this.
+[13:53] And if I need more functionality, I can just say, Hey, I need in my peep skill, a new way
+[13:57] to do X and it will go in and edit that and update it in that new skill set so that anybody
+[14:04] that uses it or anywhere else I use it later, I still get that kind of skill.
+[14:09] Kind of brilliant.
+[14:10] Okay.
+[14:11] So this was built from scratch.
+[14:12] You watched me do it other than having to move it to my global folder.
+[14:17] That was the only thing that we had to fix, but I don't think you would run into this
+[14:20] problem.
+[14:21] It's globally available.
+[14:22] It takes about a minute to do and I can extend it at any time and I just tell it what I want.
+[14:28] That's a skill.
+[14:29] All right.
+[14:30] So that's skills.
+[14:31] You saw how fast it was.
+[14:32] We built two from scratch right here, took about a minute each minus a little bit of
+[14:36] extra time for a planning mode that went off for a little bit there.
+[14:39] But really, that's about it.
+[14:40] The most important thing to understand is skills are just an encapsulation of some logic
+[14:45] or rule or pattern or something else that you're already getting AI to do.
+[14:50] If you successfully do something, let's say you drop a file in and you tell it to do the
+[14:54] AI to do something on that file and it's successful.
+[14:57] Just simply say, hey, I like what I just did.
+[14:59] Can you make a skill out of it and have a conversation?
+[15:02] It will almost guaranteed give you the skill that you want.
+[15:05] They're really awesome.
+[15:06] If you enjoy this kind of stuff, by the way, please do subscribe.
+[15:10] I do this kind of work all of the time and I really love handing off these little practical
+[15:15] pieces of advice around AI and how to use them in your normal day.
+[15:20] So thanks for coming along for the ride on this one.
+[15:22] And I'll see you in the next one.

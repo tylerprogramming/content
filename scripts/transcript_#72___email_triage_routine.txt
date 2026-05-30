@@ -1,0 +1,24 @@
+[00:00] Flawed code routines are here, and I'm going to give you one that can easily save you hours
+[00:04] every week.
+[00:05] So here are just a few routines that I have, and we're going to look at the email triage,
+[00:09] and here's how it works.
+[00:10] So it runs every weekday at 8 a.m.
+[00:12] It connects to my Gmail.
+[00:13] You can have it connect to any other email provider.
+[00:15] Here are the instructions on how it needs to review my inbox for new and unread emails
+[00:21] for the last day.
+[00:22] And here's an output of it running yesterday morning, so when I logged on, I knew exactly
+[00:26] what was important, and I could go ahead and move on with my day.
+[00:29] So it categorized everything.
+[00:30] It fetched emails, so it told me what might be urgent, what was some action needed, and
+[00:36] then what was something that might be required.
+[00:40] And it gives me an example of everything, all of my emails that I had.
+[00:45] And then finally, here are a summary of actions that I should take, or at least should take
+[00:49] a look at.
+[00:50] And it creates the drafts for me right inside of my email, and I can go ahead and tell it,
+[00:54] go ahead and send the drafts if I'd like.
+[00:56] After creating hundreds of AI automations for Fortune 500 companies and for YouTubers
+[01:01] and school communities, I know that emails are a communication channel that everybody
+[01:07] looks at constantly.
+[01:09] And this one will save you so much time.
+[01:12] I'm an email for this free routine that I'll give you that will be in my free school community.

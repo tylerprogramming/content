@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Clean white background with subtle texture. Dark charcoal terminal window screenshot centered in frame. Bold dark charcoal text at top: 'Ask anything mid-task.' Smaller yellow accent text below: '/btw \u2014 new in Claude Code'. Minimal, clean social card design.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "jpg",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/btw-screenshot.png"
+      ],
+      "generated_at": "2026-03-16T17:09:07.192847",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773695343675-unt131e8bkg.jpeg"
+      ]
+    }
+  ]
+}

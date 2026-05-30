@@ -1,0 +1,21 @@
+{
+  "type": "statement",
+  "background": "dark",
+  "slug": "claude-social",
+  "lines": [
+    "I automated my ENTIRE",
+    "content system",
+    "with Claude Code.",
+    "",
+    "YouTube research.",
+    "Instagram carousels.",
+    "LinkedIn posts.",
+    "Shorts scripts.",
+    "",
+    "All in under 5 minutes.",
+    "Every single week."
+  ],
+  "accent_words": ["ENTIRE", "Claude", "Code", "5"],
+  "cta": "skool.com/the-ai-agency",
+  "handle": "@tylerai_dev"
+}

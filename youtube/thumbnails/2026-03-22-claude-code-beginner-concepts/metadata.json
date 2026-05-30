@@ -1,0 +1,36 @@
+{
+  "generations": [
+    {
+      "prompt": "Semi-realistic cartoon illustration of a man in his late 30s, dark short hair, skeptical curious expression, hand near chin, positioned on the left third of the frame. Rich dark warm chocolate-brown background. Four dark rounded icon cards in a horizontal row showing terminal screen, brain, lightning bolt, and gear icons with white labels. Clean bold white Claude text dominates center-right area. Space at bottom for large text overlay. 16:9 aspect ratio, high contrast, sharp clean edges, YouTube thumbnail style.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-22T19:22:56.130002",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774221771845-29a6ga0vpgj.png"
+      ]
+    },
+    {
+      "prompt": "Semi-realistic cartoon illustration of a man in his late 30s, dark short hair, confident direct gaze, centered in frame, slight smile. Dark background with subtle blue-purple gradient at edges. Six floating concept pill badges surrounding him labeled CLAUDE.md, slash commands, context, hooks, MCP, memory in clean white text on dark rounded pill shapes. Dramatic lighting on face. Clean modern YouTube thumbnail style, 16:9.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-22T19:23:58.470238",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774221835626-qpjshr8teir.png"
+      ]
+    }
+  ]
+}

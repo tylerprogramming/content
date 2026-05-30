@@ -1,0 +1,2349 @@
+[00:00] Hello and welcome to the ultimate Claude tutorial for 2026. In today's video I'm
+[00:06] going to be teaching you everything that you need to know about Claude so that
+[00:09] even if you are a total beginner by the end of this video you will be an expert
+[00:14] using Claude. We're going to start with the basics like prompting Claude and
+[00:18] configuring your account and then we'll work our way into some of the more
+[00:22] advanced features like using co-work and using Claude code. If this is your first
+[00:26] time watching this video I recommend watching it all the way through at least
+[00:30] once and then coming back and replaying certain chapters if you need help with
+[00:34] something more specific. First let's talk about pricing. So if you head over to
+[00:38] Claude.ai and then you hover pricing in their menu and hit overview that's going
+[00:43] to bring you to their pricing page and if you scroll down here you'll see that
+[00:47] they do have a free plan that you can get started with but it is pretty
+[00:51] restrictive I'm not going to lie. It's enough to test things out but you're
+[00:55] probably not going to get any serious work done with the free plan. What I
+[01:00] would recommend is starting out on the pro plan and then eventually upgrading
+[01:04] to max if you notice that you're actually getting a benefit from this. You
+[01:07] can think of Claude as really an extra employee and when you think about it
+[01:11] that way it's actually quite cheap. For today's tutorial I'm going to be
+[01:15] starting out on the free plan so that you can see the limitations of it and
+[01:19] you can decide from there if and when you want to upgrade. So I'm just going to
+[01:22] hit try Claude and you can either enter your email or continue with Google. I'm
+[01:26] just going to continue with Google and then I'll choose my account and hit
+[01:30] continue. Then to create an account I have to accept their terms and hit
+[01:34] create account. Next I'll enter my phone number and I'll send a verification code
+[01:38] to get signed in. So they've texted me that code now I'm just going to enter it
+[01:42] and I'll hit verify code. Then it's going to ask me how are you planning to use
+[01:47] Claude. For me I'm just going to select for personal use but you can always say
+[01:52] with my team or for personal use and then you can come back later and change
+[01:55] this setting. Then they're going to show me the plans again. For now let's
+[01:59] just start out with use Claude for free and then it's going to mention Claude
+[02:03] desktop which I'm going to be signing up for later in this tutorial but for now
+[02:06] we're just going to stay in the web version. So I'm just going to hit skip
+[02:10] and now here's a key consideration for your privacy with Claude. You can turn
+[02:14] this off if you don't want them to use your data and your chats that you have
+[02:17] with Claude to train their models. So I'm just going to turn this off and I'll
+[02:22] show you how you can turn it back on if you want to later but for now I'm just
+[02:25] going to hit continue and it's sort of going to onboard me now. It's just going
+[02:29] to ask me a few questions and I'm just going to type in my name and I'll go
+[02:34] ahead and send that off and then it's going to ask what I would like to use
+[02:38] Claude for what kind of topics am I interested in in my work and in my life.
+[02:43] So I'm just going to say life stuff business and strategy and coding and
+[02:46] developing and then I'll say let's go and because I said coding and developing
+[02:52] it's going to recommend that I use Claude code as well and I'm going to
+[02:56] show you how to use Claude code later but for now I'm just going to say maybe
+[02:59] later so that I can continue showing you guys the rest of the web app. And now it
+[03:04] might give you a few ideas for starting your first chat with Claude but I'm just
+[03:08] going to say I have my own topic and then it's going to let me into my Claude
+[03:12] account. In the center of the page you'll notice that you can simply type into the
+[03:17] chat bar and you can ask Claude a question or give it a task. On the left
+[03:21] hand side you can see that this is where your chats are stored, your artifacts, your
+[03:25] projects, pretty much everything that you're going to be using as a history in
+[03:30] Claude and then you can also customize and search. I'm going to be talking more
+[03:34] about this in a moment but you can also hide this sidebar if you want a more
+[03:39] focused view. And I'm going to open this up really quick and we're going to start
+[03:43] out just by going down to my name down here and clicking on it. We're going to
+[03:49] open up the settings in Claude and I'm just going to go over the settings so
+[03:53] that you understand where everything is and you can set up Claude to best serve
+[03:57] you. So starting out here on the general tab we can edit our name, we can also
+[04:01] reload the profile picture to get a nice profile picture that Claude provides for
+[04:06] us. So I'm just going to go with this one and then it asks what best describes
+[04:10] your work and it gives some different options, some different job titles or
+[04:14] roles and you can just select your role. For me I'm just going to select marketing
+[04:18] and then you can start entering some personal preferences here. So this is
+[04:22] just going to tailor your experience with Claude. You can write about your job,
+[04:25] anything about your life, anything that will be relevant in your conversations
+[04:29] with Claude. For me I'm just going to be using voice-to-text, it's a bit quicker
+[04:33] for this tutorial so I can click into here and then I can just use voice-to-text.
+[04:37] I'll just say I run a YouTube channel called Productive Dude. If you're
+[04:43] curious how I pulled this off and how I'm using the voice-to-text feature, this
+[04:47] is actually a separate app called WhisperFlow. Now I'm just going to save
+[04:51] changes to make sure that this stuff gets saved and next let's talk about
+[04:55] notifications. So you can have notifications for response completions.
+[04:59] This means when Claude is finished answering your question or your query
+[05:03] that you send it in a chat, this will notify you. Remember this is useful for
+[05:07] long-running tasks like if you ask it to go do a bunch of web research and you
+[05:11] don't want to be sitting there waiting for it, you can get a notification when
+[05:14] it's complete if you turn on response completions notification right here. You
+[05:19] will have to allow that in your browser and now it will send me notifications. Now
+[05:23] the next notification is dispatch messages and dispatch is a feature that
+[05:27] I'll talk more about in the future, but it's basically giving Claude access to
+[05:32] your computer while you're on the go, while you're away, and dispatch is how
+[05:36] you talk to it. So you can talk to it directly through your phone and it can
+[05:40] use your computer to do different things with your file systems, use your apps, and
+[05:45] really it just makes Claude more productive because it has a computer
+[05:48] harness. It's not just chat and web search, it's able to actually utilize
+[05:52] your computer, your file system, and your apps. I'm going to leave this off for now
+[05:56] and we might talk about it a little bit more when we get into dispatch. Now I'm
+[05:59] going to scroll down a little ways here and there are a few styling
+[06:02] considerations that we have. For the color mode you can go with light mode or
+[06:06] dark mode. For this tutorial I'll stay on light mode just so that it's easy for
+[06:11] you guys to see. You can also change the setting for background animation. I'll go
+[06:15] ahead and enable that for this tutorial and if you scroll down a bit further you
+[06:19] can change your chat font. So you can stick with their default, you can switch
+[06:23] to sans if you prefer that, or you can use system or even dyslexic friendly. If
+[06:28] you're dyslexic this can be helpful for reading the chat responses. I'm just
+[06:32] going to stick with default. And then the final setting within general is the
+[06:36] voice settings. So if you're actually talking to Claude they have a few
+[06:39] different voices that you can listen to and you can decide which one that you
+[06:42] like. I'll talk more about voice mode later in this tutorial. The next settings
+[06:46] are your account settings. So you can click on account right here. You can see
+[06:51] your active sessions with Claude down here. So if there's anything suspicious
+[06:54] you can log that session out. This is also where you can log out of all of
+[06:58] your devices if you want to. You can delete your account and you can access
+[07:02] your organization ID. Next let's go to our privacy settings. And from inside of
+[07:06] privacy you can turn off your location if you want to so that Claude can't see
+[07:11] your location. But this can actually be helpful if you want to keep it on so
+[07:15] that if you ask it something about a local company or a local restaurant it's
+[07:19] able to actually answer that question with relevant information even if it
+[07:23] doesn't have your location in the text. And then next we have help improve Claude.
+[07:28] This is the one that we turned off when we were signing up for Claude. But you
+[07:31] can turn it back on here if you want them to be able to train on your
+[07:34] conversations. I recommend always having this off. There's no real good reason to
+[07:39] have this on. Then here you can also export your data. You can manage any
+[07:43] shared chats that you have if you share chats. And you can also manage your
+[07:47] memory preferences here. These are the things that Claude is going to remember
+[07:50] about you. Next tab that we have is billing. And this is where you can
+[07:54] upgrade your plan in the future if you want to. And you can also see invoice
+[07:57] history and things like that. Right now I'm on the free plan so the billing page
+[08:01] is pretty boring. Next we have capabilities. And this is where you can
+[08:05] really get Claude customized for you. If you want Claude to remember things about
+[08:09] you as you chat with it and be able to generate those memories from any
+[08:13] conversations that you have, you can turn this setting on right here. And it just
+[08:17] instantly enhances the power of Claude. You can also import memory from other AI
+[08:21] providers. And to do this I'm just going to use ChatGPT from OpenAI as an
+[08:26] example. I can just hit start import. And what they're going to do is they're
+[08:30] going to give me this prompt right here that I can export my memories with. So if
+[08:34] I just copy this prompt, I can head over to something like ChatGPT. And if I've
+[08:39] been using it for a while, it'll actually have a lot of memories stored about me
+[08:42] already. And I can just paste that prompt that Anthropic gave me. And then I can go
+[08:47] ahead and send this off so that we can pass that information over to Anthropic.
+[08:51] So I'll go ahead and send this off. And from here it begins generating any
+[08:55] memories that ChatGPT might already have about me. So that when this is done, I can
+[09:00] just simply copy this and I can hand it over to Claude. For the sake of this
+[09:03] tutorial, I'm not going to be copying over all of my memories from my actual
+[09:07] ChatGPT account. But if you want to, you can actually copy the memories that it
+[09:12] gives you. And you can just paste them right here. And that will actually
+[09:14] transfer all of your memories over. Once you hit add to memory. For now, I'm just
+[09:18] going to close this import memory tab. The next setting is tool access. We'll be
+[09:23] talking more about adding tools to Claude later in this tutorial. But what
+[09:28] this setting does is it allows you to load the tools when needed. So Claude can
+[09:32] kind of see a surface level idea of what tools you have. And then it can decide,
+[09:37] okay, I want to use this tool. Or you can start with all of the tools loaded in so
+[09:41] that Claude can see exactly everything that those tools can do. The only problem
+[09:46] with this is it's going to eat into your conversation limit. So you don't want to
+[09:51] turn on tools already loaded if you're trying to be efficient with your token
+[09:55] usage. I recommend keeping it on load tools when needed because Claude does a
+[10:00] good job at figuring out what tools it needs, rather than loading in all of the
+[10:04] tools with this option here. This is going to allow you to have longer chats
+[10:07] with Claude, and it's not going to constantly fog the conversation with
+[10:11] every tool that you have. Next, we have visuals. And this is where you can decide
+[10:15] if you want artifacts. Artifacts are basically just mini apps or code that
+[10:20] Claude can generate and render within Claude. So you can build these mini apps
+[10:24] and have Claude run them directly on this platform. You don't need to have
+[10:29] your computer or anything like that. You can just see and use them right inside
+[10:33] of Claude. Now, if you want those artifacts to have AI inside of them, then
+[10:37] you can actually have Claude build those artifacts with itself embedded in
+[10:41] them. And to do that, you have to turn on AI powered artifacts. For now, I'm going
+[10:45] to leave this off and we may implement AI inside of the tools that we're
+[10:49] building with Claude later down the line. Another feature that Claude recently
+[10:52] added is inline visualizations. So an artifact you can think of as a bit
+[10:57] separate from the chat. It builds the app and it puts it almost in a side panel
+[11:02] that you can then come back to and it saves it there. Whereas inline
+[11:05] visualizations actually generate code inside of your chat so that you can
+[11:10] visualize it right in line with the chat. For me, I actually prefer just sticking
+[11:14] with artifacts and turning this off, but you can keep it on if you want. And I'll
+[11:18] keep it on for the sake of this tutorial just so you can see how it works later
+[11:22] in the tutorial. Then we move on to code execution and file creation. If you don't
+[11:27] want Claude to be able to execute code, you can actually turn this off and then
+[11:31] you can turn artifacts and inline visualization off as well. If you don't
+[11:35] want it generating code. But one of the most exciting things about Claude is
+[11:38] that it can do this. So I'm going to leave this on for now. And then you can
+[11:42] also decide if you want to allow network egress. This is where Claude's going to
+[11:47] install code packages that make its code more powerful. If you want to turn this
+[11:52] on so that you can enhance your artifacts and your inline visualizations,
+[11:56] then you can do that. But make sure to check out the security risks before
+[12:00] doing this. For now, I'm going to leave this off. The final setting that we have
+[12:03] here is skills. And I'm going to be going in depth on skills later in this
+[12:07] training. The next settings page is connectors. And this is where you're
+[12:11] going to connect to different tools that you have. So you can browse common
+[12:15] connectors. You can connect directly to Google Drive or GitHub right here. Or you
+[12:20] can add a custom connector. And this is what they call an MCP. MCP stands for
+[12:26] Model Context Protocol. And all this really means is it's a way to connect
+[12:30] outside apps to Claude so that it can utilize, read, and write to those apps. If
+[12:35] you hit browse connectors, you can see all of the popular ones that they have
+[12:38] that are just a one-click easy install. There's probably some popular tools in
+[12:43] here that you're already using. And we'll talk more about this later. For now, I'm
+[12:46] just going to close out of this. And finally, we have Claude code at the bottom
+[12:50] here. Now if you're not on a Max or a Pro plan, then you aren't able to use Claude
+[12:53] code. I'll be upgrading later in this guide to show you the power of Claude
+[12:57] code. Next, I'll go down to the lower left-hand corner. And if I click on my
+[13:01] name right here, I can then decide what language I want to use. I'm going to
+[13:04] leave this on English, but you can change this if you want to. If you need to get
+[13:08] help, you can hit get help. And this is going to open up Claude so that you can
+[13:12] actually chat with it through a messaging portal if you want to ask a
+[13:16] question about your account. I've had my account go down before, and it's always
+[13:19] good to be able to talk to Claude directly and figure out what's going
+[13:23] wrong. Claude is a super popular app, and it's in high demand, which means that
+[13:28] sometimes Claude can go down. You can go to status.claude.com to see its
+[13:33] current uptime and to see its uptime by platform. So Claude.ai is what we're
+[13:38] using right now, and it's actually in a partial outage right now. I haven't
+[13:43] tested it out, so I don't know if we're running into issues. But this is just
+[13:46] something to keep an eye on if you notice that Claude isn't working for you.
+[13:49] Now you can also go in and upgrade your plan from here. You can get apps and
+[13:54] extensions. You can even gift Claude to someone if you click gift Claude, which
+[13:58] is actually pretty cool. You can give someone access to X amount of months on
+[14:01] a Max 5x or a Max 20x or even just the regular Pro. If you're struggling to find
+[14:07] a birthday or Christmas present for someone, this actually might be a great
+[14:10] gift. I'm going to close out of this for now. And then finally, you can also learn
+[14:14] more down here. They have tutorials, courses, you can learn more about
+[14:18] Anthropic, you can read their policies and such. And you can also see their
+[14:22] keyboard shortcuts here if you're somebody who likes to know all the
+[14:25] keyboard shortcuts and just know how to navigate everything quicker. I'm going to
+[14:29] close this for now. And the last thing to touch on from this bottom sidebar here
+[14:33] is the logout button. So you can just simply log out here. Next, let's talk
+[14:37] about the chat box. So here underneath on a new account, it's going to give you a
+[14:41] get set up with Claude. And it's going to give you some items that you can check
+[14:46] off. I already showed you how to bring your history over from another AI, so I'm
+[14:49] going to close this one. And we're going to talk about setting up projects with
+[14:53] files in context and also teaching Claude your workflows with skills. But
+[14:57] for now, I'm just going to dismiss the rest of this checklist. Next, you can
+[15:00] click on the model selector right here if you want to change your model. Some of
+[15:04] these models are better for quicker everyday tasks, while others are better
+[15:08] for heavy reasoning or development or any kind of big gnarly task that you
+[15:12] need to tackle. Opus 4.6 is my daily driver and I use it for some pretty
+[15:17] heavy-duty tasks, but this one isn't available to the free plan. But the good
+[15:21] news is is Sonnet 4.6 is almost just as good and this is the default on the free
+[15:27] plan. You can also go down to Haiku if you want faster answers and you want to
+[15:31] use up less of your tokens. You can also turn on extended thinking if you want
+[15:35] the model to think for more loops and you want it to think deeper about your
+[15:39] problem. This can be good if you have a big problem to tackle. And then you can
+[15:43] also hover more models and you can see some of the other models, some of the
+[15:46] older models that they have available. Trust me when I say that this is a super
+[15:50] fast-paced industry, so by the month these models in here are constantly
+[15:55] changing and they're always developing something new. So that's why I like to be
+[15:59] upgraded typically, but for right now we're just gonna stay on Sonnet 4.6, but
+[16:03] just keep an eye on these different models that they have available.
+[16:06] Sometimes a model won't be able to do what you want it to do. You'll come back
+[16:10] in a few months and then you'll be very surprised with the results of the latest
+[16:13] model. Next we can create connections and attachments for our chat by clicking
+[16:17] this plus button right here. And inside of this plus button you can add files or
+[16:21] photos from your computer, you can take a screenshot, you can add a chat to a
+[16:26] project, and we'll be talking about projects in a bit here. You can also
+[16:30] connect to different skills and there's already a skill in here called skill
+[16:33] creator that Anthropic provides. You can also add connectors which we already
+[16:37] talked about. These are the different apps that you can connect to Claude for
+[16:41] reading and writing to using Claude. And then we also have web search and by
+[16:45] default this is enabled. This is going to allow Claude to use web search to get
+[16:49] relevant information from let's say today. If I asked it for today's news, the
+[16:54] model wouldn't know that by default. What it would do is it would use web search
+[16:58] if it had that available to it. So this is super important to keep on because
+[17:02] it's going to make sure that all the information that you're getting from
+[17:05] Claude is relevant. And then we can also change the style of writing. I recommend
+[17:09] leaving this on normal, but you can experiment with learning, concise,
+[17:13] explanatory, formal, or you can even create and edit different styles that
+[17:18] you have custom for Claude. So let's say that you have your own writing style.
+[17:22] Well you can create that writing style here so that you can have Claude write
+[17:25] exactly like you. When I hit create and edit styles, I'm just able to hit create
+[17:31] custom style. And then here I can add writing examples. So if I just click this
+[17:35] button, I'm able to upload from my device or paste text content. And if I don't
+[17:40] want to upload that stuff, I can even just click describe style and I can
+[17:44] explain the style here and go through the form. I'm going to close this for now
+[17:48] and we're just going to stick to the normal style for this guide. Now let's
+[17:51] say that I wanted to talk to Claude through my microphone and I wanted to
+[17:55] hear it talking to me back. What I could do is I could click on the voice mode
+[18:00] button right here. And this is actually really useful if you're in the car, on
+[18:04] your phone, you're going on a walk or something like that, and you just want to
+[18:08] talk back and forth without having to type into a keyboard. And you can
+[18:12] actually listen and talk back with Claude. So I'll just show you quickly how
+[18:15] that works. I'll click use voice mode and I have to allow this. Hey there Claude,
+[18:21] can you hear me? And as you can see, it goes through and it continues with the
+[18:31] conversation. So as I'm talking here, it's basically pulling up my text
+[18:37] immediately and then when I stop talking, I don't have to do anything. It's just
+[18:41] able to continue talking back to me, like so.
+[18:47] That's brilliant. So you've got a seamless back and forth going here. No need to hit any buttons or wait around. Feels pretty natural, doesn't it? What would you like to chat about?
+[18:57] For now, I'm just going to hit stop and then I will go back to new chat in the upper
+[19:01] left-hand corner and that brings me back to this page. But now you can see that we
+[19:05] have our first chat over here in the left-hand sidebar. If I want to, I can
+[19:09] click the three dots here and I can star it if I want it to show up at the top
+[19:13] of my chats. So if I'm having a really good conversation and I don't want to
+[19:17] lose it, I can always star that and it will show up at the top of my
+[19:20] conversations. I can also go in here and rename this so that I can make sure that
+[19:25] I can find it. So let's rename it to voice mode and now I have that really
+[19:30] nice and organized. I can also click into here and add this to a project. Again,
+[19:35] we're going to talk about projects in a bit here, but for now I'm just going to
+[19:38] delete this because this was just a test conversation. So I'll hit delete and if
+[19:43] you want to use the CLAWD models without it having prior knowledge of your
+[19:47] memories or without it having any sort of understanding of who you are, then you
+[19:51] can click this little ghost icon in the upper right-hand corner. And what that
+[19:56] will do is it will open CLAWD in incognito mode. And as it says here,
+[19:59] incognito chats aren't saved, added to memory, or used to train models. Now this
+[20:05] functions the same. I can just type anything that I want here and I can send
+[20:08] it off, but in this version it's actually just going to contact the model
+[20:12] directly. It's not going to give it any of my other information. I'm just going
+[20:16] to hit X to close out of incognito mode. And now let's go over a brief prompting
+[20:22] guide. No matter what large language model you're using, if you don't have the
+[20:26] proper prompt structure, you're not going to get the best results. So I'm going to
+[20:30] briefly share with you the bulletproof prompting sequence that we teach to all
+[20:34] of our students. Because if you have generic prompts, you're going to get
+[20:37] generic answers. You're going to get the same answers that everyone else does. So
+[20:41] I'm going to share this prompting sequence with you, and then I'll show you
+[20:44] the results of a generic prompt versus the results of a prompt that actually
+[20:48] does well. So let's jump into the bulletproof prompting sequence. And this
+[20:53] is an acronym that we like to call GCAO, or Goal, Context, Action, and then Output
+[20:59] Format. Here's an example of a good prompt. So it says, my goal is to create
+[21:04] YouTube videos that will perform well for my channel. The analytics from my
+[21:08] past videos are attached as context. I want you to analyze my past video stats
+[21:13] from my channel, then research my niche and share three videos that would
+[21:17] perform well for my channel based on current trends and what has worked for
+[21:22] me in the past. Your final output should be a bullet list of those video ideas
+[21:27] with title, length target, and a brief summary of what that video should cover.
+[21:31] And this is a good prompt because it has my goal, it has the context, it has the
+[21:36] action that I want the model to perform, and then finally it has the output
+[21:40] format, how I want to see that finalized data. Do I want to see it in a bullet
+[21:44] list? Do I want to see it in a table? Do I want an interactive diagram? That's what
+[21:48] I'm defining there. So first let's test out a generic prompt in Claude. I'm just
+[21:53] going to say, I want you to give me ideas to grow my YouTube channel, and
+[21:57] then I can send that off. And this is a short generic prompt and it's going to
+[22:01] give me a generic answer. The only context that it has is that my YouTube
+[22:05] channel is Productive Dude, so it might actually be able to figure that out. And
+[22:09] as you can see here, it's actually asking me some questions. So I can just select
+[22:14] one of these options here. I'll just say productivity tips and tools. What's your
+[22:19] biggest growth challenge right now? I'll say getting views and discoverability,
+[22:23] and then I will go ahead and enter my subscriber range. And after entering this
+[22:29] here, it says great context. So it actually went and got the context. This
+[22:33] tool is getting better at actually doing that, but what it's giving me here is
+[22:37] pretty generic advice because I haven't given it enough context, and I didn't
+[22:41] tell it exactly what I want, which is real video ideas. So it's giving me
+[22:46] ideas, but these are very surface level. This is the type of information that it
+[22:51] would give to any productivity channel, but if I want to get specific information
+[22:55] that's actually going to help me personally, I can start a new chat and we
+[22:58] can use our bulletproof prompting sequence. So first I'll give it my goal.
+[23:02] My goal is to create YouTube videos that will perform well for my channel. Then
+[23:06] I'll go ahead and give it the context. I'll just say the analytics from my past
+[23:09] videos are attached as context. Then I'll grab my analytics from YouTube. I'm just
+[23:14] going to download them as a CSV. Then I can drag all of those analytics directly
+[23:19] into Claude. So I've given it my goal, I've given it the context, and now I have
+[23:23] to give it the action, one of the most important parts. I say I want you to
+[23:27] analyze my past video stats from my channel, then research my niche. I'll add
+[23:32] with web search and share three videos that would perform well for my channel
+[23:38] based on current trends in the industry and in my niche, and what has worked for
+[23:47] me in the past. And finally I need to give it the output format. So I'll paste
+[23:51] in the output format. Your final output should be a bullet list of those video
+[23:55] ideas with title, length, target, and brief summary of what that video should cover.
+[24:00] Now let's go ahead and send this off and compare it to how well it does compared
+[24:05] to that generic response from before. Now before I send this off, to get the
+[24:08] most out of this, I've upgraded to the pro plan. So let's go ahead and send it
+[24:12] now. And now it's coming back with that exact format that I wanted, right?
+[24:15] Remember my output format? A bullet list with the title, the length, target, and
+[24:20] also a brief description of why this video would do well and a bit of a
+[24:24] summary. And the first video that it suggests is a Claude Code Full Beginners
+[24:28] Guide, which is the video that I'm actually filming right now. So that's
+[24:31] actually pretty funny. It also recommended N8N plus Claude AI, Build a
+[24:36] Complete Business Automation Step-by-Step, and 7 AI tools you need in
+[24:40] 2026. And it told me exactly why. And the nice thing about this is it's basing it
+[24:44] on my past videos. It's not just giving me that generic canned information like
+[24:49] the first chat that we started here. Now if you want to improve your prompting
+[24:52] and you want to learn all of these other amazing AI tools that are coming down
+[24:56] the pipeline right now, then I recommend checking out our courses on our website.
+[25:00] I'll leave a link to this in the description below. This is where we
+[25:03] really dive in and go deep. If you want lifetime access to any of these courses
+[25:08] on our site, then you can buy them outright here and you can get them for a
+[25:12] lifetime. Or you can join our community and get access to all of these courses.
+[25:17] And you can also jump on with me and my brother Drake from AI Foundations on a
+[25:22] weekly call. From there we can get you and your team up to speed with AI. And if
+[25:27] you want us to just build out the automations, deploy your apps, and do all
+[25:30] of this done for you as a service, you can also apply below to work with us
+[25:35] directly. I'll leave those links below. Now that we have a few chats in our
+[25:38] sidebar, I want to show you more how you can use in-depth search to find what you
+[25:42] were looking for from a past chat. You can just hit the search button here and
+[25:46] then if you go and type out something like productive dude, you might not see
+[25:51] results here because it's just looking at the titles right now. But if you want
+[25:55] deeper search into your past chats, then you can hit go to settings to enable
+[25:59] deeper search. And then now you can actually turn on search and reference
+[26:03] chats. This allows Claude to search for relevant details in past chats. So I'll
+[26:08] just go ahead and turn this on. Now it can search deeper when I go up here to
+[26:12] click search and I type in a query. If you want a full screen view of this, then
+[26:16] you can click on chats in the left-hand sidebar and you can get a full page
+[26:20] where you can search and you can see all of your chats here. These chats are great
+[26:24] for just one-off questions or conversations that you want to have with
+[26:28] Claude. But if you want more of an ongoing project, then what I would
+[26:32] recommend is checking out the projects tab over here. And what you can do is you
+[26:36] can click new project and you could create a project and I could just call
+[26:40] it productive dude for instance. And this could be a project that I can keep
+[26:45] coming back to and adding to and really just forming and growing as I talk about
+[26:50] my YouTube channel with Claude. And here it asks what are you trying to achieve?
+[26:54] So I could just say something like growing my YouTube channel and driving
+[26:58] traffic to my offers. And then I could hit create project and within a project
+[27:03] I can have siloed off memory within just this project. I can also add instructions
+[27:08] for how I would like this project to work and I can upload files that are
+[27:13] relevant to this. So for the files I can just drag in my stats over here and I
+[27:18] can also add some instructions. And it gives us some suggestions here for
+[27:22] project instructions but I can actually just use our GCAO prompting sequence
+[27:27] inside of these instructions so that I don't have to type out the goal, the
+[27:32] context, action, and output format every single time. I'll just say the goal of
+[27:37] this project is to be a co-worker along with my YouTube channel and help me to
+[27:42] develop a better channel. I want to grow in subscribers, I want to grow in views,
+[27:47] but most importantly I want to grow my business using this YouTube channel. A
+[27:52] preference that matters to me is I don't care much for vanity metrics. Views and
+[27:57] subscribers should simply be an indicator that I'm getting in front of
+[28:02] more people that could be potential prospects. It's not something that I like
+[28:06] to focus too heavily on. We use this as a signal that I'm doing something right
+[28:12] but we don't look at it as gospel. So I've given it the goal and I've started
+[28:16] to give it some context. Now I'm just going to continue with the context. I'll
+[28:20] say here's a link to my channel and I've given it the link now and I'll also add
+[28:25] there are files attached to this project as context and I'm going to continue
+[28:30] adding files. If you need me to add more files so that you can learn more about
+[28:34] the behind the scenes on my channel then you can ask me to add those. Also I want
+[28:39] you to make sure that you use web search when you're working on this project to
+[28:42] make sure you're getting updated information. Now for the A for action on
+[28:47] my project instructions I'm going to tell it to act as a consultant because
+[28:51] this is going to be more general purpose. Act as a consultant. Give me all of the
+[28:56] right questions that you need in order to point me in the right direction. Then
+[29:00] finally I'm going to give it output format. For your outputs make sure to
+[29:03] match my energy and match the length of what I'm saying in the conversations. So
+[29:09] if I give you a short message respond with a shorter message. If I ask for
+[29:13] something in detail or I give you a long detailed prompt give me a more detailed
+[29:18] answer. I want you to talk back and forth with me in a conversational manner. So
+[29:23] now I've constructed these project instructions so these are going to be
+[29:26] added to any chats that I have in this project. I'll go ahead and save the
+[29:31] instructions and now since it has those instructions and these files it's going
+[29:35] to have that in the context every time I chat within this project. I'm just going
+[29:39] to say give me a 90-day roadmap for my channel to grow it to the next level. And
+[29:45] now it's really talking to me like a consultant because it's saying giving
+[29:48] you a generic 90-day plan would be a waste of your time. Here's what I need to
+[29:52] know. So it's asking me questions just like I instructed it. What's the actual
+[29:56] business attached to this channel? What are you selling?
+[30:00] and go from watching your video
+[30:01] to becoming a paying customer.
+[30:02] What does the funnel look like right now?
+[30:04] Are you currently getting leads or sales from the channel?
+[30:07] And if so, which videos are driving them?
+[30:09] So it's really asking me some hard hitting questions.
+[30:11] Thanks to those project instructions.
+[30:13] And if I go back over to projects now,
+[30:15] I can actually see these all organized.
+[30:17] There's this initial one that it gives you
+[30:19] on how to use Claude.
+[30:20] Then there's also the Productive Dude project.
+[30:22] And if I click into it,
+[30:24] I can see all of my chats within there
+[30:26] and I can continue adding to my instructions,
+[30:29] my files.
+[30:30] And as this goes on,
+[30:31] the memory is going to get stronger and stronger as well.
+[30:34] And if you want to,
+[30:35] you can even star your project
+[30:37] so that it shows up over here in your sidebar
+[30:39] and you can have quick, easy access to it.
+[30:41] And where this gets super powerful
+[30:43] is when you have a team of people working on
+[30:45] whatever it is that you have your project around.
+[30:47] With that, you can actually share the project
+[30:49] and then start inviting other users
+[30:51] that can interact with this project as well.
+[30:53] That way everyone's on the same page.
+[30:56] Next, I'll go over artifacts and visualizations
+[30:58] so that you can see some of the amazing things
+[31:01] that you can do just inside of Claude alone.
+[31:04] You can create living, breathing documents
+[31:06] and mini apps with artifacts.
+[31:08] And to start things off here,
+[31:09] I'll just go over to the left-hand sidebar
+[31:11] and click on Artifacts.
+[31:13] And one of the cool things about Artifacts is,
+[31:15] is they actually have all of these test artifacts
+[31:18] that you can check out and play around with to begin with.
+[31:20] They even have games in here.
+[31:22] So if I go to AI Platformer Game,
+[31:24] I can show you exactly how this artifact works.
+[31:27] We can customize the artifact
+[31:29] or we can just start using it as if it's an app.
+[31:32] So I can hit Start, I can select a theme for the level
+[31:36] and now it's generating that level.
+[31:38] And boom, it pulls up a custom level for me
+[31:40] where I can move around, I can jump around,
+[31:43] I can grab stars, there's enemies around here.
+[31:45] So I can just go all over the map here
+[31:48] and I can play the game.
+[31:49] Now let's take a look at some more practical
+[31:51] inspiration artifacts that they have.
+[31:53] I'll just go back.
+[31:54] And as you can see here, we have PRD to prototype.
+[31:57] So this one allows me to actually input a document
+[32:00] and then it will turn that into a prototype of an app.
+[32:03] The Raw Note Transformer will allow me
+[32:05] to upload written notes and turn those
+[32:07] into an actual document.
+[32:09] They have QR code generators, attachment style quizzes,
+[32:13] bedtime story generators.
+[32:15] And they even have this Forest Explorer
+[32:16] where if I open this one up,
+[32:18] I can be inside of a 3D world where I can move around
+[32:22] and I can look at the forest.
+[32:24] So this is actually pretty cool and it's crazy
+[32:26] that you can do all of this just inside of Claude's web app
+[32:30] and the opportunities are endless.
+[32:32] But we haven't even created our own artifact yet.
+[32:34] So that's what we're going to be doing next.
+[32:36] So I'll go back and I can just hit New Artifact
+[32:40] and then it's going to walk me through
+[32:41] and I can basically decide what I want to build.
+[32:44] So I can start from scratch or in this case,
+[32:47] I'm going to be creating an app or website.
+[32:49] Let's imagine that I wanted to create
+[32:51] a personal portfolio website
+[32:52] where I share information about myself
+[32:55] and some of the projects I'm working on
+[32:57] and I give people an opportunity to work with me.
+[32:59] So let's go to apps and websites.
+[33:01] And now it's going to start pulling me into a chat.
+[33:04] And as you can see that chat even shows up
+[33:05] in our sidebar here.
+[33:07] It's asking me what kind of app or website
+[33:09] do I want to build?
+[33:11] And I'm just going to go with the portfolio
+[33:13] slash personal site.
+[33:14] Do you have a specific idea in mind?
+[33:16] I'm going to say I have a rough idea.
+[33:18] Then it says, what's the vibe or style you're going for?
+[33:21] Let's say bold and modern.
+[33:23] It looks like it has a couple more questions.
+[33:24] So let's just continue here.
+[33:26] It's asking what field or profession is the portfolio for?
+[33:29] I'm just going to say freelancer slash consultant.
+[33:32] What sections do you want to include?
+[33:33] This is a multi-select.
+[33:34] So I'll say about me, I'll say skills and contact.
+[33:38] And then we'll go ahead and send that.
+[33:40] And now it's creating a plan for my portfolio site.
+[33:43] So I can read through the plan
+[33:44] and then I can confirm when I'm ready to start building.
+[33:46] I'm just going to say, yes, build it out.
+[33:51] And now, as you can see,
+[33:52] it opens up this sidebar right here
+[33:54] where it's showing the code right now
+[33:56] as the AI is actually writing that code for us.
+[33:59] But when it's done writing this code,
+[34:00] it's going to render the website for us
+[34:02] so we can see exactly what it looks like
+[34:04] and we can ask for any edits.
+[34:06] And boom, now it's done.
+[34:07] And it's generated the first semblance of a website for us.
+[34:11] So this actually looks pretty good,
+[34:13] but it also looks quite generic.
+[34:15] We have those generic AI gradients
+[34:18] that it throws on the name and in these bars here.
+[34:21] It's using emojis everywhere.
+[34:23] I like the direction of this,
+[34:25] but it's not quite personalized yet.
+[34:27] And it just looks a bit generic.
+[34:29] Quickly, I wanted to show you
+[34:30] that you can switch between the eye up here,
+[34:32] which shows you the actual rendered site
+[34:34] and the code here so that you can read the code
+[34:37] if you want to, or you can copy it,
+[34:39] or you can even click this dropdown here
+[34:41] and download as HTML so that you can hand this off
+[34:44] to a developer or another AI tool like Cloud Code.
+[34:48] I'm gonna go back to the visual view here.
+[34:50] And what I'm going to ask it to do
+[34:51] is to generate some different variations of this site
+[34:55] that are a little bit more unique to me.
+[34:57] So I'll just say, generate 10 styling variations
+[35:00] of this site that are all unique.
+[35:03] I want this to look like something that AI didn't generate
+[35:06] and I want it to feel like it has a unique style.
+[35:09] So give each style a name and generate 10 styles
+[35:12] that I can look through with a tab switcher.
+[35:15] Now I'll send this off
+[35:16] and it goes on creating a separate artifact.
+[35:18] If I wanted to go back to my previous one,
+[35:20] I can just click right here and it's saved for me.
+[35:23] But I can see the progress as it goes through
+[35:25] and writes this new artifact
+[35:27] with the 10 unique styling variations.
+[35:30] And as you can see here, it's creating different styles
+[35:32] like this dark luxury style here.
+[35:34] And it's going to apply all of these styles to that page.
+[35:37] And I'll be able to click through
+[35:39] and see the different styles.
+[35:40] And now we have studio hand.
+[35:42] It's generating another style for me.
+[35:44] So it's on style number four.
+[35:46] I'll be back when all of these are ready to show you.
+[35:48] All right, so it's on the 10th style now
+[35:49] and it's about to wrap up.
+[35:51] But guys, look at this.
+[35:52] Isn't this insane how many lines of code
+[35:54] it's able to generate here in one shot alone?
+[35:57] All right, it looks like it's almost done
+[35:59] and let's take a look at what it created.
+[36:01] Boom, this looks a lot more unique
+[36:03] and a lot more creative for my style.
+[36:06] But this is just one of the styles that it provided
+[36:08] and the hovering works.
+[36:09] Everything looks great.
+[36:11] Now I can just click through these
+[36:12] and decide which one I like.
+[36:14] The layouts are just so much better on these
+[36:16] than the original design that it gave me.
+[36:18] Let's just click through and see what else they created.
+[36:20] This dark luxury style looks pretty cool.
+[36:22] We have studio hand.
+[36:24] I like how it even integrated some different fonts.
+[36:27] Neon terminal.
+[36:28] Ooh, this one's pretty cool.
+[36:29] Editorial broadsheet.
+[36:30] This one looks like a newspaper.
+[36:32] We have retro Memphis, very flashy, soft organic.
+[36:36] Glass and chrome.
+[36:37] This is the original one that it gave me
+[36:39] but they just polished it up a bit.
+[36:41] And then we have bold slab.
+[36:42] And this one actually looks really nice as well.
+[36:44] Now, if I wanted to, I could publish this artifact
+[36:47] and I could publish and copy link.
+[36:49] This allows me to share this link with anyone
+[36:51] so that other people can see this artifact as well
+[36:54] and they can utilize it.
+[36:55] This is great if you're drafting up a website for a client
+[36:58] or if you have a presentation to share,
+[37:00] you wanna share some ideas
+[37:02] and you just want people to be able to click around.
+[37:04] I've used this in the past when doing web development
+[37:07] to share different font styles
+[37:09] or different website layouts with my clients
+[37:11] before I build the full fledged website.
+[37:13] But website development isn't the only thing you can do
+[37:16] with an artifact.
+[37:17] You can also create helpful mini apps
+[37:19] that you can come back to and use time and time again.
+[37:21] Let's imagine that I'm jumping on a sales call
+[37:24] with someone who's in a different time zone.
+[37:26] I could quickly tell Claude,
+[37:27] I'm jumping on a call with a client from Saudi Arabia
+[37:30] and I am in the Eastern time zone.
+[37:33] And I would like you to create a slider app
+[37:36] and an artifact in the bold slab style
+[37:40] that I can use to simply drag
+[37:42] and see what time it is in Eastern time
+[37:45] versus what time it is in Saudi Arabia
+[37:47] when I'm scheduling our next call.
+[37:49] And I can send that off and it just gets right to work.
+[37:52] And would you look at that?
+[37:53] It gave us the exact style that we wanted
+[37:55] and an interactive slider that's going to change
+[37:58] depending on the time.
+[37:59] So if I have a meeting that I wanna schedule for 10 a.m.,
+[38:03] I know that that's 5 p.m. in Saudi Arabia
+[38:06] or Arabia standard time.
+[38:07] And it even tells me down here if this is a good time.
+[38:10] So as I drag the slider,
+[38:12] I can find a time that's within both of our work hours
+[38:14] so that I can be respectful to the client.
+[38:16] For instance, if I wanted to have a meeting at 2 p.m.,
+[38:20] this would be 9 p.m. in Saudi Arabia, so it says evening.
+[38:23] And if I go way too crazy with this,
+[38:25] it says outside of work hours.
+[38:27] This could be a helpful tool that you spin up in a minute
+[38:30] and then you have it open right before you jump
+[38:32] on the Zoom call with the client.
+[38:33] Next, I wanna talk about inline visualizations.
+[38:36] And this can be used in a project or just in a regular chat.
+[38:40] To showcase inline visualization,
+[38:42] I'm going to be using my Productive Dude project
+[38:45] that I already created for my YouTube channel.
+[38:47] I wanna create a nice view of some different charts
+[38:50] and some analytics so that I can really visualize
+[38:53] my YouTube channel's path.
+[38:55] So I'll open up our sidebar here
+[38:57] and I'll click into my starred Productive Dude project.
+[39:00] Then I'll just tell it,
+[39:01] I want you to create an inline visualization
+[39:04] of the analytics from my channel.
+[39:07] I also want you to include some future projections
+[39:10] for my channel and some best cases,
+[39:12] middle of the road cases, and worst case scenarios.
+[39:16] And I want you to tell me what I need to do
+[39:18] to hit the best case versus the middle of the road
+[39:21] versus the worst case.
+[39:22] And I'm going to switch this to Opus 4.6
+[39:26] so I can get the best response.
+[39:28] Now I'll go ahead and send this one off.
+[39:30] So it's reading the files that it has available to it.
+[39:33] I can even click in here
+[39:34] and I can see exactly what it's processing
+[39:37] and what it's going through.
+[39:38] And as you can see here,
+[39:39] I can click into the different CSVs
+[39:41] and I can see exactly what it was reading
+[39:43] and I can view it in here
+[39:45] similar to how I can view the artifacts.
+[39:48] But for now, I'm just going to close this
+[39:50] and we'll see if it generates that inline visualization.
+[39:53] And boom, as you can see, it is now coming to life.
+[39:56] We have all of the data populating in.
+[39:58] And as you can see, this is inline.
+[40:00] This isn't a separate artifact.
+[40:01] It's just a natural way to chat with your data.
+[40:03] And right now it's modeling this out
+[40:05] and polishing the dashboard.
+[40:07] So we'll see what it generates for us.
+[40:09] Boom, would you look at that?
+[40:10] It came through with all of the data now
+[40:12] and it even mapped out the projections.
+[40:15] And I can see exactly what's possible with my channel
+[40:17] if I go down these different roads.
+[40:19] It talks about what would lead to the best case scenario,
+[40:22] what would get me the middle of the road
+[40:24] and what would be a worst case scenario.
+[40:26] And I can see monthly view trends here.
+[40:29] I can see daily views over time
+[40:31] and it gives me some totals up top here.
+[40:33] Now, if I really like an inline visualization,
+[40:35] I can hover the visualization
+[40:37] and up here I can copy it to my clipboard.
+[40:39] I can download the file
+[40:41] or I can actually save it as an artifact
+[40:43] and turn it into an artifact that we can then publish,
+[40:46] share, or just save for the future.
+[40:48] So let's go ahead and save this as an artifact.
+[40:51] And now it's rewriting it as an artifact
+[40:53] so that we can save it for later.
+[40:55] While it's working on that,
+[40:56] I can also go back to my artifacts
+[40:58] and then I can hit your artifacts
+[41:00] and I can see all of the artifacts that I've created so far.
+[41:03] So this kind of acts as your app dashboard
+[41:05] for all of your prototypes and many apps that you've built.
+[41:08] And you can always come back to them
+[41:09] and use them whenever you want just by clicking on them.
+[41:13] Next, I'll show you how to get the most out of Clawd
+[41:16] using Clawd Desktop,
+[41:17] which gives us access to Clawd Co-Work, Clawd Code
+[41:21] and just the normal Clawd that we've been using.
+[41:24] I'll just click the download button
+[41:26] in the lower left-hand corner here.
+[41:28] And this is going to show me
+[41:29] all of the things that you can install.
+[41:31] The first thing is Microsoft Office,
+[41:33] which allows you to analyze data
+[41:35] using something like Excel
+[41:36] or build presentations in PowerPoint.
+[41:38] But what we're looking for is this Co-Work tab right here.
+[41:42] So I'm just going to download for Mac OS
+[41:45] since that's what I'm on.
+[41:46] So I'll just hit download
+[41:48] and then I'll open up the install file
+[41:50] and I'll drag Clawd into my applications folder.
+[41:52] Once it's saved,
+[41:53] I can just double click on Clawd and hit open.
+[41:57] Now I'll hit get started
+[41:58] and I'm just going to sign in to the same account
+[42:00] that I was on with the web version.
+[42:02] And now Clawd is going to open with Co-Work.
+[42:05] So as you can see here, we have a few different options.
+[42:08] We have dispatch and scheduled now.
+[42:11] And we also have this ideas tab.
+[42:12] You can see that we also have at the very top of the page,
+[42:16] a switch between chat,
+[42:18] which is basically like our normal chat screen.
+[42:21] We have Co-Work and we have code.
+[42:24] So these are the three different modes of Clawd
+[42:26] that you can use.
+[42:27] And I'm going to be covering all of them.
+[42:29] We've already discussed chat.
+[42:30] And as you can see here,
+[42:32] I have access to all of my conversations and projects
+[42:35] that I built out in the web app earlier.
+[42:37] I can go over to Co-Work
+[42:39] and there are some additional options.
+[42:40] And then I can go to Clawd code
+[42:42] and there's even more options.
+[42:44] I'm going to start with Co-Work
+[42:46] and I'm going to dismiss these starter tasks
+[42:48] because I'm going to show you guys how to set everything up.
+[42:51] And then I will dismiss this task list.
+[42:53] And let's start by looking at some of the additional settings
+[42:56] that you can edit on your actual desktop device.
+[42:59] So if I go down to the left-hand side
+[43:01] and I click on my name, I can click settings now.
+[43:04] And in here, you're going to notice that
+[43:06] when I go to Co-Work,
+[43:07] it's going to actually have some additional options now.
+[43:10] It shows that we can turn dispatch on or off.
+[43:13] And we'll talk more about that later.
+[43:15] It shows how we can add global instructions
+[43:17] for our Co-Work sessions.
+[43:19] These are preferences, conventions, or contexts
+[43:22] that Clawd should always know
+[43:23] when it's working on your device directly.
+[43:26] We have Clawd in Chrome,
+[43:27] which allows Clawd to actually use Google Chrome
+[43:30] as a browser to click around and look around websites.
+[43:33] We'll also touch on this in a little bit.
+[43:35] And then we have this new option down here, desktop app.
+[43:38] So if I go to general,
+[43:39] there are some settings that we can change in here.
+[43:41] We can choose to run Clawd on startup.
+[43:44] That means when our computer first turns on,
+[43:46] if we want Clawd to turn on with it,
+[43:48] we can flip this switch right here
+[43:50] and Clawd's just going to automatically start up
+[43:52] when we turn our computer on.
+[43:54] We also have the quick access shortcut,
+[43:56] which is set to tap option twice on mine right now,
+[44:00] or we could use option plus space
+[44:01] or set up a custom shortcut.
+[44:03] I'll show you how this works really quick.
+[44:05] So I can be anywhere on my computer
+[44:06] and I can just double tap option.
+[44:08] And it's going to pull up the Clawd bar down here.
+[44:11] So then I can just start a new chat
+[44:14] or I can click into a chat that I've already created
+[44:16] and I can continue chatting with Clawd.
+[44:18] And while this is open,
+[44:19] I can also drag to screenshot something
+[44:21] and it will automatically add that
+[44:23] as an image inside of Clawd here.
+[44:25] Then I could say something like,
+[44:27] what is it that I'm looking at and send that off.
+[44:31] And it's going to open up that chat
+[44:32] where I pasted those screenshots.
+[44:34] So this can be really helpful
+[44:35] if you're clicking around your computer
+[44:37] and you have a quick question that you want to ask Clawd.
+[44:39] Let's head back over to the settings
+[44:41] and we'll go ahead and dive a little bit deeper.
+[44:44] So we've already touched on
+[44:45] a few of these general options here.
+[44:47] You can also choose to show Clawd in your menu bar
+[44:50] if you want to.
+[44:51] And this one is super important
+[44:52] if you want Clawd to work with Dispatch.
+[44:54] You can turn on keep computer awake
+[44:57] and that will keep your computer on
+[44:58] so that Clawd can continue using it
+[45:00] even when you leave the office.
+[45:01] That way later you can chat with it from your phone
+[45:04] using Dispatch.
+[45:05] And then if we scroll down a bit further,
+[45:07] we have the browser use settings.
+[45:09] We can allow all browser actions
+[45:10] if we don't want to approve every time
+[45:12] that it asks to do something in the browser,
+[45:14] we can just turn this on.
+[45:15] I'm going to leave it off for now just to be safe.
+[45:18] And then we have computer use.
+[45:19] If we want Clawd to be able
+[45:20] to actually control our computer itself,
+[45:23] take screenshots, move our keyboard around,
+[45:25] move our mouse around,
+[45:26] it's able to do that if we turn this setting on.
+[45:29] And then since it hides the app in the background
+[45:31] when Clawd is using it,
+[45:32] we can actually turn this setting on
+[45:34] if we want the app to reappear
+[45:35] after Clawd stops working on it.
+[45:37] And just to be safe,
+[45:38] you can also deny apps right here
+[45:40] by adding them to the denied list.
+[45:42] If you haven't already,
+[45:43] make sure to give Clawd accessibility
+[45:45] and screen recording permissions on your device.
+[45:48] And then if we go to extensions here in the sidebar,
+[45:50] we can add extensions.
+[45:52] So you can browse existing extensions.
+[45:54] And these are just any type of connector
+[45:57] that you can use on your device.
+[45:59] This is going to be even more powerful
+[46:01] than the connectors that I was showing you in the web app,
+[46:03] because some of these can even do things
+[46:05] like read and send iMessages.
+[46:08] And since I'm on a MacBook
+[46:09] and I have iMessage installed,
+[46:11] it can do all of that for me
+[46:12] if I enable this connector right here.
+[46:14] Or for instance,
+[46:15] I can give it this file system access
+[46:17] and it can access read and write files
+[46:20] on my computer itself.
+[46:21] I'm going to close out of the extensions here.
+[46:23] And if I click on advanced settings now,
+[46:26] you can enable auto updates for extensions
+[46:28] if the extension gets an update
+[46:30] and you don't want to have to go and renew it.
+[46:32] I'll just turn that on.
+[46:33] And it detects what I have installed on my machine,
+[46:36] Node.js and Python.
+[46:37] If you're an extension developer,
+[46:40] you can actually install extensions here,
+[46:41] install unpacked extensions,
+[46:43] open extensions folder,
+[46:44] and open extension settings folder here.
+[46:47] So this is just a nice developer tool.
+[46:49] It's a way for developers to access
+[46:51] and test out their extensions after they've built them.
+[46:53] And then of course,
+[46:54] there is the developer tab as well,
+[46:56] where you can load in local MCP servers,
+[46:58] which are similar to extensions or connectors.
+[47:01] Now, one of the first things that I do
+[47:03] when I open up Cowork
+[47:04] is I get everything organized on my computer.
+[47:07] I don't drag the files around my desktop
+[47:09] or my downloads anymore.
+[47:11] I just have Claude do it for me.
+[47:13] So if I hit new task up here while I'm on Cowork,
+[47:16] I'm able to actually tell it to do that.
+[47:18] So I'll just say,
+[47:19] I want you to read my downloads folder
+[47:21] and see all of the files that I have there.
+[47:23] Then I want you to move them into my documents directory.
+[47:26] I have a bunch of sub folders inside of documents
+[47:29] for things like photos, templates, videos, et cetera.
+[47:33] So I want you to move those files that are in downloads
+[47:36] into those specific document folders.
+[47:38] All right, so I'll go ahead and send this off.
+[47:41] And now in Cowork, it actually generates a task.
+[47:44] So you can see the tasks progress here.
+[47:47] If it's a longer task,
+[47:48] it will actually generate a checklist right here.
+[47:50] You can see the working folder
+[47:51] by opening this up right here.
+[47:53] And if it's in a folder at that time,
+[47:55] it's going to show you what folder
+[47:57] that we're working within.
+[47:58] So right now it's loading tools and it's requesting access.
+[48:02] So first and foremost here,
+[48:03] I need to give it access to the finder.
+[48:06] And I also need to give it script editor access
+[48:09] so that it can write a script
+[48:10] to organize these files for me.
+[48:12] So I'll go ahead and allow for this session.
+[48:14] And now Claude is actually opening up the script editor
+[48:17] for me and it's using my computer.
+[48:19] Here, as you can see, it says Claude is using your computer
+[48:22] and over on my other screen here,
+[48:23] it has it outlined in this orange glow
+[48:26] and I can see it actually doing things on my device.
+[48:29] It's opening the folders, it's moving things around,
+[48:32] it's accessing the script editor.
+[48:34] This is what my other monitor looks like
+[48:36] as Claude is processing this.
+[48:37] Co-work is still running,
+[48:38] so I'm going to let it finish up this task.
+[48:40] So it just finished cleaning up
+[48:42] most of my downloads folder,
+[48:43] but there were still a few file types
+[48:45] that it didn't pick up.
+[48:46] So now it's going to sort the HEIC photos
+[48:49] and the .MOV videos, and then it will be complete.
+[48:52] And now, as you can see, our chat has gotten quite long.
+[48:54] So Claude is compacting the conversation.
+[48:57] This basically just summarizes everything
+[48:59] that it's done so far,
+[49:00] and it doesn't have to keep passing
+[49:02] all of that information from the conversation.
+[49:04] It can just move forward with that summary.
+[49:06] All right, so the good news is this finally finished
+[49:08] and it moved all of my files out of downloads
+[49:11] into the specific documents folders.
+[49:13] So it moved all those HEIC iPhone photos
+[49:16] from downloads to the documents slash photos.
+[49:20] Everything got moved to the correct folder.
+[49:22] The bad news is I'm running low on usage.
+[49:24] So what I'm going to do is I'm actually going
+[49:26] to switch over to my main Claude account
+[49:28] for the rest of this tutorial.
+[49:30] Next, let's take a look at scheduled tasks.
+[49:32] So if you go to scheduled in the sidebar here,
+[49:35] you can then create a new scheduled task.
+[49:37] Now, make sure that your computer is kept awake
+[49:40] and you have this setting on,
+[49:42] or you can turn it on in your settings
+[49:43] like I showed you earlier.
+[49:45] Here, if I wanted to schedule a task
+[49:47] to take place at a certain time,
+[49:48] I could just hit new task.
+[49:50] So let's say that I wanted it to clean my desktop
+[49:52] and my downloads folder once a day.
+[49:54] So I could just go to name
+[49:56] and I'll just call this clean files.
+[49:58] And I'm just going to say for the description,
+[50:00] cleans my desktop and downloads folder once per day.
+[50:03] And then for the prompt,
+[50:04] I'm actually going to write out my entire prompt.
+[50:06] So I wrote out the prompt here,
+[50:08] check my desktop and downloads folder.
+[50:09] If there are files in there,
+[50:10] I want you to move them to the documents sub folders.
+[50:13] Inside of documents, there are folders
+[50:15] for things like videos, photos, PDFs, et cetera.
+[50:18] If there are any files on my desktop or in downloads,
+[50:20] I want you to move them to my documents sub directories.
+[50:23] And then I can set the frequency here.
+[50:26] So let's just say I want this to run daily
+[50:28] and I'll set the first task to run at 8 p.m.
+[50:32] And then I'll go ahead and save this.
+[50:34] Now at around 8 p.m. every day,
+[50:36] this task is going to run.
+[50:37] And right now it's scheduled for today at 8.07 p.m.
+[50:41] I can also click on this task
+[50:42] and I can run it manually right now,
+[50:45] or I can edit this task to change any of the settings
+[50:47] that I have here.
+[50:49] Let's go ahead and run this to see what it looks like.
+[50:51] All right, so as you can see,
+[50:52] it pulled it in here today at 8 p.m.
+[50:55] And it says running.
+[50:56] So if I click on it,
+[50:58] I can actually view that process happening,
+[50:59] but normally this could happen in the background.
+[51:02] So now as you can see,
+[51:03] Claude is active on my desktop
+[51:05] and hopefully it can help me start cleaning up
+[51:07] some of these files.
+[51:08] All right, and just like that,
+[51:10] it's gone ahead and completed the desktop cleaning.
+[51:12] So now I don't have a messy desktop,
+[51:14] but it also looks like it moved the path for the mask
+[51:17] around my camera here on OBS.
+[51:19] So now I guess I'm in a square.
+[51:21] Next, let's take a look at projects
+[51:23] because they're a bit different on cowork
+[51:24] than they are in normal chat mode.
+[51:27] So if I go over to projects on the sidebar,
+[51:29] you'll see that I don't have any projects in here
+[51:31] because I haven't created any for cowork.
+[51:34] If I click new project,
+[51:35] it's going to work a bit differently.
+[51:38] It's going to ask me,
+[51:39] do you want to start from scratch,
+[51:40] import a project from chat?
+[51:42] So I can actually just click this
+[51:44] and open up a project that I have over in chat
+[51:46] or use an existing folder.
+[51:49] So I'm just going to say start from scratch.
+[51:52] And what this does is it actually creates
+[51:54] a projects directory within Claude.
+[51:57] And this allows me to basically create a folder
+[52:00] and tie it to that project.
+[52:02] So a folder on your computer contains different files,
+[52:05] different documents,
+[52:06] and then other sub folders within that.
+[52:08] And this is what acts as your project for Claude cowork.
+[52:12] So I'm going to create a project called prospect research.
+[52:16] And then for the instructions,
+[52:17] let's imagine that I want to research
+[52:19] and enrich a document of prospects here.
+[52:22] So I'm just going to say,
+[52:24] this project is meant to use web search
+[52:27] and save files about prospects in the form of CSV and PDFs
+[52:32] so that I can generate proposals
+[52:34] and mock-ups for websites for local companies.
+[52:38] And then if I wanted to, I could add files here,
+[52:41] but I'm just going to have cowork
+[52:42] actually create the files for me.
+[52:44] So I'm just going to click create.
+[52:46] And now we're in the prospect research project.
+[52:50] I can see it here as well underneath the chat bar.
+[52:52] So I just said, I want you to do a web search
+[52:54] and find local companies in Southwest Michigan
+[52:57] that have a website that needs to be redesigned.
+[52:59] Find the 10 most promising prospects
+[53:01] and save them to a CSV file in this project.
+[53:04] Now I'll say, let's go.
+[53:06] And I see that this chat is kicking off.
+[53:08] And as you can see here, this task has been paused
+[53:11] and it needs a response for me.
+[53:12] So I'm going to click respond.
+[53:14] And what it's asking here is what it should focus on
+[53:17] in terms of area.
+[53:18] I'm just going to say all of Southwest Michigan.
+[53:21] I'll say home and trade services
+[53:23] and professional services as the categories.
+[53:26] And then this is a great question that it asks.
+[53:28] What signals count as needs a redesign?
+[53:31] I'm going to say not mobile friendly
+[53:32] and thin content slash no SEO.
+[53:35] And then I'll send that off.
+[53:36] And now this is going to be a lot more tailored
+[53:38] when it does its web search.
+[53:40] And over here in prospect research,
+[53:42] I can actually click on this folder right here
+[53:44] to open up that folder and see what it's creating inside.
+[53:47] And as you can see there, it just popped that CSV file in.
+[53:50] So it must have found some prospects
+[53:52] that I can actually reach out to.
+[53:54] So let's go ahead and open this up.
+[53:56] And just like that, it created that CSV file for me
+[53:59] and it's right here on my device.
+[54:01] It also included a line on why this is promising.
+[54:04] So it shared exactly why we might want to reach out
+[54:07] to these companies.
+[54:08] It also shared the source of how it found them.
+[54:10] So I can take all of this information
+[54:12] and I can actually reach out to these companies now.
+[54:15] Now I'm going to get it to research these companies deeper,
+[54:17] verify any problems with their website,
+[54:21] and take a screenshot of each one of the homepages
+[54:23] on their site.
+[54:24] Then I'll have it draft a cold email
+[54:26] that I can send to these companies.
+[54:27] So now I'm going to say,
+[54:28] now I want you to go and take a screenshot
+[54:30] of each one of their websites
+[54:32] and include them in a subfolder within this project.
+[54:35] I also want you to draft a markdown file
+[54:38] with cold emails to each one of these companies.
+[54:40] I want you to include the images
+[54:42] inside of those write-ups that you do.
+[54:44] And I want you to make the cold email short, punchy,
+[54:46] and include relevant details about them.
+[54:48] Also find the email for the primary contact
+[54:51] for each one of these companies and include that as well.
+[54:53] Now I'll go ahead and send that off.
+[54:55] Now it says, could you open Chrome
+[54:57] and make sure the Claude and Chrome extension
+[54:59] is signed in and active?
+[55:00] Once it's connected,
+[55:01] I'll navigate to each of the 10 sites and blah, blah, blah.
+[55:05] So I need to actually open up Chrome
+[55:06] and make sure that I have the extension installed.
+[55:09] To do this, I'll just go down to the left-hand corner.
+[55:11] I'll click on settings and I'll go to Claude and Chrome.
+[55:15] And then I'll make sure to allow all extensions.
+[55:17] Now I'll open up Google Chrome
+[55:19] and I'll head over and add Claude to Chrome.
+[55:22] This is a Chrome extension from Anthropic.
+[55:24] Just make sure that it says verified from claude.com,
+[55:28] one extension, and it should just say Claude.
+[55:30] So I'll hit add to Chrome and add extension.
+[55:34] It will ask me to verify and I'll just continue with Google.
+[55:37] And once I'm signed in with Google,
+[55:38] I can now hit authorize and now I can hide the browser
+[55:42] and I can go back and say,
+[55:44] okay, Claude and Chrome is enabled now.
+[55:46] Let's go ahead and continue with the task.
+[55:48] And when I look at my context down here,
+[55:50] I can actually see that Claude and Chrome is active
+[55:53] and I can see a preview of the website that it's on.
+[55:56] So now it's grabbed the screenshots
+[55:58] and next it's drafting up those cold emails
+[56:01] with the email included that it found from the websites.
+[56:04] All right, and boom, just like that,
+[56:05] it's gone ahead and completed that task
+[56:07] and it's delivering the final files here.
+[56:10] So now let's go ahead and check out the folder
+[56:12] to see what it generated.
+[56:13] If I open it up,
+[56:14] I can now see that it has the coldemails.md.
+[56:17] I've gone ahead and opened to this with a Visual Studio code
+[56:20] and now I can see all of this markdown
+[56:22] that it generated here.
+[56:23] For the names that it could find,
+[56:25] it actually included their name in the cold email
+[56:27] for the decision maker.
+[56:28] But for the ones where it didn't find the email,
+[56:30] it included their phone number
+[56:31] and recommended that I call them
+[56:33] and it got really clever and customized with these subjects.
+[56:36] It says for this one,
+[56:37] Matt, the $20 off banner is doing the heavy lifting.
+[56:40] And then it says your $20 off
+[56:42] plus Google review combo is smart,
+[56:44] but it's competing with a stock photo of feet
+[56:46] in floodwater that's pushing your services
+[56:48] and trust signals below the fold.
+[56:50] And then it just goes on to give them some good feedback.
+[56:52] So I could actually take these emails,
+[56:54] send them off to the people
+[56:55] where it actually provided an email,
+[56:57] or I could call the people
+[56:59] who didn't have an email provided
+[57:00] and I could propose a website to them.
+[57:02] And then I could actually build the website
+[57:04] using Claude as well.
+[57:05] Next, let's take a look at dispatch.
+[57:07] I'll click on dispatch in the sidebar here.
+[57:10] And what you'll notice is that by default,
+[57:12] dispatch is turned off.
+[57:14] You have to configure it.
+[57:15] So what you have to do is go to settings
+[57:17] and then turn dispatch on.
+[57:19] Then if I head back over to dispatch,
+[57:21] you'll see that it may connect to your phone app.
+[57:24] I have the app already installed on my phone
+[57:26] and I'm able to chat with it from here.
+[57:28] You may have to actually sync it up
+[57:30] with the Claude app on your phone,
+[57:32] but once you do, you can just type messages from your phone.
+[57:35] And as long as your computer's on here,
+[57:36] dispatch can do all the heavy lifting.
+[57:38] So I'll just say, hey, what projects do I have for you?
+[57:43] From my phone, and I'll send that off.
+[57:46] And as you can see, it came through there.
+[57:48] Next, I'm going to show you how to create connections
+[57:51] to outside apps using Claude Cowork.
+[57:53] This is very similar for Claude Chat,
+[57:55] but as I've said before,
+[57:57] Cowork is just a bit more powerful
+[57:58] because it has access to your computer
+[58:01] and extra connections and skills.
+[58:03] But I'll just click the plus button here
+[58:05] and then I'll go down to connectors.
+[58:07] Now I have some connectors already in here,
+[58:09] but I'm just going to add a new connector as a test.
+[58:13] And by default, as you can see,
+[58:15] there's all of these connectors
+[58:16] and you can actually search for a connector as well.
+[58:19] So I'm just going to search for Notion
+[58:22] because I want to connect to a CRM that I have in Notion.
+[58:26] So I'll hit the plus button on Notion
+[58:28] and it's going to open up my Notion account here.
+[58:30] So I'll just go ahead and sign into Notion with Google
+[58:33] and it says connect with Notion MCP.
+[58:35] And I can just hit continue here.
+[58:37] And now it says connected to Notion.
+[58:39] So now I'm connected to Notion
+[58:41] and here I can change the tool permissions for Notion.
+[58:44] So inside of here, I can read what the different tools are
+[58:47] and I can see what's always allowed
+[58:49] versus what needs my approval
+[58:51] versus what I don't want at all.
+[58:53] So I can just completely turn it off.
+[58:55] So if I don't want Notion
+[58:56] to be able to create comments through Cloud,
+[58:58] I can just turn that off here
+[59:00] and I can just go through here and set my permissions.
+[59:03] Now I'll back out of customize here
+[59:05] and I'll click the plus button, go to connectors
+[59:08] and I'll make sure that Notion is turned on.
+[59:10] I'm gonna turn off these other tools here for right now.
+[59:12] And over here in Notion, I have my Apex Consulting CRM.
+[59:16] And this includes all of my contacts
+[59:18] for a fictional consulting company.
+[59:20] But this could be your exact CRM if you wanted to.
+[59:23] And you could have all of this rich data on these prospects
+[59:27] and you can even have things in here like notes
+[59:30] so that you can learn more about them.
+[59:31] So now I'm just going to tell Cowork
+[59:33] to use my Notion connection to find my Apex Consulting CRM
+[59:37] and then I'll go ahead and say, let's go.
+[59:38] So it found it here and now I've just asked it
+[59:41] to give me a summary of what's inside.
+[59:43] So now it's actually giving me a full schema
+[59:45] of what this database has
+[59:47] and what levels that different people are at.
+[59:49] So I could already start gaining insights
+[59:51] just by asking it to tell me a summary of what's in the CRM.
+[59:55] In here, I have last connected date.
+[59:57] So I could actually ask it to give me some...
+[01:00:00] people that I could follow up with
+[01:00:01] that I haven't talked to in a while.
+[01:00:02] So I've just said, give me a list of people
+[01:00:04] I should follow up with
+[01:00:05] that I haven't talked to in a while.
+[01:00:06] I'm gonna send that off.
+[01:00:07] And now it's giving me a list of all of these people.
+[01:00:10] And because it has the email in here,
+[01:00:12] it could actually draft up an email
+[01:00:14] to send these people from my contacts.
+[01:00:17] So let's go ahead and also connect Gmail.
+[01:00:19] I'm gonna add a connector and I'll just type in Gmail.
+[01:00:22] And then I'll go ahead and connect it and hit continue.
+[01:00:25] So now I'm connected to Gmail and Notion at the same time.
+[01:00:28] And since my Notion CRM has those emails in there
+[01:00:32] and all of the information about the prospect
+[01:00:34] and who I haven't followed up with in a while,
+[01:00:36] we can now send emails to those prospects
+[01:00:39] that I haven't talked to in a long time.
+[01:00:41] So I'm just going to say,
+[01:00:42] go ahead and draft an email using the Gmail connector.
+[01:00:46] Don't send these off, I just want you to draft them
+[01:00:48] for everyone that I haven't talked to in a while
+[01:00:51] with a relevant followup.
+[01:00:53] I'll go ahead and send this off.
+[01:00:55] And now as you can see, it has Gmail in the context here
+[01:00:58] and it's creating the Gmail drafts.
+[01:01:00] And here it's asking me for permission.
+[01:01:02] I'm just going to always allow for this task
+[01:01:05] and it's creating some draft emails.
+[01:01:07] All right, so now it's gone ahead
+[01:01:08] and drafted 15 emails for me in a matter of minutes.
+[01:01:11] I'm gonna go ahead and click on this William Chang email
+[01:01:14] and we'll go ahead and open it up.
+[01:01:15] And as you can see here,
+[01:01:17] it drafted up this beautiful email to William.
+[01:01:19] It says, hope tax season treated you well this year.
+[01:01:22] When we last spoke, you mentioned circling back in May
+[01:01:24] once things calmed down.
+[01:01:26] I wanted to get on your radar a little early
+[01:01:28] so we can find a good time that works.
+[01:01:30] This is perfect.
+[01:01:31] Then I say, given the size of Chang Financial
+[01:01:33] and the questions you raised on ROI
+[01:01:35] and implementation timeline,
+[01:01:37] I think the one-on-one intensive is still the right shape
+[01:01:39] for what you're trying to build.
+[01:01:41] Happy to walk you through what the first 30 days
+[01:01:43] would look like,
+[01:01:44] specifically for a 15-person advisory plus accounting firm.
+[01:01:48] Would a quick 20-minute call
+[01:01:50] in the next two weeks work for you?
+[01:01:52] Best, Carter.
+[01:01:52] Perfect, it wrote this email out
+[01:01:54] about exactly how I would send it.
+[01:01:56] The only thing is it included this em dash here,
+[01:01:59] which doesn't look natural.
+[01:02:01] And I could have told it to not include that,
+[01:02:02] but I'll just put a comma here instead.
+[01:02:04] And now this looks perfect to go ahead and send.
+[01:02:07] And now in Notion,
+[01:02:08] I'm going to go ahead and search for William
+[01:02:10] and I see William Chang here.
+[01:02:12] I'm going to go ahead and open him up.
+[01:02:14] And now I can see that it hit the details spot on.
+[01:02:17] He does have a 15-person financial advisory
+[01:02:20] and accounting firm.
+[01:02:21] And he did say to check back in in May.
+[01:02:23] So Claude got the details right on the money.
+[01:02:26] And it did this for all of the consulting clients.
+[01:02:28] So imagine what this could do for your CRM
+[01:02:31] if you had it in something like Notion or even HubSpot.
+[01:02:34] Pair that with Gmail
+[01:02:35] and you can send out a bunch of different draft follow-ups
+[01:02:37] to potential prospects.
+[01:02:39] Next, we're diving into skills.
+[01:02:41] More specifically,
+[01:02:42] how to create and use skills inside of Claude.
+[01:02:45] You can create skills inside of the Claude web version
+[01:02:49] and you can even upload them there.
+[01:02:50] But again, they're not as powerful
+[01:02:52] as when you do this inside of Cowork
+[01:02:54] because Cowork has direct access to your computer.
+[01:02:57] It can run scripts.
+[01:02:58] And overall, it has many more tools
+[01:03:00] that are available to it
+[01:03:01] when it's executing those skills and creating them for you.
+[01:03:05] What is a skill?
+[01:03:06] Well, a skill is basically a repeatable process
+[01:03:09] that you can have Claude do the same way every single time.
+[01:03:12] It goes through that step-by-step workflow,
+[01:03:14] uses tools that you've already defined,
+[01:03:16] and it creates a reliable workflow
+[01:03:18] that you can always trust
+[01:03:19] so that you're not just going back into the chat
+[01:03:21] and it's doing it differently every single time.
+[01:03:24] With a skill, you get the same guardrails,
+[01:03:25] the same process, the same tools, everything,
+[01:03:28] and you get it perfectly consistent.
+[01:03:30] Now, there are three ways to create a skill.
+[01:03:32] Number one is to just simply describe it to Claude.
+[01:03:35] So you can tell Claude what you want automated.
+[01:03:37] It'll ask you questions and it will build the skill for you
+[01:03:40] and then it can also run the tests for you.
+[01:03:42] So you can give the skill an input,
+[01:03:44] you can tell it to execute that skill,
+[01:03:46] and this is best for new ideas.
+[01:03:48] The second way is to reverse engineer
+[01:03:50] something that Claude has already done.
+[01:03:51] So you get the output that you want first
+[01:03:54] by just prompting normally, going through a process,
+[01:03:56] going through a normal conversation with Claude,
+[01:03:58] and then you say something as simple as make a skill
+[01:04:01] that does exactly what we just did.
+[01:04:03] And this is best for if you have proven results
+[01:04:05] and you got a good result with Claude
+[01:04:07] just chatting with it normally,
+[01:04:09] and you want to turn that into a repeatable process.
+[01:04:12] And then the third way to create a skill
+[01:04:13] is to actually upload a skill
+[01:04:15] that someone else has already created.
+[01:04:17] If you wanna create powerful skills,
+[01:04:19] then I recommend getting our free resource,
+[01:04:21] the DBS framework skill.
+[01:04:22] My brother Drake created this
+[01:04:24] and I'm going to explain exactly why
+[01:04:25] it's the best way to create skills inside of Claude.
+[01:04:28] What is the DBS framework?
+[01:04:30] What is this skill and why does it matter to you?
+[01:04:32] The D in DBS stands for direction
+[01:04:34] and these are the instructions that live in the skill.md.
+[01:04:37] This is the name and the description
+[01:04:39] and the step-by-step workflow of the skill.
+[01:04:42] And you also sprinkle in rules and guidelines here.
+[01:04:44] Then we have B, which stands for blueprints.
+[01:04:46] These are examples, references,
+[01:04:48] and guidance that's going to help tailor your outputs.
+[01:04:51] Think of these as the relevant resources
+[01:04:53] that are going to make your skill more powerful.
+[01:04:55] Finally, my favorite part is solutions
+[01:04:57] and this makes your skills more kinetic.
+[01:04:59] And you can think of this as computer programs
+[01:05:01] that can live inside of your skill
+[01:05:02] and be used again and again.
+[01:05:04] If there's something inside of a skill
+[01:05:06] that Claude can't normally do well on its own,
+[01:05:08] you can actually have Claude help you create a script
+[01:05:11] or a bit of code that it can use to enhance that process
+[01:05:14] and get to your result faster and more accurately.
+[01:05:17] And this is the DBS framework.
+[01:05:18] I'll leave a link to our post
+[01:05:20] where you can actually access this skill file.
+[01:05:22] Once you get down to this point in the page,
+[01:05:24] you're going to see the dbsframeworkskill.zip.
+[01:05:26] You can just hit download here.
+[01:05:28] Once you download that file,
+[01:05:29] you can go to customize, click on skills,
+[01:05:32] and then just click the plus button right here
+[01:05:34] and create a skill and just hit upload a skill.
+[01:05:37] Then you can simply drag in that file
+[01:05:39] that you just downloaded from our website
+[01:05:41] into this area here and it's going to upload that skill.
+[01:05:44] And as you can see here,
+[01:05:45] you now have the DBS framework skill.
+[01:05:47] You can see exactly how we set this up
+[01:05:49] for helping you to create better skills.
+[01:05:51] And in my opinion, this is the best way to create skills
+[01:05:54] outside of the normal skill creator
+[01:05:56] that Claude gives you out of the box.
+[01:05:58] So now if I go to new task in co-work,
+[01:06:00] I can click the plus button right here,
+[01:06:02] go to skills, and then I can click on DBS framework.
+[01:06:05] And now it's going to put that skill
+[01:06:06] into the context of my conversation.
+[01:06:09] And I'm just going to create a very basic skill to start out.
+[01:06:12] This is the bottom line, simplest way to create a skill.
+[01:06:16] You just pop in DBS framework here.
+[01:06:18] And for this skill, I want to create a recipe generator
+[01:06:20] so that I can more efficiently use the ingredients
+[01:06:22] that I have in the kitchen.
+[01:06:23] So I'm going to tell Claude exactly
+[01:06:25] what I want it to build here
+[01:06:26] after I've put in the DBS framework.
+[01:06:28] So I just say, so I want you to build a skill
+[01:06:30] that walks me through a Q&A and questionnaire process
+[01:06:33] to find out exactly what I have in my kitchen.
+[01:06:35] Once you figure out what I have in my refrigerator,
+[01:06:37] what I have in my spice cabinet,
+[01:06:39] and what I have in my pantry,
+[01:06:40] you're going to generate three recipes
+[01:06:42] based upon that.
+[01:06:43] The skill should be allowed to use web search
+[01:06:44] and the skill is invoked or started basically
+[01:06:47] by typing in slash cook.
+[01:06:48] Then it begins the questionnaire process.
+[01:06:51] So I'm going to send this off
+[01:06:52] along with the DBS framework skill selected.
+[01:06:54] And this is going to create that skill for us
+[01:06:57] based on the merits of the DBS framework.
+[01:07:00] And then I'm going to show you
+[01:07:01] how to create some more advanced skills,
+[01:07:03] some more helpful use cases,
+[01:07:05] but this is just a great way to kick things off
+[01:07:07] and show you how to create your first skill.
+[01:07:09] It's very low stakes.
+[01:07:10] And you could actually use something like this
+[01:07:12] to help you cook dinner tonight
+[01:07:12] and be more efficient with the ingredients that you have.
+[01:07:15] So it's creating the skill.md now.
+[01:07:18] So it's giving Claude the future instructions
+[01:07:20] that it will need to go through this process.
+[01:07:22] And it's giving it the step-by-step workflow
+[01:07:24] based on how the DBS framework says to create these skills.
+[01:07:27] And now it's saying Claude wants to use creating a file.
+[01:07:29] So I'm going to always allow this.
+[01:07:31] And now it's created the skill.
+[01:07:32] So I'm just going to hit save skill.
+[01:07:34] Now that I've created the skill,
+[01:07:35] let's go ahead and give it a try.
+[01:07:37] I can just type in slash cook and look at that.
+[01:07:39] It's right there.
+[01:07:40] So I can just click on cook and then just say, let's go.
+[01:07:44] And it's going to begin walking me
+[01:07:46] through a structured Q&A process.
+[01:07:48] So as you can see, it even pulls up the Q&A
+[01:07:51] right here in Claude,
+[01:07:52] because we're using the user question and answer tool.
+[01:07:55] So it says, what proteins and dairy
+[01:07:56] do you have in the fridge right now?
+[01:07:58] So I can say chicken, I have eggs,
+[01:08:00] I have cheese, butter, milk.
+[01:08:02] Then I'll send that.
+[01:08:03] What produce and condiments are in the fridge?
+[01:08:05] I'll say fresh herbs, lemons slash limes,
+[01:08:08] onion, garlic, carrot, celery.
+[01:08:10] Let's go ahead and send that.
+[01:08:11] And next it's asking what I have in my spice cabinet.
+[01:08:14] And if these answers don't line up,
+[01:08:15] I can just write something else down here.
+[01:08:17] So let's just say, let's imagine that I just have salt,
+[01:08:20] pepper, garlic powder, and paprika.
+[01:08:23] I can just write out the exact list
+[01:08:25] of what I have in my spice cabinet right now,
+[01:08:26] and then send that off.
+[01:08:28] And finally, it's asking what grains,
+[01:08:29] canned goods and oils do you have in the pantry?
+[01:08:32] I'll just say I have avocado oil,
+[01:08:34] penne pasta, olive oil, canned tomatoes, and rice.
+[01:08:38] All right, let's send that off.
+[01:08:39] For dietary restrictions and allergies,
+[01:08:41] I'm gonna say none.
+[01:08:42] How many people?
+[01:08:43] Just for two here.
+[01:08:44] How much time do you want to spend?
+[01:08:46] I'll say under 30 minutes.
+[01:08:48] I'm too busy in Claude co-work.
+[01:08:49] Cuisine mood, let's just say surprise me.
+[01:08:52] And now it's going to give me three different dinners,
+[01:08:54] and this was an entirely customized process
+[01:08:56] that we can run back again and again
+[01:08:58] because we've created the cook skill.
+[01:08:59] It recommends lemon garlic chicken penne.
+[01:09:02] It recommends Spanish style chicken and rice.
+[01:09:04] So it's going all over the map here.
+[01:09:06] And then as I'm reading through here,
+[01:09:07] it just pulls up which one of these are you making
+[01:09:09] and do you want extra help?
+[01:09:10] So it's going to be able to go with me through the process,
+[01:09:13] and you can even bring the skill
+[01:09:14] onto your phone later down the line.
+[01:09:16] Let's go with the lemon garlic chicken penne walkthrough.
+[01:09:18] And perfect, it's giving me a more detailed list
+[01:09:21] of instructions and walking me through
+[01:09:23] exactly how I can do this.
+[01:09:25] And what we've covered here so far
+[01:09:26] is only the tip of the iceberg when it comes to skills.
+[01:09:29] Now I'm going to show you how to combine skills
+[01:09:32] and connectors so that we can do repeatable processes
+[01:09:35] that integrate with all of our business operations
+[01:09:37] and all of our apps.
+[01:09:38] Next, I'll show you how to create a more advanced
+[01:09:41] and strategic skill that allows you to use connectors
+[01:09:44] so that you can create repeat processes and automations.
+[01:09:47] First, I'll load up the DBS framework just by typing DBS
+[01:09:51] and then hitting enter.
+[01:09:52] And now we have the DBS framework active.
+[01:09:55] And then I just say for my prompt,
+[01:09:56] I want to create a skill that looks
+[01:09:57] at my Google Calendar every day
+[01:09:59] using the Google Calendar connector.
+[01:10:01] And I'll show you how to set that up in a moment.
+[01:10:03] It tells me what's on my schedule for the day,
+[01:10:05] giving me a daily brief when I type in slash daily.
+[01:10:08] So that's what's going to invoke this skill.
+[01:10:10] I want this daily brief to be formatted as action items.
+[01:10:13] I also want to look ahead at the rest of my week
+[01:10:15] and have the task suggest things I should be doing
+[01:10:18] to prep for later in the week.
+[01:10:19] And I'm just going to add a new connector quickly
+[01:10:22] so that it can see what that looks like.
+[01:10:24] I'll go ahead and hit manage connectors
+[01:10:26] and I'll click on my Google Calendar down here
+[01:10:28] and hit connect.
+[01:10:30] It's going to ask me what I want it to be allowed to do.
+[01:10:33] And I can just select all if I want it to be able
+[01:10:35] to do everything that it is asking for,
+[01:10:37] like viewing my calendar, downloading my calendar,
+[01:10:41] seeing, editing, and sharing things in my calendar
+[01:10:43] or even permanently deleting calendars.
+[01:10:46] So the permissions are pretty wide open here,
+[01:10:48] but if I hit continue, what it's going to do
+[01:10:50] is it's going to allow me to click on Google Calendar here.
+[01:10:53] It's going to allow me to go through
+[01:10:54] and decide what events that I want to allow.
+[01:10:57] So let's just say that we don't want to be able
+[01:11:00] to have it delete calendar events.
+[01:11:02] I also don't want it updating calendar events,
+[01:11:04] but it can create new ones.
+[01:11:06] Now I'll go back to cowork and my prompt is still here.
+[01:11:09] I'm just going to click and we'll hover over connectors again
+[01:11:12] and you'll see now that we have Google Calendar enabled.
+[01:11:15] So let's go ahead and send off this skill creator
+[01:11:17] with the DBS framework.
+[01:11:19] So now it's walking through the steps of the DBS framework.
+[01:11:22] So step one is to define the task.
+[01:11:25] This will be a bit more of a back and forth process.
+[01:11:26] It's asking me some extra questions here.
+[01:11:28] So Google Calendar connector is the first question.
+[01:11:31] Do you have the Google Calendar MCP connected in cowork?
+[01:11:34] If not, we'll need to set that up first
+[01:11:36] since the skill depends on it.
+[01:11:37] Yes, so I'm just going to say number one.
+[01:11:40] Yes, it is connected.
+[01:11:44] And then number two, prep suggestions depth.
+[01:11:47] When you say suggest things I should be doing for prep,
+[01:11:49] are you thinking practical logistics
+[01:11:51] like prepare slides for Thursday's presentation
+[01:11:53] or review agenda?
+[01:11:54] Or do you also want it to flag things
+[01:11:56] like travel time conflicts?
+[01:11:58] I'm just going to say both and we'll send that off.
+[01:12:01] And now if I scroll down here,
+[01:12:03] it is asking to run this command right here
+[01:12:05] for this session that it's created for daily brief.
+[01:12:08] I'm just going to allow.
+[01:12:09] And the DBS framework is doing a lot
+[01:12:11] of the heavy lifting here.
+[01:12:12] It knows how to create the skills based upon that.
+[01:12:15] It ran a brief test.
+[01:12:16] It looks good.
+[01:12:17] I'm just going to save the skill
+[01:12:19] and then I'll go to new task
+[01:12:20] and I'm just going to type in slash daily
+[01:12:23] and I'll show you exactly what this looks like.
+[01:12:25] So let's go ahead and send it off.
+[01:12:27] So first it gets the day
+[01:12:29] and it says here that it used Google calendar integration
+[01:12:31] and you have one event today, a morning errand.
+[01:12:34] Then the rest of the day is wide open from 1030 a.m. onward.
+[01:12:38] So today's action item is just to drop off my wife and son.
+[01:12:41] And it says after the drop off,
+[01:12:43] you're completely free for 1030.
+[01:12:44] Now let's see what it recommends for the week ahead prep.
+[01:12:47] So Friday, I have the content strategy call
+[01:12:50] with our content team at 10 to 1030 on Discord
+[01:12:53] with four attendees.
+[01:12:54] Come with any content updates, ideas,
+[01:12:57] or blockers to raise with the team.
+[01:12:58] If there's a running content calendar
+[01:13:00] or backlog, skim it before the call so you're up to speed.
+[01:13:03] And then the rest of Friday looks open as well.
+[01:13:05] So it's a good day to execute on whatever comes about.
+[01:13:07] So far this tutorial has probably been
+[01:13:09] pretty simple to follow,
+[01:13:11] but we're about to get into the more technical side
+[01:13:13] of Claude, which is Claude code.
+[01:13:15] And while I believe that this is the most powerful thing
+[01:13:18] that Anthropic has to offer with Claude,
+[01:13:21] this section of the video comes with a bit of a caveat.
+[01:13:24] It's going to get more technical.
+[01:13:26] So if you're a nerd like me
+[01:13:28] and you have a background in this stuff,
+[01:13:29] you're probably going to understand everything
+[01:13:32] that I touch on with Claude code.
+[01:13:33] But if you're a bit less technical
+[01:13:35] and there are some terms that could go over your head,
+[01:13:37] then in that case, this next section of the tutorial
+[01:13:40] may require a bit of extra learning
+[01:13:42] outside of just this video.
+[01:13:44] So there are two ways that I'm going to recommend
+[01:13:46] picking up on the terms and the methodologies
+[01:13:49] that I'm going to be covering
+[01:13:50] for the remainder of this tutorial.
+[01:13:51] Option number one is to simply use Claude
+[01:13:53] and ask it questions about the things
+[01:13:55] that I'm saying in this video.
+[01:13:57] It's going to do a great job of breaking it down
+[01:13:59] and explaining it to you at a beginner level.
+[01:14:02] The truth is when I first got into this stuff,
+[01:14:04] I had no idea what I was doing
+[01:14:05] and asking Claude helped me along the way.
+[01:14:08] But what helped me even more is having a mentor
+[01:14:10] that I could ask questions to who is miles ahead of me.
+[01:14:13] So if you need a mentor or if you want a mentor
+[01:14:16] to shortcut the process a bit,
+[01:14:17] then I recommend joining our community
+[01:14:19] over at AI Foundations.
+[01:14:21] You'll get access to all of our courses,
+[01:14:23] including Claude Code Mastery when you join.
+[01:14:25] And in Claude Code Mastery,
+[01:14:27] I really break this stuff down
+[01:14:28] and assume that somebody's coming to me
+[01:14:30] as a total beginner wanting to learn about Claude Code.
+[01:14:33] I don't just cover Claude in this course.
+[01:14:35] I walk you through the technical foundations
+[01:14:38] that you need to go into this confident
+[01:14:40] and understanding the terminology
+[01:14:42] and the methods that we use.
+[01:14:44] And when you join AI Foundations,
+[01:14:45] you also get access to other people
+[01:14:47] who are doing this as well.
+[01:14:48] Most importantly, you can join weekly Q&A calls
+[01:14:51] where you can ask me and my brother Drake
+[01:14:53] questions directly.
+[01:14:54] And we've shipped and sold software using Claude Code.
+[01:14:57] So any question that comes up for you,
+[01:14:59] we spent 10 months actually building our software out.
+[01:15:02] It wasn't just an overnight thing that we launched.
+[01:15:05] We went through the trials, the tribulations,
+[01:15:07] and we figured out exactly how to do it.
+[01:15:09] So if you start to feel a bit uneasy
+[01:15:10] during the rest of this tutorial,
+[01:15:12] or you start to feel like this is a little bit
+[01:15:14] out of your ballpark,
+[01:15:15] then that's when I would recommend joining AI Foundations
+[01:15:18] or just finding a mentor,
+[01:15:20] any mentor that can help you through this.
+[01:15:22] Next, let's take a look at Claude Code.
+[01:15:24] Now there are two ways that you can run Claude Code
+[01:15:26] and they're actually very different from each other.
+[01:15:29] There's running Claude Code in the terminal
+[01:15:31] and then there's running Claude Code
+[01:15:32] with this nice interface that Claude gives us.
+[01:15:35] So the easiest way to run Claude Code
+[01:15:37] is just to click in the top center on code here.
+[01:15:40] And then you're going to get this beautiful screen here
+[01:15:42] where you can start asking it to do coding tasks
+[01:15:45] on your computer.
+[01:15:46] Now, the first thing to take a look at
+[01:15:47] is where it says local in the bottom right-hand corner here.
+[01:15:51] This is referring to what machine
+[01:15:53] that you're actually using to interact with Claude.
+[01:15:56] So they have local here
+[01:15:57] and you can go into the settings of local
+[01:15:59] and you can set up your local environment
+[01:16:02] with your environment variables.
+[01:16:03] Think about this as the secret passwords
+[01:16:06] that you have to access different accounts
+[01:16:08] and things like that,
+[01:16:09] but just in a developer-centric way.
+[01:16:12] So I'm going to close this for now,
+[01:16:13] but if I go back into local,
+[01:16:15] you'll notice that we can also add an SSH connection
+[01:16:19] and an SSH connection allows us to connect
+[01:16:21] to a different device.
+[01:16:22] So if I hit add SSH connection,
+[01:16:25] I can input all of the settings for an SSH connection.
+[01:16:28] We're not going to be doing this today
+[01:16:29] because I'm just going to be using my local machine,
+[01:16:32] but then there's another method for connecting here
+[01:16:34] and that is to add remote control.
+[01:16:36] So if I hit add remote control,
+[01:16:38] what this does is it allows me to run this command
+[01:16:41] in any folder and I can basically access that folder
+[01:16:45] similar to dispatch on my phone,
+[01:16:47] in the web browser, from a different machine.
+[01:16:50] I can basically use this computer with this command
+[01:16:53] to access any folder in a sandboxed folder
+[01:16:57] where you can actually use Cloud
+[01:16:59] from anywhere while you're on the go.
+[01:17:01] Now, the last option here is to add a cloud environment
+[01:17:03] and this is basically going to allow you
+[01:17:06] to use Anthropx servers, the creators of Cloud,
+[01:17:09] to run coding tasks on a GitHub repository for you.
+[01:17:14] So you can configure a new environment
+[01:17:16] by hitting add environment
+[01:17:17] or you can simply use their default environment here.
+[01:17:20] And then you would just select a GitHub repository
+[01:17:23] and it would create a Cloud environment
+[01:17:26] where it spins up that GitHub repository
+[01:17:28] and you can do coding tasks on that code base.
+[01:17:31] It doesn't require you to have a virtual private server
+[01:17:34] or your computer because Anthropx
+[01:17:36] is going to run it on their machine
+[01:17:38] and you can make changes to that code
+[01:17:39] through Anthropx servers.
+[01:17:41] Now, I'm going to click back into here
+[01:17:43] and we're just going to stick with local for now.
+[01:17:45] Now, we also have some additional model options here.
+[01:17:48] If I click on the model dropdown,
+[01:17:49] I can see that I also have Opus 4.6 one million
+[01:17:53] and this is just a bigger context window.
+[01:17:56] It's able to see bigger code bases
+[01:17:58] and it's a lot more powerful than the regular Opus 4.6.
+[01:18:02] You might also see new models cropping up in here.
+[01:18:05] The models are probably going to get a lot more powerful
+[01:18:08] over the coming months.
+[01:18:09] But then there's also the effort tab down here
+[01:18:11] and effort is basically how long
+[01:18:13] you want it to spend on a task,
+[01:18:15] how many agents you want it to spin up to work on a task.
+[01:18:18] So if you have a crazy task,
+[01:18:19] like you want it to analyze your entire code base
+[01:18:21] or something like that,
+[01:18:22] then you're going to want to crank this up to max.
+[01:18:24] But if you're just doing a quick change,
+[01:18:26] then you can leave the effort a bit lower here.
+[01:18:28] It defaults to medium and I have it on Opus 4.6 one million.
+[01:18:33] Next is the permissions tab.
+[01:18:34] So if I click on this here,
+[01:18:36] this allows me to auto accept edits,
+[01:18:39] ask permission, switch to plan mode,
+[01:18:41] or bypass permissions,
+[01:18:42] which you can enable in the Cloud Code settings.
+[01:18:45] This allows it to run pretty much any command
+[01:18:47] that it wants to run,
+[01:18:48] which can be a bit more dangerous,
+[01:18:50] but it also doesn't require your feedback.
+[01:18:51] It can just run.
+[01:18:52] So we'll click out of this now.
+[01:18:54] And next, if I go to more options here,
+[01:18:56] you'll see that we can add files or photos.
+[01:18:58] So this is great for adding screenshots
+[01:19:00] or different things for Cloud Code
+[01:19:02] to be able to visually see what it's working on.
+[01:19:04] We also have a ton of different slash commands
+[01:19:06] that we can use in Cloud Code like batch.
+[01:19:09] And then we also have unique features like loop,
+[01:19:11] which allows Cloud to run in a cron loop,
+[01:19:14] meaning you can have it do a task
+[01:19:16] and run it every five minutes automatically.
+[01:19:19] And then also similarly to loop,
+[01:19:20] we also have schedule.
+[01:19:21] So you can create a schedule task
+[01:19:23] that runs at a certain time.
+[01:19:25] If I click out of here,
+[01:19:26] there are some more options that we can look at.
+[01:19:27] We also have the connectors,
+[01:19:29] which are similar to the other connectors
+[01:19:31] that we've talked about so far,
+[01:19:33] just a lot more powerful because Cloud Code is using them.
+[01:19:36] And we have plugins.
+[01:19:37] So front-end design is automatically installed here.
+[01:19:40] But if I go to manage plugins,
+[01:19:41] I can see some more of the plugins
+[01:19:43] that Cloud Code is allowing us to use.
+[01:19:45] So if I click on the add plugin button and browse plugins,
+[01:19:49] I can see a bunch of popular plugins
+[01:19:51] that Anthropic has released.
+[01:19:53] And plugins are basically combinations
+[01:19:55] of skills and connectors.
+[01:19:57] They allow developers to come in like Apollo
+[01:20:00] to develop a Cloud plugin
+[01:20:02] that helps Cloud use it better.
+[01:20:03] So it's a combination of markdown files,
+[01:20:06] maybe code, maybe connections
+[01:20:08] that are going to allow you to say use Apollo better
+[01:20:10] or use Slack better or view PDFs,
+[01:20:13] all kinds of different crazy things
+[01:20:14] that you can do with these.
+[01:20:15] And you can also custom develop your own plugins
+[01:20:18] if you want it to do something specific.
+[01:20:20] Now, most importantly,
+[01:20:21] let's go ahead and select a folder.
+[01:20:23] And this is going to allow us to select a code base
+[01:20:26] that we already have or choose a different folder.
+[01:20:29] Now, by default,
+[01:20:29] it's not going to allow you to send a message
+[01:20:32] until you select a folder
+[01:20:33] or a project that you want to work on.
+[01:20:35] So I'll click select a folder,
+[01:20:36] choose a different folder,
+[01:20:37] and I can just select my root directory and hit open.
+[01:20:40] So now it's in my root directory.
+[01:20:42] Now, what I recommend when you're working on projects
+[01:20:44] in Cloud Code is having a separate directory
+[01:20:46] called projects or apps or something like that.
+[01:20:50] I'm just going to call this folder in this case tutorial,
+[01:20:52] and I can actually have Cloud generate that folder for me.
+[01:20:55] Create a folder called tutorial.
+[01:20:59] When I hit enter, it says trust this workspace,
+[01:21:01] and it just makes sure that I'm allowing it to do this.
+[01:21:04] So I'll just say trust the workspace.
+[01:21:05] And then Cloud Code will begin spinning up this task.
+[01:21:08] It's running commands here.
+[01:21:09] It's running a command here
+[01:21:10] to make that directory for tutorial.
+[01:21:12] And now it's created that folder.
+[01:21:14] So now if I start a new session,
+[01:21:16] I can go to select a folder
+[01:21:18] and I can choose a different folder.
+[01:21:20] And you'll see here that it created that file
+[01:21:22] called tutorial.
+[01:21:23] So I can open that up.
+[01:21:24] And then this folder can act as my directory
+[01:21:27] for all of the apps that I'm building with Cloud Code.
+[01:21:31] Now, if I want to create instructions for Cloud
+[01:21:32] to know for this project,
+[01:21:34] I can have it create a cloud.md file in here.
+[01:21:37] Create a cloud.md file that just basically says
+[01:21:41] that this is the directory for my projects
+[01:21:43] for a tutorial that I'm creating.
+[01:21:45] And I'm going to have subdirectories in here
+[01:21:47] for all of the projects that I have.
+[01:21:49] So basically you can think of this as the root folder
+[01:21:51] that is going to contain all of my projects
+[01:21:53] that I'm going to be sharing with you
+[01:21:54] throughout this tutorial.
+[01:21:55] So I'm going to send this off
+[01:21:57] and it's going to know to create that cloud.md file
+[01:22:01] in tutorial.
+[01:22:02] And it's basically just going to give it
+[01:22:03] a brief description of the subdirectory.
+[01:22:06] So now with Cloud Code,
+[01:22:06] I can even say things like open that file in Finder for me.
+[01:22:11] And it will open up that cloud.md file.
+[01:22:14] I'll just allow it.
+[01:22:16] And boom, right here,
+[01:22:17] it opened up that cloud.md file that it created.
+[01:22:19] And it's a very simple file,
+[01:22:21] but it just says tutorial projects.
+[01:22:22] This is the root directory for tutorial projects.
+[01:22:24] Very simple, but that's just an idea
+[01:22:26] of how you can get Cloud to quickly create files.
+[01:22:28] And I feel that this is a lot quicker than using Cowork.
+[01:22:32] Now let's say that I wanted to launch
+[01:22:33] and deploy that website that I created earlier
+[01:22:36] as an artifact.
+[01:22:37] That's exactly where Cloud Code is going to help.
+[01:22:40] Remember this artifact that I created earlier,
+[01:22:42] this portfolio style variations.
+[01:22:44] I can just click into this artifact in the web version here
+[01:22:47] and I can go back through all of those different styles
+[01:22:50] that it gave me for my personal website.
+[01:22:52] So I can decide which one that I want to use.
+[01:22:55] And then I can take that over, hand it to Cloud Code,
+[01:22:57] and it can put the final polish on and deploy this website.
+[01:23:01] So I actually decided that I really like
+[01:23:03] the studio hand website here.
+[01:23:05] I don't like everything that it's added
+[01:23:07] and I definitely want to make some modifications to it,
+[01:23:10] but this is a great starting point for the styling.
+[01:23:12] So what I can do in this project is I can say,
+[01:23:15] I want you to take the studio hand styling
+[01:23:17] and turn it into a JSON object
+[01:23:19] so that I can hand it off to my developer.
+[01:23:22] And if I send that off,
+[01:23:23] it's going to create an instruction manual,
+[01:23:26] essentially, that Cloud Code can understand extremely well.
+[01:23:29] And it looks like it's doing it for the time zone slider,
+[01:23:32] so I'm actually just going to stop it
+[01:23:34] and I'm going to say,
+[01:23:35] actually do it for the personal website in style four.
+[01:23:41] Okay, so now it's picked up the studio hand
+[01:23:43] and it's actually listing out everything
+[01:23:45] that it needs to for this style.
+[01:23:47] So it's including things like the theme,
+[01:23:49] all of the colors for the different styling,
+[01:23:51] the typography, everything that we need
+[01:23:53] to pass this style off to my developer,
+[01:23:57] which is Cloud Code in this case.
+[01:23:58] And it's including all of this generic information.
+[01:24:00] I'm just actually going to stop it again
+[01:24:02] and I'm going to tell it,
+[01:24:03] don't include generic information,
+[01:24:05] just include the exact styling,
+[01:24:07] how we do the header variations,
+[01:24:09] how we have all of the colors and everything like that,
+[01:24:12] the layouts, spacing,
+[01:24:13] that's the main thing that I want to focus on.
+[01:24:16] Okay, and now it should be able to get it right.
+[01:24:18] We had a lot in this chat and also we're on Sonnet 4.6,
+[01:24:21] which isn't quite as good as Opus.
+[01:24:23] So now that I've been specific,
+[01:24:25] it's just giving the style four studio hand, which is great.
+[01:24:28] This is exactly what I wanted.
+[01:24:30] Okay, so it wrapped up with this.
+[01:24:31] Now I'm just going to copy this.
+[01:24:33] And now in our Cloud Code section,
+[01:24:35] I'm just going to tell it to create a new folder in here.
+[01:24:38] So now I'm just going to tell Cloud,
+[01:24:39] I want you to create a folder within tutorial
+[01:24:41] called personal website.
+[01:24:42] So now I'll send that off.
+[01:24:44] Now I could be creating this folder.
+[01:24:45] I'm just showing you how I would typically go about this.
+[01:24:48] Yes, this might seem lazy to you,
+[01:24:49] but I honestly think that's a lot quicker
+[01:24:52] what it just did there than me going in,
+[01:24:53] manually creating the folder and such.
+[01:24:55] So perfect, it created that folder.
+[01:24:58] Now I'll start a new session
+[01:25:00] and I'll drill into that folder.
+[01:25:02] So we got tutorial.
+[01:25:03] We have our Cloud MD in here,
+[01:25:05] telling Cloud that this is basically our projects directory.
+[01:25:09] And then if I go to personal website and hit open,
+[01:25:11] now I can begin working on our personal website.
+[01:25:14] So we're going to go back to the GCAO prompting sequence.
+[01:25:17] And this is going to ensure
+[01:25:18] that I get all the best results with this out of the gate.
+[01:25:21] So first I'll start with the goal.
+[01:25:23] So for the goal, I just said,
+[01:25:24] I want to create a personal website
+[01:25:25] using Astro and Tailwind.
+[01:25:27] Astro is a framework for creating very simple websites
+[01:25:30] and Tailwind is a styling framework.
+[01:25:32] I want it to have a blog and a homepage.
+[01:25:35] On the homepage, we should have a featured section.
+[01:25:37] We're also going to be using Netlify to deploy this.
+[01:25:40] So I want it to be easy to deploy
+[01:25:42] and I want it to stay on brand
+[01:25:43] with these styling characteristics here.
+[01:25:45] And I'm going to give it those styling characteristics
+[01:25:48] that we generated from our artifact.
+[01:25:50] Perfect.
+[01:25:51] So this is getting pretty long already,
+[01:25:52] but let's go ahead and give it the C, which is context.
+[01:25:57] And this is going to be where I give it some information
+[01:26:00] more about me and what I want to have on that website.
+[01:26:03] All right, so now I've given it some context
+[01:26:05] for the website where I say for actual content
+[01:26:07] and for context around this website,
+[01:26:09] my name is Carter Surach.
+[01:26:10] I've spent the past decade creating tutorial content
+[01:26:12] on productivity software,
+[01:26:13] helping individuals get more productive in the workspace,
+[01:26:16] but also in their personal life.
+[01:26:18] And I've amassed tens of millions of views on YouTube,
+[01:26:20] reviewing and teaching software.
+[01:26:21] My main focus right now is helping people use AI tools.
+[01:26:25] Now I've given it some context.
+[01:26:26] I've just talked more about me and what my offer is.
+[01:26:29] All right, now I've given it some action.
+[01:26:30] So I've told it exactly what I want it to build,
+[01:26:32] all of the pages that I want.
+[01:26:34] I also told it the main goal of the website
+[01:26:36] and how I want it to store those blogs.
+[01:26:38] And now I've just said, we will deploy with Netlify.
+[01:26:40] I want to be able to post blogs when an API endpoint is hit,
+[01:26:44] meaning I can talk with this thing through Claude
+[01:26:46] later down the line.
+[01:26:47] And I can actually have it help me write the blogs
+[01:26:49] and then Claude can post the blogs for me.
+[01:26:51] I also want to be able to patch and edit those blogs,
+[01:26:53] meaning I want to be able to update them essentially.
+[01:26:56] We'll need to add an API key to the environment variables
+[01:26:58] and blogs can also be in a draft state.
+[01:27:00] So the API key is basically my password
+[01:27:03] to be able to upload and edit blogs.
+[01:27:05] And I'm going to be able to securely give that to Claude.
+[01:27:09] So now I've made sure
+[01:27:10] that I'm in my personal website directory
+[01:27:12] and I've written this monster of a prompt
+[01:27:14] and I'm going to send this off and see what Claude can create
+[01:27:16] and now it's running me through a Q&A process
+[01:27:18] so that it can get some more context.
+[01:27:20] And I didn't include some things
+[01:27:21] that I should have already included.
+[01:27:23] So I'm going to go ahead and give it this information.
+[01:27:25] So the link is aifoundations.io slash apply
+[01:27:30] for the blog API endpoints.
+[01:27:32] Should the blog content be stored as a JSON file on disk?
+[01:27:34] Simple, works great with Netlify
+[01:27:36] or do you want a database like SQLite?
+[01:27:39] I'll go with JSON files since that's what's recommended.
+[01:27:42] And for the API endpoint that creates slash edits blogs,
+[01:27:45] what should trigger a rebuild on Netlify
+[01:27:46] after a blog is posted via the API?
+[01:27:49] And this is getting a bit out of my wheelhouse here.
+[01:27:51] So I'm just going to ask it,
+[01:27:53] explain these options a bit more in depth.
+[01:27:55] I want to know the pros and cons
+[01:27:57] and what I should end up doing for this
+[01:28:00] based on my use case.
+[01:28:01] So I'll go ahead and submit that
+[01:28:03] and I'm going to go with the recommended approach here.
+[01:28:06] And now it's actually gone into plan mode
+[01:28:08] and it's writing out a plan to create this website.
+[01:28:11] And now Claude has drafted up this beautiful plan
+[01:28:13] that I can scroll through
+[01:28:14] and I can even click on the sidebar here
+[01:28:17] to go to different sections of the plan
+[01:28:18] and read through it to make sure it's exactly what I want.
+[01:28:22] And then when I get down to verification here,
+[01:28:24] it's just going to tell me exactly
+[01:28:26] how I can run this and test it.
+[01:28:27] So I'm going to approve the plan
+[01:28:29] and now Claude code creates a to-do list
+[01:28:31] and begin scaffolding my project.
+[01:28:33] All right, and just like that, it's completed my website.
+[01:28:36] Now I can click preview in the upper right-hand corner here
+[01:28:39] and I can see what it built.
+[01:28:40] I'm just going to drop down this debugging panel here
+[01:28:43] and I'll scroll through the site and we'll see what we got.
+[01:28:46] So right now it's on the blog page.
+[01:28:47] If I go to the homepage though, as you can see,
+[01:28:50] it got the exact style that we were looking for.
+[01:28:52] So I just said, remove the section with the cards
+[01:28:54] and the things that I can do
+[01:28:56] in the about section entirely
+[01:28:58] and make the top hero section a two column layout.
+[01:29:00] So right now it's this single column layout.
+[01:29:03] I want this to be two columns.
+[01:29:04] Maybe if I go wider screen, I don't know.
+[01:29:07] I think that that looks kind of weird.
+[01:29:08] So I told it to make that two columns
+[01:29:10] and then instead of being side by side.
+[01:29:13] So let's go ahead and send that off.
+[01:29:15] All right, so the site is complete
+[01:29:17] and I will go ahead and walk you guys through it,
+[01:29:18] but I ended up spending a couple hours getting this right
+[01:29:21] and getting it to be exactly what I wanted.
+[01:29:24] But overall, the site came out beautifully
+[01:29:26] and I created a newsletter where people can sign up
+[01:29:29] and people can also access the latest news in AI
+[01:29:33] in the form of a blog and get notified
+[01:29:35] when I come out with a new blog every Friday.
+[01:29:38] So clicking into one of these blogs
+[01:29:39] just opens up a nice widescreen view
+[01:29:42] and I also have ways to connect with me on the homepage,
+[01:29:45] like watching my free YouTube tutorials,
+[01:29:47] joining our AI Foundations community
+[01:29:49] or working with us directly
+[01:29:50] with our done for you services.
+[01:29:52] If you guys want to see the finished product,
+[01:29:54] you can check it out at cartersarach.com.
+[01:29:56] But now I'm actually going to show you
+[01:29:58] how to deploy this website.
+[01:30:00] and to do this we're going to use the Netlify connector by clicking the more options and then
+[01:30:04] going to connectors and then next I'll hit add connector and I'll just type in Netlify and then
+[01:30:10] I'm going to click to add the Netlify option. This is going to allow me to create, deploy,
+[01:30:15] manage and secure my websites on Netlify. Now if you already have a Netlify account it should open
+[01:30:22] up and then you can authorize but if you don't have a Netlify account yet you'll have to create
+[01:30:26] one. Now once I have Netlify connected it's as simple as going to the more options, hovering
+[01:30:30] connectors and making sure that Netlify is turned on and then I can simply say I want you to deploy
+[01:30:36] this website on Netlify and it may ask you for a few more commands. I'm just going to allow these
+[01:30:42] and just like that the deploy is building and my site is going to be live at this URL. In a moment
+[01:30:47] here I'll show you how to set up the environment variables even though Claude did most of this for
+[01:30:51] me already and the nice thing about this website is these blogs that I've created here I'm going to
+[01:30:56] turn this into a skill that can then run in Claude to help me write these blogs and I'll be running
+[01:31:02] that version of Claude code in a remote Claude code terminal so you're going to get to see how
+[01:31:06] I set that up as well. But now let's check out our site. I'll just click this link and open link
+[01:31:13] and boom the site is now live. Now to set up my domain name I'm going to go into Netlify and click
+[01:31:19] on my Netlify project and instead of this generic domain name I want to use CarterSarach.com.
+[01:31:26] So I'll click on domain management, I'll hit add a domain and then you can either buy a domain
+[01:31:31] through Netlify or you can add a domain that you already have. So I'll enter my domain and hit
+[01:31:36] verify and then you can just hit add domain and it's going to say pending DNS verification. You
+[01:31:43] can click on this to get instructions on how to connect it to your domain. Next let me explain
+[01:31:47] the environment variables that are powering this website. So environment variables as I touched on
+[01:31:52] briefly before are used as passwords to authenticate certain actions that you want the website to take
+[01:31:59] on your behalf or that you want to request to the website. So now I've asked my Claude code session
+[01:32:05] tell me the keys I need to add and it just says to add an API key so this is whatever secret you
+[01:32:11] want for the blog API. To do this on a Mac you can just open up a terminal like so and then you can
+[01:32:17] type in uuidgen one word and then hit enter and that's going to generate a unique ID. Now I'm not
+[01:32:24] going to use this exact ID because this needs to stay secret so I'm not going to be sharing the
+[01:32:29] exact ID that I use in this video but just type in uuidgen if you need an API key and then you
+[01:32:35] can copy that key. Another way to visualize this is this is the key that is going to give Claude
+[01:32:39] access to read and write these blog posts for me. I'll go into project configuration and then if I
+[01:32:46] scroll down a bit here I should be able to find the environment variables tab. I can just click
+[01:32:51] on that and then here it says no environment variables set for this project. I'm just going
+[01:32:55] to add an environment variable and we're going to add a single environment variable and then here
+[01:33:00] I'm just going to type it in exactly as Claude said API underscore key for the key and then for
+[01:33:07] the value this is where we're going to paste in our uuidgen that we sent off. So I'll paste in
+[01:33:12] the one that I generated and I'm going to check this box that says contain secret value and then
+[01:33:17] if I scroll down here you'll see that it added the value for production deploy previews branch
+[01:33:22] deploys preview server and agent runners and then we don't need it for the local development Netlify
+[01:33:27] CLI. I'm just going to hit create variable so now the API underscore key is live. The next ones that
+[01:33:34] we need to add are the resend API key and the resend audience ID and these can be generated
+[01:33:39] through resend. Now since we just added these environment variables I'm going to tell Claude to
+[01:33:44] redeploy and use the environment variables that are already in the project and now I've told
+[01:33:48] Claude to redeploy Netlify using the environment variables that I added in there so that it picks
+[01:33:54] up those changes and now it's going to run the deploy command with the Netlify connector that
+[01:33:59] we have installed so I'll hit allow once and now that it's done with that deploy I'm going to test
+[01:34:04] out an email to see if it actually receives it on resend so I'm going to accept and sign me up
+[01:34:12] and it says you're in welcome aboard but let's check resend to make sure
+[01:34:15] and as you can see our newsletter has one contact and if I click into here it did pick that up
+[01:34:20] and now if I tried to refresh and then I type that email in again and try to send this off it's going
+[01:34:26] to block me because I've already signed up. Now I'm going to tell this session to create a skill
+[01:34:32] that will help an agent actually post blogs, delete blogs and manage my blogs for me so that I
+[01:34:39] can set it up in a remote Claude virtual machine and then I can just talk to this thing whenever
+[01:34:44] I want to update the site. So I just say I want you to create a skill that uses the API key as
+[01:34:48] an environment variable but does it in a secure way. I'm going to be setting this up as an
+[01:34:53] environment variable in a Claude virtual machine on Anthropx virtual machine service. I want you
+[01:35:00] to have the skill walk me through creating a draft of the blog first that I can visually look at
+[01:35:05] for pulling full blogs if I have questions but never post without asking the user for permission.
+[01:35:10] Once the user gives permission you can post also make sure that you ask the user permission to
+[01:35:15] delete or update blog posts and also we need some terminology in there for drafting and publishing
+[01:35:20] as well. So I'll go ahead and send this off and it should go ahead and create that skill for me
+[01:35:25] and then I can give Claude that API key in a secure way and I'll show you how to do that. And now it's
+[01:35:30] creating that skill and as you can see it references the API key using blog underscore API
+[01:35:36] key in shell commands and I'm going to show you how to set that up in Claude's environment so that
+[01:35:41] it can securely use that API key without actually reading it or compromising it. And now it says
+[01:35:46] that the skill is ready. Now I'm actually going to tell it to move this skill into this project's
+[01:35:51] directory for personal website. So I just said move this skill into the project's directory for
+[01:35:56] personal website so that when I use github I can actually deploy this with the skill.
+[01:36:00] Also let Claude know that it's going to see the entire code base but it should just focus on the
+[01:36:05] skill. If the user wants to write a blog Claude will be connected to a github repository for this
+[01:36:09] skill and for this code base. So I'm going to send this off. So it's added that skill to the
+[01:36:14] proper location and now we have to get this code on github. So I'll make sure that I'm logged into
+[01:36:19] github and I'll go to github.com slash new and then I'm going to create a repository name and
+[01:36:26] I'm going to choose the owner. And I'll just call this github repository Carter Sirach and then for
+[01:36:31] the description I'll just write my personal website. And this is really important here we
+[01:36:36] want to make sure that we choose the visibility of private so that this isn't public to everyone
+[01:36:41] on github. Now I'll create the repository and I'll just copy the repository url right here and then
+[01:36:47] I'll jump back into Claude code and I'm just going to say create an initial commit to the
+[01:36:53] branch called main. If main doesn't exist create it and include all of the changes to this website
+[01:36:59] that we have so far. Make sure to add a gitignore file to hide sensitive information. Make sure to
+[01:37:05] also include that skill so that Claude can see it when we connect to this repository. And I'm just
+[01:37:11] going to paste the repository url and send this off. Even though we do have a private github
+[01:37:16] repository we still want to go through the best practice of adding a .gitignore file and usually
+[01:37:22] Claude does this but sometimes you have to tell it to do this. It says everything looks correct the
+[01:37:26] skill is included. Perfect. So now Claude will be able to know how to use the blog manager and it
+[01:37:32] says all done here's what was set up. 41 files were committed on the main branch we pushed it
+[01:37:37] and the skill is included. And when I go to that github repository I can actually see all of the
+[01:37:42] code that is running my website. I can also see the .claude file the skills and the blog manager
+[01:37:48] .md. So this is perfect. This is going to be instructions for Claude to know exactly how to
+[01:37:54] post blogs to our website. Next I'll copy that environment variable blog underscore api underscore
+[01:37:59] key and I'm going to open up a new session in Claude code and we'll click on the little local
+[01:38:04] button down here and then we're going to add a cloud environment. You could also just edit your
+[01:38:09] session here on local and you could add that as an environment variable here and you could just
+[01:38:13] put the api key but I want to show you guys how to actually set this up with a cloud environment
+[01:38:19] so that you can do this wherever you go when you're on the go you don't have to have your
+[01:38:22] computer on. So I'm just going to add an environment and here I'm going to paste in the api key and
+[01:38:29] then I'll add the api key right here after the equal sign and now I'm just going to call this
+[01:38:34] blogger and I'm going to add this api key and then I'll go ahead and create the environment so
+[01:38:39] I've just given it full network access now I'll save the changes and now what that's going to do
+[01:38:44] is it's going to allow me to select a repository and I'm going to search for my website and it's
+[01:38:49] right here so now I'm just going to tell it to try to read me the blog posts read me the blog
+[01:38:55] posts on our live site and boom now it has given me the blog post so I could continue working with
+[01:39:02] this now since I have this in a cloud environment I can open this up on the go on my phone so I can
+[01:39:07] open up cloud code on my phone and the code doesn't even need to live on the phone for me to be able
+[01:39:12] to access this I can just change my cloud environment to blogger then I can choose the
+[01:39:16] proper github repository and I could tell it here remove the blogs on my website move all of them to
+[01:39:28] draft and then I could send that off and because I've given it the github repository and the right
+[01:39:33] environment with the blogger it's now able to do all of these tasks without me having to have the
+[01:39:38] code base live so it's listing the blogs and it said I moved the four published posts to draft
+[01:39:43] status now now what if your api has an issue and you actually need to update the code base that's
+[01:39:48] what I'm going to show you how to do next I'm going to show you how you can deploy the changes
+[01:39:53] automatically once you push them to github so in order to do that you're going to go into netlify
+[01:39:58] you're going to click deploys and then you're going to connect this up to your github repository
+[01:40:03] I can just click on deploy settings then I'll click on continuous deployment and I'm going to
+[01:40:08] link a repository so we'll link to an existing repository I'll click on github and then I'll
+[01:40:14] just type in my repository name here if it doesn't show up I can just hit configure netlify on github
+[01:40:20] and then in a separate window github is going to open and I need to select the repositories that I
+[01:40:25] want netlify to have access to so make sure you hit select repositories add the right repository
+[01:40:31] and then hit save now if I erase what I had in here and I just try to type it in again I should
+[01:40:37] see that carter srirach is now in here so I can click on it and we'll keep branch to deploy on
+[01:40:42] main and I'll hit deploy carter srirach and now it deployed the changes that the cloud virtual
+[01:40:48] machine added which it moved all of these to draft by default so it says coming soon stay tuned and
+[01:40:54] now all future changes can automatically update the website for instance from my phone I could
+[01:40:59] just tell it to change something like instead of every Friday maybe I want this to be every Monday
+[01:41:04] I can just say update the header in the website to say every Monday instead of every Friday
+[01:41:09] then push that to the main branch on github and it will auto deploy since we set that up
+[01:41:14] and as you can see here right now it says every Friday let's go ahead and send this off
+[01:41:18] and Claude will complete the change and I just want to hit home the beauty of this is is that
+[01:41:23] you can be anywhere and you can update the code on your website because it's running on Anthropx
+[01:41:29] server when they're actually doing these edits it doesn't need to be running on your computer
+[01:41:33] it doesn't even need to be running on your phone but you can communicate with your code base
+[01:41:37] directly from your phone and make changes to your website just by chatting with Claude so it's made
+[01:41:42] that change now it's committing and pushing to github so it says it should auto deploy on netlify
+[01:41:48] now let's just go ahead and refresh and see if this changed on our website and boom as you can
+[01:41:55] see it changed it to every Monday all done directly through my phone all right now my site has
+[01:42:00] everything that I want and I even added our first news so if I click into it it even generated these
+[01:42:06] nice images for the feature image like this one of the butterfly for project glasswing and I've
+[01:42:11] instructed it in the blog writing skill to do all of the research that it needs identify topics and
+[01:42:17] then propose a topic to me even added these nice charts here and screenshots from the web next I'll
+[01:42:22] show you how to schedule tasks in Claude code so if you open up the side panel here and then you go
+[01:42:28] to scheduled while you're on the code tab you can create a new task and then you have to decide do
+[01:42:33] you want this on local like your actual computer here this will require it to be on for it to run
+[01:42:38] that scheduled task or do you want to run it as a remote task in that environment that we set up
+[01:42:43] earlier for the blogger I'm going to go with remote tasks so that this can always run I'm not
+[01:42:48] relying on my computer being open or me actually sitting at my computer why take up this machine
+[01:42:54] when I can just spin up a machine remote so I'll click new remote task and now I can give it a name
+[01:42:59] I'll call it daily blogs so I've just said you are now in blogging mode this is a scheduled task where
+[01:43:04] you will run through the research flow independently find three topics that are timely and write
+[01:43:09] drafted blog posts about them then send me an email using the gmail connector when you're done
+[01:43:14] never publish the blogs just send me a link in my email once they are ready use the gmail connector
+[01:43:19] to email me at car at hey.com from my gmail account with a daily summary and links to the drafts and
+[01:43:29] then I'll just select my repository and I'll make sure that I'm in the proper cloud environment and
+[01:43:34] we'll just say we want this to run daily at 6 a.m. so that I get a nice morning briefing from
+[01:43:40] cloud when it's done and then if I scroll down here I see that we have some connectors I'm just
+[01:43:44] going to turn off some of the connectors that I don't need we actually don't want netlify in this
+[01:43:48] one I just want it using the api and then for gmail I guess that's the only connector that we
+[01:43:54] want so that it can send us an email and then I'll go into permissions here and here I can allow
+[01:43:59] unrestricted branch pushes but I'm not going to do that I don't need it pushing branches I just
+[01:44:04] simply need it doing the task of writing the emails through the api we don't want it actually
+[01:44:09] updating the code base on a schedule so now I'm going to create this and the next run will be
+[01:44:14] tomorrow at 6 a.m. so this is just going to run like clockwork constantly giving me drafted blogs
+[01:44:19] every day that I can review and then I can edit alongside claude later down the line now if I
+[01:44:24] click into here I can also go ahead and run this right now and I'll show you what this process
+[01:44:28] looks like so let's just hit run now and as you can see we have a manual run down here if I click
+[01:44:34] into it it's actually running a session here so I can see exactly how it goes through this process
+[01:44:39] as you can see it's reading the skill files that we've added like the research.md that tells it how
+[01:44:44] to do web research and the writing.md that passes along my style and if I go show more here we can
+[01:44:50] also see some of the other things that it's using like the dither much tool which allows it to
+[01:44:55] generate those images and actually create that dithered style on them blog manager kind of tells
+[01:45:00] them how to post the blogs and first it's testing to make sure that all of our keys are present and
+[01:45:05] they are and it's doing a tool search of gmail here making sure that it has access to those tools
+[01:45:10] and now it's created this to-do list right here so the to-do list that it derived from my prompt
+[01:45:15] here that's going to run every day at 6 a.m is number one researching trending ai topics via
+[01:45:22] perplexity sonar that's what it's using here with the research.md then after that it's going to
+[01:45:28] select three distinct timely angles micro mezzo and meta meaning what is the most granular thing
+[01:45:34] going on today and maybe it's a product update maybe it's a new model so as you can see this
+[01:45:39] is what it would look like micro the agent simplification wave co-work cursor three muse
+[01:45:44] spark all within a week mezzo the super app consolidation era and this is talking about
+[01:45:49] chat gbt valuation and then meta the junior dev compression this is more trend focused it's going
+[01:45:54] to talk about overall trends that it's seeing not necessarily the day-to-day stuff now it's drafting
+[01:46:00] all three of these in parallel with the writing agents and if i scroll through here i can see as
+[01:46:04] it goes through the to-do list but normally this could be happening totally in the background and
+[01:46:08] now it says create drafts via blog api status equals draft is complete and it's going to email
+[01:46:14] me a summary with draft links and since this would normally be happening in the background
+[01:46:19] since this is a scheduled task all that i'm going to see is those emails coming in and then i can go
+[01:46:24] in on a more focused session and i can talk to claude later and i can iterate on those blogs
+[01:46:30] using the blog api that i gave it access to it's actually really good updating the blogs and the
+[01:46:35] project glasswing blog that i added on my website already took a bit of editing and a bit of human
+[01:46:40] oversight but i would say that the ai gets it 70 of the way there and just like that the agent sent
+[01:46:45] me the email with the summaries and the links to view the preview so now let's go into the preview
+[01:46:50] url for this one right here the junior dev compression and i have this password gated so
+[01:46:55] that not just anyone can view my blog posts when they're in draft i'm going to sign in and then we
+[01:47:00] have the entire blog post that it wrote out here let's just take a look through it i would say it
+[01:47:04] looks pretty damn good now what i would do is i would read through this further i would have it
+[01:47:08] generate the feature image it actually mentioned that it didn't generate the feature image for me
+[01:47:13] in these drafts because it didn't want to burn through my api credits since it uses an image
+[01:47:17] generation tool if i wanted it to generate them anyways i could just have it do that but i don't
+[01:47:22] mind going through during the publication process and just making sure that everything looks good
+[01:47:27] and i could do that process through my phone here i could just say something like i want you to find
+[01:47:33] the junior dev compression blog draft and i want you to generate some featured image options for it
+[01:47:44] that match the other blogs feature image style and as i've said already this could take place
+[01:47:49] anywhere that you have your phone with you and you have an internet connection you don't need
+[01:47:53] to be on your computer i'm simply screen sharing this with you so that you can see what my phone
+[01:47:58] looks like but this could be anywhere so think about the workflow you could be at the beach
+[01:48:02] you could be on a road trip you could pretty much be anywhere receive that email from claude it's
+[01:48:08] just going to work like clockwork every day and then you could go in on your phone view the published
+[01:48:13] drafts and then you could text back and forth with claude code from your phone and have it put the
+[01:48:17] final touches on once you've architected the system it works for you in the background and
+[01:48:22] you can take it with you on the go all right now let's come back to me with those preview images
+[01:48:27] so i can simply click to open any of these links here and i can view what they look like and it's
+[01:48:32] going to show me the images on my phone i'm going to say let's go with option three and add it to
+[01:48:39] the drafted blog on the website as the featured image and it says it's done so i can refresh my
+[01:48:47] website over here and as you can see it's added that nice background image for me now i could
+[01:48:53] also read through this and i could ask it questions about how i can improve this or i can work with
+[01:48:58] this in a more meta way and i can have it actually improve its processes by editing its skill files
+[01:49:03] directly through the phone so the first few times around with the workflow you might not have the
+[01:49:08] exact results that you want but after a while claude can hone the skill chip away at it and
+[01:49:13] get the perfect process down it's just like training a new employee when someone comes into
+[01:49:18] your company they don't have all of the skills that they need but you can actually craft these
+[01:49:22] skills in a strict sop and the beautiful thing about claude is it follows the sop a lot better
+[01:49:28] than a human would this is a 14 step workflow that it can go through if i want it to actually
+[01:49:33] write the blog research everything create the images do the final touches check for ai sounding
+[01:49:39] terms and humanize it all of those things are done through a structured process so any kink in the
+[01:49:45] chain or any point that i want to change about this sop or the skill for claude i can do that
+[01:49:50] on the go now the final method for interacting with claude code is to use the terminal directly
+[01:49:56] and this is going to open up some more possibilities in terms of commands it's a lot more
+[01:50:01] flexible and familiar to a developer or someone who's already used to the terminal and i found
+[01:50:06] that this is the quickest and best way to interact with claude if i have time to sit down at my
+[01:50:10] computer and actually use it so i'm going to cd into my tutorial project and then i'll list what's
+[01:50:16] in here i can see that i have personal website in here so i'll cd into personal website and now
+[01:50:22] i'll clear out my terminal and i'm just going to type in claude and hit enter and now claude code
+[01:50:27] is active right here in my terminal you can adjust the model by just typing in slash model and hitting
+[01:50:32] enter and then you can arrow key through and you can decide which model that you want i'm going to
+[01:50:36] go with the default recommended and then i can type in slash effort and i can decide on the effort
+[01:50:41] when i hit enter it's going to show me the effort level that i'm currently on but if i want to change
+[01:50:46] the effort level i can just type in slash effort and then i can type in exactly what i want so
+[01:50:51] let's say i wanted to go with low effort i could just type low and hit enter and then it's going
+[01:50:56] to set the effort to low let's go ahead and change it back to high and then when i hit slash again as
+[01:51:02] you can see if i arrow down through here it's going to show me all of the commands that i can use
+[01:51:10] and then if i want claude to do something i can just type it in right here so i can just type
+[01:51:14] out a simple prompt like assess my website and check for ways that we can enhance the speed and
+[01:51:18] the seo and then i can hit enter and inside of the terminal we also get some extra commands like
+[01:51:23] slash btw which stands for by the way this can ask a side question that doesn't interrupt the flow so
+[01:51:29] that i can get an update so if i type in slash by the way and then space i can just type out my
+[01:51:34] question how is it going so far and then i can hit enter and it's going to answer that in parallel
+[01:51:40] while this task is still running this by the way session can see what's going on and it can tell me
+[01:51:44] what we've done so far and what it's going to work on next then it'll answer the by the way question
+[01:51:49] and if i hit escape now it's actually answering my question and it's giving me the biggest wins
+[01:51:55] for speed improvements and seo i hope you've enjoyed this beginner to expert guide using
+[01:52:00] claude all the links are in the description below along with the chapter so that you can click back
+[01:52:05] through this video and find exactly what you're needing more help with if you made it all the way
+[01:52:09] to the end leave a comment below and let me know what your thoughts were on this training i'm
+[01:52:13] genuinely curious to hear how i can improve and what i did well so that i can make better claude
+[01:52:18] tutorials for you in the future leave your questions and comments below i'm looking forward
+[01:52:22] to hearing from you and subscribe if you don't want to miss the next video from me i also want
+[01:52:27] you to like this video if it helped you if you've made it all the way through this far you probably
+[01:52:31] enjoyed it so go ahead and drop a like i would really appreciate it with that productive dude
+[01:52:36] signing off

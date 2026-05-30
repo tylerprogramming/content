@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "LinkedIn carousel slide design with dark navy blue background (#1a1f36). Top left corner has a small rounded badge that says STEP 3 with a yellow (#fbbf24) background and dark text. Below the badge is a large bold white uppercase heading YOU ARE IN where IN is in yellow accent (#fbbf24). Below the heading are numbered steps in white text: 1. You will see the Claude Code welcome screen, 2. Type /login on the screen, 3. You are ready to build! In the bottom half of the slide, place the reference screenshot image exactly as provided inside a macOS style window frame with the red yellow green traffic light dots. The screenshot shows Claude Code running with the welcome screen. Page counter 4 / 7 in small text in the top right corner. Clean minimal professional tech design.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude-welcome.png"
+      ],
+      "generated_at": "2026-03-26T12:51:15.553488",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774543870768_1pcsqz.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+# Filming Schedule & Content Calendar — Week of March 30, 2026
+
+---
+
+## To Film This Week (before March 30)
+
+### Long-Form (film Wed/Thu March 26-27, editor deadline Sat March 28)
+- [ ] 10 Claude Code Concepts — package at ~/content/youtube/claude-code-beginner-concepts/
+- [ ] Build a Claude Code Skill — package at ~/content/youtube/build-claude-code-skill/
+
+### Short-Form (film any night this week, ~55 min total)
+- [ ] Short #1: "Claude Code is not a chatbot" (talking head)
+- [ ] Short #2: "Built a skill in 5 min, saves 2hrs/week" (mixed)
+- [ ] Short #3: "Fastest way to learn Claude Code" (talking head)
+- [ ] Short #4: "Why your prompts keep failing" (talking head)
+- [ ] Short #5: "What a Claude Code skill actually is" (screen recording)
+See full filming plan: ~/content/youtube/shorts/2026-03-30/filming-plan.md
+
+---
+
+## After Editor Delivers (by Sat March 28)
+- [ ] Run /chapters on both .mp4s
+- [ ] Swap [VIDEO_URL] in all social files once videos are live
+
+---
+
+## Week of March 30 — Day-by-Day Posting
+
+### Monday March 30
+- [ ] Post: 10 Claude Code Concepts (YouTube)
+- [ ] Post: LinkedIn video post — ~/content/youtube/claude-code-beginner-concepts/social/linkedin.md
+- [ ] Post: X thread — ~/content/youtube/claude-code-beginner-concepts/social/x.md
+- [ ] Post: Instagram carousel (from video) — ~/content/youtube/claude-code-beginner-concepts/social/instagram.md
+- [ ] Post manually: YT Community — ~/content/2026-03-30/yt-community-monday.md
+- [ ] Post manually: Skool — ~/content/youtube/claude-code-beginner-concepts/social/skool.md
+- [ ] Edit + upload: Short #1 "Claude Code is not a chatbot"
+
+### Tuesday March 31
+- [ ] Post: Short #1 (YT Shorts / TikTok / Instagram Reels)
+- [ ] Post manually: LinkedIn — ~/content/2026-03-30/linkedin-tuesday.md
+- [ ] Post manually: Skool — ~/content/2026-03-30/skool-tuesday.md
+
+### Wednesday April 1
+- [ ] Post: Short #2 (YT Shorts / TikTok / Instagram Reels)
+- [ ] Post: Instagram carousel "Claude Code is not a chatbot" — ~/content/youtube/shorts/2026-03-30/instagram-not-a-chatbot.md
+- [ ] Post manually: LinkedIn — ~/content/2026-03-30/linkedin-wednesday.md
+- [ ] Post manually: Skool — ~/content/2026-03-30/skool-wednesday.md
+
+### Thursday April 2
+- [ ] Post: Build a Claude Code Skill (YouTube) — swap [VIDEO_URL] first
+- [ ] Post: LinkedIn video post — ~/content/youtube/build-claude-code-skill/social/linkedin.md
+- [ ] Post: X thread — ~/content/youtube/build-claude-code-skill/social/x.md
+- [ ] Post: Instagram carousel (from video) — ~/content/youtube/build-claude-code-skill/social/instagram.md
+- [ ] Post manually: YT Community — ~/content/2026-03-30/yt-community-thursday.md
+- [ ] Post manually: Skool — ~/content/youtube/build-claude-code-skill/social/skool.md
+- [ ] Edit + upload: Short #3 "Fastest way to learn Claude Code"
+
+### Friday April 3
+- [ ] Post: Short #3 (YT Shorts / TikTok / Instagram Reels)
+- [ ] Post manually: LinkedIn — ~/content/2026-03-30/linkedin-friday.md
+- [ ] Post manually: Skool — ~/content/2026-03-30/skool-friday.md
+
+### Saturday April 4
+- [ ] Post: Short #4 (YT Shorts / TikTok / Instagram Reels)
+- [ ] Post: Instagram carousel "Build a Claude Code Skill" — ~/content/youtube/shorts/2026-03-30/instagram-build-a-skill.md
+- [ ] Post manually: LinkedIn — ~/content/2026-03-30/linkedin-saturday.md
+- [ ] Post manually: Skool poll — ~/content/2026-03-30/skool-saturday.md
+
+### Sunday April 5
+- [ ] Post: Short #5 (YT Shorts / TikTok / Instagram Reels)
+- [ ] Post manually: LinkedIn — ~/content/2026-03-30/linkedin-sunday.md
+- [ ] Post manually: Skool — ~/content/2026-03-30/skool-sunday.md
+
+---
+
+## File Locations Quick Reference
+
+| Content | File |
+|---|---|
+| Long-form #1 social | ~/content/youtube/claude-code-beginner-concepts/social/ |
+| Long-form #2 social | ~/content/youtube/build-claude-code-skill/social/ |
+| Short scripts | ~/content/youtube/shorts/2026-03-30/shorts.md |
+| Short captions | ~/content/youtube/shorts/2026-03-30/captions.md |
+| IG carousel #1 (chatbot) | ~/content/youtube/shorts/2026-03-30/instagram-not-a-chatbot.md |
+| IG carousel #2 (skill) | ~/content/youtube/shorts/2026-03-30/instagram-build-a-skill.md |
+| Standalone LinkedIn posts | ~/content/2026-03-30/linkedin-<day>.md |
+| Standalone Skool posts | ~/content/2026-03-30/skool-<day>.md |
+| YT Community posts | ~/content/2026-03-30/yt-community-<day>.md |

@@ -1,0 +1,64 @@
+{
+  "topic": "YouTube Research Skill",
+  "handle": "@tylerai_dev",
+  "brand_text": "AI",
+  "slides": [
+    {
+      "type": "cover",
+      "headline_lines": ["YouTube", "RESEARCH", "in 30 seconds"],
+      "accent_words": ["RESEARCH"],
+      "subtitle": "I built a Claude Code skill for this.",
+      "logo": "youtube"
+    },
+    {
+      "type": "pain",
+      "headline_lines": ["Still wasting", "HOURS on", "research?"],
+      "accent_words": ["HOURS"],
+      "bullets": [
+        "Opening 20 tabs to find ideas",
+        "Guessing what topics will perform",
+        "No idea what competitors are doing",
+        "Monday gone before you start filming"
+      ]
+    },
+    {
+      "type": "solution",
+      "headline_lines": ["One command.", "INSTANT", "competitor data."],
+      "accent_words": ["INSTANT"],
+      "subtitle": "Type /yt-search. Get a full report in seconds.",
+      "image_path": "/Users/tylerreed/content/2026-04-08/instagram-yt-research/2026-04-08-slide3-terminal/thumbnail_192234615.png"
+    },
+    {
+      "type": "how",
+      "headline_lines": ["How the", "SKILL works"],
+      "accent_words": ["SKILL"],
+      "bullets": [
+        "Type /yt-search + your topic",
+        "Scrapes top videos via yt-dlp",
+        "Sorts by views, pulls full metadata",
+        "Saves a report to ~/yt-research/"
+      ]
+    },
+    {
+      "type": "results",
+      "headline_lines": ["Real", "NUMBERS"],
+      "accent_words": ["NUMBERS"],
+      "bullets": [
+        "45 min research - now under 60 sec",
+        "See exact titles that get millions of views",
+        "Know what hooks are working right now",
+        "Used every Monday before filming"
+      ]
+    },
+    {
+      "type": "cta",
+      "summary_lines": [
+        "Stop guessing. Let the data decide.",
+        "Your next video idea is one command away."
+      ],
+      "cta_action": "Comment",
+      "cta_word": "RESEARCH",
+      "cta_subtext": "and I'll send you the exact skill file"
+    }
+  ]
+}

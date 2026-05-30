@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Instagram carousel slide design. Light cream white background (#f5f0eb). At the top, the number and title in bold dark text with the number in blue (#3498db): 5. EXTENDED THINKING. Below, body text in dark gray: Claude reasons through complex problems step by step before responding. It thinks internally, then gives you a better answer. The output quality difference is noticeable on anything non-trivial.. Subtle geometric accent shapes in light pastel colors in corners. Page counter 6/7 in small text top right. Clean modern minimal Instagram aesthetic.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-28T13:44:20.787112",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774719858532_we9d0n.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase tool name, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Headline: 'THE SOLOPRENEUR AI STACK 2026'. Card 1 terminal icon 'CLAUDE CODE - The automation brain / every workflow runs here / Pro plan / content factory'. Card 2 calendar icon 'BLOTATO - Schedules 9 platforms / one-click cross-post / MCP integration / generous free tier'. Card 3 image icon 'KIE.AI - AI thumbnails 9 cents / Nano Banana Pro / instant variants / pay as you go'. Card 4 film icon 'REMOTION - Programmatic video / React-based animations / shorts in code / fully automated'. Card 5 microphone icon 'WHISPER - Any transcript / runs locally / open source / total stack under '. Clean minimalist style, warm Anthropic Claude brand aesthetic.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:14:37.156789",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776712471181-zknqfw3tixo.png"
+      ]
+    }
+  ]
+}

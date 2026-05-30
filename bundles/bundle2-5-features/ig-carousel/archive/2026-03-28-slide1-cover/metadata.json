@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Instagram carousel cover slide. Dark moody background with subtle lighting. Person from the reference image centered, looking at camera, similar pose to a headshot. On the left side, a Claude Code terminal icon in a white circle. On the right side, a Claude AI orange sunburst logo in a white circle. Big bold white uppercase text at the bottom: 5 CLAUDE CODE FEATURES YOU ARE NOT USING. Below that in yellow accent text: MOST PEOPLE SKIP THESE. Clean professional Instagram carousel cover aesthetic. Dark cinematic look.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-28T13:57:12.598165",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774720627813_1kj7rw.png"
+      ]
+    }
+  ]
+}

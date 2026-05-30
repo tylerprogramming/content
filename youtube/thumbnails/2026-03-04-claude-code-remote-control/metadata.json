@@ -1,0 +1,49 @@
+{
+  "generations": [
+    {
+      "prompt": "a developer sitting on a couch holding a smartphone, the phone screen glows bright with code, laptop visible in background on a desk far away, dramatic lighting, cinematic, dark moody room with blue and purple accents, shallow depth of field",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-04T19:33:24.661382",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772670799959_sgr8rs.png"
+      ]
+    },
+    {
+      "prompt": "close-up of hands holding a glowing smartphone, terminal code reflected on the screen, split composition with laptop keyboard blurred in background, neon blue and cyan lighting, tech aesthetic, dark background, professional photography style",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-04T19:34:02.770927",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772670839937_t6u8bm.png"
+      ]
+    },
+    {
+      "prompt": "dramatic split screen composition, left side shows a laptop with terminal and QR code on screen, right side shows a smartphone displaying the same terminal session, connected by glowing light beams, dark tech environment, blue and orange contrast lighting, futuristic",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-04T19:34:51.546900",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772670889707_q3hqn5.png"
+      ]
+    }
+  ]
+}

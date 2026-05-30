@@ -1,0 +1,23 @@
+{
+  "generations": [
+    {
+      "prompt": "Person on left with surprised shocked expression pointing right at a smartphone, smartphone on right side showing glowing Telegram chat interface with orange Claude AI logo, dark moody studio background, dramatic cinematic lighting, red accent tones, bold composition with clear space for text overlay top right, hyperrealistic photography style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 3,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-24T22:04:35.056459",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774404143836-cyp3dga741b.png",
+        "https://tempfile.aiquickdraw.com/images/1774404207465-9nf8wufdbjg.png",
+        "https://tempfile.aiquickdraw.com/images/1774404270279-noa6tmun6mo.png"
+      ]
+    }
+  ]
+}

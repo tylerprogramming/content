@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase label, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Clean minimalist style, warm Anthropic Claude brand aesthetic. Headline 'SUBMAGIC AUTO-CAPTION IN ONE COMMAND'. Card 1 upload icon 'UPLOAD VIDEO - Direct upload / multipart / bypasses Drive / any mp4'. Card 2 palette icon 'THEME SELECTION - Custom theme UUID / presets available / brand-matched / consistent'. Card 3 refresh icon 'POLL STATUS - Every 15 seconds / processing to complete / automatic / hands off'. Card 4 download icon 'DOWNLOAD MP4 - Captions burned in / ready to post / high quality / for shorts'. Card 5 terminal icon 'CLAUDE CODE SKILL - /submagic command / one file path input / zero config'.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:36:19.981598",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776713774662-foycl07tpk.png"
+      ]
+    }
+  ]
+}

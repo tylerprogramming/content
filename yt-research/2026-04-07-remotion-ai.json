@@ -1,0 +1,68 @@
+{
+  "query": "remotion ai",
+  "total_found": 5,
+  "days": 30,
+  "top_n": 15,
+  "videos": [
+    {
+      "title": "Make Unlimited AI Video for Free with Claude! (Full Tutorial with Prompts)",
+      "channel": "Sabrina Ramonov \ud83c\udf44",
+      "views": 24282,
+      "likes": 1010,
+      "comments": 63,
+      "upload_date": "20260324",
+      "duration": "50:11",
+      "url": "https://youtube.com/watch?v=FAeVq2SyIaw",
+      "description": "Step-by-step tutorial using Claude AI to make and edit videos with the FREE Remotion skill. No video editing experience needed. Everything runs locally on your computer.\n\nIn this tutorial, I'll show you how to:\n\u2705 Install the Remotion skill in Claude Code\n\u2705 Install Claude Chrome extension for web scr",
+      "id": "FAeVq2SyIaw"
+    },
+    {
+      "title": "Build Full Stack AI Motion Graphic Video Generator using NextJs, React, Factory.ai, Arcjet, Remotion",
+      "channel": "TubeGuruji",
+      "views": 11919,
+      "likes": 425,
+      "comments": 36,
+      "upload_date": "20260316",
+      "duration": "2:27:02",
+      "url": "https://youtube.com/watch?v=ciXiibK7Gds",
+      "description": "Build a Full Stack AI Motion Graphic Video Generator using Next.js, React, Factory.ai, and Arcjet in this step-by-step tutorial. Learn how to create an AI-powered app that converts prompts into stunning motion graphic videos with a modern full stack workflow.\n\n\ud83d\udd27 Tools & Services Used\n\ud83d\udd10 Clerk (Authen",
+      "id": "ciXiibK7Gds"
+    },
+    {
+      "title": "I Let Claude Code Edit This ENTIRE Video Autonomously -- #remotion #claudecode",
+      "channel": "Don't Sleep On AI",
+      "views": 3023,
+      "likes": 27,
+      "comments": 16,
+      "upload_date": "20260319",
+      "duration": "6:43",
+      "url": "https://youtube.com/watch?v=6pUIaKvkMhI",
+      "description": "\u2757\ufe0fUPDATE: i was able to improve Claude\u2019s ability to automomously edit. Here was the next video Claude edited for me 100%: https://youtube.com/shorts/6bV0lVo6b4M?si=TOWrfMPQChPgPKEx\n\n\u2014\u2014\n\nI gave Claude Code this video file and told it to edit it, create animated graphics, add sound FX, add music, and ",
+      "id": "6pUIaKvkMhI"
+    },
+    {
+      "title": "Build a Fully Automated AI Content Machine: Claude Code + Remotion",
+      "channel": "Automation-Tribe",
+      "views": 1514,
+      "likes": 48,
+      "comments": 2,
+      "upload_date": "20260323",
+      "duration": "14:04",
+      "url": "https://youtube.com/watch?v=H-qYkMJRIHg",
+      "description": "Join my Skool community (Automation Tribe):\nhttps://www.skool.com/automation-tribe\n\nIn this video, I show you how to build your own \u201cTribe OS\u201d \u2014 a fully automated content machine that creates, edits, and publishes content without manual work.\n\nBy combining Claude Code and Remotion, you can generate ",
+      "id": "H-qYkMJRIHg"
+    },
+    {
+      "title": "How I automated Video Editing with Remotion",
+      "channel": "Augmented AI",
+      "views": 1153,
+      "likes": 25,
+      "comments": 1,
+      "upload_date": "20260327",
+      "duration": "8:59",
+      "url": "https://youtube.com/watch?v=hJann4MhgEg",
+      "description": "\ud83d\udfe3 Join our Automation Skool - https://www.skool.com/augmented-ai-automations/about\n\ud83d\udfe3 Work with me - https://www.augmentedaiautomations.com/work-with-me\n\nI stopped hiring video editors.\n\nThe price-to-quality gamble wasn't worth it. I either paid $200 for mediocre work or got \"Human Slop\"\u2014generic clip",
+      "id": "hJann4MhgEg"
+    }
+  ]
+}

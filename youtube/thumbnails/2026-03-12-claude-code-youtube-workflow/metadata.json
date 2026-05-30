@@ -1,0 +1,93 @@
+{
+  "generations": [
+    {
+      "prompt": "YouTube thumbnail with warm brown gradient background. A man on the left side in a black t-shirt pointing with two fingers at 4 rounded square icons to his right. The man has short dark hair, beard, and a confident smirk. Claude Code orange asterisk sunburst logo in the top left corner. Large elegant serif text 'Claude' in cream/beige color at the top right. The 4 rounded square copper/bronze icons in a row represent: a magnifying glass with play button (YouTube Research), a document with lines (Script Writing), a film strip or clapperboard (Video Planning), and a photo/image frame (Thumbnails). Each icon has a small label beneath it: 'Research', 'Script', 'Planning', 'Thumbnails'. At the bottom in huge bold white text: 'MY WORKFLOW'. Same warm copper brown color scheme throughout. Premium, polished look.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_5.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-12T18:00:42.716490",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773352836351-nq6f12ffjh9.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail with clean white background. A man on the left side in a black t-shirt pointing with two fingers at 4 rounded square icons to his right. The man has short dark hair, beard, and a confident smirk. Claude Code orange asterisk sunburst logo in the top left corner. Large elegant serif text 'Claude' in dark black color at the top right. The 4 rounded square icons in a row with white backgrounds and YouTube red accents and borders. Icons represent: a magnifying glass with play button (YouTube Research), a document with lines (Script Writing), a film strip or clapperboard (Video Planning), and a photo/image frame (Thumbnails). Each icon has a small label beneath it in dark text: 'Research', 'Script', 'Planning', 'Thumbnails'. At the bottom in huge bold black text: 'MY WORKFLOW'. Clean white background, YouTube red and white color scheme on the icons. Premium, polished, minimal look.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_175852862.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-12T18:04:15.868362",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773353051528-fzq1rh2629r.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail with warm brown gradient background. A man on the left side in a black t-shirt pointing with two fingers at 4 rounded square icons to his right. The man has short dark hair, beard, and a confident smirk. Claude Code orange asterisk sunburst logo in the top left corner. Large elegant serif text 'Claude' in cream/beige color at the top right. The 4 rounded square copper/bronze icons in a row represent: a magnifying glass with play button (YouTube Research), a document with lines (Script Writing), a film strip or clapperboard (Video Planning), and a photo/image frame (Thumbnails). Each icon has a small label beneath it: 'Research', 'Script', 'Planning', 'Thumbnails'. At the bottom in huge bold white text: 'MY YOUTUBE SYSTEM'. Same warm copper brown color scheme throughout. Premium, polished look.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_175852862.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-12T18:06:39.213185",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773353195165-huvm90hguuc.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail with clean white background. A man on the left side taking up a large portion of the frame, from waist up, in a black t-shirt pointing with two fingers at 4 rounded square icons to his right. The man has short dark hair, beard, and a confident smirk. He should be the same size and position as the reference image - large and prominent, not small. Claude Code orange asterisk sunburst logo in the top left corner. Large elegant serif text 'Claude' in the Claude orange color at the top right. The 4 rounded square icons in a row with white backgrounds and YouTube red accents and borders. Icons represent: a magnifying glass with play button (YouTube Research), a document with lines (Script Writing), a film strip or clapperboard (Video Planning), and a photo/image frame (Thumbnails). Each icon has a small label beneath it in dark text: 'Research', 'Script', 'Planning', 'Thumbnails'. At the bottom in huge bold Claude orange text: 'MY WORKFLOW'. Clean white background, YouTube red and white color scheme on the icons, Claude orange for text. Premium, polished, minimal look.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_5.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-12T18:06:45.434165",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773353199356-7scx1s0q0d5.png"
+      ]
+    },
+    {
+      "prompt": "Take this exact image and ONLY change the colors. Keep the man, his pose, his size, his position, the layout, the icons, the text, everything exactly the same. ONLY change: 1) Background from brown to clean white. 2) The 4 icon squares from copper/bronze to white backgrounds with YouTube red icon graphics and thin red borders. 3) Keep 'Claude' text but make it Claude orange color. 4) Keep 'MY WORKFLOW' text but make it Claude orange color. 5) Keep the Claude asterisk logo in the top left. Everything else stays identical - same man, same pose, same size, same position, same icon labels, same layout.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_175852862.png"
+      ],
+      "generated_at": "2026-03-12T18:10:23.193164",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773353420052-ejegpljdiyw.png"
+      ]
+    }
+  ]
+}

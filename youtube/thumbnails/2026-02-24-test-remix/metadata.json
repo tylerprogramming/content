@@ -1,0 +1,52 @@
+{
+  "generations": [
+    {
+      "prompt": "Same person at terminal but with vibrant neon blue and orange color grading, code streaming across the screen like the Matrix, cinematic lens flare, moody cyberpunk atmosphere, photorealistic",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_1.png"
+      ],
+      "generated_at": "2026-02-24T23:34:28.806552",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1771994067701_9eussu.png"
+      ]
+    },
+    {
+      "prompt": "Same scene reimagined as a clean minimal workspace, bright white desk with a single monitor showing colorful terminal output, soft natural window lighting from the left, plants in background, calm productive energy, photorealistic",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_1.png"
+      ],
+      "generated_at": "2026-02-24T23:35:11.044244",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1771994107198-56n8htrpnfp.png"
+      ]
+    },
+    {
+      "prompt": "Split screen composition, left side shows chaotic browser with dozens of tabs and sticky notes, right side shows clean dark terminal with three glowing command lines, dramatic contrast between chaos and simplicity, cinematic lighting, photorealistic",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_1.png"
+      ],
+      "generated_at": "2026-02-24T23:35:42.356218",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1771994136209_0lww6v.png"
+      ]
+    }
+  ]
+}

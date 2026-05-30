@@ -1,0 +1,187 @@
+[00:00] All right, so this video is going to be the anti-vibe coders guide to building with AI.
+[00:11] And it's basically going to be a lot of things I wish I knew earlier about using cloud code
+[00:16] and cursor.
+[00:17] So hacks and a few things I've not seen online that have really helped me when I've been
+[00:21] using AI to code.
+[00:23] Because there's two ways I think that you can use AI.
+[00:25] You can be like a pigeon that's just had brain surgery and you're just like, continue, continue.
+[00:31] And then you get in all these errors and you have to keep restarting your project or rolling
+[00:34] back or use it in a more considered way and get the AI to work for you.
+[00:40] Because these LLMs basically, they're just guessing.
+[00:42] The human's job is to make sure those guesses are better.
+[00:45] So in this video, I'm going to show you how I do that.
+[00:48] And I am a senior software engineer.
+[00:49] So over the last year, I've seen my role just totally changed to the point where this has
+[00:54] become like one of the main skills people have to learn now if you're an engineer.
+[00:59] So things like prompting, context, like memory, and how to basically use AI effectively.
+[01:05] Or if you're watching this and you just want to make a better app and just spend less money
+[01:08] on tokens, these are hacks and things I wish I knew earlier.
+[01:12] So let's get stuck in.
+[01:13] Now I make content for developers, programmers, people who work in tech, and a lot of people
+[01:18] get pissed off when you talk about AI.
+[01:20] They feel that you become stupid by coding with AI and that it's an either-or situation.
+[01:26] I think you can use AI, do it quickly, like build faster, but also learn at the same time.
+[01:33] So later on in the video, I'm going to share how I do that because I thought about this
+[01:37] loads.
+[01:38] All right, but let's start with the number one mistake I made and I see people making
+[01:42] when they're using cloud and cursor to code.
+[01:45] And that is not using plan mode.
+[01:47] Because when I started coding, you wrote a lot of the code manually, so you didn't have
+[01:51] to plan too much.
+[01:52] You just write a few notes and then build out the feature.
+[01:55] Because you had a lot of control and you were doing it step by step, so basically you couldn't
+[01:59] f**k it up too much.
+[02:00] With AI, it's a lot different because it's like a train and it codes so fast, it can
+[02:05] go in the wrong direction really quickly.
+[02:07] And the way you circumvent that is focusing a lot on getting the AI to plan the project
+[02:14] for you.
+[02:15] It really can feel like magic seeing this LLM just like generating all this code.
+[02:20] The reason why that it's better to get the AI to do it with plan mode, with things like
+[02:24] UltraThink, get it to plan out the project for you, is that you can go back and forth
+[02:28] with the AI and also it will just discover edge cases and side effects, which you'd not
+[02:33] thought about.
+[02:34] So things which will pop up and you'd be like, oh, that's actually a good question.
+[02:37] So it will just save you a load of money, the start of every project, make sure you
+[02:41] plan it.
+[02:42] The next one is one I struggled with for ages and I just put it off for a while because
+[02:46] I'm a software engineer and I like typing, but it's better to just dictate your prompts.
+[02:52] So to speak, use the voice control feature and then just talk your voice prompts rather
+[02:57] than typing them out.
+[02:58] And the reason why it's better to do voice prompts, because I've gone back and forth
+[03:02] with this, but I've just noticed when I do voice prompts, when you're typing, you're
+[03:06] kind of limited and it's time consuming.
+[03:08] With voice prompts, they're usually longer, I've noticed for me, they're more specific.
+[03:13] I add more context and also it's just a bit more human as well.
+[03:16] So this gives the AI better instructions than these like shorter typed prompts.
+[03:21] So when you can, obviously, if you're in a cafe, whatever, it's a bit weird, but when
+[03:24] you can just try out doing, just dictating your prompts and see how it goes.
+[03:29] If you're building an app in 2026, then you want to set up some automations on a platform
+[03:33] like NAN.
+[03:34] And it's best to self host these.
+[03:36] That way you'll have control of your workflows and your data, and you don't have to pay cloud
+[03:40] pricing for something that you can just run yourself.
+[03:42] And you can do that with hosting a VPS who are sponsoring this part of the video.
+[03:46] NAN is addictive.
+[03:48] And if you're a programmer and you're not making automations, you're missing out.
+[03:52] There is a lot of money to be made making these right now.
+[03:55] And it's fun.
+[03:56] Let me show you.
+[03:57] So I want to send one WhatsApp message like this and the automation does the rest.
+[04:01] It all starts with this, the trigger, my WhatsApp message.
+[04:04] That message is transcribed.
+[04:06] Then the AI detects my email intent, identifies a contact and the Gmail thread, generates
+[04:11] my reply and sends the email automatically.
+[04:13] And then boom, it sends me a WhatsApp confirming it.
+[04:16] Then you've got to host it.
+[04:18] Go to this URL for hosting a VPS.
+[04:20] It's up to four times cheaper.
+[04:21] It's fast, unlimited workflows and one click and you're done.
+[04:25] And if you've even got a sale on now, you'll get 10% off with this code.
+[04:28] Take this as your sign, get involved in this AI automation error.
+[04:33] Okay, next is to use MCP service.
+[04:36] And the best way I found to think about MCP service is think of it like a USB port for
+[04:41] AI to connect to the real world.
+[04:43] So you can use it to pull in like light data, APIs and documentation into your project.
+[04:49] And a really good one is called context seven.
+[04:52] And what this will do is just pull in all up to date documentation for you.
+[04:56] And if you've like coded professionally, you've worked in a professional code base, one of
+[05:00] the biggest pain in the *** is when, for example, in JavaScript, there's a load of
+[05:05] packages and when one updates, it can affect others and particularly stuff like routing.
+[05:10] So MCP service will give you a project, just better context.
+[05:14] But there is some caveats here.
+[05:15] You want to be careful about what you're bringing into your project.
+[05:17] For example, there's an amazing super base MCP server, but you're giving that a lot of
+[05:23] access to your project.
+[05:24] And in theory, it could delete and tank your whole database and schema, but it's probably
+[05:29] worth the trade off.
+[05:31] So yeah, just be careful about the access you're giving them.
+[05:34] But long story short, better context equals better code.
+[05:38] Okay, next one, treat AI like a junior developer with ADHD.
+[05:43] Let me explain.
+[05:44] No disrespect to anyone with ADHD.
+[05:46] But I think it's just like a nice like metaphor and it does make sense.
+[05:49] It will do things really quick and really good as well.
+[05:52] And you're just like, whoa, you just generated a load of code, a feature and it's just like
+[05:56] amazing.
+[05:57] That's exactly what I wanted.
+[05:58] It will do things really quick, but you've got to like guide it a lot.
+[06:02] You've got to, it needs constant guidance, really tight context and also just give it
+[06:06] specific tasks.
+[06:07] Otherwise it will guess, but it will guess really confidently and it will take you to
+[06:12] like error hell.
+[06:13] And when you think about it, how LLMs work is their job is to please you by trying to
+[06:17] fill in the blanks.
+[06:18] And your job in the whole of this, your job as the human is to try and make those blanks
+[06:22] better.
+[06:23] And by using MCP servers, you give it more context that thus you try and make the blanks
+[06:27] better.
+[06:28] Okay.
+[06:29] Next, if you're a junior developer and you're watching this and you're like, I like coding
+[06:33] with AI, but I'm worried that I'm losing my coding ability.
+[06:37] Or maybe you're like a senior and you're just in the same boat where you're like, I don't
+[06:40] think I'm learning as much.
+[06:42] Maybe I'm losing some of the craft of coding.
+[06:45] This is the mindset I would have.
+[06:47] Obviously, if you're building your own app and your goal is to build an own app, this
+[06:51] isn't important.
+[06:52] I'd say the way I treat it is like pair programming and treat it like a collaboration.
+[06:56] So pair programming, if you don't know, I've spent probably thousands of hours of my life
+[07:00] pair programming.
+[07:01] And it's where you buddy up with someone who's usually like senior and just way better than
+[07:06] you at the job.
+[07:07] You get a problem together, you share a screen, and then you go back and forth.
+[07:10] And usually they code a lot.
+[07:12] You ask questions and you just watch how they do things.
+[07:15] If you really want to learn and grow, then treat coding with AI using cursor and claw
+[07:20] like this.
+[07:21] So you're asking questions, you're like, why did it do that?
+[07:23] This is going to take longer, but you're going to learn more.
+[07:26] So it's that balance of being productive, but also learning.
+[07:30] This is with AI now, this is, I think, massive.
+[07:33] If you're working for a company, don't sacrifice your learning for their productivity.
+[07:38] And another really important and helpful concept is this idea of compound engineering.
+[07:43] So like money, your code base and your AI should get smarter and smarter with each prompt
+[07:49] and each iteration.
+[07:50] So a big part of your role as the human being in all this is to just give it as much context
+[07:55] to allow it to compound engineer as a project goes on.
+[07:58] So by the end of it, it knows what you want, it knows what you want the project or the
+[08:02] app to look like.
+[08:03] And a big way you can do this is by providing and using CloudMD and cursor rules.
+[08:08] So what kind of stuff do you put in these files?
+[08:11] The way I think about it, it's like documentation for your app.
+[08:13] So stuff that you keep repeating again and again, like themes, how you want the components
+[08:18] and stuff to look.
+[08:20] If you find yourself repeating it again and again, just put it in these files, start basic
+[08:24] and then grow from there.
+[08:25] And whenever your AI is generating code, it's going to refer to this documentation in the
+[08:30] context.
+[08:31] You want to be careful though, you don't want to put too much in there because it'll blow
+[08:34] the context window.
+[08:35] Anything that you think will help, anything that you're repeating again and again, put
+[08:39] it in these files.
+[08:40] So you're helping compound engineering by using Cloud.MD and cursor rules.
+[08:45] Okay, the last one, last hack I really like.
+[08:48] It's for anyone who is designing an app and they just suck at design.
+[08:51] Because what you can do, you can actually just steal designs and use AI to implement
+[08:56] it.
+[08:57] And it actually works pretty well, I found.
+[08:58] So there's a website called Mobbin.
+[08:59] It's a good way to like browse different designs.
+[09:02] If you see one you like that you think is cool, take a screenshot of it.
+[09:05] Go back to Cloud or cursor and just say, I want you to update the design of this app
+[09:09] using this image.
+[09:11] Then drag it in, but give it a constraint.
+[09:14] Only use the color scheme and the font from this design.
+[09:18] That's it.
+[09:19] Otherwise, it's just going to like change loads of stuff, but I did this the other week
+[09:22] and it worked really well.
+[09:23] And that is it.
+[09:24] If you enjoyed the video, if you've got any value whatsoever, all I ask is free for you.
+[09:29] Just like the video if you want and subscribe if you enjoy this kind of content.
+[09:32] I've also got a newsletter where I'm going to be posting like deeper insights into the
+[09:36] app I'm making right now using AI.
+[09:38] So subscribe for that.
+[09:40] I'll see you in the next one.
+[09:41] Happy coding.
+[09:42] Ciao.
+[09:43] Ciao.

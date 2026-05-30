@@ -1,0 +1,181 @@
+[00:00] Google just dropped what some are already calling the most powerful workspace CLI on the internet
+[00:04] So if you've got a ton of stuff that lives in the Google environment
+[00:07] Just like I do then you're gonna love this
+[00:09] Because now any of my cloud code projects can access everything and all I had to do was install one simple thing
+[00:15] So here you can see I said, what can you do with GWS, which is Google workspace?
+[00:20] CLI so it can search list upload download move copy share anything in my Google Drive
+[00:26] It can do anything in my gmail. It can do anything in my calendar
+[00:29] It can do anything with Google Docs same thing with sheets same thing with slides and it also has multi-step workflow recipes
+[00:37] So these are basically like skills
+[00:38] These are chain command patterns for common tasks like creating docs from templates reading sheet data and creating a report doc
+[00:44] Finding free time and scheduling a meeting and there are over a hundred of these that it actually has
+[00:48] So out-of-the-box when you give cloud code the GWS CLI
+[00:52] You can do anything across any of the tools and you also have access to over a hundred skills
+[00:56] So, I don't know how many times you guys have tried to use something like cloud or anything to build you a Google Doc
+[01:01] And you do this over API and it ends up just looking like something like this
+[01:04] It literally just looks like raw markdown and it's obviously horrible and sometimes to go along with a YouTube video
+[01:10] I make resource guides that look like this, but obviously they have to be formatted
+[01:13] I've got like a header up here and I've got links and different things in this format
+[01:18] But now I can literally just take the link to a YouTube video
+[01:20] I can drop that into cloud code and say create me a YouTube resource guide
+[01:24] It's gonna go ahead and download that transcript from the video
+[01:26] And now what it's doing is it's creating the Google Doc not via API call not via MCP
+[01:31] But via a bash command meaning it's literally running a terminal command in order to talk to Google and make this
+[01:37] So it just actually created the doc. Here's the ID and now it's gonna populate it with what I need
+[01:42] And now it finished this up. It gave me the link. I'll click into this and we can see boom
+[01:46] We have an actual resource guide. It's got the image inserted up here as a header
+[01:49] It's got a link that goes right back to my youtube channel. It breaks down the market traditional automation
+[01:54] It goes through all this stuff and then even has my CTA at the bottom as you can see after all of these horizontal lines
+[01:59] To join the plus group. So that was obviously just one quick example
+[02:02] But there's so many different benefits here using this workspace CLI. The first one is that you have one interface
+[02:07] So basically, like I said
+[02:08] It was one
+[02:09] GWS CLI that cloud code now has access to and it can access my gmail my drive docs sheets calendar admin and more
+[02:15] It's also JSON first with structured responses, so our AI agent is really really good at working with it
+[02:20] We have auto discovery meaning the CLI is pretty much always gonna stay up-to-date
+[02:24] Automatically pretty much zero maintenance because we authenticate and then we're gonna be good to go
+[02:27] It has built-in skills for triage for prep for generations
+[02:31] Like I said, there's a hundred others and it's not much overhead because it's basically just one tool
+[02:35] It's not the same as like having all these different API endpoints or all of these different MCP configs and tools
+[02:40] That would take up more context, but I know you're probably wondering what is a CLI?
+[02:44] It stands for command-line interface and what we're typically used to is a GUI or a graphical user interface where we can see buttons
+[02:51] We can see form fields and we can click on things and that's how we navigate
+[02:55] But computers are more navigating by text and by commands and by typing
+[02:59] So that's really all that a CLI is and this is an open-source Google workspace product and obviously it's completely free
+[03:05] So I'll leave a link to this github repository down in the description if you want to check it out read more about it
+[03:09] But I'm also gonna walk through some of the key details right here
+[03:11] The first thing that I wanted to show you is if you go down here to the skills
+[03:14] This is where we can actually see all of the different kind of recipes
+[03:17] They call them for pre-made
+[03:20] Multi-step workflows that it has as you can see creating events from sheets creating presentations creating meatspace label and archiving emails
+[03:27] There's so many different patterns that you might use from this pre-built library
+[03:31] Now if we keep scrolling down what you'll also notice is that right here
+[03:33] It says this is not an officially supported Google product. Now, that doesn't mean that it's unsafe
+[03:38] This is an actual Google product. But the reason why it's not officially supported is because right now it's more of like an open-source beta
+[03:44] It's kind of a developer playground rather than like an enterprise backed
+[03:48] Software and you can see right here that also says this product is under active development
+[03:52] Expect breaking changes as we march towards v1.0
+[03:55] So this thing is already really good out of the box and it's only gonna get better and you can see like I said
+[03:59] When Google Workspace adds an API endpoints or method GWS picks it up automatically
+[04:04] So you might as well chuck it into cloud code right now and start getting used to it
+[04:07] Okay, so I just uninstalled this so I can walk you guys through step-by-step how this actually works
+[04:11] It's super easy
+[04:12] what I do is I basically copy the link to this github repository as you can see and
+[04:16] I'm gonna basically just give it to cloud code and say hey, I want to install this
+[04:22] GWS CLI read the documentation and help me install everything that I need to install and then we're gonna get set up
+[04:28] So this is basically gonna do all the research for me. And then all I have to do is follow its instructions
+[04:33] So read the docs it's looking at what we already have installed. It basically saw that I already had some of the prerequisites
+[04:38] So if you don't have those you'll have to install those and then it told me that we needed to install the CLI
+[04:43] So it did that and now we have two options
+[04:45] So the first one is to install G cloud CLI so that we have automatic setup and off or we could do it manually by
+[04:50] Creating our own project and whatnot. So let's just go ahead and try option a okay
+[04:55] I thought this was gonna be just like a simple command that it ran and then we were good
+[04:58] But it's actually like some other thing to install
+[05:00] So let's actually go back and try manual and I'll just show you guys I guess the harder way
+[05:04] Okay
+[05:05] So I'm gonna go to this link go to our Google Cloud
+[05:07] Console and make sure you're signed in with the right account up in the top, right?
+[05:10] And I'm just gonna go ahead and create a new project just to show you guys what this would look like
+[05:13] So new project I'm gonna call this one
+[05:16] Claude
+[05:17] code
+[05:19] GWS and we're just gonna go ahead and create this project
+[05:22] So this is spinning up right now as you can see and now that it has been created
+[05:25] I'm gonna select it
+[05:26] So we're inside of it and then I'm gonna go up here and type in APIs and services click on that and we have to
+[05:32] Set up our OAuth consent screen. So I'll click on this and it's going to say get started click on that
+[05:37] We have to give our app a name and then we have to choose an audience
+[05:40] So I'm just gonna do internal because I only need this right now for my own organization
+[05:45] If you want to do external, it'll basically have you do
+[05:48] Testing or published and if you do testing just make sure that you add your email as a test user
+[05:53] And then all you have to do after you put in your contact information is hit I
+[05:57] Agree, and then you go ahead and create that now once that has been done. You're gonna go to create a client ID
+[06:03] So I'm gonna go back into APIs and services
+[06:05] I'm gonna go to credentials and then I'm gonna go ahead and do a create credential OAuth client ID now in here
+[06:10] We're gonna choose a desktop app. I'm going to just call this
+[06:14] GWS and go ahead and hit create and now we have our client ID and our client secret
+[06:18] And so what you're gonna do is download this as a JSON file
+[06:22] Now you can see here that it says to download that file and save it to your global config slash
+[06:28] GWS so basically if you can't find this just say hey
+[06:30] Can you give that to me in a full path?
+[06:32] And then you can paste that into your finder or your file explorer and it will take you there
+[06:36] It will probably look something like this and then you just drag in that credential thing
+[06:40] I called mine client underscore secret and cloud code will be able to look at this globally now
+[06:44] And so what you'll notice is that we didn't in this project yet enable these APIs
+[06:48] So, let me just show you what happens without that. So it says the last step is to run GWS off login
+[06:54] So I just said hey
+[06:55] I finished option B the credentials are called client underscore secret and then I told it to run the off login
+[07:00] So that should basically open up a tab for you
+[07:03] But if it doesn't then you can ask for it to give you that URL so that you can actually authenticate in
+[07:07] So you basically choose your account that you want to use and then you just have to basically
+[07:11] Confirm that it can access all of these different things as you can see and then when you hit allow you should be properly authenticated
+[07:17] After that, it's gonna come back and say, okay, cool
+[07:19] Let me see if everything works now
+[07:21] This hasn't been perfect on the first try every time but if you just go back and forth a little bit say hey that didn't
+[07:26] Work. Hey, this is what I'm seeing. It will be able to get you there
+[07:29] It's gonna be your best friend for something like this because remember it can read all of the actual documentation
+[07:33] And now it says that the auth is working, but we have to enable these APIs in our Google Cloud projects
+[07:39] So basically just clicking open these one at a time and all you have to do is hit enable
+[07:43] So it's super simple you just have to do this
+[07:45] Like I said for all of these different services that you actually want to be able to use
+[07:48] So that's why I did this on a new project because I just wanted you guys to see that but if you already have one
+[07:52] That has all these enabled then you can just use that project and generate that OAuth client ID
+[07:57] So there you go. You can see that this works
+[07:58] I said
+[07:59] Can you find my Google Doc that I made in April of 2025 and it went ahead and pulled links to all five of these
+[08:04] Because obviously that was a very vague request and now we could take action pretty much anywhere in Google Workspace
+[08:09] Super simply with this CLI
+[08:11] But like I said, I just got this set up today and I've been playing around with it a ton in my executive assistant project
+[08:16] And it's been awesome. It can literally do anything
+[08:18] So here I'm asking it to grab my unread emails from today and based on what it knows about my business and my priorities
+[08:23] Give them a score and if the priority score is below 5 just mark it as unread automatically
+[08:27] Alright, so here you can see it said got 30 unread emails
+[08:30] Here's my priority score based on your business context
+[08:33] And as I scroll down you can see that it's getting different ratings and based on what I'm seeing right now
+[08:37] This actually looks pretty good
+[08:39] So then I started playing around with the Google Slides because I use gamma right now
+[08:42] But at some point I could imagine that if this gets good enough, then I wouldn't need gamma anymore
+[08:46] And this is a free option compared to gamma subscription. So I had to create me a slide deck and it was okay
+[08:51] I threw in my brand guidelines. I threw in my logo and I said, hey, can you see this?
+[08:55] You created this using the Google Slides and it's okay, but there's some weird things that I need you to fix
+[09:00] So then it came back and said I cannot see the slides. I just know how to build them programmatically
+[09:04] So that's why there may be some errors with spacing and stuff
+[09:06] So then I basically just gave it access to Chrome Dev tools that it could open the page
+[09:10] Screenshot it look at it and then we built a plan to add visual validation to this Google Slide Creator skill
+[09:16] So now you can see as it's going through it actually takes screenshots and then it can make fixes based on that
+[09:21] So then after it fixes everything it says, okay cool updated the skill take a look at it now
+[09:25] So I'll open up this link brings me to Google Slides where I have this slide deck. It has kind of my brand colors
+[09:31] It's got the logo up top, right?
+[09:33] And then as we go through we can also see that the spacing is a little bit better
+[09:36] It's still not perfect obviously
+[09:37] but we have custom images here that were generated with Nano Banana 2 and even the images are kind of on-brand with the sort of
+[09:44] Orange and blue color scheme as you can see we've got this one with the WT framework
+[09:48] We've got this slide and it even ends with a CTA for the free school community. So just to see what else happens
+[09:54] I'm gonna say take a look at the slide deck and do another audit. How could you improve this skill in the future?
+[09:59] So it's gonna go ahead open up a tab as you guys just saw it's gonna take images
+[10:03] It's gonna flick through the different slides and capture them
+[10:05] And as you can see over here, it now says take screenshot and now it's reading that screenshot right there
+[10:12] Now it just moved on to the next slide and it's gonna go through and look at every single slide and then it's gonna come
+[10:17] Back with a plan and we could probably do a similar visual and validate flow with creating Google Docs as well
+[10:23] So now you can see it's almost on to that last slide and I hope it fixes this last slide
+[10:26] Because what you can see here is that the spacing is really off down here
+[10:30] So you can see it came back with an audit it came back with some future improvements
+[10:34] And one thing that I did notice is that because I made the window smaller its screenshots were probably worse quality
+[10:39] So it said presentation mode screenshots would probably be better
+[10:43] But anyways, I just wanted to give you guys a little taste of how you can use the GWS CLI
+[10:47] But also use it with other tools to make the functionality even more powerful. So just remember that this is very new
+[10:52] There's a lot of people out there on Twitter right now saying that this is insanely overpowered
+[10:56] There's also a lot of people that are saying that it just feels kind of finicky so far for me
+[10:59] It's been pretty great everything that I've asked it to do or find or schedule, whatever it is
+[11:04] It's been doing that pretty much perfectly, but there are some people saying that it's asking them to reauthenticate multiple times
+[11:09] So if that's a little frustrating, I guess just keep in mind that it will only get better and we're not even to version 1 yet
+[11:14] So I definitely recommend that you come to this github read about it
+[11:17] But more importantly get this thing installed in your cloud code setup and just start using it using it using it
+[11:22] And now that you understand how this works and you've seen a few demos
+[11:25] The next step would be to connect it to your projects potentially like an executive assistant
+[11:28] And if you don't have one of those yet, then definitely try building out your own assistant with cloud code
+[11:32] I dropped a full video on how I set mine up which you can go ahead and watch right up here
+[11:36] I think that'd be a great next step. Hopefully I see you guys over there, but that is gonna do it for today
+[11:40] So if you enjoyed you learn something new
+[11:41] Please give it a like that helps me in a ton. And as always I appreciate you guys making it to the end of the video
+[11:45] I'll see you on the next one. Thanks everyone

@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Celebratory graphic with bold colorful geometric design using Skool brand colors \u2014 deep blue (#2B4EC8), bright red-orange (#E8472A), and warm gold (#D4A843) on a clean white background. Confetti, celebration bursts, dynamic diagonal shapes and color blocks. Festive, high-energy, professional. Large bold text: 'Your Gameplan is on its way\\!' centered prominently. The word 'skool' styled in multicolored letters at the top. Modern clean design with strong contrast.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 3,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-09T21:07:57.511821",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/77c6dee09661816da916767ea2e5b85d_1773104682_3wp450kf.png",
+        "https://tempfile.aiquickdraw.com/r/f199918cd58c09ef67681845e2285634_1773104760_kkh2gjyd.png",
+        "https://tempfile.aiquickdraw.com/r/205fe43248e29be7b78b5c0d2f3850d9_1773104874_yaheknrg.png"
+      ]
+    }
+  ]
+}

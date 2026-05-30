@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Instagram carousel content slide. Dark black background with colorful abstract swirl ribbon shapes in yellow, orange, and green on the right side. At the top, a dark rounded rectangle with white bold text: 1. Install Claude Code. Below that, a semi-transparent dark text block containing white text: Open Terminal (Mac) or PowerShell (Windows). Paste this command and press Enter. Wait about 2 minutes. Below the text block, the reference screenshot image inside a subtle rounded frame. Page counter 2/7 in small white text top right corner. Professional Instagram carousel design.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/install-docs.png"
+      ],
+      "generated_at": "2026-03-26T21:55:00.576528",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774576491803_uui300.png"
+      ]
+    }
+  ]
+}

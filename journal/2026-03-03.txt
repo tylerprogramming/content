@@ -1,0 +1,17 @@
+# Journal — 2026-03-03 (Monday)
+
+## Done
+- Got paid $1,500 for Max's Kourse GPT
+- Miles and Patrice paid first month of $650
+- Updated skills in GitHub repo (claude-skills)
+- Weight lifted — shoulders day (military press pyramid, lateral raises, rear delt raises)
+- Ran a 5K race — 3.10 mi in 27:51, 8'57"/mi pace (new PR pace)
+- Updated fitness skill with templates, strength tracking, and nutrition modal
+- Pushed all fitness skill updates to GitHub with clean commit history
+
+## Next
+- More YouTube content — video planning, scripting, or filming
+- More Claude Code skills — building or refining
+
+## Blockers
+- Time management — juggling a lot right now between content, skills, client work, and fitness

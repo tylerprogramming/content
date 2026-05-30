@@ -1,0 +1,34 @@
+{
+  "generations": [
+    {
+      "prompt": "Clean dark social media card design, 4:5 portrait ratio. The terminal screenshot is displayed as a centered card/frame in the middle of the image with a subtle drop shadow. Dark charcoal background (#1a1a1a). At the top in clean white bold sans-serif text: 'Ask anything mid-task.' Below the screenshot in smaller white text: 'The new /btw command in Claude Code'. Minimal, sleek, developer aesthetic. No additional decorations.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "jpg",
+      "reference_images": [],
+      "generated_at": "2026-03-16T16:55:07.341064",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773694501987-z1fvot8p3i8.jpeg"
+      ]
+    },
+    {
+      "prompt": "Clean dark social media card design, 4:5 portrait ratio. The terminal screenshot is displayed as a centered card/frame in the middle of the image with a subtle drop shadow. Dark charcoal background (#1a1a1a). At the top in clean white bold sans-serif text: 'Ask anything mid-task.' Below the screenshot in smaller white text: 'The new /btw command in Claude Code'. Minimal, sleek, developer aesthetic. No additional decorations.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "jpg",
+      "reference_images": [],
+      "generated_at": "2026-03-16T16:57:04.012501",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773694618721-k9w44v99mw.jpeg"
+      ]
+    }
+  ]
+}

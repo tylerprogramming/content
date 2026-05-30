@@ -1,0 +1,326 @@
+[00:00] Anthropic just quietly added
+[00:01] one of the most underrated features to Cloud Co-Work.
+[00:04] It can now run tasks on a schedule,
+[00:06] even while you're sleeping.
+[00:07] So in this video,
+[00:08] I'm gonna show you the new scheduled task feature
+[00:10] and then walk you through some use cases I'm using
+[00:12] that honestly feel like cheating.
+[00:14] And I'm gonna show you how this,
+[00:15] plus their new plugins feature they added yesterday,
+[00:18] really takes Cloud Co-Work to the next level.
+[00:20] So without further ado, let me show you now.
+[00:22] All right, so I'm gonna quickly explain
+[00:23] what the new Cloud Co-Work scheduled tasks are,
+[00:25] and then we're gonna dive into some use cases
+[00:27] I've been using.
+[00:28] So instead of having to do manually tasks every single day,
+[00:31] we can now have Cloud Co do these for us.
+[00:34] We could basically explain to Cloud
+[00:35] exactly how we want something done,
+[00:37] and it can do this forever.
+[00:38] We could type in a specific command and pick a cadence,
+[00:41] whether that's daily, weekly, or monthly.
+[00:43] And Cloud Co-Work can do things
+[00:45] such as sorting our email inbox every day
+[00:47] or organizing files automatically,
+[00:49] building reports while we sleep.
+[00:51] And it even connects to 13 new app connectors
+[00:53] that I'm gonna show you in this video.
+[00:55] And where this gets even more powerful
+[00:57] is with the new plugins feature
+[00:58] that Cloud Co-Work just announced yesterday.
+[01:00] If you don't know what plugins are,
+[01:01] they essentially turn Cloud Co-Work into a specialist.
+[01:05] There's prebuilt plugins for your HR team,
+[01:07] finance, legal, or your sales team,
+[01:10] or you could even build your own plugins directly.
+[01:12] So now inside of Cloud Co-Work with the new plugins feature,
+[01:15] as well as the scheduled task feature,
+[01:17] we now have our own AI employees for $20 per month
+[01:21] that we could train to do anything.
+[01:22] All right, so to get started,
+[01:24] we first need to download the Cloud Desktop app.
+[01:27] So what you're gonna do is you're gonna come
+[01:28] to cloud.com slash download and make sure to download this.
+[01:31] You could either download this on Mac or Windows.
+[01:33] So let me pull up Cloud Co-Work now.
+[01:36] So if I open the Cloud Desktop app,
+[01:37] you can now see that we have Cloud Co-Work here
+[01:39] if you've never used this before.
+[01:41] All right, so I wanna show you one use case
+[01:42] I'm using right now inside of Cloud Co-Work.
+[01:44] If we take a look at my Co-Work message history here,
+[01:48] you could see that I said,
+[01:48] look at my last YouTube video I posted today,
+[01:51] repurpose that video into a LinkedIn post,
+[01:53] post it to the Slack channel named content,
+[01:55] and then post it live to LinkedIn via Buffer.
+[01:59] So if you don't know what Buffer is,
+[02:00] Buffer is basically a platform that allows me
+[02:02] to schedule posts across any of the platforms that I use.
+[02:05] And I'm actually using Zapier MCP
+[02:08] to connect my Buffer account in order to schedule posts
+[02:10] across all these different accounts.
+[02:12] So from here, what Co-Work did is it actually found
+[02:15] the video that I posted today.
+[02:16] Cloud just got 13 new superpowers, Co-Work plugins.
+[02:19] It also provided the URL to the video
+[02:21] and it broke down the key points from inside of the video.
+[02:24] And it went ahead and crafted this LinkedIn post
+[02:27] that was repurposing basically the main premise
+[02:30] of what I talked about in that video,
+[02:32] but specific for LinkedIn and LinkedIn copy.
+[02:35] Then what Co-Work did is it asked
+[02:37] if I should send this to Slack and Buffer now.
+[02:39] I just said, yes, please.
+[02:40] Next thing you know, it sent this to my Slack content channel
+[02:44] in order for my team to approve it.
+[02:46] And then once it's approved,
+[02:47] it was then post to LinkedIn via Buffer.
+[02:49] If I pull up my Slack now,
+[02:51] you could see that we have our new LinkedIn post
+[02:53] that was ready to publish on Buffer.
+[02:54] And I'm not gonna break down this entire thing,
+[02:56] but this is a pretty good formatted LinkedIn post
+[02:58] directly from my YouTube video.
+[03:00] Let me show you which one I'm referring to.
+[03:01] So it basically took the main points from this video
+[03:04] and turned that into a LinkedIn post.
+[03:05] However, you're probably wondering like,
+[03:07] Brock, what does scheduled tasks have anything to do
+[03:10] with what I just showed you?
+[03:11] So the power of this is imagine every single day
+[03:14] if it scraped my YouTube,
+[03:16] so if I posted anything and then if I did,
+[03:18] it would then automatically create
+[03:20] that LinkedIn post for me.
+[03:21] So I don't need to come to Claude cowork
+[03:23] and say, hey, I posted a video today.
+[03:24] Here's the URL.
+[03:25] I want you to repurpose this.
+[03:27] It now will automatically do that for me
+[03:29] without me needing to manually have any input for it.
+[03:32] So let me just come here and say, this is great.
+[03:34] I love this workflow.
+[03:35] Can you now do something for me
+[03:37] and turn this into a specific skill?
+[03:38] I want the skill to be called YouTube repurpose
+[03:42] where you automatically go on my YouTube
+[03:45] every single day at 8 a.m.
+[03:47] and scrape to see if I have any new posts
+[03:49] and if I do, I want you to then trigger this workflow
+[03:51] and post to Slack as well as my LinkedIn.
+[03:54] As you can see here, I just gave it a very basic prompt
+[03:56] and was like, all right, I love this workflow.
+[03:58] I want you to turn it into a specific skill.
+[04:00] Along with that, there's gonna be a specific command.
+[04:02] So whenever I say YouTube repurpose and chat here,
+[04:05] it's automatically going to invoke this specific workflow
+[04:09] and then do that automatically for me
+[04:11] as well as now it is scheduled every single day at 8 a.m.
+[04:14] Also, I'm gonna show you one of the other powers
+[04:16] inside of Cowork is going back to
+[04:19] when it was going through this workflow,
+[04:20] there is something called Claude in Chrome
+[04:22] and we could give Cowork the ability
+[04:24] to go and browse my browser.
+[04:26] So if I pull up my browser here,
+[04:28] you can now see that I have this Claude button here
+[04:31] and this automatically can go and control my browser.
+[04:34] So inside of Claude Cowork,
+[04:35] it could basically invoke that workflow
+[04:37] for it to go off and do things.
+[04:38] And that is exactly how it went to my YouTube video
+[04:40] to extract the key points to repurpose that
+[04:43] into a LinkedIn post.
+[04:44] All right, so we now have a scheduled task
+[04:46] inside of Cowork.
+[04:47] Right here, it says every day at 8 a.m.,
+[04:49] Claude will automatically check your YouTube channel
+[04:51] for new uploads.
+[04:52] To activate the skill, just install the skill file
+[04:55] and use the schedule command.
+[04:56] So all I have to do is literally just say schedule
+[04:58] if I want to invoke this automatically or manually
+[05:01] instead of automatically every morning.
+[05:02] And let me go ahead and actually open up this skill MD file
+[05:06] so you could see exactly what it did.
+[05:08] And I'm gonna talk about why skills are so powerful
+[05:10] inside of Claude Cowork explained in plain English.
+[05:13] Right here is a markdown file,
+[05:14] which is basically a set of instructions
+[05:16] on how exactly this workflow should run every single time.
+[05:19] So we don't need to give a prompt to Cowork and say,
+[05:21] hey, I want you to automatically scrape my YouTube videos
+[05:25] and then repurpose it to LinkedIn.
+[05:26] And here's how I want it repurposed to LinkedIn.
+[05:28] Like, I don't need to explain that
+[05:30] because that is what this markdown file does.
+[05:32] So let me quickly talk about Cowork skills
+[05:34] so you have a full understanding of this.
+[05:35] So a skill is a saved workflow
+[05:38] where we can write the instructions once,
+[05:40] Claude memorizes this entire process,
+[05:42] and it will run this perfectly every single time.
+[05:45] What goes into a skill file is the goal, the steps,
+[05:48] the tools it should use, and then the edge cases
+[05:50] as if, you know, what it should do if something breaks.
+[05:53] So for example, my YouTube repurposing system
+[05:56] that I just built turns new videos into LinkedIn posts
+[05:59] because of these six steps inside of this skill.
+[06:02] It checks my YouTube for new uploads,
+[06:04] it pulls the transcript and description,
+[06:06] writes a LinkedIn post, posts to Slack,
+[06:08] queues it to LinkedIn via buffer,
+[06:10] and then reports back with confirmation.
+[06:12] So now with the scheduled tasks,
+[06:14] I'm able to schedule that skill on autopilot
+[06:17] so I don't manually need to be doing this.
+[06:19] So the skill knows what to do,
+[06:20] the schedule now knows when to do it,
+[06:22] and I never have to touch this ever again.
+[06:25] One key point here is you could build a skill
+[06:27] for literally anything,
+[06:28] and this is where the plugins feature inside of Cowork
+[06:31] is very, very crucial.
+[06:33] So if we come to plugins here,
+[06:35] you can see we have these different plugins
+[06:37] that we could instantly install into our Cowork experience.
+[06:40] So I have a couple already downloaded,
+[06:42] so I have one for marketing, I have one for design,
+[06:44] or I could even download one for legal processes.
+[06:47] If I come to my marketing plugin here,
+[06:49] I have all these different commands,
+[06:50] so I don't need to go and create these markdown files
+[06:53] for skills, they're automatically updated.
+[06:55] So the reason I bring that up
+[06:56] is because this really supercharges
+[06:59] what we could do with scheduled tasks
+[07:00] if we're using plugins.
+[07:01] Plugins are shareable, so one person can build it,
+[07:04] now the entire team can use it.
+[07:06] We can leverage all of the skills we created,
+[07:08] all of the workflows,
+[07:09] and now all of these specific scheduled tasks
+[07:12] that we create inside of Cowork.
+[07:13] We can instantly plug this into our system,
+[07:16] so we could install a plugin in one click,
+[07:18] now it's scheduled to run this automatically,
+[07:20] we don't need to set anything up,
+[07:22] it literally just works for us.
+[07:23] Moral of this story,
+[07:25] shared plugins plus scheduled tasks equal autopilot.
+[07:28] This is where AI agents can actually go off
+[07:30] and do things for us without us needing to give manual input.
+[07:32] Let's now quickly talk about all the different applications
+[07:35] we could tie into Cowork
+[07:37] and use for our scheduled tasks or our plugins.
+[07:40] If we come here, you could see
+[07:41] that there's tons of different connectors
+[07:42] directly inside of Cloud
+[07:45] that we could go ahead and just instantly install.
+[07:47] So for example, if I want to be able to connect to my Gmail,
+[07:50] all I have to do is click continue,
+[07:51] give access to my account,
+[07:53] and now Cloud Cowork can access any of my emails
+[07:56] as well as respond to my emails for me.
+[07:58] So going back to Buffer,
+[08:00] which is the platform that I use
+[08:01] to schedule my LinkedIn post for me,
+[08:03] the way that I was able to connect to this
+[08:05] because Cloud Cowork doesn't actually have
+[08:08] any native integrations for this specific platform
+[08:11] is what I am doing is I'm using the Zapier MCP connector.
+[08:15] So let me show you exactly what I mean.
+[08:17] If we come to zapier.com slash MCP,
+[08:19] you can see this landing page,
+[08:21] which says connect your AI to any app with the Zapier MCP.
+[08:24] So I'm just gonna click on start building here.
+[08:26] And I have this server that is configured
+[08:29] with access to Buffer.
+[08:30] We could come here and add any of these different tools.
+[08:33] And the key thing with Zapier
+[08:34] is it basically connects to 8,000 plus different apps.
+[08:37] And if we come back to Cowork,
+[08:39] I believe Cloud only has access
+[08:41] to maybe 50 to 100 different apps.
+[08:43] So if there are ever apps
+[08:45] that you wanna go ahead and connect to,
+[08:46] Zapier MCP is an amazing way to do this.
+[08:49] So let me show you exactly
+[08:50] how quickly you could set this up.
+[08:51] So you're just gonna enable
+[08:53] any of the apps you wanna connect.
+[08:54] So let me just connect Gmail, for example,
+[08:56] and any of the tools we connect in this server,
+[08:59] Cloud Cowork will have access to.
+[09:00] I'm just gonna click on connect.
+[09:02] And then from here, we're just gonna click on copy URL.
+[09:05] And then I'm gonna come up to connectors up here.
+[09:07] I'm gonna click on add custom connector.
+[09:09] I'm gonna call this Zapier.
+[09:11] And then I'm just gonna simply paste
+[09:12] in that remote MCP server URL
+[09:14] I just got with inside of Zapier.
+[09:15] Here's another use case for scheduled tasks
+[09:17] that has genuinely been a game changer
+[09:20] for me and my business.
+[09:21] If I come to this chat, you could see, I said,
+[09:23] I want you to create a skill and command.
+[09:25] So whenever I say research,
+[09:26] you look at all of my competitors' YouTube videos.
+[09:28] Then from there, it's gonna generate a document
+[09:31] breaking down the key findings,
+[09:32] as well as ping me on Slack about all of the key findings,
+[09:35] and then also create a HTML file
+[09:37] with an interface breaking down the key findings.
+[09:40] So essentially, every single morning,
+[09:41] I can understand what's going on in the space,
+[09:43] what should I pay attention to,
+[09:44] and what should I maybe fill my content for,
+[09:46] for you guys to document things going on in the AI space.
+[09:49] So a couple of things that I wanna highlight here
+[09:51] is if I come over to my files here
+[09:54] that we have inside of Cloud Cowork,
+[09:56] we have a couple of things.
+[09:57] We have our instructions folder.
+[09:59] We have our YouTube markdown.
+[10:01] So this is basically what's breaking down
+[10:03] all of our competitors
+[10:04] that we wanna track in the YouTube space.
+[10:06] So we have some amazing names here,
+[10:08] the best people making content in the AI space
+[10:10] that we wanna stay up to date with,
+[10:11] instead of me having to manually scrape.
+[10:13] And if I come down a bit further,
+[10:14] there's a couple of documents that were created.
+[10:16] So we have this document file,
+[10:19] which is the research report of all of the findings.
+[10:22] So this is a very broken down and detailed breakdown
+[10:25] on what exactly is going down in the AI space,
+[10:28] and what it is that I should actually focus
+[10:30] on filming today.
+[10:31] And then on top of that,
+[10:31] it even created this HTML dashboard
+[10:34] that is just like an amazing interface
+[10:35] for me to just see everything that was going on
+[10:38] while I was sleeping.
+[10:39] So when I say that Cloud Cowork can do work for you
+[10:43] while you are sleeping,
+[10:44] this is the type of stuff that it could do.
+[10:46] This is genuinely something that would take me hours
+[10:48] every single day to research.
+[10:49] And I can now use Cloud Cowork with these scheduled tasks
+[10:53] to do this automatically for me.
+[10:54] All right, guys, there we have it.
+[10:55] That is Cloud Cowork and the new scheduled tasks.
+[10:58] If you guys got some value from this video,
+[10:59] please leave a like and subscribe to this channel.
+[11:01] I have tons more content coming out
+[11:03] about Cloud Cowork and different use cases
+[11:05] that you can use right now.
+[11:06] Thank you for staying to the end.
+[11:07] I genuinely appreciate every single one of you.
+[11:09] With that being said, guys,
+[11:10] I'll see you guys in the next video.

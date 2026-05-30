@@ -1,0 +1,38 @@
+{
+  "generations": [
+    {
+      "prompt": "a man with short brown hair and beard in black t-shirt on left side of image, contemplative thinking pose with hand touching chin, looking upward to the right, warm burnt orange and brown background gradient, Claude AI aesthetic, orange sunburst logo in upper right, row of four glowing app icons in the center showing laptop desktop and browser and smartphone and terminal window, large bold text CODE FROM PHONE at bottom, professional thumbnail composition",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T21:42:30.658494",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772678545789_t88tvg.png"
+      ]
+    },
+    {
+      "prompt": "a man with short brown hair and beard in black t-shirt, surprised amazed expression with raised eyebrows and open mouth showing excitement, holding smartphone up to camera displaying Claude Code terminal with orange text on black screen, dark background with teal cyan blue neon glow effects, floating terminal windows behind him, text CLAUDE CODE in glowing orange letters, arrow pointing from desktop to phone, dramatic cinematic lighting",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T21:48:21.276057",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1772678895817-gebmahmvsn6.png"
+      ]
+    }
+  ]
+}

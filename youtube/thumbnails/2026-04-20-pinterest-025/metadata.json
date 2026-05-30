@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase label, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Clean minimalist style, warm Anthropic Claude brand aesthetic. Headline '25 CLAUDE CODE SKILLS I USE DAILY'. Card 1 search icon 'RESEARCH - 5 skills / yt-search / transcribe / tiktok / gmail / harut'. Card 2 pencil icon 'WRITING - 5 skills / yt / seo / content / custom-gpt / chapters'. Card 3 image icon 'VISUALS - 5 skills / thumbnail / resize / rmbg / carousel / instagram-writer'. Card 4 video icon 'VIDEO - 5 skills / shorts / repurpose / flash-video / ai-video / submagic'. Card 5 briefcase icon 'BUSINESS - 5 skills / skool / email / analytics / journal / fitness'.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:36:03.467550",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/d087d7a3b38f4ee04d0c7cc7870c8507_1776713758_zhsun1n7.png"
+      ]
+    }
+  ]
+}

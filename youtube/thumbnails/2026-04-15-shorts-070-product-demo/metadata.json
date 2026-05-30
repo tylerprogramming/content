@@ -1,0 +1,20 @@
+{
+  "generations": [
+    {
+      "prompt": "Professional product photography, white wireless earbuds on a marble surface, soft shadows, studio lighting, clean minimal background, commercial quality",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "1:1",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-15T07:39:04.366377",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/h/4a3e720d476df27b9cd99d78a0462f8f_1776253038.png",
+        "https://tempfile.aiquickdraw.com/images/1776253141547-w794cdb312d.png"
+      ]
+    }
+  ]
+}

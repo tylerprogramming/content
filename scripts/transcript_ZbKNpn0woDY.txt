@@ -1,0 +1,65 @@
+[00:00] Anthropic just dropped one of the most useful features in Clod Code ever. It's called Slash
+[00:04] BTW. It saves you twice the tokens and allows you to do things in half the time. And I don't
+[00:09] really think a lot of people know about it. Now previously, if I was having a conversation with
+[00:13] Clod Code, let's say I ask it to scrape a thousand pay-per-click agency owner leads and then give
+[00:18] them to me in a Google Sheet. I've wanted to ask a question to Clod Code in the middle of this. It
+[00:22] might have been related to the skill, to the context that we just loaded in our token window.
+[00:27] Well, the only way for me to do this would have literally been to open up another Clod Code thread,
+[00:32] ask it a question, tell me about scrape leads, and then have it go on its way. The issue with
+[00:38] that obviously is every time you load a new instance of Clod Code, you're consuming a
+[00:41] tremendous number of tokens that aren't actually related to the work that you're doing. You
+[00:45] basically have like a fixed 10 to 20,000 token cost every single time you open a new window,
+[00:50] and there was no way not to consume that. Well, that's where Slash BTW comes in handy. Now I
+[00:55] could tell it to scrape 1,000 PPC agency owner leads, but if halfway through I have either a
+[01:00] follow-up question about this, or maybe I want it to give it to me in a CSV, all I need to do is
+[01:05] type Slash BTW and then write what I want to say. So, sorry, I meant a CSV. This will dynamically
+[01:14] open a new window called the Slash BTW window that allows us to insert information through the
+[01:20] conversation chain without actually interrupting the thread. I can also ask it questions about,
+[01:24] let's say, the specific skill, taking advantage of a lot of the functionality and features here.
+[01:29] So I could say, Slash BTW, tell me how this skill works. While it's currently working on the skill,
+[01:36] it'll also go through the skill documentation, and then instead of forcing me to reload all of
+[01:40] my tokens, now it's giving me context and information in this little answering thread.
+[01:45] And you can see it's actually doing that while it's also debugging the rest of everything up
+[01:48] above. So based on what I've read so far, here's how all of it works. This is a window that doesn't
+[01:52] close as the context continues to pump above here. And so it's also just a lot more convenient
+[01:56] because now we have this little side window. We can have a conversation with it without necessarily
+[02:00] needing like 20 parallel instances. So this is a big deal. Previously, before Slash BTW,
+[02:06] I was spending significantly more in token costs. Any time I wanted to ask a question that was
+[02:10] related to the context of the first thread, but maybe didn't want to interrupt that main thread,
+[02:14] I had to open up a whole new Cloud Code session. And then in that Cloud Code session, say something
+[02:18] like, hey, go find me the conversation context from, you know, the conversation I was just having
+[02:23] on X, Y, and Z. We have to re-find assets. We have to split our context. There's just a tremendous
+[02:28] amount of work that basically we need to do, you know, in order to get that done. But with BTW,
+[02:33] now we can actually have the main conversation window up here and then have a little side
+[02:37] conversation down here without actually having to like parallelize, without actually having to,
+[02:42] you know, switch our contexts and then start multitasking and so on and so forth.
+[02:46] So it's way cheaper. You have everything in a unified context window just in one thread. So
+[02:51] the quality of the responses probably goes up. In terms of how this works, it's about as simple
+[02:55] as possible. You just type slash BTW. You have to be in a terminal version of Cloud Code as of the
+[03:01] time of this video, but I bet you that's going to change. You then give it the request in the
+[03:05] same message. So don't just type slash BTW and then press enter. That's not going to work. You
+[03:10] have to type slash BTW space, whatever the heck you want. That's going to open up this little side
+[03:15] panel here with the slash BTW in yellow. And then you just sort of have three options. You can read
+[03:20] through this and then press space, enter or escape to dismiss. When you do this, I'm going to press
+[03:26] space over here. You'll just snap right back to the main thread and that'll open you up to ask
+[03:30] other questions. What's going on with these, I don't know, errors, for instance, that'll allow
+[03:35] Claude to actually answer me without me actually having to pause this every five seconds. I can
+[03:39] actually gain context while things are going on. If you don't currently have this, it's pretty
+[03:43] simple and straightforward to get. Make sure on the top left hand corner of your antigravity visual
+[03:48] studio code instance, you open the extension, click on the settings. If you don't already have
+[03:54] access to this, it's probably because your Claude code, either extension or maybe your Claude code
+[03:58] for desktop functionality is not updated. So make sure that auto update is on. If you have a specific
+[04:04] issue with this, you can actually go click install specific version and then you can update to the
+[04:09] main version here, which is 2.1.73, in this case, 36 minutes ago. You know, you can also just
+[04:15] uninstall Claude code if you're using the VS Code extension and then reinstall it. That usually works
+[04:20] fine. Once you're done with that, head over to settings and then at the very bottom here, you're
+[04:25] going to always want to have use terminal on. Otherwise, you're going to have to manually go
+[04:29] into Claude's GUI and then type slash terminal, which while possible, is just kind of annoying
+[04:35] to do and it usually takes a fair amount of time. Just because of how Claude code works and the fact
+[04:39] that the terminal version was first, they usually develop the new features for terminal. Despite the
+[04:44] fact that you might have seen me use the GUI in other videos, I do that more for simplicity, not
+[04:48] for cutting edge features. So definitely take a look at that. That'll open up this new terminal
+[04:52] thing and then you could say, hey, what's up? And while it's answering, you could ask something else
+[04:57] as well. Hopefully that clarifies things and you guys now know everything you need to know to crush
+[05:02] the slash BTW feature, change your workflow, take advantage of both the inbuilt parallelization and
+[05:07] the reduced token costs and have a lovely rest of your day.

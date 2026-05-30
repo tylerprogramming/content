@@ -1,0 +1,20 @@
+{
+  "generations": [
+    {
+      "prompt": "Person with shocked expression looking at laptop screen showing AI-generated images, dark moody background, cinematic lighting, high contrast, YouTube thumbnail composition",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-15T07:35:56.211359",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/f3425c569bc2fc430d63a4ca5ddd1ebc_1776252892_0t4dw0qu.png",
+        "https://tempfile.aiquickdraw.com/images/1776252949387-hq9zzt2stzr.png"
+      ]
+    }
+  ]
+}

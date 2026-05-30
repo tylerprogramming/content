@@ -1,0 +1,417 @@
+[00:00] Stop building AI automations and start building agentic workflows.
+[00:03] Google just released their vibe coding platform, anti-gravity, and
+[00:06] it's changing how AI systems are built.
+[00:09] I've created hundreds of automations across multiple different platforms and
+[00:12] systems like this are already being used within multi-billion dollar businesses.
+[00:17] But agentic workflows are changing how businesses are run.
+[00:20] No code like an intent gives us a visual interface on how to build these flows.
+[00:24] And now you may not even need that.
+[00:26] With tools like anti-gravity, you just explain what you want in
+[00:29] plain English, and it helps create that for you.
+[00:31] And it can also even create these workflows inside of anything as well.
+[00:35] You don't necessarily have to think in multi-node logic and you don't have to
+[00:38] spend hours troubleshooting when something breaks, the system can figure
+[00:41] it out and correct itself as it goes.
+[00:44] In this video, I'm going to show you one of the best ways to set up
+[00:46] anti-gravity with the DOE framework, which stands for directive,
+[00:50] orchestration, and execution.
+[00:51] Then we'll build a YouTube RSS like scraper that's going to grab videos on
+[00:56] channels that you love and save them into sheets in minutes.
+[00:59] And if you want access to the agent we built today, and you want to learn
+[01:01] how to actually make money with AI and automations, I'll leave a
+[01:04] link in the description below.
+[01:05] Let's dive in.
+[01:06] So here I have an automation that takes in from sheets where
+[01:09] I have my channels that I like.
+[01:11] It's going to retrieve those channels.
+[01:12] It's going to get the actual IDs instead of just grabbing the handles.
+[01:16] So it'll take care of all that for us.
+[01:17] So here I have three different channels.
+[01:19] It grabs their information.
+[01:21] It gives us different signals based on some of the best videos from there.
+[01:25] And then we have a digest that it saves in sheets, which is just
+[01:28] information about whatever we just tried to summarize.
+[01:31] And this is great, but my goal today is I want to see if I can build this
+[01:34] from scratch with pretending that I have no knowledge of code and I just want
+[01:38] to let anti-gravity do all of this for me.
+[01:41] So the question is, could somebody do this?
+[01:43] Well, first we have to download anti-gravity.
+[01:45] So this is anti-gravity Google.
+[01:47] And what you'll do is just click the download button up here or in the
+[01:49] middle, depending on what machine you have, and then you just start running it.
+[01:53] So now that I have anti-gravity open, I don't have any folders or any projects
+[01:57] started, so before we get into this, we need to create one.
+[02:00] So you can go to open folder here.
+[02:02] You can go ahead and create a, just create a folder where our project
+[02:05] will be stored and then go ahead and open that.
+[02:08] Okay.
+[02:08] So now what we have on the left-hand side of this Explorer or the project
+[02:11] pane, this is where we're going to be storing all of our files and where it's
+[02:15] going to be creating everything for us.
+[02:17] Then here in the center, this is basically our editor where we won't be doing any
+[02:21] code, but this is where all of the code within the files will be displayed.
+[02:25] And then on the right-hand side, this is our agent.
+[02:27] This is what's actually going to help us create everything that we want to build.
+[02:31] We're going to build here is when you use an agents dot markdown file that
+[02:34] we're going to use from this Google doc, which you will have access to.
+[02:37] And we're going to copy this, create the markdown file.
+[02:39] And this is going to be similar to the Claude markdown file that
+[02:42] you've used with Claude code.
+[02:43] If you haven't, that's okay, but we'll go ahead and I'm going
+[02:46] to show you how to run this.
+[02:47] So I'm going to go ahead and just kind of copy all of this right here.
+[02:51] Copy this, go back to anti-gravity.
+[02:54] And then at the top left here in the Explorer, we're going to go
+[02:57] ahead and create a new file and just name this agents dot MD.
+[03:01] I'm going to paste everything here and then just make sure you save.
+[03:04] You see the white little circle at the top of the file there.
+[03:07] That means it hasn't been saved yet, but we have done something here.
+[03:10] Okay.
+[03:11] So just really quick, we mentioned that this is a three layer architecture.
+[03:15] We have the directive orchestration and execution.
+[03:18] Okay.
+[03:19] So basically with the directive, we're going to use SOPs, standard
+[03:22] operating procedures, written in markdown in a directives folder.
+[03:26] It's going to basically give the goals, inputs, any tools or scripts that we
+[03:30] may be using for this project, the orchestration.
+[03:33] Okay.
+[03:33] So this is basically the routing of how we're, what we're actually be doing.
+[03:38] So it's going to read the directives and call execution tools in the right
+[03:41] order, handle any errors, ask for clarification, et cetera.
+[03:44] Okay.
+[03:44] And then the execution, right?
+[03:45] This is where we're going to actually have the code that will be executed.
+[03:49] All those files will be stored here.
+[03:51] Something else to think about is when it says self-anneal, it's
+[03:54] just basically self-correcting.
+[03:56] So that means that if it sees that there's error, it's going to go ahead
+[03:59] and figure out how to self-correct so that we don't have to keep
+[04:03] like messing with it ourselves.
+[04:04] It'll figure out how to do that by itself.
+[04:06] And I got this from Duncan here.
+[04:07] If you want to visit his channel, he has, he has some great
+[04:10] information on this as well.
+[04:12] But this is where I originally got this Markdown file and
+[04:16] this execution order from him.
+[04:18] Okay.
+[04:18] So now I want anti-gravity to set up the project so that we can then tell
+[04:22] it exactly what we want to build.
+[04:23] Okay.
+[04:23] So it's going to use this Markdown file to do that.
+[04:26] So over on the right hand side where we have the agent and the input box, I'm
+[04:30] just going to type in instantiate based on the agent's Markdown file.
+[04:35] Okay.
+[04:35] So instantiate means just going to start executing things based and
+[04:39] getting everything prepared based on this Markdown file that we've created.
+[04:42] So what you can see is it's going ahead and it's going through the thoughts.
+[04:46] I mean, a lot of now, a lot of like cursor does this as well, especially when
+[04:50] using like planning mode or something, but it's, we can see exactly what it's
+[04:55] thinking and what it's doing whenever it's going through this agent's Markdown
+[04:58] file to then create all of the other folders that it needs to once it sees
+[05:03] how we want it to we want it to shape the project.
+[05:07] So the first thing is, it's going to create an implementation plan for us.
+[05:11] So here are the basic changes here are the directories is going to create.
+[05:15] It's going to create a get ignore based on this information.
+[05:19] It's going to create environment example file, and then it'll do it'll perform.
+[05:24] Then we have a verification plan for us.
+[05:26] So we go in like this.
+[05:27] So I'm gonna click proceed, click proceed here, or we can go over here and click
+[05:30] proceed.
+[05:32] So now, now that it has this implementation plan, we could, we could,
+[05:35] you know, probably tell it, Hey, do do some other things, but we're just
+[05:38] going to go ahead and go through this.
+[05:39] Now we're going to accept, just start accepting things that we want it to
+[05:43] create for us.
+[05:45] All right.
+[05:45] It created a walkthrough.
+[05:46] The setup for is just explaining what it did.
+[05:48] So, okay.
+[05:49] I'd like this.
+[05:50] You can see in the project pane, everything that it said it would create.
+[05:53] It did.
+[05:53] Now let's go ahead and give it the prompt so that we can have it begin
+[05:56] creating our project.
+[05:57] So you'll have this too, right?
+[05:59] This is also inspired by Duncan as well.
+[06:01] It's just, I'm doing something a little bit different than what he, he was doing.
+[06:05] And so basically this is the prompt.
+[06:07] We're going to collect, clean, evaluate, summarize, and distribute.
+[06:11] Okay.
+[06:11] So this is just kind of giving it as clear instructions as possible on what we want
+[06:16] to do, and you can even give it more explicit instructions.
+[06:18] If you knew a little bit more of what kind of project you want to write the
+[06:22] better and more clear, you give instructions to the, as the prompt to the
+[06:27] LLM, the better output you're going to get.
+[06:29] So we're going to go ahead and copy this, come back here.
+[06:31] And now we're just going to paste this in.
+[06:33] This is what we want it to basically create.
+[06:36] So what it's going to do, it's going to based on all of the information it has
+[06:41] for the architecture set up and what we want, it's now going to start
+[06:45] creating this workflow for us.
+[06:47] And then we will have to do some things at the end, probably like API
+[06:49] keys going to Google cloud, but that's okay.
+[06:53] We'll get there, but it's going to create everything for us and just, we
+[06:55] can just watch it and watch it work.
+[06:57] And here it even gave us another implementation plan about the actual
+[07:01] project.
+[07:02] So you can see we're in need YouTube data, API, LLM API key, Google sheets API.
+[07:08] And then here, you know, here, the directives of layer one execution script.
+[07:12] So here's all the scripts and wants to create the configuration
+[07:16] and verification plan, et cetera.
+[07:17] So I'm just going to, we're going to go ahead and proceed with this.
+[07:20] And now it has a plan and it's going to go ahead and start create
+[07:23] everything based around that.
+[07:25] And it's, you know, just a little halfway through creating all the scripts, but
+[07:27] you can see on the right hand side here, it's implementing each video as it said.
+[07:32] It would.
+[07:33] So we've got the collect videos, clean videos, the evaluate videos that
+[07:36] just finished the summarized videos.
+[07:38] And it's going, and you can see it's thinking as it goes on
+[07:42] what exactly it wants to do.
+[07:43] So we'll come back whenever it's done, all of the implementation, and then
+[07:47] we'll see what else we need to do.
+[07:48] So we can get this working right away.
+[07:50] Okay.
+[07:50] So it finished it finished.
+[07:52] And now what it did is it gave me another walkthrough of things that I need to do,
+[07:55] such as get my API keys and everything situated.
+[07:58] Okay.
+[07:58] So it created a requirements for everything that we need.
+[08:01] It gave an example channels, text file, or we can just add them here.
+[08:05] And then here are all the execution scripts that we will need to use.
+[08:09] So what we need to do though, is we need, we need these API keys.
+[08:12] Okay.
+[08:12] So first we need a YouTube API key and open AI API key, and then we need a
+[08:16] sheets ID, so the target Google sheet.
+[08:20] Okay.
+[08:20] Then we need a credentials dot Jason.
+[08:22] Okay.
+[08:23] This is a few things, but I kind of considered that whenever, you know, I
+[08:27] was going to be doing this right there are actually with the YouTube, we could
+[08:30] use YouTube download player, which is a very popular Python library.
+[08:35] Okay.
+[08:35] And I could ask it to do that instead of getting the YouTube API key.
+[08:40] But this is going to, but this is fine as well.
+[08:43] And we'll get some work with how to actually get and get that ready as well.
+[08:47] Okay.
+[08:47] So if we go to Google cloud console, they basically just created a new project
+[08:52] up here called anti-gravity.
+[08:54] And what we need to do is we need to get some APIs ready so that we can actually
+[08:58] execute things with sheets and YouTube.
+[09:01] All right.
+[09:01] So here at APIs and services, I'm going to click on this and we need to enable them.
+[09:06] So what we're going to do at the top here, enable APIs and services.
+[09:10] We can start first search for YouTube and we want to enable YouTube data API.
+[09:16] I'm going to click enable.
+[09:17] This'll take a minute.
+[09:19] And then we're going to go back and also enable the sheets API.
+[09:22] Okay.
+[09:23] So it's done.
+[09:23] So we're going to go ahead and let's see, let's go back.
+[09:26] Let's enable another API and service.
+[09:28] This will be sheets, press enter Google sheets API.
+[09:31] Let's go and enable this as well.
+[09:33] Okay.
+[09:33] Then we can go to credentials here.
+[09:35] There's a few different things that we need, but we're going
+[09:38] to use create credentials.
+[09:39] We're going to, I'm going to get an API key.
+[09:41] This isn't exactly something that I would, this isn't the way that
+[09:44] we exactly recommend it, but you know, I don't know any coding.
+[09:46] I don't know anything.
+[09:47] I'm just doing what anti-gravity is telling me to do.
+[09:49] Okay.
+[09:49] I don't know about the YouTube download library, right?
+[09:52] I don't know that that exists.
+[09:53] That would make my life easier.
+[09:54] So this is what we're going to do.
+[09:55] Okay.
+[09:56] So I'm going to rename this anti-gravity the key.
+[09:59] Uh, I don't think we need any restrictions just for this example.
+[10:02] I'm going to remove this key after we're done with this video anyways.
+[10:05] So we're going to create this API key.
+[10:06] Okay.
+[10:07] So I'm going to go back.
+[10:09] It says I need to create a YouTube API key in my ENV example.
+[10:14] Okay.
+[10:14] So YouTube API key.
+[10:18] Okay.
+[10:18] I'm going to paste that there.
+[10:20] And then I also, I also need my open API key, but let's get the credentials.json.
+[10:26] Okay.
+[10:27] So I know that I need that, right?
+[10:29] So I guess in some ways I'm kind of cheating because I know what I need for
+[10:33] this, but we do need to create credentials and I'm going to, let's do a service
+[10:39] account, anti-gravity, if I can spell anti-gravity, uh, that's fine.
+[10:48] You know, I'm not really too worried about a lot of these things, uh,
+[10:51] permissions, let's just, let's just do editor and continue.
+[10:58] I don't think this, yeah, I don't think we need this.
+[10:59] Right.
+[10:59] So done.
+[11:00] Okay.
+[11:01] So we're good there.
+[11:02] That means I know I can now come to this action and then for keys,
+[11:07] once you add a key, so I'm going to create a new key, I'm going to be
+[11:10] Jason, and then I am going to put that into my anti-gravity it says in the
+[11:18] root directory, I need to put the credential.json in the root directory.
+[11:22] Okay.
+[11:23] So this means that I need to open my downloads.
+[11:26] That's okay.
+[11:26] And now we need an open API key.
+[11:29] Okay.
+[11:29] Now I went ahead and added to the environment variable and opening API key.
+[11:32] But now the last thing I need is the sheets ID.
+[11:35] Well, let's say that I don't have a sheets ID, right?
+[11:38] I don't, I have no idea.
+[11:39] So what I could do is I could just go ahead and create a sheets, right?
+[11:43] So let's go ahead and actually just go ahead and do that.
+[11:46] That may be the simplest thing here.
+[11:47] So I know I can go to google.com slash sheets.
+[11:51] I'm going to just create a sheet.
+[11:54] Let's just call this YouTube and tie gravity plus.
+[12:00] Okay.
+[12:01] So here is a sheets ID I know is in the URL, right?
+[12:05] So I'm just going to copy this and delete this anyways after.
+[12:07] So it's okay.
+[12:09] And then I need to add the sheets ID in the environment variable as well.
+[12:13] And then the last thing I need to do is I just need to rename it.
+[12:16] So I'm just going to right-click rename dot ENV.
+[12:24] Oh, there we go.
+[12:26] Okay.
+[12:26] So now this is done.
+[12:29] Okay.
+[12:29] I'm going to whoops.
+[12:31] I don't need to review changes.
+[12:33] I'm going to say, okay.
+[12:34] I finished adding the keys.
+[12:37] Can you now test run for me?
+[12:41] Okay.
+[12:41] Cause I don't know how to run this.
+[12:42] It says, it says right here, but I don't know if that, that might not work.
+[12:46] So I just want to ask.
+[12:47] It's like gravity to run everything for me.
+[12:50] And also I don't know anything about my, I don't know anything about these
+[12:53] requirements is doing some things right here.
+[12:56] So I'm just exit that out.
+[12:58] Cause I don't know.
+[12:59] I don't know what that create environment was.
+[13:01] I have no idea.
+[13:02] I'm trying to be as, as new to all this as possible, but I can see that
+[13:08] it's doing some things over here, right?
+[13:10] So it saved 60, it saw it save 60 videos to a temporary file.
+[13:15] Okay.
+[13:15] So it filtered and then clean video.
+[13:18] So I guess the thing is it was filtering over certain number of days.
+[13:22] Now it's running an evaluation.
+[13:24] So it's taking some of the last videos from some of the, like the, those 15
+[13:30] videos is doing some evaluation with open AI on that.
+[13:33] I'm not sure what model is using.
+[13:34] I'll probably have something.
+[13:35] I have to ask it by default.
+[13:36] What is using, but it's, it's working.
+[13:39] We can see that it's going through all of these videos.
+[13:41] Let me maybe make this a little bit bigger.
+[13:43] Actually, you can move this and realize that I can move this to a
+[13:46] terminal over here on anti-gravity.
+[13:48] So we can see that it's, you know, it's taking all of these.
+[13:51] And it's using the first 15.
+[13:53] I don't even know if it's using any of my videos, but it's saved the
+[13:55] evaluations to a temporary file, summarized 11 signals.
+[14:01] Okay.
+[14:01] So it's going, it's not using the summarized video.
+[14:03] So right here, right in the fourth Python file, uh, we're saving the
+[14:07] summarized videos and then we're doing, Oh, then it's finally going
+[14:12] to do the distribute two sheets.
+[14:14] He said it could not open.
+[14:17] Why couldn't it open?
+[14:19] Why couldn't you open the sheet?
+[14:23] The sheets at the surface account has not been shared with the sheet.
+[14:28] Please share the sheet with client email, this sheet with that.
+[14:33] So I'm going to click share, add, add that as a person.
+[14:40] I assume I'm going to say as a person.
+[14:44] Okay.
+[14:44] Just shared run that again for sheets.
+[14:49] Okay.
+[14:49] So let's see if that works now, now that we have been able to, you know, it was
+[14:53] good enough to tell us what to do.
+[14:55] All right.
+[14:55] Now I kind of have ran into that plenty of times before where, you
+[15:00] know, it's just a permission thing, but now, but now I can see that
+[15:04] it's updating the worksheet.
+[15:05] So that means it probably created worksheets also within that Python file.
+[15:10] Okay.
+[15:10] So it looks like it ran everything.
+[15:13] Let's go ahead and look at the temporary file.
+[15:15] So we have these Jason videos.
+[15:18] I'm not really sure who Lenny's podcast is, if I'm being honest with you.
+[15:21] I mean, I know who Alex Ramosi is and the Y Combinator.
+[15:25] So those are the videos.
+[15:27] These are them evaluated.
+[15:29] So it looks like it gave a hook, a reasoning, a score, key ideas.
+[15:34] And then this is like the raw, this is the raw information from that.
+[15:37] But the important thing is we now save the sheets.
+[15:40] So let's go ahead and check that out.
+[15:42] So, oh, it looks like it, yeah, it moved, it created more.
+[15:46] So I don't need that first one, but here are all the videos, right?
+[15:49] Here are all the videos from that, from, from their channels.
+[15:53] Not all of them, actually.
+[15:54] These are the ones that it filtered by.
+[15:56] So here are the signals.
+[15:57] So here's like, here's the title from them, the score, the
+[16:01] reasoning for each of those.
+[16:03] And then also in the digest, here's basically, it looks like it's
+[16:07] marked down for what it took and how to evaluate so that maybe I could
+[16:13] create a similar title related to AI.
+[16:16] Great.
+[16:16] Now I didn't code any of this myself, right?
+[16:20] It created one, two, three, four, five different Python files.
+[16:24] It said it was going to do that.
+[16:25] It created the whole plan, right?
+[16:27] I all have to do is update this channels dot TXT.
+[16:30] And it's going to go ahead.
+[16:31] I could, I could add mine.
+[16:34] Tyler read AI.
+[16:35] I could add mine.
+[16:36] I could add IBM.
+[16:38] I, you know, I get at all kinds of other channels and it would
+[16:40] do the same exact thing for me.
+[16:41] But I think it has dedupe, which means it's not going to worry about
+[16:45] things that are already existing.
+[16:46] It's really going to find new videos within the last X number of days.
+[16:50] Okay.
+[16:50] So this is great.
+[16:51] I don't know, like I pretend like I don't know anything about
+[16:54] this, a lot of code or anything.
+[16:56] And I was able to get this working and you know, absolutely amazing.
+[17:00] Right.
+[17:00] And what I could also do when I actually already did that initial, that initial
+[17:05] workflow, this, including all the sticky notes and everything was also done by
+[17:11] anti-gravity.
+[17:12] I had it make sure it got the latest nodes that are possible.
+[17:15] And they created this for me.
+[17:17] So even this itself was also created by anti-gravity, right?
+[17:20] I said, give it, I give it a little bit more instruction because I wanted to
+[17:23] use any 10 and create the workflow.
+[17:25] And all I had to do was add my credentials and it worked.
+[17:29] There was one thing that didn't work.
+[17:30] I asked it to hate.
+[17:31] This isn't working.
+[17:32] This is the air.
+[17:33] It fixed it, told me what to do, and I fixed it and it worked.
+[17:36] Right.
+[17:36] So this is actually also created from anti-gravity.
+[17:39] So I was able to create a no code version and what we just did together was it
+[17:44] created this code, this workflow using Markdown files that explained how I
+[17:50] wanted the struct, the project to be built in a certain way so that it could be
+[17:55] tested, monitored and make sure that it works and it'd be self-corrected.
+[17:59] If something didn't work, honestly, we live in an amazing time and we need to
+[18:02] take full advantage of all of these AI tools to do everything we want.
+[18:06] And that's the number one thing you need to realize is all these are tools.
+[18:09] It doesn't mean you need to use everything because not everything pertains to every
+[18:13] situation, especially when you're building things for clients.
+[18:16] So if you want to join my school community, which I'll have a link in the
+[18:19] description below, it's free.
+[18:21] I'm going to explain all of these things to you so that you can become successful.
+[18:25] All right.
+[18:26] Thank you for watching.
+[18:27] And now watch these videos about AI.

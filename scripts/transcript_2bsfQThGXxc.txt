@@ -1,0 +1,897 @@
+[00:00] You probably suck at using cloud code or maybe you're not using it at all, which is even worse
+[00:03] But in this video i'm going to break down exactly how I use it as an AI founder
+[00:06] I run multiple different AI companies at this point how I use it myself to automate certain parts of my roles
+[00:11] But that can also be taken to whether you're a student or an employee looking to just automate
+[00:15] Your whole degree or automating parts of your work so that you do a whole lot less
+[00:19] Or you're a business owner as well wanting to be able to use it for yourself or teach it to your teams
+[00:22] This is the exact training that I put all of my staff through so that they can use it and set these up to automate
+[00:26] Parts of their role as well
+[00:27] This is probably the best general purpose AI tool for productivity right now when set up correctly and when used correctly
+[00:33] It can automate up to 90% of the stuff that you do
+[00:36] So i'm going to be breaking down in this video the exact template that I use and give to my staff for them to start
+[00:40] And create their own workspace
+[00:41] i'll be breaking down the four biggest mistakes that I see beginners make that stop them from getting the most out of it and
+[00:46] Then i'm going to be showing you step by step how you can get this set up on your machine as a beginner
+[00:49] The right way using all the sort of shortcuts and commands to make this really fast to use and then show you a real
+[00:54] And live example of me using the template to automate certain parts of my own workflows
+[00:57] So you see how it works in action?
+[00:59] I haven't seen anyone else on youtube dropping this kind of source on claw code. So let's get into it
+[01:03] So we've got all this to get through but we're just going to start with the first thing that you have to understand
+[01:06] Is that an agent which is what clawed code is?
+[01:10] Acts as a digital employee for you. So what does that mean?
+[01:13] A digital employee will need to have some kind of
+[01:16] tools or access or context or knowledge about what it's doing right and the first thing you need to understand with getting this set up
+[01:21] and how to get the most out of it is like
+[01:23] Claude code is going to be your digital employee or your assistant to do whatever you set it up to do
+[01:27] But in order to do that correctly, it needs to have what I call a workspace
+[01:32] So what is a workspace?
+[01:33] It is one folder on your computer that contains other folders and context and files and scripts
+[01:38] Required to do a task or set of tasks that you want to be performed through call code
+[01:42] So in this case as you can see on screen here, this is what we'll be working with later
+[01:45] And this is a vs code. Don't worry. This is like it's not coding. It's nothing
+[01:48] It's just chatting away to a chatbot in here
+[01:51] And if you can't wrap your head around using one of these ids at this point, you're kind of cooked
+[01:54] so this is for those of you who are extra intelligent and
+[01:57] Believe you can wrap your head around a basic tool like this
+[01:59] So this is what a workspace looks like and this is essentially one folder. You can see it's called claude workspace here
+[02:05] There's a claude workspace template that you guys are going to get but inside this folder
+[02:08] This is just any old folder on your machine inside it. There are a bunch of other folders
+[02:12] So we have the commands folder which we'll go into in a second. We have the skills. We have the context
+[02:17] We have outputs plans reference scripts and the claude.md
+[02:20] So when you are thinking about setting up claude code to be your personal assistant to automate parts of your work
+[02:26] You need to create a workspace for it to operate within
+[02:29] And that means okay
+[02:30] What context does it need to understand who I am the stuff that I do the priorities and strategies we're working on right now?
+[02:35] Things like these command files which take a workflow like looking up or researching a podcast guest
+[02:40] How you break that down into simple text which we'll go through in a bit
+[02:43] But basically a workspace is
+[02:45] A folder with a bunch of folders and files in it that you can configure in a certain way
+[02:49] And this is by far the best setup and kind of template that i've found for training my teams on this
+[02:53] It's just a great default starting point has all the key points that you need to really get the most out of it
+[02:57] And you can use claude code using these like create plan things
+[03:00] Which i'll show you in a bit to very rapidly turn it into something that you can use for yourself and modify
+[03:05] So for a workspace, I find it's most helpful to split them by a kind of key function
+[03:10] At least for me as a founder i've got multiple different businesses
+[03:13] So for me, I have multiple workspaces one for each function or area of my my work that I do. So
+[03:18] um
+[03:19] I think of that as like a digital teammate or employee for each of these areas for my personal brand and for the content
+[03:23] I do I have a workspace for that. I have a workspace for my agency
+[03:28] Helping us with proposals and scoping I have one for my education product
+[03:32] So it has full context of all of the course material that i've created so that I can create new stuff easily
+[03:36] And one for my sass as well, which is an engineering kind of prompt engineering workbench
+[03:39] Which I'll actually show you guys a little bit later
+[03:42] But in my case i've split it into different areas
+[03:44] I could try to ram it all into one but I like to keep them a little bit clearer and more separate
+[03:48] so that I can really tune the uh, tune the content and context a little bit better, but uh,
+[03:52] If you're just an employee or a student and you're looking to automate parts of your work
+[03:56] you probably only need one and it's going to basically take all the job functions that you do say you're a
+[04:02] Marketing person and you need to like
+[04:05] do the weekly marketing report you need to
+[04:07] Uh come up with a new campaign idea or like do some brainstorming or yeah
+[04:11] Analyze the last campaign and figure out what you can do next
+[04:14] All of these are tasks that you do that can be turned into a a command or a list of instructions
+[04:20] And put into a command file here and then you're able to call those very quickly and say like slash
+[04:24] Marketing report and it's going to do all those things
+[04:26] So it's kind of like any other kind of automation
+[04:28] But in this case you're doing it through just text files from cloud code having enough context about you
+[04:32] It can kind of just read these text files
+[04:34] Have access to all of these bits of context and documents and folders and be able to do things for you
+[04:39] Like maybe pull information in from the web which we're going to talk about a bit that falls into the scripts here
+[04:43] So as a bit of a walkthrough of this, we'll just break it down a little bit further here
+[04:47] We have firstly the commands folder and you can think of commands as reusable prompts to automate work functions or do things within the workspace
+[04:54] And like I said
+[04:54] These use natural language just regular plain english or whatever language you speak to guide cloud code through a workflow or set of steps
+[05:01] Using the content and scripts and tools within the workspace
+[05:03] So these are the main way we're going to be working as you'll see in a bit
+[05:06] And these are the ways of baking in your workflow into a set of instructions that cloud can do on your behalf
+[05:12] Then we have the skills folder here. And so these are kind of like commands
+[05:15] They're kind of merging a little bit at the moment
+[05:17] But skills I like to think of as a as a bit more substantial in a lot of cases
+[05:21] And they're kind of like installable plugins for your workspace
+[05:24] They're typically created by others and you can go on to like skills marketplaces and try to find ones made by other people
+[05:29] There's a few security risks inherent in that which we'll touch on a little bit later
+[05:33] But skills are like kind of plugins or packages that you can plug in
+[05:36] Um from other people a lot of the time and it's going to enhance or give more capabilities to your workspace
+[05:41] They're a little bit more advanced than I would like to go into within this
+[05:44] uh within this tutorial
+[05:45] But I will be covering these two skills here because I think it's good to have in part of the template
+[05:49] And then we have the context folder and this is essential context on who you are
+[05:52] What you do how you're doing it and why?
+[05:54] And cloud code reads this every session to come up to speed on who you are and what you do
+[05:58] So every time we spin up cloud code, it's going to be reading all that information
+[06:01] So it fully understands the big picture and this is something we'll be touching on in a bit
+[06:04] But it's really important that every time you spin up cloud code
+[06:07] It knows exactly who you are and what you're working on current state of the strategies current data that that's come back from different platforms
+[06:13] Context is essential to give it sort of a base for you to have an intelligent conversation on and in this template
+[06:18] I've broken it down into the key different context docs that i've found to be most effective and they all build on top of each
+[06:22] Other which we'll go into in a second. Then we have scripts down here and scripts are like
+[06:27] I know it might sound scary, but they're code snippets
+[06:30] Uh that are created by cloud code
+[06:31] You don't have to write the code yourself
+[06:33] Cloud code can intelligently figure out when it needs to create some kind of code or write a script
+[06:37] And a script is just a bit of code that can sort of be triggered at a certain point
+[06:40] It might take in some inputs do a certain couple things on the internet
+[06:43] Uh process some data in a certain way and then pass it back to cloud code
+[06:46] so it might be I write a script to fetch some information from my
+[06:51] CRM or from some sort of api like you want to get the real-time weather data
+[06:55] It can pull it from a weather api. So scripts are a handy way a bit more advanced tool
+[07:00] But something we're going to be jumping into as well
+[07:02] But these are a key thing for pulling external data into your cloud code instance
+[07:05] And then we have the cloud.md which is an essential document that describes the entire workspace to cloud code every session
+[07:10] It spins up so combined with the context folder
+[07:13] It basically means that every time we start cloud code it fully understands the workspace
+[07:17] It's operating in reads all of these different context documents and knows who you are what you're doing within the business
+[07:22] What your strategies are right now any current data and it's like fully understands where it is what it's doing
+[07:27] And it's ready to start taking action like an employee
+[07:29] So just like when a new person comes into the company or you're hiring someone
+[07:32] You would need to give them more of that context and as you'll see when we're actually working with cloud code in here
+[07:36] We're starting it up. We're starting a new version of cloud code all the time
+[07:39] So that we need to give it that onboarding every time it starts up
+[07:42] All right
+[07:42] So that brings us down to the next and probably most important thing you need to know about cloud code
+[07:46] Which is priming and context management as you may or may not know the latest cloud models only have
+[07:51] 200 000 tokens available for us to play with so we want to essentially have cloud code fully contextualize understand who we are what we
+[07:58] Do what we're what it's able to do within the workspace with as minimal tokens used as possible
+[08:03] So as you can see here, this is actually from cloud code itself
+[08:06] You can run this command slash context and it'll tell you
+[08:08] How much context is not available how much you've used up already and basically we want to be sending and
+[08:14] Interacting with cloud code with as many of those tokens available because there's an effect called context float
+[08:19] Which means the more tokens are used up out of that 200 000
+[08:22] Like the more diluted your instructions are going to be so you want to have it fully dialed in fully aware of who you are
+[08:27] What it's working within and then you're just going to kind of drop your tasks on top of that
+[08:30] So it's got all of this room
+[08:31] It's very clear on what it's working on and you don't get any of the negative effects of context float
+[08:35] So this all ties into something that we're going to be covering here in a second
+[08:38] but first let's go over the
+[08:40] the biggest mistakes that people face when it comes to priming and context management and just generally using cloud code and the first is
+[08:45] using cloud code like a chatbot means you're just sitting there kind of chatting away like you would with chat gpt and
+[08:51] This is not really the best way to use it because you end up with these big long
+[08:55] Conversations and here you can see the messages take up a significant amount in this case
+[08:59] When I took the screenshot my messages were taking up 26 percent of the context
+[09:02] so the if you're chatting away and you've filled up that uh that chat history with messages and like
+[09:08] 150 000 tokens are filled up with all of the messages you've had back and forth with all code
+[09:12] Then you're going to have this context float your instructions and messages are going to be so diluted that the chance of it actually getting
+[09:17] Exactly what you want in the first go is going to be massively reduced
+[09:20] So so the first mistake is using it like a chatbot
+[09:22] We are not going to be doing that as you'll see in a bit and the result is that you're going to get
+[09:25] inconsistent and low quality outputs due to lack of structured prompts and processes
+[09:29] So we want to be baking our workflows or the tasks that you do into reusable prompts
+[09:33] You don't want to be like, uh, hey, I want to do this today
+[09:36] Can you do this for me?
+[09:37] Because one you're wasting a whole lot of time writing that out and two it's going to be different each time, right?
+[09:41] You want to make standardized, uh command files, which i'll show you in a second
+[09:45] Just a simple markdown file walking through the steps that you want cloud code to take
+[09:48] So that you have a structured and reusable prompt
+[09:50] It's going to save you tons of times and ensure that it's consistent
+[09:52] And so yeah
+[09:53] The solution here is to create reusable clouds mistake number two is not contextualizing cloud code at the start of every new session
+[09:58] Like I was talking about before if you have an employee
+[10:00] You need to give a context on who you are what it's trying to do
+[10:04] What business environments we're operating in what the goals are what the values are the business all of those context that you have to give?
+[10:09] To someone in order for them to actually function. You don't give a new employee that context
+[10:12] How could you expect them to do?
+[10:13] Well, it's the exact same thing with using an agent like this
+[10:16] So the result of not giving context is going to be poor quality output, you know
+[10:19] And you're like talking with claudia chat gpt and it's just like not quite got your tone of voice, right?
+[10:23] Or it's just missing a bit of the picture. It's like no
+[10:25] I'm not doing that right now with the strategy
+[10:27] Because we've had to change or like this is a new quarter
+[10:30] And you always have to go like what's called in the loop and you're chatting back and forth
+[10:33] Just giving it nudges to get the final outcome
+[10:35] You want when you're fully contextualized it and you've used one of these reusable commands
+[10:39] It can freaking nail it like get it right on a button the first time and that's
+[10:44] When you think about how much time you're wasting and chatting back and forth
+[10:47] The 70 completed one might take you half an hour to finish whereas 95 one might take you two minutes
+[10:51] So if you're going to do this stuff
+[10:52] You need to do it right because there's a massive difference in the amount of time spent
+[10:55] And so the solution to mistake two is to always be running a slash prime command, which we're going to go into in a bit
+[11:00] But basically whenever you start a new cloud code session, we're going to run slash prime
+[11:03] It's going to look at the context and the template like we have up here
+[11:07] It's going to basically read the cloud.md
+[11:09] It's going to read the context here
+[11:11] and then basically we have an intelligent base to have a conversation on which we'll be getting into a second mistake number three that
+[11:16] I see noobs making is
+[11:18] Not utilizing planning and implementing loops. Now. This means using a cloud command to say. Hey, I want to do this within the workspace
+[11:24] Can you write a plan for how we could create this?
+[11:26] Like hey
+[11:26] if I have
+[11:27] a a new function say i'm a marketing person and i'm using this and I
+[11:30] Want to add a new command or a new task that I want called to be able to do for me
+[11:34] Some people will try to do this all manually or just chat in the in the chat with cloud code to try to get it
+[11:38] To do it, but that often means that it's not going to fully consider everything
+[11:41] In the workspace and when it sets it up, it's not going to be fully aligned with everything else
+[11:45] So you start to get this janky workflow and you have it set up the way that i'm going to show you in a second
+[11:49] It can fully analyze how everything else is set up. And when you say hey, I want to add this in it will go
+[11:54] Okay, we can fit this in here
+[11:56] It'll relate to this and this and this and I need to update and change this this this this
+[12:00] To be aware of what we have in here
+[12:02] So you always have this really fresh and aligned workspace that saves you tons of time ultimately
+[12:06] And so that's where they slash create plan and slash implement commands which come as part of the template
+[12:10] Mistake number four is not utilizing scripts
+[12:12] Like I said before scripts are a little bit of code might be a bit scary
+[12:15] but
+[12:16] If you aren't able to wrap your head around this or get cloud code to do it for you
+[12:19] Then your hands are tied and you won't be able to get real-time data brought in
+[12:22] You cannot take meaningful actions of like reaching out to do things for you in the digital world
+[12:26] And the solution to this again comes back down to using the slash create plan and slash implement commands
+[12:31] Because when you ask cloud to create a plan and figure out hey, how how could I automate this part of my work?
+[12:36] It can think hmm
+[12:37] Okay
+[12:37] Well, I could go search the web and figure out what different tools or what bits of code I could write
+[12:41] And then it can actually implement and create those scripts for you without you having to do it
+[12:44] So the planning is really important so that you can kick over to cloud code the brain work of having to figure out
+[12:49] Hey, what scripts should I plug into this particular workflow?
+[12:52] All right
+[12:52] So those are the biggest mistakes and like I said, all of these are kind of already factored into the template
+[12:56] So we'll see those in action in a bit, but I want to give you this diagram here
+[13:00] Which I think is really important. I have to teach this all the freaking time to my team
+[13:03] So this is the most important diagram to not only cloud code
+[13:05] But basically any kind of ai usage these days and it's all around context stacking and how you can get things brought to speed
+[13:12] So that it can have an intelligent conversation. That's what these guys are doing up there
+[13:15] They're having a an intelligent conversation, but they're doing that standing on top of all of this context
+[13:21] So I think of it in layers like we need to start with the cloud.md file
+[13:25] Which is just a text file and it contains
+[13:27] The purpose of this workspace and kind of gives it an orientation of like who it is who you are
+[13:31] What the hell is going on within this workspace?
+[13:34] Then on top of that I layer information about the business whether it's your own business or whether you're working for one
+[13:39] Information about you how you relate to the business and where you fit in what your roles and responsibilities are
+[13:44] So the what the who and the why?
+[13:46] Then we have strategy. So what is your latest like this quarter strategy without knowing that it's going to not have the full context
+[13:52] Maybe be misaligned with the the objectives that you have right now
+[13:55] And then I like to add on top of that
+[13:57] when possible the current data that relates to that strategy whether it's your website views or youtube data or
+[14:03] Any kind of data that relates to what you're trying to do within that workspace
+[14:06] And the reason we have this slash prime command which is going to be run every time we start to code up
+[14:10] Is so that it understands everything here and we can start to have an intelligent conversation on top
+[14:15] It's like i'm going to bring you up to speed. Here's all the documents
+[14:18] But it's important that we have these set up correctly, which is what we're going to be doing in a second
+[14:22] And so this is incredibly important to understand because this is the key to getting the best results by having it fully contextualized
+[14:27] About you and your business and the stuff that you do
+[14:29] Now the thing is we don't just have a conversation on top of this
+[14:32] We actually start to build workflows on top of it
+[14:34] So that is where we get to what I call the workflow layer. Maybe let's bring one of these guys down here
+[14:39] so what we have here is
+[14:40] Our power claude code here standing on top of all of that information, right?
+[14:44] Every time we start a new session
+[14:45] We're going to be bringing claude code up to speed and then we're giving our buddy or I mean i'm not going to assume the bro's
+[14:51] Gender but we're going to be giving him or her or it
+[14:54] Some tools to use and these are in the form of markdown files, which is just text files
+[14:59] Example, we're going to be doing one in a second called analyzing competitors
+[15:02] So if I want to like for my own podcast
+[15:04] Sometimes I want to pull a competitor's podcast and I want to dig into it figure out. Hey, what are they doing?
+[15:09] Who are they recently?
+[15:10] Who have they recently interviewed?
+[15:12] and
+[15:12] Be able to figure out what sort of their positioning is what are their links are so that I can do a bit further research
+[15:16] On my own all we need to do to create these reusable tools is to create this markdown file this text file
+[15:21] Give it a sequence of steps like create a competitor analysis report on x person
+[15:26] Start by researching y or using y because claude code is researching built-in
+[15:31] Use the z script so going back to our thing up here how we have scripts as well
+[15:35] So we can reference these scripts that we have in here
+[15:38] So hey, I want you to pull in some external data with this script
+[15:41] And then use the skill which I'll show you in a bit as well
+[15:44] How we can pull in other people's skills that allow us to add things into these workflows like using the powerpoint skill
+[15:50] To be able to create a powerpoint out of this data
+[15:52] so you can see that automating your work is literally as simple as a sequence of
+[15:56] Instructions written in natural language when your cloud code agent has access to the right information and the right tools
+[16:01] We don't just give one we can stack a whole bunch depending on any function that you have in your job or role or business
+[16:06] We can stack them. So another one for me might be a market scan. Can you please scan my competitors?
+[16:12] I can make a list of my competitors like 20 people
+[16:15] It's going to read that competitor's file
+[16:16] It's going to go out and scan all of theirs and then collate kind of a whole market scan
+[16:20] So hey for this on the sunday, I want to see
+[16:23] Where the state of the market is what sort of trends are popping off do a scan of the market come back and give me
+[16:27] A presentation on it and from here the possibilities really are endless. You can get it to do basically anything you want
+[16:32] But that is the model
+[16:33] All right
+[16:34] So this is what we're working towards a priming
+[16:36] Command that primes them on the context of who we are and what we do and then we build tasks
+[16:41] And workflows on top of that that come in the form of reusable prompts
+[16:44] And so without further ado
+[16:45] Let's jump into this claude workspace template that you guys will be able to get for free in the first link of the description
+[16:50] You better download that and then follow along or just watch this and then go have a play around with it after that's probably a
+[16:54] Better way of doing it and so in order to open this up and start using it for code
+[16:58] You're going to want to go to your favorite browser and search up vs code
+[17:01] You can come here and then come up here and click download whatever machine you're on mac or windows
+[17:05] And follow the setup instructions that come with it
+[17:07] I'm sure you guys can figure that out
+[17:08] And then the next thing you want to do is go to claude code click on claude code here
+[17:12] And then once you have vs code open you're going to want to go to file
+[17:14] And open folder and then you're going to want to click on the claude workspace template folder that you just downloaded
+[17:19] So it'll probably come in a zip you want to unzip the zip and then it should just be a folder and then you go
+[17:24] File open folder and then you'll see something that looks just like this
+[17:27] So we've opened the folder the root folder of our workspace and in it
+[17:30] There are all the other folders the next thing we need to do is get claude code installed
+[17:33] What we can do is go to the terminal tab at the top here
+[17:36] Click new terminal and then we get this thing down the bottom here
+[17:39] And this is important that you get very familiar with what's on screen here
+[17:41] We have the side panel which has all of our files and folders and then up here is our editor
+[17:45] So whenever I open up a file it comes here. I can kind of like command w
+[17:49] To close the tab or I can click the x
+[17:51] If i've changed it, I can command s to save it and then close it
+[17:53] I like to have my screen split 50 50 here
+[17:55] So i've got this up the top and i've got these down the bottom
+[17:58] This is your computer's terminal and we can run commands here to get it to do things for us
+[18:02] I won't over complicate it more than that
+[18:04] But what you want to do is head over to claude code. So just google claude code
+[18:07] It'll come up with this website. We want to copy this
+[18:10] Head back to vs code and then you can just paste it in here and press enter
+[18:14] Now it's going to take you to a setup wizard and ask you to do a few things pretty damn straightforward to do
+[18:18] All you're going to need is either a claude pro or max account
+[18:21] So whether you have a paid subscription for claude already
+[18:24] If you have that then you can just choose to use the claude account that you already have
+[18:28] If you don't have one, you don't want to get a claude account
+[18:30] You can go to console.anthropic.com
+[18:32] You can sign up for a developer or a business account here
+[18:35] And once you've created your account you can go to settings set up your billing
+[18:39] You'll want to add a card on file here and then add five bucks into your balance
+[18:43] Just so that it's showed that you've credited it and your card is good
+[18:45] And then you'll be able to go to api keys down here create an api key
+[18:49] Copy that then go back to vs code and select the api key option and paste it in
+[18:53] Once it's all set up and you should have something like this and you'll be able to type in claude
+[18:58] And actually wait, I will not jump ahead there if you want to clear this
+[19:01] So say i've written i've said a whole bunch of rubbish here if I go command k
+[19:05] Then it's going to clear it. That's a nice one to know just command k
+[19:08] Um, you can right click and go kill terminal if you want to start fresh and just start a new terminal here
+[19:13] But what you want to do now is type in claude which is the command to start claude code
+[19:17] And it's going to get it running here. So here we have it
+[19:19] I know it might not look like much but this is your gateway to insane levels of productivity
+[19:22] And the first thing you need to set up with claude code
+[19:24] Is something that i've found to save so much time because as i've said we always want to be spinning up a new version
+[19:29] Of claude code so that we're starting with the minimal amount of context float possible
+[19:32] So as you can see here
+[19:33] I've just asked claude code to look up these commands that I already have set up
+[19:37] And it's going to write a little file for me here because as you see here
+[19:40] It's asking me like hey, do I have permission to do all of this stuff?
+[19:43] Naturally claude code is quite hesitant and it's always asking permission to do certain things now
+[19:47] You can say yes allow all edits during the session
+[19:49] But it gets a bit repetitive and honestly wastes a ton of time
+[19:52] So what these two commands here are basically ways of starting claude and what's called dangerously skip
+[19:56] Permissions mode or yolo mode or whatever you want to call it
+[20:00] Basically, this means that Claude is not going to ask permission to do things.
+[20:02] It may sound scary, but if you have it within a world context like this,
+[20:06] it is completely fine to use.
+[20:08] I mean, I'm not taking any liability for that, but I've never had an issue.
+[20:11] None of my team members have had an issue.
+[20:13] Just don't put stupid stuff in here.
+[20:14] Don't hook it up to a live production database, which you won't be doing anyway.
+[20:17] So you are good to do this.
+[20:19] But what this gives us is allows us to skip over all of these,
+[20:22] hey, yes, no, yes, no, like, yes, you can do that.
+[20:25] But because we're going to be spinning up Claude code so often,
+[20:28] we want to be able to start it in that YOLO mode every time.
+[20:30] And we also want to automatically run our slash prime command.
+[20:33] So as I explained before, our prime command is really important
+[20:36] because we're going to be using this at the start of every Claude session.
+[20:39] So this is one of our commands over here,
+[20:41] just a bunch of text and Claude is going to read this and do what it says.
+[20:44] So it's going to basically look at all of the files in this project,
+[20:47] get an idea of all the different files and where they're located.
+[20:49] It's going to read our Claude.md, which is that base level of context.
+[20:53] It's going to read everything in the context folder here.
+[20:56] So dot slash means in the root directory.
+[20:58] So dot slash context means in the root.
+[21:01] We're going to go slash and go into this context folder here.
+[21:04] So if you close them all down, we've got slash content,
+[21:06] we've got slash outputs and so on.
+[21:08] So this is just saying go into context and read everything that's inside it.
+[21:11] And then after reading, come back to us giving a brief summary of who I am,
+[21:14] what this workspace is for and so on.
+[21:16] And because the prime command is what we want to have run every time,
+[21:19] we want a way of easily starting Claude in YOLO mode
+[21:21] and also ensuring that it always runs the prime command.
+[21:23] So if you see here, this will be included in the project file for you.
+[21:28] So you guys can just copy this and paste it into Claude code.
+[21:31] I've already got it set up.
+[21:32] But this sets up two aliases, CS and CR.
+[21:35] CS is for Claude safety, which just runs the prime command.
+[21:38] So this is if you want to run it in that permissions mode
+[21:40] where it's always asking for yes or no.
+[21:42] I basically never run it in CS, but it is there if you want it.
+[21:44] But that's going to prime it and you're ready to go in safe mode.
+[21:47] And then I have CR, which is Claude risky.
+[21:49] And that's running Claude skip permissions or YOLO mode
+[21:52] and then gets it to automatically run the prime command.
+[21:54] So what you guys want to do is to copy this
+[21:57] and head to your power code code down here
+[22:00] and say, hey, can you set up this, please paste it in.
+[22:03] It may ask for permission a couple of times, but trust me, you can just say yes.
+[22:06] And then you'll have the ability to do this.
+[22:08] So if I kill the terminal, open up a new one and I go CR.
+[22:14] Hell, I might even do two side by side.
+[22:15] So you can see I can go CR and CR and spin up two of them side by side.
+[22:20] You can see bypass permissions is on.
+[22:22] That means YOLO mode is on and it's automatically running a slash prime.
+[22:25] So you can see it's going to read the workspace context.
+[22:28] It's going through this prompt here.
+[22:31] You can see that it's reading all of those context files,
+[22:33] and then we get a summary back.
+[22:34] So it's really important to get Claude to send that information back to us
+[22:37] and give us that summary.
+[22:38] It's like, hey, this is a fresh Claude workspace.
+[22:40] It has all of the placeholders.
+[22:42] My role is to serve you as an agent assistant.
+[22:44] Here's the workspace structure.
+[22:45] Here is what is yet to be defined.
+[22:47] And I'm ready to assist and so on.
+[22:49] So that is just repeating back to you,
+[22:51] confirming that it understands the environment it's working in.
+[22:53] That's so important to make sure that we're standing on that base
+[22:57] that allows us to have an intelligent conversation.
+[22:59] And so here we have two instances of Claude code side by side,
+[23:02] primed and ready to go.
+[23:03] And if you want to be able to create more,
+[23:05] like when I'm doing development, I'll have even more of these ops.
+[23:08] This is just me pressing command and then the button below delete,
+[23:11] command backslash, and that allows you to very quickly open up a new terminal.
+[23:16] So command backslash and go CR.
+[23:19] So that's the workflow you're going to be using a lot
+[23:20] because sometimes you want to kick off a create plan.
+[23:24] Sometimes you're going to want to kick off and implement.
+[23:26] But that is the basics of how to use this workspace.
+[23:29] Now, let me walk you through a little bit more on each of these documents
+[23:31] and why they've been set up in this template this way.
+[23:33] So we'll start with the context building from the base up.
+[23:35] We have Claude.md file here.
+[23:36] This is a template that's going to be changed around by you as you go.
+[23:39] So when you are making changes using the create plan command,
+[23:42] it is instructed in here very clearly that the Claude.md
+[23:45] should always be kept up to date with what is in the project.
+[23:48] So that is already baked in. You don't need to worry about that.
+[23:51] But this gives Claude every time it spins up,
+[23:53] Claude is going to read this and also the context file.
+[23:55] This is basically the overview of the whole workspace
+[23:57] and what it's supposed to do.
+[23:59] Then we have the scripts, which you're aware of.
+[24:00] Reference is a folder that you can kind of figure out what you want to put in it.
+[24:03] It might be a outreach template that you want to have access to.
+[24:06] It might be a list of your competitors.
+[24:08] But reference is just for any docs that don't fit into the other ones.
+[24:11] Plans are for using the plan command.
+[24:12] It will automatically put the completed plan into the plan folder,
+[24:15] which you'll see in a second.
+[24:16] We have the outputs.
+[24:17] So in this case, you're going to see me creating like competitor analysis reports
+[24:20] and they're going to be put into the outputs there.
+[24:22] Then we have the context and each of these four documents have a purpose.
+[24:25] So the business context is kind of layer one.
+[24:28] I've got a bit of a kind of primer in here for you guys to fill out
+[24:31] because you do need to get this information really dialed in.
+[24:32] So you can fill these templates out yourself or with Claude's help.
+[24:35] We've got the personal info, which is who you are and how you relate to the business.
+[24:39] You've got the strategy document on like what sort of quarterly
+[24:42] or yearly or project based strategies are in play right now.
+[24:45] And then you've got the current data.
+[24:47] And for current data, you can either copy information off of your analytics
+[24:49] or wherever it is, or you can connect it up using a script to in a more automated way,
+[24:53] pull your latest data and update this document.
+[24:55] But I'm not going to touch on that within this tutorial.
+[24:57] And the last things we need to look at are these two commands here of create plan,
+[25:00] which are about to use in a second.
+[25:01] This is your kind of workhorse command or prompt that allows you to do stuff
+[25:06] within this workspace in a very, very efficient way.
+[25:09] It basically says create a detailed implementation plan for changes to this workspace.
+[25:12] And then when you run this command, as we will in a second,
+[25:15] it takes the input that you put in and goes,
+[25:17] OK, now I'm going to flesh this out into a big plan.
+[25:19] It's going to read the whole workspace, understand what files are where.
+[25:23] It's going to again, refresh itself on the workspace.
+[25:25] It's going to write a full plan, breaking down why it matters,
+[25:28] the specific files that need to be changed.
+[25:30] So it really can comprehensively change the workspace
+[25:33] without you having to chat back and forth and do all of this messing around.
+[25:35] And once it's created that plan, we then pass it into this implement command
+[25:39] where it's going to take that plan file and then ask
+[25:41] Cloud Code to fully implement it and give us an update at the end of it when it's done.
+[25:45] So that might not seem super clear, but let's just jump into having to play around with it.
+[25:48] And I think things will start to make a lot more sense.
+[25:50] So here we have Cloud Code and we're ready to start giving it some input.
+[25:52] So to use any of our commands, you just go slash and then type in the command.
+[25:57] So create plan. I'm going to press tab to fill that out
+[26:00] and then I can type into it what I want it to create a plan for.
+[26:02] So in my case, I'm going to talk into it.
+[26:05] I highly recommend if you guys aren't already using something like Whisperflow here.
+[26:08] Whisperflow is something that allows you to very quickly talk into your computer.
+[26:12] It's going to transcribe your voice and immediately dump stuff in.
+[26:15] And when you're working in this kind of AI workflow workspace environment,
+[26:20] being able to talk into it and dump a lot of information onto Cloud Code
+[26:23] or any of your AI tools and let it kind of figure it out from there is a very,
+[26:27] it's not super precise workflow, but it's definitely a lot faster than typing.
+[26:30] So here we go. So in this case for me,
+[26:31] I want to turn this workspace into one that I can use to manage my podcast.
+[26:35] I have a podcast where we have guests on talking about their success with our business,
+[26:38] what's working, what's not, new tools that came out and so on.
+[26:41] And part of running that podcast is doing computer analysis.
+[26:43] So I'm actually going to swap out a few of these files here
+[26:45] and just delete these because you need to go and change those
+[26:48] and update them to be related to you.
+[26:51] In this case, I can pretend like I've already done it because I have.
+[26:55] I'm going to put these in as context.
+[26:57] Then actually because I've added that context and things have changed around,
+[26:59] I'm going to kill these terminals because they've been primed with the wrong information.
+[27:03] I'm going to start up a new terminal. I'm going to go CR.
+[27:07] And so while that's priming, I have two documents in here.
+[27:09] One is the about Liam and about me and my businesses.
+[27:12] And then I have our podcast strategy and a bit of context on that.
+[27:15] So what I actually want to do, there's the first step to set this up,
+[27:17] is to write a plan that's going to analyze these two documents
+[27:20] and then update the Claude.md and anything else that it thinks is relevant
+[27:24] to be aligned with this purpose of the workspace.
+[27:26] So this is the first step that you guys are going to have to do.
+[27:28] So I can go slash create plan.
+[27:31] Okay, I want to set up this workspace as a podcasting workspace to help do things for my podcast.
+[27:38] I have provided context files about me and about my podcast.
+[27:42] And what I want you to do is put together a plan to update the Claude.md
+[27:46] and any other parts of this workspace to properly reflect the purpose of this as being a hub
+[27:52] where Claude is going to assist me in doing all the key functions of running my podcast.
+[27:56] Things like competitor analysis and market scans.
+[27:58] All of these are things that I'm going to build in future.
+[28:01] So probably don't include those just yet because I'll get you to plan those later.
+[28:04] But can you please make a plan to figure out how we can update this workspace
+[28:09] to be fully aligned with this podcasting purpose.
+[28:11] It's probably just going to start with the Claude.md file.
+[28:14] So basically I'm just saying this needs to be fully aligned around this new function
+[28:17] and we're going to see what it says.
+[28:18] And if you want to get the cool icons like I have here on my folders,
+[28:21] you can come in and find different themes.
+[28:23] I think material theme is what I have or icons.
+[28:27] I don't know if it's VS Code icons or material theme icons,
+[28:29] but it makes them look a little bit cooler and it's kind of nice.
+[28:32] Okay, so here you can see it has created the plan for us.
+[28:34] If you press command and click, it's going to open it up.
+[28:37] And here it has written a plan.
+[28:38] This was definitely overkill for just changing the md file here, if I'm honest.
+[28:42] But it shows you the workflow that we're going to go through for these changes.
+[28:45] So as you can see here, the planning is extremely thorough
+[28:47] and absolutely overkill for what we're trying to do here.
+[28:49] But it shows you just how detailed it is.
+[28:51] It's about these are the new files to create.
+[28:52] These are the files to modify.
+[28:54] The key decisions made gives all the context needed.
+[28:56] And then what we're able to do is we're able to then use the slash implement command
+[29:01] and then actually implement this plan.
+[29:02] So I'll copy this, paste it in here.
+[29:04] And then if you run this, it's going to make all of those changes for you all in one go.
+[29:08] It's going to make a big list for Claude to do.
+[29:09] It's going to tick, tick, tick, tick, tick until it's all fully reshaped.
+[29:13] But in this case, I'm just going to say that was overkill.
+[29:15] Can you please just update the Claude.md file?
+[29:16] But you get the idea.
+[29:17] If you're making major changes, you're always going to want to use a plan step.
+[29:20] Take that plan, pass it into the implement command,
+[29:23] and then it's going to fully implement it throughout the workspace,
+[29:24] making sure everything is fully aligned and change it at the same time.
+[29:27] Now, if we go to the Claude.md file here,
+[29:31] we can see that it's changed.
+[29:33] This is the command center for running AI for the rest of us.
+[29:35] Liam's interview podcast focused on AI from Bootstrap business perspective.
+[29:39] And it's given context around what this workspace is
+[29:41] and the commands that are in it as it currently stands.
+[29:43] All right, so now that our Claude.md and everything about this workspace
+[29:46] is fully aligned around what we're trying to do here,
+[29:48] I'm going to command S to save that.
+[29:50] And you can see the plans end up in the plans folder here.
+[29:52] If you ever need to go back to them, I'm going to save that too.
+[29:54] And now we get into the fun bit of actually taking a workflow
+[29:57] and sort of putting the cherry on top out of all of the stuff that we've done.
+[30:00] We've fully contextualized the workspace.
+[30:01] We've added in our context documents.
+[30:03] Now we get to come to the fun part of actually creating
+[30:05] our custom commands to do things for us.
+[30:07] So the example I'm going to use here is an analyze competitor command,
+[30:10] which is going to take in a podcast name
+[30:12] or any other information about a podcast, might be a person's name.
+[30:15] And then I'm going to get Claude Code to research the person,
+[30:17] use an external API like Appify to pull more information
+[30:20] in about real-time data on the channel's videos,
+[30:23] and then use a PowerPoint skill to be able to turn that
+[30:25] into a PowerPoint presentation for me.
+[30:26] So we're going to do a lot in this all in one go.
+[30:29] You could and probably should as a beginner chop this into baby steps
+[30:31] and say, hey, I just want to start off with just searching the web.
+[30:34] And then I'm going to add in the external data.
+[30:36] And then I'm going to add in the PowerPoint.
+[30:37] But we're going to just yolo it and try to get all four done at once.
+[30:40] So what I'm going to do is spin up a new Claude Code,
+[30:42] command backslash there, CR, get a fresh one going.
+[30:47] Then I'm going to start writing this up actually.
+[30:48] So create plan. I want to...
+[30:51] All right, so here's the plan.
+[30:52] I've already done a bit of thinking on this,
+[30:53] but if you're a bit more of a beginner
+[30:55] and you don't really know that these things exist,
+[30:57] as I'm going to go through and point some of them out,
+[30:59] you can kind of just say, hey, I want to do this.
+[31:00] Can you figure out how?
+[31:02] Like in it, say, search the web to figure out the best way to do XYZ
+[31:05] or I want to connect to this and pull the data in.
+[31:08] Can you figure out the best ways or the best options?
+[31:10] In this case, I'm saying I want to create a new command
+[31:12] called slash analyze competitor, which will do the following.
+[31:14] It will take in the name of a person or a podcast.
+[31:16] It will use one Claude Code deep research agent,
+[31:19] which is a thing where it can prompt it to say,
+[31:21] go into background research mode.
+[31:23] That's much more powerful way of searching.
+[31:24] It's kind of like deep research, but for Claude Code.
+[31:27] So I want to trigger one of these background research agents,
+[31:29] which will go on the web to find all the links of the podcast,
+[31:31] background information, positioning of the pod,
+[31:33] information on the host, etc.
+[31:35] Then I want to use the MCP integration skill up here.
+[31:38] So this basically is a skill that shows our Claude Code
+[31:41] when it needs to, how to use MCPs.
+[31:43] MCPs in this case is just allowing us to easily connect to Appify,
+[31:47] which is a platform which we'll go into in a second
+[31:49] that has tons and tons of scrapers.
+[31:52] So I can connect to Appify.
+[31:53] I can use one of these scrapers to pull in this case YouTube data.
+[31:57] So it's going to take the URL that it found in that first step of research.
+[32:00] It's going to go onto Appify YouTube scraper
+[32:02] and it's going to allow me to pull the real-time data
+[32:05] from that channel on the YouTube views of the 20 most recent videos.
+[32:08] And then I want it to take all this information,
+[32:10] write me a research report and markdown or MD.
+[32:12] That provides a full competitor analysis breakdown.
+[32:15] And then finally, I want to install the PowerPoint or PPTX Claude skill
+[32:19] and use that as the final step to turn that research report
+[32:21] into a presentation for me to skim visually.
+[32:23] So doing tons and tons of work here.
+[32:25] That's the point of creating a plan
+[32:27] is that we can get Claude Code to go and do all this thinking
+[32:29] and come back to us with a plan on how to implement it.
+[32:32] So as you can see, Claude Code is going away
+[32:33] and doing all the research for me on how to create this
+[32:35] or how to automate this part of my workflow.
+[32:37] Now here it is downloading the Claude PowerPoint skill
+[32:40] and also the MCP required for the YouTube scraping.
+[32:44] And here we go. It has created our plan here.
+[32:46] So we can skim through it. It wants to do this.
+[32:49] It's got a good summary.
+[32:50] So it's made all these key decisions about the background agent,
+[32:52] the MCP integration, Claude skills for PPTX,
+[32:56] and then it's got step-by-step tasks for it to take action to actually do this.
+[32:59] So we're going to take this now and go.
+[33:04] There we go. We just press tab.
+[33:05] It already had it filled in for us
+[33:06] and we can send that off to do the work for us.
+[33:09] So just kick back and wait.
+[33:13] So here it's asking us a few questions for the Appify API token.
+[33:17] I'm going to head to Appify and grab an API key for this.
+[33:19] So Appify is a great one for you guys to have a play around with.
+[33:22] Very easy to sign up, very low cost as well,
+[33:24] but it gives you access to tons and tons of scraping abilities.
+[33:27] Very easy to integrate through MCP, which is what we're using for this.
+[33:30] So create an account on Appify if you want to.
+[33:32] While we're waiting for that, I'm going to go to the Claude skills marketplace.
+[33:37] This one here, skillsmp.com.
+[33:39] So this is like a marketplace for Claude skills.
+[33:41] If you want to pull some functionality in, in this case,
+[33:43] I want to find a PowerPoint one.
+[33:44] It doesn't look like Claude Cobra is able to find the one that I like to use.
+[33:47] So we can come into this marketplace here.
+[33:48] A great thing for you guys to do is just come and have a look around on this.
+[33:51] I'm going to go back to home.
+[33:52] Then I'm going to go PPTX.
+[33:54] And here, this is one from Anthropic.
+[33:56] I'm going to download this as a zip.
+[34:00] While that's doing its thing, we can come back to Appify here.
+[34:03] You'll need to set up your billing.
+[34:05] In my case, I'm just going to go to settings.
+[34:06] I'm going to go to API and integrations.
+[34:09] And our skill has successfully downloaded.
+[34:10] I'm going to create a new one.
+[34:12] Set an expiration date so you guys don't steal it.
+[34:15] And then I'm going to copy this.
+[34:17] Head back over here and say, here is my API key for Appify.
+[34:25] And then I'm going to unzip this agent skill.
+[34:30] And I'm going to move it into my skills folder.
+[34:32] And I say, also, I just added this.
+[34:36] So read that, understand it, and get it integrated into the build.
+[34:39] To pause it, as you saw me pause it there,
+[34:41] it's just pressing escape and it will stop Claude Code.
+[34:43] You can give it some more information and it will continue on.
+[34:45] So it's going to continue with this implement command here,
+[34:47] just now with a bit more information that I've given it.
+[34:49] All right, so here we can see it is going through
+[34:51] and doing all the steps as laid out in the plan.
+[34:53] So it has created the MCP configuration to connect us into Appify.
+[34:57] It has created the output directory.
+[34:58] So if we go into outputs here,
+[35:01] there we have competitor analysis.
+[35:02] It's made a new folder inside of our outputs,
+[35:04] which just makes sense because that's where we want them put.
+[35:06] And now up here, we should see any second the command
+[35:09] that it's writing is going to pop up here.
+[35:11] We'll be able to skim over that before we actually put it into action.
+[35:14] So we go, analyze competitor.
+[35:16] It's written the whole command for us to use.
+[35:17] Form a deep competitive analysis.
+[35:19] It's going to take in some information that we provided
+[35:21] about who we wanted to research.
+[35:23] Prerequisites around setting up the Appify correctly.
+[35:26] Then it breaks down the workflow.
+[35:27] First step is deep research.
+[35:28] Second is Appify scrape, then report generation,
+[35:31] and then PowerPoint presentation.
+[35:32] Then it walks it through exactly what it should be doing
+[35:34] at each of these steps, which is great.
+[35:36] So this is a really comprehensive prompt
+[35:38] breaking out everything it needs to do.
+[35:39] And as you can see, it's also updating our Claude.md.
+[35:41] And here I'm a bit confused as to why it's made a script.
+[35:44] So we can say, why did you make a script?
+[35:48] So this is when we do actually use it as kind of a chatbot
+[35:51] if we want for more information.
+[35:52] But in the meantime, I'm going to spin up another CR here
+[35:56] so that I'm ready to run the actual command
+[35:58] for doing a competitor analysis.
+[35:59] And we can let that do it.
+[36:00] And that'll be kind of it pulling everything together
+[36:02] that we've talked about here and seeing this in action.
+[36:05] Oh, and look, it's even gone and updated the plan
+[36:07] with a breakdown of the implementation that it's done.
+[36:10] So it's very nice in keeping everything in shape here.
+[36:13] So why did you make a script?
+[36:15] Can you just do it for me?
+[36:18] So you need to get used to just chucking everything back
+[36:19] at Claude code and it will base,
+[36:21] because it can run these commands for you.
+[36:22] It doesn't need me to go in and do it myself.
+[36:24] Boom, there you go.
+[36:26] And so we have new one primed and ready to go here.
+[36:28] It should have full understanding
+[36:29] of I'm primed and ready to go.
+[36:31] Let's go slash analyze competitor Lenny's podcast.
+[36:35] So it says our command here is all ready to use.
+[36:37] I'm going to right click and close out of that.
+[36:39] And now we just sit here and wait
+[36:41] as it does all of our work for us.
+[36:42] So we've just automated.
+[36:43] Well, we'll see how it goes, but I'm pretty confident.
+[36:46] It's going to go and follow all the steps
+[36:48] in this analyze competitor file.
+[36:51] And we should get back in this outputs folder
+[36:53] and competitor analysis, probably a folder
+[36:55] for Lenny's podcast.
+[36:56] It's going to do a research.
+[36:58] Oh, there you can see it started a background agent.
+[37:00] So I can go control O to see that.
+[37:03] So the deep research agent is cooking away.
+[37:06] All right, people, I had internet issues finishing
+[37:08] that off last night, but we are back
+[37:09] and I'm here to show you the output that we got from this.
+[37:12] So we ran the prime, it started the deep research agent
+[37:16] was searching the web for any information
+[37:17] about Lenny and his podcast.
+[37:20] Deep research agent came back,
+[37:21] then it's going to prepare the MCP integration,
+[37:24] making sure everything's all good.
+[37:26] The MCP and Appify is ready to go.
+[37:28] I did have to play around with the Appify API key.
+[37:30] So I highly recommend I'll leave it
+[37:31] in the template for you guys,
+[37:32] but here in a .env file is where you can put your tokens.
+[37:35] And this is going to be a sort of persistent place
+[37:37] for you to store all the API keys
+[37:39] so that your Cloud Code agent can grab the information
+[37:41] from there when it needs it.
+[37:42] So once I've got that working properly,
+[37:44] then it used the Appify MCP
+[37:46] to pull a whole bunch of information
+[37:48] about the channel using the scraper.
+[37:50] We have this YouTube scraper that we are using
+[37:52] that Cloud Code figured out
+[37:54] that this is the best one for us.
+[37:55] It's able to do a whole bunch of things,
+[37:56] but for us, it has taken the YouTube URL
+[37:58] of Lenny's podcast and pulling back all the information
+[38:00] on those latest 20 videos.
+[38:02] Then it pulled a whole bunch of information back,
+[38:04] got the 20 videos, let me examine the data structure.
+[38:07] And then it put together
+[38:08] the computer analysis markdown report,
+[38:10] which we can look at here.
+[38:11] Remember, holding Command and then clicking
+[38:13] is what opens those up.
+[38:14] And we have our report here.
+[38:16] What you can do with the markdown file
+[38:17] is right-click up here and go Open Preview,
+[38:20] and then you get it nice and pretty
+[38:21] in proper markdown formatting.
+[38:22] So massive reach and product manager space,
+[38:25] Silicon Valley bubble, premium monetization.
+[38:28] He's got a newsletter.
+[38:29] Here's the name, his background,
+[38:31] his handles, positioning,
+[38:33] the go-to resource for product managers, et cetera.
+[38:35] So all of this is great,
+[38:36] bringing me up to speed on what this guy's podcast is about
+[38:39] and how often he posts, episode links,
+[38:40] one to two hours, frequency,
+[38:42] one to two episodes per week,
+[38:43] high polish, well-edited, and so on.
+[38:45] So this is great for me to just come up to speed
+[38:47] very quickly.
+[38:48] And then we have the final outcome,
+[38:50] which is what we're really looking for here,
+[38:51] which is it then taking that markdown report
+[38:55] that we have here and all the context it has
+[38:56] and turning it into a presentation.
+[38:58] So that instead of me having to read that big document,
+[39:00] I can just pull up the presentation and we have that here.
+[39:02] It's created a couple of folders on the left-hand side here
+[39:04] in our Outputs folder.
+[39:06] I'm just gonna Command click on this.
+[39:08] I'm gonna drop this down.
+[39:11] And here we go.
+[39:13] Overview, great.
+[39:15] Average views, posting frequency, engagement rate,
+[39:18] top-performing videos.
+[39:19] All of this is real data that's taken from YouTube
+[39:21] at the time of running this.
+[39:22] Content strategy, competitive analysis,
+[39:24] doing a SWOT analysis of them, which is great.
+[39:27] Strategic recommendations, positioning moves, and so on.
+[39:30] So this is a full breakdown of a competitor analysis
+[39:33] in a spreadsheet that's been able to be done
+[39:35] through this Analyze Competitor command.
+[39:37] And this is really just the start of what I'd do
+[39:39] with this workspace if I was turning it
+[39:40] into a podcast hub for me.
+[39:42] I can do market scans.
+[39:43] I can do guest research.
+[39:45] Hey, I want to research guests.
+[39:46] Appify even has scrapers on here if I try to find them.
+[39:49] YouTube channel email extractors.
+[39:51] So I can integrate this Appify Apto through MCP
+[39:54] and that's gonna then be able to take a guest,
+[39:56] say I'd scan Lenny's podcast,
+[39:57] figure out what guests were popping off,
+[39:59] or maybe I'd do a market scan.
+[40:00] and figure out that, hey, these certain guests keep getting high views.
+[40:02] Then I could say, okay, research this guest
+[40:04] and it will kick off a similar research process to what we just did here.
+[40:07] And then I can say, great, can you go like slash reach out to,
+[40:11] then it could look at an outreach template that I give it from the emails,
+[40:14] then it can use the YouTube channel email scraper here,
+[40:17] pull the email from their channel,
+[40:19] and then send them an email or at least draft it for me
+[40:21] before I'm able to tell it to send it.
+[40:23] So I hope you guys can see just how crazy this can get,
+[40:26] how much you can build into this.
+[40:27] But these workflows are really the key thing that I wanted to get
+[40:30] like baked into your brain here.
+[40:31] The importance of the priming, right?
+[40:33] Remember, we need to be priming our session every single time when we spin it up.
+[40:36] We want to be using new sessions of Cloud Code as often as possible
+[40:39] rather than chatting away non-stop.
+[40:41] We want to be able to say slash do this.
+[40:42] It's as fresh as possible, minimal context.
+[40:45] Remember, we've only got 200,000 to work with.
+[40:47] And then we have the tools on top of it
+[40:49] and we're going to be using those to fire off the actions.
+[40:51] And this is our task layer.
+[40:52] So I hope that's been eye-opening for you guys on how I'm using Cloud Code,
+[40:56] how I'm teaching my teams to use it.
+[40:57] This setup has completely transformed productivity within our organization.
+[41:00] So I highly recommend you guys give it a go.
+[41:03] The first link in the description down there will be a link to get this template
+[41:06] and just follow the steps that I've showed you in this video on how to set it up.
+[41:08] Remember that we have these shells alias here,
+[41:10] which you need to copy and paste to Cloud Code when you're just getting things set up.
+[41:13] So you'll have quick access to the sort of YOLO mode and priming setup here
+[41:17] so you can spin this Cloud Code up as quickly as possible.
+[41:20] So yeah, guys, that's about all for this video.
+[41:21] I think I'm going to leave it there.
+[41:22] There's a ton more I could show you,
+[41:23] but this will give you the sort of starting skills and the starting template
+[41:27] to have a crack at this yourself.
+[41:28] And yeah, like I said, I highly recommend you actually give it a go
+[41:31] because this is what everyone who's been super productive using right now.
+[41:34] And if you can't figure it out now,
+[41:36] you're probably going to get left behind a little bit this year.
+[41:38] So guys, thank you so much for watching.
+[41:39] Leave a like, subscribe if you enjoyed it and you want to see more of this stuff.
+[41:41] And check out up here if you want to watch another video from me
+[41:43] that's just as good, if not better, than this one.

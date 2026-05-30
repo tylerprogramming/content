@@ -1,0 +1,22 @@
+{
+  "generations": [
+    {
+      "prompt": "Course cover thumbnail. Light beige tan background with subtle grid pattern like a notebook or graph paper. Person from the reference image centered, subtle smirk expression, not pointing, arms relaxed or crossed, wearing black t-shirt. Floating 3D social media platform icons around the person - Instagram, LinkedIn, TikTok, YouTube, X Twitter logos tilted at angles. Bold white uppercase text at the bottom: SOCIAL MEDIA AI. Clean, professional design matching the style of YouTube course thumbnails with light backgrounds.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-27T00:04:41.142549",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774584214533-7y7qiqo6d0k.png",
+        "https://tempfile.aiquickdraw.com/images/1774584277102-l2um6h7jqm.png"
+      ]
+    }
+  ]
+}

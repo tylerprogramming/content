@@ -1,0 +1,342 @@
+[00:00] This video that you're watching right now, I'll put together using four
+[00:02] commands in my terminal, I transcribed competitors videos to study their
+[00:05] structure and hooks.
+[00:06] I didn't open up a browser.
+[00:07] I didn't open up Google docs.
+[00:09] I did all right here in my terminal using Claude.
+[00:11] And I'm going to show you exactly how I did this.
+[00:13] And then you're going to research titles and hooks and all that stuff
+[00:16] can easily take a few hours by itself.
+[00:18] And then you will do all that over again for other videos, or you may
+[00:21] have some templates to help you out.
+[00:22] But point is that this takes a lot of time.
+[00:25] And if I'm being honest, you may skip a couple of those things because
+[00:27] you don't have the time to do those.
+[00:31] And then other times I just go ahead and wing it because I kind of know what I'm
+[00:33] going to talk about anyways, with that specific video, but that doesn't mean
+[00:37] it's going to be structured very well.
+[00:38] So I built a system that includes four quad code skills, including
+[00:42] creating my thumbnails.
+[00:43] Now let me go ahead and show you each one.
+[00:44] So how this used to look is whenever you want to search for a video, a little
+[00:47] hint, if you didn't know that if you go to incognito mode and then you search
+[00:51] by some terms such as Claude code, it will then come up with those top videos.
+[00:55] And you can do the filter.
+[00:57] And the reason this, you do want to do this is because then it doesn't have your,
+[01:00] the, what you used to search.
+[01:02] And so this makes it clear on actually what's trending right now.
+[01:05] So you can see Jack has a video.
+[01:06] He just put 12 hours ago as of me making this video, and then you would open up a
+[01:10] Google docs and then start adding in things, what you would do for your script.
+[01:14] Then you research titles, hooks and everything else.
+[01:16] Okay.
+[01:16] And then you're going to, that could easily take by itself a few hours.
+[01:19] And then you want to do it all over again.
+[01:20] Or if you have templates by this point, it can reduce a little bit of time, but
+[01:24] this takes a while to do, and to be honest, you may skip a couple of those
+[01:26] and to be honest, sometimes you might skip some of those things because you want to
+[01:29] put out a video on something that's trending right now as easily two or three
+[01:33] hours before I even get to start writing it.
+[01:35] Honestly, half the time I had, I could skip that and just wing it because I know
+[01:38] what I'm going to talk about, but that doesn't mean it's going to be structured
+[01:41] very well.
+[01:41] So I built a system for Claude code skills that handled my entire
+[01:44] pipeline, including the thumbnail.
+[01:46] So let me show you each one.
+[01:47] So the first skill is YouTube research.
+[01:49] Like I mentioned, this is going to actually go out to YouTube research based on
+[01:53] topics that I want.
+[01:54] It's going to come back and give me results.
+[01:56] And in this instance, what I wanted to do was right up here as I went to search for
+[02:00] the latest and best on Claude code.
+[02:02] So it's going to get the last 30 days, return the top 15, but get a research
+[02:08] for a total of 50 if there are.
+[02:10] And so what it did is it found 32 and returned the top 15, right?
+[02:14] So I did that earlier.
+[02:15] And so we have Nick number one, you know, but that's a four hour course.
+[02:19] And then we have Lenny's podcast, which is about an hour and a half.
+[02:23] And you can generally see, except for network Chuck, um, who does have a high
+[02:26] view count, but he does have a ton of subscribers.
+[02:29] Uh, his is kind of an outlier at less than 10 minutes, but a lot
+[02:32] of these are generally long.
+[02:34] So then based on this research, what I can do is then take some of these or
+[02:39] take a few of them and then decide that I want to do something based off of
+[02:44] those or do something similar.
+[02:45] And this leads me into the second skill that I have, which is my transcribe skill.
+[02:49] Okay.
+[02:50] So with all of this information, you can see that it gives me
+[02:52] kind of an overview of things.
+[02:54] There's some specific patterns that it has, uh, the duration sweet spot, right?
+[02:59] It said, even says right here that network Chuck's is an outlier.
+[03:02] There are some title patterns.
+[03:04] There are some gaps that it thought that there might be.
+[03:07] So what I did was I want to choose, I want to choose this one from Simon.
+[03:12] Every Claude code concept explained for normal people, but
+[03:15] that's a very unique concept.
+[03:17] It did very well.
+[03:18] You know, that did very well for just under 30 minutes.
+[03:20] So then what I did, as you can see here, I wrote this slash transcribe, which is
+[03:25] a skill, every Claude code concept explained from normal people, the title.
+[03:29] And I just told her to transcribe this polite place.
+[03:31] And so what it did was, uh, it created the, got the video.
+[03:35] It was an MP4, got the MP3 from that after downloaded.
+[03:38] And then we used whisper to transcribe that.
+[03:42] So it transcribed it, saved it to a another file.
+[03:46] So if we come here, if I go ahead and open this, yeah, right here.
+[03:48] Okay.
+[03:49] So here it is, right?
+[03:50] So up here, here's the actual transcription with all of the timestamps for it, right?
+[03:55] For a total of just under, like I said, 27, some 27 minutes and some seconds.
+[03:59] Okay.
+[03:59] So here's the full transcript, right?
+[04:01] This means with timestamps, you could really kind of go in a little more
+[04:04] depth of what you want to do, but other way.
+[04:07] So if we come back up here, if we come back up here and show this, so then what
+[04:12] we see here after we do that is then it gave me an overview of what he did.
+[04:17] So here are all the 27 concepts that he had explained in that video.
+[04:22] Okay.
+[04:22] So now that's great.
+[04:23] Now the question is instead of 27 concepts, maybe I want to do 21.
+[04:27] Maybe I want to do 23.
+[04:28] So let's say I want to do 23.
+[04:30] So this means that now I need to have a conversation using that skill on how to
+[04:34] narrow that down to 23 and maybe want to have it researched and bring some more in.
+[04:38] Okay.
+[04:38] So this leads me to the next skill, which is actually created the script
+[04:44] that you see on the, see on the screen, this script, this is for the, my
+[04:48] Claude code YouTube workflow video, which is the one that you're watching right now.
+[04:51] These are all of the files that were created based off of another, actually,
+[04:57] I think two other videos that I was used for this.
+[04:59] Okay.
+[05:00] So then what I want to do is I want to create a video based on this concept,
+[05:04] but maybe just have 21, 21 concepts and maybe see if it can look for anything
+[05:10] new or different compared to these, and then kind of decide which ones are really
+[05:14] the most, the best ones for you guys to learn.
+[05:16] Maybe we don't need to know all 27 is for normal people, right?
+[05:19] People that don't, that maybe don't use it that much.
+[05:22] So I have a, I have a slash, I type slash YT.
+[05:26] This is, you see the description, plan a YouTube video inspired by reference
+[05:28] transcript.
+[05:30] Um, so the ref transcript is take, take this transcript and let's create a video
+[05:38] based on 21 Claude code YouTube workflow video, which is the one that you're watching.
+[05:45] Okay.
+[05:45] So let's go ahead and create a video.
+[05:48] Based on 21 Claude code concepts, decide which ones are best.
+[05:55] And if, and search for any new ones.
+[05:59] Okay.
+[05:59] That's relatively simple week, but once the, everything is created, then we can
+[06:04] have conversations about this, right?
+[06:06] And that's what's great about skills and it being like in a terminal terminal like
+[06:09] this, we can, once it creates things like the, in that analysis from other videos,
+[06:14] creates a description for me, the hooks, the script, the titles, right.
+[06:18] For the video, we can go in and we can have conversation about updating this and
+[06:22] have it do, maybe do more research after we see, uh, you know, maybe something
+[06:26] about this doesn't look appealing, or maybe I want to do something a little
+[06:28] bit this way that's geared towards how I record videos.
+[06:30] Okay, great.
+[06:31] So it says research is running in the background while it completes.
+[06:33] Here's the, here's his analysis of Simon's video.
+[06:36] So there's a hook and a promise.
+[06:38] So pain points, 27 concepts that 60 seconds each here are the basics.
+[06:43] So the foundation, then it has like some configuration information, things to know,
+[06:47] uh, some power features, you know, agent teams, very good.
+[06:50] And then practical things that you should know.
+[06:52] Right.
+[06:52] And not all of these, I think you really need to know.
+[06:56] Um, but then he has a CT at the end.
+[06:58] Okay.
+[06:58] So it kind of goes with what works well.
+[07:00] It says what our potential opportunities are.
+[07:03] So then it says, what's your angle in this?
+[07:05] Usually you actually use cloud code with 12 plus custom skills.
+[07:09] Galey, are you thinking with actual demos or more of a curated?
+[07:12] These are 21 that actually matter.
+[07:14] I just said, I want 21 cloud code concepts that actually matter for
+[07:17] non-technical founders and beginners.
+[07:19] Okay.
+[07:19] So what examples or demos will you show on screen?
+[07:21] Are you thinking screen recordings of cloud code running for each concept, more
+[07:24] of a talking head with visual approach, with visuals approach, probably
+[07:29] cloud code running for each concept because having visuals approach for
+[07:32] each of those, that would take way too much effort, any specific you want
+[07:35] to include or avoid, for example, should we skip pricing slash cost talk?
+[07:39] So then I just said, yeah.
+[07:41] Custom, creating custom skill would be nice, but let's choose 21 that seemed
+[07:43] reasonable and not the most difficult.
+[07:47] Okay.
+[07:47] So what it's going to do over here is it's going to end up creating a folder.
+[07:51] It hasn't created it just yet.
+[07:52] So when it creates that folder, then it's going to start having the analysis,
+[07:56] description, filming guide, hooks, script, titles, and all of that so that I can go
+[08:01] ahead and then review that, and then this will be a video that I will be
+[08:04] releasing in the near future.
+[08:06] Okay.
+[08:06] So far.
+[08:07] So here's the titles, markdown file it created.
+[08:09] Here are five examples that I can use.
+[08:12] Here are three hooks, different ways that it thinks that I can approach everything.
+[08:17] And then here is the full script that I will want to, you know, I'll be using
+[08:22] these and it gives her each concept.
+[08:24] It gives me what I should say.
+[08:26] And then take a screenshot, for instance, one screenshots, images, take a
+[08:29] screenshot of a webpage with a visible bug, paste in cloud code, show it
+[08:33] identifying the issue and fixing it.
+[08:35] Okay.
+[08:35] And then I have the filming guide that just finished.
+[08:38] Just here's some prep work files to have ready.
+[08:41] And then here's like a timing cheat sheet that it thinks that I
+[08:45] should use for when creating this.
+[08:47] And then it gave me a starter, a description of what I would
+[08:50] use for YouTube description.
+[08:52] Okay.
+[08:52] This is the script you're hearing right now.
+[08:54] This is the filming guide.
+[08:55] I followed to record this.
+[08:56] This video is the output.
+[08:57] Okay.
+[08:57] I just said that verbatim, because this is the actual script for
+[09:00] this video that you're watching.
+[09:01] This is part of it, right?
+[09:02] So I just want to let you know that I am actually using it.
+[09:04] I'm a little off script right now, but I am actually using this for the
+[09:07] most part I don't do verbatim, but I know what it wants to tell me.
+[09:11] And I might just go off script.
+[09:12] So it's more like me.
+[09:13] And what we've done now is I've covered three of the four skills.
+[09:16] Now the last skill is the thumbnail skill, and this is where
+[09:19] it creates concepts for me.
+[09:21] But I also can take screenshots from other videos that I've
+[09:25] done well, such as this one.
+[09:26] And I can have it replace it with my likeness and then give me updates or
+[09:31] give me other examples that I could use as well.
+[09:33] Okay.
+[09:33] And it says that also auto generates the three thumbnails.
+[09:36] So we'll take a look at those in just a second.
+[09:38] Here's its recommended title.
+[09:39] It tells you the video package is complete, which you see at the
+[09:43] top left and the project there.
+[09:44] It gives me the recommended hook.
+[09:46] Here is a script outline.
+[09:48] It says about 20 minutes here.
+[09:50] The files are generated the thumbnails already said, but we're going to go
+[09:54] ahead and take a look at those.
+[09:55] And then we're going to, I'm just going to have it create another
+[09:58] thumbnail live with us so that I can show you what it looks like
+[10:01] when it takes my likeness instead.
+[10:03] Okay.
+[10:03] So here is one, here's one concept of before and after concept.
+[10:09] Okay.
+[10:09] I think what happened was it saying that it overwrote each other, but that's okay.
+[10:14] Um, that's not a big deal.
+[10:15] I kind of want to, I want to show you how I would actually use this.
+[10:19] Right.
+[10:19] But it does, it is nice that I have it.
+[10:20] Give me examples for what may or may not work.
+[10:23] And they can always update the prompts based on what else
+[10:25] is actually working right now.
+[10:26] And just to show you, this is the actual analysis that I use.
+[10:29] Right.
+[10:29] So here's the actual, uh, here's the actual title.
+[10:32] So what we can do, I can open this up.
+[10:36] Oops.
+[10:36] I can go to YouTube if I can actually type.
+[10:42] Okay.
+[10:42] So I'm going to paste this in.
+[10:44] This is the actual title, right?
+[10:45] So here it is, right?
+[10:46] I want to take this screenshot, bring it into Claude code.
+[10:56] Okay.
+[10:56] So I paste it into Claude code.
+[10:58] Here is just an example of me that I've used in other videos, but as you can
+[11:01] see, it's not, I have like actually my arm cut off on this one, but so I'm
+[11:05] going to take this for my likeness and then basically have it replace that.
+[11:09] And maybe replace like the background info graphics, since I'm not doing
+[11:12] everything the same and we'll see what it produces.
+[11:15] Okay.
+[11:15] And you see, I, for this purpose, I gave like kind of a basic prompt.
+[11:19] Um, but you know, I told it, you know, take my likeness.
+[11:22] Also they have 21 concepts instead of 27.
+[11:25] My arm is cut off, but make sure you just handle that and then update
+[11:28] the graphics in the background.
+[11:29] And you know what it actually, I'm going to interrupt this
+[11:31] because the problem is if some reason didn't use my thumbnail skill, that's
+[11:34] okay, but I'm just going to tell it, use my thumbnail skill for this, please.
+[11:41] And so it said it got both images.
+[11:42] Here's the prompt that it's going to use.
+[11:45] Here's the estimated costs, which, oh, it wants to do three variants.
+[11:49] I don't really know why, uh, but I'll just let it do three variants for now.
+[11:52] I typically probably just say, just do one.
+[11:54] This looks, this looks good.
+[11:56] Let's see what it produces.
+[11:57] Okay.
+[11:58] So here's actually one that it created, right?
+[12:00] This is, this is, you know, pretty good.
+[12:03] Honestly, it changed it to 21 concepts.
+[12:06] Here is me, you know, I was missing the arm.
+[12:07] So it obviously filled it in.
+[12:09] I'm pointing at five different graphics of what they would do.
+[12:14] I have the Claude symbol at the top left.
+[12:16] And then I have, you know, the Claude text there.
+[12:19] Now let's just reference that to what we used for this thumbnail.
+[12:22] Okay.
+[12:22] So here's the original, right?
+[12:24] Claude 27 concepts with him kind of like, you know, contemplating.
+[12:28] And then here's mine, right?
+[12:29] So it's obviously not a one for one.
+[12:32] Uh, but I could have it be more of a one for one.
+[12:35] If you know, I want to prompt it better, right?
+[12:37] Say have the same expression as the guy, just update me, et cetera.
+[12:41] Right.
+[12:42] That's perfectly fine to do, but that did really good, right?
+[12:45] You don't have to be an editor and it did that for you.
+[12:48] You can even take something not related and then have it updated to
+[12:53] be something for your thumbnail.
+[12:54] Right.
+[12:54] Okay.
+[12:54] So this is just, just want to show you that this is something
+[12:57] really amazing that you can do.
+[12:58] Okay.
+[12:58] So here's the full pipeline.
+[13:00] We do the YouTube research.
+[13:01] We do the transcriptions of videos that we want to talk about
+[13:05] or have, or at least reference.
+[13:06] Then we have YouTube build everything we need for filming the transcript,
+[13:10] the titles, hooks, everything that we can chat with it to update it.
+[13:13] And then we have the thumbnail skill that gives us the thumbnail that is huge
+[13:17] with the CTR, um, along with the title that will want you to click on it.
+[13:22] Right.
+[13:22] And this has been my workflow lately to help me.
+[13:25] So it doesn't take so much time to get from what I want to talk
+[13:28] about to the next, right?
+[13:30] So if something like remote control just comes out, which I'm gonna create a
+[13:32] video on, you know, some of them might not even really have a video on that yet,
+[13:35] but that's okay.
+[13:36] I can take the structure of another video that did well, tell it, I want to
+[13:39] talk about remote control and then have it come up with ideas for that as well.
+[13:44] So for instance, here are some thumbnail ideas that it came up with.
+[13:47] Right.
+[13:48] And that's, I could take one of those, or I could see other thumbnails from
+[13:53] not even a non-related niche that like that caught my attention and then just
+[13:58] use this with that, you know, this isn't magic.
+[14:00] These are just skills that you're using that I'm using with Claude code, you
+[14:04] know, let me just be real for a second.
+[14:06] Right.
+[14:06] So Claude code content out there right now is about a lot about coding, uh,
+[14:11] you know, building apps, shipping features, but Claude code is also can be a general
+[14:16] purpose automation tool and even help you build those things that you need.
+[14:20] Right.
+[14:20] It can do anything really that you describe in plain English or whatever
+[14:26] and as a content creator, this has really helped me reduce the time, especially
+[14:30] since I do everything myself, I do have a video editor that has been helping me
+[14:34] for the past few months with the video editing, which took up a lot of time
+[14:37] with video and it takes, that takes a lot of time.
+[14:40] Uh, but for everything else, you know, I do it all by myself, even the social
+[14:43] social content and everything.
+[14:45] I do use Bloatator, which I want to make another video on, but all of these
+[14:48] things, you've got to do things that really help you out.
+[14:51] And if you're really interested in, you know, creating your own content and you
+[14:55] want to know more about what I do, you know, join my free school community.
+[14:59] I will have all of this information there for you.
+[15:02] And so I just want to say thank you for watching.
+[15:04] Here are some more videos for you to watch, subscribe, like the content,
+[15:09] and then I will see you next one.

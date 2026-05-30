@@ -1,0 +1,52 @@
+{
+  "generations": [
+    {
+      "prompt": "Professional tech YouTuber pointing at floating slash command icons and terminal windows, clean minimal background with subtle tech elements, soft studio lighting, YouTube thumbnail composition with space for text on left",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-01T11:11:40.854171",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1772381495558-sboa0tnh5n.png"
+      ]
+    },
+    {
+      "prompt": "Tech tutorial YouTuber with excited surprised expression, neon purple and orange glowing background, terminal window with code elements, dramatic side lighting, high contrast cinematic look, space for text overlay",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-01T11:13:05.353525",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1772381579615-pe668q5sxpn.png"
+      ]
+    },
+    {
+      "prompt": "Tech YouTuber with thoughtful intrigued expression, dark moody background, glowing terminal window on right side, dramatic cinematic lighting, professional YouTube thumbnail with text space on top",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-01T11:14:57.212547",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1772381694047-91klvgsvfzk.png"
+      ]
+    }
+  ]
+}

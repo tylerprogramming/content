@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "LinkedIn carousel slide design with dark navy blue background (#1a1f36). Top left corner has a small rounded badge that says STEP 1 with a blue (#4da6ff) background. Below the badge is a large bold white uppercase heading INSTALL CLAUDE CODE where CLAUDE CODE is in bright blue accent (#4da6ff). Below the heading are numbered steps in white text: 1. Open Terminal (Mac) or PowerShell (Windows), 2. Paste this and press Enter, 3. Wait about 2 minutes. In the bottom half of the slide, embed the reference screenshot image inside a macOS style window frame with the red yellow green traffic light dots in the top left corner of the frame. The screenshot shows the Claude Code install documentation page with curl commands for Mac and Windows. Page counter 2 / 7 in small text in the top right corner. Clean minimal professional tech design.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-26T12:37:05.540084",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774543019864_x9cbs3.png"
+      ]
+    }
+  ]
+}

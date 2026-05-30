@@ -1,0 +1,331 @@
+[00:00] With AI agents on Cloud Code, CodeWorks, and CodeX becoming more powerful by the day,
+[00:04] building good skills will be one of the most important things to get good at in 2026.
+[00:09] Building agent skills allows anyone to automate any workflow by simply prompting it,
+[00:13] and can even become self-improving.
+[00:15] And good skills will likely become monetizable soon.
+[00:18] So in this video, I'll show you why you need to learn skill engineering,
+[00:21] show you what skills actually are and when to use them,
+[00:24] and a simple framework to build better skills than 99% of people.
+[00:28] Now, this guide should help you whether you work with Cloud Code, CodeWorks, OpenAI, Google,
+[00:31] as they all have integrated skills by now.
+[00:34] Now, before we dive into what skills are and how to build them effectively,
+[00:37] let me quickly explain why learning skills is a big deal.
+[00:40] Now, we're all seeing that these AI agents are getting really powerful,
+[00:42] but no matter how good they get, they still need those specific guardrails,
+[00:47] context and SOPs around all the unique ways you and the business do things and use software.
+[00:52] Now, we've tried to solve this before, of course.
+[00:54] We have projects and custom GPTs where you set a system prompt and add context files.
+[00:58] But generally, the problem with these is they're isolated.
+[01:00] You're hopping between different windows.
+[01:02] They don't really self-improve and can't handle a lot of context.
+[01:05] On the other side, of course, we have N8n and automation platforms
+[01:08] that hard-code the guardrails and make a system deterministic.
+[01:11] And for fully deterministic, non-human-in-the-loop workflows, these are still great.
+[01:15] But most day-to-day work isn't actually deterministic.
+[01:18] The processes aren't always clear-cut.
+[01:20] It's context-dependent. It requires judgment.
+[01:23] And that's why human-in-the-loop is often really important to get good outputs from AI.
+[01:27] And skills sit in the middle.
+[01:28] They're essentially instructions for an AI agent on how to do a specific process.
+[01:32] They can self-improve. They have human-in-the-loop.
+[01:35] But unlike a project or a custom GPT, thousands of skills can be accessed by the same agent.
+[01:40] And the game-changer is that they can be created and updated by simply prompting.
+[01:44] And that means anyone can start automating their tasks and workflows
+[01:47] through a single interface on Cloud Code, Cowork or Codex.
+[01:50] They're also shareable across your business.
+[01:52] So one person's process and domain expertise can instantly be used by the entire team,
+[01:57] which, of course, has huge implications for onboarding, consistency, and how a company operates.
+[02:02] And if thousands of these specific capabilities can be given to one very capable general agent,
+[02:07] it seems likely that AI agents will slowly become the single interface for doing work.
+[02:12] Now, of course, we are very early with this,
+[02:13] but I predict that building the skill infrastructure for these agents to do specific tasks well
+[02:19] will not only allow you and your company to become far more productive,
+[02:22] it will also become monetizable, sort of like a new software layer.
+[02:26] But just like with software engineering, prompt engineering, and AI automation engineering,
+[02:30] you need to actually get good at it.
+[02:31] Even though anyone can create skills through prompts,
+[02:33] the same skill can produce completely different outputs depending on how you build them.
+[02:38] For example, this is an infographic that I got out of an infographic skill that I quickly created.
+[02:43] And this is the output of the same input of an infographic skill I put a lot more effort in.
+[02:47] As you can see, it's a lot clearer and a lot more aligned to my brand.
+[02:51] I'll show you a full demo of the infographic skill later in this video.
+[02:54] Also, if you want access to that infographic skill and all of the other skills me and my team are building out,
+[02:58] you can also check out my AI Accelerator where we list them all for you to download or customize.
+[03:03] Now, before showing you how to build these types of skills,
+[03:05] it's good to understand what skills actually are.
+[03:07] And simply put, agent skills are folders of instructions, scripts,
+[03:12] and resources that agents can use to do things more accurately and efficiently.
+[03:16] And at the core, we have the skill.md file.
+[03:19] And you can basically see this as an instruction on how to do a process.
+[03:22] Think of it like a system prompt, a cloud project, or a custom GPT.
+[03:25] But besides that process instruction, we can have additional instructions on how and when to use knowledge files,
+[03:31] how and when to use tools, how and when to spin up sub-agents, and how and when to use code executions.
+[03:37] So the skill.md, you can basically see as the SOP.
+[03:40] Now, that skill.md is just the core.
+[03:42] What makes skills more powerful are those additional reference files or the context we add.
+[03:47] Now, what kind of reference files can we have?
+[03:49] Now, firstly, we can build really simple skills with no reference files at all.
+[03:52] It's just a skill.md or a process instruction.
+[03:55] For example, we have a sales account research skill here from Anthropic,
+[03:59] which has no additional reference files, just the skill.md here.
+[04:03] And the skill.md, as you can see, includes an execution flow, right?
+[04:06] Step one, parse request, step two, web search, right?
+[04:09] Step three, enrichment, and step four, CRM check.
+[04:12] But commonly, when we build our skills, we want to add some reference files to provide the skill with more information.
+[04:17] Firstly, we can have text files.
+[04:19] For example, common ones you might want to include are example outputs, style guides, context around your ICP, your background, etc.
+[04:26] For example, in my newsletter writer skill, you can see I have multiple reference files here
+[04:31] to give the skill more context on my background, what we do, my ICP, and voice personality.
+[04:36] Another common one to use is an MCP instructions file,
+[04:39] which basically lays out to the agent how to use a specific tool efficiently in this specific skill process.
+[04:44] For example, the way you navigate or use your CRM for this specific task.
+[04:48] Now, don't worry, your agent can build these MCP documents.
+[04:52] Now, a second type of reference file we can have in there are assets or non-text files like images, presentations, videos, or even binary.
+[04:59] For example, to give it good output examples of a presentation layout that you want.
+[05:04] And then lastly, reference files can even include code scripts, Python, or JS functions.
+[05:09] It can take actions like doing API calls in a software or executing functions.
+[05:13] For example, my infographic skill, we have a script to do an API call to the Nano Banana Google API call.
+[05:20] So you can see that these skills can be very simple or can become quite complex and can look a lot more like a software.
+[05:25] Except skills, of course, are software for AI agents.
+[05:29] But how are we able to give one AI agent access to thousands of these skills,
+[05:33] feed it all of these documents without overloading it with context?
+[05:36] Now, this is done through a process called progressive disclosure.
+[05:38] Now, it sounds complicated, but it's not.
+[05:40] Basically, when we create or upload a new skill and give it to our AI agent in Cloud Cowork or Code,
+[05:45] only the metadata, which is the description and the name, are stored in the agent memory.
+[05:50] In my infographic skill, this is the name and this is the description.
+[05:53] And this is how your agent knows when to trigger or use a specific skill.
+[05:58] And then only when the skill is triggered, the skill MD or the process will be loaded into the context window of the agent
+[06:05] to understand how to execute on this specific process.
+[06:08] And only when the skill instructs to use a reference file, it loads the reference file into the context window.
+[06:13] And because of this progressive disclosure of context, we can give one agent access to thousands of potential skills.
+[06:20] Now, I see a lot of confusion between plugins and skills too.
+[06:22] So let me explain it very quickly.
+[06:24] Plugins are essentially packaged or bundled sets of skills, commands, agents, and connectors.
+[06:30] And this basically means and does three things.
+[06:32] First, it adds a layer of complexity on top of skills because plugins can include multiple skills.
+[06:38] It can include commands, which serve as workflow triggers.
+[06:41] They can trigger multiple skills in sequence to automate more complex tasks.
+[06:45] It can have specialized agent teams and a preset set of connectors.
+[06:50] So we can add a lot more functionality to these plugins.
+[06:52] Second, through plugins, these bundled packages can easily be shared and divided between company departments.
+[06:58] Sales teams can get a sales plugin, marketing teams can get a marketing plugin,
+[07:03] each with the connectors and skills that each department needs.
+[07:06] And thirdly, these plugins are also becoming versionable skills too, by the way,
+[07:10] which means they can be updated at any time across any account that uses them.
+[07:14] And because of these characteristics, plugins start to look a lot more like software, of course, or SaaS.
+[07:19] And I predict that SaaS will start to launch their own plugins with their specific functionalities.
+[07:24] Now, if you want to learn more about plugins, I recently did a video on it.
+[07:27] So I'll make sure to link it in the description below too.
+[07:29] But skills are really the key aspect, even inside of these plugins.
+[07:33] And even though we have plugins, we can still directly build, trigger, and access skills even without these plugins.
+[07:38] Now, skills and plugins are relevant for any industry, business department, and any niche workflow.
+[07:43] And we're seeing three layers of skills and plugins appear.
+[07:46] We have the general plugins and skills, for example, the ones built by Anthropic or OpenAI.
+[07:51] But we're already seeing marketplaces of skills like SkillsMP, Smithery,
+[07:56] where people are building and potentially selling them.
+[07:58] And potentially SaaS businesses will start creating their own plugins.
+[08:02] Now, as these will have to be general purpose skills in order to be relevant to multiple industries and businesses,
+[08:07] companies will want to build their own ones based on their unique processes or customize some of these general skills.
+[08:13] But even within a company, it makes sense for different employees and different people
+[08:16] to customize skills to their specific way of working and their specific workflows.
+[08:20] For example, an Anthropic or third-party, let's say, sales outreach skill can be useful,
+[08:25] but a company probably wants to customize and improve it by adding the company brand tone, the ICP, and the business context.
+[08:31] And one sales rep's copywriting style will be different than another's.
+[08:35] So they can even start customizing those skills for their specific copywriting style, for example.
+[08:40] Of course, if you as an individual start to get good at it and you have specific domain expertise and build a skill out of it,
+[08:46] you can potentially monetize it by providing it to the general public.
+[08:49] So how do we actually build these skills ourselves?
+[08:51] Now, we can first of all customize Anthropics or the third-party provider skills.
+[08:54] There are multiple of these marketplaces now, but the real unlock is really building them yourself
+[08:58] because every person and every company has their specific ways of working and their specific expertise.
+[09:03] Now, there are two main ways to build your own.
+[09:05] First way is you do a task once manually with an AI agent and then ask it to save it as a skill.
+[09:10] And the second way is to instruct it on how to build the skill right away.
+[09:13] For example, here I downloaded a third-party provider meta ad skill from one of the marketplaces,
+[09:18] imported it and used it here in my own account.
+[09:21] And then I asked it to use this skill combined with my specific knowledge sources to create a new skill that helps me create ads.
+[09:28] And then it created a new skill which I can add to my library.
+[09:30] Customizing Anthropics built-in plugins and skills is also very easy.
+[09:34] You can just go to skills, click on edit and customize with Claude or even the plugins by just clicking here on customize.
+[09:40] And here I created my own skill by just prompting it and giving it some reference files.
+[09:44] Now, whatever the method, applying some best practices is important.
+[09:47] So let me start by saying that building good skills is kind of like an art.
+[09:50] It's the art of putting your domain expertise of a process into something productizable and usable for an agent.
+[09:55] And the more I do this, the more similarities I see between skill engineering and software engineering.
+[10:00] But it's sort of like software engineering for an AI agent.
+[10:02] But you have to think about UX, right?
+[10:04] When to add in human in the loop.
+[10:05] You have to think about context engineering, right?
+[10:07] Which balance of context produces the best outcomes.
+[10:10] You're adding features, removing things, handling edge cases, etc.
+[10:13] The beautiful thing with skills is you can easily update them with prompt.
+[10:17] So skills are never finished.
+[10:18] And what I've learned is the more you use them, the better they get.
+[10:20] I've probably updated and iterated on my infographic skill around five times to get to the outcome that I get now.
+[10:26] Now, the first step is the step that most people skip.
+[10:28] But what makes the biggest impact before prompting to build or customize a skill,
+[10:33] you really do want to take a step back and think about the ideal step-by-step process to get to a good outcome.
+[10:38] You want to think about what knowledge sources or additional information you can give your AI agent in this skill to do a better job.
+[10:46] Now, generally, some context or reference files that I recommend you have,
+[10:48] especially if you're going to use these skills more for marketing or sales-related skills,
+[10:53] is what we do.
+[10:54] Basically, a description of your business, a description of your ICP, of your voice personality,
+[10:59] if you're using this for LinkedIn, etc.
+[11:01] Newsletter strategy.
+[11:02] In this case, I have this also for my YouTube, for my LinkedIn, etc.
+[11:06] And also a writing framework.
+[11:07] These are some of the documents that I reuse across different skills, too.
+[11:11] So I highly recommend this.
+[11:12] Now, if you don't have these reference files yet, you can do it together with Cloud.
+[11:15] For example, here I asked it, I want to create a YouTube strategy document that I can later give when I'm building skills for research, ideation, scripting, etc.
+[11:22] And then I basically ask it to ask me some questions about my YouTube strategy.
+[11:26] And through the planning mode, as you can see here, ask questions, etc., you'll get more and more context.
+[11:31] And at the end here, you can see Cloud generated a YouTube strategy document for me,
+[11:35] which I can then reuse in multiple YouTube skills that I create.
+[11:39] And once you have a few of these, building skills will get a lot more efficient.
+[11:42] Now, once you have that, of course, you want to think about which tools or software the agent needs in order to do this task.
+[11:48] And then if possible, you always want to prepare good output examples.
+[11:52] And this is generally the thing that impacts performance the most.
+[11:55] Now, once you have that sort of clear, we move to the building, which, of course, in this case is prompting.
+[11:59] Now, I just go through a framework that I like to use, which is not hard science,
+[12:02] but I think can help you to think about what to include to get to a good first outcome of your skill.
+[12:08] Now, first, you want to define the name of the skill and how the skill should be triggered.
+[12:11] So in this case, the name of the skill should be infographic generator
+[12:14] and should be triggered anytime a user mentions he wants to generate or create an infographic.
+[12:18] And this is what the agent uses to write the meta description.
+[12:21] Then just like with prompting, you want to define the goal or the objective for this skill.
+[12:25] It can be quite short because we dive a lot deeper into the process later.
+[12:28] Now, in this case, an infographic skill that creates quality infographics,
+[12:31] according to my brand style for LinkedIn and newsletters.
+[12:33] Then we want to give Cloud context on connectors, APIs, or MCPs that it needs to use in this skill.
+[12:39] Now, if there's a specific table, maybe a page or a process,
+[12:43] it should take in that software for this skill.
+[12:46] You can also describe that here.
+[12:47] And then you want to lay out the process step by step.
+[12:50] This is one of the most important things and it's good to actually spend some time on it.
+[12:54] Now, a good way to think about what to include in each step is what does it need to do?
+[12:58] First of all, when do you want a human in the loop?
+[13:02] What kind of human in the loop do you want?
+[13:03] With the dynamic QA boxes of Cloud,
+[13:05] we can now choose between check boxes, open field, single select, etc.,
+[13:09] which kind of becomes like UX design.
+[13:12] And four, what additional context should be used to do this task better?
+[13:16] If it's very short, you can add it in the prompt.
+[13:18] But if you have a specific file it needs to read,
+[13:20] you want to specify that for each of the step.
+[13:23] Even if you don't have the reference file yet,
+[13:24] you can just paste the context here in the prompt
+[13:26] and ask it to create a reference file for that skill with that context.
+[13:30] Generally, we want to try to keep the skill MD very clean
+[13:34] and focused on the process.
+[13:35] Any additional information should be in the reference files.
+[13:38] That's how your skill is going to perform a lot better.
+[13:40] And lastly, you want to think about what you expect as an output for each of the steps.
+[13:44] Something that I like to do and has made a big impact on my productivity
+[13:48] is when you have human in the loop steps,
+[13:50] ask Cloud to always give you multiple variations or options
+[13:54] which you can choose from instead of just one-off outputs.
+[13:57] So I usually say something like that.
+[13:58] It should give me five different ways an infographic could visualize this idea or concept.
+[14:03] And then lastly, you want to think about rules for this skill.
+[14:05] Here you can basically predict what could possibly go wrong
+[14:08] when executing this skill and write it down as a rule.
+[14:11] Now, this is also the section that you will continuously update when improving the skill.
+[14:15] Two tips here in the rule section is, first of all,
+[14:17] to double down on instructing it to use the knowledge files
+[14:20] as obligatory steps in the process when needed.
+[14:23] Otherwise, I notice it tends to skip over some.
+[14:25] And second, I usually double down on the multiple variations with human in the loop.
+[14:29] And lastly, a really good thing to include is progressive updates.
+[14:33] Basically, instruct the skill to be automatically updated and improved
+[14:36] when using the skill so it becomes self-learning.
+[14:39] For example, every time I define a clear thing not to do anymore in this skill,
+[14:42] update the rule section.
+[14:44] And what can be very powerful too is instruct in the process
+[14:47] that if a user approved the final outcome to save that as a good example
+[14:52] so it learns and builds more data around what good looks like automatically.
+[14:56] Now, let me show you a quick demo of how my infographic works
+[14:59] so you get a better idea of what you can get out of this.
+[15:01] So in this case, I'm using the code tab here
+[15:03] because with API calls, it can be a little bit easier.
+[15:07] So I can just trigger it with the slash command.
+[15:09] And this is already an updated version from this initial prompt that I gave it.
+[15:13] First, it asked me what content should I turn into an infographic.
+[15:16] So I'll just paste in a part of my video where I talk about what skills are.
+[15:21] A later update I made from this first prompt is to ask it first for which platform it is
+[15:25] to understand which format it has to generate it in.
+[15:28] So in this case, LinkedIn.
+[15:29] And as you can see, it uses these QA boxes because I instructed it to do that.
+[15:33] And then what type of visual should it be? Infographic.
+[15:35] Then I later adjusted it and iterated on it to get a checkbox out
+[15:39] so I can actually start generating multiple variations.
+[15:41] But here it suggests me what we should visualize.
+[15:44] In this case, I'll go with anatomy of a skill.
+[15:47] And then it suggests me ways to visualize that concept.
+[15:50] I can choose what makes most sense and generate those.
+[15:53] I'll just do all of them.
+[15:55] Now again, the first time I launched this prompt,
+[15:58] it wasn't this good yet.
+[15:59] I had to iterate three or four times, add in extra rules, etc.
+[16:02] So it became an iterative process.
+[16:04] And it's really about that.
+[16:05] The more you use it, the better it becomes.
+[16:07] But these are quite powerful and really follow my brand style and guidelines.
+[16:11] And you can see I added this box at the end.
+[16:14] If I click keep all finalized, it will save it as the good output examples.
+[16:19] So it gets trained on what good looks like.
+[16:21] Now, it is important how you instruct the model to change things.
+[16:25] And an easy rule of thumb you can keep in mind on improving and updating
+[16:28] is if it doesn't follow the process correctly,
+[16:30] ask it to make changes to the skill MD.
+[16:33] The key in the skill MD is that it doesn't get polluted
+[16:35] with a lot of additional information.
+[16:37] It should mostly focus on the core process.
+[16:40] Now, if you need additional information,
+[16:41] you want to ask it to add a reference file.
+[16:44] Now, if it does something wrong, not just for this specific task,
+[16:46] but you never want it to do, for example, I had this with my infographic.
+[16:50] I never want the black background because the shadows are not visible.
+[16:53] Then you can ask it to add a rule or update the knowledge file.
+[16:56] Now, if it struggles to use one of your softwares, MCPs or tools,
+[17:00] you can first guide it manually to do the specific action necessary
+[17:04] and then ask it to create an MCP reference doc
+[17:07] on how to do the task in the software.
+[17:09] And you can see that my first version is completely different from my last version.
+[17:14] Now, lastly, once your skill is performing well,
+[17:15] you maybe want to share it on a marketplace or maybe to a team member.
+[17:19] The easiest way is to ask Cloud to give you a zip file for that skill.
+[17:22] You can then just share that and someone else can go into the settings,
+[17:26] the capabilities and upload the zip file.
+[17:28] You can also deploy a skill through GitHub.
+[17:30] I'll put a link in the description below on how to do that.
+[17:32] Now, if you have multiple of these skills,
+[17:34] you maybe want to combine different skills,
+[17:36] maybe commands, add in agents, specific connectors.
+[17:39] You can bundle them into a plugin,
+[17:41] which again can be done by just telling Cloud to build you a plugin.
+[17:44] It will ask you for all the skills, et cetera, you want to include.
+[17:47] And then you can add it to your library.
+[17:49] And if you want to share it, again, you can do it through a zip file
+[17:51] or by uploading it to GitHub.
+[17:54] And if you're a business and you have multiple plugins across multiple departments,
+[17:58] you can create an entire plugin marketplace,
+[18:00] which is a bundle of all your plugins.
+[18:02] Now, you'd have to create this together with Cloud Code
+[18:05] and upload it to GitHub in order to get a link.
+[18:08] Again, Entropiq released a full guide,
+[18:09] which I'll share in the link in the description below.
+[18:11] Now, if you want access to all of the skills, plugins,
+[18:14] me and my team are building out, including the infographic one.
+[18:16] You can also check out my AI accelerator,
+[18:18] my AI community, where we list them all.
+[18:20] We also do weekly AI workshops,
+[18:22] where we dive a lot deeper into these types of tools.
+[18:24] We have blueprints on how to start your business,
+[18:26] how to find your first client.
+[18:27] So if that's potentially interesting to you,
+[18:29] you can check it out in the link in the description.
+[18:31] Thank you so much for watching.
+[18:32] And if you want to learn more about Cloud Cowork,
+[18:34] you can check out the video here above.

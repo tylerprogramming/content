@@ -1,0 +1,24 @@
+{
+  "generations": [
+    {
+      "prompt": "Off-white cream studio background with subtle paper grain texture, two clean floating product cards centered horizontally in the upper-middle of the frame angled slightly toward each other with soft drop shadows beneath them. Left card is a cream-colored macOS-style window with red yellow green dots in the top-left corner showing a large orange flower-like asterisk routines icon next to the bold black wordmark routines, with three small rounded pill tags below labeled API webhook and schedule. Right card is a dark macOS-style terminal window with red yellow green dots in the top-left corner showing 6 to 8 lines of clean syntax-highlighted JavaScript or shell code with proper indentation and realistic colored keywords on a near-black background. Between the two cards in the middle of the frame floats a small hand-drawn orange plus sign or arrow connecting them. Professional man in his late 30s positioned in the bottom-right third of the frame medium crop from the chest up looking up at the cards with a warm confident half-smile in a casual dark t-shirt, soft natural studio lighting from the upper left, clean minimal composition with lots of clean breathing room across the top of the frame for headline text overlay, photorealistic YouTube thumbnail style with high contrast and sharp focus, terra-cotta orange accent color throughout.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 3,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/nick-saraev.webp"
+      ],
+      "generated_at": "2026-04-25T13:39:25.182009",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1777138652737-lo0yuuv6qzo.png",
+        "https://tempfile.aiquickdraw.com/images/1777138705204-vii54arwe7t.png",
+        "https://tempfile.aiquickdraw.com/images/1777138761418-olifdxfbdbh.png"
+      ]
+    }
+  ]
+}

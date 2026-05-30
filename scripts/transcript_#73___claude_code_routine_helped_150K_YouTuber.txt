@@ -1,0 +1,46 @@
+[00:00] I helped a 150K plus subscriber YouTuber automate her content pipeline and here I'm going to
+[00:05] show you one of them with the Cloud Code routine.
+[00:08] If you didn't know, Cloud Code routines are absolutely amazing and they're very powerful
+[00:11] and you should start using them today.
+[00:13] So here in cloud.afslashcode on the web, I have an Instagram competitor.
+[00:18] So with this routine, it's going to run every Thursday at 8 a.m. as an example.
+[00:22] It has the connectors for Appify and for Slack.
+[00:25] Okay, so here are instructions tailored for me.
+[00:27] Obviously, you would change these for what you're looking for on Instagram and certain
+[00:31] hashtags that look like Cloud Code, AI tools, AI for business, things like that.
+[00:35] Let's go ahead and look at a scheduled run so you can see the output.
+[00:38] So if we come up here, this was scheduled two days ago at 8 in the morning and what
+[00:43] it does here, a Cloud Code routine, it goes through all the instructions, connects to
+[00:47] everything like Appify and understands my Slack.
+[00:51] It does all the scraping, it tries to summarize everything.
+[00:55] That's all.
+[00:56] That's what we're seeing here.
+[00:57] This is just all it working for all of that.
+[01:00] So then it says, after it's all done, here's what was scraped.
+[01:02] So we can see that we have this Instagram handle.
+[01:06] Here are a couple of the hashtags that it liked and it came back with 30 posts for each
+[01:11] of them.
+[01:12] Here's some key findings.
+[01:13] Carousels dominate the comment, some keyword for this guide, but then some content gaps
+[01:19] that I could do better with.
+[01:21] So for instance, Cloud Code routines, which I'm talking about right now.
+[01:23] Then here are some example content that I could create for me.
+[01:29] But like I said, this also sent to my Slack channel and this is very in depth.
+[01:32] So here's the Instagram research report for me.
+[01:35] That's my handle for Instagram.
+[01:38] Here's the data scraped.
+[01:39] Here are the top five posts from the week that it found.
+[01:43] Here's a pattern summary.
+[01:44] Here's a format breakdown of why these did well.
+[01:48] So here's some trending topics for the week.
+[01:49] So co-work, code, and Cloud Design just came out.
+[01:52] I know that's going to be there as well.
+[01:55] So here's an example carousel.
+[01:57] So you slide one, slide two, three, four, five, six.
+[02:02] What the caption with.
+[02:03] Here's the hook.
+[02:06] These are ideas that were generated from a routine, meaning just a scheduled time that
+[02:11] something was supposed to run to help me out.
+[02:13] And this is going to help you out as well.
+[02:17] Comment routine in the description below and I will send you this free routine that you
+[02:20] can use today.

@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase label, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Clean minimalist style, warm Anthropic Claude brand aesthetic. Headline '4 CLAUDE CODE ROUTINES RUNNING MY BUSINESS 24/7'. Card 1 mail icon 'EMAIL TRIAGE - Every weekday 8am / Gmail connect / urgency tags / auto-drafts'. Card 2 Instagram icon 'INSTAGRAM COMPETITOR - Thursday 8am / Apify scrape / trending topics / content gaps'. Card 3 YouTube icon 'YOUTUBE IDEAS - Weekly run / keyword search / view-sorted / fresh angles'. Card 4 TikTok icon 'TIKTOK TRENDS - Weekly report / hashtag scrape / content patterns / Slack delivery'. Card 5 plus icon 'BUILD YOUR OWN - Any schedule / any connector / MCP integration / zero code'.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:35:51.673665",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776713740494-p7ukb48mks8.png"
+      ]
+    }
+  ]
+}

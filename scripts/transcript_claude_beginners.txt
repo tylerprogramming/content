@@ -1,0 +1,302 @@
+[00:00] So cloud code has been going more viral than I believe it always has been.
+[00:03] I've used it since last February, but because of this,
+[00:06] I think people are generally using it wrong. You can type a big output,
+[00:09] get messy results, and then it's easy to blame the model.
+[00:12] You probably suck at telling it what you want. There's a difference.
+[00:15] In this video,
+[00:15] I'm going to give you the exact crash course from zero to building a live app so
+[00:19] you don't have to waste so many tokens again. By the end of this,
+[00:21] you'll know how to plan properly, build feature by feature,
+[00:24] test everything and let cloud build ops for you autonomously.
+[00:29] Let's get into it.
+[00:30] So a mistake beginners can make is that they open a terminal and they take
+[00:34] something like build me a web app for saving prompts.
+[00:37] And then cloud will go off about generate a bunch of files,
+[00:39] maybe for a front end and a local storage for the backend.
+[00:42] And then you look at it and go, you know what?
+[00:44] This isn't really exactly what I wanted. Well, like they say,
+[00:47] if you put garbage in, you're going to get garbage out.
+[00:48] And the thing is the models are incredible. Now they are very good.
+[00:52] So if you don't get great output,
+[00:54] it's because your input wasn't good to begin with.
+[00:57] So if I were to tell you something like build me a prompt prompt library,
+[01:02] it will build me a prompt library, but will it have tags? Does it have folders?
+[01:06] Is it local or is it cloud? What are all the search functions that I want to have?
+[01:10] Well, it doesn't know any of that. And it might, because the models are so good,
+[01:13] it might implement something of those natures already for you without you having
+[01:18] to tell it. But I guarantee you that the more you play with it, you can be like,
+[01:22] Oh, I really wanted this. I wanted that.
+[01:23] So I'm going to show you a way to help alleviate those issues from the
+[01:27] beginning. So the question is, how do we make a great plan? Well,
+[01:31] let me show you. Okay. So the first thing is I have cloud open.
+[01:34] And what I'm going to do is I'm going to hit shift tab.
+[01:37] Now this is going to cycle until I get to plan mode. Now I'm going to type this
+[01:41] prompt, which I will have for you that you can use as well,
+[01:43] but I want to build a prompt, an AI prompt library app,
+[01:46] a local web app where I can save organized tag and search my best ad prompts.
+[01:51] Please help me create a plan, write it as a PR D markdown file.
+[01:55] And all PRD stands for is product requirements document.
+[01:59] You'll probably see it in a lot of places,
+[02:00] but it's all it's doing is it's like a guideline for the AI model to build the
+[02:05] app. And so cloud code, because I'm in plan mode,
+[02:08] it asked me some questions like what my tech stack is, what pro,
+[02:11] how should the prompts be stored?
+[02:12] What features are must haves for version one in do I want like light and dark
+[02:16] mode for now? I just want dark mode. So I'll go ahead and submit my answers.
+[02:20] Okay. So it finished. And this is the PRD that it has created.
+[02:24] So here is the overview. It kind of gave me the stack.
+[02:28] Here's the database schema. Here's a project structure that it came up with.
+[02:32] You know, it's kind of a lot. Um, here are the features. So crud,
+[02:36] the tagging system categories, folders, full text search, template variables.
+[02:41] We'll go into this, but here's all the API routes.
+[02:44] Here are some database details because I'm using SQL light.
+[02:48] Here's everything. Here's the actual PRD that it came up with. Okay.
+[02:52] So now this is even better than probably just even a month or so ago, right?
+[02:57] This has gotten really good.
+[02:58] And then we're also being able to run this locally.
+[03:00] Now we can take this one step further, right?
+[03:04] So what I'm going to do is I'm going to open up cloud code again,
+[03:06] and I want to say interview me in detail using the ask user question tool,
+[03:11] which is very powerful about technical implementation,
+[03:13] UI US concerns and trade-offs. Ask me one question at a time. Okay.
+[03:17] So now it read the PRD and it's going to start asking me a bunch of questions,
+[03:21] uh, about this. So each, so for instance, here's how we do,
+[03:24] how do we want to categorize, right?
+[03:26] So each prompt belongs to one folder or none,
+[03:28] or basically a single prompt can live in multiple different categories.
+[03:33] Let's just go ahead and do that one.
+[03:35] So now it's going to basically move on to the next question.
+[03:38] And it's going to hope what we'll do after this is we'll update the PRD
+[03:42] afterwards. So for the homepage default view,
+[03:44] how do you want prompts sorted and displayed when you first open the app?
+[03:48] So probably one recently modified first,
+[03:52] and I'm not going to go through all these questions with you,
+[03:54] but I want to go ahead and go through all these and I'll show you the PRD that
+[03:58] initially came up with, which was very good.
+[04:00] And then also with the updated one as well. Okay.
+[04:03] So we can see that it is done now.
+[04:05] It actually updated with 10 different decisions.
+[04:07] Asked me quite a few questions and kind of here are some things like for
+[04:11] instance, I don't need drag and drop ordering and such, but if we,
+[04:14] if I close that and now I look at this is the original compared to the
+[04:19] updated, you can see what it removed, what it's added. Um,
+[04:23] like there's quite a few differences to the PRD. Okay.
+[04:26] And this means that when I, when we go to create this,
+[04:29] it's going to build up more based on what I actually wanted it to.
+[04:32] And because of where I asked it to ask me more questions,
+[04:36] I kind of got a better thought or ideas of what I wanted. Okay, great.
+[04:40] Now we're ready. So what I'm just going to tell Claude to do is okay.
+[04:44] Now build one feature at a time, commit early and commit often.
+[04:47] And what it's going to do is now it's going to go through the PRD and then it's
+[04:52] going to understand what we need and then just build one thing at a time until
+[04:56] it's complete. And then we'll eventually see the end result. Okay.
+[05:00] And typically always the longest part is the first setup is like setting up the
+[05:05] project.
+[05:05] So here it's already started to set up the app with all the libraries and
+[05:10] everything that we're going to need to actually run this before it goes into
+[05:13] like actually all the features that we would see and be displayed for us to use.
+[05:18] And then now here it's actually going through all of the database.
+[05:21] So because reason is SQL lite three, we don't need a separate server.
+[05:23] It's just going to be here within the project and it's creating all of the
+[05:27] tables and everything that we need to actually save our prompts and be able to
+[05:31] have a search functionality and favorite things and all that. Okay, great.
+[05:35] So now you kind of have an understanding of how I would plan something.
+[05:39] I would have it interview me about asking more questions of what I actually want
+[05:43] with my app, because when somebody asks you questions about what you want,
+[05:46] then you kind of start thinking and come up with these ideas. Oh, you know what?
+[05:49] That sounds great. Uh, maybe I don't really want that. Okay.
+[05:51] So this is how I would plan things.
+[05:52] This is going to save you headaches in the future. I promise. Okay.
+[05:56] So I want to also explain to you skills because these are very important.
+[06:01] I'm going to briefly go over these because I already have another video that
+[06:03] goes into more detail about skills that you can watch right up here or you can
+[06:07] find the description, but just to quickly go over something,
+[06:10] whenever you build anything with Claude code, maybe not just an app,
+[06:14] but the way you build an app,
+[06:15] or let's say you want it to research about something,
+[06:18] a particular topic and you have to create a summary for you on your local
+[06:21] machine. Well,
+[06:22] you don't want to have to do the same thing over and over every time explaining
+[06:26] what you want, how you want it, what it should look like, you know,
+[06:30] and so forth, right? That, that you should not be doing.
+[06:33] So what Claude skills are is a way that you can build something once and then
+[06:39] you just tell Claude what you want again,
+[06:41] and it already knows because it created a skill for the specific action that you
+[06:46] want done. For instance, here I have a YouTube video or a YouTube folder,
+[06:50] sorry, as I'm making a YouTube video.
+[06:52] And here I had a Claude beginners file with analysis, description,
+[06:56] all these markdown files that helped me with my video creation process.
+[07:00] And what I've done is if I open Claude,
+[07:03] I have created a skill for this. So if I type slash YouTube,
+[07:08] you can see it's the ideas to plan a YouTube video inspired by reference
+[07:12] transcript, you know, for whatever I want to actually build.
+[07:17] So for instance, if I want to Claude beginner guide, I want to create one.
+[07:21] I could have some research done by transcribing YouTube scripts and then I want
+[07:27] to have my own spin on it and then I go develop something and then I will end up
+[07:30] making a video with the hooks, the script, the filming guide,
+[07:35] the analysis of those other ones.
+[07:36] So it can tell me maybe what I can improve on, et cetera.
+[07:39] And then like titles that potentially use for my video. Okay.
+[07:43] And so instead of going through the same step over and over and over again,
+[07:48] I can just use this skill to go through the whole process that I've already
+[07:52] described for it and it will then do that for me.
+[07:56] I don't have to always talk to it cause it already knows how to do that.
+[07:59] Likewise, if I created a journal skill slash journal where what it's going to do,
+[08:04] it just asked me what I've done for today and what I've done yesterday and I'll
+[08:08] just talk to it and it'll create a Markdown file based on that on my local
+[08:12] machine for that day. And when I type slash journal,
+[08:16] well look at that. I have a journal folder with guess what?
+[08:21] I have a skill Markdown file,
+[08:23] which is exactly all this is is a Markdown file.
+[08:28] Explain to Claude what I want to do.
+[08:30] I have a supporting summary file if I want to send that in an email,
+[08:34] but I don't have to do that if I don't want to.
+[08:36] I can just have this skill Markdown file and this is relatively simple, right?
+[08:39] The real thing you need is the name and the description and then it'll auto
+[08:44] generate some instructions on what this skill is, right? But like I said,
+[08:48] a video that you can watch up here that goes into more detail and we actually
+[08:52] create, you actually help,
+[08:53] I help you create your own skill so that you really understand all this is and
+[08:57] this is, this is very helpful. But as a beginner, you know,
+[09:00] once you get into this and start using these,
+[09:01] you'll really understand the value of skills. Okay.
+[09:04] So I had mentioned building projects autonomously. What does that mean? Well,
+[09:09] what I'm going to show you is something called the Ralph loop.
+[09:11] And I have a video that I'll show you right up here and also be in the
+[09:15] description where we actually, we build everything,
+[09:17] but I just want to introduce this to you as a beginner because you may not be
+[09:21] ready for this yet, but that's okay. This, you will be ready.
+[09:24] It's just repeating repetition and doing these things over and over again with
+[09:29] cloud code to be able to feel comfortable with it and then you can move on.
+[09:32] Right. But this is amazing.
+[09:33] I'm going to show you kind of what I've done already and how it works.
+[09:37] So there are some plugins that you can install.
+[09:40] So let's go and open cloud again and there are two here.
+[09:43] So I have slash PRD, this PRD,
+[09:47] it generates a what we've already done a product requirements document.
+[09:50] So for a new feature, right?
+[09:52] Uses when the planning a feature starting a new project or when asked to
+[09:55] actually create a PRD and then we have one called slash Ralph.
+[09:59] So this converts those PRDs markdown files to a Jason format.
+[10:03] So the Ralph autonomous agent system can use that and build whatever it is
+[10:08] from that PRD story by story, just like you would as an engineer.
+[10:12] And then build those features out until you have the complete app or design,
+[10:16] whatever it is that you're building.
+[10:17] And essentially this is a loop that keeps going.
+[10:20] It makes sure the tests are passing and updates in a progress text file.
+[10:24] So for instance, right here,
+[10:25] I started this in late January whenever I made the video and here are,
+[10:30] here's what it did on the first story.
+[10:33] So us dash is user one. That's just, that's just the first story.
+[10:36] And then here went moved on the second one. These are what it changed.
+[10:40] This is what it did.
+[10:42] So it went through all of this based on this Jason file that it created and how
+[10:48] it created.
+[10:48] This was just asking me questions about what I wanted to build, right?
+[10:52] So here I want to build a personal task board and it did and it went through all
+[10:58] of these stories.
+[10:59] So all of these are little stories that it created and went through one by one.
+[11:03] We know that it passed it,
+[11:04] meaning that it tested all of these little features for the story.
+[11:08] It passed them and then moved on to the next one until it built the whole
+[11:11] complete, which again, you can find that in the description as well.
+[11:14] Us going through the whole thing and we're building that from start to the end.
+[11:18] Whenever it's done,
+[11:19] I went here into my local host and now you can see here I had started this,
+[11:24] but it created this for me where I can create tasks. What I have for today,
+[11:27] I don't have anything today right now, but finishing,
+[11:31] finishing this video I'm working on and the priority is high.
+[11:36] I want this today is a 22nd and I'm going to create the task. Okay,
+[11:40] so now I have a task and today you can see that I have it here and I can also
+[11:45] change the color schemes by one dark lights, you know,
+[11:49] anything that I want to do with this. Okay, and that's great.
+[11:53] And we can go through all the dates,
+[11:54] but it created this and it asked me what I wanted to build and we went through
+[11:58] similar process planning it out and then it went through everything on its own
+[12:03] without really asking me questions along the way. It just did it for me.
+[12:06] I let it go for about 15 to 20 minutes. I came back and it was done. Okay,
+[12:09] so as this is a beginner course,
+[12:11] what I want to do is I want to share some tips with you about what you can do
+[12:15] to improve with maybe content management or context management and improve like
+[12:20] what you're doing with cloud code. Okay, so here's tip number one,
+[12:23] don't obsess over MCPs, plugins, all these extra things, right?
+[12:27] Just start with cloud code. Do what? Something that we've done here.
+[12:32] And then as you just talk with cloud code, kind of like a chat bot, right?
+[12:35] But the more you get familiar with it, you know, this is a tool, right?
+[12:39] All this is a tool just like anything else that you're going to see with AI,
+[12:43] right? Whether it's anything, whether it's another Python framework, right?
+[12:45] They're all tools to use to accomplish what we want to do.
+[12:49] So don't obsess over all the extra things yet.
+[12:52] Just get comfortable with this and then as you progress and get more comfortable,
+[12:56] then move on to understanding MCP servers, all these plugins,
+[13:00] then start working on some skills that'll really help you out. Okay?
+[13:03] And tip number two, use plan mode. Okay. As we did earlier,
+[13:07] plan mode really help you out before it just starts writing code because as you
+[13:12] write code without planning something,
+[13:14] it has a lot of things to sift through as you want to use more context,
+[13:17] use more tokens, and then as it does that,
+[13:20] it could potentially make some more mistakes.
+[13:22] But if you do everything in the beginning,
+[13:24] you're going to have a better chance in the future to build on top of something
+[13:26] that is already working well and we know that it's been tested. Okay.
+[13:31] Tip number three, treat this like an engineer,
+[13:34] like a senior software engineer.
+[13:35] Don't treat it like it's something that's magic. Okay?
+[13:37] Because if you treat it like it's magic, then it might do some magical things,
+[13:42] but you don't understand what it's doing.
+[13:43] And it's also a lot of times not going to do what you actually want it to do.
+[13:47] So be specific with what you want to do. So include your prompting,
+[13:51] any inputs that you have. As I already mentioned, use plan mode,
+[13:54] but you can also just use chat CPT or something to help you create a prompt for
+[14:00] you just by describing and say, Hey,
+[14:01] give me some more details on what you think and then copy paste it over here
+[14:05] into flawed code. Okay. You can do something like that as well.
+[14:07] And for the last tip, clod code,
+[14:10] you will run into the context management. So at some point it'll say, Oh,
+[14:14] you're using up a high percentage of what you can use within this clod with
+[14:19] clod code session, right? When you open up something, it is a session.
+[14:23] So what you can do is you can say slash clear.
+[14:25] This is going to clear the whole conversation and free up a lot of context or
+[14:30] all of it. Or you can say slash compact,
+[14:33] which will keep a summary of the context.
+[14:36] So it'll reduce the percentage of what it knows about what you're building
+[14:40] within the session. But you know, it won't clear everything up.
+[14:44] So we'll have a summary. Plus you can still keep going on with this current
+[14:47] session. Okay. So I had a couple of things. It was, um, there was,
+[14:50] I already had another local server running that I forgot. So once I killed that,
+[14:53] and now I, the dev server is running here.
+[14:55] Now we can come here and look, this is what it is. So I had it give me,
+[15:00] uh, already like kind of just create some prompts, right?
+[15:02] So whenever it does that it comes here to open something on the right hand side
+[15:06] so that you can just basically copy and paste this.
+[15:08] So here are some template variables. Um,
+[15:11] I can do copy as text or markdown so I can put like code to review the language
+[15:16] and then the actual code and then that will be the prompt. Okay,
+[15:20] so good. And then I don't have any favorites yet.
+[15:23] So let me try the favorites on this so you can favorite that one,
+[15:27] this one and this one. Now if I go to favorites, cool.
+[15:31] They, I assume those are the ones that actually did, but here are categories.
+[15:34] So I then wanted to go two levels deep. So if I have coding,
+[15:36] then I can only do code review and debugging. Same thing for writing,
+[15:39] blog posts, social media and so forth. So when I open these again,
+[15:42] they come over here on the right hand side. Okay. I could also see if I can edit
+[15:47] these come in here. I could change the category, add more tags, uh,
+[15:52] that update that. Okay, awesome. Then if I want to search code,
+[15:56] that was kind of a little laggy. So, but I would like kind of fix that. Right.
+[16:00] And then what, so where's,
+[16:06] Hmm. Okay.
+[16:06] So it looks like some of the searching functionality I have to maybe fix a
+[16:11] little bit. Okay. I wasn't,
+[16:12] maybe it wasn't very specific about how I wanted to be searched.
+[16:14] So I don't want it to, uh, I don't want it to like go to a different screen.
+[16:18] I want it to just stay on that screen and just filter within that screen.
+[16:21] Right. I don't like that it goes to a separate, separate page, but okay,
+[16:24] that's fine. That's something that I can fix, right? That's not a big deal,
+[16:28] but this is the app that I promised that I would show you at the very end.
+[16:31] So this was kind of your crash course for Claude coach showed you what you can
+[16:36] do as a beginner and then kind of what to look forward to with other videos that
+[16:40] I have made that are a little bit more advanced once you get comfortable. Okay.
+[16:44] Thank you for sticking around.
+[16:45] All this will be if you want more information in my free school community down
+[16:48] in the description below. Okay. Thank you for watching.
+[16:51] Here are some more videos for you to watch right now.

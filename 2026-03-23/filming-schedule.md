@@ -1,0 +1,101 @@
+# Filming & Editing Schedule — Week of March 23, 2026
+
+---
+
+## Tonight — Monday March 23 (Film Everything)
+
+**Goal: Film all 5 shorts in one session (~45 min)**
+
+Setup once, film in order below:
+- Clean desk, ring light on
+- Teleprompter app loaded with scripts from `~/content/youtube/shorts/2026-03-23/shorts.md`
+- Screen recording software ready (needed for Shorts #3 and #5)
+
+### Order to film:
+
+| # | Short | Format | Est. Time |
+|---|-------|--------|-----------|
+| 1 | Context Rot | Talking head | ~5 min |
+| 2 | The One File (CLAUDE.md) | Talking head + screen flash | ~5 min |
+| 4 | 3 Types of Memory | Talking head | ~5 min |
+| 5 | Stop Retyping | Talking head + screen | ~8 min |
+| 3 | Slash Commands Demo | Screen recording | ~10 min |
+
+*Talk head shorts first, screen recording last — one context switch is easier than five.*
+
+**Total filming: ~35-45 min**
+
+Also today:
+- [ ] Upload Channels long-form to YouTube (set to public, add description + chapters)
+- [ ] Post Channels content (X thread, LinkedIn, Instagram carousel, YT Community)
+
+---
+
+## Tuesday March 24
+
+**Morning:**
+- [ ] Edit Short #1 (Context Rot) — ~20-30 min
+- [ ] Upload to YT Shorts, TikTok, Instagram Reels with captions from `captions.md`
+- [ ] Post LinkedIn (linkedin-tuesday.md)
+
+---
+
+## Wednesday March 25
+
+**Morning:**
+- [ ] Edit Short #2 (The One File / CLAUDE.md) — ~20-30 min
+- [ ] Upload to YT Shorts, TikTok, Instagram Reels
+- [ ] Post Instagram Carousel: 3 Types of Memory (`instagram-3-types-memory.md`)
+- [ ] Post LinkedIn (linkedin-wednesday.md)
+
+---
+
+## Thursday March 26
+
+**Morning:**
+- [ ] Upload Remote Control long-form to YouTube (set to public)
+- [ ] Post Remote Control content (X thread, LinkedIn, Instagram carousel, YT Community)
+
+*No shorts today — long-form release day.*
+
+---
+
+## Friday March 27
+
+**Morning:**
+- [ ] Edit Short #3 (Slash Commands Demo) — ~30 min (screen recording edit)
+- [ ] Upload to YT Shorts, TikTok, Instagram Reels
+- [ ] Post Instagram Carousel: CLAUDE.md (`instagram-claude-md.md`)
+- [ ] Post LinkedIn (linkedin-friday.md)
+
+---
+
+## Saturday March 28
+
+**Morning:**
+- [ ] Edit Short #4 (3 Types of Memory) — ~20 min
+- [ ] Upload to YT Shorts, TikTok, Instagram Reels
+- [ ] Post LinkedIn (linkedin-saturday.md)
+
+---
+
+## Sunday March 29
+
+**Morning:**
+- [ ] Edit Short #5 (Stop Retyping) — ~25 min
+- [ ] Upload to YT Shorts, TikTok, Instagram Reels
+- [ ] Post LinkedIn (linkedin-sunday.md)
+
+---
+
+## All Content Files
+
+| File | Location |
+|------|----------|
+| Short scripts | `~/content/youtube/shorts/2026-03-23/shorts.md` |
+| Short captions (all platforms) | `~/content/youtube/shorts/2026-03-23/captions.md` |
+| Instagram carousel: 3 Types of Memory | `~/content/youtube/shorts/2026-03-23/instagram-3-types-memory.md` |
+| Instagram carousel: CLAUDE.md | `~/content/youtube/shorts/2026-03-23/instagram-claude-md.md` |
+| Channels social posts | `~/content/youtube/claude-code-telegram-channels/social/` |
+| Remote Control social posts | `~/content/youtube/claude-code-remote-control/social/` |
+| Standalone LinkedIn posts | `~/content/2026-03-23/` |

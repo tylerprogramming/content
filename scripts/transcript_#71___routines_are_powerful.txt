@@ -1,0 +1,29 @@
+[00:00] Claude routines are very powerful and I'm about to show you why.
+[00:03] If you go to claude.ai slash code, you will now see there's a new tab for routines.
+[00:08] If we click routines, you can now see any routine that you have created.
+[00:12] And I've created some for email triage, Instagram competitor, weekly YouTube
+[00:16] videos, and also TikTok trends.
+[00:18] So if we go into one like TikTok trends, you'll see, we have the name of it.
+[00:22] The next run is April 20th at 9am.
+[00:24] It repeats every Monday at 9am Eastern.
+[00:28] I have connectors for Appify and Slack.
+[00:30] And then also here are the instructions, basically the prompt that I have
+[00:34] for what or how it should execute.
+[00:37] If we look at an example run, it's going to take the instructions.
+[00:40] It's going to execute everything that it's supposed to.
+[00:43] And then finally, in this case, it's going to send a report to my Slack channel.
+[00:47] So here it had, it said the report sent here's the biggest story.
+[00:50] So Claude design, which I'll do something about.
+[00:52] Here's the top video covering that with TikTok covering routines.
+[00:57] And so now if I go to Slack here, it sent the weekly Claude TikTok trend
+[01:01] report with the top videos, what's dominating the best hook patterns in
+[01:07] this week's priority content that I could potentially talk about.
+[01:11] This is all running in Claude codes, web infrastructure, meaning that
+[01:15] your computer doesn't have to be on, it's going to run regardless.
+[01:19] And that's why routines are going to be so powerful and you can have
+[01:22] lots of different connectors, basically connections to outside things like
+[01:26] your Gmail, your calendar, Slack, Appify, linear, anything, all of these
+[01:32] can be connected and you can essentially have it run something every day,
+[01:36] every hour, whatever it is for you using Claude on the web, comment
+[01:41] routine down the description, and I'll go ahead and give you a link to my
+[01:43] free routines you can use, including the TikTok one today.

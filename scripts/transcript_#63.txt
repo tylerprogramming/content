@@ -1,0 +1,24 @@
+[00:00] Step one, generate the person with Nano Banana Pro.
+[00:02] I'm going to type a description here of a professional woman in her late twenties,
+[00:05] natural lighting, holding a white coffee mug, soft smile, clean background,
+[00:08] UGC style, iPhone selfie angle.
+[00:11] I want this to be vertical format, 2K resolution and PNG.
+[00:14] I'm going to click run.
+[00:15] And it comes up like this, a really good and crisp image.
+[00:17] Now for step two, I want to drop that image into Kling 3.0.
+[00:21] So here I want to simply drag into the start frame of this video.
+[00:25] I want there to be sound.
+[00:26] And for the prompt, we are going to make this,
+[00:29] which we can be very explicit about, but look, she looks at the camera,
+[00:33] picks up the coffee mug, takes a sip, smiles, and then nods approvingly
+[00:37] with natural handheld camera movement again in UGC style.
+[00:40] So there will be sound as she will be talking as well.
+[00:42] And I think I just want this to be for 10 seconds.
+[00:45] Morning coffee just hits different.
+[00:46] Doesn't it seriously, this is the perfect start to my day.
+[00:50] This was done in about five minutes.
+[00:52] A real UGC creator would have cost several hundred dollars.
+[00:55] And this could take it a lot longer.
+[00:57] Say this before you spend more money on a UGC creator comment, add, and I will
+[01:02] give you the full breakdown of my workflow, including the Claude code skills.
+[01:06] Make this work.

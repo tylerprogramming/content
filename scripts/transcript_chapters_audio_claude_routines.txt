@@ -1,0 +1,393 @@
+[00:00] Everybody's saying Clawed Routines killed N8N, they're wrong.
+[00:03] And that's not even the story.
+[00:04] The story is how do Clawed Routines work with Clawed Co.
+[00:07] And I'm not saying it's a game changer, but Clawed Routines are power.
+[00:10] I built hundreds of AI agents and automations for Fortune 500 companies
+[00:14] like JPMorgan and Pfizer, running entire content pipelines with YouTubers
+[00:17] over 150,000 subscribers and top school communities.
+[00:21] I've already started integrating Clawed Routines with them.
+[00:24] So when Anthropic dropped Routines, I was in danger.
+[00:27] I'm going to show you exactly what Routines are.
+[00:29] I'm going to walk through two examples of what I have currently running,
+[00:32] and then we'll build a live one from scratch.
+[00:34] After that, I'll show you Clawed Co.
+[00:36] running on my local machine and give you the differences
+[00:38] and how we can actually create a routine from Clawed Co.
+[00:41] on your local machine through the CLI.
+[00:44] By the end, you'll know how to use Clawed Co.
+[00:46] with Clawed Routines and just how powerful they are.
+[00:49] Let's get into it.
+[00:50] And by the way, everything will be here in my free school community.
+[00:52] You can join in the description below.
+[00:54] So let's just go and dive in.
+[00:55] I'm going to show you the first of two examples of how this can work
+[00:59] and work for you.
+[01:00] So if you go to Clawed.ai.new, just sign in.
+[01:04] On the left hand side here, just look for Clawed Co.
+[01:07] So if you click this, it opens up a new tab.
+[01:11] And then in the top left, you can see there is a Routines.
+[01:13] So once you click that, I have a few here already.
+[01:17] Now, you can also click Calendar.
+[01:18] It's going to show you when the next ones are supposed to be scheduled for the week.
+[01:23] But we'll get to that and why that's there.
+[01:25] But let's go ahead and look at email triage,
+[01:27] because I think this is one that you can use right now.
+[01:30] So if we come in here, this is what a routine looks like.
+[01:33] And it's not too complicated.
+[01:35] So we have the when it repeats.
+[01:37] So every weekday at 8 a.m.
+[01:40] Eastern.
+[01:41] Here are the instructions.
+[01:42] This is just the prompt.
+[01:43] These are instructions that it's going to follow, that I want it to follow for me.
+[01:46] These are kind of basic.
+[01:47] Here are the connectors.
+[01:48] So this is how, what do we want Clawed to connect to outside of Clawed so that I
+[01:54] can access things for it to perform these actions?
+[01:57] Well, here is Gmail.
+[01:59] That's the only one I need this to connect to because I want it to do things with my
+[02:03] email.
+[02:04] And then down here on the runs, this shows you when it's ran.
+[02:08] So yesterday it ran at 8.16, the day before at 8.17.
+[02:11] And this one, when I first created it on the 15th, it was a manual because you can
+[02:15] try it now by at the top right, there is a run now button.
+[02:18] This just allows us to run it right now.
+[02:20] Let's go and look at the results when it ran two days ago.
+[02:25] So if we come up here, you know, it takes the instructions and then it kind of goes
+[02:29] through everything here.
+[02:30] It said it found 30 plus unread emails here.
+[02:33] It categorized them, my urgent, action needed, FYI.
+[02:38] And then these are kind of like low priority.
+[02:40] And then it gave me a summary of actions to take.
+[02:43] All right.
+[02:43] Now, even if it takes you 30 minutes a day to look through emails, which I know some
+[02:47] people takes a lot longer, you know, this was done in just a couple minutes for me.
+[02:51] All I had to do was open this up and it was there.
+[02:53] You can also send this to like your Discord, Slack, and there's other things
+[02:56] this can be sent to, but this took a couple minutes.
+[02:59] And so if it saves you hundreds of minutes a week, that is already a plus,
+[03:05] right?
+[03:05] And it can also draft emails based on ones that it believes are more important.
+[03:11] So if we come back, that's when it ran.
+[03:13] That's essentially what a routine is.
+[03:17] We're gonna look at another one that has some different connectors, but this is
+[03:21] kind of the power.
+[03:22] I didn't have a computer run that we've had to kind of use with the looping
+[03:26] skill.
+[03:26] I didn't have it on.
+[03:27] It just ran for me.
+[03:28] I could come in here, log in and see it whenever I wanted to.
+[03:31] So if we go back to all routines, let's look at the next one.
+[03:35] So this is an Instagram competitor.
+[03:37] This runs every Thursday at 8am.
+[03:39] As an example, the connectors are Appify and Slack.
+[03:42] So it's this time, whenever it does everything, it's going to send me
+[03:46] everything in Slack as well.
+[03:48] But I could come in here and look at it too.
+[03:50] Again, here are the instructions.
+[03:52] Here's when it ran.
+[03:54] So if we go ahead and look at April 16th, this is it running.
+[04:00] Just kind of going through everything.
+[04:02] At some point, it found 114 posts just from hashtags.
+[04:05] But after it did all this analysis, it's all done.
+[04:09] Here's a summary.
+[04:09] So this is what was scraped.
+[04:11] Here's some key findings.
+[04:12] You know, carousels are doing very well.
+[04:14] You know, everybody says comment, Claude for the free guide in the, and I'll
+[04:19] send you a link, right?
+[04:20] All that kind of stuff, right?
+[04:21] Then here's a content plan that it gave for me.
+[04:25] But this also, like I said, sent to my Slack.
+[04:29] So if we go over to Slack, we can see here that this was it right here.
+[04:34] So this was April 16th at 8 or 9, so about nine minutes after the time
+[04:40] that it's supposed to start at 8.
+[04:41] Here's a research report for Code with Tyler.
+[04:44] That's my handle.
+[04:46] Here are the top five posts for the week based on what I searched.
+[04:49] So here's a pattern summary, format breakdown, you know, with the
+[04:52] carousels, reels, and so forth.
+[04:54] So it just gives me also a weekly content plan that I can use.
+[04:57] I mean, I know I'm kind of like just scrolling down through this, but here's
+[05:00] some training topics to jump on for the week.
+[05:03] But this is just an example of, you know, you can pay a social media
+[05:07] manager starting $1,000 a month, depending on, you know, the better
+[05:12] they are, obviously the more they're going to cost, but this can help you
+[05:16] figure out what's working and what you can do, and the nice thing is you can
+[05:20] easily iterate over, hey, after I see the analytics of this week, here's
+[05:25] what did seem to work well for me.
+[05:26] Let's figure out again what we can improve on, right?
+[05:30] By doing some more research, right?
+[05:32] This is what makes it so powerful.
+[05:33] And this just costs cents to do, right?
+[05:35] It didn't, it hardly cost any money.
+[05:36] Now with that said, let's go ahead and create our own routine from scratch.
+[05:41] Okay.
+[05:41] So I'm going to show you how we can do that.
+[05:43] So now we're back at the routines, like where all of our routines
+[05:46] are at the top, right?
+[05:48] You can click plus new routine.
+[05:50] Then we're going to give this a name.
+[05:51] So I'm going to say we weekly, uh, YouTube video ideas.
+[05:57] Again, this is a prompt.
+[05:58] This is just a simple prompt.
+[05:59] You chat to BT cloud, whatever you want to use to give it an idea and
+[06:03] tell it to you come with a prompt.
+[06:05] This is just something that is very basic, of course.
+[06:07] So then for selecting a trigger, I want to schedule this.
+[06:10] So I want it to be weekly.
+[06:12] So every Sunday, uh, let's do, let's do 7 a.m.
+[06:16] So that by the time that I'm able to see this, it's already here.
+[06:20] I'm going to click add trigger.
+[06:22] And so now I have it running every Sunday at 7 a.m.
+[06:25] Now for the connectors, you know, for this one, I'm going to use Appify.
+[06:29] I don't need Excalidraw.
+[06:30] I don't need Gmail.
+[06:31] I don't need calendar.
+[06:33] I could keep Slack.
+[06:34] You could do, you could add more to this if you wanted.
+[06:36] Um, but this is all I need for now.
+[06:39] Okay.
+[06:39] So then all I'm going to simply do is I'm going to say create, and here it is.
+[06:45] That was a routine.
+[06:46] Very simple, right?
+[06:47] But let's go ahead and run this to see how it works.
+[06:51] Okay.
+[06:51] So I'm going to click run now.
+[06:53] Now it's in progress.
+[06:54] So now this is the run.
+[06:55] I know it's going to take a few minutes to get started.
+[06:57] So while that's happening, you may be wondering, well, where are
+[07:01] these connectors coming from?
+[07:03] Like, how do we, how do you just select these connectors?
+[07:05] Cause you probably won't if you haven't done this before.
+[07:08] So at the bottom left, you see your account.
+[07:11] If you go to settings, I'm going to open it up in a new tab here.
+[07:16] So basically anywhere you're at top, bottom left, go to your settings.
+[07:19] Then you can see connectors here on the left-hand side.
+[07:22] Here they are.
+[07:23] Right?
+[07:23] So I have a few here that I've already configured, but let's say I don't have
+[07:28] any, I can go to browse connectors on the top, right?
+[07:32] And then here I can select them.
+[07:34] So let's say I want Google drive, right?
+[07:36] So I'm going to click the plus sign for Google drive and it's automatically
+[07:41] going to go to the sign in page for Google drive, right?
+[07:43] So I'm going to just sign into my drive account, click continue, continue again.
+[07:50] It's going to take a second.
+[07:51] And now I have Google drive right here, right?
+[07:54] This is, this is now Google drive that I can choose as a
+[07:57] connector for whatever I want.
+[07:59] I can also configure this and then say, Hey, you need like, here are the signs,
+[08:05] I can always allow it to download file or always ask for approval, right?
+[08:10] So I can also just say, always allow, always allow, right?
+[08:15] I can just say always allow here, right?
+[08:17] So they can get file data, list files, read, search,
+[08:20] create, or download file content.
+[08:22] Those are really the only ones that you honestly need.
+[08:25] Okay.
+[08:25] But now this connector is available to choose from.
+[08:29] So if I come back to my weekly YouTube videos, go to edit the
+[08:33] routine, little pencil icon and go to add connector, I can now actually,
+[08:39] I don't think, Oh, I didn't refresh it.
+[08:41] Let me refresh the page.
+[08:42] Sorry.
+[08:43] Let me do that.
+[08:43] Cause that was, didn't have that yet.
+[08:45] So if I go to edit it, go to connector and now you can see drive is
+[08:51] available because I added that connector.
+[08:53] So I don't need it here.
+[08:55] So I'm trying to click cancel, but let's go into the run and see where it's at.
+[09:01] Okay, cool.
+[09:01] So it looks like it loaded, it kind of did everything it needed.
+[09:05] Um, Oh, there's no, I don't have a YouTube ideas channel, but actually finished.
+[09:10] Uh, I want to say, send this to the AI Slack channel so you can still
+[09:16] continue the chat with it, right?
+[09:17] Just cause it does something doesn't mean it has to stop there.
+[09:19] You, I can continue to chat with it.
+[09:21] And so it didn't find, it didn't find a channel.
+[09:25] I didn't give it, I didn't give the instructions to go to a specific channel.
+[09:28] So I tried to find one.
+[09:29] It couldn't find one based on what it was looking for.
+[09:31] So I'm going to say, send this to the AI Slack channel and here it goes.
+[09:35] Here is Senate, the top YouTube video ideas in the last seven days.
+[09:38] Here are the 15 top videos.
+[09:40] You'll probably notice some, there's some people there.
+[09:44] Uh, here's some patterns that I've done well.
+[09:46] And here are five ideas that it's given me.
+[09:51] Right.
+[09:51] And I can use that and I can go with that and I can do some more research, but that
+[09:56] took, I mean, that took just minutes, right?
+[09:58] So if we come, uh, where are we at?
+[10:00] We're right here.
+[10:01] So that took just minutes to do, and I barely had to spend anything on it.
+[10:05] Right.
+[10:06] And now I can have to do it every day, you know, every couple of weeks, whatever
+[10:10] you want to do, and you can even do way more than this.
+[10:12] Okay.
+[10:13] Now I want to transition a little bit into just talking about cloud code and go
+[10:17] through, and I just want to explain some things for you.
+[10:19] So there's no confusion.
+[10:20] Okay.
+[10:20] So cloud code is a tool built by cloud.
+[10:25] We've been using cloud code CLI that I want to show you here in a couple
+[10:28] of minutes to run anything.
+[10:30] So if you created skills before you create them with the cloud code CLI on your
+[10:35] machine, you create the skills, which are just markdown files, and it runs things
+[10:39] for you.
+[10:40] You can also create, you also can create coding Python files, any coding file to
+[10:44] help aid it along the way as well.
+[10:46] We've been doing that.
+[10:48] And whether you're a developer or non-developer, cloud code can create those
+[10:51] for you.
+[10:52] Okay.
+[10:52] So now with loops slash loops, that's a skill where it would do something for you
+[10:57] for a week before it expired and you have to do it again, but it could do, it can
+[11:00] run any of your skills for you or anything you wanted to do.
+[11:04] Now with routines, this is on the web.
+[11:07] So it's like scheduling something, but it's always running.
+[11:10] It's always available.
+[11:12] And when it hits the time it's supposed to be scheduled, it'll go ahead and run
+[11:15] it, regardless of whether your computer is on or not.
+[11:18] What I'm going to show you is how you can actually create routines from cloud code
+[11:23] as well.
+[11:24] But I will say that with cloud code on your machine, you can access all of your
+[11:28] local files, which I have personally taught a YouTuber with over 150,000
+[11:33] subscribers.
+[11:34] She uses a lot of my cloud code skills for her content pipeline that has now
+[11:40] saved her hours per week.
+[11:43] And actually one of her videos just went viral from that and which has fun, which
+[11:48] she has a funnel for, and it's helping her actually make a lot of money.
+[11:52] Okay.
+[11:52] And so cloud code I think is still number one, but I'm going to start
+[11:58] transitioning things to cloud code routines in the web that I don't actually
+[12:02] need it for.
+[12:03] And I think that it could do better because there are still some things I want
+[12:06] run, you know, I want it on a schedule, but I don't want it to be run on my
+[12:10] computer.
+[12:10] So it has to be on all the time.
+[12:12] Okay.
+[12:12] So let me go ahead.
+[12:13] Let's go and transition into cloud code on the machine.
+[12:17] I do want to show you how you can schedule routines using cloud code on your CLI.
+[12:24] Like many of us have been using.
+[12:26] Okay.
+[12:26] So one thing, this actual video, as you can see here, these are the cloud
+[12:32] routines content system.
+[12:33] This is, I've had it use my content system to come up with a structure and
+[12:39] everything.
+[12:39] So using Dan Martell's structure, using Nick Saray of some of his, like what he
+[12:44] did with his video recently, a few days ago, I'm a little behind when actually
+[12:48] coming out with this, but what I want to then do, let me start over.
+[12:54] I didn't like that.
+[12:55] I don't know why I said that.
+[12:56] Okay.
+[13:00] So what I did was I said, can you create a schedule for every Monday at 9
+[13:04] AM that looks up cloud code keywords on TikTok and then send a summary of
+[13:07] what's trending and also real ideas for me.
+[13:10] Use the Appify MCP server as well.
+[13:12] So it says it's going to use the schedule skill, right?
+[13:15] A lot of these things you can just talk with natural language.
+[13:17] You don't have to be so specific whenever you're saying it.
+[13:20] So it, it did that it's, you know, upload loaded the skill schedule here
+[13:24] is an example of what it said it would do.
+[13:28] So here are the MCP connectors, Appify and Slack, which is what I do want it to use.
+[13:32] Here's just a prompt, which is fine.
+[13:36] Uh, so every Monday at 9 AM, I said, yes, that works.
+[13:42] And what it did is it created this schedule successfully for me.
+[13:47] So I can say, want to run as a test now or wait until Monday.
+[13:51] Let's go ahead and run this as a test now.
+[13:56] Okay.
+[13:56] So let's see, let's go ahead and see what this does and what this returns.
+[14:00] And then I'll show you where this is actually as a routine.
+[14:05] But what do you notice?
+[14:07] It says running now, the remote agent is scraping TikTok.
+[14:10] You can watch the progress and expect it to take three to eight minutes.
+[14:14] So it says, watch the progress.
+[14:16] So if I were to come here, copy this, this is actually going to take me to
+[14:23] routine, clog routines on the web.
+[14:25] Now let's take a look.
+[14:36] Okay.
+[14:37] So I'm going to paste this in and what it's going to do is going to take me to,
+[14:42] Oh, look at that.
+[14:43] It created a routine for me.
+[14:45] And so this is the weekly clod TikTok trend analysis that runs every Monday at
+[14:50] 9am, but you can see we just ran this just a couple minutes ago, ran this
+[14:54] manually and here it is actually running it and it has the connectors here as well.
+[14:59] So if I click on this, as you can see, it's, it's running currently, which is
+[15:04] great, but this means that we can also create routines using the clod code CLI
+[15:09] because as you saw, it will go ahead and create it here on the web for us.
+[15:13] Now, what I'm going to say is like I had mentioned previously, this assumes that
+[15:20] the connector has to exist on clod on the web and now they're going to be keep
+[15:25] adding more, right?
+[15:26] So I don't want to tell you what works best and what, what, what is better
+[15:30] because this using routines on the web is going to be amazing with that said, with
+[15:36] a specific YouTuber that has over 150,000 subscribers, I taught her how to use
+[15:41] clod code with all of the connectors that I have, right?
+[15:45] And so some of those things it doesn't have, right?
+[15:49] So create for thumbnail generation, I have it connected to a specific API,
+[15:53] which doesn't exist here as a connector, right?
+[15:56] And that means that there's an API key that has to exist somewhere.
+[16:00] And so she just still uses all of that.
+[16:04] And also on the CLI, as it goes through step-by-step for her content creation,
+[16:09] which used to take hours now just takes minutes, it asks her questions along the
+[16:13] way, and she can save specific video and title frameworks on her local machine.
+[16:19] It'll ask based where those are.
+[16:21] Now, there are ways that we could do this on the web, right?
+[16:24] And once things get better and progress, then I'll probably migrate over.
+[16:28] But for now, in my opinion, I do think clod CLI is really great for developers
+[16:33] still, but this is definitely going into the right direction.
+[16:39] I just really want to say that this is definitely a step into the right
+[16:42] direction because the loop command only runs on your local machine.
+[16:47] This is for anything that you want to do on the web.
+[16:54] Okay.
+[16:55] So it's sending, right?
+[16:57] It has some issues.
+[16:59] Slack has some issues with the way it handles like emojis or some markdown,
+[17:04] but it's sent to my DM first, right?
+[17:07] But it also, I just asked it to also send to AI.
+[17:09] So here is the weekly clod TikTok trend report, right?
+[17:13] So top videos by views this week, what's dominating clod design, that I just
+[17:20] mentioned, best hook patterns this week, X just killed Y, blah, blah, blah.
+[17:24] And then here are some priority content.
+[17:27] Okay.
+[17:27] So this is great.
+[17:28] This is going to definitely give me some examples of what I can do to
+[17:32] basically help me progress further, right?
+[17:35] And this took seconds.
+[17:36] Well, it actually took a few minutes.
+[17:38] Let's be honest.
+[17:38] It took a few minutes, but it took pennies to do this, right?
+[17:41] It didn't have to pay anybody to do this and do all this other research.
+[17:44] It did it for me very, very quickly.
+[17:47] And that is what is really going to help you save money and make money, but
+[17:51] also save time, right?
+[17:52] And really progress you in your business.
+[17:54] Okay.
+[17:55] So let's just recap, right?
+[17:56] So clod code loops are what a lot of people have been using, including myself.
+[18:01] I still use a little bit that lasts for a week on your local machine.
+[18:06] Routines are for the web, which is why they are so powerful.
+[18:09] It's very, very powerful.
+[18:11] And you can create them from clod code, or you can click create them directly in
+[18:16] the web again, if you join my school channel, I will help you grow your
+[18:21] business using AI specifically with content generation as well.
+[18:27] So they can really, I have a challenge for you.
+[18:29] I wanted you to pick one thing, one thing that you can automate or that
+[18:33] you can do to make your life better.
+[18:34] Even if it just saves you 30 minutes, even 15 minutes a day, think over a week,
+[18:38] say 30 minutes, that's 210 minutes over a week that you've saved
+[18:42] with one simple automation.
+[18:44] Okay.
+[18:44] It doesn't matter if it has to do with what we did, their inbox triage,
+[18:48] maybe it's finding content.
+[18:50] Maybe it's doing some analysis, just on simple web research.
+[18:54] You're doing something with leads.
+[18:56] Maybe you're enriching leads, finding out who the best ones are, you know,
+[18:59] anything it is that you want to do.
+[19:01] I challenge you to do that.
+[19:03] And let me know in the comments what you're doing to help you improve, but
+[19:07] also join my school community where I am helping businesses use AI to make money,
+[19:12] save money, and of course, save time so that you can have that back to
+[19:15] reinvest in yourself and your business.
+[19:17] And in the meantime, watch these videos and I'll see you next time.

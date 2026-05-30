@@ -1,0 +1,63 @@
+{
+  "topic": "AI video workflow with Nano Banana Pro, Claude Code, and Seedance 2.0",
+  "handle": "@tylerai_dev",
+  "brand_text": "AI",
+  "slides": [
+    {
+      "type": "cover",
+      "headline_lines": ["I make AI", "videos with", "3 tools"],
+      "accent_words": ["3 tools"],
+      "subtitle": "Nano Banana Pro + Claude Code + Seedance 2.0 changed everything"
+    },
+    {
+      "type": "pain",
+      "headline_lines": ["Still making", "videos the", "hard way?"],
+      "accent_words": ["hard way"],
+      "bullets": [
+        "Hours editing footage manually",
+        "Generic stock visuals that flop",
+        "No system, just random posting",
+        "Video production costs too much"
+      ]
+    },
+    {
+      "type": "solution",
+      "headline_lines": ["The fix:", "an AI", "video stack"],
+      "accent_words": ["AI"],
+      "subtitle": "3 tools handle images, scripts, and video end-to-end",
+      "bullets": []
+    },
+    {
+      "type": "how",
+      "headline_lines": ["The 3-tool", "workflow"],
+      "accent_words": ["workflow"],
+      "bullets": [
+        "Claude Code writes scripts and image prompts",
+        "Nano Banana Pro generates your visuals",
+        "Seedance 2.0 animates stills into video",
+        "Combine outputs into a finished Short"
+      ]
+    },
+    {
+      "type": "results",
+      "headline_lines": ["Real", "results"],
+      "accent_words": ["results"],
+      "bullets": [
+        "Full AI Shorts in under 10 minutes",
+        "No camera or editing software needed",
+        "Consistent branded visuals every time",
+        "Batch create 5 videos at once"
+      ]
+    },
+    {
+      "type": "cta",
+      "summary_lines": [
+        "Claude Code + Nano Banana Pro + Seedance 2.0",
+        "is the fastest AI video stack right now"
+      ],
+      "cta_action": "Comment",
+      "cta_word": "WORKFLOW",
+      "cta_subtext": "and I'll send you the full guide"
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "generations": [
+    {
+      "prompt": "Close-up of a hand holding a smartphone showing a Telegram chat interface with AI responses, dark atmospheric background, cyan and blue glow emanating from the phone screen, high contrast dramatic lighting, clean space on left third for text overlay, hyperrealistic style",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-21T11:48:16.502434",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774108091805-yckn7u0rr1.png"
+      ]
+    },
+    {
+      "prompt": "Split composition, person on left showing excited surprised expression looking right, smartphone on right side displaying Telegram chat with glowing messages, dark background with deep blue tones, neon cyan accent lighting, cinematic lighting, space for text overlay",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-21T11:49:31.714784",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774108166117-0qns023hb9tf.png"
+      ]
+    },
+    {
+      "prompt": "Split screen composition showing laptop keyboard dimly lit on left half versus bright glowing smartphone with Telegram interface on right half, dramatic contrast between dark and light, high tech aesthetic, dark background, vivid blue-green accent colors",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-21T11:51:10.001670",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774108265200-k9jxb9tr8w.png"
+      ]
+    },
+    {
+      "prompt": "Person on left side with shocked surprised wide-eyed expression looking right, mouth slightly open, pointing finger toward right side, smartphone on right side showing glowing Telegram chat interface with AI response messages, dark moody atmospheric background, dramatic red accent lighting, bold red text area space top right, cinematic high contrast lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-21T12:20:05.124319",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774109997906-ot8wt84vv9c.png"
+      ]
+    },
+    {
+      "prompt": "Person on left with shocked wide-eyed expression pointing right at a smartphone, smartphone on right shows Telegram chat app with clean readable message bubbles - one blue user message bubble saying 'check my fitness stats' and one white reply bubble with a short response, Telegram header with blue icon visible at top of phone screen, dark moody background, dramatic red accent lighting, top right corner has bold red rectangle with white text reading HOW DID WE MISS THIS exclamation mark, cinematic high contrast lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-21T12:28:34.627969",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774110511937-jincb0mbc5.png"
+      ]
+    },
+    {
+      "prompt": "Person on left with shocked wide-eyed expression pointing right at a smartphone, smartphone on right displays the exact Telegram chat interface from the reference screenshot with real message bubbles and chat layout, Telegram blue header icon visible, dark moody background, dramatic red accent lighting, top right corner bold red rectangle with white text reading HOW DID WE MISS THIS exclamation mark, cinematic high contrast lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-21T12:31:32.793811",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774110690464-ctb1tjxmdri.png"
+      ]
+    },
+    {
+      "prompt": "Person on left with calm confident slight smile expression pointing right at a smartphone, smartphone on right shows Telegram chat app with clean readable message bubbles blue user bubble and white reply bubble, Telegram header with blue icon visible, dark moody background, dramatic red accent lighting, top right corner bold red rectangle with white text reading HOW DID WE MISS THIS exclamation mark, cinematic high contrast lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-21T14:07:29.401224",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774116446013-8nxdnimg5qv.png"
+      ]
+    },
+    {
+      "prompt": "Person on left with warm natural friendly smile expression pointing right at a smartphone, smartphone on right shows Telegram chat app with clean readable message bubbles blue user bubble and white reply bubble, Telegram header with blue icon visible, dark moody background, dramatic red accent lighting, top right corner bold red rectangle with white text reading HOW DID WE MISS THIS exclamation mark, cinematic high contrast lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-21T14:07:34.651216",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774116448837-rglqk17yds.png"
+      ]
+    },
+    {
+      "prompt": "Person on left with calm confident slight smirk expression, ONE hand pointing right toward smartphone, no extra hands visible, smartphone on right held cleanly showing Telegram chat interface with blue message bubbles and white reply bubbles and Telegram blue logo header, dark moody background with deep red accent lighting on face, top right corner bold red rectangle with white bold text reading JUST DROPPED exclamation mark, cinematic high contrast dramatic lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_140630421.png"
+      ],
+      "generated_at": "2026-03-21T14:12:46.964106",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774116685465-us6wyopfmf.png",
+        "https://tempfile.aiquickdraw.com/images/1774116761856-2hm2wddtt52.png"
+      ]
+    },
+    {
+      "prompt": "Person on left with calm confident slight smirk expression, ONE hand pointing right toward smartphone, no extra hands visible, smartphone on right held cleanly showing Telegram chat interface with blue message bubbles and white reply bubbles and Telegram blue logo header, dark moody background with deep red accent lighting on face, top right corner bold red rectangle with white bold text reading ITS FINALLY HERE exclamation mark, cinematic high contrast dramatic lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_140630421.png"
+      ],
+      "generated_at": "2026-03-21T14:15:57.445927",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774116878696-h0yxji7yici.png",
+        "https://tempfile.aiquickdraw.com/images/1774116951712-jyklr2nahw.png"
+      ]
+    },
+    {
+      "prompt": "Person on left with calm confident slight smirk expression, ONE hand pointing right toward smartphone, smartphone on right showing the exact Telegram chat interface from the reference screenshot with dark background chat bubbles and message list, Telegram blue logo header visible at top of phone, dark moody background with deep red accent lighting on face, top right corner bold red rectangle with white bold text reading ITS FINALLY HERE exclamation mark, cinematic high contrast dramatic lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/telegram-screenshot.png"
+      ],
+      "generated_at": "2026-03-21T14:19:03.971785",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774117141137-ilsap1q07pd.png"
+      ]
+    },
+    {
+      "prompt": "Person on left with calm confident slight smirk expression, ONE hand pointing right toward smartphone, smartphone on right showing the exact Telegram chat interface from the reference screenshot with dark background chat bubbles and message list, Telegram blue logo header visible at top of phone, dark moody background with deep red accent lighting on face, top right corner bold red rectangle with white bold text reading JUST DROPPED exclamation mark, cinematic high contrast dramatic lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/telegram-screenshot.png"
+      ],
+      "generated_at": "2026-03-21T14:19:20.895014",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774117155458-im058iaucx.png"
+      ]
+    },
+    {
+      "prompt": "Person on left with calm confident slight smirk expression, ONE hand pointing right toward smartphone held vertically, smartphone on right shows a clean chat app interface with dark background, at the very top of the phone screen is the Claude AI orange coral starburst logo icon centered with the name Claude in white text next to it, below are clean readable chat message bubbles - one orange bubble on right saying 'check my fitness stats' and one dark bubble on left saying 'Here are your stats\\!' with clean legible text, dark moody background with deep red accent lighting on persons face, top right corner has bold red rectangle with large white bold text reading ITS FINALLY HERE exclamation mark, cinematic dramatic lighting, hyperrealistic photo style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude_logo.png"
+      ],
+      "generated_at": "2026-03-21T14:26:14.338127",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774117496115-877qz661tee.png",
+        "https://tempfile.aiquickdraw.com/images/1774117567440-c5hiuq1hpp.png"
+      ]
+    },
+    {
+      "prompt": "Keep this image exactly the same in every way \u2014 same person, same expression, same composition, same red ITS FINALLY HERE text box, same dark background, same lighting, same Claude logo header on phone \u2014 ONLY change what is displayed on the phone screen body to show the exact chat interface from the reference telegram screenshot",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_142357601_1.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/telegram-screenshot.png"
+      ],
+      "generated_at": "2026-03-21T14:30:52.678026",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774117846503-uuvzq88rgai.png"
+      ]
+    },
+    {
+      "prompt": "Keep this image exactly the same in every way \u2014 same person, same expression, same composition, same red ITS FINALLY HERE text box, same dark background, same lighting \u2014 ONLY change two things: replace the logo at the top of the phone screen with the Claude orange coral starburst logo, and display the exact chat interface from the reference telegram screenshot on the phone screen",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_141800522.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude_logo.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/telegram-screenshot.png"
+      ],
+      "generated_at": "2026-03-21T14:31:13.963667",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774117867601-k9z59ox6ulo.png"
+      ]
+    },
+    {
+      "prompt": "Remix this image keeping absolutely everything identical \u2014 same face, same expression, same lighting, same red ITS FINALLY HERE text box, same dark background, same phone position and angle \u2014 the ONLY change is the phone screen content: show a clean dark-mode chat interface with the Claude orange starburst logo at top, then 3 clearly readable chat message bubbles: first bubble says 'run my fitness report', second bubble says 'Checking now...', third bubble says 'Done\\! Here are your stats' \u2014 text must be sharp clean and fully legible, no distortion, no overlapping elements, simple clean chat UI",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_142944225.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude_logo.png"
+      ],
+      "generated_at": "2026-03-21T14:38:57.190801",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774118331093-edo9soma6rb.png"
+      ]
+    },
+    {
+      "prompt": "Remix this image keeping everything exactly the same \u2014 face, lighting, composition, red ITS FINALLY HERE box, dark background \u2014 ONLY update the phone screen: display a crisp sharp photo-realistic phone screen showing the exact Telegram chat from the reference screenshot, the screen should look like a real iPhone display with perfect pixel clarity, the chat messages and thumbnails from the screenshot must be sharp and undistorted, no blur, no warping, no text corruption, rendered as if photographed on a real phone screen at high resolution",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_143731437.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/telegram-screenshot.png"
+      ],
+      "generated_at": "2026-03-21T14:44:15.243959",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774118649658-h7lizy640f4.png"
+      ]
+    }
+  ]
+}

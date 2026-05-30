@@ -1,0 +1,140 @@
+{
+  "generations": [
+    {
+      "prompt": "a man with short brown hair and beard wearing a black t-shirt, positioned on the right side of the frame, slight smirk expression pointing with finger, dark moody background with blue and purple tech lighting, smartphone with glowing screen floating nearby, professional YouTube thumbnail style, high contrast, cinematic",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T19:38:46.162608",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772671124320_1oihtc.png"
+      ]
+    },
+    {
+      "prompt": "a man with short brown hair and beard wearing a black t-shirt, positioned on the left side of the frame, big genuine smile, dark charcoal background, warm orange and peach accent lighting, professional headshot style for YouTube thumbnail, high quality, looking slightly right",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T19:39:49.269253",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772671184261_37hzpn.png"
+      ]
+    },
+    {
+      "prompt": "a man with short brown hair and beard wearing a maroon v-neck shirt, positioned on the right side of the frame, friendly confident smile, dark to warm brown gradient background, professional YouTube thumbnail style, soft warm lighting on face, high quality portrait",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T19:40:55.958791",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1772671254248-pnnwy2o8uh.png"
+      ]
+    },
+    {
+      "prompt": "a man with short brown hair and beard wearing a black t-shirt, positioned on the left side of the frame, thoughtful thinking pose with hand on chin, warm orange and brown tones background, Claude AI aesthetic, professional YouTube thumbnail, looking slightly upward with curious expression",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T19:42:08.475797",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772671323055_qt3jcl.png"
+      ]
+    },
+    {
+      "prompt": "a man with short brown hair and beard wearing a black t-shirt, positioned on the right side looking excited and impressed, holding up a glowing smartphone, dark tech background with blue neon accents, professional YouTube thumbnail style, dramatic side lighting, high contrast, looking at the phone with amazement",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T19:43:54.316444",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772671429386_fean08.png"
+      ]
+    },
+    {
+      "prompt": "a man with short brown hair and beard wearing a black t-shirt, positioned on the left side of the frame, thoughtful thinking pose with hand on chin looking upward, warm orange and brown gradient background with soft glow, Claude AI branding style with sunburst logo at top, four rounded rectangle icon buttons in a row showing desktop computer, web browser, smartphone, and terminal icons, large 3D white text reading REMOTE CONTROL at the bottom, professional YouTube thumbnail composition, high quality",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T21:39:59.379147",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772678396236_ak919h.png"
+      ]
+    },
+    {
+      "prompt": "a man with short brown hair and beard wearing a black t-shirt, left side of frame, hand on chin thinking pose looking up curiously, warm orange brown gradient background, Claude AI sunburst asterisk logo top center, large 3D metallic text CLAUDE at top, four rounded square icons in a horizontal row showing monitor screen, browser window, mobile phone, command line terminal, big bold white 3D text REMOTE CONTROL at bottom, YouTube thumbnail style, cinematic lighting",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T21:41:19.685237",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772678475257_h21ivh.png"
+      ]
+    },
+    {
+      "prompt": "a man with short brown hair and beard wearing dark clothing, shocked excited expression with wide eyes and open mouth, holding up a smartphone towards the camera showing a terminal screen with code and keyboard, dark moody background with teal and cyan neon accents, terminal window floating in background, professional YouTube thumbnail, dramatic lighting, high contrast, the phone screen glows bright showing text interface",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-04T21:45:39.486590",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1772678736037_efa4dc.png"
+      ]
+    }
+  ]
+}

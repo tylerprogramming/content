@@ -1,0 +1,244 @@
+[00:00] I put this landing page in cloud design, hand it off to cloud code, and then had cloud code
+[00:05] also deployed to a production live URL.
+[00:08] So no Figma, no designer, I didn't write any front end code.
+[00:11] This video is going to show you the full end to end workflow plus what it costs because
+[00:16] there's a catch that not many people are talking about.
+[00:18] Now I've built hundreds of AI agents and automations for Fortune 500 companies, top
+[00:23] school communities, and for wonderful YouTubers helping their content system pipeline.
+[00:28] And this is something that I want you to start integrating with their systems.
+[00:32] Let's get started.
+[00:33] Well, cloud design is anthropics, new visual design tool, at least just a few days ago.
+[00:37] It is powered by the latest model, Opus 4.7, and I'm going to show you what it actually
+[00:41] does.
+[00:42] Well, you can talk to it in natural language and it can build these things for you like
+[00:45] you see here.
+[00:46] And you can also iterate over this, edit these drawings.
+[00:49] And then when you're done, you can actually hand this off to cloud code, which I want
+[00:53] to show you today.
+[00:54] Now, quick context on this.
+[00:56] It is not free.
+[00:57] You get at least the pro plan, which is $20 a month, and I'll get to a little bit later.
+[01:01] But if you're using Opus 4.7, you can burn through the token usage pretty quickly.
+[01:07] More on that later.
+[01:08] Okay.
+[01:09] So now for actually getting started.
+[01:10] But the first thing we want to do is set up the design system.
+[01:13] So I'm going to choose this.
+[01:14] The company name is going to be Tyler AI.
+[01:16] The blurb will just be, this is AI workflow for content creators.
+[01:19] And there are many things you can do here.
+[01:20] You can use a repository that you already have.
+[01:23] You can upload a fig files, or you can just add your own assets.
+[01:27] So I just took screenshots from a web app that I liked the style of, or at least we're
+[01:30] going to try for this, this one.
+[01:32] And then once you are done, you go to continue to generation.
+[01:35] It says it'll take about five minutes to generate your design.
+[01:38] Click generate.
+[01:39] Okay.
+[01:40] So here it is trying to decide what it is that I want to do.
+[01:42] So I gave it four screenshots, which you can see in the design files up here.
+[01:45] You can see the uploads that I gave, I gave over here on the left is the chat.
+[01:49] So here is where you're going to be seeing what's doing.
+[01:52] You're going to be chatting with it.
+[01:53] It's going to ask you questions.
+[01:54] You should answer them.
+[01:55] And then actually already has questions for me.
+[01:59] And then what I'm going to do here is the upload screenshots I had were like of a food
+[02:02] recipe app.
+[02:03] So but it says I did for content creators.
+[02:05] So it's right to clarify on what I want.
+[02:08] And then I want this to basically be a landing page for a three day live event that I would
+[02:12] cover.
+[02:13] And then I should have a design and simple wordmark placeholder.
+[02:17] Actually I want to design a logo mark as well.
+[02:20] And this is going to be for YouTubers.
+[02:22] So just do generalist, all of the above.
+[02:23] Then you just click continue.
+[02:24] And then you can see on the left hand side, here are all the questions that I answered.
+[02:28] So now it has a better idea of what I want.
+[02:31] It has, it's updated the to do.
+[02:33] So it's going to mark all these to do's as it goes on.
+[02:35] And this will take, this can take about five to 10 minutes depending on what it's doing.
+[02:38] But we'll come back with all the iterations that it came up with.
+[02:42] Okay.
+[02:43] So it finished everything and this is going to look different in different ways.
+[02:47] Like depending on what you're doing, you might not get this, this exact same screen.
+[02:51] Sometimes it opens up the HTML automatically.
+[02:53] Sometimes it doesn't just at least in the early stages, that's what's happened to me.
+[02:56] So what I can do is it's, it kind of, for this time it's separated everything like the
+[03:01] typing.
+[03:02] Here's like the scaling.
+[03:03] I can, you can say if it looks good or if it needs work, I can just say it looks good
+[03:07] for now.
+[03:08] Um, here's like the coloring it, it used the accent colors.
+[03:12] Here is like the workshop landing page.
+[03:14] As you can see, it's hard to see this even when it's zoomed in.
+[03:17] So I'm going to show you how you can view this better.
+[03:20] And basically all of the entities and things that make up this website, it separates them
+[03:24] into components and brands.
+[03:25] And then you can say whether you like them or not.
+[03:27] Like here's like my brand mark, um, that I can kind of, we can edit that.
+[03:32] So where this actually is located, there are some design files.
+[03:36] So if you go in the top here, go to design files, you can go, you can go to your project.
+[03:40] Here's kind of everything that you can, here's everything that it's using to, uh, so you
+[03:46] can see that preview.
+[03:47] So here, for instance, all the uploads for the screenshots that I made here is the landing
+[03:51] page.
+[03:52] So my first agent HTML.
+[03:54] So what I did was I just clicked open over here on the right, and this is, and this is
+[03:58] the actual, this actual website that you would see if you were to come view here.
+[04:03] Now I'm not super fond of the purple from what I can see here, but what there are about
+[04:08] four different ways that we can edit.
+[04:10] So we can first off do tweaks up here and I can say, we say, instead of purple, let's
+[04:17] make it blue shading, blue shades, then I get send and you can see it's going to add
+[04:23] a tweakable control now.
+[04:25] So it says add tweakable controls to your landing slash first agent HTML page.
+[04:30] So instead of purple, what it's going to do is now there will be a little slider.
+[04:34] I can turn on tweaks and I can actually change the coloring of this whole HTML.
+[04:40] Um, and I can kind of view what it view, what it would look like with these different colors
+[04:45] in line right here.
+[04:46] I can also choose edits while I'm doing this and I can, when I, when I click on edit, now
+[04:52] I can look at every little individual module and do something with it.
+[04:56] So if we scroll down a little bit, let's say I don't like this, right?
+[04:59] And then it comes up with all of the components that make up this little card.
+[05:04] So instead of this fill here, I don't know, it's going to put in a random color.
+[05:08] Oh, I literally did the same color.
+[05:11] Let's do that color.
+[05:12] Yeah.
+[05:13] One, two, three, five, six.
+[05:14] I can change the opacity of it.
+[05:16] And then on this one right here, let's say I don't, let's say I don't like yellow.
+[05:20] I can click on the color box, I can make it a red and then maybe I want the, yeah, I want
+[05:28] the text to be white, et cetera.
+[05:30] This is how you can edit individual components to the way that you like it.
+[05:34] Okay.
+[05:35] And now there's a third way I can use literally click the draw.
+[05:39] So if I come down here and let's say I want this CTA, let's say I want this, I can say
+[05:49] bigger.
+[05:52] Let's see what this does.
+[05:53] Okay.
+[05:54] So I'm going to, then we just choose send.
+[05:58] And now after I refreshed it, you can see the tweaks that we had made.
+[06:01] We want to change the background to blue.
+[06:02] Now there's a little tweaks down here where I can just simply change the brand color to
+[06:07] whatever I like.
+[06:09] So maybe I like this gray, actually the CTA accent can be, maybe I want that to be a green,
+[06:14] right?
+[06:15] Or white.
+[06:16] Nah, that's not what let's do.
+[06:17] Yeah.
+[06:18] Let's do, let's do this like pinkish red, whatever.
+[06:20] We can change the corner around this so you can see we can make the corners of these boxes.
+[06:26] But this is now that we made the tweak, we can do that and, and it also made our CTA
+[06:33] much bigger, right?
+[06:34] You just have to refresh to actually see the changes and the last way you can make an edit,
+[06:39] you can choose the comment.
+[06:40] So when you choose comment, now you can kind of select, I want to select this testimonial
+[06:44] section and say, add two more, please.
+[06:49] And then I'm just going to send this to Claude.
+[06:54] And then this will take that comment and obviously it'll, it'll do something with this and then
+[06:59] we can just refresh and we'll be able to see the updates.
+[07:02] And there it is.
+[07:03] It, I just, you just have to keep refreshing after it does something and it added two more.
+[07:08] Okay.
+[07:09] So now that we kind of have a grasp of what we can do with design now for the next step,
+[07:13] we want to hand this off to Claude code.
+[07:16] So how do we do that?
+[07:17] Well, there's multiple ways.
+[07:19] We can either chat with it because it's a skill that we can call to hand off or at the
+[07:24] top, right?
+[07:25] There's a share button and we can choose handoff to Claude code.
+[07:29] There's other ways, other ways to hand off or share, but we're going to choose handoff
+[07:32] to Claude code and look like this.
+[07:34] We can actually just copy this command.
+[07:36] I'm just going to paste this in and then press enter.
+[07:40] And what we're gonna do is we're going to see how this is actually going to work when
+[07:43] it hands it off to Claude code.
+[07:44] So first off, it's going to fetch the design file.
+[07:46] Yes.
+[07:47] Go ahead and do that.
+[07:49] Okay.
+[07:50] So it built everything.
+[07:51] It took all I needed.
+[07:52] The landing page was built right here.
+[07:53] Here are all the sections and the features that it had.
+[07:57] Here is, you know, the countdown working here's, you know, the coloring that we ended up with
+[08:03] right.
+[08:04] I went for the darker color, but I wanted the little, like the reddish.
+[08:06] Now we have this six testimonials and then we also have the bigger font that your agent
+[08:12] will build itself because everything that we tweaked here, whenever you go to share
+[08:16] it, this is what it's going to look like.
+[08:19] And this is what it looks like.
+[08:21] And it even gave us a little fabric on it built for us all as well.
+[08:26] And now what you can see is we have, we have what's ready and available to build a system
+[08:30] out of.
+[08:31] We can have it add these links.
+[08:33] If we had a domain, whatever we wanted to do, we could make this happen.
+[08:37] So the next step then is how can we build this with the live URL?
+[08:43] It just so happens that I'm going to be using a Vercel and they have an MCP server, which
+[08:48] means that always do is chat with cloud code to make that happen.
+[08:52] But first we need to add it.
+[08:53] So I'll give you the command, but it's just going to be cloud MCP add.
+[08:57] This is a Vercel.
+[08:58] So we've already added this and then I continued the conversation.
+[09:02] So now if we type slash MCP, you can come down to Vercel cause it needs authentication.
+[09:08] Authenticate.
+[09:09] Now it says I'm connected to Vercel.
+[09:11] Great.
+[09:12] So now I just want to say deploy this project to Vercel, use the production environment.
+[09:15] When it's done, give me the live URL and we'll probably go through a little bit of process
+[09:20] asking me questions.
+[09:22] But in the end it should, yes.
+[09:24] So yes, it's going to go take a little deployment for me and it should just give me a URL by
+[09:30] the end.
+[09:31] Okay.
+[09:32] Now if you run into the issue, I, it has to be index.html has to be the main page.
+[09:36] It was not.
+[09:37] So it was a four or four error, four or four error as you can see, I asked it here.
+[09:41] I got a four or four.
+[09:43] Okay.
+[09:44] Fix that.
+[09:45] Now let's try again.
+[09:46] And here we go.
+[09:47] Here is now our live URL where we went from Claude design to Claude code and now to Vercel,
+[09:55] which just hosts what we created with Claude design.
+[09:59] And now I can access this anywhere.
+[10:02] And this is, this is absolutely amazing.
+[10:05] What you can now do with this, with Claude, you basically within the Claude ecosystem,
+[10:08] which they probably want you to be, of course they want you to stay there.
+[10:12] And we went through the process together and we were able to build something and make
+[10:15] it live.
+[10:17] Absolutely amazing and powerful.
+[10:18] Okay.
+[10:19] So what I'm going to show you though, uh, some to go back to what I said about the cost.
+[10:24] Now I did a previous design and then I did a couple more and then you see the one that
+[10:30] I showed you for this video that I did from scratch.
+[10:34] Look at this.
+[10:35] Look what this did.
+[10:36] Look what this did.
+[10:37] Right.
+[10:38] So I used 91% basically for pro for full projects and I'm already at nine 91% used, you know,
+[10:48] PC world had released an article where they did it, where they use their coverage in 30
+[10:53] minutes.
+[10:54] Other people want to read it next, obviously are complaining about this.
+[10:56] Also this is kind of the one that downfalls with it.
+[10:59] It is absolutely amazing, but you are going through it very quickly.
+[11:04] Now I did use, I was using the Opus 4.7 model to show you how quickly we can go through
+[11:10] it.
+[11:11] Right.
+[11:12] And this is just kind of one of the other things about it that you should be on the
+[11:14] lookout for.
+[11:15] Get my final thoughts.
+[11:16] This doesn't, this is not like the end all be all.
+[11:18] This is not a game changer, although it has kind of shaken things up, especially with
+[11:23] Figma.
+[11:24] You have some reports that I read.
+[11:25] Um, it is amazing how we went from full design to a production loop within the cloud ecosystem.
+[11:32] Yes, but you know, everything is a tool.
+[11:35] Tools have their own place, right?
+[11:36] So, okay.
+[11:37] So cloud design turns prompts into production ready systems.
+[11:41] Okay.
+[11:42] So if you want to learn more about this, you know, join my school community description
+[11:47] below, like a subscribe.
+[11:49] And in the meantime, here are some more videos for you to watch.

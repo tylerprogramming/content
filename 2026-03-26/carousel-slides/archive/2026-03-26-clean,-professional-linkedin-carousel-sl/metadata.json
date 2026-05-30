@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Clean, professional LinkedIn carousel slide design. Dark navy blue background (#1a1f36). Large bold white uppercase text centered: 'HOW TO SET UP CLAUDE CODE IN 5 MINUTES'. The words 'CLAUDE CODE' should be highlighted in a bright blue accent color (#4da6ff). Below the heading in smaller gray text: 'The most powerful AI coding tool runs in your terminal. Here's exactly how to install it.' Simple, minimal design. No images, no icons. Page counter '1 / 7' in small text in the top right corner. Professional tech aesthetic.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-26T12:30:37.095983",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774542630280_fnm5yz.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Instagram carousel cover slide. Dark black background with colorful abstract swirl ribbon shapes in yellow, orange, and green flowing across the image. In the center, a photo of the person from the reference image, well-lit, looking at camera. Big bold white and yellow uppercase text at the bottom: MOST PEOPLE ARE SCARED TO TRY THIS. below that in yellow: CLAUDE CODE SETS UP IN 5 MINUTES. Clean professional Instagram carousel aesthetic.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-26T22:06:05.146395",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774577153803_60mkds.png"
+      ]
+    }
+  ]
+}

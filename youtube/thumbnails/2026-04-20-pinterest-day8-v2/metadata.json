@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase deliverable name, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Headline: '5 SHORT-FORM SCRIPTS FROM 1 COMMAND'. Card 1 scroll icon 'RESEARCH TO SCRIPT - From yt-search output / 5 angles chosen / hooks included / ready to film'. Card 2 caption bubble icon 'MULTI-PLATFORM CAPTIONS - YouTube Shorts / TikTok / Instagram Reels / LinkedIn variant'. Card 3 checklist clipboard icon 'FILMING PLAN - Order of shots / transitions noted / time estimates / batch day ready'. Card 4 rectangle grid icon 'IG CAROUSEL OUTLINES - 2 extra carousels / full 6-slide scripts / comment-bait CTA / save-worthy'. Card 5 hashtag icon '5-HASHTAG RULE - Exactly 5 tags / platform-specific / proven engagement / no fluff'. Clean minimalist style, warm Anthropic Claude brand aesthetic.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:08:55.559731",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776712131674-syngydjlm69.png"
+      ]
+    }
+  ]
+}

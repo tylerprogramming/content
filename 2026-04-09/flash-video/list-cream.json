@@ -1,0 +1,18 @@
+{
+  "type": "list",
+  "background": "cream",
+  "slug": "claude-skills",
+  "header": "5 Claude Code skills",
+  "subheader": "I use every single week:",
+  "items": [
+    "/yt-search — YouTube research",
+    "/instagram-writer — 6 slides",
+    "/shorts — 5 short scripts",
+    "/content — LinkedIn, X, IG posts",
+    "/yt — full video + script"
+  ],
+  "stat": "Saves me 3+ hours. Every single week.",
+  "accent_words": ["yt-search", "instagram-writer", "shorts", "content", "yt", "3+"],
+  "cta": "skool.com/the-ai-agency",
+  "handle": "@tylerai_dev"
+}

@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Semi-realistic cartoon illustration of a young man with slicked-back dark hair and short beard wearing a black t-shirt, seated at a laptop keyboard, facing directly toward the viewer with a warm friendly smile. Clean bright white background, soft studio lighting, slightly stylized cartoon proportions with smooth skin and expressive eyes, but realistic enough to be recognizable. Simple composition, lower third left empty for text overlay. No text in image.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "jpg",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-15T12:14:55.208915",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773591292230-haa3q8uiphc.jpeg"
+      ]
+    }
+  ]
+}

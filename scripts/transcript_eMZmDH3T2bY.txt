@@ -1,0 +1,385 @@
+[00:00] I don't write code by hand anymore, I just ask Claude.
+[00:04] And in this video, I've partnered with Anthropic
+[00:06] to break down three things that I wish I knew
+[00:08] about vibe engineering before I started.
+[00:11] Starting with number one, how to create apps from scratch.
+[00:14] Head to the link in the description below
+[00:17] and let's install Claude code together.
+[00:19] First up for Mac users, from the homepage,
+[00:22] use this copy button to copy the bash script
+[00:25] and run it in a terminal window.
+[00:28] But for Windows users, that script looks like this
+[00:32] and it's actually PowerShell.
+[00:34] Now I ran into problems with this script,
+[00:35] so I'm gonna show you another approach using NPM.
+[00:39] If you don't have NPM installed or you're not sure,
+[00:42] head over to nodejs.org.
+[00:46] Click this big green button that says Get Node.js,
+[00:49] scroll down and click the green button
+[00:51] to download the installer.
+[00:53] After you successfully install Node,
+[00:55] you should be able to open a command prompt,
+[00:58] type in node-v and see the Node version returned
+[01:02] that you have installed.
+[01:03] And then you use NPM install to install Claude code.
+[01:07] You can copy this exact line from the description
+[01:10] under the resources section.
+[01:12] Then type Claude and press enter to set it up.
+[01:15] First, choose your text style.
+[01:16] I'm gonna stick with dark mode.
+[01:18] Then choose how you wanna set up your subscription.
+[01:21] I'm gonna stick with my Claude account.
+[01:23] Go ahead and sign in and I'll see you on the other side.
+[01:26] Once you've connected your account,
+[01:27] success means you see something like this.
+[01:30] Now, Claude code is great inside of a terminal window,
+[01:33] but it's even better when it's integrated with your IDE.
+[01:36] For that reason, I'm gonna take you through
+[01:38] using Claude code inside of Visual Studio Code.
+[01:41] Now, two more quick things for setup
+[01:43] and then let's jump into our first app.
+[01:45] First, let's set up a Git repo.
+[01:47] You can do that by opening a new terminal window
+[01:50] by pressing Control, Shift, backtick.
+[01:53] Then type Git init and then press enter.
+[01:55] Next, we need a command prompt to open Claude code.
+[01:58] So click on this dropdown arrow
+[02:00] and then click on command prompt.
+[02:02] Then type in Claude and press enter.
+[02:04] Press one to trust this directory and off we go.
+[02:07] Let's create a chore app to manage chores at the office.
+[02:11] Here are the requirements.
+[02:12] Show a calendar view like Outlook
+[02:14] to see all our current chores.
+[02:16] Allow adding and removing chores.
+[02:18] Make chores recurring on a schedule.
+[02:20] Assigning chores to team members
+[02:22] and adding and removing team members.
+[02:25] So what do you write inside this little box to get started?
+[02:29] If you were vibe coding,
+[02:30] you might put in something like this.
+[02:32] Make a chore app to manage chores at the office.
+[02:34] It should show a calendar view like Outlook
+[02:37] to see all our current chores.
+[02:39] But these product requirements are really vague
+[02:41] and it misses out on technical requirements
+[02:43] like the tech stack or the storage solution
+[02:45] or even the architecture,
+[02:47] as well as engineering principles
+[02:48] like how you want the code written.
+[02:51] So here's what I recommend instead.
+[02:52] I'll press escape twice to clear the prompt area.
+[02:55] I'll write a new prompt which lists
+[02:56] the high priority requirements as bullets.
+[02:59] And then at the end,
+[03:00] tells Claude to ask me questions to clarify requirements,
+[03:03] engineering principles, hard constraints, et cetera.
+[03:06] By the way, you can type new lines in the prompt
+[03:08] by holding alt or option and pressing enter.
+[03:11] Finally, you need to go into plan mode.
+[03:12] So hold the shift key and press tab
+[03:15] until you see plan mode in the bottom left.
+[03:17] Now when you press enter, Claude gets to work.
+[03:20] It starts reasoning about the code to write
+[03:22] and then figuring out what are the right questions
+[03:24] to ask you to get to the next step of its plan.
+[03:27] When it's in plan mode,
+[03:29] it will never write code automatically.
+[03:31] It will always confer with you first.
+[03:34] By the way, I've included this prompt
+[03:36] and all the prompts from the video
+[03:38] under the resources section in the description.
+[03:41] Here's the first set of questions.
+[03:42] Your questions may differ.
+[03:44] Let's make this a React app by pressing one.
+[03:46] We'll keep things simple by choosing local storage.
+[03:49] This will run on a big TV screen in the office,
+[03:51] so no auth is needed.
+[03:52] Claude's also asking us about extra features.
+[03:55] So let's turn on two and three.
+[03:57] If you ever need to change your answers in this model,
+[04:00] you can use the left and right arrow keys
+[04:02] to switch between questions.
+[04:04] Then press one to submit your answers.
+[04:06] Claude will now keep going
+[04:07] until it reaches the next set of questions
+[04:10] or it completes your plan.
+[04:11] Now it's asking us some more questions
+[04:13] about product requirements.
+[04:15] I found that when you include this,
+[04:17] ask me questions to clarify the requirements
+[04:20] part of your prompt,
+[04:21] you'll get a richer discussion in plan mode.
+[04:23] So now it's got all the information that it needs.
+[04:26] It's going to create the implementation plan for our review.
+[04:29] I find this process is like working with a teammate
+[04:33] or fellow senior engineer
+[04:35] to help plan exactly what you're gonna do
+[04:37] before you execute.
+[04:39] And a few seconds later, we get the plan.
+[04:41] This is your opportunity to review
+[04:43] before Claude starts writing code.
+[04:45] Be on the lookout for design decisions Claude has made
+[04:49] that you might disagree with.
+[04:51] Here, for example,
+[04:52] we never said anything about Vite or Tailwind.
+[04:55] Scrolling down, you'll see a good summary
+[04:56] of the data models, the project structure,
+[04:59] implementation steps, et cetera.
+[05:02] One thing that stands out to me
+[05:03] is that this is in JavaScript, not TypeScript.
+[05:06] So here's how we tell Claude to make changes.
+[05:09] When asked, would you like to proceed,
+[05:11] select option three,
+[05:13] and I'll type use TypeScript instead of JavaScript.
+[05:16] I'll press enter and Claude will reconfigure its plans.
+[05:19] By the way, notice how I'm talking to Claude.
+[05:22] It's like a senior engineer that I respect.
+[05:25] Clear, firm, and specific.
+[05:28] You don't need to be overly polite
+[05:29] and you don't need to be overly aggressive.
+[05:32] Just the facts.
+[05:33] Okay, the new plan's generated
+[05:35] and we see file extensions with TS and TSX.
+[05:38] That means we're on the right path.
+[05:40] And let's assume we're good with the rest of the plan.
+[05:43] So it's time to move forward.
+[05:44] You have two options.
+[05:45] You can auto accept all of Claude's changes
+[05:48] or manually approve them one by one.
+[05:50] If you're just getting started,
+[05:52] you might want to choose option two just to be sure,
+[05:55] but I'll tell you,
+[05:56] you're going to get tired of it pretty quickly.
+[05:58] So I've suggested to auto accept edits here.
+[06:01] Let's see what happens in just a minute.
+[06:02] Claude's just written the entire app,
+[06:04] which we can see here.
+[06:06] Now it's asking approval to run NPM install.
+[06:08] Claude's default user experience
+[06:10] is that it always asks for approval
+[06:12] for these sorts of tools.
+[06:13] But if you believe a tool is safe to use,
+[06:16] I recommend choosing option two here.
+[06:19] After a few more approvals,
+[06:21] Claude asked to run the dev server.
+[06:23] I'm actually not keen on having Claude do this.
+[06:25] So I'm going to start up a new terminal window,
+[06:28] go to the app directory, and then start it myself.
+[06:32] With the server up and running, let's check out the app.
+[06:34] Okay, we've got a decent looking page here.
+[06:36] Let's add a few team members.
+[06:38] So I'll start by adding myself.
+[06:40] I'll give myself a green color.
+[06:42] And then let's add Kevin, give him a blue color.
+[06:46] Now that looks okay.
+[06:47] So let's try testing the add chore functionality.
+[06:50] Let's get Kevin to bake us cookies every week.
+[06:53] So we'll assign that to kitchen
+[06:55] and then assign that to Kevin.
+[06:57] We'll make this a recurring chore,
+[06:59] repeat it once a week and click add.
+[07:02] That looks good.
+[07:03] So let's check out the week mode
+[07:04] and we should be able to see bake cookies down below.
+[07:07] Looks like we've got a little highlighting bug up here.
+[07:10] Finally, let's try adding a chore for me
+[07:12] just by clicking on the calendar.
+[07:14] So we'll say maintenance, we'll assign this to David
+[07:18] and oh, interesting, the time is also wrong here.
+[07:22] Let's click add and see where it puts it though.
+[07:24] Yeah, it looks like it went down to 8 p.m.
+[07:26] when it shouldn't have.
+[07:27] Now we're all tempted to go back into Claude
+[07:30] and start prompting it to fix these bugs.
+[07:33] But you need to follow a principle
+[07:34] of committing early and committing often.
+[07:37] That's because when you add more prompts,
+[07:39] there's always a chance of introducing more regressions.
+[07:42] So always make it easy to revert
+[07:44] to the last known good state.
+[07:45] By the way, I'm assuming that you're working
+[07:47] inside of a branch when you commit.
+[07:49] This is a great time to review the code
+[07:51] and iterate with Claude.
+[07:52] You can try making architecture changes
+[07:54] or even making test cases.
+[07:56] Great job, you just built your first app with Claude code.
+[07:59] But that's not enough to be successful with it.
+[08:02] That leads us to scenario number two,
+[08:04] using Claude code with an existing app.
+[08:06] We wanna pretend that this is existing code
+[08:08] that you're bringing Claude code to.
+[08:11] To do that, I'll press escape here
+[08:12] and then type slash clear.
+[08:14] As you can see, that clears all of our conversation history
+[08:17] and frees up context.
+[08:19] So it's like Claude is looking at this code base
+[08:21] for the first time.
+[08:22] One mental block I had when I got started
+[08:24] was not knowing how AI would possibly understand
+[08:28] all of my coding standards
+[08:30] so it could keep building on them.
+[08:32] The answer is a file called Claude MD.
+[08:36] According to this blog post on humanlayer.dev,
+[08:39] which I'll also link in the description,
+[08:40] Claude MD onboards Claude onto your code base.
+[08:44] The contents of this file get injected
+[08:45] into every Claude session.
+[08:47] So it's super important that the instructions in this file
+[08:50] are almost universally applicable
+[08:51] to the prompts that you write.
+[08:53] Otherwise, Claude might ignore them.
+[08:55] So we can break down what you put in this file
+[08:57] into three layers.
+[08:59] First, you tell Claude about the tech stack,
+[09:01] the project structure, what the packages are,
+[09:03] components, et cetera.
+[09:04] Then explain the function and purpose
+[09:07] of each component in the project.
+[09:09] Finally, describe how you want Claude
+[09:11] to work with the project.
+[09:13] For example, you can instruct Claude to run test cases
+[09:16] and verify success after every change it makes.
+[09:19] You have two options to create that Claude MD file.
+[09:22] You can start with the slash init command,
+[09:25] but in my experience, that doesn't create
+[09:27] the three types of information we just reviewed.
+[09:29] So I prefer to use a prompt.
+[09:32] Grab this prompt from the resources section and paste it in.
+[09:35] As you can see, it covers some of the essentials
+[09:38] from that blog post I just shared,
+[09:39] the what, the why, the how,
+[09:41] and it pulls in a couple of other principles as well.
+[09:45] One of those principles is to use progressive disclosure.
+[09:49] So instead of including all the instructions
+[09:51] for everything at once,
+[09:53] create an index that points to other Markdown files.
+[09:56] So like I have an architectural patterns file,
+[10:00] which documents architectural patterns,
+[10:01] design decisions, et cetera.
+[10:03] After a few minutes, you get a Claude MD file.
+[10:05] You can view a formatted version of this
+[10:07] by pressing Command Shift V or Control Shift V on Windows.
+[10:11] So now every time you start Claude,
+[10:13] it's acquainted with a tech stack, the project structure,
+[10:16] what are your key files, commands to run everything,
+[10:20] domain model, and there's a few more things here as well.
+[10:23] Just to show this in action,
+[10:25] we're gonna make a small change
+[10:26] to the adding new features section.
+[10:28] I'll change this to adding new features or fixing bugs.
+[10:32] And then I'll add a disclaimer that it's important
+[10:34] when you work on a new feature or bug
+[10:36] to create a get branch first.
+[10:38] Let's commit this change.
+[10:39] And while I do that,
+[10:40] you remember that bug that we looked at earlier?
+[10:43] The one where clicking on the calendar
+[10:44] didn't add the right time to the chore?
+[10:47] Let's go fix this using Claude.
+[10:49] Now, just to prove that Claude MD is working,
+[10:51] I'm going to get out of Claude first
+[10:54] and then restart it and ask the following prompt.
+[10:57] Notice the prompt is nothing fancy.
+[10:59] We say it's a bug fix, we describe the failure condition,
+[11:02] and then we let it go.
+[11:03] Let's see what Claude does.
+[11:05] After a few minutes,
+[11:06] it finds the bug inside of a TSX file,
+[11:09] but before it implements the fix,
+[11:10] it asked to create a new branch.
+[11:13] Let's let it proceed.
+[11:14] After a few more permission confirmations,
+[11:16] it creates the new branch and makes the fix.
+[11:19] Obviously, you'll verify that fix on the app itself.
+[11:22] We'll head back into the week mode,
+[11:24] then we'll make a chore at 8 a.m.
+[11:26] We'll call it bring donuts for the office,
+[11:29] put it in the kitchen category and assign it to me,
+[11:32] then click add.
+[11:33] So this is good.
+[11:34] The bug is fixed here.
+[11:35] Now it's time to check the code itself.
+[11:37] Again, it's useful to think of Claude
+[11:39] as another engineer on your team.
+[11:41] You're going to review its code like everyone else's.
+[11:43] If you don't like something, instead of making a comment,
+[11:46] use a prompt to get Claude to fix it.
+[11:48] That was a small bug,
+[11:50] but how does it perform with scenario number three,
+[11:53] a big architecture change?
+[11:55] I've just made a few more fixes,
+[11:56] so our grid is looking good.
+[11:58] But now it's time to make a bigger change.
+[12:01] Changes to chores should automatically show up
+[12:03] on other tabs without refreshing.
+[12:06] So how do we get that test chore to show up on other tabs?
+[12:10] Let's head to Claude and find out.
+[12:12] For this change, we'll use a special mode
+[12:14] of Claude code called YOLO.
+[12:16] And no, I'm not kidding.
+[12:18] It's when you run Claude
+[12:19] with the dangerously skip permissions switch.
+[12:22] In this mode, Claude doesn't ask for your approval
+[12:25] to run commands, it just does them.
+[12:26] Of course there's a risk with this,
+[12:28] but I'm showing you because one day
+[12:30] the speed might be worth it.
+[12:31] You can now toggle this mode on and off
+[12:33] by using shift and tab.
+[12:35] On to the architecture change.
+[12:37] Now Claude code best practices advises an explore,
+[12:40] plan, code and commit approach.
+[12:43] You've already got the building blocks for this.
+[12:45] So first use shift and tab to switch into plan mode.
+[12:49] Then our prompt explains the architecture change
+[12:51] and also tells Claude to explore these files
+[12:55] and give us three options to move forward.
+[12:57] This request for three options
+[12:59] is a bit of prompt engineering
+[13:00] because remember any prompt engineering technique
+[13:03] you've learned with LLMs like ChatGPT or Claude
+[13:06] also applies here.
+[13:07] After a few minutes, Claude's given us our options.
+[13:10] Now there's no web server on this app right now.
+[13:12] So I tried to trick Claude
+[13:14] into only giving us browser sync solutions,
+[13:17] but it saw through that and also suggested option three,
+[13:20] which would create a server
+[13:21] and do real-time syncing across clients.
+[13:23] I'm making this video to show you the real power
+[13:26] of AI assisted coding.
+[13:27] So let's go all the way with option three.
+[13:30] I'll give it a minute and we'll see the plan together.
+[13:32] Here we've got Claude's plan.
+[13:34] Just like our first plan,
+[13:35] it gives you an overview of the changes,
+[13:37] the project structure, files it's changing,
+[13:40] a phased approach to implementation,
+[13:43] as well as key design decisions.
+[13:45] You could continue to modify this plan by using option three,
+[13:48] but we'll continue with option one.
+[13:50] And because we have YOLO mode enabled,
+[13:52] we can let this run as long as it needs
+[13:54] to get the job done.
+[13:56] In about five minutes, it created a WebSocket server
+[13:59] and explained to us how it works.
+[14:01] So the question remains, does it actually work?
+[14:04] Here I've got two instances of the app side by side.
+[14:07] Let's start by adding a new team member.
+[14:10] Let's add Elizabeth and give her red.
+[14:13] And we see that change in the other browser.
+[14:16] Now in this browser,
+[14:17] let's give her a chore called feed the fish.
+[14:20] We'll assign it to her and then click add.
+[14:22] That chore successfully shows up in the first browser.
+[14:26] Now all that's left is for you to review the code,
+[14:28] but don't take my word for it that it works.
+[14:30] Try it yourself.
+[14:31] If you enjoyed this video
+[14:33] and want to get started with Claude Code,
+[14:35] check out the link in the description below.
+[14:37] Let me know what else you want to learn
+[14:39] about Claude Code in the comments,
+[14:41] and I'll see you in the next video.

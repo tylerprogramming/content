@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Clean macOS terminal window screenshot. Dark charcoal background (#1e1e2e). The terminal shows the command prompt '$ /yt-search claude code' followed by formatted output below: a neat table with YouTube video data. Rows show video titles like 'Claude Code Full Tutorial', 'Build with Claude Code', 'Claude Code Skills Guide' with view counts like '2.1M views', '890K views', '540K views' in green monospace font. Professional terminal aesthetic. Rounded window corners with traffic light buttons (red, yellow, green) at top left. No extra UI, just the terminal window floating on white/transparent background.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "3:2",
+      "resolution": "1K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-08T19:23:02.392643",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/20d02b1b39f53d0bb3513a1ea86b68c8_1775690576_jlihk2o4.png"
+      ]
+    }
+  ]
+}

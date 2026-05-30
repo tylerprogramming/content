@@ -1,0 +1,20 @@
+{
+  "generations": [
+    {
+      "prompt": "Warm cream and soft terracotta watercolor background, organic texture, subtle grain, editorial feel, minimal aesthetic",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-15T07:42:06.927426",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776253257083-fxenrj9lic9.png",
+        "https://tempfile.aiquickdraw.com/h/12587bde29b454b71475aefc1a1bd9b1_1776253320.png"
+      ]
+    }
+  ]
+}

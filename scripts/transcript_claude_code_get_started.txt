@@ -1,0 +1,295 @@
+[00:00] Cloud Code is, and in my opinion,
+[00:01] has been the most powerful AI coding tool.
+[00:03] Because of the sudden increase in popularity as of late,
+[00:06] more people have been wanting to use it.
+[00:08] And one thing that I found after helping people
+[00:10] is they have trouble with the terminal and installing it.
+[00:12] Well, after helping a lot of non-developers install this,
+[00:15] I've noticed the problem with using the terminal.
+[00:17] It's different, I understand.
+[00:19] So what I'm gonna do in this video for the next 10 minutes
+[00:22] is help you install Cloud
+[00:23] and we'll build our own app together.
+[00:25] And by the end of this,
+[00:26] you'll be able to build everything that you've wanted to.
+[00:28] But first, let's understand what exactly is Cloud Code.
+[00:31] Well, Cloud Code has been built by Anthropic,
+[00:33] who is the company behind the Cloud AI models.
+[00:36] It came out last February.
+[00:38] And as you can see,
+[00:38] it's been increasing as of late in just the past month,
+[00:42] there have been 10 million searches for it.
+[00:44] And it's like having a senior software engineer,
+[00:46] some inside of your machine,
+[00:48] helping you develop whatever it is that you ask it to do.
+[00:51] But to use this, you have to use the terminal.
+[00:52] If you're on a Mac, hold command space bar,
+[00:55] it's gonna open up Spotlight.
+[00:56] And then you just type in terminal.
+[00:59] Okay, then you open the app
+[01:00] and it will show something just like this.
+[01:04] Or if you're on Windows,
+[01:05] you'll type in command prompt in the search bar
+[01:06] and then open that up.
+[01:08] All right, now let's install it.
+[01:09] So in the description of this video, I'll have two commands.
+[01:12] The first one is for Mac users.
+[01:14] The second one in the YouTube description of this video
+[01:16] will be for Windows.
+[01:17] But for whatever machine you have,
+[01:18] copy that and then paste it here
+[01:20] with a command V or control V in Windows,
+[01:23] and then press enter.
+[01:24] And what's it gonna do?
+[01:25] It's gonna go ahead and install it for us.
+[01:27] So right now it's setting up cloud code
+[01:28] and it's gonna go ahead
+[01:29] and take another minute or so to install.
+[01:31] Okay, and the installation is complete
+[01:33] and you should see this as well.
+[01:34] Okay, now before we move just a little further,
+[01:36] I just wanted to let you know the pricing plans
+[01:37] because we do have to create an account
+[01:39] if you haven't yet before.
+[01:40] So it's $0 obviously for if you wanna go to the free version
+[01:43] but you really won't be able to do that much with it
+[01:45] to be honest.
+[01:46] Like you'll be able to do maybe a couple things with it
+[01:49] but then that'll be it for the day.
+[01:50] But if you go to the pro,
+[01:52] just look at the $20 per month, I would recommend this.
+[01:55] I would spend $20 to try it out for the first month,
+[01:57] make sure you kind of get familiar with it.
+[01:59] And then you can move on to maybe paying for the year
+[02:01] so it's cheaper over a year.
+[02:02] But then they also have the max,
+[02:04] which is the most usage that you will get
+[02:07] but it also costs $100 a month.
+[02:09] But if you haven't made an account yet,
+[02:10] you'll go to cloud.ai, I'll have it in the description.
+[02:13] Then it'll just go continue on the web
+[02:15] and then just go ahead and sign up with an email account.
+[02:17] Okay, and then what we have to do
+[02:19] is we actually have to log in with their account
+[02:21] so that it knows what to do.
+[02:22] So you're gonna type in slash login
+[02:24] and what you see here,
+[02:25] there are commands here that you can use called slash commands
+[02:29] so type slash login.
+[02:30] You'll see there are three options,
+[02:32] just choose option number one,
+[02:34] cloud account with subscription.
+[02:36] Once you do that, it's gonna say,
+[02:38] would you like to connect to your cloud chat account?
+[02:40] You're going to authorize.
+[02:42] And then once that is done, it says you're all set,
+[02:44] you can now close the window.
+[02:45] Then once you come back to our terminal,
+[02:47] it says login successful and you can press enter to continue.
+[02:50] And if you ever want to upgrade your subscription,
+[02:52] what I would recommend doing
+[02:54] is you go to cloud.ai again,
+[02:55] where we initially logged in at the bottom left,
+[02:58] you can go to, you can see this is like
+[03:01] where the settings are,
+[03:02] you can click on upgrade plan and then go there
+[03:05] and then you can upgrade to the pro plan
+[03:07] like I mentioned, I would suggest to do.
+[03:08] Okay, great, now you have an account
+[03:10] as of right now it's free and you can now use cloud code.
+[03:13] So let's go back to our terminal
+[03:15] and now what you're gonna type in,
+[03:16] you're just gonna type in cloud, C-L-A-U-D-E, cloud.
+[03:20] Okay, one of the first things, this is your very first time,
+[03:22] it will probably ask you what type of textile you like,
+[03:25] I just chose dark mode,
+[03:26] but you can just go through the options.
+[03:28] So this is a terminal, right?
+[03:30] You can press the up and down arrows
+[03:32] to choose which option you like.
+[03:34] So I want to trust the current path that I'm in.
+[03:37] And then once you have done that,
+[03:39] this is what it will look like, okay?
+[03:41] This is a, you'll have something
+[03:43] that looks very similar to this.
+[03:44] Now, useful command if you wanna exit cloud code,
+[03:46] you'll type or press control C twice in a row
+[03:49] and you'll exit cloud code.
+[03:51] Now you're just back into your normal terminal.
+[03:53] So what we're gonna do is we're gonna create a folder
+[03:55] to have cloud code create our first app in.
+[03:57] So I will paste this for you,
+[03:59] but we're gonna make a directory called my first app.
+[04:02] It doesn't, it's okay if you don't know what that means.
+[04:03] And then we're gonna C-D space my first app, okay?
+[04:08] And you'll just have these,
+[04:09] we can copy and paste these in here.
+[04:11] It doesn't matter if you don't know exactly what those do,
+[04:13] but we're creating a folder for cloud code
+[04:15] to use to create our app.
+[04:16] Now we're gonna type cloud again.
+[04:18] So now we are in the my, right here,
+[04:21] it says user slash Tyler Reed, my first app.
+[04:23] This is where we're gonna build it,
+[04:24] where we want cloud to do things.
+[04:26] Yes, I trust this folder.
+[04:27] And now we can begin to ask it to do something.
+[04:30] Now the app we're gonna make
+[04:31] is a countdown timer to anything.
+[04:34] We can start out with New Year's Eve, 2027,
+[04:36] but we'll be able to add other custom timers as well.
+[04:39] So here's a prompt that you'll be able to copy and paste
+[04:41] as well, you just copy it and paste that in here.
+[04:43] Then once you press enter,
+[04:45] cloud codes are gonna go ahead
+[04:46] and already start thinking about how it wants to build this.
+[04:49] Okay, so it's going to read our file, say,
+[04:51] hey, you know, we don't have anything in here just yet.
+[04:54] What should we do?
+[04:55] Well, we don't have anything,
+[04:56] it's gonna just start building it.
+[04:57] And so what it's gonna do first
+[04:58] is it's gonna start reading my files
+[05:00] and then it's thinking because it wants to understand
+[05:02] how we are going to create this.
+[05:05] Okay, so you don't necessarily have to understand
+[05:08] what's going on, but this is,
+[05:09] it wants to create then my index HTML files.
+[05:12] So this is kind of like be like what we'll see,
+[05:15] but I can either say yes or yes to allow all edits
+[05:19] during this session that we have cloud code up.
+[05:21] So I'm just gonna hit enter on that
+[05:23] so we can just keep making code
+[05:25] and then updating the folders
+[05:27] and the files that needs to create.
+[05:29] Okay, so what it wants to do
+[05:30] is it wants to open this index HTML in our browser now.
+[05:34] So I'm just gonna say yes.
+[05:35] And it's gonna open it and we'll see what we have.
+[05:37] Okay, look, I mean, that was how simple,
+[05:39] like that took just minutes, right?
+[05:41] So we have 360, 306 days and eight hours
+[05:44] until New Year's Eve, 2027.
+[05:46] So let's add a new one, right?
+[05:48] Let's just say tester.
+[05:50] And then I want this to be for right now.
+[05:53] So just to make sure that it works.
+[05:54] So was this 02, 28, 2026.
+[05:58] And then I want it to be, it's 301 PM.
+[06:00] So does it go by 303 PM?
+[06:05] Okay, so add.
+[06:06] So we have 53 seconds.
+[06:07] And basically once this counts down,
+[06:11] I should have some confetti on the screen.
+[06:12] So I'll be back whenever it has just a few seconds left.
+[06:16] Okay, there's just a couple seconds left
+[06:18] and hopefully the confetti works.
+[06:20] Zero seconds.
+[06:20] Okay, awesome, there we go.
+[06:22] There's the confetti that that countdown is complete.
+[06:24] So what I asked you to do, it completed, right?
+[06:27] And it's done.
+[06:28] Okay, that is wonderful.
+[06:29] Now, if we go back to the terminal,
+[06:31] we can see that at the end, it said, hey, done.
+[06:34] Your countdown timer should be in the browser.
+[06:35] Here what you got.
+[06:36] And it's listing all of the features, right?
+[06:39] So it's like all the countdowns that we have
+[06:40] are saved basically to our local machine
+[06:43] and it has some different
+[06:44] as a glass morphism type background, et cetera.
+[06:47] It says that it's fully responsive
+[06:48] to work on mobile as well.
+[06:51] Okay, awesome.
+[06:52] So we just installed Claude in just a couple steps,
+[06:55] used it in a terminal.
+[06:56] And now I know the terminal
+[06:57] you still may not understand too well, and that's okay,
+[07:00] but I'll have everything for you to copy paste.
+[07:02] And we just created an app that literally took minutes.
+[07:04] And so now what you can do from here is,
+[07:07] so it even gives you an idea.
+[07:09] It says, can you make it
+[07:10] so the sounds actually animate when they change?
+[07:13] Or you could say, I don't like this style,
+[07:16] maybe make it minimalist.
+[07:17] So it's just like maybe black and white and very simple.
+[07:20] There's so many things you can do from this.
+[07:21] It can either add to this project
+[07:24] or you can have it create something else now.
+[07:26] Or you can also just chat with it.
+[07:28] And this is leading to the next section of the studio,
+[07:31] which I wanna show you a few things
+[07:32] that you should know to do with Claude code.
+[07:34] The first one, and I think is very important
+[07:35] is if you press shift tab,
+[07:38] you're at the bottom here, right?
+[07:39] The very bottom right here,
+[07:41] you're gonna kind of cycle through some things.
+[07:42] You just hold shift tab.
+[07:44] If you go to plan mode on,
+[07:46] then if I were to say the same thing,
+[07:49] I'm just putting in the same exact prompt.
+[07:51] I want to create this because it's in plan mode.
+[07:53] It's going to just write a like a file
+[07:56] of how we should do this.
+[07:57] And then we can kind of plan out
+[08:01] and see what we'd like based on what its suggestions are.
+[08:04] Which means that it's not gonna actually
+[08:05] execute code by itself.
+[08:07] It will just plan it out
+[08:08] and then you can have it implement that plan.
+[08:10] And here's what it's done, right?
+[08:12] So the app already exists, but it has a plan.
+[08:15] So it has better flip animation.
+[08:17] We can do variety of confetti.
+[08:20] They basically have some security with this.
+[08:22] And then here's like the full plan that it can use
+[08:25] that we can tell it, hey, go ahead and go through with this.
+[08:28] And it will do that.
+[08:29] But I don't wanna do anything.
+[08:30] So what I can do is I can just hit escape
+[08:34] and then we're out of that.
+[08:35] And then we can continue typing what we want,
+[08:36] which leads to my second one, escape is your friend.
+[08:39] If anytime it's doing something
+[08:40] and you're not really sure you don't want it to do,
+[08:43] just press escape and it'll exit out of that execution.
+[08:45] And then finally, you should know the slash commands.
+[08:48] If I were to type slash,
+[08:50] you can see down here there are a bunch
+[08:52] of different commands that we can use, right?
+[08:56] Not all of these you will use
+[08:57] and not all of them necessarily matter to you right now.
+[08:59] But for instance, we use the slash login
+[09:02] to log into our account to use cloud code
+[09:04] or we can use the slash log out, right?
+[09:08] To log back out, there is MCP.
+[09:10] If you use that before, there's plugins,
+[09:13] the official plugins that you can download.
+[09:14] But some of these are a little bit more advanced slash skills.
+[09:17] I have a video coming out about skills to help you out
+[09:20] if you're curious.
+[09:21] But there's all these other things that we can do.
+[09:23] And these are called slash commands.
+[09:25] Okay, so there you have it.
+[09:26] Here is how you install cloud
+[09:28] and then you create your first app, okay?
+[09:31] And everything I'll have in the description for you,
+[09:32] show you where you can get all of this.
+[09:34] But I will also have this in my free school community
+[09:36] if you're very interested in learning more about AI,
+[09:39] no matter what level you are, okay?
+[09:41] So you can join that in the description below for free.
+[09:45] But hope this has been helping you
+[09:47] how to get started with cloud code
+[09:49] because this is so powerful.
+[09:51] People are creating so many things with this
+[09:53] and what's called vibe coding,
+[09:56] their own applications to help them out.
+[09:57] People are making a lot of money with this, okay?
+[10:00] So if you're interested on how I can help you out
+[10:02] with that as well, that'll be in the description.
+[10:05] But here are some more videos for you to watch
+[10:06] in the meantime.

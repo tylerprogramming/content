@@ -1,0 +1,20 @@
+Weekly Journal Summary — Week of Feb 12, 2026
+
+ACCOMPLISHED
+- Learned more about Claude Code, including skills and automation
+- Created a 6 GPT web app for Miles and Patrice
+- Built a PDF automation creator
+
+UPCOMING
+- Record a video on Claude Code skills
+- Get pricing for Miles' projects
+- Understand Antigravity more
+- Ensure GPTs are scalable
+- Study for interview next week
+
+BLOCKERS
+- None this week
+
+THEMES
+- Heavy focus on AI tooling and building for clients
+- Interview prep coming up next week

@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "LinkedIn carousel slide design with dark navy blue background (#1a1f36). Top left corner has a small rounded badge that says NOW USE IT with a purple (#a78bfa) background. Below the badge is a large bold white uppercase heading ASK CLAUDE CODE TO DO REAL WORK where REAL WORK is in purple accent (#a78bfa). Below the heading are three example prompts shown as rounded colored pill badges: Understand the mailgun skill in blue, Build me a landing page in green, Write a Python script in orange. Below the pills in smaller gray text: This is not a chatbot. It reads your codebase, writes files, and runs commands directly on your machine. In the bottom half of the slide, place the reference screenshot image exactly as provided inside a macOS style window frame with the red yellow green traffic light dots. The screenshot shows Claude Code terminal analyzing a mailgun skill, reading files, and explaining how it works. Page counter 6 / 7 in small text in the top right corner. Clean minimal professional tech design.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude-mailgun.png"
+      ],
+      "generated_at": "2026-03-26T12:45:08.577642",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774543502818_7ts8lk.png"
+      ]
+    }
+  ]
+}

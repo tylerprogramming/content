@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Instagram carousel slide design. Light cream white background (#f5f0eb). At the top, the number and title in bold dark text with the number in teal (#1abc9c): 2. COMPACT. Below, body text in dark gray: Your context window is filling up and Claude starts forgetting things. Type /compact. It clears the conversation but keeps a summary of everything. Go from 90% context usage back to almost nothing.. Subtle geometric accent shapes in light pastel colors in corners. Page counter 3/7 in small text top right. Clean modern minimal Instagram aesthetic.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-28T13:42:29.826116",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774719745709_vn0i1y.png"
+      ]
+    }
+  ]
+}

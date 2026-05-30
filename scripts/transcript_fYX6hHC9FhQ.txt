@@ -1,0 +1,1108 @@
+[00:00] So welcome to my ultimate Cloud Code free course where we will be building an AI marketing officer
+[00:05] completely from scratch. I will walk you through installing Cloud Code for the first time,
+[00:10] creating two custom skills, hooking up hooks to check for quality in all of your content,
+[00:16] hooking up your brand voice and samples, and then building out a multi-platform publishing pipeline
+[00:21] that utilizes parallel sub-agents for efficiency. And so by the end of this video, you'll be able
+[00:26] to type one sentence and Cloud will research your topic, draft a week's worth of contents,
+[00:32] including visuals generated, show you the plan so you can edit it, review it, put your own voice
+[00:37] there, wait for your approval, and then schedule everything across all of your socials. This is
+[00:42] the definition of batch producing content and using AI to have leverage and scale yourself.
+[00:49] So this is a rough outline of what we'll talk about. The first part, a lot of people have
+[00:53] questions on just how to set up Cloud Code, how do you do permissions, what are the different modes,
+[00:58] like what is context, etc. So I'm just going to go over like the basics and foundations and
+[01:04] this will help you no matter what you decide to build with Cloud Code. These are just
+[01:08] really really handy tips and tricks I've learned from over 500 hours using Cloud Code on a regular
+[01:14] basis to build my product. After we set it up, we're going to create our very first skill that's
+[01:19] going to be able to take a topic or a YouTube video, create a post out of it, create a visual,
+[01:23] and publish it to social media. The next step is creating your brand voice and adding samples that
+[01:29] reflect your brand. And so we're going to be improving the skill that we've built. And then
+[01:34] the third step, I call it quality gates. That might sound like a weird word, but it's essentially
+[01:40] using a feature called hooks so that we can automatically check the quality of each post
+[01:46] before going out. So a simple example is like if you don't want em dashes in your content, we can
+[01:51] have Cloud Code automatically check every single post for em dashes, remove it, or replace them
+[01:57] before they get published. That's a very simple example, but you can also think about like keywords
+[02:03] that your brand doesn't want to be associated with. You can also think about like color schemes
+[02:08] in the visuals. There are all kinds of quality checks that you can add. I'm just giving
+[02:12] some of the more simpler examples. Okay, and then after that, I'm going to introduce you to
+[02:17] sub-agents, and we're going to do multi-platform posting with sub-agents so that each sub-agent
+[02:23] asynchronously handles publishing to its own social platform. And then the fifth step is we're
+[02:27] going to create a second skill that plans the full week of content, gives it to you for review, and
+[02:33] then schedules it out on your calendar. So this is really optimized for intermediate level content
+[02:39] creators who just have a couple hours each week, right, to sit down and create content and batch,
+[02:44] schedule everything. And then the very last step is I'm going to talk about the Cloud MD file. So
+[02:49] basically your memory as you do these projects, adding them to your Cloud MD, the things you've
+[02:55] learned, tips and tricks that are helpful when interacting with Cloud. Make sure to add that to
+[02:59] your Cloud MD at the end of every session that you have. So first, let's install Cloud Code.
+[03:05] So that's number one. And I know many of you have already installed Cloud Code, but just bear with
+[03:10] me for people who have not done that. I'm not going to literally walk through it step by step,
+[03:15] but if you're brand new, sign up for a Cloud account, obviously. So go to cloud.ai. A lot of
+[03:21] people do ask me about pricing, so I'll just talk about that really quickly. I am personally on the
+[03:28] $200 per month plan. Like, I get so much value from Cloud Code. It's absolutely worth it to me.
+[03:34] If you are just on this $20 per month plan, you are going to hit the limits very quickly because
+[03:40] of all the tool calls involved when you use an agentic tool like Cloud Code. So I recommend at
+[03:46] minimum this $100 per month plan. Obviously, if you're just testing it out, you know,
+[03:51] stick to the $20 per month plan and you will find that you will be able to cancel so many
+[03:57] different tools once you actually pick up Cloud Code and start using it. So that's the plan. And
+[04:02] then what we're going to do is we're going to install this free tool called Visual Studio Code.
+[04:07] And it's basically an editor. You can think of it as like Google Docs, but for developers. The
+[04:13] reason why I encourage people to use this is because it makes it really nice to review the
+[04:19] work that Cloud Code is doing. So if you are just using a terminal, it's a little bit harder to,
+[04:24] like, review the output of whatever AI is generating. So when our AI marketing officer
+[04:30] generates a weekly content plan, we want to be able to easily look at it, make edits, provide
+[04:35] feedback, etc. And so I just recommend getting used to using Cloud Code in some kind of editor.
+[04:41] It doesn't have to be Visual Studio Code. You can use other tools like Antigravity is a fork of
+[04:48] VS Code. So you can just download the Cloud Code extension as well. In my testing, I found it to be
+[04:54] a bit slower and buggier, which is why for now I'm sticking to Visual Studio Code for Cloud Code.
+[05:00] So go ahead and download it and then open it. It's going to look empty, but you can open files
+[05:06] and stuff like this. And then on the left hand side, actually mine looks a little bit different
+[05:11] than yours probably, but look for this icon that says extensions. Okay. And then search for Cloud.
+[05:19] And the first result should have over 4 million downloads. So go ahead and install that. So this
+[05:25] is going to be the Cloud Code official extension for Visual Studio Code. So go ahead and install
+[05:31] that. Once it's installed, you will see this orange icon in the top right corner. This is Cloud Code.
+[05:37] So go ahead and click that. Boom. And it's going to look something like this. Yours is probably
+[05:42] not pink, but it's going to look something like this. And then since you're brand new to it,
+[05:47] it should prompt you to log in. Like if it doesn't immediately prompt you type slash log,
+[05:54] and then you should see this option to log in. So go ahead and just type slash log in or click
+[06:00] that option. And it will prompt you through all the next steps like signing up, authenticating
+[06:04] your account, et cetera. It's super, super easy at that point. Next, create a folder where we're
+[06:10] going to build this out. So I've already created my folder. I called it AI Social Media Manager.
+[06:16] So go ahead and create your folder and then open it within Visual Studio Code. So you should see
+[06:22] your folder name right here like this. A lot of people ask me about permissions. So when you start
+[06:30] using Cloud Code, it's going to ask you permission literally for everything. And it's kind of
+[06:34] annoying. You have to like grant permission, let it do things every single time. So this is a really
+[06:39] handy prompt. And what this prompt does is it will tell Cloud Code to allow most relatively safe
+[06:46] commands. By safe, I mean non-destructive commands so that it doesn't ask you again and again. So if
+[06:53] you're on YouTube, you can just screenshot this, right? So screenshot this and drop it into Cloud
+[06:58] Code to get the text. I can also pull it up here, right? So here's the prompt right here. And again,
+[07:04] this will just add permissions. For this particular case, I'm only adding it to this Cloud
+[07:09] Project so that if you are currently using Cloud Code and you don't want it to be affected to other
+[07:15] projects, then this line will take care of that. If you do want this applied to all projects,
+[07:20] then you can just remove this section and it will add it globally to your user. So yeah, go ahead
+[07:25] and type that prompt. So here we're saying allow bash command. So this is an example of it asking
+[07:30] for permissions. Someone's asking, how do you add cloud extensions? So to add the extension on the
+[07:36] left sidebar, you'll see an icon that kind of looks like, I actually changed my whole sidebar,
+[07:43] but it looks like three cubes, like one cubes kind of tilted. So if you hover over the icons
+[07:49] on the left, you should find one that says extensions and just search for Cloud Code.
+[07:54] If you type cloud, it should be the first one that pops up and that's how you download it.
+[08:00] Yeah, it's usually on the left side if you are with a fresh install. And so here it's asking
+[08:05] for permissions. This is exactly the type of thing we want it to just like do automatically. Like I
+[08:10] don't want it to ask me every single time it's checking what's in a directory, right? But first
+[08:15] it's checking what's in the directory and then it's going to plan to update our cloud settings.
+[08:20] So here it's going to edit settings.json. Okay, just click yes. So what this is doing conceptually
+[08:27] is there are lots of bash commands and other commands like searching the internet that
+[08:33] cloud is going to ask you for permission for like all the time. And it's super annoying. It's like
+[08:38] you can do it. Just go. Like you can check what's in a directory. It's fine. Like you're not going
+[08:43] to break anything. So I personally allow Cloud Code to just proceed with non-destructive commands.
+[08:49] Even some commands that write contents, I will allow it, right? It's more about like your
+[08:54] familiarity with it. Do you know what Cloud Code is doing? Are you able to follow along?
+[08:58] This is a pretty safe one. This is a pretty safe variation. Okay, so if I open like this file. So
+[09:05] these are like lots of different permissions that we are granting Cloud. So that doesn't have to ask
+[09:10] us like every single time. The next thing people ask me about is modes. So here on the bottom left
+[09:16] it says ask before edits. So this is generally best practice. If you're new to all of this stuff,
+[09:21] I recommend staying in this mode. But there are other modes like edit automatically and plan mode.
+[09:27] So what I do practically is I spend about 90% of my time in plan mode so that Cloud doesn't
+[09:34] accidentally change anything. And then when I'm very happy with the plan, then I switch to edit
+[09:40] automatically. So we spend 90% of our time back and forth, sparring back and forth on the plan.
+[09:47] And then only when I'm super happy with it and confident it's going to not break stuff, then I
+[09:52] switch to edit automatically and just let Cloud like implement the plan as we've discussed. So
+[09:58] you can leave it at edit automatically for this pretty simple tutorial. Like most of my time I'm
+[10:03] working on a complex existing code base. So it's really important that I know what Cloud is doing,
+[10:09] what it's changing. But for this simple build, especially if you're building something
+[10:13] from scratch, you can be a little more aggressive and just leave it at edit automatically.
+[10:18] A lot of people also ask me about context. So if you're new to Cloud Code, click slash. Well,
+[10:23] that's not great. So I just changed the theme right before this live. Normally when you click
+[10:28] slash, you should be able to see the title of each command. So like attach file, mention file,
+[10:34] clear conversation, switch model, thinking, account and usage, toggle fast mode. So a couple of things
+[10:40] I will point out. So slash model, switch model. So a lot of people ask me. I generally use Opus 4.6
+[10:47] for all technical work. And I will only use these lesser ones like Haiku, Sonnet, if I'm doing
+[10:53] something that is just like super easy. But for building stuff that's technical, I will stick to
+[10:58] whatever is the most capable model. As of today, it's Opus 4.6. So go ahead and click Opus 4.6,
+[11:05] or you can type it as well, right click enter. And then the other thing I want to talk about
+[11:10] is context. So personally for me, when I code, especially with complex existing code base,
+[11:16] I clear the context, every single feature or bug. So to do that, you just type slash clear.
+[11:22] I find that I get better results when I start with a clean slate when I'm going to do a new
+[11:28] feature or do a new bug fix. That's me personally. Other people swear by storing all of the memory
+[11:35] and just like augmenting the memory capabilities of Cloud Code so that it remembers everything.
+[11:39] I found I get much better results if I clear the context on every new type of thing I'm working on.
+[11:45] So if it's a new feature I'm adding, I will clear the context. Okay. And then the last thing I'll
+[11:50] talk about in terms of setup, again, this is because like a lot of people ask me, what's the
+[11:54] difference between the Visual Studio Code official Cloud Code extension and the terminal? There are
+[12:00] actually differences. So if you're new to Visual Studio Code, in your top bar, there will be an
+[12:06] option that says terminal, and then that will allow you to open a terminal. And one of the
+[12:11] biggest differences is the terminal typically has the latest features in Cloud Code, whereas the
+[12:16] official extension may not yet. So one example of that is Cloud Code in Chrome. You can launch it
+[12:23] in the terminal by typing Cloud dash dash Chrome, but in Cloud Code it won't work that same way. In
+[12:29] Cloud Code official extension, which is what we're using here, that won't work. The other thing and
+[12:33] the reason why I use it in the terminal is for some reason, Vim mode just doesn't work within
+[12:38] the Cloud Code official extension. So I just like to use it in the terminal. However, the downside
+[12:43] of the terminal is just doesn't look as pretty or as user-friendly as the official extension.
+[12:48] Somebody asked about anti-gravity. I have tried anti-gravity in Cloud Code. I found it to be just
+[12:53] like really slow and like laggy for some reason. And I was just trying it today as well. But I do
+[13:00] like with anti-gravity, you can compare the answers between anti-gravity's agent in Gemini and then
+[13:05] Cloud Code as well. Now let's actually start building something. Our first step is to create a
+[13:10] post skill. I guess I should start with what are skills? So it's basically like a custom command
+[13:16] and then it encapsulates a set of instructions and it can include code. It can include API calls.
+[13:23] And the nice thing is that they persist across different sessions and stuff. So you can just be
+[13:27] like slash post and then it will know what to do based on the skill that you've created. And it
+[13:33] lives in your project. So you can have skills at different level. You can have an in your project
+[13:38] level. You can have global skills that are accessible across all projects. And so what we're
+[13:43] going to do first is create a skill here. And I know it looks long, but I just did some stuff that
+[13:50] will help in just getting this working as fast as possible for you. So let me just walk through what
+[13:55] this prompt is. So it looks scary, but it's really not that bad. Like first line is just we're
+[14:00] creating a Cloud skill. We're going to call it post. Here's the documentation for skills for Cloud.
+[14:06] And then what does the skill do? It's going to be an AI social media manager that makes posts
+[14:11] for these social platforms. By the way, you can change these social platforms. I just chose
+[14:16] four randomly. You can post to like nine social platforms. But for this, honestly, for this, I'll
+[14:21] probably just post two, but I'll build it for four. Okay. So how does it work? The user chooses a
+[14:27] platform and inputs like a topic or an existing draft. They can even input a URL, like a YouTube
+[14:34] video, a TikTok video, an article, an audio file, a website, a blog, or a PDF, or they can even input
+[14:41] their own image or photos. And then AI is going to figure out the user's intent based on whatever
+[14:47] you said. We're going to use my tool, Vlotato, to extract the content. For example, if you are
+[14:53] uploading a TikTok video, Vlotato can grab the transcript from that video, create visuals like
+[14:59] infographics, carousels, slideshows, and videos, and then publish to socials. This is just the link
+[15:05] to the Vlotato API docs so that Cloud Code knows where to go. I like to include this because when
+[15:11] you're testing, you probably don't want to publish everything immediately because I accidentally did
+[15:16] that earlier today and I had to go back and delete a bunch of posts. So this is just saying that we
+[15:22] have three options for scheduling. We can publish everything right now. We can publish at a future
+[15:28] date, a specific date or time, or we can schedule at our next free slot. So the way many social media
+[15:34] schedules work is you kind of set up a schedule like every day I'm going to post on Instagram at
+[15:39] 9 a.m. So that's your slot. So as you create draft Instagram posts, you just schedule them out and
+[15:45] they just fill up your slot. So if you're already full for the next week and your next open slot
+[15:50] is like two weeks from now, then your next post will just be scheduled in that next open slot
+[15:56] two weeks from now. So it's just really handy when you're batch creating content, especially.
+[16:01] So you sit down once a week, you just create content for that week. Boom, you don't have to
+[16:05] worry about it. This line tells Cloud that we're going to set up the Vlotato API key in this file
+[16:11] settings.local.json. This line says we're also going to create a running log of all of our
+[16:18] published posts and their URLs. I just thought this would be cool. So like after we publish a
+[16:22] post, we can actually track it and get the URL. And then this last line is just ask me clarifying
+[16:28] questions one at a time until you're 95 percent confident you can complete the task successfully.
+[16:34] Okay, so let's copy paste this. So let's just copy it over here. I'm going to zoom out because this
+[16:40] is really zoomed in. And the first thing Cloud will do is like try to understand what I'm asking.
+[16:45] So here, Cloud, you can see its thinking process. So first, it's going to research how to create a
+[16:51] skill properly. Second, it's going to research the API documentation. Third, it's going to design
+[16:57] the slash post skill. Then it's going to set up the file for our Vlotato API key. Then it's going
+[17:02] to create the log where we're going to store all of our published posts. And then it's going to ask
+[17:07] clarifying questions based on anything it is still confused about. That last line is actually really
+[17:13] important because you're going to find that no matter how amazing you think your prompt is,
+[17:18] there's always blind spots, edge cases, things you didn't think about. So Cloud will just ask you
+[17:23] one at a time, like, what's your preference? A or B? What's your preference? C or D? Again and again
+[17:29] until it's like 95 percent confident it can complete the task successfully. And I found that
+[17:34] works really, really well. And I can be very lazy prompting. As long as I add that line at the end,
+[17:39] it will force me to actually clarify what I mean. And again, it looks long, but it's really not. It's
+[17:44] just like create a new Cloud skill. This is what we're going to name it. Here's the docs. This is
+[17:50] what the skill does. This is the API we're using. This section is just so it clearly allows you
+[17:56] to schedule in the future. I know sometimes it forgets to let you do that. And then yeah,
+[18:02] this part at the end is like, OK, here's where we're going to put our API key. I also want to
+[18:05] keep track of all my posts and just ask me clarifying questions. And we can see that it's
+[18:10] starting to ask me questions. So I'm just going to move this. So the first question is like making
+[18:14] this directory. So I'm going to say yes, allow all. So you might have seen the options like yes,
+[18:20] yes, allow all for the session. Honestly, for the purpose of this tutorial, you can safely click
+[18:25] number two, like just give permission for everything in this session. So OK, so now it's
+[18:31] writing our skill MD file. So on the left, this is like your directory. It's your folder structure,
+[18:38] right? So you created this placeholder folder where we're going to experiment with all this.
+[18:42] And now Claude created this file, skill.md. You can see it here. Allow right to Bloatato API
+[18:49] reference. Just say yes. So this is Claude just creating the stuff we need. So your skills are
+[18:54] going to be here. So this is the post skill that we talked about. And then you can open it up here.
+[18:59] So this is pretty cool to look at. And then this is our setting. So that's going to store API key.
+[19:05] So here, settings.local.json. So this is where you're going to post your API key.
+[19:09] And if you have other services you want to integrate, let's say you want to plug in Canva
+[19:13] or Google Drive, like something for video generation, right? Like you can put your API
+[19:18] keys here as well. OK, so now Claude is asking, please paste your Bloatato API key so I can add
+[19:24] it. I'm just going to say I'll add it later just as a best practice. You know, you should probably
+[19:29] just like put it there yourself. So you know where this is and how to manage it. And I will talk
+[19:34] about how to get your API key in a sec. I just want to show you the skill.md file. OK, so for
+[19:39] the skill.md file, let's look at what it created. So this is the name of the skill post. This is
+[19:44] what it does. This is actually really important because this is how Claude Code decides when to
+[19:50] use skills. So you can trigger a skill explicitly by typing slash. I should not have changed this
+[19:57] to a pink theme like right before.
+[20:00] Or you can just say something and then Claude will determine that, hey, I should use this
+[20:06] skill based on the description of what it does.
+[20:08] So you do want a description that is a little bit lengthy and comprehensive.
+[20:13] So this is a social media post creator, step one, parse user intent, right?
+[20:17] That's what we said.
+[20:19] The reason why this is a little bit open is so that you don't have to remember to structure
+[20:24] your request in a certain way.
+[20:25] You can just type whatever and like posts will come out of whatever you typed.
+[20:31] That's how I kind of designed this.
+[20:33] If you pass in a YouTube URL, a TikTok link, a PDF link, an audio file, et cetera, those
+[20:39] will also be extracted.
+[20:41] Like I'm going to do a demo where we put in the latest Hormozy video and we create a bunch
+[20:45] of carousels from them, right?
+[20:47] So that's another thing you can do.
+[20:49] And then step three is to actually generate the post content.
+[20:52] Now these are pretty generic, right?
+[20:55] So we're going to fix this when we do the brand voice step.
+[20:58] So don't mind that for now.
+[20:59] And then if you want a visual with your post, this is an optional step.
+[21:04] You can make one as well.
+[21:05] So this will use my API to make visuals.
+[21:08] And then the rest of it is just like literally how to publish a post, right?
+[21:12] So this is just pulled from the API, because I noticed, you know, a lot of tutorials will
+[21:16] show you how to use cloud code to make content, but then it's like, well, now what?
+[21:21] You still have to make the visual, you still have to post to social media, unless you can
+[21:25] do all of those other tedious things, you haven't like saved that much time.
+[21:30] And so the workflow I'm showing today is like end to end, but we're just going to start
+[21:33] with one post at a time.
+[21:35] But by the end, you will have literally the entire week planned for you by your AI marketing
+[21:40] officer.
+[21:41] Okay, so just as a best practice, by the way, it is a good idea to read what Claude is doing.
+[21:47] I know we get lazy, we get sloppy, and we're like, I don't need to read this.
+[21:51] But it's like you're going to learn so much faster and be more confident in directing
+[21:55] Claude in the right direction if you just kind of like follow along with what it did.
+[21:59] So okay, now it's saying we're ready, we're going to replace our API key.
+[22:03] Okay, so remember this settings file where we have our API key.
+[22:06] So let's go grab it real quick.
+[22:08] So go to website.
+[22:10] So if you're not familiar with it, blotato.com is an app I built, basically, so that I could
+[22:15] make a shit ton of content without going insane.
+[22:18] It's like literally what it's for.
+[22:20] Okay, so just log in here or sign up here.
+[22:23] And then once you're in, it'll look like this.
+[22:27] Go to the bottom left, go to settings.
+[22:30] Okay, and then go to API.
+[22:33] And this is where you're going to generate an API key.
+[22:35] It is a paid feature, by the way.
+[22:38] So like don't generate it unless you're paying.
+[22:40] So hopefully you're already an existing user.
+[22:43] Go ahead and copy your API key and then add it here.
+[22:47] And for anyone watching, I don't have social accounts connected to this throwaway account.
+[22:51] So yeah.
+[22:52] Okay, I'm just going to zoom out.
+[22:54] I think I accidentally deleted a quotation mark.
+[22:57] Okay, I'm just going to copy it again to double check because I'm paranoid.
+[23:00] Okay, yeah.
+[23:01] So just double check that.
+[23:02] Make sure you still have quotations around your blotato API key, right?
+[23:06] So it should look like this.
+[23:07] Click Save.
+[23:09] So if there's like a dot here, that means you have unsaved changes.
+[23:13] So you can do control S or command S on Mac to save your changes.
+[23:18] Okay, so we've added our API key.
+[23:21] We haven't connected a social account yet, but let's just see what the post skill does.
+[23:26] After you add a post skill, you may not see it in the menu.
+[23:29] I mean, I do see it here, but just to be safe, I usually refresh cloud code just to make
+[23:35] sure like everything is loaded correctly again.
+[23:38] So one thing you can do on the top right session, click new session, boom.
+[23:43] This will create a new cloud code session.
+[23:45] Okay, and then I'm going to grab a YouTube video.
+[23:48] So this is one of Hormozy's latest videos, you're 28 minutes away from never being broke
+[23:53] again.
+[23:54] And then we're going to do type slash post.
+[23:58] And then the topic, let's do like AI entrepreneur tips.
+[24:03] And then I'll just paste the YouTube link here.
+[24:05] And let's say we want this for Twitter.
+[24:08] I forget if that was the format to use, but hopefully it will tell us.
+[24:12] Okay, submit YouTube video for content extraction.
+[24:16] So that's good.
+[24:17] So this means it parsed the YouTube URL, and it's going to submit it to the API so we can
+[24:22] get the transcript.
+[24:23] So I'm going to go ahead and click to because I don't want to give permission to this every
+[24:26] time.
+[24:27] Okay, and then allow this bash command.
+[24:30] So what this does for those who are you don't really need to understand this.
+[24:33] But if you're technically interested, this is going to pull the Bloatato API until the
+[24:38] contents extraction is done.
+[24:41] And sometimes there are errors, right?
+[24:42] Like here, exit code one.
+[24:44] So there's a parse error, invalid instruction.
+[24:47] The cool thing about cloud code is it actually tries to fix it itself.
+[24:51] And so we'll see if that can work.
+[24:53] I am curious what it did.
+[24:56] So perfect, I've extracted the content, draft Twitter posts, your money goals are too small,
+[25:01] AI entrepreneurs stop hoarding money, start hoarding skills.
+[25:04] This sounds like Alex Hormozy, if you watch any of his content.
+[25:09] So okay, so we have now a draft Twitter post, and it gave us three options.
+[25:13] We'll just choose the one that I see.
+[25:16] I actually just listened to his podcast about inflation on this one.
+[25:20] I think I like option two.
+[25:22] Oh, actually, let's make an infographic.
+[25:25] Okay.
+[25:27] And obviously, if you want to edit it, like you don't like the wording, you don't like
+[25:31] certain things, you can do that now.
+[25:34] But the next step here is to add brand voice.
+[25:36] So like, don't worry about that too much yet.
+[25:39] Okay, so allow bash command.
+[25:41] Yes.
+[25:42] Okay, now it's testing, unauthorized, that's not good.
+[25:46] Okay, so it is complaining about an API key permission issue.
+[25:51] That's kind of weird.
+[25:52] The API key should work, try again, because the API key just worked to extract the source.
+[25:59] So I'm just gonna tell it to try again.
+[26:01] Okay, so the API key is working.
+[26:04] It was just complaining because I don't have any social media accounts connected yet.
+[26:09] But first, let me create the infographic, then we'll connect your Twitter account.
+[26:12] And so one of the reasons guys, I'm doing this completely live, even though it's like
+[26:17] kind of nerve wracking when it doesn't work is because like, this is the process.
+[26:22] Cloud Code takes care of a lot by trying to figure it out itself.
+[26:27] But the more context you can give it about like, what's working, what's not working,
+[26:32] the faster it'll be able to figure it out.
+[26:35] And don't freak out if it doesn't work the first time, it might just be some minor thing.
+[26:40] So in this case, like Cloud Code just misinterpreted a response it got from the Blotato API, I
+[26:46] don't have any social accounts connected yet.
+[26:48] So it thought that like, something was wrong.
+[26:51] But the truth is, I just haven't connected my social accounts yet.
+[26:53] That's all.
+[26:54] And so everything was working correctly, but it interpreted it incorrectly.
+[26:58] But anyway, I'm doing this live to show you like, it's okay, if stuff doesn't work as
+[27:02] expected the first time, it often doesn't.
+[27:05] But just just read what's happening, you know, work through it a little bit, right?
+[27:09] It didn't take very long to fix it.
+[27:12] There was nothing actually to fix.
+[27:13] It was just Cloud Code again, misinterpreting the results from the API.
+[27:17] Okay, so now it's pull, it's actually creating the infographic.
+[27:20] So if we actually go to Blotato, we should eventually see it when it's created.
+[27:26] So here, and then I will also use this opportunity to go ahead and connect my social account
+[27:31] now.
+[27:32] So go to settings, and then log in with a social account, I'm going to choose one I
+[27:36] don't care about.
+[27:38] So Twitter, probably.
+[27:40] Okay.
+[27:41] And then once it's connected, okay, then you'll have Twitter down there.
+[27:44] Okay, that's great.
+[27:45] I should have chosen like a text carousel because it doesn't take as long.
+[27:49] So I don't know how long this will take.
+[27:50] If it takes too long, I will just create like a text carousel instead.
+[27:54] So once you teach the skill and connect API, will it find and reformat content on its own?
+[27:59] Yeah, I mean, you can basically give it let's say like a list, you can have it search for
+[28:05] a list of YouTube videos or a list of things relevant in your niche.
+[28:09] And then it will just take that content and create other new contents out of it.
+[28:15] But the next step is actually applying your brand voice, which is really important.
+[28:19] So it's not just like you, you know, taking someone else's content.
+[28:24] But yeah, I mean, this, this can be completely automated, which is kind of the crazy part.
+[28:28] But I recommend having a human in the loop for sure.
+[28:32] That's why in the last section, it's going to create a content plan for the week, and
+[28:35] then you review it and add your edits and stuff.
+[28:38] But everything's so streamlined.
+[28:40] And the text editor itself is a really nice interface for actually editing your drafts.
+[28:45] You will need a Bloatato account if you want to generate visuals and upload to social media.
+[28:51] If you just want to generate like the text content, you can without Bloatato.
+[28:56] So that can be completely for free.
+[28:59] You just can't upload like a YouTube video because Claude won't be able to get the transcript.
+[29:04] You will have to like use some other tool to fetch YouTube and TikTok transcripts.
+[29:09] And then to generate the visual, you still would have to use like some other tool.
+[29:14] And then for the third one, publishing to social media, yeah, you would have to use
+[29:17] some tool for that.
+[29:19] But if you just want to do the copy, then that should be fine.
+[29:23] Oh, man, it said I ran out of credits.
+[29:25] Okay, let me try a template that doesn't cost any credits.
+[29:28] Okay, use a carousel templates.
+[29:31] I forget the names of my carousel templates.
+[29:33] So if I click create new video here, you can like see different templates and stuff.
+[29:37] I'm trying to choose one that doesn't cost any AI credits or anything.
+[29:42] Which one do I like?
+[29:43] Oh, like quote card carousel.
+[29:45] Let's try that.
+[29:46] So it should be published soon.
+[29:49] So if you go to Bloatato, you'll actually see the carousel here.
+[29:53] And then if I go to Twitter, so this is my live Twitter account, right?
+[29:58] So here is the carousel on Twitter.
+[30:00] So I'm going to delete this now.
+[30:02] I'm going to go ahead and try this again, also with a different type of post.
+[30:07] So people were asking, like, do you have to create a visual, right?
+[30:10] So if I just do slash post, and then let's put a topic like how to ski in icy conditions.
+[30:18] So what this will do, this won't research any YouTube video or TikTok video, it will
+[30:22] just use a perplexity AI research agent just to research this topic and then create a post
+[30:28] based on it.
+[30:29] So let's say instead of a Twitter post, we want a LinkedIn post.
+[30:31] So just type LinkedIn at the end.
+[30:33] I was not locked out.
+[30:34] I ran out of credits.
+[30:35] So I just logged into the database and gave myself a ton of credits.
+[30:39] Okay, so what it's doing now, it fetched the completed post from Twitter, and then it updated
+[30:44] the log.
+[30:45] So if you go to posts dash log, boom.
+[30:47] So this is the post that I just showed you on Twitter, but deleted, but you can see what
+[30:52] it posted here.
+[30:53] Okay, so now I put a new post request to write this simple thing about how to ski in icy
+[30:59] conditions.
+[31:00] So it's asking if it should use the skill, I'm going to say yes, allow it.
+[31:04] So it's going to trigger our skill again, but it's not going to use Blotato.
+[31:08] So if you don't want to use Blotato, just do this.
+[31:11] But don't put in like a YouTube video or a TikTok video, because you would need an external
+[31:15] tool to be able to scrape those sources of data.
+[31:18] Okay, cool.
+[31:19] So we got LinkedIn post draft.
+[31:20] So that's option one, LinkedIn post, and then option two, I used to dread icy ski days.
+[31:26] That is true.
+[31:27] Okay, sharpen your edges.
+[31:28] Which do you prefer?
+[31:29] I think I prefer post two.
+[31:31] And then so if I say I prefer this, it's going to proceed to post the LinkedIn and it's going
+[31:36] to post just a text post without an image.
+[31:39] Now one thing you can do if you have a bunch of images locally on your computer, like images,
+[31:44] videos just saved on your computer, you can post those instead of using AI generation.
+[31:50] I think I just don't have any images or videos on this computer.
+[31:54] But this is the cool thing about cloud code, it can access whatever is on your computer.
+[31:59] So if you have a separate folder, like social photos that you've already like dumped in
+[32:04] there, like, you know, they're good to go for social media, you can have cloud code,
+[32:08] like pull a couple of those photos and post them as a carousel on Instagram.
+[32:11] You can even add title and captions on top of those photos and then post them as a carousel
+[32:16] in Instagram.
+[32:17] So that's one way to use this without having to like pay for AI image and video generation,
+[32:23] which can get a little bit pricey.
+[32:25] So now what we're going to do is feed samples of your brand voice and writing style.
+[32:29] So you guys may be familiar with this.
+[32:31] This is like the short version of my humanized AI writing prompts.
+[32:35] And its job is really just to like remove super obvious annoying signs of AI, right?
+[32:41] It's not it's not going to make your writing incredible.
+[32:43] It's just like the baseline.
+[32:45] And so what you want to do is add voice samples for each platform.
+[32:50] What we're going to do instead of pasting samples, let's say you're pretty new to content
+[32:54] creation.
+[32:55] You have no idea about your own samples.
+[32:57] What you can do instead is say, look up this particular creator's samples and use them
+[33:02] as like stylistic inspiration.
+[33:04] So we're going to do that for Twitter and LinkedIn.
+[33:06] I would say there's still many use cases for N8n today.
+[33:09] So where cloud code is pretty weak is anything related to orchestration.
+[33:14] So like deploying this, making it accessible to teammates, scheduling workflows, triggering
+[33:20] workflows, integrations like pre-built integrations with thousands of apps and services.
+[33:25] Those are all things N8n and other workflow automation tools still very much excel at
+[33:30] today.
+[33:31] Cloud code does not excel in those areas as of today.
+[33:35] But you can do cool things like combine cloud code with N8n through MCP so that cloud code
+[33:40] can just fix your N8n automation.
+[33:42] That is a really nice middle ground where you get the orchestration benefits of a mature
+[33:47] workflow tool like N8n or make.com, but you can use cloud code to like actually fix it
+[33:52] and create the workflow for you.
+[33:53] Okay, so I'm going to copy it now, I'm going to drop it here.
+[33:56] And then where it says Twitter voice here, I'm just going to say find samples from, let's
+[34:02] say Alex Hormozy for Twitter.
+[34:04] And for LinkedIn, let's say Justin Welch.
+[34:07] For today, I'm just going to like connect Twitter and LinkedIn.
+[34:09] And I'm not going to connect Instagram and Facebook, but we can put placeholders here.
+[34:13] Okay, so click enter.
+[34:15] And now what cloud code is going to do is like research those two particular influencers
+[34:20] and basically get their samples and put a bunch of their samples within your brand guidelines.
+[34:26] Obviously, you should use your own samples if you have them.
+[34:29] But if you are pretty new to content creation, it is normal to kind of like stylistically
+[34:34] try to copy big influencers just so that you get the hang of things.
+[34:39] But you can see what cloud code is doing, right?
+[34:41] So again, I always encourage you to read what it's doing, web fetch, right?
+[34:45] And then when it's orange or red like this, it's like for some reason, this particular
+[34:49] request failed, maybe the website blocked it or didn't pull anything.
+[34:54] When it's green, that means it was successful.
+[34:56] So I just encourage you to get used to kind of reading, scanning what cloud code is doing
+[35:01] so you have an understanding of what it's tried and what's working, what's not working.
+[35:06] Okay, so now it's gathered examples from both Hormozy and Justin Welch, and it's going to
+[35:10] update the post skill right now with the brand voice.
+[35:13] Okay, so I'm going to open the post skill again, so we can look at it.
+[35:18] And here's the section that it's added, right?
+[35:20] So it's asking for permission.
+[35:21] So you can click Yes.
+[35:22] There's also a check mark up here, by the way, to accept proposed changes.
+[35:27] Now it decided to regenerate that LinkedIn skiing post using the brand voice.
+[35:33] Skiing on ice terrifies most people.
+[35:35] I used to hate it too.
+[35:36] Then one day changed everything.
+[35:37] An instructor told me, yeah, so this is definitely Justin Welch style.
+[35:42] So if you're familiar with his writing, this definitely brings that out.
+[35:45] But I guess what we can do now is like do it, but for Twitter, so you can see the difference.
+[35:49] So ski tips in icy conditions.
+[35:53] And then let's put Twitter.
+[35:54] So this post should be stylistically pretty different from the LinkedIn one.
+[36:00] Although Hormozy and Justin Welch actually do overlap quite a bit in copywriting style,
+[36:06] but Twitter is a bit punchier and a bit shorter form than LinkedIn.
+[36:10] So yeah, so these are like shorter options to fit in the character count.
+[36:14] So like boom, boom, boom, right?
+[36:17] So that's Twitter, that is LinkedIn, and already it's much better than kind of the generic
+[36:23] stuff that we were getting before adding the brand voice.
+[36:25] Okay, so if I open skill.md, basically you can put your samples here if you already have
+[36:31] samples as a creator, and that is how you will get like much better results.
+[36:36] So the next step is to create what I call them quality gates.
+[36:40] I call it a gate because you don't have to like invoke it.
+[36:44] Like as soon as you go to publish something, you have to cross this quality gate and it's
+[36:49] going to check automatically.
+[36:50] So what I mean by that is we're going to use Cloud Code hooks.
+[36:55] So a hook is basically like a piece of code that can be triggered automatically at certain times.
+[37:01] It's a script that's going to run before the attempt to publish, and that hook will check
+[37:06] for, for example, em dashes.
+[37:08] It'll check that your posts don't exceed the platform character limit.
+[37:12] If you're trying to post to platforms like Instagram or YouTube that require you to upload
+[37:17] an image or video, it's going to check that as well.
+[37:20] It's going to check for any banned words.
+[37:22] So if you have a banned words list in your brand voice, it's going to check that.
+[37:25] And the thing is, you can make this like much more complex and nuanced in terms of what
+[37:30] quality means to you.
+[37:32] You could even have this as an LLM score your posts in terms of virality.
+[37:37] Like let's say your quality check like scores for virality and if it scores above eight,
+[37:42] it can be posted.
+[37:43] If it scores below an eight, we're going to go back and rewrite it until it scores above an eight.
+[37:48] That's like a little bit more complex, but I don't have time for this here.
+[37:51] These are like really cool things that you can do with Cloud Code Hooks.
+[37:56] And the nice thing is you don't have to remember to call them.
+[37:58] They just run like based on how you set it up.
+[38:01] In this case, they're going to run before any bash command that contains curl and this
+[38:06] API, this address, meaning we're trying to publish a post.
+[38:10] Okay.
+[38:11] Then it is going to ask you for a bunch of permissions and stuff.
+[38:14] And then what we're going to do is test it.
+[38:16] So we're going to test a post that exceeds the character limit, for example, on Twitter.
+[38:21] And then the quality gate should prevent it from being published.
+[38:25] And it will give you the reason as well.
+[38:27] Like it will explain this post is forbidden because it succeeded the character limit for
+[38:31] that platform.
+[38:32] Okay.
+[38:33] So allow write to validate dash post.
+[38:35] So this is going to be the script.
+[38:37] I know this is really small, but on the left hand side, there's new directory that was
+[38:41] created called hooks.
+[38:43] And then this file called validate dash post.
+[38:45] So this is going to run before the attempt to publish.
+[38:49] And then this is the code inside.
+[38:51] You don't have to do anything with that.
+[38:52] I'm just like showing you to be aware, like generally, this is how things are structured.
+[38:57] So if you have a project, it's going to have one directory for all of your hooks, one directory
+[39:01] for all of your skills, and then it's going to edit your settings over here so that the
+[39:06] hook can run automatically.
+[39:09] And you don't have to do anything just explaining like what it's doing.
+[39:13] Okay, so it's making some more edits.
+[39:15] Someone said this looks much more complicated than n8n.
+[39:18] That's really not is the thing.
+[39:20] That's kind of the crazy part because like I use n8n a lot.
+[39:23] Like I have production workflows running 24 seven self hosted in n8n.
+[39:28] Right now, I think they're very complimentary tools.
+[39:31] Like I don't consider them for the same tasks.
+[39:34] So someone earlier was asking me like, is n8n dead?
+[39:38] And I was replying that there's a lot in the orchestration layer that is really nice with
+[39:42] n8n.
+[39:43] is also amazing because it just can build like almost anything you want it to.
+[39:49] And it can debug itself if you give it a feedback loop.
+[39:53] For example, if you use the cloud Chrome extension similar to anti gravity's Chrome extension,
+[39:57] you can have it look at your app, look at your website.
+[40:00] and keep improving it until it looks the right way, until it functions the right way.
+[40:04] And so it's really, really powerful. Maybe it looks scary because it's like black and pink,
+[40:09] I don't know. But anyway, so we're going to try testing this. So I'm just going to say
+[40:14] test the post hook on an excessive character tweet. Okay, but it did actually test it itself,
+[40:21] which is nice, but let's try one more time. So here it's testing this hook with an oversized
+[40:26] tweet. Just to illustrate the power of Cloud Code, let's say we just think of another quality
+[40:33] check we want. Let's say the quality check is like, you must mention our company name at least
+[40:38] twice in the post. So you're more of a business brand or a marketing brand, or you want the CTA
+[40:44] to always include your website. We can literally add that in two seconds, and it would work out
+[40:51] of the box, especially that one, because that one is simpler. Someone's asking, how do you visualize
+[40:55] your website that you create in Cloud Code? So this particular project from start to finish does
+[41:02] not have a front end. It's not a web app, but you could actually create a front end dashboard for
+[41:08] all of this. I just couldn't fit it in the time. But by the end of this, if you want to just create
+[41:14] a front end, an app visual on top of this, you can easily do that with Cloud Code. So you can just
+[41:20] type into an input box, here's the topic I want. Do you ever let it self-compact? I do, but I try
+[41:27] not to. For example, if I'm working on a new feature or a bug, and I've actually hit the
+[41:32] context window, I consider that, I don't want to say failure on my part, but I must have been
+[41:38] missing something for it to take that many turns of conversation. Okay, so allow write to test
+[41:45] results. Okay, so it's testing the hook with a valid post. By the way, if you're using the Cloud
+[41:51] Code official extension, you can click on these things. You can click on input and see what the
+[41:56] input was. You can click on output and see what the output was. So that's a neat thing as well.
+[42:01] Okay, so now we have our quality check. So it's going to check things like em dashes, it's going
+[42:06] to check character limits, it's going to check banned words, and all of that is customizable.
+[42:11] So if you have a bunch more banned words, you're going to add them real quick.
+[42:15] So the next part is to actually build our first sub-agent. So we have our post skill,
+[42:20] we have our brand voice, we have our quality gates, but right now it's just like we publish
+[42:25] to one platform at a time instead of multiple platforms at a time. So what we're going to do
+[42:30] is update. So just take a screenshot of this and drop it into Cloud Code. We're going to update
+[42:36] our original skill so we can post to multiple platforms at the same time. So for example,
+[42:42] if I type the word all, right, so instead of typing Twitter or LinkedIn, I'm going to type
+[42:46] all. So now it's going to create a visual that's related to this topic, it's going to spawn a
+[42:53] sub-agent for each platform, and then each sub-agent is going to adapt the post for the platform,
+[43:00] and then each sub-agent is going to publish to the platform, and then we're going to log
+[43:04] all of the results over here in our posts log MD. And so the reason this is nice and efficient
+[43:10] is because publishing is asynchronous. Like imagine you're publishing a whole week's worth
+[43:15] of content and you're doing like five posts a day. So that would be like 35 posts. So now we can just
+[43:22] like parallelize that effort instead of like scheduling them one at a time. What I'm going
+[43:26] to do real quick is connect my LinkedIn account because so far I've just been on my Twitter
+[43:31] account. I'm going to connect my LinkedIn. And then if it's successfully connected, you should
+[43:35] see your accounts on the list at the bottom. And then let's go back to Cloud Code. Remember to copy
+[43:41] paste this into Cloud Code, so this will be the next thing. And then we're going to test it by
+[43:45] dropping in a YouTube video again, and then asking it to use our brand voice, and then create posts
+[43:50] for all the platforms we have connected, which right now are LinkedIn and Twitter, and then
+[43:54] automatically publish to both platforms with a visual. So make this edit, yes. And then I'm going
+[44:00] to grab the YouTube video real quick and just prepare what we're going to post. Are you concerned
+[44:05] that you're at nearly 90% context use? Not really. I mean this is a pretty simple project. I also
+[44:12] generally like to clear the context. It's just a habit. But this is it's just such a simple
+[44:17] project, so I'm not that concerned about it. It's not like it's trying to debug like a really complex
+[44:23] issue and we've tried you know 20 different things and now the context window is almost used up.
+[44:29] We're actually just building a lot of different things piling on top of each other, but like
+[44:34] honestly I could have reset the context for each new feature we're adding and it would have worked
+[44:39] perfectly fine. Okay, so it's going to write something. Okay, so the cross-platform publishing
+[44:47] Postskill now supports publishing to all platforms simultaneously with a single command. Okay, and
+[44:54] here it is. By the way, like most of the links within here are clickable. So you can just like
+[44:59] click to navigate. So that's really handy. So let's do a different topic. Let's do like
+[45:04] like super advanced clod code tips. I'm going to create a cross-platform post. Let me follow the
+[45:12] cross-platform workflow. Number one, it's going to create a shared visual asset. I kind of hope it
+[45:17] chooses an infographic. I was like really excited to show the infographic, but the first time I
+[45:23] created a visual I ran out of credits. So I had to log into my production database and give my
+[45:28] test user a bunch of credits. So we didn't get to see the infographic yet. Okay, so now it's
+[45:34] fetching all my accounts. Oh, I don't have LinkedIn or Instagram accounts. So that is going to
+[45:39] get it confused. Okay, so here's one of the Facebook posts. Then that's the Twitter post.
+[45:45] I will probably tell clod code I don't have Facebook and Instagram accounts connected just
+[45:50] so it stops trying. But okay, here's the temporary LinkedIn post. And by the way, in the final step,
+[45:58] we will have like a full content plan because obviously you want to read the post and like
+[46:03] add any tweaks. I'm just going to say, oh yeah, this is actually something to point out. So if
+[46:08] you're new to clod code, so you could choose options 1, 2, 3. There's like always pre-built
+[46:13] options. But let's say you want to tell it something or it's missing something. You can
+[46:18] type here, tell clod what to do instead and just type it. And I'm just going to say, by the way,
+[46:23] I don't have Instagram or Facebook accounts yet. Just do Twitter and LinkedIn. Otherwise,
+[46:31] it's going to like try to do that forever. I'm going to check if it created the visual.
+[46:37] Ah, it didn't choose an infographic. It chose another carousel. Okay, next time I might tell
+[46:42] it very explicitly to choose an infographic. But yeah, these are the clod code advanced tips,
+[46:48] right? So, okay. I mean, I was making a bunch of these earlier when going through it. And like,
+[46:53] there's a bunch of like really fun infographics you can make. Like this one was really funny,
+[46:58] trail markers for building solo. I put the topic like, who is Sabrina Romanoff?
+[47:04] So it made this like chalkboard infographic. That's pretty neat. Oh, hang on. It's asking
+[47:10] for permission. Okay. Publish to Twitter and it'll capture submission ID. Yes. Publish link.
+[47:17] Now it's going to publish LinkedIn posts. Okay. But yeah, I was hoping it would choose one of
+[47:23] these whiteboard infographics, but it did not. So if you do want it to use a certain set of
+[47:28] templates, like obviously you can also put that in your preferences, right? In this particular
+[47:32] flow, we just have it completely decide what to do. So it just ended up choosing that other
+[47:37] card carousel. Okay. Then let me check Twitter. It posts already. Oh yeah, it posts. Okay. So
+[47:53] here's the clod code. So this is 28 seconds ago. And then that one was also 33 minutes ago.
+[47:59] So basically what's happened is we published on Twitter here. So I just deleted some of the posts
+[48:04] that were on Twitter, but it basically created one visual that is going to post to multiple
+[48:09] platforms. The next step is what I really want to get to, which is like actually planning the entire
+[48:15] week and the draft. Because that one, it's nice that AI can generate all of these drafts, but
+[48:20] like ultimately you do want quality control, right? You want to be able to see what the plan is and
+[48:26] make a lot of tweaks to the plan to make sure that it's high quality. But we have all the pieces now.
+[48:31] So we have the content creation skill, right? Slash post that will do the copywriting for each
+[48:37] platform and generate a visual. We have the brand voice guideline with the writing samples,
+[48:42] band words. We have a quality gate that runs automatically whenever you try to publish. So
+[48:48] this can catch things like em dashes or too many characters. It can catch really anything you can
+[48:54] imagine. So whatever you think of in terms of quality, like I mentioned earlier, one use case
+[48:59] is you could have it score the virality of your post. And if it scores below a certain number,
+[49:05] it could retry, rewrite the post so that it scores a little bit higher. And then we have
+[49:10] parallel posting with multiple sub-agents. So now we're going to tie everything together into just
+[49:15] like one command that plans and schedules one week of content. And then for this, I actually do want
+[49:22] to update this to say I really want to whiteboard infographic because that's what I was really
+[49:27] excited to show that I'm going to say updates post skill so that it chooses an infographic
+[49:36] visual template, not a carousel just because we've done two carousels already. So I want to
+[49:41] showcase something a little bit different. You can also create videos, by the way, like you can feed
+[49:45] in your own assets, photos, and videos to populate slideshows and videos, but that's a little bit more
+[49:51] advanced. So we won't cover that today. Okay. So it's going to update that. And then here is the
+[49:56] prompt. Again, it looks long, but it's really not crazy. So we're going to create a second skill.
+[50:02] This one's going to be called plan week. And it's different from the first one. So the first one
+[50:07] is just like, hey, I have an idea and I want to post and I want to have all of these posts across
+[50:13] the platform. So it's like posting one idea at a time to multiple platforms. This skill is like
+[50:19] really planning your whole week. So given a topic or a set of topics, it's going to plan like
+[50:24] multiple posts and across multiple platforms as well. It's similar as before. It's going to
+[50:30] figure out what you want from whatever you provide. So you could provide a combination of topics and
+[50:36] TikTok videos and YouTube videos, and it's going to be able to extract them. And it's going to
+[50:41] research the topic, write the weekly content plan. It's going to output it in a separate file so that
+[50:46] you can view the entire plan, make your edits and suggestions there before anything gets scheduled
+[50:52] out. It's also going to ask if you want a visual for the posts. So I might just, just for time
+[50:59] purposes, I might just do visuals for like half the posts, right, instead of all of the posts for the
+[51:03] week. And then it's going to draft the text posts, show you what it looks like. Let's see. It's going
+[51:08] to show you the plan, wait for your approval. This line again is just to, you know, make it clear to
+[51:13] schedule in the next free slot. And then after you approve the post, it's going to use parallel
+[51:18] sub-agents to go ahead and schedule it in the next free slot. And then similarly, it's going to
+[51:22] ask clarifying questions one at a time in case we missed anything really important. And this is the
+[51:27] last like technical prompt though. So the only thing after this is just creating the Clod MD
+[51:32] file as a way to codify everything we've learned in the interaction. Okay, so question is how many
+[51:38] posts per day should the weekly plan include? So let's do B. So it's going to be one post per
+[51:46] platform per day, but we're only going to focus on LinkedIn and Twitter. I don't have
+[51:54] IG Facebook connected. You can also customize it so it could be like specify each time you run the
+[52:00] command. Again, the beauty of Clod code is like this is all easily, easily changeable. If we
+[52:06] choose B and we decide like right now we're going to switch it to D, I mean it takes like two seconds
+[52:12] and it's done. Whereas with a GUI based tool like N8n or other types of drag and drop tools,
+[52:19] like it really would take a lot more work than this to rewire everything, to change the conditions.
+[52:24] So once you get into Clod code, it's pretty addictive and like very powerful what you can
+[52:30] build. Okay, so question two, should the weekly plan cover all seven days or weekdays? Let's just
+[52:35] say weekdays only for now. Let's pretend we take a break on weekends. Someone is asking how does
+[52:41] the agent authenticate? So it's authenticating through Bloatato's official API connection to
+[52:47] those platforms. It's not Clod code like in authenticating directly with the social platforms.
+[52:53] Okay, content approach. Do we want one main topic or URL and create 10 different angles
+[52:59] or generate completely different topics each day? Or you can specify it each time, right? I'm just
+[53:05] going to say A for simplicity. So we're just going to give it like one URL and create 10 different
+[53:10] angles from it. Okay, let's do a different Hormozy video. Okay, let's go back here. Okay,
+[53:17] question four, when publishing. Yeah, let's just do next free slot because we're actually like
+[53:22] scheduling this in advance. And then actually, that's a good opportunity to set up our slots.
+[53:28] So slots are just like times when you can publish. So here, when you go to calendar, go to your
+[53:34] weekly schedule, and you'll see this button add slot. So what this means is if I just want to
+[53:39] publish, let's say Monday, Tuesday, Wednesday, Thursday, Friday, every day at 10am on Twitter,
+[53:45] and say LinkedIn, so those will be my slots. So all I have to do is like create content,
+[53:50] drop it in the slot, and it's just going to be scheduled in the next open time. And this is
+[53:55] really handy because different platforms, you know, punish too frequent posting differently.
+[54:02] So like on Twitter, you can totally tweet 15 times a day and you don't get punished for that, right?
+[54:07] But on LinkedIn, you generally don't want to post more than once per day because you would be
+[54:11] annoying your network. On Instagram, like three posts a day like I do is already pushing it,
+[54:17] right? So just depending on the platform, your frequency might be different, the times you post
+[54:22] might be a little different. So it's really nice to set up slots. And then all you have to do is
+[54:26] like add content to the slots like and so you don't have to worry about like what exact time
+[54:32] the content is going out. So now it is compacting, we hit the context window. So but again, it's
+[54:38] really not that big of a deal. Like this is a pretty simple thing that we're building. So I'm
+[54:45] not like super concerned about it. But so occasionally, though, I do notice it kind of like
+[54:49] times out and freezes and I have to like stop it. But this looks okay so far. So you can schedule
+[54:55] it to post on nine social platforms, Instagram, Facebook, TikTok, LinkedIn, Pinterest, Blue Sky,
+[55:04] threads, Twitter, YouTube. Yeah, so you can create these slots and schedule to all of these different
+[55:11] platforms. So it's really neat. Does it post generate faster for images and videos are locally
+[55:15] on your machine? Yes. So one option here is to completely ignore AI image and video generation
+[55:22] and just use your own photos and videos. And you can do that you can just like tell Claude,
+[55:27] hey, I want to pass this local set of photos or videos I have over to the API to schedule them.
+[55:34] And so I probably should do that in a another tutorial because that would be cool. Like, you
+[55:39] know, I have folders as well just have like selfie photos that I actually would post on LinkedIn
+[55:44] because selfie photos do really well on LinkedIn for some reason. So that would be cool if it just
+[55:48] grabbed one of the selfie photos, right? And just like put it with my LinkedIn post. If you're
+[55:52] starting out on LinkedIn, I honestly recommend posting only three times a week and just like
+[55:58] spend a little more time improving the hook of your post for LinkedIn or improving the visual
+[56:03] of your post for LinkedIn. What if this stream is being done by an AI? How fast do you run out
+[56:09] of your weekly allowance on Claude? I've actually never hit my weekly limit on Claude, but I'm also
+[56:14] not one of those people that's like just like running multiple crazy stuff 24-7. Like I just
+[56:20] use it like a normal person like several hours a day. Okay, so it's done here. So weekly plan
+[56:26] was created. So I've created a weekly plan, plan week. Just to be safe, I have a habit of doing
+[56:33] this. I always refresh or start a new Claude code session after building a new skill just to make
+[56:38] sure it triggers. It probably will trigger anyway, but that's just my habit. Okay, and then let's
+[56:43] grab Alex Formosy's YouTube video. Boom. I think it's slash plan week. And I'm just going to pass
+[56:50] in this URL. And because it's planning the whole week, we don't have to specify the platforms like
+[56:55] it already is going to try to post it to all the platforms. Okay, so let's just do that. Currently
+[57:00] using Zapier, but I run out of activities. Is there a cheaper AI to use that's similar? Yeah,
+[57:04] honestly, make.com is significantly cheaper than Zapier. I know it's increasing its prices as well,
+[57:12] but comparatively, it's still significantly cheaper than Zapier. And I think it's the most
+[57:17] similar to Zapier. So it's called make like just like make something make.com. A lot of people do
+[57:24] use n8n. It has a self hosted option. So it can be like ultra cheap to run for really high volume
+[57:31] workloads. But the learning curve is a bit steeper. So if you're coming from Zapier, I honestly would
+[57:37] recommend just checking out make.com. It already is much cheaper to use. Yes, when using cloud code,
+[57:43] you think close the session and open it again. Yeah, I think that's where I picked up the habit
+[57:47] because I typically use cloud code with a terminal within Visual Studio code. And I mentioned this
+[57:53] earlier, but that's because you get access to some of the newer beta features such as
+[57:57] cloud in Chrome, which is a beta feature not accessible through the official extension as
+[58:02] far as I know yet. And you also get Vim mode that actually works super weird because the
+[58:07] official extension used to have Vim mode, like I was pretty sure I was using it before, but now it
+[58:12] doesn't. So I use cloud code within the terminal within Visual Studio code. But the downside of it
+[58:18] is just like not as pretty. It's just like really pretty here with the official extension.
+[58:24] I think this was like a really long video. So it's it extracted the content from the YouTube video.
+[58:30] I don't know how long it is. Oh, wow. I should not have chosen this video. Oh my god. It's like
+[58:36] two hours long. That's why it's like chunking up the YouTube transcript. Well, it was cool.
+[58:42] It actually did it right. Like I was surprised that worked. And now it's in the process of
+[58:46] generating 10 unique angles from the video, and then writing 10 full post drafts, and then creating
+[58:52] five infographics one per day. And then it's going to output the plan and then present the plan and
+[58:58] get approval. Okay, so it's creating Monday infographic, closer framework, Tuesday infographic,
+[59:04] pricing and offers. I'll zoom in. Wednesday infographic, volatility and risk. Thursday,
+[59:09] content to ads. Friday infographic, focus and pick one. All five infographics are queued. So if we go
+[59:15] back to Bloatato, if the infographics truly are queued, then yeah, you'll see the five drafts here.
+[59:21] You can see that they were created like a few seconds ago. So that means they're in the queue.
+[59:25] Okay, pull all five infographic jobs. Yes. So what polling means is like the API is asynchronous.
+[59:32] So it's like, I start creating an infographic, and then you have to check when it's done. And it
+[59:38] depends, like how long it takes depends on like what models you're using. So if you're generating
+[59:43] video, that's going to take like five to 10 minutes. And like, that's the main reason I'm not
+[59:48] demoing video generation right now, because it's going to take a while. If you're using a template
+[59:52] that does not involve any AI image generation, for example, it's just like different graphics,
+[59:58] pre built graphics, or
+[01:00:00] or your own images and videos.
+[01:00:02] So you're just uploading them.
+[01:00:03] You're not generating anything.
+[01:00:05] That generates like a lot more quickly.
+[01:00:07] That's done a lot more quickly.
+[01:00:08] So, okay.
+[01:00:09] So now it's writing the complete content plan
+[01:00:12] while infographics generate.
+[01:00:13] There's the content plan.
+[01:00:15] Oh, yay.
+[01:00:16] The infographics appeared.
+[01:00:17] So nice thing with Bloatato, I was super lazy.
+[01:00:20] So it will just like refresh the page.
+[01:00:22] Whatever the infographic is done,
+[01:00:24] it'll like navigate directly to the infographic.
+[01:00:27] So this is from the two hour long Hormozy live stream,
+[01:00:32] right?
+[01:00:33] Turn your best organic content into paid ads
+[01:00:34] that drive leads.
+[01:00:35] Identify winners, blah, blah, blah.
+[01:00:37] And it's a cool like slanted whiteboard infographic.
+[01:00:40] But let's take a look at some of the other ones.
+[01:00:42] So I don't know which day this is,
+[01:00:44] but like the power of focus and business.
+[01:00:46] Pick one, go all in.
+[01:00:48] This is another nice whiteboard infographic,
+[01:00:50] nice colors and stuff like that.
+[01:00:52] Okay, let's choose another one.
+[01:00:55] I'm just curious like what it wrote.
+[01:00:58] Okay, volatility versus risk.
+[01:01:00] So I haven't heard him actually talk much about this.
+[01:01:03] So this is pretty interesting.
+[01:01:05] And by the way, these are all taken
+[01:01:07] from a two hour Hormozy live stream, right?
+[01:01:10] Obviously you wanna put your own thoughts
+[01:01:13] and perspective in here,
+[01:01:14] but just showcasing what is possible.
+[01:01:16] So the offer stack that fixes your cashflow forever.
+[01:01:20] And then this one is the closer deal.
+[01:01:22] So if you're familiar with Hormozy,
+[01:01:24] this is like his sales closer frameworks
+[01:01:28] So this one's actually really cute
+[01:01:29] with this funnel that's colorful.
+[01:01:31] So that's cute.
+[01:01:32] Okay, does it animate?
+[01:01:35] You actually can animate it.
+[01:01:36] But again, that would take like five more minutes.
+[01:01:39] So that's the main reason
+[01:01:41] I'm not showing any video generation
+[01:01:44] because it just takes a long time.
+[01:01:45] And then if something goes wrong, I have to retry it.
+[01:01:48] Whiteboard infographics are a nice middle ground, right?
+[01:01:51] Like it took maybe two, three minutes,
+[01:01:52] but it's not like an insanely long amount of time.
+[01:01:55] So now it's going to fetch the infographics,
+[01:02:00] but most importantly, we can look at the content plan.
+[01:02:03] Yeah, so on the left hand side,
+[01:02:05] there should be a content plan document.
+[01:02:08] Boom, here.
+[01:02:09] Okay, so I'm gonna open it and I'll try to expand it.
+[01:02:12] So this is the content plan.
+[01:02:13] So Monday LinkedIn, this is the angle.
+[01:02:16] So this is not the post.
+[01:02:18] This is like the angle it extracted
+[01:02:21] from the two hour long YouTube video.
+[01:02:23] And then this is the draft post.
+[01:02:25] Alex Hormozy fixed it in 10 minutes.
+[01:02:28] It's called Closer.
+[01:02:29] Boom, boom, boom.
+[01:02:30] If you're familiar with LinkedIn,
+[01:02:31] like you know this is the format for LinkedIn, right?
+[01:02:35] And then this is the visual and it has the ID
+[01:02:38] so you can go check on it.
+[01:02:39] And then this is post to Twitter for Monday.
+[01:02:43] So this is the same day
+[01:02:45] and it's gonna use the same infographic,
+[01:02:47] but it's gonna have like a tweet.
+[01:02:48] So it's limited to 280 characters.
+[01:02:51] And then here's Tuesday for LinkedIn.
+[01:02:54] So the angle is stop charging monthly,
+[01:02:56] package your services into outcome-based offers
+[01:02:59] that fix cashflow.
+[01:03:00] And then here's the draft post for LinkedIn,
+[01:03:02] Hormozy style, right?
+[01:03:04] And then here is Tuesday, the Twitter version.
+[01:03:07] So it's significantly shorter.
+[01:03:08] And then Wednesday.
+[01:03:09] So I'm not gonna go through every single one,
+[01:03:11] but like what's cool in Visual Studio Code
+[01:03:13] is Cloud Code is aware of which lines you've selected.
+[01:03:17] So let's say I just wanna edit Wednesday.
+[01:03:21] You can actually just select like this area
+[01:03:24] and be like, just completely rewrite this area.
+[01:03:26] So it's hard to see, but there's a thing down here
+[01:03:29] that says 24 lines selected.
+[01:03:31] So Cloud Code is aware.
+[01:03:32] So if you select these two lines,
+[01:03:34] it's aware of what you're selecting.
+[01:03:36] So it can apply the prompt just on your selection.
+[01:03:39] So you can just like select Wednesday
+[01:03:41] and be like, just rewrite Wednesday.
+[01:03:44] So that's really cool.
+[01:03:45] That's one of the benefits of like using Cloud Code
+[01:03:47] within an editor like this.
+[01:03:49] The other thing is you can also just tell Cloud Code
+[01:03:52] you don't like this and to rewrite it, right?
+[01:03:54] So like you have the option here to manually edit,
+[01:03:57] revise, tweak the posts so that it fits your brand voice.
+[01:04:01] You also have the option to have Cloud Code help you.
+[01:04:04] So if you're noticing something kind of inconsistent
+[01:04:07] across all of these posts, you can tell Cloud Code,
+[01:04:09] hey, like there's something I don't like about these posts.
+[01:04:12] Like I'm really not liking the theme or the writing style
+[01:04:15] and Cloud Code will work with you
+[01:04:17] to like keep revising the drafts until you're happy.
+[01:04:20] And that's really important
+[01:04:22] because like most people should not start out
+[01:04:25] with full automation of content.
+[01:04:27] If you don't know how to make good content,
+[01:04:29] like you're not gonna learn by setting and forgetting it
+[01:04:32] and like never looking.
+[01:04:33] And like, there's still a ton of trial and error involved,
+[01:04:37] but the beauty of once you set up this system
+[01:04:40] is you can like focus all your time
+[01:04:42] on just like tweaking the drafts.
+[01:04:44] And it's already prebuilt with your brand voice.
+[01:04:47] It can analyze apparently a two hour long YouTube video,
+[01:04:51] which I didn't think would work,
+[01:04:52] but it works like insanely well.
+[01:04:54] It can generate images.
+[01:04:55] It can generate like the infographics
+[01:04:57] like we showed about, right?
+[01:04:58] Like this one is super cool, the closer framework.
+[01:05:01] And now you can spend like the majority of your time
+[01:05:04] actually just improving the content
+[01:05:07] instead of spending the majority of your time
+[01:05:09] figuring out how to post the five social platforms,
+[01:05:12] scheduling it on each one,
+[01:05:13] generating the visuals for each one, et cetera.
+[01:05:16] Okay, so here's the plan summary.
+[01:05:18] Here's the themes, edit any posts directly.
+[01:05:21] Let's just say approve, but just schedule it in advance.
+[01:05:26] Okay, so now it's gonna try to publish the 10 posts,
+[01:05:29] but hopefully it listens to me
+[01:05:31] when I say schedule next post.
+[01:05:34] This will save me at least five hours each week.
+[01:05:37] Well, this is just the base version.
+[01:05:38] Like you can extend this to publish
+[01:05:41] to like four more social platforms, three different brands.
+[01:05:44] Like you can have insane quality gates.
+[01:05:47] I think I'm the only one who calls this a quality gate.
+[01:05:50] Like maybe quality check is an easier term.
+[01:05:53] But what I said before about like a quality check
+[01:05:55] that scores your post based on comparing it
+[01:05:58] to a database of like 200 viral posts.
+[01:06:01] And then if you score below a certain threshold,
+[01:06:04] it like rewrites the hook, right?
+[01:06:05] So like you can do all kinds of like really crazy things
+[01:06:08] once you establish this as the base.
+[01:06:10] Okay, so now it's going to like publish, publish, publish.
+[01:06:14] It would be nice if it just did that
+[01:06:16] without asking me for permission.
+[01:06:18] So we'll do this in the next step.
+[01:06:20] And then I'm gonna check my calendar
+[01:06:22] to make sure it's posting.
+[01:06:24] So I feel like it's just posting,
+[01:06:27] not actually respecting the post in the future.
+[01:06:32] So I'm gonna check Twitter.
+[01:06:33] So yes, it just posted all of our posts
+[01:06:35] instead of scheduling in the future.
+[01:06:36] So I will need to fix that
+[01:06:38] before I actually launch the prompts.
+[01:06:41] But what's supposed to happen
+[01:06:42] is it's supposed to schedule it here.
+[01:06:44] So you can see all the upcoming posts here,
+[01:06:47] but it decided to be very trigger happy
+[01:06:49] and just schedule them all at this moment.
+[01:06:51] So, but I will tweak the prompt
+[01:06:53] so that that doesn't happen.
+[01:06:54] I was just kind of on a time crunch for this one.
+[01:06:57] The very last thing I definitely did want to talk about
+[01:06:59] is the Clod MD file.
+[01:07:01] If you mean pricing tier for Clod code,
+[01:07:03] I'm personally on the 200 per month plan,
+[01:07:06] but you can definitely do this as well
+[01:07:08] on the lower tier plans,
+[01:07:09] especially if you're just like batching contents.
+[01:07:12] Cause like a lot of the people who hit the limits
+[01:07:14] of the lower tier plans are using it like a lot.
+[01:07:18] But in this type of workflow,
+[01:07:20] you could just like sit down for a few hours,
+[01:07:21] batch all your content for the next week or two, right?
+[01:07:24] And you should be okay with the limits that way.
+[01:07:27] So let's go to the very last thing.
+[01:07:29] The last thing is to create your Clod MD file.
+[01:07:32] So now we have a working system.
+[01:07:33] We have the two skills, the quality checks,
+[01:07:36] the brand voice and the published posts log.
+[01:07:39] I forget if I showed that,
+[01:07:40] but this is basically a log of all the published posts,
+[01:07:43] including the links.
+[01:07:45] So you could hook this up to another tool
+[01:07:48] and get the analytics for your posts and stuff
+[01:07:50] if you want that.
+[01:07:51] But most importantly,
+[01:07:52] I wanted to talk about the Clod MD file.
+[01:07:54] You can think of this as a way to like codify everything
+[01:07:57] that you've built and learned.
+[01:07:59] And so I like, I'm kind of religious with my Clod MD file.
+[01:08:03] I'm always like keeping it up to date and cleaning it up,
+[01:08:05] especially for my super long Clod MD file for my code base.
+[01:08:09] And it's going to create a Clod MD file
+[01:08:11] that links to the docs, you know,
+[01:08:14] tells Clod where the API key is,
+[01:08:16] links to our brand voice file,
+[01:08:17] links, just kind of just explains what's in this project,
+[01:08:21] what is this project for,
+[01:08:23] and any other patterns or conventions we establish.
+[01:08:26] So just go ahead and copy this.
+[01:08:28] This one shouldn't take long.
+[01:08:29] There's not many tool calls or anything.
+[01:08:32] Okay, and while we're waiting for that,
+[01:08:34] just to recap everything we've built.
+[01:08:37] Step one, we just did one social post
+[01:08:40] to confirm that everything worked end to end.
+[01:08:42] So you can type slash post and then your topic
+[01:08:45] and then the platform you want to post on.
+[01:08:47] And it's going to generate the post,
+[01:08:49] generate a visual if you want one,
+[01:08:51] and then post it to Twitter.
+[01:08:53] And then the next step is incorporating the brand voice,
+[01:08:55] remember, with a sample.
+[01:08:57] So for now we just use kind of my humanized AI prompt
+[01:09:00] to clean up the AI sounding content.
+[01:09:03] And then samples from Justin Welsh and Alex Hormozy,
+[01:09:06] which you could replace with people in your niche.
+[01:09:08] But ideally, I highly recommend
+[01:09:10] putting your own writing samples and stuff.
+[01:09:13] And then step three are like quality checks.
+[01:09:15] So for example, remove all em dashes
+[01:09:17] or replace them with something else.
+[01:09:19] You can also check character length.
+[01:09:21] You can do all kinds of things with quality checks.
+[01:09:24] Like some people don't want to have hooks
+[01:09:27] that are more than 10 words long.
+[01:09:28] Like that's a very strict thing for their copywriting.
+[01:09:31] So like that could be a quality check.
+[01:09:33] If you don't want emojis in the post,
+[01:09:35] that could be a quality check.
+[01:09:36] If you want to make sure your website
+[01:09:39] is always at the end of the post,
+[01:09:41] that could be a quality check.
+[01:09:42] So there are many, many things you can incorporate
+[01:09:45] in step three to really save you a ton of time.
+[01:09:48] And then step four is like posting to multiple platforms
+[01:09:52] in parallel with sub agents that are working in parallel.
+[01:09:56] So we created one visual
+[01:09:58] and then we posted to both LinkedIn and Twitter.
+[01:10:01] And then step five is planning the full week.
+[01:10:04] So when you do plan week instead of post,
+[01:10:07] this is a new skill.
+[01:10:08] You put in the topic.
+[01:10:09] In our case, we put in a two hour long Hormozy live stream
+[01:10:13] and then Blotato like extracted all the content
+[01:10:16] from that two hour long live stream,
+[01:10:18] sliced it up into different angles
+[01:10:20] and created 10 posts for the week for LinkedIn and Twitter.
+[01:10:23] And it should have scheduled it for the future.
+[01:10:26] It actually published all of them.
+[01:10:28] So I will be sure to tweak that
+[01:10:30] before I roll out the prompts and tutorial.
+[01:10:32] And then step six, what we're waiting for now
+[01:10:34] is the Clod MD file.
+[01:10:36] This helps Clod just instantly remember
+[01:10:39] what is your project about?
+[01:10:40] Where are things located?
+[01:10:42] How are things structured?
+[01:10:43] Best practices in running or working with your project.
+[01:10:47] And so here it created the Clod MD file.
+[01:10:50] And so that's great.
+[01:10:51] So here's the Clod MD file.
+[01:10:53] So it says what the app is,
+[01:10:56] the APIs we're using, different conventions,
+[01:10:59] the endpoints that we're gonna be calling,
+[01:11:01] scheduling, different visual templates.
+[01:11:04] At some point I told it to prefer infographics
+[01:11:07] because we kept getting cart,
+[01:11:09] like carousels without an infographic.
+[01:11:11] So I just wanted to showcase
+[01:11:12] what the infographics look like.
+[01:11:14] Quick rules, cross-platform publishing,
+[01:11:16] quality gates, skills.
+[01:11:17] So just summarizing what is already
+[01:11:20] in the rest of the project,
+[01:11:21] like literally how it's structured
+[01:11:23] so that every time you start a new Clod code session,
+[01:11:26] it's not starting like completely fresh.
+[01:11:28] It has all of this context
+[01:11:30] about what is this project about?
+[01:11:32] How does it work?
+[01:11:33] What are the important things to know
+[01:11:34] and important conventions?
+[01:11:36] Okay, I think that's it.
+[01:11:37] Yeah, it's just under two hours.
+[01:11:40] Wow, that's a long one.
+[01:11:41] But yeah, thank you so much for joining.
+[01:11:43] You have my full permission to repurpose this tutorial,
+[01:11:46] build whatever you want from this.
+[01:11:48] It's actually a very, very, very powerful base template
+[01:11:51] and very incredibly powerful
+[01:11:52] in so many ways to customize it.
+[01:11:54] From here, I'll do a future tutorial
+[01:11:56] where I show using your own images and videos
+[01:11:59] so you don't have to pay for AI image generation, right?
+[01:12:02] Which can get expensive.
+[01:12:03] But yeah, thank you guys for joining.
+[01:12:05] I plan to do more series like this.
+[01:12:07] I know it was like kind of fast in the beginning.
+[01:12:09] So I will also make like some more beginner level tutorials
+[01:12:13] that go a bit more slowly
+[01:12:15] for folks who are like just starting out with this.
+[01:12:17] So thanks everybody.
+[01:12:19] Take care.

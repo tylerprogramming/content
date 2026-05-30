@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio, keep the exact same design system as the reference image: light lavender periwinkle background with subtle circuit pattern texture, bold dark navy blue all-caps headline at top split across two lines, 5 horizontal cards stacked vertically each with a square purple-gradient icon on the left then bold uppercase deliverable name, one-line descriptor, and 3 checkmark bullet points, and '@tylerreedai' small handle at bottom center. Change ONLY the content to this new pin about the shorts skill: Headline '5 SHORT-FORM SCRIPTS FROM 1 COMMAND'. Card 1 scroll icon 'RESEARCH TO SCRIPT - From yt-search output / 5 angles chosen / hooks included / ready to film'. Card 2 caption icon 'MULTI-PLATFORM CAPTIONS - YouTube Shorts / TikTok / Instagram Reels / LinkedIn variant'. Card 3 checklist icon 'FILMING PLAN - Order of shots / transitions noted / time estimates / batch day ready'. Card 4 rectangle grid icon 'IG CAROUSEL OUTLINES - 2 extra carousels / full 6-slide scripts / comment-bait CTA / save-worthy'. Card 5 hashtag icon '5-HASHTAG RULE - Exactly 5 tags / platform-specific / proven engagement / no fluff'. Handle '@tylerreedai' at bottom.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/pin.png"
+      ],
+      "generated_at": "2026-04-20T15:04:11.915307",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776711847734-0yap5y84j7r.png"
+      ]
+    }
+  ]
+}

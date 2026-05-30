@@ -1,0 +1,20 @@
+{
+  "type": "statement",
+  "background": "cream",
+  "slug": "10k-business",
+  "lines": [
+    "I'm building a",
+    "$10K/mo business",
+    "with Claude Code.",
+    "",
+    "Content on autopilot.",
+    "Leads coming in daily.",
+    "Community growing.",
+    "",
+    "Here's the exact",
+    "system I use."
+  ],
+  "accent_words": ["$10K", "autopilot", "Claude", "Code"],
+  "cta": "skool.com/the-ai-agency",
+  "handle": "@tylerai_dev"
+}

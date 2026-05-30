@@ -1,0 +1,480 @@
+[00:00] All right, so Claude just dropped Claude Design
+[00:02] by Anthropic Labs, where you can make prototypes,
+[00:04] slides, and one-pagers just by talking to Claude.
+[00:07] And yesterday, they just dropped Claude Opus 4.7,
+[00:09] and that is what is behind the scenes.
+[00:11] They literally just dropped this thing.
+[00:12] So I'm gonna go ahead and open it up right now,
+[00:14] and we're gonna test it out.
+[00:15] All right, here it is, meet Claude Design.
+[00:17] You can import your team's designs.
+[00:19] So if you have logos or brand assets
+[00:21] or other pages and things like that,
+[00:23] and then you can go ahead and make prototypes.
+[00:24] So obviously, a lot of the stuff we were able to do already
+[00:27] inside of something like Claude Code,
+[00:28] but now the interface is much more sort of
+[00:30] like your lovable or your bolt.
+[00:32] So it's gonna lower the barrier to entry even more,
+[00:34] and a lot more people might be coming over here
+[00:36] to test out Claude Design.
+[00:37] All right, so this is the main page.
+[00:38] We have prototypes, where we can create a new project here,
+[00:41] either a wireframe or a high-fidelity.
+[00:43] We can create slide decks, or we can create from templates
+[00:45] or other sorts of things.
+[00:46] And you'll also notice at the bottom here,
+[00:48] there's this thing that says, set up design system.
+[00:50] Create a design system so that anyone can create
+[00:52] good-looking designs and assets.
+[00:54] I'm assuming that this might be
+[00:55] like a design.md sort of thing.
+[00:57] So like a template that the agent can look at
+[00:58] to always make sure it's following your brand guidelines.
+[01:02] So it looks like, yeah, we have a company name and blurb.
+[01:05] We would provide examples of our design systems
+[01:07] and products, and then any other notes.
+[01:08] So that's how we could have every single project
+[01:10] that we create in here, inside of Claude Design,
+[01:13] feels consistent with our brand.
+[01:14] So let me just go ahead and fill out
+[01:15] some example stuff here.
+[01:16] All right, so I set up the name.
+[01:18] I set up a little blurb.
+[01:19] I actually put in the GitHub repo
+[01:20] for our AI Automation Society website,
+[01:22] so this website right here.
+[01:24] And then I just linked in the brand guidelines
+[01:27] and our actual logo, and then just said
+[01:29] our brand should feel techy,
+[01:30] but also modern and professional.
+[01:32] So now that is our design system.
+[01:33] I'm gonna go ahead and click continue to generation.
+[01:35] It will take about 15 minutes
+[01:37] to generate your design system.
+[01:38] You can step away, but keep the tab open.
+[01:40] Okay, cool, so I'm gonna go ahead
+[01:41] and start that generation.
+[01:42] Now what you can see is while this is loading up,
+[01:44] we definitely get that lovable style interface.
+[01:46] We can see what's going on on the left-hand side.
+[01:48] We can see a task list, and then on the right-hand side,
+[01:50] we can see what's actually going on.
+[01:52] So while this is loading up,
+[01:53] let's actually talk about what is this cloud design.
+[01:55] So this is the blog or the announcement post
+[01:58] that they just put out.
+[01:58] It is powered by their most capable vision model, Opus 4.7.
+[02:02] So if you guys missed my video yesterday about Opus 4.7,
+[02:05] I'll put it right up here.
+[02:06] But one of the benchmarks that stood out was right here.
+[02:10] Visual reasoning, so 82% and 91%
+[02:13] compared to Opus 4.6's 69% and 84.7%.
+[02:18] So a noticeable jump in visual reasoning,
+[02:21] which is exactly what they called out right over here.
+[02:23] So cloud design is available in Research Preview,
+[02:26] but you have to be on a cloud subscription.
+[02:27] So pro, max, team, or enterprise subscribers.
+[02:30] We're rolling out to users gradually throughout the day.
+[02:32] So I'm not gonna read off all these features
+[02:34] because I think you guys understand
+[02:35] kind of the premise here.
+[02:36] But what's cool is you can collaborate.
+[02:37] So designs can have organization-scoped sharing.
+[02:40] You can keep something private
+[02:41] or you can share it across your team.
+[02:42] You can export pretty much anywhere.
+[02:44] You can export to Canva, PDF, PowerPoint, or HTML files.
+[02:47] And this is where it gets cool.
+[02:48] You can hand off to cloud code.
+[02:50] So when a design is ready,
+[02:51] cloud can package everything
+[02:52] and you can pass it off to cloud code
+[02:54] to do the actual building and syncing to GitHub
+[02:56] and all of these other things.
+[02:57] Hey guys, real quick, in this video,
+[02:59] my computer was freaking out a little bit.
+[03:00] So there's like a few times where my face cam's super laggy,
+[03:04] but it does not last the whole video.
+[03:05] Just stick with me for about 30 to 45 seconds
+[03:08] of annoying lag and then we'll be all good to go.
+[03:11] Thanks guys, let's get back to the video.
+[03:12] Now a lot of people might be saying
+[03:13] that this is gonna kill Canva,
+[03:14] but it looks like they're actually working together here.
+[03:16] We can see that Canva said,
+[03:17] we've loved collaborating with Anthropic
+[03:19] over the past couple of years
+[03:20] and share a deep focus on making complex things simple.
+[03:23] But checking back in on our cloud over here,
+[03:25] we can see it's doing a lot.
+[03:26] It's importing from GitHub, it's reading everything,
+[03:28] it's building preview cards and building styles and stuff.
+[03:30] So I'm just gonna check in with you guys
+[03:32] once this has been fully built out.
+[03:33] So it's still working,
+[03:34] but it came up with something for us as a draft.
+[03:36] We can see that we are missing brand fonts.
+[03:39] Hopefully it's able to find those
+[03:40] because in the brand guidelines doc that I gave it,
+[03:42] there is typography in there.
+[03:43] So just to pull this up real quick,
+[03:44] you can see here that we do have two different fonts
+[03:46] that we use right there.
+[03:48] Anyways, things that need review.
+[03:50] So we have the colors, these all look good,
+[03:52] and we're able to directly approve right here.
+[03:54] So I'll say that looks good.
+[03:55] We also have some accents and gradients.
+[03:56] Once again, I'll click on looks good.
+[03:58] We've got neutrals, we've got the type,
+[04:00] which looks exactly the way it is on our website.
+[04:02] Okay, so what is it talking about?
+[04:03] It definitely does have fonts.
+[04:04] This is the typography that we actually are using.
+[04:07] So I don't know what's going on there,
+[04:08] but you can see that there's tons
+[04:09] of different things to review.
+[04:10] So I'm just gonna keep clicking through
+[04:11] and make sure that nothing looks too weird.
+[04:13] It's even getting into like the spacing
+[04:15] and what the buttons might look like, the glow.
+[04:17] All of that looks really nice too.
+[04:18] We've got our buttons, badges, different cards.
+[04:21] Okay, so at this point,
+[04:21] it really is just pulling everything from our website
+[04:23] to understand the brand feel.
+[04:25] But we also see up here, there's a tab called design files.
+[04:28] And if I click in, we can see different things.
+[04:29] We can see the assets that I dropped in.
+[04:31] We can also see a preview of the HTML components
+[04:34] and some CSS styling stuff.
+[04:36] We can see UI kits.
+[04:38] We can see any uploads and the source repo,
+[04:41] which has other things in here too.
+[04:42] So yeah, I guess the way I feel about this right now
+[04:45] is they basically took your ability
+[04:45] to build a Cloud Code design project
+[04:47] or website project inside of your own folders and files.
+[04:51] And they just basically put this
+[04:53] onto a lovable style interface.
+[04:54] So it kind of reminds me of what they did with cowork
+[04:56] and they're just kind of doing another iteration of cowork,
+[04:59] but this is for design.
+[05:00] And what's cool about this is a lot of times
+[05:02] when you're building design things,
+[05:03] you're brainstorming with Cloud Code
+[05:05] about the actual like code or the logic.
+[05:07] And then you kind of have a bit of a surprise
+[05:09] when it opens up a local host and you look at it.
+[05:11] But this way you're able to sort of iterate
+[05:13] with it all the way through.
+[05:15] So essentially you will be saving tokens
+[05:16] because it's kind of the whole theory
+[05:18] of having a better planning phase
+[05:19] where it might be more upfront,
+[05:22] but then what happens is you are spending less
+[05:24] because you're not chasing it down the wrong path
+[05:26] and trying to course correct it.
+[05:27] So we're still missing our fonts apparently.
+[05:29] I'm not gonna mess with that
+[05:30] because it has our typography and that looks fine.
+[05:32] It went through a ton here.
+[05:33] You can see what it did is it created colors and type.
+[05:36] We have a readme.
+[05:37] We have also a skill.md,
+[05:38] which is a machine readable manifest for Cloud Code.
+[05:41] And I'm assuming somewhere in here there is a design MD,
+[05:43] or maybe that's exactly what we just built together.
+[05:45] So now your team's new projects
+[05:47] will use this design system by default, which is awesome.
+[05:50] All of our slides, all of our, you know,
+[05:52] whatever it is are gonna use this.
+[05:53] So I'm gonna click on this button
+[05:54] and we'll see what pops up next.
+[05:56] Okay, so the app is a little laggy.
+[05:57] It feels like it's using a decent amount of my RAM,
+[06:00] probably because it's in research preview
+[06:02] and maybe it's still being rolled out.
+[06:03] But anyways, we can look at examples, which is pretty cool.
+[06:06] We have shader wallpapers.
+[06:07] So that's kind of nice.
+[06:08] We have app onboarding.
+[06:10] So we could go through the whole flow of an iOS app.
+[06:13] We also have tech streaming
+[06:14] and all of this stuff we could just go ahead
+[06:16] and use the prompt directly.
+[06:17] Okay, so I wanna first off just try a slide deck.
+[06:20] So I'm just gonna call this AI time
+[06:22] and we're gonna go ahead and create the slide deck.
+[06:23] It's already using my design system, as you can see.
+[06:25] And there was a dropdown.
+[06:27] So that means you can probably have
+[06:28] multiple different design systems.
+[06:29] If you've got like different business units
+[06:31] or you've got different business branding
+[06:32] for different things,
+[06:33] you can create a design system for each one.
+[06:35] So it says start with context.
+[06:36] Designs grounded in real context turn out better.
+[06:38] We can attach a design system, screenshots, or a code base.
+[06:41] All right, so what I did is I just dropped in this PDF.
+[06:43] And this is the one that I just made for a previous video.
+[06:46] Basically a huge setup guide for setting up
+[06:48] cloud Opus 4.7 as a 24 seven trading bot.
+[06:51] So I dropped in that PDF
+[06:52] and I just wanna see if it can turn that
+[06:53] into a presentation for me.
+[06:55] So I just gave you a PDF called Opus 4.7 trading bot.
+[06:59] I'm not sure if I was supposed to drop it right here
+[07:00] or if I was supposed to drop it here,
+[07:01] but either way, you should be able to see it.
+[07:03] And I just want you to turn that into a branded PDF,
+[07:06] sorry, not PDF, a branded presentation for me.
+[07:09] Okay, so that prompt was horrible.
+[07:10] I kind of just like started talking all over the place,
+[07:13] but let's see what it can do.
+[07:14] It's going to invoke a skill.
+[07:15] So let's see which one it's running here.
+[07:17] It's running the read PDF skill.
+[07:19] I was able to read it
+[07:20] and now it's checking the design system
+[07:21] and it's setting up the project right here.
+[07:23] It planned out the deck.
+[07:24] So you can see this is basically 19 different slides
+[07:26] that it's gonna create.
+[07:27] And now hopefully all of this looks pretty aesthetic
+[07:30] and it feels on brand.
+[07:31] Okay, this is interesting.
+[07:32] We got some sort of internal error,
+[07:33] maybe because tons of people are trying to use this
+[07:34] right now, but it automatically shot off two retries.
+[07:37] So it does have that functionality.
+[07:40] Oh, here's a nice little useful tip.
+[07:41] Store bread in the freezer,
+[07:42] toasting it from frozen tastes better than fresh.
+[07:44] Okay, so it's still editing some stuff,
+[07:46] but you can see right off the bat,
+[07:47] this feels very branded to me.
+[07:49] The colors, the typography, the logos, everything.
+[07:51] So as we start to sort of swipe through here,
+[07:54] we can see we're still getting the same feeling
+[07:56] with all the fonts.
+[07:57] We're getting the information from the actual PDF.
+[08:00] You can tell there's some sort of skills
+[08:01] going on on the backend.
+[08:02] I don't know if you guys have ever tried to create
+[08:03] like a slide deck with Cloud Code,
+[08:05] but this looks really, really good.
+[08:07] And think about the fact that I just dropped in a PDF.
+[08:10] So obviously like this, I don't like.
+[08:12] I don't like all this spacing here,
+[08:13] but something like this is really nice.
+[08:15] I like the glow down here.
+[08:16] This is very nice.
+[08:17] Okay, I like this slide a lot as well.
+[08:19] We can see the repository layout.
+[08:21] So anyways, this is awesome.
+[08:22] Now what we can do is we can see there's a button here
+[08:24] that says tweaks.
+[08:25] We can ask Cloud to change something about a specific slide.
+[08:28] We can leave comments as well.
+[08:30] We can actually like choose something and comment on it.
+[08:31] So that's very nice about like a very specific element.
+[08:34] We can click on edit.
+[08:35] So we can actually physically change the things ourselves
+[08:38] if we want to.
+[08:38] We also have this option to draw.
+[08:39] I'm not sure what this is.
+[08:40] Maybe just to like point at something.
+[08:44] Okay, so I basically just drew and I typed
+[08:45] and said, I don't like this.
+[08:47] And I click send.
+[08:48] Okay, so it sends over that image of what I drew
+[08:50] and then it sends over my note as well.
+[08:52] So I'm just gonna go ahead and stop that
+[08:53] because there was nothing wrong with it.
+[08:55] But we can also present right from here.
+[08:56] So we can present full screen right in this tab.
+[08:58] And I know that aspect ratio got weird for you guys,
+[09:01] but we can present there or just like that.
+[09:03] There you go.
+[09:03] Now you can see it for real.
+[09:04] Okay, so that's very awesome.
+[09:05] That's going to help us be able to create slide decks
+[09:07] so much quicker.
+[09:08] And honestly, I like this more than Gamma
+[09:10] because Gamma has its own things and it's really nice,
+[09:13] but it's a bit more inflexible.
+[09:14] So if you dropped in an entire like just transcript
+[09:17] or a 50 page brain dump,
+[09:20] it would be able to structure it into a way
+[09:21] that you like in here.
+[09:23] And it would also feel like it comes from your brand.
+[09:25] Okay, so let's go back home.
+[09:26] That's kind of what we can do
+[09:27] with slide decks or presentations.
+[09:29] Let's see what it can do with an actual landing page.
+[09:32] So I'm gonna go over here to prototype
+[09:34] and we're just gonna do a high fidelity.
+[09:36] We're just gonna go straight after it with the high fidelity.
+[09:37] I'm just gonna call this one a first agent promo
+[09:42] and we're gonna click create.
+[09:43] So let's say you have your main website for your brand.
+[09:45] So we have AI Automation Society,
+[09:47] which is just kind of like an overall overview.
+[09:49] But what if we want to create like a different landing page
+[09:51] that would go on a subdomain
+[09:52] because maybe we're launching like a limited time workshop
+[09:54] or promotion.
+[09:55] All right, so that's pretty vague, right?
+[09:57] Like there's a little bit of detail, but it's pretty vague,
+[09:59] but it's gonna be able to use our design system.
+[10:01] And I'm curious to see, there we go.
+[10:03] It's asking us questions and it's asking us right over here.
+[10:05] So what is the workshop called?
+[10:07] We're gonna say your first AI agent, confirm the dates,
+[10:10] May 4th to May 6th, sure.
+[10:12] What time each day?
+[10:13] We're just gonna go 9 a.m. to 11 a.m.
+[10:17] Central, is there a seat cap?
+[10:19] We're just gonna say, yeah, sure.
+[10:21] Early bird pricing.
+[10:22] Who's hosting?
+[10:22] I'll host it.
+[10:23] What do you want your students to walk away with?
+[10:25] Your first AI agent built with cloud code.
+[10:31] And the day-by-day agenda, sure, high level per day.
+[10:35] Okay, so as you can see, it's getting all the questions
+[10:37] that it needs from us in order to be able
+[10:39] to make this landing page.
+[10:40] All right, so I answered all of those questions.
+[10:41] There was a lot, but that's, once again, a very good thing.
+[10:44] Let's see what we get.
+[10:44] We have our page now and we have some tweaks
+[10:47] that we can make.
+[10:48] So it opened up a panel right here.
+[10:49] You can see that we can change the early bird.
+[10:51] So I could change this to April 30th and it would update,
+[10:54] I don't know where it was.
+[10:55] Oh, okay, I found it.
+[10:56] April 30th, I could change this to April 29th.
+[10:59] There we go, we can make that tweak.
+[11:01] The primary accent can be orange instead of blue.
+[11:02] So if we wanted to change it to orange,
+[11:04] we certainly could that easily.
+[11:06] We have a countdown right here, which we could turn off.
+[11:08] And we also have a sticky CTA bar,
+[11:10] which we could turn off as well,
+[11:11] which is right here, as you can see.
+[11:13] And now I could just turn this off
+[11:14] when I'm all good with the tweaks.
+[11:15] So let's take a look at the actual content here.
+[11:17] First of all, you'll notice this feels exactly
+[11:19] like the website and all of these elements feel the same
+[11:22] with the buttons and the colors and the spacing,
+[11:24] all of that.
+[11:25] Even the copy has a very similar feel,
+[11:26] the capitalization, the icons, very nice.
+[11:29] We've got the three-day plan.
+[11:30] It goes through one, two, three, built for beginners.
+[11:33] I would have to upload my image, which would go right here
+[11:35] as far as like who is the instructor.
+[11:37] And then we've got some testimonials right here.
+[11:39] What we would do now is we'd go back and forth
+[11:41] and iterate and we'd see the version
+[11:42] and we'd keep making tweaks and we'd comment on things.
+[11:44] And that's how we would get this
+[11:45] to the point that we want it.
+[11:46] But now how do we actually get this project on the web?
+[11:48] Well, we have an export button up here.
+[11:50] We can download the zip, a PDF, a PowerPoint.
+[11:52] We can send to Canva, we can export the HTML
+[11:55] or we can hand off to Cloud Code.
+[11:56] So let me see what happens if I click on this.
+[11:58] Okay, so it says fetch this design file,
+[12:00] read its readme and implement the relevant aspects
+[12:02] of the design.
+[12:03] And I'm gonna go ahead and click on copy command.
+[12:05] And now in VS Code, I have the actual project open,
+[12:08] which is the AIS website that it had looked at originally.
+[12:10] And I'm gonna paste in that prompt and we'll shoot it off
+[12:13] and we'll just see what happens.
+[12:14] Okay, so you can see it's able to go to this endpoint
+[12:16] and it's able to fetch the design file that we need.
+[12:19] So basically it's going to extract that zip file
+[12:21] that we just made over here together in Cloud Design.
+[12:24] And while this is running, I just wanna say,
+[12:26] this is really impressive to me.
+[12:27] It basically just loops everything
+[12:28] into Anthropx ecosystem.
+[12:30] Like I understand the play for sure,
+[12:31] because I might not even need my Gamma subscription anymore
+[12:34] or I might not even need my Canva subscription anymore.
+[12:36] If I can basically just have all of my things sync together
+[12:39] and all of my team working on the same projects
+[12:41] and the same design systems in the same environment.
+[12:44] Especially when you think about the fact
+[12:45] that in order to make these landing pages
+[12:47] and in order to make your presentations,
+[12:50] context is everything.
+[12:51] And when I'm making presentations in Gamma,
+[12:53] I have to go get from my Cloud Code projects
+[12:55] so much context and so many maybe meeting transcripts
+[12:58] or different memos or something.
+[13:00] But if all of that already lives
+[13:01] inside of my Cloud Code environment,
+[13:02] and then I say, hey, make me a presentation about X, Y, and Z
+[13:05] go look in the right projects.
+[13:07] That's like a huge help.
+[13:09] So I think the flow is you come to Cloud Design
+[13:12] and you have your design elements
+[13:13] and you have your projects here
+[13:15] and you do your prototyping here
+[13:16] and you do your slide deck building.
+[13:18] And then when you need to actually take it one step further
+[13:20] to deploy it or to maybe integrate
+[13:22] some other deeper things into it,
+[13:24] that's when you send it over to Cloud Code
+[13:26] with the click of a button
+[13:27] and then you can expand the functionality from there.
+[13:29] Okay, so the server is up.
+[13:31] It also said that it automatically switched out my image.
+[13:33] Remember if you guys saw in this version,
+[13:35] where were we?
+[13:36] First AI Agent Promo.
+[13:38] In this version, there was a placeholder basically
+[13:40] for my image, which was right down here.
+[13:42] So it looks like, I didn't even tell it to do that
+[13:44] by the way, and it was able to fill that in.
+[13:45] So let's open up the local host.
+[13:47] We have the homepage right here.
+[13:48] AI Automation Society, yep, that's the homepage.
+[13:51] But then if we go back to the actual workshop page,
+[13:53] which would be kind of like a subdomain, there we go.
+[13:55] We have the Your First AI Agent.
+[13:57] We've got the countdown.
+[13:58] We've got the buttons.
+[13:59] We've got all the same information,
+[14:00] the sticky CTA down here.
+[14:02] And if I keep scrolling down, we have the actual image.
+[14:05] Although this isn't the right one.
+[14:07] This is one of my other website.
+[14:09] I would ideally want like a headshot,
+[14:10] but that would be as simple as dropping in a headshot
+[14:13] and saying, hey, use this instead.
+[14:14] And it would go ahead and update that.
+[14:15] And now, because we're already inside of this project,
+[14:18] all I would have to do is push this to GitHub
+[14:21] and then Frisell would grab it
+[14:22] and I could sync it to a different subdomain.
+[14:23] So that is Anthropic's new cloud design.
+[14:26] Like I said, I think this is awesome.
+[14:27] I'm definitely gonna be playing around with this.
+[14:28] I'm gonna be making a lot of presentations in there.
+[14:30] I can already tell you guys that for certain.
+[14:32] So if you enjoyed the video or you learned something new,
+[14:34] please give it a like.
+[14:35] Helps me out a ton.
+[14:36] And as always, I appreciate you guys making it to the end
+[14:37] and I'll see you in the next one.

@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase feature name, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Headline: 'BUILD A CUSTOM GPT THAT SOUNDS LIKE YOU'. Card 1 document icon 'TRANSCRIPT INPUT - Your videos or courses / drop raw text / any format / zero prep'. Card 2 waveform icon 'VOICE EXTRACTION - Your teaching style / phrases and rhythm / personality kept / sounds like you'. Card 3 brain icon 'SYSTEM PROMPT - Hand-crafted instructions / tone calibrated / context loaded / ready to use'. Card 4 bookshelf icon 'KNOWLEDGE BASE - Your content embedded / searchable answers / grounded responses / no hallucinations'. Card 5 shield icon 'SCOPE BOUNDARIES - Stays on topic / refuses off-domain / safe responses / brand-aligned'. Clean minimalist style, warm Anthropic Claude brand aesthetic.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:14:14.864096",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/277a9560f5475048ff91e5d913f6c638_1776712447_h9g4ujh2.png"
+      ]
+    }
+  ]
+}

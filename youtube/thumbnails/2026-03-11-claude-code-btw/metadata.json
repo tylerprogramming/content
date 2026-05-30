@@ -1,0 +1,153 @@
+{
+  "generations": [
+    {
+      "prompt": "Clean minimal YouTube thumbnail background. Dark gradient background transitioning from deep navy blue to black. On the left side, the Claude Code orange asterisk logo icon, large and glowing. On the right side, a stylized terminal window showing '/btw' in bright orange monospace text. A glowing connection line between them. No text overlay, no people. High contrast, modern tech aesthetic. Leave space on top for text overlay.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-11T23:09:48.941240",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773284985302-z10awpcqpfk.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail featuring a man looking impressed and pointing at a glowing terminal screen showing '/btw' command. The man is on the left side of the frame, positioned at the rule of thirds. Dark blue-to-black gradient background. The terminal on the right has a soft orange glow. Clean composition, high contrast, professional YouTube thumbnail style. Leave empty space at the top for bold text overlay.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-11T23:10:00.362157",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773284997815-iwthjra36c.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail with a man on the right side looking excited and surprised, mouth slightly open. On the left side, a split-screen visual: top half shows a busy terminal with code scrolling, bottom half shows a clean overlay panel with an answer appearing. Orange and blue color scheme. Dark background. The split represents multitasking - doing two things at once. Clean, modern, high contrast. Leave space for text overlay at the top.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-11T23:11:06.764369",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1773285064562_luwj3r.png"
+      ]
+    },
+    {
+      "prompt": "Clean minimal YouTube thumbnail background. Dark gradient background transitioning from deep navy blue to black. On the left side, the Claude Code orange asterisk logo icon, large and glowing. On the right side, a stylized terminal window showing '/btw' in bright orange monospace text. A glowing connection line between them. No text overlay, no people. High contrast, modern tech aesthetic. Leave space on top for text overlay.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-11T23:13:54.300701",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773285229966-l2u8rcctay.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail with a man on the right side looking excited, mouth slightly open. On the left side, the orange Claude Code asterisk logo glowing brightly, with a terminal window behind it showing '/btw' in orange text. Dark navy to black gradient background. Orange and blue color scheme. Between the man and the logo, a subtle glowing energy connecting them. Clean, modern, high contrast. Leave space for text overlay at the top.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-11T23:15:16.825510",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1773285313697_83zd3s.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail featuring a man looking impressed and pointing at a glowing terminal screen showing '/btw' command. The man is on the left side of the frame, positioned at the rule of thirds. Dark blue-to-black gradient background. The terminal on the right has a soft orange glow. Clean composition, high contrast, professional YouTube thumbnail style. Leave empty space at the top for bold text overlay.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-11T23:15:59.755725",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1773285356983_b8uu40.png"
+      ]
+    },
+    {
+      "prompt": "Clean minimal YouTube thumbnail. White or very light gray background. On the left, the Claude Code orange asterisk sunburst logo as a large rounded square app icon with soft shadow. In the center, a bold black plus sign. On the right, a rounded square app icon with orange border containing '/btw' in orange monospace text. Icons are centered vertically in the lower two-thirds of the frame. Large empty space at the top for text overlay. Flat design, no gradients on the background, no glow effects, no people. Crisp, minimal, Apple-style aesthetic.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/nick-btw.webp"
+      ],
+      "generated_at": "2026-03-11T23:18:33.072303",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773285508691-zzu9kijzata.png"
+      ]
+    },
+    {
+      "prompt": "Clean YouTube thumbnail. White to very light warm gray background with subtle soft radial glow behind the icons. On the left, the Claude Code orange asterisk sunburst logo as a large rounded square app icon with soft drop shadow and a faint orange ambient glow. In the center, a bold dark navy plus sign. On the right, a rounded square app icon with thick orange border and subtle shadow containing '/btw' in bold orange monospace text. Icons centered vertically in the lower two-thirds. A very subtle diagonal speed line or spark effect between the icons suggesting power and connection. Large empty space at the top third for text overlay. Minimal, premium, polished. Slightly more dynamic than flat design but still clean.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/nick-btw.webp"
+      ],
+      "generated_at": "2026-03-11T23:20:43.413070",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773285640362-fzkdv1oz80l.png"
+      ]
+    },
+    {
+      "prompt": "Clean YouTube thumbnail. White to very light warm gray background with subtle soft radial glow behind the icons. At the top of the frame in large bold black sans-serif text: 'A smarter Claude Code.' with a hand-drawn style orange underline beneath the text matching the Claude orange color. Below the text, on the left, the Claude Code orange asterisk sunburst logo as a large rounded square app icon with soft drop shadow and faint orange ambient glow. In the center, a bold dark navy plus sign. On the right, a rounded square app icon with thick orange border and subtle shadow containing '/btw' in bold orange monospace text. Icons centered in the lower two-thirds. Subtle diagonal speed lines between the icons. Minimal, premium, polished aesthetic.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/nick-btw.webp"
+      ],
+      "generated_at": "2026-03-11T23:24:09.735922",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1773285847674_nezvto.png"
+      ]
+    }
+  ]
+}

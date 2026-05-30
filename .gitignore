@@ -1,0 +1,51 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Excluded folder (Tyler's call — don't sync rendered captioned videos)
+submagic/
+
+# Audio
+*.mp3
+*.wav
+*.m4a
+*.aac
+
+# Video
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Images (skip by default — outputs, not source of truth)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# PDFs
+*.pdf
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# Misc
+.env
+.env.local
+*.log

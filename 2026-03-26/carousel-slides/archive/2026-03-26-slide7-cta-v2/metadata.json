@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "LinkedIn carousel CTA slide with a very light baby blue background (#bfdbfe). On the left side of the slide, in medium sized bold dark navy text: SAVE THIS GUIDE. Below that in the same style: REPOST FOR YOUR NETWORK. Below that in smaller dark gray text: Follow Tyler Reed for more Claude Code tips and AI automation. On the right side of the slide, a large circular profile photo of a person. Below the photo, the name Tyler Reed in dark text. Below the name, a dark navy rounded button that says TYLERREEDAI. The text should not be too large, keep it clean and balanced. Page counter 7 / 7 in small text in the top right corner. Clean minimal professional design.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-26T12:51:27.599863",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774543880440_33zu6m.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+[00:00] Using AI in design is like putting your team's most creative player on the bench.
+[00:05] And the ref has made the call.
+[00:08] The most creative player is officially benched.
+[00:11] Oh, the coach is not happy.
+[00:13] At least, that's what I thought.
+[00:15] Once I actually started using it, I realized I was completely missing the point.
+[00:20] AI doesn't bench creativity.
+[00:22] It benches the most expensive part of the process.
+[00:26] The hours spent rebuilding layouts, resizing assets,
+[00:30] re-deciding on fonts and color pairings every single week.
+[00:34] That is friction.
+[00:36] And friction is expensive.
+[00:38] Looks like the call is overturned.
+[00:40] The most creative player is back in the game.
+[00:43] You see, most teams already have the equipment, brand guidelines, Canva, AI tools.
+[00:48] What they don't have is a game plan that turns those guidelines into scalable, on-brand content.
+[00:55] So call me coach, because I'm going to give you one.
+[00:57] In this video, we're going to go over the tools that you need,
+[01:01] train them to your brand, practice the plays,
+[01:04] and then I'm going to stress test the whole system live.
+[01:07] 10 minutes, as many on-brand posts as we can create.
+[01:11] And for this challenge, we put together a free on-brand social media design kit.
+[01:16] I've linked it in the description,
+[01:17] and it has a bunch of things that will give you a game day advantage.
+[01:21] Ready to meet the team?
+[01:23] Let's dive in.
+[01:24] Ladies and gentlemen, please welcome your starting lineup.
+[01:28] I spent three days running tryouts, okay?
+[01:30] So I know what I'm talking about.
+[01:32] Two players stood out.
+[01:34] So here is your starting lineup.
+[01:35] Player one, Canva.
+[01:37] This is your graphic designer.
+[01:39] I will be using the pro account for this and a few Canva AI tools,
+[01:42] which are great when the direction is clear,
+[01:44] but with vague direction, it can get generic.
+[01:47] So that is exactly why we have player two, Claude, your creative strategist.
+[01:52] It reads your brand, thinks before it builds,
+[01:55] and connects directly to your Canva workspace.
+[01:58] And we're just going to be using the free version.
+[02:01] We love that.
+[02:02] Player three, you, the MVP.
+[02:04] You bring the taste, context, and quality control.
+[02:08] Nothing ships without your judgment.
+[02:11] That is your starting lineup.
+[02:13] And we are live at training camp.
+[02:16] Just three reps stand between this team and game day.
+[02:20] Every championship team has training camp.
+[02:23] This is the 15 minutes that you do once,
+[02:25] and it's what makes every play faster from here on out.
+[02:28] Three reps, let's go.
+[02:30] Rep one is underway.
+[02:31] Your Canva brand kit is the soul of the team.
+[02:34] Colors, fonts, logos.
+[02:36] This is what Canva uses to keep your designs consistent by default.
+[02:41] So go into Canva and lock in your hex codes, your fonts, and your logos.
+[02:45] A brand kit with six things that you actually use
+[02:48] beats one with 40 that you have to scroll through every single time.
+[02:51] And if you're not sure what should go in here,
+[02:53] the free on-brand social media design kit includes a 30 question brand audit
+[02:58] that tells you exactly where your content is losing consistency
+[03:02] before you build a single template.
+[03:04] So run that first.
+[03:06] So that's rep one.
+[03:07] Build your Canva brand kit.
+[03:09] Moving on to rep two.
+[03:12] This is the connector that changes the whole game.
+[03:14] Here's how to do it.
+[03:15] Go to clod.ai, go to settings, connectors, search for Canva, and press connect.
+[03:22] You'll get redirected to a Canva authorization page.
+[03:25] Log in, grant permissions, and you're done.
+[03:28] Two minutes, one time only.
+[03:30] Then when you open up a new chat, click the tools icon and toggle Canva on.
+[03:35] That's it.
+[03:36] Now Clod can search your Canva workspace, find and edit existing designs,
+[03:40] and create new ones all from the chat.
+[03:44] That's rep two, connecting the team.
+[03:46] And here comes the final rep.
+[03:48] This is the step that most people skip.
+[03:50] Don't skip it.
+[03:51] If Clod doesn't know your brand rules,
+[03:54] everything it produces is going to feel like it was made for someone else.
+[03:58] You want to drag your brand guidelines PDF directly into the Clod chat.
+[04:02] Tell Clod who it is.
+[04:04] A senior strategist, not a generic AI assistant.
+[04:07] Ask it to review the guidelines, but don't build anything yet.
+[04:11] And then I'm going to ask a couple of questions to test the knowledge.
+[04:15] Think of it like a new player studying the playbook before game day.
+[04:19] You don't want them improvising on the field.
+[04:21] Congratulations, you have officially completed training camp and it is game day.
+[04:26] Let's go.
+[04:27] Welcome to game day.
+[04:28] Team B is out on the field warming up.
+[04:31] No team walks onto the field without practicing first, right?
+[04:34] The more these players work together, the sharper they get.
+[04:38] This is where champions separate themselves from the amateurs, folks.
+[04:42] Here's something that most people skip.
+[04:44] And it is the difference between a first draft that's close
+[04:48] and one that you have to completely redo.
+[04:51] Before Clod helps you strategize at all, give it something to look at.
+[04:55] It could be a design that you already made, inspo from other brands,
+[04:59] or even just a plain language brain dump.
+[05:02] Any of these work.
+[05:03] Use all of them and you get even closer.
+[05:06] I told Clod that I attached inspiration for my own brand designs
+[05:09] and I want it to break down the design elements and what makes them work.
+[05:13] And look at what comes back.
+[05:15] It tells us exactly why these designs work and how we're going to fit it into our brand.
+[05:20] This becomes the visual DNA for everything we build next.
+[05:24] Now, there are two ways to approach this workflow, depending on your Canva comfort level.
+[05:28] Path A is the manual build.
+[05:31] Clod gives you step by step instructions.
+[05:33] And now you take that and you execute in Canva.
+[05:36] This is usually my go-to.
+[05:38] It does take longer, but you come out of it understanding
+[05:40] exactly why the design looks the way it does.
+[05:44] Path B is the template search.
+[05:45] You have Clod tell you exactly what to look for in Canva's public template library.
+[05:50] You pick the closest match and Clod directs every edit from there.
+[05:54] This is a faster starting point and it's better if Canva isn't your second language yet.
+[05:58] We're running Path B today, so let's keep going.
+[06:01] You can't call the play if you don't know what's out there.
+[06:04] So we do our scouting report first.
+[06:06] I'm going in with the top search term that Clod gave me.
+[06:11] And now I'm scanning against Clod's non-negotiables.
+[06:14] I think this one could be really cool and on brand.
+[06:18] So I'll just select customize this template.
+[06:20] Now I'm going to screenshot this template.
+[06:23] I'll feed it right back into Clod and I'm asking it to give me a numbered list of edits.
+[06:28] Most important changes first.
+[06:30] What comes back is the game plan.
+[06:32] What to adjust and exactly how to do it.
+[06:34] Let's build this out.
+[06:35] The game plan is officially locked in.
+[06:38] The play is live.
+[06:40] Background color first.
+[06:41] So in templates, styles, this is your global consistency tool.
+[06:46] One click and it pushes your entire brand kit palette across every single slide.
+[06:52] Select it again to change the color weighting.
+[06:54] For typography here, it has actually pulled out a specific brand rule.
+[06:57] I love that.
+[06:58] So now we're going to change the font.
+[07:00] So I'm just going to select the text and I can choose straight from the brand kit.
+[07:05] Now for the hero image, I'm going to use my own photos.
+[07:08] And I'm going to use this background remover tool to remove the background and adjust as needed.
+[07:15] I'm going to show you how to use AI for image generation in just a second.
+[07:18] But first, let me demonstrate how powerful Clod and Canva can be working together.
+[07:23] So back in Clod here, I'm just asking it to go into the design on Canva.
+[07:28] Take a look and give me any final design suggestions.
+[07:31] So here it's telling me what's working and some final suggestions.
+[07:35] I've made my final changes.
+[07:36] This is locked in.
+[07:37] So I'm going to duplicate this slide four times.
+[07:41] Now this is where the Canva and Clod connector get really powerful.
+[07:46] I'm going to ask Clod to just fill out the rest of the carousel pages for me.
+[07:49] Now if there is anything that I need to do manually first for Clod to do its job,
+[07:54] it will direct me through that process.
+[07:56] Okay, Clod is saying that it's done.
+[07:59] It's saved.
+[08:00] So I'm just going to go back to my Canva account.
+[08:04] It's crazy, right?
+[08:05] So I'm pretty happy with this.
+[08:08] But let's review some other plays that we could pull out on game day.
+[08:11] With Magic Media, you can generate images, videos, and graphics with AI.
+[08:17] I recommend asking Clod for a prompt for this to get closer to what you're looking for.
+[08:22] With Magic Write, you can have text generated for you,
+[08:26] or you can edit existing text to fit your brand like headlines, carousel post text, or ad copy.
+[08:32] You can root backgrounds here.
+[08:34] I already showed you that.
+[08:35] But you can also generate backgrounds.
+[08:38] I'm on a snowy mountain.
+[08:39] Looks like outside my house.
+[08:41] You can delete specific objects with Magic Eraser.
+[08:45] Oh, and Magic Grab lets you separate a certain part of an image
+[08:51] so that you can play with layering.
+[08:52] There are also a ton of other AI tools here in Magic Studio.
+[08:56] You can also have a little huddle with Canva and ask it to create specific content for you,
+[09:00] or even just guide you on how to achieve something.
+[09:03] And then, and I think this is the biggest time saver,
+[09:06] Magic Resize will resize your designs into content for other platforms.
+[09:11] So this is super handy for ads where you need to have like
+[09:15] nine different sizes of the same ad creative.
+[09:18] Okay, so we may be done running the play,
+[09:20] but these next steps are arguably the most important.
+[09:24] I'm saving this as a brand template in Canva first.
+[09:27] I'll go to Share, Brand Template, and I'll save it into my series folder.
+[09:32] Now we close the loop.
+[09:34] I'm feeding the final file back into Claude,
+[09:38] and I'm going to ask Claude to debrief what worked
+[09:41] so that the next play is sharper on the first run.
+[09:44] So Claude now holds my brand guidelines,
+[09:47] the visual DNA we gave earlier,
+[09:49] and a finished real world output.
+[09:52] Every future brief for the series now starts closer on the first try.
+[09:56] So do you want to see what it looks like in action?
+[09:59] Good news!
+[10:01] It's game time.
+[10:06] Welcome to the big game!
+[10:08] On the field we have Canva, Claude, and Coach B
+[10:11] competing to see just how many on-brand assets they can create from one game plan.
+[10:15] I think I'm ready.
+[10:16] The clock is on. They've got 10 minutes.
+[10:18] Time starts now.
+[10:20] Okay, so first let's just create some Instagram stories.
+[10:23] Super simple. Resize.
+[10:25] Instagram stories. Copy and resize.
+[10:28] Boom. Done.
+[10:29] That is six stories ready to go,
+[10:31] and it can also be posted as a TikTok carousel post.
+[10:34] Next up, quote graphic.
+[10:36] Let's keep this simple.
+[10:37] I'm going to go to Social Media,
+[10:40] an Instagram post.
+[10:42] Simplicity.
+[10:43] We're just going to change the background to one of our brand colors,
+[10:46] and I'm going to ask Claude for an on-brand quote
+[10:50] about the evolution of social media.
+[10:56] Come on.
+[10:57] Nice. I like this one.
+[10:59] Now I'm just going to head back into that quote graphic.
+[11:03] Add text.
+[11:04] Okay, and then I'm just going to look up a cute quote icon.
+[11:10] That looks pretty on-brand to me.
+[11:12] Now I'm just going to duplicate it twice,
+[11:15] and for each page, I'm going to head into brand
+[11:18] and just shuffle the brand kit.
+[11:21] Now I'm going to magic right to adjust the copy.
+[11:29] Done.
+[11:30] Now I'm going to change this into a LinkedIn graphic.
+[11:32] Simple resize. Search LinkedIn.
+[11:35] Copy and resize.
+[11:37] Done.
+[11:38] I'm also going to switch the carousel into a LinkedIn size.
+[11:42] Coach B is not slowing down. The system is working.
+[11:45] Amazing. Don't even need to adjust it,
+[11:47] and those can all go out as separate posts.
+[11:49] Next up, YouTube thumbnail.
+[11:51] So I'm actually going to use my real cover
+[11:53] that I created a couple days ago using the same workflow.
+[11:57] I'm going to resize it to be a YouTube thumbnail.
+[12:02] Okay, now we're just going to have to play around with this.
+[12:06] Remove the background of this.
+[12:08] Make her nice and big.
+[12:12] Done. I'm happy with that.
+[12:13] This thumbnail with a link to the corresponding video,
+[12:17] that's a LinkedIn post right there.
+[12:18] I'm going to take a screenshot of everything we've created so far.
+[12:24] Back in Claude, I'm going to attach all of those screenshots,
+[12:28] and I'm going to ask it to help me quickly create
+[12:30] a Facebook ad for the series with a strong headline.
+[12:34] Okay, great. I love this one.
+[12:35] It's basically just saying to use our original design.
+[12:38] Okay.
+[12:39] Okay, that's design.
+[12:42] I'm just going to duplicate it,
+[12:43] and I'm going to use magic right to change the headline
+[12:46] so that I can AB test.
+[12:51] Let's adjust it a little bit.
+[12:53] Now, here's the move that turns one ad creative into a whole ad set.
+[12:57] I'll go up to resize.
+[12:59] I'm going to change it to vertical.
+[13:00] I'm going to change it to square,
+[13:02] and I'm going to change it to landscape for a Facebook ad as well.
+[13:05] Okay, we're redesigning all of them.
+[13:10] Open the designs, and those same assets,
+[13:12] YouTube community, LinkedIn, threads, X, even Reddit.
+[13:16] Team B coming in with a sweep right on the buzzer
+[13:18] and taking the total right up to 32 on-brand posts.
+[13:22] Nice.
+[13:23] One brand, three players, 32 posts in 10 minutes.
+[13:27] That is what a strong team looks like.
+[13:30] So no, using AI in design is not benching out.
+[13:34] Not benching your most creative player.
+[13:36] It builds a smarter team around them.
+[13:39] Claude thinks.
+[13:40] Canva builds.
+[13:42] You ship.
+[13:43] The system compounds.
+[13:45] The briefs get sharper.
+[13:47] The first draft gets closer every single time.
+[13:50] That's what scalable design actually looks like in the world of AI.
+[13:54] Remember, your game day advantage is linked in the description for you.
+[13:58] A free on-brand social media design kit
+[14:01] with templates, a 30-question brand audit,
+[14:04] and a platform specs guide.
+[14:06] Everything you need to run the play starting today.
+[14:09] If this system is going to save your team some time,
+[14:12] then do me a favor and hit like,
+[14:14] and let me know in the comments if I've convinced you to add more players to your team.
+[14:18] I've been your coach, Bridget O'Rourke.
+[14:20] Go build out your team, and I will see you in the next one.
+[14:22] Bye.

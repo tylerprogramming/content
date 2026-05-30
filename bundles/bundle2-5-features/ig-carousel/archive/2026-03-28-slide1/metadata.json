@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Instagram carousel slide design. Light cream white background (#f5f0eb). Large bold dark text centered: 5 CLAUDE CODE FEATURES YOU ARE NOT USING. The number 5 should be in a bright accent color like coral red (#e74c3c). Below the heading in smaller gray text: These are not advanced. They are just not obvious when you first start. Subtle geometric accent shapes in light pastel colors. Page counter 1 / 7 in small text top right corner. Clean modern minimal Instagram aesthetic.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-28T06:27:47.217943",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774693664088_m6ak6l.png"
+      ]
+    }
+  ]
+}

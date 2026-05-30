@@ -1,0 +1,210 @@
+[00:00] If you've been paying attention
+[00:01] to the cloud code scene at all lately,
+[00:03] then you've noticed a dramatic shift
+[00:05] from MCP tools to command line interfaces.
+[00:08] And the reason for that is pretty simple.
+[00:10] It's a huge performance increase.
+[00:12] Cloud code already lives in the terminal.
+[00:14] The CLI lives in the terminal.
+[00:16] There's no middleman, no overhead, no config,
+[00:19] nothing stopping your agent
+[00:21] from communicating with that program.
+[00:23] So if it's clear that this is the future
+[00:25] we are marching towards with agentic coding agents,
+[00:27] our next question should be,
+[00:29] is there any way for us to speed this up?
+[00:31] Is there a way for us to create CLI tools
+[00:33] that interact with software we are already using?
+[00:36] Well, luckily for us, as of a few days ago,
+[00:38] the answer is yes, we can.
+[00:40] And that is thanks to a brand new open source tool
+[00:42] called CLI Anything.
+[00:44] Now, this thing was created by the Data and Intelligent Labs
+[00:47] at Hong Kong University.
+[00:49] If you don't know who those guys are,
+[00:50] they're the makers of LightRag, Rag Anything,
+[00:54] Nanobot, and a bunch of other open source tools.
+[00:57] These are one of the titans of the AI open source community.
+[01:00] So when they build something like this,
+[01:02] it's worth our time to take a look.
+[01:04] So long story short, what does CLI Anything do for us?
+[01:08] Well, it allows us to point CLI Anything
+[01:10] at any open source software or something you have built
+[01:14] and create a CLI tool for that
+[01:17] that something like Cloud Code can use.
+[01:19] And that's echoed right here.
+[01:20] Every software becomes instantly agent controllable
+[01:23] through structured CLI.
+[01:24] Agents control any applications without APIs,
+[01:27] GUI, rebuilding, or complex wrappers.
+[01:29] And ultimately, we're transforming human design software
+[01:32] into agent native tools with one command.
+[01:34] Now again, what does that really mean?
+[01:36] That means we can have Cloud Code control software
+[01:39] that normally you as the human would be controlling
+[01:41] through some sort of graphical interface.
+[01:43] Remember the Google Workspace CLI
+[01:45] we just covered yesterday, link to that video above?
+[01:47] Same exact idea, normally with Google Workspace,
+[01:49] you know, I'm talking Drive or Gmail,
+[01:51] you would go to Gmail, you would click through the things,
+[01:53] you would manually do these things.
+[01:54] But since there's a CLI,
+[01:56] you can now do all that through the terminal.
+[01:59] This is allowing us to do that for anything, right?
+[02:02] Not just Google, not just whatever.
+[02:04] If it's open source, we can point this at that software
+[02:07] and create a CLI for it.
+[02:09] That's a massive, massive productivity boost.
+[02:12] So what's gonna happen now is I'm gonna show you
+[02:14] how CLI Anything is working under the hood,
+[02:15] and then we're gonna go through a demo
+[02:17] of actually pointing this tool at some open source software,
+[02:21] hint, it's draw.io, and creating a CLI tool
+[02:25] for that application and then controlling it
+[02:27] via Cloud Code.
+[02:28] But before we do that, a quick word from our sponsor, me.
+[02:31] So I just released my Cloud Code Masterclass
+[02:33] inside of Chase AI+, where I take you from zero to AI dev,
+[02:37] no matter your technical background or lack thereof.
+[02:41] There's a link to that in the pinned comment.
+[02:43] And if you're someone who's just getting started
+[02:45] with their AI journey, isn't quite ready for a masterclass,
+[02:47] I have a free Chase AI community in the description.
+[02:50] So there's something for everyone.
+[02:52] So make sure you check that out.
+[02:53] All right, back to CLI Anything.
+[02:54] How is this thing actually working?
+[02:56] Well, it essentially has a seven-step process.
+[02:59] Once we install the CLI, and I'll show you how to do that,
+[03:01] and we point it at whatever software
+[03:03] we wanna create a CLI tool for,
+[03:05] it's gonna run this pipeline of seven steps,
+[03:08] and it does this all automatically.
+[03:09] You don't have to touch anything.
+[03:11] First, it analyzes the code.
+[03:12] So this is why it needs to be open source.
+[03:15] Like, it needs to actually see the guts
+[03:16] of whatever application we're looking at.
+[03:19] Next, it does design, right?
+[03:20] Takes a look at the output formats, implementation,
+[03:23] then it plans tests, writes tests, documents it all,
+[03:26] and then publishes it.
+[03:27] And then after all that,
+[03:28] we have the step to actually refine and improve the CLI
+[03:31] if after the first pass,
+[03:33] it isn't exactly what we were looking for.
+[03:34] So they give us a lot of things
+[03:35] related to use cases in this repo,
+[03:37] and I'll put a link to that down below as well.
+[03:39] But a cool thing is, is they've already done this
+[03:41] for a number of large open source applications.
+[03:44] So GIMP, Blender, Inkspace, Audacity, on and on they go.
+[03:49] They actually have already done this for real,
+[03:51] and you can kind of see the actual CLI tool.
+[03:54] And when you download this CLI Anything tool,
+[03:56] it comes with all these CLI commands,
+[03:58] essentially like preloaded.
+[03:59] And you can also see how many tests they ran for each.
+[04:02] So for example, something big like what Blender was 208 tests
+[04:05] so it's pretty robust,
+[04:07] and they've obviously proven this model
+[04:08] on some of the big players in the open source community.
+[04:11] And for today's demo,
+[04:12] we're essentially going to redo what they did with draw.io.
+[04:15] Again, they have the prebuilt CLI ready to go,
+[04:17] but we're going to do it from scratch
+[04:18] to sort of prove how this works.
+[04:20] Now to get this started is pretty easy.
+[04:22] We just need Python 3.1 in the target software installed.
+[04:25] Since we are going to be using draw.io,
+[04:27] what we're going to do is we're going to install
+[04:29] Anything CLI, that command line interface,
+[04:32] and then we're going to clone
+[04:34] the open source GitHub repo of draw.io.
+[04:38] And then from there, we point the CLI at the cloned repo,
+[04:41] and it creates the CLI tool.
+[04:43] Okay, so now what we want to do
+[04:44] is we want to head into our terminal,
+[04:45] create a new directory for this.
+[04:48] So I'm in the cli-anything-demo directory,
+[04:50] get Cloud Code up and running,
+[04:52] and we're going to install the CLI Everything plugin.
+[04:55] Now the commands are right here inside of the GitHub,
+[04:57] so first you need to add the CLI Anything tool
+[05:01] to the marketplace, and then we're going to install it.
+[05:04] So just copy and paste these two commands.
+[05:06] You'll know you've done that correctly
+[05:07] if you do slash plugin and you go to installed,
+[05:10] and you see the CLI Anything plugin here and enabled.
+[05:13] Also remember when you install the plugin,
+[05:14] you need to cycle Cloud Code to get it running
+[05:17] or do forward slash reload plugins.
+[05:19] Next, we want to build the CLI,
+[05:21] but to build the CLI, we need to point it at something.
+[05:23] So what we're going to do now is
+[05:24] we're going to clone that draw repo.
+[05:27] So I told Cloud Code, go ahead and git clone this repo.
+[05:30] I'll put a link to this repo down below.
+[05:31] It's just the open source repo.
+[05:33] It's going to go ahead and copy that entire repository
+[05:35] and put it in your directory.
+[05:37] Once you do that, we're just going to have one more command.
+[05:38] It's just cli-anything, cli-anything,
+[05:41] and then we point to wherever that repo is.
+[05:44] And so for us, our command will look exactly like this.
+[05:46] You just hit enter,
+[05:47] and it's going to start building the CLI tool,
+[05:49] and you can expect it to take about 20 minutes or so
+[05:52] for something of this size.
+[05:55] All right, once it's complete,
+[05:56] you should see a message that says something like
+[05:58] all nine success criteria are met.
+[06:00] It'll give you the architecture breakdown
+[06:02] as well as the test results,
+[06:04] and finally, the key capabilities.
+[06:06] Now remember, you aren't stuck here.
+[06:07] If you want to continue to iterate and add more features,
+[06:10] super easy to do.
+[06:11] So let's actually demo this now.
+[06:12] So the prompt I'm giving Cloud Code is
+[06:14] let's test out the new draw CLI tool,
+[06:17] create me a thorough yet clear diagram
+[06:18] explaining a typical SAS backend architecture,
+[06:21] make it visually striking,
+[06:22] pull up the draw diagram for me at the end.
+[06:24] So you can see it's taking a look at the draw IO package,
+[06:27] and you will also see it referencing this agent harness.
+[06:30] That's the nomenclature it often uses
+[06:31] for this CLI wrapper or CLI harness.
+[06:34] So here's what it built us,
+[06:35] this diagram for a SAS backend architecture, right?
+[06:38] Pretty solid, actually.
+[06:40] There's a lot going on here.
+[06:42] Even did like cool little shading behind this thing.
+[06:46] Now, the point of this video isn't like,
+[06:47] oh, look how cool this draw IO thing is.
+[06:49] The point of this video is that
+[06:51] we just created the CLI tool that did not exist
+[06:54] 10 minutes ago and had it create this fairly complicated
+[06:58] and well laid out diagram with a single text prompt.
+[07:03] So think about what sort of workflows you're doing
+[07:06] in your day-to-day with open source projects
+[07:09] or really projects that you have access to their backend
+[07:12] that we could point CLI everything at
+[07:14] and create a CLI tool for that software.
+[07:17] The implications of something like this is pretty crazy.
+[07:19] And as you saw, that wasn't hard.
+[07:21] It was like one line of code.
+[07:23] Like we cloned the repo, ran the code, done.
+[07:27] This is as easy as it gets, guys.
+[07:29] So I highly suggest you try this out yourself.
+[07:31] Download it, install it,
+[07:33] point it at some other open source project
+[07:34] and see what kind of results you get.
+[07:36] Like I said, this is so easy to do
+[07:38] and this is where the field is going.
+[07:39] So as always, let me know what you thought in the comments.
+[07:42] Make sure to check out Chase AI Plus
+[07:43] if you wanna get your hands on that Cloud Code Masterclass
+[07:47] and I'll see you around.

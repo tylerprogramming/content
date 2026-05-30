@@ -1,0 +1,20 @@
+{
+  "generations": [
+    {
+      "prompt": "Young man, casual hoodie, holding skincare bottle, bathroom mirror selfie, warm lighting",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "9:16",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-15T07:32:18.645249",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/27b398691b22daa83be2dfd5a58c7001_1776252681_3rvxyfx1.png",
+        "https://tempfile.aiquickdraw.com/h/991b0f3aec351b8b1d63405fe44914c8_1776252732.png"
+      ]
+    }
+  ]
+}

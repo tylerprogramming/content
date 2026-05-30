@@ -1,0 +1,21 @@
+[00:00] slash thumbnail, excited person pointing at a glowing screen showing AI generated images.
+[00:04] It's going to have the text AI thumbnails, it's going to have blue accents, high contrast.
+[00:09] Now it's going to ask me what model I want to use.
+[00:10] I am going to say Nano Banana Pro, then it's going to give me several variants of this
+[00:15] so I can look at for my next YouTube thumbnail.
+[00:17] So text to image, thumbnail style, 2K, three variants, and I'm going to tell it to go ahead
+[00:22] and generate.
+[00:23] Okay.
+[00:24] And so here are three of the generated thumbnails that were here for this simple text.
+[00:27] Now it also does likeness, so let me show you that.
+[00:30] So here's one more in a different style, of course, that is similar to my likeness for
+[00:34] a thumbnail.
+[00:35] And of course, here is another one that I gave my likeness to so that it generated something
+[00:39] for a YouTube video.
+[00:40] So no layers, no masking.
+[00:41] This was just minutes and I didn't have to be in Canva, I just picked the best one and
+[00:45] I can move on.
+[00:46] I built a cloud code skill that saves every thumbnail, tracks which style performs best
+[00:49] and also generates new ones based on what's actually getting clicks.
+[00:52] Save this if you're still spending more than an hour on your thumbnails, comment thumb
+[00:56] and I'll show you the full setup.

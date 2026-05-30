@@ -1,0 +1,23 @@
+{
+  "generations": [
+    {
+      "prompt": "YouTube thumbnail: dark brown gradient background, Anthropic AI logo top left, bold white text 'CLAUDE A COMPREHENSIVE GUIDE', five copper/bronze circular medallion icons in a diagonal row center-left showing SKILLS HOOKS MCP-SERVERS PLAN-MODE SUB-AGENTS. White man on the right side of frame, arms crossed confidently, slight smirk smile, looking directly at camera, wearing dark navy blazer over black shirt, dark hair. Exact same posture and expression as the original reference person but with this man's face and appearance. Bold white text '23 CONCEPTS' at bottom left. Professional YouTube thumbnail style.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "jpg",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude-23-thumb-ref.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tyler-ref.png"
+      ],
+      "generated_at": "2026-03-17T16:41:41.457852",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/image-format-converter/1773780027125-3esbxt3nxdb.jpg",
+        "https://tempfile.aiquickdraw.com/image-format-converter/1773780096466-ta7lbtbe13.jpg"
+      ]
+    }
+  ]
+}

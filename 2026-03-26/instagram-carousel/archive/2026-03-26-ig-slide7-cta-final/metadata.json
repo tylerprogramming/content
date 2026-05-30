@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Instagram carousel CTA slide. Dark black background with colorful abstract swirl ribbon shapes in yellow, orange, and green. Big bold yellow uppercase text at the top: COMMENT SETUP. Below in white text: and I will send you the full video walkthrough! On the right side, a photo of the person from the reference image. At the bottom left, the handle @tylerreedai in white text. Page counter 7/7 in small white text top right corner. Clean professional Instagram carousel CTA design.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-26T23:11:03.613315",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774581057066_nftj1y.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "list",
+  "background": "cream",
+  "slug": "tools-replaced",
+  "header": "5 tools Claude Code replaced",
+  "subheader": "and what I was paying:",
+  "items": [
+    "/content — content writer $500/mo",
+    "/yt-search — research tool $99/mo",
+    "/shorts — caption writer $30/mo",
+    "/seo — SEO software $99/mo",
+    "/instagram-writer — designer $200/mo"
+  ],
+  "stat": "Saving me $928+ every single month.",
+  "accent_words": ["content", "yt-search", "shorts", "seo", "instagram-writer", "$928+"],
+  "cta": "skool.com/the-ai-agency",
+  "handle": "@tylerai_dev"
+}

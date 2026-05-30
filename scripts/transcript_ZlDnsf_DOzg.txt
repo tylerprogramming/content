@@ -1,0 +1,811 @@
+[00:00] You're probably staring at Claude Code thinking,
+[00:02] how is this supposed to make my life easier?
+[00:04] A black screen, a blinking cursor,
+[00:05] and terms like context window, sub-agents, MCP servers,
+[00:09] none of it feels like it's built for somebody
+[00:10] without a coding background.
+[00:12] So you jump between random tutorials and scattered docs,
+[00:15] half understand one concept and get stuck on the next,
+[00:17] and waste hours trying to connect all of those pieces
+[00:20] that were never clearly explained.
+[00:21] So without a solid mental model of how this tool works,
+[00:24] you'll keep second guessing every command,
+[00:26] leading to slower builds, broken automations,
+[00:29] and projects that you never end up shipping.
+[00:31] Now, after hundreds of hours inside Claude Code,
+[00:33] building production apps,
+[00:34] automating revenue generating businesses,
+[00:37] and helping thousands of non-technical founders
+[00:38] use it confidently,
+[00:39] I'm gonna give you today the shortcut that I wish I had.
+[00:42] I'll break down 27 Claude Code concepts,
+[00:45] each explained in less than 60 seconds,
+[00:47] starting from the basics and stacking all the way up.
+[00:50] So by the end, you won't just recognize the terminology,
+[00:53] you'll know what to use, when to use it,
+[00:55] and how to build without feeling lost
+[00:58] every single time you open the terminal.
+[00:59] So let's get into concept one.
+[01:01] Now we're gonna start by talking about what is Claude Code.
+[01:03] So most people already know chatbots,
+[01:05] like Chat2BT, Claude, Gemini.
+[01:07] You type a message, you get a reply,
+[01:09] but those tools can only talk to you.
+[01:10] They can't actually do anything on your computer,
+[01:12] and they've only recently been given access
+[01:14] to do anything even more than that, like web search.
+[01:16] Now, Claude Code is entirely different.
+[01:18] It can create files, build websites, set up databases,
+[01:22] install packages on your machine, do your repetitive tasks,
+[01:25] all from a simple conversation in plain English.
+[01:28] So you describe what you want, and it builds it.
+[01:30] You don't need to know how to code.
+[01:31] You just need to know what to install
+[01:33] or how to write to get good answers back.
+[01:36] So chatbots give you advice, Claude Code takes actions,
+[01:39] which brings us to the terminal.
+[01:41] Now, Claude Code doesn't run in a browser like Chat2BT.
+[01:44] It runs in the terminal, that black screen with white text
+[01:47] that looks so cryptic that you've probably seen
+[01:49] developers use.
+[01:50] Now, the terminal is actually really simple.
+[01:51] It's just another way to interact with your computer.
+[01:54] So instead of clicking buttons, you type commands.
+[01:57] But here's the thing, when you're using Claude Code,
+[01:59] you don't need to know many terminal commands at all.
+[02:01] So you type in plain English,
+[02:03] and Claude handles everything else underneath it.
+[02:05] Say I want to install a package,
+[02:07] I'd usually type in something like npx install package name,
+[02:11] getting my package manager to install a given package name.
+[02:14] Now, with Claude Code, I just need to know a few commands,
+[02:17] how to open it, so we type in Claude,
+[02:20] how to close it, we hit Control C twice,
+[02:22] and how to clear its memory.
+[02:23] We'll come to these, but slash clear.
+[02:26] And then we also need to know how to talk to it well,
+[02:29] which brings us on to prompts.
+[02:30] Now, a prompt is simply what you type
+[02:32] to tell Claude Code what to do,
+[02:34] same as when you're typing something into Chat GPT.
+[02:37] That's it.
+[02:37] You write prompts in plain English,
+[02:39] like build me a landing page, create me a dashboard,
+[02:42] fix this error, there's no special syntax, no code,
+[02:45] just describe what you want,
+[02:46] and the more specific you are, the better the result.
+[02:49] So instead of build me a website,
+[02:50] say something like build me a one page landing page
+[02:53] for a consulting business with a green color scheme.
+[02:56] I want it to have a contact form
+[02:58] and three cards explaining our service.
+[03:00] So better prompts, better results.
+[03:02] And that is really the whole game
+[03:03] when it comes to Claude Code,
+[03:05] but we'll come to a concept later
+[03:07] which will make prompting much easier.
+[03:09] Now, permissions is an incredibly important concept
+[03:12] because Claude Code can make actual changes to your computer
+[03:15] so it can create files, run commands, edit code,
+[03:18] delete files even.
+[03:19] So by default, it asks for your permission
+[03:21] before it does anything significant.
+[03:22] But if you're clicking approve every 10 seconds
+[03:25] in a project that's gonna take a day,
+[03:27] it really kills your flow and there is a better way.
+[03:29] So I recommend that you start with a default
+[03:32] where Claude is asking approval on most actions
+[03:34] so you get to understand exactly what it's asking for.
+[03:37] But as you start to get comfortable,
+[03:38] you can pre-approve specific actions
+[03:40] so Claude works faster
+[03:42] without having to stop you constantly.
+[03:43] Now you can go nuclear
+[03:45] and give it permissions to do absolutely anything
+[03:47] using the dash dash dangerously skip permissions flag.
+[03:51] But even Boris Cherny, the creator of Claude Code
+[03:54] says he never does this
+[03:55] and instead you should use a permissions file
+[03:57] in the slash settings.json file.
+[03:59] You can edit this file directly or type in slash permissions
+[04:03] and add commands to an allow list.
+[04:05] So these get saved to your settings.json file
+[04:07] which means you can check them into your repo
+[04:09] and share them with your team even
+[04:10] so everyone has exactly the same permission setup.
+[04:13] And I know it looks incredibly confusing
+[04:14] but what you're actually seeing here is
+[04:16] these specific things are fine,
+[04:18] everything else still needs my approval.
+[04:20] So it's the sweet spot between safety and speed
+[04:22] but there's still the question
+[04:23] of what should you actually allow?
+[04:24] Well, here's my thinking for most projects.
+[04:26] These are the actions that I feel are safe to pre-approve.
+[04:29] So we're gonna read files and folders automatically.
+[04:31] We're gonna run the dev server
+[04:32] so just commands to actually start Claude testing
+[04:35] on a dev server.
+[04:36] We're gonna run tests
+[04:37] so that Claude can check its own work constantly
+[04:39] and we're gonna allow for Git operations.
+[04:41] So things like uploading to GitHub,
+[04:44] committing certain changes
+[04:45] and keeping our version control in place.
+[04:47] And then the things that you probably wanna keep gated
+[04:49] actually requiring your approval
+[04:51] are things like installing new packages,
+[04:53] deleting files or folders
+[04:54] and anything that's probably touching the internet,
+[04:57] API calls, sending data,
+[04:58] you should keep your eyes on those
+[05:00] and ask Claude to keep asking your permission for those.
+[05:02] And here's the nice thing,
+[05:03] you don't need to write that JSON file by hand,
+[05:06] just tell Claude,
+[05:07] add the common safe permissions to my settings,
+[05:09] reading files, running tests,
+[05:11] Git operations, starting the dev server,
+[05:13] show me what you're adding before you save it
+[05:15] and Claude will actually go and do the hard work for you
+[05:17] and you will see what that is at the end.
+[05:19] So permissions keep you in control,
+[05:20] pre-approve the safe stuff,
+[05:22] gate keep the risky stuff
+[05:23] and Claude is gonna work much faster
+[05:25] without you having to approve
+[05:26] every single action that comes through.
+[05:28] Now, concept five is all about tool use.
+[05:31] So what makes Claude code more powerful
+[05:33] compared to the regular Claude or Chachupati
+[05:35] is that it has access to any tools.
+[05:37] So it has built in capabilities
+[05:38] that let it interact with your computer,
+[05:40] that's why it can actually take actions.
+[05:42] So the main ones are really simple,
+[05:43] we've got read,
+[05:44] so Claude can actually look at your files and data,
+[05:47] we've got write,
+[05:48] where Claude can actually create new files
+[05:50] and then we've got bash,
+[05:51] Claude can run commands like installing packages,
+[05:54] running tests or moving files around your computer
+[05:56] and you don't need to tell Claude which tool to use,
+[05:59] you just describe what you want
+[06:00] and Claude picks the right tools automatically.
+[06:02] So we saw that in the last permissions example
+[06:05] with bash ls,
+[06:06] which basically allows Claude
+[06:07] to run the ls command in your terminal,
+[06:10] which is basically just used to list files.
+[06:11] So it's something we permit Claude
+[06:13] to do on its own without approval.
+[06:14] So you just need to understand the concept of tools,
+[06:17] you describe the goal still,
+[06:18] Claude is still gonna pick the tools.
+[06:20] That brings us nicely onto the context window.
+[06:22] So the context window is Claude's short-term memory,
+[06:24] is everything that Claude can see and think about
+[06:26] at any given moment
+[06:27] during a conversation you're having with it.
+[06:29] So every message you send,
+[06:30] every file Claude has read,
+[06:32] every response it's generated,
+[06:33] all of that is gonna live inside our context window
+[06:36] and it has a limit.
+[06:37] So when a conversation gets too long
+[06:39] or too much info piles up,
+[06:40] Claude is gonna start losing track
+[06:42] of the earlier stuff you said
+[06:44] and this is a phenomenon called context rot.
+[06:46] That's when outputs get worse
+[06:47] and Claude seems to forget exactly what you've told it.
+[06:50] It's similar to on chat GPT when you get hallucinations.
+[06:53] But the fix is super simple.
+[06:54] We're gonna keep our conversations focused
+[06:56] and start fresh sessions when you have to switch tasks
+[06:59] or use the slash clear command
+[07:02] or slash compact command to help you manage it.
+[07:05] And we'll talk more about those later.
+[07:07] So you can track context limits
+[07:08] by the green bar at the bottom of the terminal.
+[07:10] So context window is Claude's short-term memory
+[07:13] and to get better results,
+[07:15] we're gonna try and keep it clean
+[07:16] as we go through a session.
+[07:17] So conversation history is all about Claude Code
+[07:20] automatically saving your previous conversation.
+[07:22] So every single session you have is stored
+[07:25] and you can get back to any of them.
+[07:27] All you need to do if you close your instance
+[07:29] is type Claude dash dash resume
+[07:31] and this will drop you straight back
+[07:32] into the most recent conversation.
+[07:34] The same project you just were in
+[07:36] is gonna have the same context of the previous conversation
+[07:38] and pick up right where you left off.
+[07:40] So this shows you a list of all your previous sessions.
+[07:42] You can scroll through, see what each one was about
+[07:45] and pick the one you want to jump back into.
+[07:47] And this is essential in practice
+[07:48] because you're rarely finishing a big project
+[07:50] in one conversation instance.
+[07:52] So you build something, close your laptop,
+[07:54] come back the next day
+[07:55] and instead of starting over, you just resume.
+[07:56] So that brings us to token usage.
+[07:58] So when you use Claude Code, it costs money
+[08:00] and the way that cost is calculated is through token usage.
+[08:03] So a token is roughly three quarters of a word.
+[08:06] So it means a thousand tokens is roughly 750 words
+[08:09] you put in the input or you receive in the output.
+[08:11] So every prompt you send,
+[08:13] every response that it sends back to you,
+[08:15] every file that Claude reads, it's all gonna use tokens.
+[08:19] So the price depends on which model you're using.
+[08:21] So we've got Sonnet, which is cheaper
+[08:22] and Opus, which is more powerful, but costs more.
+[08:24] And Claude Code is gonna track your usage
+[08:26] so you can see exactly what you're spending.
+[08:28] So tokens are how you're charged.
+[08:30] You can keep an eye on the usage
+[08:31] using the slash cost and slash stats,
+[08:34] which bring up the amount of tokens
+[08:36] that you've spent in that given session.
+[08:38] Okay, so now you've got the foundations.
+[08:40] You know what Claude Code is,
+[08:41] you know how it works and how to talk to it.
+[08:44] But up until now, it's still a blank slate.
+[08:46] This is where we're gonna make Claude Code personal to you,
+[08:49] which brings us to Claude.md.
+[08:51] So every time Claude Code starts working on your project,
+[08:54] it needs to know how you want to get things done.
+[08:56] So without guidance, it's gonna completely guess
+[08:59] and guessing is obviously gonna lead
+[09:00] to crap results for you.
+[09:02] So Claude.md is just gonna be a markdown file
+[09:04] in your file structure where you write your preferences,
+[09:07] your rules, your project structure in it.
+[09:09] And Claude's gonna read it first, every single line.
+[09:11] And every time we open a new instance of Claude,
+[09:14] it will say things like, we use TypeScript,
+[09:16] always write using our brand voice,
+[09:18] don't ever use em dashes.
+[09:19] And you're gonna write it once
+[09:21] and Claude Code is gonna follow it
+[09:23] in every single conversation.
+[09:24] It's possibly the most important file
+[09:26] you're gonna create in every single project.
+[09:28] So think of Claude.md as your instruction manual for Claude
+[09:31] and you're gonna iterate on it over time,
+[09:32] but benefit from making that forever.
+[09:34] So memory, everything we've covered so far
+[09:36] lives within a single conversation.
+[09:39] But what if you want Claude to remember things
+[09:40] across multiple conversations?
+[09:42] Now this isn't talking about bringing up
+[09:44] previous conversations like the history we just showed.
+[09:47] It's actually about recognizing patterns
+[09:49] that you do automatically and storing those
+[09:52] so Claude can be even more personalized.
+[09:53] So Claude.md was like our manual memory file,
+[09:56] but Claude Code has also got an auto memory file
+[09:58] that lets Claude Code store your preferences
+[10:01] and facts that persist between your different sessions.
+[10:03] So if you do always work in JavaScript
+[10:06] or prefer a certain coding style
+[10:07] or have specific project conventions,
+[10:09] then that's gonna be automatically saved to memory
+[10:12] and Claude's gonna know that every single time
+[10:14] you start something new.
+[10:14] So although it's gonna store those things on your behalf,
+[10:16] you can actually ask it to add, remove and review
+[10:19] what Claude remembers about you and the way you work.
+[10:22] So it's all about learning your preferences over time,
+[10:24] not just within a single chat.
+[10:26] So you don't see the memory files in your project directory,
+[10:28] but it is being built as you work.
+[10:30] Now next is compact context.
+[10:32] So we talked earlier about context length.
+[10:34] When conversations get really long,
+[10:35] the context window starts to fill up.
+[10:38] So if you don't manage that,
+[10:39] Claude starts losing track of the important info.
+[10:41] So here's how we actually manage this.
+[10:43] We can either do it automatically.
+[10:45] So when it detects that the context is getting close to full
+[10:48] it automatically takes the key information,
+[10:50] summarizes it and clears out the noise.
+[10:53] It passes the summary then to the next instance
+[10:55] of the conversation,
+[10:56] hopefully keeping the important stuff.
+[10:58] Now this happens in the background
+[10:59] without you doing anything when we get to around
+[11:01] 85 to 95% of the context window.
+[11:03] But if you notice Claude getting confused mid session,
+[11:06] you can actually manually trigger this
+[11:07] using the slash compact command
+[11:09] and append some arguments like keep info about API calls
+[11:13] to actually give it more specific instructions
+[11:15] on what to keep and what is important.
+[11:18] So memory compacting keeps Claude sharper
+[11:20] during your longer sessions.
+[11:21] And you can leave it to itself
+[11:23] or you can help it by doing it at key stages.
+[11:25] Now models, when people say Claude code,
+[11:27] they're actually referring to a family
+[11:29] of AI models underneath.
+[11:31] So each one has different strengths, speeds and costs.
+[11:33] So Haiku is the fastest and cheapest.
+[11:36] It's great for simple, quick tasks.
+[11:38] Sonnet is the middleman.
+[11:40] It's an all-rounder, good at most things,
+[11:41] reasonably priced and reliable.
+[11:43] And Opus is the most intelligent.
+[11:44] So it's gonna handle complex problems,
+[11:46] the things that require a lot of thinking
+[11:48] but cost the most.
+[11:49] So you can switch between them actually
+[11:51] mid conversation by using slash model in the terminal.
+[11:54] And the key here is just match the model to the task.
+[11:57] So use Sonnet for most things,
+[11:59] Opus when it actually matters
+[12:01] and then Haiku for very, very simple tasks.
+[12:03] Now denying access to files
+[12:05] is not talked about nearly enough.
+[12:07] Not every file in your project
+[12:08] you want to pass to Claude code.
+[12:09] So some are massive
+[12:10] and would just waste your context window.
+[12:12] Some are gonna contain sensitive data
+[12:15] like your API keys and passwords
+[12:16] and some are just totally irrelevant.
+[12:18] So you need a way to tell Claude,
+[12:20] do not touch these under any circumstance.
+[12:22] So you do this in the same settings.json file.
+[12:25] So you can add a deny list
+[12:26] that tells Claude which files and folders
+[12:28] are completely off limits.
+[12:29] So here's what this looks like.
+[12:31] Again, it's a little bit confusing when you read it
+[12:33] but what we're actually saying
+[12:34] is you can't read my environment files.
+[12:36] You can't read anything else in my secrets folder.
+[12:39] Don't read my credentials
+[12:40] and therefore Claude won't even discover these files.
+[12:42] It won't include them in search results
+[12:44] and can't read them even if you ask them to directly.
+[12:47] So deny rules in the settings.json file
+[12:49] are the proper way to do this inside Claude code.
+[12:51] Now talking about making Claude code more custom,
+[12:55] we're talking about flags.
+[12:56] So flags are options when you start and launch Claude code.
+[12:59] So they let you customize how Claude behaves
+[13:02] for that specific session before it even starts.
+[13:05] So you can use things like dash dash model
+[13:07] to choose model, dash dash allow tools
+[13:09] to controls which tools it has access to
+[13:12] like reading or writing.
+[13:13] You can use dash dash verbose
+[13:15] to get a more detailed output
+[13:16] every single time Claude responds
+[13:18] so you know exactly what Claude's doing.
+[13:19] Or you can do things like dangerously skip permissions
+[13:22] which is the nuclear option that we mentioned earlier.
+[13:25] So flags are just launch settings for Claude code.
+[13:27] They're entirely optional,
+[13:28] but that's just a shortcut on how to load them in.
+[13:31] Okay, so now you've got the foundations
+[13:33] and you know how to configure Claude code to work your way.
+[13:36] This next section is where things
+[13:38] get really, really interesting.
+[13:40] So these are the features that take Claude code
+[13:42] from useful to genuinely game changing in your workflows.
+[13:45] So these are some of the features that we deep dive into
+[13:48] in our new Claude code course
+[13:50] in our school community down in the description below.
+[13:52] So we take you from zero to expert
+[13:54] in just a few days of work.
+[13:55] We also provide you with a curated list of skills,
+[13:58] hooks, agents, slash commands
+[14:01] for lots of different use cases.
+[14:03] So you're able to get the maximum output
+[14:05] with minimal input.
+[14:06] So check out the first link in the description
+[14:08] if that sounds interesting.
+[14:09] Otherwise, let's move on to concept 15.
+[14:11] Now extended thinking,
+[14:12] some tasks are super simple,
+[14:14] rename this file for example,
+[14:16] but some tasks need Claude to genuinely reason
+[14:18] through the problem before it acts.
+[14:20] Now we can use a more powerful model like Opus 4.6
+[14:23] to get better results,
+[14:24] but actually this is all about Claude's inbuilt
+[14:27] extended thinking capability.
+[14:29] So when you need to plan a multi-step build,
+[14:31] quick responses aren't gonna be good enough.
+[14:33] And extended thinking gives Claude
+[14:34] a dedicated reasoning budget in tokens
+[14:37] that you can use to think through the problem step-by-step.
+[14:39] Now you don't need to do anything to activate this.
+[14:41] You used to have to write words like think,
+[14:43] think hard or ultra think in your responses,
+[14:46] but now by default, Claude code has the ability
+[14:48] to actually use that thinking budget
+[14:50] with a cap of max budget for thinking tokens.
+[14:54] So all you need to know is extended thinking
+[14:55] is Claude reasoning before it actually takes any actions
+[14:59] and it's on by default
+[15:00] and has a max budget allocated with it.
+[15:02] Now throughout this video,
+[15:03] we've been using what we call slash commands.
+[15:05] So typing in slash and then a command following that.
+[15:08] So you type a forward slash and a command name
+[15:10] and it triggers a specific action,
+[15:12] a repetitive task that you wanna take.
+[15:14] So this could be slash init,
+[15:16] which sets up a new project
+[15:17] and actually helps you create that Claude.md file.
+[15:19] It could be our slash compact,
+[15:21] which was shrinking our conversation
+[15:23] to save the contact space
+[15:24] or something like slash clear,
+[15:26] which wipes the conversation for a fresh start.
+[15:28] And if you forget any of them,
+[15:29] you can just type in slash help
+[15:30] and it will actually show you a list
+[15:32] of all the slash commands that you've got available
+[15:34] to do those repeatable tasks.
+[15:35] And it's important to know that you can turn
+[15:37] any of your tasks that you do on a day-to-day basis
+[15:40] into a slash command by just putting them
+[15:42] in the slash commands folder in doc Claude.
+[15:44] So just think of slash commands as shortcuts
+[15:46] and slash help shows you all of the shortcuts
+[15:48] that you can use.
+[15:49] Now there's a build on slash commands, which is skills.
+[15:52] So Claude code is a generalist.
+[15:53] It can do a lot of things to an okay degree,
+[15:55] but for specific task types,
+[15:57] like creating your social media strategy,
+[15:59] it can do even better
+[16:00] if you give it those specialized instructions to follow.
+[16:03] And skills are just pre-written instructions
+[16:05] that teach Claude how to do specific tasks really well.
+[16:08] Whether that's building presentations,
+[16:10] writing good copy, designing front ends.
+[16:12] When you ask Claude to do something
+[16:13] that matches a certain skills description,
+[16:15] it will read that skill file.
+[16:17] And it's not just one context file,
+[16:18] it can have supporting files too.
+[16:20] To understand best practices and optimal approaches.
+[16:22] And then it will build using all
+[16:24] of that knowledge loaded in.
+[16:25] So skills are gonna use more context
+[16:27] because we're actually loading those files in
+[16:29] if they're necessary,
+[16:30] but they can improve the quality of your outputs.
+[16:31] So say you want Claude code to be a copywriter,
+[16:34] you can find a copywriting skill and install it.
+[16:36] Or you can create your own if you're an expert copywriter.
+[16:39] So skills are expert playbooks
+[16:40] and Claude reads them before building
+[16:42] based on the descriptions,
+[16:44] which brings us onto hooks.
+[16:45] So sometimes you want specific rules
+[16:47] to run automatically at certain moments
+[16:49] after an event has taken place.
+[16:51] But we don't need AI to do that every single time
+[16:54] and to spend AI tokens.
+[16:55] So hooks are custom scripts
+[16:57] that trigger at those specific points.
+[16:59] Whenever Claude saves a file,
+[17:00] we're gonna autoformat that file using our rules
+[17:04] that we autoformat with every single time.
+[17:05] Or we're gonna log every single command that Claude runs.
+[17:09] So setting those up requires
+[17:10] a little bit more technical know-how,
+[17:12] although we can just ask Claude code to do that.
+[17:14] But you can think of them as custom rules
+[17:15] that trigger automatically every single time.
+[17:18] They're guardrails that are gonna run in the background
+[17:20] and not use any AI tokens.
+[17:21] So MCP servers, by default,
+[17:24] Claude code works with files on your local computer.
+[17:27] But I know that your business
+[17:29] doesn't just live on your machine.
+[17:31] It lives across Airtable, Notion, Asana,
+[17:34] and dozens of other tools.
+[17:35] So MCP just stands for Model Context Protocol.
+[17:37] And in simple terms,
+[17:39] MCP servers connect Claude code to those external tools.
+[17:42] And once you're connected,
+[17:44] Claude can pull data from those tools,
+[17:46] push updates to them,
+[17:47] and interact with your full tech stack
+[17:49] from that single conversation window.
+[17:52] So this is what makes it super powerful
+[17:53] because it can actually take actions
+[17:55] not only on your desktop,
+[17:56] but in the apps that you use day to day.
+[17:58] So let's move on to sub-agents.
+[18:00] So far, everything we've covered
+[18:02] runs in a single conversation,
+[18:03] one terminal, one context window.
+[18:05] And that works for 80% of your daily tasks.
+[18:08] But the longer a session runs,
+[18:10] the more that context is gonna pile up.
+[18:12] And Claude is gonna start forgetting things.
+[18:13] We talked about using compact earlier.
+[18:16] But actually there's another way to stop that.
+[18:18] And that's actually just delegating to sub-agents.
+[18:20] So sub-agents are specialists
+[18:22] that run in their own separate context window
+[18:24] with their own system prompts,
+[18:26] their own tool access,
+[18:27] but still follow the main Claude.md file.
+[18:29] So your main instance on screen
+[18:31] is gonna hand off a task
+[18:32] and the sub-agent is gonna do the work independently
+[18:35] and then send back to the main agent the result.
+[18:37] And there's two reasons to use them.
+[18:39] First, you're gonna improve the output quality.
+[18:41] So a focus specialist with a clean context window
+[18:44] is gonna beat that generalist with too much information.
+[18:47] And secondly, at speed,
+[18:48] you can run multiple sub-agents in parallel
+[18:51] on unrelated tasks.
+[18:52] And it's similar to skills, hooks and commands.
+[18:54] We can either create our own agents in the agent folder,
+[18:57] or we can actually leverage others
+[18:59] and download other people's agents as specialists too.
+[19:01] So a general rule of thumb is to use a skill
+[19:04] when you want Claude to be better at something
+[19:05] in your current conversation,
+[19:07] but you're gonna use a sub-agent
+[19:08] when the task is gonna be entirely self-contained.
+[19:11] So go away, analyze this report
+[19:14] and come back with your findings.
+[19:15] Something that it can do unsupervised.
+[19:18] So think of sub-agents as a focus specialist
+[19:20] with their own context.
+[19:21] And also by the way,
+[19:22] Claude code will spin out sub-agents
+[19:24] whenever it deems that architecture necessary.
+[19:26] So you don't even need to tell it
+[19:28] to spin off those sub-agents.
+[19:29] Now sub-agents have a limitation
+[19:31] which brings us to agent teams.
+[19:32] So sub-agents can only report back to the main agent.
+[19:36] So if you have a researcher, a writer
+[19:37] and a reviewer as sub-agents,
+[19:39] the reviewer can't see the research directly
+[19:41] and the researcher can't see the reviewer's feedback.
+[19:43] So everything at this point
+[19:44] is flowing through the main agent
+[19:46] and that becomes a bottleneck
+[19:47] when you have say five or more sub-agents
+[19:49] reporting into that main agent.
+[19:50] And agent teams, a newer feature of Claude code
+[19:53] is designed to solve this.
+[19:55] So instead of that hub and spoke model
+[19:57] where everything goes through one central point,
+[19:59] teammates can actually communicate directly with each other
+[20:01] and they share a task list.
+[20:02] So the main agent spins up teammates
+[20:04] only when you ask it to actually spin up an agent team
+[20:07] and each runs in their own Claude code instance.
+[20:09] So they get a sample of the information
+[20:11] but not the full context of the main conversation history.
+[20:14] So if you're doing something more complex
+[20:16] like building a SaaS app,
+[20:17] then you might have an API developer,
+[20:18] a front-end developer and a tester
+[20:20] all working in parallel as separate agents
+[20:23] because they actually need the context
+[20:25] of what each other are working on
+[20:26] and to feed it back to a shared task list.
+[20:28] And here's the simple rule for when to use what.
+[20:30] So a single agent for one feature,
+[20:33] if you have one conversation or one file that is changing,
+[20:36] then let's just use a single agent.
+[20:37] Sub-agents when you need specialists
+[20:39] and your context is getting bloated
+[20:41] and then agent teams when you have a really complex build
+[20:43] which actually requires collaboration between the team.
+[20:46] So multimodal support or image screenshot support.
+[20:49] Sometimes describing a problem in text
+[20:51] takes way longer than just showing it.
+[20:53] So Claude code actually allows you
+[20:54] to just upload your screenshot.
+[20:56] So say for example, you've got a bug on your website,
+[20:59] you can actually just screenshot it, paste it in.
+[21:01] Claude will see exactly what's wrong.
+[21:02] It knows how to read images
+[21:04] and you can also use this in reverse.
+[21:05] You can actually paste in a design
+[21:07] that you like the look of
+[21:08] and ask Claude to build to match it.
+[21:10] Now it's not going to get it perfect
+[21:12] but it's going to get it to a 60, 70% version
+[21:15] in the first shot.
+[21:15] But just keep in mind that images do use context
+[21:18] but it's a quick shortcut on how to actually
+[21:21] put in things like images like you would in chat GPT
+[21:23] which is way faster than describing problems in text.
+[21:26] Now Claude doesn't get everything right.
+[21:28] So especially when it's working autonomously,
+[21:30] it makes a lot of changes quite quickly.
+[21:32] And if it goes down a wrong path,
+[21:34] then you need a way to actually undo.
+[21:36] So thankfully Claude code automatically creates checkpoints
+[21:39] which are session level snapshots of your code
+[21:42] at certain points.
+[21:43] So before every file edit, it will create a snapshot
+[21:45] and you don't even need to do anything to enable this.
+[21:47] It's just going to happen in the background.
+[21:49] So when something goes wrong,
+[21:50] you can just type slash rewind
+[21:52] and that will open a list of every prompt from your session.
+[21:55] And you can go back and pick the point
+[21:56] that you want to go back to.
+[21:57] And it will show you which ones actually had changes
+[22:00] in the code base.
+[22:01] And you can choose what you want to restore
+[22:02] just the code or just the conversation.
+[22:04] So checkpoints happen automatically before every edit
+[22:07] and you use slash rewind to go back to them.
+[22:10] All right, so you now understand Claude code
+[22:12] from top to bottom.
+[22:13] There are a few more practical concepts that matter
+[22:15] when you're using this in the real world.
+[22:18] So the first is Git integration.
+[22:19] So when Claude code makes changes to your project,
+[22:21] you need a way to track what changed,
+[22:23] when it did and why it did.
+[22:25] So that is what we use Git or GitHub for.
+[22:27] And it's just our version control system.
+[22:29] It tracks every single change made to our project over time.
+[22:32] So all we need to do is actually connect up
+[22:33] our GitHub account to Claude code.
+[22:36] And this is actually gonna be what powers
+[22:37] the checkpoint system.
+[22:38] And it's how we can review Claude's changes,
+[22:40] rollback specific edits and work with a team
+[22:42] without overwriting each other's work.
+[22:44] So you don't need to be a Git expert.
+[22:46] It's actually just gonna run in the background
+[22:48] and keep everything trackable and safe
+[22:50] and allow us to do those rewinds.
+[22:51] Now these last ones are gonna be super helpful
+[22:53] and often get missed.
+[22:54] So normally Claude code is very interactive.
+[22:56] You're typing, Claude code is responding,
+[22:59] you approve sections and you go back and forth.
+[23:01] But if you want Claude code to work completely on its own
+[23:04] with no human in the loop,
+[23:05] you can use what used to be called headless mode.
+[23:07] Whereas it's now officially called CLI mode
+[23:09] or command line interface mode.
+[23:11] So with any task, you can add the dash P flag
+[23:13] to your command and it runs a full agentic loop
+[23:16] independently.
+[23:17] So you don't need any conversation with it.
+[23:19] It's for no approval prompts, no waiting on your input.
+[23:21] It's gonna process the request
+[23:23] and output the results back automatically.
+[23:24] And this is where the flags that we covered earlier
+[23:27] are really critical because if you want to pre-approve
+[23:29] certain tools or not allow it to do certain things,
+[23:32] then you can set that up front with that command
+[23:34] by just using the dash dash allowed tools flag.
+[23:37] So it can do things automatically without your input.
+[23:40] And if you want to take this one step further,
+[23:43] then I highly recommend looking up the Ralph loop.
+[23:45] It's an official Claude code plugin
+[23:46] named after Ralph Wiggum from the Simpsons.
+[23:48] What it's basically doing is instead of Claude code
+[23:51] running once and stopping,
+[23:53] like we're doing with the headless mode,
+[23:54] the Ralph loop keeps feeding in the same prompts,
+[23:57] but as the files are continually built,
+[23:59] it feeds in the prompts with the new set of files
+[24:01] and works out what's left to do on the task.
+[24:04] So Claude is literally gonna iterate on its own
+[24:06] while this while loop runs
+[24:07] until it actually nails the task.
+[24:09] And people have used that
+[24:10] to actually ship entire projects overnight.
+[24:12] So it's like headless mode on steroids.
+[24:14] And I'll leave a link down in the description
+[24:15] if you want to check that out.
+[24:16] But going back, the P flag turns Claude code
+[24:19] from a conversational tool into something
+[24:21] that you can actually just get to run by itself.
+[24:23] Now let's cover the all important cost here.
+[24:25] So there are two ways to pay for Claude code
+[24:27] and picking the wrong one is gonna cost you more.
+[24:30] Claude max is a monthly subscription.
+[24:32] So you can either do $100 or $200 per month.
+[24:35] You can actually start on pro, which is around $20 a month.
+[24:37] It has generous usage limits, all models included.
+[24:40] It's simple and predictable and tells you when you run out
+[24:43] or you can use the API as pay as you go.
+[24:45] So that's gonna charge you on per token.
+[24:47] So for light usage, that might actually be cheaper for you.
+[24:49] But actually what you're probably looking to do
+[24:51] is go for the pro or max options to get a much better deal
+[24:54] because mid build, you don't wanna be worrying
+[24:56] about the amount of tokens you've used
+[24:58] or the amount of your spending.
+[24:59] You just wanna fix monthly cost.
+[25:00] And then there's the final concept,
+[25:01] which is very important and that's work trees.
+[25:04] So when you're working on a bigger project,
+[25:06] you often need to work on multiple things at once,
+[25:09] a new feature that's not related to the main development,
+[25:11] a bug fix or an experiment even.
+[25:14] So you don't want them to interfere
+[25:15] with your production environment.
+[25:16] So what if you could have multiple Claudes
+[25:18] working on different tasks at the same time?
+[25:20] And that's what work trees give you the ability to do.
+[25:23] They do that by creating separate working directories
+[25:25] that each have their own files and own branches,
+[25:28] but they still share the same repository history.
+[25:31] So it means you can have a Claude working on a feature
+[25:33] in one work tree while fixing a bug in another work tree
+[25:36] without either session convoluting each other's context.
+[25:40] And to activate this Claude code has a built-in flag
+[25:42] for you to use.
+[25:43] So you can just use the dash dash work tree
+[25:45] or the dash W flag to create an isolated work tree
+[25:48] and start Claude in that work tree.
+[25:50] So the value you pass after dash W or dash work tree
+[25:53] becomes the directory name and the branch name.
+[25:56] So here's what this looks like in practice.
+[25:58] I open three terminal panes.
+[25:59] In the first one, I type Claude dash dash work tree,
+[26:02] feature auth, second one, Claude dash dash work tree,
+[26:06] bug fix login to fix my login page
+[26:09] and Claude work tree refactor API in the third as well.
+[26:14] So now I've got three Claudes
+[26:15] working on completely different tasks
+[26:17] in completely separate copies of my code.
+[26:19] So they can't overwrite each other's work.
+[26:21] They can't interfere with each other.
+[26:23] When it finishes, I can merge that branch
+[26:25] back into my main project,
+[26:26] just like any normal working flow
+[26:28] where you merge things together.
+[26:29] So when you exit that work tree session,
+[26:31] this is the most powerful thing.
+[26:32] Claude is gonna handle the cleanup
+[26:34] based on whether you made changes or not.
+[26:35] And it gets even more powerful
+[26:37] because you can actually have sub-agents
+[26:39] also work on separate work trees.
+[26:41] So you can ask Claude to use work trees for your agents
+[26:44] and then each sub-agent will get
+[26:45] its entirely separate work tree
+[26:47] and it's automatically cleaned up
+[26:48] when the sub-agent finishes.
+[26:50] Work trees means multiple Claudes
+[26:51] working on different tasks simultaneously.
+[26:54] This allows for total isolation and parallel development.
+[26:57] So there you have it.
+[26:58] Every core Claude code concept explained in plain English.
+[27:02] So don't worry about memorizing all 27 right now.
+[27:04] Bookmark this video and come back to it
+[27:06] when you hit a concept and you don't understand it.
+[27:08] And if you want to get hands-on
+[27:09] and start building real projects with Claude code,
+[27:12] we've got a full Claude code track
+[27:13] inside the AI Automation Academy
+[27:16] down in the description below.
+[27:17] Let me know in the comments,
+[27:18] which concept was the one that finally clicked for you
+[27:21] and like and subscribe
+[27:22] if you want to see more content like this.

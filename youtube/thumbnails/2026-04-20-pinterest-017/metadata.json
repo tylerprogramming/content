@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase label, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Clean minimalist style, warm Anthropic Claude brand aesthetic. Headline 'THE EMAIL TRIAGE ROUTINE THAT SAVES HOURS'. Card 1 clock icon 'WEEKDAY 8AM - Runs before you wake / scheduled daily / set and forget / cloud powered'. Card 2 mail icon 'GMAIL CONNECT - Reads unread / last 24 hours / categorized by you / privacy safe'. Card 3 flag icon 'URGENCY TAGS - Urgent / action needed / informational / priority sorted'. Card 4 pencil icon 'AUTO-DRAFTS - Replies written / tone matched / saved in Gmail / send with one click'. Card 5 list icon 'INBOX SUMMARY - 30 second read / what matters / what to skip / under 5 minutes daily'.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:36:13.488615",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/9b1997fb60cf103541021d4ffcf33e1b_1776713765_jd8tad9y.png"
+      ]
+    }
+  ]
+}

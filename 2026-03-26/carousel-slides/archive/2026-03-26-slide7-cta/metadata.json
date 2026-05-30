@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "LinkedIn carousel slide design. This is a CTA (call to action) slide with a light blue background (#93c5fd). Large bold dark navy uppercase text: SAVE THIS GUIDE. REPOST FOR YOUR NETWORK. Below in smaller dark text: Follow Tyler Reed for more Claude Code tips and AI automation. In the bottom right, a circular profile photo frame. At the bottom center, a dark navy rounded button that says TYLERREEDAI. Clean minimal professional design. No dark background on this slide, it should be light blue to contrast with the previous dark slides. Page counter 7 / 7 in small text in the top right corner.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-26T12:45:15.300271",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774543510544_0i02dx.png"
+      ]
+    }
+  ]
+}

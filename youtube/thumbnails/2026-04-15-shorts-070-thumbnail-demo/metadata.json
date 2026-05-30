@@ -1,0 +1,20 @@
+{
+  "generations": [
+    {
+      "prompt": "Man with shocked expression pointing at a floating holographic AI brain, cinematic blue and orange lighting, dark background, YouTube thumbnail composition, high contrast",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-15T07:40:38.276267",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/8ee8111b8eaa93e78ce4380abe5725c4_1776253184_ukubi0i5.png",
+        "https://tempfile.aiquickdraw.com/images/1776253231604-dhb9lk68mo.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "generations": [
+    {
+      "prompt": "A YouTube thumbnail with a man with short brown hair and a beard wearing a black t-shirt, positioned on the left side with hands clasped together under his chin, smiling confidently. Behind him is a dark purple-blue space background with three dark panels showing Mars-themed infographic cards. A Claude AI logo icon in the upper right area. Photorealistic, cinematic lighting, vibrant colors, high contrast composition suitable for a YouTube thumbnail. Leave space in the upper portion for text overlay.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 3,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-04-03T12:18:04.179887",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1775232801997-1fcz1120mudi.png",
+        "https://tempfile.aiquickdraw.com/images/1775232940641-fwqdcowgils.png",
+        "https://tempfile.aiquickdraw.com/images/1775233079380-tnomke2nkn.png"
+      ]
+    },
+    {
+      "prompt": "A YouTube thumbnail with a man with short brown hair and a beard wearing a black t-shirt, positioned on the left side with hands clasped together under his chin, smiling confidently. Behind him is a dark purple-blue space background with three dark panels showing Mars-themed infographic cards. A Claude AI logo icon in the upper right area. Photorealistic, cinematic lighting, vibrant colors, high contrast composition suitable for a YouTube thumbnail. Leave space in the upper portion for text overlay.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 3,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/ss.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-04-03T12:24:17.424544",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1775232986812-228fnr0w0ja.png",
+        "https://tempfile.aiquickdraw.com/images/1775233201033-22eaue1hf1f.png",
+        "https://tempfile.aiquickdraw.com/images/1775233453249-3fx5xt7s3q2.png"
+      ]
+    }
+  ]
+}

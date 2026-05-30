@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "LinkedIn carousel CTA slide with a light sky blue background (#7cb9e8). In the top third, large bold dark navy uppercase text on the left: SAVE THIS GUIDE. Next line: REPOST FOR YOUR NETWORK. with periods. Below in smaller gray text: Follow Tyler Reed for more helpful AI and Claude Code content. In the bottom right area, a large circular headshot photo of the person from the reference image cropped to just the head and shoulders, inside a circle with a white background fill behind the person. To the left of the photo at the bottom, Tyler Reed in bold dark navy text. No button at the bottom. No pill. No banner. Just the text and the photo. Page counter 7 / 7 in small text in the top right corner. Clean minimal professional design.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-26T12:59:50.973475",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774544384150_g6tdxd.png"
+      ]
+    }
+  ]
+}

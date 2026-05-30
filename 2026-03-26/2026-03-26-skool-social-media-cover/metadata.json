@@ -1,0 +1,22 @@
+{
+  "generations": [
+    {
+      "prompt": "Professional course cover image. Dark background with subtle gradient. In the center, a photo of the person from the reference image, well-lit, confident expression. Around the person, floating social media platform icons - Instagram, LinkedIn, TikTok, YouTube, X/Twitter logos. Bold white uppercase text at the bottom: SOCIAL MEDIA AI. Clean, modern, professional design. No abstract swirls. Minimal and polished.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-26T23:38:52.849717",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774582631998_vsgkk3.png",
+        "https://tempfile.aiquickdraw.com/images/1774582729360-cxgadxiklgu.png"
+      ]
+    }
+  ]
+}

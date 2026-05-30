@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Bold pop art illustration of a young man with slicked-back dark hair and short beard wearing a black t-shirt, seated at a laptop keyboard, facing directly toward the viewer with an energetic fun expression. Bold black outlines, slightly flattened graphic novel style colors, warm orange and red accent background. Punchy and eye-catching, more illustrative than photorealistic but still recognizable as a real person. Lower third left empty for text overlay. No text in image.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "jpg",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-15T12:12:49.964609",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773591164376-x7byrxlkma9.jpeg"
+      ]
+    }
+  ]
+}

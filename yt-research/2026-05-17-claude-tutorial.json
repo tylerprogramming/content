@@ -1,0 +1,56 @@
+{
+  "query": "claude tutorial",
+  "total_found": 4,
+  "days": 60,
+  "top_n": 15,
+  "videos": [
+    {
+      "title": "Full Claude Tutorial: Beginner to Advanced in 19 Minutes",
+      "channel": "Futurepedia",
+      "views": 501771,
+      "likes": 9348,
+      "comments": 172,
+      "upload_date": "20260408",
+      "duration": "19:12",
+      "url": "https://youtube.com/watch?v=WSPChlfxJyA",
+      "description": "*Get the free Complete Guide to Claude:* https://clickhubspot.com/dfn\n\nSummary:\nA complete guide to every feature in Claude AI: from prompting fundamentals to the tools most people never touch. Covers the ICC prompting framework, web search, file uploads, inline visualizations, artifacts, and the de",
+      "id": "WSPChlfxJyA"
+    },
+    {
+      "title": "FULL Claude Tutorial For Beginners in 2026! (FULL COURSE)",
+      "channel": "Productive Dude",
+      "views": 346132,
+      "likes": 8893,
+      "comments": 223,
+      "upload_date": "20260413",
+      "duration": "1:52:38",
+      "url": "https://youtube.com/watch?v=Xg55nTrbYYY",
+      "description": "\ud83d\ude80 Work with us - https://aifoundations.io/apply\n\u2728 Join Ai Foundations - https://aifoundations.io\n\nThis is the only Claude tutorial you\u2019ll ever need. With this guide you can go from beginner to pro using Claude. I cover the basics like signing up, settings, memory, prompting and we work our way up to",
+      "id": "Xg55nTrbYYY"
+    },
+    {
+      "title": "Claude Tutorial for Beginners \u2014 How to Use Claude AI Step by Step (2026)",
+      "channel": "Darrel Wilson",
+      "views": 96904,
+      "likes": 2238,
+      "comments": 79,
+      "upload_date": "20260410",
+      "duration": "42:44",
+      "url": "https://youtube.com/watch?v=-xEF5WrdIWs",
+      "description": "In this Claude AI tutorial, I'll show you exactly how to use Claude AI step by step \u2014 even if you're a complete beginner. Claude by Anthropic is one of the best AI tools available right now, and most people don't even know it exists.\n\nTry claude https://claude.ai/\nDownload desktop version: https://c",
+      "id": "-xEF5WrdIWs"
+    },
+    {
+      "title": "The ONLY Claude Tutorial You'll Ever Need in 2026",
+      "channel": "Zinho Automates",
+      "views": 59711,
+      "likes": 0,
+      "comments": 28,
+      "upload_date": "20260504",
+      "duration": "20:59",
+      "url": "https://youtube.com/watch?v=WqoPkZ88f5k",
+      "description": "The ONLY Claude Tutorial You'll Ever Need in 2026. Join our FREE community with free prompts & guides: https://www.skool.com/ai-launchpad/about\n\nChapters:\n0:00 - Intro\n1:19 - Step 1: Pick the model\n2:07 - Step 2: The prompt rewrite\n5:15 - Step 3: Memory\n6:24 - Step 4: Artifacts\n9:04 - Step 5: Projec",
+      "id": "WqoPkZ88f5k"
+    }
+  ]
+}

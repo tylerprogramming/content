@@ -1,0 +1,115 @@
+[00:00] The tensions in the AI space are seriously heating up. We actually saw this play out recently at the
+[00:06] AI Impact Summit in India where Sam Altman and Dario Amadei noticeably skipped the traditional
+[00:12] hand-holding photo and at that time it was hilarious but symbolically it says a lot.
+[00:18] Because these two giants are no longer just competitors, there's real strategic tension
+[00:23] forming between both OpenAI and Anthropic. And we've seen evidence of that rivalry escalating
+[00:30] behind the scenes too. When Clodbot, also known as OpenClod now, when it had first launched,
+[00:36] Anthropic quickly issued a demand letter that was pushing for a name change to reduce
+[00:41] association with Clod. Not long after, OpenAI stepped in and inquired OpenClod's rights and
+[00:48] operations. Then Anthropic responded in the most anthropic way possible. Instead of fighting
+[00:53] directly, they shipped their own OpenClod competitor. In fact, just yesterday, Clod
+[00:59] code had actually introduced a pretty big new feature, Remote Control, a feature that lets you
+[01:05] start a task in your terminal and continue managing it from your phone while you're walking,
+[01:10] commuting, or in a meeting. Clod keeps running locally on your machine, but you can control
+[01:15] the session remotely through the Clod app or through Clod code. And honestly, it feels like
+[01:20] Anthropic is quietly building its own OpenClod killer in Clod code itself as well as with co-work.
+[01:28] Currently, Remote Control is a feature that's only available for max users at the moment because
+[01:33] it's in research preview and they're going to be available to access it soon for most Clod code
+[01:38] users in the coming weeks. You can easily access it using the slash remote dash control command and
+[01:44] you can start a local session from the terminal and continue them from your phone. You can actually
+[01:48] go ahead and enjoy the sun now. Just take a look at it in action. Hey, I'm Noah, a PM on the Clod
+[01:56] code team. I'm super excited to ship Remote Control so you can bring your local Clod code
+[02:00] sessions and dev environment with you so that you can keep working from your phone when you step
+[02:05] away from your computer. Which means for the first time in history, developers can touch grass,
+[02:12] see the sun, and continue to ship. Your local environments stay connected and
+[02:17] your MCP servers keep running. You just don't have to be at your desk.
+[02:23] Before we get started, allow me to introduce today's video sponsor, Mammoth AI. For developers,
+[02:28] one of the biggest pains is juggling different model APIs. But Mammoth solves this because it
+[02:34] unifies different providers like Anthropic, OpenAI, Gemini, and so many others in a single
+[02:41] platform with API access that works with different tools and extensions like Client,
+[02:46] NEN, VS Code, Make, CLI Tools, and other OpenAI compatible frameworks. Here's what's new in AI
+[02:53] right now. Gemini 3 Pro which is pushing multi-modal capacity and massive context handling.
+[02:59] We have the GPT-5 series which is dominating complex reasoning and agentic backend tasks.
+[03:04] We also have the new Anthropic Clod models which deliver serious coding and agentic capabilities.
+[03:10] And new models that are merging from different global leaders. Mammoth lets you switch between
+[03:16] all of these different providers on demand. You can compare them with reprompting tools
+[03:21] and integrate them into your automation or apps with a single API key with no extra glue code
+[03:28] for creative workflows, dev pipelines, or enterprise automation. It's a huge time saver.
+[03:34] So use the link in the description below so that you can easily get started with Mammoth.
+[03:38] Also, just a quick rant on OpenClaw. It's a solid framework, don't get me wrong, but it has
+[03:44] exploded mainly because large non-AI tech YouTubers suddenly started showcasing automated computer
+[03:51] workflows as if they were brand new. The reality is we've already had systems like this in place
+[03:58] for a couple of years now. Projects like Agent Zero, Lemon, and so many others were already
+[04:03] automating complex workflows long before OpenClaw went viral. So in my opinion,
+[04:09] OpenClaw isn't revolutionary. The hype I get it, it's able to do a lot of things and they're
+[04:14] continuously shipping new features which I really love. But hype usually fades fast when major AI
+[04:19] labs start integrating the same sort of capabilities directly into their own core products.
+[04:25] But nonetheless, it's open source and that is obviously a huge gain on these new big AI labs.
+[04:32] But back to Anthropic, they didn't just stop there with the release of remote control because
+[04:36] they also released another feature that's targeting OpenClaw's style of cron jobs and
+[04:41] automation workflows. Because inside Cowork now, Clawd is going to be able to support schedule
+[04:46] tasks. This means Clawd can automatically run recurring workflows like daily morning briefing.
+[04:52] You can have it work on weekly spreadsheet updates and provide that brief automation to you.
+[04:58] You can even have it work on team presentations, ongoing operational automations, and a lot of
+[05:03] other things. There's no external automation layer required and that is something that
+[05:08] they just dropped today. And it gets even bigger because Anthropic is also introducing
+[05:12] various sorts of plugins giving Cowork domain expertise across design, engineering, operations,
+[05:19] and so much more. Plus there's a brand new customized tab in the Cowork sidebar where
+[05:25] you can have it act as a central hub to manage plugins, skills, connections, and integrations.
+[05:31] Now just an FYI, anyone with a paid tier can access the new schedule tasks and it's really
+[05:36] simple. You can just request it to schedule something like every morning at 8am, Clawd
+[05:41] automatically is requested to scan AI news sources and I can have it powered by any of these
+[05:47] state-of-the-art models. I'm going to use Sonnet 4.6 for this because it does better at browser-based
+[05:52] tasks and in this case you can send in this request and it is going to create the schedule
+[05:57] task for you so that every morning at 8am it is going to be able to have it so that it can scour
+[06:03] the web, give you any sort of AI research content that is needed, and it does this while I sleep.
+[06:09] And that's the beauty of this. You can obviously configure it too that if there is any news article
+[06:14] that pops up maybe like a few minutes before, it is able to also include that. And that is the beauty
+[06:20] of the skills MD that is integrated within Cowork and right now it is creating the schedule task
+[06:26] which you see over here and it will detail all the steps as to what it will do. So I'm just quickly
+[06:33] requesting it to run this schedule right now because I am not going to wait till 8am to showcase
+[06:39] this demo but you can see that it's going to scan AI news from different sources, different verified
+[06:44] sources, and obviously you can request it specifically the sources that you want it to
+[06:48] scour like my YouTube channel for example. You can also have it summarize the three to five biggest
+[06:54] AI releases, model launches, etc. Pulling the top five trending repos on GitHub as well as generating
+[07:00] five YouTube video ideas based on what's trending. This is more tailored to me but you can see right
+[07:05] now that it is working on the schedule task. On the right hand panel it will also showcase
+[07:10] the progress of this task and obviously if you're running this as a schedule task it is something
+[07:15] that will provide you all of the research that you had requested. It will essentially do it
+[07:21] autonomously without any sort of instructions that you give it and the best part is that these are
+[07:26] things that you can control from your phone as well which is why I had said that this is the
+[07:31] open cloud killer and in a markdown it has finished the daily AI recap, the top stories, as well as
+[07:40] the hottest GitHub repo, and the top video ideas. Now this is where it has also given me the sources
+[07:46] but let's take a look at this MD. It has broken down all of the most important news articles for
+[07:52] February 26th. It has listed all of the trending repos as well. You can see that it has listed 10
+[07:58] different repos as well as YouTube ideas and this is just a simple short little task that I can
+[08:04] so rather than me using something like I don't know like make for example to automate certain
+[08:10] things I can just have cloud code a tool that can essentially do almost anything for you now
+[08:15] and be essentially instructed to automate various sorts of tasks for you at a cheaper cost I would
+[08:21] say. If you want the best AI tools workflows and drops you for everyone else join my free newsletter
+[08:27] with the link in the description below which is completely free and what's funny is that a lot of
+[08:32] other companies and enterprise focuses are shifting to this new automation focus of having
+[08:38] AI custom agents work as a team that can automate things for you and never sleep because just
+[08:44] yesterday Notion had introduced custom agents that are autonomous AI agents built for Notion teams
+[08:51] and it's for anyone to easily request them to do any sort of job based off a trigger or off of a
+[08:58] schedule. Similarly, Perplexity had introduced the computer update and essentially it is something
+[09:05] that unifies every current AI capability into their Perplexity system that can research, design,
+[09:11] code, deploy. It's like that general AI agent framework that we saw with like Manus but in a
+[09:17] more refined way but what I'm trying to see is that most of these companies are now trying to
+[09:23] replicate what OpenClaw is doing due to the success that a lot of people saw from the OpenClaw
+[09:29] framework and obviously Clawd as well as other labs like OpenAR are slowly working on implementing
+[09:36] these new updates to provide automations locally for people to use on a day-to-day basis. If you
+[09:43] like this video and would love to support the channel you can consider donating to my channel
+[09:48] through the super thanks option below or you can consider joining our private discord where you can
+[09:53] access multiple subscriptions to different AI tools for free on a monthly basis plus daily AI
+[09:59] news and exclusive content plus a lot more. In conclusion, this new Clawd update is truly killing
+[10:06] OpenClaw's functionality and I believe a lot of people are going to be using Clawd code more and
+[10:11] more as they start to realize what it's capable of doing and especially when remote control is
+[10:16] available for all Clawd users. So I'll leave all these links in the description below. I personally
+[10:21] believe OpenAI made a mistake of buying OpenClaw but that's just my opinion. I'm probably wrong
+[10:28] about it. Let me know what you guys think. I'll leave all these links in the description.
+[10:31] Make sure you also go ahead and subscribe to our second channel, join the newsletter or discord,
+[10:36] follow me on twitter and lastly make sure you guys subscribe, turn on the notification bell,
+[10:39] like this video and please take a look at our previous videos so that you can stay up to date
+[10:43] with the latest AI news. But with that thought guys, have an amazing day,
+[10:47] spread positivity and I'll see you guys fairly shortly. Peace out fellas.

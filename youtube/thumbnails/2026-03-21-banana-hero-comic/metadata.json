@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Comic book style poster, retro pop art aesthetic, vivid primary colors with halftone dot patterns and bold black outlines. Cool anthropomorphic banana character in aviator sunglasses as the hero, dynamic leaping pose from a futuristic sci-fi launch pad. Six-panel grid layout: Panel 1 \u2014 breathtaking photorealistic 4K mountain landscape panorama; Panel 2 \u2014 banana hero holds up a printed page dense with multilingual text in Arabic, Chinese, Japanese, Spanish scripts with glowing translation arrows; Panel 3 \u2014 banana gestures at a glowing Gemini blue holographic orb with search, knowledge, and reasoning node icons; Panel 4 \u2014 sleek camera app UI with sliders for angle, focus, and color; Panel 5 \u2014 three device frames side by side showing 1:1, 16:9, 9:16 format ratios; Panel 6 \u2014 banana hero in multiple consistent heroic action poses. Bottom footer strip with colorful Google product icons. Bold comic energy.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 3,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-21T10:44:47.868487",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774104154148-ulnv4n6o7t8.png",
+        "https://tempfile.aiquickdraw.com/images/1774104217384-kdbz35mzpxm.png",
+        "https://tempfile.aiquickdraw.com/images/1774104285002-qqz6sggghko.png"
+      ]
+    }
+  ]
+}

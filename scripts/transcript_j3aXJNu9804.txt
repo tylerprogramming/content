@@ -1,0 +1,568 @@
+[00:00] Well, Anthropic just launched Routines,
+[00:01] which allows Cloud to kick off automations via schedule,
+[00:05] trigger, or even webhook.
+[00:06] And this closes the loop and basically turns Cloud
+[00:08] into a dedicated automation platform
+[00:10] competing with no-code drag and drop builders
+[00:12] like N8n and others.
+[00:14] In this video, I'm gonna show you guys
+[00:15] how you can build Routines very quickly.
+[00:17] I'm gonna give you guys a couple of demos,
+[00:19] and I'm gonna walk you through step-by-step
+[00:20] setting up your own Routines
+[00:22] on both the Cloud desktop interface
+[00:24] as well as behind the scenes via API.
+[00:26] Okay, so for the most prototypical example,
+[00:28] I have a daily mailbox summary plus draft routine.
+[00:32] And what I'm doing here is I just clicked Run Now
+[00:34] because they have a little demo or test feature
+[00:37] that allows you to actually run it
+[00:38] and then see the inputs and outputs live.
+[00:40] If I click on this little Runs button,
+[00:42] you'll see that all I've really done
+[00:43] is I've just fed in a prompt.
+[00:45] And this is the exact same thing as Cloud Code.
+[00:46] It's just occurring on a standardized cloud container,
+[00:50] not on my computer.
+[00:51] And in this case, I'm just testing it using their interface,
+[00:54] but you can also schedule it,
+[00:56] you can have a trigger based off webhook,
+[00:58] and then you can also send an API request to trigger it.
+[01:00] And so you can trigger it based on incoming data,
+[01:02] you can trigger it based on outgoing data.
+[01:04] It's very powerful.
+[01:05] If anybody has watched my previous video
+[01:07] on agentic workflows,
+[01:08] this is basically the standardized
+[01:10] and enterprise version of agentic workflows.
+[01:13] So this is now searching through Gmail emails.
+[01:15] It's actually doing everything more or less
+[01:17] that I would normally do
+[01:18] if running this locally on my computer.
+[01:20] The only difference being obviously
+[01:21] that because it's occurring on the cloud,
+[01:24] it's not something that I realistically
+[01:25] am going to wanna have to steer.
+[01:27] Typically, you wanna be a lot clearer
+[01:28] about the instructions and make sure
+[01:29] that it has all the information that it needs.
+[01:32] After that, it's just gonna go through various tool calls
+[01:34] and everything like that
+[01:35] until it gets to the definition of done,
+[01:37] which in my case is going to be,
+[01:38] hey, once you're finished,
+[01:39] use a Slack connector to send me an update.
+[01:41] Now on the Cloud Code Docs page,
+[01:43] the majority of the use cases
+[01:44] are what I'd consider to be overly technical things
+[01:46] like backlog maintenance, alert triage, bespoke code review.
+[01:50] I mean, most people don't even know
+[01:52] what any of this stuff means.
+[01:53] But I want you to know this is basically
+[01:55] a stand-in replacement for automation.
+[01:57] You can automate anything using this tool.
+[02:00] And what's really cool
+[02:01] is you can do it using natural language.
+[02:02] So what I've done is I've developed a Cloud Skill
+[02:04] that you can import into your own workspace.
+[02:06] Then you can just give that skill
+[02:07] any preexisting workflow,
+[02:09] whether it's in natural language,
+[02:11] written as an SOP,
+[02:12] or it's something on a no-code tool
+[02:14] like n8n or make.com.
+[02:15] Back to the Skill page here,
+[02:17] you can see it's found two unreads.
+[02:19] The thing is, I don't really care about this
+[02:20] because if you think about it,
+[02:21] this is the conversation thread.
+[02:23] What I wanna do is I wanna see this Slack update
+[02:25] that was sent to my DMs
+[02:26] because if I'm using this like a traditional automation,
+[02:29] that's where I'd probably be getting the notification.
+[02:31] So if I go, I actually see
+[02:32] I did receive a notification at 12.01
+[02:35] where it pulled my unreads
+[02:36] and then it fed me the information
+[02:38] as well as like a high-level summary,
+[02:39] along with a polite decline that it drafted
+[02:42] as well as an acceptance for this one.
+[02:44] And I can go onto my email
+[02:45] and I can actually open up the drafts
+[02:47] and I could see them all as well.
+[02:48] And just because I'm trying not to dox
+[02:50] all of these people too hard,
+[02:52] in this case, I immediately drafted,
+[02:53] hey, Corey, thanks for reaching out
+[02:55] tell the other Nick I own one,
+[02:56] happy to come on, sit over a few time slots
+[02:58] that work on your end.
+[02:59] And then I just removed the two email
+[03:01] that that was previously populated.
+[03:02] Okay, so that's probably the simplest example of a demo.
+[03:05] And I just did all this stuff live using the test feature
+[03:08] because I wanted to show you that that's how it works.
+[03:10] But you can also schedule it
+[03:12] and then you can also fire things off
+[03:13] based off webhooks and API calls.
+[03:15] So what I'm gonna do next
+[03:16] is I'm very quickly gonna show you
+[03:17] how the scheduling feature works.
+[03:19] And then after I'm gonna show you
+[03:20] how you can use triggers like webhooks
+[03:22] and so on and so forth to run your routines.
+[03:24] Once we're done with that,
+[03:25] I'll actually walk through like the UX
+[03:26] and show you guys more of the deep dive
+[03:28] behind how this works.
+[03:30] So anyway, for scheduling purposes,
+[03:32] all I need to do is go back to the routine
+[03:33] that I made a moment ago.
+[03:35] I click on this little button here
+[03:36] and then I can just select a different trigger.
+[03:38] So in this case, I have call via API,
+[03:41] but I could also click schedule.
+[03:42] And as you see here, we have this little visual interface
+[03:44] where I could select hourly, daily,
+[03:46] and so on and so forth.
+[03:47] Because this is gonna be an email triage flow,
+[03:49] I'm probably gonna wanna run this pretty early
+[03:50] before I wake up.
+[03:51] I'm waking up around 5.20 these days,
+[03:53] so it'll probably be about 5.10.
+[03:55] And what I should note is you can add multiple
+[03:56] of these triggers at any point in time.
+[03:58] So now after saving, if I go back to routines,
+[04:01] you'll see there's a little calendar feature here,
+[04:03] and you can now see that there's a daily
+[04:05] mailbox summary plus draft opened at 5.10,
+[04:08] as well as a couple of other ones
+[04:09] that I was playing around with earlier today.
+[04:10] You don't have to pay attention to those.
+[04:12] What that means is without me having to do anything,
+[04:14] the exact same exercise is going to occur.
+[04:17] The agent is going to check my mailbox
+[04:18] using the Gmail connector.
+[04:19] It's going to run through whatever SOP or logic
+[04:22] that I gave it, which in this case was just,
+[04:23] hey, go see if we had any previous email communique.
+[04:26] And then it's gonna draft up the message
+[04:27] and send it to me in Slack.
+[04:29] Okay, what I have here is another routine.
+[04:31] This one takes a transcript that is generated
+[04:34] using Fireflies, which is a transcript service
+[04:36] that joins your call, listens to what you say,
+[04:39] and then basically stores it all as text.
+[04:41] And essentially what I'm gonna do,
+[04:42] just for the purposes of this demo,
+[04:44] is I'm gonna do it via API request.
+[04:46] But I'm gonna show you guys as well
+[04:47] how you can hook it up via webhooks,
+[04:48] which just fires automatically.
+[04:50] So I have my transcript to proposal routine right over here,
+[04:53] and I could click run now,
+[04:54] but there's no actual transcript.
+[04:55] The instructions here are,
+[04:56] I give you a transcript via API call.
+[04:59] So what I'm gonna do is I'm gonna open up a Cloud Code,
+[05:01] and since I'm just gonna have it send an API request
+[05:03] using this transcript.
+[05:07] And then I'm just gonna press enter.
+[05:09] And I'm not gonna expand this
+[05:10] because I've just hard-coded an API key for demo purposes.
+[05:14] But you could see here,
+[05:14] what it's going to start off by doing
+[05:16] is basically sending that curl request as a text payload,
+[05:20] and then also generating the proposal entirely on its own.
+[05:23] And when this occurs,
+[05:24] it's actually going to trigger that routine.
+[05:26] I guess I already just leaked my API key,
+[05:28] whatever the hell.
+[05:29] It's going to fire that routine,
+[05:31] which is done right over here.
+[05:32] And now it's actually running in the Cloud
+[05:34] with the full transcript
+[05:35] and whatever the deal terms are of the conversation.
+[05:38] And so I can actually open this up,
+[05:40] and then I can see what's going on.
+[05:42] So you can see, I give you a transcript via API call.
+[05:44] I want you to create a full proposal
+[05:45] using one of my other AI agents in a managed session.
+[05:48] And this is where managed sessions come in handy,
+[05:50] which if you guys didn't know,
+[05:51] is just a similar way that you could set up
+[05:53] different endpoints out there
+[05:55] that allow AI to basically create
+[05:57] an interconnected network of managed agents
+[06:00] or agents that all have their own siloed containers,
+[06:03] both for security and then safety purposes.
+[06:05] So it's just verifying
+[06:06] that we actually have what we need for Slack.
+[06:08] And now it's going to go ahead
+[06:09] and generate a high quality proposal.
+[06:11] Now, I just want to be clear
+[06:12] about what problem exactly this solves.
+[06:14] The old way of designing automations
+[06:16] typically involved some sort of event or outside trigger,
+[06:20] like a schedule, maybe something that occurred,
+[06:23] you know, at 5 a.m. every morning or whatever.
+[06:25] That event would be fed into a platform like NADone,
+[06:28] which was responsible for basically proceeding
+[06:31] through a chain of logic that you created,
+[06:34] you know, to be a bunch of drag and drop nodes
+[06:37] that you put together to do some function.
+[06:39] In this case, this is a Reddit scraper
+[06:41] for a live build that I did for one of my communities.
+[06:43] And see, this whole section in the middle here,
+[06:45] this logic, this can take a fair amount of time
+[06:47] to put together.
+[06:48] You know, you have to drag and drop all these nodes.
+[06:50] You have to set up all of these credentials.
+[06:52] You have to do all the authentication.
+[06:53] You got to get the data
+[06:54] and map the right variables in the fields.
+[06:57] This is really like where the meat and potatoes
+[06:58] of your work as somebody that was looking
+[07:00] to automate your business came in.
+[07:03] Okay, and then from there, your NADone system,
+[07:05] typically it doesn't just like work by itself.
+[07:07] It does something to some platform, right?
+[07:09] So it would then grab its output
+[07:10] and then shove that into Slack
+[07:12] or maybe some sort of CRM somewhere
+[07:14] or whatever it is that you do, some database.
+[07:16] The new way is basically the exact same thing.
+[07:18] You have an event, okay?
+[07:19] And that event is either an API call,
+[07:21] it's a web hook, or it's some sort of schedule.
+[07:24] So again, you know, waking it up at 5 a.m. every morning.
+[07:26] It's just, instead of putting that into NADone
+[07:28] and then having to build all that stuff yourself
+[07:30] with those drag and drop nodes,
+[07:32] all you have to do, okay,
+[07:34] is just give it some natural language,
+[07:37] which is far easier, obviously,
+[07:38] with some very high-level instructions,
+[07:40] and then it can then output things as NADone did before
+[07:43] to some other platform, Slack or CRM.
+[07:46] And so the reason why I'm equating it like this
+[07:48] is because routines effectively solve that middle problem.
+[07:52] I've made some videos in the past
+[07:54] to the tune of NADone is over
+[07:56] because XYZ thing has now launched
+[07:58] and it does it way better.
+[07:59] And sometimes a specific feature was missing
+[08:02] that NADone or some other no-code platform handled
+[08:05] that didn't make it an exactly one-to-one overlap.
+[08:07] But routines are CLAUD's literal one-to-one overlap.
+[08:10] It replaces the exact same functionality.
+[08:12] It's capable of scheduling,
+[08:13] it's capable of orchestrating workflows
+[08:15] and so on and so forth.
+[08:16] And it really is like the next step
+[08:17] in a gentic execution of knowledge tasks.
+[08:21] When all this stuff finishes,
+[08:22] I actually have the proposal right over here.
+[08:24] I can take a look at that,
+[08:25] click this button to open it in a new page,
+[08:27] and you can see I now have the proposal,
+[08:29] which is just part of the template of the managed agent
+[08:31] that generates this thing,
+[08:32] pull out all of the data.
+[08:33] So, you know, we're an AI content writing marketplace
+[08:36] that matches business clients
+[08:37] with vetted freelancer writers.
+[08:39] And then this is LeftClick, which, you know,
+[08:41] is pitching them.
+[08:42] And so these are the sorts of proposals
+[08:43] that we actually send day to day.
+[08:44] And hopefully you guys see how easy it is
+[08:46] to actually like integrate a routine
+[08:48] or some sort of API event-based system
+[08:52] into your infrastructure in like two minutes.
+[08:55] Boy, have we come a long way from back in the day
+[08:57] when me designing that proposal generator
+[08:58] would have taken like two and a half to three hours.
+[09:01] The current UX for routines looks like this.
+[09:04] And in order to get there,
+[09:05] all you have to do is type in cloud.ai slash code
+[09:07] slash routines.
+[09:09] You'll be given a page that looks something like this,
+[09:11] where you can see all routines
+[09:12] stored in a grid-like pattern over here,
+[09:15] alongside their title, the time that they are running,
+[09:18] and then also be the next scheduled run,
+[09:20] as well as what looks like some category listing,
+[09:22] which they provide with or without you.
+[09:24] There's also a calendar view.
+[09:26] And so you can see the actual ones
+[09:27] that are going to be executed
+[09:28] and exactly which times they're going to be executed.
+[09:31] And so here I created a couple of demos,
+[09:33] a Linux drive mention scan, morning inbox drafts,
+[09:35] and news video ideas.
+[09:36] You can see that today, this one's going to execute at 6.51,
+[09:39] this one at 7.43, and this one at 8.17.
+[09:42] So you also get a little bit of a visual aspect there.
+[09:44] When you click new routine up in the top right,
+[09:46] it'll immediately ask you for some information
+[09:49] like the name.
+[09:50] So I'm just going to provide a quick demo here
+[09:51] called mailbox drafter.
+[09:53] Next, you can describe what Cloud should do in each session.
+[09:56] So this is where you basically give it a prompt.
+[09:58] And this prompt is essentially analogous to a skill.
+[10:01] Just like in a skill,
+[10:02] you have a standardized list of steps
+[10:03] that you need the model to take
+[10:04] in order to perform some economically valuable
+[10:07] piece of work for you.
+[10:08] So too, should you construct this routine description
+[10:12] like a list of SOPs or steps
+[10:14] to allow it to perform tasks for you?
+[10:17] It's just my recommendation here
+[10:18] is be a little bit more precise
+[10:20] than you were probably in your skill.
+[10:22] Because whereas in your skill,
+[10:24] you could modify things on the fly,
+[10:26] change your trajectory of the task and so on and so forth.
+[10:29] Here, the routine occurs entirely hands-off,
+[10:31] meaning that it basically needs to work
+[10:33] almost perfectly every time.
+[10:34] So decrease the total scope of possible mess-ups
+[10:37] and screw-ups that it could make
+[10:38] by being as clear and precise as possible.
+[10:40] But for instance, I wrote pull all of my unreads
+[10:43] using the provided Gmail connector,
+[10:45] more on that in a sec.
+[10:46] For each unread,
+[10:47] check if there's any preexisting conversations
+[10:49] with that contact.
+[10:50] If so, pull those two for context,
+[10:52] then draft replies based on what you know about me
+[10:54] and the context of the task.
+[10:56] Once done, use the Slack connector,
+[10:58] more on that in a second,
+[10:59] to send me an update.
+[11:01] And so as you can see here,
+[11:02] you can make this about as long or as short as you want.
+[11:05] I don't believe there's a length limit.
+[11:07] I went and I checked just by pasting this a bunch of times
+[11:09] and I couldn't find anything.
+[11:10] So I would definitely lean on the side of more context
+[11:13] as opposed to less.
+[11:15] From there, you can select a repository.
+[11:17] So whatever repository you want,
+[11:18] I'm just going to say this business one.
+[11:20] You can select a model type.
+[11:21] So I'm going to use Opus 4.61 mil.
+[11:23] And then you can also select which cloud environment
+[11:26] you want to run it in.
+[11:26] So you can hear, basically create a cloud environment
+[11:29] with a bunch of environment variables,
+[11:31] keys, API credentials, and so on and so forth as needed.
+[11:35] So in my case, I'm fine with default.
+[11:37] I'm just going to move on.
+[11:38] You can then select a trigger.
+[11:40] So you can schedule it.
+[11:41] You can go via GitHub event,
+[11:42] or you can go via API.
+[11:44] Now, realistically, this is probably something
+[11:45] you're going to want to do on a schedule,
+[11:47] since we are just going to be going through our reds
+[11:49] and then drafting.
+[11:50] But for demonstration purposes,
+[11:51] I'm just going to go via API.
+[11:52] And the whole idea is by doing this,
+[11:54] I'll be able to very quickly call
+[11:56] and then test in another cloud code instance
+[11:58] to show you guys what's happening live.
+[12:00] So I'm just going to add a trigger.
+[12:02] And then once we've added said trigger,
+[12:04] we're going to receive a little curl request,
+[12:06] which is a snippet of code that you can give any model.
+[12:08] And finally, now we just need to add our connectors.
+[12:09] So here I'm going to click add connector,
+[12:11] and then I'm going to connect my own Gmail.
+[12:13] By the way, if you don't have a connector,
+[12:15] just head on down to cloud code settings,
+[12:17] then go to connectors over here.
+[12:18] Then you can actually add,
+[12:20] just clicking on this little connect button.
+[12:22] When you do, it'll ask to connect cloud
+[12:24] to your Gmail account.
+[12:25] You can click continue,
+[12:26] and then you can sign into the particular one
+[12:27] that you want.
+[12:28] So in my case, this.
+[12:29] I'm also going to need one other connector,
+[12:31] if you guys think about it,
+[12:31] because I'm going to want a Slack message sent.
+[12:33] So here I can use this little search bar
+[12:35] and then click a plus button.
+[12:36] And then I'll just have to perform again,
+[12:37] some OAuth in a new browser tab.
+[12:39] Here I'm going to click allow,
+[12:40] and just like any simple OAuth screen,
+[12:42] we're now going to be connected.
+[12:44] So now what we can do is we can go back to the routine,
+[12:46] and then I can add the connector manually.
+[12:48] From here, you'll be given a token.
+[12:49] Now you can copy that token, store it somewhere safe.
+[12:52] So that's what I'm going to do here.
+[12:54] And now we basically have our skill
+[12:56] or our routine ready to go.
+[12:58] Okay, and then once you're done,
+[12:59] just head over to the run now in the top right-hand corner
+[13:01] to basically start the workflow run.
+[13:03] And we're just going to do this here
+[13:05] using the GUI, Graphical User Interface,
+[13:08] for testing purposes,
+[13:08] but you'll see a new little run just populated.
+[13:11] So I'm going to go down here,
+[13:12] and you'll see all we're really doing
+[13:13] is we're just sending it this message.
+[13:15] Once it's done, it'll use the Slack connector
+[13:17] to send me an update.
+[13:17] You can see it's already starting to fire off a tool search,
+[13:19] so I'll just double back when it's done.
+[13:21] And I should note, I mean, I'm watching it here,
+[13:23] but the whole idea is that I don't even know
+[13:24] that this thing's going on, right?
+[13:26] This was triggered ideally on a schedule
+[13:28] or something like that.
+[13:29] And I just wake up in the morning to my Slack message
+[13:32] with a bunch of different emails and their various drafts.
+[13:35] But head back over here,
+[13:36] you can see that we actually have both of those fed in.
+[13:39] Looks like somebody invited me for a podcast interview,
+[13:42] and then somebody else asked me a couple of questions
+[13:44] about a few things here.
+[13:46] Finally, I want to show you guys how easy it is
+[13:47] to convert workflows that you've built on third-party tools,
+[13:50] like NADN, for instance, into routines.
+[13:54] And what's really cool about NADN
+[13:55] is they allow you just to mouse over if you hold Shift,
+[13:58] and then hold Command-C, or just right-click and press Copy.
+[14:01] And then now you basically have access to a bunch of JSON.
+[14:03] And you can tell just by me pasting it in.
+[14:05] This is JSON, or the syntax that these nodes
+[14:09] are represented in if we're talking through text.
+[14:11] Well, anyway, if I go back to Antigravity,
+[14:13] which contains my little Cloud Code window,
+[14:15] and then I type in this JSON,
+[14:17] and then at the very top, I say,
+[14:18] use the routine generator to turn this NADN workflow
+[14:23] into a routine, okay?
+[14:25] I'm just going to divide this to make it really simple.
+[14:28] What this is going to do is use the skill
+[14:29] that I'm giving all of you guys out of the box
+[14:31] to basically turn this into a flow
+[14:33] that we can call just using natural language.
+[14:35] So I'm not necessarily going to encourage you
+[14:37] to use all of your workflows,
+[14:39] or to port them over from NADN
+[14:40] or some other Node Code tool to Cloud's backend.
+[14:43] Reason being is, you know,
+[14:44] when you're dealing in the domain of tokens,
+[14:46] things are going to be a little bit more expensive
+[14:47] than dealing entirely in the domain of compute.
+[14:49] And really the point is not,
+[14:51] hey, just turn all your NADN
+[14:52] or make .com workflows into routines.
+[14:55] The point is more like, you know,
+[14:56] if you have something that you can build today
+[14:58] that previously would have taken you a couple of hours
+[15:00] in NADN, might make more sense
+[15:01] just to one-shot it as a routine.
+[15:03] But, you know, what this will do really quickly
+[15:05] is just go ahead and do the creation.
+[15:07] So as you guys can see here, it's doing some thinking,
+[15:09] it's loading the routines.
+[15:10] In this case, it's just going to schedule one
+[15:11] because I didn't provide any context
+[15:12] as to how I wanted to run it.
+[15:14] But yeah, here we go.
+[15:16] It's now going to fetch stories
+[15:16] from the Hacker News Algolia API,
+[15:18] extract the hits,
+[15:19] format them into a Markdown report and commit it,
+[15:21] which was what the actual flow was doing.
+[15:23] And so just like this one here,
+[15:25] if I click execute workflow,
+[15:26] this goes through the scraper.
+[15:28] It then generates a bunch of hits
+[15:30] basically from a website called Hacker News.
+[15:33] Hacker News is the source here,
+[15:34] which in this case is going to contain
+[15:36] a bunch of different comments like this one
+[15:38] on how open source AI is the path forward.
+[15:40] Certainly not when Claude drops a fricking update like this.
+[15:43] Well, the same routine is going to work here
+[15:45] the exact same way.
+[15:46] And you can see it just said routine created and fired,
+[15:48] Hacker News AI stories fetch, right?
+[15:51] What's really cool about this is,
+[15:52] I mean, it's just so easy for me to change things.
+[15:55] So, I mean, right now,
+[15:57] this is obviously going to fetch that data, right?
+[15:59] And, you know, fetching that data is okay,
+[16:00] but what am I going to do with it?
+[16:02] It's just sort of like stuck here, right?
+[16:03] You know, if I were in NADN, I'd have to modify this.
+[16:06] It'd be significantly harder to modify this.
+[16:07] Here, I can literally just go connectors, Slack,
+[16:10] okay, save.
+[16:11] I can then set it to run on, you know, a 733 MDT
+[16:16] or via API request, which I'm going to click done.
+[16:18] And now what I can also do is I can go back here
+[16:20] and I can say, great, update this
+[16:22] so that it sends me a message in Slack
+[16:25] with the scrape after it's done.
+[16:28] And now in three seconds, you know,
+[16:30] it can make an HTTP request over to the routine
+[16:32] and just edit it on the fly for me.
+[16:33] I don't have to drag and drop any notes.
+[16:35] It's much easier and much faster.
+[16:37] Okay, so hopefully you guys can see
+[16:39] that this has a lot of potential
+[16:40] and you're likely to see larger and larger flows
+[16:44] be passed off to agents in this manner.
+[16:47] I didn't really give you guys
+[16:49] an extraordinarily comprehensive look
+[16:50] at all the different things you could do with this,
+[16:52] but just off the top of my head,
+[16:53] some ways that I'm implementing this in my agency today,
+[16:56] some ways that I've already done so
+[16:57] and some ways that I'm going to continue to do so
+[17:00] after this video are I'm going to replace
+[17:02] all of my proposal generators with these built-in routines.
+[17:05] I'm going to connect a couple of additional routines
+[17:07] so that after a call, like a sales call with a prospect,
+[17:11] I'll receive a webhook with essentially like a transcript.
+[17:15] I'm going to feed that transcript into a routine
+[17:17] that's going to generate an immediate post-call email
+[17:19] and then like a workflow diagram draft
+[17:22] based on our conversations that I can also pin alongside it
+[17:24] just for the impression of more effort
+[17:26] and higher perceived quality.
+[17:28] When we send out the proposal,
+[17:30] I'm going to be monitoring to see if somebody signed.
+[17:32] When they do, it's going to route back to another routine
+[17:34] via a webhook, which is going to proceed with the next step,
+[17:37] which is sending them a message with an email,
+[17:39] with an onboarding calendar notification,
+[17:41] as well as congratulating them
+[17:42] and thanking them on coming aboard.
+[17:45] You guys can automate more or less all of the non-human
+[17:47] FaceTime steps in a business right now.
+[17:50] And it's not like you couldn't before,
+[17:52] it's just in order to do it before, it was pretty laborious
+[17:54] and you needed a fair amount of know-how.
+[17:55] Now, as long as you understand sort of the routine spec
+[17:58] and more or less what I've showed you in this video,
+[17:59] you guys are good to go.
+[18:00] So it's an exciting time to be in AI and automation.
+[18:03] Hopefully you guys appreciated this video.
+[18:05] Looking forward to the next one.
+[18:06] Catch y'all on it.

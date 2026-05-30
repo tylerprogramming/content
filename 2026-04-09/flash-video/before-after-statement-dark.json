@@ -1,0 +1,20 @@
+{
+  "type": "statement",
+  "background": "dark",
+  "slug": "before-after",
+  "lines": [
+    "Content used to take",
+    "me ALL DAY.",
+    "",
+    "Research. Writing.",
+    "Editing. Scheduling.",
+    "",
+    "Now it takes",
+    "under 2 hours.",
+    "",
+    "Every single week."
+  ],
+  "accent_words": ["ALL", "2"],
+  "cta": "skool.com/the-ai-agency",
+  "handle": "@tylerai_dev"
+}

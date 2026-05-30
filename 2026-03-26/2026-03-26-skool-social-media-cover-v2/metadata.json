@@ -1,0 +1,22 @@
+{
+  "generations": [
+    {
+      "prompt": "Course cover thumbnail matching this style: the person from the reference image on the left side of the frame, looking at camera, pointing or gesturing. Light beige/tan background. Big bold uppercase text on the right: SOCIAL MEDIA in white or dark text, AI in bright pink or red accent color. At the bottom, a row of small social media platform icons - Instagram, LinkedIn, TikTok, YouTube, X Twitter logos. Clean, professional, YouTube thumbnail style composition. No swirls, no dark background.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-26T23:40:12.987034",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774582755308-wz87bgii6ud.png",
+        "https://tempfile.aiquickdraw.com/images/1774582809555-1tjl04nl1gk.png"
+      ]
+    }
+  ]
+}

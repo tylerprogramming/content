@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Semi-realistic cartoon illustration of a man in his late 30s, dark short hair, friendly confident expression, sitting at a laptop, facing camera slightly. Clean white background. At the top: three bold rounded buttons with yellow highlight boxes labeled Save, Repost, Follow at tylerreedai. Clean modern style, bold outlines, minimal.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "jpg",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-23T10:27:30.309410",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/na2/e66847c10b83fc4623d1ce23c28ee37d1649806.jpeg"
+      ]
+    }
+  ]
+}

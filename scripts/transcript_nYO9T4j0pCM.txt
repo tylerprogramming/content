@@ -1,0 +1,236 @@
+[00:00] Okay Claude, can you run the video that you just generated for me?
+[00:05] Every video you're seeing right now was made just by prompting Claude.
+[00:09] Claude has a brand new skill, and with it people are using it to create motion graphics,
+[00:14] animations, product demos, vertical video, YouTube videos,
+[00:20] and complete presentations just with a basic prompt.
+[00:23] In this video, I'll break down how to get started with Claude for video in three levels.
+[00:28] Level one, setting up and connecting skills.
+[00:31] Level two, making videos with your own design system.
+[00:35] And third, adding audio plus voiceovers and stitching multiple clips together to make a full video.
+[00:42] Stick with me, because I'll show you how Claude is literally coding video
+[00:46] and the just released skill that unlocked it.
+[00:49] Now, what is Claude code?
+[00:51] Think of it like a robot that writes computer code for you, just by asking it.
+[00:56] And skills?
+[00:58] Those are like special power-ups.
+[01:00] Like giving Claude the ability to create complex stuff like videos just by telling it what you want.
+[01:05] Okay, I'll stop it there.
+[01:07] That wasn't edited in Premiere or After Effects.
+[01:11] That was Claude code with ReMotion, powered by the new Opus 4.6 model.
+[01:16] Now, let me break down exactly how you can do this in three levels.
+[01:20] Starting with level one, getting set up.
+[01:23] Okay, the first thing you want to do is open up Google and search for Claude for desktop.
+[01:29] It should be like the first result.
+[01:30] So we'll just click on it.
+[01:32] Now, if we scroll down a little bit, you'll see the download for Mac and Windows.
+[01:36] I'm using Windows, so just click on this and follow the installation steps.
+[01:43] Once you've completed the installation and logged into your Anthropic account,
+[01:47] you should get your Claude desktop app up and running.
+[01:50] Now, you can see here, I'm on chat at the top.
+[01:52] What we want to do is toggle over to code.
+[01:56] Now, once we're in Claude code, there's a few things we need to do.
+[01:59] The first thing I'm going to do is change this from ask to code.
+[02:04] Then I'm going to check the model.
+[02:05] You can see we're on Opus 4.6, which is the new one.
+[02:09] Next, we want to have a folder to work in.
+[02:11] So I've just created this folder called Claude.
+[02:14] And then I might actually create a subfolder called Claude video.
+[02:19] Now, this is important because everything we install and what Claude will have access to
+[02:24] in terms of Claude desktop will be constrained to this folder.
+[02:27] And then other permissions we give it like skills, tools and access to the web.
+[02:31] Next, we're going to head to this website called remotion.dev.
+[02:35] And this is the skill that we're going to give Claude.
+[02:38] Now, before we prompt Claude to set itself up with Remotion,
+[02:42] we just need to make sure we have Node.js running on our machine.
+[02:45] So if you don't have it, just head to nodejs.org and install it.
+[02:49] I know there are a few instructions to get started here.
+[02:52] And if you get lost, you can always head to this document here,
+[02:55] which is in my online ninja community.
+[02:57] It's got all the steps and a few tips for using Remotion as well.
+[03:01] So I already have Node installed.
+[03:03] So I'm just going to copy this prompt here, head over to Claude desktop.
+[03:07] Now, I'm just going to say add the Remotion skill with that command
+[03:11] and update the Claude markdown document such that
+[03:13] when I request video generation, this skill is used.
+[03:21] Now, during the setup, you're going to be asked about
+[03:23] what kind of template you want to use.
+[03:24] Select blank.
+[03:28] OK, so Remotion is now connected and Claude has that skill.
+[03:32] So that's level one pretty much done.
+[03:34] We're set up and ready to go.
+[03:36] So moving on to level two, we can now start creating videos.
+[03:40] Let's say you want to generate a video to provide an overview
+[03:44] of a product or a service that you have on a website.
+[03:47] So, for example, I've got my website here.
+[03:50] I can ask Claude to do this now.
+[03:52] The first thing I'm going to ask Claude to do, though,
+[03:54] is to actually review this website and understand the style and theme.
+[03:59] So we have our own design guide for when we generate content around this site.
+[04:04] So I've just prompted Claude code here, review this website
+[04:08] and create a design system aligned with the website
+[04:11] and update the Claude dot markdown document file for future reference.
+[04:15] Then you can see Claude code saying it's going to review the site
+[04:17] and create a comprehensive design system.
+[04:19] So that's cool. Let it go and we'll come back.
+[04:22] Now, during this process, Claude code is asking me to sign in with
+[04:26] Claude for Chrome, which is a Chrome extension,
+[04:28] which speeds up the process.
+[04:29] So I'm just going to authorise this.
+[04:32] So that process is finished and Claude has given us a summary
+[04:35] of what it's actually done.
+[04:36] So it reviewed the website.
+[04:37] It has generated a comprehensive design system for the site.
+[04:42] And it's also updated the Claude dot MD document.
+[04:44] And we can take a look at this.
+[04:46] And this is what Claude will refer to when we're working in this project
+[04:49] if we want to generate a video using that website's style and theme.
+[04:53] So this is the Claude dot MD document.
+[04:56] And at the top, you can see it's got the details around ReMotion.
+[05:00] So it knows if we create a video, it uses ReMotion.
+[05:02] But if we go down a little bit, you can see here from line 79,
+[05:05] it talks about the design system for the Business Accelerator brand
+[05:10] and has all the details.
+[05:11] So let's test it out.
+[05:12] Now, back over in school in the prompts used in video file,
+[05:16] I've got the prompts that I'm going to use here.
+[05:18] So if you want to copy them and use something similar, you can.
+[05:21] So I'm just going to copy this first one.
+[05:23] And basically what I'm asking is create a 10 to 20 second video of my business
+[05:28] and use the exact style and theme of the website
+[05:30] that explains the offer and the benefits.
+[05:33] So in Claude, I'll just paste it in and hit go.
+[05:39] The file is ready to take a look at.
+[05:41] Let's press play and see what happens.
+[05:46] Now, at the moment, you can see it's rendered it out.
+[05:49] It's aligned with the website, but there is no sound.
+[05:52] So our next step will be to add a voice overlay.
+[05:55] But this looks really good.
+[05:57] Alright, we can tick off level one, getting started.
+[06:00] Level two, we've created a video.
+[06:02] Now we move to level three.
+[06:04] We want to add audio overlay and add any effects we want
+[06:08] and also stitch multiple videos together.
+[06:11] Alright, so to add the voiceover is pretty easy,
+[06:14] but there's a little bit of setup required.
+[06:16] The first thing we're going to do is go to key AI and grab an API key.
+[06:21] Now, once you have an account, just go to API keys on the left
+[06:24] and then you can create a new key.
+[06:26] And as you can see here, I've created a couple
+[06:28] and one's just called Claude video.
+[06:30] So we just want to copy that.
+[06:32] Now, this next step is optional.
+[06:33] You can actually ask Claude code to set up key AI with 11 labs,
+[06:38] but it can be a bit tricky.
+[06:39] If you want to shortcut the process,
+[06:41] head to the online ninja school again to the resources
+[06:44] and go to the Claude MD document
+[06:47] and you'll find this section for voiceover.
+[06:49] Just copy the entire section
+[06:51] and paste it into the Claude code terminal
+[06:54] and ask it to update your MD document with this information.
+[06:58] Then what we want to do is paste in the API key that we got from key AI.
+[07:02] So I've just pasted that in and now I'll let it update it
+[07:06] and then I will add the API key.
+[07:08] Okay, so that's all done.
+[07:10] Our next prompt here to get our voiceover is
+[07:12] I've got add a mail voiceover to the video that we generated
+[07:16] and ensure the words align with the components as they are rendered.
+[07:19] This is critical.
+[07:20] So what's going to happen now is Claude code is going to make a request to key AI.
+[07:24] It's going to find 11 labs.
+[07:25] It's going to generate a script that aligns with the video
+[07:29] words that were rendered out on the screen
+[07:31] and return it, compile it and we can view it.
+[07:33] So let's do it.
+[07:36] So the voiceover has finished
+[07:38] and Claude has opened this up in a browser
+[07:40] so we can actually check the entire video,
+[07:43] including the audio.
+[07:44] We can see the segments.
+[07:46] We can see the audio file, all the sequences.
+[07:49] So let's hit play and see what it came up with.
+[07:53] Build a YouTube channel that blows up your business.
+[07:56] Four proven systems, niche and packaging, production, growth, monetization,
+[08:01] 22 playbooks, weekly live sessions, direct access.
+[08:05] Join the Academy today.
+[08:07] All right, so that's pretty cool.
+[08:08] The next thing we want to do is actually generate another clip
+[08:11] so I can demonstrate how you can join multiple videos together and how easy it is.
+[08:16] So what I'm going to do is ask Claude to generate a short video
+[08:20] around the bonuses that are included with this offer.
+[08:24] Now Claude took a screenshot of this earlier
+[08:26] so if I ask it to create a video around these bonuses,
+[08:29] it should be able to do it.
+[08:30] We can check it out.
+[08:31] Now it has the key AI information.
+[08:33] It will automatically add the voiceover without even asking
+[08:37] and then we can join it up.
+[08:38] So back over in school, I'm just going to take a copy of the prompt,
+[08:41] add it into Claude and go.
+[08:44] Now fast forward a minute or two, that's all done.
+[08:47] We can take a look.
+[08:48] So it's generated this bonus clip for us.
+[08:50] Plus two bonuses included free.
+[08:53] The 20k views zero subsystem, SOP, checklist and fast lane to your first viral video
+[09:00] and free access to my studio app valued at $1,200 guiding you from ideation to publish.
+[09:08] Now that is pretty cool.
+[09:10] The next step, we're going to join our first video to this video
+[09:13] for a complete video into an MP4 that we can do whatever we want with.
+[09:18] Now stitching multiple clips together
+[09:20] that have been produced within the one project is crazy easy.
+[09:24] The only thing you need to do is prompt Claude code with something like this.
+[09:28] Basically combine video one, video two, etc.
+[09:31] into one video and render it as an MP4.
+[09:34] When it finishes, it'll tell you which folder it's located in
+[09:37] and it'll also open up the local server.
+[09:39] So you can preview it, review it, edit it if you need to.
+[09:43] All right, I ran the prompt and it's combined the videos.
+[09:45] It is super easy.
+[09:46] You're unlikely to run into any problem.
+[09:48] This was the first video we did.
+[09:50] This is the second one.
+[09:51] And this is the combined one.
+[09:53] Build a YouTube channel that blows up your business.
+[09:56] For proven systems, niche and packaging, production, growth, monetization,
+[10:01] 22 playbooks, weekly live sessions, direct access.
+[10:05] Join the Academy today.
+[10:07] Now here's the join.
+[10:08] Plus two bonuses included free.
+[10:10] Couple of things you want to take note of.
+[10:12] If you want to edit and change a video, it is super easy.
+[10:15] What I do is I take note of these frames and this is the frames you can quote.
+[10:19] So if I wanted to change it, I'll go back to the start.
+[10:22] Build a YouTube channel that blows.
+[10:23] So if I wanted to change, say, this component for business owners
+[10:27] to something else like for creators, I would just say to Claude code from frame zero.
+[10:33] Build a YouTube channel that blows up your business.
+[10:35] To frame around 84, which you can see here, change the component and you describe it
+[10:40] and it will change it out so we can do that.
+[10:42] So you can see how easy it is to edit the videos you've created.
+[10:46] So just back in Claude using plain text.
+[10:48] I've just added the prompt in the combined video from frame zero to 80.
+[10:52] Can you update the for business owners text to for content creator?
+[10:56] Actually creators.
+[10:57] There we go.
+[10:58] We'll run this and have a look.
+[11:00] Now that process is finished, so we should have an updated component.
+[11:04] Now you can see that I've actually had to hit restart here.
+[11:06] You might find this sometimes that when you go to look at it on the web browser, it stops.
+[11:12] So you just need to prompt Claude to restart the server.
+[11:15] And you can see here it says the server is up and running on port three double O two.
+[11:20] So we can take a look at that.
+[11:22] So just opened up the server and you can see this is the combined one.
+[11:26] Now, if I hit play on this, we should see that the server is up and running.
+[11:29] We should have a component to change from YouTube for business to YouTube for created.
+[11:34] Build a YouTube channel that blows up your business.
+[11:37] I go back a bit.
+[11:38] So yeah, that component's been updated.
+[11:40] So you can do any updates you want.
+[11:43] Just nominate the frames.
+[11:44] That's how I found it the easiest and describe what you'd like changed, whether it's a design,
+[11:49] a color, a component, realignment of text, whatever it is, Claude can handle it.
+[11:54] And particularly Opus 4.6.
+[11:56] It's fantastic.
+[11:57] And it's super quick.
+[11:59] I hope you got a bit of value from the video.
+[12:01] Catch you in the next one.

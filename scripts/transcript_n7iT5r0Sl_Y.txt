@@ -1,0 +1,386 @@
+[00:00] I have now, for the last several weeks,
+[00:01] switched over from Cursors Agents to Cloud Code,
+[00:04] and I'm not looking back at all.
+[00:06] Here's how I use Cloud Code and my best tips.
+[00:08] First, I install the extension,
+[00:10] which works with VS Code, Cursor,
+[00:12] and probably other forks like Windsurf.
+[00:13] It doesn't do a lot,
+[00:14] but it makes it really easy to launch Cloud Code
+[00:17] right in your IDE.
+[00:18] I still use Cursor by default,
+[00:19] because every once in a while,
+[00:20] it's nice to use Command K and their tab completions,
+[00:23] but the only time I've touched the Agent sidebar
+[00:25] is when Cloud was down.
+[00:26] What the extension does do
+[00:28] is it makes it really easy to open Cloud Code.
+[00:30] I often have it in multiple panes at a time,
+[00:32] so I can run things in parallel,
+[00:33] as long as they're working on different parts
+[00:35] of the code base and different files.
+[00:36] And if I have a file open,
+[00:38] it'll automatically pull that into the context.
+[00:40] Now, Cloud uses a terminal UI,
+[00:42] which I was very hesitant about at first,
+[00:44] but they actually do a really good job with it.
+[00:46] You can tag files easily and choose what you want to include.
+[00:49] They have slash commands, which are awesome.
+[00:51] Speaking of, I use the model command a lot
+[00:53] and usually work with Opus,
+[00:55] unless Opus is having issues, which happens,
+[00:57] and then switch to Sonnet.
+[00:58] A lot of people should probably just use the defaults.
+[01:00] It'll use Opus until you're at 50% of your usage limits
+[01:03] and then switch to Sonnet, which is more cost efficient.
+[01:05] I found Opus isn't slow, like 3.5 used to be
+[01:08] compared to Sonnet, at least not noticeably.
+[01:10] And both models are very good,
+[01:11] but Opus is just a little bit better.
+[01:13] Other commands I use a lot, I use Clear a lot.
+[01:15] In my opinion, every time you're doing something new,
+[01:17] Clear, you don't need all that chat history
+[01:20] in your tokens every time,
+[01:21] and you don't need Cloud always trying to compact it either
+[01:24] because compaction basically runs another LLM call
+[01:27] to output a bunch of tokens, which takes time,
+[01:29] to summarize the conversation history.
+[01:31] Just Clear, Clear every time you're doing something new.
+[01:33] The up arrow key will go back to past chats,
+[01:36] including chats from prior sessions.
+[01:38] So if you close out of Cloud and open it again,
+[01:41] for instance, another day,
+[01:42] you can still go back to prior sessions.
+[01:44] Speaking of opening Cloud,
+[01:46] one thing it does that's really annoying
+[01:47] is after you type a prompt, it'll start working.
+[01:50] Agents take a while, so I'll go about my business,
+[01:52] I'll check Slack, I'll check email,
+[01:53] I might code something manually.
+[01:55] But then here's the problem.
+[01:56] I come back, and I see it's asking me,
+[01:58] can I edit this file?
+[02:00] It's really annoying.
+[02:01] Yes, you can edit files.
+[02:02] It's the point of being an agent, like edit the files.
+[02:05] And there's no way I've found to globally say,
+[02:07] just edit files, it's fine.
+[02:08] And then you go about your business and come back,
+[02:11] and it's asking if it can run a basic Bash command.
+[02:13] Can I run lint?
+[02:14] Yes, oh my God, yes.
+[02:16] So here's what I actually do.
+[02:17] Every time I open Cloud Code,
+[02:18] I actually quickly hit Command C,
+[02:20] and then I run Cloud Dangerously Skip Permissions,
+[02:24] and enter.
+[02:25] It's not necessarily as dangerous as it sounds.
+[02:27] It's akin to what Cursor used to call YOLO mode.
+[02:29] And while it runs a minor risk
+[02:31] that a rogue agent could run a command you didn't expect
+[02:33] that's destructive,
+[02:34] I've never seen that happen in my life.
+[02:36] So up to you if you want to take the risk.
+[02:37] I have for weeks and weeks,
+[02:39] and I've never run into a problem whatsoever.
+[02:41] Now speaking of slash commands, Cloud has a lot.
+[02:43] One really cool one is installing the GitHub app.
+[02:46] This makes it so when you submit a PR,
+[02:48] Cloud will automatically do a code review.
+[02:49] This is pretty awesome because as you use more AI tools,
+[02:52] your volume of pull requests might increase.
+[02:54] And I found that certain cases,
+[02:56] the AI models are better at finding bugs than humans,
+[02:59] because they frankly put more effort into it in some ways.
+[03:02] While I've seen humans are really common to nitpick at,
+[03:04] oh, this could be named differently and stuff like that.
+[03:06] I've seen Cloud actually find real bugs
+[03:08] that our humans missed in a good chunk of cases.
+[03:11] The main tip I have for this
+[03:12] is Cloud will add a cloudcodereview.yaml.
+[03:15] It'll have a prompt in it already.
+[03:17] Here's the prompt I use.
+[03:19] The original issue we found with this tool
+[03:21] is it was really verbose.
+[03:22] It would comment on all kinds of like nuanced,
+[03:25] unimportant things and write a whole essay on every PR.
+[03:27] What we really care about most for the AI to review
+[03:30] is bugs and potential vulnerabilities.
+[03:32] So we tell it, look for bugs and security issues,
+[03:34] only report on bugs and potential vulnerabilities
+[03:37] and be concise.
+[03:38] The cool part is when you run this command
+[03:40] and edit that one line,
+[03:42] you have a pretty awesome new addition to your workflow.
+[03:44] There's a lot of other really cool stuff it can do,
+[03:46] like pull comments from a GitHub pull request
+[03:48] and address them, review pull requests
+[03:50] and do things like set up your terminal
+[03:52] because out of the box,
+[03:53] shift enter will not work for adding new lines,
+[03:56] but we can just hit enter and tell it to do it for us.
+[03:58] And there we go.
+[03:59] Shift enter adds new lines.
+[04:00] Beautiful.
+[04:01] Speaking of quirks with using a terminal interface
+[04:03] with Cloud Code, you might be surprised,
+[04:05] but you actually can drag files in.
+[04:07] Though in tools like cursor and probably VS Code,
+[04:09] it opens it in a new tab.
+[04:11] If you drag in and hold shift,
+[04:12] it'll actually pop it in and reference it like you need.
+[04:15] Now, one thing that doesn't work
+[04:16] is it doesn't paste images from your clipboard.
+[04:19] So if I do the Mac thing where I take a screenshot of this
+[04:21] and command V, nothing happens.
+[04:23] A special trick for this is control V.
+[04:26] Actually, it will work.
+[04:26] There, it pasted the image.
+[04:28] That one took me a long time to figure out.
+[04:29] Another thing that took me way too long to figure out
+[04:31] because this is not a normal UI interface
+[04:33] is when Cloud is working,
+[04:34] I always thought to hit control C to tell it to stop.
+[04:37] And that doesn't do it.
+[04:38] Hitting control C twice just exits entirely.
+[04:40] Oops.
+[04:41] To actually stop Cloud, you need to hit escape.
+[04:43] And if you want to jump to any previous message,
+[04:44] you can hit escape twice
+[04:46] and see a list of previous messages and pop back to them.
+[04:49] There's a lot of invisible features like this in Cloud Code.
+[04:52] If you want to be hardcore, Cloud also has a Vim mode,
+[04:54] but I'm not a Vim user, so I do not use it.
+[04:56] Now, let's talk a little bit more
+[04:56] about why Cloud Code is so good.
+[04:59] In Builder, we have one React component
+[05:01] that is so large I can barely even scroll to the bottom.
+[05:05] It is 18,000 lines of code.
+[05:07] There's never been an AI agent
+[05:09] that can reliably update this file and tell Cloud Code.
+[05:11] When using Cursor, I have still found
+[05:13] a lot of little hiccups.
+[05:15] It has trouble resolving patches
+[05:16] and has to rewrite files often.
+[05:18] It really struggles to update extremely large files.
+[05:20] Cloud Code has no issue updating this file,
+[05:24] like not even remotely.
+[05:25] Cloud Code works great with large code bases
+[05:28] and complex tasks,
+[05:29] and I find it just getting stuck incredibly rarely.
+[05:33] I'm not even sure if I've noticed that at all.
+[05:35] Whereas with Cursor, I feel like I have to babysit it more,
+[05:37] and when it gets stuck, stop it,
+[05:38] and realize maybe this was just not a good task to ask.
+[05:41] Cloud is also exceptionally good
+[05:43] at navigating a large code base,
+[05:45] searching for patterns,
+[05:46] understanding relationships between different parts
+[05:48] of the code, components, shared states, stuff like that.
+[05:51] It's honestly kind of incredible.
+[05:52] If you think about it, Cursor built a product
+[05:54] that has a general-purpose agent
+[05:56] intended to support a variety of models.
+[05:58] In order to do this,
+[05:59] you have a whole additional team involved.
+[06:01] They trained custom models as well,
+[06:03] and there's just more layers and requirements
+[06:05] and things going on here.
+[06:06] As well as, Cursor doesn't build or control
+[06:09] the core models that do the core AI.
+[06:11] Compare that to Anthropic.
+[06:13] They definitively make the best coding models,
+[06:15] and so they make Cloud Code the best at using the model,
+[06:17] and when they hit challenges with Cloud Code,
+[06:19] they go and make the model better.
+[06:20] They only care about supporting their model.
+[06:22] They know everything about how the model works,
+[06:24] how it's trained, and how to use it in depth,
+[06:26] and they continue to train the model to work well
+[06:29] with what they need for Cloud Code.
+[06:30] It also means that Anthropic can give you
+[06:32] the most possible value for the least possible price
+[06:35] because you only have to worry about paying them.
+[06:37] So they could compete on giving you maximum access
+[06:39] to models like Opus without situations like Cursor has,
+[06:43] where Cursor has to make money too.
+[06:44] So Cursor needs to make a margin and Anthropic,
+[06:47] which fundamentally means you need to pay
+[06:49] some degree more with Cursor,
+[06:50] or they need to lose more money, which isn't sustainable.
+[06:53] So I commend the Anthropic team
+[06:54] for making such a good tool with Cloud Code
+[06:57] because they can give you the maximum performance
+[06:58] at the lowest price directly from the experts
+[07:01] and make their models and products better altogether.
+[07:04] It's really smart, and it's where I am betting
+[07:06] my time and money right now today.
+[07:08] Given the incredible results I've been seeing.
+[07:10] Now, speaking of pricing, I pay for the max mode.
+[07:13] Now, if you're used to Cloud Code
+[07:14] previously being based on API pricing,
+[07:17] Cloud Code now supports the standard pricing plans.
+[07:19] Max mode, in my opinion, is an absolute steal.
+[07:22] If you feel like a shockingly intelligent coder
+[07:25] working for you 24-7 is not worth $100 a month,
+[07:28] you need to look hard at what a human costs
+[07:30] per hour for engineering,
+[07:32] regardless of where you look in the world,
+[07:33] and it's orders of magnitude more than that.
+[07:35] So if you're having trouble justifying it for yourself
+[07:37] or from your work, always remember the gains
+[07:40] this has given you compared to actual manual human work.
+[07:43] One other feature of Cloud Code
+[07:44] that I absolutely swear by is queuing.
+[07:47] So we could type a message, say, add more comments.
+[07:49] This is a thread about adding comments to some code.
+[07:51] And often I think about, oh, the next thing I want to do.
+[07:54] What I used to do is create a notepad
+[07:56] and start drafting other prompts that I want to do.
+[07:58] And then when I see one is done,
+[08:00] I'll go and paste the next one and enter.
+[08:01] That's what I did with the cursor,
+[08:02] which is really annoying because again,
+[08:04] I'll usually go about my day and answer Slack messages,
+[08:07] answer email, do something else,
+[08:09] and come back and see the agent's been idle
+[08:10] for who knows how long.
+[08:11] Type the next prompt, go away.
+[08:13] And it was not very time efficient.
+[08:14] But now with Cloud, you can just queue more messages.
+[08:17] So if I think of another one,
+[08:18] actually also add comments to the main chunks of the JSX,
+[08:24] I can queue them into the computed values.
+[08:26] And what's great is Cloud is really smart
+[08:28] about knowing when it should actually run those things.
+[08:31] If it needs feedback from you,
+[08:32] it's not going to automatically run the queued messages.
+[08:34] It's a pretty smart system.
+[08:36] But when it's wrapped up something,
+[08:37] it'll start addressing them when it makes sense.
+[08:40] So you could queue up a lot, go about your day,
+[08:42] and in a lot of cases,
+[08:42] just come back to a ton of work done in a good and smart way.
+[08:46] But again, check it from time to time
+[08:47] because it might need your input.
+[08:48] A couple other cool power features you could do with Cloud
+[08:51] is add custom hooks and custom slash commands.
+[08:54] And the coolest part is you can have Cloud
+[08:55] build those for you.
+[08:56] In this case, I asked for Cloud
+[08:57] to add a couple of default hooks, commands, and settings,
+[09:00] and created a settings file that I can easily edit.
+[09:02] It added a Cloud MD,
+[09:04] which gives a bit of project overview
+[09:06] and some key commands that it should know about.
+[09:07] This prevents it from having to figure that out each time
+[09:09] and scan the code base for,
+[09:10] is there a build command or a lint command?
+[09:12] It always has awareness of that.
+[09:14] And it added some hooks for what code should run
+[09:17] before edits are accepted,
+[09:18] such as run prettier on a specific file,
+[09:20] or after edits, like run a type check on a specific file
+[09:23] to make sure that it only accepts good and correct files.
+[09:26] Another really cool one you could do
+[09:28] is add custom slash commands.
+[09:30] Like if I want to output a test, I can describe my test.
+[09:33] To add commands, just add a .cloud slash commands folder.
+[09:36] Add its name and then .md.
+[09:38] You just write these in natural language,
+[09:40] and you can use this arguments string
+[09:42] to place an argument into the prompt,
+[09:44] and the Cloud will do exactly what you asked
+[09:46] just by typing slash and whatever it is.
+[09:48] You can even have subfolders,
+[09:49] and those we can access like this,
+[09:51] like builder colon plugin matches the builder folder,
+[09:54] plugin.md, and that's how we can create
+[09:56] a new builder plugin super easily.
+[09:57] Another cool one is we can use the pound sign
+[09:59] and add memory super fast,
+[10:01] like always use Mui components for new stuff,
+[10:05] and then it'll automatically save that
+[10:07] to the most relevant file.
+[10:08] Cloud.md files can be hierarchical,
+[10:10] so you can have one project level,
+[10:12] and you can have one in nested directories.
+[10:13] It'll look at them all and prioritize the most specific,
+[10:16] the most nested when relevant.
+[10:18] You could also save this to global user memory,
+[10:20] preferences you want to apply everywhere,
+[10:22] or local project memory.
+[10:23] That's memory specific to you and gets get ignored.
+[10:26] Add it to any of these files,
+[10:27] and then it'll write it for you.
+[10:28] Now, the main problem I sometimes feel,
+[10:30] and I see people point out the most,
+[10:32] is sometimes you really just want a normal UI.
+[10:34] It's kind of annoying that typing out long responses
+[10:36] have these weird escape keys.
+[10:38] I can't just click on what I want to edit
+[10:39] and highlight and edit.
+[10:41] It's still very clear you're working with a terminal,
+[10:43] and that comes with some inherent limitations.
+[10:45] For those times where you want a UI
+[10:46] or you prefer UI interface,
+[10:48] but you still want the mechanics of cloud code,
+[10:50] one trick is to use the builder.io
+[10:52] VS Code cursor windsurf extension.
+[10:54] Any point you could just launch into a visual UI
+[10:57] from your IDE sidebar,
+[10:58] what you'll get is a much more visual interface
+[11:01] with the typical chat dynamics that you're used to
+[11:03] and a live preview.
+[11:04] Under the hood, we built the system
+[11:06] to match almost exactly how cloud code works.
+[11:09] This tool uses effectively the same agent
+[11:11] and approach as cloud code,
+[11:12] down to the tiniest details.
+[11:13] We reverse engineered it as closely as humanly possible.
+[11:16] And then you can preview your changes quickly.
+[11:18] Like I actually just moved items from here to right here.
+[11:21] Perfect.
+[11:22] And what's kind of cool is at any time
+[11:23] we can switch to design mode
+[11:25] and we get a Figma style interface
+[11:27] where we can change up any of the styling we want
+[11:29] and edit it just like a design tool.
+[11:31] It's kind of a cool way to bridge the worlds
+[11:33] of visual editing and code
+[11:35] and get a bit of the best of them both at the same time.
+[11:38] We can explore different UI patterns quickly
+[11:40] and make precision edits
+[11:41] and then just apply our changes to the code.
+[11:43] You can do all this stuff from a browser interface too,
+[11:46] which can be really cool for letting people on your team
+[11:48] create prototypes right with your design systems
+[11:51] and applications.
+[11:52] And then when you're happy with your changes
+[11:53] and you're ready,
+[11:54] you can just fire off a pull request.
+[11:56] Here's our PR with the title and description.
+[11:58] We can look what files changed.
+[11:59] Looks like it's using our design system correctly as hoped.
+[12:02] And I can leave a comment anywhere and say,
+[12:04] hey, build a bot,
+[12:05] move this to be in its own component in a new file.
+[12:09] In this role now,
+[12:10] we're effectively just communicating with Cloud Code,
+[12:12] but through the PR directly.
+[12:13] The agent will then reply
+[12:15] and push up commits addressing the feedback.
+[12:17] And here we go.
+[12:17] The builder bot addressed the feedback
+[12:19] and described the changes.
+[12:21] Now it looks like we have our customers table
+[12:22] in its own file
+[12:23] and we are using it as expected in the original,
+[12:26] we can merge away.
+[12:27] So whether you want to use Cloud Code in a visual way
+[12:29] or in a terminal,
+[12:30] I hope these tips were useful for you
+[12:32] to be able to build awesome stuff like never before.
+[12:34] Check out my full list of tips over on the builder.io blog.
+[12:37] If you want to try the visual interface for Cloud Code,
+[12:40] go to fusion.builder.io and let me know your feedback.

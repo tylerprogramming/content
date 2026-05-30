@@ -1,0 +1,60 @@
+[00:00] Claude Code Routines may be one of the most powerful features Claude has come out,
+[00:03] and I'm going to show you how to create one now.
+[00:05] If you go to Claude AI Login, on the left-hand side you'll see Code.
+[00:09] So click Code, it'll open up a new tab, and now this is new,
+[00:13] so at the top left you'll see Routines.
+[00:15] So go ahead and click Routines, and you'll see a few routines that I already have.
+[00:19] So one is like Email Triage, Instagram Competitor, Weekly YouTube Video Ideas,
+[00:23] Weekly Claude TikTok Trends, and you can create anything that you want.
+[00:26] So let's go ahead and create a new one for our email.
+[00:29] So at the top right, click New Routine.
+[00:31] We can name this Email Summary.
+[00:34] We're just going to paste in a prompt here.
+[00:35] These are just the instructions of what we want it to do.
+[00:38] Then you can select a trigger.
+[00:39] So this is basically how often we want this to be scheduled.
+[00:42] So I want this to be scheduled daily at, let's do 6 a.m.
+[00:47] And then this means that when we go to add the trigger,
+[00:50] that now it's going to be scheduled to run every day at 6 a.m.
+[00:54] And now for connectors, we want to add Gmail.
+[00:57] We don't need these other connectors like Drive, Calendar.
+[01:01] We could send Slack, but I'm not worried about that for now.
+[01:04] Right now, we just need Gmail.
+[01:06] And then just simply click Create.
+[01:08] You have an email summary routine.
+[01:09] Let's go ahead and test it.
+[01:11] You should always test things.
+[01:12] So click the Run Now button.
+[01:13] And now you can see that there is a run that has started.
+[01:16] So let's click that.
+[01:17] And once this is done, it's going to give us a summary of emails in the past day.
+[01:21] Okay, so it found one urgent that I may need to respond to.
+[01:25] So it saved a draft response to there that I can go ahead and look at.
+[01:28] Or I can just say, you know, go ahead and send that.
+[01:31] Then here are some just other senders.
+[01:33] Here's some here, you know, it labels low priority.
+[01:36] So maybe you don't need to look at.
+[01:37] And then what I could now say is, can you also just summarize all of these emails?
+[01:44] So what this means is I can still talk to it with the output, right?
+[01:49] Just because it does something doesn't mean we need to stop there.
+[01:51] We can still chat with Claude to talk about this routine.
+[01:55] Then here goes.
+[01:56] Here's an inbox summary.
+[01:57] You only need one.
+[01:58] Only one really needs your attention.
+[02:00] You know, security account, AI tooling news, YouTube creator, school community stuff, marketing
+[02:05] promos, etc.
+[02:06] I saved somebody that was spending $10,000 a month on virtual assistance.
+[02:12] We were able to reduce that a lot.
+[02:15] So they were bringing back in over $9,000 into their pocket to be used somewhere else
+[02:19] in their business or for whatever else they want to do with.
+[02:22] It didn't matter.
+[02:23] But the point was that I was able to come up with routines and skills for them to use
+[02:28] that also they could talk with AI whenever they wanted to.
+[02:31] You know, don't worry about the time.
+[02:31] Don't worry about the time difference.
+[02:33] And you know, you could save all that time and money and actually make more money when
+[02:37] you have time that allows you to make more money too, right?
+[02:41] To give back into the business.
+[02:43] So anything like this with routines are just a very powerful tool that you should be using.
+[02:49] Comet Routine now give you four free routines that you can use today.

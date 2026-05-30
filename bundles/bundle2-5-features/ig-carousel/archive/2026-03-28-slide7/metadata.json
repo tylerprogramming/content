@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Instagram carousel CTA slide. Light cream white background (#f5f0eb). Large bold dark text: SAVE THIS. Below: FOLLOW FOR MORE. Below in smaller gray text: Comment CONCEPTS for the full 23-concept cheat sheet. In the bottom right, a circular photo of the person from the reference image with a white circle background. To the left, Tyler Reed in bold dark text. Subtle pastel geometric accents. Page counter 7/7 top right. Clean modern minimal Instagram design.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-28T13:51:21.812752",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774720280187_l2inrv.png"
+      ]
+    }
+  ]
+}

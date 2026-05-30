@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Clean professional LinkedIn carousel slide design. Dark navy blue background (#1a1f36). Large bold white uppercase text centered: 5 CLAUDE CODE FEATURES YOU ARE NOT USING. The number 5 should be highlighted in bright blue accent color (#4da6ff). Below the heading in smaller gray text: These are not advanced. They are just not obvious when you first start. Page counter 1 / 7 in small text in the top right corner. Professional tech aesthetic. No images or icons.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "4:5",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-28T06:11:05.254813",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1774692660349_3s0gk4.png"
+      ]
+    }
+  ]
+}

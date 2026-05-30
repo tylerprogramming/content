@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio, keep the exact same design system as the reference image: light lavender periwinkle background with subtle circuit pattern texture, bold dark navy blue all-caps headline at top split across two lines, 5 horizontal cards stacked vertically each with a square purple-gradient icon on the left then bold uppercase step name, one-line descriptor, and 3 checkmark bullet points, and '@tylerreedai' small handle at bottom center. Change ONLY the content to this new pin about the carousel skill: Headline '5 STEPS TO AUTO-GENERATE A LINKEDIN PDF CAROUSEL'. Card 1 pencil icon 'TOPIC INPUT - Single prompt / topic or angle / Claude takes over / zero formatting needed'. Card 2 document icon '6-SLIDE COPY - Full script drafted / hook slide included / narrative flow / CTA at the end'. Card 3 sparkle icon 'GAMMA API RENDER - Branded design / on-brand colors / consistent typography / automated layout'. Card 4 PDF icon 'PDF EXPORT - LinkedIn-ready file / proper 1080x1350 / clean upload / fast delivery'. Card 5 Instagram icon 'INSTAGRAM COPY - Same slides repackaged / 1080x1080 square / caption included / one-step cross-post'. Handle '@tylerreedai' at bottom.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/pin.png"
+      ],
+      "generated_at": "2026-04-20T15:04:20.265460",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/0a431e6dfb7d8227dbae56ce81b8db92_1776711856_r2e888k5.png"
+      ]
+    }
+  ]
+}

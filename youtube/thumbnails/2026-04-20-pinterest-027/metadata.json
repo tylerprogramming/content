@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase label, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Clean minimalist style, warm Anthropic Claude brand aesthetic. Headline 'CLAUDE CODE PLUS SKOOL AUTOMATION'. Card 1 pencil icon 'POSTS - Text and polls / scheduled daily / no browser / community engagement'. Card 2 users icon 'SYNC MEMBERS - Auto-export / track growth / reach analytics / clean spreadsheets'. Card 3 chat icon 'AUTO-REPLY - Comments on posts / brand voice / value-add / 24/7 responsive'. Card 4 grad-cap icon 'CLASSROOM - Add modules / update courses / lesson management / fully automated'. Card 5 chart icon 'ENGAGEMENT REPORTS - Weekly summary / top contributors / churn risk / data-driven'.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:35:52.712788",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776713745387-cy9mbtave7r.png"
+      ]
+    }
+  ]
+}

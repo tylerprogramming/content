@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase step name, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Headline: 'AI CAROUSEL MAKER FOR LINKEDIN AND INSTAGRAM'. Card 1 pencil icon 'TOPIC INPUT - Drop in an idea / Claude handles the rest / zero writing required / under one minute'. Card 2 document icon 'SLIDE COPY - 6 slides drafted / hook and CTA included / proven framework / narrative flow'. Card 3 sparkle wand icon 'AI SLIDE IMAGES - Nano Banana renders / branded backgrounds / consistent look / auto-generated'. Card 4 PDF icon 'LINKEDIN PDF - Proper 1080x1350 / ready to upload / Blotato compatible / clean cover'. Card 5 Instagram icon 'INSTAGRAM PACK - 1080x1080 slides / caption included / cross-post ready / total cost .50'. Clean minimalist style, warm Anthropic Claude brand aesthetic.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:14:08.872955",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1776712442504-f8wqnwi7x9.png"
+      ]
+    }
+  ]
+}

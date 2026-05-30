@@ -1,0 +1,32 @@
+{
+  "generations": [
+    {
+      "prompt": "Cinematic close-up of a glowing terminal screen in a dark room, green and purple code reflections on a persons face, dramatic side lighting, YouTube automation concept, photorealistic, 8k detail",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-02-24T23:30:50.701606",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1771993849452-tmdajtmx1mp.png"
+      ]
+    },
+    {
+      "prompt": "Same person at terminal but with vibrant neon blue and orange color grading, code streaming across the screen like the Matrix, cinematic lens flare, moody atmosphere, photorealistic",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-02-24T23:33:22.238326",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1771993999996-4kmzwdx2ll6.png"
+      ]
+    }
+  ]
+}

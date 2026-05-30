@@ -1,0 +1,20 @@
+{
+  "query": "meal planning",
+  "total_found": 1,
+  "days": 30,
+  "top_n": 15,
+  "videos": [
+    {
+      "title": "I DONT MEAL PLAN, BUT DO THIS INSTEAD (and have dinner ready every night)",
+      "channel": "The Home Admin",
+      "views": 352,
+      "likes": 51,
+      "comments": 1,
+      "upload_date": "20260407",
+      "duration": "10:50",
+      "url": "https://youtube.com/watch?v=2m1uNqQf8cs",
+      "description": "Thank you to Caraway for sponsoring today's video! Get your Caraway bundle for 20% off and then stack my code (mentioned in the video) for an added 10% discount: https://bit.ly/HomeAdmin_Caraway\n\n\nThis is my method to having dinner on the table every single night without the traditional meal prep!",
+      "id": "2m1uNqQf8cs"
+    }
+  ]
+}

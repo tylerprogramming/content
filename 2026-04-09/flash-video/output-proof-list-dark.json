@@ -1,0 +1,18 @@
+{
+  "type": "list",
+  "background": "dark",
+  "slug": "output-proof",
+  "header": "32 pieces of content",
+  "subheader": "every single week:",
+  "items": [
+    "2 YouTube long-form videos",
+    "5 Shorts + TikToks + Reels",
+    "4 Instagram carousels",
+    "7 LinkedIn posts",
+    "14 X posts + community posts"
+  ],
+  "stat": "One content day. That's it.",
+  "accent_words": ["32", "One"],
+  "cta": "skool.com/the-ai-agency",
+  "handle": "@tylerai_dev"
+}

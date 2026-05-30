@@ -1,0 +1,112 @@
+{
+  "generations": [
+    {
+      "prompt": "YouTube thumbnail for Claude Code beginner tutorial. A confident young man on the right side of the frame, smiling, with dark code/terminal background behind him. Bold blocky orange text 'CLAUDE CODE' at top left. Large white bold text 'For Beginners' with orange underline swoosh in the lower center. Clean, professional, high contrast.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-09T14:30:20.008511",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773081016341-f5igd72813h.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail for Claude Code crash course. A young man on the right side looking excited and pointing at the screen, with a dark terminal/code editor background. Bold blocky orange text 'CLAUDE CODE' at top left. White bold text 'Beginner's Guide' with an orange accent arrow pointing right. Modern tech aesthetic, high contrast.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-09T14:31:26.530606",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773081081396-tpyzkoiavy.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail for Claude Code starter tutorial. A young man on the right side with a welcoming expression, dark IDE and terminal code background with glowing syntax highlighting. Bold blocky orange text 'CLAUDE CODE' at top left. Large white bold text 'Start Here' with orange highlight box behind it. Cinematic lighting, professional YouTube thumbnail style.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-09T14:32:33.264102",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773081148102-w1bn28wkevl.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail exactly like the reference. A confident young man on the right side of the frame, smiling, with tilted and blurred dark terminal code background. The pixelated blocky orange 'CLAUDE CODE' logo from the reference at the top left. Large white bold text 'For Beginners' with orange underline swoosh at the bottom center. Keep everything else the same - same composition, same style, same layout.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_1.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude code logo.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-09T16:06:46.077414",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773086799240-ox39zo4g36.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail exactly like the reference. A confident young man on the right side of the frame, smiling. Background is a tilted and blurred Claude Code terminal session showing code, git commands, and terminal output in dark theme. The pixelated blocky orange 'CLAUDE CODE' logo from the reference at the top left. Large white bold text 'For Beginners' with orange underline swoosh at the bottom center. Keep the same composition, same man, same layout, same style.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/thumbnail_1.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude code logo.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude code background.png"
+      ],
+      "generated_at": "2026-03-09T16:08:54.350958",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1773086927107-xsib0ejhjqa.png"
+      ]
+    },
+    {
+      "prompt": "YouTube thumbnail. A young man on the right side with excited expression, pointing with both hands toward the left. Background is a tilted and slightly blurred dark terminal showing Claude Code with git commands, bash outputs, and code in a dark gray theme with colored syntax highlighting. The pixelated blocky orange 'CLAUDE CODE' logo at the top left. Large bold orange text 'START HERE' in the center. Professional YouTube thumbnail, high contrast.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png",
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/claude code logo.png"
+      ],
+      "generated_at": "2026-03-09T16:32:35.495321",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/nanoBanana-2/1773088348480-wfcml8k6xm8.png"
+      ]
+    }
+  ]
+}

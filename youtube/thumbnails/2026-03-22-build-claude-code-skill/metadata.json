@@ -1,0 +1,36 @@
+{
+  "generations": [
+    {
+      "prompt": "Dark charcoal background, ultra-clean composition. Left half: massive bold white all-caps text area (leave space for overlay). Bottom-left: a realistic open code file showing markdown text with highlighted YAML frontmatter, glowing slightly. Simple white curved arrow pointing from the top-left to the code file. Right third: semi-realistic cartoon illustration of a man in his late 30s, dark short hair, confident slight smile, looking left. Minimal, high contrast, YouTube thumbnail style, 16:9.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-03-22T20:30:16.308148",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774225811611-m8qkn2pf8n.png"
+      ]
+    },
+    {
+      "prompt": "Semi-realistic cartoon illustration of a man in his late 30s, dark short hair, confident expression, positioned left-center. Dark background. Right side shows a glowing code editor panel with SKILL.md file open \u2014 visible YAML frontmatter with name, description, allowed-tools fields highlighted in color. Dramatic lighting. Clean modern style, 16:9, YouTube thumbnail.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-22T20:31:28.959243",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774225884564-ybrhvm8gwri.png"
+      ]
+    }
+  ]
+}

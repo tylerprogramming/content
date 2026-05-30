@@ -1,0 +1,18 @@
+[00:00] I can use just one skill in Cloud Code and I get a full YouTube competitor research report.
+[00:04] Here's how.
+[00:05] So I open Cloud Code and then I type slash YouTube search.
+[00:09] And then I'll just do based on the Cloud Code keyword.
+[00:13] So now it's going to search YouTube, find every video on Cloud Code within the last
+[00:17] 30 days, sort them by views, and then give me a full report.
+[00:20] So it's sourced them by top performing videos, it says 23 videos found, it's showing the
+[00:24] top 15.
+[00:26] So I have content patterns, dominant formats, duration, sweet spots, so I can find out what
+[00:31] links are working best.
+[00:32] Here are some of the title patterns that are working.
+[00:34] And then of course, here are some opportunities and video ideas that I can have.
+[00:37] And this is a Cloud Code skill, a reasonable workflow that I built that runs every time
+[00:41] I type this command.
+[00:43] There are no API keys, no third party tools, just a single library and a markdown file.
+[00:48] I run this twice a week before I play in any video.
+[00:50] It just takes 30 seconds as you can see, and tells me exactly what I need to do.
+[00:54] So grab this skill and I'll give this to you for free.

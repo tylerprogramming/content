@@ -1,0 +1,193 @@
+[00:00] Okay.
+[00:00] So Claude code has come out with remote control very recently.
+[00:03] So let me first show you what this actually means.
+[00:06] And I'll also show you, I'll explain to you some limitations and
+[00:09] what this maybe doesn't mean.
+[00:11] Okay.
+[00:11] So here I have, uh, I have a terminal brand new Claude open, right?
+[00:15] So if I type slash RC short for remote control, we can type this.
+[00:20] And now I have remote control active for this session.
+[00:23] Okay.
+[00:24] So now I'm on my local machine running this.
+[00:27] Okay.
+[00:27] So now if I want to use this locally, or I mean on my remote, I can also use
+[00:32] Claude web, but we want to talk about remote control, so I want to use this on
+[00:36] my phone, right?
+[00:37] So if I type in slash RC again, press enter.
+[00:40] Now it's going to come up with a few dialogue options.
+[00:43] I'm going to choose show QR code.
+[00:46] So now it comes up with this.
+[00:48] I'm now going to get on my actual phone and I'm going to scan this.
+[00:52] Then I'll show you what's right.
+[00:53] So here at my phone, I'm just going to scan this.
+[00:55] And what I'll do is I'll have screenshots of what it's actually doing, but I
+[00:58] basically have an interactive section session.
+[01:01] So I'm going to go back here to my terminal, click continue.
+[01:04] Okay.
+[01:04] So I'm going to type on my phone, say, I'm just gonna say hello there.
+[01:08] Okay.
+[01:08] And this is going to be, you're going to be seeing this also here, right?
+[01:12] So it'll show up here and it says hello there.
+[01:14] Okay.
+[01:15] So now what I can do is now a lot of times, as an example, you need to, you
+[01:20] know, you want to approve something that you want to do.
+[01:22] Maybe you want to create a PR, you want to create a commit,
+[01:25] whatever that is.
+[01:25] So what I'm gonna do is on my computer.
+[01:27] Now, I'm going to say, go to dot Claude slash skills and show me what I have
+[01:35] there and let's make a commit on the dot ENV dot example.
+[01:42] Okay.
+[01:43] So I'll show you that this is what it looks like on my phone also, but here
+[01:46] it went to my like kind of global skills that I currently have, and it's saying
+[01:51] that it needs approval to prevent bear repository tax.
+[01:54] Okay.
+[01:55] This is great, but also on my phone, I'm going to click allow once I can do it
+[02:00] from here or on my phone, which click allow once, and then it'll take a few
+[02:05] seconds for update, but now it's updated.
+[02:08] Right.
+[02:08] And that's, you know, obviously I know that dot Claude directly isn't a get
+[02:12] repository, so it's cause there's nothing to commit.
+[02:14] All right.
+[02:14] But there should be, there is in the skills.
+[02:18] Made a mistake because what I actually wanted to do was go into the skills
+[02:21] folder, right?
+[02:22] And that was something that I overlooked.
+[02:24] So again, now I'm on my phone.
+[02:25] I want to click allow once and said basically the proceed, and then
+[02:29] it's going to take a second.
+[02:30] It's going to update here.
+[02:31] Let's get, okay.
+[02:32] Get status.
+[02:33] It's going to get the status.
+[02:34] All right.
+[02:35] Okay.
+[02:35] It's already tracked.
+[02:36] And what I can do then is I can make commits to basically make this happen
+[02:40] or I can commit anything else I want.
+[02:41] And what the great thing is, is I don't have to be here.
+[02:44] As long as this terminal is open, I can be elsewhere on my
+[02:47] phone and do the exact same thing.
+[02:50] So let's get into this briefly.
+[02:52] So as of right now, it says remote control is available on all plans.
+[02:55] I think initially it was just the max plane, but now it's available on all plans.
+[02:58] And so this is a great way to allow us to connect to our current session, right?
+[03:04] As long as it's open on our local machine, that means we can also have access to our
+[03:07] local project files and directories and, and do more, right?
+[03:11] And so that you can use your full local environment remotely.
+[03:14] This means your MCP servers, your file system tools, project
+[03:16] configuration, all that stay available.
+[03:19] Okay.
+[03:19] Now we can, and this does mean it's going to be synced across
+[03:22] all connected devices also, right?
+[03:25] Um, if your laptop sleeps or your network drops, the session reconnects
+[03:28] automatically when your machine comes back online, right?
+[03:32] So with unlike cloud code, which runs on a cloud infrastructure, cloud.ai, the
+[03:36] remote control sessions run directly to the machine and being able to interact
+[03:39] with your local file system, because when you're directing, when you're
+[03:42] using cloud code, a lot of times you are on your local file system.
+[03:44] Okay.
+[03:45] So we're just going to go over real quick, how to do this.
+[03:48] Make sure you have the latest update of cloud.
+[03:50] So just go ahead and cloud update.
+[03:52] Uh, actually right now, as I'm doing this, there is already another version.
+[03:56] Okay, great.
+[03:56] So then we're going to say cloud.
+[03:59] And then like I did previously, I want to trust this folder.
+[04:01] You type slash, you can just type RC for short, and then this automatically
+[04:05] starts this session for the folder that we are currently in.
+[04:09] Okay.
+[04:10] So now you can also, let me just kind of come in here.
+[04:13] You can see that I type in hello.
+[04:15] You can see it also on my terminal.
+[04:16] So now on the cloud, on the cloud web, I'm going to say, uh, what
+[04:21] should we talk about today?
+[04:23] You know, whatever conversations you want to have.
+[04:24] Right.
+[04:24] So now as I talk it here, you see on the terminal, I mean, obviously
+[04:27] there's going to be a slight delay, but it's going to show up in both places.
+[04:31] Okay.
+[04:31] So then also means that like we did, I type slash RC again, then
+[04:36] you'd go up and choose show QR code.
+[04:40] Then you'll be able to do the exact same thing.
+[04:42] So if I come back here to my camera camera right here, I'm just going
+[04:46] to, it's going to scan the QR code.
+[04:49] It's going to refresh here.
+[04:50] Now I'm on my interactive session.
+[04:53] So now on the phone, right?
+[04:54] I know you can't see, I don't have a simulator, but, uh, what I'm
+[04:57] going to do is type here.
+[04:59] Okay.
+[04:59] So how about we plan a video?
+[05:03] Okay.
+[05:04] So I did it on my phone, right?
+[05:06] Just like that.
+[05:06] And then now what we will see here in a minute, when it, whenever it
+[05:10] connects to both of these sessions, it's going to show up, continue.
+[05:14] And it says, how about we plan a video and then, you know, it should show up here.
+[05:19] Also.
+[05:19] Yeah, they're just, it just a little, don't worry about the delay too much.
+[05:22] Okay.
+[05:23] But now what I can do is because when I'm playing this video, as I've shown, or
+[05:28] I'm going to show in another video, how I plan my content, I have skills locally
+[05:33] now on my machine that I can use anywhere I want to, right.
+[05:37] I can use at any point on my phone, right?
+[05:38] I don't have to be on my computer, which is one of the great things about this is
+[05:43] I don't have to be physically on my computer to have access to my local files.
+[05:47] Okay.
+[05:47] This is essentially what remote control is.
+[05:49] Okay.
+[05:49] So now I do want to talk about the limitations for a second.
+[05:53] Well, if I were to shut down this terminal, right.
+[05:56] If I, uh, or let's just say I even just control C twice.
+[06:00] Now this is ended.
+[06:01] Now, let me try to come here.
+[06:02] Hello.
+[06:04] As you can see up there on the top, right.
+[06:06] Yep.
+[06:06] Remote control is offline and you can start it by running cloud remote control.
+[06:10] Also, I did not get the message on my phone either because that session was ended,
+[06:14] right?
+[06:15] So if it, if you close the terminal or anything else, all of a sudden it's gone.
+[06:18] Of course you could just resume it here.
+[06:20] Cloud gives you a resume function in order to resume that exact session.
+[06:24] You also can't start a session from your phone.
+[06:27] Okay.
+[06:27] That's one important distinction.
+[06:28] You can't start a session from your phone.
+[06:30] This is solely that if you start it locally, then you can use it elsewhere
+[06:34] from your phone.
+[06:36] Um, but also if you lose, I think it's like if you lose power or like, I'm
+[06:40] sorry, not power internet connection for about 10 minutes, um, I think is what
+[06:44] I've read online, then once that happens on your local machine where you're
+[06:48] hosting a terminal or remote control session is, is existing, then you will
+[06:52] end up losing that on your phone as well or any other device.
+[06:55] Okay.
+[06:55] Okay.
+[06:56] And that's it.
+[06:56] That's really simple.
+[06:58] I just wanted to show you cloud, uh, cloud remote control.
+[07:01] I don't want to make this bigger than what it is.
+[07:03] It's a very nice that I can, I know that I can have something started on my local.
+[07:08] If I need to go somewhere, I can have that on my phone and I can continue
+[07:11] conversations, right?
+[07:12] Especially, uh, you know, let's say you're working maybe on lunch break at
+[07:17] your job or just some other scenario similar to that, then you can, uh, you
+[07:21] know, as long as your terminal is up and running, maybe you say you have your
+[07:24] power settings a certain way, then you can keep your connection throughout the
+[07:28] day, all into your local machine.
+[07:30] And then you can still run your local skills, uh, on your machine.
+[07:33] And then you can keep going with whatever it is that you want to do, right?
+[07:36] Whatever, uh, what are you, how are you trying to be productive?
+[07:39] Maybe trying to sell something, maybe trying to do some research, all those
+[07:41] things you can still do from your phone with everything that you have on your
+[07:46] local machine.
+[07:47] And that is the wonderful thing about this.
+[07:49] Okay.
+[07:49] Thank you for watching.
+[07:50] I have more videos up here for you to watch right now.
+[07:52] I also have a school community in the description below that is free for you
+[07:55] to join, to learn about AI and I am there to help you where we also have monthly
+[08:00] builds.
+[08:00] Okay.
+[08:01] Thank you for watching.
+[08:02] Watch these videos now.

@@ -1,0 +1,59 @@
+{
+  "created": [
+    {
+      "title": "Free Monthly Q&A",
+      "id": "40ca177277e447dea3aec56aa658cc26",
+      "call_id": "edb053573be943a2b5004f5fd16b543d",
+      "start": "2026-05-01T13:00:00-04:00"
+    },
+    {
+      "title": "Builder Weekly: Workshop (Week 1)",
+      "id": "299baf30e04449aeade4b67f988bec94",
+      "call_id": "ce6d07a92c2a46d5a317cf11d4101ca2",
+      "start": "2026-05-06T17:00:00-04:00"
+    },
+    {
+      "title": "Free Community Orientation",
+      "id": "996af0b184744c108d98110fbe457763",
+      "call_id": "40c60bf7d08140d1ab11012b7186d82a",
+      "start": "2026-05-08T12:30:00-04:00"
+    },
+    {
+      "title": "Monthly Build Lab ($9 + $27)",
+      "id": "1f99739eacf24ee585c6d50504c0cec7",
+      "call_id": "477962ab5db142a7b057d70f8caad077",
+      "start": "2026-05-10T10:30:00-04:00"
+    },
+    {
+      "title": "Builder Weekly: Q&A (Week 2)",
+      "id": "6e88d763aaf24cc9b683f6f6f7b3ff39",
+      "call_id": "91f3ccd36c2542b2b1540612497356d2",
+      "start": "2026-05-13T17:00:00-04:00"
+    },
+    {
+      "title": "Builder Weekly: Workshop (Week 3)",
+      "id": "f4ee6d9d730041daaef972c53f925e55",
+      "call_id": "07a875406920498aada53e84205207bf",
+      "start": "2026-05-20T17:00:00-04:00"
+    },
+    {
+      "title": "Free Community Orientation",
+      "id": "c64ddf65f7cb454292331962e9f8dc6a",
+      "call_id": "2db8b4e719da47859e2dabbd1161817d",
+      "start": "2026-05-22T12:30:00-04:00"
+    },
+    {
+      "title": "Monthly Q&A + AI Updates ($9 + $27)",
+      "id": "2a5bc38fc83645a7b62c2c6dc78b3314",
+      "call_id": "16b1a4e678624fa59e1fe304a055ad71",
+      "start": "2026-05-24T10:30:00-04:00"
+    },
+    {
+      "title": "Builder Weekly: Q&A (Week 4)",
+      "id": "1c1a944096c543c4bc2e094069264c27",
+      "call_id": "0dad9133c2774de7ba9018e62fbe1046",
+      "start": "2026-05-27T17:00:00-04:00"
+    }
+  ],
+  "failed": []
+}

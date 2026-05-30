@@ -1,0 +1,16 @@
+# Journal — 2026-02-12 (Thursday)
+
+## Done
+- Learned more about Claude Code
+- Created a 6 GPT web app for Miles and Patrice
+- Built a PDF automation creator
+
+## Next
+- Record a video on Claude Code skills
+- Get pricing for Miles' projects
+- Understand Antigravity more
+- Ensure GPTs are scalable
+- Study for interview next week
+
+## Blockers
+- None

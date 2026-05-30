@@ -1,0 +1,308 @@
+[00:00] So you want to use Cloud Code, you want to get the most of it, but you don't know exactly how.
+[00:04] This is a crash course, how to master Cloud Code, and we explain it in the most simple way.
+[00:10] There are thousands, literally thousands of other Cloud Code tutorials on the internet,
+[00:15] but there are none as simple as this. I brought on Professor Ross Mike. He comes on and he shares
+[00:21] it in the simplest way so that anyone can create jaw-dropping startups and software using Cloud
+[00:27] Code. We're going to give you the exact steps for how you can set it up, thinking about the
+[00:32] beginner, how to think about the terminal, how to think about prompting, but if you stick around to
+[00:37] the end of this episode, there's a tips and tricks section which I think is super valuable and I
+[00:44] can't wait to see what you build. We got Ross Mike on the pod by the end of this episode
+[00:57] what are people going to learn? Hopefully you're going to not feel overwhelmed with Cloud Code. I
+[01:03] know the terminal is scary and it's a big boogeyman, but I'm going to give you the blueprint how to use
+[01:08] it. I'm also going to share consider this the ultimate crash course on how to use Cloud Code
+[01:13] or any agent effectively. Okay let's let's get into it. So I mean the best way to start these
+[01:19] episodes is with sharing our screen. So when we think of building applications using AI,
+[01:28] using some sort of agent like Cloud Code or OpenCode or Codex, whatever it is, there's a
+[01:32] couple of things that you always have to keep in mind. You know the principles never really change.
+[01:38] One thing that it's important for us to understand is however good your inputs are will dictate how
+[01:44] good your output is. We're getting to a point where the models are so freakishly good that if
+[01:51] you are producing quote-unquote slop it's because you've given it slop. There was a time where the
+[01:58] models weren't good enough, there was a time where you know we had serious qualms and issues with the
+[02:03] quality of code the models gave us, but now we're starting to get to a point where even myself like
+[02:09] I'm reviewing a lot more code than I write and I never thought I'd be able to say that
+[02:13] in the early months of 2026. So very important for us to understand our inputs, how good they are,
+[02:21] how precise they are, how articulate they are, are just as good as our outputs and will dictate just
+[02:26] how good our outputs will be. And the way I want people to think about this is Greg is like imagine
+[02:31] you were communicating this to a human to a human engineer right. If you give them sparse instructions
+[02:38] and if anyone is in like client work you realize that most clients they they they tell you one
+[02:43] thing but you have to sort of extract the deeper thoughts of what it is they want. It's the same
+[02:49] way when we work with these agents when we work with cloud code we need to be really really precise
+[02:55] with how we build our inputs. Now what do I mean by inputs? What I mean is our PRDs or our to-do
+[03:02] list or our plans right like there's you know people are giving you different names. It doesn't
+[03:08] really matter it's all the same thing right. And when we think of a PRD or when we think of a to-do
+[03:13] list or when we think of a plan I want us to think in such a way as this. Let's say I'm trying to
+[03:19] build this product right. Let's say I don't know Greg any product ideas that. Do you have product
+[03:26] ideas? Yeah that's actually the best person to ask right. Let's say I go on idealbrowser.com and.
+[03:36] I was just going to it. I was just going to it. Yeah pick the idea of the day from Idea Browser.
+[03:42] Says it's a diagnostic tool for appliance techs losing hundreds of repeat visits.
+[03:47] See I have no idea what that means but let's say I know what that means. Essentially when
+[03:52] thinking of this idea and looking to build this into a full-fledged product. Generally the way
+[03:57] you're going to think is okay if the if product X does Y, Z, A, B and C. How I would reach that is
+[04:06] I'm going to think of features right. So let's say there's four core features to this application
+[04:11] that Greg just mentioned. And if I have these four features built out we can safely assume that we
+[04:18] have said product right. The way we are to design our PRDs to do lists and plans is such that we
+[04:26] want the agent the model to build out all these features right. Because all these features put
+[04:32] together is our product. You see a lot of times people will describe a product not describe
+[04:38] features and will be frustrated with AI. Like AI is supposed to magically know what you're thinking
+[04:43] about. By the way Greg am I making sense so far? A hundred percent I'm with you. Yeah so we really
+[04:50] need to think in features but here's the cool part. When developing features oftentimes the issue
+[04:56] with models is like you'll develop a feature or like let's say the model develops a feature.
+[05:01] We don't know if it works. We don't know if it did it the right way. That's where with all the cool
+[05:05] Ralph stuff that's happening we can introduce tests right. So let's say the model the agent
+[05:12] builds feature one. Before moving on to feature two what I'm going to do is I'm going to get the
+[05:17] model to write a test. If that test passes then we'll work on the second feature. If that test
+[05:22] passes we work on the third feature right. So we're finally entering an era where you can really
+[05:28] build something serious with these models. So instead of telling you about just planning why
+[05:35] don't we do actual planning together. So I'm going to pop up my terminal. So I know everyone's afraid
+[05:41] of the terminal but in all honesty if you don't know how to use a terminal ask AI. Like it's the
+[05:46] like simplest thing and if not you can even download the Cloud Code app and go on code section
+[05:52] give it a specific folder you want to work on and use the app. Like there's literally no excuse to
+[05:56] not use Cloud Code. If you're afraid boohoo just jump into use AI you have all the tools. That
+[06:01] being said I'm just going to type in Cloud and we're going to have Cloud Code open and usually
+[06:07] how people plan is they'll click shift tab right and then you have plan mode on and you can say
+[06:14] let's say I want to build a TikTok UGC generating app for my marketing agency. I see like these
+[06:26] UGC apps everywhere. Please help me create a plan write this in the prd.md file. So this is how most
+[06:44] people have planning set up right. You'll tell Cloud Code or cursor or whatever agent to do the
+[06:50] plan for you and you ask it to be in some file and like it says it'd be happy to help you plan
+[06:56] this out and it'll ask you some questions etc etc but I found that there's a better way to get an
+[07:02] even more concise plan and this way it actually gets you to think a lot more about trade-offs
+[07:09] concerns UI UX decisions because most of the time you're sort of allowing the AI to have free reign
+[07:16] over certain decisions which I think will lead you with a finished product that you're not excited
+[07:20] about and that's invoking a special tool. I was going to show you guys the tweet but unfortunately
+[07:26] Twitter is down right now but Cloud Code has a specific tool called ask user question tool and
+[07:33] essentially what this tool does it starts to interview you about the specifics of your plan
+[07:39] right so I'm going to drop this prompt where it says read this plan file interview me in detail
+[07:44] using the ask user question tool about literally anything technical implementation UI UX concerns
+[07:49] and trade-offs I spelt implementation wrong do not judge me and what this is going to do is it's
+[07:56] going to go past the plan that we have and start to ask us about minute details so let's finish
+[08:01] off this plan first I'm just going to accept this is internal use tech stack we'll use react
+[08:08] I just want core features we'll submit answers and then Cloud Code you'll see might ask us a few
+[08:14] more questions but this will generally be the plan right so it's not just it's not just the
+[08:21] plan it's the right plan right like to what you were saying like go back scroll back up here the
+[08:27] features and yeah the features and test like the way I think about this I don't know if you agree
+[08:34] is like if you ask Cloud Code to build you a car it doesn't really know what a car is it doesn't
+[08:40] understand like you need a steering wheel and a you know a radio and you need wheels so the the
+[08:46] hard part is trying to figure out is basically explaining what those things are in a really
+[08:52] succinct and clear way and that's what this interview is basically doing it's explaining
+[08:57] each of them and then we're going to test each of those features exactly like think of think of it
+[09:02] this way like a simple example let's say you ask the agent to build you a specific feature right
+[09:09] how is it going to present that specific feature did you want it in a dashboard did you want it to
+[09:13] be a modal did it have to be a separate page like when you don't specify these minute details it
+[09:19] will make the assumption for you and with Ralph loops and all these type of things like you might
+[09:24] have a whole application built out and it's not exactly to the liking or the expectations you had
+[09:29] right so let me continue I'll just make some selections here just so we can move on and then
+[09:36] hit submit and then I'm going to pause this planning here and then I'm going to paste this
+[09:43] I'm going to say read this plan file and I'm going to tag the plan file it's called prd.md we have
+[09:50] that right here and I'm going to say interview me the details about this question or I don't
+[09:55] even need to tag it because it has it in its context but I just want to show you how annoyingly
+[10:02] annoying this is going to get meaning it's going to keep asking me questions
+[10:06] about said plan or said app idea so notice how it says round one core workflow and technical
+[10:14] foundation right and some of the questions it might even ask you are things that you might
+[10:18] not know about because you're not technical so what do I do when I don't know something
+[10:21] Greg I'm going to copy this and I'm going to go to the chatbot of my choice whether it's
+[10:25] cloud chat gbt whatever and I'm going to ask it questions so if you remember earlier it asked me
+[10:31] generic questions about the app now it's saying what's your ideal workflow for generating UGC
+[10:36] video from start to finish like notice how the questions are even more specific now so it says
+[10:42] linear step-by-step template-based batch processing iterative conversational so let's say I select
+[10:48] that and it says how should the app handle agent API costs and usage so now it's talking about costs
+[10:55] right again most of the times when you just have a basic plan this is not included in the plan
+[11:00] right let's say we want to have a hard hard budget what database and hosting approach do you want to
+[11:05] use most of you probably watching this have no idea so I can copy this over go to chat gbt and
+[11:10] ask what's the best decision this is my current situation and then you keep going you keep going
+[11:15] and you submit answers so when you use this ask user question tool the questions become more
+[11:21] granular so it asked me about core workflow and technical foundation now it's going to ask me
+[11:26] about UI UX and script generation if you notice the first plan that it came up with of the default
+[11:33] plan for cloud code it was pretty basic now it's asking me okay what AI do I want to use for the
+[11:39] script generation I'll use cloud what UI style aesthetic are you going for minimal clean dashboard
+[11:45] heavy creative tool feel chat first right so hopefully Greg I'm making sense with like how
+[11:51] much more questions I'm being asked when I'm invoking this ask user question tool
+[11:59] yeah it makes complete sense you're also you're also going to use less tokens in the end right
+[12:04] because you're going to right yeah because the thing is the better your plan the better your
+[12:09] input the better the initial set of documents that you give the model the the better the outcome and
+[12:17] if the better the outcome there's no back and forth right most people have a ralph loop running
+[12:22] it'll be a basic plan and it'll do what you told it to do but you weren't specific so now you're
+[12:26] going back and then maybe you're running another loop or you're going back and doing all these
+[12:30] changes but if you get it done right if you invest the time in the planning stage I 100 believe
+[12:38] you'll save a lot more money and this will help you clear up a lot of ideas to like for example
+[12:43] this idea that we just had this TikTok UGC farm how do we want it set up do we want it to be flat
+[12:50] with search do we want it to be client campaign assets there's a lot of like these minute details
+[12:55] that you're not thinking about and because you're not thinking about it you're allowing cloud code
+[13:00] to make those assumptions for you right which at the end after it's burned through a ton of tokens
+[13:05] now you're going back to change right we can save so much headache if we do the proper planning
+[13:12] from the beginning and hopefully people see value in this ask user question tool make sure you
+[13:20] specify it in your prompt and hopefully Greg that that made sense it does so I would say step number
+[13:27] one for this cloud crash course is I would get good at planning I would get really really good
+[13:33] at planning I would get good at generating these right like look it keeps on asking me questions
+[13:39] if you notice the very first plan that we generated with Claude it was two sets of questions and it
+[13:43] was ready to build but with this it's asking me do I want basic avatars custom avatars multi-scene
+[13:49] videos how do I want to handle storage do I want to download the videos instantly cloud storage
+[13:55] external storage like there's so much to software engineering and I think in our last video you
+[14:01] someone shared this on Twitter I don't know if it was you or someone else like software building
+[14:06] personal software is easy but building software others are going to use is very very difficult
+[14:11] and if you don't have the audacity or the decency to to set up a little time a little extra time
+[14:17] to plan then I guarantee you whatever you generate is going to be AI slop and you might blame the
+[14:22] model but really the problem is you so invest in your plans spend time using planning don't
+[14:28] use the generic plan mode that cursor or cloud code has I would use cloud code and then I would
+[14:35] specify the ask user question tool it's going to continue to annoy you with questions like it keeps
+[14:41] asking right because until it knows exactly what it is you want it won't start building so I would
+[14:47] say that's step number one to building with cloud code step number two and everyone's talking about
+[14:54] Ralph and it's exciting but I wouldn't use it I wouldn't use Ralph and the reason I wouldn't
+[15:01] use Ralph if I was just starting out Greg is because how are you going to like imagine this
+[15:09] like imagine not knowing how to drive but then buying a Tesla for like the self-driving stuff
+[15:16] like cool in theory but maybe it's a great idea to know how to drive how to steer how to hit the
+[15:21] corners how to maybe yell at someone when they cut you off before you get the full automated
+[15:28] version I say this to say because when you get good at developing plans and then working with
+[15:35] the AI to build each feature and testing each feature you you start to develop the sense on
+[15:41] product building on on like you know even I heard someone call vibe QA testing you get the sense by
+[15:49] going one-on-one yourself and this is why a lot of people who were fighting with cloud code all
+[15:54] these months are really really good at using it now because they spent the time building without
+[15:59] using these crazy automation loops so if you're using cloud code for the first time or you're
+[16:04] just getting into it good plan number one and number two get your reps in by not using Ralph so
+[16:11] develop the features one by one now that you have your plan you can literally tell cloud code hey
+[16:16] okay let's build the first feature um you know go ahead and do it and then once the feature is
+[16:21] done you can test it out ask it how can I test this how can I run this app I wouldn't jump into
+[16:27] using Ralph right away um build without Ralph but let's say you've built these reps now and you're
+[16:36] you're comfortable with cloud code now you hear about all these things skills mcp uh prompt.md
+[16:43] agent.md um what else is there something.md you you hear all these conventions plugins
+[16:51] um you have Ralph all these things so what do I need to perfectly uh build something
+[16:57] um using cloud code or any agent I'll be honest with you most of these things are all the same
+[17:04] prompt.md and agent.md are just markdown files um plugins are skills with you know a little bit
+[17:11] extra what you need to build successfully using these agents is first of all you need a good plan
+[17:19] right which are documents which is the prd.md we just generated and then you need uh to document
+[17:27] um the progress that's being made um for anyone who's familiar with for with Ralph you know what
+[17:34] I'm talking about for those who aren't what's cool about a Ralph loop is as follows a Ralph loop is
+[17:40] basically you have a list of things that need to be that need to get done uh the uh what you
+[17:46] might call it the prd.md or the plan you give it to the AI model the model works on the first task
+[17:53] it finishes it then documents it in another file and then it goes again and it stops until it's
+[18:00] completed the whole list now this isn't anything special but the reason why it's now super powerful
+[18:07] is because the models are getting so so good but here is the issue if you have a terrible plan if
+[18:13] you have a terrible prd this doesn't matter you're just donating money to Anthropic and I wish you
+[18:19] the best of luck if that's what you want to do but if you want to make sure that your tokens are not
+[18:24] wasted you're going to invest in a good prd.md file or a good plan file Greg am I making sense so far
+[18:33] 100 okay you're driving the point home yes so I'll talk a little bit about um Ralph
+[18:40] now so with Mr. Ralph Wiggum um how do we use this now there's a lot of different um iterations
+[18:48] like people are coming with their own style I'm going to share with you my Ralph setup in a second
+[18:52] um Greg um one thing I will say is Cloud Code has a plug-in a Ralph Wiggum plug-in I wouldn't use
+[18:58] that and the reason I wouldn't use that is even the person who invented the whole Ralph system
+[19:04] is against it it's not the best use of Ralph but I just want to share this concept of how Ralph
+[19:10] works it's essentially going to go through our plan and it's going to build out each feature
+[19:16] step by step and it's not going to stop until it's done this is cool when your plan rocks if
+[19:23] your plan sucks then it's terrible it doesn't matter now in terms of how to set up um Ralph
+[19:31] Wiggum I have my own setup and I don't want anyone to think I'm shilling my own setup for any reason
+[19:38] but the reason why I built my own setup is there's a couple things my Ralph loop does the first thing
+[19:44] is it makes sure that there's a plan a prd.md file and there's a progress.txt file but it also
+[19:52] every feature it builds it then writes a test and it then lints and basically what this does
+[19:58] is it makes sure that every feature that's built actually works right because there's no point on
+[20:04] working on feature 2 if feature 1 doesn't work if feature 1 doesn't work if the test fails
+[20:09] guess what the AI model is going to do it's going to go back to working on feature 1 and once the
+[20:14] test passes we work on feature 2 and then once feature 2 test passes we work on features 3
+[20:20] right all this is awesome but I'm going to go back to the same point if your plan sucks then
+[20:26] the Ralph loop won't matter now in order to set up this loop um you can find the uh get up here
+[20:34] how to set it up you honestly I'm not even going to explain it uh Greg people can literally copy
+[20:38] the link pass it to Claude and then be like I want to run this Ralph loop and it will tell you
+[20:44] exactly what to do that's how good the models have become but I'll show you an example of this
+[20:50] running so I have a simple prd.md file it's nothing crazy it's just to show you the point
+[20:57] but basically there are a couple tasks here I want to build a basic server that has some basic
+[21:02] endpoints and I just want to show you how my Ralph loop works so when I run this Ralph loop and again
+[21:08] if you don't know how to run this the you paste the github url in cloud code in your agent and
+[21:15] ask it and it will tell you how to do it I have a few different configurations I can use open code
+[21:20] if I want I can use codex if I want but I'm just going to use cloud code and I'm just going to run
+[21:25] this script and basically what it's going to start doing is it's going to start running through each
+[21:32] task as you can see and it's going to update the prd and it's just going to continue to work now
+[21:38] I can go and leave right I can go about my day hang with Greg and this loop will continue
+[21:48] to work and I'm going to see that at some point whether it's five minutes three minutes ten
+[21:52] minutes however long this is this is going to finish all the tasks I'm going to have a working
+[21:57] product built and all this is cool but it doesn't matter if I'm going to go back to the original
+[22:05] document if the plan isn't good now skills are great mcps are great all these different markdown
+[22:11] files are great you would do yourself a serious service if your if your plan is good so the key
+[22:21] to successfully building with cloud code is you have an absolutely great plan and if you use the
+[22:27] ask user question tool you will spend so much time on the plan where it starts to get annoying
+[22:32] it doesn't get fun but those of us who focus on this will end up having better outputs let's
+[22:40] continue if you notice here my ralph loop is continuing to go and it took care of the first
+[22:45] task I can see some files already generated if I go to the progress.txt file you can see Greg
+[22:52] it started to make some progress it's documenting that and this is just going to continue to work
+[22:57] this is just going to continue to run so people have different iterations I know the amp code people
+[23:02] have their own iteration and different people have their own iteration it doesn't really matter
+[23:06] right someone's ralph is could be better someone's can be where someone's gonna be all of that is
+[23:11] cool but don't get stuck in the weeds the main sauce is how you can articulately perfectly in a
+[23:20] beautiful presentation create the perfect input because if you create the perfect input we have
+[23:25] reached a point where the models will give you perfect output so that's my main tip crash course
+[23:32] for people use the ask user question tool build without using ralph and if you are going to use
+[23:39] ralph understand if your plan sucks you're just donating money to anthropic and I think anthropic
+[23:44] has enough money that they don't need your money being donated to them amen amen is there anything
+[23:52] else people need to know like little tips and tricks I notice you know you're not using the mac
+[23:58] terminal you're using ghosty yes yes so honestly it's all preference right so like the terminal
+[24:05] you use and all this stuff is all preference here's what I would say like let's have a tips
+[24:11] and tricks list tips and tricks so first I would say is my goodness spelling today first I would
+[24:21] say is use the ask what was the specific tool I just want to make sure I don't forget ask user
+[24:27] questions tool slept on I don't know why no one's not talking about it it literally I saw the tweet
+[24:32] from the anthropic team 100% I would use that when planning number two don't over obsess
+[24:42] obsess on mcp skills etc etc I'm not saying don't get into these I'm not saying don't read about
+[24:50] them I'm not saying don't use them but I can almost guarantee you these things are not the
+[24:56] reason why your product isn't working right most of the time it's your plan sucks right that's
+[25:02] number two number three I would use Ralph after I've built something without and the reason being
+[25:12] is again listen if you are a baller shot caller and you have all the money to blow and you don't
+[25:16] care and you want to donate money to anthropic go ahead and use Ralph but if we were to sit here
+[25:23] eye-to-eye and you haven't built anything deployed anything there isn't a URL that I myself or Greg
+[25:28] can click on that you've built you have no business using Ralph you literally have no business using
+[25:34] Ralph I would first get good at prompting and building something using a plan whether it's
+[25:40] whatever ag1 cloud code open code whatever once you have something deployed to Vercel or like
+[25:45] there's a URL and we can use it then you can use Ralph number four this is a little in the weeds
+[25:54] but context is more important than ever and a lot of times cloud code or even cursor will tell you
+[26:01] what percent of context has been used I generally wouldn't go over 50% meaning like the anthropic
+[26:09] model Opus 4.5 has a 200,000 token context limit the moment in my opinion you've got over 100,000
+[26:16] tokens meaning you're using the same session it starts to sort of deteriorate that's when you
+[26:21] have people Greg who say oh like I started off good but it started going bad that's because
+[26:26] you've filled it with so much context and the best way to think about this is like yourself
+[26:31] right like let's say we went to some English class and or some you know whatever class and
+[26:37] the professor just kept dumping information information information at some point we're
+[26:41] going to feel overwhelmed and we're going to actually start forgetting stuff and I'm not
+[26:46] saying that's how the models work but that's how the models act right so context is very much
+[26:50] important the moment you see 50% or even 40% I would start a new session and last but not least
+[26:58] have audacity and what I mean by that is software development is starting to become easy but software
+[27:05] engineering is very very hard and what do I mean by that to architect software to make sure things
+[27:12] are usable to create great UX UI to have great taste to make something that people actually use
+[27:17] requires time and in order to spend time it requires audacity I know the models are good
+[27:22] and you can clone a six billion dollar software but if all of us can do it now what makes software
+[27:28] different I think thinking about those things and thinking about the art of building products and
+[27:33] building something that's tasteful is very very important and I think anyone who uses these five
+[27:38] tips should kick cheeks in 2025 2026 sorry I agree on the audacity thing I think like it's
+[27:47] for me it's like about creating scroll stopping software you know what I mean like there's so
+[27:53] many people and there's a lot of tutorials about this like cloning billion dollar software you
+[27:58] know I cloned a four billion dollar software look at me but that's not the type of software that's
+[28:03] going to work in 2026 right I saw this let me just share it real quick I saw this guy who created
+[28:13] a running app based on how you're feeling so it's like how are you feeling stressed angry and it's
+[28:19] an AI assisted running app that interprets your current emotions to generate a personalized route
+[28:25] and I just thought it was interesting you know what I mean like I'd never seen an app like this
+[28:29] and I think that like as you know you call it audacity I think this is an audacious app right
+[28:35] it's scroll stopping you haven't seen it before so I think push you want to push cloud code to like
+[28:43] get you to this basically and and this is why I'm like so pro people not using Ralph if they haven't
+[28:50] built anything fully because like now we're people are getting to a point where they want the model
+[28:55] to think for them right where like if you look at the app you just share the animations and how
+[29:00] things are floating and like even the colors used for the different emotions like that required
+[29:05] thought right and that's what stops people now like if building the AI chat interface is easy
+[29:11] what's going to make your app different I think a little bit of audacity a little bit of thought
+[29:15] and care and a little bit of taste goes a long way nowadays and more than the models getting better
+[29:21] because it's going to get easier it's going to get better it's going to get faster but
+[29:26] if you don't change then it doesn't all matter yeah and don't be afraid to use pen and paper
+[29:30] like this this person literally just like started sketching out the features yeah like how should
+[29:36] this thing work yeah how should I feel like and I love it I love it right and and this is why the
+[29:42] app if I don't know the metrics but I'm willing to bet it's doing really really well because all
+[29:46] this stuff matters like we could clone something like this feature wise but I'm willing to bet
+[29:51] like the feel the animations the colors we would not be able to get it exactly like this
+[29:57] 100 percent all right man thanks for coming on you got me fired up I actually I didn't know
+[30:04] about that interview tool so thanks for sharing that with me yeah just a heads up it will ask a
+[30:10] lot of questions I shared it with a couple friends and a couple people got annoyed but
+[30:14] it's worth it right especially if you wanted to build something end to end or you're building a
+[30:19] very like like very minute detailed feature then it's really really worth it I wouldn't use the
+[30:26] general plan personally so just a heads up but it's really really worth it and I would love to
+[30:31] hear people's feedback in the comments sounds good we'll be in the comments you got to come
+[30:37] back on in a few months or whenever people want you it's always an absolute privilege to have you
+[30:42] here I'll include links where you can follow uh and you should follow uh monsieur ras mike
+[30:50] uh his youtube channel is x I'll include the link to Ralphie even though if you're a beginner don't
+[30:57] even click that link I wouldn't like I know there's maybe some degenerates who do but I
+[31:02] highly suggest you don't because if you haven't even built without it then no point have some
+[31:08] willpower folks come on you know don't click the link but I'm putting it in there because I want
+[31:13] to see who's tempted and uh yeah thanks again for coming on I'll see you uh I'm coming to Toronto
+[31:19] in April so let's hang out we'll see we'll see each other then and again as always it's a pleasure
+[31:23] thank you so much you know for bringing me on of course later have a good one

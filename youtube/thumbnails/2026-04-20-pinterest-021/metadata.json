@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Vertical Pinterest infographic 2:3 aspect ratio. Clean warm off-white cream colored background (like #FAF7F2) with very subtle light circuit-pattern texture barely visible, NOT purple or lavender. Bold dark navy almost black all-caps headline at top split across two lines. 5 horizontal cards stacked vertically, each card is a white rectangle with soft shadow and rounded corners. Each card has a square icon on the left with a warm Claude terracotta orange gradient (#D97757 to #C96342, the Claude AI brand color), then bold uppercase label, one-line descriptor, and 3 checkmark bullet points with small orange checkmarks. Small '@tylerreedai' handle at bottom center. Clean minimalist style, warm Anthropic Claude brand aesthetic. Headline 'CLAUDE DESIGN PLUS CLAUDE CODE IN 23 MINUTES'. Card 1 pencil icon 'PROMPT - Describe your page / style choices / brand context / ready to generate'. Card 2 palette icon 'BRAND SYSTEM - Pulls from repo / colors and fonts / consistent output / auto-applied'. Card 3 sparkle icon 'ITERATE - Tweak sliders / edit inline / comments / draw on canvas'. Card 4 handoff icon 'CLAUDE CODE HANDOFF - One command / zip bundle / context preserved / real React code'. Card 5 rocket icon 'LIVE DEPLOY - Push to GitHub / Vercel builds / your domain / live in minutes'.",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "2:3",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-04-20T15:37:15.742084",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/r/4fb410a1e22ff203e8fd2e4c5f862f61_1776713771_633ovt7o.png"
+      ]
+    }
+  ]
+}

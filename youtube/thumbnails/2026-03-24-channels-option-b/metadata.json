@@ -1,0 +1,23 @@
+{
+  "generations": [
+    {
+      "prompt": "Person centered looking directly at camera with confident slight smirk expression, one hand casually gesturing, Telegram logo and Claude AI sparkle logo floating around them like holographic icons, dark clean studio background, bold yellow accent lighting, modern tech aesthetic, cinematic lighting, space for bold yellow text box center, hyperrealistic photography style",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 3,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-03-24T22:07:24.079269",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/images/1774404273816-9mdv6b1y01d.png",
+        "https://tempfile.aiquickdraw.com/images/1774404343127-ibkcszzy0qr.png",
+        "https://tempfile.aiquickdraw.com/images/1774404438270-toark67s1nj.png"
+      ]
+    }
+  ]
+}
