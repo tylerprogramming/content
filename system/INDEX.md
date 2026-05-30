@@ -1,26 +1,31 @@
 # File Index — Where Everything Lives
 
-This is the evergreen front door for the YouTube/content system. Whenever you're not sure where to look, start here.
+The evergreen front door for the YouTube/content system. Whenever you're not sure where to look, start here.
+
+> **Updated:** 2026-05-23 (after the platform/ reorg)
 
 ---
 
-## The 5 Folders You Care About
+## The 4 Top-Level Folders You Care About
 
 | Folder | What lives there |
 |---|---|
-| `~/content/youtube/` | Video packages (scripts, titles, hooks, filming guides) — one folder per video. Plus `status.md` (current pipeline) and `video-ideas.md` (idea tracker) |
-| `~/content/research/` | Competitive research (yt-search reports + thumbnails), master plans, audits, this index |
-| `~/content/transcripts/` | Whisper transcripts of YouTube videos (yours + competitors') |
-| `~/content/` | Cross-platform output — LinkedIn / Instagram / Pinterest / flash videos. Organized by date and platform |
-| `~/.claude/skills/` | The 43 Claude Code skills that power all of the above |
+| `~/content/youtube/` | Long-form video packages, one folder per video (NNN-prefixed for new ones). Plus `status.md` (live pipeline state) and `video-ideas.md` (idea tracker) |
+| `~/content/platform/` | All standalone (non-video-tied) content, organized by channel — `linkedin/`, `skool/`, `pinterest/`, `instagram/`, `youtube-community/`, `flash-video/`, `shorts/`, `carousels/` |
+| `~/content/research/` `~/content/transcripts/` `~/content/journal/` `~/content/emails/` | Working folders — competitive research, whisper transcripts, daily logs, email campaigns |
+| `~/content/system/` | Navigation + planning docs — this INDEX.md, tracker.md, REORG-plan.md, filming-schedules/, linkedin-strategy.md |
+
+Plus `~/.claude/skills/` (separate repo at `tylerprogramming/claude-skills`) — the 43 skills that power the workflow.
 
 ---
 
 ## The 3 Files You Open First
 
 1. **`~/content/youtube/status.md`** — current pipeline state. What you're recording next, what's queued, what needs decisions. **Open this first every Monday morning.**
-2. **`~/content/research/2026-05-20-RESTART-plan.md`** — this week's restart plan. Saturday recording, perfectionism rules, 90-day priority.
-3. **`~/content/research/2026-05-20-LEVERAGE-be-better.md`** — the 8 levers that separate 800K from 8K. Pre-flight checklist before every recording.
+2. **`~/content/system/tracker.md`** — content inventory across all platforms. What exists, what's been built.
+3. **`~/content/research/2026-05-20-RESTART-plan.md`** — current restart plan. Saturday recording, perfectionism rules, 90-day priority.
+
+For pre-recording: **`~/content/research/2026-05-20-LEVERAGE-be-better.md`** — the 8 levers checklist.
 
 ---
 
@@ -30,28 +35,51 @@ This is the evergreen front door for the YouTube/content system. Whenever you're
 → `~/content/youtube/status.md` (top section: NEXT RECORD)
 
 ### "Where is my script?"
-→ `~/content/youtube/<slug>/script.md` — one folder per video
+→ `~/content/youtube/NNN-<slug>/script.md` — one folder per video
 
-### "Where are my titles / hooks / filming guide?"
-→ Same folder as the script. Each package has: `titles.md`, `hooks.md`, `script.md`, `filming-guide.md`, `description.md`, sometimes `seo.md`, sometimes `thumbnail-final.png`
+### "Where are my titles / hooks / filming guide / social posts for a video?"
+→ Same folder as the script. Each package has: `titles.md`, `hooks.md`, `script.md`, `filming-guide.md`, `description.md`, sometimes `seo.md`, sometimes `thumbnail.png`, and `social/` for per-video cross-platform posts.
+
+### "Where do my standalone LinkedIn posts go?"
+→ `~/content/platform/linkedin/<YYYY-MM-DD>-<slug>.md` (date-stamped)
+
+### "Where do my standalone Skool posts go?"
+→ `~/content/platform/skool/<YYYY-MM-DD>-<slug>.md`
+
+### "Where do my Pinterest pins go?"
+→ `~/content/platform/pinterest/<NNN>-<slug>/` (numbered pin folders)
+
+### "Where do my Instagram carousels go?"
+→ `~/content/platform/instagram/<slug-or-date>/` or `~/content/platform/carousels/`
+
+### "Where do my YouTube Community posts go?"
+→ `~/content/platform/youtube-community/<YYYY-MM-DD>-<day>.md`
+
+### "Where do my flash videos go?"
+→ `~/content/platform/flash-video/<date>/`
 
 ### "What research backs my topic?"
-→ `~/content/research/2026-05-17-claude-*.md` (5 reports from May 17) + thumbnails folders
+→ `~/content/research/<YYYY-MM-DD>-<keywords>.md` + thumbnails folders
 
 ### "What's the 90-day priority?"
 → `~/content/research/2026-05-20-RESTART-plan.md` (top section)
 
-### "Where are my published video transcripts?"
-→ `~/content/transcripts/transcript_<video_id>.txt`
-
 ### "Where are competitor transcripts?"
-→ Same place. `transcript_z9rdrNrkvDY.txt` = Jeff Su Cowork. `transcript_Xg55nTrbYYY.txt` = Productive Dude.
+→ `~/content/transcripts/transcript_<video_id>.txt`
+- Jeff Su Cowork: `transcript_z9rdrNrkvDY.txt`
+- Productive Dude Tutorial: `transcript_Xg55nTrbYYY.txt`
 
 ### "What shorts have I scripted?"
-→ `~/content/youtube/shorts/` — organized by week date (e.g. `2026-03-30/`) or special series (e.g. `news-series-may-2026/`)
+Three possible locations depending on the type:
+- **News series shorts** (recurring Tuesday): `~/content/youtube/shorts/news-series-may-2026/` and future months
+- **Per-video shorts** (cut from a long-form): `~/content/youtube/<NNN-slug>/shorts/`
+- **Standalone shorts:** `~/content/platform/shorts/`
 
-### "Where do my LinkedIn / Instagram / Pinterest posts go?"
-→ `~/content/<YYYY-MM-DD>/` — organized by week and platform
+### "What weekly filming schedule did I plan?"
+→ `~/content/system/filming-schedules/<YYYY-MM-DD>.md`
+
+### "Where are my journal entries?"
+→ `~/content/journal/<YYYY-MM-DD>.txt` + `weekly_summary.txt`
 
 ### "What ideas haven't I built into packages yet?"
 → `~/content/youtube/video-ideas.md`
@@ -59,17 +87,21 @@ This is the evergreen front door for the YouTube/content system. Whenever you're
 ### "What skills do I have available?"
 → `~/.claude/skills/` — listing folders gives you all 43
 
+### "Where is the full content inventory?"
+→ `~/content/system/tracker.md`
+
 ---
 
 ## The Master Plans (read once, reference forever)
 
 | File | What it covers |
 |---|---|
-| `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md` | The 10-video lineup (updated with R1/R2 restart pivot) |
-| `~/content/research/2026-05-17-AUDIT-existing-packages.md` | Per-package verdict on the 7 existing scripts — what's ready, what needs fixes |
-| `~/content/research/2026-05-17-BREAKDOWN-and-2-week-plan.md` | Original 2-week plan from research session |
+| `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md` | The 10-video lineup (with R1/R2 restart pivot) |
+| `~/content/research/2026-05-17-AUDIT-existing-packages.md` | Per-package verdict on the 7 existing scripts |
 | `~/content/research/2026-05-20-RESTART-plan.md` | The restart strategy + 90-day priority |
 | `~/content/research/2026-05-20-LEVERAGE-be-better.md` | The 8 levers — pre-flight checklist before every recording |
+| `~/content/system/REORG-plan.md` | The folder reorg plan executed 2026-05-23 |
+| `~/content/system/linkedin-strategy.md` | LinkedIn posting framework |
 
 ---
 
@@ -78,11 +110,11 @@ This is the evergreen front door for the YouTube/content system. Whenever you're
 Every long-form video follows this skill chain:
 
 ```
-/yt-search <topic>           # Research what's working
+/yt-search <topic>           # Research what's working → ~/content/research/
    ↓
-/transcribe <competitor URL> # Pull a reference transcript
+/transcribe <competitor URL> # Pull a reference transcript → ~/content/transcripts/
    ↓
-/yt <transcript>             # Generate full video package
+/yt <transcript>             # Generate full video package → ~/content/youtube/<slug>/
    ↓
 /seo <package slug>          # Optimize title/desc/tags
    ↓
@@ -90,56 +122,53 @@ Every long-form video follows this skill chain:
    ↓
 /chapters <final.mp4>        # Generate accurate timestamps
    ↓
-/shorts                      # 5 short-form scripts from research
+/shorts                      # 5 short-form scripts from research → ~/content/youtube/shorts/
    ↓
-/content <slug>              # X, LinkedIn, IG, YT Community, Skool posts
+/content <slug>              # Cross-platform posts → ~/content/youtube/<slug>/social/
    ↓
 [SCHEDULE via Blotato]
 ```
 
-Steady-state, this whole chain takes ~90 minutes on a Monday morning and produces a week of content. Restart week = just the recording part. Don't try to run the whole chain on Day 1 back.
+Steady-state, this whole chain takes ~90 minutes on a Monday morning and produces a week of content.
 
 ---
 
 ## Memory (auto-loaded each session)
 
-These memories shape how Claude works with you across all sessions. Located in `~/.claude/projects/-Users-tylerreed/memory/`:
+Located in `~/.claude/projects/-Users-tylerreed/memory/`. Auto-loads — you don't open these directly.
 
 - **User profile:** schedule, credentials, fitness — `user_*.md`
-- **Feedback:** standing rules you've established (no em dashes, no money in titles, confirm before scheduling) — `feedback_*.md`
+- **Feedback:** standing rules (no em dashes, no money in titles, confirm before scheduling) — `feedback_*.md`
 - **Projects:** Instagram carousel framework, flash video system, YouTube workflow, news shorts series, monetization plan — `project_*.md`
 - **References:** Skool API, Apify MCP, Pinterest board IDs, Vercel MCP — `reference_*.md`
 
-You don't need to open these directly. Claude pulls from them automatically. But the index is at `~/.claude/projects/-Users-tylerreed/memory/MEMORY.md`.
+Index at `~/.claude/projects/-Users-tylerreed/memory/MEMORY.md`.
 
 ---
 
-## Cleanup Recommendations (low priority — only do if you want)
+## Git / GitHub
 
-These folders in `~/content/youtube/` could be archived to declutter:
+| Repo | Purpose | Visibility |
+|---|---|---|
+| `tylerprogramming/content` | This whole `~/content/` folder | Private |
+| `tylerprogramming/claude-skills` | The 43 skills at `~/.claude/skills/` | Public |
 
-- `claude-code-btw/` — 8-min short, low priority
-- `claude-code-course/` — no script, abandoned
-- `top-10-things-you-should-know-about-claude-code-as/` — only 282 words, stub
-- `creator-hooks/` — asset folder, no script
-- `tyler-reference-images/` — asset folder
-- `claude-code-beginner-concepts/` — already live, can archive
+**Daily workflow:**
+- After working on Mac 1: `cd ~/content && git add . && git commit -m "update" && git push`
+- When sitting at Mac 2: `cd ~/content && git pull`
 
-**Quick archive:** `mkdir -p ~/content/youtube/archive && mv ~/content/youtube/{claude-code-btw,claude-code-course,top-10-things-you-should-know-about-claude-code-as,creator-hooks,tyler-reference-images,claude-code-beginner-concepts} ~/content/youtube/archive/`
-
-Not required. Just an option if the folder list feels noisy.
+**Excluded from git** (local only): `custom-gpts/`, `submagic/`, all media files (`*.mp4`, `*.png`, `*.jpg`, etc.)
 
 ---
 
-## When Things Change
+## Two Sources of Truth
 
-Update **`~/content/youtube/status.md`** any time:
-- A video moves from "queued" to "recording"
-- A video goes live
-- A new idea moves into the lineup
-- The 90-day priority changes
+| File | What it tracks | When to update |
+|---|---|---|
+| `youtube/status.md` | **Live pipeline state** — what's recording, what's queued, what's live | Whenever a video moves between stages |
+| `system/tracker.md` | **Content inventory** — what exists across all platforms | Whenever you add new content |
 
-That doc is the single source of truth. Don't try to keep this index in sync with state — this index points to status.md and lets status.md be the live thing.
+These two are intentionally separate. Status = operational. Tracker = inventory.
 
 ---
 
@@ -152,3 +181,18 @@ The order to read when you don't know what to do:
 3. `~/content/research/2026-05-20-LEVERAGE-be-better.md` — am I about to make a video that performs?
 
 If you've read all 3 and still stuck, the answer is usually: **pick one task, set a 30-minute timer, ship the imperfect version.**
+
+---
+
+## Cleanup Notes
+
+Folders in `~/content/youtube/` that could be archived eventually (low priority):
+
+- `claude-code-btw/` — 8-min stub
+- `claude-code-course/` — no script, abandoned
+- `top-10-things-you-should-know-about-claude-code-as/` — 282-word stub
+- `creator-hooks/` — asset folder, no script
+- `tyler-reference-images/` — asset folder
+- `antigravity-analysis/` — research artifact, not a video
+
+Not urgent. Lives at root of `youtube/` doesn't hurt anything for now.
