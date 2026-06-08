@@ -9,7 +9,7 @@
 
 | When | What | Where |
 |---|---|---|
-| **Fri May 22, 4-5 PM** | Prep — read script, generate thumbnail, smoke-test demos | `~/content/youtube/067-3-skills-and-build/` |
+| **Fri May 22, 4-5 PM** | Prep — read script, generate thumbnail, smoke-test demos | `~/content/youtube/01-3-skills-and-build/` (read copy: `read.md`) |
 | **Sat May 23, 1-3 PM** | First record block — cold open + Skill 1 demo | Same |
 | **Sat May 23, 7-11 PM** | Main record block — Skills 2 + 3, AHA, live build, CTA | Same |
 | **Sun May 24, 7 AM-noon** | Edit + automation pass + upload | Same |
@@ -25,16 +25,16 @@
 
 | Priority | Video | Package | Status |
 |---|---|---|---|
-| **R2** | 50-min Skills Full Course (all 7 + live build) | Combine `7-skills-run-my-business/` + `build-first-skill-15-min/` | Pending — will write new combined package when R1 ships |
-| R3 | Claude Routines + Claude Code: The Stack Nobody Teaches | `claude-routines-content-system/` | Script ready, **thumbnail done** |
-| R4 | Learn 80% of Claude Cowork for Business in 30 Min | `claude-cowork-course-30/` | Script ready |
-| R5 | I Built My Email Stack in Claude Code | `claude-code-email-system/` | Script ready (revised today) |
-| R6 | How I Create 100+ Pieces of Content a Week | `100-pieces-content-pipeline/` | Script ready, number reconcile needed (100+ vs 32) |
-| R7 | Claude Code for Content Creators (Not Devs) | `claude-code-for-creators/` | Script ready, cold-open restructure recommended |
-| R8 | Claude Code + Remotion: Automate Video Editing | `claude-code-remotion/` | Script ready (skill count fixed today) |
-| R9 | I Shipped 5 Landing Pages in One Afternoon with Claude Design | `claude-design-5-landing-pages/` | Script ready (Claude Design slate 2 of 4) |
-| R10 | I Rebuilt Stripe's Homepage in Claude Design in 20 Min | `claude-design-rebuild-stripe/` | Script ready (Claude Design slate 3 of 4) |
-| R11 | Claude Design + Kling 3 = Animated Landing Pages | `claude-design-kling-animated-hero/` | Script ready (Claude Design slate 4 of 4) |
+| **R2** | 50-min Skills Full Course (all 7 + live build) | `02-skills-full-course/` (sources nested inside) | ⚠️ NEEDS WRITING — combine the 2 source packages, then make read.md |
+| R3 | Claude Routines + Claude Code: The Stack Nobody Teaches | `03-claude-routines-content-system/` | Script ready, **thumbnail done** |
+| R4 | Learn 80% of Claude Cowork for Business in 30 Min | `04-claude-cowork-course-30/` | Script ready |
+| R5 | I Built My Email Stack in Claude Code | `05-claude-code-email-system/` | Script ready (revised today) |
+| R6 | How I Create 100+ Pieces of Content a Week | `06-100-pieces-content-pipeline/` | Script ready, number reconcile needed (100+ vs 32) |
+| R7 | Claude Code for Content Creators (Not Devs) | `07-claude-code-for-creators/` | Script ready, cold-open restructure recommended |
+| R8 | Claude Code + Remotion: Automate Video Editing | `08-claude-code-remotion/` | Script ready (skill count fixed today) |
+| R9 | I Shipped 5 Landing Pages in One Afternoon with Claude Design | `09-claude-design-5-landing-pages/` | Script ready (Claude Design slate 2 of 4) |
+| R10 | I Rebuilt Stripe's Homepage in Claude Design in 20 Min | `10-claude-design-rebuild-stripe/` | Script ready (Claude Design slate 3 of 4) |
+| R11 | Claude Design + Kling 3 = Animated Landing Pages | `11-claude-design-kling-animated-hero/` | Script ready (Claude Design slate 4 of 4) |
 
 **Total queued = 10 long-forms (R2-R11) ≈ 5-6 weeks of content at 2 long-forms per week.**
 
@@ -70,68 +70,58 @@ Folder: `~/content/youtube/shorts/news-series-may-2026/`
 
 | Video | Folder | Live Date |
 |---|---|---|
-| Claude Design (deploy to live URL) | `claude-design/` | Apr 2026 (video ID `aiMZrj4zqo8`) |
-| Claude Code Telegram Channels | `claude-code-telegram-channels/` | Mar 23 (`youtu.be/JEveW6KULyg`) |
-| Claude Code Remote Control | `claude-code-remote-control/` | Mar 26 (scheduled) |
-| 23 Claude Code Concepts | `23-claude-code-concepts/` | Mar 17 (`youtu.be/MVr2GrAjrgQ`) |
-| Claude Code YouTube Workflow | `claude-code-youtube-workflow/` | Mar 12 (`youtu.be/MLfyfNj1JrI`) |
-| Claude Code: Only Beginner Tutorial | `claude-beginners/` | Mar 9 (`youtu.be/NL6qUfJRujs`) |
-| Build ANYTHING With Claude Code | (root) | Mar 6 (`youtu.be/XAcqU3zuZmE`) |
-| Claude Code Skills | `claude-code-skills/` | Mar 1 (`youtu.be/lfwt5tFfaSo`) |
-| Claude Getting Started | `claude-getting-started/` | Earlier |
+| Claude Design (deploy to live URL) | `_completed/claude-design/` | Apr 2026 (video ID `aiMZrj4zqo8`) |
+| Claude Code Telegram Channels | `_completed/claude-code-telegram-channels/` | Mar 23 (`youtu.be/JEveW6KULyg`) |
+| Claude Code Remote Control | `_completed/claude-code-remote-control/` | Mar 26 (scheduled) |
+| 23 Claude Code Concepts | `_completed/23-claude-code-concepts/` | Mar 17 (`youtu.be/MVr2GrAjrgQ`) |
+| Claude Code YouTube Workflow | `_completed/claude-code-youtube-workflow/` | Mar 12 (`youtu.be/MLfyfNj1JrI`) |
+| Claude Code: Only Beginner Tutorial | `_completed/claude-beginners/` | Mar 9 (`youtu.be/NL6qUfJRujs`) |
+| Build ANYTHING With Claude Code | (root mp4) | Mar 6 (`youtu.be/XAcqU3zuZmE`) |
+| Claude Code Skills | `_completed/claude-code-skills/` | Mar 1 (`youtu.be/lfwt5tFfaSo`) |
+| Claude Getting Started | `_completed/claude-getting-started/` | Earlier |
 
 ---
 
 ## 📂 Folder Map (in `~/content/youtube/`)
 
-### Active / scripted (will record soon)
-- `3-skills-and-build/` ← **R1, Saturday May 23**
-- `7-skills-run-my-business/` (source for R2)
-- `build-first-skill-15-min/` (source for R2)
-- `claude-routines-content-system/`
-- `claude-cowork-course-30/`
-- `claude-code-email-system/`
-- `100-pieces-content-pipeline/`
-- `claude-code-for-creators/`
-- `claude-code-remotion/`
-- `claude-code-scheduling/`
+**Lifecycle structure (reorg 2026-06-08):** root holds only the **active queue**, numbered `01-11` = record order (matches R-numbers). Everything else lives in a bucket: `_completed/` (recorded + live), `_decide/` (scripted but undecided), `_ideas/` (stubs / abandoned / parked scripts). Reprioritize = renumber.
 
-### Needs decision before scheduling
-- `claude-code-course-30/`
-- `mastering-claude-code/`
+### Active queue — root, numbered = record order
+- `01-3-skills-and-build/` ← **recording next** (read copy: `read.md`)
+- `02-skills-full-course/` — ⚠️ NEEDS WRITING (R2 source packages nested in `sources/`)
+- `03-claude-routines-content-system/`
+- `04-claude-cowork-course-30/`
+- `05-claude-code-email-system/`
+- `06-100-pieces-content-pipeline/`
+- `07-claude-code-for-creators/`
+- `08-claude-code-remotion/`
+- `09-claude-design-5-landing-pages/`
+- `10-claude-design-rebuild-stripe/`
+- `11-claude-design-kling-animated-hero/`
 
-### Claude Design Slate (3 of 4 unrecorded)
-- `claude-design-5-landing-pages/`
-- `claude-design-kling-animated-hero/`
-- `claude-design-rebuild-stripe/`
+### `_completed/` — recorded + live (archive, keep for reference)
+- `claude-design/`, `claude-code-telegram-channels/`, `claude-code-remote-control/`,
+  `23-claude-code-concepts/`, `claude-code-youtube-workflow/`, `claude-beginners/`,
+  `claude-code-skills/`, `claude-getting-started/`, `claude-code-beginner-concepts/`,
+  `build-claude-code-skill/`
 
-### Live (archive — keep for reference)
-- `claude-design/`
-- `claude-code-telegram-channels/`
-- `claude-code-remote-control/`
-- `23-claude-code-concepts/`
-- `claude-code-youtube-workflow/`
-- `claude-beginners/`
-- `claude-code-skills/`
-- `claude-getting-started/`
-- `claude-code-beginner-concepts/`
-- `build-claude-code-skill/`
+### `_decide/` — scripted but undecided (resolve before scheduling)
+- `claude-code-course-30/` — title/script mismatch
+- `mastering-claude-code/` — overlaps published Ralph loop video
 
-### AntiGravity (different niche, evaluate later)
-- `antigravity-beginner/`
-- `antigravity-analysis/`
-
-### Cleanup candidates (consider archiving)
-- `claude-code-btw/` — 8-min short, low priority
+### `_ideas/` — stubs / abandoned / parked scripts
 - `claude-code-course/` — no script, abandoned
-- `top-10-things-you-should-know-about-claude-code-as/` — only 282 words, stub
+- `top-10-things-you-should-know-about-claude-code-as/` — 282 words, stub
 - `creator-hooks/` — asset folder, no script
-- `tyler-reference-images/` — asset folder
+- `antigravity-beginner/` — full 23-min script, different niche (parked, pull back anytime)
+- `claude-code-scheduling/` — full 12-min script, never queued (parked)
+- `claude-code-btw/` — 8-min stub w/ script, low priority
 
-### Shared
+### Shared (non-video, stay at root)
 - `shorts/` — short-form scripts by week
 - `shorts/news-series-may-2026/` — recurring Tuesday news series
 - `thumbnails/` — historical thumbnail outputs
+- (TikTok research moved out → `~/content/research/tiktok/`)
 - `video-ideas.md` — idea tracker
 - `pipeline.md` — older weekly pipeline tracker
 
@@ -163,12 +153,14 @@ This is the target steady-state. NOT the restart week. Restart week = 1 long-for
 
 ## Reference Docs
 
-- **Restart plan (this week):** `~/content/research/2026-05-20-RESTART-plan.md`
-- **8 levers (be-better):** `~/content/research/2026-05-20-LEVERAGE-be-better.md`
-- **Master plan (10-video lineup):** `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md`
-- **Existing-package audit:** `~/content/research/2026-05-17-AUDIT-existing-packages.md`
-- **Research from May 17:** `~/content/research/2026-05-17-claude-*.md`
-- **File index (this whole system):** `~/content/research/INDEX.md`
+> Strategy docs now live in `~/content/research/strategy/`. Routine search reports in `~/content/research/searches/`. Raw `/yt-search` json in `~/content/research/_raw/`.
+
+- **Restart plan (this week):** `~/content/research/strategy/2026-05-20-RESTART-plan.md`
+- **8 levers (be-better):** `~/content/research/strategy/2026-05-20-LEVERAGE-be-better.md`
+- **Master plan (10-video lineup):** `~/content/research/strategy/2026-05-17-MASTER-claude-banger-ideas.md`
+- **Existing-package audit:** `~/content/research/strategy/2026-05-17-AUDIT-existing-packages.md`
+- **Search reports (by date):** `~/content/research/searches/2026-05-17-claude-*.md`
+- **File index (this whole system):** `~/content/system/INDEX.md`
 
 ---
 
