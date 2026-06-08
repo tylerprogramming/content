@@ -23,9 +23,9 @@ Plus `~/.claude/skills/` (separate repo at `tylerprogramming/claude-skills`) —
 
 1. **`~/content/youtube/status.md`** — current pipeline state. What you're recording next, what's queued, what needs decisions. **Open this first every Monday morning.**
 2. **`~/content/system/tracker.md`** — content inventory across all platforms. What exists, what's been built.
-3. **`~/content/research/2026-05-20-RESTART-plan.md`** — current restart plan. Saturday recording, perfectionism rules, 90-day priority.
+3. **`~/content/research/strategy/2026-05-20-RESTART-plan.md`** — current restart plan. Saturday recording, perfectionism rules, 90-day priority.
 
-For pre-recording: **`~/content/research/2026-05-20-LEVERAGE-be-better.md`** — the 8 levers checklist.
+For pre-recording: **`~/content/research/strategy/2026-05-20-LEVERAGE-be-better.md`** — the 8 levers checklist.
 
 ---
 
@@ -62,7 +62,7 @@ For pre-recording: **`~/content/research/2026-05-20-LEVERAGE-be-better.md`** —
 → `~/content/research/<YYYY-MM-DD>-<keywords>.md` + thumbnails folders
 
 ### "What's the 90-day priority?"
-→ `~/content/research/2026-05-20-RESTART-plan.md` (top section)
+→ `~/content/research/strategy/2026-05-20-RESTART-plan.md` (top section)
 
 ### "Where are competitor transcripts?"
 → `~/content/transcripts/transcript_<video_id>.txt`
@@ -96,10 +96,10 @@ Three possible locations depending on the type:
 
 | File | What it covers |
 |---|---|
-| `~/content/research/2026-05-17-MASTER-claude-banger-ideas.md` | The 10-video lineup (with R1/R2 restart pivot) |
-| `~/content/research/2026-05-17-AUDIT-existing-packages.md` | Per-package verdict on the 7 existing scripts |
-| `~/content/research/2026-05-20-RESTART-plan.md` | The restart strategy + 90-day priority |
-| `~/content/research/2026-05-20-LEVERAGE-be-better.md` | The 8 levers — pre-flight checklist before every recording |
+| `~/content/research/strategy/2026-05-17-MASTER-claude-banger-ideas.md` | The 10-video lineup (with R1/R2 restart pivot) |
+| `~/content/research/strategy/2026-05-17-AUDIT-existing-packages.md` | Per-package verdict on the 7 existing scripts |
+| `~/content/research/strategy/2026-05-20-RESTART-plan.md` | The restart strategy + 90-day priority |
+| `~/content/research/strategy/2026-05-20-LEVERAGE-be-better.md` | The 8 levers — pre-flight checklist before every recording |
 | `~/content/system/REORG-plan.md` | The folder reorg plan executed 2026-05-23 |
 | `~/content/system/linkedin-strategy.md` | LinkedIn posting framework |
 
@@ -177,8 +177,8 @@ These two are intentionally separate. Status = operational. Tracker = inventory.
 The order to read when you don't know what to do:
 
 1. `~/content/youtube/status.md` — what's next?
-2. `~/content/research/2026-05-20-RESTART-plan.md` — what does this week look like?
-3. `~/content/research/2026-05-20-LEVERAGE-be-better.md` — am I about to make a video that performs?
+2. `~/content/research/strategy/2026-05-20-RESTART-plan.md` — what does this week look like?
+3. `~/content/research/strategy/2026-05-20-LEVERAGE-be-better.md` — am I about to make a video that performs?
 
 If you've read all 3 and still stuck, the answer is usually: **pick one task, set a 30-minute timer, ship the imperfect version.**
 

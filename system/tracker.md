@@ -11,52 +11,59 @@
 
 30 video packages currently exist. See `youtube/status.md` for current pipeline state.
 
-### Next record (NNN-prefixed)
+### Active queue (numbered 01-11 = record order, root of `youtube/`)
 | # | Title | Folder |
 |---|---|---|
-| 067 | 3 Skills + Live Build | `youtube/067-3-skills-and-build/` |
+| 01 | 3 Skills + Live Build | `youtube/01-3-skills-and-build/` (read.md ready) |
+| 02 | Skills Full Course | `youtube/02-skills-full-course/` (⚠️ needs writing, sources nested) |
+| 03 | Routines + Code Stack | `youtube/03-claude-routines-content-system/` |
+| 04 | Cowork 30-Min Course | `youtube/04-claude-cowork-course-30/` |
+| 05 | Email System | `youtube/05-claude-code-email-system/` |
+| 06 | 100+ Pieces of Content | `youtube/06-100-pieces-content-pipeline/` |
+| 07 | Claude Code for Creators | `youtube/07-claude-code-for-creators/` |
+| 08 | Claude Code + Remotion | `youtube/08-claude-code-remotion/` |
+| 09 | Design: 5 Landing Pages | `youtube/09-claude-design-5-landing-pages/` |
+| 10 | Design: Rebuild Stripe | `youtube/10-claude-design-rebuild-stripe/` |
+| 11 | Design + Kling Animated | `youtube/11-claude-design-kling-animated-hero/` |
 
-### Live (chronological, NNN backfill pending)
+### Live — `youtube/_completed/` (chronological)
 | Title | Folder | Notes |
 |---|---|---|
-| Claude Getting Started | `youtube/claude-getting-started/` | First in lineup |
-| Claude Code Skills | `youtube/claude-code-skills/` | Mar 1 — youtu.be/lfwt5tFfaSo |
+| Claude Getting Started | `youtube/_completed/claude-getting-started/` | First in lineup |
+| Claude Code Skills | `youtube/_completed/claude-code-skills/` | Mar 1 — youtu.be/lfwt5tFfaSo |
 | Build Anything Claude Code | (root mp4) | Mar 6 — youtu.be/XAcqU3zuZmE |
-| Claude Code: Only Beginner Tutorial | `youtube/claude-beginners/` | Mar 9 — youtu.be/NL6qUfJRujs |
-| Claude Code YouTube Workflow | `youtube/claude-code-youtube-workflow/` | Mar 12 — youtu.be/MLfyfNj1JrI |
-| 23 Claude Code Concepts | `youtube/23-claude-code-concepts/` | Mar 17 — youtu.be/MVr2GrAjrgQ |
-| Claude Code Telegram Channels | `youtube/claude-code-telegram-channels/` | Mar 23 — youtu.be/JEveW6KULyg |
-| Claude Code Remote Control | `youtube/claude-code-remote-control/` | Mar 26 |
-| Claude Design | `youtube/claude-design/` | Apr+ — video ID aiMZrj4zqo8 |
+| Claude Code: Only Beginner Tutorial | `youtube/_completed/claude-beginners/` | Mar 9 — youtu.be/NL6qUfJRujs |
+| Claude Code YouTube Workflow | `youtube/_completed/claude-code-youtube-workflow/` | Mar 12 — youtu.be/MLfyfNj1JrI |
+| 23 Claude Code Concepts | `youtube/_completed/23-claude-code-concepts/` | Mar 17 — youtu.be/MVr2GrAjrgQ |
+| Claude Code Telegram Channels | `youtube/_completed/claude-code-telegram-channels/` | Mar 23 — youtu.be/JEveW6KULyg |
+| Claude Code Remote Control | `youtube/_completed/claude-code-remote-control/` | Mar 26 |
+| Claude Design | `youtube/_completed/claude-design/` | Apr+ — video ID aiMZrj4zqo8 |
+| Claude Code Skills (build) | `youtube/_completed/build-claude-code-skill/` | live |
+| Beginner Concepts | `youtube/_completed/claude-code-beginner-concepts/` | live |
 
 ### Scripted, not yet recorded
+All scripted videos are now the numbered **Active queue** above (`01-11`). R2 source
+packages live nested in `youtube/02-skills-full-course/sources/`.
+
+Parked full scripts (in `youtube/_ideas/`, pull back into queue anytime):
 | Title | Folder | Length |
 |---|---|---|
-| Routines + Code Stack | `youtube/claude-routines-content-system/` | 33 min, thumbnail done |
-| Cowork 30-Min Course | `youtube/claude-cowork-course-30/` | 38 min |
-| Email System | `youtube/claude-code-email-system/` | 30 min |
-| 100+ Pieces of Content | `youtube/100-pieces-content-pipeline/` | 26 min, number conflict |
-| Claude Code for Creators | `youtube/claude-code-for-creators/` | 24 min |
-| Claude Code + Remotion | `youtube/claude-code-remotion/` | 28 min |
-| 7 Skills (source for R2) | `youtube/7-skills-run-my-business/` | 33 min — combined into 067 |
-| Build First Skill (source for R2) | `youtube/build-first-skill-15-min/` | 17 min — combined into 067 |
-| Claude Design Slate (3 of 4) | `youtube/claude-design-5-landing-pages/`, `youtube/claude-design-kling-animated-hero/`, `youtube/claude-design-rebuild-stripe/` | 12-15 min each |
-| Antigravity Beginner | `youtube/antigravity-beginner/` | 23 min (different niche) |
-| Claude Code Scheduling | `youtube/claude-code-scheduling/` | 12 min |
+| Antigravity Beginner | `youtube/_ideas/antigravity-beginner/` | 23 min (different niche) |
+| Claude Code Scheduling | `youtube/_ideas/claude-code-scheduling/` | 12 min |
 
-### Needs decision before filming
+### Needs decision before filming — `youtube/_decide/`
 | Title | Folder | Issue |
 |---|---|---|
-| Master 80% Claude Code 30 Min | `youtube/claude-code-course-30/` | Title/script mismatch |
-| Mastering Claude Code | `youtube/mastering-claude-code/` | Overlaps with already-published Ralph loop |
+| Master 80% Claude Code 30 Min | `youtube/_decide/claude-code-course-30/` | Title/script mismatch |
+| Mastering Claude Code | `youtube/_decide/mastering-claude-code/` | Overlaps with already-published Ralph loop |
 
-### Stubs / archive candidates
+### Stubs / archive candidates — `youtube/_ideas/`
 | Folder | Why |
 |---|---|
-| `youtube/claude-code-btw/` | 8-min stub, low priority |
-| `youtube/claude-code-course/` | No script, abandoned |
-| `youtube/antigravity-analysis/` | Research artifact, not a video |
-| `youtube/creator-hooks/` | Asset folder, not a video |
+| `youtube/claude-code-btw/` | 8-min stub, low priority (still at root, your call) |
+| `youtube/_ideas/claude-code-course/` | No script, abandoned |
+| `youtube/_ideas/top-10-...-as/` | 282 words, stub |
+| `youtube/_ideas/creator-hooks/` | Asset folder, not a video |
 
 ---
 
@@ -192,6 +199,8 @@ Daily journal entries + weekly summaries. txt format.
 YouTube competitor research, master plans, audits. Generated by `/yt-search`.
 
 Latest: 2026-05-17 (5 search reports + thumbnails + master plan + audit).
+
+- `research/tiktok/` — TikTok analytics + competitor analysis (moved out of `youtube/` 2026-06-08).
 
 ---
 
