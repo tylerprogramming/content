@@ -1,23 +1,28 @@
 # Pipeline Status
 
-**Last updated:** 2026-05-20
-**Current mode:** RESTART (3-week pause → first new video Saturday May 23)
+**Last updated:** 2026-06-14
+**Current mode:** RESTART - R1 (01) recorded + basically edited, releasing Sunday June 14
 
 ---
 
-## 🎬 NEXT RECORD
+## 🚀 RELEASING NOW - R1 (01-3-skills-and-build)
 
-| When | What | Where |
-|---|---|---|
-| **Fri May 22, 4-5 PM** | Prep — read script, generate thumbnail, smoke-test demos | `~/content/youtube/01-3-skills-and-build/` (read copy: `read.md`) |
-| **Sat May 23, 1-3 PM** | First record block — cold open + Skill 1 demo | Same |
-| **Sat May 23, 7-11 PM** | Main record block — Skills 2 + 3, AHA, live build, CTA | Same |
-| **Sun May 24, 7 AM-noon** | Edit + automation pass + upload | Same |
-| **Sun May 24, 1-3 PM** | Schedule social via Blotato, walk away | Same |
+| Stage | Status |
+|---|---|
+| Recorded | Done |
+| Edited | Basically done (final pass) |
+| Thumbnail | 3 AI variants generated, not chosen (real-photo refs preferred, see notes) |
+| Chapters | Run `/chapters` on final .mp4 |
+| Upload + schedule | `/youtube`, schedule for Sun Jun 14 |
+| Social (X/LI/IG/Community/Skool) | Written, em-dash-free, awaiting video link |
+| Emails (3-part) | Written, dates set Jun 14/17/19, awaiting video link |
+| Shorts (4) | Scripts ready (`repurposed/`), cut after edit |
 
 **Title:** *3 Claude Code Skills That Run My Week + How to Build Your Own (Live)*
 **Length:** ~32 min
-**CTA:** ONE — Skool waitlist link in pinned comment
+**Release:** Sunday June 14, 2026
+**CTA:** ONE - Skool waitlist link in pinned comment
+**Launch checklist:** see `01-3-skills-and-build/social/status.md`
 
 ---
 
@@ -25,7 +30,7 @@
 
 | Priority | Video | Package | Status |
 |---|---|---|---|
-| **R2** | 50-min Skills Full Course (all 7 + live build) | `02-skills-full-course/` (sources nested inside) | ⚠️ NEEDS WRITING — combine the 2 source packages, then make read.md |
+| **R2** | Claude Code Skills Masterclass (anatomy + ecosystem + live build + Cowork) | `02-skills-full-course/` (sources nested inside) | ✅ PACKAGE WRITTEN Jun 14 - script, titles, hooks, description, filming-guide, analysis. Ready to film (verify Cowork skill UX first). |
 | R3 | Claude Routines + Claude Code: The Stack Nobody Teaches | `03-claude-routines-content-system/` | Script ready, **thumbnail done** |
 | R4 | Learn 80% of Claude Cowork for Business in 30 Min | `04-claude-cowork-course-30/` | Script ready |
 | R5 | I Built My Email Stack in Claude Code | `05-claude-code-email-system/` | Script ready (revised today) |
@@ -87,8 +92,8 @@ Folder: `~/content/youtube/shorts/news-series-may-2026/`
 **Lifecycle structure (reorg 2026-06-08):** root holds only the **active queue**, numbered `01-11` = record order (matches R-numbers). Everything else lives in a bucket: `_completed/` (recorded + live), `_decide/` (scripted but undecided), `_ideas/` (stubs / abandoned / parked scripts). Reprioritize = renumber.
 
 ### Active queue — root, numbered = record order
-- `01-3-skills-and-build/` ← **recording next** (read copy: `read.md`)
-- `02-skills-full-course/` — ⚠️ NEEDS WRITING (R2 source packages nested in `sources/`)
+- `01-3-skills-and-build/` ← **releasing Sun Jun 14** (recorded + editing)
+- `02-skills-full-course/` ← **package written, ready to film** (R2 source packages nested in `sources/`)
 - `03-claude-routines-content-system/`
 - `04-claude-cowork-course-30/`
 - `05-claude-code-email-system/`
