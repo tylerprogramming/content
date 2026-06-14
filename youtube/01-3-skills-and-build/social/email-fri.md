@@ -1,8 +1,8 @@
-# Email 3 — Friday May 29 (Last Call + Soft Pitch)
+# Email 3 - Friday June 19 (Last Call + Soft Pitch)
 
 **Send via:** Manually copy and paste into Resend, or use `/email blast` with confirmation
-**Send time:** Friday May 29, around 8 AM ET
-**Audience:** Full list, OR segment to non-clickers of Monday/Wednesday emails for a "catch you up" version
+**Send time:** Friday June 19, around 8 AM ET
+**Audience:** Full list, OR segment to non-clickers of the Sunday/Wednesday emails for a "catch you up" version
 
 ---
 
@@ -11,7 +11,7 @@
 **Recommended:** "Last chance to catch this week's video"
 
 Backups:
-- "If you missed Monday's video"
+- "If you missed this week's video"
 - "What 9 people in the community built this week"
 - "The Claude course is coming. Are you on the list?"
 
@@ -26,7 +26,7 @@ Hey [first_name],
 
 Two reasons I'm writing today.
 
-First: if you haven't watched Monday's video yet, this is your nudge.
+First: if you haven't watched this week's video yet, this is your nudge.
 
 3 Claude Code skills demonstrated, then a brand new skill built live from scratch. About 32 minutes. The most useful video I've made in months, honestly.
 
@@ -55,9 +55,9 @@ If you're a "no" on the course but want to keep getting these emails, you don't 
 
 That's it. Watch the video if you haven't, join the waitlist if it sounds useful, have a good weekend either way.
 
-— Tyler
+- Tyler
 
-PS — 9 members of my Skool community built their first skill this week after watching the video. If you're not in the community, it's free to join: [SKOOL_COMMUNITY_LINK]
+PS - 9 members of my Skool community built their first skill this week after watching the video. If you're not in the community, it's free to join: [SKOOL_COMMUNITY_LINK]
 ```
 
 ---
@@ -66,8 +66,8 @@ PS — 9 members of my Skool community built their first skill this week after w
 
 - This is the SOFTEST possible pitch for the course. No price, no urgency, no scarcity. Just "I'm building this, here's how you stay in the loop."
 - Honesty about "I haven't set a date" actually INCREASES conversions because it removes the "is this a fake-scarcity scam?" guard
-- The PS uses social proof ("9 members built their first skill") — adjust the number to whatever's actually true Friday morning. If it's 2, say 2. Don't fudge.
-- "No spam" promise is a permission marker — signals you respect their inbox
+- The PS uses social proof ("9 members built their first skill") - adjust the number to whatever's actually true Friday morning. If it's 2, say 2. Don't fudge.
+- "No spam" promise is a permission marker - signals you respect their inbox
 - Optional opt-out language at the end keeps you compliant with your list and reduces unsubscribes
 
 ## Friday Morning Checklist Before Sending

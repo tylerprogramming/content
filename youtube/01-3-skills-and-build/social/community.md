@@ -24,5 +24,5 @@ What's the first skill you'd build if you knew it was just a markdown file? Drop
 
 - YouTube Community posts that ASK A QUESTION outperform pure announcements by ~3x in comments
 - The question at the end is designed to seed discussion that benefits the algorithm
-- Don't add hashtags here — YT Community doesn't index them
-- If you want, attach the thumbnail as an image too — boosts visibility on the Community tab
+- Don't add hashtags here - YT Community doesn't index them
+- If you want, attach the thumbnail as an image too - boosts visibility on the Community tab

@@ -1,4 +1,4 @@
-# Skool Post — Wednesday May 27 (Mid-Week Engagement)
+# Skool Post - Wednesday May 27 (Mid-Week Engagement)
 
 **Type:** Discussion post with embedded challenge
 **Tone:** Practical, action-oriented
@@ -36,13 +36,13 @@ The first 5 people to share what they built, I'll personally review the SKILL.md
 
 [Link to the Monday video if they missed it]
 
-— Tyler
+- Tyler
 
 ---
 
 ## Notes for Tyler
 
 - The "first 5 people, personal review" hook drives high engagement without a lot of work on your end
-- "After work tonight" implies low friction — anyone can spend 15 min
+- "After work tonight" implies low friction - anyone can spend 15 min
 - This pulls people from passive watcher → active builder. That's a Skool waitlist signal.
 - If 5+ people share, you have natural content for next week's post: "Here's what 5 of you built"

@@ -1,8 +1,8 @@
-# Email 2 — Wednesday May 27 (Mid-Week Story)
+# Email 2 - Wednesday June 17 (Mid-Week Story)
 
 **Send via:** Manually copy and paste into Resend, or use `/email blast` with confirmation
-**Send time:** Wednesday May 27, around 8 AM ET
-**Audience:** Full list. Optionally segment to "openers of Monday email" only — gets you a more engaged subset.
+**Send time:** Wednesday June 17, around 8 AM ET
+**Audience:** Full list. Optionally segment to "openers of the launch email" only - gets you a more engaged subset.
 
 ---
 
@@ -24,7 +24,7 @@ The recommended subject creates a curiosity gap that pays off in the email body.
 ```
 Hey [first_name],
 
-Quick story from making Monday's video.
+Quick story from making this week's video.
 
 I was 22 minutes in when I had a small panic.
 
@@ -63,7 +63,7 @@ Even a tiny skill counts. The first one I built was a 30-line transcribe wrapper
 
 If you build one tonight, reply and tell me what it does. I'll share the best ones in next week's email.
 
-— Tyler
+- Tyler
 
 [SKOOL_WAITLIST_LINK]
 ```
@@ -75,5 +75,5 @@ If you build one tonight, reply and tell me what it does. I'll share the best on
 - Story-first emails outperform announcement-first by ~2x in clicks
 - The "almost cut it" framing is honest and contrarian to the polished "everything was perfect" tone most creators use
 - Linking the specific timestamp (21:30) gives even past viewers a reason to re-engage
-- The exercise at the end mirrors Wednesday's Skool post — same ask, different audience, same Skool funnel
+- The exercise at the end mirrors Wednesday's Skool post - same ask, different audience, same Skool funnel
 - "Reply and tell me what it does" surfaces conversation + signals engagement to email providers

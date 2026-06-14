@@ -1,0 +1,55 @@
+{
+  "generations": [
+    {
+      "prompt": "Semi-realistic cartoon illustration of a man in his late 30s, dark short hair, confident smile, positioned on the right third, pointing toward three glowing floating slash-command icon panels stacked vertically, each a sleek terminal chip with a glowing purple and orange outline, dark charcoal background with subtle tech grid, neon purple and orange rim lighting, high contrast cinematic, large empty negative space on the left for text overlay, 16:9 YouTube thumbnail composition",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-06-13T11:28:18.760439",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_1781364496305_by4ys0.png"
+      ]
+    },
+    {
+      "prompt": "Semi-realistic cartoon illustration of a man in his late 30s, dark short hair, confident slight smile, positioned left-center looking toward a large glowing code editor panel on the right showing an open markdown SKILL.md file with highlighted YAML frontmatter fields in purple and orange, dark moody background, dramatic side lighting, clean modern style, empty space across the top for a bold text overlay, 16:9 YouTube thumbnail composition",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-06-13T11:29:06.005179",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/ggc/e974afcced224060c685d62036d6d8e2_1781364540342.png"
+      ]
+    },
+    {
+      "prompt": "Semi-realistic cartoon illustration of a man in his late 30s, dark short hair, excited surprised open-mouth expression, positioned on the right, neon purple and orange glowing background, a glowing terminal and file-explorer window on the left rapidly filling with document files and icons, dramatic high-contrast cinematic lighting, empty space on the lower left for text overlay, 16:9 YouTube thumbnail composition",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-06-13T11:31:11.744192",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_1781364667140_uwnkr6.png"
+      ]
+    }
+  ]
+}

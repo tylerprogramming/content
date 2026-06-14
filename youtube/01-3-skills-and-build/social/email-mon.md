@@ -1,8 +1,8 @@
-# Email 1 — Monday May 25 (Launch)
+# Email 1 - Sunday June 14 (Launch)
 
 **Send via:** Manually copy and paste into Resend, or use `/email blast` with confirmation
-**Send time:** Monday May 25, around 8 AM ET (best open rates for tech audience)
-**Audience:** Full list (all members) — confirm count before sending
+**Send time:** Sunday June 14 (release day), around 8 AM ET (best open rates for tech audience)
+**Audience:** Full list (all members) - confirm count before sending
 
 ---
 
@@ -44,7 +44,7 @@ And if you want the SKILL.mds from the video (plus 5 more starter templates), th
 
 [SKOOL_WAITLIST_LINK]
 
-— Tyler
+- Tyler
 ```
 
 ---
@@ -56,7 +56,7 @@ And if you want the SKILL.mds from the video (plus 5 more starter templates), th
 - `[VIDEO_LINK]` = your published YouTube URL
 - `[SKOOL_WAITLIST_LINK]` = the Skool community/waitlist URL
 - "Hit reply" tactic increases inbox placement and signals engagement to email providers
-- Direct value-led opener — no apology, no narrative about the gap, just the new thing
+- Direct value-led opener - no apology, no narrative about the gap, just the new thing
 
 ## Sending Workflow
 

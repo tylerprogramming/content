@@ -1,4 +1,4 @@
-# Skool Post — Monday May 25 (Video Launch)
+# Skool Post - Monday May 25 (Video Launch)
 
 **Type:** Regular post (not a poll)
 **Tone:** Direct, value-led, community-warm
@@ -22,7 +22,7 @@ A few things I tried to do differently:
 
 1. Lead with the proof, not the claim. Three skills running in parallel in the first 10 seconds.
 
-2. Show the actual prompts. No "you can ask Claude to do X" hand-waving — the exact commands I type are on screen.
+2. Show the actual prompts. No "you can ask Claude to do X" hand-waving - the exact commands I type are on screen.
 
 3. ONE call to action. If you've been around a while, you know I usually pile them on. Not this time.
 
@@ -32,7 +32,7 @@ If you want all 3 SKILL.mds from the video, the /meeting-notes file I built live
 
 [Link to Skool resources / waitlist]
 
-— Tyler
+- Tyler
 
 ---
 
