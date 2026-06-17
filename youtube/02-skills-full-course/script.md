@@ -21,23 +21,17 @@
 
 ---
 
-## [0:25 - 2:15] Why This Video Exists
+## [0:25 - 1:20] Why This Video Exists
 
 [CAMERA: Face to camera, direct, warm]
 
-> Let me be honest with you for a second. AI is moving so fast right now that even I struggle to keep up, and this is literally my job. I'm a software engineer, I work with these tools every single day, and there are still weeks where I feel behind. So if you're sitting there feeling like everyone else gets this stuff and you're the only one who doesn't, I promise you, you're not. It's overwhelming for everybody right now.
+> Let me be honest with you. AI is moving so fast that even I struggle to keep up, and this is literally my job. So if you feel like everyone else gets this stuff and you're the only one who doesn't, you're not. It's overwhelming for everybody. Here's my promise: I'm going to make skills genuinely simple, step by step, even if you've never written a line of code in your life.
 
-> So here's what I'm going to do for you. I'm going to make skills dead simple. Step by step, in plain English, no jargon, even if you've never written a line of code in your life. By the end you'll actually understand this, not just nod along and forget it tomorrow.
-
-> Because here's the problem with most skills videos. They show you one flashy demo, it looks amazing, and then you go to build your own and you have no idea where to start. I call it the cooking-show problem. Looks incredible, you can't reproduce it. This video is the opposite of that.
-
-> Here's the whole plan. What a skill actually is, the one thing everyone confuses it with, the part of the file that actually matters, then we build three of them together, live, from empty folders. Then I'll show you real plugins you can install in one command, and the thing almost nobody is showing yet: the same skill running in Claude Cowork, not just the terminal.
-
-> And quick word on why you can trust me to make this simple: I'm a full-time software engineer, and I've built dozens of these skills that run my entire content business on the side, between 4 and 5:30 PM on weekdays. I've made every mistake so you don't have to.
+> Most skills videos show you one flashy demo you can't actually reproduce. This is the opposite. We'll cover what a skill really is, the one thing everyone confuses it with, then I build three of them live, and I show you the same skill running in Claude Cowork. I'm a full-time software engineer, I've built dozens of these that run my whole content business on the side, so I've already made the mistakes for you.
 
 > Let's start with the question nobody answers clearly. What is a skill.
 
-[NOTE: The empathy open is the hook now, mirroring the proven "Clearly Explained" beginner approach (Eliot Prince did 966K on a 41K channel with this energy). Warm, 7/10, a little vulnerable on the "even I struggle" line, then pivot to confident. Don't overdo the vulnerability, one or two sentences then move. The "cooking-show problem" line is still a keeper, deliver with a small smile.]
+[NOTE: Tightened to ~45-55 sec (was ~2 min). Keeps the empathy hook (relatable open from the proven Eliot Prince "Clearly Explained" approach), the promise, the contrast, a one-line credential, and the plan - just compressed. Warm, a touch vulnerable on "even I struggle," then confident. Don't pad it back out.]
 
 ---
 
