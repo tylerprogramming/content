@@ -1,0 +1,27 @@
+Source: Eliot Prince - "Claude COWORK Clearly Explained (& how to use it for beginners)"
+URL: https://youtube.com/watch?v=ZeWfksNXlbU
+Views: 856K-966K | Channel subs: ~41K | Duration: 18:28 | Uploaded: 2026-02-16
+Pulled via Blotato source extraction 2026-06-17. This is the 966K MODEL VIDEO for package 05-claude-cowork-clearly-explained.
+
+--- TRANSCRIPT ---
+I'll admit something straight off the bat. Even I feel overwhelmed right now and it's literally my job to stay on top of all the newest AI tools and releases. I struggle to keep up. So, if you're sat at home watching this, then I can only imagine it's 10 times worse trying to keep up with all of this so overwhelming. Now, in my last video, I showed you how to migrate from chat GPT to Claude. But if you're just using Claude as a chat GPT replacement and you're missing out on some of the biggest features, the biggest release recently has to be Claude Co-work. And I want to walk you through it step by step, super simple, so you can understand it, too. How to install it, how to start using it for yourself. Even if you feel like you're a complete AI newbie, let me show you every single step.
+
+[Access] You will need a pro account (~$17/mo). Download the Claude desktop app from the bottom-left download button. Mac and Windows.
+
+[Orientation] Desktop looks like Claude - same chat window, sidebar, projects, artifacts, voice. Top has Cowork + Code. Stick in Cowork.
+
+[What is Cowork] Same architecture as Claude Code underneath. If normal Claude chat is the brain, Cowork is the hands that reach inside your computer and execute tasks autonomously. Capabilities: access files directly, sub-agent coordination, professional outputs (Excel/docs/formulas/presentations), long-running tasks, browse the web. Warning: heavier tasks burn more tokens.
+
+[Demo 1 - organize screenshots] Dedicate a folder first (security - it can't touch anything else). Pick model (Sonnet 4.5 / Opus). Prompt: "Go through my screenshots, rename them so it's obvious what they are, place them in a folder structure that's easier to find." Permission popups. <4 min. Opens folders - everything renamed and filed.
+
+[Demo 2 - invoice processor + spreadsheet] Give it a folder of ~6-7 messy invoices. Ask: rename + file into correct folders + generate a CSV spreadsheet overview. Cowork asks clarifying questions (naming format? spreadsheet contents? folder org by date?). <5 min. Opens spreadsheet tracker with vendors, invoice numbers, payment status, monthly breakdowns.
+
+[Demo 3 - browse the web / secret power] Install "Claude in Chrome" add-on from Chrome web store. Prompt: "Use Chrome to go to my YouTube Studio, write a report on the current performance of my YouTube channel." It opens Chrome, asks permission (allow this website / allow always), tab highlighted orange while in use, compiles a professional report.
+
+[Connectors + plugins + projects] Plus button (bottom-left of chat): add files/photos, connectors (Gmail, Google Drive, Notion, Excalidraw). Add plugins = custom skills (built-in: sales, productivity, marketing; upload your own; add GitHub marketplaces like "Awesome Claude Skills" with 100s of skills). Include project = pull normal Claude Projects (custom knowledge bases) into Cowork.
+
+[Where to begin] Too much choice is the problem. Easiest entry points: file/document management, research and analysis, document creation, data and analysis.
+
+[Limitations - honesty] No memory across sessions (set it up manually via files). Can't easily share chats. Desktop-only. Session persistence - the app must stay open or the task stops.
+
+[CTA] Step-by-step guide + setup instructions inside the "AI Recipe Vault" (lead magnet), link in description. Mentioned at start and end.
