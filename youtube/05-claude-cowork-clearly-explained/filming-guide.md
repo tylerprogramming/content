@@ -6,7 +6,8 @@ The demos must be REAL and must finish on camera. Prep them so they're genuinely
 1. **Demo 1 folder (Downloads / messy folder):** Make sure it's actually cluttered with mixed file types. Don't stage it too clean. ~20-40 files is ideal - enough to look messy, not so many it takes 15 min.
 2. **Demo 2 folder (research/ideas):** A folder with 6-10 loose notes, text files, screenshots about video ideas. Cowork will read them and build the spreadsheet. Make sure the content is real so the spreadsheet looks legit.
 3. **Demo 3 (YouTube Studio):** Be logged into YouTube Studio in Chrome first. Install the Claude in Chrome extension BEFORE filming so the only on-camera step is running the task + approving the permission. Decide now whether to blur revenue numbers.
-4. Do a full silent dry-run of all three demos the morning of, so you know they complete and roughly how long each takes.
+4. **Demo 4 (scheduling):** Reuses the Demo 3 task. Before filming, find the scheduling option in Cowork and do a test run so you know exactly where it lives and what the recurrence UI looks like. Confirm whether a scheduled task runs in the cloud or needs the app open - your "honest note" line depends on it.
+5. Do a full silent dry-run of all four demos the morning of, so you know they complete and roughly how long each takes.
 
 ## Capture checklist
 - [ ] Talking-head for all narration sections (1,2,3 partial,4,5,9,10,11)
@@ -16,6 +17,7 @@ The demos must be REAL and must finish on camera. Prep them so they're genuinely
 - [ ] Screen capture: Demo 2 full run - including the clarifying questions popup, opened spreadsheet
 - [ ] Screen capture: Demo 3 full run - extension, prompt, permission, orange tab, report
 - [ ] Screen capture: plus menu (connectors), add plugins (skills), include project
+- [ ] Screen capture: Demo 4 - scheduling the report task to run weekly (the recurrence UI)
 - [ ] On-screen text cards: "Brain = Chat. Hands = Cowork.", the 4 entry points, end card
 
 ## Retention rules (for you + Nick)

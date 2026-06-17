@@ -1,7 +1,7 @@
 # Claude Cowork Clearly Explained - Script
 
-**Target runtime:** ~18 min (matches the 966K model video)
-**Format:** Total-beginner walkthrough. Empathy intro, 3 escalating live demos, honest limitations, soft CTA.
+**Target runtime:** ~20 min (model video was 18:28; the 4th demo adds ~2 min and makes this more complete than the original)
+**Format:** Total-beginner walkthrough. Empathy intro, 4 escalating live demos (the 4th = scheduling, the capstone Eliot never covered), honest limitations, soft CTA.
 **Voice:** Calm, warm, "I've got you." You are the real engineer who makes this simple. Never rushed, never salesy.
 **Filming note:** Every demo is REAL. Run it live, let it finish on camera, open the result. Do not fake or speed-lie. If a task takes 4 minutes, say "I'll speed this up" and cut, but show the genuine before/after.
 
@@ -13,7 +13,7 @@
 >
 > Here is the thing though. Most people are still using Claude like it is just a smarter ChatGPT. A box you type into, it types back. And if that is you, you are missing the single biggest feature Anthropic has shipped, and it is called Claude Cowork.
 >
-> So in this video I am going to walk you through it step by step, dead simple, even if you have never touched anything technical in your life. How to install it, how to set it up safely, and three real things you can have it do for you today. I will also drop a free step-by-step guide in my community, link in the description, so you can follow along after.
+> So in this video I am going to walk you through it step by step, dead simple, even if you have never touched anything technical in your life. How to install it, how to set it up safely, and four real things you can have it do for you today, ending with the one that runs completely on its own. I will also drop a free step-by-step guide in my community, link in the description, so you can follow along after.
 >
 > Let's get into it.
 
@@ -59,7 +59,7 @@
 >
 > One honest heads-up before we start. The bigger the task you give it, the more of your usage it burns through. So if you are on a smaller plan, just be aware you can run out for a few hours on really heavy jobs. Start small, you will be fine.
 >
-> Okay, enough theory. Let me show you three real things, easy to harder, so you can actually see it work.
+> Okay, enough theory. Let me show you four real things, easy to harder, so you can actually see it work. The last one is the one that genuinely changes how you think about it.
 
 [ON SCREEN: simple text "Brain = Chat. Hands = Cowork." Hold it for a beat.]
 
@@ -155,6 +155,30 @@
 
 ---
 
+## 8.5 DEMO 4 - Schedule it to run on its own (THE CAPSTONE) (~2:30)
+
+> Okay, one more demo, and honestly this is my favorite, because it is the one that turns Cowork from a tool into something closer to an employee.
+>
+> Think about everything we have done so far. I had to ask for all of it. I sat here and typed the request every time. But Cowork can also run tasks on a schedule, completely on its own, without me touching it.
+>
+> Remember that YouTube report it just wrote for me? Watch this. Instead of asking for it once, I am going to set that exact task to run every Monday morning, automatically.
+
+[B-ROLL: open the task, find the schedule option, set it to recurring - Monday mornings]
+
+> So I take the same instruction, go to my YouTube Studio, write me a performance report, and save it to this folder. But instead of running it right now, I schedule it. Every Monday, first thing.
+>
+> And that is it. Now every Monday, before I have even had my coffee, that report is going to be sitting in my folder waiting for me. I did not have to remember it. I did not have to ask. It just shows up.
+>
+> This is the moment it clicks for most people. You are not using a chatbot anymore, you have hired something. So think about your own week. What do you do on repeat? A report every Monday, checking the same few websites, tidying the same folder, pulling the same numbers. Any of that, you can hand off one time and then never think about it again.
+>
+> One honest note, and it ties into something I will mention in a second. Because Cowork runs on your own computer, for a scheduled task to actually fire, your machine needs to be on and the app open at that time. So for my Monday report, I just leave Claude running. Set it once, and let it do its job.
+
+[ON SCREEN: text "Ask once → it runs forever"]
+
+[FILMING NOTE: run this live and narrate the exact scheduling UI you see. Verify on camera whether the scheduled task runs in the cloud or needs the app open, and adjust the "honest note" line to match what's actually true when you record. Do NOT claim it runs in the cloud unless you confirm it.]
+
+---
+
 ## 9. WHERE TO BEGIN (~1:00)
 
 > So that is a lot. And honestly, the biggest problem for most people is not that Cowork is hard, it is that there is too much choice and you freeze. So let me make it stupid simple. Pick one of these four to start, tonight.
@@ -181,7 +205,7 @@
 
 ## 11. CTA - close (~0:30)
 
-> That is Claude Cowork, clearly explained. Installed, understood, and three real things you can go do with it right now.
+> That is Claude Cowork, clearly explained. Installed, understood, and four real things you can go do with it right now, including one that quietly works for you every single week.
 >
 > I put a free step-by-step starter guide in my community, the link is in the description, come grab it and tell me what you build. And go watch my skills video next, that is the natural next step after this one. I will see you in there.
 
@@ -190,7 +214,7 @@
 ---
 
 ## Word count target
-~2,300-2,500 spoken words. At ~150 wpm that is ~16 min of voice, plus demo watch-time gets you to ~18. Right on the model.
+~2,700-2,900 spoken words. At ~150 wpm that is ~18 min of voice, plus demo watch-time gets you to ~20. The 4th demo (scheduling) is what pushes past the model and makes this the more complete video.
 
 ## Filming reminders
 - Run all three demos for real. Prep the messy folders BEFORE filming so they are genuinely messy.

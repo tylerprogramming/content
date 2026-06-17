@@ -2,7 +2,7 @@
 
 ---
 
-Claude Cowork, clearly explained for total beginners. If you've been using Claude like a smarter ChatGPT, you're missing its biggest feature. In this step-by-step walkthrough I show you exactly what Cowork is, how to install it safely, and three real things you can have it do for you today - even if you've never touched anything technical.
+Claude Cowork, clearly explained for total beginners. If you've been using Claude like a smarter ChatGPT, you're missing its biggest feature. In this step-by-step walkthrough I show you exactly what Cowork is, how to install it safely, and four real things you can have it do for you today - ending with one that runs completely on its own, every week - even if you've never touched anything technical.
 
 I'm a full-time software engineer, and I'll make this genuinely simple.
 
@@ -19,9 +19,10 @@ Grab the free step-by-step starter guide in my community: https://www.skool.com/
 6:40 - Demo 2: Build a spreadsheet from messy files
 9:40 - Demo 3: Let it browse the web for you
 13:10 - Connectors, plugins & projects
-15:10 - Where to begin (4 easy starts)
-16:10 - The honest limitations
-17:40 - Next steps
+14:40 - Demo 4: Put it on a schedule (set it and forget it)
+17:00 - Where to begin (4 easy starts)
+18:00 - The honest limitations
+19:30 - Next steps
 
 🔗 WATCH NEXT
 Claude Skills, Clearly Explained (build your own): [SKILLS MASTERCLASS LINK]

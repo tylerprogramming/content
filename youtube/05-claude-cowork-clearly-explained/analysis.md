@@ -31,6 +31,7 @@ Eliot did not win on production or novelty. He won on **trust + clarity for tota
 | 7 | Demo 2 (medium): build files + spreadsheet | ~3:00 | messy invoices folder, rename+file+CSV, it asks clarifying questions, <5 min, open tracker |
 | 8 | Demo 3 (secret power): browse the web | ~3:30 | Claude in Chrome add-on, "report on my YouTube channel", permission, orange tab, report |
 | 9 | Connectors + plugins/skills + projects | ~2:00 | plus button: Gmail/Drive/Notion, add plugins (skills), include projects |
+| 9.5 | **Demo 4 (capstone): SCHEDULE it** | ~2:30 | **OUR ADDITION - Eliot skipped this.** Schedule the YT report to run every Monday automatically. "Ask once, runs forever." The employee moment. |
 | 10 | Where to begin | ~1:00 | "too much choice", easiest 4 entry points |
 | 11 | Limitations | ~1:30 | no cross-session memory, can't share, desktop-only, session persistence |
 | 12 | CTA | ~0:30 | vault link again |
