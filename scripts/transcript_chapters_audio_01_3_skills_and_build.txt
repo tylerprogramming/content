@@ -1,0 +1,189 @@
+[00:00] Research, transcripts, and video packages. I have three cloud skills that give me three
+[00:04] different outputs. And in just minutes, I have what I need for the week. So I'm going to show
+[00:08] you all three of these working, and then we're going to build a brand new skill from scratch
+[00:12] live so that then you can go ahead and build your own skills for whatever you need them for.
+[00:17] I'm a full-time software engineer with a wife and kids. And so wanting to create content,
+[00:20] I have specific time zones that I create that within the week. That's my time budget. You can
+[00:25] use skills to leverage your time to help you out. So let's go ahead and start with the one
+[00:30] that kicks everything off. And so here I have cloud code open. I use Cmux. You can just use
+[00:34] a default terminal. It doesn't matter what you're using. So I'm going to type in slash or YouTube
+[00:39] dash dash search. And what you can see here is first off, if you just do this, it's going to
+[00:45] kind of explain the description of what this is, but I'm going to just type in cloud code.
+[00:50] And what's going to happen is actually going to go on YouTube. It's going to
+[00:54] search this keyword for cloud code in the last 30 days. It's going to try to retrieve the top 15,
+[01:00] but only search for 50 of them. And so from those top 15, which are just going to be sorted by
+[01:06] views, it's going to kind of give me some information about that, about those,
+[01:10] including the actual video URL. And so here's like kind of the analysis that we'll go over
+[01:14] really quick. So it also looks at, it also downloads the thumbnails from those videos
+[01:18] as well. So you have them. So it's going to look at the top performing thumbnails to kind of give
+[01:22] you visual patterns as well. So here it says it found 17 videos and last 30 days. So it's top 15.
+[01:27] So the view range goes from four, like almost half a million down to 9,000, which is still really good.
+[01:33] So it kind of gives you averages, right? About kind of like engagement. Um, uh, six of the eight
+[01:39] top videos are actually Anthropics own course explainer that I think they've just released
+[01:43] some videos lately. So the top five thumbnails actually breaks them down. So like, you know,
+[01:47] here's the one that almost at half a million, here's the text that it saw in the thumbnail.
+[01:51] And it kind of gives you a description of, of maybe why that did well. So it goes through that,
+[01:56] uh, the patterns that repeat at the top. This is about, um, this is about the thumbnails,
+[02:02] some content patterns that kind of repeated this, the content patterns. So Anthropics short
+[02:07] explainers about two, three minute long through two minutes. And there's some long form courses
+[02:11] from 18 minutes to two hours that dominate. So Austin chase was good. Ray, Sean are 12.
+[02:18] These are all 12 to 20 minutes long. Okay. Uh, and the winning creator angle is how the pros
+[02:24] actually do it. Okay. So that's, it seems to be a pattern with this and also has here,
+[02:30] we have title patterns that you can go through and we have also opportunities. So here it says
+[02:35] my top three videos from this data. Okay. And actually saves all this information locally so
+[02:41] that I could, I could look at this as well. Whenever I want to, this by itself could take
+[02:45] hours of your time, but this did this in like two actually says brood for two minutes and 10
+[02:51] seconds. So no time at all. Okay. That's great. And now we're going to move on to the second
+[02:55] skill, which is my transcribe skill. Now the thing is, this is great, but if I want to dig deeper
+[03:00] into say the top three videos of here, I want to, I don't have time, especially some of these,
+[03:05] like I said, an hour, two hours long, I don't have time to watch all of those. So I need to
+[03:09] transcribe them so that they can understand those videos better. So I have a slash transcribe
+[03:15] skill and I can even give it a specific YouTube URL or a local MP4, but I'm just going to say
+[03:22] the top three videos you found here. It does have the video URLs from the top three performers of
+[03:31] what, of what we just did on YouTube. So here it is. So how anthropic engineers actually,
+[03:37] how Claude works the explore plan, code, commit workflow. So what's going to do is actually,
+[03:42] then it's going to buy itself, transcribe those videos. And so what it's doing is downloading
+[03:46] the audio for the videos you see is now transcribing with whisper. Here's the second
+[03:51] one and so forth. So it's going to go ahead and do these for all three of these videos for me.
+[03:56] All right. So it completed, and you can see here, the transcripts it's, it did save locally. It
+[04:00] kind of shows right here where they're saved on my machine, gives the actual video, the length
+[04:04] of them. And so it gives you a quick read on each of these. And then what we can do is we could
+[04:09] talk to it. Give me a summary of why you think these did well. So it has the full transcript,
+[04:18] which you can look at. So if I go to my finder right here, I could open up these three transcripts
+[04:23] right here. Myself, you could do something else with that. If you want an up, but you just have
+[04:27] that locally. And what's it doing now is saying why these videos on this is based on what it
+[04:32] thinks, why these did well for them. Okay. And this is great because now you can use this for
+[04:39] your own planning of the videos that you want to use because their structure might've done really
+[04:45] well. And you can replicate that structure for your own videos. And so now it's going to bring
+[04:48] me to the third skill that's going to show you really quick is actually, it's already prompting
+[04:52] me right here, the slash YouTube skill. And this is actually going to create a full video package
+[04:57] for me. And I'll show, I'll just show you the end result of that. So let's just start running it.
+[05:00] I want to say, it's actually asking me, want me to build that one out with, uh, with my YouTube
+[05:06] package. So I'm going to say, yes, build that one out, please. And this is something similar to have
+[05:12] actually built for this video I'm recording is the script and everything I'm looking off screen
+[05:17] that I can kind of reference as I'm recording this video. And so as it's doing it, part of this
+[05:23] whole YouTube package is it's going to do loop engineering, which I'm not going to get into
+[05:27] right now, but it's going to do some web search on that, um, for me to, for the video that it's
+[05:33] the video package is going to create for me. Okay. So it kind of did a lot of this, of course,
+[05:37] this step so far, it's been about six minutes, right? So this takes a little bit longer of
+[05:41] courses because it's doing a lot. And so let me show you real quick. So right here,
+[05:44] this is a folders created that has analysis marked on file description, filming guide hooks.
+[05:50] These are the reference thumbnails. It's going to create thumbnail examples for here's a script,
+[05:54] um, title, the different titles that we can use, right? So if we scroll up a little bit,
+[05:59] it kind of did a lot here, right? So right here, this is where I wrote title. So these
+[06:03] are titles that we could use. So because it's about loops, it gives you recommended versions,
+[06:07] why, and all that. So this is creating everything for me right here is the script.
+[06:13] So here's a script that I'm using. I have one, like I said, right over here that I'm
+[06:17] on a separate screen so that I can kind of reference as I'm recording this video for you.
+[06:21] And this is what I would use. And now what it's doing is actually generating the three,
+[06:25] uh, thumbnail concepts using kai.ai. So if we actually open up, let's open up, um, Austin's
+[06:31] here. So that's this one. And this is Sean. Okay. This is Sean's. All right. So it's going to take
+[06:38] those going to give me three reference videos and let's see what they look like. And it's also,
+[06:42] it's going to use a reference image that I already have stored. So it's going to use that. And then
+[06:47] let's see what it comes up with. And so here's one. And so here's, here's one of them. So it
+[06:52] took my reference, replaced it with his kind of took the same facial expression and everything.
+[06:57] And it had like a different, it has kind of like, you know, different images on the sides,
+[07:01] but I mean, these are just reference images, right? We could prompt this, we could do more
+[07:06] with this, right? But this is just kind of the video package that it has done for me. So it's
+[07:10] everything, the thumbnails, the titles, the script and everything. So this is what I use
+[07:14] for my week. So now this is going to lead me into how this has saved me so much time. It's
+[07:20] going to save you so much time. And these skills are very helpful. Now at the core,
+[07:24] these are just texts, right? But you can use them over and over again. This isn't skills,
+[07:29] aren't really anything crazy. They're just basically prompts that you tell cloud you
+[07:33] want to use over and over and over again, whenever, whenever you need to, but we're
+[07:37] going to learn how to create one from scratch. And honestly, I'm kind of just coming up with
+[07:41] a different on the spot meeting notes. And those, those kinds of things are so generic.
+[07:46] So what I want to do is I want to come up with one called peeps, which I had got from another
+[07:51] creator quite some time ago. So I thought it'd be a good, something a little different to do.
+[07:55] So what I want to do is say, where can I save and where I can save information about somebody like
+[08:00] their birthday name, how I know them, et cetera. I want this skill. So it also generates a modern
+[08:05] static HTML page so I can view them nicely, but you could also talk through them through here.
+[08:11] All right. So basically I'm just gonna say, can you help me plan a skill out for this?
+[08:15] So anytime you're doing something. Right. Anytime you're doing something. And by the way, we are
+[08:19] going to see what this actually looks like. I'll show you where it actually is on your machine when
+[08:23] these are built. But whenever you, whenever you're doing this, like say you're doing something a lot
+[08:27] over and over again, at the end, you can say, okay, build us out as a skill. Okay. So like
+[08:32] where all is on this, right? So I just doing this in the background, I just want to show you.
+[08:36] So I'm going to open my finder. I'm going to go to my users, go to me. Let's just open this up.
+[08:42] I know I have a lot here, but you, first off it's hidden. It's a dot clod folder. That's hidden.
+[08:48] So I need to, I need to show hidden files and folders. So if you type, I think it's, uh,
+[08:53] is it command? Oh yeah, that is so command shift period on a Mac. And you can see all of a sudden
+[08:59] I have all these extra files. Well, if you kind of scroll down here, there's a dot clod file.
+[09:05] Open this up and there's a lot going on here behind the scenes, right? But if we scroll down
+[09:09] a little bit, you'll see that there is one called skills. Okay. These are the actual names of your
+[09:16] skills. So each skill that you have is just a folder with information. So it's created,
+[09:21] it's going to create one. I don't think it's here yet. So it's not here yet. I assume it's
+[09:25] going to call it peeps, but it's going to show up here. So just so you know, it's not here now,
+[09:29] but when we come back to that, it will have a bunch of information. Okay. So let's just go back
+[09:34] to, just go back to what it's doing. So it's going to say, okay, here's the full plan for
+[09:38] peeps. Uh, so it's going to be slash peeps. That'll be the skill, the personal people tracker.
+[09:43] So it was just giving me information, just how it's going to store the data. So I can say like
+[09:48] peeps at Jane Smith, met in college birthday, April 12th. And it'll like infer some things from
+[09:53] that. And it's just kind of showing me how it's going to kind of build all of this. Okay. So it
+[09:59] say, do you want me to build now? Right? Skill.md and a build Python file. Yes. Go ahead.
+[10:06] And this is great because this skill.md that the skill right here, that is the core
+[10:13] of every skill that you have. If anything, you need to have a skill that marked on file
+[10:20] so that it knows so that cloud knows that this is a skill that you want to, that you want to use.
+[10:25] And it's also on the side building a Python file so that they can execute
+[10:30] whatever it needs to do right now. You can have it explain what it is. I think here,
+[10:34] um, it's that runs. So it just regenerates. I think it just, it just regenerates the HTML.
+[10:39] That's all I think it does. Okay. So I'm just going to have an edit, go ahead and build everything
+[10:43] out. So you can see here it's writing to doc clause slash skills, slash peeps, the skill
+[10:49] markdown file. Okay. So now if we open up the page here again, Oh, would you look at that
+[10:54] peeps that's here now with the skill markdown file. So now I'm going to open this and let me
+[10:59] just open it with text edit. So what does this actually look like? Well, this is just text,
+[11:08] this information up here. This is the important information that it needs that this is, if
+[11:12] anything, it needs to have this, everything down here, all the rest of this, like we don't need
+[11:18] to really understand this right now for the purpose of this video. These are the instructions
+[11:22] so that whenever this gets loaded from cloud and it uses this, it understands the context of what
+[11:28] the skill is doing and what it needs to do. And that's all of the, that's what all of this is
+[11:34] right here. It talks about editing a person. Here's how to rebuild the page. So if we go back
+[11:39] to, we open up, we open up finder. It just built the build.py, which is just the Python file
+[11:46] to regenerate, uh, to regenerate, uh, the HTML page. Okay. So it's going to, it looks like it's
+[11:51] adding, uh, right now it's adding a person and look, I mean, it's doing this for me, right?
+[11:57] So here's the local HTML file that I have. So here's Jane Smith and Mike Jones. So if I click
+[12:04] here, if I click her, it kind of like does a dropdown, a little bit more information about
+[12:09] them. So April 12th, they're turning, turning 39. So I guess next, next year and in 12 days,
+[12:14] Mike Jones has a birthday and he's gonna be turning 36. Okay. So this is great. I mean,
+[12:20] this is, we're live building the skill. And so it says done the peep skill is live and the page
+[12:24] just opened up in your browser. It did. So this is, I'm using Cmux. So it's going, this is why
+[12:30] you saw it. Um, if you don't have this, that's fine. Uh, you, you would just say, can you open
+[12:34] up in my browser? It would actually open up in your actual browser, not here, um, in this,
+[12:38] in this software. Okay. So now you have this skill. What does this mean? Well,
+[12:44] why type at the bottom of your site type slash peeps. I now all of a sudden have this skill
+[12:49] and it says right here, personal birthday tracker. Okay. So here are some, here are
+[12:56] some information. Let's, uh, let's just copy this. I can, it says I can say this, right?
+[13:02] So I don't actually have to type slash peeps to use it. Okay. So I'm just going to give this
+[13:09] example. Let's see if it works. So peep slash date, it's writing all of her information.
+[13:14] It's safe, Sarah. And now it's rebuilt the page. So all I think I need to do here is refresh.
+[13:18] Boom. There's Sarah. Now her early interests are climbing. Uh, she's a gym and she's a friend. Her
+[13:23] birthday is August 3rd. Okay. So from here, we can, there's some things we can do. Like you can
+[13:28] see that it opens up. Everybody should just open up Janie. If I do it, uh, it does do some filtering
+[13:34] Jim type Mike. Yeah. Okay. So then it filters out. So generally this is working. Okay. So now
+[13:43] to find where the actual data is, it says it brought it to peep slash data. So it, it did
+[13:48] a different directory. So if I go here, by the way, if you command mentioned period to kind of
+[13:56] on re hide everything. So here is there should be a peep somewhere right here. Yes. Right here.
+[14:03] Data. And then, so here's a separate file for each person. This is where it generates on your
+[14:08] machine, right? It's storing all this information on your machine. But now I have a skill that I
+[14:14] can use whenever to keep track of people, just birthdays, whatever. And it kind of helps you
+[14:18] out with that. Okay. But this is a simple example of actually how skills can work with you. And one,
+[14:25] one great thing about this, you can constantly edit this skill, right? So I can, I don't like
+[14:30] some things, but wait, the output, I want different color, different. I just want different
+[14:33] look, tell it, and it will update the skill for you. So I'm going to say, can you explain the
+[14:38] peep skill? Uh, let's say, say expand the PCL to do more. Give me some examples of what it could
+[14:44] add. So now it's just going to go through some information that we could do, right? Page slash
+[14:49] the different features that we could add. Um, so for instance, like we could reconnect soon,
+[14:56] sort and group toggle, do a map view, pin people. I'm not sure how well that would do that would go,
+[15:01] but how you met, et cetera. So we could say, um, you know, we could get addresses if we want to
+[15:06] for holiday cards, sending gifts. Like some of these are really good examples and you would just
+[15:09] say, okay, go ahead and build out. It even gives you a recommendation for a version two of all
+[15:14] these. So interaction, log, reconnect, cadence, birthday, reminder, uh, a virtual card export,
+[15:20] something you can create, you know, and put on your phone, probably like an image or something
+[15:24] and just do it. And it will expand and update that skill for you. I mean, that's, what's amazing
+[15:28] is what you create this, you create these. And what's amazing about these as you do this,
+[15:33] you create skills, which are just prompts, essentially the, they can do much more,
+[15:37] but essentially the prompts so that whenever you want to ask cloud to do something, it remembers
+[15:40] exactly how do it the time you did a hundred times before. Now I have a link in the description to
+[15:45] get the three skills in the beginning, absolutely free. So just go ahead and click that link.
+[15:49] You can sign up and it's free and you will get them in your email. So with that said,
+[15:54] here are some more videos for you to watch in the meantime, and thank you for watching this one.

@@ -9,9 +9,9 @@
 
 New video: 3 of the Claude Code skills I use every single week, then I build a brand new one from scratch live on camera.
 
-Research, transcripts, full video packages. About 8 minutes of work on screen.
+Research, transcripts, full video packages. Just a few minutes of work on screen.
 
-[VIDEO_LINK]
+https://youtu.be/aPeHhNPjtEo
 
 ---
 
@@ -40,7 +40,7 @@ I point a skill at a transcript and 5 minutes later I have titles, hooks, a full
 **5 (the aha)**
 People think building a Claude Code skill needs an SDK or a framework.
 
-It's a markdown file. About 50 lines. Frontmatter on top, plain English below. That's the whole thing.
+It's a markdown file. Frontmatter on top, plain English below. Some are 50 lines, some generate their own Python. That's the whole thing.
 
 **6 (practical)**
 Three patterns make any skill robust:
@@ -53,7 +53,7 @@ Three patterns make any skill robust:
 
 ## Optional thread (deeper, post midweek)
 
-1/ I have 43 Claude Code skills. Most are experiments. About 7 I use every week. Here are the 3 that kick off every Monday morning.
+1/ I've built hundreds of Claude Code skills. Most are experiments. 3 I use every single week. Here are the 3 that kick off every Monday morning.
 
 2/ /yt-search. One keyword, 60 seconds. Pulls recent videos in my space, sorts by views, downloads thumbnails, writes a report. Research used to take 2 hours.
 
@@ -61,6 +61,6 @@ Three patterns make any skill robust:
 
 4/ /yt. Point it at a transcript, answer one question about my angle, and get a full video package in 5 minutes. Titles, hooks, script, filming guide.
 
-5/ The thing nobody tells you: all three are just markdown files. ~50 lines each. So in the video I build a 4th one, /meeting-notes, from an empty folder. Live.
+5/ The thing nobody tells you: each one is really just a markdown file. So in the video I build a 4th one, /peeps, from an empty folder. Live.
 
-6/ Full video here: [VIDEO_LINK]
+6/ Full video here: https://youtu.be/aPeHhNPjtEo

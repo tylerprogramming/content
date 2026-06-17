@@ -1,0 +1,40 @@
+[00:00] We know that Cloud Code is different from usual chat applications, but how does it work?
+[00:13] Cloud Code is best explained through the agentic loop.
+[00:18] You enter a prompt into Cloud Code.
+[00:20] Cloud Code will then gather contacts required to complete your prompt.
+[00:24] It does so by interacting with the model which will return text, or a tool call that Cloud
+[00:28] Code can execute.
+[00:30] Then it takes action.
+[00:32] For example, editing a file or running a command.
+[00:37] Finally it verifies those results and determines if they achieve what your prompt set out to
+[00:41] do in the first place.
+[00:43] If they do, then Cloud finishes and waits for the next prompt.
+[00:48] And if they don't, Cloud goes back and runs the loop again until the results are complete
+[00:53] and verifiable.
+[00:54] With this loop, you're able to add context, interrupt it, or steer the model to help guide
+[01:00] it towards your end goal.
+[01:03] Cloud has a context window, which determines how much of your conversation, file contents,
+[01:09] command outputs, and more, it can store and look back on.
+[01:12] Once you reach that limit, Cloud Code compacts your conversation, which automatically determines
+[01:18] what it can take out of the context window and what it can summarize in order to bring
+[01:23] the context window back down.
+[01:27] Tools are the backbone of how agents work.
+[01:29] Currently, most AI assistants are simply input text and output text.
+[01:34] Nothing in between.
+[01:36] Tools let Cloud Code and other agents determine when to execute code to get closer to a task.
+[01:41] This could be read file tool or search web tool, for example.
+[01:45] Cloud Code uses semantic searching to determine when to call a tool and get the output of
+[01:50] it.
+[01:52] Cloud Code also has permission modes.
+[01:54] Default behavior is that it has to ask explicit permission before editing a file or running
+[01:59] a shell command.
+[02:00] You can use shift and tab to toggle between different modes.
+[02:04] Auto accept edits files without asking but still asks for commands.
+[02:08] Plan mode uses read-only tools to help compile a plan of action before starting.
+[02:13] It's worth being cautious when skipping permissions.
+[02:16] Giving Cloud Code free reign to run commands means a mistake could be harder to catch before
+[02:22] it even happens.
+[02:29] Cloud Code works by combining different agentic concepts, an agentic loop, a managed context
+[02:34] window, tools, and configurable permissions into your terminal.
+[02:39] It can read your codebase, take action, and verify its own work.
+[02:42] And that makes it fundamentally different from a chat window.

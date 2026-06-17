@@ -11,11 +11,9 @@ Most people use Claude Code like a fancier chatbot. They type a request, get an 
 
 That's not where the leverage is.
 
-The leverage is in skills. A skill is just a file, about 50 lines of plain English, that turns "do this exact thing for me every time" into a single command.
+The leverage is in skills. A skill is just a file written in plain English. Sometimes it's 50 lines, sometimes a few hundred, and some of them even generate their own Python scripts. It turns "do this exact thing for me every time" into a single command.
 
-I have 43 of them. Most are experiments. About 7 I use every week.
-
-Three of those run every Monday morning and they make up a complete content pipeline:
+I've built hundreds of them. Many are experiments. But there are 3 I run every single Monday morning, and together they make up a complete content pipeline:
 
 The first pulls every video in my space from the last 30 days, sorts them by views, and writes me a report. Research that used to take two hours now takes sixty seconds.
 
@@ -23,7 +21,7 @@ The second turns any competitor video into a transcript in about 90 seconds, so 
 
 The third takes that research and drafts a full video package: titles, hooks, a script, a filming guide. A weekend of work compressed into five minutes. It doesn't write the video for me. It writes the 80 percent draft I edit and make mine.
 
-Here is the part that surprises people. All three are just markdown files. No SDK. No framework. Nothing to install.
+Here is the part that surprises people. At their core, these are just markdown files. No SDK. No framework. Nothing to install. You write what you want in plain English, and Claude Code handles the rest.
 
 So in my new video I build a brand new one from an empty folder, live, in about five minutes.
 
@@ -31,7 +29,7 @@ Once you understand that a skill is just a markdown file, you stop asking "how d
 
 What is the first repetitive task you would turn into a command?
 
-Full walkthrough is on my channel. Link in the comments.
+Full walkthrough: https://youtu.be/aPeHhNPjtEo
 
 Tyler
 

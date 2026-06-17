@@ -1,0 +1,20 @@
+{
+  "generations": [
+    {
+      "prompt": "Clean high-contrast YouTube thumbnail background for a tech video, deep dark charcoal to purple gradient backdrop with a subtle glowing tech grid pattern, a single large glowing orange asterisk sparkle brand icon in the lower left corner, large empty negative space across the right two-thirds for compositing a person, clear darker space in the upper left for a bold headline overlay, no text, no words, no letters, 16:9 cinematic high contrast",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-06-14T14:04:07.503759",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_1781460124234_dmyl18.png",
+        "https://tempfile.aiquickdraw.com/workers/nano/image_1781460244727_evn1xx.png"
+      ]
+    }
+  ]
+}

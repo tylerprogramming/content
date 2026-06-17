@@ -28,9 +28,7 @@ A few things I tried to do differently:
 
 Watch it and tell me which skill you'd build first. Drop a comment here or on the video.
 
-If you want all 3 SKILL.mds from the video, the /meeting-notes file I built live, plus 5 more starter templates, they're free in the resources section. Link below.
-
-[Link to Skool resources / waitlist]
+I also dropped all 3 SKILL.mds from the video in the classroom, free, under the Claude Code course. Grab them and install in about 30 seconds.
 
 - Tyler
 

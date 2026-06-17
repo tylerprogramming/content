@@ -51,7 +51,7 @@
 | 1 | 2 hrs of research in 60 sec (/yt-search) | 1:45-7:30 | Script ready, not cut |
 | 2 | Read competitors, don't watch (/transcribe) | 7:30-13:30 | Script ready, not cut |
 | 3 | Full video package in 5 min (/yt) | 13:30-21:30 | Script ready, not cut |
-| 4 | Built a skill live in 5 min (/meeting-notes) | 21:30-29:30 | Script ready, not cut |
+| 4 | Built a skill live in 5 min (/peeps) | 21:30-29:30 | Script ready, not cut |
 
 Plan: reuse demo footage from long-form, re-shoot 4 vertical hooks (~15 min), caption via /submagic.
 

@@ -83,7 +83,7 @@ Release Sunday June 14. Distribute shorts across Tue/Wed/Fri/Sat the following w
 
 ## Short 4 - "I built a Claude skill from scratch in 5 minutes"
 
-- **Source timestamp:** 21:30 - 29:30 (The AHA + live build of `/meeting-notes`)
+- **Source timestamp:** 21:30 - 29:30 (The AHA + live build of `/peeps`)
 - **Format:** Screen recording (SKILL.md typing + restart + the command firing), talking-head hook
 - **Length:** ~55 sec
 
@@ -91,20 +91,22 @@ Release Sunday June 14. Distribute shorts across Tue/Wed/Fri/Sat the following w
 > Every Claude Code skill I have is just a markdown file. Let me prove it. I'll build one right now.
 
 **Script:**
-> No SDK. No framework. Nothing to install. A skill is about 50 lines of plain English in a file called SKILL.md.
+> No SDK. No framework. Nothing to install. A skill is plain English in a file called SKILL.md.
 >
-> Here's an empty folder. I want a `/meeting-notes` command that builds a meeting template and saves it. Top of the file is the frontmatter: the name, a description that tells Claude when to fire it, and the tools it's allowed to use.
+> Here's an empty folder. I want a `/peeps` command that remembers people. Save someone's name, how I know them, their birthday, a few notes, then build me a searchable page of everyone. Top of the file is the frontmatter: the name, a description that tells Claude when to fire it, and the tools it's allowed to use.
 >
-> Below that, plain English. Ask me what the meeting's about. Get today's date. Build the agenda, decisions, action items. Save it to a predictable folder. And a rules section so it never overwrites a file.
+> Below that, plain English. Pull the details, save them to a predictable file, and generate a clean page I can search. Plus a rules section so it never overwrites what's already there.
 >
-> Save, restart, type `/meeting-notes`. It asks me the question, I pick "Team sync," and there's the file. Exactly what I described, in plain English.
+> Save, restart, type `/peeps`. It asks who I want to add, I give it the details, and there's the entry, saved and searchable. Exactly what I described, in plain English.
 >
 > Once you see that it's just a markdown file, the floodgates open.
 
 **Text overlays:**
 - "It's just a markdown file"
-- "~50 lines. No code."
+- "Plain English. No code."
 - "Built live in 5 min"
+
+> NOTE: Rewritten for /peeps (the skill actually built in the video). Verify the exact on-screen wording and the AskUserQuestion options against the real footage before cutting.
 
 ---
 
@@ -157,7 +159,7 @@ Hashtags on every Shorts/TikTok/Reels caption: exactly 5 - #claudecode #claudeai
 ## Short 4 captions
 
 **YouTube Shorts:**
-> Every Claude Code skill I have is just a markdown file, about 50 lines of plain English. No SDK, no framework. Watch me build a working /meeting-notes command from an empty folder in 5 minutes. Once you see it, the floodgates open.
+> Every Claude Code skill I have is just a markdown file written in plain English. No SDK, no framework. Watch me build a working /peeps command from an empty folder in 5 minutes. Once you see it, the floodgates open.
 > #claudecode #claudeai #ai #claudecodetips #aiautomation
 
 **TikTok:**

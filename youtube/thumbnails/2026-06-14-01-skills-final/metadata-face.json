@@ -1,0 +1,22 @@
+{
+  "generations": [
+    {
+      "prompt": "Vibrant high-contrast YouTube thumbnail, a confident man in his late 30s with short dark hair and a short beard, expressive intent slightly surprised face, positioned on the right third taking about 40 percent of the frame, sharp studio lighting, background is a rich purple to magenta gradient with a subtle tech grid, a glowing orange asterisk sparkle brand icon in the lower left corner, large empty space on the left for a bold headline overlay, no text, no words, no letters, clean modern high contrast YouTube thumbnail style, 16:9",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tylerai.png"
+      ],
+      "generated_at": "2026-06-14T14:05:25.734808",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_1781460275928_0531gr.png",
+        "https://tempfile.aiquickdraw.com/ggc/e13cb16d9adb14d8d9f064396d95b8c3_1781460320597.png"
+      ]
+    }
+  ]
+}

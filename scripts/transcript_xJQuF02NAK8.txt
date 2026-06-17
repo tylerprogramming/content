@@ -1,0 +1,54 @@
+[00:00] If you take one thing away from Cloud Code, let it be this workflow.
+[00:07] Explore.
+[00:08] Plan.
+[00:09] Code.
+[00:10] And commit.
+[00:13] Without this, most people jump straight to asking Cloud to write code which means more
+[00:17] course correcting later on.
+[00:21] The fastest way to handle step 1 and 2 is with plan mode.
+[00:25] With plan mode, Cloud can't edit files.
+[00:27] It just reads files to gather research on how to tackle its implementation.
+[00:31] To enter plan mode, hit shift and tab until you see the plan mode under the text input.
+[00:36] I need to add WebP conversion to our image upload pipeline.
+[00:39] Figure out where in the pipeline it should happen, whether we need new dependencies,
+[00:43] and how to approach it.
+[00:45] And Cloud will read relevant files, do some web searches, and give you a plan of action.
+[00:50] Make sure you review it and determine if it meets your criteria.
+[00:54] Otherwise, I can ask it to add on or revise some areas.
+[00:59] Perfect.
+[01:00] And this right here is the best place to course correct because it's before any code is
+[01:04] written.
+[01:06] You can also use explore without being in plan mode by just asking Cloud to explore
+[01:09] your code base.
+[01:12] Now once the plan looks good, you can select approve to accept the plan and let Cloud tackle
+[01:17] all of the list items it provided.
+[01:18] You can determine if you want Cloud to auto accept the file edits or ask every single
+[01:22] time.
+[01:23] It's always best to troubleshoot your code base before considering the plan finished.
+[01:28] But at times, you'll need to course correct.
+[01:30] This is the benefit of working with plan mode because after the plan is finished, we also
+[01:34] have the context of how it got to the results to help it guide its next decision.
+[01:39] In order for Cloud to be confident in its results, it has to be clear on what it deems
+[01:43] correct.
+[01:45] When writing your plan, make this explicit.
+[01:49] Using tools that will help Cloud complete its goals will remove a lot of back and forth.
+[01:54] For example, if you're building web UIs, make sure you have the Cloud and Chrome extension
+[01:58] so that Cloud Code can control a tab and test out the UI before deeming it finished.
+[02:04] In your project, include a test suite that Cloud can continuously validate on.
+[02:08] Cloud can even write tests for you.
+[02:11] Before passing this off to Cloud, make sure that the tests are a source of truth for you
+[02:14] and your team to avoid any false positives.
+[02:17] Quick tip, if you find Cloud keeps running into these same issues, ask Cloud to save
+[02:21] the solution to its Cloud MD file.
+[02:25] Now once you have tested for yourself and are happy with the results, it's time to
+[02:29] push your code.
+[02:30] A tip before you commit, run a sub-agent code reviewer to look at your code.
+[02:35] Then you get Cloud to generate a commit message for you in your style.
+[02:38] Rinse and repeat.
+[02:43] If you want to be effective with Cloud Code, follow the Explore, Plan, Code, and Commit
+[02:48] workflow.
+[02:49] Exploration will give the relevant context Cloud needs for your project.
+[02:53] Plan will create a plan of action that Cloud will use to determine if they are successful.
+[02:57] Code is the back and forth that you and Cloud do before settling on the final outcomes of
+[03:01] the plan.
+[03:02] Commit helps you review and push your code so you can start on your next feature.

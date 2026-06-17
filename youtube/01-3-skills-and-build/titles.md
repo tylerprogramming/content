@@ -80,7 +80,7 @@ If Pick 1 underperforms in the first 6 hours, swap to Backup A within 24 hours. 
 
 This is the **content pipeline narrative**: research → input → output. Viewer sees a complete creative loop. Each demo has a verifiable before/after (2 hrs → 60 sec, 30 min → 5 min, weekend → 5 min).
 
-After the showcase, the live build is `/meeting-notes` — small, universally relatable, finishable in ~7 minutes on camera.
+After the showcase, the live build is `/peeps`, small, universally relatable, finishable in ~7 minutes on camera.
 
 ---
 
@@ -107,3 +107,38 @@ If any of those aren't visible in the cut, swap the title.
 **Alt concept:** "3 → 4" giant number + arrow (you have 3 demoed, build 1 more) + face. Cleaner, less text.
 
 Match Tyler's AntiGravity thumbnail energy — 2-3 visual elements max + face + text block. Don't over-design.
+
+---
+
+## SEO-Optimized Titles (added 2026-06-14, pre-upload)
+
+**Competitive research (WebSearch, June 2026):**
+- "Claude Skills Tutorial (2026): Build, Run, and Share"
+- "Full Claude Skills Tutorial for Beginners in 2026! (Become a PRO)"
+- "The ONLY Claude Tutorial You'll Ever Need in 2026"
+- "FULL Claude Tutorial For Beginners in 2026! (FULL COURSE)"
+- "7 Claude Code skills I use every single day (Advanced Tutorial)"
+- "23 INSANE Claude Code Skills... to build your SaaS!"
+
+**Patterns that work:** number + "Claude Code Skills" front-loaded; "2026" for freshness; "Beginners / Full / Build" intent words; dual demo+build promise. Avoid "INSANE/CRAZY" (Tyler's brand is calm/verifiable).
+
+### Title options + scorecard
+
+| # | Title | Chars | Curiosity | Specificity | SEO | Click | Total |
+|---|-------|:----:|:--:|:--:|:--:|:--:|:----:|
+| 1 | 3 Claude Code Skills I Use Every Week (+ Build One Live) | 55 | 4 | 5 | 5 | 5 | **19** ⭐ |
+| 2 | 3 Claude Code Skills That Run My Week + How to Build Your Own (Live) | 67 | 4 | 5 | 4 | 5 | 18 |
+| 3 | Claude Code Skills: 3 I Use Daily + How to Build Your Own | 56 | 4 | 4 | 5 | 4 | 17 |
+| 4 | Build Your First Claude Code Skill (3 Real Examples, Live) | 57 | 4 | 4 | 5 | 4 | 17 |
+| 5 | 3 Claude Code Skills + Building One From Scratch (Live Demo) | 59 | 4 | 5 | 4 | 4 | 17 |
+
+**Recommended: Title 1** - "3 Claude Code Skills I Use Every Week (+ Build One Live)"
+- Front-loads "Claude Code Skills" in the first 20 chars (the original buried it behind "Run My Week")
+- Keeps the number (3) and the dual promise (use + build)
+- "Every Week" is verifiable and "Build One Live" is the proof hook
+- 55 chars, no truncation, room for a channel-name suffix if desired
+
+**Backup:** Title 2 (Tyler's original, scored 9.2 in the package) if he prefers the established voice. Thumbnail works for both.
+
+### Tags (paste into YouTube)
+claude code skills, claude code, claude code tutorial, claude skills, claude ai, claude code skills tutorial, how to build claude code skill, claude code for beginners, anthropic claude code, claude code workflow, build your first claude code skill, claude code skill from scratch, claude code skills 2026, claude code automation, what are claude code skills, claude code skill example, ai coding assistant, claude code agent skills
