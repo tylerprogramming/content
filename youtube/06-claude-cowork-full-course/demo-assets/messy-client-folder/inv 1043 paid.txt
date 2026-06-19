@@ -1,0 +1,4 @@
+INVOICE #1043
+Bill To: Acme Coaching LLC
+Amount: [redacted on camera]
+Status: Paid
