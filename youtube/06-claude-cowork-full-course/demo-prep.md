@@ -9,11 +9,12 @@ Legend: 🟢 = I built it for you in `demo-assets/`  |  🟡 = you prep it (real
 ## Module 1: Setup
 - 🟡 A clean empty `Cowork` folder in Documents to point at on camera.
 - 🟡 Have the desktop app NOT yet pointed at a folder so the "choose your folder" step is real.
-- First task on camera: create `welcome.md`. No prep needed.
+- Frame the folder on camera as the "memory folder" (holds info about you, reused on every task).
+- First task on camera: create `about-me.md` - Cowork interviews you and writes the first piece of memory. No prep needed.
 
 ## Module 2: File Management and Documents
 - 🟢 **Organize demo:** `demo-assets/messy-client-folder/` - already filled with a realistic messy client onboarding pile (contract, two invoices, intake form, proposal, notes, w9 placeholder, bad filenames). Copy it into your Cowork folder before filming. Note: the invoices say "[redacted on camera]" and the w9 is a placeholder so you never show real financials.
-- 🟢🔴 **Document demo:** `demo-assets/competitor-research/` - text stand-ins for 3 competitors. For the best on-screen look, swap these for REAL screenshots of competitor channels/pricing pages (see the `_README` note in that folder). Either works, real screenshots look better.
+- 🟡 **Document demo (receipts):** take 5-6 phone photos of real business receipts and drop them in `demo-assets/receipts/` (see the `_README` there). Include two overlapping software subscriptions so Cowork can flag the duplicate - that is the wow line. Cowork builds an expense spreadsheet + `expenses-summary.md`.
 
 ## Module 3: The Memory System
 - 🟡 Start with NO `CLAUDE.md` so the "have it interview you" step is live and real.
@@ -69,5 +70,5 @@ This is the most-shared section, so the examples have to be real and finished.
 1. Copy `demo-assets/messy-client-folder` and `demo-assets/analytics` into your live Cowork folder.
 2. Connect Gmail + make the Drive `Scripts` folder (10 min).
 3. Run the weekly-report task 2-3 times this week so you have skill + scheduled-task history to show.
-4. (Optional) swap the competitor `.txt` stand-ins for real screenshots.
+4. Take 5-6 receipt photos into `demo-assets/receipts/` for the Module 2B demo.
 Do those four and every demo in the course is real and stage-ready.

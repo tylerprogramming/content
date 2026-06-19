@@ -5,16 +5,16 @@ Quick-reference outline. Each module lists the example(s) you put on screen. Saf
 ---
 
 **Module 1: Setup - Get Cowork Running the Right Way** (3:00)
-- Install the desktop app, create a `Cowork` folder, point it there, tour the interface.
-- First task on camera: "Create a welcome.md explaining what you can help me with."
+- Install the desktop app, create your `Cowork` folder - framed as a "memory folder" that holds info about you and your business, reused on every task - point it there, tour the interface.
+- First task on camera: "Create an about-me.md, interview me, and write the first piece of memory about my business." (the first brick in the memory folder)
 
 **Module 2: File Management and Document Creation** (10:00)
 - Organize a messy client onboarding folder (contracts, invoices, intake, proposals) into clean subfolders. → `demo-assets/messy-client-folder/`
-- Turn competitor screenshots/notes into a competitive analysis spreadsheet + opportunities summary. → `demo-assets/competitor-research/`
+- Receipts: drop in 5-6 phone photos of business receipts → Cowork builds an expense spreadsheet (vendor, date, amount, category) + a summary that flags a duplicate subscription. → `demo-assets/receipts/`
 
 **Module 3: The Memory System - Train Your AI Employee** (19:00)
-- Have Cowork interview you and write your `CLAUDE.md` instructions file live.
-- Prove memory: ask for an email draft and show it already sounds like you, in your voice, signed off your way.
+- Build on the memory folder from Module 1: turn the about-me into a full `CLAUDE.md` instructions file (have Cowork interview you), living in that folder and read on every task.
+- Prove it with a before/after report (it formats your way without being told), then an email draft that already sounds like you.
 
 **Module 4: Research and Analysis** (28:00)
 - Weekly performance report with week-over-week trend + 3 recommendations. → `demo-assets/analytics/` CSVs

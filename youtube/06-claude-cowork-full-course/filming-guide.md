@@ -36,7 +36,7 @@
 
 ### Folders to prepare (populate before the matching module)
 - **client-files/** - 30+ messy files (contracts, invoices, intake forms, proposals, random PDFs) for Module 2A. Name them messily on purpose.
-- **competitors/** - 5 screenshots of competitor pricing/about pages for Module 2B.
+- **receipts/** - 5-6 phone photos of real business receipts for Module 2B (include two overlapping software subscriptions so Cowork can flag the duplicate).
 - **analytics/** - exported analytics or clean dashboard screenshots, at least 2 weeks of data, for Module 4A.
 - **transcripts/** - 5 competitor transcripts (use /transcribe beforehand) for Module 4B.
 - **scripts/** in Google Drive - 10 past scripts for the Module 5B two-source demo.
@@ -89,12 +89,12 @@ Each module: a short talking-head intro, the screen-recorded demo(s), then a rec
 
 ### MODULE 1: Setup (3:00 - 10:00)
 - **Capture:** claude.ai/download page, opening the app, clicking the Cowork tab, creating the Cowork folder, pointing it at the folder, labeling the three UI areas (chat, activity panel, settings).
-- **Demo:** the first real task - create welcome.md.
-- **Note:** emphasize "desktop app, NOT the website." Recap card.
+- **Demo:** the first real task - create about-me.md (Cowork interviews you and writes the first piece of memory).
+- **Note:** frame the folder as the "memory folder" that holds info about you and gets reused on every task. Emphasize "desktop app, NOT the website." Recap card.
 
 ### MODULE 2: File Management and Document Creation (10:00 - 19:00)
 - **Demo 2A:** organize the messy client-files folder into named subfolders, rename with date first, generate client-summary.md. Show the messy before, the clean after, then give one piece of feedback on camera.
-- **Demo 2B:** competitive analysis from 5 competitor screenshots into a spreadsheet plus opportunities.md.
+- **Demo 2B:** receipts - 5-6 receipt photos into an expense spreadsheet plus expenses-summary.md that flags a duplicate subscription.
 - **Safety:** blur any real client names in the file tree. Recap card.
 
 ### MODULE 3: The Memory System (19:00 - 28:00)
@@ -160,8 +160,8 @@ Within each module, film the screen recording first, then the talking-head intro
 | Module | Start | Target length | Primary capture |
 |--------|-------|---------------|-----------------|
 | Intro | 0:00 | ~3 min | Chat vs Cowork side-by-side |
-| M1 Setup | 3:00 | ~7 min | Install, folder, UI tour, welcome.md |
-| M2 Files | 10:00 | ~9 min | Messy folder organize + competitor analysis |
+| M1 Setup | 3:00 | ~7 min | Install, memory folder, UI tour, about-me.md |
+| M2 Files | 10:00 | ~9 min | Messy folder organize + receipts to expense report |
 | M3 Memory | 19:00 | ~9 min | CLAUDE.md build + email-voice demo |
 | M4 Research | 28:00 | ~8 min | Weekly report + gap analysis |
 | M5 Connectors | 36:00 | ~9 min | Connector setup + Gmail triage + Drive cross-source |

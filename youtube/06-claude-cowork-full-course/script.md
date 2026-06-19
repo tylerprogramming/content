@@ -20,6 +20,8 @@ If you use Claude every day but you are still treating it like a smarter version
 
 Quick promise so you know exactly what you are getting. By the end of this video you will have Cowork installed, you will have it organizing your files, writing your reports, reading your Gmail, browsing the web for you, and running tasks on a schedule while you sleep. That is not a teaser. We are going to do every one of those, on camera, with the exact steps.
 
+And the thread tying all of it together is this: we are going to build a memory folder, a single place that holds everything Cowork knows about you and your business, and every demo in this course reads from it and adds to it. By the end you do not just know the features, you have an AI that actually knows you.
+
 Here is the one idea that makes all of it click, and I want you to hold onto it the whole video. Claude Chat is a conversation. Cowork is an employee. With Chat you ask a question and you get words back, and then you still have to go do the work yourself. With Cowork you describe the outcome you want, and you come back to finished work sitting in a folder on your computer.
 
 [SHOW: Side by side - Claude Chat on the left typing a question, Cowork on the right with a finished spreadsheet appearing in a folder]
@@ -52,7 +54,7 @@ Step 1. Go to claude.ai/download and grab the desktop app for your operating sys
 
 Step 2. Open the app. Along the top you will see tabs. Chat, Cowork, and Code. Click Cowork. This is the workspace we are living in for the rest of the video.
 
-Step 3. Before you ask Cowork to do anything, create one dedicated folder on your computer. I call mine "Cowork" and I keep it in my Documents. This is the home base where Cowork will read and write files.
+Step 3. Before you ask Cowork to do anything, create one dedicated folder on your computer. I call mine "Cowork" and I keep it in my Documents. Here is how I want you to think about this folder, because it changes everything. This is not just a place for files. This is a memory folder. It is going to fill up with information about you and your business - who you are, how you work, your preferences - and Cowork reads from it on every single task. Everything we build in this course lives here and gets reused later. So we are not just making a folder. We are starting your AI's memory of you.
 
 Step 4. Point Cowork at that folder. When you start, it will ask which folder to work in, or you will see an option to add a working directory. Choose the Cowork folder you just made. This is the safety boundary. Cowork can only touch the folders you explicitly give it. It cannot wander into the rest of your computer.
 
@@ -62,25 +64,25 @@ Step 5. Take the quick tour. On the main screen you have the chat box in the mid
 
 ### The mental model before we go further
 
-I want you to think of Cowork like a brand new employee on their first day. Smart, capable, but they do not know you yet. They do not know your business, your preferences, or where things go. Everything we do from here is teaching that employee how you work. By the end they will need almost no instruction. That is the journey.
+I want you to think of Cowork like a brand new employee on their first day. Smart, capable, but they do not know you yet. They do not know your business, your preferences, or where things go. That memory folder we just made is where they keep their notes on you. Everything we do from here is teaching that employee how you work, and it all gets written into that folder. By the end they will need almost no instruction. That is the journey.
 
-### Your first real task, right now
+### Your first task: drop the first piece of memory in
 
-Let's prove it works with something tiny. We are going to have it create a file.
+Let's prove it works and start filling that memory folder at the same time. We are going to have Cowork interview us and write down the first thing it knows about us.
 
 [SHOW: Typing the prompt]
 
-Prompt: "Create a file called welcome.md in this folder. Inside it, write a one paragraph note to me explaining what you can help me with as my AI coworker."
+Prompt: "Create a file called about-me.md in this folder. Ask me three quick questions about my business and who my audience is, then write a short summary inside the file based on my answers. This is the start of your memory about me."
 
-[SHOW: Cowork creating the file in the activity panel, then opening welcome.md to read it]
+[SHOW: Cowork asking the three questions, Tyler answering briefly, then it writing about-me.md and opening it]
 
-That is it. It did not give you instructions on how to make a file. It made the file. That distinction, it does the work instead of telling you how, is the whole reason Cowork exists. Now let's do real work.
+Look at what just happened. It did not tell you how to make a file. It made the file, it interviewed you, and it wrote down its first real memory of who you are. That is the whole reason Cowork exists, and that about-me file is the first brick in the memory folder we are going to keep building. In Module 3 we turn this into the full instruction file that powers the rest of the course. Now let's do some real work.
 
 ### Module 1 recap
 
 [SHOW: Recap card on screen]
 
-You installed the desktop app, you opened the Cowork tab, you created a dedicated folder, you pointed Cowork at it, and you ran your first task. You are set up correctly, which already puts you ahead of most people. On to the work.
+You installed the desktop app, you opened the Cowork tab, you created your memory folder, you pointed Cowork at it, and you dropped in the first piece of memory about yourself. You are set up correctly, which already puts you ahead of most people. On to the work.
 
 ---
 
@@ -114,25 +116,25 @@ Four minutes, and a folder that would have taken you half an hour is clean, rena
 
 ### Demo 2B: Build a real document from raw inputs
 
-Now let's create something, not just organize.
+Now let's create something, not just organize. And I am going to use the one pile of paper every single business owner has and nobody wants to deal with. Receipts.
 
-[SHOW: A folder with 5 screenshots of competitor websites and pricing pages]
+[SHOW: A folder with 5 or 6 phone photos of receipts - coffee, a software subscription, gas, a tool, lunch]
 
-I took screenshots of five competitors. Their pricing, their about pages, their offers. I want a competitive analysis I can actually use.
+I took photos of a handful of business receipts on my phone and dropped them in this folder. Just pictures, not typed out, not organized. Watch what happens.
 
 Steps to follow:
 
-Step 1. Drop your raw inputs, screenshots, notes, exports, into a folder.
+Step 1. Drop your raw inputs, photos, screenshots, exports, into a folder. Here it is just phone pictures of receipts.
 
 Step 2. Ask for a specific finished format. Vague in, vague out. Specific in, useful out.
 
 [SHOW: Typing the prompt]
 
-Prompt: "I have screenshots of five competitors in this folder. Create a spreadsheet with columns for company name, price, main offer, who it is for, and one weakness. Then write a one page summary called opportunities.md that lists three gaps I could fill. Save both in this folder."
+Prompt: "These are photos of my business receipts. Read each one and create an expense spreadsheet with columns for vendor, date, amount, and category. Then write a short summary called expenses-summary.md with my total spend, the biggest category, and anything that looks like a duplicate or a subscription I forgot about. Save both in this folder."
 
-[SHOW: Opening the finished spreadsheet, then the opportunities summary]
+[SHOW: Cowork reading each receipt photo in the activity panel, then opening the finished spreadsheet, then the summary]
 
-Look at the summary. It did not just transcribe the screenshots. It noticed that none of the five offer a beginner option, and it flagged that as my opening. That is analysis, from screenshots, in about five minutes.
+Look at this. It read the actual photos, pulled the vendor and the amount off each one, sorted them into categories, totaled it all up, and in the summary it flagged that I am paying for two tools that do basically the same thing. That is not transcribing a picture. That is reading it, understanding it, and finding something I did not ask for. From phone photos, in about five minutes. If you have ever dreaded expense season, this one alone is worth the price of admission.
 
 ### The habit that makes Cowork good: feedback
 
@@ -152,17 +154,17 @@ You learned the core loop: put files in the folder, describe the outcome you wan
 
 ### Why this is the most important module in the course
 
-Everything so far, you had to explain yourself each time. This module fixes that forever. This is the difference between a tool you use and an employee that knows you. If you only take one thing from this whole video, take this.
+Back in Module 1 we started a memory folder and dropped in that about-me file. Now we make it real. Up to this point you have had to explain yourself on each task. This module fixes that forever. This is the difference between a tool you use and an employee that knows you. If you only take one thing from this whole video, take this.
 
 ### The two files that change everything
 
-[SHOW: The Cowork folder with two files highlighted - a CLAUDE.md and a memory file]
+[SHOW: The memory folder with two files highlighted - a CLAUDE.md and a memory file]
 
-There are two pieces to memory.
+Inside that memory folder, two files do the heavy lifting.
 
-The first is your instructions file, usually called CLAUDE.md. This is where you write the things that are true every single time. Who you are, what your business is, how you like things formatted. Think of it as the employee handbook you hand over on day one.
+The first is your instructions file, usually called CLAUDE.md. This is the grown-up version of the about-me file we started in Module 1. It is where you write the things that are true every single time. Who you are, what your business is, how you like things formatted. Think of it as the employee handbook you hand over on day one, and Cowork reads it on every task automatically.
 
-The second is the memory the assistant builds over time. As you correct it and work with it, it saves what it learns about you. Your writing voice, your preferences, your recurring context. You do not write this one by hand, it grows on its own from your feedback.
+The second is the memory the assistant builds over time. As you correct it and work with it, it saves what it learns about you into that same folder. Your writing voice, your preferences, your recurring context. You do not write this one by hand, it grows on its own from your feedback.
 
 ### Steps - set up your instructions file right now
 
@@ -176,9 +178,11 @@ Prompt: "Create a CLAUDE.md file in this folder. Interview me with five question
 
 Step 2. Read it and tighten it. Keep it short and specific. Good lines look like: "I run a YouTube channel about AI tools. My audience is business owners, not developers. I always want reports in markdown with the recommendation at the top. I never use dollar amounts in titles."
 
-Step 3. Test that it is working. Ask for a report and see if it follows your rules without being reminded.
+Step 3. Prove it with a before and after, because this is where people finally get it. Before you build the file, you would ask for a report and get something generic in whatever format it picks. Now that the instructions file is in the memory folder, ask for that same report.
 
-[SHOW: A report coming back already formatted the way the instructions specified]
+[SHOW: Ask for a quick report, it comes back already in markdown, for your audience, recommendation on top - and you never said any of that]
+
+Notice I never told it to use markdown, never said put the recommendation on top, never said who my audience is. It just did all of it, because it read the memory folder first. That is the entire point. You set this up once, and every task from here is closer to right on the first try.
 
 ### Demo 3: Watch memory do the work
 
@@ -558,11 +562,11 @@ If you want to see how I build the custom skills on the Claude Code side, that c
 
 **INTRO (0:00)** - You are leaving Cowork's best feature on the table. By the end: installed, organizing, reporting, reading Gmail, browsing, scheduling. Chat = conversation, Cowork = employee. SWE by day, run a channel + community. Modules in description.
 
-**M1 SETUP (3:00)** - Paid plan + desktop app (NOT the website). Steps: download, open, Cowork tab, make a folder, point it there, tour the 3 areas. Mental model: new employee on day one. First task: create welcome.md.
+**M1 SETUP (3:00)** - Paid plan + desktop app (NOT the website). Steps: download, open, Cowork tab, make the MEMORY FOLDER (frame it as "this holds info about us, reused on every task"), point it there, tour the 3 areas. Mental model: new employee on day one. First task: about-me.md - it interviews you and writes the first piece of memory.
 
-**M2 FILES (10:00)** - Core loop: files in folder, describe outcome, review, ONE correction. Demo: organize messy client folder. Demo: competitive analysis from screenshots. Habit: feedback not redo.
+**M2 FILES (10:00)** - Core loop: files in folder, describe outcome, review, ONE correction. Demo: organize messy client folder. Demo: receipts photos to expense spreadsheet + summary (flags duplicate subscription). Habit: feedback not redo.
 
-**M3 MEMORY (19:00)** - Most important module. CLAUDE.md = handbook you write. Memory = what it learns. Steps: have it interview you to build CLAUDE.md, tighten, test. Demo: email draft already in your voice. Rule: correct, do not redo.
+**M3 MEMORY (19:00)** - Most important module. Builds on the memory folder + about-me from M1. CLAUDE.md = grown-up handbook (lives in the memory folder, read every task). Memory = what it learns, saved to the same folder. Steps: have it interview you to build CLAUDE.md, tighten, then BEFORE/AFTER report to prove it. Demo: email draft already in your voice. Rule: correct, do not redo.
 
 **M4 RESEARCH (28:00)** - Analysis not summaries. Demo: weekly performance report w/ recommendations. Demo: gap analysis from documents. Pattern: inputs in, specific question, follow up deeper.
 
