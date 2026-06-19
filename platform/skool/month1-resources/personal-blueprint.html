@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: Letter; margin: 0.7in 0.75in; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #2b2622; background: #faf5ee; margin: 0; line-height: 1.5;
+  }
+  .accent { color: #c0683f; }
+  header { border-bottom: 3px solid #c0683f; padding-bottom: 14px; margin-bottom: 22px; }
+  .kicker { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #c0683f; font-weight: 700; margin: 0 0 6px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 30px; margin: 0 0 4px; color: #2b2622; }
+  .sub { font-size: 13px; color: #6b6259; margin: 0; }
+  h2 {
+    font-family: Georgia, serif; font-size: 16px; color: #2b2622;
+    margin: 22px 0 8px; padding-left: 10px; border-left: 4px solid #c0683f;
+  }
+  .num { display: inline-block; width: 22px; height: 22px; background: #c0683f; color: #fff;
+    border-radius: 50%; text-align: center; line-height: 22px; font-size: 12px; font-weight: 700;
+    margin-right: 6px; font-family: Helvetica, sans-serif; }
+  p.lead { font-size: 13px; color: #6b6259; margin: 0 0 4px; }
+  .fill { border-bottom: 1.5px dotted #b8a99a; min-height: 26px; margin: 8px 0; }
+  .box { border: 1.5px solid #ddcfbf; background: #fffdf9; border-radius: 8px; padding: 12px 14px; margin: 8px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+  th { background: #c0683f; color: #fff; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+    text-align: left; padding: 7px 10px; }
+  td { border: 1px solid #ddcfbf; padding: 14px 10px; font-size: 12px; }
+  .hint { font-size: 11px; color: #8a8076; font-style: italic; margin: 2px 0 0; }
+  footer { margin-top: 26px; border-top: 1px solid #ddcfbf; padding-top: 10px;
+    font-size: 11px; color: #8a8076; display: flex; justify-content: space-between; }
+  .check { font-size: 13px; margin: 6px 0; }
+  .check span { display: inline-block; width: 14px; height: 14px; border: 1.5px solid #c0683f;
+    border-radius: 3px; margin-right: 8px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+  <header>
+    <p class="kicker">The AI Agency &middot; Month 1 Resource</p>
+    <h1>Your Personal AI Blueprint</h1>
+    <p class="sub">The one page that tells Claude exactly what to do for you. Fill it in once, use it forever.</p>
+  </header>
+
+  <h2><span class="num">1</span> Who you are</h2>
+  <p class="lead">What you do / your niche</p>
+  <div class="fill"></div>
+  <p class="lead">Who you serve (your audience or customer)</p>
+  <div class="fill"></div>
+  <p class="lead">Your one goal for the next 90 days</p>
+  <div class="fill"></div>
+
+  <h2><span class="num">2</span> Your repetitive work</h2>
+  <p class="lead">List the tasks you do over and over. These are what Claude takes off your plate.</p>
+  <table>
+    <tr><th>Task you repeat</th><th>How often</th><th>Time it eats</th></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </table>
+
+  <h2><span class="num">3</span> What to hand to Claude first</h2>
+  <p class="lead">From the list above, the best first candidates are tasks that are <strong>repetitive + rule-based + time-consuming</strong>. Pick your top 3.</p>
+  <div class="box">
+    <p class="check"><span></span> Candidate 1: __________________________________________</p>
+    <p class="check"><span></span> Candidate 2: __________________________________________</p>
+    <p class="check"><span></span> Candidate 3: __________________________________________</p>
+  </div>
+
+  <h2><span class="num">4</span> Your first automation (this week)</h2>
+  <div class="box">
+    <p class="lead">The one task I'll hand to Claude this week</p>
+    <div class="fill"></div>
+    <p class="lead">What "done" looks like</p>
+    <div class="fill"></div>
+    <p class="lead">The win I get back (hours saved or outcome)</p>
+    <div class="fill"></div>
+  </div>
+
+  <h2><span class="num">5</span> Your skill stack (starter)</h2>
+  <p class="lead">The skills you'll build or install first. Start small, add as you go.</p>
+  <p class="check"><span></span> ______________________________________________________</p>
+  <p class="check"><span></span> ______________________________________________________</p>
+  <p class="check"><span></span> ______________________________________________________</p>
+  <p class="hint">Tip: your first skill should automate Candidate 1 above. Build it in Module 21.</p>
+
+  <footer>
+    <span>The AI Agency</span>
+    <span class="accent">skool.com/the-ai-agency</span>
+  </footer>
+</body>
+</html>

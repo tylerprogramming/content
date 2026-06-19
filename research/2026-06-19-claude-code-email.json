@@ -1,0 +1,38 @@
+{
+  "query": "claude code email",
+  "total_found": 2,
+  "long_form_found": 2,
+  "shorts_found": 0,
+  "days": 30,
+  "top_n": 12,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "Claude Connectors Tutorial for Beginners",
+      "channel": "Kevin Stratvert",
+      "views": 6381,
+      "likes": 253,
+      "comments": 5,
+      "upload_date": "20260618",
+      "duration": "5:54",
+      "duration_seconds": 354,
+      "url": "https://youtube.com/watch?v=FpRNId-jeTQ",
+      "description": "Learn how to use Claude Connectors step by step. In this beginner-friendly tutorial, you'll learn how to connect Claude AI to Gmail and other popular services so Claude can access your data and help you get work done faster.\n\nYou'll see how to:\n- Connect Claude to Gmail\n- Review and prioritize email",
+      "id": "FpRNId-jeTQ"
+    },
+    {
+      "title": "Watch Me Build a $1M AI Cold Email Campaign in 20 Minutes",
+      "channel": "Smartlead",
+      "views": 12,
+      "likes": 1,
+      "comments": 0,
+      "upload_date": "20260619",
+      "duration": "20:42",
+      "duration_seconds": 1242,
+      "url": "https://youtube.com/watch?v=gizzwJhH8gs",
+      "description": "Start Using Smartlead for Free: https://app.smartlead.ai/sign-up\n\nAll the freebies Tim promised: https://tim-yakubson.kit.com/smartlead-value-pack-oclock\n\nIn this video, we build an entire AI cold email campaign from scratch using Claude Code and Smartlead, covering how to source the lead list, writ",
+      "id": "gizzwJhH8gs"
+    }
+  ],
+  "shorts": []
+}
