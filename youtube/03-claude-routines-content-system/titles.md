@@ -104,3 +104,77 @@
 - "Killed n8n" / "Destroys Zapier" — saturated, Nick already took this angle
 - "Mind-blowing" / "You won't believe" — algorithmic penalty on clickbait
 - Vague "The Future Of AI" framing — no specificity
+
+---
+
+# REFRESH — Competitor-Informed Titles (2026-06-19)
+
+**New research basis (30-day "claude code automation" scan):**
+- Anthropic's own channel — 192,950 views, 22:03 — "Build a proactive agent workflow with Claude Code." The authoritative framing: Routines = "a proactive teammate that reads your repo and opens a PR before you've opened your laptop."
+- Nate Herk — 107K, 89K, 55K (owns the lane) — "10x'd My Claude Code Projects," "Dynamic Workflows Clearly Explained," "Every Level Explained."
+- Austin Marchese — 108K — "Type This... Build 10x Faster" (the "10x" hook).
+- Jono Catliff — 78K — concrete-outcome proof (dollar result, runs long).
+
+**New winning patterns to ride:**
+1. **Proactive teammate / before you open your laptop / while you sleep** (Anthropic) — the proven emotional core of the topic. Apply to a content business, not a repo.
+2. **"10x"** (Nate, Austin) — specific multiplier, used only where true.
+3. **"Clearly Explained"** (Nate) — known-quantity click, sets a teaching expectation.
+
+**No dollar amounts in titles** (prices change, keeps it evergreen).
+
+---
+
+## New Title Candidates
+
+### Proactive Teammate / While You Sleep (Anthropic framing)
+14. "Claude Routines Run My Whole Business Before I Open My Laptop"
+15. "I Built an AI Teammate That Works While I Sleep (Claude Routines + Claude Code)"
+16. "Claude Routines + Claude Code - The Proactive AI Stack Nobody's Teaching"
+17. "My Content Business Runs Before I Wake Up (Claude Routines Full Setup)"
+
+### 10x Framing (Nate / Austin)
+18. "The Claude Code Stack That 10x'd My Content Business (Routines + /loop)"
+19. "This One Claude Stack 10x'd How Fast I Run My Business"
+
+### Clearly Explained (Nate)
+20. "Claude Routines + Claude Code Clearly Explained (The Real Automation Stack)"
+21. "Claude Routines Clearly Explained (& The Claude Code Half Nobody Shows)"
+
+---
+
+## Scorecard
+
+Scored 1-10 per axis. CTR Potential weights how well the title rides a proven 2026 pattern plus clarity and the content-business differentiator. 70-char display ceiling noted.
+
+| # | Title | Pattern Ridden | Clarity | Curiosity | CTR Potential | Score | Chars |
+|---|-------|----------------|---------|-----------|---------------|-------|-------|
+| 14 | Claude Routines Run My Whole Business Before I Open My Laptop | Proactive teammate | 9 | 9 | 10 | **28** | 60 |
+| 20 | Claude Routines + Claude Code Clearly Explained (The Real Automation Stack) | Clearly Explained + stack | 10 | 7 | 9 | **26** | 73 (trim) |
+| 16 | Claude Routines + Claude Code - The Proactive AI Stack Nobody's Teaching | Proactive + unique slot | 9 | 8 | 9 | **26** | 70 |
+| 15 | I Built an AI Teammate That Works While I Sleep (Claude Routines + Claude Code) | While you sleep | 8 | 9 | 9 | **26** | 77 (trim) |
+| 18 | The Claude Code Stack That 10x'd My Content Business (Routines + /loop) | 10x + /loop | 8 | 9 | 8 | **25** | 68 |
+| 1 (old) | Claude Routines + Claude Code Explained (The Stack Nobody Teaches) | Explained + unique slot | 10 | 7 | 8 | **25** | 67 |
+| 21 | Claude Routines Clearly Explained (& The Claude Code Half Nobody Shows) | Clearly Explained | 9 | 8 | 8 | **25** | 70 |
+| 17 | My Content Business Runs Before I Wake Up (Claude Routines Full Setup) | Proactive + business | 8 | 8 | 8 | **24** | 69 |
+
+---
+
+## Refreshed Top 3 (my pick)
+
+### Pick 1 (RECOMMENDED): "Claude Routines Run My Whole Business Before I Open My Laptop"
+- Rides Anthropic's proven 192K "before you've opened your laptop" framing, the strongest hook in the topic.
+- Applies it to a content business, which is Tyler's exact differentiator and a slot no competitor occupies.
+- 60 chars, fits the 70-char ceiling clean. No dollar amount.
+- Personal-authority "my whole business" reads as proof, not theory.
+
+### Pick 2: "Claude Routines + Claude Code Clearly Explained (The Real Automation Stack)"
+- Borrows Nate Herk's proven "Clearly Explained" formula (89K) and matches the video's own subtitle ("The Real Automation Stack").
+- "+ Claude Code" plus "Stack" is the unique slot, no competitor pairs both surfaces.
+- 73 chars, trim the parenthetical to "(The Real Stack)" to land under 70 for display.
+
+### Pick 3: "Claude Routines + Claude Code - The Proactive AI Stack Nobody's Teaching"
+- Fuses Anthropic's "proactive" framing with the existing "nobody's teaching" differentiator.
+- 70 chars, right at the ceiling.
+- Best browse-traffic blend of proven framing plus curiosity.
+
+**A/B plan:** ship Pick 1 (proactive-teammate, highest CTR). If CTR is soft at 48 hours, swap to Pick 2 (Clearly Explained, broader search intent). Keep the thumbnail constant across swaps.

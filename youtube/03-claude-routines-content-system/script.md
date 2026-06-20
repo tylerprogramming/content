@@ -1,4 +1,4 @@
-# Script: Claude Routines + Claude Code — The Real Automation Stack
+# Script: Claude Routines + Claude Code - The Real Automation Stack
 
 **Target runtime:** 28-30 minutes
 **Format:** Tutorial + live demos + business framing
@@ -28,7 +28,7 @@
 
 ---
 
-## [1:00 - 3:00] POINT 1 — What Routines Actually Are
+## [1:00 - 3:00] POINT 1 - What Routines Actually Are
 
 [SHOW: claude.ai/code/routines dashboard. Pan over existing routines.]
 
@@ -48,7 +48,7 @@
 
 ---
 
-## [3:00 - 5:00] POINT 2 — The Business Case
+## [3:00 - 5:00] POINT 2 - The Business Case
 
 [SHOW: Tyler at desk, camera on him. Cuts to Slack messages arriving in real-time.]
 
@@ -76,7 +76,7 @@
 
 ---
 
-## [5:00 - 8:30] POINT 3 — Routine #1: Morning Inbox Digest
+## [5:00 - 8:30] POINT 3 - Routine #1: Morning Inbox Digest
 
 [SHOW: Tyler's actual Routine config open on claude.ai. Blur any sensitive info but leave the structure visible.]
 
@@ -110,7 +110,7 @@
 
 ---
 
-## [8:30 - 12:00] POINT 4 — Routine #2: Apify Competitor Monitor
+## [8:30 - 12:00] POINT 4 - Routine #2: Apify Competitor Monitor
 
 [SHOW: Second Routine config. This one uses the Apify connector.]
 
@@ -134,55 +134,91 @@
 
 ---
 
-## [12:00 - 16:30] POINT 5 — Build a Routine From Scratch (Live)
+## [12:00 - 16:30] POINT 5 - Build a Routine From Scratch (Live), On the Web
 
-[SHOW: Back to claude.ai/code/routines. Click "New Routine" button.]
+[SHOW: Open the browser to claude.ai/code/routines. The web dashboard with the existing routines listed. Click "New Routine."]
 
-> "Okay now I'm going to build one live. Right now. You can follow along.
+> "Okay now I'm going to build one live, right now, on the web. You can follow along at claude.ai slash code slash routines.
 >
-> We're going to build a Routine that fires every Monday morning and gives me five YouTube video ideas based on what's trending in AI that week.
+> Quick note. There are three ways to make a Routine. Right here on the web, which is what I'll use because it's the easiest to see. The slash schedule command if you're in the terminal. Or New Remote Task in the desktop app. Same Routine either way, pick whatever you like. I'll do the web.
 >
-> Step one. Name it. I'll call it Weekly Video Ideas.
+> And I'm not going to build a boring one. Everyone shows you an email summary. I'm going to build something nobody shows you. A Routine that reads my own database and gives me a business scorecard every Monday morning.
 >
-> Step two. The prompt. I said this earlier but I'll say it again. Write this like an SOP. Steps. Not hopes."
+> Yeah. It queries my actual database. Watch."
+
+[NOTE: This is the differentiator. No other Claude Routines video shows the database/Supabase angle. Lean into it.]
+
+> "Step one. Name it. Weekly Business Scorecard.
+>
+> Step two. The prompt. Write it like an SOP. Steps, not hopes. The cloud session starts with zero context, so everything it needs has to be in the prompt."
 
 [SHOW: Type the prompt into the box.]
 
-> "Here's what I'm writing. Use the Apify connector. Search YouTube for videos uploaded in the last 7 days on these keywords. Claude Code. Claude routines. AI automation. Sort by views descending. Take the top 15. For each one, pull the title, the channel, views, and the first line of the description. Then write me five new video ideas based on patterns you see across the top performers. Format the output as a Slack message. Send it to the YouTube Ideas channel.
+> "Here's what I'm writing. Using my Supabase project, pull this week's business numbers and post a scorecard to Slack. One. Query the business_weekly table for the latest week and the week before. Two. Query youtube_daily for the last seven days. Total views, subscribers gained, and the best performing video. Three. Calculate the change versus last week for each number. Four. Post a clean scorecard to my Slack business channel with each metric, the week over week change, and one honest one-line takeaway. Be terse. No preamble.
 >
-> Done. That's the prompt."
+> Done. That's the whole brain of it."
 
-[SHOW: Scroll down the Routine config. Select repo, model, environment.]
+[SHOW: Scroll down the Routine config. Select repo, model, environment, on the web form.]
 
-> "Pick your repo. I'll pick this business one. Pick your model. I use Opus 4.6 with the million token context because these research tasks eat context fast.
+> "Now the rest of the form. Pick the repo it runs in. Pick your model. Default is fine. Environment, default for me. This is also where you'd add any keys or variables it needs.
 >
-> Environment. Default for me. You can add API keys and variables here if your Routine needs them.
->
-> Now the trigger. I want this on a schedule. Monday at 6 AM."
+> Now the trigger. I want this on a schedule. Weekly, Monday, 6 AM. I type my local time and it converts to the right zone for me automatically."
 
 [SHOW: Click through the schedule picker. Set to weekly, Monday, 6:00 AM.]
 
-> "Connectors. I need Apify. I need Slack. Both are already authenticated from my earlier Routines, so I just add them here."
+> "Connectors. This one needs two. Supabase, so it can read my database. And Slack, so it can post the result. I tick both right here on the form."
 
-[SHOW: Add Apify connector. Add Slack connector.]
+[SHOW: Tick the Supabase connector and the Slack connector in the web UI.]
 
-> "Hit save. Now the real test. Click Run Now."
+> "Hit save. It's live, it'll fire every Monday on the cloud. But let's not wait until Monday. Click Run Now."
 
-[SHOW: Click Run Now. Show the execution in real time.]
+[SHOW: Click Run Now. Show the execution in real time, the Supabase query firing, then the Slack post.]
 
-> "This is going to take a couple of minutes because it's calling Apify to scrape YouTube. I'll fast forward.
+> "It's connecting to my database, running the queries, doing the math, and writing the Slack message. I'll fast forward.
 >
-> And here it is. Look at that. Five video ideas. Each one tied to a specific trending angle. Each one with a proposed title and hook.
+> And there it is, dropped right into Slack. My members, my views this week, up or down versus last week, and a one-line read on how the week actually went. My AI just did a Monday-morning business review by reading my own database. While I did nothing.
 >
-> Total time to build this Routine? About four minutes. Total time it's going to save me every week? Probably three hours of research.
->
-> That's the move."
+> Four minutes to build. Runs forever."
 
-[NOTE: If the live run fails or hangs, cut to a pre-recorded successful run. Don't show dead air.]
+[NOTE on camera: this shows real revenue/member numbers. Blur or use rounded/demo figures for anything you don't want public. If the live run fails or hangs, cut to a pre-recorded successful run. Don't show dead air.]
+
+> [Talking head, then cut to the terminal.]
+> "Now I built that on the web so you could see every field. But I basically live in the terminal, so let me show you the fast way. Same Routine, one command."
+
+[SHOW: Claude Code open in the terminal. Type the /schedule command.]
+
+> "I type slash schedule, and I just tell it what I want in plain English. Every weekday at 8 AM, scan my Gmail for sponsorship and brand deal emails, and post a summary with the deadlines to my Slack deals channel."
+
+[SHOW: Claude Code walks through it conversationally - confirms the time conversion to the schedule, checks the connectors are connected, shows the config, asks to confirm. Then creates it and returns a claude.ai link.]
+
+> "And it walks me through it right here in the terminal. It confirms my 8 AM converts to the right schedule. It checks I've got Gmail and Slack connected. It shows me the whole config. I say yes, and it's live, the exact same cloud Routine I just built on the web, made from my terminal in about thirty seconds. It even hands me a link to manage it on the web.
+>
+> But here's one thing you have to understand, and it trips people up. Even though I built this from my terminal, it still runs in the cloud, and it can only use my cloud connectors. The ones connected to my Claude account. Not the MCP servers sitting on my laptop.
+>
+> Those are two different lists. Your Claude account connectors, that's what Routines use, you manage them at claude.ai slash customize slash connectors. And then your local Claude Code has its own MCP servers in its own config on your machine. They can overlap, but they're not the same thing, and a cloud Routine can never reach a local-only one. Remember that, because it decides what you can and can't automate in the cloud."
+
+[NOTE: KEY ACCURACY POINT. /schedule creates a CLOUD routine using claude.ai account connectors (claude.ai/customize/connectors), NOT local MCP servers. Building from the terminal does not make it local. A cloud Routine cannot use a connector that only exists in your local Claude Code config.]
+
+> [Talking head.]
+> "And here's the thing. Once you see this pattern, you start seeing routines everywhere. So let me give you a few you can steal."
+
+[SHOW: Clean list overlay, 4 routine ideas with their connectors.]
+
+> "One. A sponsorship tracker. Gmail plus Slack. It scans your inbox for brand deals and drops the offers and deadlines in Slack so you never miss one.
+>
+> Two. A competitor upload alert. Apify plus Slack. It watches your competitors' channels and pings you the second they post, with a one-line take.
+>
+> Three. A morning meeting prep brief. Calendar plus Gmail plus Slack. Before your day starts, it pulls the relevant emails for every meeting on your calendar.
+>
+> Four. A content gap auditor. Google Drive plus Slack. It reads your scripts folder and tells you what you still need to make this week.
+>
+> Same recipe every time. A prompt, some connectors, a schedule. That's all a Routine is."
+
+[NOTE: these 4 are real, buildable with Tyler's connected connectors (Gmail, Apify, Calendar, Drive, Supabase, Slack). Keep the list on screen as a saveable/screenshot moment.]
 
 ---
 
-## [16:30 - 17:30] POINT 6 — Switch to Claude Code Local
+## [16:30 - 17:30] POINT 6 - Switch to Claude Code Local
 
 [SHOW: Tyler on camera. Transition animation.]
 
@@ -196,7 +232,7 @@
 
 ---
 
-## [17:30 - 20:30] POINT 7 — Claude Code Local: /yt-search + /thumbnail
+## [17:30 - 20:30] POINT 7 - Claude Code Local: /yt-search + /thumbnail
 
 [SHOW: Terminal open. Claude Code running.]
 
@@ -238,7 +274,7 @@
 
 ---
 
-## [20:30 - 23:30] POINT 8 — The /loop Command (The Secret Weapon)
+## [20:30 - 23:30] POINT 8 - The /loop Command (The Secret Weapon)
 
 [SHOW: Terminal. Fresh Claude Code session.]
 
@@ -268,7 +304,7 @@
 
 ---
 
-## [23:30 - 26:30] POINT 9 — Pros, Cons, and When to Use Which
+## [23:30 - 26:30] POINT 9 - Pros, Cons, and When to Use Which
 
 [SHOW: On-screen comparison table. Clean, simple design.]
 
@@ -308,12 +344,16 @@
 | Best trigger | Schedule / webhook / API | You / /loop |
 | Iterate mid-task | No | Yes |
 | Local file access | No | Yes |
+| Connectors it can use | Cloud only (claude.ai connectors) | Your local MCP servers |
 | Laptop closed | Still runs | Doesn't run |
 | Best for | Recurring, hands-off | Creative, interactive |
 
+> [Talking head, point at the connectors row.]
+> "And that connectors row is the one people miss. A Routine can only touch the connectors on your Claude account. If a task needs a tool that only lives on your machine, or your local files, that's a Claude Code job, not a Routine. That one line tells you which side of the fence any task belongs on."
+
 ---
 
-## [26:30 - 28:30] POINT 10 — Make the Switch
+## [26:30 - 28:30] POINT 10 - Make the Switch
 
 [SHOW: Tyler on camera. Energy back up.]
 

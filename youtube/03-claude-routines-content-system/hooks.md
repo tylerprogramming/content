@@ -86,6 +86,48 @@
 
 ---
 
+## REFRESH — Competitor-Informed Cold Opens (2026-06-19)
+
+Built on the proven hooks from the 30-day "claude code automation" scan. Anthropic's own 192K video framed Routines as "a proactive teammate that reads your repo and opens a PR before you've opened your laptop." That "before you opened your laptop / it ran while you slept" framing is the strongest hook in the topic. These adapt it to a content business and keep Tyler's honest, verifiable brand.
+
+### NEW HOOK A — Proactive Teammate / It Ran While You Slept (RECOMMENDED)
+
+> "Before I opened my laptop this morning, my inbox was triaged, my competitor report was written, and five video ideas were sitting in Slack, ranked. I didn't touch any of it. I was asleep.
+>
+> That's not Claude Code the way you've been using it. That's a Routine. A proactive teammate running in Anthropic's cloud while you sleep.
+>
+> Quick context on why you should listen. I've built hundreds of AI automations for Fortune 500 companies, JPMorgan, Pfizer, and for 150K plus YouTubers. I run 22 Claude Code skills that publish 30 plus pieces of content a week. This isn't theory.
+>
+> In this video I'll show you two real Routines running my business, build one live, then switch to Claude Code on my machine and show you one command nobody's covering, /loop. By the end you'll know where the cloud wins, where your machine wins, and how to run both.
+>
+> And everything I show, you'll watch it actually run. No mockups. Let's go."
+
+**Why it works:** Opens on the exact proven framing from Anthropic's 192K video (the highest performer in the lane), but swaps "opens a PR" for content-business outcomes nobody else applies it to. The concrete overnight list is a results-list pattern interrupt. The "you'll watch it actually run, no mockups" line plants Tyler's honesty differentiator in the first 30 seconds.
+
+### NEW HOOK B — Results List + Proactive (Punchy, under 35s)
+
+> "Inbox triaged. Competitor report written. Five video ideas ranked and waiting. All of it done before I woke up.
+>
+> That's a Claude Routine. A teammate that works in the cloud while you sleep. And it's only half the stack.
+>
+> The other half is Claude Code on your own machine, plus one command nobody's talking about, /loop.
+>
+> I've built hundreds of AI automations for Fortune 500 companies and 150K plus creators. In the next 25 minutes you'll see two real Routines, one built live, Claude Code locally, and /loop. Everything runs on camera. Let's get into it."
+
+**Why it works:** Pure Dan-Martell-style results list fused with Anthropic's proactive framing. Fastest possible path to the wow factor. Single-focus enough to double as a 7-minute Short cold open (per Nate Herk's 7-min 107K signal). "Everything runs on camera" keeps the verifiable brand.
+
+### NEW HOOK C — Proactive Teammate Reframe (Bold Claim)
+
+> "Anthropic just turned Claude Code into something most people haven't grasped yet. A proactive teammate. It reads what it needs, does the work, and finishes before you open your laptop.
+>
+> Anthropic showed it opening pull requests. I'm going to show you the version nobody's teaching, the same thing running a content business. Inbox digest. Competitor monitoring. Weekly research. All on a schedule, in the cloud, while I sleep.
+>
+> I've built hundreds of these automations for Fortune 500 companies, JPMorgan, Pfizer, and for 150K plus YouTubers. Two real Routines, one live build, then Claude Code on my machine with /loop. You'll watch every one actually run. Let's go."
+
+**Why it works:** Directly names and rides Anthropic's authoritative framing ("proactive teammate"), then immediately differentiates ("they showed PRs, I'll show a content business"). Borrowed credibility plus a clear unique slot in two sentences. Strong for browse traffic where the click is won in five seconds.
+
+---
+
 ## Retention Hooks (Inside The Video)
 
 Plant these throughout to keep viewers watching past the algorithm's drop-off points.
