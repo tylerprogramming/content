@@ -128,6 +128,58 @@
 - **Notes:** Build the skill first, then potentially make a video showing it in action. Ties into the content creator workflow angle.
 - **Date Added:** 2026-02-24
 
+### 10. I Automated My Entire YouTube Channel with Claude Code
+- **Status:** Planned (queue after Granola / Routines / AI video editor)
+- **Priority:** High
+- **Topic:** The full content system - research, script, thumbnail, captions, scheduling - all run by Claude Code
+- **Angle:** Builder cred flagship. Rides the hot "claude code automation" lane (192K Anthropic, 107K Nate Herk in last 30 days). Tyler already has every piece (27 skills + the hyperframes editor + Blotato).
+- **Target Audience:** Creators, solopreneurs wanting to automate content
+- **Date Added:** 2026-06-20
+
+### 11. I Automated ALL My Social Media with Claude Code + Blotato
+- **Status:** Planned
+- **Priority:** High
+- **Topic:** One system that posts across YouTube, TikTok, IG, LinkedIn, X - Blotato as the scheduling layer
+- **Angle:** Extends YouTube automation into general social. DISTRIBUTION PLAY: tag the Blotato founder - tool founders reshare videos featuring their product, so Tyler borrows their reach + builds the relationship. Blotato being lesser-known helps (less competition for the founder's attention; Tyler becomes "the Blotato video").
+- **Target Audience:** Creators, agency owners, solopreneurs
+- **Date Added:** 2026-06-20
+
+### 12. This Entire Video Was Edited by AI (Watch Me Prove It)
+- **Status:** Planned
+- **Priority:** High
+- **Topic:** The meta angle - the video you're watching was silence-cut + captioned by the hyperframes-studio tool Tyler built
+- **Angle:** Rides the hottest lane ("Claude edits my video," 276K/70K/51K/50K) AND adds novelty. Sticky meta hook. Markets his own tool.
+- **Target Audience:** Creators, video editors, AI tool users
+- **Date Added:** 2026-06-20
+
+### 13. One Video to 30 Posts: My AI Repurposing System
+- **Status:** Idea
+- **Priority:** Medium
+- **Topic:** Turn one long-form into a week of cross-platform content automatically
+- **Angle:** Pairs naturally with the Blotato video. The repurposing engine.
+- **Date Added:** 2026-06-20
+
+### 14. I Built a Bot That Finds My Next Viral Video
+- **Status:** Idea
+- **Priority:** Medium
+- **Topic:** The /yt-search research automation as a standalone
+- **Angle:** Rides automation interest; concrete "AI finds my content" hook.
+- **Date Added:** 2026-06-20
+
+### 15. How I Run a YouTube Channel in 5 Hours a Week
+- **Status:** Idea
+- **Priority:** Medium
+- **Topic:** The time/system angle built on Tyler's real schedule
+- **Angle:** Relatable, shareable. The "reclaim your time" framing.
+- **Date Added:** 2026-06-20
+
+### 16. Best AI Video Generators in 2026 (Roundup)
+- **Status:** Idea
+- **Priority:** Low
+- **Topic:** Roundup of Kling / Veo / Seedance / etc.
+- **Angle:** Opportunistic. The roundup format did 16-28K consistently in 30-day research. Low effort, modest ceiling, filler only.
+- **Date Added:** 2026-06-20
+
 ---
 
 ## Completed
