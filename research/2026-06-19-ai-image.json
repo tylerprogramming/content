@@ -1,0 +1,38 @@
+{
+  "query": "ai image",
+  "total_found": 2,
+  "long_form_found": 2,
+  "shorts_found": 0,
+  "days": 30,
+  "top_n": 12,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "New BEST local AI image generator is here!",
+      "channel": "AI Search",
+      "views": 116401,
+      "likes": 5366,
+      "comments": 798,
+      "upload_date": "20260609",
+      "duration": "29:50",
+      "duration_seconds": 1790,
+      "url": "https://youtube.com/watch?v=OA4gchz1Zcs",
+      "description": "Ideogram 4 tutorial. Best open-source AI image generator. Free & uncensored #ai #aitools #aiart #imagegeneration\n\nThanks to our sponsor Higgsfield. Try Higgsfield MCP today https://higgsfield.ai/s/mcp-theaisearch-dxCxlV\n\n0:00 Ideogram 4 intro\n0:43 World knowledge\n1:16 Text rendering\n1:33 Prompt adhe",
+      "id": "OA4gchz1Zcs"
+    },
+    {
+      "title": "The Best Open Source AI Image Generator Just Dropped",
+      "channel": "Aiconomist",
+      "views": 16621,
+      "likes": 704,
+      "comments": 63,
+      "upload_date": "20260609",
+      "duration": "10:01",
+      "duration_seconds": 601,
+      "url": "https://youtube.com/watch?v=wXS1WjDCeDA",
+      "description": "\ud83d\ude80 JOIN THE ULTIMATE AI INFLUENCER COURSE: Coming Soon\n\n\ud83d\udce5 DOWNLOAD MY COMFYUI IDEOGRAM 4 WORKFLOW: https://ko-fi.com/s/2dcdc22528\n___________________________________________\n\nWhat if the ultimate holy grail of AI image generation just went completely open source? Today, we are diving deep into the gr",
+      "id": "wXS1WjDCeDA"
+    }
+  ],
+  "shorts": []
+}
