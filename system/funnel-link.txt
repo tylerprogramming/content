@@ -1,0 +1,11 @@
+# Tyler's Lead-Magnet Funnel / Newsletter Link
+
+Primary YouTube CTA (use in video descriptions instead of the raw Skool URL):
+
+FREE YouTube Automation Skills + free newsletter:
+https://free.tylerai.dev/youtube/
+
+Notes:
+- This funnel captures email (= free newsletter signup) and delivers the free skills.
+- Use this as the hero CTA in long-form YouTube descriptions.
+- Skool community (secondary): https://www.skool.com/the-ai-agency

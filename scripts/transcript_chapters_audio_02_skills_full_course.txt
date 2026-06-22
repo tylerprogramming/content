@@ -1,0 +1,579 @@
+[00:00] Let me be honest with you.
+[00:01] AI is moving so fast that even I had trouble keeping up with it and it's
+[00:05] literally my job.
+[00:06] So if you feel like everyone else gets this stuff and you're the only one who
+[00:09] doesn't, you're not. It's overwhelming for everybody. So here's my promise.
+[00:13] I'm going to make skills genuinely simple, step-by-step,
+[00:17] even if you've never written a line of code.
+[00:19] Many skills videos show you a flashy demo that you can't reproduce,
+[00:23] but that's not this case. We'll cover what a skill really is,
+[00:26] what it's typically confused with,
+[00:28] and then we'll build three of them live in Claude code and also import them
+[00:32] into Claude co-work. I'm a full-time software engineer.
+[00:34] I've built hundreds of these things and I'm going to make this dead simple for
+[00:37] you today. So let's get started. So we clearly know what is a skill.
+[00:42] So what I'm going to show you right now is I'm in my finder where all my
+[00:46] directories are. That's displayed on my Mac.
+[00:48] It'll be something similar to windows. Well,
+[00:50] the thing is Claude stores your skills and a hidden folder.
+[00:53] So you don't actually see them without looking for them.
+[00:56] So here is just my machine, my local folders.
+[00:59] So I'm going to type command ship period. This is on a Mac. Of course you see,
+[01:02] there's this dot Claude folder right here.
+[01:06] So it's going to store them by default here. And if we scroll down,
+[01:08] open it up, scroll down a little bit.
+[01:10] There's this folder right here called skills. If we open this up,
+[01:14] here are actually all the skills that I have on my machine that I use with
+[01:19] Claude. And in my last video, this is the one that we had just created live.
+[01:22] And these are all of the other ones that I have.
+[01:25] Now these are folders. That's because that's how skills are stored. Okay.
+[01:29] So for instance, I have one called SEO. So it's a folder.
+[01:32] It inside is a skill dot Markdown file.
+[01:36] This is just a text file describing what this skill is.
+[01:39] So let's go ahead and open this up. I'm going to just open up with my,
+[01:42] let's just do text of it. So it's simple. We all have that.
+[01:44] And what you can see here is this may not make a lot of sense just yet,
+[01:48] but we have this, this is just the text of the actual skill, right?
+[01:52] So we have the name SEO. This is a description of it,
+[01:55] what it does in some ways that we can trigger it. You don't need all of all of
+[01:59] this, but you at least need the name and description.
+[02:02] And that's the basic thing that you would have for a skill.
+[02:07] So the description says optimize YouTube titles,
+[02:08] descriptions and tags using competitive search. That's all it's going to do.
+[02:11] Then everything else down here are just the instructions that whenever this gets
+[02:16] used, Claude will, or the model will know what to do with it. Okay.
+[02:21] So that's two things, a skill marked on file.
+[02:24] That's what a skill is and it has a name and description and instructions to
+[02:29] tell the model how it's used. That's what his skill is.
+[02:34] You can do a little bit more, which we'll see when we build a live example,
+[02:37] but this is exactly what it is. There's nothing else.
+[02:40] I just understand this completely. Okay. It's really that simple.
+[02:43] It's not too difficult once you actually see it for yourself.
+[02:46] So now let's just go ahead and use this inside of a terminal.
+[02:49] So you can see how this actual SEO skill is used.
+[02:53] So I'm just going to open up my terminal. So I'm going to open up the apps,
+[02:55] start typing in terminal. Here's the app. This is default on every Mac.
+[03:00] Windows will have a command line and then let's go ahead and just run Claude
+[03:04] code. So enable auto mode. Now I know this is a skill because if I type slash
+[03:09] SEO, you will see that this is the skill that I have.
+[03:13] And it says optimize YouTube titles,
+[03:15] descriptions and tags using competitive search.
+[03:18] That's just the description right here.
+[03:20] So the name is the skill and the description in the actual file stored on your
+[03:24] machine is that's all this is right here. Okay. Now if I were to say,
+[03:29] let's say Claude code, then what it's doing right now,
+[03:32] contemplating is just going through the instructions that I've given here. Okay.
+[03:36] And all these, these can be very simple instructions. They can be bigger.
+[03:40] It doesn't matter, but it's going to now look at these and decide what to do.
+[03:44] Okay. I'm not going to actually go through and run this and see what this fully
+[03:48] runs because we're going to create our own, but this is exactly how it works.
+[03:52] Before we go a little deeper, I just want to clarify the difference between
+[03:55] skills, which I'm going to show you all about today and MCP,
+[03:58] which you may have heard of, or maybe you are currently using. Okay.
+[04:01] So the difference is we have seen what skills are and what it actually looks
+[04:05] like. So a skill teaches Claude how to do something and that something can be
+[04:10] done your own way, your version of how you want to do something.
+[04:13] And then it can repeat that over and over again. Now, MCP,
+[04:17] if you type slash MCP, such as I have here,
+[04:19] you can see that have a bunch of these things that is some of them say
+[04:24] connected, some of them say failed, et cetera.
+[04:26] And an MCP server gives Claude access to something that it generally wouldn't
+[04:31] have access to to begin with. So for instance, here I have,
+[04:34] you can see I have Gmail highlighted.
+[04:35] The model just doesn't have access to my Gmail.
+[04:38] So I have to somehow give it access. So an MCP server is a way,
+[04:43] it's just a standard protocol that it can connect to my Gmail and I can
+[04:47] authenticate it. So now it can read, send emails, draft, et cetera.
+[04:52] So it can do all those things within my Gmail account,
+[04:55] but that's through an MCP server.
+[04:57] And then what we are going to see is with a skill,
+[04:59] you can also have code attached to that skill as well, along with the text file.
+[05:04] And then that code could also connect in a different way to some service
+[05:09] that Claude or some, the model typically have access to. And then lastly,
+[05:13] there's something called plugins. So if you type slash plugins, right,
+[05:17] it says to manage Claude code plugins. Well, what's the difference?
+[05:21] We see that there are a bunch here. I can just keep scrolling down. Look,
+[05:24] there's get hub Claude Markdown management. You know, there's the Ralph loop,
+[05:28] which I've got a video and three super base Figma free designers out there.
+[05:32] There's a lot here. And so what is a plugin then? Well, a plugin is a package.
+[05:37] So it's a skills commands and the connections all put together so that you can
+[05:41] go ahead and use it right away. For instance,
+[05:43] Figma here that will give you access to Figma through your account,
+[05:47] but it will also have a company commands or skills that you can use to perform
+[05:52] some action on your account. And it's all just kind of packaged together.
+[05:55] Just be careful. All we use always,
+[05:57] I would generally trust a Claude plugins official.
+[05:59] There are a lot of plugins you can install just to the official ones. Okay,
+[06:03] great. So let's now go ahead into actually building our own skill.
+[06:06] I'm going to walk you through this first one, relatively simple,
+[06:09] but we're going to see exactly how you can build it through Claude code. Okay,
+[06:13] so let's go ahead and get started. So what I want to build is a standup skill.
+[06:17] So what does the standup in whenever you're software engineering,
+[06:20] it's just basically a small meeting where you say what you did yesterday,
+[06:23] where you're currently doing today.
+[06:24] And if there are any blockers or things that are keeping you from doing
+[06:28] something, it doesn't have to be just for software engineering.
+[06:30] It could be for anything. It's just a way to kind of track what you did,
+[06:34] know what you want to do today.
+[06:35] And if there's anything blocking you from completing those tasks. Okay.
+[06:39] So what I'm going to say, I'm going to say, let's build a standup skill.
+[06:43] And then whenever I go to run it, just ask what I worked on, what I did,
+[06:47] what's next, any blockers and generate a clean standup that I definitely did not
+[06:51] spell correctly at all with today's date and say, that's okay.
+[06:54] It's going to understand what I greatly, but it's mildly understand anyway.
+[06:56] So I'm going to just press enter. Okay.
+[06:58] Now it's going to be recombobulating and understand that it's going to see
+[07:02] based on this, how to build the instructions, come up with a name for it.
+[07:06] So I'm going to build this first.
+[07:08] Let me check how your existing skills are structured.
+[07:09] So the new one matches your conventions.
+[07:11] And it's going to look at a current skill to see what's closest. Okay.
+[07:14] It may do this. It may not exactly.
+[07:16] It's saying that I have one called journal,
+[07:18] but I do want one specifically called standup.
+[07:21] That journal is a little bit set, is it? So look what it's doing. Okay.
+[07:25] So right here, it's going to write this file. Like I showed you,
+[07:29] .clogs slash skills.
+[07:30] It's going to create the file called standup and it's creating the skill.markdown
+[07:34] file. Now skills in capital, because I think on Linux, if it's not capitalized,
+[07:39] if it's like lowercase skill.md, it messes up. But here, the name standup,
+[07:43] here's the description of what it is that we'll see when we go to run this.
+[07:47] And then these are the instructions. Okay. So here, what did you work on?
+[07:52] What did you get done? What's next on? Are there any blockers? Okay.
+[07:55] It's going to give it some specific formatting, et cetera.
+[07:58] So now it's asking me, do I want to go and create this? I'm going to say yes.
+[08:01] And then go ahead and edit anything related to that in this session. Okay.
+[08:05] So it's doing it, placing it in the spot where I already showed you before.
+[08:09] So now if we go and open up that folder, so let me open up my finder.
+[08:13] Let me go back here. Okay. So here we are. We're again,
+[08:17] .clogs slash skills.
+[08:18] And then we should have one called standup coming up right here, right here.
+[08:22] It is. Nope. It's about three. That was a minute ago. So if I open this up,
+[08:26] here is the skill markdown file. If I open this up again with text edits,
+[08:30] here we go.
+[08:31] This is exactly what it showed within the terminal of telling us what it was
+[08:34] going to write. This is exactly what it is, right? That's, that's all we did.
+[08:37] Right. And what you can do now is if we run this, you can also edit this, right?
+[08:42] Just because you built this, the more you use things, the more you're like, Oh,
+[08:45] I'm going to tweak this a little bit. You can,
+[08:46] you can absolutely update it if you want to.
+[08:48] And what it does is it gives you some extras here, like standup show.
+[08:52] There's a view, view your most recent standup. You can do a seven day recap,
+[08:56] I guess is what that's trying to say of the standup. But let me just try now.
+[08:59] If I go slash standup there, it already is.
+[09:03] There's already the standup as a command that executes the skill.
+[09:09] So let me just, so I'm like, we're going to test it out right now. Okay.
+[09:11] So it's, we're going to type slash standup. Let me,
+[09:14] it's going to check see if I've logged a standup today. I didn't.
+[09:17] Now it's going to go to the questions, right? What did you work on today? Okay.
+[09:20] So I'm just going to give it some, uh, some simple things that I've done today.
+[09:23] So when did you get it done? Okay. So I'm currently recording this.
+[09:27] And so what's next? What do I want to, yes. After,
+[09:30] after I wrap up recording,
+[09:33] then start editing and look at thumbnails.
+[09:38] So that's just what I'm going to do next. Okay. So now, now I've answered, uh,
+[09:41] now I've answered, I guess there's one more question. No blockers.
+[09:44] I think it was just four questions. I forgot the last one.
+[09:47] And so now it's going to ask me if I want to create a markdown file of
+[09:50] everything we've done today. This is really so they can, like,
+[09:53] if you want to see what you've done already today, it can go back and reference it.
+[09:56] So it's going to store a text file of this locally. Okay.
+[10:00] So if I go, go to where that's located. And so here's the content standup.
+[10:04] And if I open this up with text edit, this is the exact file. This is it.
+[10:08] So it recorded my standup perfectly. Essentially the way I want to,
+[10:12] and this is actually how I want to start out with.
+[10:13] And if we want to do more with it, we certainly can. Okay, great.
+[10:16] So we've actually created our first skill that was relatively simple,
+[10:20] but that's okay. Now we understand the structure of a skill we have created our
+[10:23] own. And then when we show you next is a plugin from Claude,
+[10:27] that their official plugin store that you can actually help you create a skill
+[10:32] that might go a little bit more in depth on what exactly you want. Okay.
+[10:35] So let's come back. I'm going to type slash plugins. Okay.
+[10:38] So now what you can do here, if you can just actually press the up arrow,
+[10:41] you'll go into the up and down. You, you'll be able to go up and down,
+[10:44] but if you go up to the search bar, you can,
+[10:46] if you just type in skill and then go down and you can see there's a skill,
+[10:50] a skill creator. So I'm going to install for me. So this was by Anthropic.
+[10:54] This was last updated in April 23rd of this year. So I'm going to install this.
+[10:58] So it already installed. It's telling me to type in reload plugins.
+[11:02] I'm going to do that. Okay, great.
+[11:04] So now if I have this called skills creator. Okay, great.
+[11:08] So if I go down to skills creator, press enter,
+[11:11] it's going to execute a skill that they have created.
+[11:15] That's a part of the package. Remember, like I said, that a plugin is a package.
+[11:21] Yeah. So it's actually saying, do I want to refine this or do we want a,
+[11:25] this is what's great about it, right? So it's actually talking us through.
+[11:28] So when do I want to refine this, optimize it,
+[11:31] build a brand new skill or improve a different skill?
+[11:35] Well, this is interesting. We could build a brand new one,
+[11:38] which we are going to do again after this,
+[11:41] but how about we improve a different skill? Let's improve a different skill.
+[11:46] Now,
+[11:46] what I'm guessing it's going to do is see which ones I have already.
+[11:50] So I need to name the skill. So what do I have? Actually,
+[11:54] let me do my YouTube search is the one I want refined.
+[11:59] So I have this skill called YouTube search that actually goes and finds videos.
+[12:04] It gives me the data about them, the view, their thumbnails, et cetera.
+[12:07] It gives me a bunch of data to see what's going on right now based on keyword
+[12:10] searching.
+[12:11] So it's going to understand the script and I've actually haven't used this yet.
+[12:14] Well, it's been a while since I've used it.
+[12:16] So that's why I had to reload the plugin and we're going to see how this is
+[12:20] actually going to improve this skill. So the skill is pretty good.
+[12:23] This is one of my most useful skills that I already use. So I want to see,
+[12:26] I want to see what it's telling me.
+[12:29] So I read both the skill and I do have a Python script. Yes.
+[12:32] Before we set up the eval loop, here's what I want to flag. Okay.
+[12:35] So here's some real bugs. Uh, thumbnails get downloaded twice. Uh, okay.
+[12:40] But step two tells to manually redownload them. Okay.
+[12:44] Wrong file extension in the docs. Output goes to the wrong folder.
+[12:48] Okay. So the, so fix the buds, better analysis, quality, uh,
+[12:53] short. So we're filtering. Yes. If it does too much, takes too long. Okay.
+[12:57] Don't worry about that. We're going to see how this works, right? I can,
+[12:59] you can always revert everything, but I'm going to see how this improves it.
+[13:03] And this is something that you can do for any skill that you have. Okay.
+[13:07] So it's saying there's some bug fixes, shorts aware, sharper analysis.
+[13:11] So it's just giving me some real things that it's going to fix hopefully.
+[13:15] And it'll make the concrete scripts, the markdown changes, et cetera, right?
+[13:19] By the concrete script. So that's like the actual Python script.
+[13:22] As I said that you can have code alongside of your skill,
+[13:26] which we are going to create next. So you can see how that actually works.
+[13:30] All right. So just coming back to it, um, it's done quite a few,
+[13:33] it's done quite a lot. So there are three fixes in total. I mean,
+[13:36] if you see up here, here's like some part of the skill markdown file.
+[13:39] If we scroll way up,
+[13:42] here's actual code that it had updated in my file that actually did actually went
+[13:47] out and looked for YouTube videos. Okay. So this coming back to this,
+[13:50] so the output folder was incorrect.
+[13:52] Shorts aware filtering between long and short form.
+[13:55] And it says that there's a sharper analysis.
+[13:57] So what we can do is we can try it live and iterate from real output.
+[14:01] So let's just go try it, right?
+[14:02] Let's just go ahead and try this out to see what it's improved.
+[14:05] And I'll tell you what it's improved whenever we come back with something. Okay.
+[14:08] So now I'm going to do is type slash YouTube dash search on the keywords AI
+[14:13] image or the, you know what? I'm sorry. Let's do, let's do Higgs field.
+[14:16] That's a website for images, audio, video. I think it's audio,
+[14:20] but I know at least images and video.
+[14:21] So that kind of like a lot of models combined together.
+[14:23] So you can take it from one, you can use them all in one API key.
+[14:27] I use Kai.ai, Kai.ai, but everybody has their own,
+[14:31] but it's what's going to do now.
+[14:32] It's going to execute my search Python file with the keyword Higgs field for the
+[14:37] last 30 days, get the top 15 and the search counts.
+[14:41] So it's going to return 50 of the first 50.
+[14:44] It sees look at the top 15 by views,
+[14:48] and then it's going to analyze those for me, see which ones work best.
+[14:52] And give me basically a summary or at least that's what it did.
+[14:54] It should still do that.
+[14:55] And hopefully a little bit more and also separate long form from short form
+[14:59] because that was probably something good that it should separate.
+[15:02] And so you'll see this, I'll show you how you,
+[15:04] you can also have this actual one for free in the description below.
+[15:07] You'll be able to get this as well.
+[15:09] Just look at follow the link and you'll get it right away. Okay.
+[15:12] So here's basically what it found from Higgs field.
+[15:14] So it found 20 total videos in the last 30 days, the view, the view range,
+[15:19] some repeat channels, takes field AI official channel.
+[15:21] So you can see based on the views, how well these have done from Higgs field,
+[15:26] Higgs fields, actual channel.
+[15:28] But here are some others that have done well below here.
+[15:30] And it shows you the duration of them, which is a good indicator as well.
+[15:33] But then the here also took the thumbnails, which we can,
+[15:37] we can view ourselves and just basically here's some analysis from it.
+[15:40] So it was wide number one video. It's like a trailer.
+[15:42] So I wouldn't really do too much with that. But title patterns,
+[15:45] everything that I have for YouTube researching,
+[15:48] possibly for another video on something similar to this.
+[15:51] Now that was a video that we had edited from a plugin. Okay.
+[15:54] And that's amazing what you can do with this. All right.
+[15:57] So we've done some amazing things and I know that you have learned a little bit
+[16:02] more about what you can do with skills, how they work,
+[16:06] how we can modify them, right? So let's,
+[16:08] what I want to do next is actually want to build a skill that also has code
+[16:12] that's generated with it. Okay. And I'll show you where that,
+[16:15] it's the same place that we've seen the skills, the texts,
+[16:17] the text markdown file, but I want you to also see how code is implemented.
+[16:22] So let's go ahead and get started.
+[16:23] What we're going to do is first I'm going to type slash clear,
+[16:26] which is another command you can use.
+[16:28] And what I want to do is I want to create a YouTube comment replier.
+[16:34] We're going to see how actually build what it tells me I need to do on how to
+[16:39] build it.
+[16:39] And I want this to be a skill so I can get them and then have it build that for
+[16:44] me. You know,
+[16:45] I do want you to know that I already have something similar because I've been
+[16:48] doing this for a little while.
+[16:50] So I kind of have something separate that doesn't exactly do what I'm about to
+[16:54] do,
+[16:54] but it does have the generated code sort of for actually replying to a comment.
+[17:00] But what I want to do is I told it to go ahead and build it anyway.
+[17:04] So it's going to create a new YouTube replier,
+[17:06] copying the scripts and migrating.
+[17:08] And I'm going to show you how that's going to work. Okay.
+[17:10] So you see what it's doing is it's creating a YouTube replier skill,
+[17:15] but it's also creating a Python file for the actual code to run.
+[17:21] Okay. That's what it's doing right here.
+[17:23] And I want to make sure we get all necessary code in there for this.
+[17:27] It's kind of going a little, trying to keep up. It's going kind of fast, but yeah,
+[17:30] I want it to be fully self-contained.
+[17:33] And so it's writing to another,
+[17:35] it's an another off a way to authenticate with YouTube.
+[17:39] And so I'm going to say, yes,
+[17:40] go ahead and just do everything that we need for this to work.
+[17:43] So you're going to need a Google auth clients.
+[17:45] You're gonna need some credentials that Jason,
+[17:47] which I'll try to go over really quick and really quick on how to get those.
+[17:50] Once this is done. Okay.
+[17:52] I want to show you this working and then I'm going to show you how you can also
+[17:55] get your authentication as well.
+[17:57] But the great thing about this is with this skill,
+[17:59] you can use this whenever you want.
+[18:02] You just in the morning, get me all of the comments,
+[18:04] draft all of the replies for me,
+[18:06] and they can go ahead and send them to you just from here.
+[18:10] Or like I will show you, we can also do something similar with cloud cowork.
+[18:15] Okay. But for now let's finish this up.
+[18:17] This is kind of like what we're doing right now. You know,
+[18:19] it does take some of them take a few minutes,
+[18:21] but it is going to allow you to more easily do things,
+[18:28] right? Skills aren't necessarily something, this fascinating thing.
+[18:32] It's really just prompts, but it's just more organized for, for you,
+[18:36] especially for anybody who's getting into it, getting into AI.
+[18:40] It helps you stay organized with what you want AI to help you with. Okay.
+[18:45] So it says it's done.
+[18:46] It built a YouTube replier and it's just a content,
+[18:49] a comment manager and reply and replier.
+[18:53] So it said it verify that it works.
+[18:55] And so what I want to do is let's say check my YouTube comments.
+[18:59] It says, say, check my YouTube comments.
+[19:01] Now what this means is that you don't always have to type slash to use the
+[19:06] command.
+[19:08] Claude can infer which skill to use based on what you type into the box here,
+[19:13] right? And what, what you do, whatever you type into the terminal.
+[19:16] So what it's going to do now is it's going to execute the YouTube replier.
+[19:20] So I have a,
+[19:21] they created a Python file to get more recent videos and it's saying I see
+[19:25] right here, there's total unreplied 14.
+[19:28] So it took six seconds to get all of them. So ready to post, right?
+[19:32] Three items.
+[19:33] Basically here are just a bunch of comments,
+[19:38] good or bad that I can reply to.
+[19:42] And so I can say that I've draft all draft replies for all of these or I can go
+[19:47] through them and say, yeah, I don't like that. Um, let's, you know,
+[19:50] the skip it or reply with whatever, whatever I want to apply with. Right.
+[19:54] But that's what, that's what I can do here. Like this one,
+[19:57] the clown called me a clown is what it is. Part of part of content life.
+[20:02] But yeah, so this,
+[20:03] what this allows you to do is pull everything down into one place and also have
+[20:06] AI drafted for you, which is amazing, right?
+[20:09] Instead of having to go one by one and also make sure you don't ever skip
+[20:12] things or figure you're not ever skipping on potential money, right?
+[20:17] This is what we've done. Now let me show you where this is. Again,
+[20:21] we go to finder. We come up here to, uh, to my,
+[20:26] my local folders show.clod cause it's hidden again by default,
+[20:31] come down to skills. Then we're going to scroll, scroll, scroll,
+[20:35] scroll, scroll down to YouTube replier.
+[20:38] And so what it did actually created quite a few. It looked like one, two, three,
+[20:42] four Python files, any skill markdown file. Okay.
+[20:46] And so these Python files are just code that are going to help achieve what the
+[20:51] skill wanted to do, the skill of the instructions.
+[20:54] And so these are the code that's aiding with the instruction on actually doing
+[20:57] something and outreaching or reaching out to YouTube to get our comments and
+[21:01] then also reply and took him dot Jason and the data.
+[21:04] This is what you kind of need. So what I would do is whenever you do this,
+[21:07] if it doesn't tell you,
+[21:08] what do I need to do to authenticate pretend like it doesn't cause it already
+[21:14] does.
+[21:14] There's so much documentation with Google and especially with YouTube stuff that
+[21:18] it's going to tell you exactly what it is and you won't have to worry about
+[21:21] something being wrong. Yeah. So Google cloud project, that is correct. Yeah.
+[21:25] I know that it's a few things here that it's telling you to do,
+[21:29] but it's, it's not as bad as it seems, right?
+[21:33] So just, I would follow these steps, ask it and you'll get this done.
+[21:36] And now you have your own, if you have a YouTube channel,
+[21:38] your own skill that helps you reply to comment. Okay, great.
+[21:42] Now we had done quite a few things with skills. We've understand that we've
+[21:46] understood them. So we built a skill,
+[21:48] we've edited a skill and now we built a skill with code right now.
+[21:52] Kind of understand the structure where it's located on your actual machine.
+[21:56] And we've kind of just run through some things with this to kind of help you
+[21:59] really feel more comfortable about it. Now,
+[22:02] if you have used cloud coworker or you haven't yet,
+[22:05] I'm going to show you how you can actually import a skill,
+[22:07] one that we have created into cloud core.
+[22:09] So let's first add a skill into the cloud app and then use that.
+[22:13] So at the bottom left, you go to your profile, then go to settings.
+[22:17] And then if you just bear with me,
+[22:19] you go to connectors and then go to customize and then we go to skills and you
+[22:23] see I've added the stand up here. But if you click the plus button,
+[22:27] go to create a skill, upload a skill.
+[22:30] Now there you can drag or drop or click to download.
+[22:32] So you can either have a dot zip or dot skill file.
+[22:36] So if we open up my finder, what I did was I just dragged and dropped this over
+[22:41] here. But if you want, I'm going to upload and replace just so we can see it
+[22:44] working. But if you have other code attached to it,
+[22:48] you can actually create a zip file. So I could do this. I could, uh,
+[22:53] right click and then compress stand up. Okay.
+[22:58] And what it's going to do is if I go back to add, create a skill,
+[23:01] upload a skill and then just drag and drop the zip file here, it's going to say,
+[23:06] Hey, you want, do you want to replace and update the same existing,
+[23:09] existing one? And I am right. There's two ways to do that.
+[23:12] The zip file is really if you have more than one file or sub folders within that
+[23:17] skill. Okay. But this is great. So now that I have this rights,
+[23:21] now I can simply go to my chat and say slash stand up here.
+[23:26] It is.
+[23:27] And then we could just start chatting with it here within the app instead of
+[23:31] having to use cloud code, especially if you love using the app, then this is,
+[23:35] this is the way to go. Okay. So this is how I would do that. All right.
+[23:39] So this is basically go through. Yeah.
+[23:41] It's going to do the same questions that we did before, right?
+[23:43] Same questions. We don't need to go through it again,
+[23:45] but just so you understand how this works and how to import the skills that we
+[23:49] create into here. Okay. So now we're in the cowork homepage.
+[23:53] What I want to do is I want to set something that's going to scrape tick talk
+[23:56] maybe once a week, right?
+[23:57] So set up a schedule for for scraping tick
+[24:03] talk every Sunday at 7am and I have it
+[24:07] accessing to my skills folder already.
+[24:10] So I have a skill that does that already scrapes using amplify.
+[24:15] It'll scrape.
+[24:16] So the first thing I need to do is the tick tock scraper works off hashtag
+[24:19] keyword. Let's do a specific hashtag.
+[24:22] So it figured out that I have it.
+[24:25] What hashtag would I like to do about let's do cloud code and AI.
+[24:30] Let's do all five of those.
+[24:31] So now we're going to use those keywords to actually create this and what I've
+[24:34] done, this is actually just a skill. So if I open up my skills again here,
+[24:38] I'm in my skills folder. If I have a tick tock right here,
+[24:43] so this is going to scrape tick tock.
+[24:45] And this is just if you open up the actual Python
+[24:50] file, it's have like API.
+[24:52] Like these are just requests to that that we created.
+[24:56] When I say we,
+[24:57] it's Claude and it was able to use amplify to go out and scrape.
+[25:01] And I want specific data that I've created before, right?
+[25:04] So amplify you pay for, it's not cheap. I will be honest with you,
+[25:08] but you get to do a lot with it, which is why it's not very cheap.
+[25:11] You don't have to spend too much.
+[25:11] But then what I want to create now is through cowork is that from that
+[25:16] skill that I created as access to the skills folder,
+[25:19] I now want to schedule something to scrape and give me basically competitive
+[25:23] data. So I know what's working and then what will work in the future. Okay.
+[25:28] So if I go back to cowork, right, and that's what I did right here.
+[25:31] See this folder skills. I just gave it access to my skills folder.
+[25:35] And then if I go to tick tops or go to scheduled weekly tick tock
+[25:40] scrape, it's going to run this now just so you can see what it's, what it's,
+[25:44] what it's kind of doing. So now I have a weekly tick tock scrape.
+[25:47] It's going to read the skill markdown file.
+[25:49] It's going to figure out that the code along with it was going to actually do
+[25:52] the scrape. It figured out what it needs to do.
+[25:55] It's going to start all five scrapes in the background. So here,
+[25:59] run Claude code. These are,
+[26:01] those are each of the tags that I had.
+[26:04] So it's going to run all five of those have a five token. Yeah.
+[26:07] So it's just going to, this is gonna take a minute.
+[26:08] So I'll be back whenever it actually does a scraping,
+[26:11] just so you can see that skills that you create,
+[26:14] no matter where you're creating them, right?
+[26:16] You can use them in various places within the Claude ecosystem. Okay.
+[26:20] So something interesting, and this is what I had said before.
+[26:24] So because this is through cowork,
+[26:25] the sandbox network blocks api.epiphy.com directly.
+[26:30] So it actually had to go through the epiphy MCP,
+[26:32] which I did already have installed. I was going to do something super simple.
+[26:35] And I realized I want to do something that actually has code involved to show
+[26:39] you. So I didn't actually pre-test this.
+[26:42] So what it's doing is this app of Tik Tok scraper that's running, right?
+[26:46] It's costing 30 cents. It's actually, yeah, here we go.
+[26:50] So it actually ran,
+[26:51] got the results set and is doing it for each is doing it,
+[26:55] is doing it for each of the each of the hashtags or keyword,
+[27:00] not really has a keywords and it's going to run and then do all through all of
+[27:04] those. Give me the results back.
+[27:06] So actually to go through an MCP server in order for that to
+[27:10] work, just so you see this live, it's happened to me and it could happen to you
+[27:14] as well.
+[27:14] So I know that if we ran the YouTube one directly going out to the API,
+[27:19] like we did locally through the Claude through Claude code in the terminal,
+[27:23] it would not work out the same way.
+[27:25] So it ran all five hashtags that it's going to record the run details and write
+[27:28] a status report,
+[27:29] but it says it can't pull the data back to build the analysis.
+[27:34] Okay, well we're going to see what it, we're going to see what it actually does,
+[27:38] but what it's saying, and I'm glad we're doing this together to get the full
+[27:41] report reports at api.appify.com to the network.
+[27:44] Allow us by going to settings and capabilities.
+[27:46] So if we go to settings and then we go to capabilities,
+[27:51] then if we come down to network or domain allow list,
+[27:57] we can just add that here. Okay,
+[27:59] okay. I did that. Now try again.
+[28:07] Okay, so I'm going to do that now. Try again.
+[28:09] And this is actually how we would get the YouTube comment replying to work within
+[28:15] co-work as well. Using skills that we've created,
+[28:17] we just need to allow co-work the sandbox that it runs in to actually reach out
+[28:23] because by default it's going to block them. And that's, that's how it should.
+[28:26] And what I had to do was just restart a new session for the scraping.
+[28:30] So that picked it up. And now I'm actually getting all the datasets retrieved.
+[28:34] It's going to,
+[28:36] it's now going to actually generate the report so that we have something to see.
+[28:40] Part of whenever you're doing this,
+[28:41] you're going to run into things like this and that's okay.
+[28:44] Just ask you what you need to do. And so it gave me what I needed to do in order
+[28:47] to allow, allow co-work to access appify.
+[28:51] And now it's going to work, right? It's scraping everything. It got the results.
+[28:55] Now it's just basically what I was doing right here is it's writing the results
+[28:59] into organized fashion so that we can see them and it should open up,
+[29:03] should open up on the right side here in just a minute. But you know,
+[29:07] you're going to do, you're going to try out a lot of things.
+[29:09] Not everything is going to work and that's okay. You know,
+[29:11] we just did something live that didn't necessarily work the way I wanted to.
+[29:14] I didn't test it because I decided I want to do something that was more real
+[29:18] and something actually had code with instead of doing something very,
+[29:21] very simple, which it could have done.
+[29:23] And we're probably bypassed all of this nonsense, but it's okay.
+[29:27] We all learn something today and that's where you can take away from doing any of
+[29:31] this. If you feel like you're not in, it's feel like it's too much.
+[29:34] We're all learning something. I just learned something today. Okay.
+[29:37] And then hopefully that helped you learn something as well.
+[29:42] So what we're doing right now, it says it's trying to present the files,
+[29:46] which would be this gen report. That's the Python file. Okay. Yeah.
+[29:50] So what's doing here is the top videos. Um, here was a hook.
+[29:55] If it found one, look, some of these have like insane amounts of.
+[30:00] Not all of them, I feel like, are exactly correct.
+[30:06] Some of this is like AI, but I probably shouldn't have done AI.
+[30:10] I probably should have just done Cloud Code, because AI gets some crazy things,
+[30:13] and that's actually not all correct.
+[30:16] Especially on TikTok, I shouldn't have done AI tag.
+[30:18] I should have just done the Cloud Code report, right?
+[30:21] But I do have my Google Drive, so it's saying it's Google Drive.
+[30:24] But anyways, yeah, so that's that.
+[30:28] That actually is the AI report.
+[30:30] What if I just do the Cloud report?
+[30:31] Okay, here we go.
+[30:33] This is a little bit better.
+[30:35] This is basically just the Cloud Code report.
+[30:39] So here are some really good ones.
+[30:41] These are just some ideas that I can check out.
+[30:44] It tells me what's kind of doing well and why, possibly.
+[30:50] And here's the duration of ones that are doing well.
+[30:53] Here's some top opening lines from top videos.
+[30:56] So this is really good information that I could use for my own content creation.
+[31:01] Okay, so let's go ahead and bring it home.
+[31:03] You understand what a skill is now.
+[31:04] We've created a couple skills.
+[31:06] We've edited skills with a plug-in.
+[31:08] So skills, MCPs, plug-ins, what we did with skills, we used a plug-in to edit a skill,
+[31:14] but we also used a skill inside of chatting with Cloud, with the Cloud app, and also in co-work.
+[31:21] We took a skill that I had locally, and we used that to create a schedule through co-work.
+[31:27] Okay, and so this is some amazing things that we can do with all of this.
+[31:31] It's just simply understanding it and learning.
+[31:34] Okay, and so with that, this will all be in my free school community, which will be in the link in the description.
+[31:40] And I also have free skills for you to use, especially if you're doing content creation, by clicking the link.
+[31:46] And once you do click the link, you'll also join my newsletter, which is free,
+[31:49] and you get updated on information that's going to help you out with your business,
+[31:54] whether it's saving money, making money, saving time,
+[31:58] just helping you out in any possible way with what you're doing in your life.
+[32:03] Okay, thank you for watching.
+[32:05] Here's more videos.
+[32:06] I'll see you next one.

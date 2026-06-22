@@ -1,0 +1,204 @@
+[00:00] Chachapiti Images 2.0 just launched and it is a huge leap. We finally have a model that can
+[00:05] compete with Nano Banana, which has retained the throne for a while now. Images 2.0 beats it in a
+[00:11] lot of important areas, so I ran a ton of tests and there's some really helpful tricks I've found
+[00:17] along the way. Text and reasoning is an area I spent a lot of time on and it's probably the
+[00:22] most impressive area. I want to start with just a quick tip I noticed when trying to get
+[00:27] realistic looking images. At first I was pretty unimpressed. I was testing out different words
+[00:32] like realistic photo, iPhone photo, cinematic, things like that. I wasn't getting what I wanted,
+[00:38] but then I discovered that adding the word photorealism to the prompt is extremely effective.
+[00:43] I'll go through a few of these really quick. You can leave everything else the same and just add
+[00:47] that one word and it completely changes the result. Sometimes the first image looked good,
+[00:52] but then I'd add the photorealism to it and see just how much better it could be. Every model has
+[00:58] different tendencies like that and sometimes it takes experimentation to get what you want.
+[01:03] That was a big one I noticed pretty quick in here, so I wanted to share it. And you can see it's good
+[01:08] at basic prompt adherence, has coherent faces, even when there's a lot of them. Nothing groundbreaking
+[01:13] there, just an overall good image generator that's a big upgrade from the previous model.
+[01:18] Image editing is another area we've gotten pretty used to these models being really good at,
+[01:23] and this is great there too. So I'll go through these quick as well. I'm building up to the more
+[01:27] significant capabilities, but I want to cover everything that's useful. I wanted to give this
+[01:32] orc a battle axe. Perfect. Then I wanted to make the orc a female. Perfect again. And how about
+[01:38] rotate, zoom in, and add a red glow to the horn. It does awesome. Although there's a slight change
+[01:44] in the colors, a lot of models fail at this one completely. Then change the angle to a front view
+[01:49] full body shot. Easy. And the character consistency is perfect there. This one's more difficult.
+[01:55] There's a grid of eight things with specific instructions on how to place them in this room.
+[02:00] And it did amazing. Maybe the capybara is a little big, but this is better than any other model I've
+[02:06] tested this on. Especially all the details in the faces. Then this was a test to combine two
+[02:12] real photos, and I've never gotten great results on this one. But it turned out great inside ChatGPT.
+[02:18] However, the face is a little low fidelity, but they did also release a 4k option through the API.
+[02:24] So I ran this prompt using the 4k option. I just did it in Higgsfield. Then there is way more
+[02:29] clarity in the face. And for a comparison, when I run this through NanoBanana using the 4k option,
+[02:35] it just always looks pretty off. And while we're on this, I'll show a few more consistent character
+[02:40] examples. So this man volcano boarding. Nailed it. Pretty solid action shot. Then me surfing,
+[02:47] riding a barrel wave. The face is perfect, but I don't really like the aesthetic on this. It doesn't
+[02:52] look too realistic. So again, I added the word photorealism, and this is way better. Then I asked
+[02:58] to add in this woman, and we're skydiving together. Now we're walking through a haunted house nervously.
+[03:03] I'm going quick because we could do this before, but I would say this is slightly better than the
+[03:08] results I've gotten elsewhere. Now trying that out with some text involved. It did incredibly
+[03:13] well here. There's no error in the text on the whiteboard. I don't know if every one of these
+[03:17] equations is correct, but each individual character is perfect. Although it's a little too nice of
+[03:23] handwriting for writing on a whiteboard. But these books over here, those do have some issues in the
+[03:28] text. But still, this is a really good job. This next one is where there was a bigger gap between
+[03:34] Chachapiti and Nano Banana, and this will start to lead us into that text section. But this is just
+[03:38] a parody movie poster. It got everything I asked for, but the part I wanted to focus in on was all
+[03:43] this text at the bottom. This is just a small detail, but it did get everything perfect here.
+[03:48] Music by Binary Bard. Edited by Cut & Code. Production design by Pixel & Pine. In the past,
+[03:54] these smaller details would have issues. Like in the result from Nano Banana. While I do like this
+[04:00] aesthetic more, when I zoom into the text on the bottom, it is just all warped and complete
+[04:05] gibberish. So Chachapiti was way better in this case. Then I will show this was my very first
+[04:10] attempt at doing a thumbnail in here. They say no real direction in the prompts other than about the
+[04:15] new GPT Image 2 release. And honestly, that first try is amazing. Way better than the out-of-the-box
+[04:20] thumbnails you get from Nano Banana or any other image generator. So I'm going to generate some
+[04:24] more, but I will definitely use something from this model as the thumbnail for this video. And
+[04:28] I'll create multiple options to A-B test. Now I ran a lot more tests across different text
+[04:34] challenges. First, I'll show just some of these insanely accurate UI recreations. This is unreal.
+[04:41] I mean, I wouldn't recommend you do this. I just show it so you can see what's possible. Like we
+[04:45] are definitely at the point where you cannot trust any images online. Every one of these comments
+[04:50] look perfect and have a unique name and profile picture for each. Or here was a screenshot of
+[04:55] the Midjourney website's explore page. It's really accurate. Like even each one of these
+[05:00] images looks like it was generated in Midjourney. And this one's a prompt I saw from Fofur on X.
+[05:05] I'll have the handle of anyone where I saw one of their prompts and I'm recreating it.
+[05:08] Then this one is probably the craziest of these. Comfy UI with a workflow for generating an image
+[05:13] and then feeding it into an image to video pipeline. This looks so good. It has a prompt
+[05:18] up here and then even the negative prompt conditioning. All of this text is bright.
+[05:23] Using animate diff. Maybe there's a tiny issue right here that even has to load a motion Lora.
+[05:29] Typical frames per second you would have. Some of these lines connecting the different nodes
+[05:33] aren't perfect, but this is pretty close. Especially if you compare that to the one
+[05:37] NanoBanana got. With that there's just text issues all over the place. This new update
+[05:42] makes ChatGPT even more useful, but there's already so many ways you can use it to get ahead
+[05:47] in your career or business. So down in the description I have a free resource bundle
+[05:51] called 5 Essential Resources for Using ChatGPT at Work. It covers all the capabilities, use cases,
+[05:57] and best practices for implementing ChatGPT, including what's new in 2026. My favorite part
+[06:03] is the document called 100 Ways to Try ChatGPT Today. It has 100 prompts across a wide range
+[06:09] of use cases you can copy paste and start using right away. It's one of the most helpful prompt
+[06:14] databases on top of all the other stuff that's in there. That is all free, just click the link
+[06:18] in the description. Here I've got a recipe infographic. These were just amazing when we
+[06:23] first saw them coming out of NanoBanana and it does look great. There's no text issues anywhere
+[06:27] on this one, but then when I compare it to the ChatGPT version, this one's just better. I mean
+[06:32] it has more helpful information. Like it has the amounts of each ingredient. It has more detailed
+[06:37] instructions. Just overall a more complete and helpful infographic. And this one I saw from Angel
+[06:43] has a huge gap in the results. This result from NanoBanana is pretty bland. There's no errors in
+[06:49] the text, but it doesn't look handwritten at all. And it's just way more boring. It didn't really
+[06:53] capture the prompt. Then this one from ChatGPT is just amazing. You can zoom in. This looks like
+[06:59] handwriting. Weird little scribbles all over the page. Just tons of little clipouts. It just looks
+[07:04] like kind of random chaos. It's perfect. We are stardust in code. Comparing those two, it is
+[07:10] not even close. And I will spend more time going through all these text and reasoning capabilities.
+[07:16] I think this is such a powerful use case and ChatGPT really does shine here. I do have some
+[07:20] more unique and fun tests and challenges I'll go through at the end as well. And here's a prompt
+[07:24] I've run quite a few times in different image generators. I did it through NanoBanana Pro and
+[07:29] NanoBanana 2. They always get close but not perfect. The main issue is always down at the bottom. I
+[07:35] think part of the reason is because since there's 26 letters, that doesn't naturally fit into a
+[07:39] perfect grid. But it just really wants it to. So it either skips or adds or mixes things up. Starting
+[07:44] right here, the letters don't sync up with the animals. It's a Q for rhino, r sloth. So it's like
+[07:49] the names and pictures of the animals skip Q, but then the letters skip S. And it was a different
+[07:55] issue from NanoBanana 2. It was pretty close, but down on this bottom line again, it combined W and
+[08:01] X into one. So it's supposed to have a whale and then an x-ray fish, but it just made them one tile.
+[08:05] Then when you look at ChachiPT, it got this perfect. I've been running this prompt for a
+[08:10] while and this is the first time anything has gotten it perfect. And this is one to kind of
+[08:13] figure out how many different images it can fit all into one image. This is a 10x10 grid, a total
+[08:18] of 100 objects that start with the letter A. I didn't go through every single one of these, but
+[08:23] just scanning through, I don't see any issues. Actually, never mind, answering machine right here.
+[08:29] I think it tried to put the jacket and the answering machine on one. Then antique key. Okay, so
+[08:34] there's a couple issues. And I actually had to look this one up. I did not know that aubergine
+[08:39] and eggplant are the same thing. So it did get that one right. So it was super, super close.
+[08:44] Not perfect, but still very impressive. We got a newspaper with the announcement of the rollout of
+[08:50] GPT Images 2. The layout looks great. Has other articles all throughout. There's no issues in the
+[08:55] text. Super solid. When I've tried to do this in NanoBanana, if you give it all of the text,
+[09:00] it does a pretty good job. Like if you input an article and ask it to do this. But when you don't,
+[09:04] it usually will have issues in the other text around it. An engineer's screen, the dual monitors.
+[09:10] If you zoom in here, that is super impressive. Has all this code and all the folder structure
+[09:15] over on the side. And that's trying to be a VS Code logo. And then over on this other screen,
+[09:21] again, all the text is very good. Maybe some tiny issues when you look really closely.
+[09:26] But overall, that's amazing. You can even zoom in onto the notebook. All the text is good. The
+[09:30] blurring looks accurate. Really, really solid. For reference, here's what that looks like in
+[09:36] NanoBanana. First off, the aesthetic is not very good. But if I zoom into any of this,
+[09:40] it's just all nonsense. It gets the vibe right, but none of the text. Something else that's very
+[09:46] impressive about this is its ability to think through prompts. So when thinking mode is on,
+[09:52] it will go off and think for even a few minutes sometimes to do research and plan out the image.
+[09:57] I'll take this one as an example. A detailed infographic for the differences of the architectures
+[10:01] behind the leading AI video models. I can open up the thinking panel. You can see it makes a plan
+[10:07] here and then searches for detailed sources on the different models. It researches them all and
+[10:12] plans it out. It is trying to avoid using too many third-party claims. It's focusing on only
+[10:17] publicly disclosed details from the company. It does this for each different model. It discovers
+[10:22] which parts aren't disclosed. All in all, this one thought for seven minutes before it started
+[10:27] generating the infographic. And I can't zoom in when they're right here, so I'll jump back in here.
+[10:32] This has just a ton of detail and all throughout the text looks amazing. There's a couple parts
+[10:38] where it seems like, I don't know if they're just trying to stylize this. So I wouldn't say it's
+[10:42] wrong, but I'm not necessarily a fan of that. Obviously, I'm not reading through every single
+[10:46] word on this whole thing, but any part I'm looking at, I'm not seeing errors. And okay, there. I
+[10:52] finally found one here that should be emphasis. Overall, this is really good. You may be thinking
+[10:58] that NanoBanana has been able to do this type of thing, but when their infographics are this
+[11:02] detailed, there are way more errors in the text. Like, for example, this one was from NanoBanana.
+[11:08] It's nice and aesthetic. And honestly, it probably has less information on it than the ChatGPT one.
+[11:14] But if I zoom in here, right away, I'll start seeing them. Right here, I assume that should be
+[11:19] a reasoning chain. Over here, this should be joint synthesis of audio. This should be performed.
+[11:27] There's just a bunch of errors in this sentence. Error with this word here. Dolly Zoom is spelled
+[11:32] wrong. The infrastructure. You can see they're all over this one. NanoBanana is really, really
+[11:38] aesthetic with their infographics, but the more text they have, the more issues they get. I have
+[11:43] come across some issues, particularly on this one. So I asked it to look up the different 2026 Toyota
+[11:50] Sienna models and create an infographic with a feature list that highlights the differences
+[11:54] between each. We've been looking into minivans right now, so this was relevant to me. But at a
+[11:59] quick glance, the one from NanoBanana does look really aesthetic, but once I started actually
+[12:03] going through it to verify these things, I started running into some issues. First off, it's actually
+[12:09] completely missing one of the trims that should be between these last two here. It's called the
+[12:13] Woodland Edition. You can see that ChachiBT got that, but NanoBanana didn't. That was a big one
+[12:19] right off the bat, but when I actually pulled this up on the site to fact-check the other aspects of
+[12:23] this, I started uncovering some more stuff. So the LE, it says, is a seven-seater. I pull it up on the
+[12:30] site. It says it has eight seats. On the Limited, it says it has a moonroof. I tried to check that.
+[12:35] I did not see anything at all about a moonroof. I'm not going to walk you through every issue,
+[12:39] but I came across quite a few. The one I got from ChachiBT, I didn't notice anything wrong.
+[12:44] And just in general, it was a more helpful infographic. Like it listed the starting price.
+[12:49] That's something you typically want to know when you're shopping around. So once I started looking
+[12:53] into the details on these, ChachiBT started to stand out more and more. I won't do a deep dive
+[12:58] into this one, but it is pretty crazy. Asking it to search the web for all the latest and most
+[13:02] accurate information from today, then generating that. He did it as a mood board, but I ended up
+[13:07] converting it into a dashboard. So it did all this research, found each one of these news stories,
+[13:12] generated an image to go with each one of them, compiled it all into a dashboard. And I did check
+[13:17] some of this stuff, like the Timberwolves and Nuggets. It was $119 to $114. Then, actually,
+[13:23] I hadn't checked this one yet. I don't really know how to look up oil prices. I'm guessing
+[13:27] it's just this thing. So that one is not perfectly accurate. Sure, if we were to go through, there'd
+[13:32] be some minor details like that throughout here. But still, very impressive. Then here's one more,
+[13:37] kind of in the text realm, where it combines text with consistent characters. So I asked for a 10
+[13:42] panel storyboard showing the full scene play out with these paper characters after a fire
+[13:47] in their paper town. Include the scene numbers and production notes. So I built up a full narrative.
+[13:52] These characters stay perfectly consistent throughout every shot. Each one of these images
+[13:58] has just a ton of detail in them. Discovering this flower coming out of the debris. Reunion.
+[14:03] The community all coming together. They end up rebuilding the town. Super good job with that.
+[14:09] Now I've got a few more different tests and challenges I ran. I'll start out with this one,
+[14:12] where I was comparing how good it could recreate a style. And this image in particular,
+[14:17] Nanobanana, did way better. This is an image I generated in mid-journey of this bear with a
+[14:22] super colorful, unique style. And I asked for a bighorn sheep standing on a dramatic cliff
+[14:26] using this same style. You can see Nanobanana matched that perfectly. Chachapiti, on the other
+[14:32] hand, this is a cool image, but definitely not the original style. So I ran another one with
+[14:37] this papercraft image and said create a male character using the same style. They both did
+[14:42] a pretty good job, actually. I wouldn't say there's a clear winner on this one. Then this one,
+[14:46] another mid-journey image, turned the camera around to show the person this man is playing
+[14:50] against in poker. You'd think it would be trying to maintain the same style, and Chachapiti did a
+[14:55] pretty good job with that. You know, it's definitely still this guy here, and that's
+[14:58] fairly close to that style. But Nanobanana, not at all. Just completely different lighting and
+[15:06] completely different style. And as a side note, he also only has four cards. So I guess that's a
+[15:10] toss-up. Nanobanana won, then they tied, then Chachapiti won. And then for this one, I just
+[15:15] tested out how it can generate in different aspect ratios. An 8-bit side-scroller adventure game in
+[15:20] 3-1. And yeah, this is a really good style. Although that looks like a Goomba, so it's just
+[15:25] stealing from Mario. But yeah, it can generate in all sorts of aspect ratios. Then one of those
+[15:30] classic challenges, combining a few of the different challenges actually, a hand with
+[15:33] seven fingers, a wall clock showing 822, and a glass of red wine full to the top. This is so
+[15:39] close to perfect. The hand is right, the glass is full to the brim, but then the clock, the minute
+[15:44] hand is right, but this hour hand should be just a little bit further. But it's the closest result
+[15:49] I've ever gotten. Then I did a couple of these where I said convert this into a photorealistic
+[15:53] image. I would say it nailed that really, really well. Yeah, I like that result a lot. I tried it
+[15:59] with that bear image. I think that one's a little easier for it to recreate. And then this one, I
+[16:04] was not sure how it was going to go. Very curious, and it worked out really well. It's kind of
+[16:10] difficult with these ones. I don't really know how to picture this one in my head, but then I see it,
+[16:13] I'm like, yeah, it looks awesome. Then this is a prompt that they used in their live stream. I have
+[16:18] the prompt, rice with thousands of grains, but one of the grains has the word Futurpedia etched
+[16:22] onto it. And then you can zoom in on this, and you got Futurpedia right there. I thought that was a
+[16:28] super cool prompt, definitely a difficult challenge. I did also try it in Nano Banana to see if it
+[16:33] would work, and it found a way to make it work. And what's funny is I ran this multiple times,
+[16:40] and it cheated in the same way every time. Even this one, where if you were to zoom into this
+[16:44] section, it doesn't actually have Futurpedia written there. So ChachiPT definitely won that
+[16:48] round. All in all, ChachiPT won most of the time, not in everything. So I'll still use both tools,
+[16:55] but for complex text and when you want to combine research and make sure the output is something
+[17:00] accurate, ChachiPT definitely won there. Although Nano Banana has really nice aesthetics when it
+[17:04] comes to text, so I'll still use it depending on the situation. Overall, I am very happy with this
+[17:09] new model, so I will definitely be utilizing this regularly. I'm going to test it out on thumbnails
+[17:13] a lot more. Let me know what you think of the one on this video.

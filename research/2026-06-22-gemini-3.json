@@ -1,0 +1,25 @@
+{
+  "query": "gemini 3",
+  "total_found": 1,
+  "long_form_found": 1,
+  "shorts_found": 0,
+  "days": 90,
+  "top_n": 12,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "Building Voice Agents with Gemini 3",
+      "channel": "Google for Developers",
+      "views": 23641,
+      "likes": 673,
+      "comments": 31,
+      "upload_date": "20260326",
+      "duration": "23:55",
+      "duration_seconds": 1435,
+      "url": "https://youtube.com/watch?v=XV5bhkDpL7U",
+      "description": "*Build real-time conversational agents with Gemini 3*\nThor from Google DeepMind walks through the Gemini Live API, showing how to build natural, human-like voice interactions powered by Gemini\u2019s native audio model: speech-to-speech, no text in the middle, with emotional nuance, multilingual support,",
+      "id": "XV5bhkDpL7U"
+    }
+  ],
+  "shorts": []
+}

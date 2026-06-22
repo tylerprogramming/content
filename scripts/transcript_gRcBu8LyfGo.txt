@@ -1,0 +1,375 @@
+[00:00] 84% of businesses in America don't have any employees.
+[00:03] That's 30 million people running one-person businesses.
+[00:07] And the crazy part is 77% of them are profitable within the first year.
+[00:11] And it's only possible because of the recent advancement in AI.
+[00:15] Now the problem for most people who want to build a one-person business with AI,
+[00:19] you might go on YouTube and people will say,
+[00:21] oh, you got to build an app.
+[00:22] And once you get into vibe coding and cloud coding,
+[00:25] you will quickly realize that it becomes super technical and not easy at all.
+[00:29] Now for my personal experience,
+[00:30] you don't need to make an AI app to make $10,000 per month.
+[00:34] All you need is to sell a skill and have AI do all the heavy lifting.
+[00:38] Now for me personally, I actually left my six-figure tech sales job in Silicon Valley
+[00:42] to build my business in Vietnam.
+[00:44] And AI is doing the majority of the work now.
+[00:47] I even taught this exact model to one of my clients, Sandy,
+[00:51] who went from an employee to starting her own AI automation agency,
+[00:55] making $5,500 a month within just a couple months.
+[00:58] And now she's one of the fastest-growing female creators in the AI space on YouTube.
+[01:03] So in this video, I'm going to show you the exact framework
+[01:05] that you could essentially copy to build your profitable one-person business
+[01:10] in the next 30 days.
+[01:11] And specifically, we're going to be using cloud all the way through.
+[01:14] And don't worry, if you don't have any coding experience,
+[01:17] you're not technical at all,
+[01:19] and maybe you've never even used cloud before,
+[01:21] this is going to be the perfect place to start.
+[01:25] Now in order to build your profitable one-person business,
+[01:27] the first question that most people are going to have is,
+[01:29] what are you even supposed to sell?
+[01:31] You basically have two things you can sell.
+[01:33] It's either you're going to sell a product, okay,
+[01:35] so that's why everyone's selling the idea of like an app made with AI,
+[01:38] or you're going to sell a service.
+[01:40] Now I want to quickly go through the pros and cons of each
+[01:42] so you can make informed decisions on where you want to commit your time.
+[01:45] Okay, so if you want to make some kind of AI app or some kind of product,
+[01:48] the pros of that is you make it once and you sell it forever, right?
+[01:51] So that's why people have these apps, people pay like $5 a month for,
+[01:54] and it might make sense,
+[01:56] but the challenge of that is it's very time-consuming
+[01:59] to actually learn how to Vive Code and create something that's usable.
+[02:02] Even if you spend all that time, you're not even sure if people are going to buy it.
+[02:05] And if you really look at the data,
+[02:07] the majority of apps that are created with AI don't even make $100.
+[02:11] Probably more than 99% of them like completely fail, right?
+[02:14] For me, I kind of lean on AI-powered services
+[02:16] because a service is really just a promise,
+[02:18] meaning you sell the thing first,
+[02:20] and then you build whatever it is that you promise later.
+[02:22] So you don't have to commit any time or resources to build something, right?
+[02:25] You can make money right away.
+[02:26] There's zero startup time and zero startup costs
+[02:29] because it's just a promise
+[02:30] and you use the money clients give you to build whatever it is you want to build.
+[02:33] And in some ways, it's scalable because once you build it one time,
+[02:36] you can sell the same thing over and over to different people.
+[02:39] And the best part of this all is you can do all this just using Cloud and only Cloud
+[02:43] without any like complicated automations and connecting all these APIs,
+[02:47] just Cloud, that's it, and it works.
+[02:48] And I'll show you later in this video, right?
+[02:50] So you don't need any technical skills.
+[02:51] The con of it is, yeah, maybe it's not as scalable as an app could be
+[02:56] because it is a service at the end of the day,
+[02:57] but just the AI-powered service.
+[02:59] But that con is not actually a bad thing
+[03:01] because if you have an AI-powered service,
+[03:03] meaning you're doing the same thing for everybody,
+[03:05] you could eventually turn it into an app and sell it to more businesses, right?
+[03:08] But now the question is, what is an AI-powered service to begin with?
+[03:12] And the way I think about it is you're just taking some kind of skill
+[03:16] that someone would do without AI,
+[03:18] and then you're just having AI do all the work.
+[03:20] So here's how I look at AI-powered services, right?
+[03:22] It's just a service powered by AI.
+[03:24] So let's say it's like cold emailing, YouTube script writing, thumbnails,
+[03:27] you know, helping people get their dream jobs as a coach, right?
+[03:30] Some kind of SEO.
+[03:31] All these services traditionally can be done without AI,
+[03:34] but when you have AI do all the work,
+[03:36] then it's just going to be so much easier, right?
+[03:37] People don't really care if something is AI or not AI.
+[03:40] What they care about is the results, okay?
+[03:42] They don't really care how the meal is cooked in the kitchen.
+[03:45] They care about how it tastes and how it's presented once the food is ready, right?
+[03:48] I'll give you a perfect example.
+[03:49] One of my clients, Sandy, she had no experience in anything AI,
+[03:52] but she was really passionate about it and wanted to learn about this kind of stuff.
+[03:55] So I helped her get her first client,
+[03:56] and the first AI automation business she did was writing blog posts,
+[04:00] like SEO-optimized blog posts for these tech companies,
+[04:03] and they started paying her around $3,000 per month doing this,
+[04:07] and she didn't really know anything about SEO,
+[04:08] but she just did it using AI.
+[04:10] A lot of it's Claude to generate these things,
+[04:13] and then she would spend like, you know, 15 minutes a day creating a bunch of blog posts.
+[04:16] They would post it, they would get results,
+[04:17] and then the results were so good that they upped her pay to $5,500 per month just doing blogs,
+[04:23] and she's even doing this while working her full-time job.
+[04:25] So this is an example of a service which is just creating SEO blogs,
+[04:29] but you're just delivering the output.
+[04:30] You're just saying like, here's a blog I made, copy and paste it on your website.
+[04:33] They don't really care how it's made.
+[04:34] They know it's AI, but as long as it gets results,
+[04:37] they don't care if you spend 15 minutes or 15 hours.
+[04:39] Results are the most important at the end of the day,
+[04:41] and the really interesting part of this all is Sandy didn't have to invest any time
+[04:45] or resources to even build this kind of blog-creating automation.
+[04:49] She literally pitched it to the client, they agreed on a price,
+[04:53] and then she took the money, found different people to make these automations,
+[04:57] and then she made it with the money that the client gave her, right?
+[04:59] It's all about selling first, building later.
+[05:02] And by the way guys, if you want the full training on exactly how to come up with a business idea,
+[05:07] build a personal brand, and sign high-ticket clients,
+[05:10] especially when it comes to doing all this with AI,
+[05:12] check the link in the description where I have a free training
+[05:15] that will guide you through the entire process from A to Z.
+[05:18] So again, make sure to sign up for that free training and I'll catch you there.
+[05:21] So hopefully now I inspired you to think about,
+[05:24] hey, maybe you should provide some kind of like AI-powered service, right, as a one-person business.
+[05:28] The next question you might have is,
+[05:30] okay, how do we actually find your unique AI-powered business idea?
+[05:34] I'll start with this.
+[05:34] Most people, they get really overwhelmed because they have a lot of skills and they can do anything,
+[05:39] but when they have too many choices, they just freeze up, right?
+[05:41] Because they're afraid of choosing the wrong idea
+[05:44] or picking ideas that they don't really have an advantage in,
+[05:47] they're not really sure,
+[05:48] and they don't want to be stuck in a business that they don't like doing.
+[05:50] Okay, that would be the worst.
+[05:51] Here's my advice to you if you're starting from zero.
+[05:54] When you're selling a service, like an AI-powered service,
+[05:57] just remember, you're just selling a promise, okay?
+[05:59] You're not investing time, money, energy into building anything
+[06:03] until somebody pays you money and it touches your bank account.
+[06:06] Now with that in mind, the simplest way to find your business idea is actually just to use the Ikigai.
+[06:11] The Ikigai is a Japanese concept that is meant to help you find your reason for being,
+[06:16] and it's combining things like what you love,
+[06:18] what you're passionate about,
+[06:19] what you can be paid for,
+[06:20] as well as what the world needs.
+[06:22] Now, I actually have a free gift for you
+[06:23] where I'm going to help you find your purpose and your reason for being,
+[06:27] and we're going to use Clawd for this, okay?
+[06:29] So I put a link in the description where you can actually download this specific Clawd skill
+[06:33] that I personally created for you.
+[06:35] So how it works is once you download it,
+[06:36] you put in the Clawd, you install it,
+[06:38] you basically put a slash pd-ikigai,
+[06:40] and then this is a skill that I created for you that you can use literally in your Clawd, right?
+[06:44] So you will have the same thing I will have.
+[06:46] And then from here, once you enter it,
+[06:48] what's going to happen is it's going to prompt you to fill out your Ikigai.
+[06:52] So it's going to ask you different questions from,
+[06:54] it's like, hey, we're going to help you find your profitable business idea,
+[06:57] and then you're going to answer these questions one by one, right?
+[06:59] So the first one is like, what do you love doing?
+[07:01] You write it all down.
+[07:02] Then it's going to be, what are your passions?
+[07:04] Write it all down, right?
+[07:05] And you just basically follow the steps until at the end,
+[07:08] it will give you some kind of result on what kind of business idea you should do.
+[07:11] And I know this process 100% works because one of my clients, Brandon,
+[07:14] he is a VP at a construction glass company,
+[07:18] and I basically took him from making, you know, as a side income,
+[07:21] he was making like 750 bucks a month.
+[07:23] We got him to 10k per month within 30 days using this literal Ikigai exercise, right?
+[07:27] So I'm talking about this, like you literally just follow it.
+[07:29] It will find you a business idea.
+[07:31] And for Brandon specifically, I actually made this for this video.
+[07:33] Basically, I took Brandon's Ikigai, put it all together,
+[07:36] and actually Claude is the one that made this and made it all pretty with the diagrams, right?
+[07:39] He was good at like all the construction kind of stuff in his company.
+[07:43] He's good at videography, photography, camera stuff.
+[07:45] So this is all the stuff that he loves, right?
+[07:47] He's good at basically sales, video production, personal branding,
+[07:51] like basically content and sales.
+[07:52] What does the world need?
+[07:53] You know, all these glazing companies,
+[07:55] like these ones that make like really nice wine cellars and all that kind of stuff,
+[07:58] they need content, right?
+[08:00] Because there's no one who's an authority helping that particular niche.
+[08:03] What can it be paid for?
+[08:04] Coaching these companies and founders on how to make content to get more clients, obviously.
+[08:08] So we just combine his love and passion for creating content,
+[08:12] combining it with his current industry with the whole construction and glazing industry,
+[08:16] put it together to create not only a service where he's helping people create the videos,
+[08:20] scripting it for them,
+[08:21] and we're even coaching them on how to make good videos as well.
+[08:24] So it's the perfect side business for him that uses all his strengths,
+[08:28] interests, and passions, and now he has a dual income.
+[08:30] And I want to say when you go through this exercise,
+[08:32] the most important questions that you should walk away with after you do it is you need to be clear on what you sell.
+[08:36] Okay, so what level of service do you want to provide to your clients?
+[08:39] Are you doing the work for them?
+[08:40] Are you coaching them and they do the work and you just give them feedback?
+[08:43] You just need to be clear.
+[08:44] You need to figure out who you're selling to,
+[08:46] whether it's you're working with businesses, everyday, regular people,
+[08:50] maybe it's a government, right?
+[08:51] Just be clear on that and like what do these guys look like?
+[08:53] Are they nine to five employees?
+[08:54] Are they construction companies?
+[08:56] You want to make sure you're playing in a niche you have advantage in, right?
+[08:58] Also understand you need pricing.
+[08:59] So like what are you going to charge?
+[09:01] You know, for Brandon, he charges like two to three K per client.
+[09:03] You know, I do also highly recommend doing high ticket as well because you'd be surprised even if you have a small following,
+[09:08] you can still charge a lot if you provide value.
+[09:10] And lastly, what's going to make you different?
+[09:12] So for Brandon, he is uniquely positioned to help these companies because he's passionate about content and he's been in the industry for a while.
+[09:19] For Sandy, she had real no advantage in AI when she first started,
+[09:23] but what she does with the content especially and she's becoming one of the fastest growing AI creators on YouTube.
+[09:27] She makes it very non-technical, right?
+[09:29] She's a mom.
+[09:30] She has three kids, but she's able to spend a couple hours a day learning this AI stuff.
+[09:33] And so she's appealing to all these regular everyday people that also want to learn AI.
+[09:37] You don't need to be the best, but you need to have a different story for people to connect with.
+[09:43] Now that we have the EKI, how do we actually deliver on your AI powered service?
+[09:47] Like if somebody were to pay you $3,000, do you know what you would even do for them, right?
+[09:51] And this is the question a lot of my clients have when they work with me.
+[09:54] So I'm going to give you some sauce.
+[09:55] When it comes to delivering your AI powered service, the goal is really to deliver maximum results with minimal effort.
+[10:01] So you want to design your business that supports your lifestyle.
+[10:04] So a lot of us do this because we want to be free, we want to make money online, and we want to be able to do whatever we want, right?
+[10:10] You don't want to put yourself in golden handcuffs and be making money doing something you hate.
+[10:14] So a lot of my people I coach, they want to help people get like their dream tech sales job or something, right?
+[10:19] You know, in this example, I'm helping a client with a coaching offer where they're going to help other people land their dream jobs.
+[10:24] The best way to figure out what you should even do for these clients is you look at the top three challenges that your ideal customer has,
+[10:30] and you create a clod skill similar to the Ikigai one that I just showed you, right?
+[10:34] Same process, but you create your own and you use that clod skill to solve each challenge.
+[10:38] So let's say you're a coach, you're helping people find their dream job, okay?
+[10:41] There's really three things that people have a problem with.
+[10:44] Number one, their resume and the LinkedIn profile sucks.
+[10:46] That's why nobody responds to them.
+[10:47] Number two, they can't get any interviews with the right companies.
+[10:49] And number three, when they get the interviews, they don't know how to perform really well.
+[10:53] So for someone helping others get their dream job, these are the three major pain points.
+[10:59] Now for each of these pain points, you can actually create a clod skill.
+[11:02] So if you're coaching someone and you're on the call with them and you're getting paid $5,000 to guarantee they get a job at Salesforce or something,
+[11:10] what you can do is instead of you having to do all the work, you just have clod do the work for you.
+[11:15] So if you want to create a skill for your own business, you would just go to clod and say,
+[11:18] hey, help me create a clod skill to help my clients land their dream jobs.
+[11:23] I'm going to say I'm going to give you, I'm going to give you their resume and LinkedIn and you make it a perfect resume.
+[11:30] You know, this is just an example, right?
+[11:31] But to make it really good, you have to be more specific.
+[11:34] Give it more details like, hey, make this resume specifically to target these type of companies, right?
+[11:39] So there's always ways to make the skills better.
+[11:41] And then I actually created the skill here.
+[11:44] So basically, once you create a skill, you have a name for it.
+[11:46] Then you put in the person's LinkedIn profile.
+[11:48] Then you put in their resume and then you just press enter and then it will make you the perfect resume.
+[11:53] Now for this demo, I already did it.
+[11:54] And I'm not saying this is the best resume, but it's just an example.
+[11:57] Okay, so if you were to help someone get a job and you literally just use a skill, put in their information and create the whole resume,
+[12:03] you can basically go back to them and say, hey, I created your resume for you.
+[12:07] And now let's go ahead and send it to recruiters so that we can get you your perfect job.
+[12:11] So that's just one application of how you can be using clod skills.
+[12:14] Now for me personally, what I do in my business is I help people build their personal brands.
+[12:19] I help them start these one person kind of businesses and I help them escape their nine to five jobs.
+[12:23] So that eeky guy skill that I just gave you with the link in the description, this is literally what I use when I coach my clients.
+[12:30] I just get all the data that they give me.
+[12:32] I run it through the skill to kind of figure out, okay, based on their unique experiences and everything they told me,
+[12:37] what are some business ideas that make sense for them?
+[12:39] I'll have Claude do a lot of the research and then I use my human eye and experience to really dig deep to figure out if that's a business idea that makes sense.
+[12:46] So yes, the AI does a lot of the work.
+[12:48] It crunches all the data, but I still think for many of the offers out there, whether it's a coaching, consulting, creating good content,
+[12:54] there still needs to be that human taste to curate the ideas to make sure the output is something that's high quality.
+[13:00] Now, let me know in the comments if learning skills, especially on clod, is something you want to see more of.
+[13:04] And maybe you might want to see more of my personal skills that I'm using on a day to day basis.
+[13:08] If that's the case, leave a comment in this video and I'd be happy to make more videos like this.
+[13:12] So now we're going to get into the final stage of building a profitable one person business and that's actually signing clients.
+[13:18] Okay, we know what to sell.
+[13:19] We know who to sell it to.
+[13:20] We know how to deliver on the service.
+[13:22] But how do we get people to pay us money?
+[13:23] And to be honest, there's really only two ways.
+[13:25] Number one is you got to build a personal brand.
+[13:27] That's creating content, whether it's on YouTube, X, LinkedIn, Instagram.
+[13:31] It depends on where your audience hangs out and what kind of content you like to make.
+[13:34] But you got to build your personal brand because like if you don't have a brand, why would anyone want to work with you, right?
+[13:38] So building a brand gets leads to come to you.
+[13:40] It makes you differentiated because you're building a brand.
+[13:43] People connect with you as a human being and you're pre-selling your clients in the content itself, right?
+[13:48] So when you get on the call with them, they're already sold.
+[13:50] Now the other way to do it and I would recommend both is outreach.
+[13:52] So you're just reaching out to people cold who may not have no idea who you are, right?
+[13:56] Like I literally just closed a client today.
+[13:59] They just paid the first payment.
+[14:00] It's a B2B client.
+[14:01] I literally just sent them a cold message on LinkedIn.
+[14:03] They responded positively.
+[14:05] I made a loom video explaining all the things I could do to help their business.
+[14:09] They loved the video.
+[14:09] We got on the call and then I just sold them right there and they were just paying.
+[14:13] So it's really as simple as that.
+[14:15] When you have a personal brand, what happens is when you do outreach,
+[14:18] your chance of people responding is so much higher because you have a brand.
+[14:21] If you do outreach with no personal brand, it's like good luck, right?
+[14:24] Like who's going to respond to a random stranger with no social proof?
+[14:28] So it's just the name of the game if you want to succeed.
+[14:30] So LinkedIn DMs work, cold emails work, loom videos works,
+[14:33] even going on Upwork and hitting up people doing the jobs.
+[14:35] Like that works too, right?
+[14:36] Anything can work,
+[14:37] but you have to find the path that works best for you and your particular sale.
+[14:41] And the way I think about it is you're going to build a personal brand,
+[14:43] you're going to do outreach,
+[14:44] and at the end of the day, it all funnels down to sales calls, right?
+[14:47] If you're doing B2B and you want to sign high-ticket clients for $2,000 plus,
+[14:50] you got to get them on a call.
+[14:51] You got to explain, you know, what you do, understand their problems,
+[14:54] and then you just close them.
+[14:55] If you cannot sell them on a call,
+[14:56] it's pretty unlikely for you to sell them like on a sales landing page or a webinar
+[15:00] because you haven't understood what problems they have
+[15:02] and how to speak their language.
+[15:03] So that's why I always recommend do the calls first.
+[15:06] It's a little grindy, but do the calls first,
+[15:08] and then from there, once you have a brand,
+[15:10] then you can think about like,
+[15:11] oh, okay, maybe you could sell something without a call, right?
+[15:14] But to be honest, if you're trying to get a 10K as quickly as possible,
+[15:17] selling these AI-powered services,
+[15:19] getting on a call is the way to go.
+[15:20] And in terms of timeline, realistically,
+[15:22] what you can expect for the first 30 days if you really implemented this,
+[15:25] days 1 to 7, you find your ikigai and you create your offer, right?
+[15:29] Day 7 to 14, you reach out to at least 20 people per day.
+[15:32] That's 100 people per week minimum, okay?
+[15:35] You would probably want to do 200 per week to be honest,
+[15:37] but let's say just minimum, that's what you need to do.
+[15:39] Now, days 14 to 21,
+[15:41] that's when you really start building your personal brand,
+[15:43] start creating content,
+[15:44] just pick one platform to build on,
+[15:45] whether it's LinkedIn, Instagram, YouTube, it's up to you,
+[15:47] and then just post like these simple content.
+[15:50] You don't need crazy editing.
+[15:51] Sandy edits all her videos by herself with AI,
+[15:53] and it's working fine for her, right?
+[15:55] So it doesn't matter if it sucks, just get started.
+[15:57] And from days 21 to 30, just keep doing what you're doing.
+[16:00] Outreach people, create content, until you book meetings and you close.
+[16:03] Sandy got her first client actually in the B2B AI automation space
+[16:07] about one week of taking it seriously.
+[16:10] Yvonne got her first client helping people get their dream tech sales job
+[16:13] within the first month working with me.
+[16:15] Brandon got three clients on LinkedIn using these methods
+[16:18] and got to 10k per month in 30 days.
+[16:20] So is it possible for you to get your first client in 30 days?
+[16:23] It's possible.
+[16:24] It's not a guarantee, but the system is there for you to do it.
+[16:27] It's possible.
+[16:27] Many regular people have done it, so why not you?
+[16:29] All right.
+[16:30] So now you have the full system to build your profitable personal brand using Cloud.
+[16:34] But even if you have all the skills that I gave you and you have the roadmap,
+[16:37] you still might have some challenges from knowing exactly
+[16:40] if you should commit to your business idea,
+[16:42] trying to find your unique advantage that will make you different from everybody else.
+[16:46] And sometimes it's just getting expert guidance from someone who's done it before.
+[16:49] Now at this point, I've helped countless of people like Sandy, Yvonne, and Brandon
+[16:54] make a serious side income while working their full-time jobs.
+[16:56] And if you want my help to craft a game plan for you so you can do it for yourself,
+[17:01] I highly encourage you to book a time on my calendar using the link in the description
+[17:04] where we can map out exactly what this can look like for you.
+[17:07] At the end of the day, it's about helping you sign your first clients as quickly as possible.
+[17:11] And a lot of my clients that I mentioned earlier,
+[17:13] they all signed their first client within the first 30 days of working with me.
+[17:16] So again, if that's something you're interested in learning about,
+[17:18] go ahead and click the link in description to book a time on my calendar
+[17:21] and I'll talk to you soon.
+[17:23] But if you want to watch another video to get to know me a little bit more,
+[17:26] check out this one here where I show you how to sign clients on LinkedIn using Clod.

@@ -1,0 +1,90 @@
+{
+  "query": "nano banana pro",
+  "total_found": 6,
+  "long_form_found": 6,
+  "shorts_found": 0,
+  "days": 90,
+  "top_n": 12,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "ChatGPT Images 2.0 vs Nano Banana Pro: Who Wins?",
+      "channel": "Mira AI",
+      "views": 11002,
+      "likes": 0,
+      "comments": 6,
+      "upload_date": "20260518",
+      "duration": "15:45",
+      "duration_seconds": 945,
+      "url": "https://youtube.com/watch?v=hSdFiBTLdb8",
+      "description": "I Tested GPT Images 2.0 vs Nano Banana Pro To Find The Best AI Image Generator\nTry both\u2728 https://higgsfield.ai/ai-video?fpr=utm&fp_sid=skai\n\nHey friends\u2728, today we dive deep into ChatGPT's latest release, GPT Images 2.0, which introduces groundbreaking features like \"Thinking Mode\" to elevate your a",
+      "id": "hSdFiBTLdb8"
+    },
+    {
+      "title": "Nano Banana 2 vs Nano Banana Pro: Who Wins?",
+      "channel": "Thomas Creates",
+      "views": 10282,
+      "likes": 0,
+      "comments": 1,
+      "upload_date": "20260326",
+      "duration": "8:10",
+      "duration_seconds": 490,
+      "url": "https://youtube.com/watch?v=zKLT9p6XuWg",
+      "description": "Access BOTH on Higgsfield \ud83d\udc49 https://higgsfield.ai?fpr=ai&fp_sid=thomas8\n\nIn this video, I break down how Nano Banana 2 and Nano Banana Pro actually handle prompts, scenes, and repeated generations in real use. Most people compare results at surface level, which hides how each model behaves once you ",
+      "id": "zKLT9p6XuWg"
+    },
+    {
+      "title": "OpenAI Image 2.0 vs Nano Banana Pro - TESTED",
+      "channel": "DesignCourse",
+      "views": 6263,
+      "likes": 135,
+      "comments": 6,
+      "upload_date": "20260424",
+      "duration": "11:48",
+      "duration_seconds": 708,
+      "url": "https://youtube.com/watch?v=1xzmPhQQjwE",
+      "description": "Build a SaaS with Claude: https://designcourse.com/app/course/claude-code-ai-saas (Take now)\n-- Today, we're taking a look at a real-world comparison, in a soon-to-be-released AI landscaping app, between OpenAI's new Image 2.0 model, Gemini 3.1 Flash, and Gemini Nano Banana 2 Pro. INTERESTING INSIGH",
+      "id": "1xzmPhQQjwE"
+    },
+    {
+      "title": "How to use Nano Banana Pro (Master in 10 Minutes)",
+      "channel": "Mariana Montoya ",
+      "views": 2158,
+      "likes": 0,
+      "comments": 5,
+      "upload_date": "20260605",
+      "duration": "11:20",
+      "duration_seconds": 680,
+      "url": "https://youtube.com/watch?v=-gWHxXS15Pg",
+      "description": "In this complete step-by-step tutorial, I'll show you exactly how to use Nano Banana 2's powerful image generation and editing features directly within Dzine, even if you're a complete beginner. Try Dzine: https://www.dzine.ai/?via=mariana-YT \n\nNano Banana 2 is one of the most exciting new AI image ",
+      "id": "-gWHxXS15Pg"
+    },
+    {
+      "title": "New Way Now: WATG builds a $7.5M productivity engine with Gemini Enterprise and Nano Banana Pro",
+      "channel": "Google Cloud",
+      "views": 4,
+      "likes": 0,
+      "comments": 0,
+      "upload_date": "20260622",
+      "duration": "3:47",
+      "duration_seconds": 227,
+      "url": "https://youtube.com/watch?v=EFXADUaLM5M",
+      "description": "Learn more: https://goo.gle/4epvdcy\n\nFeatured in this video: Sean Harry, Global Managing Principal of Technology, Data, and AI, WATG \n\nExecutive summary: WATG, a global hospitality design firm, is redefining the client experience by moving from a reactive to a proactive, AI-first approach. Despite b",
+      "id": "EFXADUaLM5M"
+    },
+    {
+      "title": "We Tested Nano Banana Pro, GPT Image 2, and Flux 2 Pro with the same prompt. Results Are Surprising.",
+      "channel": "BeyondBeings",
+      "views": 1,
+      "likes": 0,
+      "comments": 0,
+      "upload_date": "20260622",
+      "duration": "6:33",
+      "duration_seconds": 393,
+      "url": "https://youtube.com/watch?v=3PcAl0xOAxM",
+      "description": "We tested GPT Image 2, Nano Banana Pro, and Flux 2 Pro on the same editorial graphic prompt to see which AI image model actually performs better for news style graphics.\n\nThis test was not about random art, cinematic images, or pretty visuals. The goal was to see which model can generate a usable ed",
+      "id": "3PcAl0xOAxM"
+    }
+  ],
+  "shorts": []
+}

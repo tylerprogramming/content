@@ -1,0 +1,25 @@
+{
+  "query": "ai social media automation",
+  "total_found": 1,
+  "long_form_found": 1,
+  "shorts_found": 0,
+  "days": 60,
+  "top_n": 15,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "AI Social Media Automation: I Automated My Social Media with AI Agents (Step-by-Step)",
+      "channel": "Bolta",
+      "views": 12,
+      "likes": 1,
+      "comments": 0,
+      "upload_date": "20260601",
+      "duration": "1:44",
+      "duration_seconds": 104,
+      "url": "https://youtube.com/watch?v=5CSd0Y0pzsE",
+      "description": "Stop spending hours writing and scheduling posts. In this step-by-step tutorial, I show you exactly how I put my social media on 100% autopilot using AI agents.\n\nI\u2019ll walk you through the exact Bolta.ai workflow, including how to clone your brand voice so the AI sounds exactly like you, and how to g",
+      "id": "5CSd0Y0pzsE"
+    }
+  ],
+  "shorts": []
+}
