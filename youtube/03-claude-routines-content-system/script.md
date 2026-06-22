@@ -6,25 +6,17 @@
 
 ---
 
-## [0:00 - 1:00] HOOK
+## [0:00 - 0:35] HOOK (proof-first - get to a real Routine in the first 15 seconds)
 
-[SHOW: Cold open. Claude Routines dashboard on claude.ai. Tyler on camera, fast cuts.]
+[SHOW: OPEN ON THE PAYOFF. A Slack message that a Routine posted overnight - the inbox digest or the competitor digest - landing on screen. Then quick cut to the Routine's config on claude.ai showing it ran while the laptop was closed.]
 
-> "Everybody's saying Claude Routines killed n8n. They're wrong.
+> "This ran at 5 AM while I was asleep. [SHOW the Slack output] My AI read my inbox, drafted every reply, and handed me a summary before I woke up. I didn't touch it. This is a Claude Routine, and it runs in the cloud, no laptop, no me.
 >
-> That's not the story. The story is what happens when you pair Routines with Claude Code on your own machine. That's the stack that actually runs a business on autopilot.
+> [Quick cut, on camera] Everybody's saying Routines killed n8n. Wrong. The real story is Routines plus Claude Code as one stack, and I've built this kind of automation for IBM, JPMorgan, Pfizer, and 150K YouTubers, so let me just show you.
 >
-> Quick context on why you should listen to me on this. I've built hundreds of AI agents and automations. For Fortune 500 companies. JPMorgan. Pfizer. For 150K plus YouTubers running their entire content pipeline. For top Skool communities with custom GPTs and knowledge bases. This isn't theory for me. This is what I do.
->
-> So when Anthropic dropped Routines, I was in day one. Gmail, Slack, Apify, all hooked up, running while I sleep. I run 22 custom Claude Code skills that publish 30 plus pieces of content a week. That's the system.
->
-> In this video I'm going to show you exactly what Routines are. I'll walk you through two real ones I run in my own business. Then I'll build a new one from scratch live. After that, I'm switching to Claude Code on my machine, running the same kind of work but hands-on. And I'll show you one command nobody's talking about, `/loop`, that changes everything.
->
-> By the end, you'll know where Routines win. Where Claude Code wins. And how to use them together.
->
-> Let's get into it."
+> Two real Routines I run, then I build one live, then the Claude Code side and the one command nobody talks about, `/loop`. Let's go."
 
-[NOTE: Keep the hook under 60 seconds. Cuts should be fast. No long pauses. This needs to punch.]
+[NOTE: HARD RULE - a real Routine result is on screen in the first 10-15 seconds. Credibility is ONE fast sentence, not a paragraph. No "what is a routine" theory before the proof. This is where retention is won. Total hook ~30-35s, then straight into Point 1.]
 
 ---
 
@@ -282,11 +274,13 @@
 >
 > Claude Code has a command called `/loop`. What it does is let you run any task on a recurring schedule, locally, right on your machine.
 >
-> Routines do cloud schedules. `/loop` does local schedules. Different tools. Different jobs.
+> And I need to clear up the thing that confuses everybody, because they're both slash commands in the terminal. `/schedule` and `/loop` are NOT the same thing. `/schedule`, the one I used earlier, creates a cloud Routine. Anthropic's servers, cloud connectors, laptop closed. `/loop` runs right here on my machine, in my terminal session, with my local files and my local skills. Same idea, recurring work, completely different place it runs.
 >
-> Why does this matter? Because some things can't run in the cloud. They need your local files. Your local environment. Your local API keys. Your local git repo.
+> Why does the local one matter? Because some things can't run in the cloud. They need your local files. Your local environment. Your local API keys. Your local git repo.
 >
 > Watch."
+
+[SHOW: two-box overlay for the contrast - `/schedule` → CLOUD Routine (Anthropic servers, cloud connectors, laptop closed) | `/loop` → LOCAL (your machine, your files + skills). Caption: "Both are terminal commands - that's why people mix them up."]
 
 [SHOW: Run `/loop 30m /yt-search ai automation` or a similar useful loop.]
 
