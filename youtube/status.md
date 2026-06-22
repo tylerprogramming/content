@@ -7,29 +7,14 @@
 
 ---
 
-## 🎥 RECORDING NOW (2026-06-22)
-
-| Video | Folder | Notes |
-|---|---|---|
-| **Claude Routines + Claude Code** | `03-claude-routines-content-system/` | Recording today. 28-30 min. Live-build the Routine on camera. Lean cold open proof-first/showcase (per the diagnostic); finalize title toward showcase framing after. |
-
----
-
-## 📅 Scheduled
-
-| Video | Folder | Goes live |
-|---|---|---|
-| **Claude Code Skills: The Only Course You'll Ever Need (2026)** | `02-skills-full-course/` | **2026-06-21, 12:00 PM ET (16:00 UTC)** — thumbnail A ("YOUR FIRST SKILL"), funnel CTA (free.tylerai.dev/youtube/). Thumbnail B + title B held as A/B backups. |
-
----
-
 ## ✂️ With editor
 
 | Video | Folder | Editor folder |
 |---|---|---|
-| **Granola AI** (PAID partnership) | `granola-claude-code/` | (3) granola ai — recorded, FTC disclosure + privacy blur mandatory in edit |
+| **Claude Routines + Claude Code** | `03-claude-routines-content-system/` | Recorded 2026-06-22. Post-edit: /chapters, finalize showcase title + thumbnail, queue upload. |
+| **Granola AI** (PAID partnership) | `granola-claude-code/` | (3) granola ai — FTC disclosure + privacy blur mandatory in edit |
 | Claude Cowork Clearly Explained | `05-claude-cowork-clearly-explained/` | (2) claude-cowork-clearly-explained |
-| Claude Cowork Masterclass (full 1-hr course) | `06-claude-cowork-full-course/` | (4) claude-cowork-masterclass |
+| Claude Cowork Masterclass (full 1-hr) | `06-claude-cowork-full-course/` | (4) claude-cowork-masterclass |
 
 ---
 
@@ -37,7 +22,8 @@
 
 | Video | Folder | Notes |
 |---|---|---|
-| 3 Skills + Live Build | `01-3-skills-and-build/` (dupe at `067-3-skills-and-build/`) | Put out by Tyler himself |
+| Claude Code Skills: The Only Course You'll Ever Need | `02-skills-full-course/` (`9ZsZgnWrs_E`) | LIVE 2026-06-21. Thumbnail B now (swapped from A, CTR ~3%). Tracking daily — see `analytics/daily-tracker.md`. |
+| 3 Skills + Live Build | `01-3-skills-and-build/` | Put out by Tyler himself |
 
 > Older live videos are tracked in `~/content/system/tracker.md` under `youtube/_completed/`.
 
