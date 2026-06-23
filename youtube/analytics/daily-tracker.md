@@ -2,21 +2,21 @@
 
 > Views/likes/comments via YouTube API (lifetime). Retention via Analytics API (some gaps for very fresh uploads). CTR is Studio-only (screenshot). Last full pull: 2026-06-22.
 
-## Last 10 long-form (baseline 2026-06-22)
-| Published | Len | Views | Likes | Comments | Retention | Title |
-|---|---|---|---|---|---|---|
-| 06-21 | 32:08 | 205 | 8 | 1 | ~14% | Master Claude Code Skills (masterclass) |
-| 06-14 | 15:59 | 268 | 10 | 2 | 13.9% | I Run My Entire Content Business on 3 Skills |
-| 05-03 | 1:44 | 2,701 | 32 | 4 | 34.7% | 3 AI Tools That Replaced Canva |
-| 05-02 | 1:18 | 1,295 | 14 | 2 | n/a | Seedance 2 vs Kling 3 |
-| 05-01 | 2:19 | 2,632 | 14 | 2 | 22.1% | The Claude Routine I Built for a 150K YouTuber |
-| 04-30 | 1:17 | 1,773 | 21 | 0 | 39.2% | The Email Triage Routine |
-| 04-29 | 19:22 | 486 | 8 | 2 | ~20% | Claude Routines + Claude Code Explained |
-| 04-28 | 1:21 | 1,201 | 25 | 3 | n/a | Kling 3 VFX $10K → 50 Cents |
-| 04-26 | 11:53 | 480 | 7 | 2 | n/a | Claude Design is Incredible |
-| 04-23 | 1:07 | 1,752 | 33 | 9 | 53.1% | Nano Banana + Kling 3.0 UGC Ad |
+## Last 10 TRUE long-form (>3 min, no Shorts) — baseline 2026-06-23
+| Published | Len | Views | Title |
+|---|---|---|---|
+| 06-21 | 32:08 | 205 | Master Claude Code Skills (masterclass) |
+| 06-14 | 15:59 | 268 | I Run My Entire Content Business on 3 Skills |
+| 04-29 | 19:22 | 486 | Claude Routines + Claude Code Explained |
+| 04-26 | 11:53 | 480 | Claude Design is Incredible |
+| 03-23 | 11:18 | 689 | Claude Code on Your Phone |
+| 03-17 | 24:27 | 1,147 | 23 Claude Code Concepts in 24 Min |
+| 03-12 | 15:12 | 2,809 | I Automated My Entire YouTube Workflow ⭐ |
+| older | 18:30 | 2,405 | Google is Winning With Antigravity ⭐ |
+| older | 10:08 | 1,862 | Build ANYTHING With Claude Code |
+| older | 16:54 | 847 | Claude Code: The Only Beginner Tutorial |
 
-**Pattern (re-confirmed across last 10):** the LONG ones (32:08→205, 19:22→486, 15:59→268, 11:53→480) have the LOWEST views AND lowest retention. The short focused ones (1-2 min) pull 1.2-2.7K views at 34-53% retention. Length is the enemy; focused showcase wins.
+**CORRECTED pattern (Shorts removed):** true long-form has been struggling — most sit at 200-700 views. Only TWO broke ~2K: "I Automated My Entire YouTube Workflow" (2,809) and "Google is Winning With Antigravity" (2,405). Both = SHOWCASE of a new/hot thing. That is the long-form blueprint. (The 1-2 min "videos" pulling 1.2-2.7K are Shorts, not long-form — don't compare them to long-form.)
 
 ## Channel — last 28 days
 - Views 13,581 | Watch ~563 hrs | Avg view % 12.5% | Net subs +68 (+131/-63)
