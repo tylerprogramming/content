@@ -17,12 +17,12 @@ Quick: what changed (GPT Image 2 launched, big leap on text; Nano Banana Pro is 
 ## THE ROUNDS (1:30-11:00) - declare a winner each round
 Run creator-real categories (this is the wedge - not generic art):
 
-**Round 1 - YouTube thumbnails** [your actual use case]. Same brief, both models. Which gives a usable, punchy thumbnail out of the box? → likely Nano Banana. React.
-**Round 2 - Faces / likeness consistency** (using your own photo). Creators need consistent on-brand faces. → judge honestly.
-**Round 3 - Text on an image** (a quote graphic / social post with a headline). → this is where GPT tends to win. CONCEDE it if so.
-**Round 4 - Brand/style consistency** (carousel set in one style). → Nano Banana's aesthetic edge.
-**Round 5 - Speed in a real workflow** (Claude Code + Nano Banana via the /thumbnail skill vs the GPT flow). → the workflow advantage nobody else shows.
-**Round 6 - A hard "gotcha"** (complex text infographic). → likely GPT. Concede again - keeps you honest.
+**Round 1 - YouTube thumbnails** [your actual use case]. Same brief on ALL THREE (Nano Banana Pro, GPT Image 2, + budget wildcard **Seedream 4.5 on Kie.ai**). Which gives a usable, punchy thumbnail out of the box? → likely Nano Banana, but introduce the wildcard: "can the cheap one even compete?" React.
+**Round 2 - Faces / likeness consistency** (using your own photo). Creators need consistent on-brand faces. → judge honestly. (2-way: Nano vs GPT.)
+**Round 3 - Text on an image** (a quote graphic / social post with a headline). → this is where GPT tends to win. CONCEDE it if so. (2-way.)
+**Round 4 - Brand/style consistency** (carousel set in one style). → Nano Banana's aesthetic edge. (2-way.)
+**Round 5 - Speed + COST in a real workflow** (Nano Banana via /thumbnail in Claude Code vs GPT flow vs **Seedream 4.5 on Kie.ai**). Time AND price each. → the workflow advantage nobody shows, AND the wildcard's moment: "good enough" thumbnails for pennies.
+**Round 6 - A hard "gotcha"** (complex text infographic). → likely GPT. Concede again - keeps you honest. (2-way.)
 
 [mid-roll CTA ~ Round 3-4: the free skills + prompts at free.tylerai.dev/youtube/]
 
@@ -34,6 +34,7 @@ Tally it honestly. GPT takes the text/infographic/accuracy rounds. Nano Banana P
 
 ## VERDICT (12:00-13:30)
 The honest creator verdict: "If your job is dense text infographics or fact-checked research images, GPT Image 2 is genuinely better - use it. But if you're a creator making thumbnails, social posts, and content fast - Nano Banana Pro is still the best, and it's not close. The 'dethroned' headlines are judging it on the wrong stuff."
+The wildcard takeaway: "And the surprise - Seedream 4.5 on Kie.ai, the cheap one, got close enough for fast thumbnails at a fraction of the cost. If you're cranking out volume, that's the value pick."
 Then the workflow kicker: "And when you wire Nano Banana into Claude Code, you generate these in seconds inside your actual content system. That's the part that actually matters for getting videos out."
 
 ## CTA (13:30-14:30)
