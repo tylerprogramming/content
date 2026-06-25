@@ -3,7 +3,8 @@
 > **Live pipeline state — the operational source of truth.** What's recording next, what's with the editor, what's queued.
 > For full content inventory across all platforms, see `~/content/system/tracker.md`.
 >
-> **Open this first.** Last updated: 2026-06-24
+> **Open this first.** Last updated: 2026-06-25
+> **Also tracked in ClickUp:** YouTube list (id 901710640585). Keep both in sync on every stage change — this file is the source of truth.
 
 ---
 
