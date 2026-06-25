@@ -7,13 +7,29 @@
 
 ---
 
+## 📅 Publishing Calendar — target 2x/week (Mon + Thu)
+
+Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Editor backlog absorbs gaps.
+
+| Slot | Video | Status |
+|---|---|---|
+| Wed 2026-06-25 | **Cowork Clearly Explained** | 🔴 releasing tonight |
+| ~next slot | Granola AI (paid — priority) | with editor |
+| ~next slot | Claude Routines | with editor |
+| ~next slot | Claude Tag (timely — film this week) | film next |
+| ~next slot | Cowork Masterclass | with editor |
+| ~next slot | AI Video Editor (`12`) | film next |
+
+**Weekend rule:** film 2 (batch) on Sat/Sun → publish 2 the next week. Next to film: `15` Claude Tag (timely) + `12` AI Video Editor, then prep `14` Nano Banana.
+
+---
+
 ## ✂️ With editor
 
 | Video | Folder | Editor folder |
 |---|---|---|
 | **Claude Routines + Claude Code** | `03-claude-routines-content-system/` | Recorded 2026-06-22. Post-edit: /chapters, finalize showcase title + thumbnail, queue upload. |
 | **Granola AI** (PAID partnership) | `granola-claude-code/` | (3) granola ai — FTC disclosure + privacy blur mandatory in edit |
-| Claude Cowork Clearly Explained | `05-claude-cowork-clearly-explained/` | (2) claude-cowork-clearly-explained |
 | Claude Cowork Masterclass (full 1-hr) | `06-claude-cowork-full-course/` | (4) claude-cowork-masterclass |
 
 ---
@@ -22,6 +38,7 @@
 
 | Video | Folder | Notes |
 |---|---|---|
+| Claude Cowork Clearly Explained | `05-claude-cowork-clearly-explained/` | **Releasing 2026-06-25 (tonight).** |
 | Claude Code Skills: The Only Course You'll Ever Need | `02-skills-full-course/` (`9ZsZgnWrs_E`) | LIVE 2026-06-21. Thumbnail B now (swapped from A, CTR ~3%). Tracking daily — see `analytics/daily-tracker.md`. |
 | 3 Skills + Live Build | `01-3-skills-and-build/` | Put out by Tyler himself |
 

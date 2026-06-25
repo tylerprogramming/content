@@ -1,0 +1,11 @@
+Claude Cowork is Claude for the rest of your work, and most people still are not sure what it actually does. This is the clear explanation.
+
+Claude Code lives in the terminal for developers. Claude Cowork is the desktop app for everyone else. It reads and writes your real files, works with Excel, Word, and PowerPoint, connects to your tools, and runs full tasks for you start to finish. It went generally available in 2026 on Mac and Windows for every paid plan.
+
+In this video I explain what Cowork actually is, how it is different from Claude Code and the regular chat, what it can really do on your computer, and how to get the most out of it. No jargon, just a clear walkthrough.
+
+Want the skills and setup I use? Grab the free starter pack in my Skool community: https://free.tylerai.dev/youtube/
+
+Subscribe for more Claude workflows. New videos Mondays and Thursdays.
+
+#claudecowork #claudeai #ai #claudecode #aiautomation
