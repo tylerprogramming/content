@@ -1,0 +1,395 @@
+[00:00] Most people open Claude and use it like a fancy Google search.
+[00:03] That's like buying a Ferrari and only driving it 10 kilometers an hour.
+[00:07] I build AI products every single day through my company Martel Ventures,
+[00:11] and I heavily use Claude in all my work.
+[00:14] So I'm going to walk you through 16 Claude hacks that will save you hours of time,
+[00:18] grow your business, very important,
+[00:20] and boost your productivity in ways that will blow your freaking mind.
+[00:23] Let's get into it.
+[00:24] Number one, the memory import.
+[00:26] See, if you are still stuck on ChadGBT, so sorry here.
+[00:29] Now we got to migrate you over, but you don't want to lose your contacts.
+[00:32] It'll bring all over everything, your preferences, your history,
+[00:36] and it'll transfer it over like that.
+[00:38] It's a simple way to import everything you've done in ChadGBT
+[00:40] and bring it over to Claude in less than two minutes.
+[00:43] We go to our settings, we go to capabilities, and then start import.
+[00:47] Claude then gives you a prompt, and then you paste it into ChadGBT.
+[00:51] Then it gives you everything it knows about you.
+[00:53] Gotcha.
+[00:53] So you take the output and paste it back into the Claude box.
+[00:56] You click add to memory, and voila, tout fini, you're done.
+[01:00] Hack number two, model selector.
+[01:02] Claude has three different power levels essentially,
+[01:05] and you got to pick the right one for the right job.
+[01:08] So you click the model selector at the bottom right,
+[01:10] and then you see we've got Haiku.
+[01:12] This is your cheapest and fastest model.
+[01:14] Then you've got Sonnet, best for everyday tasks.
+[01:17] You've got Opus, that's best for complex tasks.
+[01:20] Or you can select this little adaptive thinking thing,
+[01:23] so it picks automatically depending on the task.
+[01:25] So you don't have to think, but then you don't have as much control.
+[01:28] I like to set my own control.
+[01:29] So for example, if you're looking for patterns and metrics, Opus crushes.
+[01:33] It thinks way harder.
+[01:34] If you're drafting an email response, Sonnet, it's awesome.
+[01:38] And my favorite part, it's faster, and it can give you different options.
+[01:41] If you're trying to summarize 50 meeting notes, it's just a bunch of data.
+[01:44] Haiku, instant, done in seconds.
+[01:47] Next, hack number three, the Gmail connector.
+[01:49] Dan, is it secure?
+[01:51] Your security at home is a bazillion times less security than the team at Claude.
+[01:56] I just want you to know that.
+[01:57] So stop asking me if it's secure,
+[01:59] and start using the tools to make yourself some money.
+[02:01] You should just not be touching your inbox.
+[02:03] You can literally do all your email through Claude.
+[02:06] But first, we got to connect it.
+[02:08] You go to customize in the sidebar, connectors,
+[02:11] then choose Gmail, then log into it.
+[02:13] Super easy.
+[02:14] Click, log in, it's added.
+[02:16] I asked Claude to find stuff, summarize it, draft replies for me.
+[02:20] And for what it's worth, Gmail inbox search sucks.
+[02:23] So how about we get the AI to search for us?
+[02:26] If you want a cheat code and you have an assistant,
+[02:28] what I do is I have a Claude account that is for my assistant and I.
+[02:32] I've connected to my inbox,
+[02:34] and they can use that to search my inbox through our shared Claude account
+[02:38] so that she can self-serve on any questions she would normally ask me.
+[02:42] She can find it in my inbox.
+[02:44] Power move.
+[02:45] Hack number four, calendar connector.
+[02:47] Similar but different.
+[02:49] Let me tell you why.
+[02:50] Essentially, Claude connects your Google Calendar,
+[02:52] and it can do a lot of cool stuff.
+[02:53] Yes, it can schedule things.
+[02:55] It can help you with meetings.
+[02:56] It can find your free time.
+[02:58] But even more important, it can help you analyze your time.
+[03:01] So same thing.
+[03:02] We go to the same place on the sidebar, connectors, Google Calendar, log in.
+[03:06] Now I can go into Claude and add something like add one hour time block
+[03:10] sometime before Friday for me to review our next YouTube outline.
+[03:13] It then creates the time block and let me know why it picked that time.
+[03:16] An advanced move is to give it your goals for the quarter,
+[03:19] maybe for the year, and then say, analyze my calendar.
+[03:22] Now analyze my email, because you get that too,
+[03:24] and see if I'm spending the right amount of time on the projects to achieve those goals.
+[03:29] Now it became a business coach.
+[03:31] And these are only two connectors, and there's connectors for Slack,
+[03:34] Notion, GitHub, Google Drive, and a bunch of others.
+[03:38] Now, before we move on, if you're an entrepreneur,
+[03:40] and you're trying to keep up on all of this AI chaos,
+[03:42] but you're maxed out on time, I totally get it.
+[03:45] That's why I built my AI company OS playbook.
+[03:48] The exact framework that I use to plug AI into every department within my business.
+[03:52] If you want it, it's yours for free.
+[03:54] Just DM me AI business on Instagram at Dan Martell, and I'll send it right over to you.
+[03:58] Hack number five, artifacts.
+[04:00] So essentially what it is, is working apps right in the chat.
+[04:04] It essentially creates like little mini apps within the chat
+[04:08] that you can use and change things around and just kind of iterate.
+[04:11] I get asked every day, Hey, Dan, I got this idea.
+[04:13] I want to hire a developer.
+[04:14] How do I find the right person?
+[04:16] I go, look in a mirror.
+[04:18] You are that person.
+[04:19] Try it.
+[04:20] Just say, build me this thing and watch Claude build it.
+[04:24] So for example, you could say, build me a spreadsheet with sample data
+[04:27] and then make the columns editable, include the sales reps who's involved,
+[04:31] the status of the sale, the product they sold,
+[04:33] and any other information you think that would be relevant.
+[04:35] And then hit, boom, enter.
+[04:37] And then pow, it just creates these interactive apps in chat.
+[04:41] So it's not just like an information back and forth.
+[04:44] Now we're building things.
+[04:45] Hack number six, interactive visuals.
+[04:48] Now this is my favorite because I used to take the data from Claude
+[04:52] and then go visualize it in other tools.
+[04:54] Now I get to stay right inside the chat.
+[04:56] Claude builds you live clickable visuals that you can use to explain anything.
+[05:01] It's literally done what I call accelerated learning.
+[05:04] So for example, you can ask it to visualize the height framework,
+[05:07] which is how we shoot our short form videos.
+[05:09] And if you want any context on that, just check Slack.
+[05:11] So now it's going to use my Slack as a connector.
+[05:13] And it builds me this cool whole visual that I can click on and expand
+[05:17] to learn more about what it is.
+[05:18] And it's all done by pulling the information and visualizing it.
+[05:21] It's as simple as telling it, visualize this.
+[05:24] Hack number seven, projects.
+[05:26] Think of it like this.
+[05:27] It's essentially a folder that's preloaded with all the context
+[05:31] you might have around a project.
+[05:32] See why it's called projects.
+[05:34] And then you can actually invite other people
+[05:35] to collaborate with you on those projects
+[05:37] so that your chats and their chats are all in one place
+[05:40] and you can kind of riff off each other.
+[05:41] If you're on a team account, I highly recommend you do.
+[05:44] So here's how we do it.
+[05:45] We go to the sidebar, then you click projects, then new project.
+[05:49] Now I drop context in there.
+[05:51] So everything from internal documents to PDFs,
+[05:54] to anything I've downloaded, any instructions, copy, paste, other chats.
+[05:58] You put all that in the knowledge section.
+[06:00] When you start chatting with it,
+[06:01] it has all that reference material to be able to give you good answers.
+[06:04] I have every one of my coaching calls transcribed.
+[06:08] So if I'm looking for an example, a story, a client,
+[06:11] I can go into the project that has already linked up to that Google Drive
+[06:15] and tell it to search every transcript to find examples
+[06:18] or stories around this pain or this challenge.
+[06:20] And that feeds me ideas for me to talk about in my content.
+[06:23] And a pro move is you can create a system prompt
+[06:26] that you copy and paste into the instruction box,
+[06:28] which then essentially acts like what used to be called a custom GPT
+[06:32] so that you can get the same result over and over
+[06:34] every time you come into that project.
+[06:36] Hack number eight, voice mode.
+[06:38] Now we get to talk to Claude because guess what?
+[06:40] I can talk three times faster than I can type.
+[06:43] So it's super easy.
+[06:44] On a desktop, click that little waveform at the bottom of your prompt bar.
+[06:47] On mobile, just click the mic button.
+[06:49] I do this all the time while I'm driving, I'm having fun.
+[06:51] It's easy.
+[06:52] And the cool part is it transcribes a whole conversation.
+[06:54] So if you ever want to use that in something else, it's all there to go.
+[06:57] The best part is you can be super besty in whatever you're thinking about.
+[07:00] And Claude is smart enough to go,
+[07:02] oh, you're probably talking about this and give you a really great answer.
+[07:05] Hack number nine, Chrome extension.
+[07:07] Non-negotiable for me.
+[07:08] The Chrome extension is a go-to tool.
+[07:11] If you're a Claude user, please install it.
+[07:13] So what it does is it allows you to use your browser through Claude to automate tasks.
+[07:18] So the first thing we got to do is go to the Chrome web store
+[07:21] and find Claude for Chrome and install it.
+[07:24] And what it is, pretty much everything you do in your browser,
+[07:28] the Claude Chrome browser extension could do for you.
+[07:30] So for example, if you got like a spreadsheet and you got all these numbers and you're like,
+[07:33] I wonder what the pattern is and what should I pay attention to?
+[07:36] You can just ask it.
+[07:37] Then Claude takes a snapshot of the site,
+[07:39] starts scraping everything, clicks buttons, works inside your browser,
+[07:42] and it finds the insights.
+[07:44] It does everything that you would have to do
+[07:46] that you might not even know how to do for you automagically.
+[07:49] Hack number 10, co-work.
+[07:51] This is where it gets nerdy.
+[07:52] Like my kind of people are sticking around right to the end, starting now.
+[07:56] What it is, is Claude will take over your computer
+[07:59] and do work on your computer while you step away.
+[08:02] On your Claude desktop, so it's a separate app you have to install on your desktop,
+[08:06] open up and you'll see co-work.
+[08:08] Open co-work, it's in the top left.
+[08:10] And here's a tip.
+[08:11] Make sure you toggle on computer use in your settings
+[08:14] because it needs that to be able to do things on your computer.
+[08:17] Then you just describe any tasks you need to be done
+[08:19] and the steps that it requires
+[08:20] and Claude breaks it down and executes step by step.
+[08:23] So for example, you can say pull last month's sales numbers from HubSpot,
+[08:27] drop them in a Google sheet, build a summary chart,
+[08:29] and post on the team Slack channel before Monday 9am.
+[08:32] And it'll take over control of my computer to do it all.
+[08:34] It's like Claude's hands doing the work for you.
+[08:37] Hack number 11, scheduled tasks.
+[08:40] This is one I use every day
+[08:41] because there's things that I do every day
+[08:43] that I just want somebody else to do for me and it's Claude.
+[08:46] So it's within co-work, just type forward slash schedule
+[08:49] and then it'll allow you to schedule whatever you just typed.
+[08:52] Things that used to be done by my chief of staff
+[08:54] that honestly she doesn't have to do.
+[08:55] I'll just set it up, schedule it and nobody has to worry about it.
+[08:58] It does at the same time every day as long as my computer is open.
+[09:02] So every morning, Claude could read your inbox.
+[09:04] It can send you a summary.
+[09:05] It can figure out what's urgent.
+[09:06] It could tell you what's new in the world.
+[09:08] It can essentially do everything that you're probably doing
+[09:10] every time you sit down at your computer anyway.
+[09:11] Hack number 12, Claude dispatch.
+[09:14] We can essentially talk to Claude through dispatch.
+[09:18] Claude's made this super simple.
+[09:19] Just go into co-work,
+[09:20] then you'll see a menu item called dispatch, click it.
+[09:24] You'll see a QR code, pull out the camera app on your phone,
+[09:27] scan it and it'll actually redirect you to the app store
+[09:31] to install the app
+[09:32] and then it'll connect your app to your computer.
+[09:34] So now you might be out at dinner
+[09:36] and realize you forgot something
+[09:37] and you want to send it to your team
+[09:39] so you can actually use dispatch on your phone to say,
+[09:41] hey, go grab my Martell Ventures pitch deck
+[09:44] and send it to Roddy and ask him to give feedback
+[09:46] and then send an email to the team with all the updates.
+[09:48] So now you can do all the co-work automations
+[09:51] executing on your computer
+[09:52] because you turn that little setting on, on the go.
+[09:54] Hack number 13, Claude code.
+[09:56] It's essentially an AI software developer
+[09:59] that can code anything in plain English.
+[10:02] A couple months ago,
+[10:03] I shut down my whole company for two days
+[10:05] and taught everybody how to be a Claude code engineer.
+[10:09] If you want to do 10 times,
+[10:10] a hundred times more work than anybody else,
+[10:12] you have to learn how to build apps in Claude code.
+[10:15] And the cool part is, is Anthropic has a full setup guide
+[10:17] that'll teach everything to you and I'll link it up below.
+[10:20] And look, there's two types of Claude code.
+[10:22] There's using it in the Claude app on your computer
+[10:25] or you can actually do it in the terminal.
+[10:27] Now, if you don't know what a terminal is,
+[10:29] that's fine, just ask Claude
+[10:30] and it'll tell you how to use it.
+[10:32] I want you to know that AI is the only technology
+[10:35] ever created that teaches you how to use it better.
+[10:38] One of my CEOs, Todd, who's 60,
+[10:40] he's not, but I joke with him, he is,
+[10:42] literally used Claude code to build a CEO dashboard.
+[10:45] I'm telling you, nobody heard from Todd for three days.
+[10:48] And then he emerges out of his office
+[10:50] and he brings us in there and he's got a TV on the wall
+[10:52] and he's showing us this app he built
+[10:54] and essentially is doing his job.
+[10:56] Somebody that is not technical,
+[10:58] not somebody to learn how to code,
+[11:00] he just knows how to talk.
+[11:01] So this is cool, but what if you want to do
+[11:03] like coding stuff while you're on the go?
+[11:05] Well, that's where hack number 14 comes in, Claude channels.
+[11:08] Essentially, you can use iMessage, Telegram,
+[11:11] Discord to chat with Claude.
+[11:14] So now you can code from anywhere
+[11:16] as long as your computer's running.
+[11:18] Anthropic put a full guide together to help you set it up,
+[11:20] so I'll link it below again.
+[11:21] But at a high level, here's what you want to do.
+[11:23] First, you create your bot on Telegram, iMessage, or Discord.
+[11:26] Pair it with Claude code in your terminal,
+[11:28] and then finally set up your API keys and skills.
+[11:31] Now, API keys is just something
+[11:32] you're gonna have to learn to do.
+[11:33] It's like creating a spreadsheet,
+[11:34] you never create a spreadsheet.
+[11:35] Once you learn how to do it once,
+[11:36] you'll learn that it's just how
+[11:38] all these computers talk to each other.
+[11:39] Now you can use Claude code from anywhere
+[11:41] and build stuff and iterate with it
+[11:43] as long as your computer's running.
+[11:45] So just tell it what you need it to build.
+[11:46] For example, my buddy Arturo was running late
+[11:49] and he was about to miss a flight,
+[11:50] so then he actually messaged Claude code
+[11:52] to check his email, because he connected it,
+[11:54] and to look at his calendar,
+[11:55] because all the details were there,
+[11:56] and for it to check into his flight for him.
+[11:59] A lot of people are using Claude code
+[12:01] like their own personal AI agent,
+[12:02] but that's why I built my own platform called Apex.
+[12:05] Essentially, it's like a digital twin.
+[12:07] So I have a guy named Kai, that's my guy,
+[12:09] and he handles everything.
+[12:11] But it's way easier to set up,
+[12:12] it's way more secure,
+[12:14] and it gives you access and privacy to your own things,
+[12:16] and it can use all the language models and all the AI.
+[12:19] So if you're interested,
+[12:20] just click the link in the description
+[12:21] and check it out for yourself.
+[12:22] Hack number 15, Claude skills.
+[12:24] This is where you can train Claude
+[12:26] to do a repeatable task for you
+[12:28] exactly the same way every time.
+[12:31] The way you turn anything into a skill
+[12:32] is once you've got something going,
+[12:34] you're working with something,
+[12:35] you're asking to refine it,
+[12:36] just say, turn this into a skill.
+[12:38] So to do this, just go on the left side of your sidebar
+[12:40] and click customize skills and browse and install,
+[12:45] or you can create your own.
+[12:46] And the cool part is,
+[12:46] is you can install other people's skills,
+[12:49] ton of them that are created for like legal,
+[12:50] financials, HR type skills.
+[12:52] There's literally thousands of them shared on GitHub.
+[12:55] So one of the most popular skills is one called humanizer,
+[12:58] where it targets the 20 specific AI writing patterns
+[13:01] that we all know exist.
+[13:02] And then it rewrites whatever your AI did
+[13:05] in a more human tone.
+[13:06] And last, Claude design.
+[13:08] This one's gonna turn everybody into a world-class designer.
+[13:11] I'm talking pitch decks, one pagers, landing page mockups,
+[13:15] full apps, even motion graphics.
+[13:17] As of the filming of this video,
+[13:18] it is the newest release from Claude.
+[13:20] So if you wanna use it, real simple,
+[13:22] go to claude.ai forward slash design.
+[13:24] Now just describe what you want
+[13:26] and Claude will build you a draft in minutes.
+[13:28] And it can even match your styles, brand guides,
+[13:30] whatever you got, you can give it as examples
+[13:32] and it'll match that as it designs for you.
+[13:34] So basically I wanted to visualize
+[13:36] the main points of my book, buy back your time.
+[13:38] So maybe I was creating a workbook, which already exists,
+[13:40] but if I didn't, I could use this to visualize the points.
+[13:43] So take those elements out of my book
+[13:45] and then create visual examples
+[13:47] so that help people learn it easier.
+[13:49] And then bada bing, bada boom, done.
+[13:52] Look at it.
+[13:52] Not visually what I would do, but it gets me there.
+[13:55] For most people, it is a game changer.
+[13:57] And this is the worst it's ever gonna be.
+[13:59] You don't think in six months it's gonna be better?
+[14:01] 12 months, two years?
+[14:02] I think designers need to start learning how to use this.
+[14:05] And they recently partnered with Adobe.
+[14:07] So the whole design world is gonna get mixed up big time.
+[14:10] So I just overloaded your mind with a bunch of hacks,
+[14:13] but here's the cool part.
+[14:14] You don't need to do them all.
+[14:15] Now you just know that they exist.
+[14:17] So all I need from you is to know
+[14:18] which one are you gonna use today?
+[14:20] Just leave a comment below and let me know.
+[14:22] And look, if it doesn't work for you, that's fine.
+[14:24] Go to the next one.
+[14:25] AI can be crazy, but I trust that you can do this.
+[14:28] You know, people message me all the time.
+[14:29] They're like, Dan, I feel like I'm behind.
+[14:31] No, you're not.
+[14:32] I have never felt ahead and I just accepted
+[14:35] I never will feel ahead.
+[14:36] And the only question I'm gonna ask myself is,
+[14:38] am I doing the work that's gonna keep me ahead?
+[14:40] You're watching this.
+[14:41] So that means you're part of this.
+[14:42] And if you just do one thing from this video,
+[14:45] you are more ahead than 99% of people.
+[14:47] And remember, just DM me AI business
+[14:49] and I'll send you over my AI company OS playbook.
+[14:52] And if you wanna go deeper on what AI tools to use,
+[14:54] I rank the best ones to make money in this video here.
+[14:58] So click the link and I'll see you on the other side.
+[15:00] Hey, Claude, tell me how cool I am.
+[15:02] All right.
+[15:03] You're running three entities from Cologne.
+[15:05] Whoa, whoa, whoa, Claude, keep it secret.
+[15:06] I'm in a room full of people, yo.
+[15:08] I'm surprised, Dan, that's crazy.
+[15:10] You're welcome.

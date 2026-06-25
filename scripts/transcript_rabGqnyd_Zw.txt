@@ -1,0 +1,178 @@
+[00:00] I'm going to share with you seven secret codes for Claude to 10x your productivity.
+[00:03] I teach AI to millions of people for free every month.
+[00:06] I hit 30 million views last month and I've tested thousands of Claude prompts to find
+[00:11] the ones most people have no idea exist.
+[00:14] And these work whether you're new to Claude or you've been using it for a year.
+[00:17] So if you're thinking, I already know how to prompt, trust me, the last code will change
+[00:22] how you use Claude forever.
+[00:23] I'll even walk through the codes live and give you a free swipe file with all seven
+[00:27] codes and when to use each one.
+[00:29] And don't sleep on this because 99% of people type basic prompts into Claude and the ones
+[00:34] who know these codes get 10x more productive in half the time.
+[00:39] That's why I'll give you everything in this video so you can skip the trial and error
+[00:43] of testing all these random things.
+[00:45] So without further ado, here are the seven secret codes for Claude.
+[00:48] Hit like, hit subscribe, hit the notification bell so you don't miss my next training.
+[00:51] The very first secret code is called UltraThink and you can type this in ClaudeCowork.
+[00:56] You can type this in ClaudeCode.
+[00:58] Actually going to turn the keyword into a rainbow color.
+[01:01] So what happens when you type this is regardless of your current model and your current reasoning
+[01:07] effort, maybe your default reasoning effort is low.
+[01:11] When you use this keyword in a prompt, Claude knows that you want it to spend the maximum
+[01:16] amount of time thinking and reasoning.
+[01:18] So even if your default setting like low reasoning effort, it's going to be max effort for the
+[01:24] prompt you run UltraThink on.
+[01:27] So you can do all of your other work in your default mode.
+[01:30] Maybe it's low, maybe it's medium, but let's say you run like a big prompt where you want
+[01:35] Claude to plan something.
+[01:37] Just type UltraThink here as the keyword and then Claude will automatically switch the
+[01:42] reasoning effort to as high as possible.
+[01:45] So it's going to switch it just for that prompt.
+[01:48] So this is really nice because to save tokens, especially if you're on the $20 per month
+[01:52] plan, you can do all of your normal work in your default setting, low or medium.
+[01:56] And then when you need Claude to think really, really hard, a complex task, maybe a technical
+[02:01] task, then you can turn on UltraThink just for this prompt.
+[02:05] Secret code number two is called Slash Caveman.
+[02:08] This is actually an open source skill and what it does is it will help cut a significant
+[02:14] percentage of output tokens instantly.
+[02:16] It's very easy to install it, just open Claude and be like, hey, I want to install this open
+[02:22] source skill called Caveman and it will just do it for you.
+[02:26] And then to use it, you just do Slash Caveman in your prompts.
+[02:30] The reason this is useful, especially if you're not on the max plan, let's say you're on like
+[02:34] the $20 per month plan and you want to be really conscious of the number of tokens you
+[02:39] have and usage limits, this is really helpful for that because it significantly cuts the
+[02:43] percentage of output tokens being used.
+[02:46] Secret code number three that most people do not know exists is Slash Insights.
+[02:52] And all you have to do to run it is literally type Slash Insights in Claude.
+[02:56] And when you type this, Claude will analyze all of your sessions in the past 30 days and
+[03:01] it's literally going to analyze how effectively are you using Claude?
+[03:04] How are you being productive using Claude?
+[03:07] Kind of what's holding you back, anti-patterns, things that need improvements.
+[03:12] And it's even going to suggest like things you should do like, hey, here are some commands
+[03:16] to try.
+[03:17] Here are some prompts to run.
+[03:18] Here are some features to check out based on your actual usage patterns from the past
+[03:22] 30 days.
+[03:23] So instead of just getting like a generic guide, like here's all the things you could
+[03:26] do with Claude, when you run this command Slash Insights, Claude will analyze your actual
+[03:31] usage and generate a very detailed HTML report where you can kind of browse through all of
+[03:37] these insights.
+[03:38] And most importantly, it's going to summarize like what is working really well in your sessions,
+[03:43] kind of holding you back and that could be improved and specific features, ideas to try
+[03:47] out in order to be more productive.
+[03:49] And these ideas are based on the tasks that you're actually trying to do.
+[03:54] So it's not just going to give you like random irrelevant ideas.
+[03:56] It's actually analyzing your real usage to come up with all of these recommendations.
+[04:00] So I recommend running this command maybe once a month just to get reality check on
+[04:05] how well are you using Claude?
+[04:07] Are you using it to the best of your ability?
+[04:09] Where else could it add leverage in your work?
+[04:12] At number four on the list is Slash Loop.
+[04:14] So basically this allows you to schedule recurring tasks with Claude code and you can schedule
+[04:19] them for a max of three days to repeat.
+[04:23] Just keep in mind though that these scheduled tasks just are running on your computer.
+[04:27] So your computer actually needs to be turned on for this to run.
+[04:31] So an example of using this might be typing slash loop.
+[04:35] So in five minutes intervals, you can have it write something.
+[04:38] This is the command, the secret code slash loop.
+[04:41] This is the interval.
+[04:42] So it's going to do it every five minutes.
+[04:44] And then this is what you want it to do.
+[04:47] In this case, we're going to call a skill slash right to write a draft post.
+[04:51] The shortest interval is one minute, but just keep in mind that the tasks will expire in
+[04:56] three days.
+[04:57] The loop is specific to your session.
+[05:00] So like if you close your session, then it won't run anymore.
+[05:04] Similarly, if your laptop is off, then it also won't run.
+[05:08] Now related to slash loop, and this is another kind of experimental feature in Claude right
+[05:12] now is slash schedule.
+[05:15] And the biggest difference is that slash loop, this is running on your computer.
+[05:19] Slash schedule is actually running independently in the cloud.
+[05:23] So it's not accessing like your local file system, your local computer.
+[05:28] It's actually cloning your project or repo and then running tasks on a schedule.
+[05:34] And similar to slash loop, you would just invoke it by typing slash schedule.
+[05:38] Sample use cases for schedule might be like a daily standup, any kind of recurring automation
+[05:43] or scheduled recurring report where you don't need local file access.
+[05:48] So I'll try to summarize some of the differences here.
+[05:50] So for example, for the loop, the one minutes minimum interval, and then for a schedule,
+[05:55] it's actually one hour minimum interval.
+[05:58] For the loop, your computer has to be on and it's based on your session.
+[06:02] Here it's running like independently in the cloud, so it has nothing to do with your computer
+[06:07] being on or not.
+[06:09] But the downside of this is there's no local file access, whereas this one can access all
+[06:14] the files on your computer.
+[06:16] And then the other downside with the loop, like I mentioned before, is it expires in
+[06:19] three days, whereas schedules currently don't have that limitation.
+[06:23] However, there are limitations on how many runs you can do per day.
+[06:28] So right now in the pro plan, it's like five runs per day.
+[06:31] On the next year plan, it's 15.
+[06:34] And on the team slash enterprise plan, it's 25.
+[06:37] Obviously this may change, but just keep in mind that there are caps for how frequently
+[06:42] you can run this per day.
+[06:43] People honestly don't know that either of these skills exist as options.
+[06:47] So highly recommend playing around with them and see which one fits your use cases.
+[06:51] Secret code number six is actually one of my favorites, and I swear pretty much everybody
+[06:56] will find it universally useful.
+[06:58] It's called slash BTW, or by the way.
+[07:00] So you know how when you run clod and it's doing its job, it's like super complicated.
+[07:06] It's thinking and it's spinning and it's saying all these things and you don't want to interrupt
+[07:10] it because it's in the middle of a task.
+[07:12] Well now you can run this command.
+[07:13] You can just type slash by the way, answer this other question and clod will basically
+[07:19] continue doing its main thing over here and also answer your question, run your prompt
+[07:25] without interrupting the main task.
+[07:28] This is really, really nice.
+[07:29] So instead of having to open a separate session, slash BTW will actually answer your question
+[07:34] without interrupting the main thing that clod is doing.
+[07:38] This is really nice, especially if you have a lot of context built up in the conversation
+[07:42] already.
+[07:43] So instead of having to open a new session, which is lacking that context, you can run
+[07:47] slash BTW, ask your question or run your prompt without interrupting the main task at all.
+[07:53] When people try this, they're like, Oh wow, this is awesome because now you can kind of
+[07:57] like parallelize.
+[07:58] You can keep an eye on the main task that clod is doing, but you can also ask like smaller
+[08:02] questions that it can quickly answer.
+[08:04] Okay, so just to recap, we have ultra think, which basically tells clod to apply its maximum
+[08:09] reasoning effort.
+[08:10] Think super, super hard, turns into a rainbow color, have the open source skill caveman,
+[08:15] which helps reduce output tokens significantly.
+[08:17] So really awesome.
+[08:18] If you're on a lower tier plan or watching your usage limits, if slash insights, which
+[08:22] I recommend running on a monthly basis, clod is going to analyze how you use clod and it's
+[08:27] basically going to give you a crazy detailed report, what you're doing well, what you're
+[08:31] not doing so well, and specific ideas tailored to your actual usage of how to be more productive.
+[08:36] We have loop to schedule like recurring tasks limited to your computer, your computer has
+[08:41] to be on, they expire in three days of slash schedule, which runs in the cloud, right?
+[08:46] So that's as great for recurring reports, recurring standups, recurring automations,
+[08:51] and we have slash BTW so you can continue using clod in the same session, even if it's
+[08:55] working on a long running task, you can type slash BTW and ask whatever you want.
+[09:00] And number seven is a command that I frequently, very frequently use.
+[09:04] It's called slash clear.
+[09:06] So what happens is when you run slash clear, this will clear the context that's in your
+[09:11] session.
+[09:12] Okay.
+[09:13] So, you know, you have a clod session, you have all this amazing conversation back and
+[09:16] forth.
+[09:17] You run slash clear here, it's going to delete all of this previous context.
+[09:22] So you might be wondering, well, why would you want to do that?
+[09:25] There are a couple of reasons actually.
+[09:26] So a lot of research has shown that AI becomes less accurate if there's a ton of stuff already
+[09:34] in the context.
+[09:35] So I personally use slash clear when I switch between tasks.
+[09:39] Okay.
+[09:40] Like let's say I'm writing a YouTube script and now I'm done with that.
+[09:44] I'm going to switch over to writing a tick tock script that has nothing to do with the
+[09:47] YouTube script.
+[09:48] I'm going to run slash clear.
+[09:49] It's going to remove all of this previous context so that AI does not decrease in quality.
+[09:56] This is what we're trying to avoid.
+[09:57] It also saves tokens.
+[09:59] So again, if you're on a lower tier plan where you have to watch usage and token consumption
+[10:04] closely, I recommend running slash clear in between tasks.
+[10:08] That way for each new prompt, clod does not have to analyze all of this irrelevant context
+[10:13] from previous tasks.
+[10:14] I highly recommend trying every single secret code that I've put here.
+[10:19] I chose each one for a reason.
+[10:21] 99% of people still don't know these exist.
+[10:24] If you enjoyed this video, hit like, hit subscribe and hit the notification bell so you don't
+[10:28] miss my next training.

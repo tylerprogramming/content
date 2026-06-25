@@ -1,0 +1,276 @@
+[00:00] All right, so I just found a faceless YouTube channel that was created just two months ago,
+[00:04] and it's already making $61,000 a month.
+[00:08] Now the goal of this video was to see if I can recreate this channel by using AI.
+[00:12] And not only did I succeed, but I'm able to recreate these videos in less than 20 minutes.
+[00:17] Basically I can create a video like this in 20 minutes.
+[00:19] Now if you want to learn how to use AI and how to use AI automation in order to create
+[00:23] a YouTube channel like this one and start your YouTube journey, in this video I'm basically
+[00:27] going to show you everything.
+[00:28] So if you want to learn, this video is for you.
+[00:30] So let's start.
+[00:31] Now the first thing I want to do is show you the channel.
+[00:33] So the channel name is Zen over here, is this channel over here.
+[00:37] We can see that this channel has 130,000 subscribers with just 12 videos.
+[00:42] If we click over here to see more, we'll see that the total number of views is 14 million.
+[00:47] Now it shows us that the channel was created like 12 years ago in 2014, but if we click
+[00:52] on the videos and we click on the oldest upload, which is basically the first upload, we will
+[00:57] see that the first upload was made one month ago.
+[00:59] So this channel started posting videos just one month ago and in just one month we can
+[01:04] see over here the vidIQ stats.
+[01:06] It's showing us that this channel is making $61,000 a month, which is absolutely insane.
+[01:11] If we click over here to see the most popular videos, we will see that the most popular
+[01:15] video was posted one month ago and it has 7 million views.
+[01:20] Another video over here with 3 million views was posted one month ago, 1.7 million views
+[01:23] one month ago.
+[01:24] So this niche is exploding.
+[01:26] This creator over here is literally going to make $100,000 in literally two months of
+[01:31] creating YouTube videos, which is absolutely insane.
+[01:34] Now as I said in the beginning, the goal of this video was to see if I can recreate this
+[01:37] channel by using AI as fast as possible.
+[01:40] And as I've said, I managed to do that.
+[01:42] You can literally create videos like these ones over here in less than 20 minutes by
+[01:45] using AI automation.
+[01:47] So let me show you how to do it.
+[01:48] For this to work, you need to download Cloud Code on your computer.
+[01:51] So go on your browser and search for Cloud Code like this.
+[01:54] Go to Cloud Code and then just download Cloud Code on your computer by clicking over here.
+[01:58] Get Cloud Code for desktop.
+[01:59] Click on this and then just download Cloud Code over here for Windows or for Mac or whatever
+[02:04] PC you have.
+[02:05] Then just install Cloud Code.
+[02:06] Now you also need to create an account on Cloud.
+[02:09] So make sure you create an account.
+[02:10] So try Cloud over here.
+[02:11] Click on this button.
+[02:12] Try Cloud and create an account.
+[02:13] I already have an account.
+[02:14] So I'm not going to show you how to create an account because that's pretty simple, right?
+[02:17] Just create an account yourself.
+[02:18] Now once you have Cloud Code installed on your computer, go ahead and open Cloud Code
+[02:22] just like this.
+[02:23] As you can see, this is Cloud Code on computer.
+[02:25] And what you want to do is click over here to the top left on code.
+[02:28] Make sure you're not on co-work.
+[02:30] You're not on chat.
+[02:31] You want to be on code.
+[02:33] Now in order for us to be able to automate the creation of these videos, we need to install
+[02:37] the Hicks Field skill.
+[02:39] For that, I want you to go back to your browser and search for Hicks Field over here.
+[02:42] Go to Hicks Field and create an account.
+[02:44] Once you've created an account on Hicks Field, I want you to click over here where it says
+[02:48] MCP and CLI.
+[02:49] Once you click on this, make sure you click on CLI over here.
+[02:53] Then what I want you to do is copy this first command over here just by clicking on it.
+[02:57] Then over here on your search bar on your computer, type terminal like this, terminal,
+[03:02] click on it, and then paste this command over here and hit enter.
+[03:06] Once you hit enter, it's going to install this CLI.
+[03:09] Then what I want you to do is go back to Hicks Field, copy the second command over here,
+[03:14] copy it, go back to your terminal and paste the second command and press enter.
+[03:18] It's going to ask you to authorize access to Hicks Field with your computer.
+[03:21] So basically you need an account on Hicks Field.
+[03:23] Then you have to go back to Hicks Field and copy this last command over here, which will
+[03:26] install the Hicks Field skill, which will help us generate these images.
+[03:29] So copy this command, go back to your terminal, paste the command, press enter and install
+[03:34] the skill.
+[03:35] It's really that simple.
+[03:36] Now I'm not pressing enter because I've already installed those things and it's actually pretty
+[03:40] simple.
+[03:41] You just copy, paste them, press enter, press enter, press enter, and that's it.
+[03:45] Now once you have all of those things installed, we can start creating the videos.
+[03:49] Now let me show you how to do that.
+[03:50] Now what you need is the YouTube script.
+[03:52] Now depending on what type of videos you want to make, maybe you don't want to talk about
+[03:55] primitive humans, maybe you want to talk about space or maybe you want to talk about aliens
+[03:59] or maybe you want to talk about animals.
+[04:02] Depending on your niche, you need a script.
+[04:04] You need to create a script for the video.
+[04:06] How you create the script, it's up to you.
+[04:07] You can use AI, you can hire someone to help you write the script, you can write the script
+[04:11] yourself, or you can use all these three things together to write the script.
+[04:15] Once you have the script, you need the voiceover of the script.
+[04:18] And recently, the way I create my voiceovers is literally by recording myself in my own
+[04:23] microphone.
+[04:24] I don't use 11labs anymore because recently using 11labs, a lot of channels who have been
+[04:29] using 11labs have been getting demonetized.
+[04:32] Therefore I've started using my own voice.
+[04:34] But if you have bad English or you're afraid to speak in the microphone or it's too hard
+[04:38] for you, you can hire someone from Fiverr.
+[04:41] Now once you have the voiceover, what I want you to do is go to your browser and search
+[04:45] for TurboScribe over here.
+[04:46] Go to TurboScribe, create an account or log in with your Google account, and then what
+[04:51] I want you to do is click on this button over here which says transcribe files and upload
+[04:55] the voiceover over here.
+[04:56] Then click transcribe.
+[04:58] Now the reason why I recommend TurboScribe is because you get three free generations.
+[05:02] I'm not sponsored by them, I don't have affiliate links.
+[05:04] I simply show it because they give three free generations every single day.
+[05:08] And that is literally more than enough to create your YouTube videos because we literally
+[05:11] just need to transcribe one script a day.
+[05:13] So after you do that, your script should be over here.
+[05:16] And if you click on it, you will see that you have your script over here.
+[05:20] Now in case you're wondering why am I doing this instead of just sending the script to
+[05:24] Claude is because I want the timestamps.
+[05:27] What are timestamps?
+[05:28] Well, basically when you transcribe a voiceover, you also get the timestamps.
+[05:32] And over here in the script, as you can see, these are the timestamps.
+[05:35] Over here we have zero seconds.
+[05:37] Then we have over here, seven seconds.
+[05:39] Then we have 15 seconds.
+[05:41] Then we have 23 seconds.
+[05:43] These are timestamps.
+[05:44] And the reason we want them is because this is what's going to help us automate the entire
+[05:48] process of making the video.
+[05:50] Why?
+[05:51] Well, because we can tell Hicksfield and we can tell Claude when and at what timestamp
+[05:56] to generate each image.
+[05:57] Let me actually show you how this works.
+[05:59] So go back to Claude code over here.
+[06:01] Now what I want you to do is copy this prompt over here.
+[06:04] Let me show you the prompt.
+[06:07] This is the master prompt we're going to be using.
+[06:09] As you can see, the prompt says, you're going to generate images for a YouTube script, one
+[06:13] image for every timestamp in the script.
+[06:16] This is the most important part over here, which says one image for every timestamp in
+[06:21] the script.
+[06:22] Over here it says, your job is to read the script carefully and create a separate image
+[06:25] for each timestamp.
+[06:26] If the script has timestamps like zero seconds, three seconds, seven seconds, 10 seconds,
+[06:30] 12 seconds, 20 seconds, then you must generate one image for each of those timestamps.
+[06:35] This is the most important part of the prompt, right?
+[06:37] Because this is what's going to help us automate the process of creating these videos.
+[06:41] Then over here it says the style requirements and it says the image must look like it's
+[06:45] extremely simple beginner drawing made in MS paint.
+[06:48] It should look like someone who is not good at drawing created it quickly by hand, right?
+[06:52] This part of the prompt is also super important because it's telling Hicksfield how the image
+[06:56] should look like, right?
+[06:57] And over here we have white background, blah, blah, blah, blah, blah, no 3D, no cinematic,
+[07:01] blah, blah, blah.
+[07:02] This is the entire prompt.
+[07:03] So what I want you to do is write a prompt like this one or ask chat GPT or cloud to
+[07:07] write you a prompt like this one.
+[07:08] And after you write this prompt, I want you to copy this prompt and then paste it into
+[07:12] cloud code.
+[07:13] So go back to cloud code over here and paste this prompt in the message box.
+[07:17] Then what I want you to do is copy the script with the timestamps and paste it below this
+[07:22] prompt.
+[07:23] So what I'm going to do is go back to my script over here.
+[07:25] I'm going to copy this entire script, but for the purpose of this video, I'm just going
+[07:29] to copy until here because I don't want to waste too much time and credits as well.
+[07:33] So I'm going to copy this, go back to cloud code, and I'm going to paste the script.
+[07:37] Now all you have to do is send this message to cloud code.
+[07:40] As you can see, cloud code is going to run the skill over here and this is the Hicksfield
+[07:43] skill.
+[07:44] Then it's going to ask you to allow access to the terminal a bunch of times.
+[07:49] You just click allow.
+[07:50] And once that's ready, cloud code is going to start generating the images.
+[07:53] As you can see over here, running skill Hicksfield generate, and it's generating the images.
+[07:58] As you can see, it's asking me to allow access.
+[08:00] I don't think you can see it.
+[08:01] Let me ask.
+[08:02] Yeah.
+[08:03] You can't actually see it because of my webcam.
+[08:04] So I'm going to take my webcam.
+[08:05] So as you can see over here, allow once or allow always click always allow, right?
+[08:09] As you can see, now I'll generate 38 images.
+[08:11] Now it's only going to generate 38 images because I've copied just a little part of
+[08:15] the script.
+[08:16] If you copy the entire script, it's going to generate you more than 100 images, which
+[08:20] is absolutely insane.
+[08:22] You're basically going to have footage for your video every few seconds.
+[08:25] And this process over here literally takes you like 10 minutes.
+[08:29] And basically this is how it looks.
+[08:31] As you can see over here, it's generating the images and batches, and it's doing it
+[08:35] pretty fast.
+[08:36] Now to check your images, all you have to do is go back to your Hicksfield account.
+[08:40] So back to Hicksfield over here, as you can see, all you have to do is click over here
+[08:44] at the top left where it says image.
+[08:46] Click on this.
+[08:47] And over here, you should have all the images that are being generated right now.
+[08:50] As you can see, if I scroll down, we have all the images for the script.
+[08:55] And they have the exact same style like that channel.
+[08:58] So if we go back to this channel and if I click on one video, let me mute it.
+[09:02] I have YouTube premium.
+[09:03] I have no idea why I'm receiving ads.
+[09:05] So YouTube is a little bit sneaky.
+[09:07] As you can see, this is how the videos look.
+[09:09] These are literally just images of bad drawings.
+[09:12] But the secret is that there's tons of images.
+[09:15] As you can see, the images are changing almost every two seconds, almost every three seconds.
+[09:20] That's the secret.
+[09:21] Now, if we look at the views, we see that the video was uploaded literally on April
+[09:24] 16, 2026.
+[09:25] It has almost one million views, 26,000 likes, almost 3,000 comments, and people are actually
+[09:30] enjoying the videos.
+[09:32] And I can scroll through the video and show you that all the images look identical.
+[09:35] It's the exact same style we're generating using Cloud Code and Hicksfield.
+[09:39] If I go back to Hicksfield, we will see that our images look exactly the same.
+[09:42] We have this image over here.
+[09:44] What else we have?
+[09:45] We have these images over here, right?
+[09:47] And what's awesome is that all these images actually fit with the script because each
+[09:51] image was generated for a specific timestamp of your script.
+[09:54] Now, let me show you how you can edit these images super fast.
+[09:57] So what you want to do is go back to Cloud Code over here, and I'm going to stop the
+[10:00] process of generating these images.
+[10:02] And basically, what you have to type is, link me the folder with the images, right?
+[10:09] And it's going to link you the folder where all these images were created, were stored.
+[10:13] Now, if you get this message where it says the images are generated on Hicksfield hosted
+[10:17] online, not saved locally, you can ask him to do the following.
+[10:20] Please download these images locally and make their titles fit with the timestamp.
+[10:28] So if an image was created for 0.00 seconds, that's the title of the image.
+[10:37] If an image was created for 0.20 seconds, that's the title of the image.
+[10:43] This is very important because having the timestamps as the title of the image is what's
+[10:48] going to help us create these videos super fast because we know exactly where to place
+[10:52] them to actually sync with the voiceover.
+[10:55] So send this message to Cloud.
+[10:56] And as you can see, it's going to create a folder for us, which is super awesome.
+[10:59] Just click allow.
+[11:01] And then it's going to download all the images for you, which again, automates the work and
+[11:04] saves you a lot of time because even if you have to download each image, you have to go
+[11:08] click and download, click, download.
+[11:10] Not only that, but they don't have the right titles and it's going to be hard to edit them.
+[11:14] This way Cloud Code downloads all the images, but also changes their titles to fit with
+[11:19] the timestamps.
+[11:20] And why that's important is because we know where to place them on the timeline when we
+[11:24] edit the video.
+[11:25] So basically it's going to create you a folder like this one over here.
+[11:29] And as you can see inside the folder, all the images are going to slowly start to be
+[11:33] downloaded.
+[11:34] As you can see, this is the first image, now the second one.
+[11:37] So basically how you edit the video now, it's super straightforward.
+[11:40] You open your video editing program over here.
+[11:42] And if I hit play, you can listen to the voiceover.
+[11:45] Imagine waking up at 2 a.m. and not reaching for your phone.
+[11:47] And what you want to do is- No glow, no notification, no clock.
+[11:50] Cloud Code is generating in the folder.
+[11:52] Just absolute darkness.
+[11:53] Zoom in on the timeline.
+[11:54] And now basically based on the title of the image, this one over here is zero seconds.
+[11:59] You add it until seven seconds over here.
+[12:03] Because the next image should start at seven seconds.
+[12:06] As you can see, the second image says 0.07, which is seven seconds.
+[12:10] Then the third image starts at 0.15 seconds.
+[12:14] That means we need to drag the second image until 15 seconds over here.
+[12:17] We can see over here.
+[12:18] Then we're going to drag the third image.
+[12:21] And when is the fourth image going to appear?
+[12:22] It's going to appear at 23 seconds.
+[12:24] So we're going to drag this image until 23 seconds.
+[12:29] Just like that.
+[12:30] Then we add the next image and we're going to drag it until 29 seconds.
+[12:34] Because the next image is going to appear at 29 seconds.
+[12:36] And basically editing the video like this is going to literally take you 10 minutes.
+[12:40] Like it's super easy.
+[12:42] AI is doing most of the work.
+[12:44] Now if I hit play, you will notice how the voiceover syncs with each image without me
+[12:49] needing to listen to the voiceover and spending hours syncing and editing.
+[12:53] Imagine waking up at 2 a.m. and not reaching for your phone.
+[12:56] Just absolute darkness.
+[12:58] You listen for 300,000 years.
+[13:02] So that's how you can create these videos by using AI automation.
+[13:07] Now if you're struggling to grow on YouTube, if your videos get zero views or 50 views
+[13:11] or 200 views or they can get past 1,000 views, you might want to watch this video over here.
+[13:16] Because inside this video, I explain why some channels feel shadow banned.
+[13:21] Why some of you think YouTube is shadow banning you and literally ignoring your channel.
+[13:25] So if you want to learn about the algorithm and how to escape that, you might want to
+[13:29] watch this video over here.

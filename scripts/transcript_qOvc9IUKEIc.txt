@@ -24,13 +24,13 @@
 [01:40] If you were to compare this to your cell phone, Anthropic is building the phone itself. You have
 [01:45] to create the apps. That's the layer to control. And before we get to how to best create these
 [01:49] skills, here's a prompt you can run to help you identify these skills that are worth creating.
-[01:54] So you're no longer writing custom prompts. You're writing more specific prompts that clearly
+[01:54] So you're no longer writing custom prompts, you're writing more specific prompts that clearly
 [01:58] reference skills. And this leads to the next topic, which most people get wrong, which is how do you
 [02:02] actually build a skill that works? Rule number two is skills are more than prompts. So you're convinced
-[02:07] you need to change how you prompt to prompt skills. So the next question is how do you actually create
-[02:11] skills that work? There's an art to this, a lot like when prompt engineering went viral when
+[02:07] you need to change how you prompt to prompt skills. So the next question is how do you actually
+[02:11] create skills that work? There's an art to this, a lot like when prompt engineering went viral when
 [02:15] ChatGBT first came out. And it's important that you get this right. The act of actually creating
-[02:20] the skill is super easy. You can just write in Claude, build me a skill for X, and I'll just
+[02:20] the skill is super easy. You can just write in Claude, build me a skill for x, and I'll just
 [02:24] create a skill for you. But to use these skills well, you need to understand what's actually inside
 [02:28] them, because it's not just a prompt that lives in a folder. A skill is more than a prompt. Inside
 [02:33] a skill, there are three layers. Layer one is the description. This is what Claude checks every time
@@ -49,90 +49,90 @@
 [03:36] like no documentation. The parameters are named A and B. And it's kind of like, oh,
 [03:43] an engineer wouldn't be able to work with this as if this was a function they had to use.
 [03:50] People obsess over the prompt and skip the tools, the third layer of a skill. Anthropic engineers
-[03:56] do the opposite. They focus on these tools. So instead of this whole back and forth,
-[03:59] I created my own custom skill that could check these domains programmatically so that whatever
-[04:04] domains it was telling me, it has already verified that I could go and buy it. So I gave
-[04:08] this skill access to the right tool and it leveled up the entire process. And like I mentioned in
-[04:12] rule one, instead of manually thinking about domains, I could have 10 different sub agents
-[04:17] using this skill to look through 10,000 plus domains to find the right one. Now I can do
-[04:22] something that I literally would have never been able to do before. Here's a prompt you can use to
-[04:26] think deeper about the skills you create. So when you actually go ahead and prompt them, they'll be
-[04:30] that much more effective. So rule number two covers how anthropic engineers make skills,
-[04:34] but what skills do they actually create? Rule number three is they build composable skills,
-[04:38] not custom skills. Pulling directly from Anthropic's engineering blog about what skills
-[04:43] are and how to position them. They are composable, portable, efficient, and powerful. Composability
-[04:48] means multiple skills can work together with Claude automatically coordinating which to use.
-[04:53] What this means is you should have small, focused, and reusable skills that can work together versus
-[04:58] having a single massive skill that does everything. A concrete example that I experienced,
-[05:03] when I first started building skills for my content engine, I built a single slash content
-[05:07] creation skill that did everything. Generate ideas, wrote scripts, drafted social posts,
-[05:12] all of it, one skill, a million possibilities. And it just became unmanageable. Every time I
-[05:17] wanted to change how scripts were written, I had to rewrite the whole skill and I didn't
-[05:21] know what it actually impacted. And so instead I split it up to more specific skills, right?
-[05:26] YouTube idea research, YouTube script writer, LinkedIn post, each skill had a specific goal in
-[05:33] mind. And the benefit is that each can call the other skills so that they start chaining them
-[05:38] together. This may seem a bit overkill, but it really isn't for three specific reasons. The first
-[05:42] is that issues are easy to spot. When a focus skill breaks, you know exactly where to look.
-[05:47] Whereas if it's a giant skill, you don't know what exactly the issue was. The second is that
-[05:52] improvements compound. If you update, let's call it YouTube idea research, every workflow that uses
-[05:58] the same skill automatically gets upgraded. Whereas if you're using a giant skill, you're
-[06:02] going to have overlapping functionality, which means you'll fix it in one skill and it will still
-[06:07] be broken in the other. The third is that you can reuse instead of rebuilding. If you build something
-[06:12] like the check domain skill I mentioned earlier, you can plug that into any workflow you want.
-[06:16] You're not rebuilding the wheel every time with a new workflow. So you know you should break them up,
-[06:20] but what's some more technical patterns that you should consider to make these even more powerful?
-[06:25] So both of these come from directly how anthropic engineers actually use them. So pattern one is save
-[06:31] scripts inside of skills. This is part of the tools layer of a skill, and it's how you actually
-[06:35] make them sharper. Here's Barry at the AI Engineering Code Summit talking about how he does exactly this.
-[06:39] We kept seeing Cloud write the same Python script over and over again to apply styling to slides.
-[06:45] So we just asked Cloud to save it instead of the skill as a tool for his future self.
-[06:50] Now we can just run the script and that makes everything a lot more consistent, a lot more
-[06:53] efficient. Let me break down what he said. Cloud kept rewriting the same Python script every session
-[06:58] and instead of them letting it rewrite it, they saved the script inside of a skill folder. So now
-[07:02] the next session, Cloud doesn't have to rewrite the script, it just reruns it. And this is so
-[07:06] powerful because code is deterministic, which essentially means if you give it the same input,
-[07:10] it will give you the same output every single time. Whereas in the AI world, that's not necessarily
-[07:15] the case. It interprets it, it guesses, it uses tokens that cost money. And when you have a script
-[07:20] inside a skill, you're trading AI tokens for code compute, which is cheaper, faster, and repeatable.
-[07:26] A general rule of thumb is if you can use code instead of AI, you should. And you don't have
-[07:30] to write the code, you can just have AI write it for you once, and then you can reuse it as much
-[07:34] as you want. The second pattern is you can control who invokes what. Most people don't know this
-[07:38] exists, but Anthropic built two flags into Cloud skills that are important to understand. The first
-[07:43] is user invocable. If you set this to false, it hides the skill from your slash menu. It means
-[07:48] that the user, you or me or whoever, can't directly invoke this skill. It's only a skill for agents.
-[07:54] This is perfect for any AI agent specific tools that you don't even want to think about. And then
-[07:59] disable model invocation. This does the opposite. Only you can run it and the model can't. This is
-[08:04] great for higher risk things like a skill that sends a message or deploys a new version of your
-[08:09] code to production. Most of you watching this have likely never heard of either of those things,
-[08:13] but now you have it in your bag when you're designing these skills. Here's a prompt you can
-[08:17] run to audit your setup to make sure that you're properly applying these things into your skills.
-[08:21] Screenshot this and just send the photo into Cloud, and I highly recommend you do this.
-[08:25] So you know how to build skills and what to build, but how do you make these improve over time?
-[08:30] And before I get to that, if this is your first video of mine, welcome the channel. But if it's
-[08:34] your second or more, here is our anti-slop agreement. The visuals, the testing, the time
-[08:39] I put into this video, that's entirely built for humans, not for AI robots or data scrapers. So all
-[08:44] I ask is you subscribe as part of this agreement to help this content reach more people so I can
-[08:49] keep making videos like this. Rule number four is their prompts get smarter every session. Here's
-[08:54] where anthropic engineers really pull ahead. Their skills and in turn their prompting doesn't just
-[08:58] work. They get better every session. When you prompt Cloud with a sentence, that prompt just
-[09:03] advantages the moment you close the chat. When you prompt with a skill, the skill stays. And
-[09:08] every time you use it, you have a chance to sharpen it. Listen to their engineering team talk about
-[09:12] exactly this. When you first start using Cloud, this standardized format gives a very important
-[09:17] guarantee. Anything that Cloud writes down can be used efficiently by a future version of itself.
-[09:22] Our goal is that Cloud on day 30 of working with you is going to be a lot better on Cloud on day
-[09:27] one. Every time Cloud learns something about how you work, your voice, your process, your edge cases,
-[09:32] you write it down in the skill. Next session starts smarter than the last. So how do you
-[09:36] actually do this? Every time you run a skill and the output isn't exactly what you want, ask yourself
-[09:41] one question. Is this a one-time fix or should this be in the skill forever? If it's forever,
-[09:47] update the skill. Add the rule, the example, the edge case. And a lot of people skip this entirely.
-[09:51] They're just like, okay, run the skill, get an output, like continue with their day. But anthropic
-[09:56] engineers use a skill, get the output, then update the skill so that there's a compounding loop that
-[10:01] improves over time. And it's really quite simple. Like it's literally, you can just use your chat
-[10:06] history as a reference point to improve the skill itself. Just say, review the back and forth I just
-[10:12] had after using this skill. Can we enhance the skill so this is handled automatically or we don't
-[10:17] make the same mistake again? So zooming out, these four rules are clear. Use skills, not prompts. Build
-[10:23] tools, not just skills with prompts. Build skills that are composable, not custom. And update your
-[10:29] skills every time you use them. Using Clawd like an engineer doesn't have to be complicated. And if
-[10:33] you like this, you'll love this video where I break down how Boris Cherny, the creator of Clawd
-[10:38] Code, uses Clawd skills. It's pretty wild and built on a lot of what we covered here. I'll see you over
-[10:43] there. Peace.
+[03:56] do the opposite. They focus on these tools. So instead of this whole back and forth, I created
+[04:00] my own custom skill that could check these domains programmatically so that whatever domains it was
+[04:05] telling me, it has already verified that I could go and buy it. So I gave this skill access to the
+[04:09] right tool and it leveled up the entire process. And like I mentioned in rule one, instead of
+[04:14] manually thinking about domains, I could have 10 different sub agents using this skill to look
+[04:18] through 10,000 plus domains to find the right one. Now I can do something that I literally would have
+[04:23] never been able to do before. Here's a prompt you can use to think deeper about the skills you
+[04:27] create. So when you actually go ahead and prompt them, they'll be that much more effective. So rule
+[04:31] number two covers how anthropic engineers make skills, but what skills do they actually create?
+[04:36] Rule number three is they build composable skills, not custom skills. Pulling directly from
+[04:40] Anthropic's engineering blog about what skills are and how to position them, they are composable,
+[04:45] portable, efficient, and powerful. Composability means multiple skills can work together with
+[04:50] Claude automatically coordinating which to use. What this means is you should have small, focused,
+[04:55] and reusable skills that can work together versus having a single massive skill that does everything.
+[05:01] A concrete example that I experienced when I first started building skills for my content engine,
+[05:05] I built a single slash content creation skill that did everything. Generate ideas, wrote scripts,
+[05:11] drafted social posts, all of it. One skill, a million possibilities. And it just became
+[05:16] unmanageable. Every time I wanted to change how scripts were written, I had to rewrite the whole
+[05:20] skill and I didn't know what it actually impacted. And so instead, I split it up to more specific
+[05:25] skills, right? YouTube idea research, YouTube script writer, LinkedIn post. Each skill had a
+[05:31] specific goal in mind. And the benefit is that each can call the other skills so that they start
+[05:37] chaining them together. This may seem a bit overkill, but it really isn't for three specific
+[05:41] reasons. The first is that issues are easy to spot. When a focus skill breaks, you know exactly
+[05:46] where to look. Whereas if it's a giant skill, you don't know what exactly the issue was. The second
+[05:52] is that improvements compound. If you update, let's call it YouTube idea research, every workflow
+[05:57] that uses the same skill automatically gets upgraded. Whereas if you're using a giant skill,
+[06:02] you're going to have overlapping functionality, which means you'll fix it in one skill and it
+[06:07] will still be broken in the other. The third is that you can reuse instead of rebuilding. If you
+[06:11] build something like the check domain skill I mentioned earlier, you can plug that into any
+[06:15] workflow you want. You're not rebuilding the wheel every time with a new workflow. So you know you
+[06:20] should break them up, but what's some more technical patterns that you should consider
+[06:23] to make these even more powerful? So both of these come from directly how anthropic engineers
+[06:28] actually use them. So pattern one is save scripts inside of skills. This is part of the tools layer
+[06:33] of a skill and it's how you actually make them sharper. Here's Barry at the AI Engineering Code
+[06:37] Summit talking about how he does exactly this. We kept seeing Cloud write the same Python script
+[06:42] over and over again to apply styling to slides. So we just asked Cloud to save it instead of the
+[06:47] skill as a tool for his future self. Now we can just run the script and that makes everything a
+[06:52] lot more consistent and a lot more efficient. Let me break down what he said. Cloud kept rewriting
+[06:56] the same Python script every session and instead of them letting it rewrite it, they saved the
+[07:00] script inside of a skill folder. So now the next session, Cloud doesn't have to rewrite the script,
+[07:04] it just reruns it. And this is so powerful because code is deterministic, which essentially means if
+[07:09] you give it the same input, it will give you the same output every single time. Whereas in the AI
+[07:14] world, that's not necessarily the case. It interprets it, it guesses, it uses tokens that
+[07:18] cost money. And when you have a script inside a skill, you're trading AI tokens for code compute,
+[07:23] which is cheaper, faster, and repeatable. A general rule of thumb is if you can use code instead of AI,
+[07:29] you should. And you don't have to write the code, you can just have AI write it for you once and
+[07:33] then you can reuse it as much as you want. The second pattern is you can control who invokes
+[07:37] what. Most people don't know this exists, but Anthropic built two flags into Cloud skills that
+[07:41] are important to understand. The first is user invocable. If you set this to false, it hides the
+[07:46] skill from your slash menu. It means that the user, you or me or whoever, can't directly invoke this
+[07:52] skill. It's only a skill for agents. This is perfect for any AI agent specific tools that
+[07:57] you don't even want to think about. And then disable model invocation. This does the opposite.
+[08:02] Only you can run it and the model can't. This is great for higher risk things like a skill that
+[08:06] sends a message or deploys a new version of your code to production. Most of you watching this have
+[08:11] likely never heard of either of those things, but now you have it in your bag when you're designing
+[08:15] these skills. Here's a prompt you can run to audit your setup to make sure that you're properly
+[08:19] applying these things into your skills. Screenshot this and just send the photo into Cloud and I
+[08:24] highly recommend you do this. So you know how to build skills and what to build, but how do you
+[08:28] make these improve over time? And before I get to that, if this is your first video of mine,
+[08:33] welcome the channel. But if it's your second or more, here is our anti-slop agreement. The
+[08:37] visuals, the testing, the time I put into this video, that's entirely built for humans,
+[08:42] not for AI robots or data scrapers. So all I ask is you subscribe as part of this agreement
+[08:47] to help this content reach more people so I can keep making videos like this. Rule number four
+[08:51] is their prompts get smarter every session. Here's where anthropic engineers really pull ahead. Their
+[08:56] skills and in turn their prompting doesn't just work, they get better every session. When you
+[09:01] prompt Cloud with a sentence, that prompt disadvantages the moment you close the chat.
+[09:05] When you prompt with a skill, the skill stays. And every time you use it, you have a chance to
+[09:10] sharpen it. Listen their engineering team talk about exactly this. When you first start using
+[09:14] Cloud, this standardized format gives a very important guarantee. Anything that Cloud writes
+[09:19] down can be used efficiently by a future version of itself. Our goal is that Cloud on day 30 of
+[09:24] working with you is going to be a lot better on Cloud on day one. Every time Cloud learns something
+[09:29] about how you work, your voice, your process, your edge cases, you write it down in the skill.
+[09:33] Next session starts smarter than the last. So how do you actually do this? Every time you run
+[09:38] a skill and the output isn't exactly what you want, ask yourself one question. Is this a one-time fix
+[09:44] or should this be in the skill forever? If it's forever, update the skill. Add the rule, the example,
+[09:49] the edge case. And a lot of people skip this entirely. They're just like, okay, run the skill,
+[09:53] get an output, like continue with their day. But anthropic engineers use a skill, get the output,
+[09:58] then update the skill so that there's a compounding loop that improves over time. And it's really
+[10:03] quite simple. Like it's literally, you can just use your chat history as a reference point to
+[10:08] improve the skill itself. Just say, review the back and forth I just had after using this skill.
+[10:14] Can we enhance the skill so this is handled automatically or we don't make the same mistake
+[10:19] again? So zooming out, these four rules are clear. Use skills, not prompts. Build tools, not just
+[10:24] skills with prompts. Build skills that are composable, not custom. And update your skills
+[10:29] every time you use them. Using Claude like an engineer doesn't have to be complicated. And if
+[10:33] you like this, you'll love this video where I break down how Boris Cherny, the creator of Claude Code,
+[10:39] uses Claude skills. It's pretty wild and built on a lot of what we covered here.
+[10:43] I'll see you over there. Peace.

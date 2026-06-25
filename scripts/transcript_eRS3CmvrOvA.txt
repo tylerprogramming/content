@@ -1,0 +1,399 @@
+[00:00] After spending 400 hours in cloud code, I noticed something.
+[00:02] Most people online are developing fancy skills for the sake of a cool video,
+[00:05] but businesses don't actually want that.
+[00:07] They want six types of skills.
+[00:08] They're simple, they're boring, but they are effective.
+[00:10] Skills that save time, save money, or remove mistakes.
+[00:13] And the crazy part is, these six skills are the ones that clients will pay the most for
+[00:16] because they allow you to build the best agents at the lowest cost.
+[00:19] So in this video, I'll show you what they are, why they sell,
+[00:21] and how you can use them to sell AI automations.
+[00:24] But before we jump into the first one, let me show you how I figured all of this out.
+[00:27] I've worked with real estate agencies, HVAC companies, coaches, marketing agencies, and more.
+[00:31] And I've seen the same patterns across every business.
+[00:33] They're different industries, sure, but they face the same problems.
+[00:36] And these skills keep showing up again and again.
+[00:38] So if you're watching this and you want to make money selling AI in 2026,
+[00:41] don't overthink it, just start with what the businesses are already paying for.
+[00:43] Alright, let's get into the first skill.
+[00:45] So the first skill that I'd install is the one that builds every other skill,
+[00:48] and it's called the Skill Creator.
+[00:49] It's one of the official skills from Anthropic.
+[00:51] You basically just describe what you want in plain English,
+[00:54] Claude drafts the skill, tests it, iterates on it,
+[00:56] and it packages it into something that you can use forever.
+[00:58] You don't have to manually touch or edit a skill.md file.
+[01:01] You don't have to figure out the formatting.
+[01:03] You just talk to Claude like you're explaining the job to a co-worker,
+[01:05] and you walk away with a skill that runs the same every time.
+[01:08] You can even drop in like an SOP, and it would be able to turn that into a reusable skill.
+[01:12] So the problem it solves is very simple.
+[01:14] Most people who get into Claude code try to write skills manually,
+[01:16] and they immediately hit a wall.
+[01:18] They don't know the structure, they don't know what makes a skill reliable versus flaky,
+[01:22] so they either give up or they cobble something together that breaks the second a client touches it.
+[01:25] So the Skill Creator removes all of that headache.
+[01:28] Now honestly, the skill itself isn't what a client pays for,
+[01:30] but every single skill that you're going to sell to an HVAC company,
+[01:33] a real estate agency, a coach, whatever, they all come out of this one.
+[01:37] It's the factory that builds the product.
+[01:39] So indirectly, this is the skill that can help make all of the other dollars possible.
+[01:43] So here's a simple example.
+[01:44] Let's say a real estate agency tells you they waste hours every week writing property descriptions.
+[01:48] Without Skill Creator, you'd be writing out the whole skill.md file,
+[01:51] figuring out the trigger conditions, testing it over and over,
+[01:53] and it would probably break a few times,
+[01:54] and you could obviously get to a spot where you have a good working skill.
+[01:57] But with the Skill Creator, you can just explain it more naturally,
+[01:59] and it will help you build, test, and package it.
+[02:02] So it just compresses that learning curve.
+[02:03] To install this, you can run slash plug and install Skill Creator.
+[02:06] I'll put the full command right up here and in the description,
+[02:08] and I'll include all of the actual commands that you'll need in the description,
+[02:11] so you can just copy and paste them.
+[02:12] I personally installed this skill globally on a user scope,
+[02:14] so no matter what product that I'm actually working in,
+[02:16] if I ever need to build a skill, it just automatically invokes this,
+[02:19] and I don't even have to think about it at all.
+[02:20] All right, so a quick thing before we get into the rest.
+[02:22] You're going to hear me use the word skill throughout this video,
+[02:24] but technically, some of these are plugins.
+[02:26] A skill is basically a package that you install
+[02:28] that teaches Claude how to do a specific job better.
+[02:30] It is the markdown file,
+[02:31] but a plugin is a bigger package around that skill
+[02:34] because it can contain multiple other skills,
+[02:36] plus extra things like hooks or MCP servers,
+[02:38] and all of that changes how Claude Code behaves under the hood
+[02:41] because of that plugin.
+[02:42] Also, because I know you guys are going to say so in the comments,
+[02:44] I'm not an AI avatar.
+[02:45] This is really me here speaking to you guys.
+[02:47] But anyways, for this video, I'm going to be calling some of these skills
+[02:50] because the point isn't the technical category,
+[02:52] it's that each one of these makes Claude noticeably better at its job.
+[02:55] Anyways, the next skill is called Superpowers,
+[02:57] and this one literally gives Claude superpowers.
+[02:59] It's a great name.
+[03:00] It forces Claude to work the way that a senior developer works,
+[03:03] meaning instead of jumping in and writing code right away,
+[03:05] Claude will now step back and plan the whole thing first.
+[03:08] It works in an isolated environment, so nothing breaks your main project.
+[03:10] It writes tests before it writes code, it brainstorms,
+[03:13] and it reviews its own work in two stages,
+[03:15] once for whether it actually matches the spec,
+[03:17] and once for code quality.
+[03:18] The problem it solves is the number one failure mode
+[03:20] when people use Claude code, which is rushed or sloppy code.
+[03:23] You ask for something, Claude sprints to write it,
+[03:25] and on the surface it looks fine,
+[03:27] but then when you start to run it and use it, it falls apart.
+[03:29] Or worse, your client runs it and it falls apart.
+[03:31] So Superpowers slows Claude down just enough to actually think the problem through,
+[03:34] and it doesn't let Claude skip steps.
+[03:36] So really any project where you're building software or automations
+[03:39] that will actually be put into production needs this skill.
+[03:41] An HVAC company paying for a dispatch system,
+[03:43] a marketing agency paying for a custom reporting tool.
+[03:45] These clients don't care how many lines of code you wrote,
+[03:48] they care that the system works when their business depends on it.
+[03:50] Without a framework like Superpowers,
+[03:52] Claude might write the whole automation in one shot and miss an edge case.
+[03:55] But with Superpowers, Claude can plan it out, it can write the tests,
+[03:57] it can find edge case scenarios,
+[03:59] and it can catch those gaps before it ever reaches your client.
+[04:02] Now it's not realistic to say that it's still going to be able to one-shot everything.
+[04:05] Ultimately, when you're building, a large part of your job is QA, quality assurance.
+[04:09] And on your first pass, if you can get somewhere like 80% of the way there,
+[04:12] rather than just like 60% of the way there, that's a win.
+[04:14] Fewer debugging cycles means less time spent fixing things
+[04:17] and lower token costs.
+[04:19] This is also why Superpowers is one of the most popular community skills out there
+[04:22] with over 150,000 stars on GitHub.
+[04:24] So to install it, just run this command right up here.
+[04:27] I threw this in the description.
+[04:28] And by the way, I also made a full YouTube video breaking down this Superpowers skill
+[04:31] and talking about the tokens that it actually spends.
+[04:33] So you can check that out right up here.
+[04:35] All right, skill number three is called GSD, which stands for Get Shit Done.
+[04:39] And if Superpowers is about how Claude writes code,
+[04:41] then GSD is about the environment that Claude actually writes that code in.
+[04:45] Every Claude code user eventually hits that wall, right?
+[04:47] You start a session, things are going great, Claude's nailing everything.
+[04:49] Then somewhere around halfway through your context window, it starts to fall apart.
+[04:53] You know, code gets sloppy, Claude forgets requirements that you set
+[04:56] at the beginning of the session.
+[04:57] It starts skipping steps and it actually cuts corners
+[05:00] and it might tell you things are done when they're not.
+[05:02] And this is essentially called context rot.
+[05:03] Now GSD fixes this with context engineering.
+[05:06] Instead of letting one big session slowly degrade,
+[05:08] it spawns fresh sub-agents for each task.
+[05:11] And each one has a clean context window focused on only what they need to know.
+[05:14] So your main session stays clean.
+[05:16] Each task gets the full power of Claude's context window
+[05:18] instead of just the leftovers.
+[05:20] It also has built-in quality gates that catch real problems during execution.
+[05:23] Scope reduction detection catches the planner
+[05:26] when it silently drops a requirement that you asked for.
+[05:28] Security enforcement anchors verification to your threat model.
+[05:30] These aren't things that you'd manually think to go check through,
+[05:33] especially if you're not coming from a software engineering background,
+[05:35] which is exactly why having them automated really matters.
+[05:38] There's also an autonomous mode
+[05:39] if you want to hand Claude a spec and just walk away.
+[05:41] It'll plan, execute, commit, and work through the whole project,
+[05:44] without you having to babysit it as much.
+[05:46] Now one thing I want to be upfront about
+[05:47] is that GSD isn't really a token-saving plugin.
+[05:50] All of these sub-agents cost tokens.
+[05:52] But what it saves you is the hours you'd otherwise spend
+[05:55] redoing work that Claude broke
+[05:56] because it forgot what you asked in the first place.
+[05:58] So Superpowers gives Claude the process,
+[06:00] plan, test, review, repeat.
+[06:02] GSD gives Claude the clean context
+[06:04] so that processing actually works every time.
+[06:06] So to install this one, just run this command in your terminal.
+[06:09] And then you can also type slash gsd-help inside of Claude code
+[06:12] to see what other commands are available within that plugin.
+[06:14] Okay, so the fourth one isn't actually a skill that you install.
+[06:17] It's already built into Claude code,
+[06:18] and most people just aren't using it.
+[06:20] It's the slash-review command
+[06:21] and it's more powerful cousin, slash-ultra-review.
+[06:24] So when you finish writing code and you type slash-review,
+[06:26] Claude does a structured code review on what you just built.
+[06:29] It looks for bugs, edge cases, and design issues,
+[06:31] all of the stuff that a careful reviewer would be flagging.
+[06:34] It runs locally, it's fast,
+[06:35] it costs you nothing beyond your usual usage tokens.
+[06:38] And then we have slash-ultra-review,
+[06:40] which launched alongside Opus 4.7.
+[06:42] Now this one, instead of running locally,
+[06:44] it uploads your branch to a cloud sandbox
+[06:46] and spins up a fleet of reviewer agents in parallel.
+[06:48] Each agent will attack your code base from a different angle,
+[06:51] logic, security, performance, edge cases.
+[06:53] And here's the part that's really cool.
+[06:54] Before any bug shows up on your list,
+[06:56] it has to be independently reproduced and verified.
+[06:59] So you're not going to get a pile of style nitpicks
+[07:01] or false positives.
+[07:02] You're going to be getting confirmed bugs.
+[07:04] Practically, I mean,
+[07:05] this fits at the end of any Claude code workflow.
+[07:07] You plan with superpowers,
+[07:08] you execute with clean context using GSD.
+[07:10] And then before you merge anything important,
+[07:12] you run slash-ultra-review to catch the bugs
+[07:14] that Claude missed on its own.
+[07:15] A few things to know before you run it.
+[07:17] You need Claude code version 2.1.86 or later.
+[07:20] You need to be signed in with a Claude account.
+[07:22] An API key alone won't work.
+[07:24] And when you run the slash-ultra-review,
+[07:25] it could take 10 to 20 minutes,
+[07:27] but it runs in the background so that you can keep working.
+[07:29] You'll want to use slash-review
+[07:30] for fast feedback on everything.
+[07:32] And you can use slash-ultra-review
+[07:34] when you're about to merge something that actually matters,
+[07:35] like a big refactor or anything touching payments or auth
+[07:38] or a database migration.
+[07:39] The kind of commit where a production bug costs way more
+[07:42] than the time and the tokens that ultra-review may cost you.
+[07:44] And also a quick heads up, ultra-review isn't free.
+[07:46] Pro and max plans get three free runs to try.
+[07:49] It might've changed by the time you're watching this,
+[07:50] but after that, it might cost five to 20 bucks per run,
+[07:53] depending on size.
+[07:54] Once again, you don't need to go install this
+[07:56] if you're on Claude code 2.1.86 or later,
+[07:59] just type slash-review or slash-ultra-review
+[08:01] in your terminal and it should work.
+[08:03] All right, this fifth plugin is context mode.
+[08:04] So here is the problem.
+[08:06] Every tool call that you make,
+[08:07] Claude dumps raw data into your context window.
+[08:09] So a playwright snapshot might be 56 kilobytes,
+[08:12] 20 GitHub issues might be 59 kilobytes.
+[08:14] And after about 30 minutes of real work,
+[08:16] 40% of your context window is just garbage.
+[08:18] Log output, raw data,
+[08:20] stuff that you never actually need Claude to look at.
+[08:22] And when Claude runs out of space
+[08:24] and compacts the conversation,
+[08:25] it forgets what files it was editing,
+[08:27] what tasks were in progress
+[08:28] and what you last asked it to do.
+[08:29] So context mode's job is to fix both halves
+[08:32] of these problems.
+[08:33] First, it keeps the garbage out.
+[08:35] When Claude runs a command or fetches a URL,
+[08:37] context mode routes that call through a sandbox.
+[08:39] So your code runs in an isolated sub process.
+[08:41] The raw output gets captured
+[08:43] and only the part that Claude actually needs
+[08:44] comes back into the context window.
+[08:46] Now, according to their own benchmarks,
+[08:48] a 56 kilobyte playwright snapshot becomes 299 bytes.
+[08:51] A 46 kilobyte access log becomes 155 bytes.
+[08:54] So over a full session,
+[08:55] 315 kilobytes of raw output becomes five kilobytes total.
+[08:59] That's obviously from their published benchmarks
+[09:00] and you can see your own numbers
+[09:02] by running slash context mode colon CTX dash stats
+[09:05] at any point.
+[09:06] Now, second, and this is the part
+[09:07] that I didn't even know I needed until I had it.
+[09:09] Context mode tracks every meaningful event
+[09:11] in your session in a local SQL database.
+[09:13] Every file you edit, every task you create,
+[09:15] every decision you make, every error that comes up.
+[09:18] When Claude compacts the conversation,
+[09:19] it doesn't lose any of that.
+[09:20] Context mode rebuilds a session snapshot
+[09:22] and injects it back in.
+[09:23] So the model picks up exactly where you left off
+[09:25] with your files, your tasks and your last prompt intact.
+[09:28] Practically, what does this mean
+[09:29] for your Cloud Code projects?
+[09:31] Sessions that used to fall apart around the 30 minute mark
+[09:33] now run for three hours because you don't hit any slowdown.
+[09:36] You stop wasting prompts reminding Claude
+[09:38] of the context that already had.
+[09:39] So to install this one on Cloud Code,
+[09:41] just type in these two commands right here
+[09:42] and then you restart Cloud Code and that's basically it.
+[09:45] The plugin auto installs the MTP server,
+[09:46] the hooks and the routing instructions.
+[09:48] All right, and now this last skill is called Claude Mem.
+[09:51] And if context mode keeps your current session clean,
+[09:53] then Claude Mem is what carries knowledge
+[09:55] across all of your future sessions.
+[09:57] Cloud Code starts every new session from scratch.
+[09:59] So you open up a session and you're explaining the project
+[10:02] for the fifth time this month
+[10:03] because every new conversation costs you maybe 10 minutes
+[10:05] and thousands of tokens just getting Claude caught up.
+[10:08] Now, you can try to solve this
+[10:09] with things like your Claude.md files
+[10:11] and your memory files, which obviously are important.
+[10:13] And these are plain text files that you write
+[10:15] to give Claude persistent project instructions.
+[10:17] And those work, but you do have to kind of think about
+[10:19] maintaining them by hand.
+[10:20] So if you miss an update on one of those files,
+[10:23] then Claude will also miss that context.
+[10:24] So Claude Mem basically takes this completely over.
+[10:27] It hooks into Claude's session lifecycle
+[10:28] and it automatically captures what happened
+[10:30] during your session.
+[10:31] It'll look at the file edits, the decisions,
+[10:32] the bug fixes, the commands, things like that.
+[10:35] And then it will use Claude's own agent SDK
+[10:37] to compress all of that semantic summaries
+[10:39] and stores everything into a local SQLite database
+[10:42] with vector search.
+[10:43] So when you open up a new session,
+[10:45] the relevant parts get injected back in automatically.
+[10:47] And it also auto generates folder level Claude.md files
+[10:50] and updates them as you work.
+[10:52] So your project documentation literally writes itself
+[10:54] while you code and it's automated.
+[10:55] And the part that actually saves tokens is the retrieval.
+[10:58] So instead of dumping every past observation
+[11:00] into your context, Claude Mem uses
+[11:02] a three layer search system.
+[11:03] It first returns a compact index of observations,
+[11:06] and then you can pull a timeline
+[11:07] around the ones that matter.
+[11:08] And only then does it fetch the full details
+[11:11] for the handoff that you need.
+[11:12] So this repo reports about 10 times token savings
+[11:14] on retrieval compared to dumping everything in
+[11:17] at the session start.
+[11:18] So practically, all of your Claude Code projects,
+[11:19] you stop paying the startup tax on every new session,
+[11:22] you stop repeating yourself,
+[11:23] you pick up a project where you haven't touched in two weeks
+[11:26] and Claude already knows exactly what you're working on
+[11:28] and what you've decided and where you left off.
+[11:30] And because everything runs locally on your machine
+[11:32] with a web viewer,
+[11:32] you can actually see what Claude remembers
+[11:34] about your project and you can look through it yourself.
+[11:36] Now inside of Claude Code,
+[11:37] you can install this using the plugin marketplace
+[11:39] with the commands right here on screen.
+[11:40] Now one quick warning from the repo itself,
+[11:42] you don't have to run this NPM install command
+[11:44] that installs the SDK library only
+[11:46] and nothing actually works because the hooks never register.
+[11:48] So stick with the two commands above
+[11:50] and that ladies and gentlemen was number six
+[11:52] on our list today.
+[11:53] But real quick, because I know a lot of you guys
+[11:55] are doing things with website design
+[11:56] or building out slide decks and whatnot,
+[11:58] bonus skill number seven
+[11:59] is the official front end design skill from Anthropic.
+[12:02] You just install it using the command on screen
+[12:04] and I would go ahead and just install that globally.
+[12:06] So whenever you're doing things
+[12:07] like actually designing things in Claude Code,
+[12:09] it will make them look a lot less AI generated
+[12:11] because of that front end design skill.
+[12:13] Now this type of stuff also is natively baked
+[12:15] into Anthropic Labs new products called Claude Design.
+[12:18] But if you do bring that project back into Claude Code,
+[12:20] you're gonna wanna use this skill.
+[12:21] Okay, so now that you know the skills and what they do,
+[12:24] here's how to actually sell them.
+[12:25] Because I see so many people starting out
+[12:27] trying to sell the actual workflow,
+[12:28] but you need to be selling something else.
+[12:30] You need to be selling the outcome.
+[12:31] You need to be selling,
+[12:32] saving the business owner 10 hours a week
+[12:33] or cutting their admin mistakes and their human error.
+[12:36] You need to be selling the results
+[12:37] like speeding up their leads or getting them more leads.
+[12:39] That's what they actually wanna pay for.
+[12:40] So instead of offering to build an AI workflow,
+[12:42] you're actually just offering to save time, cut costs
+[12:45] and help them focus on making more profit
+[12:47] for their business.
+[12:48] And there's actually a simple way to start doing this.
+[12:49] If you're brand new,
+[12:50] don't try to use all six of these right away.
+[12:52] Just pick one, learn it,
+[12:53] build out a few workflows using it
+[12:54] and show a business owner a demo.
+[12:56] They won't really care about your experience.
+[12:57] They'll care about the value of what you're showing them.
+[12:59] And once you start to understand how these skills work
+[13:01] and how they piece together,
+[13:02] you're able to build better automations quicker
+[13:04] and hopefully for cheaper,
+[13:05] which means you can make more demos.
+[13:07] You can make more content.
+[13:08] You can automate more parts of your own business.
+[13:10] All of that experience is gonna help you communicate
+[13:11] the value of what you know to business owners much better.
+[13:14] So I know that we covered a ton of information in this video.
+[13:17] So what I did is I threw all of this into a resource guide
+[13:19] that you can access for completely free
+[13:21] inside of my free school community.
+[13:22] You can check that out using the link in the description.
+[13:24] And if you wanna see exactly how I make money in 2026,
+[13:27] then check out this video right up here.
+[13:29] But anyways, that is gonna do it for today.
+[13:30] So if you guys enjoyed or you learned something new,
+[13:32] then please give it a like.
+[13:33] It helps me out a ton.
+[13:34] And as always, I appreciate you guys
+[13:35] made it to the end of the video
+[13:36] and I will see you all in the next one.
+[13:38] Thanks everyone.
