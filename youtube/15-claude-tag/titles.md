@@ -1,5 +1,7 @@
 # Titles + Thumbnail: Claude Tag
 
+> ✅ **FINAL TITLE (2026-06-26): "I Put Claude In My Slack as a Coworker"** — A/B: "Claude Tag Is NOT Enterprise-Only (I'm on Max)". First-person showcase voice + the Max wedge.
+
 > Proven "new thing + take" lane (Antigravity 2,405, Workflow 2,809). Lead with the coworker reframe or the 65% stat. Packaging is the breakthrough lever - Test & Compare.
 
 ## Titles

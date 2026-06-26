@@ -1,5 +1,7 @@
 # Title Options: I Built an AI Video Editor With Claude Code
 
+> ✅ **FINAL TITLE (2026-06-26): "I Automated My Video Editing With Claude Code"** — renamed to mirror the 2,809-view winner ("I Automated My Entire YouTube Workflow"). Signature package: black bg + face + huge text + orange + Claude asterisk + real-stat proof.
+
 **Date:** 2026-06-19
 **Lane:** "Claude edited my video" / "Claude replaced my video editor" (276K / 70K / 51K / 50K in the last 30 days)
 **Two angles:** the user-hook ("Claude edited my video") rides the proven lane head-on. The builder-hook ("I built an AI video editor") is the differentiator nobody else has.

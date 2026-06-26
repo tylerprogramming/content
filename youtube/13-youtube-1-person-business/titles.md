@@ -1,6 +1,8 @@
-# Titles: The 1-Person YouTube Business with Claude Code (Full Course)
+# Titles: The 1-Person YouTube Business with Claude Code
 
-> Rides the proven "1-person business + Claude" lane (416K-530K) and adds the unique YouTube specificity nobody owns. "Full Course" earns watch-time + bookmark.
+> ✅ **FINAL TITLE (2026-06-26): "I Run My Entire YouTube Channel With AI (Watch This)"** — dropped "Full Course" (data shows course framing drags on this channel). Reframed as a showcase, his proven lane.
+
+> Rides the proven "1-person business + Claude" lane (416K-530K) and adds the unique YouTube specificity nobody owns.
 
 ## Locked recommendation
 
