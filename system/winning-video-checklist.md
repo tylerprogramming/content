@@ -43,6 +43,20 @@
 - [ ] Comment-bait question at the end
 - [ ] Skool secondary
 
+## 🎨 Tyler's signature PACKAGE (consistency = recognizability)
+Lock these so every thumbnail/title is instantly recognizable as Tyler's:
+- **Thumbnail:** black background · Tyler's face (consistent framing/expression) · huge 2-line white text · ONE orange accent word · the orange Claude asterisk as the signature mark · a concrete proof element (real channel stat — never fake $)
+- **Title voice:** first-person "**I Automated / Built / Tested [my thing] with Claude → [honest outcome]**" (mirrors his 2,809-view winner "I Automated My Entire YouTube Workflow")
+- **Accent color:** orange (Claude), every time
+
+## Michele Torti thumbnail templates (proven, steal the structure not the money angle)
+1. Centered face + 2-line text + proof number ("Made $10,239")
+2. BEFORE/AFTER split (red ❌ tools → green ✅ result)
+3. Mystery reveal (hold laptop, blurred "?" cards + arrow)
+4. Proof-notification card composited in ("$4,500 received")
+5. App-icon row flanking the face
+Tyler's proof = real channel stats (subs/views/retention screenshot), NOT money he didn't make.
+
 ## Reference creators (cadence + style)
 - Nate Herk — ~daily, "clearly explained"/"Finally", face + orange-icon thumbs, agents/Claude Code
 - Chase AI — every ~2 days, comparisons + "stop using X without this", power-user Claude Code

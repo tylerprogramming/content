@@ -15,6 +15,13 @@ Creator-wedge variants (narrower, save as A/B or follow-up):
 
 **Recommendation:** launch with #1 (broad verdict, biggest ceiling), Test & Compare against #2 (drama) and #4 (search-friendly question). Keep #6 as a dedicated follow-up video.
 
+## Generated thumbnail bases (2026-06-26) — in `thumbnails/`
+3 Nano Banana 2 concepts generated (your face, black bg, orange, asterisk):
+- `thumbnail_191614842.png` — VS split (skeptical + 2 preview panels). Text: "NOT DETHRONED" (orange "DETHRONED") + green ✓/red ✗.
+- `thumbnail_191709252.png` — verdict/hero (pointing at asterisk, big text space). Text: "STILL #1" + "Nano Banana Pro" / "GPT DIDN'T WIN". (Cleanest brand-template look.)
+- `thumbnail_191744876.png` — shocked reaction + 2 art panels. Text: "IT'S NOT CLOSE" / "GPT vs NANO BANANA · HONEST WINNER".
+LAUNCH + Test & Compare: Concept 1 (topic fit) vs Concept 3 (reaction energy).
+
 ## Thumbnail concepts (test 2-3 via Test & Compare)
 Avoid: busy collages, tiny text. Mobile-legible, one idea, high contrast.
 

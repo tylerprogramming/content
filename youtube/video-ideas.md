@@ -182,6 +182,147 @@
 
 ---
 
+## Batch: "Winner Lookalikes" (added 2026-06-26)
+
+> Modeled on the two best longform performers: "Google is Winning With Antigravity" (2,405 views, hot-take/landscape format) and "I Automated My Entire YouTube Workflow with Claude Code" (2,818 views, 42 subs - best sub driver, "I automated my X" format). Each idea below maps to skills/assets Tyler already owns.
+
+### Format A - Hot take / "X is winning" / verdict (the Antigravity format)
+
+### 17. Google Antigravity vs Claude Code: 6 Months Later
+- **Status:** Planned
+- **Priority:** High
+- **Topic:** Revisit the Antigravity verdict now that Tyler runs everything on Claude Code
+- **Angle:** Direct sequel/callback to the 2,405-view winner. Honest "here is what actually stuck" comparison. Sequels to proven hits ride the original's search + suggested traffic.
+- **Skills/Assets:** antigravity-beginner package + the full Claude Code skill system as the counterpoint
+- **Notes:** Strongest Format A bet - it is a callback to a known winner, not a cold start.
+- **Date Added:** 2026-06-26
+
+### 18. Claude Cowork Is Quietly Winning (Here's Why)
+- **Status:** Planned
+- **Priority:** Medium
+- **Topic:** Why Cowork is the underrated Claude surface for non-developers
+- **Angle:** "X is winning" hot take riding the freshly uploaded Cowork video. Same skill runs in Code and Cowork = the wedge.
+- **Skills/Assets:** the new Cowork video (7ND_buIAQfA), skills running in Cowork
+- **Date Added:** 2026-06-26
+
+### 19. Everyone Says MCP Is Dead. They're Wrong.
+- **Status:** Planned
+- **Priority:** Medium
+- **Topic:** Contrarian-to-the-contrarian. MCP matters MORE now, it composes with skills instead of competing
+- **Angle:** Tyler's actual POV. Skills are know-how, MCP is access, the best setups use both together. Corrects the lazy "skills killed MCP" take going around. Authentic because it is what Tyler genuinely believes.
+- **Skills/Assets:** his live MCP servers (Gmail, Supabase, Apify, Blotato, Vercel) composing with skills
+- **Notes:** Replaces the earlier "MCP is dead" framing - Tyler disagrees with that premise. The value is defending MCP and showing skills + MCP together.
+- **Date Added:** 2026-06-26
+
+### 20. Anthropic Is Quietly Winning the AI Agent War
+- **Status:** Idea
+- **Priority:** Medium
+- **Topic:** Company-level landscape take (mirrors the Google/Antigravity frame)
+- **Angle:** Claude Code + Cowork + skills ecosystem as a coordinated land grab. Opinion + landscape, the exact shape that won with Antigravity.
+- **Date Added:** 2026-06-26
+
+### Format B - "I automated my X" (the workflow format, best sub driver)
+
+### 21. 27 Claude Code Skills That Run My Entire Business
+- **Status:** Planned
+- **Priority:** High
+- **Topic:** Number-driven tour of the whole skill library
+- **Angle:** Tyler's proven title formula (specific number + tool + outcome). A bigger, count-led flagship distinct from #10/#11. "Here are 27 skills and what each one replaced."
+- **Skills/Assets:** the entire ~/.claude/skills/ library
+- **Notes:** Update the number to the real count at film time (currently ~43 skills total, pick the headline number that is true and clean).
+- **Date Added:** 2026-06-26
+
+### 22. I Built My Entire Life in Claude Code (Fitness, Reading, Business)
+- **Status:** Planned
+- **Priority:** High
+- **Topic:** The life-OS: one Claude Code + Supabase backend tracking fitness, diet, reading, business, YouTube
+- **Angle:** "I automated my X" turned personal and relatable, not just content. Real dashboards, real data. Different lane from the content-automation videos.
+- **Skills/Assets:** /lifestyle, /eod, /journal, the fitness-tracker Supabase backend
+- **Date Added:** 2026-06-26
+
+### 23. I Automated Every YouTube and TikTok Comment with Claude Code
+- **Status:** Planned
+- **Priority:** High
+- **Topic:** Comment management that actually runs on a schedule
+- **Angle:** "I automated my X" with live proof - the cron jobs are genuinely running (monitor_yt.py + tiktok monitor.py hourly). Show the real inbox + auto-drafted replies.
+- **Skills/Assets:** /yt-replier, /tiktok-replier, the live crontab
+- **Notes:** The "it is actually running right now" proof is the hook. Strong trust builder.
+- **Date Added:** 2026-06-26
+
+### 24. I Run My Whole Community on Autopilot with Claude Code
+- **Status:** Planned
+- **Priority:** Medium
+- **Topic:** Skool automation - posts, polls, member sync, auto-replies, classroom, plus email drips
+- **Angle:** "I automated my X" for community ops. Niche but high-intent (creators with communities).
+- **Skills/Assets:** /skool, /email (Resend drips), member DB
+- **Date Added:** 2026-06-26
+
+### 25. My Claude Code Agents Run My Business Before I Wake Up
+- **Status:** Planned
+- **Priority:** Medium
+- **Topic:** The cron/routines layer - scheduled agents doing real work overnight
+- **Angle:** "While I sleep" hook on top of the automation format. Hourly comment monitor, daily emails, weekly content. Tangible and aspirational.
+- **Skills/Assets:** crontab routines, /email daily cron, /yt-replier + /tiktok-replier monitors
+- **Date Added:** 2026-06-26
+
+### 26. I Replaced My Whole SaaS Stack with Claude Code Skills
+- **Status:** Idea
+- **Priority:** Medium
+- **Topic:** Cost-savings angle - skills replacing paid tools (email platform, schedulers, analytics, etc.)
+- **Angle:** "I automated my X" with a money outcome (Tyler's formula loves a dollar result). Tally what got cancelled.
+- **Skills/Assets:** /email, /yt-analytics, /content, /thumbnail, Blotato workflow
+- **Notes:** Verify the actual tools/costs replaced before claiming a number.
+- **Date Added:** 2026-06-26
+
+### Platform automation series - one deep dive per channel (the YT-workflow lane, per platform)
+
+> Distinct from #11 (broad "all my social") - these are single-platform deep dives, each watchable on its own and bingeable as a series. All feed the same Blotato scheduling layer.
+
+### 27. I Automated My Pinterest with Claude Code (Pins on Autopilot)
+- **Status:** Planned
+- **Priority:** High
+- **Topic:** Pinterest pin generation + scheduling, fully hands-off
+- **Angle:** "I automated my X" on the most underrated platform. Keyword-first pins, Nano Banana visuals, Blotato boards, all driving back to YouTube and Skool. Pinterest is a search engine creators sleep on.
+- **Skills/Assets:** /pinterest-writer, Nano Banana, Blotato Pinterest boards (board IDs saved)
+- **Date Added:** 2026-06-26
+
+### 28. I Automated My LinkedIn: 7 Posts a Week Without Writing Them
+- **Status:** Planned
+- **Priority:** High
+- **Topic:** Daily LinkedIn output (text posts + carousel PDFs) on autopilot
+- **Angle:** "I automated my X" for the platform with the best B2B reach. Two formats (text lead-gen + carousel reach), generated and scheduled. Creators and solopreneurs want this badly.
+- **Skills/Assets:** /content (LinkedIn), /carousel, Blotato, the two-format LinkedIn strategy
+- **Date Added:** 2026-06-26
+
+### 29. I Automated My Instagram Carousels with Claude Code + AI
+- **Status:** Planned
+- **Priority:** Medium
+- **Topic:** Branded IG carousels from idea to scheduled post
+- **Angle:** "I automated my X" with a strong visual payoff on camera. The carousel maker + AI backgrounds is screenshot-worthy and proves it is real.
+- **Skills/Assets:** /instagram-writer, /carousel-app, Nano Banana backgrounds, Blotato
+- **Date Added:** 2026-06-26
+
+### Infrastructure - scheduled jobs / Hostinger (pairs with #25 and #26)
+
+### 30. I Run My Entire Content Business on a Hostinger VPS
+- **Status:** Planned
+- **Priority:** High
+- **Topic:** A cheap VPS running all the skills on cron, 24/7
+- **Angle:** The infrastructure flex Tyler asked for. Show the real Hostinger box, the crontab, the jobs firing (comment monitors, daily emails, weekly content). "My business runs on a server that costs less than lunch." Concrete + aspirational.
+- **Skills/Assets:** Hostinger VPS, crontab, /email daily cron, /yt-replier + /tiktok-replier monitors
+- **Notes:** This is the concrete version of #25. Pull a real cost number for the title (Tyler's formula likes a dollar figure).
+- **Date Added:** 2026-06-26
+
+### 31. How to Schedule Claude Code to Run on Its Own (Cron + VPS Tutorial)
+- **Status:** Planned
+- **Priority:** Medium
+- **Topic:** Evergreen how-to on turning skills into scheduled jobs
+- **Angle:** Teaches the mechanism behind #25 and #30. Searchable, evergreen, the "how do I make this run automatically" question everyone asks after seeing the automation videos. Pairs as the tutorial follow-up.
+- **Skills/Assets:** crontab, a VPS, any skill as the example job
+- **Date Added:** 2026-06-26
+
+---
+
 ## Completed
 
 ### Claude Code Skills Tutorial

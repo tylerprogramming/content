@@ -51,7 +51,7 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 
 | Video | Folder | Status |
 |---|---|---|
-| **I Built an AI Video Editor With Claude Code** | `12-ai-video-editor/` | Ready to film, zero prep. Hot lane (276K/70K/51K last 30 days). |
+| **I Automated My Video Editing With Claude Code** | `12-ai-video-editor/` | Ready to film, zero prep. Title updated 2026-06-26 to mirror the 2,809 winner ("I Automated My Entire YouTube Workflow"). Hot lane. |
 | **GPT Image 2 vs Nano Banana Pro (creator showdown)** | `14-nano-banana-vs-gpt-image/` | Breakthrough bet. Needs ~1-2h test prep (prompts ready) + thumbnail concepts. + Seedream 4.5 budget wildcard. |
 
 ---
