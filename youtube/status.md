@@ -60,9 +60,13 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 
 | Priority | Video | Folder | Lane note |
 |---|---|---|---|
-| 🔥 RIDE SOON (timely) | Claude Is Now a Coworker (Claude Tag) | `15-claude-tag/` | Launched 06-23 — fast news ride, value decays. Hands-on, "not enterprise-only, I'm on Max" wedge. Needs real first-use demo + thumbnails. |
-| Showcase | I Automated My Whole Content Calendar with Claude + Blotato | `(to build)` | Locked title. Blotato lane (Koen 31K); founder-tag play. Full Blotato course = evergreen compile after. |
-| ⭐ Flagship (reshape) | 1-Person YouTube Business with Claude Code | `13-youtube-1-person-business/` | RESHAPE: focused SHOWCASE video(s), not a 60-90 min course. |
+| 🔥 RIDE SOON (timely) | I Put Claude In My Slack as a Coworker (Claude Tag) | `15-claude-tag/` | Launched 06-23 — fast news ride. "Not enterprise-only, I'm on Max" wedge. Needs real first-use demo + thumbnails. |
+| 🔥 Timely (to build) | Claude Design Just Got a HUGE Update | `(to build → 16)` | New Claude Design version (design-system imports, /design in Claude Code, canvas, round-trip). Ride fresh. |
+| 🎙 ElevenLabs (reach) | How to Make AI Voice Sound 100% Human (ElevenLabs) | `(to build)` | Ambassador lane. Big lane (87-101K). PRO-EL framing only (never "free alternatives"). |
+| 🎙 ElevenLabs (timely) | ElevenLabs Can Make Full Videos Now (Voice+Image+Video) | `(to build)` | New EL Image+Video launch. Low competition. |
+| 🎙 ElevenLabs ($/builder) | I Built an AI Receptionist with ElevenLabs | `(to build)` | ElevenAgents. Hits #1 builder audience ("you could sell this"). Smaller lane, monetization play. |
+| Showcase (to build) | I Automated a Month of Content in One Prompt (Claude + Blotato) | `(to build)` | Blotato lane (Koen 31K); founder-tag play. |
+| ⭐ Showcase | I Run My Entire YouTube Channel With AI (Watch This) | `13-youtube-1-person-business/` | Reshaped from the course → focused showcase. |
 | — | Claude Code Email System | `05-claude-code-email-system/` | |
 | — | 100+ Pieces of Content Per Week | `06-100-pieces-content-pipeline/` | Overlaps `13` — merge/retire |
 | — | Claude Code for Content Creators | `07-claude-code-for-creators/` | Underserved non-dev niche |
