@@ -7,8 +7,9 @@ Add the literal word **"photorealism"** to a prompt - it noticeably improves rea
 
 ## Round 1 - YouTube thumbnail (your use case) + BUDGET WILDCARD
 Run this on ALL THREE: Nano Banana Pro, GPT Image 2, and **Seedream 4.5 (Kie.ai)** - the cheap one (~$0.025/img). Question: can the budget model even make a usable thumbnail?
-> "A bold YouTube thumbnail, 16:9: a shocked man on the right pointing to the left at two glowing AI-generated images, huge bold text reading 'NOT DETHRONED' in white and orange, dark high-contrast studio background, dramatic rim lighting, photorealism."
-*(Tests text + composition + face in one - your real need.)*
+**USE YOUR REFERENCE PHOTO** `~/assets/identity/tylerai.png` as an input image so each model puts YOUR actual face in the thumbnail (remix mode for Nano/GPT; Seedream is text-only so it'll approximate). This is the authentic creator test, and it shows the honest "it doesn't have to be perfect" point - you keep whichever is closest and fix the rest in your editor.
+> "Using the reference photo of this person, make a bold YouTube thumbnail, 16:9: this exact person on the right with a shocked expression pointing to the left at two glowing AI-generated images, huge bold text reading 'NOT DETHRONED' in white and orange, dark high-contrast studio background, dramatic rim lighting, photorealism."
+*(Tests text + composition + YOUR likeness in one - your real need. Reaction beat: which model keeps you looking like you?)*
 
 ## Round 2 - Face / likeness consistency (use your own photo)
 > Image 1: "Put this exact person in a clean modern podcast studio at a desk with a microphone, looking at the camera, soft key light, shallow depth of field, photorealism."
