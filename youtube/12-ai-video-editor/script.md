@@ -154,21 +154,21 @@ And again, to be clear, the rendering here is Hyperframes doing what Hyperframes
 
 ## DEMO 3 - SHORTS (HeyGen short, captioned) (10:30 - 12:00) ~280 words
 
-### [LIVE DEMO - real screen recording, real commands. See `shorts-demo.md` for exact commands.]
+### [LIVE DEMO - real screen recording. Tyler TALKS TO CLAUDE CODE (no raw Python on camera). See `shorts-demo.md`.]
 
 [SHOW: a vertical HeyGen short you made, no captions, ~5s]
 
-One more, because this works on short-form too, and it is where most of you will use it. This is a short I made in HeyGen - an AI avatar, clean, but no captions. On a HeyGen short there is no dead air to cut, the avatar is already tight. So here the job is just the captions, and that is the part people pay caption apps for. Watch.
+One more, because this works on short-form too, and it is where most of you will use it. This is a short I made in HeyGen - an AI avatar, clean, but no captions. On a HeyGen short there is no dead air to cut, the avatar is already tight. So here the job is just the captions, and that is the part people pay caption apps for. And watch how I do it - I am not opening anything, I am just going to ask Claude Code.
 
-[LIVE DEMO: run the real preset flow - init transcribes with Whisper, extract_words, then the caption preset renders. Narrate each step.]
+[LIVE DEMO: type the request into Claude Code. Claude Code transcribes with Whisper and applies the caption preset under the hood. Narrate while it works.]
 
-I point Hyperframes at the short, it transcribes what the avatar said with Whisper, and then I run one of my caption presets. Here is the fun part - I built three.
+I just tell Claude Code - take this HeyGen short and add TikTok captions. That is it. Behind the scenes it is transcribing the audio with Whisper and rendering the captions with Hyperframes, but I do not have to think about any of that. I just ask. And here is the fun part - I have three styles.
 
-[SHOW: preview, captions popping word by word, then swap the 3 styles on the same short]
+[SHOW: the captioned result, then ask Claude Code for the other two styles on the same short]
 
-This first one is the TikTok look - red pill, the word pops as it is spoken. Same short, swap one filename, now it is the bold YouTube style, white and yellow. Swap again, the calm cream style for tutorials. Same short, three completely different caption looks, and I am not touching a timeline for any of it.
+This first one is the TikTok look - red pill, the word pops as it is spoken. Now I just say, give me the bold YouTube version - and there it is, white and yellow. One more, the calm cream style for tutorials. Same short, three completely different caption looks, and I never touched a timeline. I just talked to Claude Code.
 
-And to be honest about what is what - Hyperframes is the open-source engine doing the rendering. The caption presets are scripts I built on top with Claude Code. That is the exact pattern this whole video is about - take the open-source tools, wire them into commands that fit how you actually work.
+And to be honest about what is what - Hyperframes is the open-source engine doing the rendering, Whisper does the transcription. What I built are the caption styles and the workflow that Claude Code drives. That is the exact pattern this whole video is about - take the open-source tools, and let Claude Code wire them into something you can just ask for.
 
 [NOTE: this is the most relatable demo for the short-form crowd. Keep it fast. The 3-style swap is the wow beat - hit it hard.]
 

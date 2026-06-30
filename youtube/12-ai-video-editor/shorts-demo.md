@@ -27,49 +27,46 @@ A HeyGen short is already tight (AI avatar, no dead air), so "editing it with Hy
 
 ---
 
-## The exact on-camera command sequence (LIVE)
+## How Tyler films it - TALK TO CLAUDE CODE (no raw Python on camera)
+
+On camera Tyler is just talking to Claude Code in plain English. Claude Code invokes the
+skill, which runs the real Hyperframes / ffmpeg / Whisper / preset scripts under the hood.
+Still 100% honest - the real tools do the real work - it just matches how Tyler actually works.
+
+### What Tyler TYPES into Claude Code (natural language)
+
+1. **Add TikTok captions:**
+   > "Take this HeyGen short at ~/Downloads/heygen-short.mp4 and add TikTok-style captions to it."
+
+   Claude Code: scaffolds a hyperframes project, transcribes with Whisper, applies the
+   `red-sticker` preset, renders the captioned vertical short. Tyler narrates while it runs.
+
+2. **Show the other two styles (the money beat):**
+   > "Now give me the bold YouTube version."   (anton-pop)
+   > "And the calm cream tutorial version."     (ali-abdaal)
+
+   Same short, three completely different caption looks, all from plain requests.
+
+3. **(Optional) tighten dead air first, only if the short has pauses:**
+   > "First cut any dead air out of this, then caption it."
+
+   Claude Code runs the silence auto-edit, shows the cut list, then captions the cleaned clip.
+
+### What Claude Code actually runs under the hood (for reference - NOT typed on camera)
 
 ```bash
-# You have your HeyGen short, e.g. ~/Downloads/heygen-short.mp4
-
-# 1. Scaffold a hyperframes project from the short (auto-transcribes with Whisper)
-cd ~/hyperframes-projects
-npx hyperframes init heygen-short --video ~/Downloads/heygen-short.mp4 \
-  --model small.en --non-interactive --skip-skills
-
-# 2. Convert Whisper transcript -> flat words.json
+# captions:
+npx hyperframes init heygen-short --video ~/Downloads/heygen-short.mp4 --model small.en --non-interactive --skip-skills
 python3 ~/.claude/hyperframes-presets/lib/extract_words.py ~/hyperframes-projects/heygen-short
-
-# 3. Apply the TikTok-style caption preset (red pill, karaoke pop)
-python3 ~/.claude/hyperframes-presets/red-sticker.py ~/hyperframes-projects/heygen-short
-
-# 4. (great B-roll) preview it live in the studio - hot-reloads
-cd ~/hyperframes-projects/heygen-short
-npx hyperframes preview
-
-# 5. Render the captioned vertical short
+python3 ~/.claude/hyperframes-presets/red-sticker.py ~/hyperframes-projects/heygen-short   # or anton-pop.py / ali-abdaal.py
 npx hyperframes render -o out/captioned.mp4 -q standard -f 30
+# optional silence cut:
+python3 ~/.claude/skills/hyperframes-edit/scripts/autoedit.py analyze <video> --project <dir>
+python3 ~/.claude/skills/hyperframes-edit/scripts/autoedit.py render <dir> --engine ffmpeg --xfade 0.12
 ```
 
-### The money beat - 3 styles, same short, one filename swap
-
-```bash
-python3 ~/.claude/hyperframes-presets/red-sticker.py ~/hyperframes-projects/heygen-short   # TikTok red pill
-python3 ~/.claude/hyperframes-presets/anton-pop.py   ~/hyperframes-projects/heygen-short   # YouTube bold yellow
-python3 ~/.claude/hyperframes-presets/ali-abdaal.py  ~/hyperframes-projects/heygen-short   # calm cream
-# re-render after each:  npx hyperframes render -o out/<style>.mp4 -q standard -f 30
-```
-
-### Optional: tighten dead air first (only if your short has pauses)
-
-```bash
-python3 ~/.claude/skills/hyperframes-edit/scripts/autoedit.py analyze \
-  ~/Downloads/heygen-short.mp4 --project ~/hyperframes-projects/heygen-short-cut
-# review cutlist.md, then:
-python3 ~/.claude/skills/hyperframes-edit/scripts/autoedit.py render \
-  ~/hyperframes-projects/heygen-short-cut --engine ffmpeg --xfade 0.12
-# then run the caption-preset flow above on cleaned.mp4
-```
+These are real, verified commands - but Tyler does NOT type them. He asks Claude Code, and
+this is what Claude Code executes. Show the Claude Code terminal doing the work as the b-roll.
 
 ---
 
