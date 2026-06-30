@@ -1,238 +1,135 @@
-# Script: I Built an AI Video Editor With Claude Code (And Edited This Video With It)
+# Script: I Automated My Video Editing With Claude Code
 
-**Date:** 2026-06-19
-**Target length:** 12-15 minutes (~2,000-2,300 words spoken). Aim short - this lane rewards tight and fast.
-**Audience:** Creators and AI-curious builders who hate editing dead air and captions, and who want to see Claude Code build a real tool.
-**Style:** Honest build-and-demo. Show the result first, reveal the build, run two live demos, be honest about limits, point to the open-source pieces.
-**Honest-framing rule (non-negotiable):** Built ON open-source Hyperframes (Apache-2.0) plus ffmpeg plus Whisper. Tyler added the silence-cutting layer and the one-command caption flow with Claude Code. NEVER imply built from scratch.
+**Date:** 2026-06-19 (rewritten 2026-06-30 - pivoted from "I built an editor" to "I use AI to edit")
+**Target length:** 11-14 minutes. Tight and fast - this lane rewards it.
+**Audience:** Creators who hate editing dead air + captions and want to see a real, copyable AI editing workflow.
+**Style:** Honest workflow showcase. Tyler is NOT a video editor and did NOT build a tool. He started using AI - Hyperframes (open-source) + Claude Code - to do the tedious editing for him. The whole video is a real editing session: copy a prompt, ask Claude Code, watch it edit, repeat.
 
-> Filming note: the two DEMO sections are LIVE and must be captured as real screen recordings of the commands running. Everything marked [LIVE DEMO] is real, on camera, no fakes. See filming-guide.md.
+> **Honest framing (non-negotiable):** Tyler did not build this. Hyperframes is open-source (HeyGen, Apache-2.0), it does the rendering. Whisper does transcription, ffmpeg does the silence cutting. Claude Code drives all of it. Tyler's contribution is the workflow - copy a registry prompt, ask Claude Code, it edits. Never imply he built a tool or wrote an editor. NO em dashes.
 
----
-
-## COLD OPEN (0:00 - 0:30) ~110 words
-
-### [WORD FOR WORD - First 25 seconds]
-
-[COLD OPEN - no talking. On screen: a raw talking-head clip plays for 2-3 seconds, full of awkward pauses and dead air. Hard cut to the SAME clip, tight, no dead air, with bold karaoke captions popping word by word. Let it play 4-5 seconds.]
-
-[Tyler, to camera] That clip you just watched? The before was three minutes. The after was one minute and fifty seconds. I did not touch a timeline. I did not drag a single clip. I ran one command, and the dead air was gone. Then I ran one more, and the captions were on. And here is the part nobody else can say - I built the thing that did that. I built my own AI video editor with Claude Code. In the next ten minutes I am going to show you exactly how it works, edit a real clip with it live, and tell you honestly what is mine and what is just good open-source tools doing the heavy lifting. Let's get into it.
-
-### [Resume natural delivery]
-
-[NOTE: keep the cold open punchy. Do not explain the build yet. The reveal is enough. The "how" comes after the problem.]
+> **Filming note:** the editing beats are LIVE - real Hyperframes studio, real Claude Code, real clip. Everything marked [LIVE] is captured as a real screen recording. See filming-guide.md + shorts-demo.md for exact prompts/commands.
 
 ---
 
-## THE PROBLEM (0:30 - 2:00) ~270 words
+## COLD OPEN (0:00 - 0:30)
 
-Let me tell you why I built this, because if you make videos you already feel it.
+[COLD OPEN - no talk. On screen: a raw talking-head clip plays 2-3s, awkward pauses, no captions. Hard cut to the SAME clip - tight, no dead air, with bold editorial captions popping word by word. Let it play 4-5s.]
 
-There are two parts of editing that I genuinely hate. The first is cutting dead air. You film a talking-head clip, and between every sentence there is a pause. A little silence while you think. An um. A breath. And when you stack all those pauses up across a ten-minute video, it is minutes of dead time that makes the whole thing drag. So you sit in your editor, and you cut, and you cut, and you cut. It is the most tedious thing in the world and it takes forever.
-
-The second is captions. Word-by-word captions are not optional anymore. They are how people watch. But adding them by hand, or even cleaning up auto-captions, is slow and fiddly.
-
-Here is the thing. Both of those jobs are completely mechanical. There is no creativity in finding a silent gap. There is no artistry in syncing a word to the audio. A computer should do that. And the rest of editing - pacing the story, picking what matters, choosing b-roll, the music - that is the creative part, and AI is genuinely bad at it. I am not going to pretend otherwise.
-
-So I did not try to build a tool that replaces my editing. I built a tool that does just the boring, mechanical parts. Cut the dead air. Drop on the captions. Two commands. And the best part is I did not build it from scratch, which is exactly what I want to show you next, because it means you could build the same thing.
+[Tyler, to camera] That clip you just watched? The before was three minutes of me with pauses between every sentence. The after was tight, captioned, done. And here is the honest part - I am not a video editor, and I did not build some fancy tool to do that. I just started letting AI do my editing for me. I open one app, I copy a prompt, and I ask Claude Code to edit the video. That is the whole thing. Let me show you exactly how I do it now, start to finish, on a real clip. No timeline, no dragging, no editor.
 
 ---
 
-## WHAT I DID - THE BUILD (2:00 - 4:00) ~300 words
+## THE SETUP - WHY I STOPPED EDITING (0:30 - 2:00)
 
-Here is the honest version of what this tool is, because the honesty is the whole point.
+Here is where I was. Two parts of editing genuinely made me miserable. The first is cutting dead air - you film a clip, and between every sentence there is a pause, an um, a breath, and you sit there cutting them out one by one forever. The second is captions, because word-by-word captions are not optional anymore, but adding them by hand is slow and fiddly.
 
-I did not write a video editor from scratch. That would take months and I would do a worse job than tools that already exist. Instead, I stood on top of three open-source pieces and used Claude Code to wire them together.
+Both of those are completely mechanical. There is no creativity in finding a silent gap or syncing a word to audio. A computer should just do that. So I went looking for a way to make AI handle the boring parts, and what I landed on is this.
 
-[SHOW: a simple diagram or three logos - Hyperframes, ffmpeg, Whisper]
+[SHOW: open the Hyperframes studio in the browser - the timeline + live video preview]
 
-The first piece is Hyperframes. It is HeyGen's open-source video framework, Apache-2.0 licensed, which means it is free to build on. Hyperframes renders video from code. It is genuinely great at putting things like captions onto a video.
-
-The second is ffmpeg. If you do anything with video on a command line, you know ffmpeg. It is the open-source swiss army knife of video. It can analyze audio and it can cut video.
-
-The third is Whisper. That is the open-source speech-to-text model. It turns audio into text, which is what you need for captions.
-
-So those three tools do the heavy lifting. What did I actually add? Two things.
-
-[SHOW: terminal, the repo]
-
-I forked Hyperframes into my own repo and I used Claude Code to build two new commands on top of it. The first is a silence command, because Hyperframes deliberately took footage editing out, so cutting dead air was the gap I needed to fill. The second is a one-command caption flow that takes a clip, transcribes it, and renders captions in one shot.
-
-That is it. That is the honest scope. Three open-source tools doing the work, Claude Code wiring them into two commands that kill the two parts of editing I hate. Now let me show you both of them running on a real clip. This is all live.
+This is Hyperframes. It is an open-source video tool - I want to be clear about that up front, I did not make it, it is free and open-source. But here is why it changed my editing - it is built to be driven by Claude Code. So I do not edit in here by hand. I drop a clip in, and then I just talk to Claude Code and tell it what I want, and it edits the video for me right here in the studio. Let me show you what that actually looks like.
 
 ---
 
-## DEMO 1 - SILENCE CUT (4:00 - 7:30) ~520 words
+## DEMO 1 - CAPTIONS FROM A COPIED PROMPT (2:00 - 6:00)
 
-### [LIVE DEMO - real screen recording, real command, no fakes]
+### [LIVE - real Hyperframes studio + Claude Code. See shorts-demo.md for the exact prompt.]
 
-[SHOW: terminal open, a raw clip file visible. Say what the clip is first.]
+So this is a real clip I recorded, sitting in the studio, no captions yet. I want captions on it. Watch how little I do.
 
-Okay, here is a real clip. This is a three-minute talking-head clip I recorded, and like all my raw footage it is full of pauses. Let me play you five seconds of it so you hear the dead air.
+Hyperframes has a registry - basically a library of caption styles and effects you can just grab. I am going to pick one. This one is called Editorial Emphasis - it uses two fonts, a clean one for normal words and a big dramatic serif for the important words, so the key words pop like a magazine headline.
 
-[SHOW: play 5 seconds of the raw clip - the pauses should be obvious]
+[SHOW: copy the prompt from the studio's registry for the caption style]
 
-You hear that? Those gaps. That is what I have to cut out by hand normally. Watch what one command does.
+And here is the part I love. I do not configure anything. The studio gives me a prompt for the style. I just copy it.
 
-[LIVE DEMO: type the command on camera]
+[LIVE: paste the prompt into Claude Code, hit enter, narrate while it works]
 
-```
-hyperframes silence raw-clip.mp4
-```
+I paste it into Claude Code and let it go. Behind the scenes it is pulling that caption style in, transcribing what I said with Whisper so the captions match my audio, and wiring it onto my video. I am not touching any of that. I copied a prompt and asked.
 
-[SHOW: the command running. It finishes in about 2 seconds.]
+[SHOW: the studio hot-reloads - the new caption track appears, captions animate over the video. Scrub the timeline.]
 
-Two seconds. That is not sped up. Let me show you the result.
+And there it is. Captions, synced to my voice, that editorial look with the big emphasis words, rendered right onto my clip. I copied one prompt and asked Claude Code. That is the whole edit.
 
-[SHOW: play 5 seconds of the cut clip - tight, no gaps]
+Now here is why this is not a one-trick thing. There are a bunch of these styles in the registry, and switching is just asking for a different one.
 
-Three minutes went to one minute and fifty seconds. It cut seventy-one seconds of dead air. That is thirty-nine percent of the clip, gone, and it was all silence. Nothing I actually said got touched.
+[LIVE: ask Claude Code for 2-3 other styles, show each reload]
 
-Now I want to show you how it does that, because there is a genuinely useful lesson in here, and it is the kind of thing that took me a few tries to get right with Claude Code.
-
-[SHOW: open the code, or a simple explainer graphic]
-
-My first instinct - and probably yours - was to use Whisper for this. Whisper transcribes the audio and it gives you a timestamp for every word. So I thought, easy, find the gaps between words, those are the silences, cut them.
-
-That does not work. And here is why, because this is the useful part. Whisper's word timestamps are unreliable for finding silence. It stretches words across the pauses. So if you say "hello" and then pause for two seconds and say "world," Whisper will often timestamp the word "hello" as lasting that whole gap. The silence disappears inside the word. So when you look for gaps between words, there are none. The pauses are invisible. I tried it, the cuts were wrong, and it took me a minute to figure out why.
-
-[SHOW: the silencedetect approach]
-
-The thing that actually works is ffmpeg, specifically a filter called silencedetect. Instead of looking at words, it looks at actual audio energy. It measures how loud the audio is, moment to moment, and it flags the stretches where the volume drops below a threshold for long enough. That is real silence, measured directly from the sound, not guessed from a transcript. So the pipeline is - ffmpeg silencedetect finds the real silent gaps, and then ffmpeg cuts them out and stitches the clip back together. That is why it is accurate, and that is why it is fast.
-
-So the lesson, if you take one technical thing from this video - if you ever want to find silence in audio, do not use transcription timestamps. Use audio energy. Use ffmpeg silencedetect. I learned that building this with Claude Code, and it is the difference between cuts that work and cuts that are garbage.
-
-[NOTE: keep energy up coming out of the technical beat - it is the deepest part of the video, pull back up before Demo 2.]
+Let me grab the TikTok pill style - I just ask. There it is, the red pill that pops one word at a time. Now the kinetic slam one, where the words punch in. Now a neon one. Same clip, completely different caption looks, and every single one is me copying a prompt and asking Claude Code. I never opened a single setting.
 
 ---
 
-## DEMO 2 - CAPTIONS (7:30 - 10:30) ~470 words
+## DEMO 2 - CUTTING THE DEAD AIR (6:00 - 8:30)
 
-### [LIVE DEMO - real screen recording, real command, no fakes]
+### [LIVE - real Claude Code. See shorts-demo.md for the real command Claude Code runs.]
 
-Okay, dead air is gone. Now the second job - captions. This is the second command, and it does everything in one shot.
+Okay, captions are handled. The other thing I hated was the dead air, all those pauses. Same deal - I just ask.
 
-[LIVE DEMO: type the command on camera]
+[SHOW: play 5s of the raw clip so the pauses are obvious]
 
-```
-hyperframes caption cut-clip.mp4 --style bold
-```
+Hear those gaps? Normally I cut every one of those by hand. Instead I just tell Claude Code to cut the dead air out of the clip.
 
-Here is what that one command does under the hood. It takes the clip I just cut, it runs Whisper on it to transcribe what I said, it groups the words into little caption chunks, and then it uses Hyperframes to render those captions onto the video, synced word by word - that karaoke effect where each word pops as you say it. One command, all of it.
+[LIVE: ask Claude Code to cut the silences. It runs the silence auto-edit. Show it finish fast.]
 
-[SHOW: the command running, then play the captioned result]
+And it does it. It is using audio energy to find the actual silent gaps and cutting them, then stitching the clip back together. A three minute clip becomes under two minutes, and the only thing that got removed was silence. Nothing I said got touched.
 
-There it is. Bold captions, synced to my voice. And notice I used Whisper here, for transcription, which is exactly what Whisper is good at. That is the lesson from the last section in action - Whisper for words, ffmpeg for silence. Right tool for each job.
+[SHOW: play 5s of the cut clip - tight, no gaps]
 
-Now the fun part. I built three caption styles, because different platforms want different looks. Let me show you all three on the same clip.
-
-[SHOW: switch styles, show each]
-
-Style one is bold. [SHOW] That is the Oswald font, white text with a yellow highlight on the active word. This is my default for YouTube - big, readable, punchy.
-
-```
-hyperframes caption cut-clip.mp4 --style bold
-```
-
-Style two is tiktok. [SHOW] This is the look you have seen a thousand times on your for-you page - the word in a red pill that pops one at a time. Built for vertical, built for short-form.
-
-```
-hyperframes caption cut-clip.mp4 --style tiktok
-```
-
-Style three is clean. [SHOW] This one is a soft cream background, quieter, more grown-up. I use this for tutorial content where I do not want the captions screaming over the screen.
-
-```
-hyperframes caption cut-clip.mp4 --style clean
-```
-
-Same clip, three completely different looks, and switching between them is one word in the command. I am not editing each one by hand. I am picking a style and letting Hyperframes render it.
-
-And again, to be clear, the rendering here is Hyperframes doing what Hyperframes is great at. What I added was wiring it into a single command so I do not have to think about the transcription step, the grouping step, and the rendering step separately. It is one command, clip in, captioned clip out.
+There is one genuinely useful thing I learned here, if you want to do this yourself. The obvious way to find silence would be to use the transcript - look for gaps between words. That does not actually work, because the transcription stretches words across the pauses, so the silence disappears inside the words. What works is measuring the actual loudness of the audio and cutting the quiet parts. I did not figure that out, Claude Code did the right thing under the hood, but it is the difference between cuts that work and cuts that are garbage. Good to know if you go build your own version of this.
 
 ---
 
-## DEMO 3 - SHORTS (HeyGen short, captioned) (10:30 - 12:00) ~280 words
+## DEMO 3 - SHORTS (HeyGen short, captioned) (8:30 - 10:00)
 
-### [LIVE DEMO - real screen recording. Tyler TALKS TO CLAUDE CODE (no raw Python on camera). See `shorts-demo.md`.]
+### [LIVE - same copy-a-prompt-and-ask flow. See shorts-demo.md.]
 
-[SHOW: a vertical HeyGen short you made, no captions, ~5s]
+One more, because this is where most of you will actually use it - short form. This is a short I made in HeyGen, an AI avatar, clean, but no captions. A HeyGen short is already tight so there is no dead air to cut. The job here is just captions, and that is the exact thing people pay caption apps for.
 
-One more, because this works on short-form too, and it is where most of you will use it. This is a short I made in HeyGen - an AI avatar, clean, but no captions. On a HeyGen short there is no dead air to cut, the avatar is already tight. So here the job is just the captions, and that is the part people pay caption apps for. And watch how I do it - I am not opening anything, I am just going to ask Claude Code.
+[LIVE: ask Claude Code to caption the HeyGen short with a style]
 
-[LIVE DEMO: type the request into Claude Code. Claude Code transcribes with Whisper and applies the caption preset under the hood. Narrate while it works.]
+Same move as before. I tell Claude Code, take this short and put TikTok captions on it. That is it.
 
-I just tell Claude Code - take this HeyGen short and add TikTok captions. That is it. Behind the scenes it is transcribing the audio with Whisper and rendering the captions with Hyperframes, but I do not have to think about any of that. I just ask. And here is the fun part - I have three styles.
+[SHOW: the captioned vertical short, then ask for the other styles]
 
-[SHOW: the captioned result, then ask Claude Code for the other two styles on the same short]
-
-This first one is the TikTok look - red pill, the word pops as it is spoken. Now I just say, give me the bold YouTube version - and there it is, white and yellow. One more, the calm cream style for tutorials. Same short, three completely different caption looks, and I never touched a timeline. I just talked to Claude Code.
-
-And to be honest about what is what - Hyperframes is the open-source engine doing the rendering, Whisper does the transcription. What I built are the caption styles and the workflow that Claude Code drives. That is the exact pattern this whole video is about - take the open-source tools, and let Claude Code wire them into something you can just ask for.
-
-[NOTE: this is the most relatable demo for the short-form crowd. Keep it fast. The 3-style swap is the wow beat - hit it hard.]
+There it is, captioned and ready to post. And just like the long-form, I can swap the style by asking - bold for YouTube, the calm one for tutorials. Same short, three looks, all from asking Claude Code. I am not opening a caption app, I am not paying a subscription, I am copying a prompt and asking.
 
 ---
 
-## THE FULL WORKFLOW (12:00 - 13:00) ~270 words
+## THE FULL WORKFLOW (10:00 - 11:00)
 
-So let me put the whole thing together end to end, the way I actually use it, because that is where it gets satisfying.
+So let me put the whole thing together, the way I actually use it now.
 
-[SHOW: the full sequence, sped up slightly, or as a clean recap]
+[SHOW: the sequence, clean recap]
 
-I finish recording a talking-head clip. It is raw, it is full of pauses, it is three minutes long. Step one - I run the silence command.
+I finish recording a raw clip, full of pauses, no captions. I open it in the Hyperframes studio. I tell Claude Code to cut the dead air - done. I copy a caption style I like and ask Claude Code to add it - done. If I want a different look, I ask for a different one. And the clip you saw at the very start of this video? That was this exact workflow. Raw clip in, ask Claude Code, captioned and tight clip out.
 
-```
-hyperframes silence raw-clip.mp4
-```
-
-Two seconds later it is one minute fifty, no dead air. Step two - I run the caption command and pick my style.
-
-```
-hyperframes caption cut-clip.mp4 --style bold
-```
-
-A few seconds later the captions are on, synced word by word. And that is the whole thing. Two commands. The two parts of editing I hate most, the dead air and the captions, both done, in the time it takes to read this sentence.
-
-[SHOW: before clip vs after clip side by side one more time]
-
-And remember, the clip you saw at the very start of this video? That was this exact workflow. Raw clip, silence command, caption command, done. I edited part of this video with the tool I built, and I am showing you the proof.
-
-This is the part I want you to feel. I am not faster at editing because I got better at dragging clips. I am faster because I built a tool that does the boring parts for me, and I built it with Claude Code on top of tools that already existed. That is the move. That is the whole video.
+And the thing I want you to feel is this. I did not get better at editing. I did not learn a timeline. I did not build a tool. I just stopped doing the boring parts myself and started asking AI to do them. That is the whole shift.
 
 ---
 
-## HONEST LIMITATIONS (12:00 - 13:30) ~280 words
+## HONEST LIMITATIONS (11:00 - 12:30)
 
-Now I promised you the honest version, so here it is. Here is what this tool is not, and where it falls apart.
+Now let me be straight about what this does not do, because I promised you the honest version.
 
-First, the obvious one. This does not replace a video editor. It does the two mechanical chores. It does not pace your story. It does not decide what is worth keeping. It does not add b-roll, it does not pick music, it does not know which take is your best take. All the actual creative judgment of editing is still yours. So if you came here for "AI made my whole video," that is not this. Anybody selling you that is overselling.
+First, this does not replace a real editor. It does the two mechanical chores - dead air and captions. It does not pace your story, it does not decide what is worth keeping, it does not add b-roll or pick your music or know which take is your best one. All the actual creative judgment is still yours. If you came here for "AI made my whole video," that is not this, and anybody selling you that is overselling.
 
-Second, it is built on open-source tools, and I want to keep saying that because it is true. Hyperframes does the rendering. ffmpeg does the detection and the cutting. Whisper does the transcription. I added the silence layer and the one-command flow. If those tools did not exist, I could not have done this in an afternoon. Give them the credit.
+Second, none of this is mine. Hyperframes is open-source and does the rendering. Whisper does the transcription. ffmpeg does the silence cutting. Claude Code drives all of it. I keep saying that because it is true, and because the value here is not a tool I own, it is a workflow anybody can copy.
 
-Third, render speed. The silence cut is genuinely fast, about two seconds. But the caption render goes through Hyperframes, and rendering video takes longer than just cutting it. It is not instant. On a longer clip it is a coffee-break, not a blink. That is the honest tradeoff for getting nice rendered captions instead of ugly burned-in ones.
+Third, the caption render is not instant. Cutting silence is fast, but rendering nice captions takes a little time - it is a coffee-break on a longer clip, not a blink. That is the trade for getting clean rendered captions instead of ugly burned-in ones.
 
-And fourth, it is a CLI tool I built for me. It is rough around the edges. It is not a polished product with a nice interface. It is two commands in a terminal. That is fine for me because I live in a terminal, but I am not going to pretend it is a consumer app.
-
-That is the honest picture. Now, what about you.
+That is the honest picture. It does the parts I hated, it does not pretend to be a creative editor, and every piece of it is open and copyable.
 
 ---
 
-## CTA (13:30 - 14:30) ~230 words
+## CTA (12:30 - 13:30)
 
-> CTA DECISION - this section is written for option (c): teach the approach, point to the open-source pieces, soft Skool CTA. If Tyler picks (a) open-source the repo, swap the marked paragraph for "the repo is open, link in the description, go use it." If Tyler picks (b) Skool lead magnet, make the Skool line the hard CTA. See analysis.md for the full decision.
+So here is what I actually want you to take away. You do not need to be a video editor, and you do not need to build anything. Everything I showed you is open-source and free - Hyperframes, Whisper, ffmpeg - and the thing that ties it together is Claude Code. You copy a prompt, you ask, it edits. That is genuinely it.
 
-So here is the thing I actually want you to take away.
+[SHOW: the studio + Claude Code one more time]
 
-You do not need my repo. The tool I built is a private fork right now, and honestly, the value was never the repo. The value is the approach, and the approach is completely reproducible, because every piece I used is open-source and free.
+[SOFT SKOOL CTA] I dropped the exact prompts I use and how I set this up in my free community, the link is in the description. It is free, come grab them, and come tell me what you are editing.
 
-[SHOW: the three tools on screen again]
-
-If you want to build your own, here is the recipe. Start with Hyperframes for rendering. Use ffmpeg's silencedetect for finding and cutting dead air - not Whisper timestamps, remember why. Use Whisper for the caption transcription. And then sit down with Claude Code and have it wire those three together into commands that fit how you work. That is genuinely an afternoon project, and you will understand your own editing better for having built it.
-
-[SOFT SKOOL CTA] I dropped the exact prompts I used with Claude Code and the command outlines in my free community - the link is in the description. It is free, come grab them, and come tell me what you build.
-
-If this was useful, subscribe, because building little tools like this with Claude Code is most of what I do here. I will see you in the next one.
+If this was useful, subscribe, because using AI to take the boring work off my plate is most of what I do here. I will see you in the next one.
 
 [END]
 
@@ -240,15 +137,15 @@ If this was useful, subscribe, because building little tools like this with Clau
 
 ## Timing Recap
 
-| Section | Time | Words | Live? |
-|---------|------|-------|-------|
-| Cold open (result first) | 0:00-0:30 | ~110 | result clip is real |
-| The problem | 0:30-2:00 | ~270 | |
-| What I did - the build | 2:00-4:00 | ~300 | |
-| DEMO 1 - silence cut + Whisper-vs-silencedetect | 4:00-7:30 | ~520 | **LIVE** |
-| DEMO 2 - captions, 3 styles | 7:30-10:30 | ~470 | **LIVE** |
-| The full workflow | 10:30-12:00 | ~270 | |
-| Honest limitations | 12:00-13:30 | ~280 | |
-| CTA | 13:30-14:30 | ~230 | |
+| Section | Time | Live? |
+|---------|------|-------|
+| Cold open (result first) | 0:00-0:30 | result clip is real |
+| Setup - why I stopped editing + open the studio | 0:30-2:00 | |
+| DEMO 1 - captions from a copied prompt (+ style swaps) | 2:00-6:00 | **LIVE** |
+| DEMO 2 - cut the dead air (ask Claude Code) | 6:00-8:30 | **LIVE** |
+| DEMO 3 - HeyGen short captioned | 8:30-10:00 | **LIVE** |
+| The full workflow | 10:00-11:00 | |
+| Honest limitations | 11:00-12:30 | |
+| CTA | 12:30-13:30 | |
 
-**Total: ~14:30, ~2,450 spoken words.** Trim the problem and limitations sections first if you need to land closer to 12 minutes. The two live demos are the spine - protect them.
+**Total: ~13:00.** The three live demos are the spine - protect them. Trim the limitations section first if you need to land closer to 11. The whole video is one message: I did not build this, I just started asking AI to do my editing.

@@ -1,6 +1,8 @@
-# Title Options: I Built an AI Video Editor With Claude Code
+# Title Options: I Automated My Video Editing With Claude Code
 
-> ✅ **FINAL TITLE (2026-06-26): "I Automated My Video Editing With Claude Code"** — renamed to mirror the 2,809-view winner ("I Automated My Entire YouTube Workflow"). Signature package: black bg + face + huge text + orange + Claude asterisk + real-stat proof.
+> ✅ **FINAL TITLE (2026-06-26): "I Automated My Video Editing With Claude Code"** — mirrors the 2,809-view winner ("I Automated My Entire YouTube Workflow"). Signature package: black bg + face + huge text + orange + Claude asterisk + real-stat proof.
+>
+> ⚠️ **PIVOT 2026-06-30:** This is NO LONGER a "build" video. Tyler did not build a tool. The video is a workflow showcase: use the open-source Hyperframes studio + Claude Code to edit (copy a registry caption prompt, ask Claude Code, it edits). Drop ALL "I built it" framing from titles/thumbnails. The locked title fits the workflow story perfectly. Honest brand: "I started using AI to do my editing," never "I built an editor."
 
 **Date:** 2026-06-19
 **Lane:** "Claude edited my video" / "Claude replaced my video editor" (276K / 70K / 51K / 50K in the last 30 days)
@@ -52,6 +54,6 @@ Scored 1-10 on each axis. CTR Potential weights how hard it rides the proven lan
 **Upload with:** Pick 1 (builder-hook plus self-referential proof) - the most on-brand and the most uncopyable.
 **Switch to at 48-72 hours if CTR is soft:** Pick 2 (leads with the exact hot-lane phrase to compete head-on for browse).
 **Thumbnail A:** Tyler beside a timeline with a big red chunk of dead air being sliced out, text "AI EDITED THIS".
-**Thumbnail B:** Split frame - left a raw waveform full of gaps, right the same clip tight with captions, text "I BUILT IT".
+**Thumbnail B:** Split frame - left a raw waveform full of gaps, right the same clip tight with editorial captions, text "NO TIMELINE". (Replaced "I BUILT IT" - he did not build it; the hook is now "I edit without an editor.")
 
-**Note:** every candidate avoids dollar amounts and avoids "from scratch." Where the build is referenced, the honest version is "built with Claude Code on open-source tools," never "I wrote a video editor."
+**Note:** every candidate avoids dollar amounts. Post-pivot (2026-06-30): drop ALL build framing. The honest line is "I started using AI to do my editing," never "I built an editor." Titles 1-3 and 6/9/10 that lean on "I Built" are now OFF - use the workflow/automation angles (the locked title, plus "I Made Claude Code Edit My Video", "I Replaced My Video Editor With AI", "Claude Code Edited This Video").
