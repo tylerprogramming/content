@@ -70,6 +70,54 @@ this is what Claude Code executes. Show the Claude Code terminal doing the work 
 
 ---
 
+## BEST DEMO SURFACE: do it IN the Hyperframes studio (VERIFIED 2026-06-30)
+
+The strongest, most visual beat is doing this **inside the Hyperframes studio** (the localhost
+preview), not a bare terminal. The studio shows the timeline + live preview, so when Claude Code
+wires a caption style in, the viewer SEES the new track appear and the preview hot-reload. That is
+the wow.
+
+**The registry angle:** Hyperframes has a registry of 142 reusable pieces, including 16 caption
+styles. The studio surfaces a ready-made prompt for each one. You copy it, paste it to Claude Code,
+and it installs + wires the style into YOUR composition, synced to YOUR transcript, matched to YOUR
+design tokens. Off-the-shelf style, your video.
+
+### Verified flow (run on claude-routine-omni 2026-06-30)
+
+1. Studio running: `cd ~/hyperframes-projects/<project> && npx hyperframes preview` → localhost:3002
+2. In the studio, pick a caption style from the registry and copy its prompt. Example real prompt
+   (Editorial Emphasis - a dual-font style: Inter for normal words, big Playfair Display italic
+   serif for emphasis words):
+
+   > Using /hyperframes, add the "Editorial Emphasis" caption style (registry:
+   > caption-editorial-emphasis) to my composition. Dual-font system with dramatic size contrast for
+   > emphasis words. Transcribe the audio with /hyperframes-media, then wire the transcript into this
+   > caption component. Match the font colors and animation timing to my composition's design tokens.
+   > Place it as an overlay above the main content with the highest z-index.
+
+3. Paste that into Claude Code (inside the project). Under the hood it runs
+   `hyperframes add caption-editorial-emphasis` (VERIFIED: fetches
+   `compositions/components/caption-editorial-emphasis.html`), then wires it as a new top-z-index
+   caption track using the project's existing `words.json`.
+4. Back in the studio: the new caption track appears (e.g. track 87) and the preview reloads with
+   the captions synced to the audio. Scrub the timeline on camera to show it.
+
+### The catalog (16 caption styles) - swap any of these the same way
+
+editorial-emphasis (dual-font serif pop) · pill-karaoke (TikTok pill) · highlight (marker sweep) ·
+kinetic-slam · neon-glow · neon-accent · gradient-fill · weight-shift · emoji-pop · particle-burst ·
+glitch-rgb · matrix-decode · blend-difference · clip-wipe · texture · parallax-layers
+
+List the whole registry anytime:
+`curl -s https://raw.githubusercontent.com/heygen-com/hyperframes/main/registry/registry.json`
+or just ask Claude Code: "list all caption components in the Hyperframes registry."
+
+**Honest framing:** the studio + caption styles are open-source Hyperframes. What you show is the
+workflow - paste a prompt, Claude Code wires the open-source piece into your real video. Same brand
+message as the rest of the video.
+
+---
+
 ## How to film the segment (~90-120s on screen)
 
 1. **Show the raw HeyGen short** (5s) - clean avatar, no captions. "I made this in HeyGen. Now I
