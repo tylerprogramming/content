@@ -3,7 +3,7 @@
 > **Live pipeline state — the operational source of truth.** What's recording next, what's with the editor, what's queued.
 > For full content inventory across all platforms, see `~/content/system/tracker.md`.
 >
-> **Open this first.** Last updated: 2026-06-29
+> **Open this first.** Last updated: 2026-07-06
 > **Also tracked in ClickUp:** YouTube list (id 901710640585). Keep both in sync on every stage change — this file is the source of truth. (ClickUp MCP offline 2026-06-29 — sync there when reconnected.)
 
 ---
@@ -14,10 +14,11 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 
 | Slot | Video | Status |
 |---|---|---|
-| ~next slot | Granola AI (paid — priority) | with editor |
+| ✅ published 07-03 | Claude Cowork Full Course | LIVE (`aOECs8oPZ2c`) |
+| ✅ published 07-05 | Granola AI (paid) | LIVE (`nFen2thkbmg`) |
 | ~next slot | Claude Routines | with editor |
+| ~next slot | GPT Image 2 vs Nano Banana Pro (`14`) | with editor |
 | ~next slot | Claude Tag (timely — film this week) | film next |
-| ~next slot | Cowork Masterclass | with editor |
 | ~next slot | AI Video Editor (`12`) | film next |
 
 **Weekend rule:** film 2 (batch) on Sat/Sun → publish 2 the next week. Next to film: `15` Claude Tag (timely) + `12` AI Video Editor, then prep `14` Nano Banana.
@@ -30,8 +31,6 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 |---|---|---|
 | **GPT Image 2 vs Nano Banana Pro (showdown)** | `14-nano-banana-vs-gpt-image/` | Recorded 2026-06-27 (Sat). Pushing to Drive 2026-06-30. Post-edit: /chapters, finalize packaging (Michele-style thumbnail + "NOT DETHRONED" text), queue upload. |
 | **Claude Routines + Claude Code** | `03-claude-routines-content-system/` | Recorded 2026-06-22. Post-edit: /chapters, finalize showcase title + thumbnail, queue upload. |
-| **Granola AI** (PAID partnership) | `granola-claude-code/` | (3) granola ai — FTC disclosure + privacy blur mandatory in edit |
-| Claude Cowork Masterclass (full 1-hr) | `06-claude-cowork-full-course/` | (4) claude-cowork-masterclass |
 
 ---
 
@@ -39,6 +38,8 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 
 | Video | Folder | Notes |
 |---|---|---|
+| Granola AI: "I Connected Granola to Claude Code" | `granola-claude-code/` (`nFen2thkbmg`) | **LIVE 2026-07-05** (PAID partnership). 84 views day 1. Post-publish: repurpose/social not done. |
+| Claude Cowork Full Course | `06-claude-cowork-full-course/` (`aOECs8oPZ2c`) | **LIVE 2026-07-03.** 178 views in 3 days — best launch of the June batch. Post-publish: repurpose/social not done. |
 | Claude Cowork Clearly Explained | `05-claude-cowork-clearly-explained/` (`7ND_buIAQfA`) | **LIVE.** Repurposed 2026-06-29: 3 emails + full social (X, LinkedIn, YT Community, IG, 7 Pinterest pins) in `social/`. IG carousel pending Tyler's new look. Nothing scheduled/sent yet. |
 | Claude Code Skills: The Only Course You'll Ever Need | `02-skills-full-course/` (`9ZsZgnWrs_E`) | LIVE 2026-06-21. Thumbnail B now (swapped from A, CTR ~3%). Tracking daily — see `analytics/daily-tracker.md`. |
 | 3 Skills + Live Build | `01-3-skills-and-build/` | Put out by Tyler himself |

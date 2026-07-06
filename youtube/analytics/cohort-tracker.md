@@ -8,7 +8,49 @@
 
 ---
 
-## Latest snapshot: 2026-06-30
+## Latest snapshot: 2026-07-06 ✅ FULL (API restored + Studio CTR)
+
+> Creds were lost (gmail dir deleted) and restored same day: new OAuth client `claude-code-local` in the `youtube content creator` GCP project, saved to `~/.claude/gmail/credentials.json`. Note: the skill script's scope list had a bug (`yt-upload.readonly` → fixed to `youtube.readonly`).
+> **CTR + impressions are LIFETIME, pulled from Studio via browser (2026-07-06)** — first time we have CTR for the whole cohort. Supabase `youtube_daily` has the full row set for 2026-07-06.
+
+Cohort grew to 22: rolled in **Cowork Full Course** (`aOECs8oPZ2c`, pub 07-03) and **Granola AI** (`nFen2thkbmg`, pub 07-05).
+
+| # | Video | ID | Views | Δ6d | Impr | CTR | Retention | Pub |
+|---|---|---|---|---|---|---|---|---|
+| 1 | I Automated My Entire YouTube Workflow | `MLfyfNj1JrI` | 2,885 | +31 | 12.1K | **4.4%** | 15.9% | 3/12 |
+| 2 | Google is Winning With Antigravity | `B5eDktBzXMg` | 2,405 | 0 | 25.2K | **5.9%** | 15.0% | 2/01 |
+| 3 | Build ANYTHING With Claude Code (Beginner) | `XAcqU3zuZmE` | 1,926 | +31 | 8.2K | 3.0% | **29.2%** | 3/06 |
+| 4 | Claude Code Skills Changed How I Use AI | `lfwt5tFfaSo` | 1,205 | +2 | 26.4K | 2.3% ⚠️ | 19.6% | 3/01 |
+| 5 | 23 Claude Code Concepts in 24 Min | `MVr2GrAjrgQ` | 1,177 | +8 | 16.5K | 3.9% | 17.0% | 3/17 |
+| 6 | I'll never pay for n8n again | `8kocqs1ktrg` | 1,016 | 0 | 21.3K | 2.7% | 17.9% | 1/08 |
+| 7 | This Claude Code Plugin (Ralph Wiggum) | `RQ57cUcGDGg` | 935 | +3 | 15.6K | 2.8% | 16.6% | 2/05 |
+| 8 | Claude Code: Only Beginner Tutorial | `NL6qUfJRujs` | 849 | +1 | 16.8K | 2.7% | 17.9% | 3/09 |
+| 9 | Local Invoice Parsing w/ Docling | `NsORND5fmcQ` | 848 | +16 | 11.4K | 3.1% | 17.7% | 1/18 |
+| 10 | Claude Code on Your Phone | `JEveW6KULyg` | 692 | 0 | 11.5K | 3.5% | 16.2% | 3/23 |
+| 11 | n8n Image+Video Automation | `Km1CjLGLtLQ` | 687 | +4 | 9.5K | 2.8% | 12.2% | 12/28 |
+| 12 | Claude Routines + Claude Code | `akcCiWLe51Q` | 534 | +18 | 5.7K | 3.0% | 17.8% | 4/29 |
+| 13 | Claude Design is Incredible | `aiMZrj4zqo8` | 493 | +7 | 9.8K | 3.0% | 15.8% | 4/26 |
+| 14 | n8n RAG Agent Template | `qA08vhuvjfA` | 314 | +1 | 6.0K | 2.6% | 20.6% | 1/29 |
+| 15 | What I'd Learn for AI Automation 2026 | `80-zKvov8Fk` | 298 | 0 | 8.3K | 2.1% | 24.3% | 1/25 |
+| 16 | Stop Skipping Evaluation | `btbg8lRMAiY` | 296 | +1 | 7.5K | 2.1% | 13.1% | 2/08 |
+| 17 | **Skills Masterclass (32m)** | `9ZsZgnWrs_E` | 294 | +6 | 6.6K | 2.7% | 10.3% | 6/21 |
+| 18 | **3 Claude Code Skills** | `aPeHhNPjtEo` | 282 | +8 | 4.7K | 3.0% | 13.5% | 6/14 |
+| 19 | **Cowork Easily Explained** | `7ND_buIAQfA` | 281 | +31 | 5.2K | 3.3% | 19.7% | 6/25 |
+| 20 | n8n Autosave | `hTzQtsN4oEI` | 200 | 0 | 5.3K | 1.8% | 20.1% | 1/23 |
+| 21 | **Cowork Full Course (47m)** 🆕 | `aOECs8oPZ2c` | 176 | — | 2.8K | 3.4% | 6.4% | 7/03 |
+| 22 | **Granola AI + Claude Code** 🆕 | `nFen2thkbmg` | 85 | — | 2.0K | 2.6% | (lag) | 7/05 |
+
+**Read (2026-07-06) — the CTR picture:**
+- **Median cohort CTR ≈ 2.8%. Only 2 of 22 videos ever cleared 4%** — and they're the only two videos that ever cleared 2K views (Antigravity 5.9%, Workflow 4.4%). CTR is the gate; everything else is downstream.
+- **The flywheel is visible in the data:** CTR ≥ 4% → YouTube escalates impressions (25.2K, 12.1K). CTR ~3% → test dies at 5-10K impressions and the video flatlines. The June releases didn't fail on views; they failed the Browse impression test in week 1.
+- **`lfwt5tFfaSo` is the smoking gun:** most impressions in the cohort (26.4K) but 2.3% CTR — YouTube offered it the biggest test we've ever had and the packaging failed it.
+- **`XAcqU3zuZmE` is the biggest wasted asset:** 29.2% retention (channel best) on only 3.0% CTR / 8.2K impressions. Best-retaining video, throttled at the thumbnail.
+- Browse features is the #1 traffic source on nearly every video (37-77%) — packaging IS the distribution.
+- Winner formula (n=2 but consistent): named hot entity + stakes/outcome ("Google is Winning…", "I Automated My Entire…"). Loser formula: generic value-claims ("…Changed How I Use AI", "Stop Skipping…", course/masterclass framing).
+
+---
+
+## Previous snapshot: 2026-06-30
 
 Channel: 23,500 subs | 1,633,717 lifetime views | net subs last 4 days +5
 
