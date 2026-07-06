@@ -19,3 +19,14 @@
 - **C:** Split / "ENTERPRISE ONLY?" with a red X over it + "ON MAX ✓" - the misconception flip, visual.
 
 Notes: 3-4 words max. Real Slack screenshot as proof (not stock). Tyler's likeness from ~/assets/identity/tylerai.png. Generate via /thumbnail, pick with Test & Compare.
+
+---
+
+# ⚡ CTR DATA UPDATE (2026-07-06 — first full-cohort lifetime CTR pull)
+
+**Validation:** the final title ("I Put Claude In My Slack as a Coworker") fits the proven winner formula — named entity (Claude, Slack) + concrete outcome (coworker). The 07-06 data shows the only 2 videos ever >4% CTR are exactly this structure; me-focused value claims die at 2-3%.
+
+**New rules from the data:**
+- **Kill-trigger: under 3.5% CTR at 2 weeks = packaging swap.** Prep the A/B ("Claude Tag Is NOT Enterprise-Only (I'm on Max)") as the ready-to-go v2.
+- Launch-day external seed (X + LinkedIn + community post) — the Workflow winner was 59.8% external traffic, and this topic is Slack-native = LinkedIn gold.
+- Timeliness decays: Tag launched 06-23. Every week of delay costs the news-ride. Film this weekend as planned.

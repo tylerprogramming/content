@@ -178,3 +178,16 @@ Scored 1-10 per axis. CTR Potential weights how well the title rides a proven 20
 - Best browse-traffic blend of proven framing plus curiosity.
 
 **A/B plan:** ship Pick 1 (proactive-teammate, highest CTR). If CTR is soft at 48 hours, swap to Pick 2 (Clearly Explained, broader search intent). Keep the thumbnail constant across swaps.
+
+---
+
+# ⚡ CTR DATA UPDATE (2026-07-06 — first full-cohort lifetime CTR pull)
+
+**What the channel data says (see `analytics/cohort-tracker.md`):** median cohort CTR is 2.8%; only 2 of 22 videos ever cleared 4%, and they're the only 2 that ever cleared 2K views. The winners are "Google is Winning With Antigravity" (5.9%) and "I Automated My Entire YouTube Workflow" (4.4%, +44 subs). Formula: **named entity + concrete outcome/stakes.** Losers: me-focused value claims ("…Changed How I Use AI", 2.3% on a 26.4K-impression test).
+
+**Applies here:**
+- Pick 1 ("Claude Routines Run My Whole Business Before I Open My Laptop") **fits the winner formula** — named entity (Claude Routines) + concrete outcome (runs my whole business). Confirmed as launch title.
+- Add franchise variant to the A/B pool: **"I Automated My Entire Content Business With Claude Routines"** — direct mirror of the 4.4%-CTR winner's structure. Use as the 2-week swap if Pick 1 tests soft.
+- "claude routines" is already our **#4 channel search term (92 views/28d)** with the video not even out — search demand is waiting. Make sure the exact phrase "Claude Routines" leads the title.
+- **Kill-trigger (new standing rule): under 3.5% CTR at 2 weeks = packaging swap.** Have title v2 + thumbnail v2 ready at upload, not after.
+- Launch-day external seed is part of the formula (the Workflow winner was 59.8% external traffic): same-day X + LinkedIn + community post.

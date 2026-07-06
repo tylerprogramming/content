@@ -34,3 +34,14 @@ Avoid: busy collages, tiny text. Mobile-legible, one idea, high contrast.
 - 3-4 words max. The verdict ("STILL #1" / "NOT DETHRONED") carries it.
 - Tyler's likeness from ~/assets/identity/tylerai.png if compositing his face.
 - This is the breakthrough lever - spend real time here, generate via /thumbnail, pick with Test & Compare.
+
+---
+
+# ⚡ CTR DATA UPDATE (2026-07-06 — first full-cohort lifetime CTR pull)
+
+**Validation:** the 07-06 data confirms this file's thesis. Median cohort CTR is 2.8%; the only 2 videos ever >4% are named-entity + stakes titles ("Google is Winning With Antigravity" 5.9%, "I Automated My Entire YouTube Workflow" 4.4%). Title #1 (**"GPT Image 2 Did NOT Dethrone Nano Banana Pro"**) is the same structure as the Antigravity winner: two named entities + a contrarian verdict. Confirmed as launch title.
+
+**New rules from the data:**
+- **Kill-trigger: under 3.5% CTR at 2 weeks = packaging swap.** Prep title v2 (#2 drama variant) + thumbnail v2 at upload time.
+- Launch-day external seed (X + LinkedIn + community) — the Workflow winner was 59.8% external traffic.
+- Target: this needs 4%+ CTR to break the flywheel, not the old 3% "normal."

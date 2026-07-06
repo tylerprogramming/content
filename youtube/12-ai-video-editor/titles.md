@@ -57,3 +57,15 @@ Scored 1-10 on each axis. CTR Potential weights how hard it rides the proven lan
 **Thumbnail B:** Split frame - left a raw waveform full of gaps, right the same clip tight with editorial captions, text "NO TIMELINE". (Replaced "I BUILT IT" - he did not build it; the hook is now "I edit without an editor.")
 
 **Note:** every candidate avoids dollar amounts. Post-pivot (2026-06-30): drop ALL build framing. The honest line is "I started using AI to do my editing," never "I built an editor." Titles 1-3 and 6/9/10 that lean on "I Built" are now OFF - use the workflow/automation angles (the locked title, plus "I Made Claude Code Edit My Video", "I Replaced My Video Editor With AI", "Claude Code Edited This Video").
+
+---
+
+# ⚡ CTR DATA UPDATE (2026-07-06 — first full-cohort lifetime CTR pull)
+
+**The locked title is now data-confirmed, not just instinct.** "I Automated My Entire YouTube Workflow" is the channel's best video at every stage that matters: 4.4% CTR (2nd best ever), +44 subs (2x any other video). "I Automated My Video Editing With Claude Code" mirrors it exactly. **This is now the "I Automated ___ With Claude Code" FRANCHISE — video 2 of a series** (video 3 = the channel showcase `13`, video 4 = Blotato month-of-content).
+
+**Franchise rules (new):**
+- Consistent thumbnail identity across the series: black bg + face + huge text + orange + Claude asterisk (already the signature package — keep it identical enough to be recognizable as a series).
+- **Launch-day external seed is half the engine:** the original winner was 59.8% external traffic. X + LinkedIn + community post ship same-day, not later.
+- **Kill-trigger: under 3.5% CTR at 2 weeks = packaging swap.** Thumbnail B ("NO TIMELINE") is the ready v2.
+- Retention gap to close: the original winner held only 15.9% avg view. Pair this packaging with Build-ANYTHING-style structure (29.2% retention: fast beginner pacing, payoff every 2-3 min, no long setup).
