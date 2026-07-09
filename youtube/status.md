@@ -29,6 +29,7 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 
 | Video | Folder | Editor folder |
 |---|---|---|
+| **I Automated My Video Editing With Claude Code** | `12-ai-video-editor/` | Recorded 2026-07-06. Workflow showcase (Hyperframes studio + registry captions + Claude Code, silence cut). Post-edit: /chapters, finalize packaging (thumbnail "AI EDITED THIS" / "NO TIMELINE"), queue upload. |
 | **GPT Image 2 vs Nano Banana Pro (showdown)** | `14-nano-banana-vs-gpt-image/` | Recorded 2026-06-27 (Sat). Pushing to Drive 2026-06-30. Post-edit: /chapters, finalize packaging (Michele-style thumbnail + "NOT DETHRONED" text), queue upload. |
 | **Claude Routines + Claude Code** | `03-claude-routines-content-system/` | Recorded 2026-06-22. Post-edit: /chapters, finalize showcase title + thumbnail, queue upload. |
 
@@ -48,11 +49,15 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 
 ---
 
-## 🔴 NEXT TO FILM (Tyler's call, 2026-06-24)
+## 🔴 NEXT TO FILM (Tyler's call, 2026-07-06)
+
+The winning lane = **"I Automated My ___ With Claude Code"** (showcase). Mirrors the 2,854-view #1 cohort video. Build 3 more in this exact vein:
 
 | Video | Folder | Status |
 |---|---|---|
-| **I Automated My Video Editing With Claude Code** | `12-ai-video-editor/` | ⬅️ NEXT UP (Tyler's call 2026-06-30). Ready to film, zero prep. Title mirrors the 2,854-view winner ("I Automated My Entire YouTube Workflow"), our #1 cohort video. Hottest lane. |
+| **I Automated My Entire Content Pipeline With Claude Code** | `17-automated-content-pipeline/` | Package built 2026-07-06. Showcase: one prompt → a week of content. |
+| **I Automated My Email With Claude Code** | `18-automated-email/` | Package built 2026-07-06. Showcase: inbox triage + drafts + sends. |
+| **I Automated My YouTube Comments With Claude Code** | `19-automated-yt-comments/` | Package built 2026-07-06. Showcase: monitor + draft + reply via API. |
 
 ---
 
