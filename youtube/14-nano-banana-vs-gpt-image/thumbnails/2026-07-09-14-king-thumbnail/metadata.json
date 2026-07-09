@@ -1,0 +1,17 @@
+{
+  "model": "gpt-image-2-image-to-image",
+  "prompt": "Edit this YouTube thumbnail: add large bold text reading exactly 'The KING' positioned above the golden crown on the left side, white text with a gold outline, high-contrast and highly readable in a punchy YouTube thumbnail style. Keep the man, the crown, the glowing image, and the dark background exactly the same.",
+  "input": {
+    "prompt": "Edit this YouTube thumbnail: add large bold text reading exactly 'The KING' positioned above the golden crown on the left side, white text with a gold outline, high-contrast and highly readable in a punchy YouTube thumbnail style. Keep the man, the crown, the glowing image, and the dark background exactly the same.",
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "input_urls": [
+      "https://tempfile.redpandaai.co/kieai/194131/gptimage/inputs/thumbnail_141646900.png"
+    ]
+  },
+  "result_urls": [
+    "https://tempfile.aiquickdraw.com/p/12b1aa3a0228878e30e36d13bce1b556_1_1783621496_5148.png",
+    "https://tempfile.aiquickdraw.com/p/734ece9ef9814dcc60d125bae164c826_1_1783621575_8561.png"
+  ],
+  "generated_at": "2026-07-09T14:26:24.668000"
+}
