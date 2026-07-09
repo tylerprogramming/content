@@ -30,7 +30,6 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 | Video | Folder | Editor folder |
 |---|---|---|
 | **I Automated My Video Editing With Claude Code** | `12-ai-video-editor/` | Recorded 2026-07-06. Workflow showcase (Hyperframes studio + registry captions + Claude Code, silence cut). Post-edit: /chapters, finalize packaging (thumbnail "AI EDITED THIS" / "NO TIMELINE"), queue upload. |
-| **GPT Image 2 vs Nano Banana Pro (showdown)** | `14-nano-banana-vs-gpt-image/` | Recorded 2026-06-27 (Sat). Pushing to Drive 2026-06-30. Post-edit: /chapters, finalize packaging (Michele-style thumbnail + "NOT DETHRONED" text), queue upload. |
 | **Claude Routines + Claude Code** | `03-claude-routines-content-system/` | Recorded 2026-06-22. Post-edit: /chapters, finalize showcase title + thumbnail, queue upload. |
 
 ---
@@ -39,6 +38,7 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 
 | Video | Folder | Notes |
 |---|---|---|
+| The Best AI Image Model for YouTube Thumbnails (I Tested 3) | `14-nano-banana-vs-gpt-image/` (`h5VtHSXY8Hc`) | **LIVE ~2026-07-08. FLOPPED** at ~1.4% CTR / ~50 views on the "NOT DETHRONED" package. Kill-trigger tripped 2026-07-09: title swapped to "The Best AI Image Model for YouTube Thumbnails (I Tested 3)" + thumbnail swapped to Concept 1 (`thumbnail_141646900`, pointing at crowned image). ⚠️ Thumbnail has NO text overlay yet — Tyler to add big text + re-swap. Watching CTR. |
 | Granola AI: "I Connected Granola to Claude Code" | `granola-claude-code/` (`nFen2thkbmg`) | **LIVE 2026-07-05** (PAID partnership). 84 views day 1. Post-publish: repurpose/social not done. |
 | Claude Cowork Full Course | `06-claude-cowork-full-course/` (`aOECs8oPZ2c`) | **LIVE 2026-07-03.** 178 views in 3 days — best launch of the June batch. Post-publish: repurpose/social not done. |
 | Claude Cowork Clearly Explained | `05-claude-cowork-clearly-explained/` (`7ND_buIAQfA`) | **LIVE.** Repurposed 2026-06-29: 3 emails + full social (X, LinkedIn, YT Community, IG, 7 Pinterest pins) in `social/`. IG carousel pending Tyler's new look. Nothing scheduled/sent yet. |
