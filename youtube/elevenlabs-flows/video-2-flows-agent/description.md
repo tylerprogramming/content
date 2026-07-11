@@ -9,7 +9,7 @@
 I typed one sentence and the Flows Agent in ElevenCreative built my entire video pipeline for me. It asked a couple of smart questions, then selected the models, created and connected the nodes, and ran the generations. In this video I show you exactly how it works, how to iterate with it just by talking, the async trick where you close the tab and come back to finished work, and the Assist mode setting that keeps it from burning through your credits.
 
 Try ElevenCreative (my partner link + code):
-[PARTNERSTACK LINK - Tyler to insert]
+https://try.elevenlabs.io/8n9sgoi23fkk
 Code: [CODE]
 
 What you'll see:
