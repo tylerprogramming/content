@@ -3,7 +3,7 @@
 > The exact system prompt, knowledge base, and setup steps from the video. Copy it, swap in your own business, and connect it to your own WhatsApp number.
 > ElevenAgents and the WhatsApp integration are evolving, so a button may move, but the steps are the same.
 >
-> **Get started with ElevenLabs:** https://try.elevenlabs.io/8n9sgoi23fkk (code: [CODE])
+> **Get started with ElevenLabs:** https://try.elevenlabs.io/8n9sgoi23fkk
 > **Turn this into the public Google Doc lead magnet + pin it as the top comment.**
 
 ## What you're building

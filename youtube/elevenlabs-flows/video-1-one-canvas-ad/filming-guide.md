@@ -23,7 +23,7 @@ Horizontal YouTube video. Talk-to-camera cold open, then screen-recorded demo wi
   - [ ] Confirm the credit cost shows when you hover the Run button (you will point to it on camera).
 - [ ] Write the ad script for the voiceover node in advance (short, 2-3 sentences).
 - [ ] Have the finished ad already rendered once so you can drop it into the cold open in editing.
-- [ ] PartnerStack link + code pasted into your notes so you say them right: https://try.elevenlabs.io/8n9sgoi23fkk / code [CODE].
+- [ ] PartnerStack link pasted into your notes: https://try.elevenlabs.io/8n9sgoi23fkk (link-only, no separate code).
 
 ## Accuracy reminders taped to the monitor
 - Say the FULL product name before 0:05: "Flows in ElevenCreative."

@@ -3,7 +3,7 @@
 > This is the exact recipe from the video. Keep it open on the side and build alongside me.
 > Flows in ElevenCreative is currently in alpha, so a button may move, but the steps are the same.
 >
-> **Try it free:** https://try.elevenlabs.io/8n9sgoi23fkk (code: [CODE])
+> **Try it free:** https://try.elevenlabs.io/8n9sgoi23fkk
 > **Turn this into the on-screen "one screen" graphic + the public Google Doc lead magnet.**
 
 ## What you need before you start

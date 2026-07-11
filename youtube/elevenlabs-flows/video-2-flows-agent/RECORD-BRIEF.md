@@ -1,7 +1,7 @@
 # RECORD BRIEF - ElevenLabs Flows Agent (PAID - $200/1k views)
 
 PAID ambassador video. Full script: `script.md`. Follow-along: `follow-along.md`. Brief rules: `../BRIEF.md`.
-Placeholders to fill before publish: [PARTNERSTACK LINK] + [CODE]. Email content to ambassadors@elevenlabs.io BEFORE going live.
+PartnerStack link is filled (https://try.elevenlabs.io/8n9sgoi23fkk); link-only, no separate code. Email content to ambassadors@elevenlabs.io BEFORE going live.
 
 ## Tyler's example Flow (the one to show on camera)
 https://elevenlabs.io/app/flows/rLP9x4JJoyjN2F5frt3P
@@ -29,7 +29,7 @@ The paid ElevenLabs video showing the Flows Agent in ElevenCreative: you type on
 7. **The Async Superpower** (9:30-11:30) - give it a batch, CLOSE THE TAB, come back to finished work. Your favorite feature.
 8. **Honest Limitations** (11:30-13:00) - alpha, not free, be specific to save credits, API coming soon (don't demo)
 9. **Who Should Use It + Recap** (13:00-14:30)
-10. **Final CTA + Outro** (14:30-15:30) - grab the doc + start the trial (PartnerStack link + code), start on approve-each, subscribe. Repeat #ad disclosure.
+10. **Final CTA + Outro** (14:30-15:30) - grab the doc + start the trial (PartnerStack link), start on approve-each, subscribe. Repeat #ad disclosure.
 
 ## Where the free doc shows up
 Cold open (out loud) + Module 3 (CTA #1) + Final CTA. Content = `follow-along.md` (the exact prompt, clarifying answers, Assist settings). Turn it into a public Google Doc + pin in top comment.

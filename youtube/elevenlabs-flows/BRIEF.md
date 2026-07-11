@@ -58,7 +58,7 @@ Showcase **ElevenCreative**, focus on **Flows** — the node-based visual pipeli
 
 ## Assets
 - Brand/logo guide: https://elevenlabs.io/brand
-- PartnerStack affiliate link + code: **[TODO — Tyler to paste his PartnerStack URL + code here]**
+- PartnerStack affiliate link: **https://try.elevenlabs.io/8n9sgoi23fkk** (link-only, no separate code)
 
 ## About ElevenCreative (context)
 All-in-one platform for generating, editing, localizing audio + video. Features: Text to Speech (Eleven v3, 70+ langs, Audio Tags like [laughs]/[whispers]), Music (royalty-free, licensed training), Dubbing (70+ langs, preserves tone/timing, auto voice clone), Studio (full timeline editor: video/narration/music/SFX/captions + collab comments), **Flows** (this brief), plus Voice Cloning, Voice Library (10,000+ voices), Voice Design, Sound Effects, Image+Video gen (50+ models), Scribe STT, Voice Isolator, Voice Changer.
@@ -66,7 +66,7 @@ All-in-one platform for generating, editing, localizing audio + video. Features:
 **Brand tone:** clear, human, confident. Show what's possible through demonstration, not exaggeration.
 
 ## Status
-- [ ] PartnerStack link + code obtained
+- [ ] PartnerStack link obtained (link-only, no code)
 - [ ] Research done (competitor lane, SEO, angle)
 - [ ] Package built (title, hooks, script, thumbnail)
 - [ ] Filmed (horizontal, demo of Flows)

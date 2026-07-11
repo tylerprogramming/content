@@ -10,7 +10,7 @@ I built an AI agent in ElevenAgents, gave it a system prompt, a knowledge base, 
 
 Get started with ElevenLabs (my partner link + code):
 https://try.elevenlabs.io/8n9sgoi23fkk
-Code: [CODE]
+
 
 Free follow-along doc (my exact system prompt, the knowledge base, and the WhatsApp connection checklist): [DOC LINK - pinned in the top comment too]
 

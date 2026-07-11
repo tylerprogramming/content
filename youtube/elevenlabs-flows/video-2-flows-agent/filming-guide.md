@@ -22,7 +22,7 @@
 - [ ] **Verify the Assist mode options are live** in your build (approve-each / auto-run / auto-under-threshold) so you can show all three on screen. If the labels differ in your alpha build, note the real labels and narrate what you actually see.
 - [ ] Enough **credits** in the account to run the full demo plus the batch/variations without hitting a wall mid-record.
 - [ ] A **product image or asset ready** if you want the agent to build around a specific image (optional - the agent can generate one too).
-- [ ] **PartnerStack link + code on hand** so you reference "link and code in the description" naturally (you don't read the URL aloud, just point to it).
+- [ ] **PartnerStack link on hand** so you reference "link and code in the description" naturally (you don't read the URL aloud, just point to it).
 - [ ] Screen recorder set to clean 1080p/1440p, cursor visible, browser zoom at a readable level, notifications silenced, only the ElevenCreative tab open.
 - [ ] Do a 30-second dry run of the agent building nodes so you know the timing and can narrate over the real build.
 
@@ -63,5 +63,5 @@
 - [ ] Generate chapters from the locked edit with /yt-chapters, update description.md.
 - [ ] Build thumbnail (Tyler's face + node graph building itself + orange accent, no dollar amounts) - see titles.md concepts A/B.
 - [ ] Email thumbnail + full video + script to ambassadors@elevenlabs.io BEFORE publishing.
-- [ ] Insert PartnerStack link + code into description before going live.
+- [ ] Insert PartnerStack link into description before going live.
 - [ ] Submit the live video link for payment per the brief.

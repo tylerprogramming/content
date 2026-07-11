@@ -2,7 +2,7 @@
 
 Target: 12-16 minutes. Horizontal. Word-for-word cold open, then talk-to-demo. No em dashes anywhere. Full product name in the first 5 seconds. Multiple CTAs to the PartnerStack trial. Only dub content Tyler OWNS. Everything below obeys the guardrails in analysis.md and BRIEF.md.
 
-Placeholders to fill: https://try.elevenlabs.io/8n9sgoi23fkk and [CODE].
+PartnerStack link (filled): https://try.elevenlabs.io/8n9sgoi23fkk - link-only, no separate code.
 
 Timing is a guide, not a hard cut list.
 
@@ -25,7 +25,7 @@ The tool is called ElevenLabs Dubbing, and the version I am using is Dubbing v2 
 
 And that matters, because reaching people who do not speak your language has always been the wall. Re-recording every video in Spanish, then Japanese, then Hindi, then Portuguese, is impossible for one person. Hiring voice actors for each one is expensive and it is not you anymore. This is the first time one person can realistically show up in 90 plus languages and still sound like themselves.
 
-If you want to follow along in your own account, I will drop a link and a code in the description that gets you into a trial. The link is https://try.elevenlabs.io/8n9sgoi23fkk and the code is [CODE]. Go make an account, grab the free follow-along doc that is also in the description and pinned up top, and come back, because the best way to get this is to dub one of your own videos while I dub one of mine."
+If you want to follow along in your own account, I will drop a link in the description that gets you into a trial. The link is https://try.elevenlabs.io/8n9sgoi23fkk. Go make an account, grab the free follow-along doc that is also in the description and pinned up top, and come back, because the best way to get this is to dub one of your own videos while I dub one of mine."
 
 ---
 
@@ -97,7 +97,7 @@ I am telling you this because it is the honest version. This is incredible techn
 
 Now zoom out with me. Think about your back catalog. If you have 50 videos and you dub each into even five languages, that is one person suddenly showing up for audiences you were completely invisible to before. That used to require a localization team and a budget. Now it is you, your own videos, and credits.
 
-This is exactly what the free trial is for. Go dub one of your own clips into one language tonight. The link and code are in the description, https://try.elevenlabs.io/8n9sgoi23fkk and code [CODE]. Do one, listen to yourself in another language, and you will get why I am excited about this way more than any explanation from me."
+This is exactly what the free trial is for. Go dub one of your own clips into one language tonight. The link is in the description, https://try.elevenlabs.io/8n9sgoi23fkk. Do one, listen to yourself in another language, and you will get why I am excited about this way more than any explanation from me."
 
 ---
 
@@ -133,7 +133,7 @@ That is the real picture. It is early, it costs credits, some languages are bett
 
 "So to recap the system. Start with a video you own. Open ElevenLabs Dubbing, use Automatic Dubbing for the fast path or Dubbing Studio when you want manual control. Pick your languages, check the cloning strength, watch the credit cost, and generate. It clones your voice, translates the words, and matches your timing. Then you review it, because you are still the editor. And then you publish, and one recording of you is suddenly reaching 90 plus languages.
 
-If you want to actually do this, two things are in the description and pinned in the top comment. The free follow-along doc with every step and the review checklist, and the trial link, https://try.elevenlabs.io/8n9sgoi23fkk, with code [CODE] when you sign up. Grab the doc, get the trial, and dub one of your own videos into one language this week. That is the whole homework.
+If you want to actually do this, two things are in the description and pinned in the top comment. The free follow-along doc with every step and the review checklist, and the trial link, https://try.elevenlabs.io/8n9sgoi23fkk. Grab the doc, get the trial, and dub one of your own videos into one language this week. That is the whole homework.
 
 If this was useful, subscribe, because I am doing more of these ElevenLabs deep dives. I will see you in the next one."
 

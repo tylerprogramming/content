@@ -13,7 +13,7 @@ Approval: email script + thumbnail to **connie@elevenlabs.io** BEFORE publishing
 
 1. Say the full product name **"ElevenAgents"** in the first 5 seconds (not "Agents by ElevenLabs," not bare "agent").
 2. Disclaimers **#ad** and **#ElevenAgentsPartner** in the FIRST 1-2 lines of the description, before the fold. Also say the sponsorship out loud in the cold open.
-3. PartnerStack CTA multiple times (intro, mid, end). Real link: **https://try.elevenlabs.io/8n9sgoi23fkk** - code: **[CODE - check dashboard]**.
+3. PartnerStack CTA multiple times (intro, mid, end). Real link: **https://try.elevenlabs.io/8n9sgoi23fkk** - **link-only, no separate code (confirmed 2026-07-10)**.
 4. Show the product IN USE (build the agent, connect WhatsApp, message it live and it replies). Do not just describe it.
 5. SEO-friendly evergreen title.
 6. No competitors mentioned. No puffery. No money claims (no "make $X").

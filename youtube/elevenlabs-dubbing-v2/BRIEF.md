@@ -66,7 +66,7 @@ Sources:
 - [ ] Whether Dubbing Studio (manual editor) is available in the account or still maintenance-mode. If unavailable, keep the demo on Automatic Dubbing v2 and describe Studio verbally only.
 - [ ] Cloning strength default (docs say 7) still shows in Advanced settings.
 - [ ] The credit cost preview appears before Generate (you will point at it on camera).
-- [ ] The real PartnerStack promo `[CODE]` from the affiliate dashboard.
+- [x] PartnerStack is link-only (no promo code). Link: https://try.elevenlabs.io/8n9sgoi23fkk
 
 ---
 

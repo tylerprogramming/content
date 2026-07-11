@@ -3,7 +3,7 @@
 > The exact prompt, answers, and settings from the video. Copy it move for move.
 > Flows in ElevenCreative is currently in alpha, so a button may move, but the steps are the same.
 >
-> **Try it free:** https://try.elevenlabs.io/8n9sgoi23fkk (code: [CODE])
+> **Try it free:** https://try.elevenlabs.io/8n9sgoi23fkk
 > **My example Flow (shown in the video):** https://elevenlabs.io/app/flows/rLP9x4JJoyjN2F5frt3P (set sharing to "Link only" so it opens for you)
 > **Turn this into the public Google Doc lead magnet + pinned comment.**
 

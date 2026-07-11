@@ -2,7 +2,7 @@
 
 Target: 12-16 minutes. Horizontal. Word-for-word cold open, then talk-to-demo. No em dashes anywhere. Full product name in the first 5 seconds. Multiple CTAs to the PartnerStack trial. Everything below obeys the accuracy guardrails in analysis.md.
 
-Placeholders to fill: https://try.elevenlabs.io/8n9sgoi23fkk and [CODE].
+PartnerStack link (filled): https://try.elevenlabs.io/8n9sgoi23fkk - link-only, no separate code.
 
 Timing is a guide, not a hard cut list.
 
@@ -25,7 +25,7 @@ The platform is called ElevenCreative. It is their all-in-one place for generati
 
 One quick honesty note before we build: Flows is currently in alpha, so the exact buttons might move around a little after I post this. The idea is what matters.
 
-If you want to follow along in your own account, I will drop a link and a code in the description that gets you into a trial. Link is https://try.elevenlabs.io/8n9sgoi23fkk, code is [CODE]. Go make an account and come back, because the best way to learn this is to build one with me.
+If you want to follow along in your own account, I will drop a link in the description that gets you into a trial. Link is https://try.elevenlabs.io/8n9sgoi23fkk. Go make an account and come back, because the best way to learn this is to build one with me.
 
 And two things are waiting for you in that description. The trial link so you can actually build in Flows, and a free doc that has this entire recipe written out, every node in order with the exact settings I use, so you are never lost. It is also pinned in the top comment. Grab it, keep it open on the side, and follow along."
 
@@ -99,7 +99,7 @@ So take a step back and look at the canvas. Photo, image, video, voice, lip-sync
 
 That is it. One product photo in, a finished video ad out, and I never left the canvas. From here I can download the individual assets, download the final composition, or export it into Studio if I want to fine tune the edit on a timeline.
 
-Quick pause for a real talk moment. This is exactly the kind of thing the free trial is for. Go build one bad ad. Seriously, your first one will be rough, mine always are. The link and code are in the description, https://try.elevenlabs.io/8n9sgoi23fkk and code [CODE]. Build one ugly ad tonight and you will understand this better than any video can teach you.
+Quick pause for a real talk moment. This is exactly the kind of thing the free trial is for. Go build one bad ad. Seriously, your first one will be rough, mine always are. The link is in the description, https://try.elevenlabs.io/8n9sgoi23fkk. Build one ugly ad tonight and you will understand this better than any video can teach you.
 
 But I promised you the real magic is not the first ad. Here it comes."
 
@@ -141,7 +141,7 @@ That is the real picture. It is early, it costs credits, and it is still one of 
 
 "So to recap the system. One product photo. Image node, video node, that is your visuals. Text to speech with Eleven v3, that is your voice. Lip-sync, music, sound effects, that is your audio. Composition node to preview and export. And then the part that makes it a system instead of a one-off, swap a single node and re-run just that branch to spin up as many versions as you need.
 
-If you want to actually build this, two things are in the description and pinned in the top comment. The free recipe doc with every node and setting so you can rebuild this exactly, and the trial link, https://try.elevenlabs.io/8n9sgoi23fkk, with code [CODE] when you sign up. Grab the doc, get the trial, build one rough ad this week. That is the whole homework.
+If you want to actually build this, two things are in the description and pinned in the top comment. The free recipe doc with every node and setting so you can rebuild this exactly, and the trial link, https://try.elevenlabs.io/8n9sgoi23fkk. Grab the doc, get the trial, build one rough ad this week. That is the whole homework.
 
 If this was useful, subscribe, because I am doing more of these ElevenCreative deep dives, including the Flows Agent one where the AI wires the whole canvas for you. I will see you in that one."
 

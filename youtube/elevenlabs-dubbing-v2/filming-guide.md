@@ -33,7 +33,7 @@ Horizontal YouTube video. Talk-to-camera cold open, then screen-recorded demo wi
   - [ ] Confirm Cloning strength default (docs say 7) shows in Advanced settings.
   - [ ] Confirm the credit cost preview appears before Generate (you will point at it on camera).
 - [ ] Write the short line/paragraph you will dub (it is your own clip's audio, so this is just choosing the segment).
-- [ ] PartnerStack link + code pasted into your notes so you say them right: https://try.elevenlabs.io/8n9sgoi23fkk / code [CODE].
+- [ ] PartnerStack link pasted into your notes: https://try.elevenlabs.io/8n9sgoi23fkk (link-only, no separate code).
 - [ ] Free follow-along doc finalized and its public link ready to pin in the top comment and paste in the description.
 
 ## Accuracy reminders taped to the monitor
