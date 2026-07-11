@@ -57,7 +57,7 @@ Legend: [B-ROLL] = screen recording, [CAM] = talking head, [TEXT] = on-screen te
 
 [B-ROLL: Tyler types into the chat panel. Show the sentence on screen.]
 
-**Tyler (VO):** "I'm going to keep it simple and real. I'll type: make me a fifteen second product video for a ceramic coffee mug, warm and cozy tone, with a voiceover and background music."
+**Tyler (VO):** "I'm going to give it a real ad to build. I've uploaded a product photo, and I'm going to ask it to build a full 30 second cinematic ad from it - a six shot storyboard, each shot turned into video, a voiceover, and music, all in one go." [Type the full prompt from demo-ad.md - the APEX sneaker 6-shot ad. Product and script are swappable, see demo-ad.md for the exact prompt, storyboard, voiceover, and iteration lines.]
 
 [B-ROLL: the agent responds with clarifying questions.]
 
