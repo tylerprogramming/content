@@ -1,50 +1,57 @@
-# The Ad You'll Build On Camera (Flows Agent demo)
+# The Ad You'll Build On Camera (Flows Agent demo) - EMBER Coffee
 
-> For the Flows Agent video: you type ONE prompt, the agent builds the whole node graph and runs it.
-> Product is swappable - upload your own product/character image and change the script. This is the default demo.
+> For the Flows Agent video: you type ONE prompt, the agent builds the node graph and runs it.
+> Structure Tyler likes: a script in parts + several reference images fed into a single video node,
+> so the product and look stay consistent and the video is built FROM your real assets.
+> Product/script swappable. Flows is alpha - verify the node behavior live.
 
-## Creative decision: 6 separate shots, NOT a 9-card grid
-Have the agent generate **6 distinct shot images** (each its own image node -> its own video node -> all into one Composition). Do NOT ask for one "9-card grid image then split it" - grid-splitting isn't a native node and image models frame grid cells inconsistently. 6 separate shots = reliable, consistent (feed the uploaded product into each so it stays the same product), and each becomes real ad footage. 6 clips x ~4-5s = a tight 30s ad.
+## The structure (Tyler's approach)
+1. Generate or upload **several reference images** (the product, a mug, beans, a character, a cozy scene).
+2. Feed ALL of them into **one Video node as reference images** so the video is generated using those exact elements (consistent product + character, not generated from nothing).
+3. **Eleven v3 voiceover** reads the script (written in parts), **Music node** underneath.
+4. Everything into a **Composition node** -> one finished 30s ad.
 
-## The product (default: APEX running sneaker - swap freely)
-Upload: a product photo (a sneaker) and optionally a character (a runner). The agent uses these as references so the product stays consistent across shots.
+Why this beats 6 separate clips: fewer nodes, the product stays consistent because it IS the reference, and it is closer to how a real creator would do it. (Accuracy note: whether one video node takes multiple references depends on the model the agent picks - some, like Kling "elements", take several; others take one start frame plus style refs. Let the agent choose; if a model only takes one image, it will use the product as the key reference and the rest to guide the look. Verify live.)
 
-Alternates if you'd rather: a cold brew coffee can, a skincare serum bottle, a candle, an energy drink. Any product with a clean photo works. Pick one you can upload a real image of.
+## The product: EMBER Coffee (swap freely)
+A premium small-batch coffee brand. Cozy, warm, morning-ritual energy. Upload or generate the reference images below.
 
-## The 6-shot storyboard
-1. **Hero** - the sneaker rotating slowly on a dark gradient, dramatic rim light
-2. **Detail** - extreme close-up of the sole tread and laces, texture
-3. **Lace-up** - a runner lacing the shoe at dawn (character reference)
-4. **Action** - the shoe mid-stride on a trail, dust kicking up
-5. **Mood** - the runner cresting a hill at sunrise, wide
-6. **End card** - the sneaker with the word APEX and the tagline
+Alternates: cold brew can, a cafe, a skincare serum, a candle. Any product you can supply reference images for.
 
-## The voiceover script (Eleven v3, ~25-30s)
-"Every morning, the trail asks the same question.
-How far?
-APEX was built to answer it.
-Lighter. Grippier. Ready before you are.
-APEX. Go find your limit."
+## Reference images to feed the video node
+1. **Product** - an EMBER coffee bag, matte, warm earthy tones
+2. **The cup** - a steaming ceramic mug of black coffee, close
+3. **Beans** - coffee beans scattered with a wooden scoop
+4. **Character** - a person in a cozy sweater holding the mug by a window in warm morning light
+5. **Scene/mood** - a warm kitchen, soft golden morning light
+
+(Generate these with an image node first, or upload your own. They become the references.)
+
+## The script, in parts (Eleven v3 voiceover, ~25-30s)
+Part 1: "Some mornings you wake up. Others, you rise."
+Part 2: "EMBER is slow roasted in small batches, for the cup that actually earns its place in your hands."
+Part 3: "Rich. Warm. Unhurried."
+Part 4: "EMBER. Mornings worth waking up for."
 
 ## Music direction
-Uplifting cinematic build - warm and quiet under the first lines, light percussion entering at the action shot (#4), lifting to a full swell on the end card. Instrumental, no vocals.
+Gentle, warm, unhurried instrumental. Soft piano or acoustic, low and cozy, a small lift on the final line. No vocals.
 
 ## THE PROMPT you type into the Flows Agent (word for word)
-> "Build me a 30 second cinematic product ad for a running sneaker called APEX. I've uploaded the product photo and a runner photo as references - keep the same shoe across every shot. Create a 6 shot storyboard: 1) a hero shot of the sneaker rotating slowly on a dark gradient with dramatic rim light, 2) an extreme close-up of the sole tread and laces, 3) a runner lacing the shoe up at dawn, 4) the shoe mid-stride on a trail with dust kicking up, 5) the runner cresting a hill at sunrise, wide, 6) an end card with the sneaker and the word APEX. Turn each shot into a short video clip. Add a warm cinematic voiceover with Eleven v3 reading exactly: 'Every morning, the trail asks the same question. How far? APEX was built to answer it. Lighter. Grippier. Ready before you are. APEX. Go find your limit.' Add uplifting cinematic instrumental music that builds. Assemble everything into one 30 second ad in a Composition node."
+> "Build me a 30 second cinematic coffee ad for a small batch brand called EMBER. I'm giving you several reference images - the coffee bag, a steaming ceramic mug, coffee beans with a scoop, and a person in a cozy sweater holding the mug by a window in warm morning light. Use these as reference images in the video node so the product and the look stay consistent, and generate the ad video from them. Warm, unhurried, golden morning light throughout. Add a warm voiceover with Eleven v3 reading exactly: 'Some mornings you wake up. Others, you rise. EMBER is slow roasted in small batches, for the cup that actually earns its place in your hands. Rich. Warm. Unhurried. EMBER. Mornings worth waking up for.' Add gentle warm instrumental music with a small lift at the end. Assemble everything into one 30 second ad in a Composition node."
 
 ## Answer its clarifying questions (likely)
 - Length: 30 seconds
-- Tone: cinematic, aspirational
-- Voice: warm, confident male or female (your pick)
-- Keep the uploaded product consistent across all shots: yes
+- Tone: warm, cinematic, cozy
+- Voice: warm, calm (your pick)
+- Use the uploaded images as references, keep the product consistent: yes
 
-## Iteration prompts (to show non-destructive editing live)
-- "Make shot 4 slower and more dramatic."
-- "Use a warmer voice for the voiceover."
-- "Swap the music for something more energetic."
-- "Give me a Spanish version of the voiceover." (nice bridge - ties to the Dubbing video)
+## Iteration prompts (show non-destructive editing live)
+- "Use warmer morning light in the video."
+- "Use a calmer, lower voice for the voiceover."
+- "Make the music softer under the first line."
+- "Give me a Spanish version of the voiceover." (bridge to the Dubbing video)
 
 ## Honest beats to keep in (on brand + brief-compliant)
-- Every generation costs credits; re-running a shot re-charges. Set Assist mode to auto-under-threshold first.
-- It's in alpha - a shot may fail and you re-run it. Leave that in, it's real.
-- The agent picks sensible models; you can override by asking (Veo 3, Kling, etc.).
+- Every generation costs credits; re-running re-charges. Set Assist mode to auto-under-threshold first.
+- Alpha - a generation may fail and you re-run it. Leave that in, it is real.
+- The agent picks sensible models; you can override by asking.
