@@ -3,6 +3,12 @@
 PAID ambassador video. Full script: `script.md`. Follow-along: `follow-along.md`. Brief rules: `../BRIEF.md`.
 Placeholders to fill before publish: [PARTNERSTACK LINK] + [CODE]. Email content to ambassadors@elevenlabs.io BEFORE going live.
 
+## Tyler's example Flow (the one to show on camera)
+https://elevenlabs.io/app/flows/rLP9x4JJoyjN2F5frt3P
+- This is the actual Flow Tyler built - open/demo this one on screen.
+- NOTE: this is an app URL (your account). If you want VIEWERS to open it, set the Flow's sharing to "Link only" or submit to "Explore" first, otherwise it only works for you. Confirm the share scope before linking it publicly.
+- This is NOT the PartnerStack link. The [PARTNERSTACK LINK] placeholder still needs the real affiliate/trial URL from PartnerStack.
+
 ## Title (final)
 "This AI Agent Builds Your Whole Video Workflow For You (ElevenLabs Flows Agent)"
 

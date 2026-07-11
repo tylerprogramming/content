@@ -4,6 +4,7 @@
 > Flows in ElevenCreative is currently in alpha, so a button may move, but the steps are the same.
 >
 > **Try it free:** [PARTNERSTACK LINK - Tyler to insert] (code: [CODE])
+> **My example Flow (shown in the video):** https://elevenlabs.io/app/flows/rLP9x4JJoyjN2F5frt3P (set sharing to "Link only" so it opens for you)
 > **Turn this into the public Google Doc lead magnet + pinned comment.**
 
 ## The 3 names (so you don't mix them up)
