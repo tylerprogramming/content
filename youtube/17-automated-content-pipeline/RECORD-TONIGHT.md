@@ -24,7 +24,9 @@ The redo of your #1 video ever, remade with your bigger skill stack. You show th
 8. **CTA + Outro** (13:30-14:15) - free pack + newsletter (free.tylerai.dev/youtube) + doc/GitHub, soft Skool, "start with one skill," subscribe.
 
 ## On-screen assets to have ready
-- The Word doc "The Content Pipeline Starter" (skill structure + plain-English template for one skill + command list) - SHOW on screen in Module 3
+- **"The Content Pipeline Starter" doc (LIVE in Drive)** - SHOW on screen in Module 3, link it in description + pinned comment:
+  https://docs.google.com/document/d/1mcVEQ5OID51AsLIbLEX4dv7c0UOAeHwznlBfmyAme4Y/edit
+  (In "Tyler AI - YouTube Resources" folder. Source: `_resources/content-pipeline-starter.md`. Set sharing to "Anyone with the link - Viewer" before publishing.)
 - GitHub repo of the skills - SHOW in Modules 3 + 4
 - Real package files to open live (titles.md, script.md from a real package)
 
