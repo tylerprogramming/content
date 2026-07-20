@@ -8,9 +8,9 @@
 
 ---
 
-## Current Stage: WITH SPONSOR FOR APPROVAL (2026-06-27)
+## Current Stage: PUBLISHED — LIVE 2026-07-05 (`nFen2thkbmg`)
 
-Edited cut received and processed. Uploading to Granola for their approval.
+Sponsor approved, published 2026-07-05. Partnership delivered. Post-publish repurpose/social still open.
 
 ## Done
 - [x] Edited cut delivered (11:59)

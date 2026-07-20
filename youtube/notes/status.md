@@ -3,8 +3,8 @@
 > **Live pipeline state — the operational source of truth.** What's recording next, what's with the editor, what's queued.
 > For full content inventory across all platforms, see `~/content/system/tracker.md`.
 >
-> **Open this first.** Last updated: 2026-07-06
-> **Also tracked in ClickUp:** YouTube list (id 901710640585). Keep both in sync on every stage change — this file is the source of truth. (ClickUp MCP offline 2026-06-29 — sync there when reconnected.)
+> **Open this first.** Last updated: 2026-07-20
+> **Also tracked in ClickUp:** YouTube list (id 901710640585). Keep both in sync on every stage change — this file is the source of truth. (ClickUp synced 2026-07-20.)
 
 ---
 
@@ -16,12 +16,14 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 |---|---|---|
 | ✅ published 07-03 | Claude Cowork Full Course | LIVE (`aOECs8oPZ2c`) |
 | ✅ published 07-05 | Granola AI (paid) | LIVE (`nFen2thkbmg`) |
-| ~next slot | Claude Routines | with editor |
-| ~next slot | GPT Image 2 vs Nano Banana Pro (`14`) | with editor |
-| ~next slot | Claude Tag (timely — film this week) | film next |
-| ~next slot | AI Video Editor (`12`) | film next |
+| ✅ published ~07-08 | GPT Image 2 vs Nano Banana Pro (`028`) | LIVE (`h5VtHSXY8Hc`), repackaged 07-09 |
+| ✅ published 07-19 | ElevenLabs Flows Agent (`034`) | LIVE |
+| ~next slot | Claude Routines (`024`) | with editor |
+| ~next slot | AI Video Editor (`026`) | with editor |
+| ~next slot | YouTube 1-Person Business (`027`) | with editor |
+| ~next slot | Claude Tag (`029`) | film next |
 
-**Weekend rule:** film 2 (batch) on Sat/Sun → publish 2 the next week. Next to film: `15` Claude Tag (timely) + `12` AI Video Editor, then prep `14` Nano Banana.
+**Weekend rule:** film 2 (batch) on Sat/Sun → publish 2 the next week. Editor has 3 in flight (`024`, `026`, `027`); next to film: `029` Claude Tag.
 
 ---
 
@@ -31,6 +33,7 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 |---|---|---|
 | **I Automated My Video Editing With Claude Code** | `026-ai-video-editor/` | Recorded 2026-07-06. Workflow showcase (Hyperframes studio + registry captions + Claude Code, silence cut). Post-edit: /chapters, finalize packaging (thumbnail "AI EDITED THIS" / "NO TIMELINE"), queue upload. |
 | **Claude Routines + Claude Code** | `024-claude-routines-content-system/` | Recorded 2026-06-22. Post-edit: /chapters, finalize showcase title + thumbnail, queue upload. |
+| **I Run My Entire YouTube Channel With AI (Watch This)** | `027-youtube-1-person-business/` | With editor as of 2026-07-20. Focused showcase (not the 60-90 min course). Post-edit: /chapters, thumbnail, queue upload. |
 
 ---
 
@@ -39,7 +42,8 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 | Video | Folder | Notes |
 |---|---|---|
 | The Best AI Image Model for YouTube Thumbnails (I Tested 3) | `028-nano-banana-vs-gpt-image/` (`h5VtHSXY8Hc`) | **LIVE ~2026-07-08. FLOPPED** at ~1.4% CTR / ~50 views on the "NOT DETHRONED" package. Kill-trigger tripped 2026-07-09: title swapped to "The Best AI Image Model for YouTube Thumbnails (I Tested 3)" + thumbnail = `thumbnail_KING_final.jpg` ("The KING" gold text above crowned image, GPT Image 2 remix, LIVE 2026-07-09). Watching CTR. |
-| Granola AI: "I Connected Granola to Claude Code" | `granola-claude-code/` (`nFen2thkbmg`) | **LIVE 2026-07-05** (PAID partnership). 84 views day 1. Post-publish: repurpose/social not done. |
+| ElevenLabs Flows Agent | `034-elevenlabs-flows/video-2-flows-agent/` | **LIVE 2026-07-19.** Ambassador lane. Post-publish: repurpose/social not done. |
+| Granola AI: "I Connected Granola to Claude Code" | `025-granola-claude-code/` (`nFen2thkbmg`) | **LIVE 2026-07-05** (PAID partnership). 84 views day 1. Post-publish: repurpose/social not done. |
 | Claude Cowork Full Course | `023-claude-cowork-full-course/` (`aOECs8oPZ2c`) | **LIVE 2026-07-03.** 178 views in 3 days — best launch of the June batch. Post-publish: repurpose/social not done. |
 | Claude Cowork Clearly Explained | `021-claude-cowork-clearly-explained/` (`7ND_buIAQfA`) | **LIVE.** Repurposed 2026-06-29: 3 emails + full social (X, LinkedIn, YT Community, IG, 7 Pinterest pins) in `social/`. IG carousel pending Tyler's new look. Nothing scheduled/sent yet. |
 | Claude Code Skills: The Only Course You'll Ever Need | `012-skills-full-course/` (`9ZsZgnWrs_E`) | LIVE 2026-06-21. Thumbnail B now (swapped from A, CTR ~3%). Tracking daily — see `analytics/daily-tracker.md`. |
@@ -71,7 +75,6 @@ The winning lane = **"I Automated My ___ With Claude Code"** (showcase). Mirrors
 | 🎙 ElevenLabs (timely) | ElevenLabs Can Make Full Videos Now (Voice+Image+Video) | `(to build)` | New EL Image+Video launch. Low competition. |
 | 🎙 ElevenLabs ($/builder) | I Built an AI Receptionist with ElevenLabs | `(to build)` | ElevenAgents. Hits #1 builder audience ("you could sell this"). Smaller lane, monetization play. |
 | Showcase (to build) | I Automated a Month of Content in One Prompt (Claude + Blotato) | `(to build)` | Blotato lane (Koen 31K); founder-tag play. |
-| ⭐ Showcase | I Run My Entire YouTube Channel With AI (Watch This) | `027-youtube-1-person-business/` | Reshaped from the course → focused showcase. |
 | — | Claude Code Email System | `014-claude-code-email-system/` | |
 | — | 100+ Pieces of Content Per Week | `015-100-pieces-content-pipeline/` | Overlaps `13` — merge/retire |
 | — | Claude Code for Content Creators | `016-claude-code-for-creators/` | Underserved non-dev niche |
