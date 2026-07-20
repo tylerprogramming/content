@@ -1,0 +1,24 @@
+Paid partnership with Granola. This video is sponsored by Granola. The connection and every demo are real, I set it up myself and I use it every day.
+
+I connected Granola to Claude Code so my AI can reason across every meeting I have ever had, not just summarize one note. I install Granola's official MCP server in Claude Code live, then run three real demos: mining content ideas from recurring client questions, drafting follow-up emails in my tone, and building a scoped proposal from every meeting with one client.
+
+CHAPTERS
+0:00 - My AI remembers every meeting
+0:14 - The real problem with meeting notes
+0:40 - What Granola is (no meeting bot)
+1:20 - Installing Granola and a quick tour
+2:56 - Recording a meeting live, no bot
+3:47 - Connecting Granola to Claude Code (live MCP install)
+5:10 - Demo 1: mining content ideas from my meetings
+6:45 - Demo 2: follow-up emails in my tone
+8:58 - Demo 3: a proposal across every meeting with one client
+10:54 - Why these two compound
+11:32 - Set this up yourself
+
+SET THIS UP YOURSELF
+- Try Granola free: [Granola to confirm the exact link]
+- The link gets you a free trial of Granola Business, including the MCP integration shown here plus Notion, Slack, HubSpot, and Zapier.
+- Granola is for Mac, Windows, and iPhone.
+
+More ways I wire AI tools together, in my free community:
+https://www.skool.com/the-ai-agency

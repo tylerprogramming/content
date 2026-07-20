@@ -1,0 +1,406 @@
+[00:00] So I figured out how to turn Claude Code into the best business partner I could ask for,
+[00:04] and I made three times more money in the past 30 days. You see, Claude has these problems that a
+[00:08] lot of people don't ever notice, and every one of those is costing you time and money on stuff
+[00:12] that's never going to work. So what I did is I built a set of four upgrades to fix every one of
+[00:17] those issues. So these four upgrades turn Claude into something that actually makes you money
+[00:21] instead of just wasting your time. And it doesn't matter if you're trying to build an app, or you're
+[00:24] running an agency, or you're doing AI consulting, this works for anything that you want to do
+[00:28] inside of Claude Code. So in this video, I'm going to show you guys the four upgrades and exactly how
+[00:32] you can use them to make more money. So let's get into it. Claude has a few habits that quietly work
+[00:37] against what you're trying to do. Little things that you might not think twice about. So think
+[00:40] about how most people use Claude. You open it up, you type what you want, you get an answer,
+[00:44] and you just kind of assume that that is the best possible answer that you could have gotten.
+[00:47] Because, you know, Claude Code is one of the best AI tools out there, and the models underneath it,
+[00:51] like Opus, are super, super smart. So it's very easy to just trust what it says. But there are
+[00:55] these errors that are baked into Claude's design that make your results worse than they should be.
+[00:59] So by default, Claude is tuned to make you feel productive. It is not tuned to make you money. And
+[01:04] these are two completely different things. And every one of those design errors is costing you
+[01:08] money, because your income is basically capped by two things. The first one is the quality of your
+[01:12] output, and the second one is how fast you can produce it. So the better the output you get,
+[01:16] and the faster you get it, the more money you can make. I'm sure we can all think of many specific
+[01:20] moments where it felt like Claude was just trying to get us to spend more tokens, or was lying to
+[01:23] us about features that it had built, or, you know, you feel like you're just repeating yourself a ton.
+[01:27] But the good news is, you don't need to go rewrite Claude's codebase to fix any of these things. You
+[01:31] literally just need these four upgrades. And before I started using these, I remember launching
+[01:35] promotions that did not do very well at all, or shipping automations that were silently failing,
+[01:39] or pushing out websites or apps with a ton of bugs. So that's basically the whole arc. But before
+[01:43] we get into the first upgrade, if you want to get these prompts and skills and see how your results
+[01:47] get better, then you can get them for completely free inside of my free school community. The link
+[01:51] for that is in the description. Okay, so the first upgrade fixes the biggest one, which is just Claude
+[01:56] agreeing with everything you say. I mean, haven't you guys ever noticed that you tell Claude you want
+[01:59] to do something, and it pretty much will always say like, hey, that's a great idea, you're really
+[02:03] smart, because it wants you to like it. But then, what actually happens if you say like, you know
+[02:07] what, I changed my mind, it will once again come back and say, you know what, you're really smart,
+[02:11] I'm glad you changed your mind, that's a great idea. And it's getting better over time, as the
+[02:14] models are just getting smarter and smarter, but this is actually documented. Researchers call it
+[02:19] which is just a fancy word for AI being a yes man. There's a study also called Elephant, which
+[02:23] measures exactly this. And they found that AI models fail to push back on the way you frame
+[02:28] something about 88% of the time. And for humans, it's around 60%. And it actually gets worse, the
+[02:33] more the model knows about you. Researchers at MIT and Penn State found that the personalization
+[02:37] and memory features tend to make the model more agreeable over a long conversation. And so that's
+[02:41] tough, because basically, the longer you work with it, and the more you use it, which is what we all
+[02:45] really should be trying to do, the better it gets at telling you what you want to hear. So this is a
+[02:49] pretty simple fix. You ask Claude to start challenging you and pushing back and playing
+[02:53] devil's advocate before it builds anything or before it approves any plan. And that's the whole
+[02:57] idea behind a skill that I built called Roast. It basically pulls Claude out of agreement mode,
+[03:01] and it forces it to stress test your idea and its own work instead of just approving everything.
+[03:05] So basically, what Roast does is it spins up a whole council of personas, and they attack it
+[03:10] from different angles. You've got a contrarian, whose only job is to find fatal flaws. We've got
+[03:14] an expansionist who's looking for the biggest upside. We've got a first principles thinker who's
+[03:17] working with no outside context, just pure logic. We've got a deep researcher that actually goes in
+[03:22] and pulls out a bunch of real market data and competitor pricing off the web. And then we have
+[03:26] the buyer, who actually role plays being your customer and tells you straight up if they buy
+[03:30] the thing or not. And then finally, the judge takes all of those findings and gives you one
+[03:34] verdict. You basically get green light, reshape, or kill. And it also gives you the single cheapest
+[03:38] test that you can run in the next 48 hours to find out if the idea is even worth pursuing,
+[03:43] even if it was reshaped. And so what I'm going to do is throughout this whole video, I'm basically
+[03:46] just going to build a little business from start to finish so you can see each upgrade working on
+[03:50] something real. So the idea that I want to build out is a $9 a month tool that turns a YouTube
+[03:55] transcript into a week of LinkedIn posts. So let me actually just go open up Cloud Code and roast
+[04:00] it live. All right, so here we are right now in a fresh Cloud Code project. You can see right here,
+[04:04] all we have is a cloud.md, which basically has like nothing in it. I just told it that your job
+[04:09] here is to help us make some money. And then we have our .cloud with a skill in here. And this is
+[04:14] the roast skill that I was just telling you guys about. So all I'm going to do is do a slash roast
+[04:18] and say, I have this idea to make a $9 a month tool where people drop in a YouTube video link,
+[04:24] and that transcript gets turned into a week's worth of LinkedIn posts. So I'm going to go
+[04:28] shoot off that message. So as you can see here, before it runs the council, it has three quick
+[04:33] questions to ask us. So the first thing is, who's the actual target buyer for this $9 a month tool?
+[04:39] Let's just keep this as broad as possible for now and really see what the council can do. I'm going
+[04:42] to say anyone with a YouTube link. What is your edge here? What do you already have? Let's just
+[04:46] say that we have no real edge. We have no distribution, but we can build something fast
+[04:50] with Cloud Code. And we'll shoot that off. And then what are our constraints and budget? How
+[04:55] fast do you need to get the first dollar? Let's just say we have a little bit of runway, but not
+[05:00] too much. So we'll shoot off those answers. And now we should see the actual council get spun up.
+[05:04] So here is the brief that the council is going to judge. And we're going to see each of these
+[05:08] agents get spun up, the contrarian, the expansionist, and then the other ones. And while
+[05:11] this is running real quick, what I want to do is take this, open up another session, and just say,
+[05:16] this is my idea, and just say, do you think this is good? Do you think this will work? Do you think
+[05:20] I can make money? And it'll just be cool to come back to that after we see what the council says
+[05:25] and see what it would have said if we didn't do that. So anyways, you can see we have now these
+[05:29] five subagents running. And I will check in with you guys when that is finished up. Okay, so the
+[05:33] verdict here is to reshape. And the confidence in that is very high. So in one line, it says,
+[05:38] kill the $9 YouTube to LinkedIn posts product exactly as described. It's a free no login
+[05:43] commodity wrapped in a subscription that's structurally built to churn. But keep the
+[05:47] engine and aim it at a narrow paying niche with the two features that are the actual moat, which
+[05:51] is provable voice matching and direct scheduled posting. So here you can see it goes into the why.
+[05:56] It goes into our biggest risk, which is no moat and a free substitute and no distribution with
+[06:00] no audience and a few hundred dollar budget. CAC, which is customer acquisition cost, will exceed a
+[06:05] $9 LTV, lifetime value, on day one. And you'd ship a polished MVP, minimal viable product,
+[06:11] to single digit signups. It goes over the biggest upside if we do want to look glass half full,
+[06:16] the money read, the cheapest 48 hour test. So what it recommends we do before we go write any
+[06:20] code, which would be pick one niche, DM or email 20 to 30 of them, and see if there's actually
+[06:26] a market there. See if people would pay for that. So here's the overall score. The contrarian gave
+[06:29] us a 2 out of 10. Expansionist gave us an 8 out of 10. We got a 3 out of 10, a 2 out of 10, and a 2
+[06:33] out of 10. So obviously we would want to reshape this idea. Now let's just go over real quick to
+[06:38] the basic cloud and see what we got. Looks like there's a few questions I have to answer, so let
+[06:41] me do that real quick. Actually I have to run this again because it actually used the roast skill
+[06:45] without me asking it, which proves that it's, you know, that that's good, right? But let me just run
+[06:49] this again and explicitly say don't use the roast skill. And now this one has come back. It did give
+[06:54] us a good analysis. It said like, you know, this probably is something that you want to rework a
+[06:57] little bit before you actually go ship it, but this advice is so much more generic and we didn't
+[07:01] get the right perspectives, and it doesn't even really tell us what we should do in order to
+[07:06] actually push this out the door. And because we just got Opus 4.8 and the models are going to get
+[07:10] better and better, the whole sick of fancy thing is something that all of these model providers are
+[07:14] aware of and, you know, taking steps to make sure that it's not just a yes man. But clearly if you
+[07:18] compare these two outputs, getting sort of a counsel that has different areas of expertise
+[07:23] and different personas is going to be much better to actually help you analyze business
+[07:27] decisions and look at what you should be doing in order to make money. So that is how the roast
+[07:31] skill works. Even if you don't want to use that exact skill, I think the methodology of having
+[07:36] your ideas always be stress tested, always have a devil advocate, look at it from different
+[07:40] perspectives is the best way to make a good decision. Even if it's not explicitly about
+[07:44] making money, it's a really good way and a really great way to just default when you're talking to
+[07:49] Claude or any AI model for that matter. All right, so that was roast. Now, once Claude actually
+[07:54] builds something for you, there's one step that it almost always skips and it's the one that can
+[07:58] cost you days to fix. So Claude will hand you something that looks finished, but something
+[08:02] being finished and something actually working are not the same thing at all. And this is, once again,
+[08:06] a real measured problem. There was a study out of NYU where researchers reviewed around 1600 programs
+[08:11] generated by GitHub Copilot. Well, we all know that Copilot isn't the best, but anyways, roughly 40%
+[08:17] of them had security vulnerabilities in them. And the scary part about these mistakes is that
+[08:20] they're super easy to miss. So a lot of the time you don't even know they exist until something
+[08:25] crashes in front of a client or in some sort of like worst case scenario for something to crash,
+[08:30] like a live demo. I remember one specific time where we were shooting off a bunch of emails to
+[08:33] people who wanted to work with us, but we basically didn't have capacity. So we were shooting off
+[08:37] emails to let them know. And we had hundreds of people to reach out to. And so the agent that I
+[08:40] was building told me that had sent out all those outreach messages. And I didn't know until four
+[08:45] days later that, you know, I checked the email and saw that it only sent about the first 25% of
+[08:49] them. So I'm not exactly sure why, because it confidently told me, yeah, I sent off all those
+[08:52] emails. Everything is good to go. So not only did it not do what it was supposed to, but it also
+[08:57] lied about it. And so in that situation, it wasn't really a huge deal, obviously, because that wasn't
+[09:01] like a super high risk situation where it costed us a ton of money. But imagine what it would have
+[09:05] looked like if it was legitimately building a bunch of dark code, meaning, you know, code that you
+[09:09] didn't write and it's shipping features or building out automations. That's a pretty legit like big
+[09:14] deal, which if it lies about it or does it poorly, that really could result in your business losing
+[09:18] a ton of money. The fix here is to make Claude check its own work before it ever hands it to you
+[09:22] and then also having it check the work that it already handed to you. So think about like how
+[09:26] cars get built at the factory. They test out every single piece of the car on its own. And then when
+[09:31] the whole thing comes together, they test it a bunch again. And that's basically the methodology
+[09:35] that we want to work with when we're using Claude. This one's a little different from the others
+[09:38] because it's not really like a prebuilt skill that I can give you. Like I said, it's more of a
+[09:42] methodology. It's more of a mindset shift. And there's two parts to it. Like I said, the first
+[09:45] part is verification before Claude ever hands something to you. You want it to check the work
+[09:49] as it goes. And then, of course, by the time it tells you it's done, you stress test it more and
+[09:53] you try to find those edge cases that you collectively didn't think about both you and
+[09:57] Claude were planning. Now, how you actually do that, like stress testing or the verification,
+[10:02] is a little bit different depending on what you're actually building. Because if you're trying to
+[10:06] verify a landing page, that's totally different than verifying like an edited video or a data
+[10:10] pipeline or something like that. So this isn't just like one magic button you can press. Like I
+[10:14] said, it's more of a habit that you bake into Claude and more of the way that you prompt and
+[10:18] the way that you think about working with Claude Code. So let me show you guys what this actually
+[10:22] looks like. I'm going to have Claude build out a landing page with a waitlist form for our app or
+[10:27] our product. And then it's going to verify it with screenshots. And it's going to look at this page
+[10:30] as if a real person was actually looking at it. And then we're going to have it stress test it by
+[10:34] clicking through the buttons, submitting a bunch of forms, and trying to break it and see if
+[10:37] there's anything that we need to fix. Okay. So now it's recommendation for us to verify if this
+[10:43] is going to work was to DM some people and get the proof of concept, right? And so what we want
+[10:47] to do is have a landing page to actually send them to somewhere that shows the features and the brand
+[10:52] and gives it a feel. And then also has a little bit of a waitlist to see if people actually opt
+[10:56] in. So I have this prompt here. I'm not going to read the entire thing and I will kind of slowly
+[10:59] scroll through it if you want to pause and look at what I've written up here. But the idea is that
+[11:03] we have a verification loop. So right here, right after you build it, do not trust that it looks
+[11:07] right. Verify yourself with Playwright. And I need to add CLI here before reporting back. So start the
+[11:13] local server, use Playwright CLI, which is just basically computer use. So it can open up the
+[11:17] actual website, look around, take screenshots, click around, things like that. And it needs to
+[11:21] verify it. So screenshot each section individually, look at them. And if you need to, you'll come back
+[11:26] and iterate, right? So the whole point is you repeat the loop and you iterate and you only stop
+[11:30] once every section has been screenshotted at both viewports and there are no visible errors and the
+[11:35] waitlist form looks clean. And I gave it down here a definition of done. So what I'm going to do is
+[11:40] copy this prompt and just put it right in there and hit go. Now, obviously, like I said earlier,
+[11:45] depending on your actual, whatever you're building right here, your verification loop will look a
+[11:50] little bit different. In this case, it's able to look visually, take screenshots, things like that.
+[11:53] But the whole idea is a lot of times on the first shot, you might hear this thing called like one
+[11:57] shot prompt on the first shot. AI will maybe get you, let's just say 65% of the way there. And your
+[12:02] job then is to review and to judge and add your taste and go back and forth. But what if you could
+[12:06] have AI gets you 90% of the way there first, and then you iterate from there. And the whole idea of
+[12:11] verification and checking its work on the way is where you can have it be a little bit less lazy.
+[12:15] And it doesn't actually stop until it gives you something that you can basically quickly review
+[12:20] and shoot off because it's a complete waste of time if it gives you something. And then you have
+[12:23] to make all these changes, right? Like think about it. If you wanted someone who reports to you,
+[12:26] an actual human, you would want them to give you a report that you're able to just review once over,
+[12:30] and it all looks good, and it's all real. You wouldn't as much value the employee who's giving
+[12:35] you things to review. And every single time he or she hands you something, you have to make a ton
+[12:38] of changes. So as you can see, it is throwing together this little task list, and it's going
+[12:43] to go through and run the verification loop and fix until there are zero errors. So I will just
+[12:47] check in with you guys when that is done. Okay, so everything checks out end to end. Apparently,
+[12:52] it's done and verified, not just asserted. We have a live URL, which I'll click open in a sec,
+[12:57] but let's see. It said it built a single page premium waitlist landing page for cadence with
+[13:01] all eight sections. Verification loop actually ran and passed. Playwright took screenshots of
+[13:06] all the sections. If I open up this folder right here that you can see it made, cadence landing,
+[13:09] we have like the actual code that went into the building out the site. We have the nodes,
+[13:14] but right here we have screenshots, and we can see desktop. We have 11, and on mobile,
+[13:18] we have also 11 that were taken. So that is really, really nice to see. And just to show
+[13:22] you guys, if I clicked in here, we can see that it's actually looking at what the page looks like
+[13:25] based on mobile or desktop view. And that's how it's able. I mean, obviously this is pretty AI
+[13:30] sloppy. Like it's very generic. That's not the point. The point I'm trying to make right now
+[13:34] is the verification loop, right? Obviously we could do things from a design perspective to make
+[13:37] this feel more branded, to feel less AI created. So anyways, let's take a look now at the actual
+[13:42] site. If I click open here, we're in the VS code in app browser sort of thing. We can see cadence
+[13:47] features. Click on this button, that zooms us down, how it works, pricing. Let me just zoom
+[13:51] out this a little bit. There we go. Join the wait list, brings us down here to this section.
+[13:55] We have different LinkedIn followers, annual revenue, stuff like that. And these buttons
+[13:59] down here work as well. So from a visual perspective, besides the fact that it is pretty
+[14:03] AI generic, it's good, right? Like everything is in line. Nothing's out of bounds. All the text
+[14:07] is readable. The sections are clean. There's not any like bugs or glitches. M-dash. Uh-oh. But
+[14:13] anyways, that is showing us how we can get outputs using sort of a verification loop. Now,
+[14:17] we can even take this one step further. Part of having it check its own work is not just in the
+[14:21] build process, but it's also in stress testing process, right? So because we have the ability
+[14:26] with our website to test out and making sure that things are functional, we haven't yet tested
+[14:31] filling out the form. So what I can say is, awesome. So what I want you to do now is use
+[14:34] Playwright CLI and open up a headed browser and show me that you are submitting forms and do
+[14:40] multiple passes of submitting forms with different dropdown options and, you know, different types of
+[14:45] emails, different types of phone numbers, basically just to stress test this thing to make sure that
+[14:49] there's no bugs in the form submission aspect of this site. And so when I say headed browser,
+[14:53] that just means that I can like watch it rather than a headless browser would be running in the
+[14:57] background and we wouldn't see it even though it is actually going on and working in the background.
+[15:02] So here you can see it just opened up a tab. It just submitted a form and it's filling out
+[15:06] a bunch of different versions right here. It's doing it really quick, right? We saw
+[15:09] different dropdown options, different types of emails, different types of names, and obviously
+[15:14] we don't have any backend configured yet, but that would be the next step, right? We could configure
+[15:18] a backend and then have it tested out more. It even, I don't know if you guys saw that,
+[15:21] it was trying out putting spaces in weird spots. It was putting some spaces before the email. There
+[15:25] we go. We just got a bug there where it wasn't a valid email right there again. So we're seeing all
+[15:29] of these edge cases that humans might actually get. There's another one, right? And so the idea here is
+[15:34] that it's finding things that you might not be able to think of, or you don't want to sit here
+[15:38] and manually do that, right? So that is what's really cool about this because we get the creativity
+[15:42] of a model like Opus, and then we get the ability for Cloud Code to actually do stuff like this.
+[15:48] And now we understand what all the edge cases are and what users might do. Anyways, I'm going to go
+[15:53] ahead and just let this keep running, but two parts of having it check its work on the build
+[15:57] side to save you some time. And then of course on the stress testing side to also save you some
+[16:01] time. Looks like it found all the edge cases and it decided that that was good enough for that first
+[16:05] run. Right here you can see all 22 of its 22 tests passed. So it's going to pull the evidence, it's
+[16:10] going to look at those passes and the rejections, and then basically just let us know what we need
+[16:15] to change, if anything. So there you go. We can see we had eight valid submissions and then we had 14
+[16:19] malformed submissions, but then it said two honest non-blocking notes, no duplicate guard, so the
+[16:24] same email could join twice, and email validation is intentionally lenient, so structure only, not
+[16:29] deliverability. Meaning people could submit a fake email, but if it fits the structure of like name
+[16:35] at domain.com, it will go through, so there's not a deliverability check. So those are two things that
+[16:40] if we wanted to action, we could action, that honestly I wouldn't, I didn't think about right
+[16:43] away, you know, in our initial build. So very, very helpful. All right, so those were the first two
+[16:47] upgrades. Now those work for every single output Claude gives you, but to make them work you actually
+[16:52] have to get the output in the first place. And most of the time the reason people move slow has
+[16:55] nothing to do with what they're doing when they work with Claude, it's that they literally hit a
+[16:59] wall. The conversation starts to fill up, Claude gets slower, it gets worse, it starts to, you know, burn
+[17:03] through your usage limit, and it feels like it just has no memory. And once again, there's a study on
+[17:08] this, it's basically called Context Rod. Researchers tested 18 of the top AI models out there, including
+[17:13] Claude, and every single one of them starts to perform worse as the conversation gets longer. Even
+[17:17] if it's really, really simple tasks, that's where you start to get just so much degrading in the
+[17:22] performance and, you know, hallucinations. And the problem is that drop-off starts way before anywhere
+[17:27] near the context window being completely full. So more is not better, and a longer conversation
+[17:32] literally makes Claude get dumb. So think about Claude's context like a desk. If you piled up a bunch
+[17:36] of paper onto it and then you needed to find one specific document, it's going to be way harder to
+[17:40] find, it's going to take you way longer because there's so much information in there. And on top of
+[17:43] that, if you're not running the best version of Claude, meaning like the best most capable model,
+[17:47] whether that's Opus 4.8 or whatever it might be, it's going to design things worse, it's going to
+[17:51] build sloppier code, and it might even get worse at the reviewing and the verification and the stress
+[17:56] testing. So those two things that secretly decide whether you make money with Claude are managing
+[18:00] your context and making sure you're working with the right model for the right use case. So the fix
+[18:04] here is handling your context properly. There's a lot of things that go into that, but basically just
+[18:08] making sure that you're taking care of that and it's on top of your mind before it quietly wrecks
+[18:12] your outputs. And there's a couple commands worth knowing here. So first one is using slash context,
+[18:16] which lets you see exactly what's eating up your context window. Slash clear lets you wipe the whole
+[18:21] thing and start fresh. Instead of using slash compact, which like compacts your conversation
+[18:24] and then you can, you know, keep going, I built my own custom skill called slash session handoff. So
+[18:29] before I ever clear anything, I run session handoff. It writes me a summary of everything
+[18:32] that matters, what we're working on, the key files we produced, or key files that hold information,
+[18:36] any open decisions that I've made, and then basically exactly where to pick back up. So all
+[18:40] I have to do is run the session handoff, copy that message, clear the context, paste it back in, and
+[18:44] now I'm sitting in a completely clean window, but I'm basically just picking up exactly where I was
+[18:49] and it doesn't feel like I lost anything. Now let me show you what types of things you want to think
+[18:53] about when it comes to making sure you're not hitting that context rot territory. So the first
+[18:56] thing, and the reason why I'm using this CLI version right now, what I typically use anyways,
+[19:01] you can see my status line down here. What I'm looking at is throughout my sessions, I can see
+[19:06] the model I'm using, what the context window is, I can see the effort that's being used, I can see
+[19:10] basically a visual indicator of how much of my context window has been filled up. So 12 percent,
+[19:15] which is about 125,000 tokens out of our a million token window. I don't really like to let this
+[19:21] really pass like a quarter million. Whenever this passes a quarter million, I typically tend to
+[19:25] start a new session. So a couple things that you want to leverage, right, we talked about slash
+[19:28] context. So if I do this, this is going to actually show me and visualize what is going on in our
+[19:33] session. So we can see, wow, all of these MCP servers might be, well, these aren't actually
+[19:37] taking tokens, these are load on demand, but if they were loaded in, that would be a lot of tokens.
+[19:41] We can see we have free space, we have skills, memory files, system tools, system prompts,
+[19:45] all of that kind of stuff. And this also will show us, you know, how many tokens roughly for
+[19:50] each of those items. And this is good to be able to clean up your products a little bit if you
+[19:53] want to make sure you're not starting off with just a ton of context already eaten up. It also
+[19:57] right here gives us a suggestion. So read results using 490,000 tokens, 49 percent. So you could
+[20:02] save about 140,000 tokens here. But anyways, that is one thing. You could also do a slash compact
+[20:08] or cloud code has its auto compact. But honestly, I don't leverage this very much. It takes a long
+[20:12] time. I basically built my own skill, which is called session handoff, which I will give you
+[20:16] guys for free, of course, in the free school community. But when I run my session handoff
+[20:19] skill, I've basically prompted this thing to give me a summary of what we've done. You know what?
+[20:24] I'll just wait till this runs and I'll show you exactly what it gives us. All right. So this is
+[20:27] the session handoff. We get where it started, decisions that are locked and what shipped key
+[20:31] files, running state verification, deferred and open questions, and then pick up here.
+[20:36] So now I can just do a slash copy, which grabs everything that cloud just output to us. I do my
+[20:40] slash clear. You can see the context window completely resets. I paste that in. And now
+[20:44] our project has the exact context that we were basically working in. It has all the files.
+[20:48] It knows where to look. It knows what we're doing and it knows where to pick up. And it's
+[20:50] just super, super helpful to be able to just constantly do a session handoff and clear.
+[20:54] Or even if I wanted to do a session handoff and then move it over to like, I don't know,
+[20:58] a different model or maybe even codex or something like that, I'm able to do so
+[21:01] super, super easily. And sometimes it'll even do something like this where it says,
+[21:04] I've got the handoff. Let me quickly confirm the current running state before I recommend
+[21:08] our next move and we keep working. So that skill is super, super helpful and easy to use.
+[21:14] Okay. So this is now the last upgrade. And once you start using it, you'll produce more
+[21:18] progress in a single day than most people can produce in a week. So no matter how good your
+[21:22] prompts are, there's still one hard limit. And that's the fact that you can only point
+[21:25] Claude basically one direction at a time because you are the bottleneck. You are the decision
+[21:29] maker and the reviewer. And Anthropic's own engineering team actually tested this directly.
+[21:33] They set up a lead agent coordinating a team of little sub-agents all working in parallel,
+[21:37] and they compared it to a single agent doing the whole job alone. The team set up, obviously
+[21:41] outperformed the single agent by over 90% on their internal research evaluation. So real quick,
+[21:46] in case you don't know what a sub-agent is, a sub-agent is basically a separate Claude that
+[21:49] gets its own tasks and its own clean context window. It works all alone by itself. And then
+[21:54] it reports back to that main terminal session. So instead of one worker doing everything,
+[21:58] one step at a time, you have a whole team of them running and they're each working on one
+[22:02] of the pieces at once. So personally, if I'm doing something like planning out a YouTube video,
+[22:05] I'll maybe have one doing research on a certain topic and one doing research on another,
+[22:09] and one maybe looking through comments on past videos. The key here is anything that can happen
+[22:13] in parallel, independent of each other, I will spin up sub-agents to do that. And then when
+[22:17] everything gets synthesized together, I can take that output and just do whatever I need to do with
+[22:20] it. And then I'm going to add one more thing on top of that, which makes it feel completely like
+[22:24] the future. And that is a command called slash goal. So using goal, that lets you set a finish
+[22:28] line, an actual completion condition. And then Claude will basically just work turn after turn
+[22:33] for as long as it takes until you hit that condition. And the cool part about that is
+[22:36] that there's a separate evaluator. There's a second model that checks every single turn to see
+[22:40] if, you know, done equals true or not. So Claude doesn't get to declare itself done. A different
+[22:45] model has to look at it with a different persona and actually grade it and see if it's done. And
+[22:49] that's what's so cool about it. Because the whole problem in upgrade one was that Claude would just
+[22:52] agree with itself or agree with you too often. So now you have a different one and it literally
+[22:56] separates the worker from the judge. So let me go ahead and give it one job, set the goal,
+[23:01] and run this live. And this last move is cool because it basically stacks every single upgrade
+[23:04] from the whole video into this one test because the idea got validated with the roast. It verified
+[23:09] its own work before declaring done. And that's the verification methodology from upgrade two.
+[23:13] It spins up a whole team of subagents. Each one runs in its own clean context. So nobody hits
+[23:17] the context rot wall. And then we use goal to drive the entire thing home. Okay. So this one
+[23:22] is really, really cool because it combines basically everything that we've talked about so
+[23:26] far. We talked about making sure that we have the right idea by having some sort of counsel and
+[23:30] playing devil's advocate. We then talked about how you can have Claude verify and check its own work.
+[23:34] Then we talked about context and making sure that things are clean. As you can see, we just
+[23:37] set our session handoff. And now we can loop all of that back together by using things like
+[23:42] subagents and slash goal to help us work faster. So if I do slash goal right here, you can see,
+[23:46] it says set a goal, keep working until the condition is met. And then I'm going to basically
+[23:50] just paste in my prompts. So I'm going to shoot this off and we'll see what it says. And you'll
+[23:54] notice that there's elements that we've talked about, like I just mentioned. So we have our
+[23:57] product. So the goal is to build a complete, ready to execute, go to market kit for our product and
+[24:02] save it in this project. The product is obviously our web app. We have our ICP here. And what's
+[24:06] really cool is inside of the goal, we're able to leverage subagents. So use parallel subagents,
+[24:11] one per deliverable. So there should be six and they each have their own context and they're each
+[24:14] going to produce different files that don't overwrite each other. So this is what we're
+[24:18] having it create. And yet down here, you can see that I defined when this thing is done,
+[24:22] which is that all six files exist and none of them are empty. The market research has six plus
+[24:26] competitors. The personalized drafts has 25 number draft, things like this. The more objective you
+[24:30] can be with your goal, the better that it's actually going to work because obviously it's
+[24:33] going to keep working until it thinks that it's done. You also will notice that in here, I said,
+[24:37] after the subagents finish, run a verification pass yourself. So open each file, confirm that
+[24:42] it meets the bar, fix anything thin or generic before you declare yourself done. And so this
+[24:46] is just going to run. And now because I front loaded all of my thinking into that prompt and
+[24:50] set the goal, I can just kind of walk away and do whatever I want and tell this is done. So this
+[24:54] will be running in the bottom, right? It'll say goal active. It'll tell us how long the goal has
+[24:57] been running. And then when it's done, it'll say goal done. So I'll check in with you guys when we
+[25:01] actually have that finished goal back. All right. So that's just finished up as you can see. And it
+[25:05] only took about eight minutes. So one thing about the goal is just because it's a goal and just
+[25:09] because it has a loop ability doesn't mean you have to set goals that are going to run for hours
+[25:13] and hours. I use goal a lot. And most of the time I use goal it's runs that take less than, you know,
+[25:18] 20 to 30 minutes because I'm able to just be super clear about my prompt and just have more
+[25:21] confidence that it's going to achieve the goal. So eight minutes, we have our six different files
+[25:25] and keep in mind this spun up six different subagents and all of the subagents were working
+[25:29] on their files independent in parallel. So that's another reason why this was able to go pretty fast.
+[25:34] But all of these have been verified. All of these have been checked. And now it would be on us to be
+[25:38] able to look at the positioning, the market research, the launch plan, the outreach templates,
+[25:41] the outreach drafts, and the content calendar. And because we've looped together all of these
+[25:45] upgrades and all of these skills, we're in a really good spot now to be able to start executing on
+[25:49] this vision. And think about this in total, all of these demos probably took me under an hour.
+[25:53] And so if you really wanted to go, you know, sort of like spin up a business like this,
+[25:57] you're going to put more than just an hour in, but think about if you put in like a week of
+[26:01] focused work with all of these strategies, ideation, building things out, and then having
+[26:05] this full launch plan and all of this stuff ready to go, where could that take you? And how could
+[26:08] you have just leveraged cloud code to be able to have done something that probably would have taken
+[26:12] a team of 10 and probably would have taken more time. So just to show you what's in here,
+[26:15] if I click on the go to market, we can see, let's just first look at the positioning. We have
+[26:19] our ICP, we have our segment A, our segment B, our core offer, our tier ladder. It was like
+[26:25] pricing got locked at $19.39 and $99 per month. We have upgrade logic, we have our one line value
+[26:31] prop, and we have our three sharpest objections with rebuttals. So I could use ChatGPT for that.
+[26:35] We have, I don't post on LinkedIn enough to need this. AI posts sound fake and will hurt my brand.
+[26:39] So we have good rebuttals for all of those. And we can obviously come through,
+[26:43] read all of this and put our own personal touch on it. We've also got our market research. So
+[26:46] we've got our product, our wedge, our ICP, competitors, which found looks like seven of
+[26:51] them. And we said it needed at least seven. I believe we have some adjacent ones as well.
+[26:54] We've got a full comparison table of these. We've got where cadence fits,
+[26:58] why $19 is the right entry price. So as you can see, all of our sources are here. This is very
+[27:02] in-depth. We've also got our launch plan. So this is a 14 day launch plan, which we would basically
+[27:07] just be able to follow. We've got our outreach and then we would start making our content based
+[27:11] on this calendar. So anyways, that is how we're able to leverage sub-agents, goals, automations,
+[27:16] other things like that to make sure that you stop being the bottleneck. You are very much
+[27:19] changing from the builder and producer to the problem solver, the decision maker, the reviewer,
+[27:24] the judge. That's how you need to leverage this type of technology to help you grow your business,
+[27:28] to help you make more money. So that was the four upgrades. Stop letting it agree with you. So you
+[27:33] build the right thing, make it check its own work. So you ship stuff that actually works,
+[27:36] manage your context. So Claude stays sharp and stop being the bottleneck. Use sub-agents,
+[27:40] use slash goal so that stuff can run without you. So now you can use these upgrades to make
+[27:45] more money using Claude. You can get everything that I talked about today inside of my free
+[27:48] school community. There you'll also find hundreds of free resources and courses and over 400,000
+[27:52] people building with Claude. And if you're ready to go deeper and build an AI business,
+[27:56] then you can join my plus community where we hop on weekly calls to answer your questions. The link
+[28:00] for both of those communities is in the description. But anyways, that is going to do it
+[28:03] for this one. So if you guys enjoyed the video or you learned something new, please give it a like.
+[28:06] It helps me out a ton. And as always, I appreciate you guys making it to the end of the video and
+[28:09] I'll see you all in the next one. Thanks guys.

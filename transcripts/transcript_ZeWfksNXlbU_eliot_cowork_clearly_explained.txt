@@ -1,7 +1,7 @@
 Source: Eliot Prince - "Claude COWORK Clearly Explained (& how to use it for beginners)"
 URL: https://youtube.com/watch?v=ZeWfksNXlbU
 Views: 856K-966K | Channel subs: ~41K | Duration: 18:28 | Uploaded: 2026-02-16
-Pulled via Blotato source extraction 2026-06-17. This is the 966K MODEL VIDEO for package 05-claude-cowork-clearly-explained.
+Pulled via Blotato source extraction 2026-06-17. This is the 966K MODEL VIDEO for package 021-claude-cowork-clearly-explained.
 
 --- TRANSCRIPT ---
 I'll admit something straight off the bat. Even I feel overwhelmed right now and it's literally my job to stay on top of all the newest AI tools and releases. I struggle to keep up. So, if you're sat at home watching this, then I can only imagine it's 10 times worse trying to keep up with all of this so overwhelming. Now, in my last video, I showed you how to migrate from chat GPT to Claude. But if you're just using Claude as a chat GPT replacement and you're missing out on some of the biggest features, the biggest release recently has to be Claude Co-work. And I want to walk you through it step by step, super simple, so you can understand it, too. How to install it, how to start using it for yourself. Even if you feel like you're a complete AI newbie, let me show you every single step.

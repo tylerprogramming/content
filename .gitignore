@@ -52,3 +52,7 @@ submagic/
 
 # Tyler's call — custom GPTs stay local only
 custom-gpts/
+
+# cloned reference repos (study material, not ours)
+research/skills-frameworks/mattpocock-skills/
+research/skills-frameworks/superpowers/

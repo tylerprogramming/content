@@ -14,17 +14,17 @@
 ### Active queue (numbered 01-11 = record order, root of `youtube/`)
 | # | Title | Folder |
 |---|---|---|
-| 01 | 3 Skills + Live Build | `youtube/01-3-skills-and-build/` (read.md ready) |
-| 02 | Skills Full Course | `youtube/02-skills-full-course/` (⚠️ needs writing, sources nested) |
-| 03 | Routines + Code Stack | `youtube/03-claude-routines-content-system/` |
-| 04 | Cowork 30-Min Course | `youtube/04-claude-cowork-course-30/` |
-| 05 | Email System | `youtube/05-claude-code-email-system/` |
-| 06 | 100+ Pieces of Content | `youtube/06-100-pieces-content-pipeline/` |
-| 07 | Claude Code for Creators | `youtube/07-claude-code-for-creators/` |
-| 08 | Claude Code + Remotion | `youtube/08-claude-code-remotion/` |
-| 09 | Design: 5 Landing Pages | `youtube/09-claude-design-5-landing-pages/` |
-| 10 | Design: Rebuild Stripe | `youtube/10-claude-design-rebuild-stripe/` |
-| 11 | Design + Kling Animated | `youtube/11-claude-design-kling-animated-hero/` |
+| 01 | 3 Skills + Live Build | `youtube/videos/011-3-skills-and-build/` (read.md ready) |
+| 02 | Skills Full Course | `youtube/videos/012-skills-full-course/` (⚠️ needs writing, sources nested) |
+| 03 | Routines + Code Stack | `youtube/videos/024-claude-routines-content-system/` |
+| 04 | Cowork 30-Min Course | `youtube/videos/013-claude-cowork-course-30/` |
+| 05 | Email System | `youtube/videos/014-claude-code-email-system/` |
+| 06 | 100+ Pieces of Content | `youtube/videos/015-100-pieces-content-pipeline/` |
+| 07 | Claude Code for Creators | `youtube/videos/016-claude-code-for-creators/` |
+| 08 | Claude Code + Remotion | `youtube/videos/017-claude-code-remotion/` |
+| 09 | Design: 5 Landing Pages | `youtube/videos/018-claude-design-5-landing-pages/` |
+| 10 | Design: Rebuild Stripe | `youtube/videos/019-claude-design-rebuild-stripe/` |
+| 11 | Design + Kling Animated | `youtube/videos/020-claude-design-kling-animated-hero/` |
 
 ### Live — `youtube/_completed/` (chronological)
 | Title | Folder | Notes |
@@ -43,7 +43,7 @@
 
 ### Scripted, not yet recorded
 All scripted videos are now the numbered **Active queue** above (`01-11`). R2 source
-packages live nested in `youtube/02-skills-full-course/sources/`.
+packages live nested in `youtube/videos/012-skills-full-course/sources/`.
 
 Parked full scripts (in `youtube/_ideas/`, pull back into queue anytime):
 | Title | Folder | Length |
