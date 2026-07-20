@@ -1,0 +1,270 @@
+[00:00] This ran at 5 a.m. while I was asleep.
+[00:02] My AI read my inbox, drafted every reply,
+[00:04] and it handed me a summary before I woke up.
+[00:07] And I didn't touch it.
+[00:08] This is called a Clawed Routine.
+[00:10] Everybody's saying routines are killing anything.
+[00:12] Well, that's wrong.
+[00:14] The real story is whenever you combine routines
+[00:16] with Clawed Code as one stack.
+[00:18] That's where it's powerful.
+[00:19] And I built this kind of automation for IBM,
+[00:22] JPMorgan Chase, and now Pfizer.
+[00:24] And with YouTubers with over 150,000 subscribers.
+[00:27] I'm gonna show you how to do this.
+[00:28] Two real routines that are run.
+[00:30] Then we're gonna build one live.
+[00:31] And then look at Clawed Code
+[00:33] and the commands that come with it.
+[00:34] Let's go.
+[00:35] Well, the first thing is what is exactly a Clawed Routine?
+[00:38] Well, a routine is a saved Clawed configuration.
+[00:41] So it's basically, it can be a prompt,
+[00:43] more one or more repositories, and a set of connectors.
+[00:46] So by connectors, this could be Gmail,
+[00:48] Slack, Appify, Google Calendar,
+[00:51] anything that you can connect Clawed Code with.
+[00:54] That's packaged and you can run it automatically.
+[00:56] So they execute on Anthropic managed cloud infrastructure,
+[01:00] which is why you don't have to worry
+[01:01] about your laptop being on to run these.
+[01:04] There are three ways to trigger one.
+[01:06] You can either schedule them at a specific time
+[01:08] through the API or through GitHub.
+[01:10] So think of it like this.
+[01:11] A skill in Clawed Code tells Clawed what steps to take.
+[01:14] A routine tells Clawed what steps to take
+[01:17] and when to do it without you being there.
+[01:19] That's it.
+[01:20] That's the whole feature.
+[01:21] The rest is what you decide to do with that.
+[01:23] Well, let's look at the first routine that I have.
+[01:25] I'm gonna go through the Clawed web
+[01:27] just so you can visually see this better.
+[01:29] So Clawed.ai slash code slash routines.
+[01:33] These are where they currently live.
+[01:35] So I have one called Daily Summary
+[01:37] or Email Summary at 6 a.m.
+[01:39] So whenever I open this, these are the instructions
+[01:43] that is given as part of this routine
+[01:45] so one needs to do something.
+[01:46] So for instance, right here,
+[01:47] I have the connector, which is Gmail.
+[01:49] This runs daily at 6 a.m. Eastern.
+[01:52] These are all of the runs
+[01:54] that have already been scheduled and run.
+[01:57] So you can see they're all like 6.01, 6.02 a.m.
+[02:00] That's when they're scheduled in order to send me an update
+[02:02] of everything from my email from the previous day, basically.
+[02:06] We summarize the key point in one sentence.
+[02:08] We draft the response for any emails marked,
+[02:10] urgent, or action needed.
+[02:12] And here are just some of the labels
+[02:14] that I want to assign to them.
+[02:17] And that's it, right?
+[02:17] This is currently active
+[02:19] and this is with something simple, right?
+[02:21] You'll probably see a lot of examples of this
+[02:22] when you deal with routines
+[02:23] because this is something that you can start with
+[02:25] just to know how it works.
+[02:27] But just because it's simple,
+[02:28] don't confuse that with not being helpful.
+[02:31] Sometimes simple are the best things that you can do
+[02:34] because they can save you the most time.
+[02:35] And if I were to come in here,
+[02:37] here I get some things that are urgent.
+[02:39] These are just things from GitHub.
+[02:41] Here is something from Appify.
+[02:44] And it just kind of gives me a full breakdown
+[02:46] of everything that had gone through
+[02:48] and decided were a part of the instructions.
+[02:51] Okay, so here's some actions that I may need,
+[02:53] I may not need to take,
+[02:55] but it went ahead and decided that for me in the morning
+[02:59] so I can just clearly see right here what I need to do.
+[03:02] And for another routine that helps me out
+[03:05] with TikTok and basically short form content
+[03:08] is I have something that runs every Monday at 9 a.m.
+[03:12] that actually now has Appify and Slack as the connectors.
+[03:15] So here are the instructions.
+[03:16] So it's going to use Appify's MCP servers
+[03:19] with these, it's gonna use these hashtags
+[03:23] to do some searching,
+[03:24] figure out what is potentially trending or not.
+[03:27] So it's gonna also generate five real or short form videos,
+[03:32] give me the title of the hook, a 30 second script outline,
+[03:35] which trend or angle it leverages, et cetera.
+[03:37] Okay, so it's basically gonna do all of this.
+[03:40] And again, so every Monday I'm going to receive this.
+[03:43] And you can see schedule here when it's taking place.
+[03:46] So if I look at today, here is exactly what it returned
+[03:49] to me.
+[03:50] So if we, I'm sorry, let me come here
+[03:51] to the weekly Claude TikTok trend report.
+[03:55] So here are some trending things related to Claude
+[03:59] that have done well that I can take a look at
+[04:01] and maybe I can do something similar.
+[04:04] Right, so here are top three hook patterns.
+[04:06] Here's the format breakdown,
+[04:08] some keyword momentum and by who.
+[04:11] And here are some real and short ideas for the week
+[04:15] broken down by video that I could potentially do.
+[04:18] And what this does is it allows me to look
+[04:21] and as I'm reading this out loud and going through this
+[04:24] myself, I say, okay, you know what, this is a good idea.
+[04:26] And this is an easy way to kick off some reels
+[04:29] that I can create for the week.
+[04:31] And this is just with TikTok, right?
+[04:32] You can do this with Instagram,
+[04:34] you can have it go through LinkedIn,
+[04:35] YouTube analysis, et cetera.
+[04:36] Right, and this is a simple way
+[04:38] that I had to have nothing running.
+[04:40] It's doing, it's on Anthropics Cloud infrastructure.
+[04:44] So you don't have to worry about this
+[04:45] with your being your computer being on.
+[04:47] And this is exactly because it had Slack,
+[04:49] the output gets sent to my Slack.
+[04:51] This is what I do see in my Slack.
+[04:53] Okay, well, that's great.
+[04:54] So now let's go ahead
+[04:55] and just build one ourselves from scratch.
+[04:59] So we're gonna do this on the way.
+[05:00] first. So if you go to Claude.ai, you log in with your subscription, then on the products,
+[05:05] you go to code, and then you'll see routines right here. So what we're going to do now is
+[05:12] the top right, we say new routine, I'm going to call this weekly business scorecard. And for the
+[05:18] instructions, here's what I'm basically doing. It's using my Superbase project, pull out this
+[05:24] week's business numbers and post a scorecard to Slack, query the business table. It's basically
+[05:29] going to some database that already has information. I want to pull those metrics in,
+[05:36] and then just give me a takeaway of what's been happening as trend-wise over the past so many
+[05:42] weeks. So I want this to be scheduled. Here's where I can choose once hourly, daily, weekdays,
+[05:47] et cetera. This can be custom. I want this to be done weekly. And let's just do, how about we do
+[05:53] 6 a.m., and how about every Sunday morning? So I don't need, it defaults to all of the triggers
+[05:59] here, and I already have Superbase, so I don't really need Appify, I don't need Excalidraw.
+[06:04] You could keep some of these others on here if you really want to, but I just want to maybe just
+[06:07] do Slack and Superbase. If you want to add a connector, you can see right here, there's a
+[06:11] little spot for add connector. You can add a connector, and these are only going to be available
+[06:16] the ones that you have connected to already. If you don't have any connected to, I will show you
+[06:21] how to do this. We can come back to that. But for now, I'm just going to go choose create. Now,
+[06:26] if you do want to add connectors, right here is the customize button on top left. You go to
+[06:29] customize, go to connectors. Right here are all the connectors that I have. You can just click
+[06:33] the plus button, go to browse connectors, and just search for anything you want. So for instance,
+[06:40] let's say I want Microsoft 365. There's Slack, Google Calendars, HubSpots, Linear, Monday,
+[06:46] et cetera. If you want to add any of these, you can certainly do that right here, and then they
+[06:50] will become available for you to use in your routines. But now, coming back to this, okay,
+[06:55] so that was fairly easy. This is now an active routine, but you always want to test it to make
+[07:03] sure that it actually works before we move further, right? Because I could have something
+[07:07] wrong here. For instance, I didn't really give it a Slack channel to actually post to, so I don't
+[07:13] know what it's going to do. But let's go ahead and click run now, and this is a way we can test it
+[07:19] to see what's actually working. Once you start running it, you can click into it to see how it's
+[07:25] going to work and what's going to error out potentially or not. All right, great. And what
+[07:28] you're going to see here is that I've also modified because I thought, you know what,
+[07:32] maybe there's more I want to get from there. So here are some tables that I saved for when I work
+[07:36] out just to track how I'm doing and what I need to be doing. And so it gave me these snapshots
+[07:41] of that. And so then I can go back and edit this routine by going to routines,
+[07:47] going to weekly business scorecard, and then I want to, there's a edit button right up here,
+[07:52] 30 days to compare. Then I'm going to click save. And then now it will do that. So on the next run,
+[08:01] it will give me a comparison of all of my workouts, not just everything else I've been doing.
+[08:06] And that's great. This was done through CloudWeb, but if you're like me, I kind of prefer to live
+[08:11] inside of CloudCode on the terminal, although I use Cmux, but you may just be using the terminal,
+[08:17] but you can certainly do it through here in CloudWeb, but I'm going to show you the other
+[08:21] way on how to do it in the terminal. All right, so now I am in Cmux for my terminal. This is
+[08:26] what I prefer. This is amazing in my opinion, but there are two commands you need to know.
+[08:31] There's slash loop and there's also a slash scheduled. Slash scheduled is what you can
+[08:37] see in the description actually runs or creates the routines that get scheduled in the cloud.
+[08:43] Slash loop just is like basically here while this is on, like while you have cloud open
+[08:49] and while your computer is on, right? It's solely dependent on having your computer on,
+[08:53] whereas scheduled will create it as a routine. So what I'm going to do is I'm just going to
+[08:57] put this prompt in, say every day, every weekday at 8am, scan my Gmail for sponsorship and brand
+[09:02] deals, post a summary with the deadlines to my Slack AI channel. And I know I spelled that wrong,
+[09:08] that's okay. It knows every day, every weekday at 8am, scan my Gmail for sponsorship and brand
+[09:13] deals and post a summary with my deadlines to my Slack AI channel. It knows this is a recurring
+[09:16] schedule job, so that's exactly what the slash schedule scale is for, what I literally just
+[09:21] talked about. So it's going to load that and it's going to go ahead and do this. Now it's saying
+[09:25] Slack isn't connected as a cloud AI connector, even though I know that it is.
+[09:32] It is connected when you create this, okay? Just create as I mentioned.
+[09:42] I don't know why, for some reason, I've already disconnected and reconnected Slack
+[09:46] a couple of times and it's still saying it's not connected on the web, but it is,
+[09:52] so I'm just going to force it to because I wanted to scan Gmail and then just post to
+[09:56] a Slack channel just so that you can see it. And what it's going to do is whenever it actually
+[10:00] create this routine, we'll also see it on the web,
+[10:02] which is a better UI for a lot of people to actually see
+[10:05] and then modify it as they see fit.
+[10:07] But while you're in here, you can also just,
+[10:11] I just wanna show you that you can create this in Cloud Code
+[10:13] and it'll generate it for the web.
+[10:15] It created a routine, sponsorship,
+[10:16] a brand deal, inbox scan,
+[10:18] it's just telling me everything about it.
+[10:20] I can still give me issues with Slack,
+[10:22] I honestly do not know why.
+[10:23] But what we're gonna do is we're gonna go back to Chrome,
+[10:26] I'm gonna refresh all of my routines,
+[10:29] and here it is, the sponsorship and brand deal inbox scan.
+[10:33] So now what I need to do is modify this,
+[10:36] I need to add a connector, Slack, save.
+[10:42] Okay, and now, yeah, import only read email and post to Slack
+[10:46] Okay, so let's just go ahead and run this, always test.
+[10:49] So I'm just gonna start this now, it says workflow started.
+[10:53] So if we look right here, it's trying to do this now.
+[10:56] And it's going to just take a minute
+[10:59] to initialize the session, read all my Gmail,
+[11:01] and then post to Slack, and I'll show you an example of that.
+[11:04] Okay, so it finished here after running,
+[11:06] it says summary of findings,
+[11:07] one confirmed deal, two urgent, et cetera.
+[11:10] So now if I go to my AI channel right here,
+[11:12] here it is, that it sent to my Slack channels,
+[11:16] just to show you that it actually can work this way.
+[11:19] And that was it, right?
+[11:20] That was fairly simple to set up within Cloud Code as well.
+[11:24] So you have two places
+[11:25] that you can actually create these routines.
+[11:27] And now, just remember, loop is only for the session,
+[11:31] and it's not going to stay running forever.
+[11:34] Whereas the routines, once you create it,
+[11:36] it will run forever, and you don't have to have your laptop
+[11:39] or your computer on to keep it running.
+[11:41] So I have routines for help me what to eat for the day,
+[11:44] how I've been eating, et cetera, we just created a couple.
+[11:47] I have a Instagram daily brief,
+[11:50] what had worked the previous day,
+[11:51] weekly YouTube video ideas, the TikTok trend analysis,
+[11:54] I think I've already mentioned to you,
+[11:55] another Instagram competitor list,
+[11:58] which is a little different, email triage.
+[11:59] These are just all ones that you can also create, right?
+[12:02] And they have different connectors,
+[12:04] and you can have many more connectors,
+[12:06] depending on what you need to use it for, okay?
+[12:08] Connectors are just things you use on the outside,
+[12:11] such as Linear, Asana, Google Calendar, Gmail, et cetera.
+[12:15] Anything that you need to connect to
+[12:17] to kind of get information from, you can do that here.
+[12:20] So listen, I want you to pick one task this week
+[12:23] to create a routine with, okay?
+[12:25] Subscription to cloud, of course.
+[12:27] So pick one thing that you think
+[12:29] that will save you some time.
+[12:30] I don't care how simple it is.
+[12:32] You can use one of my examples,
+[12:33] such as the email triage, right?
+[12:35] Just understand what emails
+[12:38] you typically look for each day,
+[12:40] create a routine, give the instructions to look for those,
+[12:43] and then just schedule it every morning to see,
+[12:46] just to look at the results and see what works, okay?
+[12:49] Just do that, and I promise you that will help you.
+[12:51] So inbox triage, competitor research,
+[12:54] social media digests, whatever it is,
+[12:57] turn it into a cloud routine this week.
+[12:59] I have a link in the description
+[13:00] to sign up for my newsletter
+[13:02] and to get free cloud skills that you can start using today,
+[13:06] and you join my free school community
+[13:07] for everything that I have for you to use today
+[13:11] and right now to get you going,
+[13:13] to help make you money and save time.
+[13:15] Thank you for watching.
+[13:16] Here are more videos for you to watch right now.

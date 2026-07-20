@@ -58,3 +58,40 @@ Why: it names the full product for SEO and brief compliance, promises a concrete
 - Left: a single chat bubble with a short typed sentence at top, an arrow, then a completed node chain (image to video to voice to lip-sync to composition) glowing orange below it.
 - Overlay text: "I TYPED THIS" with an arrow to the finished graph.
 - No numbers, no dollar signs. High contrast, readable at small size.
+
+---
+
+# 🎬 SEO-Optimized Titles (2026-07-19 — post-edit /yt-seo pass, final cut is 17:39)
+
+**⚠️ The current FINAL PICK is 79 characters — it truncates past YouTube's 70-char display ceiling.** New picks below are trimmed and match what was actually filmed: the hook is "I typed one prompt and ElevenLabs created the full video pipeline by itself," the demos are the **Pepsi ad**, the perfume example, and a **coffee ad (Ember) built live**, and the final beats are agent permissions/auto-under-threshold, real credit costs (starter vs creator plan), product-swap batching, and the B-roll trick.
+
+**Freshness check (July 19 scan):** still no breakout third-party Flows Agent video — ElevenLabs' own channel (20K/34K) still owns the keyword and every independent entry sits under ~2.3K views. The lane remains uncontested; nothing new to react to since the 2026-07-09 research.
+
+## Title Options
+
+| # | Title | Chars | Formula | Target keyword |
+|---|-------|-------|---------|----------------|
+| 1 | **ElevenLabs Flows Agent Built My Entire Ad From One Prompt** | 57 | Named entity + concrete outcome (channel winner formula) | elevenlabs flows agent |
+| 2 | I Typed One Prompt and ElevenLabs Built the Entire Ad Pipeline | 62 | Filmed hook, verbatim first-person story | elevenlabs ai ad |
+| 3 | ElevenLabs Flows Agent: One Prompt Builds Your Entire Ad Pipeline | 65 | Keyword-first + outcome (evergreen) | elevenlabs flows agent |
+| 4 | ElevenLabs Flows Agent Tutorial: A Full AI Ad From One Prompt | 61 | Direct search-optimized how-to | elevenlabs flows agent tutorial |
+| 5 | This AI Agent Builds Your Whole Video Pipeline (ElevenLabs Flows) | 65 | Trimmed version of the original FINAL PICK | ai agent video workflow |
+
+## Scorecard (1–5 per axis)
+
+| # | Title | Curiosity | Specificity | SEO | Click | Total |
+|---|-------|-----------|-------------|-----|-------|-------|
+| 1 | Built My Entire Ad From One Prompt | 5 | 5 | 5 | 5 | **20** ⭐ |
+| 2 | I Typed One Prompt and ElevenLabs Built... | 5 | 4 | 4 | 5 | 18 |
+| 3 | One Prompt Builds Your Entire Ad Pipeline | 4 | 4 | 5 | 4 | 17 |
+| 4 | Tutorial: A Full AI Ad From One Prompt | 3 | 4 | 5 | 3 | 15 |
+| 5 | Builds Your Whole Video Pipeline | 4 | 3 | 4 | 4 | 15 |
+
+## ⭐ Recommended: Title 1 — "ElevenLabs Flows Agent Built My Entire Ad From One Prompt"
+
+- Leads with the full product name in the first 22 characters — brief compliance (say the entity early) and SEO on the uncontested "elevenlabs flows agent" keyword in one move.
+- Fits the channel's proven winner formula: named entity + concrete outcome. Past-tense "Built" reads as proof, matching the honest-demo positioning.
+- "Ad" is what the video actually shows (Pepsi + Ember coffee) and taps the proven 224K–329K "AI ad" adjacent lane from the research — stronger than the vaguer "video workflow."
+- 57 chars — clean fit, room for future "(2026)" or "(Tutorial)" suffix tests.
+
+**A/B plan (updates the original):** launch with Title 1. If CTR is soft at 48h, swap to Title 2 (first-person hook mirror). Title 4 is the long-tail search fallback. Same thumbnail across swaps; log changes in status.md. Kill-trigger from channel data: under 3.5% CTR at 2 weeks = packaging swap.

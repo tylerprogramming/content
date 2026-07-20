@@ -191,3 +191,40 @@ Scored 1-10 per axis. CTR Potential weights how well the title rides a proven 20
 - "claude routines" is already our **#4 channel search term (92 views/28d)** with the video not even out — search demand is waiting. Make sure the exact phrase "Claude Routines" leads the title.
 - **Kill-trigger (new standing rule): under 3.5% CTR at 2 weeks = packaging swap.** Have title v2 + thumbnail v2 ready at upload, not after.
 - Launch-day external seed is part of the formula (the Workflow winner was 59.8% external traffic): same-day X + LinkedIn + community post.
+
+---
+
+# 🎬 SEO-Optimized Titles (2026-07-15 — post-edit /yt-seo pass, final cut is 13:19)
+
+**What changed since the June research:** the final edit is 13:19 (not ~29 min) and the filmed hook is literally "This ran at 5 a.m. while I was asleep." The two demo routines in the final cut are the **daily email summary** and the **weekly TikTok trend report** (not Instagram competitor monitoring), the live build is a **weekly business scorecard** (Supabase → Slack), and the terminal half covers **/schedule vs /loop**.
+
+**Fresh research (July 2026 scan):** the "claude routines" search lane has matured — dominant title patterns now ranking: "Claude Routines Tutorial," "How To Use Claude Routines (2026)," "Step-by-Step Tutorial," "29 Claude Routines to automate everything," "Better than 99% of People," and the vs-lane ("Claude Routines vs N8N: Anthropic's Automation Killer Tested," "Just Replaced Zapier, Make, And n8n"). The vs-n8n angle is now saturated (confirms the June read). Nobody in the current results pairs Routines with the Claude Code CLI /schedule command — that slot is still open.
+
+## Title Options
+
+| # | Title | Chars | Formula | Target keyword |
+|---|-------|-------|---------|----------------|
+| 1 | **Claude Routines Ran My Business at 5AM While I Slept (Full Setup)** | 65 | Named entity + concrete outcome (channel winner formula) | claude routines |
+| 2 | Claude Routines Run My Whole Business Before I Open My Laptop | 61 | Anthropic's proven "before you open your laptop" framing | claude routines |
+| 3 | I Automated My Entire Content Business With Claude Routines | 59 | Franchise mirror of the 4.4%-CTR Workflow winner | claude routines automation |
+| 4 | Claude Routines Tutorial: Build Your First One (+ Claude Code Trick) | 68 | Direct search-optimized how-to | claude routines tutorial |
+| 5 | Claude Routines + Claude Code: The Automation Stack Nobody Teaches | 66 | Curiosity gap + unique-slot differentiator | claude code routines |
+
+## Scorecard (1–5 per axis)
+
+| # | Title | Curiosity | Specificity | SEO | Click | Total |
+|---|-------|-----------|-------------|-----|-------|-------|
+| 1 | Ran My Business at 5AM While I Slept | 5 | 5 | 4 | 5 | **19** ⭐ |
+| 2 | Before I Open My Laptop | 4 | 4 | 4 | 5 | 17 |
+| 3 | I Automated My Entire Content Business | 3 | 4 | 4 | 4 | 15 |
+| 4 | Tutorial: Build Your First One | 3 | 4 | 5 | 3 | 15 |
+| 5 | The Automation Stack Nobody Teaches | 4 | 3 | 4 | 4 | 15 |
+
+## ⭐ Recommended: Title 1 — "Claude Routines Ran My Business at 5AM While I Slept (Full Setup)"
+
+- It is the **filmed hook, verbatim** — the title promise and the first 3 seconds of the video are the same sentence, which is the strongest CTR-to-retention handshake possible.
+- Fits the channel's proven winner formula exactly: named entity ("Claude Routines," already the #4 channel search term) + concrete outcome ("ran my business at 5AM").
+- "5AM" adds the specific detail Pick 2 (the June confirmed title) lacks; past-tense "Ran" reads as proof, not a claim.
+- 65 chars, keyword front-loaded in the first 15 characters.
+
+**A/B plan (updates the June plan):** launch with Title 1. Kill-trigger stands — under 3.5% CTR at 2 weeks → swap to Title 3 (franchise mirror). Title 4 is the long-tail search safety net if browse never picks it up. Thumbnail constant across swaps.
