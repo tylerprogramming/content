@@ -49,6 +49,7 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 | Claude Code Skills: The Only Course You'll Ever Need | `012-skills-full-course/` (`9ZsZgnWrs_E`) | LIVE 2026-06-21. Thumbnail B now (swapped from A, CTR ~3%). Tracking daily — see `analytics/daily-tracker.md`. |
 | 3 Skills + Live Build | `011-3-skills-and-build/` | Put out by Tyler himself |
 
+> ⚠️ Social push pending for Cowork Full Course, Granola, and Flows Agent — ClickUp task `86e2drehj` (run /social-copy, newest first).
 > Older live videos are tracked in `~/content/system/tracker.md` under `youtube/_completed/`.
 
 ---
