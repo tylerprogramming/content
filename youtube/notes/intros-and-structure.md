@@ -6,7 +6,7 @@ Rule for all three: open ON THE RESULT, name the pain, promise the how, point at
 
 ---
 
-## VIDEO 1 - The Redo (creation engine) - folder `17-automated-content-pipeline`
+## VIDEO 1 - The Redo (creation engine) - folder `031-automated-content-pipeline`
 **Working title:** I Automated My Entire Content Pipeline With Claude Code
 **A/B partner:** I Automated My Entire YouTube Workflow with Claude Code (2026) - the exact-original title, so we learn: does wider-scope or narrow-proven win?
 
@@ -28,7 +28,7 @@ A GitHub repo / Google Doc: **"The Content Pipeline Starter"** - the skill struc
 
 ---
 
-## VIDEO 2 - The Niche Test (agents made easy) - folder `20-build-first-ai-agent`
+## VIDEO 2 - The Niche Test (agents made easy) - folder `038-build-first-ai-agent`
 **Working title:** Build Your First AI Agent (The Easy Way, No Code)
 **A/B partner:** I Built AI Agents at Fortune 500 Companies. Here's the Easy Version. (authority-first)
 
@@ -49,7 +49,7 @@ A GitHub repo / Google Doc: **"Your First AI Agent"** - the folder + the single 
 
 ---
 
-## VIDEO 3 - The Publishing Machine (distribution) - folder `21-automated-publishing`
+## VIDEO 3 - The Publishing Machine (distribution) - folder `039-automated-publishing`
 **Working title:** I Automated Publishing My Content With Claude Code
 **A/B partner:** I Post to 7 Platforms and Never Open an App
 Part 2 to Video 1's Part 1 (make it / publish it).

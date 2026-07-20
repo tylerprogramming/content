@@ -204,7 +204,7 @@ mv claude-code-skills 002-claude-code-skills
 mv build-anything-claude-code 003-build-anything-claude-code   # if folder exists
 mv claude-beginners 004-claude-beginners
 mv claude-code-youtube-workflow 005-claude-code-youtube-workflow
-mv 23-claude-code-concepts 006-23-claude-code-concepts
+mv 004-claude-code-concepts 006-23-claude-code-concepts
 mv claude-code-telegram-channels 007-claude-code-telegram-channels
 mv claude-code-remote-control 008-claude-code-remote-control
 mv claude-design 009-claude-design

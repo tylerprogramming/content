@@ -18,7 +18,7 @@
 ### Skill audit
 - **Confirmed: 43 actual skills** at `~/.claude/skills/` (not 26 or 13)
 - Reviewed all existing video packages — found **6 fully scripted, unrecorded videos** sitting in `~/content/youtube/`
-- Identified `~/content/youtube/claude-design/` as the only confirmed published video from the recent slate
+- Identified `~/content/youtube/videos/009-claude-design/` as the only confirmed published video from the recent slate
 
 ### Built 3 new full packages
 Each includes titles (scored), hooks (4 options), word-for-word script, filming guide, description, SEO file:
