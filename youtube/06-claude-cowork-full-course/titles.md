@@ -25,6 +25,9 @@ Scored 1-10 on each axis. CTR Potential weights clarity, curiosity, and how well
 
 ---
 
+## ✅ FINAL DECISION (2026-07-02)
+**Uploading with Pick 1: "Claude Cowork Full Course: Build Your AI Employee From Scratch"** (Tyler confirmed). Scheduled publish 2026-07-02 8:15 PM EST. Thumbnail: cowork master class thumbnail 1.jpg.
+
 ## Top 3 Recommendations
 
 ### Pick 1: "Claude Cowork Full Course: Build Your AI Employee From Scratch"

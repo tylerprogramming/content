@@ -224,11 +224,12 @@
 ### Format B - "I automated my X" (the workflow format, best sub driver)
 
 ### 21. 27 Claude Code Skills That Run My Entire Business
-- **Status:** Planned
+- **Status:** In Progress
 - **Priority:** High
 - **Topic:** Number-driven tour of the whole skill library
-- **Angle:** Tyler's proven title formula (specific number + tool + outcome). A bigger, count-led flagship distinct from #10/#11. "Here are 27 skills and what each one replaced."
+- **Angle:** Tyler's proven title formula (specific number + tool + outcome). A bigger, count-led flagship distinct from #10/#11. "Here are 27 skills and what each one replaced." Filmed as the honest counter to Nate Herk's staged "make money with Claude Code" demo (147K views) - real skills running a real business, aimed at non-dev creators.
 - **Skills/Assets:** the entire ~/.claude/skills/ library
+- **Research:** [Video Package](./claude-code-skills-run-my-business/)
 - **Notes:** Update the number to the real count at film time (currently ~43 skills total, pick the headline number that is true and clean).
 - **Date Added:** 2026-06-26
 

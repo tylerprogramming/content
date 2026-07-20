@@ -1,0 +1,403 @@
+[00:00] Everywhere you look right now, people are saying that the new GPT image 2 model is
+[00:04] overtaking Google's nano banana pro or that it's finally been dethroned.
+[00:08] Now I actually use these every week to make content, especially to create
+[00:12] thumbnails, so I decided to run them head to head with the same prompts.
+[00:16] So I have created six rounds of testing so that you can decide and outside which
+[00:21] ones in the different scenarios of creating images is going to produce better
+[00:26] And I'm going to throw in a third AI image model for some of these as a bonus
+[00:30] wildcard.
+[00:31] And the first one is going to be a YouTube thumbnail test.
+[00:34] And so for this first round, I use Kai.ai because it has all the video image music
+[00:40] and LM model models all in one API and also for cheaper than you would separately
+[00:45] by themselves.
+[00:46] Now there could be sometimes when it's not as cheap, but generally it is a good
+[00:51] percentage cheaper than normal.
+[00:52] So what I'm going to do here is if you never been here before, you can see you
+[00:56] can go to the AI image API.
+[00:58] You can see GPT image to nano banana pro seed dream.
+[01:01] There's actually a bunch more here.
+[01:03] So I had them opened up already, so I have GPT image to nano banana.
+[01:07] And actually for this one, I'm also going to use C dreams 4.5 edit model.
+[01:11] Okay.
+[01:12] So what we're going to do, or just for C dream 4.5, but using the editing so that
+[01:16] we can have me as part of the reference image and then give it directions on the
+[01:21] type of thumbnail that I want to create.
+[01:22] So when I first do is in the dashboard for GPT image two, I'm going to the image
+[01:27] to image.
+[01:28] So you can see here, what I first need to do is upload a reference image.
+[01:31] So I'm going to remove this one.
+[01:33] I'm going to select files, go to assets, identity, and then just a reference image
+[01:38] of myself that you may have seen before.
+[01:40] And then what I'm going to do is just paste in this prompt and I'll have all
+[01:44] these for you so that you can also copy these.
+[01:46] Now, all I'm going to do is just run.
+[01:48] Now you can see, I can also choose the aspect ratio, which I'm just going to
+[01:52] make sure it's 69 cause that's for the YouTube thumbnail.
+[01:55] You can do 2k, 4k.
+[01:57] We do not need to do 4k.
+[01:58] So I'm just going to use 10 credits from here.
+[02:01] I'm going to run.
+[02:02] And then I want to do the same exact thing for Nana banana and nano banana
+[02:07] pro and then C dream 4.5.
+[02:09] Let's go here.
+[02:10] It's going to, I want to use, this is Nana banana pro.
+[02:14] So I want to have an image input select files is going to be a very similar
+[02:17] process.
+[02:18] It's going to open that up.
+[02:20] I'm going to paste in the exact same prompt.
+[02:22] The aspect ratio should be 16, 9, 2k resolution.
+[02:28] You can see it's also a little bit more expensive here, but I'll get to that later.
+[02:31] And then for C dream 4.5, I'm going to just paste in the prompt again.
+[02:36] And then instead of this, I'm going to select again, my reference image.
+[02:42] And I want this to be 16, 9 ratio and quality basic output.
+[02:47] Okay.
+[02:47] So basic output is 2k.
+[02:49] So we're just going to keep it basic.
+[02:50] We'll be back when all three of these are done for this first round.
+[02:55] So we can judge and see which one typically produces better results.
+[02:59] So they are finished, right?
+[03:00] And the thing was, I need to have a shaft expression pointing to the left,
+[03:04] a two glowing AI generated images.
+[03:07] I need a big text saying not dethroned in white and orange, dark, high contrast
+[03:12] studio, background, dramatic lighting, et cetera.
+[03:14] So this is image two and this isn't bad, right?
+[03:17] It does have two AI generated images and, you know, I kind of have that,
+[03:22] uh, dramatic rim lighting on me and it does say not dethroned.
+[03:27] So let's look at the other ones first.
+[03:28] So here is Nina being a pro.
+[03:31] So the, you can look at the difference between the shocking face, this
+[03:34] one, a little bit more laid back shock.
+[03:35] I don't know.
+[03:36] Uh, but the images are also AI generated.
+[03:39] The text is at the top this time.
+[03:41] I'm still pointing and I do have, uh, like that rim lighting behind me.
+[03:47] And then here is C-Dream 4.5 where it's a little bit more shocked, uh, shocking.
+[03:52] Uh, there's not as much distortion with the images.
+[03:55] So they're not like, um, like on a different axis or anything.
+[03:59] They're just straight added on to the thumbnail and just these square boxes.
+[04:04] But it did kind of give me that aspect.
+[04:06] I will say, I think that in C-Dream 4.5, this, I look a little bit more
+[04:12] realistic than it's a little bit different.
+[04:15] Um, and GPT image 2.5, I could use this, right?
+[04:18] It does seem a little bit more dramatic.
+[04:20] Okay.
+[04:20] The Nano Banana Pro in this case, I mean, I don't know which
+[04:24] one would actually perform better.
+[04:26] These are the three different outputs that we got from the same
+[04:29] prompt using three different models.
+[04:31] So, so I'm gonna let you decide which one you think is the best.
+[04:34] But in my opinion, I would actually probably start out with Nano Banana Pro
+[04:38] and then AB test with this one, because they're both like a little bit more
+[04:44] dramatic, even though I like the way I look in this one, it's just that the
+[04:48] parts over here aren't, don't seem that great, but that's it for round one.
+[04:51] We are now going to move on to round two.
+[04:54] And also on KitKai.ai, you can keep the view, the full history.
+[04:58] So I'm not going to like open up new tabs or anything like that.
+[05:01] I'm just gonna actually replace the prompt here.
+[05:03] And this will be the last time we use Kai.ai because I actually have skills
+[05:08] through Claude that I'm going to use that you will also be able to use for free.
+[05:12] I'll tell you what I did and show you how they work.
+[05:14] Again, I'm just going to basically paste this in.
+[05:16] This is put this exact person in a clean, modern podcast studio at a
+[05:20] desk with a microphone, looking at the camera, soft key light, shallow
+[05:22] depth of field, photo realism.
+[05:24] So the idea of this test in this round is that I want to be able to put this
+[05:28] in and kind of really more manipulate the surroundings.
+[05:32] So it's more a realistic surrounding for like, it could be for a thumbnail
+[05:37] or for the cover image of something.
+[05:39] Okay.
+[05:39] So I'm basically going to do the same thing.
+[05:41] Going to run this.
+[05:41] That's for GPT image two.
+[05:43] This is going to be for Nanobanana Pro.
+[05:46] And then I might as well just also do this for SeaDream 4.5 as well.
+[05:51] Okay.
+[05:51] So it finished and here are the results.
+[05:54] So this is GPT image two.
+[05:56] So it's not bad.
+[05:57] I mean, you know, it only has, you see my.
+[06:00] The reference image only has kind of like the top part of my chest and up.
+[06:03] So it kind of filled it in properly on similar build of what I would look like.
+[06:08] I am in front of like a podcast looking.
+[06:11] My face seems okay.
+[06:12] So let's go ahead and look at Nanobanana Pro.
+[06:15] Now I like this because this seems a little bit more of like an action shot,
+[06:19] sort of like I'm going to tell you something like more of a modern podcast,
+[06:24] you know, a lot of modern podcast images or cover images you've seen where they
+[06:27] kind of look more like this rather than just this stupid grin that I have here.
+[06:33] And then while we're at SeaDream 4.5, this doesn't look as real.
+[06:36] In my opinion, I don't necessarily like, it's not so much the background.
+[06:41] You know, it's not so much the foreground either.
+[06:42] It's just me implanted on, on this does not look something about it.
+[06:46] I don't like this one looks more realistic in my opinion.
+[06:50] So in this round, in my opinion, I like Nanobanana Pros and I would
+[06:56] take GPT image to second, just my opinion.
+[07:00] Of course, everybody has different ones, but this is again, basically
+[07:04] just giving you a one shot with a reference image.
+[07:07] Okay.
+[07:07] So now we're going to go ahead and move on to round three.
+[07:09] And what this is going to do is it's something that used to be way that
+[07:14] used to be very tough for the AI image models is to actually add text properly.
+[07:19] Especially if it's more than just like two or three words,
+[07:22] it used to not do that well.
+[07:25] So we are going to test it out to see how we can have some quotes put on
+[07:30] top of an image that already exists and see how that works.
+[07:33] And like I mentioned, I'm not going to use cloud skills that I've created for
+[07:36] this to actually create the images and everything.
+[07:38] This is what I actually use to create thumbnails and give me variations of
+[07:42] thumbnails through here, instead of having to go through the actual dashboard.
+[07:45] So for instance, I have one, if I type slash chi.chi and then GPT image, this
+[07:50] would be for GPT image two, as you can see in the description there, or if I do
+[07:55] Nanobanana, this would be Nanobanana Pro.
+[07:57] And I can choose which variation, like the right, the first one,
+[08:01] second or pro version of Nanobanana.
+[08:02] Okay.
+[08:03] So basically I'm giving it the prompt.
+[08:05] So I kind of want like an Instagram quote graphic using a reference image.
+[08:09] I'm actually going to use the, I'm going to use this Nanobanana Pro one.
+[08:13] So I'm going to use this as a reference image to kind of have as a background.
+[08:17] And then now it's actually, you know, it's asking me to kick off my skills.
+[08:20] I should meant to do put on auto mode.
+[08:22] And then, so from this prompt right here and with this reference image that
+[08:28] I found using Nanobanana Pro and GPT image two from chi to create two variants each.
+[08:34] Okay.
+[08:34] So it actually said, this is an Instagram graphic.
+[08:36] So I'll use a one-to-one aspect ratio.
+[08:38] Okay.
+[08:38] That's fine.
+[08:39] Whatever it decides to do.
+[08:40] And so we'll come back, but this using these skills, so it's using
+[08:43] Nanobanana first, and then it's going to use GPT image.
+[08:47] And this is where I could, at this point, I could kind of like go do something
+[08:50] else and come back and then we can look at these images when these are done.
+[08:54] Again, these are just cloud skills that I've created.
+[08:57] And essentially what I've done is just taking from here, if you go
+[09:01] a lot of websites, right?
+[09:02] You can go to the API and there's an API for different
+[09:06] variations of what you want to do.
+[09:08] And I just had to look at this and then create an API.
+[09:12] So there's actual code with the skill to do all of this.
+[09:15] Okay.
+[09:15] And that's basically all I've done.
+[09:17] So we'll be back whenever this is complete.
+[09:20] Okay.
+[09:20] So it finished and then it's going to go ahead and open them.
+[09:24] Right.
+[09:24] So let's kind of see what we think of these, because this is kind
+[09:27] of like an Instagram style, um, at least like the cover image for
+[09:31] like an Instagram carousel, for instance.
+[09:33] So these first two are going to be GPT image too.
+[09:37] So these are kind of two variants, right?
+[09:39] I asked it to create two variants just to see what it would do.
+[09:41] Okay.
+[09:41] So it kind of kept the original background and then this is Nana banana pro.
+[09:46] So of course you can see these are a little bit more zoomed in and
+[09:49] these are a little bit more out.
+[09:51] And in this case, I kind of think I like the zoomed out, I guess it kind of,
+[09:56] you know, this is probably just personal preference, to be honest with you.
+[09:58] And this is just a sample of what you can do, but I kind of like, you know,
+[10:02] the, the very bottom part, right?
+[10:05] This is kind of something that you also need to look at is it did black it out
+[10:09] kind of like in a gradient, like a, like a blackout, um, and it was a smooth
+[10:14] transition into the actual photo.
+[10:16] And then the text is in a relatively good spot.
+[10:18] It could be lowered a little bit maybe, but generally it's good.
+[10:21] Now for Nina banana pro that was for GPT image to these top two.
+[10:24] I like that Nina banana pro didn't really do that as much
+[10:27] because it's zoomed in a lot.
+[10:28] So I think I kind of like image two in this round for that.
+[10:32] So this is going to now lead us to round four, which is going
+[10:35] to be a little bit different.
+[10:36] So for here, uh, the prompts I'm going to make is I want a three image
+[10:40] carousel and one consistent flat illustration style with kind of like
+[10:44] three different slides showing on it pro and one for GPT image too.
+[10:50] Okay.
+[10:51] So now it's going to do the same thing.
+[10:52] It's going to look for the skills that I have, that I've created to make these
+[10:56] calls, and then it's going to go ahead and create that for us.
+[10:59] So we'll be back in a few minutes whenever this is done.
+[11:03] And I just want to show you something difference between doing the, like
+[11:06] generating these inside of the actual dashboard of kai.ai and then,
+[11:10] then having the skills to do that.
+[11:11] So what it decided to do was to say, have a smart approach for consistency
+[11:15] because it's going to be three images per model for like the slides.
+[11:19] And we wanted to have kind of like a consistent illustration.
+[11:22] It's going to generate slide one for each model first, then use that slide
+[11:25] as a style reference to lock slides two and three for the same look.
+[11:28] We wouldn't have had that same thought process if we had just
+[11:31] done this in the dashboard.
+[11:32] But because we're using cloud skills, we are also giving it, you know, the
+[11:37] model as a brain to kind of help guide on what it, how it should approach this.
+[11:43] Right.
+[11:43] So it generated both slide ones or down here.
+[11:46] I'm sorry.
+[11:46] It generated both slide ones, and then it's going to go two and three, do two
+[11:49] and three for each model using slide one as the style anchor, and now
+[11:53] it's generating all four in parallel.
+[11:55] So we'll be back when it's done.
+[11:56] But I thought that was a little nice insight that this is, there's a
+[11:59] difference between doing it from the dashboard and then doing it from cloud
+[12:02] skills.
+[12:02] Okay.
+[12:03] So it completed, and this is again, something that you will maybe use for
+[12:07] Instagram.
+[12:08] So we kind of created the cover image.
+[12:09] And then if you're kind of explaining something, this is how you would create
+[12:13] the one-to-one aspect ratios for slides after that.
+[12:17] Okay.
+[12:18] Now you could create more than more, and you might even want some text as part
+[12:22] of this, but this is just to kind of show you that it is consistency.
+[12:26] I want to see which one kind of does it better.
+[12:27] Right.
+[12:27] So this is nano banana.
+[12:28] These are all three nano bananas.
+[12:30] It is pretty good, right?
+[12:32] This is also relatively simple.
+[12:34] I didn't give it too much, but a GPT image, you know, if I'm looking at all
+[12:39] three of these, you know, these do catch my eye a little bit more, but there's
+[12:44] also something to be said about simplicity.
+[12:45] So kind of playing devil's advocate here.
+[12:48] I think that GPT images, which are these three down here, I think, I think if
+[12:54] there was maybe some text or something on all of these also, it would probably
+[12:58] add more to it, but these do kind of catch my eye.
+[13:01] So GPT images in this case do catch my eye a little bit more though.
+[13:05] I do like the simplicity that Nana banana did bring.
+[13:09] The image illustrations.
+[13:11] There's a lot more to it with the image GPT image to model.
+[13:14] Okay.
+[13:14] So I will, I will definitely say that I love Nana banana pro.
+[13:18] I love Nana banana in general.
+[13:19] I've been using it for a long time, but I will say that this is, this is pretty good.
+[13:23] But if you'd like the simple, simpler style styling, this is also, I mean, I
+[13:27] like this, that's my opinion.
+[13:29] Let me know what you think.
+[13:30] Okay.
+[13:30] So next thing I want to talk about is the pricing.
+[13:34] So for this round, we can, I can generate more images, but also want to show you
+[13:39] the pricing through KAI for the differences in these.
+[13:44] Okay.
+[13:44] So for instance, here is Nana banana pro, right?
+[13:48] So for one or two K resolution, they're the same.
+[13:50] That's 18 credits.
+[13:51] So that's about 9 cents.
+[13:54] And so this is falls price.
+[13:56] So 15 cents.
+[13:57] So from fall.ai, if you use that, this is a 6% or 6 cent decrease.
+[14:03] Now, if we go look at GPT image to GPT image to right here.
+[14:08] So if we do image to image, which is what we did earlier for 2k resolution, you know,
+[14:13] it's about 10 credits.
+[14:14] So eight credit decrease and the price is about 5 cents, right?
+[14:20] So it's almost a 78% discount from fall.ai, which I know is also very popular.
+[14:25] Okay.
+[14:26] And so you can look at these and see that difference, but this is cheaper as
+[14:32] far as what you could get.
+[14:34] It depends on what you're creating though.
+[14:36] Of course, whenever it came to referencing images, Nana banana, in my
+[14:41] opinion, I still think Nana banana pro did a better job having those with other
+[14:45] elements being added in, and especially for other thumbnails, when you want to
+[14:49] just like replace yourself with that thumbnail, maybe the text, if it's not
+[14:52] too complicated, then you could try image to a couple of times again, none of
+[14:55] these are a hundred percent perfect.
+[14:57] You're going to get mistakes from these and you just got to retry them.
+[14:59] But that is for this round.
+[15:03] Yes.
+[15:03] GPT image too is cheaper.
+[15:05] Now let's go while we're here, let's look at C dream and what that was.
+[15:09] So C dream 4.5.
+[15:11] So you can see this is only six and a half credits for the image to image.
+[15:14] So it's only about 3 cents, just over 3 cents, barely any cheaper than fall.ai.
+[15:20] Okay.
+[15:20] But if you didn't mind that one, then you could also use this if
+[15:25] you want for your image, right?
+[15:26] This is this, you know, this is the cheapest of all the three that we did
+[15:30] test so far, but for the last one, I am going to, for the last round,
+[15:34] I want to do an infographic.
+[15:37] I wanted to try and be a somewhat heavy infographic through all three models.
+[15:41] Actually just went to a comparison of all three models, which means I also
+[15:44] wanted to do some web search for pricing and get some actual information to be
+[15:49] used for the infographic, which you can do because I'm using cloud skills.
+[15:54] Cloud can separately do the web searching to bring back the data that can be
+[15:57] a part of the prompt for the image.
+[15:59] Okay.
+[16:00] So this is what I'm going to say.
+[16:01] So I basically want a clean, modern infographic comparing the all three
+[16:04] models, I want a single variation from each, but web search the prices as
+[16:09] well from kai.ai for each, and I just basically want a lot of information.
+[16:12] I, you can tell which part I, uh, which part I pace and which part I actually
+[16:17] started typing because I'm full of grammar mistakes, probably in spelling
+[16:21] mistakes, but that's okay because that's what AI models are for.
+[16:24] I don't need to be perfect, but we're going to let this run.
+[16:26] Okay.
+[16:26] So it's going to go try and fetch a bunch of information.
+[16:29] Um, and then once that is done, it's going to use that, uh, as
+[16:32] part of the infographic image.
+[16:34] So we'll be back for the last round in this battle of AI images.
+[16:39] Okay.
+[16:40] So it finished a, it went and gathered information from kai.ai's website itself.
+[16:47] This is not in a long form.
+[16:49] I did not give it the explicit, explicit aspect ratio, but the, this is
+[16:54] probably more of like Instagram one-to-one.
+[16:56] If we look at Nano Banana Pro first.
+[16:58] So it has, it looks like, you know, the text is good giving the correct
+[17:01] information so far it looks like, right.
+[17:03] Yeah.
+[17:03] It looks, it looks, it looks about right.
+[17:05] Okay.
+[17:05] So this is Nano Banana Pro, the coloring is kind of a bland coloring.
+[17:08] So here is GPT image two.
+[17:11] The text looks strange here.
+[17:15] I will say the text looks.
+[17:17] Yeah, it doesn't look like it was fit properly, but although it looks
+[17:21] accurate, the text here looks good.
+[17:24] At least, um, yeah, just the color.
+[17:27] I don't really like the design of it too well, but this
+[17:30] does have some more coloring.
+[17:31] It's just something up with the text.
+[17:32] I don't know what it is exactly.
+[17:34] But then if we look at seed dream, uh, use it, it just used like real, uh,
+[17:39] images for GPT image and seed and the seed dream, that's kind of, it's kind of
+[17:43] funny.
+[17:43] You just use the banana here, but used real images over here.
+[17:47] Uh, I thought that was just kind of funny.
+[17:48] Uh, I don't know.
+[17:49] It has like, you know, the different coloring for the bullet points.
+[17:51] I'm not sure what that is exactly for, but it looks like at least the text is the
+[17:56] same.
+[17:56] I like the coloring differences.
+[17:59] It kind of had for each one here for image two.
+[18:02] It's just that something's off the text.
+[18:05] I don't like that.
+[18:06] And for here that there's no real come something with the overall text.
+[18:12] This is great down here.
+[18:13] I think this is okay with stuff for the bullet point stuff.
+[18:17] It's accurate information.
+[18:18] So the thing is the tech, the image models are getting are so much better now with
+[18:23] text.
+[18:23] This one I think was kind of more complete.
+[18:26] I just don't like the design of it, but this is where we could, you know, you
+[18:29] would probably add more to the prompt, be more specific about those things.
+[18:32] I think overall Nina banana pros more rounded, but, uh, I do like the coloring
+[18:37] of image two and something with seed dream.
+[18:41] I don't know.
+[18:41] At least use real images, I guess.
+[18:43] But here I will say that the, it used the actual logos for each of these, right?
+[18:49] Whereas here it kind of created its own sort of, I could have done that, but it's
+[18:55] just interesting that the image to model did that by itself, which is also a plus.
+[18:59] I will say.
+[19:00] Um, so cool.
+[19:02] These are kind of everything that we've done.
+[19:04] These are just some simple rounds.
+[19:06] It's kind of test out what the images and kind of compare them.
+[19:09] I would say that image two is not dethroned.
+[19:12] Nanoband pro.
+[19:12] I just think that they both have their separate use cases, right?
+[19:16] They're going to, all these are going to constantly get better and better.
+[19:19] So don't just fixate on using one.
+[19:21] And actually after this, I realized some things I can do with image two, that
+[19:24] would help me out in some areas that needed, but Hannah pro may not be as
+[19:28] good at, but we'll have more models coming up soon.
+[19:31] So in the meantime, I will have these skills in my free school community,
+[19:35] which will be in the link in the description.
+[19:37] And you can get all of this and also sign up for my newsletter.
+[19:40] Thanks for watching.
+[19:41] Here are some more courses and masterclasses on Claude that you can watch right now.

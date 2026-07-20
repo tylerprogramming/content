@@ -1,0 +1,977 @@
+[00:00] If you use Claude every day, but you're treating it like a smarter chat CPT,
+[00:04] then you're missing one of the best features that Claude offers.
+[00:07] And that's called Claude co-work.
+[00:09] It can do actual work on your computer and deliver those files back to you.
+[00:14] So in the next hour,
+[00:15] I'm going to take you from never having opened it to running parts of your
+[00:19] business on autopilot. Every step on the screen, nothing skipped, no coding,
+[00:24] let's build it together and let's get started with step one.
+[00:27] And that is actually setting up Claude co-work. If you go to Claude.ai,
+[00:31] you need to have a subscription in order to run this. So if you don't have one,
+[00:35] I would recommend the $20 pro subscription that will get you enough to at least
+[00:39] get started. So you get familiar with it, but if you already have one,
+[00:43] then we're good to go. And then we also need the Claude desktop app.
+[00:46] So from Claude.ai down at the bottom,
+[00:49] if you can see there's a little arrow right down here,
+[00:52] then we're going to click that.
+[00:53] And these are apps and extensions that we can get.
+[00:56] So the first one that we're going to do right now is the desktop app.
+[00:59] So go ahead and download the desktop app. And then once you get it downloaded,
+[01:03] go ahead and run it. And just so you know what it looks like,
+[01:06] this will be what it looks like on your machine.
+[01:09] So click that and then you will come up to a screen like this.
+[01:13] Okay. So it'll probably prompt you to log in. Once you're logged in,
+[01:17] we can basically get started.
+[01:19] Now let's just go through this interface pretty quickly.
+[01:21] So the first one is chat. This is essentially just like using Chats.
+[01:24] We literally just talk to the AI models and ask them for things. Okay.
+[01:29] That is something that you probably are used to. But at the top here,
+[01:32] we also have co-work and code. Okay.
+[01:35] We're going to be focusing on co-work code is something a little different,
+[01:38] but here is interface for this.
+[01:40] Yours may not look exactly like this because I've done some things with it
+[01:43] already, but we can create a new task, which is essentially a project.
+[01:47] And we tie that project to some folder on your computer.
+[01:52] Artifacts are things that you have saved such as files.
+[01:56] It could be static pages for a funnel for instance,
+[02:00] or they could just be some spreadsheets that have been created. Schedule.
+[02:04] We are going to do this later.
+[02:05] This is where you can actually schedule tasks to be ran on your computer.
+[02:10] And it can do things like I have weekly Tik Tok scraping.
+[02:14] I have a daily briefing for my fitness where I want to do for the day and have a
+[02:17] daily morning brief that takes from my Gmail and my Google calendar.
+[02:21] Let's me know what I have for today, or you can do it for the week,
+[02:25] whatever you want and dispatch. Okay. So this isn't beta,
+[02:28] but this actually has more computer use for your system.
+[02:33] And then we have customized.
+[02:34] All this is is allows you to connect things. Like I mentioned, I have Gmail,
+[02:38] I have Google calendar. These are extent,
+[02:41] basically extensions that connect to the outside world that the air model
+[02:46] doesn't know. So this allows us to access our gene,
+[02:48] our all of our emails through Gmail. We can actually connect to Slack,
+[02:51] to send messages, send messages, to see messages, et cetera. Okay.
+[02:55] This gives us access to all of those things. And then here,
+[02:59] I just have my S what was scheduled and what ran in the output,
+[03:02] as well as some recent things that I have just done in general here.
+[03:06] So we're going to get started with our first task of this video.
+[03:10] And so at the top left here, again, there is new tasks.
+[03:13] We're going to create a new task right here in the middle.
+[03:15] These are folders that I have given access that given Claude co-work access
+[03:20] to. So I'm actually going to uncheck these. So blue check mark means you can have,
+[03:24] you can have more than one folder that has access to at a time when you're
+[03:28] working on something, but we are going to actually create a new folder.
+[03:32] So I'm going to say, choose a different folder.
+[03:34] And then this is just going to come up on my screen.
+[03:37] And then I'm actually going to create a new folder called co-work
+[03:42] memory, have it create that and have it open.
+[03:47] And then it's going to come up with, I want to always allow to access this.
+[03:52] So with this folder, I'm going to give us a prompt and I will give you access to
+[03:56] this prompt,
+[03:56] but I basically want to create a file called welcome markdown file in this
+[03:59] folder inside that write a one paragraph note to me explaining what you can help
+[04:03] me with as my AI co-worker.
+[04:06] And I'm just going to show you what we can actually do because it can read,
+[04:09] write and edit files on your computer. And so this is the first step.
+[04:14] So I'm just going to press enter.
+[04:16] Now we have this kind of project that's working inside of this folder and you
+[04:21] can have multiple projects working inside of the same folder as well.
+[04:25] So it's actually going to create this folder for me and then we'll see it also
+[04:30] on our computer. So it's already done. It created the welcome markdown file says,
+[04:35] hi Tyler. I'm your AI co-worker here. Take real work off of your plate.
+[04:39] So you can research topics, et cetera.
+[04:41] Now I can view this on my local machine as well.
+[04:45] So I'm going to go to finder and I'm going to come back here to Tyler Reed.
+[04:50] We had created it. It was called cod co-work or co-work memory right here.
+[04:57] And as you can see, here is the welcome markdown file. That's this right here.
+[05:02] So it created,
+[05:04] had access to the folder that I gave it and it went ahead and created a file.
+[05:08] This is pretty basic. I understand,
+[05:10] but this is just to show you that it can actually create files for you on your
+[05:14] computer. Okay,
+[05:15] now we're going to go ahead and move on to a couple of live demos that I just
+[05:19] want to show you some more things that we can do with this and that can actually
+[05:22] really help you out.
+[05:23] And these are things that you can do today that are fairly simple leaving off
+[05:27] where we had just started. We're going to go back and go to new task.
+[05:31] I am going to give it access to a different folder and essentially I want it to
+[05:35] organize this messy folder that I have.
+[05:38] And so here I have a sample messy client folder that I wanted to organize for me.
+[05:43] It has some proposals, some notes, some drafts, and just,
+[05:46] and just some things like that.
+[05:47] But it's kind of all over the place and even the naming of the files may be
+[05:52] incorrect. So I'm going to have this open this folder.
+[05:56] I'm going to allow it to have access to it.
+[05:58] And for the prompt or what I wanted to do here, and by the way,
+[06:01] you see it says co-work memory plus one.
+[06:03] So it has co-work memory and my messy client folder actually don't need co-work
+[06:08] memory. That was just kind of an example,
+[06:10] but we're organizing the sub folders called contracts, invoices, intake proposals,
+[06:14] and miscellaneous rename each file. So the date comes first and document type,
+[06:18] then create a file called client summary.md.md is just a mark down file.
+[06:23] It's just like a text file that lists every document within its date and a one
+[06:27] line description. Okay. So we're going to go ahead and press enter.
+[06:31] It's going to open up a new project again on the left-hand side that has like
+[06:34] three dots. That means it, that means it is currently working.
+[06:37] So I can come out of this page on the app and we could go back into it whenever
+[06:42] we wanted and it still would be work. You can see that on the top, right?
+[06:46] It's going to see a task progress. If it thinks that this would take longer,
+[06:50] then it would come up with a bunch of tasks that it would do in order.
+[06:54] We will see that later, but for this, we don't necessarily need to do that,
+[06:58] but it's going to read all the files. It's going to kind of go through that.
+[07:03] It says the files have no dates inside them and their timestamps are all
+[07:06] identical. Okay. So we can just use today's date if we want to,
+[07:09] because this is the day that we're working on them.
+[07:12] You can update that as well and it will ask you questions as you are doing this.
+[07:17] And you see at the top right here,
+[07:19] it actually thought this would be a little bit longer.
+[07:21] So it went ahead and created a task for us and you can see the progress of
+[07:25] that. Okay. So it's done. And here it said,
+[07:28] all seven files are organized into five sub folders renamed with the first date.
+[07:32] So here's what it did for contracts, invoices,
+[07:36] my intake proposals and just miscellaneous notes or text files.
+[07:41] So if we go back to open this up, right,
+[07:44] let's go ahead and go back to this folder.
+[07:51] Okay.
+[07:54] And we can now see in the messy client folder, we indeed have a contracts,
+[07:58] intake, invoice, miscellaneous, and a proposals folder,
+[08:01] each with named renamed the way I wanted them to be.
+[08:06] And it just organized them.
+[08:08] So I could come back and see and take a look and know exactly what I'm looking
+[08:12] at. Okay. And so for the next kind of example,
+[08:14] what I'm going to show you what you can do is all I've done is I've taken
+[08:18] sample screenshots of receipts, just like invoices, receipts,
+[08:22] or whatever. And I'm going to give them to cloud co-work.
+[08:26] And I wanted to give me some information about that.
+[08:29] See how I'm spending my money, et cetera. Even though these,
+[08:32] these aren't actually my receipts. These are just examples,
+[08:35] but I just want to show you what else you can do with this.
+[08:37] All I'm going to do is I first gave an access to the folder and I say I have
+[08:41] screenshots of receipts here,
+[08:42] organize them and create an expense expense spreadsheet, please. Okay.
+[08:46] That's all I'm basically prompting with.
+[08:48] And it's going to go ahead and work for me and we'll be back.
+[08:52] It's going to do the same thing as it's done before. Go through the progress,
+[08:56] look at it and then create, uh, hopefully create a spreadsheet for me.
+[09:00] So we'll be back whenever this is done. And just while we're waiting,
+[09:03] just to show you, it asked me a couple of questions.
+[09:05] And based on whatever you think, uh, you can also tell it, Hey, instead,
+[09:10] I want to do this. We're going to talk about the feedback when this is done.
+[09:14] It is great to give feedback to the models whenever create something because
+[09:19] sometimes it gets you 70% there, which is great, but you want it to be better.
+[09:25] So just tell it, right?
+[09:26] This is a feedback loop that you can always have with these models when they
+[09:30] perform the task. Never expect them to be a hundred percent accurate.
+[09:33] Never do that. But even like 80, 90% accurate, uh, we want,
+[09:38] but they need help getting there. Okay. So it did a lot, right? This took,
+[09:43] this took quite a few minutes,
+[09:45] but that's okay because I wanted it to be correct. So the first off,
+[09:48] it renamed the four screenshots to self-describing self-describing names,
+[09:52] and then built the expense report with two tabs, a summary,
+[09:57] and then an itemized receipt. So Walmart, green supermarket, the bookshop,
+[10:01] um, the grocery store is, it says it's stock, which it was is true.
+[10:05] Total 5328. Okay. So yeah, here we have Walmart.
+[10:09] There are 25 items for $98 and 21 cents and et cetera.
+[10:13] So this is the summary. And then also had an itemized.
+[10:15] This is actually a full itemized receipt of everything that the receipts had
+[10:20] shown. Of course, this doesn't, this may not be 100% accurate,
+[10:25] but it's very close. Um, I, I believe this is probably very close if I wanted to
+[10:29] add them up, but I'm not going to worry about that too much. Okay.
+[10:32] So it does say the summary is two 4481 and here is two 13.
+[10:36] So it does look like itemized is missing something. That's okay.
+[10:39] Here's where the feedback is crucial. If I wanted to, I say, Hey, look,
+[10:42] those totals don't match up. We need to figure out why they don't match up.
+[10:47] Okay. It does say here notes on this one, the, Oh, the part,
+[10:52] the photo is partially obscured. I think because if we look,
+[10:56] actually, if we look at one of these, uh, like this one right here,
+[11:01] I think this is maybe one that I used. You can't see all of the transactions.
+[11:05] So that's actually, I think that's exactly why that's not,
+[11:08] that's not adding up. Okay. But for the feedback I could say,
+[11:11] give me a, or I could say,
+[11:13] I also want you to give me a quick
+[11:18] feedback on your thoughts of my purchases.
+[11:23] Even though these aren't mine, that's okay. Whenever it does this,
+[11:26] I also want it to show me if I'm spending basically tell me if I'm spending too
+[11:29] much on something or not enough, but it says, you know,
+[11:32] first I was saying to stand out is your Walmart trip.
+[11:34] It's really two trips in once. Uh, really you've got a serious pet haul,
+[11:39] a small produce and then a craft pile.
+[11:42] The single biggest line is whatever that is at $20 I don't know what that is
+[11:46] either. Um, the books shop is mostly treat yourself, et cetera. Okay.
+[11:50] So this is a good analysis that you can have it do as well, right?
+[11:54] This is part of the feedback loop that you want to have with your models. Okay.
+[11:58] And so for the next thing that I want to kind of go over is there's not a real
+[12:02] memory system when it comes to Claude code work.
+[12:05] It's not the same as it has with Claude code.
+[12:08] So with Claude code work, nothing actually persists or there's no,
+[12:13] it doesn't know about each other's sessions or things that you do. Okay.
+[12:17] They're all kind of isolated and standalone.
+[12:20] But what we can do is I've shown you,
+[12:23] we can create folders and we can create files inside of those folders.
+[12:27] What we can do is we can have it create a single file about us and then use that
+[12:32] file for everything that we will do for the rest of these modules in this
+[12:37] project. And that's something that you can do.
+[12:38] So if you have a way that you write emails, you can save it there.
+[12:43] If you have a way that you write blog posts, your LinkedIn,
+[12:46] the way you structure Pinterest, your pins for Pinterest, things, anything,
+[12:50] right?
+[12:50] It can be saved in one folder and we can use that folder for everything else
+[12:54] that you do. Okay. We had already in the beginning,
+[12:56] created a co-work memory folder. So I'm just going to use that.
+[13:00] And this time I'm going to say create a Claude Markdown file in this folder and
+[13:03] interview me with five questions about my business,
+[13:06] my audience and how I like documents formatted.
+[13:08] Then write the file based on my answers.
+[13:10] And what this is going to do is it's going to hopefully add your questions.
+[13:14] I'm going to answer it and then it will use this for everything else that we are
+[13:18] going to do. And you can,
+[13:19] you can do this for everything else that you want to do so that it kind of
+[13:24] makes more sense. And it feels more like your brand,
+[13:27] how you would outreach to your audience.
+[13:30] So I'm just going to go content creator. Who's your primary audience?
+[13:34] This is actually a great question. Let me just put entrepreneurs,
+[13:38] founders, you know, for other people like that. Maybe this can be a casual.
+[13:43] Let's just start out with casual and friendly. How do you like documents structured?
+[13:47] Let's do headers and bullets. Okay. Now this is kind of a basic interview,
+[13:52] but you can also just, you can just add more to it.
+[13:55] I can absolutely do more. So the first thing is I can say no em dashes,
+[13:58] right? How, what default file format should it produce?
+[14:01] Just do markdown for now and we can absolutely format it around your brand.
+[14:07] Okay. So this is what it created inside of the Claude cowork memory that we will
+[14:12] be using for the rest of the modules. So here's the markdown file,
+[14:15] just giving some basic things about this. Now for a feedback loop,
+[14:20] like I'd mentioned, I'm going to say,
+[14:21] I also never write with em dashes and make it seem more informal,
+[14:30] especially for emails.
+[14:32] So what this is going to do now is update this markdown file based.
+[14:38] Yep. See, it's going to say,
+[14:39] I'll add it to the file and clean up the em dashes already in there.
+[14:42] Here's tone and voice reference. It's right here. Just out of this,
+[14:44] never use em dashes. You just add it to the file and clean up the em dashes.
+[14:48] It's right here. Just out of this, never use em dashes, use commas,
+[14:51] parentheses, colons, or just split the sentence into. Okay. And this is great.
+[14:55] This is something that you can do.
+[14:56] You can always add to this so it knows exactly what you want.
+[14:59] So this is how we are actually going to have memory spread across all the other
+[15:04] modules that we're going to do in this video. Great. So for the next module,
+[15:09] what I want to show you is how you can actually analyze spreadsheets. Um,
+[15:13] that's going to really help you can really help you out because data, you know,
+[15:18] you can say data is King, right?
+[15:19] But once you understand the data that you're working with,
+[15:22] especially if you're a content creator or you're trying to market something or
+[15:25] you are trying to improve your emails, the retention rate, less churn,
+[15:30] et cetera, whatever it is, data will help you out.
+[15:33] And cowork can help you get there faster and really understand what you work
+[15:41] with. So what we're going to do is I have, again, a new task.
+[15:44] You should know how to create a new task by now. And again,
+[15:47] we have cowork memory, but we're also going,
+[15:49] I'm also going to add another folder.
+[15:50] I have an analytics folder with a couple of YouTube analytics information in
+[15:55] CSV or spreadsheet. So I'm going to open that. Okay. Always allow.
+[15:59] So now I have analytics and cowork memory selected. Okay.
+[16:03] So from now on I'll always have cowork memory and I may update it as we go.
+[16:08] If I don't like the way it wrote something, analyze analytics in this folder.
+[16:11] I'm not the best with English. That's okay.
+[16:13] AAC helps me with that create a weekly report with my top five performers
+[16:16] overall, overall trend status trend versus the normal week.
+[16:20] And three specific things I should do next week based on what is working.
+[16:23] I want markdown and a recommendation at the top.
+[16:25] The cowork memory may not be super useful in this situation,
+[16:28] but it's going to start, see,
+[16:29] start by exploring the analytics folder to see what data I'm working with.
+[16:32] So it's going to take a look at the CSV files, analyze them,
+[16:35] and then we'll be back whenever this is complete. All right.
+[16:39] So this is finished. It had all the data. And, um,
+[16:44] so I, this is sample data, right? This isn't, um,
+[16:48] this isn't real data from my,
+[16:50] I took some and just gave sample data here,
+[16:52] but it's saying there's an upweek clearly above average,
+[16:55] both videos that ran in both weeks grew on every metric.
+[16:58] And then here is my weekly report from June 13th to 19th. Um,
+[17:03] five AI tools, short cloud code tutorial, um, et cetera. Right.
+[17:08] And it's kind of give the average view duration, the traffic source, et cetera.
+[17:12] So the overall trend versus the normal week. And this is just,
+[17:15] this was something that I would just take a few minutes. I would read. And so,
+[17:18] and I, I would really not be able to do this on my own, or I could,
+[17:22] but it would take longer. And so if you just give it to AI,
+[17:27] tell it what you're looking for,
+[17:28] be a little precise on what you want to really give you as feedback.
+[17:32] Like this is so much better than doing this on your own.
+[17:34] And this is really kind of a simple example from like sample data on YouTube.
+[17:38] This can be across anything. You can even analyze competitors this way.
+[17:42] Get, you can see how they're doing, have it analyzed,
+[17:46] and then that can really help you out growing and moving forward.
+[17:51] And actually with that said,
+[17:52] what I'm going to do in this next demo is I gave it access to a folder from
+[17:57] transcripts that from other performing videos. And I want to, you know,
+[18:01] I wanted to do is analyze those transcripts from those videos that have
+[18:05] performed well, and then give me some analysis on why maybe they performed well.
+[18:10] What was the structure? How long were they in the intro, et cetera.
+[18:13] So can you now analyze these transcript transcripts?
+[18:19] And I could have said, please,
+[18:21] maybe sometimes if you're more extreme, like I need this now,
+[18:25] I have something due tomorrow that has been shown to give you some better
+[18:29] results. I don't know that as much anymore,
+[18:31] but it says they found four transcripts in this folder.
+[18:35] It's going to read them and then tell me what it thinks.
+[18:38] Here is the winning format in this niche is insider secrets made simple.
+[18:42] What here's what the four videos are kind of explaining them and five patterns
+[18:47] worth of stealing. So it would give me some information, what I could do,
+[18:50] where your, where your demo video can get sharper, right?
+[18:53] So it even tells me some things that I could do better based on these.
+[18:57] So three video ideas that set hands, this set hands you.
+[19:01] So I prompt Claude code like an anthropic engineer,
+[19:05] the three skill content, blah, blah, blah. Skills are just folders.
+[19:08] The three layers explain in three minutes, et cetera, right? So this is great.
+[19:11] This is how I can then maybe do create better
+[19:16] videos that are more impactful for my audience.
+[19:18] And also to help me grow as well, right? That's,
+[19:21] that's kind of why we're doing some of this to kind of grow so that we can help
+[19:25] more people. So far, we've done quite a lot. Okay. We have gone from, you know,
+[19:30] just have it creating a simple file. We have now created memory.
+[19:33] We have shown how we can actually have it create
+[19:37] analysis documents and then actually analyze document as well.
+[19:41] And come back with information about that. I mean,
+[19:44] that is very powerful and things that we can do. Okay.
+[19:46] So what we're going to do next is something a little bit more exciting.
+[19:50] And that's actually connecting to things, how to connect to like notion,
+[19:55] Gmail, et cetera,
+[19:56] all of these other things that we can use from the outside world that the model
+[20:00] doesn't know that we're going to connect to next. How do we do that?
+[20:05] Okay. So this is step five in this cloud core course.
+[20:09] And so at the top left here, there is something called customize.
+[20:12] So if we go to customize and then you see there is a connectors,
+[20:16] there's actually a skills and connectors. We're going to just do connectors for
+[20:19] now. But if I, if we go to Gmail, for instance, I already have this.
+[20:23] If I actually let's, let me just do this. Let me disconnect this.
+[20:27] Then I'm going to reconnect it so you can see.
+[20:28] So you see it's no longer here in my connectors.
+[20:32] So what I'm going to do is there's a plus button to add a connector.
+[20:35] I'm going to then choose browse connectors. And then if you don't see it right
+[20:39] away, which it is actually already there,
+[20:41] I'm just going to simply search for Gmail because that's what I want.
+[20:44] So I'm going to click it. Then just simply type connected.
+[20:47] It tells you what it can do, right? Create draft, get a thread, list, draft,
+[20:50] list, label, search threads. So it's going to,
+[20:54] I'm going to have it connect. It's come up with the screen.
+[20:56] I wanted to connect to my Gmail accounts. Just connects. Yep.
+[21:01] I already know what it's capable of. Yes. I already opened it. Okay.
+[21:05] So it's just basically relaunched and now I have Gmail again. Okay.
+[21:10] So it's going to search for email threads, um, retrieve specific email thread.
+[21:14] So here are some things that it can do for you,
+[21:19] um, with your Gmail account. So what does this mean? Well,
+[21:25] let's go ahead and create a new task and I want it to have access to my co-work
+[21:29] memory and say, sir, I want, I want,
+[21:32] what I want to do is search for all newsletters
+[21:38] slash potential, uh,
+[21:41] potential emails to reply to in the last
+[21:46] 48 hours. Okay. So this, this, this is a, it'd be a multi-part step, right?
+[21:51] But I just want to show you step by step what we're going to be doing.
+[21:54] So that's one of the first search for everything.
+[21:56] Basically this newsletter and things that it thinks that I should reply to in
+[22:00] the last 48 hours. So now that I have my Gmail,
+[22:03] it's going to search everything from my Gmail account.
+[22:06] It's just going to give me a list. And then from that list,
+[22:08] I could have potentially draft a reply and we can do that because we're also
+[22:13] connecting Claude co-work. It knows how I want to speak whenever it does that.
+[22:17] All right. So it kind of came up with, uh, some ideas. So like for instance,
+[22:21] 11 labs ambassador, that's not something I'm trying to be. So, uh, for instance,
+[22:26] let's, let me just take that email, right.
+[22:28] And, but it gave me a list of newsletters and promos, notifications, receipts,
+[22:32] right? So let's say, can you draft a reply to the,
+[22:38] uh, 11? This will take a Claude co-work memory so that,
+[22:43] uh, so that it'd be something more in my voice.
+[22:46] Same thing that you should be doing for you as well.
+[22:48] It's going to retrieve that specific email thread. Here's a draft in,
+[22:52] here's a draft reply in your casual voice. No em dashes. Okay. So, Hey team,
+[22:56] thanks for the welcome. Pumped officially be apart. I jumped in discord,
+[22:59] blah, blah, blah.
+[23:00] Is there a preferred way like ambassadors of ambassadors of flag campaign ideas
+[23:03] or clap opportunities, et cetera, right? But guess what?
+[23:05] There are no em dashes here.
+[23:09] That's Simba. There are no em dashes here,
+[23:12] which is great because that was part of the memory of how I want to speak.
+[23:16] And then do you want to drop this straight into Gmail as a draft?
+[23:19] So it's ready to send. So what I think it can draft the messages for you.
+[23:23] And then you just have to go into the app and actually send,
+[23:25] I don't think it actually has access to send emails for you from cohort. Hey,
+[23:29] guess what? This is amazing, right?
+[23:31] We created that first connection and then we actually used it from memory that
+[23:36] we created just a little bit ago. Go back to customize.
+[23:39] We can just take a look at some of the other connectors, right?
+[23:41] If we click the plus button, if I can speak here, look,
+[23:46] we have Figma here's notion, Slack,
+[23:49] Microsoft 365 for all of you people that do that, that use it.
+[23:54] Google calendar, there's zoom, there's linear. If, if you use that as well,
+[23:58] a sauna Monday, kind of similar things here, right? Um, hyper frames.
+[24:03] This is amazing. By the way, I use this locally by Haygen.
+[24:06] So I would recommend that as well. If you're editing air table, wonderful.
+[24:09] Spotify, Zapier, if you want to, I think you can also, uh,
+[24:13] any 10 as well. There's super base, uh, popular database.
+[24:18] Great, especially for a free version, but there's just so many here, right?
+[24:21] You can just search through all of these. They keep,
+[24:23] and this is a bigger list than it used to be, right?
+[24:25] So there's always constantly adding to this.
+[24:28] There's going to be something here that you can use for you, right?
+[24:32] There's going to be something here that you can use Calendly, right?
+[24:35] There's just so many.
+[24:36] So I recommend really looking at these and seeing what might be helpful for you
+[24:42] in your business. And you know, when we were just talking about connectors,
+[24:45] you could combine multiple of those together, right?
+[24:49] So let's say I wanted to do a new task.
+[24:52] I have my cohort co-work memory folder right here.
+[24:55] Can you get emails for the last 24 hours?
+[25:00] And so what this is going to do is what my Google is going to look at my Google
+[25:03] calendar and my emails in the last 24 hours.
+[25:05] And then just basically give me a summary of this, right?
+[25:09] So this is something you can do to combine multiple tools.
+[25:11] Then we could also export that and it can send it to Slack.
+[25:15] We could put that into Notion as if you have a template in there for something,
+[25:20] you know, there are anything that we want to do, we can do, right?
+[25:23] It's given me, I don't really have anything on my calendar specifically today.
+[25:28] I know, well, I don't use Google calendar that much,
+[25:31] but this is exactly what I need to see, right?
+[25:36] And this is going to take me a minute rather than actually looking at all those
+[25:40] separately, right? I can get everything right here. All right,
+[25:43] now we're going to move on to step six, which is something very interesting.
+[25:47] I think this is actually Claude in Chrome with using cowork. Okay.
+[25:51] So this is basically, we're going to give access to Claude in our browser.
+[25:56] So for Chrome and then we're going to ask cowork to do things in our browser.
+[26:01] Okay. So this is, this is pretty interesting. So the bottom left here,
+[26:04] go to click on your profile, then go to apps and extensions.
+[26:08] And then what you can do is come down here and you're going to see there's a
+[26:11] Chrome here. You're going to click this to install. Okay.
+[26:14] And then what you see here, I already have this. So, you know, I can't,
+[26:18] I don't need to, I'm not gonna remove it from Chrome,
+[26:20] but this will be something that you need to install. All right.
+[26:23] And this is something you can trust, right?
+[26:25] And what we can then do is if I open up a new tab and I go to the extensions at
+[26:29] the top, right? It's like a little puzzle piece.
+[26:31] You can see that I have Claude right here. Now, if I click on it,
+[26:34] I now have a screen that I can look at and I can ask you to do
+[26:39] things on my browser, right? From the actual browser. But as we know,
+[26:44] I don't want to do anything from the browser. I want to do it from cowork.
+[26:47] So I'm going to go back to cowork.
+[26:48] And what I want to say is can you open my YouTube
+[26:53] studio app? Okay.
+[26:55] So typically you can't access YouTube studio through an API or
+[27:00] even just a connection, right? It's like a standalone app that you log into.
+[27:03] So it's actually going to navigate to studio.youtube.com.
+[27:07] It's going to read texts and it's going to give me information.
+[27:10] This is information about the dashboard. So my subscriber count, views,
+[27:15] et cetera. Everything's kind of pretty much down for the last like 28 days,
+[27:18] which is typically what this is. Recently published videos,
+[27:22] trending right now, et cetera.
+[27:24] So these are all things that I can look at.
+[27:26] And if we go back to the Google and Chrome, you can see that, well,
+[27:31] actually have like, there's a separate grouping right here.
+[27:34] So this little blue, um, this is, that is Claude working in Chrome.
+[27:40] So it took some screenshots of my main dashboard.
+[27:42] So if I actually went here, like here is my main dashboard.
+[27:46] If you've never seen this before, this is what it looks like.
+[27:49] And so if we come back to the app, that's exactly what it took.
+[27:54] It took a screenshot of that and then gave me some information about it.
+[27:58] Absolutely amazing things that we can do with this. Okay.
+[28:00] So that is something on the side that you can do that is absolutely helpful for
+[28:05] you. Now,
+[28:06] the next thing I want to kind of show you is we have seen connectors where you
+[28:10] connect to something on the outside and what I want to now show you what skills
+[28:14] are. Now, if you've never worked with skills before,
+[28:16] I do have a complete course on skills that is through Claude code,
+[28:20] but I'm going to show you what you can do with skills through cowork. Okay.
+[28:24] So what is a skill? So first off,
+[28:26] if you do something kind of repeatedly that you repeatedly ask,
+[28:30] ask Claude to do in any capacity, then you basically,
+[28:34] you probably want to create a skill for that. For instance,
+[28:37] I want to do YouTube research on competitors to see what's doing well right now.
+[28:40] And I can plan a video around those topics. Well,
+[28:44] I had created a skill to do go out and research what videos are doing well in
+[28:48] the past week so that I can come up with topics and record them and, you know,
+[28:52] publish them myself. Okay. So that is a skill that I created.
+[28:56] So if we have something that we would consistently ask
+[29:00] Claude to do, then we basically want to create a skill from. So for instance,
+[29:05] if we come back to the weekly analytics report that we had previously did,
+[29:10] what I'm going to paste here is I'm going to say a prompt that says we have
+[29:13] done this weekly report the same way. A few times,
+[29:16] say this as a reusable reusable skill called the weekly reports so that I can
+[29:19] run it with one command. Okay. It's going to write down the steps,
+[29:23] the format, everything that it needs to actually work or be used as a skill.
+[29:28] Okay.
+[29:28] So what we're going to do right now is we're going to go through the process and
+[29:31] we're going to see what we need to have done so that we can use this again.
+[29:35] By the way, if you go to customize on the main screen,
+[29:38] you see there are skills right here.
+[29:40] So these are some skills that I have created. Like,
+[29:42] so I'd like a standup skill, which is what I've done today. What,
+[29:46] Oh, what I did yesterday, what I'm going to do. Are there any blockers, right?
+[29:51] The YouTube short to a PowerPoint deck,
+[29:55] some brand guidelines, you know, there are some, a bunch of different things,
+[29:59] right?
+[30:00] So you can actually add skills,
+[30:00] so you can actually browse skills as well.
+[30:02] This is just why we're waiting.
+[30:03] These are certified by Claude,
+[30:08] all of these here on the skills screen.
+[30:10] So Theme Factory, Doc Authoring,
+[30:14] Learn, you wanna learn something,
+[30:15] a Slack Gift Creator, et cetera.
+[30:18] Right here are the connectors,
+[30:19] and then here are something separate called Plugins.
+[30:23] Okay, we will get to that.
+[30:24] But if we go back to the home page
+[30:26] to kinda show you that,
+[30:27] we'll see it looks like it finished.
+[30:29] So if we come back here,
+[30:31] I wanna be upfront with,
+[30:32] I can't register a live runnable skill
+[30:33] inside this session.
+[30:34] The skills I can see are a read-only cache.
+[30:37] Anything I say won't show up as a weekly.
+[30:38] You can activate skills from settings.
+[30:40] So what it can do is write a proper skill.markdown file.
+[30:44] So every skill has a markdown file.
+[30:47] Okay, and I just kinda wanted to show you
+[30:49] what this is going to work,
+[30:51] how this is gonna work,
+[30:53] because I've always created skills in Claude Code,
+[30:55] and you can't actually save a skill markdown file
+[31:01] like we think.
+[31:02] So what it needs to do
+[31:04] is it created the skill markdown file
+[31:07] under a folder in our co-work memory,
+[31:10] because that's the only folder it has access to.
+[31:14] So what we need to do is go to Settings and Capabilities
+[31:17] and install it.
+[31:18] Let's just do that now.
+[31:19] So let's go to Customize, Skills.
+[31:24] We're gonna add a skill.
+[31:25] We're going to go to Create a Skill,
+[31:27] and then after Create a Skill,
+[31:28] we're going to Upload a Skill.
+[31:30] Okay, so we can drag and drop,
+[31:32] which is what actually I will be doing.
+[31:33] So I'm going to go to Finder.
+[31:35] I'm going to look for my skill markdown file,
+[31:38] and then I'm just gonna drag and drop it right here.
+[31:40] Okay, and it's gonna say Weekly Report.
+[31:42] So this is it right here.
+[31:43] Turns the YouTube Analytics CSVs
+[31:45] into a tight, decision-ready weekly report.
+[31:49] Okay, and so you can look in the Analytics folder.
+[31:53] Then this is a specific folder for two CSVs.
+[31:55] Now, we would probably want to change this to say,
+[31:58] okay, I actually need you to look
+[32:00] into maybe just Users Tyler Reed Content or another folder.
+[32:06] Okay, so what we can do now is I'm gonna talk to chat.
+[32:09] I'm actually gonna chat outside of co-work about this.
+[32:13] So if I go back from Customize and go to Chat,
+[32:17] say we have a skill called CSVs, okay?
+[32:22] Because the idea is I want to reuse this,
+[32:24] and I'm gonna show you how we can do this,
+[32:26] but I didn't like the folder that it wanted to look at.
+[32:29] Okay, so we have this skill markdown file that it created,
+[32:32] which is the crux of everything we're doing with skills.
+[32:37] In order to have a skill,
+[32:38] you have to have this skill.markdown file.
+[32:40] Okay, so I'm gonna save the skill.
+[32:42] I'm gonna upload and replace
+[32:43] because I'd already kind of tested this.
+[32:45] So it's going to then replace the skill that we have.
+[32:49] Now, what I want to see here
+[32:51] is just show you where it's located.
+[32:52] So if we go to Customize, then we go to Skills,
+[32:55] I see Weekly Report right here, right?
+[32:57] You can see it's looking at look in the Analytics folder.
+[33:00] It's gonna read CSVs, et cetera.
+[33:03] I want the input to actually be
+[33:05] from just this folder path right here.
+[33:08] And then it's just showing the steps
+[33:09] that we had done before, right?
+[33:12] So I want to update this.
+[33:13] So I'm just gonna go back here,
+[33:15] update the input path to, and the output to this slash output.
+[33:20] So I want to go to the regular folder for input
+[33:23] and then output to a specific output folder.
+[33:26] And then what we can do is we can also save the skill.
+[33:29] It's editing the skill.markdown file right now.
+[33:33] And we're gonna test this out with some custom CSV files
+[33:36] to make sure that it works properly.
+[33:38] Okay, so it just asked me a question that I answered.
+[33:40] So it says the skills are set up.
+[33:42] Let's make sure that it actually fixed this.
+[33:44] So we're gonna go back to Skills
+[33:46] and let's reopen this.
+[33:52] Let's make sure, are you sure it updated the skill?
+[34:00] What you need to do if it doesn't come up again,
+[34:02] what had happened was it updated it, right?
+[34:05] It updated the skill markdown file
+[34:06] but it didn't come up with a way to save it.
+[34:08] So just ask it, I just said, let me save it before.
+[34:11] Can you do that again?
+[34:12] And then it let me.
+[34:13] So I'm gonna save the skill.
+[34:14] It's going to upload and replace
+[34:16] because it didn't actually upload it into the app.
+[34:20] So now if we go back to Customize,
+[34:23] then I go to Skills, my weekly report,
+[34:25] and then here we go.
+[34:26] Default location is user Tyler Reed content.
+[34:29] Now, just for clarification,
+[34:31] you could have also done this in regular chat.
+[34:33] It didn't have to be Co-Work.
+[34:34] It's just that we had tested it in Co-Work.
+[34:37] So I just wanted to create it from there as well.
+[34:39] But you can absolutely use these in regular chat as well.
+[34:43] And now we just need to create a new task
+[34:44] and I'm gonna test this out.
+[34:45] So slash weekly, here we go, weekly report.
+[34:49] And then you just need to make sure
+[34:50] it has CSV files in the correct folder.
+[34:52] So all I'm gonna do is just run this skill.
+[34:55] That's it.
+[34:56] I'm just gonna run the skill.
+[34:57] So it's starting up.
+[34:58] It's going to understand what it's supposed to do.
+[35:01] So it's gonna look through the instructions of the skill.
+[35:04] The skill is just basically a list of instructions
+[35:07] with what it's supposed to do.
+[35:09] And it's gonna do it the same way over and over again.
+[35:12] And that's why it's so powerful
+[35:15] and why you see people talk about skills
+[35:18] is because once you do something,
+[35:20] allow this to do it over and over again.
+[35:22] Okay, so I want to have access.
+[35:23] It can see the files exist, but it can't read them yet.
+[35:25] So I just had to give it access.
+[35:26] Now you see it's going to look at the files
+[35:29] for the YouTube analytics, which again are just a sample.
+[35:32] And then it's gonna do what we did earlier in this course.
+[35:35] But now it's just a skill that I can use
+[35:39] in like a different task.
+[35:40] I can use it in chat.
+[35:41] I can use it elsewhere.
+[35:42] Let's say I go to chat.
+[35:43] I can say slash weekly.
+[35:45] Here's a weekly report.
+[35:46] Generate Tyler's weekly YouTube analytics.
+[35:48] So it's gonna run the latest CSVs,
+[35:50] which I would just put in there myself.
+[35:52] Okay, so you can use it from chat as well,
+[35:54] but in co-work, go back to the weekly report.
+[35:57] And we just want to make sure
+[35:57] that it's actually running properly.
+[35:59] And it looks like it is, right?
+[36:00] This is similar data, right?
+[36:02] Because it's just sample data.
+[36:03] Again, that's great because it looks the same.
+[36:05] That's what you want with the skill.
+[36:07] You want it to look the same
+[36:08] so that it's done the same way every time, right?
+[36:11] Because you can update it if you don't like the look of it,
+[36:13] but you want something that's consistent
+[36:15] and that's exactly what skills are for.
+[36:17] And I had talked about, we had briefly seen plugins, right?
+[36:22] So right here, you can see browse plugins.
+[36:24] Plugins are more of like a package deal.
+[36:27] So you get skills.
+[36:29] So you don't only just get skills,
+[36:31] but you also get that connection.
+[36:32] It's kind of a lot of things that we've talked about in one.
+[36:35] So for instance, Monday, there's a monday.com plugin,
+[36:39] base 44 plugin.
+[36:40] There aren't going to be as many of these, okay?
+[36:43] So don't be surprised if you don't see as much,
+[36:46] but that's okay.
+[36:47] Some of these I've never heard of before,
+[36:48] but some of them you may have, right?
+[36:49] It doesn't matter, right?
+[36:50] There's Twilio for text messaging.
+[36:53] Airtable, again, we've seen some of these bright data.
+[36:56] It doesn't matter,
+[36:57] but plugins come with skills that were created.
+[37:00] And I'm assuming that Anthropic went with them.
+[37:03] So for instance, here's Zapier.
+[37:05] It probably went to Zapier
+[37:06] and they had developed skills
+[37:07] to connect to your Zapier account
+[37:09] that you can use within cowork or chat.
+[37:11] Now, something that I think is going to be very useful
+[37:15] that you should definitely use are schedules.
+[37:18] So let's see how we schedule something now.
+[37:21] All right, so we're going to go back to the main page.
+[37:23] You can see here that I already have
+[37:25] three scheduled right here.
+[37:27] I have daily briefing, weekly TikTok scrape,
+[37:29] and a daily morning brief, okay?
+[37:31] So I go to schedule.
+[37:32] What do you see here?
+[37:33] I have three that are working.
+[37:34] If it's green, typically means that it's on.
+[37:35] Daily briefing is every day at 5 a.m.
+[37:37] This one's at 6.30 and this is every Sunday at seven.
+[37:39] So that's actually more specific.
+[37:41] Okay, so if we take a look at the weekly TikTok scraper,
+[37:44] these are the instructions.
+[37:46] So I have a TikTok skill that it's running
+[37:49] that's going to scrape on these specific keywords on TikTok
+[37:53] using Appify, which allows to get a bunch of information
+[37:57] from these videos.
+[37:59] And it's going to take a few minutes,
+[38:00] but this runs every Sunday at 7 a.m.
+[38:04] All right, so this was an example of a run.
+[38:07] Pulled out myself.
+[38:08] So this was using the Claude co-keyword.
+[38:11] It scraped a total of 47 videos.
+[38:14] And this here's some information about them.
+[38:16] And so it gives me some hooks and formats
+[38:18] that I can work with, creators to watch
+[38:20] that I can look at myself.
+[38:21] Here's like people punching above their weight
+[38:23] based on how many followers they have.
+[38:25] So this is great, right?
+[38:26] This is very good information.
+[38:29] The average engagement rate, et cetera.
+[38:31] These are all wonderful things that I can look at.
+[38:33] So let's go ahead and schedule something ourself.
+[38:36] Well, how do we do that?
+[38:37] So over here, you're going to click on the scheduled.
+[38:39] And what you can see here is you can also
+[38:40] keep your computer awake.
+[38:41] This means that scheduled tasks only run
+[38:44] while your computer is awake.
+[38:45] If it's sleeping, it's not going to work.
+[38:47] Especially if it's off, it's not going to work, right?
+[38:48] Again, this is a desktop app.
+[38:50] That's one of the cons of this
+[38:52] is that this is a desktop app.
+[38:53] Okay, so you can turn this on if you want to.
+[38:56] Keep it off, whatever you'd like.
+[38:57] Let's say we want to create with Claude, right?
+[38:59] So we're going to have Claude help us
+[39:00] create a scheduled task.
+[39:02] Okay, so it's basically a basic prompt,
+[39:05] schedule task and co-work,
+[39:06] let Claude run work for you automatically.
+[39:10] So it's going to ask me a couple questions
+[39:12] to see what I want to do.
+[39:13] Okay, so I want an inbox email summary.
+[39:16] Let's say every day, let's do evening at 6 p.m.
+[39:21] So now it's going to make sure that I have Gmail connected.
+[39:23] If you don't have Gmail connected,
+[39:25] then you would need to connect that
+[39:26] just like we did earlier, going through the connectors.
+[39:29] And what's going to do is set up a daily inbox summary
+[39:31] at 6 p.m. using your Gmail.
+[39:33] So it's creating a scheduled task.
+[39:35] These are the instructions for that.
+[39:38] And if I like this, I can just simply say schedule.
+[39:40] And you know what, if you don't like it,
+[39:42] you can edit it, right?
+[39:42] You can talk with Claude and say,
+[39:44] hey, I want you to fix this.
+[39:46] So it's going to check for new and unread emails,
+[39:49] give you a scannable rundown,
+[39:50] and flag anything that needs a reply.
+[39:51] Task only run while the app is open, right, et cetera.
+[39:54] So we can click run now
+[39:55] to approve the Gmail partition up front.
+[39:58] And do you want me to trigger a test run now?
+[39:59] Yes, test run now.
+[40:02] Okay, and this is just basically basic information
+[40:05] that we have probably seen already before.
+[40:07] But the daily inbox summary,
+[40:09] this is what it would look like.
+[40:10] So I can just simply look at it
+[40:12] and see what I need to look at
+[40:14] and what doesn't need to be looked at.
+[40:15] You can also edit it to have specific things
+[40:18] to look out for so that it can let you know,
+[40:20] hey, what you were looking at, here it is.
+[40:23] You actually got an email about that thing, okay?
+[40:26] So you can edit this however it fits your needs.
+[40:30] Please edit it until you're satisfied with it.
+[40:33] That's the great thing about having AI
+[40:35] is that you can constantly update it to what you like.
+[40:38] Don't worry, you should always have a feedback loop
+[40:41] to make it better.
+[40:41] That's what's really gonna separate you from other people.
+[40:45] All right, so we have done a lot.
+[40:46] You have learned a lot about what we can do with Co-Work.
+[40:50] Co-Work is one part of the ecosystem of Cloud.
+[40:53] And I personally have only been using Cloud
+[40:56] and I use Cloud Code probably the most.
+[40:58] Cloud Co-Work is also amazing.
+[41:00] And so I just wanna kind of go over
+[41:03] Cloud Co-Work and Cloud Code.
+[41:06] So Cloud Co-Work, as you can see,
+[41:09] this is also a very user-friendly way
+[41:12] of performing actions on something.
+[41:14] Once you kind of get familiar with it,
+[41:16] it takes no time at all to set things up
+[41:18] and help you run your parts of your business.
+[41:21] It may not run your whole business,
+[41:22] but the idea is to improve what you're doing, right?
+[41:26] To keep improving what you're doing
+[41:27] and this will certainly help you out with that.
+[41:29] Cloud Code, I use it more when I'm building things, right?
+[41:32] So in some of your cases, maybe you want,
+[41:35] maybe you want a simple website.
+[41:36] You know, maybe you do need funnel pages.
+[41:39] I would use Cloud Code to really help me with that,
+[41:42] to actually build them out for a domain that I bought,
+[41:45] whatever it is, so tylerai.dev.
+[41:47] If I want some funnel pages, which I've created,
+[41:49] I use Cloud Code to help me with that.
+[41:51] And you can take screenshots of something that you like
+[41:54] and say, hey, I like this design.
+[41:56] Can you just make it for me?
+[41:58] Here's what I need for my funnel, right?
+[42:01] So I use kind of both in parallel.
+[42:03] I use Cloud Code because I'm more of a developer.
+[42:05] So I use Cloud Code more to build things
+[42:07] and then Cowork to handle things automatically.
+[42:11] It's kind of making all those kind of redundant tasks, right?
+[42:15] Anything that you do more than once,
+[42:17] it'll take that and do it for you, right?
+[42:19] And that's gonna save you time and energy.
+[42:21] Essentially, anything you would have an assistant do,
+[42:24] Cowork can do.
+[42:26] Think of it that way.
+[42:27] If you would have an assistant or you currently have one,
+[42:31] what can Cowork do that they would do
+[42:34] or they're currently doing?
+[42:35] Think, that's how I want you to think.
+[42:37] Okay, so for this last little part,
+[42:39] I just wanna go over.
+[42:40] Let's go over, if you have never used this before
+[42:43] and I know you followed through,
+[42:44] I wanna give you kind of a step-by-step direction
+[42:46] on what you should do right now.
+[42:48] Okay, so the first thing is get familiar with organizing.
+[42:51] It's one of the first thing that we did, right?
+[42:52] So we organized some files.
+[42:54] So if you have just a bunch of files
+[42:55] anywhere on your computer,
+[42:57] give it access to that folder like we did here.
+[43:00] It looked what was in the folder
+[43:02] and then you can give it direction
+[43:05] and it just organized the files into subfolders
+[43:08] because that was the prompt that I had given it.
+[43:10] Okay, so just make sure that you're giving it
+[43:12] something that you like
+[43:13] and it will ask you questions beforehand.
+[43:15] But this is a really good way of getting
+[43:18] what you're doing in order
+[43:20] because I know people love spreadsheets,
+[43:21] people love Word documents
+[43:23] and it can be confusing what they're doing
+[43:24] and it can go through there and help you organize.
+[43:26] And for step two,
+[43:27] it's really good to analyze what you're doing, right?
+[43:30] Data is amazing, but it's tough to actually get that data.
+[43:34] Well, AI has made that.
+[43:36] So once you get that data,
+[43:38] for instance, when we did this expense report
+[43:40] based on receipts,
+[43:42] maybe you have subscriptions that you didn't think of, right?
+[43:44] Take a screenshot, download a PDF version of your chase
+[43:48] for the last of your expenses for the last month
+[43:51] or whatever bank you have, just get the report,
+[43:54] put it in here and have it analyzed
+[43:57] and see what you can do to improve financially.
+[43:59] And also if in your business, same thing,
+[44:02] or if you need to analyze customer data,
+[44:05] you can do that here as well.
+[44:07] And schedule things.
+[44:07] So you can triage like we had done,
+[44:10] like we just did, right?
+[44:11] We've created a new scheduled task
+[44:13] where I triaged my Gmail,
+[44:15] which you could also do your calendar.
+[44:17] And then if you have something that you record
+[44:20] the tasks that you need to do for the day,
+[44:21] put that together and you can have that done
+[44:24] every day for you, even twice a day, right?
+[44:26] It doesn't have to be every day, once a day.
+[44:28] It could be multiple times in a day
+[44:29] to kind of give you what you need to do.
+[44:31] Just like we had done right here.
+[44:32] So here's today's emails and calendar as well that I did.
+[44:35] It just, it took like a minute to do, right?
+[44:37] It doesn't take, it doesn't take long at all
+[44:39] to actually can make the connection and make it work.
+[44:41] And then also number four, research, right?
+[44:44] This can help you research.
+[44:45] You can also do this with chat.
+[44:46] It doesn't have to be with cowork necessarily.
+[44:48] You can do, you can chat,
+[44:49] but let's say you are logged into something.
+[44:52] So for instance, I was logged into my YouTube studio,
+[44:55] YouTube studio right here.
+[44:57] If you have other things with the cloud common browser,
+[45:00] you know, it can go through,
+[45:01] you can actually go and go deeper into some of these
+[45:04] like channel analytics and go further, right?
+[45:06] It can go much further than you think.
+[45:09] And once you do that,
+[45:10] now that you have know how to use a connection
+[45:12] with a cloud Chrome, ask it, right?
+[45:16] Ask it other things that you may have
+[45:18] and get the data that you need
+[45:20] so it can do the research for you.
+[45:22] Goal is to really save you time and which save time,
+[45:25] give you more reasons to maybe make sales calls,
+[45:29] see what you can do better,
+[45:30] work with your team and make more money.
+[45:32] Okay, you finished it.
+[45:34] Great job.
+[45:34] Let's kind of bring this all together.
+[45:36] We have done a step-by-step or how to solve cloud,
+[45:39] how to work with cloud cowork.
+[45:40] You need a subscription to make this work.
+[45:42] But once you do that, I recommend again,
+[45:44] starting with a $20 subscription,
+[45:46] the pro version just to get your feet wet.
+[45:49] If you already have the subscription, great.
+[45:51] Please try this out and run the step-by-step.
+[45:53] And the whole point with all of this is to get used to it.
+[45:59] The more you just practice something,
+[46:01] the better you're gonna get at it.
+[46:02] It's just how it works, right?
+[46:04] And in the world of AI, there's so much out there.
+[46:07] It can be really confusing,
+[46:08] trying to keep up with everything.
+[46:09] Me, it's literally one of my job.
+[46:11] Part of my job is keep up and I can't.
+[46:13] It's so tough.
+[46:14] There's just so much out there.
+[46:15] Every day something is coming out.
+[46:17] So this is something that really for your business,
+[46:20] if you're a content creator,
+[46:21] if you're trying to have outreach for your business,
+[46:27] for example, you're trying to do some marketing.
+[46:28] These are some amazing things you can do.
+[46:31] Think about having an assistant.
+[46:32] You can have an AI assistant very easily right here.
+[46:35] So what I want you to do is pick something small
+[46:37] and just do it.
+[46:38] Just pick something small and try it out and do it, okay?
+[46:41] And if you need to rewatch some of the sections
+[46:43] of the video, please go ahead and do that.
+[46:45] Everything that I used here,
+[46:47] there will be a link in the description
+[46:48] so that you can copy and paste, especially the prompts.
+[46:50] I will also have this in my school community.
+[46:53] Join for free.
+[46:54] That is down in the link in the description
+[46:56] below of this video.
+[46:59] I also have a sign up for my email.
+[47:01] You can get some free skills right away.
+[47:05] You just sign up.
+[47:05] I just want you to get much better at this.
+[47:07] I also have some more videos here for cloud skills
+[47:09] and clearly explaining what some of these things do
+[47:14] and what they can do for you, okay?
+[47:16] So thank you for watching.
+[47:17] Join my community.
+[47:19] It's free.
+[47:19] I will see you next video.

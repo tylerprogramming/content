@@ -1,0 +1,144 @@
+[00:00] I connected Granola to Claude Code and now my AI remembers every meeting I've ever had.
+[00:05] I can ask what a client asked three weeks ago, what I promised to deliver, who was on the call,
+[00:10] and it just knows because it's reading my actual notes. So here's the thing about note-taking,
+[00:15] right? We've kind of solved how to capture notes. There's a lot of different ways to do this.
+[00:20] We've got the transcripts, we have the recordings, we have the AI summaries,
+[00:23] we have all these notes in different apps. So capturing the meeting isn't really the
+[00:27] problem anymore. The problem is what happens afterwards. We don't want the notes from them
+[00:32] just to sit in a folder and die. Granola is going to help you reason across everything
+[00:36] that you have ever captured. And Granola does that and much more. So this is Granola,
+[00:41] the AI notepad for back-to-back meetings, where you get the notes, actions, and memory
+[00:45] without a meeting bot. One of the most annoying things that you can ever have with a meeting is
+[00:50] asking permission to have a bot enter the chatroom, right? It's just another person in
+[00:55] there that's just taking notes and that can just kind of be annoying. Well, this doesn't do that.
+[01:00] You don't have to wait for a bot to come into your meeting. It just takes the recording from
+[01:04] everybody that's on the meeting and yourself and is live transcribing them and taking notes
+[01:10] at the same time. And then also they have an MCP server, which I'm going to show you
+[01:14] that you can connect to Granola to do way more with it, which we are also going to demo in this
+[01:20] video. Okay, well, the first step is that we need to get started with installing Granola AI. So if
+[01:25] you go to Granola AI like I have here, this is what it looks like. And so you're just going to
+[01:29] download the app for free. So it's available for macOS, Windows, and iPhone. Just go ahead and
+[01:34] download that. And then we're going to start the software. And once you get it started, it'll ask
+[01:38] you to log in. You will get a free trial. Like you can see down here, I have a business trial
+[01:43] with 30 days left. I just started this yesterday and you will be able to get started right away.
+[01:48] So let's just walk through this really quick on what this is. So we have the home and I have
+[01:52] connected my Google calendar. So right now for today, I don't have any meetings coming up on a
+[01:58] Saturday, which is good. And then I have all of the meetings that I've had yesterday. Okay. And
+[02:04] then what I have anything that's shared with me, I could also chat right here inside the app with my
+[02:10] meetings to get any information, right? If I want to extract items from my meeting notes, like I had
+[02:14] said here, it's going to scan the most recent meetings in my folders, read the notes, et cetera.
+[02:19] I also have separated spaces on the left-hand side here for different notes, depending on what
+[02:24] they're for. So my school clients right here, these are perspective calls. Here's user interviews.
+[02:29] These are just mock-up. And then I could actually talk. I could talk with granola AI about all of
+[02:36] these notes or basically recordings. Okay. But one of the best things about granola, which I'm about
+[02:42] to show you, there's no bot that enters a meeting whenever it's scheduled. That's amazing, right?
+[02:48] It's kind of annoying when you say, Oh, do you want to give permission to this bot? Right? So
+[02:52] then the person has to permit it, et cetera. Well here, you don't have to worry about that. So what
+[02:56] I'm about to do is I'm going to replay a video and when it's going to record what they're saying
+[03:00] and also me at the same time, and we're going to see it on the right-hand side. Okay. So I'm
+[03:04] going to replay the video and you can see it is kind of go full screen. This is the creator,
+[03:09] I believe of granola. And what I'm going to do is resume and turn your short scrappy notes into
+[03:15] something much more. And we're going to see, that's going to go ahead and take right away.
+[03:18] It's also going to record what I'm saying as well. You can see it's happening live.
+[03:24] Doesn't necessarily matter what he's saying right now, but it's recording both people.
+[03:28] And the best thing is the other person doesn't have to know they're being, you know, that's
+[03:32] being recorded, but at the same time, it's also recording myself. So we have the full transcript.
+[03:37] And then I'm basically just having it regenerate notes based off what we had just, what it just
+[03:44] read or rerecorded again, but we're going to move on to step two. And now instead of using the app,
+[03:49] we can now connect this with Claude code and do way more with these notes. So let's see how we
+[03:55] do that. Granola has their own MC, MCP server. I have a link for the exact line you will copy and
+[04:00] paste, but I'm going to paste that right here. It's going to then add the MCP server. It already
+[04:05] exists. So, you know, I don't have to worry about it, but now if I just say Claude, if I get,
+[04:10] if I just start up my Claude code on my local terminal, and now I'm going to type slash MCP,
+[04:15] I am going to go to granola. It needs authenticated. I'm going to go ahead and
+[04:20] authenticate. It's going to push the, put that there. I do not want it there. So I want to open
+[04:25] up a Google Chrome, paste that link that is given. This is just to simply sign in, right? Just so we
+[04:31] can authenticate. So I'm going to continue with, uh, go ahead and continue with my Gmail account,
+[04:35] access my Google account. Good. So now if we go back to terminal, it should be done. And yes,
+[04:41] it says authentication successful. Now we are connected to granola. So the first thing I want
+[04:45] to ask is what tools are available with granola, granola MCP. Okay. So this is just going to now
+[04:53] return the list of tools that we can access. And we can basically access all of our notes,
+[04:57] uh, all of our meetings, um, all the folders that we have. We actually query specifically,
+[05:03] and this is great. This is really all we need because then from here, once we have the notes,
+[05:08] then we can do anything else with them. All right, now we're going to go on to our first
+[05:12] demo of what you can do with this. So I'm going to go and just paste this prompt and says,
+[05:15] look through my meetings. What questions do clients keep asking me? Give me five video ideas,
+[05:20] ideas based on the patterns. So now it's going to go through all my meetings. I think I have about
+[05:25] 12 total. So it's first going to dig the meetings, find recurring client questions. Okay. And this
+[05:30] is great. So while this is running, this is just how simple it is. We just installed the granola
+[05:34] MCP server. We have granola running that has access to all of our meetings that is going to
+[05:39] be recorded while we have our meetings, right? You don't have to, like I mentioned, worry about
+[05:44] permissions or anything. It's just going to record you and the other person or other persons that are
+[05:49] in that meeting. Okay. And so once that is done, it automatically saves it and transcribes and
+[05:54] gives you notes by itself. You can also add notes yourself as well on the granola app,
+[05:59] but here we are. It's going to pull everything and give us something that the clients have been
+[06:04] asking for. All right. So it came back, says the recurring questions, your real FAQ. Do I need to
+[06:10] know how to code? How long before I see results? And you see, it's giving the people that have
+[06:15] mentioned that as well. So it, how do I stay consistent enough to post daily? This new
+[06:20] universal Marcus reads it twice. It's Jenna's number two worry. Okay. This is great. And then
+[06:25] with that, now I have, it gave me five video ideas that I could do based off of those notes
+[06:32] and beatings that I had with customers. Right. And I have not actually looked. I didn't need
+[06:36] to look at the transcript or review them because I can talk with them right here within cloud.
+[06:42] And this is amazing. This is just one demo of what you can do. Let's try another demo. And now
+[06:46] another scenario is that sometimes whenever you have had these meetings, you do need to draft
+[06:51] follow up emails. Okay. So I can see what meetings I had yesterday or even the day before,
+[06:56] whenever you had these meetings and then just say, can you draft follow up meetings in my tone?
+[07:01] Okay. Because I'm in the, I'm in cloud code. It already has some memory of how I speak and how I
+[07:08] would kind of write the emails and I have Gmail connected already. So this is great. I had the
+[07:14] meeting notes, what we had talked about in those meetings, and now we can just simply draft follow
+[07:18] up emails. And now it's actually asking me questions. Which of yesterday's meetings should
+[07:22] I draft follow up emails for? Let's just do the sales prospect and clients. You know, these are
+[07:27] all kind of fictional, fictional scenarios. These aren't like real ones that I've had.
+[07:33] So it's going to pull the date details from each of the four sales calls. So the follow-ups are
+[07:36] specific to what was actually set. Right. So it's going to just use the tools with granola MCP server
+[07:43] and then it's going to come up with the emails and draft them for me. Okay. So it found, um,
+[07:47] it said Priya wants to start a channel subject, your channel, where to start. Hi Priya. Great
+[07:51] talking with you. It's going to go through, and this is a draft by me. Okay. So it actually did
+[07:56] it for David, Jenna, and Marcus. Now it's asking me to push these into Gmail address. And now it
+[08:02] wants me to push these into Gmail address. I'm going to say yes. And as these are fictional,
+[08:06] I just want them. I just want to come up with a example of names. So we're going to go into
+[08:11] my Gmail and make sure that it actually drafted these Gmail drafts, right? It says that all four
+[08:17] drafts are saved in my Gmail, ready to review. So let's look at, let's look for Priya, your channel,
+[08:22] where to start. So now if I go in here, you can see your channel, where to start. Priya is right
+[08:26] here. This is a draft inside of my Gmail, and I can then just edit this if I want to right here
+[08:32] and then just simply send. Okay. And I did it, did it for all of those. Here is David.
+[08:36] There is Jenna, and I believe there is Marcus. So those are all four drafts that we have done
+[08:41] through CloudCode. And the amazing thing about this is because Granola has an MCP server now,
+[08:46] you can use CloudCode to do so many things, right? If you have new meetings,
+[08:51] you can have it set up to where it sends things to your Slack as well and give you simple updates
+[08:55] such that your whole team is notified. All right, great. So now for the next demo, this one,
+[09:00] which is, I think it'd be really great to have data on is I'm going to go through Marcus because
+[09:05] I've had quite a few calls with him. And so I'm going to have this problem. So pull all my meetings
+[09:10] with this client. The client is Marcus Bell, and it's going to go through all that and draft a
+[09:17] scope proposal based on everything that we have discussed. Okay. So it's going to go back through
+[09:22] every conversation I had, find everything we've done with Marcus. And then based on all of our
+[09:27] talks, because I know he is a potential school client, I want to draft a proposal that is right
+[09:33] and fit for him. And so it just took a minute to find everything about Marcus, but it eventually
+[09:38] did. And we got the discovery call, the followup and the scoping. Okay. So here is the proposal.
+[09:43] So it's prepared for Marcus Bell founder and founder of Bell coaching. So it's saying where
+[09:49] Marcus is currently. And it says what I is giving me a roadmap of also what I'm going to build with
+[09:54] him, right? So these are all the things that has come up with based on everything that we have
+[09:59] already talked about. Okay. So it says how we will work. So done with you, the weekly check-ins
+[10:04] throughout the build phase. So we get early wins. It gave us timeline of six to eight weeks, right?
+[10:08] And here is everything we need to do. It's give also the proposal, right? So it's going to give
+[10:13] us the monetary base. So the, it's actually saying right here, prices are placeholders and brackets
+[10:18] 3,500 for the core and 500 for any, for, for the add on, I think for the thumbnails. So this is
+[10:23] amazing. This is absolutely what makes this special, especially that you can connect it to
+[10:29] Claude code and do so much more with that. This can connect to everything else, because if you
+[10:34] want to set up a meeting, right, we can, you can set this up with Calendly or your Google calendar,
+[10:39] create the event there, and then send that to Marcus with an email, right? That would be hard
+[10:44] to do just in the app itself. But with Claude code, you can also edit it and format in the way
+[10:50] your voice and your brand is so that they know it's from you. So here's why these two together
+[10:56] are more than the sum of the parts. Granola is the capture layer. It quietly reliably,
+[11:00] reliably turns every meeting into a clean structured note while Claude code is the
+[11:05] reasoning layer, right? It reads across all these notes and then actually does something with them
+[11:10] as we have seen and makes the connections to the outside world, such as your email, Slack calendar.
+[11:17] You could even go to Calendly to set up calls as well. There's so much more that you can do,
+[11:23] right? You can put this in your notes as well. If you have a separate notion database or some
+[11:27] other database, this can all be saved there through Claude code. It's just all compounding.
+[11:32] Okay. So if you want to set all this up yourself, it will put everything you need down in the
+[11:36] description below. Granola is free to try again. I'll have the link. I am being sponsored by them
+[11:41] and I also have the MCP connection to Claude code in the one command that I already showed
+[11:46] you as well. Go connect your meetings with AI and tell me in the comments what you would do
+[11:51] first with that. And if you want to see more ways I am using AI to help others with their
+[11:55] content and their business, I have a link to my free school community in the description below.
