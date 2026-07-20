@@ -4,6 +4,7 @@ Central knowledge base of what's working per platform. One folder per platform, 
 
 ```
 BRAIN/
+  tyler-voice.md       <- Tyler's voice guide, applies to ALL written content
   instagram/brain.md   <- updated by /ig-research, read by /instagram-writer, /flash-video, /social-copy
   linkedin/            <- future: LinkedIn research skill
   tiktok/              <- future: fold in /tiktok-analytics learnings
