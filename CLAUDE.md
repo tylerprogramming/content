@@ -57,12 +57,12 @@ Skills live in the separate `tylerprogramming/claude-skills` repo at `~/claude-s
 
 ```
 /yt-search → /transcribe → /yt-package → /yt-seo → [FILM] → /yt-chapters
-   → /shorts → /content (or /repurpose) → /yt-upload → schedule
+   → /yt-shorts → /social-copy (or /repurpose) → /yt-upload → schedule
 ```
 
 - `/yt-search` writes to `research/`
 - `/yt-package` writes to `youtube/videos/<NNN-slug>/`
-- `/content` writes to the package's `social/` folder
+- `/social-copy` writes to the package's `social/` folder
 - `/yt-upload` handles YouTube API uploads/edits (replaced Blotato for long-form)
 
 ## Git workflow
