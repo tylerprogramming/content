@@ -333,3 +333,19 @@
 - **Duration:** 10:46
 - **Demos:** /transcribe, /journal, /yt skills + live build of /meal-plan skill
 - **Date Uploaded:** 2026-03-01
+
+### 32. I Tested Matt Pocock's Claude Code Plugin on a Real Business
+- **Status:** Planned - RELEASE-DAY VIDEO (hold until the plugin ships, then film within 48h)
+- **Priority:** High
+- **Topic:** Matt Pocock's skills (github.com/mattpocock/skills, 20.4K stars) approved as a native Claude Code plugin - managed bundle, auto-updates, subscribe-not-fork. Announcement tweet did 86K views pre-release.
+- **Angle:** Everyone else will cover it dev-on-dev. Tyler installs it day-one and runs /wayfinder, /research, /handoff, /implement against his CONTENT BUSINESS. What transfers, what doesn't, said honestly. Ends: "built for engineers - here's what business skills look like" -> 17-skills video + free repo.
+- **Trigger:** Jarvis X-pulse watches @mattpocock daily - film when the release drops.
+- **Date Added:** 2026-07-21
+
+### 33. Superpowers Makes Claude Code Plan Before It Builds (I Tested It)
+- **Status:** Planned - evergreen, film any slot
+- **Priority:** High
+- **Topic:** obra/superpowers - official Claude plugin, 14 skills encoding an engineering discipline: brainstorming HARD GATE (no work until you approve a design), git worktrees, written plans, TDD subagents, fresh-agent code review. Install: /plugin marketplace add obra/superpowers-marketplace.
+- **Angle:** The brainstorm-gate applied to a content business: "Claude asks questions until the plan is right, THEN works." Tyler runs a real task (plan a video package / build a skill) through the Superpowers pipeline vs freestyle. The discipline angle fits his calm voice - zero hype needed, the gate demo sells itself.
+- **Notes:** Separate from #32 on purpose - each owns its own search term and moment.
+- **Date Added:** 2026-07-21

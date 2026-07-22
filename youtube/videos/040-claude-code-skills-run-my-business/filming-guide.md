@@ -1,4 +1,4 @@
-# Filming Guide: 27 Claude Code Skills That Run My Business
+# Filming Guide: 17 Claude Code Skills That Run My Business
 
 The do-this / click-that playbook. Follow it top to bottom and you can film the whole thing without re-reading the script.
 
@@ -10,7 +10,7 @@ The do-this / click-that playbook. Follow it top to bottom and you can film the 
 
 1. **Clean terminal** - fresh Claude Code session, `/clear` run, large readable font (18pt+). Dark theme.
 2. **Status line on** - so viewers can see the model + context window (visual proof it's the real tool).
-3. **Skills folder ready** - have `~/.claude/skills/` open in Finder or a file tree so you can show the 27+ folders instantly.
+3. **Skills folder ready** - have `~/.claude/skills/` open in Finder or a file tree so you can show the 17+ folders instantly.
 4. **Pick your demo topic ahead of time** - decide the `/yt-search` topic (e.g. "claude code") and have a transcript already downloaded so `/yt-package` doesn't make you wait 3+ minutes on camera. Pre-run the slow ones and cut to results.
 5. **Pre-run the slow skills once** - `/yt-package` and `/social-copy` can take minutes. Run them BEFORE recording so the output folders already exist, then just show the finished files. Film the *command going in* live, cut to the *result*.
 6. **Crontab visible** - have `crontab -l` output ready in a second terminal tab to prove the monitors are scheduled.
@@ -179,7 +179,7 @@ Keep them short, spoken-word, no jargon. Match a confident, practical creator vo
 ## Step 7 - Recap + CTA (13:30 - end)
 
 **What you do:** Back to camera.
-> "That's the real system. Claude Code researches and writes my content, watches my comments and sends my email on a schedule, and runs my community. 27 skills, all text files, built by someone who isn't a developer. The skills and setup are free in my community, link's in the description."
+> "That's the real system. Claude Code researches and writes my content, watches my comments and sends my email on a schedule, and runs my community. 17 skills, all text files, built by someone who isn't a developer. The skills and setup are free in my community, link's in the description."
 
 [SHOW: end card - https://free.tylerai.dev/youtube/ + subscribe]
 

@@ -43,7 +43,7 @@ Aspiring AI builders / solopreneurs who want to make money with Claude Code but 
 
 **Nate showed a staged demo. We show the real thing running.**
 
-- His skills were built for the video. Ours (27+ and counting) already run a live content business day to day.
+- His skills were built for the video. Ours (17+ and counting) already run a live content business day to day.
 - We keep his winning *beat structure* (problem -> proof -> real demo) but every demo is a skill that's genuinely in production.
 - We do NOT build a fake SaaS. The proof is the system that already exists: the content pipeline, the cron jobs firing on their own, the Skool automation.
 - Audience shift: from "aspiring builder" to "creator/solopreneur who isn't a developer." Widest lane, least competed, matches the channel north star.

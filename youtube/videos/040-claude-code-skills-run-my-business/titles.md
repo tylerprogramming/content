@@ -1,20 +1,43 @@
 # Titles
 
+## Wave update - 2026-07-21 (from Jarvis competitor sweep)
+
+Context: Fable 5 keyword is the current wave (every top channel riding it).
+Proven title shapes right now: Nate Herk calm-specific ("Fable 5 Just Built Me
+a Business With One Prompt" 60K), Jack Roberts equation ("Fable 5 + Design
+Skill = $10,000 Websites" 114K), Chase AI transformation ("This Skill Turns
+Fable 5 Into Web Design MONSTERS" 60K). No-hype titles are winning at the top.
+
+### New candidates (Tyler's voice, no hype words)
+1. **Claude Code + 17 Skills = My Entire Content Business** - the equation
+   shape, and literally Tyler's own proven Shorts formula moved to long-form.
+2. **These 17 Skills Turn Claude Code Into a Content Business** - Chase's
+   transformation shape without the shouting.
+3. **Fable 5 Runs My Content Business. Here's the System (17 Skills)** - wave
+   keyword + Nate's calm delivery + number hook.
+4. **I Run My Whole Business on Claude Code Skills. Here's How.** - cleanest,
+   zero gimmick, banks on thumbnail for proof.
+
+Recommendation: #1 or #3. Test both with Studio Test & Compare at upload
+(plus the original "17 Claude Code Skills That Actually Run My Business").
+Note: skill count on screen must match the title number - verify 17 vs 28
+before filming (`ls ~/.claude/skills | wc -l`).
+
 > Formula: specific number + specific tool + specific outcome. Angle: real skills running a real business (anti-staged-demo). Audience: non-dev creators.
 
 ### Recommended
-**27 Claude Code Skills That Actually Run My Business** (52 chars)
-- Hits the formula cleanly: number (27) + tool (Claude Code) + outcome (run my business). "Actually" pre-loads the anti-demo promise without needing a second line. Curiosity + proof in one.
+**17 Claude Code Skills That Actually Run My Business** (52 chars)
+- Hits the formula cleanly: number (17) + tool (Claude Code) + outcome (run my business). "Actually" pre-loads the anti-demo promise without needing a second line. Curiosity + proof in one.
 
 ### Options
 
-**1. 27 Claude Code Skills That Run My Entire Business** (49 chars)
+**1. 17 Claude Code Skills That Run My Entire Business** (49 chars)
 - The clean flagship. Number + tool + outcome. Broad and confident.
 
-**2. I Run My Whole Content Business on Claude Code (27 Skills)** (57 chars)
+**2. I Run My Whole Content Business on Claude Code (17 Skills)** (57 chars)
 - "I run my whole X" is your best sub-driver format; the parenthetical adds the number hook.
 
-**3. 27 Claude Code Skills (No Code Required)** (40 chars)
+**3. 17 Claude Code Skills (No Code Required)** (40 chars)
 - Leads with the number, closes with the reassurance that unlocks the non-dev audience. Short, punchy.
 
 **4. Everyone Fakes These Claude Code Demos. Mine Actually Run.** (58 chars)
@@ -25,7 +48,7 @@
 
 ---
 
-**Note:** Update "27" to the true, clean count at film time (~43 total skills - pick the honest headline number). Per your rule, no dollar amounts in the title.
+**Note:** Update "17" to the true, clean count at film time (~43 total skills - pick the honest headline number). Per your rule, no dollar amounts in the title.
 
 ---
 
@@ -35,30 +58,30 @@
 
 | # | Title | Chars | CTR formula | Primary keyword |
 |---|-------|------:|-------------|-----------------|
-| 1 | **27 Claude Code Skills That Actually Run My Business** | 51 | Specific number + bold claim | claude code skills |
-| 2 | I Run My Entire Business on Claude Code (27 Skills) | 51 | "I run my X" + number | claude code business |
+| 1 | **17 Claude Code Skills That Actually Run My Business** | 51 | Specific number + bold claim | claude code skills |
+| 2 | I Run My Entire Business on Claude Code (17 Skills) | 51 | "I run my X" + number | claude code business |
 | 3 | Claude Code Skills: How I Run My Business (No Code) | 51 | Direct/search + reassurance | claude code skills |
-| 4 | 27 Claude Code Skills Every Creator Should Steal | 48 | Number + audience + curiosity | claude code skills |
+| 4 | 17 Claude Code Skills Every Creator Should Steal | 48 | Number + audience + curiosity | claude code skills |
 | 5 | The Claude Code Skills Nobody Shows You (Real System) | 53 | Curiosity gap / anti-demo | claude code skills |
 
 ### Why each works
-1. **27 Claude Code Skills That Actually Run My Business** - your proven formula (number + tool + outcome). "Actually" carries the anti-staged-demo promise in one word. Keyword is first two words.
-2. **I Run My Entire Business on Claude Code (27 Skills)** - your best sub-driver format ("I run my X") with the number in the parenthetical for the SEO/curiosity double-hit.
+1. **17 Claude Code Skills That Actually Run My Business** - your proven formula (number + tool + outcome). "Actually" carries the anti-staged-demo promise in one word. Keyword is first two words.
+2. **I Run My Entire Business on Claude Code (17 Skills)** - your best sub-driver format ("I run my X") with the number in the parenthetical for the SEO/curiosity double-hit.
 3. **Claude Code Skills: How I Run My Business (No Code)** - most search-optimized. Leads with the exact query "Claude Code Skills," and "No Code" captures the non-dev searcher.
-4. **27 Claude Code Skills Every Creator Should Steal** - names the audience (creator) and "steal" adds urgency/curiosity without clickbait.
+4. **17 Claude Code Skills Every Creator Should Steal** - names the audience (creator) and "steal" adds urgency/curiosity without clickbait.
 5. **The Claude Code Skills Nobody Shows You (Real System)** - pure curiosity gap + the "real" differentiator against the fake-demo lane.
 
 ### Title Scorecard
 
 | Title | Curiosity | Specificity | SEO | Click | Total |
 |-------|:---------:|:-----------:|:---:|:-----:|:-----:|
-| 1. 27 Claude Code Skills That Actually Run My Business | 4 | 5 | 5 | 5 | **19** |
-| 2. I Run My Entire Business on Claude Code (27 Skills) | 4 | 5 | 4 | 4 | 17 |
+| 1. 17 Claude Code Skills That Actually Run My Business | 4 | 5 | 5 | 5 | **19** |
+| 2. I Run My Entire Business on Claude Code (17 Skills) | 4 | 5 | 4 | 4 | 17 |
 | 3. Claude Code Skills: How I Run My Business (No Code) | 3 | 4 | 5 | 4 | 16 |
-| 4. 27 Claude Code Skills Every Creator Should Steal | 4 | 4 | 4 | 4 | 16 |
+| 4. 17 Claude Code Skills Every Creator Should Steal | 4 | 4 | 4 | 4 | 16 |
 | 5. The Claude Code Skills Nobody Shows You (Real System) | 5 | 3 | 4 | 4 | 16 |
 
-**Recommended: #1 - "27 Claude Code Skills That Actually Run My Business" (19/20).** Best balance of the searchable keyword, your proven number formula, and the anti-demo hook. Pair it with thumbnail text that does NOT repeat the words (e.g. "Not a demo." or "No code required.") so title and thumbnail cover different ground.
+**Recommended: #1 - "17 Claude Code Skills That Actually Run My Business" (19/20).** Best balance of the searchable keyword, your proven number formula, and the anti-demo hook. Pair it with thumbnail text that does NOT repeat the words (e.g. "Not a demo." or "No code required.") so title and thumbnail cover different ground.
 
 ### Competitive research (titles + views)
 

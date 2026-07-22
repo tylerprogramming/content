@@ -33,4 +33,4 @@ A confident 38-year-old man on the right third of the frame, friendly self-assur
 ### Concept C - Differentiated "real system" take (dashboard proof)
 A dark desk scene with a glowing laptop screen showing a clean content dashboard and scheduled posts, and beside it a floating vertical stack of glowing orange skill tiles labeled like a real toolkit, an orange Claude logo glowing above the stack, warm cinematic rim light, deep shadows, purple-to-black gradient background, left third kept dark and open for text, photorealistic 3D product render, high contrast.
 
-**Text overlay ideas (added in editor):** "27 skills. 1 terminal.", "This runs my whole business.", "Not a demo.", "No code required."
+**Text overlay ideas (added in editor):** "17 skills. 1 terminal.", "This runs my whole business.", "Not a demo.", "No code required."

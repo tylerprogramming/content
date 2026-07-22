@@ -1,4 +1,9 @@
-# Script: 27 Claude Code Skills That Actually Run My Business
+# Script: 17 Claude Code Skills That Actually Run My Business
+
+**THE 17 (the on-screen wall - keep count consistent everywhere):**
+YouTube engine (7): /yt-search /transcribe /yt-package /yt-seo /yt-thumbnail /yt-analytics /yt-replier
+Distribution (6): /yt-shorts /repurpose /social-copy /instagram-writer /flash-video /tiktok-replier
+Community & money (4): /skool /email /harut /journal
 
 **Target length:** 12-15 min | **Audience:** non-dev creators/solopreneurs | **Angle:** real system, not a staged demo
 
@@ -8,13 +13,13 @@
 
 > You've probably seen a dozen videos where someone builds a fake business with Claude Code to show you how to make money. I'm not going to do that.
 
-> Instead, I'm going to open up the actual Claude Code that runs my real content business. 27 skills that research my videos, write my posts, reply to my comments, and run my community.
+> Instead, I'm going to open up the actual Claude Code that runs my real content business. 17 skills that research my videos, write my posts, reply to my comments, and run my community.
 
 > And here's the part that matters. I'm not a developer. If you can write a text file, you can build every single one of these.
 
 > Let me show you the whole system.
 
-[SHOW: Terminal open, run something that lists your skills - `/help` or `ls ~/.claude/skills/` - so the 27+ folders scroll by as instant proof]
+[SHOW: Terminal open, run something that lists your skills - `/help` or `ls ~/.claude/skills/` - show the 17-skill wall (a clean on-screen list or filtered /help) as instant proof - do NOT scroll the full skills folder, it has framework skills that muddy the count]
 [NOTE: Say "I'm not a developer" with full conviction. This is the line that keeps non-coders watching.]
 
 ---
@@ -165,7 +170,7 @@
 
 > So that's the real system. Not a fake business - the actual one.
 
-> Claude Code researches and writes my content, it watches my comments and sends my email on a schedule, and it runs my community from the terminal. 27 skills, all just text files, built by someone who isn't a developer.
+> Claude Code researches and writes my content, it watches my comments and sends my email on a schedule, and it runs my community from the terminal. 17 skills, all just text files, built by someone who isn't a developer.
 
 > If you want the skills, the prompts, and the full setup, they're free in my community - the link's in the description. There's a whole group of people building this stuff, and I'd love to see what you make.
 
