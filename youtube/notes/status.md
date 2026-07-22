@@ -4,7 +4,7 @@
 > For full content inventory across all platforms, see `~/content/system/tracker.md`.
 >
 > **Open this first.** Last updated: 2026-07-20
-> **Also tracked in ClickUp:** YouTube list (id 901710640585). Keep both in sync on every stage change — this file is the source of truth. (ClickUp synced 2026-07-20.)
+> **Also tracked in ClickUp:** YouTube list (id 901710640585). Keep both in sync on every stage change — this file is the source of truth. (ClickUp synced 2026-07-22: marked 021/023/028 complete, added 031/032/033 next-to-film tasks.)
 
 ---
 
