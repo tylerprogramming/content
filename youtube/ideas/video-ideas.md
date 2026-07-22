@@ -343,7 +343,9 @@
 - **Date Added:** 2026-07-21
 
 ### 33. Superpowers Makes Claude Code Plan Before It Builds (I Tested It)
-- **Status:** Planned - evergreen, film any slot
+- **Status:** IN PREP - build project locked: skill-lint + skills dashboard, from scratch at ~/skill-lint
+- **Build:** A CLI that lints SKILL.md files (frontmatter validity, vague descriptions, trigger overlap between skills, dead script references - severity tiers) + a dashboard page showing off the whole skill library with health badges. Both real code: TDD and code review are legit, verification = lint Tyler's 48 real skills + open the dashboard on camera. Open-source at video launch (companion to the free creator-skills repo).
+- **Dry run 2026-07-22:** Superpowers brainstorming gate FIRED properly when invoked (interrogation with severity/overlap questions) - unlike the earlier headless test where it did not. Both behaviors = honest segment.
 - **Priority:** High
 - **Topic:** obra/superpowers - official Claude plugin, 14 skills encoding an engineering discipline: brainstorming HARD GATE (no work until you approve a design), git worktrees, written plans, TDD subagents, fresh-agent code review. Install: /plugin marketplace add obra/superpowers-marketplace.
 - **Angle:** The brainstorm-gate applied to a content business: "Claude asks questions until the plan is right, THEN works." Tyler runs a real task (plan a video package / build a skill) through the Superpowers pipeline vs freestyle. The discipline angle fits his calm voice - zero hype needed, the gate demo sells itself.
