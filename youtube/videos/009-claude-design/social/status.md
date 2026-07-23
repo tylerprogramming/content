@@ -1,10 +1,10 @@
-# Post Status - 23 Claude Code Concepts Every Beginner Needs
+# Post Status - Claude Design + Claude Code: Prompt to Live URL in 23 Minutes
 
 ## Video
-**Title:** 23 Claude Code Concepts Every Beginner Needs to Know
-**YouTube URL:** https://www.youtube.com/watch?v=MVr2GrAjrgQ
-**Published:** 2026-03-19 (evergreen resurfacing)
-**ClickUp:** 86e212q68
+**Title:** Claude Design + Claude Code: Prompt to Live URL in 23 Minutes
+**YouTube URL:** https://www.youtube.com/watch?v=aiMZrj4zqo8
+**Published:** 2026-04-25 (evergreen resurfacing)
+**ClickUp:** (back-catalog - verify task)
 
 ---
 
@@ -22,9 +22,9 @@
 | YT Community | Post + poll | Drafted in community.md |
 | Skool | Video post | Drafted in skool.md |
 | Instagram | 6-slide carousel + caption | Slides in instagram.md, build in carousel maker then post |
-| Email 1 | Launch broadcast ("in case you missed it") | email-1-launch.md, send day-of ~8 AM ET |
-| Email 2 | The 3 concepts to learn first | email-2-howitworks.md, 2-3 days after email 1 |
-| Email 3 | Honest reframe + next step | email-3-nextstep.md, end of week |
+| Email 1 | Launch / resurface broadcast | email-1-launch.md, send day-of ~8 AM ET |
+| Email 2 | How-it-works | email-2-howitworks.md, 2-3 days after resurface |
+| Email 3 | Honest limits + next step | email-3-nextstep.md, end of week |
 
 ---
 
