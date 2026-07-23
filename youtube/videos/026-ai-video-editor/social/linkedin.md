@@ -4,11 +4,15 @@
 **Best time:** Tue-Thu 10-11 AM ET.
 **Cadence:** 3 angles, spaced 3-5 days apart. Do not post them back to back.
 
-| # | Angle | CTA / link |
-|---|---|---|
-| 1 | The story (before/after) | video, in first comment |
-| 2 | The tactic (the interface became a conversation) | none |
-| 3 | The honest take (limits) | soft link at end |
+**CTA ladder:** one ask per post, escalating. Video, then pure value, then the community.
+
+| # | Angle | CTA | Placement |
+|---|---|---|---|
+| 1 | The story (before/after) | YouTube video | first comment |
+| 2 | The tactic (the interface became a conversation) | none (pure value, max reach) | n/a |
+| 3 | The honest take (limits) | Skool via funnel link | soft, end of post |
+
+Note: the skills repo is NOT the CTA here. This video is about HyperFrames (HeyGen's open-source tool), not Tyler's skills, so pointing at the repo would not pay off what the post promised. Post 2 runs link-free instead, which also maximizes reach.
 
 ---
 
@@ -104,4 +108,6 @@ For me that was dead air and captions. Once the styles were set, it got cheaper 
 
 What's the part of your work you'd hand off if you trusted it?
 
-https://www.youtube.com/watch?v=cdvi2ooarDc
+I put the exact prompts and the setup in my free community if you want to run it yourself:
+
+https://free.tylerai.dev/youtube/

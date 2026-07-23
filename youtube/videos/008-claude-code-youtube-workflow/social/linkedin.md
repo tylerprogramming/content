@@ -4,11 +4,13 @@
 **Best time:** Tue-Thu 10-11 AM ET.
 **Cadence:** 3 angles, spaced 3-5 days apart. Do not post them back to back.
 
-| # | Angle | Link placement |
-|---|---|---|
-| 1 | The story (before/after) | link in first comment |
-| 2 | The tactic (standalone value) | no link |
-| 3 | The honest take (limits) | soft link at end |
+**CTA ladder:** one ask per post, escalating. Video, then the free repo, then the community.
+
+| # | Angle | CTA | Placement |
+|---|---|---|---|
+| 1 | The story (before/after) | YouTube video | first comment |
+| 2 | The tactic (standalone value) | skills repo (free, no signup) | first comment |
+| 3 | The honest take (limits) | Skool via funnel link | soft, end of post |
 
 ---
 
@@ -74,6 +76,8 @@ But the repeatable parts add up to more hours than you'd think.
 
 What's something you find yourself explaining the same way every single time?
 
+> Link in first comment: all my skills are free and public, no signup. github.com/tylerprogramming/claude-skills
+
 ---
 
 ## POST 3 - The honest take (soft link)
@@ -104,4 +108,6 @@ These skills are just markdown files with instructions, so you can go build the 
 
 What's the repeatable part of your work you'd hand off first?
 
-https://www.youtube.com/watch?v=MLfyfNj1JrI
+I put the skills I use, plus how I set them up, in my free community if you want them:
+
+https://free.tylerai.dev/youtube/
