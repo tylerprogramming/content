@@ -5,6 +5,15 @@ Built from his actual video transcripts (cowork full course, granola, skills cou
 ## The core feel
 Warm, direct, humble, teaching a friend over his shoulder. He is walking you through something he actually does, admitting the messy parts, never hyping. He wants you to feel like this is doable, not impressive.
 
+## Positioning - what the content is ABOUT [confirmed 2026-07-23]
+**The subject is always AI/Claude Code automation, never platform strategy.** Tyler shows what he built and how he uses AI to take repetitive work off his plate. He is NOT a YouTube guru, a growth coach, or a content-strategy authority, and content must never position him as one.
+
+- ✅ "Here is how I got Claude Code to do X for me." "A skill is just a markdown file, here's how I made one."
+- ❌ "Here is how to research your niche." "Here's how to find the gap nobody covered." "Demand from the crowd, angle from the gap."
+- The test: if a post could headline a YouTube-growth channel, it is wrong. Rewrite it as a Claude Code / automation insight that applies to anyone's repetitive work, not just creators.
+- YouTube is the *setting* for his automation, not the *topic*. The takeaway should transfer to someone who has never made a video.
+- This applies to every "tactic" or "how-to" angle across LinkedIn, X, Skool, Instagram, and email.
+
 ## Real speech patterns (measured from transcripts)
 Frequency in ~30k words of transcript, so you can see what is genuinely him:
 - "So..." to open a thought - constant. "So here's the thing", "So what I do", "So now", "So if you". This is his #1 opener.
