@@ -1,20 +1,36 @@
-# LinkedIn Post — 10 Claude Code Concepts
+# LinkedIn - 10 Claude Code Concepts I Wish I Knew From the Start
 
-I've been using Claude Code every day for 6 months. The first few weeks, I was doing it completely wrong.
+**Video:** https://www.youtube.com/watch?v=ZlDnsf_DOzg
+**Best time:** Tue-Thu 10-11 AM ET. Put the link in the first comment if reach dips.
 
-No CLAUDE.md. Vague prompts. Marathon sessions that slowly fell apart. I thought Claude was inconsistent. It wasn't - I just didn't understand the 10 things underneath the surface.
+---
 
-Here's what I wish I knew from the start:
+I used Claude Code for weeks before I actually understood it.
 
-👉 CLAUDE.md is the most important file most beginners have never heard of. Claude reads it automatically every session. Write your rules once, they apply forever.
+Typing prompts, getting okay results, wondering why everyone was so excited about it.
 
-👉 Context rot is real. After 2-3 hours, Claude's performance slowly degrades as the context window fills up. Start fresh sessions when you switch tasks.
+The problem was never the tool. It was that nobody explained the concepts underneath it.
 
-👉 Skills encode any workflow as a slash command. I type /yt-search and get a full competitor research report in 30 seconds. I built that skill once - it runs every time.
+So here are the ones I wish I knew from the start.
 
-👉 There are 3 types of memory. Most people only use the context window - the temporary one. CLAUDE.md and the memory skill are just sitting there, unused.
+CLAUDE.md is the big one. It's a file Claude reads at the start of every session. You write your rules and preferences once, and you stop repeating yourself forever.
 
-👉 Hooks automate things without touching your AI token budget. They run at the shell level, triggered by events, completely separate from Claude.
+Then there's context rot. Claude feels sharp for a while, then it starts going weird. Its memory window is just full. You clear it or start fresh, and it's sharp again.
 
-All 10 concepts with live demos from my actual setup:
-[VIDEO_URL]
+Permissions changed my whole flow. By default Claude asks before every single action. You pre-approve the safe stuff once, and it only interrupts you for the risky things.
+
+Slash commands are your shortcuts, and you can write your own. Any task you repeat, you turn it into one.
+
+Skills are the upgrade from that. A file that teaches Claude exactly how you do something. This is where it stops feeling like a chatbot.
+
+Hooks run automation without using any AI tokens. Formatting, logging, the boring guardrails, they just happen on their own.
+
+And there are a few more I go deeper on in the video: MCP servers, sub-agents, git worktrees, and memory.
+
+Here's the honest part. None of this is hard. It's just that nobody puts it in one place for a beginner.
+
+Learn these ten and Claude Code stops being overwhelming. It starts being a system you actually trust.
+
+If you're new to it, which of these would you set up first?
+
+https://www.youtube.com/watch?v=ZlDnsf_DOzg
