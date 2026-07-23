@@ -30,3 +30,18 @@
 ## Assets
 - x.md, linkedin.md, community.md, skool.md, instagram.md, status.md
 - email-1-launch.md, email-2-howitworks.md, email-3-nextstep.md
+
+---
+
+## 📧 Email send plan (back-catalog resurface, set 2026-07-23)
+
+**Send 2 emails only.** The full 3-email drip is reserved for new launches (see 026).
+
+| When | File | Angle |
+|---|---|---|
+| Tue | `email-1-launch.md` | Value, framed "in case you missed this" |
+| Thu | `email-3-nextstep.md` | Honest take + soft next step |
+| HOLD | `email-2-howitworks.md` | Optional deep-dive, NOT in the send plan |
+
+Cadence note: emails run Tue/Thu so they stagger off the LinkedIn Mon/Wed/Fri posts.
+
