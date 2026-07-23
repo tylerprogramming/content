@@ -1,7 +1,7 @@
 # Email 3 - The honest limits + soft next step
 
 **Video:** I Edit My Videos by Talking to Claude Code
-**Video link:** https://www.youtube.com/watch?v=AH1ZpX7SD9Y
+**Video link:** https://www.youtube.com/watch?v=cdvi2ooarDc
 **Send via:** Resend (manual broadcast, or `/email blast` with confirmation)
 **Send time:** End of week, ~8 AM ET
 **Audience:** Full list, OR segment to non-clickers for a "catch you up" version
@@ -36,7 +36,7 @@ None of that is a dealbreaker. You just deserve to know it going in.
 
 Second, if you have not watched yet, this is your nudge. I run the whole workflow on real clips, cut the dead air, add captions in a few styles, and show you the one trick that makes silence cuts actually work.
 
-https://www.youtube.com/watch?v=AH1ZpX7SD9Y
+https://www.youtube.com/watch?v=cdvi2ooarDc
 
 And the natural next step: the exact prompts I use, plus how I set the whole thing up, are in my free community. It is all open-source and free, so you can copy it and run your own.
 

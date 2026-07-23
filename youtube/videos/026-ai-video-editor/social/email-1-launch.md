@@ -1,7 +1,7 @@
 # Email 1 - Launch ("It's here")
 
 **Video:** I Edit My Videos by Talking to Claude Code
-**Video link:** https://www.youtube.com/watch?v=AH1ZpX7SD9Y
+**Video link:** https://www.youtube.com/watch?v=cdvi2ooarDc
 **Send via:** Resend (manual broadcast, or `/email blast` with confirmation)
 **Send time:** Release day, ~8 AM ET
 **Audience:** Full list (confirm count before sending)
@@ -42,7 +42,7 @@ In this one I show you the whole thing on real clips:
 
 About 14 minutes, no filler.
 
-Watch it here: https://www.youtube.com/watch?v=AH1ZpX7SD9Y
+Watch it here: https://www.youtube.com/watch?v=cdvi2ooarDc
 
 If you watch it, hit reply and tell me the one editing task you would hand off first. I read every response.
 

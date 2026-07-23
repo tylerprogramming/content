@@ -1,7 +1,7 @@
 # Email 2 - How it works (the workflow)
 
 **Video:** I Edit My Videos by Talking to Claude Code
-**Video link:** https://www.youtube.com/watch?v=AH1ZpX7SD9Y
+**Video link:** https://www.youtube.com/watch?v=cdvi2ooarDc
 **Send via:** Resend (manual broadcast, or `/email blast` with confirmation)
 **Send time:** 2-3 days after launch, ~8 AM ET
 **Audience:** Full list (or segment to openers of email 1)
@@ -38,7 +38,7 @@ One genuinely useful tip if you go build your own version. To find silence, do n
 
 I walk through all of it on real clips here:
 
-https://www.youtube.com/watch?v=AH1ZpX7SD9Y
+https://www.youtube.com/watch?v=cdvi2ooarDc
 
 The prompts I use and the setup are in my free community if you want to copy them:
 

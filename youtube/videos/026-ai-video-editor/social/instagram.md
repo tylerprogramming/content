@@ -1,6 +1,6 @@
 # Instagram - I Edit My Videos by Talking to Claude Code
 
-**Video:** https://www.youtube.com/watch?v=AH1ZpX7SD9Y
+**Video:** https://www.youtube.com/watch?v=cdvi2ooarDc
 **Format:** 6-slide carousel (4:5, 1080x1350) via the carousel maker + caption below.
 
 ---
