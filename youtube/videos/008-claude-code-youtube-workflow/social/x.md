@@ -3,17 +3,38 @@
 **Video:** https://www.youtube.com/watch?v=MLfyfNj1JrI (15:12)
 **Account:** @TylerReedAI (Blotato id 5910) - NO X Premium, so every tweet must be under 230 chars.
 **Formats:** see `BRAIN/prompts/x-post-formats.md`
-**Cadence:** 4 posts, roughly every 2 days.
 **Rules:** under 230 chars per tweet, no hashtags, no emojis, no em dashes. Links count as 23 chars.
 
 Shape matched to Tyler's own proven tweets: plain or myth-busting opener, blank line, concrete payoff.
 
-| # | Type | Link |
-|---|---|---|
-| 1 | Thread (the pipeline) | last reply |
-| 2 | Standalone (the before/after) | none |
-| 3 | Standalone (the honest line) | none |
-| 4 | Standalone (what a skill is) | yes |
+## Posting schedule
+
+| Day | Time (ET) | Post | Link |
+|---|---|---|---|
+| **Sunday** | 2-4 PM | 1 - Thread (the pipeline) | last reply |
+| Tuesday | 8-9 AM | 3 - Standalone, the honest line | none |
+| Thursday | 8-9 AM | 2 - Standalone, before/after | none |
+| Saturday | 12 PM | 4 - Standalone, what a skill is | yes |
+
+Reach-first ordering: the no-link posts run between the link posts so X does not suppress the whole run.
+
+### 🧪 EXPERIMENT - Sunday afternoon thread (started 2026-07-23)
+
+**Hypothesis:** Sunday afternoon beats a weekday morning for threads. Less brand competition, and readers have time to actually read a thread (which is what drives bookmarks, the strongest signal in this niche).
+
+**Measure after 72 hours and record here:**
+
+| Metric | Result |
+|---|---|
+| Views | |
+| Bookmarks | |
+| Likes | |
+| Replies | |
+| Profile visits | |
+
+**Baseline to beat:** Tyler's recent standalone tweets sit around 200-1,500 views at ~700 followers.
+
+If Sunday clearly wins, add the rule to `BRAIN/prompts/x-post-formats.md` with a `[confirmed YYYY-MM-DD]` stamp and make it the default thread slot. If it flops, try a weekday morning next and keep only one variable changed.
 
 ---
 
