@@ -1,5 +1,7 @@
 # Title Options: I Automated My Video Editing With Claude Code
 
+> 🔴 **UPLOADED TITLE (2026-07-22): "I Edit My Videos by Talking to Claude Code NOW"** — Tyler's final call at upload; steps off the "I Automated ___ With Claude Code" franchise pattern in favor of the "talking to Claude Code" angle. Video ID `AH1ZpX7SD9Y`, scheduled 8PM ET 2026-07-22.
+>
 > ✅ **FINAL TITLE (2026-06-26): "I Automated My Video Editing With Claude Code"** — mirrors the 2,809-view winner ("I Automated My Entire YouTube Workflow"). Signature package: black bg + face + huge text + orange + Claude asterisk + real-stat proof.
 >
 > ⚠️ **PIVOT 2026-06-30:** This is NO LONGER a "build" video. Tyler did not build a tool. The video is a workflow showcase: use the open-source Hyperframes studio + Claude Code to edit (copy a registry caption prompt, ask Claude Code, it edits). Drop ALL "I built it" framing from titles/thumbnails. The locked title fits the workflow story perfectly. Honest brand: "I started using AI to do my editing," never "I built an editor."
@@ -63,6 +65,34 @@ Scored 1-10 on each axis. CTR Potential weights how hard it rides the proven lan
 # ⚡ CTR DATA UPDATE (2026-07-06 — first full-cohort lifetime CTR pull)
 
 **The locked title is now data-confirmed, not just instinct.** "I Automated My Entire YouTube Workflow" is the channel's best video at every stage that matters: 4.4% CTR (2nd best ever), +44 subs (2x any other video). "I Automated My Video Editing With Claude Code" mirrors it exactly. **This is now the "I Automated ___ With Claude Code" FRANCHISE — video 2 of a series** (video 3 = the channel showcase `13`, video 4 = Blotato month-of-content).
+
+---
+
+# 🔎 SEO-Optimized Titles (2026-07-22 — post-edit SEO pass, honest workflow framing)
+
+Generated post-edit for upload. **All "I Built" framing is OFF** (per the 2026-06-30 pivot) — these ride the automation/workflow angle only. No dollar amounts. All under 70 characters, primary keyword front-loaded.
+
+**Competitive research (2026-07-22):**
+- The lane is still hot and crowded: "How To Automate Video Edits With Claude Code (2026)", "Claude Just Edited My Entire YouTube Video", "How to Edit Videos With Claude Code (Free Setup)", plus blog coverage ("Claude actually replaced my video editor"). Confirms the "Claude Code edited my video" phrase is the search magnet to ride head-on.
+- **Honesty gap confirmed by research:** most "Claude edited my video" content shows Claude *planning* an edit from a transcript; frame-precise cutting "is not possible." Tyler's video is the honest one that says exactly what AI does (mechanical dead-air + captions) and doesn't. That's the trust differentiator.
+- Paid-tool competitors this free workflow undercuts: OpusClip, Submagic, TimeBolt, Klipa, Exemplary (all sell one-click silence removal + captions as a subscription).
+- High-intent search terms surfaced: "claude code video editing", "remove silence from video", "automatic captions AI free", "edit videos with AI", "ai video editing", "whisper ffmpeg captions".
+
+| # | Title | Chars | CTR Formula | Curiosity | Specificity | SEO | Click | Total |
+|---|-------|-------|-------------|-----------|-------------|-----|-------|-------|
+| 1 | I Automated My Video Editing With Claude Code | 45 | Franchise + proven pattern | 4 | 4 | 5 | 5 | **18** |
+| 2 | Claude Code Edited This Video (Here's the Whole Workflow) | 56 | Rides exact hot-lane phrase + curiosity | 5 | 4 | 5 | 5 | **19** |
+| 3 | How I Edit Videos With AI Now (No Timeline, No Editor) | 53 | How-to + "NO TIMELINE" thumbnail hook | 4 | 4 | 4 | 4 | **16** |
+| 4 | AI Cut My Dead Air and Captioned This in Seconds | 48 | Specific mechanical payoff | 3 | 5 | 4 | 4 | **16** |
+| 5 | I Stopped Editing My Videos and Let AI Do It | 44 | Contrarian curiosity gap | 5 | 3 | 3 | 4 | **15** |
+
+## Recommendation
+
+**Upload with #1 — "I Automated My Video Editing With Claude Code"** (the locked franchise title). Even though #2 scores one point higher on raw curiosity, #1 is the data-confirmed franchise pattern (mirrors the 4.4% CTR / +44-sub winner) and series consistency is worth more than a marginal curiosity edge.
+
+**A/B swap at 48–72h if CTR is soft:** #2 — "Claude Code Edited This Video (Here's the Whole Workflow)" — it front-loads the exact phrase the 276K lane leader uses, competing head-on for browse/search. This matches the existing A/B plan; #2 replaces the old "I Built" A/B backup, which is now off.
+
+**Kill-trigger stands:** under 3.5% CTR at 2 weeks = packaging swap (Thumbnail B "NO TIMELINE" is the ready v2, and title #3 pairs with it).
 
 **Franchise rules (new):**
 - Consistent thumbnail identity across the series: black bg + face + huge text + orange + Claude asterisk (already the signature package — keep it identical enough to be recognizable as a series).

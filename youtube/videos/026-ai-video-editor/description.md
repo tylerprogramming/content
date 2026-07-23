@@ -36,3 +36,32 @@ The tools I built on are all open-source and free - Hyperframes, ffmpeg, and Whi
 https://www.skool.com/the-ai-agency
 
 [CTA NOTE for Tyler: this description is written for option (c) - teach the approach, soft Skool CTA. If you decide to open-source the repo (option a), add the repo link here. If you make it a Skool lead magnet (option b), make the Skool line the primary CTA. See analysis.md for the full decision.]
+
+---
+
+## SEO-Optimized Version (2026-07-22 — post-edit, matches the final cut + real chapters)
+
+> ⚠️ **This is the version to upload.** The description above was written pre-edit to the old "I built it" framing. This one matches the actual 14:40 cut (HyperFrames tutorial) and uses the honest workflow framing. Chapters below are trued to the final timestamps.
+
+Here's how I edit my videos with AI now - captions, silence cuts, and animations - all by talking to Claude Code. Everything I use is open-source and free: HeyGen's HyperFrames plus Claude Code.
+
+I'm not a video editor and I didn't build a tool. HyperFrames is HeyGen's free, open-source video framework, and it installs a set of Claude Code skills you drive with plain language. In this video I run the whole thing on real clips: add word-by-word captions from a catalog of styles (pill karaoke, matrix, kinetic slam, neon), cut the dead air out of a 3 minute clip so it drops to under 2 minutes, add transitions and B-roll, and animate a screenshot into an intro - all by asking Claude Code.
+
+I'm honest about it too. This is not one-click magic. The slick final versions you see online took real back-and-forth to get right. But once your styles are dialed in, it's faster and cheaper than the caption apps and silence removers I've paid for.
+
+CHAPTERS
+0:00 - Edit Your Videos With AI
+0:40 - Installing the HyperFrames Skills
+2:00 - Adding Captions to a Clip
+4:00 - Browsing the Style Catalog
+5:10 - Why It Takes Real Conversation
+5:44 - Beyond Captions: Animations & Data
+7:33 - Cutting Out the Dead Air
+9:00 - Adding Transitions & B-roll
+10:05 - Compared to SubMagic
+10:40 - Inside HyperFrames Studio
+11:56 - Animating Screenshots
+14:11 - Try It Yourself + Community
+
+Try it yourself - HyperFrames is on HeyGen's GitHub, free to install. I teach the full setup and drop the exact prompts in my free community:
+https://www.skool.com/the-ai-agency
