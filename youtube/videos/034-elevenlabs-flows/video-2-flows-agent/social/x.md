@@ -1,51 +1,74 @@
-# X Thread - ElevenLabs Flows Agent
+# X / Twitter - I Automated My Video Ads with ElevenLabs Agent
 
-**Video:** https://www.youtube.com/watch?v=WJabXRVe8JQ
+**Video:** https://www.youtube.com/watch?v=WJabXRVe8JQ (17:39)
+**Account:** @TylerReedAI - NO X Premium, so every tweet must be under 230 chars.
+**Formats:** see `BRAIN/prompts/x-post-formats.md`
+**Rules:** under 230 chars per tweet, no hashtags, no emojis, no em dashes. Links count as 23 chars.
 
-## Main tweet
+⚠️ **Ambassador lane.** This is a paid partnership with ElevenLabs and Tyler is one of their ambassadors. Every post that names ElevenLabs carries a plain-language disclosure ("Paid partnership with ElevenLabs"), and no post is allowed to frame ElevenLabs as something to replace or avoid. Honest limits are fine and expected, positioned as "here's how to use it well", never "here's why to skip it".
 
-I typed one sentence and an AI built my entire video ad pipeline.
+Shape matched to Tyler's own proven tweets: plain or myth-busting opener, blank line, concrete payoff.
 
-It picked the models, created the nodes, wired them together, and ran the whole thing.
+## Posting schedule
 
-A few things surprised me:
+| Day | Time (ET) | Post | Link |
+|---|---|---|---|
+| **Sunday** | 2-4 PM | 1 - Thread (the agent built the pipeline) | last reply |
+| Tuesday | 8-9 AM | 2 - Standalone, the honest line | none |
+| Thursday | 8-9 AM | 3 - Standalone, the tactic | none |
+| Saturday | 12 PM | 4 - Standalone, what Flows is | yes |
 
-## Reply 1
+Reach-first ordering: the no-link posts run between the link posts so X does not suppress the whole run.
 
-It asks questions before it spends.
+---
 
-How long, what tone, what voice.
+## POST 1 - Thread (the agent built the pipeline)
 
-An AI that spends your money should ask before it guesses. This one does.
+**Main tweet:**
+I described an ad in one sentence and ElevenLabs built the whole pipeline for it.
 
-## Reply 2
+It picked the models, created the nodes, and wired them together. Paid partnership, and here's how it actually went:
 
-Iterating is just talking.
+**Reply 1:**
+This is Flows inside ElevenCreative. A canvas where each node is a generation. Image, then video, then voiceover, then music, all feeding a final composition node.
 
-"Use a warmer voice." It re-runs only the voice node, not the whole pipeline.
+**Reply 2:**
+Normally you wire that canvas yourself. The Flows Agent builds it from a description, then asks what it needs to know before it starts spending, like which voice you want.
 
-Nothing gets regenerated for no reason.
+**Reply 3:**
+I built a 30 second coffee ad live. Five campaign images, animated clips, a voiceover, a music bed, assembled into one composition. I never dragged a node.
 
-## Reply 3
+**Reply 4:**
+Iterating is just talking. I asked for cinematic on-screen text and it added it, then re-ran the composition. The images and clips I already liked stayed put.
 
-My favorite part: it runs async.
+**Reply 5:**
+Honest part. It is not one prompt. My Pepsi flow has a long conversation behind it. And every run costs credits, so set the agent to auto run under a credit threshold first.
 
-I kicked off 3 ad variations, closed the tab, and walked away.
+**Reply 6 (CTA):**
+Full build plus what it actually costs. Paid partnership with ElevenLabs:
+https://www.youtube.com/watch?v=WJabXRVe8JQ
 
-Came back to finished videos. You don't babysit a progress bar.
+---
 
-## Reply 4
+## POST 2 - Standalone, the honest line (no link)
 
-The honest part: it's in alpha, and every re-run costs credits.
+A one prompt AI ad is always the last prompt.
 
-There's a setting that caps what it can spend without asking you first.
+My ElevenLabs flow has a long conversation behind it. The agent built the pipeline, I talked it into shape. Still way faster than wiring it up myself. Paid partnership.
 
-Turn that on before anything else.
+---
 
-## Reply 5 (final + link)
+## POST 3 - Standalone, the tactic (no link)
 
-Full walkthrough here, with my exact prompt and settings.
+If an agent can spend your money, give it a ceiling instead of a babysitter.
 
-Paid partnership with ElevenLabs, and I show exactly where it costs you money.
+ElevenLabs lets me set a credit threshold. Under it, it runs. Over it, it asks. I stopped approving every step and nothing stalls. Paid partnership.
 
+---
+
+## POST 4 - Standalone, what Flows is (link)
+
+ElevenCreative Flows is a canvas where each node is a generation. Image, video, voiceover, music, then a composition node that assembles the ad.
+
+The agent builds the canvas for you. Paid partnership:
 https://www.youtube.com/watch?v=WJabXRVe8JQ

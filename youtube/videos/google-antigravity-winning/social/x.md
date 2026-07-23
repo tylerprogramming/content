@@ -1,26 +1,70 @@
-# X / Twitter Thread - Google is Winning With Antigravity
+# X / Twitter - Google is Winning With Antigravity
 
 **Video:** https://www.youtube.com/watch?v=B5eDktBzXMg
+**Account:** @TylerReedAI - NO X Premium, so every tweet must be under 230 chars.
+**Formats:** see `BRAIN/prompts/x-post-formats.md`
+**Rules:** under 230 chars per tweet, no hashtags, no emojis, no em dashes. Links count as 23 chars.
+
+Shape matched to Tyler's own proven tweets: plain or myth-busting opener, blank line, concrete payoff.
+
+## Posting schedule
+
+| Day | Time (ET) | Post | Link |
+|---|---|---|---|
+| **Sunday** | 2-4 PM | 1 - Thread (the build) | last reply |
+| Tuesday | 8-9 AM | 2 - Standalone, the honest line (I did not expect this) | none |
+| Thursday | 8-9 AM | 3 - Standalone, the tactical insight (the markdown file) | none |
+| Saturday | 12 PM | 4 - Standalone, what Antigravity is | yes |
+
+Reach-first ordering: the two no-link posts run between the link posts so X does not suppress the whole run.
 
 ---
 
+## POST 1 - Thread (the build)
+
 **Main tweet:**
-I didn't expect to say this, but Google is winning with Antigravity. I built an agentic workflow with it that pulls YouTube data and writes it to a Google Sheet. It planned the whole thing and fixed its own error. Here's how:
+I did not expect a Google tool to be the one that impressed me this year.
+
+I built a workflow in Antigravity that pulls YouTube data, scores it, and writes it to a Google Sheet. I wrote none of the code. Here's how:
 
 **Reply 1:**
-An agentic workflow is a simple idea. You describe the outcome you want, and the AI figures out the steps, writes the code, and runs it. Antigravity is Google's platform for building exactly that kind of thing.
+An agentic workflow is a simple idea. You describe the outcome you want and the AI figures out the steps, writes the code, and runs it. Antigravity is Google's platform for building that.
 
 **Reply 2:**
-I started by downloading Antigravity, making a project folder, and adding an agent markdown file. That file is just me telling it the goal in plain language. No code yet. Then I let it plan the rest.
+I opened a folder and dropped in one markdown file. It says how the project should be structured, what runs in what order, and what to do when something errors. No code in it, just plain English.
 
 **Reply 3:**
-The planning is what got me. It laid out every step before touching anything, which APIs it needed, how it would wire up the Sheet, where the keys go. I could read its thinking the whole way through.
+Then I typed one line. Instantiate based on the agents markdown file. It planned the whole build first. Which APIs it needed, what scripts it would write, how it would verify. I could read the thinking.
 
 **Reply 4:**
-Setup wasn't zero. I had to turn on the YouTube Data and Google Sheets APIs in Google Cloud and add the keys. That's the part people usually get stuck on, and it walked me through where each one goes.
+Setup was not zero. I enabled the YouTube Data and Sheets APIs in Google Cloud, made a service account, and dropped the credentials in the project. That is usually where people quit.
 
 **Reply 5:**
-Then I ran it. It hit a problem partway through and fixed itself, no panic on my end. The final output was clean, real data collected, evaluated, and summarized into a Google Sheet.
+It ran, then broke on a sheet permission. It told me exactly what to fix, I shared the sheet with the service account, and it finished. Real videos pulled, scored, and summarized into the Sheet.
 
 **Reply 6 (CTA):**
-I'm not saying drop everything else. But this one is worth 18 minutes. Full build, start to finish, here: https://www.youtube.com/watch?v=B5eDktBzXMg
+I pretended I could not code the whole way through and it still worked. Full build, start to finish: https://www.youtube.com/watch?v=B5eDktBzXMg
+
+---
+
+## POST 2 - Standalone, the honest line (no link)
+
+I have never been the guy defending a Google dev tool.
+
+Antigravity planned the whole build before writing a line, hit a permissions error, told me exactly what to fix, and finished. I wrote none of the code.
+
+---
+
+## POST 3 - Standalone, the tactical insight (no link)
+
+The prompt is not the part that matters. The markdown file you write before the prompt is.
+
+Mine says how the project is structured, what order things run in, and what to do when something errors. Then one sentence builds it.
+
+---
+
+## POST 4 - Standalone, what Antigravity is (link)
+
+Antigravity is Google's agentic coding platform. You open a folder, tell an agent in plain English what you want built, and it plans it, writes the code, runs it, and fixes its own errors.
+
+https://www.youtube.com/watch?v=B5eDktBzXMg

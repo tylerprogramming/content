@@ -17,10 +17,10 @@
 
 | Platform | Format | Notes |
 |---|---|---|
-| X | Thread (main + 6 replies) | Drafted in x.md, ready |
-| LinkedIn | Text post | Drafted in linkedin.md, best Tue-Thu 10-11 AM ET |
+| X | 4 posts (1 thread + 3 standalone) | x.md, multi-angle. Sun 2-4 PM thread, Tue 8-9 AM honest line, Thu 8-9 AM tactic, Sat 12 PM explainer. All tweets verified under 230 chars |
+| LinkedIn | 3 posts (story / tactic / honest take) | linkedin.md, multi-angle. Tue-Thu 10-11 AM ET, spaced 3-5 days. Post 2 runs link-free (repo is NOT the CTA, this is an Anthropic product video) |
 | YT Community | Post + poll | Drafted in community.md |
-| Skool | Video post | Drafted in skool.md |
+| Skool | 3 posts (drop / tactic / discussion) | skool.md, multi-angle, spaced 3-5 days |
 | Instagram | 6-slide carousel + caption | Slides in instagram.md, build in carousel maker then post |
 | Email 1 | Launch / resurface broadcast | email-1-launch.md, send day-of ~8 AM ET |
 | Email 2 | How-it-works | email-2-howitworks.md, 2-3 days after resurface |

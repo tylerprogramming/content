@@ -17,10 +17,10 @@
 
 | Platform | Format | Notes |
 |---|---|---|
-| X | Thread (main + 6 replies) | Drafted in x.md, ready |
-| LinkedIn | Text post | Drafted in linkedin.md, best Tue-Thu 10-11 AM ET |
+| X | 4 posts (1 thread + 3 standalone) | Drafted in x.md. Sun 2-4 PM thread, Tue/Thu 8-9 AM, Sat 12 PM. All tweets under 230 chars |
+| LinkedIn | 3 posts (story / tactic / honest take) | Drafted in linkedin.md, best Tue-Thu 10-11 AM ET, spaced 3-5 days, link in first comment |
 | YT Community | Post + poll | Drafted in community.md |
-| Skool | Video post | Drafted in skool.md |
+| Skool | 3 posts (drop / tactic / discussion) | Drafted in skool.md, spaced 3-5 days |
 | Instagram | 6-slide carousel + caption | Slides in instagram.md, build in carousel maker then post |
 | Email 1 | Launch ("it's here") | Drafted in email-1-launch.md, release day ~8 AM ET |
 | Email 2 | Value (how it works / 2 routines) | Drafted in email-2-howitworks.md, mid-week ~8 AM ET |

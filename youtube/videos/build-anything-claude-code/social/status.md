@@ -19,10 +19,17 @@
 
 | Platform | Format | Notes |
 |---|---|---|
-| X | Thread (main + 6 replies) | Drafted in x.md, ready |
-| LinkedIn | Text post | Drafted in linkedin.md, best Tue-Thu 10-11 AM ET |
+| X | POST 1 thread (main + 6 replies) | x.md, Sunday 2-4 PM ET, link in last reply only |
+| X | POST 2 standalone (honest line, no link) | x.md, Tuesday 8-9 AM ET |
+| X | POST 3 standalone (Plan Mode tactic, no link) | x.md, Thursday 8-9 AM ET |
+| X | POST 4 standalone (what Claude Code is, link) | x.md, Saturday 12 PM ET |
+| LinkedIn | POST 1 the story | linkedin.md, Tue-Thu 10-11 AM ET, video link in first comment |
+| LinkedIn | POST 2 the tactic (Plan Mode) | linkedin.md, 3-5 days after POST 1, skills repo in first comment |
+| LinkedIn | POST 3 the honest take | linkedin.md, 3-5 days after POST 2, soft Skool link at end |
 | YT Community | Post + poll | Drafted in community.md |
-| Skool | Video post | Drafted in skool.md |
+| Skool | POST 1 the drop | skool.md, video link |
+| Skool | POST 2 the tactic | skool.md, 3-5 days later, skills repo + question |
+| Skool | POST 3 the discussion | skool.md, 3-5 days later, no link, pure comments |
 | Instagram | 6-slide carousel + caption | Slides in instagram.md, build in carousel maker then post |
 | Email 1 | Launch broadcast | email-1-launch.md, send any weekday ~8 AM ET |
 | Email 2 | How-it-works | email-2-howitworks.md, 2-3 days after email 1 |

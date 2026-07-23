@@ -1,26 +1,71 @@
-# X / Twitter Thread - Claude Routines Ran My Business at 5AM While I Slept
+# X / Twitter - Claude Routines Ran My Business at 5AM While I Slept
 
-**Video:** https://www.youtube.com/watch?v=T50plh-k3MY
+**Video:** https://www.youtube.com/watch?v=T50plh-k3MY (13:19)
+**Account:** @TylerReedAI (Blotato id 5910) - NO X Premium, so every tweet must be under 230 chars.
+**Formats:** see `BRAIN/prompts/x-post-formats.md`
+**Rules:** under 230 chars per tweet, no hashtags, no emojis, no em dashes. Links count as 23 chars.
+
+Shape matched to Tyler's own proven tweets: plain or myth-busting opener, blank line, concrete payoff.
+
+## Posting schedule
+
+| Day | Time (ET) | Post | Link |
+|---|---|---|---|
+| **Sunday** | 2-4 PM | 1 - Thread (the stack) | last reply |
+| Tuesday | 8-9 AM | 2 - Standalone, the honest line | none |
+| Thursday | 8-9 AM | 3 - Standalone, cloud vs local | none |
+| Saturday | 12 PM | 4 - Standalone, what a Routine is | yes |
+
+Reach-first ordering: the no-link posts run between the link posts so X does not suppress the whole run.
 
 ---
 
+## POST 1 - Thread (the stack)
+
 **Main tweet:**
-Before I opened my laptop this morning, my inbox was already triaged and my competitor report was written. I was asleep. That's a Claude Routine running in the cloud, and it's only half the stack. Here's the whole thing:
+My inbox was triaged and my competitor report was written before I opened my laptop this morning.
+
+I was asleep the whole time. Here's the stack:
 
 **Reply 1:**
-So a Routine is really just a prompt plus your connectors, packaged and put on a schedule. It runs on Anthropic's servers, so your laptop can be off. Everyone's calling it an n8n killer. That's not the interesting part.
+A Claude Routine is a prompt plus your connectors, put on a schedule. It runs on Anthropic's servers, so your laptop can be off. Everyone's calling it an n8n killer. That's not the interesting part.
 
 **Reply 2:**
-Routine #1 for me is a 6AM email summary. It reads my inbox, triages what actually matters, and drafts replies to the urgent ones. I wake up and it's already done. That's the one I'd never give up now.
+Routine one is a 6AM email summary. It reads my inbox, sorts what actually matters, and drafts replies to the urgent ones. I wake up and it's already done.
 
 **Reply 3:**
-Routine #2 is a weekly TikTok trend report. Apify pulls what's working, Claude writes it up, and it lands in Slack every Monday. I used to do that by hand for an hour. Now I just read it.
+Routine two is a weekly competitor report. Apify pulls the data, Claude writes it up, it lands in Slack every Monday. That used to be an hour of clicking.
 
 **Reply 4:**
-Building one takes about 5 minutes. You write the prompt, add the MCP connectors you need (Gmail, Slack, Apify, Drive), test it once, and put it on a schedule. That's the whole thing.
+Building one takes about 5 minutes. Write the prompt, add the MCP connectors you need, test it once, put it on a schedule. That's the whole thing.
 
 **Reply 5:**
-Here's the part nobody's covering. You can create Routines right from the Claude Code CLI with /schedule. And for local hands-on work there's /loop. Same stack, two surfaces, cloud and your own machine.
+The part nobody covers: you can create Routines from the Claude Code CLI with /schedule. And /loop when you want it running locally. Same stack, two surfaces.
 
 **Reply 6 (CTA):**
-So pick one thing you do every week and turn it into a Routine. That's the challenge. Full walkthrough, two real routines plus a live build: https://www.youtube.com/watch?v=T50plh-k3MY
+Pick one thing you do every week and turn it into a Routine. Two real routines plus a live build, 13 minutes: https://www.youtube.com/watch?v=T50plh-k3MY
+
+---
+
+## POST 2 - Standalone, the honest line (no link)
+
+My routines ran all week while I was asleep. They did not make a single decision better.
+
+What they removed was the hour of gathering before I could decide anything. The collecting is theirs now. The judgment is still mine.
+
+---
+
+## POST 3 - Standalone, cloud vs local (no link)
+
+Most people automate the wrong task first.
+
+The split I use now: if a job needs me to react halfway through, it stays on my machine with /loop. If it only needs to happen on a schedule, it goes to the cloud.
+
+---
+
+## POST 4 - Standalone, what a Routine is (link)
+
+A Claude Routine is a prompt plus your connectors, put on a schedule.
+
+It runs on Anthropic's servers, so it fires whether your laptop is open or not. Mine reads my inbox at 6AM.
+https://www.youtube.com/watch?v=T50plh-k3MY

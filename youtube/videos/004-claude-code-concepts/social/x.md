@@ -1,26 +1,75 @@
-# X / Twitter Thread - 23 Claude Code Concepts Every Beginner Needs
+# X / Twitter - 23 Claude Code Concepts Every Beginner Needs
 
-**Video:** https://www.youtube.com/watch?v=MVr2GrAjrgQ
+**Video:** https://www.youtube.com/watch?v=MVr2GrAjrgQ (23:00)
+**Account:** @TylerReedAI (Blotato id 5910) - NO X Premium, so every tweet must be under 230 chars.
+**Formats:** see `BRAIN/prompts/x-post-formats.md`
+**Rules:** under 230 chars per tweet, no hashtags, no emojis, no em dashes. Links count as 23 chars.
+
+Shape matched to Tyler's own proven tweets: plain or myth-busting opener, blank line, concrete payoff.
+
+## Posting schedule
+
+| Day | Time (ET) | Post | Link |
+|---|---|---|---|
+| **Sunday** | 2-4 PM | 1 - Thread (the concepts that matter) | last reply |
+| Tuesday | 8-9 AM | 2 - Standalone, the honest line | none |
+| Thursday | 8-9 AM | 3 - Standalone, the context tactic | none |
+| Saturday | 12 PM | 4 - Standalone, what CLAUDE.md is | yes |
+
+Reach-first ordering: the no-link posts run between the link posts so X does not suppress the whole run.
 
 ---
 
+## POST 1 - Thread (the concepts that matter)
+
 **Main tweet:**
-Claude Code has way more features than you need. Most people use about five, get lost in the terminal, and quit. You really only need 23 concepts to go from beginner to building real things. Here they are:
+Claude Code has way more features than you need.
+
+Most people use about five, get lost in the terminal, and quit. There are 23 concepts worth knowing. Here are the ones I'd learn first:
 
 **Reply 1:**
-The one most people get wrong: the context window. It's Claude's short-term memory, and it fills up. When it does, Claude forgets your instructions and the answers get worse. Keep it clean and half your problems go away.
+The context window is the one people get wrong. It's Claude's short term memory and it fills up. When it does, Claude forgets your instructions and the answers quietly get worse.
 
 **Reply 2:**
-The most important file you'll make is CLAUDE.md. You write your rules once, like always use TypeScript or never use em dashes, and Claude reads it first every session. No file means you're making it guess.
+CLAUDE.md is the most important file you'll make. You write your rules in it once, and Claude reads it first every session. No file means you're making it guess.
 
 **Reply 3:**
-Before Claude builds anything, let it think first. Plan Mode puts it in read-only so it explores your code and proposes an approach without touching a thing. You approve, then it builds. Think first, build second.
+Plan Mode makes it think before it builds. It goes read only, explores your code, and proposes an approach without touching anything. You approve, then it builds.
 
 **Reply 4:**
-Type /init in a new folder and Claude scans your project and writes that CLAUDE.md for you. And skills go further, they teach Claude to do one task really well, so it acts like a specialist you built.
+/rewind is my favorite safety net. Claude saves a checkpoint before every edit. Went down the wrong path? Rewind to any earlier point. An undo button for the whole project.
 
 **Reply 5:**
-My favorite safety net: /rewind. Claude saves a checkpoint before every edit, automatically. Went down the wrong path? Rewind to any earlier point and you're back. It's an undo button for your whole project.
+Don't try to learn all 23 at once. Focus on the first ten. Context, CLAUDE.md, and Plan Mode on their own change how the tool feels.
 
 **Reply 6 (CTA):**
-I demo all 23 live in the terminal, no slides, no theory. If you're just starting out, focus on the first ten. Full walkthrough here: https://www.youtube.com/watch?v=MVr2GrAjrgQ
+I demo all 23 live in the terminal, no slides and no theory.
+
+Full walkthrough:
+https://www.youtube.com/watch?v=MVr2GrAjrgQ
+
+---
+
+## POST 2 - Standalone, the honest line (no link)
+
+I've used Claude Code almost every day for a year and I still use about six of its features.
+
+There are 23 concepts in it. Trying to learn all of them up front is the thing that makes people quit.
+
+---
+
+## POST 3 - Standalone, the context tactic (no link)
+
+Most bad Claude output isn't a prompt problem. It's a context problem.
+
+The window fills up, it starts dropping what you told it, and you blame the model. Clear it, restate the goal, keep going.
+
+---
+
+## POST 4 - Standalone, what CLAUDE.md is (link)
+
+CLAUDE.md is a plain text file in your project folder.
+
+You write your rules in it once, like always use TypeScript. Claude reads it first every session, so you stop repeating yourself.
+
+https://www.youtube.com/watch?v=MVr2GrAjrgQ

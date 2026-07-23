@@ -16,10 +16,10 @@
 
 | Platform | Format | Notes |
 |---|---|---|
-| X | Thread (1 main + 5 replies) | Drafted in x.md, awaiting Tyler approval |
-| LinkedIn | Text post | Drafted in linkedin.md, best Tue-Thu 10-11 AM ET |
+| X | 4 posts (thread + 3 standalone) | Multi-angle set in x.md. Sun 2-4 PM thread, Tue 8-9 AM honest line, Thu 8-9 AM tactic, Sat 12 PM explainer. All tweets verified under 230 chars. Every post naming ElevenLabs carries the paid-partnership disclosure |
+| LinkedIn | 3 posts (story / tactic / honest take) | Multi-angle set in linkedin.md, spaced 3-5 days, Tue-Thu 10-11 AM ET. Post 2 runs link-free (repo is not the CTA for a partner-product video). Ambassador framing enforced |
 | YT Community | 3 drafts (1 poll) | Tyler posts manually |
-| Skool | Video post | Drafted in skool.md |
+| Skool | 3 posts (drop / tactic / discussion) | Multi-angle set in skool.md, spaced 3-5 days. Disclosure in posts 1 and 2 |
 | Instagram | Caption + carousel outline | Carousel needs building in carousel maker |
 | Email | Launch ("it's here") | Drafted in email-1-launch.md, send release day ~8 AM ET |
 | Email | How it works / workflow | Drafted in email-2-howitworks.md, send mid-week ~8 AM ET |
