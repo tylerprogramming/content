@@ -1,0 +1,314 @@
+Claude Code is and in my opinion, has
+been the most powerful AI coding tool.
+Because of the sudden increase in
+popularity as of late, more people have
+been wanting to use it. And one thing
+that I found after helping people is
+they have trouble with the terminal and
+installing it. Well, after helping a lot
+of non-developers install this, I've
+noticed the problem with using the
+terminal. It's different, I understand.
+So, what I'm going to do in this video
+for the next 10 minutes is help you
+install Claude and we'll build our own
+app together. And by the end of this,
+you'll be able to build everything that
+you've wanted to. But first, let's
+understand what exactly is Claude Code?
+Well, Claude Code has been built by
+Anthropic, who is the company behind the
+Claude AI models. It came out last
+February and as you can see, it's been
+increasing as of late in just the past
+month. There there have been 10 million
+searches for it. And it's like having a
+senior software engineer some inside of
+your machine helping you develop
+whatever it is that you ask it to do.
+But to use this, you have to use the
+terminal. If you're on a Mac, hold
+command space bar, it's going to open up
+spotlight and then you just type in
+terminal.
+&gt;&gt; Okay. Okay, then you open the app and it
+will show something just like this. Or
+if you're on Windows, you'll type in
+command prompt in the search bar and
+then open that up. All right, now let's
+install it. So, in the description of
+this video, I'll have two commands. The
+first one is for Mac users, the second
+one in the YouTube description of this
+video will be for Windows. But for
+whatever machine you have, copy that and
+then paste it here with a command V or
+control V in Windows and then press
+enter. And what it's going to do, it's
+going to go ahead install it for us. So,
+right now it's setting up Claude Code
+and it's going to go ahead and take
+another minute or so to install. Okay,
+and the installation is complete and you
+should see this as well. Okay, now
+before we move just a little further, I
+just wanted to let you know the pricing
+plans because we do have to create an
+account if you haven't yet before. So,
+it's $0 obviously for if you want to go
+to the free version, but you really
+won't be able to do that much with it to
+be honest. Like you you'll be able to
+maybe a couple things with it, but then
+that'll be it for the day. But if you go
+to the pro, there's just look at the $20
+per month. I would recommend this. I
+would [snorts] spend $20 to try it the
+first month, make sure you kind of get
+familiar with it, and then you can move
+on to maybe paying for the year, so it's
+cheaper over year, but then they also
+have the max, which is the most usage
+that you will get, but it also costs
+$100 a month. But, if you haven't made
+an account yet, you'll go to claude.ai.
+I'll have it in the description. Then,
+we'll just go continue on the web, and
+then you just go ahead and sign up with
+an email account. Okay, and then what we
+have to do is we actually have to log in
+with our account so that it knows what
+to do. So, you're going to type in
+/login, and what you see here there are
+commands here that you can use called
+slash commands. So, type slash login,
+you'll see there are three options. Just
+choose option option number one, Claude
+account with subscription. Once you do
+that, it's going to say, you know,
+"Would you like to connect to your
+Claude chat account?" You're going to
+authorize,
+and then once that is done, it says
+"You're all set. You can now close the
+window." Then, once we come back to our
+terminal, it says "Login successful. You
+can press enter to continue." And if you
+ever want to upgrade your subscription,
+what I would recommend doing is you go
+to claude.ai again, where we initially
+logged in. At the bottom left, you can
+go to you can see this is like where the
+settings are. You can click on upgrade
+plan, and then go there, and then you
+can upgrade to the pro plan, like I
+mentioned I would suggest to do. Okay,
+great. Now, you have an account. As of
+right now, it's free, and you can now
+use Claude Code. So, let's go back to
+our terminal, and now what you're going
+to type in, you're just going to type in
+Claude. c l a u d e Claude. Okay, and
+one of the first things this is your
+very first time, it will probably ask
+you what type of text style you like. I
+just chose dark mode, but you can just
+go through the options. So, this is a
+terminal, right? You can press the up
+and down area arrows to choose which
+option you like. So, I want to trust uh
+the current path that I'm in. And then
+once you have done that, this is what it
+will look like. Okay, this is a you'll
+have something that looks very similar
+to this. Now, useful command if you want
+to exit Claude Code, you'll type or
+press control C twice in a row, and
+you'll exit Claude Code. Now, you're
+just back into your normal terminal. So,
+what we're going to do is we're going to
+create a folder to have Claude code
+create a first app in. So, I will paste
+this for you, but we're going to make a
+directory called my first app. It
+doesn't It's okay if you don't know what
+that means. And then we're going to CD
+space my first app. Okay? And you'll
+just have these where you can copy and
+paste these in here. It doesn't matter
+if you don't know exactly what they do,
+but we're creating a folder for Claude
+code to use to create our app. Now,
+we're going to type Claude again. So,
+now we are in the my right here. It says
+user/tylerread my first app. This is
+where we're going to build it where we
+want Claude to do things. Yes, I trust
+this folder. And now we can begin to ask
+it to do something. Now, the app we're
+going to make is a countdown timer to
+anything. We can start out with New
+Year's Eve 2027, but we'll be able to
+add other custom timers as well. So,
+here's a prompt that you'll be able to
+copy and paste as well. You just copy it
+and paste that in here. Then once you
+press enter, Claude code's going to go
+ahead and already start thinking about
+how it wants to build this. Okay? So,
+it's going to read our file say, "Hey,
+you know, we don't have anything in here
+just yet. What should we do?" Well, we
+don't have anything. It's going to just
+start building it. And so, what it's
+going to do first is it's going to start
+reading my files. And then it's thinking
+because it wants to understand how we
+are going to create this. Okay? So, you
+don't necessarily have to understand
+what's going on, but this is it wants to
+create the my index HTML file. So, this
+is kind of like be like what we'll see.
+But you can I can either say yes or yes
+to allow all edits during this session
+that we have Claude code up. So, I'm
+just going to hit enter on that so it
+can just keep making code and then
+updating the folders and the files that
+needs to create. Okay, so what it wants
+to do is it wants to open this index
+HTML in our browser now. So, I'm just
+going to say yes.
+And it's going to open it and we'll see
+what we have. Okay. Look, I mean, that
+was how simple like that took just
+minutes. All right, so we have 360 306
+days and 8 hours until New Year's Eve
+right, let's just say tester and then I
+want this to be for right now. So, just
+to make sure that it works. So, what is
+this 02/28/2026
+and then I want it to be it's 3:01 p.m.
+So, does it go by 3:00
+seconds and basically once this counts
+down, I should have some confetti on the
+screen. So, I'll be back when it has
+just a few seconds left.
+Okay, there's just a couple seconds left
+and hopefully the confetti works.
+There's the confetti that that countdown
+is complete. So, what I asked you to do,
+it completed, right? And it's done.
+Okay, that is wonderful. Now, if we go
+back to the terminal,
+we can see that at the end it said,
+"Hey, done. Your countdown timer should
+be in the browser. Here is what you
+got." And it's listing all of the
+features, right? So, it's like all the
+countdowns that we have are saved
+basically to our local machine and it
+has some different as a glassmorphism
+type background, etc. It says that it's
+fully responsive to work on mobile as
+well. Okay, awesome. So, we just
+installed Claude in just a couple steps,
+used it in a terminal. Now, I know the
+terminal you still may not understand
+too well and that's okay, but I'll have
+everything for you to copy paste and we
+just created an app that literally took
+minutes. And so now, what you can do
+from here is so, it even gives you an
+idea. It says, "Can you make it so the
+sounds actually animate when they
+change?" Or you could say, you know, "I
+don't like this style. Maybe make it
+minimalist so it's just like maybe black
+and white and very simple, right?"
+There's so many things you can do from
+this. You can either add to this project
+or you can have it create something else
+now. Or you can also just chat with it
+and this is leading to the next section
+of this video, which I want to show you
+a few things that you should know to do
+with Claude code. The first one and I
+think is very important is if you press
+shift tab, you're at the bottom here,
+right? The very bottom right here,
+you're going to kind of cycle through
+some things. You just hold shift tab. If
+you go to plan mode on, then if I were
+to say the same thing,
+let's create I'm just putting in the
+same exact prompt. I want to create
+this. Because it's in plan mode, it's
+going to just write a like a file of how
+we should do this. And then we can kind
+of
+plan out and see what we like based on
+what its suggestions are. Which means
+that it's not going to actually execute
+code by itself. It will just plan it out
+and then you can have it implement that
+plan. And here's what it's done, right?
+It says the app already exists, but it
+has a plan. So, it has better flip
+animation. We can do variety of
+confetti. Basically have some security
+with this. And then here's like the full
+plan that it can use that we can tell
+it, "Hey, go ahead and go through with
+this." And it will do that. But, I don't
+want to do anything. So, what I can do
+is I can just hit escape and then we're
+out of that. And then we can continue
+typing what we want, which is leads to
+my second one. Escape is your friend. If
+anytime it's doing something and you're
+not really sure what you don't want it
+to do, just press escape and it'll exit
+out of that execution. And then finally,
+you should know the slash commands. If I
+were to type slash, you can see down
+here there are a bunch of different
+commands that we can use, right? Not all
+of these you will use and not all of
+them necessarily matter to you right
+now. But, for instance, we use the slash
+login to login to our account to use
+Cloud Code, or we can use the slash
+logout,
+right? To log back out. There is MCP, if
+you use that before. There's plugins,
+the official plugins that you can
+download, but you know, some of these
+some of these are a little bit more
+advanced. Slash skills, I have a video
+coming out about skills to help you out
+if you're curious. But, there's all
+these other things that we can do. And
+these are called slash commands. Okay,
+so there you have it. Here is how you
+install Cloud and then you create your
+first app, okay? And everything I'll
+have in the description for you. Show
+you where you can get all of this. But,
+I will also have this in my free school
+community. if you're very interested in
+learning more about AI, no matter what
+level you are, okay? So, you can join
+that in the free description in the
+description below for free. But, I hope
+this has been helping you how to get
+started with Cloud Code, because this is
+so powerful. People are creating so many
+things with this and what's called vibe
+coding, um their own applications to
+help them out. And people are making a
+lot of money with this, okay? So, if
+you're interested on how I can help you
+out with that as well, that'll be in the
+description. But, here are some more
+videos for you to watch in the meantime.
