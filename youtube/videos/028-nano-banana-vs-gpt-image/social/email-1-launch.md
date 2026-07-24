@@ -48,7 +48,7 @@ If you watch it, hit reply and tell me which model you're using right now. I rea
 
 And the exact prompts plus the thumbnail skill I use are free in my community, link below.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -58,7 +58,7 @@ https://free.tylerai.dev/youtube/
 ## Notes for Tyler
 - No em dashes used. Verify before sending.
 - `[first_name]` fills via Resend personalization.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule, not the raw Skool link.
+- Hero CTA is the Skool community (skool.com/the-ai-agency). Updated 2026-07-24: this list is warm/existing members, so link straight to the community, no funnel and no "free".
 - "Hit reply" tactic lifts inbox placement and signals engagement.
 - Lead is the "everyone told me to switch, so I tested it" angle straight from the video so email and video match.
 

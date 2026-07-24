@@ -42,9 +42,9 @@ I demo all of it live in the terminal here:
 
 https://www.youtube.com/watch?v=MVr2GrAjrgQ
 
-And the CLAUDE.md files and setup I actually use are in my free community if you want to copy them:
+And the CLAUDE.md files and setup I actually use are in my community if you want to copy them:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```

@@ -44,7 +44,7 @@ And if you want the natural next step: a skill is what lets you give Cowork cust
 
 Everything, the free starter guide for Cowork plus the skills I use every week, is here:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, grab the guide if it's useful, have a good weekend either way.
 

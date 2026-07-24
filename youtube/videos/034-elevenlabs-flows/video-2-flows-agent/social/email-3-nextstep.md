@@ -43,7 +43,7 @@ And if you want the natural next step, there's a B-roll trick near the end I use
 
 Everything, the free follow-along doc plus the exact prompt and settings, is here:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 This was a paid partnership with ElevenLabs, and I showed you the honest tradeoffs anyway because that's the only way this is useful to you.
 
@@ -60,7 +60,7 @@ Watch it if you haven't, grab the doc if it helps, have a good weekend either wa
 - Framing stays pro-ElevenLabs: the limits are stated fairly and the tool is presented as a real, improving pro pipeline. No "free alternative" language, no suggestion to avoid or replace ElevenLabs.
 - #ad disclosure restated near the CTA.
 - Softest possible pitch. No price in the copy, no fake scarcity, just the next step and the free doc.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule.
+- Hero CTA is the Skool community (skool.com/the-ai-agency), per 2026-07-24 change: warm member list, link straight to the community.
 
 ## Sending Workflow
 1. Paste into Resend broadcast.

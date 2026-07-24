@@ -36,9 +36,9 @@ Second, if you have not watched yet, this is your nudge. I walk through all 23 w
 
 https://www.youtube.com/watch?v=MVr2GrAjrgQ
 
-And the natural next step: the CLAUDE.md files and setup I use every day are in my free community, so you can copy them instead of writing yours from scratch.
+And the natural next step: the CLAUDE.md files and setup I use every day are in my community, so you can copy them instead of writing yours from scratch.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you have not, grab the setup if it is useful, have a good weekend either way.
 

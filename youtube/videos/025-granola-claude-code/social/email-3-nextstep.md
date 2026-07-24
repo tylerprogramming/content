@@ -41,7 +41,7 @@ https://www.youtube.com/watch?v=nFen2thkbmg
 
 The link to try Granola is in the video description, and everything free from me is here:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, try the setup if it's useful, have a good weekend either way.
 

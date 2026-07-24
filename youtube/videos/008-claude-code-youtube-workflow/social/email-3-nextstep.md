@@ -38,9 +38,9 @@ Second, if you haven't watched yet, this is your nudge. I run all four skills on
 
 https://www.youtube.com/watch?v=MLfyfNj1JrI
 
-And the natural next step: the skills are just markdown files, so you can build your own. The exact ones I use and how I set them up are in my free community.
+And the natural next step: the skills are just markdown files, so you can build your own. The exact ones I use and how I set them up are in my community.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, grab the skills if they're useful, have a good one either way.
 

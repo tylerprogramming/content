@@ -50,7 +50,7 @@ If you watch it, hit reply and tell me the first video task you'd hand off to an
 
 And the free step-by-step follow-along is in my community, link below.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -60,7 +60,7 @@ https://free.tylerai.dev/youtube/
 ## Notes for Tyler
 - No em dashes used. Verify before sending.
 - `[first_name]` fills via Resend personalization.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule, not the raw Skool link.
+- Hero CTA is the Skool community (skool.com/the-ai-agency). Updated 2026-07-24: this list is warm/existing members, so link straight to the community, no funnel and no "free".
 - #ad disclosure is stated inside the body, matching the verbal disclosure in the video and the description tags.
 - Pro-ElevenLabs framing throughout: the agent is the pro tool doing the work. No "free alternative" language.
 - Lead is the one-sentence-builds-the-pipeline beat straight from the hook so the email and video match.

@@ -42,7 +42,7 @@ https://www.youtube.com/watch?v=B5eDktBzXMg
 
 And if you want the natural next step, the agent markdown and the exact prompt I used are the fastest way to build your own version of this. Everything, the setup and the prompt, is here:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, grab the setup if it's useful, have a good weekend either way.
 

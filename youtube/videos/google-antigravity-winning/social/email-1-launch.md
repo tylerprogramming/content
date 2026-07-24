@@ -48,7 +48,7 @@ If you watch it, hit reply and tell me what you'd have your first agentic workfl
 
 And the free setup and prompt are in my community, link below.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -58,7 +58,7 @@ https://free.tylerai.dev/youtube/
 ## Notes for Tyler
 - No em dashes used. Verify before sending.
 - `[first_name]` fills via Resend personalization.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule, not the raw Skool link.
+- Hero CTA is the Skool community (skool.com/the-ai-agency). Updated 2026-07-24: this list is warm/existing members, so link straight to the community, no funnel and no "free".
 - Framed as evergreen "in case you missed this" since this is a back-catalog video.
 - "Hit reply" tactic lifts inbox placement and signals engagement.
 - Lead is the honest "didn't expect this from Google" angle straight from the video.

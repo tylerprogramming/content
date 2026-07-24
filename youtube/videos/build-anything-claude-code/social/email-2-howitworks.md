@@ -42,7 +42,7 @@ https://www.youtube.com/watch?v=XAcqU3zuZmE
 
 The free starter guide and resources are in my community if you want to follow along:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```

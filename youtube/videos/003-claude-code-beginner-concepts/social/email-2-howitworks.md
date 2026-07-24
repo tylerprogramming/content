@@ -38,9 +38,9 @@ That's the foundation. Skills, hooks, MCP, sub-agents, git worktrees, and memory
 
 https://www.youtube.com/watch?v=ZlDnsf_DOzg
 
-The starter guide and the skills I use every week are in my free community if you want to copy them:
+The starter guide and the skills I use every week are in my community if you want to copy them:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```

@@ -38,9 +38,9 @@ Second, if you haven't watched yet, this is your nudge. I walk through all 10 co
 
 https://www.youtube.com/watch?v=ZlDnsf_DOzg
 
-And the natural next step: once the basics click, a skill is what lets you teach Claude your exact workflow. The starter guide and the skills I use every week are in my free community, so you can copy them and run your own.
+And the natural next step: once the basics click, a skill is what lets you teach Claude your exact workflow. The starter guide and the skills I use every week are in my community, so you can copy them and run your own.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, grab the guide if it's useful, have a good weekend either way.
 

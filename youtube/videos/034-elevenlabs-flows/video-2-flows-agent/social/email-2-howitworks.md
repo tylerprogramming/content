@@ -50,7 +50,7 @@ This is a paid partnership with ElevenLabs, and I still walk through exactly whe
 
 The free follow-along doc, with the steps in order, is here:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -63,7 +63,7 @@ https://free.tylerai.dev/youtube/
 - This is the "how it works" email: the numbered ask-build-iterate-control sequence pulled straight from the video and the LinkedIn/X drafts so the whole set matches.
 - Pro-ElevenLabs framing: the model library plus full audio stack is framed as why the agent can do the whole job. No "free alternative" language.
 - #ad disclosure restated near the CTA.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule.
+- Hero CTA is the Skool community (skool.com/the-ai-agency), per 2026-07-24 change: warm member list, link straight to the community.
 
 ## Sending Workflow
 1. Paste subject + body into a Resend broadcast (or temp HTML for `/email blast`).

@@ -44,7 +44,7 @@ And if an hour feels like a lot right now, start with the shorter intro, "Claude
 
 Everything, the free starter guide plus my CLAUDE.md files and the prompt pack, is here:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, grab the guide if it's useful, have a good weekend either way.
 

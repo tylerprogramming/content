@@ -40,9 +40,9 @@ I walk through all of it, including a brand new skill built from scratch, here:
 
 https://youtu.be/lfwt5tFfaSo
 
-The skills I use every week are in my free community if you want to copy them:
+The skills I use every week are in my community if you want to copy them:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```

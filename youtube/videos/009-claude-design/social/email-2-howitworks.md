@@ -40,9 +40,9 @@ I walk through all of it on real screens here:
 
 https://www.youtube.com/watch?v=aiMZrj4zqo8
 
-The prompts I use and the handoff template are in my free community if you want to copy them:
+The prompts I use and the handoff template are in my community if you want to copy them:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```

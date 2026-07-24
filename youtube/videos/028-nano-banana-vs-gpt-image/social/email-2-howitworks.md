@@ -55,7 +55,7 @@ If you try it, reply and tell me how many steps you cut. I'll share the best set
 
 - Tyler
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 ```
 
 ---

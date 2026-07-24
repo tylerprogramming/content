@@ -47,7 +47,7 @@ If you watch it, hit reply and tell me the one task you'd turn into a skill firs
 
 And the free starter guide plus the skills I use every week are in my community, link below.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -57,7 +57,7 @@ https://free.tylerai.dev/youtube/
 ## Notes for Tyler
 - No em dashes used. Verify before sending.
 - `[first_name]` fills via Resend personalization.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule, not the raw Skool link.
+- Hero CTA is the Skool community (skool.com/the-ai-agency). Updated 2026-07-24: this list is warm/existing members, so link straight to the community, no funnel and no "free".
 - Framed as a resurface ("in case you missed this"), since this is the original skills intro from earlier in the year.
 - "Hit reply" tactic lifts inbox placement and signals engagement.
 

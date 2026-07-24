@@ -47,7 +47,7 @@ If you watch it, hit reply and tell me the one repetitive task you'd hand off fi
 
 And the free step-by-step starter guide is in my community, link below.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -57,7 +57,7 @@ https://free.tylerai.dev/youtube/
 ## Notes for Tyler
 - No em dashes used. Verify before sending.
 - `[first_name]` fills via Resend personalization.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule, not the raw Skool link.
+- Hero CTA is the Skool community (skool.com/the-ai-agency). Updated 2026-07-24: this list is warm/existing members, so link straight to the community, no funnel and no "free".
 - "Hit reply" tactic lifts inbox placement and signals engagement.
 - Lead is the brain/hands analogy straight from the video so the email and video match.
 

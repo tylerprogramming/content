@@ -51,7 +51,7 @@ If you watch it, hit reply and tell me the first thing you'd ask your AI to pull
 
 The link to try Granola is in the video description, and my free starter stuff is below.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -62,7 +62,7 @@ https://free.tylerai.dev/youtube/
 - No em dashes used. Verify before sending.
 - Paid-partnership disclosure is the first beat in the body, matching the video's honesty open. Keep it in.
 - `[first_name]` fills via Resend personalization.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule. The Granola trial link lives in the video description as the sponsor CTA, so it stays primary on the video itself.
+- Hero CTA is the Skool community (skool.com/the-ai-agency), per 2026-07-24 change: warm member list, link straight to the community. The Granola trial link lives in the video description as the sponsor CTA, so it stays primary on the video itself.
 - "Hit reply" tactic lifts inbox placement and signals engagement.
 
 ## Sending Workflow

@@ -38,9 +38,9 @@ Second, if you have not watched yet, this is your nudge. I run the whole workflo
 
 https://www.youtube.com/watch?v=cdvi2ooarDc
 
-And the natural next step: the exact prompts I use, plus how I set the whole thing up, are in my free community. It is all open-source and free, so you can copy it and run your own.
+And the natural next step: the exact prompts I use, plus how I set the whole thing up, are in my community. It is all open-source and free, so you can copy it and run your own.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you have not, grab the prompts if they are useful, have a good weekend either way.
 

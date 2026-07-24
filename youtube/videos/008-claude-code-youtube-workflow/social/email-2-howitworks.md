@@ -46,9 +46,9 @@ I walk through all of it here:
 
 https://www.youtube.com/watch?v=MLfyfNj1JrI
 
-The skills and setup are in my free community if you want to copy them:
+The skills and setup are in my community if you want to copy them:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```

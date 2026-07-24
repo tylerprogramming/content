@@ -49,9 +49,9 @@ Watch it here: https://www.youtube.com/watch?v=MLfyfNj1JrI
 
 If you watch it, hit reply and tell me the one part of your workflow you'd hand off first. I read every response.
 
-The exact skills and setup are in my free community, link below.
+The exact skills and setup are in my community, link below.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -62,7 +62,7 @@ https://free.tylerai.dev/youtube/
 - No em dashes used. Verify before sending.
 - `[first_name]` fills via Resend personalization.
 - Older evergreen video, so the frame is "in case you missed this" rather than "just went up."
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule, not the raw Skool link.
+- Hero CTA is the Skool community (skool.com/the-ai-agency). Updated 2026-07-24: this list is warm/existing members, so link straight to the community, no funnel and no "free".
 - Honest framing kept front and center (not a tool I sell, just markdown files) to match the video.
 
 ## Sending Workflow

@@ -38,9 +38,9 @@ Second, if you have not watched yet, this is your nudge. I run the whole workflo
 
 https://www.youtube.com/watch?v=aiMZrj4zqo8
 
-And the natural next step: the exact prompts, the design system setup, and the Claude Code handoff template are in my free community, so you can copy the whole flow and run it yourself.
+And the natural next step: the exact prompts, the design system setup, and the Claude Code handoff template are in my community, so you can copy the whole flow and run it yourself.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you have not, grab the prompts if they are useful, have a good weekend either way.
 

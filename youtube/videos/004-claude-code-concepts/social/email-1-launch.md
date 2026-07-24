@@ -45,9 +45,9 @@ Watch it here: https://www.youtube.com/watch?v=MVr2GrAjrgQ
 
 If you watch it, hit reply and tell me the one concept you are most fuzzy on. I read every response.
 
-The exact setup and my CLAUDE.md files are in my free community, link below.
+The exact setup and my CLAUDE.md files are in my community, link below.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -58,7 +58,7 @@ https://free.tylerai.dev/youtube/
 - No em dashes used. Verify before sending.
 - `[first_name]` fills via Resend personalization.
 - Evergreen framing: "in case you missed it" instead of "brand new", since this is an older resurfaced video.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule, not the raw Skool link.
+- Hero CTA is the Skool community (skool.com/the-ai-agency). Updated 2026-07-24: this list is warm/existing members, so link straight to the community, no funnel and no "free".
 - "Hit reply" tactic lifts inbox placement and signals engagement.
 
 ## Sending Workflow

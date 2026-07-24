@@ -57,7 +57,7 @@ If you set one up, reply and tell me what you automated. I'll share the best one
 
 - Tyler
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 ```
 
 ---

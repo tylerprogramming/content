@@ -59,7 +59,7 @@ If you try it, reply and tell me what it pulled that you'd forgotten. I read eve
 
 - Tyler
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 ```
 
 ---

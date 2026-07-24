@@ -46,9 +46,9 @@ Watch it here: https://www.youtube.com/watch?v=cdvi2ooarDc
 
 If you watch it, hit reply and tell me the one editing task you would hand off first. I read every response.
 
-The exact prompts and setup are in my free community, link below.
+The exact prompts and setup are in my community, link below.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 - Tyler
 ```
@@ -58,7 +58,7 @@ https://free.tylerai.dev/youtube/
 ## Notes for Tyler
 - No em dashes used. Verify before sending.
 - `[first_name]` fills via Resend personalization.
-- Hero CTA is the funnel link (free.tylerai.dev/youtube/), per standing rule, not the raw Skool link.
+- Hero CTA is the Skool community (skool.com/the-ai-agency). Updated 2026-07-24: this list is warm/existing members, so link straight to the community, no funnel and no "free".
 - Honest framing kept front and center (not a video editor, did not build a tool, all open-source) to match the video.
 
 ## Sending Workflow

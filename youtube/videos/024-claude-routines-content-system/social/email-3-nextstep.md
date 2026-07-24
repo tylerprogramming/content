@@ -42,7 +42,7 @@ https://www.youtube.com/watch?v=T50plh-k3MY
 
 And if you want the natural next step: the same connectors and Claude Code skills I use to run all of this every week are free in my community. It's the fastest way to go from watching to actually building your first Routine.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, grab the skills if they're useful, have a good weekend either way.
 

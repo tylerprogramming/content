@@ -42,7 +42,7 @@ https://www.youtube.com/watch?v=XAcqU3zuZmE
 
 And the natural next step: the free starter guide and the resources I use are in my community, so you can set this up and build your own.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you have not, grab the guide if it is useful, and just pick something small to try.
 

@@ -38,9 +38,9 @@ Second, if you haven't watched yet, this is your nudge. I show you the shift fro
 
 https://www.youtube.com/watch?v=RQ57cUcGDGg
 
-And the natural next step is dead simple. Pick the most boring thing you do every week, get one good result by hand, then wrap it in /loop. The starter guide and the skills I use are in my free community if you want a head start.
+And the natural next step is dead simple. Pick the most boring thing you do every week, get one good result by hand, then wrap it in /loop. The starter guide and the skills I use are in my community if you want a head start.
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, grab the guide if it's useful, have a good weekend either way.
 

@@ -38,7 +38,7 @@ And if you want the natural next step: skills are how you give Claude custom exp
 
 Everything, the free starter guide plus the skills I use every week, is here:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, grab the guide if it's useful, have a good weekend either way.
 

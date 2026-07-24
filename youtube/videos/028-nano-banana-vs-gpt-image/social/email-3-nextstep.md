@@ -44,7 +44,7 @@ And if you want the natural next step: I put the exact prompts and the thumbnail
 
 Everything, the prompts plus the skills I use every week, is here:
 
-https://free.tylerai.dev/youtube/
+https://www.skool.com/the-ai-agency
 
 Watch it if you haven't, grab the pack if it's useful, have a good weekend either way.
 
