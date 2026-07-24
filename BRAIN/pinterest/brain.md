@@ -57,6 +57,8 @@ The Skool Automation Blueprint pin is the template to clone for all future pins:
 
 Not every pin needs exactly 5 sections, but the recipe is: bold all-caps title, cream bg, terra-cotta icon tiles, white cards, checkmark trios.
 
+**Production: Kie.ai + Nano Banana Pro** [confirmed 2026-07-24]. The winning infographic was AI-generated with Nano Banana Pro via Kie.ai (use /kie-nano-banana or /yt-thumbnail). Nano Banana Pro renders clean structured text, so it can do these reference cards. Write a precise prompt with ALL the exact text baked in (title, each heading, each checkmark) and the cream/navy/terra-cotta palette. Generate at 2:3 (1000x1500 / 1024x1536). Always eyeball the output for garbled or misspelled text and regenerate if wrong - dense infographics are where even Nano Banana Pro can slip.
+
 ## What flops
 - Narrow one-command how-tos ("Auto-Caption with Submagic in One Command", "5 Steps to Auto-Generate a LinkedIn PDF", "$1 UGC Ad"): 0-1 repins. Too specific to be searched or saved.
 
