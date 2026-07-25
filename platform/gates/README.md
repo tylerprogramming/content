@@ -57,4 +57,4 @@ five different things is a gate with one asset and five disappointments.
 
 | Keyword | Series | Asset status |
 |---|---|---|
-| `EDITOR` | 5 Instagram carousels on HyperFrames + Claude Code | Not built yet |
+| `EDITOR` | 5 Instagram carousels on HyperFrames + Claude Code | Manual replies for now, asset deferred until there is volume |
