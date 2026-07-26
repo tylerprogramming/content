@@ -75,10 +75,16 @@ Use them for the reframed carousel sets. Use clips for 004.
 
 ## Not settled
 
-- **Whether Blotato can post a real slideshow.** Its API exposes
-  `imageCoverIndex`, described as "TikTok: cover image index for carousel",
-  which implies multi-image TikTok posts. The public docs do not confirm it.
-  Test with `privacyLevel: SELF_ONLY` or `isDraft` before trusting it.
+- **Blotato posts slideshows — confirmed.** Its TikTok page lists three post
+  types: Image, Video, and **Photo Slideshow**. So this is settled.
+  Two specs matter and both caught us out:
+  - **JPG, not PNG.** "JPG" is listed for slideshow posts and the media
+    requirements say "Supported Formats: WebP, JPEG." Every set exported
+    before 2026-07-25 was PNG and would have been rejected. Fixed: TikTok
+    exports are JPG now.
+  - **"up to 1080px"** is written without saying which dimension. Our slides
+    are 1080 wide and 1920 tall. Width is fine either way; the height may not
+    be. Still worth one `SELF_ONLY` test post before queueing 23 of them.
 - **Music.** For slideshows, `autoAddMusic` lets TikTok attach a licensed
   track, so no file is needed. For clips, the source audio is the voiceover
   and no bed is required.
