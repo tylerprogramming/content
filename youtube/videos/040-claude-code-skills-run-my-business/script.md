@@ -170,7 +170,7 @@ Community & money (4): /skool /email /harut /journal
 
 > So that's the real system. Not a fake business - the actual one.
 
-> Claude Code researches and writes my content, it watches my comments and sends my email on a schedule, and it runs my community from the terminal. 17 skills, all just text files, built by someone who isn't a developer.
+> Claude Code researches and writes my content, it watches my comments and sends my email on a schedule, and it runs my community from the terminal. 17 skills, all just text files. You do not need to be an engineer to build any of it.
 
 > If you want the skills, the prompts, and the full setup, they're free in my community - the link's in the description. There's a whole group of people building this stuff, and I'd love to see what you make.
 

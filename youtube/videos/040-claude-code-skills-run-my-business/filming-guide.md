@@ -179,7 +179,7 @@ Keep them short, spoken-word, no jargon. Match a confident, practical creator vo
 ## Step 7 - Recap + CTA (13:30 - end)
 
 **What you do:** Back to camera.
-> "That's the real system. Claude Code researches and writes my content, watches my comments and sends my email on a schedule, and runs my community. 17 skills, all text files, built by someone who isn't a developer. The skills and setup are free in my community, link's in the description."
+> "That's the real system. Claude Code researches and writes my content, watches my comments and sends my email on a schedule, and runs my community. 17 skills, all text files. You do not need to be an engineer to build any of it. The skills and setup are free in my community, link's in the description."
 
 [SHOW: end card - https://free.tylerai.dev/youtube/ + subscribe]
 
