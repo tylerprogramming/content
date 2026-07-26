@@ -13,7 +13,7 @@ Reminder: no em dashes, no fake money claims, real numbers only. Nothing auto-po
 
 "This video you're watching right now, I didn't publish it. Claude did.
 
-It went up on YouTube, got cut into a short, turned into three LinkedIn posts, four Pinterest pins, and a week of emails, and I didn't open a single app to do any of it.
+It went up on YouTube, got cut into a short, turned into three LinkedIn posts, four Pinterest pins, an Instagram carousel, a TikTok slideshow, and a week of emails, and I didn't open a single app to do any of it.
 
 I built a system in Claude Code that takes one finished video and pushes it everywhere. Let me show you exactly how, one piece at a time, and you can grab the whole setup free in the link below."
 
@@ -37,7 +37,7 @@ Two quick beats, do not linger:
 - Quick plain-English framing (serves builders AND non-technical): "I want to be clear about what these tools actually are, because it's simpler than it sounds. A skill is just a workflow I taught Claude Code once. I wrote down the steps - how to upload a video, how to schedule a post, how to write an email - and now I trigger the whole thing with one command. Build it once, run it forever."
 - Name the five pieces of the stack, fast, one line each, on screen as a list:
   - "One, a YouTube upload skill. It uploads the video, sets the thumbnail, writes in the description, and schedules the publish time, all through the YouTube API."
-  - "Two, Blotato. This handles the social scheduling - TikTok, Instagram, LinkedIn, and X - from one place."
+  - "Two, Blotato. This handles the social scheduling - TikTok, Instagram, LinkedIn, and X - from one place. It also schedules the visual formats, an Instagram carousel and a TikTok photo slideshow, both made from the video."
   - "Three, Pinterest pins."
   - "Four, LinkedIn text posts."
   - "Five, an email drip through a tool called Resend, so my list hears about it too."
@@ -63,6 +63,8 @@ General direction: these are REAL, run them live, talk to Claude Code on camera.
 - Narrate: "So it's taking the short clip, and it's got the caption for each platform - and these aren't identical, that's the point. TikTok gets its caption, Instagram gets its five hashtags, LinkedIn gets a version with no hashtags because that's what works there, X gets a punchy standalone line."
 - The approval beat (say it clearly): "And here's the important part. Every one of these, I see before it goes. It's showing me each draft. I read them, I fix anything that doesn't sound like me, and THEN I schedule it. Nothing posts on its own. I'm the approve button."
 - Show the real Blotato queue filling up with the four platforms scheduled.
+- The extra formats: "And it's not just the clip. The same system turns the video's key points into an Instagram carousel and a TikTok photo slideshow, and schedules those through Blotato too. Some people scroll carousels and slideshows way more than they watch a clip, so that's free reach I'd be leaving on the table."
+- [SHOW: the generated carousel slides + the TikTok slideshow images, then the scheduled carousel/slideshow in the Blotato queue.]
 - Say plainly: "Blotato is just the tool I happen to use. If you use something else, the idea is the same - one clip, reshaped per platform, scheduled, approved by a human."
 
 ### Piece 3 - Pinterest pins [6:30-7:20]
@@ -82,7 +84,7 @@ General direction: these are REAL, run them live, talk to Claude Code on camera.
 - Run it live: generate the email sequence through Resend. "It's writing a short sequence off this video - a few emails spaced across the week that pull people back to watch it, and point them to the free stuff. Then it schedules them through Resend."
 - Show the real emails / the Resend schedule on screen.
 - The approval beat again: "Same rule. I read every email before it sends. These go to real people on my list, so I'm not letting anything go out I haven't looked at. But I'm not writing them from a blank page anymore either."
-- Land the section: "So that's the whole stack. YouTube, the four socials through Blotato, Pinterest, LinkedIn, and email. Five pieces, seven platforms, one finished video."
+- Land the section: "So that's the whole stack. YouTube, the socials through Blotato - including an Instagram carousel and a TikTok slideshow - Pinterest, LinkedIn, and email. One finished video, every platform, every format."
 
 ---
 
