@@ -7,12 +7,17 @@ ROUTINES set opens on Saturday. Account `tylerreedai` (Blotato id 12074).
 
 | day | carousel | gate | status |
 |---|---|---|---|
-| Mon 07-27 | Five Commands · EDITOR 1/5 | EDITOR | scheduled `929fca28` |
-| Tue 07-28 | Nine Workflows · EDITOR 2/5 | EDITOR | scheduled `faeae370` |
-| Wed 07-29 | The Check Gate · EDITOR 3/5 | EDITOR | not yet uploaded |
-| Thu 07-30 | The Limits · EDITOR 4/5 | EDITOR | not yet uploaded |
-| Fri 07-31 | My Mistakes · EDITOR 5/5 | EDITOR | not yet uploaded |
-| Sat 08-01 | 5AM Routine · ROUTINES 1/4 | ROUTINES | not yet uploaded |
+| Mon 07-27 | Five Commands · EDITOR 1/5 | EDITOR | **scheduled** `929fca28` (silent) |
+| Tue 07-28 | Nine Workflows · EDITOR 2/5 | EDITOR | **scheduled** `faeae370` (silent) |
+| Wed 07-29 | The Check Gate · EDITOR 3/5 | EDITOR | **manual** — Tyler posts natively, with music |
+| Thu 07-30 | The Limits · EDITOR 4/5 | EDITOR | **manual** — Tyler posts natively, with music |
+| Fri 07-31 | My Mistakes · EDITOR 5/5 | EDITOR | undecided |
+| Sat 08-01 | 5AM Routine · ROUTINES 1/4 | ROUTINES | undecided |
+
+Mon and Tue go out through Blotato and will be silent. Wed and Thu are posted
+by hand so they can carry music, which Blotato cannot attach to a carousel.
+That split is deliberate: it also gives a rough read on whether music matters,
+though two posts either side is not a real test.
 
 **These will be silent.** Blotato has no music parameter for Instagram
 carousels, only `audioName` for reels, and music cannot be added after
