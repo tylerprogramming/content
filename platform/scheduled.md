@@ -8,7 +8,7 @@ ROUTINES set opens on Saturday. Account `tylerreedai` (Blotato id 12074).
 | day | carousel | gate | status |
 |---|---|---|---|
 | Mon 07-27 | Five Commands · EDITOR 1/5 | EDITOR | **scheduled** `929fca28` (silent) |
-| Tue 07-28 | Nine Workflows · EDITOR 2/5 | EDITOR | **scheduled** `faeae370` (silent) |
+| Tue 07-28 | Nine Workflows · EDITOR 2/5 | EDITOR | **scheduled** `2869468` (silent, slides corrected 07-26) |
 | Wed 07-29 | The Check Gate · EDITOR 3/5 | EDITOR | **manual** — Tyler posts natively, with music |
 | Thu 07-30 | The Limits · EDITOR 4/5 | EDITOR | **manual** — Tyler posts natively, with music |
 | Fri 07-31 | My Mistakes · EDITOR 5/5 | EDITOR | undecided |
