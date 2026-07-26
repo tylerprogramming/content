@@ -73,6 +73,21 @@ carousels that already exist.
 
 Use them for the reframed carousel sets. Use clips for 004.
 
+### Ready now
+
+All nine carousels have a TikTok slideshow set built, JPG, 1080x1920, in
+`platform/carousels/<slug>/tiktok/`:
+
+| set | slides |
+|---|---|
+| five-commands · nine-workflows · the-check-gate · the-limits · my-mistakes | 7 each |
+| 5am-routine · loop-vs-schedule · the-two-i-run · build-one | 6 each |
+
+58 images total, roughly 8 MB. `5am-routine` slide 1 is a video on Instagram
+and is static here, which is expected rather than a fault.
+
+That is nine slideshow posts sitting ready, before any of the 004 clips.
+
 ## Not settled
 
 - **Blotato posts slideshows — confirmed.** Its TikTok page lists three post
