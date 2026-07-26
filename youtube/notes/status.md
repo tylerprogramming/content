@@ -3,7 +3,7 @@
 > **Live pipeline state — the operational source of truth.** What's recording next, what's with the editor, what's queued.
 > For full content inventory across all platforms, see `~/content/system/tracker.md`.
 >
-> **Open this first.** Last updated: 2026-07-22
+> **Open this first.** Last updated: 2026-07-26
 > **Also tracked in ClickUp:** YouTube list (id 901710640585), Space "Team Space". Keep both in sync on every stage change — this file is the source of truth. (ClickUp reconciled 2026-07-22: confirmed 021/023/024/025/028/034 complete; marked `026` (scheduled tonight) + 6 already-live back-catalog videos (011/012 + Antigravity, YT Workflow, Build ANYTHING, 23 Concepts) complete; `86e2drehj` social push + `027` remain in progress.)
 
 ---
@@ -63,6 +63,21 @@ The winning lane = **"I Automated My ___ With Claude Code"** (showcase). Mirrors
 | **I Automated My Entire Content Pipeline With Claude Code** | `031-automated-content-pipeline/` | Package built 2026-07-06. Showcase: one prompt → a week of content. |
 | **I Automated My Email With Claude Code** | `032-automated-email/` | Package built 2026-07-06. Showcase: inbox triage + drafts + sends. |
 | **I Automated My YouTube Comments With Claude Code** | `033-automated-yt-comments/` | Package built 2026-07-06. Showcase: monitor + draft + reply via API. |
+
+---
+
+## 🎬 RECORD BATCH (packaged 036-041, order set 2026-07-24)
+
+Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resources".
+
+| Order | Video | Folder | Status |
+|---|---|---|---|
+| 1 | Claude Opus 5 (Is it really better?) | `041-claude-opus-5/` | ✅ **RECORDED 2026-07-26** → to edit |
+| 2 | 17 Claude Code Skills That Run My Business | `040-claude-code-skills-run-my-business/` | Package complete. **Films next.** |
+| 3 | I Automated My Publishing With Claude Code | `039-automated-publishing/` | Package complete. |
+| 4 | The Simple Claude Code YouTube Workflow | `037-youtube-workflow-simple/` | Package complete. |
+| 5 | Build Your First AI Agent (No Code) | `038-build-first-ai-agent/` | Package complete. |
+| backup | ElevenLabs Dubbing v2 | `036-elevenlabs-dubbing-v2/` | Package complete. |
 
 ---
 
