@@ -1,5 +1,36 @@
 # Scheduled posts
 
+## Instagram week · 2026-07-27 to 08-01
+
+One carousel a day at 16:00Z (noon ET). The EDITOR series in order, then the
+ROUTINES set opens on Saturday. Account `tylerreedai` (Blotato id 12074).
+
+| day | carousel | gate | status |
+|---|---|---|---|
+| Mon 07-27 | Five Commands · EDITOR 1/5 | EDITOR | scheduled `929fca28` |
+| Tue 07-28 | Nine Workflows · EDITOR 2/5 | EDITOR | scheduled `faeae370` |
+| Wed 07-29 | The Check Gate · EDITOR 3/5 | EDITOR | not yet uploaded |
+| Thu 07-30 | The Limits · EDITOR 4/5 | EDITOR | not yet uploaded |
+| Fri 07-31 | My Mistakes · EDITOR 5/5 | EDITOR | not yet uploaded |
+| Sat 08-01 | 5AM Routine · ROUTINES 1/4 | ROUTINES | not yet uploaded |
+
+**These will be silent.** Blotato has no music parameter for Instagram
+carousels, only `audioName` for reels, and music cannot be added after
+publishing. If music matters on these, they have to be posted natively from
+the phone instead.
+
+**Six straight days of asking for a comment.** Deliberate, since the five
+EDITOR carousels are one series with one deliverable, but worth watching: if
+engagement drops across the week, the gate is the first thing to vary.
+
+### Uploading is the slow part
+
+Blotato's `create_presigned_upload_url` takes one filename per call and has no
+batch variant, so each carousel is 6-7 round trips before it can be scheduled.
+With a `BLOTATO_API_KEY` in `~/.claude/.env` the same endpoint can be scripted
+in a single pass instead.
+
+
 ## TikTok · 2026-07-27 18:00Z (2pm ET)
 
 **Loop vs Schedule · ROUTINES 2/4** — the first TikTok slideshow test.
