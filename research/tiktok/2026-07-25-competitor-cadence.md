@@ -23,9 +23,11 @@ that method, and the finding below is real.
 | **brodyautomates** | technically | — | 0-3 | 0 / 9 |
 | **chase.h.ai** | **no** | — | — | — |
 
-**chase.h.ai does not exist on TikTok.** The scrape returned "This
-profile/hashtag does not exist." He is the strongest of the four on Instagram
-and is not on this platform at all.
+**chase.h.ai does not exist as a handle** — but Chase does. He is
+`@chase_ai_` on TikTok: 135,000 followers and **924 videos**. My first pass
+searched the Instagram handle, got "profile does not exist", and wrongly
+concluded he was absent. He is one of the most active accounts in the set.
+See the second table below.
 
 **brodyautomates is dead here.** Nine posts, none above 3 plays, despite 178k
 followers on Instagram. Being large on one platform carries nothing.
@@ -76,3 +78,61 @@ that his two best posts are both slideshows, and both were saved heavily.
 One snapshot, 30 posts per account, no history. Play counts on very recent
 posts are still climbing. theromanknox's sample spans 37 days while sabrina's
 spans 11, so their medians are not measured over the same window.
+
+
+---
+
+# Round two: the right handles
+
+Run `aK0t8e2c5sF2JHqPv`, 2026-07-25. Found by searching profiles rather than
+guessing that Instagram handles carry over — which is what went wrong above.
+
+| account | followers | posts/day | slideshows | median plays | best |
+|---|---|---|---|---|---|
+| **@chase_ai_** | 135,000 | 1.4 | 6 / 30 | **17,500** | **275,600** |
+| **@nateherkai** | 21,400 | **1.0** | 0 / 30 | 1,208 | 141,200 |
+| **@n8nautomation21** | 41,200 | **3.0** | 24 / 24 | **67** | 835 |
+| @nateherk | 17,800 | dormant | 0 / 13 | 1,558 | 8.2M (2020) |
+
+## The three cadences, and what each is worth
+
+**@nateherkai — once a day, 17:02, every day.** Not approximately: the
+timestamps are 17:01, 17:02, 17:03 for thirty consecutive days. Median is only
+1,208, but four posts cleared 34k and one hit 141,200. One slot, held.
+
+**@chase_ai_ — bursts, not a drip.** 1.4/day on average, but he posts two or
+three within the same few minutes (18:20 and 18:21, 22:13 and 22:19), then
+skips days. Median 17,500 on 135k followers. This is the strongest account
+here and it is *not* posting daily.
+
+**@n8nautomation21 — 3/day, automated, dead.** Exactly 06:00, 11:00, 18:00
+every day, every post a slideshow. Median **67 plays**. On 41,200 followers.
+This is what cadence without judgement produces, and it is the clearest result
+in the set.
+
+## Slideshows, second look
+
+theromanknox is not the only one. chase runs them too, 6 of 30, and **his best
+post of the month is a slideshow**: 275,600 plays with 10,341 saves.
+
+But his slideshow *median* is 13,850 against 18,600 for video, so on typical
+performance they are slightly behind. Both his biggest hits are outliers, one
+slideshow and one video.
+
+Honest read: slideshows are not better on average, but they are capable of the
+biggest single results, and they are cheap to produce from work that already
+exists.
+
+## What this changes
+
+**Volume is not the lever.** The 3/day account has the worst numbers on the
+platform by a wide margin. The best account posts in bursts and skips days.
+
+**A held slot beats frequency.** nateherkai's one daily post at a fixed minute
+outperforms a 3/day automated account by 18x on median, with half the
+followers.
+
+**Correction to the earlier note here:** I wrote that cadence looked like the
+lever, based on sabrina's 2.7/day. With three more accounts, that does not
+hold. sabrina and chase both do well at different frequencies, and the highest
+frequency in the set performs worst.
