@@ -91,7 +91,6 @@ guessing that Instagram handles carry over — which is what went wrong above.
 |---|---|---|---|---|---|
 | **@chase_ai_** | 135,000 | 1.4 | 6 / 30 | **17,500** | **275,600** |
 | **@nateherkai** | 21,400 | **1.0** | 0 / 30 | 1,208 | 141,200 |
-| **@n8nautomation21** | 41,200 | **3.0** | 24 / 24 | **67** | 835 |
 | @nateherk | 17,800 | dormant | 0 / 13 | 1,558 | 8.2M (2020) |
 
 ## The three cadences, and what each is worth
@@ -104,11 +103,6 @@ timestamps are 17:01, 17:02, 17:03 for thirty consecutive days. Median is only
 three within the same few minutes (18:20 and 18:21, 22:13 and 22:19), then
 skips days. Median 17,500 on 135k followers. This is the strongest account
 here and it is *not* posting daily.
-
-**@n8nautomation21 — 3/day, automated, dead.** Exactly 06:00, 11:00, 18:00
-every day, every post a slideshow. Median **67 plays**. On 41,200 followers.
-This is what cadence without judgement produces, and it is the clearest result
-in the set.
 
 ## Slideshows, second look
 
@@ -125,14 +119,19 @@ exists.
 
 ## What this changes
 
-**Volume is not the lever.** The 3/day account has the worst numbers on the
-platform by a wide margin. The best account posts in bursts and skips days.
+**Frequency is not the lever on its own.** chase is the strongest account here
+and posts in bursts, skipping days. nateherkai holds one slot a day. sabrina
+runs 2.7 a day. All three work; they are not converging on a number.
 
-**A held slot beats frequency.** nateherkai's one daily post at a fixed minute
-outperforms a 3/day automated account by 18x on median, with half the
-followers.
+**A held slot is the cheapest thing to copy.** nateherkai posts at 17:01-17:03
+for thirty consecutive days. Median 1,208, but four posts cleared 34k and one
+hit 141,200 — the slot costs nothing and the upside is uncapped.
 
 **Correction to the earlier note here:** I wrote that cadence looked like the
-lever, based on sabrina's 2.7/day. With three more accounts, that does not
-hold. sabrina and chase both do well at different frequencies, and the highest
-frequency in the set performs worst.
+lever, from sabrina's 2.7/day alone. With more accounts it does not hold as a
+simple more-is-better rule.
+
+## Excluded
+
+`@n8nautomation21` was in an earlier draft as a cautionary case. Dropped at
+Tyler's call — not a relevant comparison, and nothing here depends on it.
