@@ -15,25 +15,17 @@ Reminder: no em dashes, no fake money claims, real numbers only. Nothing auto-po
 
 It went up on YouTube, got cut into a short, turned into three LinkedIn posts, four Pinterest pins, and a week of emails, and I didn't open a single app to do any of it.
 
-So most creators spend more time posting the content than making it. You finish the video, and then you're uploading it, writing the description, cutting the short, writing the caption for TikTok, then Instagram, then LinkedIn, and by the time you're done you don't even want to make the next one.
-
-That was me.
-
-So I built a system in Claude Code that takes one finished video and pushes it everywhere. I'm going to show you exactly how it works, one piece at a time, and you can grab the whole setup free in the link below."
+I built a system in Claude Code that takes one finished video and pushes it everywhere. Let me show you exactly how, one piece at a time, and you can grab the whole setup free in the link below."
 
 ---
 
-## [0:35-2:00] THE PROBLEM (the posting grind)
+## [0:25-1:05] THE PROBLEM (keep it fast, ~30-40 sec)
 
-[Visual: Tyler on camera, then a quick montage of the old way - the YouTube upload screen, tabs everywhere, the TikTok app, a half-written caption, a Pinterest board.]
+[Visual: quick montage of the old way - the YouTube upload screen, tabs everywhere, the TikTok app, a half-written caption, a Pinterest board.]
 
-Talking points, Tyler's voice, keep it tight:
-- "So a while back I made a video about automating how I CREATE content. Research, scripts, the whole package. And a bunch of you asked the obvious next question. Okay, cool, but then what? You still have to post all of it."
-- "And that's the part nobody talks about, right? Making the video is maybe half the job. The other half is distribution. Taking that one finished thing and reshaping it for every platform, and then actually uploading it, scheduling it, writing the caption ten different ways."
-- Name the real grind, concrete: "Think about what publishing one video actually looks like. You upload to YouTube, set the thumbnail, write the description, pick a publish time. Then you cut a short and post that. Then you rewrite the caption for TikTok, then Instagram, then LinkedIn, then X. Then maybe a couple Pinterest pins. Then, if you're smart, an email to your list. Same idea, over and over, in ten slightly different shapes."
-- The honest turn: "For most creators that's an hour or two of clicking around, per video, every single week. I've got a day job. I've got a family. I do not have two hours to spend clicking upload buttons."
-- Kill the objection early: "Now before you think this is one of those spammy auto-poster things that blasts the same text everywhere and makes you look like a bot - it's not. Nothing goes out until I look at it and say go. This is a drafting and scheduling machine, not a spam cannon. That part matters, and I'll come back to it."
-- Set the promise: "So I'm going to walk you through the exact stack I use, one piece at a time, running live. Then at the end I'll show you the payoff - one finished video filling up every platform at once."
+Two quick beats, do not linger:
+- The grind: "Here's the part nobody talks about. Making the video is half the job. Posting it is the other half. One finished video means uploading to YouTube, cutting a short, then rewriting the caption for TikTok, Instagram, LinkedIn, X, a couple Pinterest pins, and an email to your list. Same thing, ten slightly different shapes, every video, every week. I've got a day job and a family. I don't have two hours a week to click upload buttons."
+- Kill the objection: "And this is not one of those spammy auto-posters that blasts the same text everywhere and makes you look like a bot. Nothing goes out until I look at it and say go. It's a drafting and scheduling machine, not a spam cannon. I'll come back to that."
 
 ---
 
