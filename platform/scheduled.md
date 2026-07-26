@@ -11,11 +11,13 @@ ROUTINES set opens on Saturday. Account `tylerreedai` (Blotato id 12074).
 | Tue 07-28 | Nine Workflows · EDITOR 2/5 | EDITOR | **scheduled** `2869468` (silent, slides corrected 07-26) |
 | Wed 07-29 | The Check Gate · EDITOR 3/5 | EDITOR | **manual** — Tyler posts natively, with music |
 | Thu 07-30 | The Limits · EDITOR 4/5 | EDITOR | **manual** — Tyler posts natively, with music |
-| Fri 07-31 | My Mistakes · EDITOR 5/5 | EDITOR | undecided |
-| Sat 08-01 | 5AM Routine · ROUTINES 1/4 | ROUTINES | undecided |
+| Fri 07-31 | My Mistakes · EDITOR 5/5 | EDITOR | **scheduled** `fe413a32` (silent) |
+| Sat 08-01 | 5AM Routine · ROUTINES 1/4 | ROUTINES | **scheduled** `98dd1638` (silent) |
 
 Mon and Tue go out through Blotato and will be silent. Wed and Thu are posted
-by hand so they can carry music, which Blotato cannot attach to a carousel.
+by hand so they can carry music. Fri and Sat are scheduled as a floor: if
+you get to them natively first, cancel the scheduled one rather than posting
+twice, which Blotato cannot attach to a carousel.
 That split is deliberate: it also gives a rough read on whether music matters,
 though two posts either side is not a real test.
 
