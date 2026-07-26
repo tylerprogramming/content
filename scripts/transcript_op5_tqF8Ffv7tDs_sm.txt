@@ -1,0 +1,263 @@
+[00:00] It's model release day, Opus 5 is out.
+[00:03] We have your day zero vibe check.
+[00:05] So let's get into it.
+[00:07] We've been testing this model for about a week now.
+[00:10] And it's, I gotta say,
+[00:11] it's a little bit of a hard model to love.
+[00:13] What have they done to my boy?
+[00:14] Everyone was like, it's not that usable.
+[00:17] It stops, it argues with you.
+[00:20] But as we've been testing it,
+[00:22] there've been some glimmers of things where you're like,
+[00:24] oh, there might be something here.
+[00:26] So here's what we're gonna talk about.
+[00:27] We're gonna talk about whether you should switch to it
+[00:29] if you're a Codex user,
+[00:31] what you should expect if you're a cloud user,
+[00:34] and we're gonna talk about the state of the race.
+[00:35] What does it mean for OpenAI and Anthrop?
+[00:37] I feel like I have two big slots in my life right now
+[00:40] for models.
+[00:41] One slot is my like day-to-day daily driver.
+[00:44] And right now that's just five, six.
+[00:45] Like it's smart, it's fast,
+[00:46] it's not that compute intensive, all that kind of stuff.
+[00:49] Then Opus 5 should compete with that.
+[00:51] I don't think it does, to be honest.
+[00:53] The other slot I have in my life is like,
+[00:55] I need the warp drive.
+[00:57] I need like the tactical nuke
+[00:58] to like go do this like gigantic big project
+[01:01] all autonomously.
+[01:02] And I don't feel like Opus 5 has the top end for that.
+[01:05] I use Fable for that.
+[01:06] So 80% of the time I'm still on GPT-56,
+[01:08] 20% of the time I'm still on Fable.
+[01:11] This model is just like a little bit more pushy.
+[01:12] It's a little bit more opinionated in a way that
+[01:15] you can get away with that if you're super fucking smart.
+[01:18] If you're not, then it's just more annoying.
+[01:21] And I think that's indicative of the attitude
+[01:23] this thing has,
+[01:24] where it has some of the genius tendencies of Fable.
+[01:28] Maybe it's a little bit too argumentative.
+[01:29] It has maybe its own opinions,
+[01:31] but it's not as smart as Fable.
+[01:33] So it's just annoying.
+[01:35] If you're a Codex user, I would not switch.
+[01:37] I think 5.6 is still,
+[01:40] 5.6 in Codex, in Chad GPT for Work is still,
+[01:43] in my view, the gold standard for knowledge work,
+[01:46] for day-to-day coding tasks, all that kind of stuff.
+[01:48] Fable, different story.
+[01:49] I still use that every day for like the bigger tasks
+[01:52] that I have, and I switch back and forth.
+[01:54] So Fable is like a provider switching model job.
+[01:56] You have to start using it.
+[01:58] Opus 5, if you're already in the cloud ecosystem
+[02:02] and you love Opus 4.8, it'll probably be okay.
+[02:05] It might be annoying for you.
+[02:06] It's just a little harder to use,
+[02:09] and a lot of your skills,
+[02:10] you're gonna have to think about rewriting,
+[02:11] which is just a pain.
+[02:12] But if you're someone who's already in the open AI ecosystem
+[02:15] or you just like to switch around to whatever's best
+[02:18] and you mix and match,
+[02:19] I really don't think that Opus 5
+[02:21] is gonna be your favorite model out of the box.
+[02:23] So if you are in the cloud ecosystem
+[02:26] and you're going from 4.8 to 5,
+[02:27] some of the things we observed,
+[02:28] so a big skill that we build and run internally
+[02:31] is called compound engineering.
+[02:32] It's something that Kieran Claassen,
+[02:34] who works at Every, has built.
+[02:36] It's a really big open-source project
+[02:38] that all of us use to do a lot of engineering work,
+[02:40] but also a lot of, honestly, just general knowledge work.
+[02:43] It's an incredible plugin,
+[02:44] and it has a set of skills
+[02:45] that help you do engineering better
+[02:47] and compound what you learn
+[02:49] so that it gets better over time.
+[02:51] And what Kieran found in testing this
+[02:54] is it would stop early, for example.
+[02:56] Compound engineering has an autonomous developer loop
+[02:58] as part of its skillset,
+[03:00] so you give it a goal and it just keeps going.
+[03:02] It has a lot of instructions from the model
+[03:04] about how to do that and when.
+[03:05] I found this too.
+[03:06] We have a senior engineer benchmark,
+[03:08] and I did find that it consistently stopped too early.
+[03:12] It would say it was done, but it wasn't done,
+[03:13] and it had to be like, keep going,
+[03:14] which is a problem that is not that common anymore.
+[03:18] Usually models are pretty good at telling when to finish.
+[03:22] What Kieran found, what I found,
+[03:23] is little things like that,
+[03:26] where you're like, okay, I'm gonna set this off
+[03:27] and I'm gonna go get a sandwich or whatever,
+[03:29] it just stops too early.
+[03:30] It appears that they happen more frequently
+[03:32] when you use them with complex existing skills.
+[03:35] So if you have a big skill file
+[03:37] that has a ton of different instructions,
+[03:40] its ability to follow those instructions,
+[03:42] it's less good at that.
+[03:44] But if you're giving it vaguer instructions,
+[03:47] or if you start fresh and you start to explore
+[03:49] what can this model do,
+[03:51] which is building up from a small prompt,
+[03:53] you may have more success.
+[03:54] And so, for example,
+[03:55] Kieran is rewriting compound engineering
+[03:57] to see if he can get it to work well with this model
+[04:01] and just prompt it differently.
+[04:03] But it's just the pain
+[04:04] when a model just breaks your existing workflows.
+[04:06] It might seem like the model isn't very good.
+[04:09] And I think the actual story here
+[04:12] is a little bit more complicated than that.
+[04:14] You actually have to prompt it differently.
+[04:15] And if you give it the kinds of things
+[04:17] that used to work really well with Opus 4.8,
+[04:19] big skills, it's not gonna work.
+[04:23] It'll, for example, stop early.
+[04:24] It'll argue with you, that kind of stuff.
+[04:26] It sort of brings out this annoying behavior
+[04:30] that you might recognize a little bit
+[04:31] of its personality from Fable,
+[04:33] but it doesn't have Fable's top end.
+[04:34] So it's not as excusable.
+[04:36] It's a hard model to love, especially on day one.
+[04:38] But as we've gotten deeper into it,
+[04:40] there are certain people on the team, like Kieran,
+[04:41] who have been like,
+[04:42] actually, if you try it on a lower thinking level,
+[04:45] you may find good results.
+[04:47] He prefers to use this model on medium or low reasoning.
+[04:52] Almost all my testing was on like high or max or whatever.
+[04:55] Cause I'm like, oh, these are hard tasks or whatever.
+[04:57] It's really important with cloud models of this generation
+[05:00] to pay attention to the reasoning level
+[05:02] and not just the model family.
+[05:04] So regardless of whether you're using Opus 5 today or not,
+[05:07] a thing to be aware of is in 2026, when you're using AI,
+[05:12] the thing to start dialing up and down
+[05:15] is the thinking level.
+[05:16] It's kind of true.
+[05:17] The thinking level is its effort.
+[05:18] And Opus is a smart model that does better
+[05:22] when it thinks less.
+[05:23] It does better when it puts a little bit less effort
+[05:26] into its tasks and it just answers.
+[05:27] And to some degree, humans are like that too.
+[05:29] Like there are times where you're just like
+[05:31] totally trying too hard and you way overthink it.
+[05:35] And I think the cloud family of models,
+[05:37] especially in this generation, are like that.
+[05:40] I think there's actually a really big,
+[05:42] interesting strategy question here,
+[05:43] which is OpenAI and Anthropic are taking
+[05:45] two very different strategies to building models.
+[05:48] Anthropic is like, we're going to build this gigantic,
+[05:52] super weapon size, almost illegal model.
+[05:55] And that's Fable.
+[05:56] And we're going to use it to then build our other models.
+[05:58] And what they're trying to get to
+[06:00] is recursive self-improvement.
+[06:01] It's like a, it's a model that's so smart
+[06:03] that it can train its successors and get better autonomously.
+[06:07] And it turns out if you have like a super genius training,
+[06:10] you're like best friend,
+[06:11] your best friend turns into sort of
+[06:13] not really a super genius,
+[06:15] but they have all the attitude of a super genius.
+[06:17] OpenAI has done something quite different.
+[06:18] So after GPT 4.5, which is about a year ago
+[06:21] or a year and a half ago,
+[06:22] which was the biggest model that they've ever trained.
+[06:24] And it really didn't do that well.
+[06:26] Like people didn't really like it.
+[06:28] They have focused much less on model size
+[06:31] and much more on post-training.
+[06:33] And that's why GPT 5.6 is so usable.
+[06:37] Like it just feels like it's something,
+[06:38] it's fast, it's really efficient.
+[06:41] You ask it to do anything from knowledge work to coding,
+[06:42] it's just sort of getting to get the task done
+[06:44] and just like check it off.
+[06:45] It's so much more usable than something like Fable.
+[06:47] And so the interesting difference in the strategy
+[06:50] is OpenAI has a model right now
+[06:52] that is just easier to use and better.
+[06:56] When you install it, no matter what,
+[06:58] like what plugins, what stack, whatever,
+[06:59] it's just going to start working.
+[07:00] Fable and now Opus 5 are like, they're slightly different.
+[07:04] They're slightly weirder.
+[07:05] They have like different ways of working
+[07:06] that you have to adapt yourself to.
+[07:09] Some people are going to make that jump
+[07:10] and some people are not.
+[07:11] OpenAI is betting that having just an off the bat model
+[07:13] that just works is the way to go.
+[07:15] And Anthropica is betting that
+[07:17] if you make the super, super genius model,
+[07:20] everything else falls into place.
+[07:22] Over the course of the last year,
+[07:24] I feel like Anthropica has had
+[07:25] a little bit of the mandate of heaven here.
+[07:27] Particularly since Cloud Code
+[07:29] about a year or a year and a half ago,
+[07:31] they've kind of dominated in terms of
+[07:33] what the daily driver is for most people who really love AI.
+[07:36] A lot of people, me included,
+[07:38] have started to switch back into the OpenAI ecosystem.
+[07:41] And now Codex is having a moment.
+[07:42] Like if you look, I think they're like adding
+[07:43] a million users a day or something right now.
+[07:45] So there's something really interesting going on
+[07:48] with OpenAI and this current strategy.
+[07:50] And I think the balance of who's ahead
+[07:52] is starting to shift a little bit back to them.
+[07:56] How we like a model, what we like about a model,
+[07:59] can sometimes change over a couple of weeks to a month
+[08:03] because you start to learn little things
+[08:05] that you try it for that you're like,
+[08:06] oh, there's a new way of doing this.
+[08:08] It didn't look like my old way.
+[08:09] And it's kind of annoying that I have to change,
+[08:11] but there's like hidden powers in here
+[08:13] that I really, really like.
+[08:15] So for us, like our vibe check right now is,
+[08:20] it's hard to use.
+[08:21] Some interesting things, but it's not great.
+[08:22] There may be a vibe shift though.
+[08:23] We've seen this before.
+[08:25] I think a really good example of a model
+[08:27] that's kind of like this is GPT-5,
+[08:31] GPT-5.1, GPT-5.2 that were all just really hard to use
+[08:37] and people didn't like.
+[08:38] And then about a month later, they were like,
+[08:40] but it's really powerful for certain things,
+[08:41] especially the Codex line.
+[08:43] I think that there's a similar feeling thing happening
+[08:45] where Fable just blew the ceiling off the intelligence level
+[08:50] to such a degree that you're seeing that then leak
+[08:53] into all the sort of like weaker models.
+[08:55] And Anthropic's gonna have to figure out
+[08:58] how do we post-train these models better
+[09:00] to make them more usable even as they're so smart.
+[09:04] So what I would say is probably
+[09:07] you're gonna use this model and not like it that much,
+[09:09] but we're really gonna know in a couple of weeks
+[09:12] once everyone has had a chance to like poke at its corners
+[09:15] to really understand like what might be hidden in there.
+[09:17] But for now, to me, this model feels a little bit
+[09:21] like a poor man's Fable.
+[09:22] It has all of Fable's personality,
+[09:24] but really not its top end.
+[09:27] So for me personally, it's not my favorite model.

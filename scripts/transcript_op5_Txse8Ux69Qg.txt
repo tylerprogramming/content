@@ -1,0 +1,51 @@
+[00:00] So Claude Opus 5 just dropped in and Anthropic is claiming we now have a model that is getting
+[00:04] close to Fable 5 outputs at half the cost. So let's take a look at what they're giving us.
+[00:09] So let's take a look at some of the benchmarks and right away, kind of wild numbers. We see
+[00:14] that it beats Fable 5 and blows Opus 4.8 out of the water on a number of these tests, specifically
+[00:21] agentic terminal coding, knowledge work, agentic search. Also, it's beating things like GPT's 5.6
+[00:27] sole in these categories as well. The only areas that we see Opus 5 doing worse than Fable 5 is
+[00:33] multidisciplinary reasoning, which isn't by much. In fact, it beats it when it uses tools, as well
+[00:38] as legal in health. But every other spot, it's actually beating their top model. And if those
+[00:45] numbers are to be believed, that's crazy. Right here, it's saying on CursorBench 3.2 at max
+[00:50] effort, the model performed within 0.5% of Fable 5's peak score, but at half the cost per task.
+[00:55] Nuts. And you can see that right here, we have Opus 5 in the red, and then Fable 5 in the orange
+[01:00] and down here in the blue is Opus 4.8. So yes, at max max effort, Fable 5 does pull ahead. But most
+[01:07] people aren't actually operating at max, they're either operating at high or extra high. And when
+[01:12] we look at extra high and high compared to Fable, we're pretty much getting the same outputs with
+[01:16] Opus 5. But again, it like half the cost. And in some of these other benchmarks, like artificial
+[01:21] analysis, coding agent index, Opus 5 is just straight up beating Fable 5. And same thing with
+[01:26] the frontier bench, like it's, it's actually whipping Fable, and it's cheaper. Let's take a
+[01:31] look at some knowledge work and problem solving tasks. And again, I think what's really crazy
+[01:36] isn't just this whole like Fable 5, Opus 5 dynamic, it's the jump from Opus 4.8 to Opus 5.
+[01:42] Like all of these across the board, just a massive, massive leap forward. And again, if this
+[01:48] was like a sonnet five thing, where we saw it doing better than the previous model, yet it was
+[01:51] just like prohibitively expensive, because sonnet five is somehow the most expensive model out there
+[01:56] when we break it down by task. That's not the case here. Opus looks to be extremely token efficient
+[02:02] compared to these two other models. And again, like the fact that's actually beating Fable 5,
+[02:06] I really can't get over that. Another interesting improvement is visual output. So here's a look
+[02:11] at Opus five, doing some wind tunnel work. Then over here, we have it building a 3d interactive
+[02:18] animal cell artifact. Now one of the downsides with cloud is it like can't create its own images
+[02:24] and stuff. So it being able to do better with these sort of like 3d created SVG, almost like
+[02:30] HTML graphics is huge. Another big improvement is that Anthropic is saying it's much stronger
+[02:34] and verifying its work and iterating carefully until it succeeds. What does this mean? This
+[02:38] means when we use Opus five on long horizon agentic tasks, things that just aren't one shot,
+[02:43] these are like loops, right? This is like, you know, the whole graph engineering thing people
+[02:47] are talking about anything that requires Claude to essentially check its work against some sort
+[02:51] of goal, we give it and keep doing that over and over and over again. Well, Opus five is
+[02:55] much better than Opus 4.8 in that regard. And one interesting example here is Opus five was
+[02:59] giving a drawing of a machine part and told to write code to rebuild it as a 3d free CAD model,
+[03:05] but the model wasn't given any way to actually view the drawing. So you know, it was told to
+[03:10] reach this goal, it wasn't told specifically how to do it. So it went ahead and wrote its own
+[03:14] computer vision pipeline to pull the geometry from raw pixels, and then reconstructed the whole
+[03:19] machine part again, anything that is long horizon, given some sort of North Star to reach for Opus
+[03:25] five is much better than 4.8. And actually completing that in terms of misaligned behavior,
+[03:29] it's also a step above all these previous models lower is better here. And we see a huge increase
+[03:34] in its capability from Opus 4.8 to find vulnerabilities and exploits in open source
+[03:38] code. Now the other cool thing is the safeguards. This isn't a fable scenario, where if you mention
+[03:43] anything about cybersecurity biology, it's going to get shut down. Those guardrails are much less
+[03:48] strict with Opus five versus fable five. Now while there are still some classifiers in there,
+[03:53] they say it's 85% less likely that they actually trigger versus fable. Now lastly, the big thing
+[03:59] is cost. Like I said, this is half the price of fable, we're looking at $5 per million input in
+[04:04] 25 per million output. And like we saw from the benchmarks in the charts, this is a relatively
+[04:09] token efficient model. So I'm really excited to try this one out. Because if the numbers are true,
+[04:14] we kind of almost have a better fable for half the cost.

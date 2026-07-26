@@ -31,7 +31,7 @@ ls ~/.claude/skills/
 ```
 (or run `/help` if it shows your skill list cleaner)
 
-> "You've probably seen a dozen videos where someone builds a fake business with Claude Code... I'm not going to do that. This is the real one. And I'm not a developer - if you can write a text file, you can build all of these."
+> "You've probably seen a dozen videos where someone builds a fake business with Claude Code... I'm not going to do that. This is the real one. And none of this is code, it's just text files - you don't need to be an engineer to build any of these."
 
 **What happens next:** The folder list scrolls - dozens of skill names. That scroll IS the proof. Let it breathe for a second.
 
@@ -205,7 +205,7 @@ Keep them short, spoken-word, no jargon. Match a confident, practical creator vo
 - **Errors are content.** If a skill hiccups on camera, narrate it: "see, this is real - let me fix it." It reinforces that it's not staged. Don't panic-cut.
 - **Pre-run the slow stuff.** `/yt-package` and `/social-copy` take minutes. Film the command going in, cut to the result. Never make the viewer wait.
 - **The trust moment is the crontab.** Linger on it. That one screen proves the "runs while I sleep" claim.
-- **Say "I'm not a developer" at least twice** - hook and build-a-skill section. It's the line that unlocks your whole audience.
+- **Land the "it's just a text file, you don't need to be an engineer" line at least twice** - hook and build-a-skill section. That accessibility is what unlocks your whole audience.
 - **Keep dashboards to activity, not dollars** (your call - no revenue on screen). Counts, scheduled posts, and firing jobs are proof enough.
 - **Energy:** grounded and confident, not hyped. The edge of this video is that it's true, so let the proof carry it.
 - **Visual variety:** rotate between talking-head, terminal, editor, browser (Skool), and the file tree. Don't sit on the terminal for 5 minutes straight.

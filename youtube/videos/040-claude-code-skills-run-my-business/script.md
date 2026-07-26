@@ -15,12 +15,12 @@ Community & money (4): /skool /email /harut /journal
 
 > Instead, I'm going to open up the actual Claude Code that runs my real content business. 17 skills that research my videos, write my posts, reply to my comments, and run my community.
 
-> And here's the part that matters. I'm not a developer. If you can write a text file, you can build every single one of these.
+> And here's the part that matters. None of this is code. They are just text files. I have been an engineer for years, and you do not need to be one to build any of it. If you can write instructions, you can build every single one of these.
 
 > Let me show you the whole system.
 
 [SHOW: Terminal open, run something that lists your skills - `/help` or `ls ~/.claude/skills/` - show the 17-skill wall (a clean on-screen list or filtered /help) as instant proof - do NOT scroll the full skills folder, it has framework skills that muddy the count]
-[NOTE: Say "I'm not a developer" with full conviction. This is the line that keeps non-coders watching.]
+[NOTE: Land the "you do not need to be an engineer, these are just text files" line with conviction. This is what keeps non-coders watching.]
 
 ---
 

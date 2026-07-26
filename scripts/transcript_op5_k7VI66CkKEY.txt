@@ -1,0 +1,114 @@
+[00:00] Okay, so Claude Opus 5 literally just dropped.
+[00:02] Now, obviously, I'm gonna spend the rest of my day
+[00:04] playing around with it, comparing it to Fable 5,
+[00:05] and I'm gonna bring you guys an experiment,
+[00:07] so stay tuned for that later today.
+[00:09] But I wanted to just real quick come in here
+[00:11] and just show you guys this,
+[00:11] because I think it's really, really interesting.
+[00:13] On several coding and knowledge work evaluations,
+[00:16] Opus 5 is the new state of the art.
+[00:18] So look at this first benchmark right here,
+[00:19] agentic terminal coding.
+[00:21] Opus 5 has 43%, Fable 5 had 33%, and Opus 4.8 had 21%.
+[00:26] So this is a major jump in agentic terminal coding
+[00:29] above Opus 4.8, but also above Fable 5.
+[00:32] Same thing with knowledge work.
+[00:33] This thing crushes Opus 4.8.
+[00:35] I don't exactly know what the novel
+[00:36] problem-solving benchmark is solving, but look at this.
+[00:38] It went from Opus 4.8 at 1.5 to 30% at Opus 5.
+[00:42] So anyways, these benchmarks are insane.
+[00:45] You can also see here computer use,
+[00:46] which I always would default to Codex.
+[00:48] I always thought that GPT 5.6 or 5.5 with Codex
+[00:52] was just the absolute best with computer use,
+[00:54] but look at this with Opus.
+[00:55] Opus 5, I'm gonna have to try it out with computer use.
+[00:57] Anyways, what's really interesting to me is this efficiency
+[01:01] because as you guys know, Opus is half the price of Fable,
+[01:04] and Fable will burn through your credits
+[01:06] like nobody's business.
+[01:07] But look at this, agentic computer use.
+[01:10] Opus 5 performs better than Fable and for cheaper.
+[01:13] Look at this, agentic business workflows.
+[01:15] Opus 5 is better than Fable and for cheaper,
+[01:18] which is just really, really interesting to me.
+[01:20] Multidisciplinary reasoning by effort level.
+[01:23] Opus 5 does better than Fable and is cheaper than Fable.
+[01:26] So like I said, guys,
+[01:27] I'm about to run a ton of usage credits.
+[01:29] If you look at this right here in my cloud,
+[01:30] I am already at my weekly Fable limit,
+[01:32] and I'm about to go into, you know,
+[01:34] thousands of dollars in extra usage credits,
+[01:36] but I'm gonna run a ton of experiments here,
+[01:38] and I'm gonna bring you guys my consensus.
+[01:39] But I just wanted to come in here
+[01:40] and just like show you guys that real quick.
+[01:42] It's really interesting.
+[01:43] So if you, real quick, go into your VS code,
+[01:45] go into cloud code, update it, get on Opus 5,
+[01:49] and just start running your skills and start running things
+[01:51] and seeing how it feels.
+[01:53] Because as we know, these benchmarks are fun to look at,
+[01:55] but always take them with a grain of salt.
+[01:57] It always matters on your use case,
+[01:59] the way you talk to agents,
+[02:00] the type of work you're doing, things like that.
+[02:03] So cloud Opus 5 provides greatly improved performance
+[02:05] for the same cost as its predecessor, Opus 4.8.
+[02:09] Opus 5 excels at valuable software engineering tasks
+[02:11] like the Frontier Bench on Cursor Bench.
+[02:14] I really wanna see how it performs on the Deep Suite,
+[02:16] because that's the one that's been like
+[02:18] a pretty true like leading indicator.
+[02:20] But the whole cost thing is just really interesting to me
+[02:22] compared to Fable 5.
+[02:24] Because I know a lot of you guys were kind of like,
+[02:25] oh man, it sucks that we're gonna be losing Fable
+[02:27] or that we only get a certain different limit for it,
+[02:30] but it's overkill for most things
+[02:32] and it's really expensive.
+[02:33] So if Opus 5 is better for like general knowledge work,
+[02:35] then that's a huge win.
+[02:37] And this is really exciting to me.
+[02:38] Opus 5 is much stronger at verifying its work
+[02:40] and iterating carefully until it succeeds.
+[02:43] I heard this really funny analogy on X,
+[02:44] which is honestly pretty true.
+[02:46] They basically said like, hey,
+[02:47] Fable 5 is like a wise old owl.
+[02:48] It's really good at planning and managing and ideating
+[02:52] and coming up with ideas.
+[02:53] Whereas GPT 5.6 Sol is like a Rottweiler,
+[02:56] because that thing will grab onto a task
+[02:57] and it will shake it and it won't let go
+[02:59] until the task is done, which I definitely felt.
+[03:01] It was spinning up more tests
+[03:02] and it was better at verification than Fable was, right?
+[03:05] But now maybe Opus 5 saw that and was like,
+[03:08] oh wow, we need to work in some of this
+[03:09] GPT 5.6 Sol verification.
+[03:11] And now if we have that, that's huge.
+[03:13] Because verification is kind of what powers
+[03:15] all of these agentic loops that everyone's talking about.
+[03:17] And if you're using a model
+[03:19] that's really, really good at verification,
+[03:21] your loops are gonna be better
+[03:22] and your outputs are gonna be better.
+[03:24] So I'm really excited to test out Opus 5
+[03:25] with some verification.
+[03:26] And here are some examples where they gave Opus 5
+[03:28] some real scenarios and had it find bugs,
+[03:32] verify, take different approaches
+[03:34] and ultimately give a good output.
+[03:36] But anyways, this is now completely available
+[03:39] to everybody on all platforms,
+[03:41] same exact price as Opus 4.8.
+[03:43] So like I said, I'm about to jump in right now
+[03:45] and start testing the heck out of it against Fable 5.
+[03:48] And I'll bring you guys that full experiment later today.
+[03:50] So keep your eyes peeled for that video.
+[03:52] But anyways, I'll see you guys there.
+[03:54] Thanks everyone.
