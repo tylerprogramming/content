@@ -75,8 +75,11 @@ Pre-flight checklist:
 - Drop the design screenshot into the prompt so the viewer sees the input:
 
 ```
-Here is a screenshot of a landing page design. Build me the working front end
-that matches it - clean HTML and CSS, responsive. Just the code, then show it running.
+Here is a screenshot of a landing page design. Rebuild it as a working front end
+that matches the layout, spacing, colors, typography, and button styles as closely
+as you can. Clean semantic HTML and modern CSS (flexbox/grid), fully responsive down
+to mobile, no framework, one file. When done, show it running so I can compare it
+side by side with the screenshot.
 ```
 
 - Show the rendered result next to the original design screenshot, side by side. Let the match land.
@@ -88,10 +91,19 @@ that matches it - clean HTML and CSS, responsive. Just the code, then show it ru
 - Paste the brief so the viewer can read it:
 
 ```
-Build a landing page for a small SaaS product that helps creators schedule
-social posts. One page: hero with headline and sub, a 3-feature row, a short
-"how it works" section, pricing with 3 tiers, and a footer. Clean modern design,
-responsive, working HTML and CSS. Build it and show it running.
+Build a complete, polished landing page for a SaaS product called "PostPilot" that
+helps solo creators schedule social posts to every platform from one place. One
+self-contained HTML file, inline CSS, no frameworks, fully responsive.
+
+In order: a sticky nav with logo and a "Start free" button; a hero with a bold
+headline, one-line subhead, a primary CTA, and a simple product mockup; a row of 3
+feature cards with icons; a "how it works" section with 3 numbered steps; a pricing
+section with 3 tiers (Free, Pro, Team) with the middle tier highlighted; one short
+testimonial; and a footer.
+
+Design direction: modern, clean, generous whitespace, one confident accent color,
+real visual hierarchy, subtle hover states. Make it look like a real product a
+startup would ship, not a template. Build it and show it running.
 ```
 
 - Narrate the dead air while both build. Talk through what each is scaffolding, structure choices, speed, whether either asks questions. Point out that neither is arguing or stalling (the thing the doubters warned about, not happening here).
@@ -112,10 +124,18 @@ Fable 5: ~[N] tokens  →  $[X]   ($10 in / $50 out)   ~2x
 - Paste the game spec so the viewer can read it:
 
 ```
-Build a browser game in a single HTML file. A physics-based "merge" game:
-pieces drop into a container, matching pieces that touch combine into the next
-size up, everything bounces with simple physics and gravity. Keep score. Make
-it feel good to play. Build it and let me play it in the browser.
+Build a complete, playable browser game in a single self-contained HTML file, no
+external libraries. A physics-based "merge" game (Suika / Watermelon style):
+
+- Circles of increasing size drop from the top into an open-topped container.
+- I move to choose the drop position, then click to drop.
+- When two of the same size touch, they merge into the next size up with a little pop.
+- Everything has gravity, bounces, and collides with realistic-feeling physics.
+- Score increases on every merge; show the score and the next piece.
+- If the pile overflows the top, game over with a restart button.
+
+Make it feel good to play: smooth motion, satisfying merges, clean minimal visuals.
+Write the physics yourself in vanilla JS. Build it, then let me play it in the browser.
 ```
 
 - Narrate the dead air while both build. Talk through the physics approach, collision/merge handling, whether either self-checks. This build takes longer, let it breathe.
