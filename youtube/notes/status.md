@@ -79,6 +79,8 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 | 5 | Build Your First AI Agent (No Code) | `038-build-first-ai-agent/` | Package complete. |
 | backup | ElevenLabs Dubbing v2 | `036-elevenlabs-dubbing-v2/` | Package complete. |
 
+**Shorts:** 3 reels cut from `041` **recorded 2026-07-27** (cheaper-Fable value take, website head-to-head, effort-toggle tip). To edit + post. Scripts in `041-claude-opus-5/shorts.md`.
+
 ---
 
 ## 📦 Queued — package ready, not yet recorded
