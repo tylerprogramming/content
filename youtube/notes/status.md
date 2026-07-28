@@ -73,13 +73,14 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 | Order | Video | Folder | Status |
 |---|---|---|---|
 | 1 | Claude Opus 5 (Is it really better?) | `041-claude-opus-5/` | ✅ **RECORDED 2026-07-26** → to edit |
-| 2 | 17 Claude Code Skills That Run My Business | `040-claude-code-skills-run-my-business/` | Package complete. **Films next.** |
-| 3 | I Automated My Publishing With Claude Code | `039-automated-publishing/` | Package complete. |
+| 2 | 17 Claude Code Skills That Run My Business | `040-claude-code-skills-run-my-business/` | ✅ **RECORDED 2026-07-28** → to edit |
+| 3 | I Automated My Publishing With Claude Code | `039-automated-publishing/` | Package complete. **Films next.** |
 | 4 | The Simple Claude Code YouTube Workflow | `037-youtube-workflow-simple/` | Package complete. |
 | 5 | Build Your First AI Agent (No Code) | `038-build-first-ai-agent/` | Package complete. |
 | backup | ElevenLabs Dubbing v2 | `036-elevenlabs-dubbing-v2/` | Package complete. |
 
-**Shorts:** 3 reels cut from `041` **recorded 2026-07-27** (cheaper-Fable value take, website head-to-head, effort-toggle tip). To edit + post. Scripts in `041-claude-opus-5/shorts.md`.
+**Shorts (041):** 3 reels **recorded 2026-07-27** (cheaper-Fable value take, website head-to-head, effort-toggle tip). To edit + post. Scripts in `041-claude-opus-5/shorts.md`.
+**Shorts (040):** 6 demo-forward reel scripts ready (umbrella "17 skills", one-prompt pipeline, comment replies, build-a-skill live, what-is-a-skill, runs-while-I-sleep) in `040-claude-code-skills-run-my-business/shorts.md`. To record + cut.
 
 ---
 
