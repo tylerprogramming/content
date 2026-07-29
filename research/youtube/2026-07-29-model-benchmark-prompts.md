@@ -65,6 +65,59 @@ Then a one-line verdict per prompt. Land the pattern: Opus 5 >= 4.8 at the same 
 
 ---
 
+---
+
+## More TYPES of benchmarks (variety palette)
+
+The public world sorts LLM benchmarks into ~8 categories: **Reasoning, Coding, Math, Safety, Multimodal, Agentic, Long-context, Real-world.** For the video, pick a spread across types so it isn't five physics games. Options by type:
+
+### Type A - Physics / games (have plenty)
+Hexagon, heptagon, flappy, Suika. Add if you want: **Conway's Game of Life**, **boids flocking**, or a **double pendulum** - all one-file, visual, physics-flavored.
+
+### Type B - Visual / SVG (fast, funny)
+- Pelican on a bicycle (above).
+- Bonus: *"Generate an SVG of an analog clock showing 10:10 with a sweeping second hand"* or *"Draw an SVG self-portrait of yourself as a robot."*
+
+### Type C - 3D "wow" (three.js)
+> Build a 3D solar system in a single self-contained HTML file using three.js from a CDN. The sun at center, planets orbiting at different speeds, camera you can orbit with the mouse. No build step, just open the file.
+
+Great B-roll, big visual payoff, separates models fast.
+
+### Type D - Frontend / UI (your real lane, strong fresh data)
+- **Design-to-code from a screenshot** (you already have this as the opener) - this IS a benchmark: **UI Bench** and **DesignBench** both test "replicate a design from a reference screenshot."
+- Fresh data to cite:
+  - **Startrise Frontend Benchmark** (12 models, same 12 briefs, single-shot, one HTML file each): **Claude Opus 5 scored 82.3, effectively TIED for #1** with Kimi K3 (79.8) - but **Fable 5 won all three open-ended design briefs**. Perfect for the 3-way story.
+  - **Design Arena Elo:** Kimi K3 1455, **Fable 5 1373**, GPT-5.6 1372.
+- Prompt idea: *"Build a polished pricing page for a SaaS called PostPilot, one self-contained HTML file, three tiers, modern and clean."* (you already have the PostPilot brief.)
+
+### Type E - Reasoning / trick questions (no code, quick cuts)
+Instant, funny, shows the "thinking" difference. Source: `cpldcpu/MisguidedAttention`.
+- *"How many 'r' letters are in the word strawberry?"* (classic - should be 3)
+- *"Alice has 3 brothers and 2 sisters. How many sisters does Alice's brother have?"*
+- *"A marble is put in a glass, the glass is turned upside down on a table, then the glass is picked up and put in the microwave. Where is the marble?"*
+- *"There are three killers in a room. Someone enters and kills one of them. Nobody leaves. How many killers are in the room?"*
+
+### Type F - Agentic / real code (closest to how you actually use Claude)
+- *"Here's a small repo with a failing test. Find the bug and fix it so the test passes."* (this is what **SWE-bench** actually measures - top models >78%.)
+- *"Build a CLI todo app in Python with add/list/done commands and passing pytest tests."*
+- Tool-use: **BFCL** (function-calling) is the standard here. This type maps directly to your skills, so it's the most "on brand" segment.
+
+### Type G - Math (one quick one)
+> A snail climbs 3 feet up a 30-foot well each day and slips back 2 feet each night. How many days to get out?
+
+Or an AIME-style problem for a harder read.
+
+## Recommended spread for the 3-way video (variety, ~6 prompts)
+1. **Design-to-code from screenshot** (Type D - your opener, real UI benchmark)
+2. **Heptagon 20 balls** (Type A - the rigorous /90 one)
+3. **three.js solar system** (Type C - the visual wow)
+4. **Your Suika game** (Type A - continuity + feel)
+5. **Strawberry + Alice** (Type E - 20-second funny reasoning cut)
+6. **Fix-the-bug repo** (Type F - your real lane, agentic)
+Score each: runs? -> correctness -> feel -> cost -> time. Run all on Opus 4.8 / Opus 5 / Fable 5.
+
+---
+
 ## Sources
 - Hexagon: https://github.com/aligeramy/ai-benchmark
 - Heptagon (rubric): https://github.com/KCORES/kcores-llm-arena
@@ -72,3 +125,9 @@ Then a one-line verdict per prompt. Land the pattern: Opus 5 >= 4.8 at the same 
 - V-GameGym: https://v-gamegym.github.io/index.html
 - World of AI Bench: https://www.woaibench.ai/
 - Coding benchmarks 2026: https://tolearn.blog/blog/llm-coding-benchmark-comparison-2026
+- Startrise frontend benchmark: https://www.startrise.io/blog/llm-frontend-benchmark/
+- UI Bench: https://ui-bench.dev/
+- Design Arena / best for design: https://modelgrep.com/best/design
+- Benchmark categories deep dive: https://medium.com/@srinivasrao.marri/llm-benchmarks-explained-a-technical-deep-dive-into-ai-model-evaluation-a82ea998e759
+- Reasoning trick prompts (MisguidedAttention): https://github.com/cpldcpu/MisguidedAttention
+- AI agent benchmark compendium: https://github.com/philschmid/ai-agent-benchmark-compendium
