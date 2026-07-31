@@ -8,7 +8,7 @@
 **Hook:** "I ran the same prompts through three Claude models. The cheapest one won almost every time."
 - **Show:** the totals — Opus 4.8 ~$0.84, Opus 5 ~$2.02, Fable 5 ~$3.16 (across 8 prompts).
 - Say: same prompt, three models, and the oldest/cheapest was cheapest AND fastest on every build.
-- **Payoff:** "Fable costs almost 4x as much. If you can't tell the output apart, why pay it?"
+- **Payoff:** "Fable costs almost 4x as much. The real question isn't the price, it's whether it actually builds better. That's the next one."
 
 ## Reel 2 — "Same prompt, 3 AI models, watch the cost" (build head-to-head)
 **Hook:** "I made three AI models build the exact same game. Watch what each one cost."
@@ -16,11 +16,12 @@
 - Say: same brief, same everything, only the model changed.
 - **Payoff:** "Same game. One cost five times more than the other. Can you even tell which is which?"
 
-## Reel 3 — "AI can't make a transparent image" (the surprise / educational)
-**Hook:** "I asked AI to remove a background. It straight up lied to me."
-- **Show:** the generated bird → 'remove background' → the fake checkerboard baked into the image on the live page.
-- Say: generative image models can't output real transparency, so they paint a fake checkerboard and call it done. Alpha channel is still 100% opaque.
-- **Payoff:** "For a real cutout you need a segmentation tool, not a generator. Here's the difference." (show real transparent cutout)
+## Reel 3 — "The cheapest model lost the eye test" (the honest twist)
+**Hook:** "The cheapest AI model was the fastest and cost the least, every single time. Then I actually played what it built."
+- **Show:** all three versions of one game side by side ([pick the one with the clearest gap], playing each on camera).
+- Say: on the receipt, Opus 4.8 won on price and speed. But cost and feel are two different things.
+- **Payoff:** "The cheap one won the receipt. It did not win the eye test. [WINNER] built the one that actually felt right." (reveal the winner playing)
+- **[NEED FROM TYLER]:** which model won the eye test, and on which game — that sets the payoff line.
 
 ## Reel 4 — "The newer AI model writes 3x the code" (over-generation)
 **Hook:** "Newer doesn't mean better. Sometimes it just means more."
