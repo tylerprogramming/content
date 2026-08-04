@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+    .header { padding: 40px 20px; text-align: center; }
+    .header h1 { font-size: 48px; font-weight: bold; margin: 0; color: #000; letter-spacing: -1px; }
+    .container { max-width: 600px; margin: 0 auto; padding: 40px 20px; background: #ffffff; }
+    .content { font-size: 18px; }
+    .button { display: inline-block; background: #4F46E5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; }
+    .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>tylerai</h1>
+  </div>
+  <div class="container">
+    <div class="content">
+      <!-- SUBJECT: Come to the live one -->
+      <!-- SEND: Day 3 -->
+      <!-- NEEDS: {{WORKSHOP_LINK}} + real date/time from the Skool calendar -->
+      <p>Hey {{first_name}},</p>
+      <p>I do these live in the community, and they're the part people say actually made it click.</p>
+      <p>Next one is <strong>{{WORKSHOP_DATE}}</strong>. I build the thing on screen, from an empty folder, and you can stop me and ask why I did something. That's the whole format. No slides.</p>
+      <p>This one is the setup that publishes for me. Research to written to scheduled, and where I keep a human in the loop so it doesn't post something weird.</p>
+      <p style="text-align: center; margin: 30px 0;">
+        <a href="{{WORKSHOP_LINK}}" class="button">Save your spot</a>
+      </p>
+      <p>Come with the thing you're stuck on. The hot seats at the end are usually better than the part I planned, right? Someone asks about their actual situation and everyone else recognizes their own problem in it.</p>
+      <p>If you can't make it live, it gets recorded and goes in the classroom. But live is better, because you can ask.</p>
+      <p>Tyler</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>You're receiving this because you joined the AI Agency community.</p>
+  </div>
+</body>
+</html>

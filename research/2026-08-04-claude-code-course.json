@@ -1,0 +1,38 @@
+{
+  "query": "Claude Code course",
+  "total_found": 2,
+  "long_form_found": 2,
+  "shorts_found": 0,
+  "days": 120,
+  "top_n": 15,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "Complete Claude Code Course In 2 Hours For Developers",
+      "channel": "Krish Naik",
+      "views": 171604,
+      "likes": 3933,
+      "comments": 77,
+      "upload_date": "20260525",
+      "duration": "1:58:34",
+      "duration_seconds": 7114,
+      "url": "https://youtube.com/watch?v=TAKDIvvUdc4",
+      "description": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser.\nClaude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate devel",
+      "id": "TAKDIvvUdc4"
+    },
+    {
+      "title": "Free Claude Code Course for Beginners (2026)",
+      "channel": "Adri\u00e1n S\u00e1enz",
+      "views": 28058,
+      "likes": 1747,
+      "comments": 29,
+      "upload_date": "20260801",
+      "duration": "1:56:58",
+      "duration_seconds": 7018,
+      "url": "https://youtube.com/watch?v=w-VM5oyeboM",
+      "description": "Curso completo y gratuito de Claude Code actualizado para 2026.\n\n\u00cdndice: \n00:00:00 Introducci\u00f3n\n00:01:31 Claude vs ChatGPT\n00:02:23 Qu\u00e9 es Claude\n00:03:25 Qu\u00e9 es un LLM\n00:05:08 Crear cuenta y planes\n00:07:01 Tokens y ventana de contexto\n00:09:22 Formas de usar Claude\n00:12:12 Repaso de la interfaz\n",
+      "id": "w-VM5oyeboM"
+    }
+  ],
+  "shorts": []
+}

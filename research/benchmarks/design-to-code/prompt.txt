@@ -1,0 +1,1 @@
+Here is a screenshot of a landing page design. Rebuild it as a working front end that matches the layout, spacing, colors, typography, and button styles as closely as you can. Clean semantic HTML and modern CSS (flexbox/grid), fully responsive down to mobile, no framework, one file.

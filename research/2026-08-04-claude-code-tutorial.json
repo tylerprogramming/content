@@ -1,0 +1,90 @@
+{
+  "query": "Claude Code tutorial",
+  "total_found": 6,
+  "long_form_found": 6,
+  "shorts_found": 0,
+  "days": 90,
+  "top_n": 15,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "Claude Code Tutorial: Beginner to Advanced in 20 Minutes",
+      "channel": "Zinho Automates",
+      "views": 140787,
+      "likes": 0,
+      "comments": 32,
+      "upload_date": "20260513",
+      "duration": "19:24",
+      "duration_seconds": 1164,
+      "url": "https://youtube.com/watch?v=ujHXnlSVheI",
+      "description": "Claude Code Tutorial: Beginner to Advanced in 20 Minutes. Join our FREE community with free prompts & guides: https://www.skool.com/ai-launchpad/about\n\nChapters:\n0:00 - Intro\n1:10 - What is Claude & Setup\n3:54 - Plan mode & prompting\n6:18 - First results & Iteration\n8:18 - Claude.md & MCP\n12:12 - Co",
+      "id": "ujHXnlSVheI"
+    },
+    {
+      "title": "FULL Claude Code Tutorial For Beginners in 2026! (Become a PRO)",
+      "channel": "AI Foundations",
+      "views": 81451,
+      "likes": 2251,
+      "comments": 74,
+      "upload_date": "20260630",
+      "duration": "1:00:54",
+      "duration_seconds": 3654,
+      "url": "https://youtube.com/watch?v=X_zVY3-mbM8",
+      "description": "Work with me: https://aifoundations.io/join\n\u2705 Claude Code Prompts: https://aifoundations.io/resources/claude-code-starter-kit\n\nThis is the full Claude Code tutorial for beginners in 2026, a complete step by step guide to using Claude Code inside the desktop app with no terminal and no coding backgro",
+      "id": "X_zVY3-mbM8"
+    },
+    {
+      "title": "The Ultimate Claude Code Tutorial for Mobile Apps - FULL COURSE",
+      "channel": "Codesistency",
+      "views": 75505,
+      "likes": 1995,
+      "comments": 99,
+      "upload_date": "20260704",
+      "duration": "3:33:06",
+      "duration_seconds": 12786,
+      "url": "https://youtube.com/watch?v=p80OV6kjIO8",
+      "description": "\ud83d\udcab Try Sentry for FREE: https://dub.sh/sentry4 (Get $80 FREE Credits)\n\ud83d\ude80 Try Inngest for FREE: https://dub.sh/inngest1\n\ud83d\udc30 Try CodeRabbit for FREE: https://dub.sh/yt-coderabbit\n\ud83d\udd10 Try Clerk for FREE: https://go.clerk.com/m9uen7A\n\ud83d\udc18 Try Neon for FREE: https://dub.sh/neon4\n\ud83d\udcf8 Try Imagekit for FREE: https://t",
+      "id": "p80OV6kjIO8"
+    },
+    {
+      "title": "Claude Code Tutorial for Beginners: Build Website with AI (2026)",
+      "channel": "Mikey Website",
+      "views": 36825,
+      "likes": 0,
+      "comments": 18,
+      "upload_date": "20260711",
+      "duration": "32:20",
+      "duration_seconds": 1940,
+      "url": "https://youtube.com/watch?v=OdSXY4YgmZA",
+      "description": "\u2705 Claim your FREE $499 Masterclass: Build & Sell Apps, AI Agents & Websites with AI https://mikeyno-code.com/Skool-base44\n\n\u2705 Become Better than 99% of People in Claude by using Base44 https://base44.pxf.io/c/6440076/2477538/25619?trafcat=hp&sharedid=video191newx\n\nIn this video, I walk through a comp",
+      "id": "OdSXY4YgmZA"
+    },
+    {
+      "title": "Claude Code Tutorial for Non-Coders",
+      "channel": "Kevin Stratvert",
+      "views": 28194,
+      "likes": 455,
+      "comments": 22,
+      "upload_date": "20260723",
+      "duration": "9:35",
+      "duration_seconds": 575,
+      "url": "https://youtube.com/watch?v=inxAjCRHe2o",
+      "description": "This Claude Code tutorial for non-coders shows you how to build a real app in plain English, even if you have never written a line of code.\n\ud83e\udd16 Get started with Claude Code \u279c https://clau.de/kevinstratvert\n\nFirst, you'll clear up the biggest misconception about Claude Code, that it's only for develope",
+      "id": "inxAjCRHe2o"
+    },
+    {
+      "title": "Full Claude Code Tutorial: Beginner to Advanced in 11 Minutes",
+      "channel": "Jack Roberts",
+      "views": 20557,
+      "likes": 460,
+      "comments": 31,
+      "upload_date": "20260622",
+      "duration": "11:03",
+      "duration_seconds": 663,
+      "url": "https://youtube.com/watch?v=LIEuGD0pJ18",
+      "description": "\ud83d\udcc8 ALL Systems: https://bit.ly/4kol0y5\n\ud83e\ude75 Free Resources: https://bit.ly/3RNNDLa\n\ud83d\udd25 Firecrawl: https://bit.ly/4aHCD8A\n\nClaude can do far more than answer quick questions, and this walks through the seven levels that actually matter. You and I go from chat, co-work and Claude Code, through prompting pro",
+      "id": "LIEuGD0pJ18"
+    }
+  ],
+  "shorts": []
+}

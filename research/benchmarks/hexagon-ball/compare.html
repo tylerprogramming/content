@@ -1,0 +1,194 @@
+<!doctype html><html><head><meta charset=utf-8><title>model-bench</title><style>
+body{font-family:-apple-system,system-ui,sans-serif;margin:0;background:#f4f4f5;color:#18181b}
+.topbar{padding:16px 22px;background:#fff;border-bottom:1px solid #e4e4e7}
+.plabel{font-size:11px;font-weight:700;letter-spacing:1.5px;color:#a1a1aa;text-transform:uppercase;margin-bottom:6px}
+.ptext{font-size:17px;line-height:1.5;color:#27272a;max-width:1100px}
+.row{display:flex;gap:14px;padding:14px;overflow-x:auto}
+.col{flex:1;min-width:360px;background:#fff;border:1px solid #e4e4e7;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.hd{padding:14px 18px;border-bottom:1px solid #e4e4e7}
+.mname{font-size:22px;font-weight:800;color:#18181b;line-height:1.1}
+.meta{font-size:15px;color:#52525b;margin-top:6px}
+.meta b{color:#18181b;font-weight:700}
+iframe{width:100%;height:620px;border:0}
+pre{margin:0;padding:14px;font-size:12px;overflow:auto;max-height:620px;white-space:pre-wrap}
+.ans{font-size:16px;line-height:1.5}
+.run{padding:10px 16px;background:#fef9c3;font-size:14px}
+.fail{padding:24px;color:#b91c1c;text-align:center}
+</style></head><body><div class='topbar'><div class='plabel'>Prompt</div><div class='ptext'>Write a Python program that shows a ball bouncing inside a spinning hexagon. The ball should be affected by gravity and friction, and it must bounce off the rotating walls realistically.</div></div><div class='row'><div class='col'><div class='hd'><div class='mname'>opus-4.8</div><div class='meta'><b>$0.0950</b> &middot; <b>52.2s</b> &middot; 6 in / 3,797 out tokens</div></div><div class='run'>Run: <code>python3 opus-4-8.py</code></div><pre>&quot;&quot;&quot;
+Ball bouncing inside a spinning hexagon.
+Gravity + friction, with realistic bounces off the rotating walls
+(the moving wall imparts velocity to the ball on impact).
+
+Run:  pip install pygame  &amp;&amp;  python bouncing_hexagon.py
+&quot;&quot;&quot;
+
+import math
+import pygame
+
+# ---- Config ---------------------------------------------------------------
+WIDTH, HEIGHT = 560, 560
+FPS           = 120           # high FPS =&gt; stable collision handling
+
+HEX_RADIUS    = 200           # distance from center to each vertex
+HEX_SPIN      = 0.6           # hexagon angular velocity (radians / second)
+
+BALL_RADIUS   = 11
+GRAVITY       = 900.0         # pixels / second^2, pulling down (+y)
+RESTITUTION   = 0.9           # bounciness: fraction of normal speed kept (0..1)
+WALL_FRICTION = 0.15          # tangential friction on impact (0 = slippery, 1 = grippy)
+AIR_DRAG      = 0.999         # per-frame velocity damping (subtle)
+
+BG      = (14, 16, 22)
+HEX_CLR = (90, 200, 255)
+BALL_CLR = (255, 120, 90)
+
+
+def hexagon_vertices(cx, cy, radius, angle):
+    &quot;&quot;&quot;Six vertices of a regular hexagon centered at (cx, cy), rotated by `angle`.&quot;&quot;&quot;
+    return [
+        (cx + radius * math.cos(angle + i * math.pi / 3),
+         cy + radius * math.sin(angle + i * math.pi / 3))
+        for i in range(6)
+    ]
+
+
+def main():
+    pygame.init()
+    screen = pygame.display.set_mode((WIDTH, HEIGHT))
+    pygame.display.set_caption(&quot;Ball in a Spinning Hexagon&quot;)
+    clock = pygame.time.Clock()
+
+    cx, cy = WIDTH / 2, HEIGHT / 2
+
+    # Ball state
+    px, py = cx, cy - 120     # start a bit above center
+    vx, vy = 220.0, 0.0
+    angle  = 0.0              # current hexagon rotation
+
+    running = True
+    while running:
+        dt = clock.tick(FPS) / 1000.0
+        dt = min(dt, 1 / 60)  # clamp so a lag spike can&#x27;t tunnel the ball
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+            elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:</pre></div><div class='col'><div class='hd'><div class='mname'>opus-5</div><div class='meta'><b>$0.2762</b> &middot; <b>126.4s</b> &middot; 8 in / 11,047 out tokens</div></div><div class='run'>Run: <code>python3 opus-5.py</code></div><pre>#!/usr/bin/env python3
+&quot;&quot;&quot;Bouncing ball inside a spinning hexagon.
+
+Gravity, air drag, restitution and Coulomb friction against walls that are
+themselves moving (the contact impulse is solved against the wall&#x27;s local
+velocity, so the spinning hexagon actually drags and spins the ball).
+
+    pip install pygame
+    python hex_bounce.py
+
+Controls
+    SPACE        respawn the ball
+    LEFT/RIGHT   hexagon spin speed
+    UP/DOWN      gravity
+    G            gravity on/off
+    R            reset everything
+    ESC / close  quit
+&quot;&quot;&quot;
+
+from __future__ import annotations
+
+import math
+import random
+import sys
+from collections import deque
+
+import pygame
+from pygame.math import Vector2
+
+# ---------------------------------------------------------------- tunables
+WIDTH, HEIGHT = 560, 560
+FPS = 60
+SUBSTEPS = 8                # physics iterations per rendered frame
+
+HEX_RADIUS = 205.0          # circumradius in px
+SPIN = 0.7                  # rad/s
+
+GRAVITY = 1400.0            # px/s^2
+AIR_DRAG = 0.12             # velocity lost per second in flight
+SPIN_DRAG = 0.5             # ball&#x27;s angular velocity lost per second
+
+BALL_RADIUS = 13.0
+BALL_MASS = 1.0
+RESTITUTION = 0.68          # 0 = dead thud, 1 = perfectly elastic
+FRICTION = 0.35             # Coulomb mu between ball and wall
+
+BG = (14, 16, 22)
+HEX_COLOR = (78, 92, 128)
+HEX_HOT = (120, 200, 255)
+BALL_COLOR = (255, 168, 76)
+TEXT_COLOR = (150, 162, 186)
+
+
+# ---------------------------------------------------------------- 2-D helpers
+# Screen y points down, but every routine below uses the same handedness, so
+# the signs stay consistent: perp() is the +90 deg rotation that matches cross().
+def perp(v: Vector2) -&gt; Vector2:
+    return Vector2(-v.y, v.x)
+
+</pre></div><div class='col'><div class='hd'><div class='mname'>fable-5</div><div class='meta'><b>$0.2446</b> &middot; <b>58.5s</b> &middot; 2 in / 4,891 out tokens</div></div><div class='run'>Run: <code>python3 fable-5.py</code></div><pre>&quot;&quot;&quot;Ball bouncing inside a spinning hexagon.
+
+Physics: gravity, air drag, and impulse-based collisions against moving
+walls. Each bounce is computed in the wall&#x27;s reference frame (the wall has
+velocity omega x r at the contact point), with separate restitution
+(normal) and friction (tangential) coefficients.
+
+Requires: pygame  (pip install pygame)
+&quot;&quot;&quot;
+
+import math
+import sys
+
+import pygame
+
+# ---------------------------------------------------------------- tunables
+WIDTH, HEIGHT = 560, 440
+CENTER = pygame.Vector2(WIDTH / 2, HEIGHT / 2)
+
+HEX_RADIUS = 175          # center-to-vertex distance, px
+SPIN_SPEED = 0.9          # hexagon angular velocity, rad/s (+ = clockwise on screen)
+
+GRAVITY = 1400.0          # px/s^2
+AIR_DRAG = 0.25           # per-second velocity damping (0 = none)
+BALL_RADIUS = 10
+RESTITUTION = 0.90        # normal bounce energy retention (0..1)
+WALL_FRICTION = 0.15      # fraction of tangential speed lost per bounce (0..1)
+
+FPS = 120
+BG = (16, 18, 26)
+HEX_COLOR = (90, 200, 250)
+BALL_COLOR = (255, 120, 90)
+TRAIL_COLOR = (255, 120, 90)
+
+
+def hexagon_vertices(angle):
+    &quot;&quot;&quot;The six vertices of the hexagon at the given rotation angle.&quot;&quot;&quot;
+    return [
+        CENTER + pygame.Vector2(
+            math.cos(angle + i * math.pi / 3),
+            math.sin(angle + i * math.pi / 3),
+        ) * HEX_RADIUS
+        for i in range(6)
+    ]
+
+
+def closest_point_on_segment(p, a, b):
+    ab = b - a
+    t = (p - a).dot(ab) / ab.length_squared()
+    return a + ab * max(0.0, min(1.0, t))
+
+
+def wall_velocity_at(point, spin_speed):
+    &quot;&quot;&quot;Velocity of a point rigidly attached to the rotating hexagon.&quot;&quot;&quot;
+    r = point - CENTER
+    # omega x r in 2D (screen coords, y down): (-w*ry, w*rx)
+    return pygame.Vector2(-spin_speed * r.y, spin_speed * r.x)
+
+
+def collide(pos, vel, vertices, spin_speed):</pre></div></div></body></html>

@@ -1,0 +1,47 @@
+{
+  "prompt": "Here is a screenshot of a landing page design. Rebuild it as a working front end that matches the layout, spacing, colors, typography, and button styles as closely as you can. Clean semantic HTML and modern CSS (flexbox/grid), fully responsive down to mobile, no framework, one file.",
+  "results": [
+    {
+      "name": "opus-4.8",
+      "model_id": "claude-opus-4-8",
+      "label": "opus-4-8",
+      "ok": true,
+      "in": 4,
+      "out": 6476,
+      "cc_cost": 0.3723205,
+      "session_total_usd": 0.37308549999999996,
+      "time": 69.858,
+      "kind": "html",
+      "file": "opus-4-8.html",
+      "cost": 0.16191999999999998
+    },
+    {
+      "name": "opus-5",
+      "model_id": "claude-opus-5",
+      "label": "opus-5",
+      "ok": true,
+      "in": 4,
+      "out": 12003,
+      "cc_cost": 0.5204845,
+      "session_total_usd": 0.5212494999999999,
+      "time": 135.403,
+      "kind": "html",
+      "file": "opus-5.html",
+      "cost": 0.300095
+    },
+    {
+      "name": "fable-5",
+      "model_id": "claude-fable-5",
+      "label": "fable-5",
+      "ok": true,
+      "in": 6,
+      "out": 7771,
+      "cc_cost": 0.836878,
+      "session_total_usd": 0.8376430000000001,
+      "time": 92.144,
+      "kind": "html",
+      "file": "fable-5.html",
+      "cost": 0.38861
+    }
+  ]
+}

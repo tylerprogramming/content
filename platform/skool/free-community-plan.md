@@ -98,6 +98,7 @@ NOT locked videos. A time-gated 4-month implementation cohort. Members buy the H
 ---
 
 ## RELATED
+- `cohort-pilot-2026-08.md` - the small 6-week PILOT that runs before the flagship cohort above (step 6). Added 2026-08-03 after a DM audit surfaced 12 warm members.
 - `reframe-plan.md` - earlier 5-step staircase (this doc supersedes its funnel logic)
 - `skool-drip-plan-2026-06-18.md` - the every-other-day video drip
 - `STATE.md` - positioning, tiers, sessions (April 2026)

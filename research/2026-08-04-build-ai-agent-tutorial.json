@@ -1,0 +1,77 @@
+{
+  "query": "build AI agent tutorial",
+  "total_found": 5,
+  "long_form_found": 5,
+  "shorts_found": 0,
+  "days": 90,
+  "top_n": 15,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "You\u2019re Not Behind (Yet): Learn AI Agents in 13 Minutes",
+      "channel": "Sandeep Swadia",
+      "views": 1769427,
+      "likes": 37110,
+      "comments": 530,
+      "upload_date": "20260514",
+      "duration": "13:09",
+      "duration_seconds": 789,
+      "url": "https://youtube.com/watch?v=P5sKKnWCvzk",
+      "description": "Subscribe to my newsletter \u2192 https://www.sandeepswadia.com/newsletter\n\nMost people still use AI like a better search box, but the real shift is AI agents, systems that decide the next action, not just the next word. \n\nI explain the difference between prompts and agents using ARR, show what\u2019s happeni",
+      "id": "P5sKKnWCvzk"
+    },
+    {
+      "title": "Generative AI vs Agentic AI vs AI Agents",
+      "channel": "Apna College",
+      "views": 391394,
+      "likes": 13547,
+      "comments": 475,
+      "upload_date": "20260612",
+      "duration": "11:14",
+      "duration_seconds": 674,
+      "url": "https://youtube.com/watch?v=jNJH6uD5LQE",
+      "description": "\ud83d\ude80 Get Placement Ready & learn from the best \ud83d\udc47\nNo.1 Online Tech Placement Batches : https://linktr.ee/apnacollege.in\n\n\nShradha Ma'am community - share your progress\nInstagram : https://www.instagram.com/shradhakhapra\nLinkedIn : https://www.linkedin.com/in/shradha-khapra/",
+      "id": "jNJH6uD5LQE"
+    },
+    {
+      "title": "AI agents explained: Build your first agent in 8 minutes",
+      "channel": "Google Cloud Tech",
+      "views": 375777,
+      "likes": 11629,
+      "comments": 165,
+      "upload_date": "20260610",
+      "duration": "8:29",
+      "duration_seconds": 509,
+      "url": "https://youtube.com/watch?v=Zqno_vux6d8",
+      "description": "Follow the codelab \u2192 https://goo.gle/3Q5TSt3\nGitHub repo \u2192 https://goo.gle/4fsahT8 \nGoogle Agent Development Kit (ADK) \u2192 https://goo.gle/3Q3enqf\n\nAt the simplest level, an AI agent doesn\u2019t just answer\u2014it decides and takes action. In this video, Smitha goes beyond basic chatbots and demonstrates how ",
+      "id": "Zqno_vux6d8"
+    },
+    {
+      "title": "How To Use AI Agents Better Than 99% Of People",
+      "channel": "Sandeep Swadia",
+      "views": 367810,
+      "likes": 10709,
+      "comments": 302,
+      "upload_date": "20260730",
+      "duration": "20:46",
+      "duration_seconds": 1246,
+      "url": "https://youtube.com/watch?v=TL8V41Ea6oM",
+      "description": "Join my free newsletter \u2192 https://www.sandeepswadia.com/newsletter\nTake us on your morning run or commute, follow us on Spotify \u2192 https://open.spotify.com/show/033nSSACs3S4g5NUIrXnHx\n\nEveryone's talking about AI agents like they're some far-off, technical thing. They're not. You've probably already ",
+      "id": "TL8V41Ea6oM"
+    },
+    {
+      "title": "You\u2019re Not Behind (Yet): How to Build Your First AI Agent (Full Guide)",
+      "channel": "Dan Martell",
+      "views": 269236,
+      "likes": 9411,
+      "comments": 332,
+      "upload_date": "20260715",
+      "duration": "22:24",
+      "duration_seconds": 1344,
+      "url": "https://youtube.com/watch?v=Bm84BAtOfQw",
+      "description": "\u2705 Get Your FREE AI Company Operating System here: https://go.danmartell.com/3SXCfgk\n\n\ud83d\udc65 Are you building an AI software company? Partner with me: https://go.danmartell.com/4pjN7RP\n\nBy 2030, the biggest wave of new jobs isn't going to reward people who can chat with AI. It's going to reward people who",
+      "id": "Bm84BAtOfQw"
+    }
+  ],
+  "shorts": []
+}

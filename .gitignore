@@ -56,3 +56,8 @@ custom-gpts/
 # cloned reference repos (study material, not ours)
 research/skills-frameworks/mattpocock-skills/
 research/skills-frameworks/superpowers/
+
+# Local Claude Code tooling (not content — skills live in the claude-skills repo)
+.claude/
+.agents/
+skills-lock.json

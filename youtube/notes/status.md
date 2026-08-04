@@ -3,7 +3,7 @@
 > **Live pipeline state — the operational source of truth.** What's recording next, what's with the editor, what's queued.
 > For full content inventory across all platforms, see `~/content/system/tracker.md`.
 >
-> **Open this first.** Last updated: 2026-07-26
+> **Open this first.** Last updated: 2026-08-02
 > **Also tracked in ClickUp:** YouTube list (id 901710640585), Space "Team Space". Keep both in sync on every stage change — this file is the source of truth. (ClickUp reconciled 2026-07-22: confirmed 021/023/024/025/028/034 complete; marked `026` (scheduled tonight) + 6 already-live back-catalog videos (011/012 + Antigravity, YT Workflow, Build ANYTHING, 23 Concepts) complete; `86e2drehj` social push + `027` remain in progress.)
 
 ---
@@ -19,11 +19,11 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 | ✅ published ~07-08 | GPT Image 2 vs Nano Banana Pro (`028`) | LIVE (`h5VtHSXY8Hc`), repackaged 07-09 |
 | ✅ published 07-15 | Claude Routines (`024`) | LIVE (`T50plh-k3MY`) |
 | ✅ published 07-19 | ElevenLabs Flows Agent (`034`) | LIVE (`WJabXRVe8JQ`) |
-| 🗓 scheduled 07-22 8pm ET | AI Video Editor (`026`) | SCHEDULED (`AH1ZpX7SD9Y`, private → auto-public) |
+| ✅ published | AI Video Editor (`026`) | **LIVE** (`AH1ZpX7SD9Y`) |
 | ~next slot | YouTube 1-Person Business (`027`) | with editor |
-| ~next slot | Claude Tag (`029`) | film next |
+| ~next slot | Automated Publishing (`039`) | film next |
 
-**Weekend rule:** film 2 (batch) on Sat/Sun → publish 2 the next week. Editor has 1 in flight (`027`); `026` scheduled for tonight; next to film: `029` Claude Tag.
+**Weekend rule:** film 2 (batch) on Sat/Sun → publish 2 the next week. Editor has `027` (the YouTube automation) in flight; `026` is LIVE; next to film: `039` Automated Publishing.
 
 ---
 
@@ -31,7 +31,7 @@ Goal: rebuild cadence. Publish 2x/week; batch-film 2 on Sat/Sun to refill. Edito
 
 | Video | Folder | Stage |
 |---|---|---|
-| **I Automated My Video Editing With Claude Code** | `026-ai-video-editor/` | **SCHEDULED** — publishes 2026-07-22 8:00 PM ET (`AH1ZpX7SD9Y`, private → auto-public). SEO + chapters done. ClickUp `86e212q4u` marked complete 2026-07-22. |
+| **I Automated My Video Editing With Claude Code** | `026-ai-video-editor/` | **LIVE** (`AH1ZpX7SD9Y`), published. SEO + chapters done. |
 | **I Run My Entire YouTube Channel With AI (Watch This)** | `027-youtube-1-person-business/` | With editor as of 2026-07-20. Focused showcase (not the 60-90 min course). Post-edit: /chapters, thumbnail, queue upload. |
 
 ---
@@ -73,14 +73,20 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 | Order | Video | Folder | Status |
 |---|---|---|---|
 | 1 | Claude Opus 5 (Is it really better?) | `041-claude-opus-5/` | ✅ **RECORDED 2026-07-26** → to edit |
-| 2 | 17 Claude Code Skills That Run My Business | `040-claude-code-skills-run-my-business/` | ✅ **RECORDED 2026-07-28** → to edit |
+| 2 | 17 Claude Code Skills That Run My Business | `040-claude-code-skills-run-my-business/` | ✅ **RE-RECORDED 2026-07-31** (supersedes the 07-28 take) → to edit |
 | 3 | I Automated My Publishing With Claude Code | `039-automated-publishing/` | Package complete. **Films next.** |
 | 4 | The Simple Claude Code YouTube Workflow | `037-youtube-workflow-simple/` | Package complete. |
 | 5 | Build Your First AI Agent (No Code) | `038-build-first-ai-agent/` | Package complete. |
 | backup | ElevenLabs Dubbing v2 | `036-elevenlabs-dubbing-v2/` | Package complete. |
 
+**Reels (039):** 5 reel scripts ready in `039-automated-publishing/reels.md` (fan-out flagship, queue-fills payoff, Pinterest sleeper, not-a-spam-cannon, automate-one-platform). To cut after recording.
+**SEO (041):** title locked 2026-07-28 → **"Claude Opus 5 vs Fable 5: I Built the Same App Twice"**. Description + `tags.txt` SEO-optimized. A/B swap at 48-72h if CTR is soft: "Claude Opus 5 Is Half the Price. Is It Half the Model?"
 **Shorts (041):** 3 reels **recorded 2026-07-27** (cheaper-Fable value take, website head-to-head, effort-toggle tip). To edit + post. Scripts in `041-claude-opus-5/shorts.md`.
-**Shorts (040):** 6 demo-forward reel scripts ready (umbrella "17 skills", one-prompt pipeline, comment replies, build-a-skill live, what-is-a-skill, runs-while-I-sleep) in `040-claude-code-skills-run-my-business/shorts.md`. To record + cut.
+**Shorts (040):** **9 reels, word-for-word scripts** in `040-claude-code-skills-run-my-business/reel-scripts.md` (plan + post order in `shorts.md`), all cuttable from the 07-31 footage: umbrella, anti-fake-demo, what-a-skill-is, 2-min live build, `/yt-search`, `/yt-package` meta, `/social-copy`, cron proof, `/email`, + a bonus closer. Post order 1, 3, 5, 4, 2, 8, 6, 7, 9. ClickUp `86e2ka0y3`. To cut + post.
+**Reels recorded (040):** **5 of 9 recorded 2026-08-02** — umbrella, 2-min live build, `/yt-search`, `/yt-package`, `/social-copy`. To edit + post. **Still to record (4):** "What a skill actually is", `/yt-thumbnail`, `/transcribe`, `/email`.
+⚠️ **`/skool` does not exist** in `~/.claude/skills/`. The 10th reel is parked over it, and the same gap sits in **Part 3 of the long form (9:30-11:30)** and in the "17" on the on-screen wall. Check the take before it goes to the editor. Tyler's call, deferred 2026-07-31.
+**Emails (040 / community):** 5-email Skool onboarding sequence drafted 2026-07-31 in `emails/campaigns/skool-onboarding-2026-07/` (free member → cohort, Harut-derived). Needs the cohort application link, the workshop date, and a real member story before it can send.
+**Instagram (040):** 4 carousels rendered 2026-07-29 in `platform/instagram/` (`claude-skills-system`, `first-claude-skill`, `skills-on-a-schedule`, `not-a-demo`) with captions + PDFs. Nothing scheduled yet.
 
 ---
 
@@ -88,7 +94,7 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 
 | Priority | Video | Folder | Lane note |
 |---|---|---|---|
-| 🔥 RIDE SOON (timely) | I Put Claude In My Slack as a Coworker (Claude Tag) | `029-claude-tag/` | Launched 06-23 — fast news ride. "Not enterprise-only, I'm on Max" wedge. Needs real first-use demo + thumbnails. |
+| 💡 Idea (to build) | All Claude Features (one big overview) | `(to build)` | Tyler 2026-08-02: **parked Claude Tag (`029`)** for now, leaning toward a full "all Claude features" roundup instead. `029` package still on disk if revived. |
 | 🔥 Timely (to build) | Claude Design Just Got a HUGE Update | `(to build → 16)` | New Claude Design version (design-system imports, /design in Claude Code, canvas, round-trip). Ride fresh. |
 | 🎙 ElevenLabs (reach) | How to Make AI Voice Sound 100% Human (ElevenLabs) | `(to build)` | Ambassador lane. Big lane (87-101K). PRO-EL framing only (never "free alternatives"). |
 | 🎙 ElevenLabs (timely) | ElevenLabs Can Make Full Videos Now (Voice+Image+Video) | `(to build)` | New EL Image+Video launch. Low competition. |

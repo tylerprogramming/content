@@ -1,0 +1,47 @@
+{
+  "prompt": "Alice has 3 brothers and 2 sisters. How many sisters does Alice's brother have?",
+  "results": [
+    {
+      "name": "opus-4.8",
+      "model_id": "claude-opus-4-8",
+      "label": "opus-4-8",
+      "ok": true,
+      "in": 2,
+      "out": 217,
+      "cc_cost": 0.17511749999999998,
+      "session_total_usd": 0.17572449999999998,
+      "time": 4.195,
+      "kind": "text",
+      "file": "opus-4-8.md",
+      "cost": 0.005435
+    },
+    {
+      "name": "opus-5",
+      "model_id": "claude-opus-5",
+      "label": "opus-5",
+      "ok": true,
+      "in": 2,
+      "out": 93,
+      "cc_cost": 0.181642,
+      "session_total_usd": 0.18223899999999998,
+      "time": 2.598,
+      "kind": "text",
+      "file": "opus-5.md",
+      "cost": 0.002335
+    },
+    {
+      "name": "fable-5",
+      "model_id": "claude-fable-5",
+      "label": "fable-5",
+      "ok": true,
+      "in": 2,
+      "out": 170,
+      "cc_cost": 0.373998,
+      "session_total_usd": 0.374595,
+      "time": 3.708,
+      "kind": "text",
+      "file": "fable-5.md",
+      "cost": 0.00852
+    }
+  ]
+}

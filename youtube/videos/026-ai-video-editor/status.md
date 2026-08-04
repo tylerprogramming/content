@@ -3,10 +3,13 @@
 **Folder:** `videos/026-ai-video-editor/`
 **ClickUp:** 86e212q4u
 
-## Current Stage: SCHEDULED (as of 2026-07-22) — publishes 8:00 PM ET tonight
+## Current Stage: PUBLISHED (live)
 
-**YouTube video ID:** `AH1ZpX7SD9Y` · https://youtube.com/watch?v=AH1ZpX7SD9Y
-**Publish-at:** 2026-07-22T20:00:00-04:00 (private → auto-public)
+**YouTube video ID:** `cdvi2ooarDc` · https://youtube.com/watch?v=cdvi2ooarDc
+**Live title:** "I Edit My Videos by Talking to Claude Code, here's how..."
+**Published:** 2026-07-23 (public). Category 27 (Education). Has full SEO description + chapters + 22 tags.
+
+> ⚠️ **Discarded copy:** `AH1ZpX7SD9Y` ("...Claude Code NOW", scheduled 8PM 2026-07-22) had an audio mistake and was replaced by the re-upload `cdvi2ooarDc`. **Do NOT use `AH1ZpX7SD9Y` for analytics/tracking.** It should be unlisted/deleted (Tyler's call).
 
 ### Prior stage: WITH EDITOR (as of 2026-07-20)
 

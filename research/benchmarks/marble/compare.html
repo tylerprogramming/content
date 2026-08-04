@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset=utf-8><title>model-bench</title><style>
+body{font-family:-apple-system,system-ui,sans-serif;margin:0;background:#f4f4f5;color:#18181b}
+.topbar{padding:16px 22px;background:#fff;border-bottom:1px solid #e4e4e7}
+.plabel{font-size:11px;font-weight:700;letter-spacing:1.5px;color:#a1a1aa;text-transform:uppercase;margin-bottom:6px}
+.ptext{font-size:17px;line-height:1.5;color:#27272a;max-width:1100px}
+.row{display:flex;gap:14px;padding:14px;overflow-x:auto}
+.col{flex:1;min-width:360px;background:#fff;border:1px solid #e4e4e7;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.hd{padding:14px 18px;border-bottom:1px solid #e4e4e7}
+.mname{font-size:22px;font-weight:800;color:#18181b;line-height:1.1}
+.meta{font-size:15px;color:#52525b;margin-top:6px}
+.meta b{color:#18181b;font-weight:700}
+iframe{width:100%;height:620px;border:0}
+pre{margin:0;padding:14px;font-size:12px;overflow:auto;max-height:620px;white-space:pre-wrap}
+.ans{font-size:16px;line-height:1.5}
+.run{padding:10px 16px;background:#fef9c3;font-size:14px}
+.fail{padding:24px;color:#b91c1c;text-align:center}
+</style></head><body><div class='topbar'><div class='plabel'>Prompt</div><div class='ptext'>A marble is put in a glass, the glass is turned upside down on a table, then the glass is picked up and put in the microwave. Where is the marble?</div></div><div class='row'><div class='col'><div class='hd'><div class='mname'>opus-4.8</div><div class='meta'><b>$0.0066</b> &middot; <b>5.0s</b> &middot; 2 in / 265 out tokens</div></div><pre class='ans'>The marble is on the table.
+
+When you flip the glass upside down, the marble falls to rest on the table under the rim. Picking the glass up leaves the marble sitting there, so it never travels to the microwave. The glass is in the microwave; the marble is still on the table.</pre></div><div class='col'><div class='hd'><div class='mname'>opus-5</div><div class='meta'><b>$0.0062</b> &middot; <b>4.7s</b> &middot; 2 in / 249 out tokens</div></div><pre class='ans'>On the table.
+
+When the glass was flipped over, the marble fell out of the glass&#x27;s mouth and came to rest on the table surface, with the inverted glass covering it. Lifting the glass leaves the marble behind, so only the empty glass goes into the microwave.</pre></div><div class='col'><div class='hd'><div class='mname'>fable-5</div><div class='meta'><b>$0.0074</b> &middot; <b>3.4s</b> &middot; 2 in / 147 out tokens</div></div><pre class='ans'>On the table. When the glass was turned upside down, the marble fell out (or, more precisely, was resting on the table under the inverted glass). Picking the glass up and moving it to the microwave leaves the marble behind — so the marble is on the table and the empty glass is in the microwave.</pre></div></div></body></html>

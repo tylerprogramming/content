@@ -1,0 +1,47 @@
+{
+  "prompt": "Build Flappy Bird as a single self-contained HTML file, vanilla JavaScript, no libraries. The bird flaps on spacebar or click with gravity, pipes scroll in from the right with gaps, collision detection, a score counter, and a game over screen with restart.",
+  "results": [
+    {
+      "name": "opus-4.8",
+      "model_id": "claude-opus-4-8",
+      "label": "opus-4-8",
+      "ok": true,
+      "in": 6,
+      "out": 4599,
+      "cc_cost": 0.43852599999999997,
+      "session_total_usd": 0.439183,
+      "time": 52.525,
+      "kind": "html",
+      "file": "opus-4-8.html",
+      "cost": 0.115005
+    },
+    {
+      "name": "opus-5",
+      "model_id": "claude-opus-5",
+      "label": "opus-5",
+      "ok": true,
+      "in": 8,
+      "out": 9966,
+      "cc_cost": 0.643263,
+      "session_total_usd": 0.6439250000000001,
+      "time": 107.692,
+      "kind": "html",
+      "file": "opus-5.html",
+      "cost": 0.24919
+    },
+    {
+      "name": "fable-5",
+      "model_id": "claude-fable-5",
+      "label": "fable-5",
+      "ok": true,
+      "in": 10,
+      "out": 5795,
+      "cc_cost": 1.072071,
+      "session_total_usd": 1.072728,
+      "time": 67.971,
+      "kind": "html",
+      "file": "fable-5.html",
+      "cost": 0.28985
+    }
+  ]
+}

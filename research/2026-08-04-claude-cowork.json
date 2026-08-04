@@ -1,0 +1,51 @@
+{
+  "query": "Claude Cowork",
+  "total_found": 3,
+  "long_form_found": 3,
+  "shorts_found": 0,
+  "days": 90,
+  "top_n": 15,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "Claude Cowork Fundamentals In 22 Minutes",
+      "channel": "Tina Huang",
+      "views": 395242,
+      "likes": 11006,
+      "comments": 284,
+      "upload_date": "20260510",
+      "duration": "22:51",
+      "duration_seconds": 1371,
+      "url": "https://youtube.com/watch?v=uGwDuvSqgYI",
+      "description": "Get your free credits with Manus agent \ud83d\udc49 https://manus.im/redeem?c=TH013M16\n\n\ud83d\udc19 Free 28-Day AI Sprint Roadmap - pick your goal to get a clear, day-by-day path forward \ud83d\udc49 https://www.lonelyoctopus.com/ai-sprint-roadmap\n\n\ud83d\uddb1\ufe0fLinks mentioned in video\n========================\nPrompts: https://www.lonelyocto",
+      "id": "uGwDuvSqgYI"
+    },
+    {
+      "title": "Getting started with Claude Cowork",
+      "channel": "Claude",
+      "views": 348701,
+      "likes": 3389,
+      "comments": 77,
+      "upload_date": "20260508",
+      "duration": "4:16",
+      "duration_seconds": 256,
+      "url": "https://youtube.com/watch?v=Lbml7IuGJYw",
+      "description": "Learn how to use Claude Cowork to edit your files directly and work in your favorite apps. If it\u2019s on your computer, Claude can find and edit it. Describe what you need done, and Claude does it. \n\nLearn more: Claude.com/tutorials",
+      "id": "Lbml7IuGJYw"
+    },
+    {
+      "title": "My Full Claude Cowork Setup (steal my workflows!)",
+      "channel": "Tina Huang",
+      "views": 311844,
+      "likes": 9004,
+      "comments": 273,
+      "upload_date": "20260518",
+      "duration": "15:23",
+      "duration_seconds": 923,
+      "url": "https://youtube.com/watch?v=gdrPkpXuNks",
+      "description": "Start coding with Claude Code VPS hosting  \ud83d\udc49 https://www.hostinger.com/tina10 \nUse TINAHUANG at checkout for an additional 10% off! \n\nVideo resources (prompts, summary etc.) \ud83d\udc49  https://www.lonelyoctopus.com/download-resource-cowork-os\n\n\ud83d\udc19 Free 28-Day AI Sprint Roadmap - pick your goal to get a clear,",
+      "id": "gdrPkpXuNks"
+    }
+  ],
+  "shorts": []
+}

@@ -1,0 +1,96 @@
+{
+  "topic": "Putting Claude Code skills on a schedule so comments and email run without you",
+  "handle": "@tylerai_dev",
+  "brand_text": "AI",
+  "slides": [
+    {
+      "type": "cover",
+      "headline_lines": [
+        "Some of my",
+        "skills run",
+        "while I sleep"
+      ],
+      "accent_words": [
+        "while",
+        "I",
+        "sleep"
+      ],
+      "subtitle": "On a schedule. And still, nothing goes out without me."
+    },
+    {
+      "type": "pain",
+      "headline_lines": [
+        "Losing the",
+        "first hour",
+        "every time?"
+      ],
+      "accent_words": [
+        "first",
+        "hour"
+      ],
+      "bullets": [
+        "Comments pile up overnight",
+        "Reply late and it is already dead",
+        "Refreshing tabs instead of working",
+        "Welcome emails you forget to send"
+      ]
+    },
+    {
+      "type": "solution",
+      "headline_lines": [
+        "Put the skill",
+        "on a timer"
+      ],
+      "accent_words": [
+        "on",
+        "a",
+        "timer"
+      ],
+      "subtitle": "One scheduled job on my machine. It works the inbox before I open the laptop.",
+      "bullets": []
+    },
+    {
+      "type": "how",
+      "headline_lines": [
+        "How it",
+        "runs itself"
+      ],
+      "accent_words": [
+        "runs",
+        "itself"
+      ],
+      "bullets": [
+        "A job fires every hour",
+        "It finds what I have not replied to",
+        "It drafts the easy ones for me",
+        "It drops them into one inbox file"
+      ]
+    },
+    {
+      "type": "results",
+      "headline_lines": [
+        "What I wake",
+        "up to"
+      ],
+      "accent_words": [
+        "wake"
+      ],
+      "bullets": [
+        "Comments sorted, replies drafted",
+        "Welcome emails already out",
+        "I review instead of hunting",
+        "Everything defaults to draft mode"
+      ]
+    },
+    {
+      "type": "cta",
+      "summary_lines": [
+        "Automate the finding and the drafting.",
+        "Keep the judgment for yourself."
+      ],
+      "cta_action": "Comment",
+      "cta_word": "SKILLS",
+      "cta_subtext": "and I'll send you all 17 as files, plus where the folder goes"
+    }
+  ]
+}

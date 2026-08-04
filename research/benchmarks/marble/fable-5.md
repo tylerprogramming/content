@@ -1,0 +1,1 @@
+On the table. When the glass was turned upside down, the marble fell out (or, more precisely, was resting on the table under the inverted glass). Picking the glass up and moving it to the microwave leaves the marble behind — so the marble is on the table and the empty glass is in the microwave.

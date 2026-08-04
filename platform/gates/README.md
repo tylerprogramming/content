@@ -59,3 +59,4 @@ five different things is a gate with one asset and five disappointments.
 |---|---|---|
 | `EDITOR` | 5 Instagram carousels on HyperFrames + Claude Code | Manual replies for now, asset deferred until there is volume |
 | `ROUTINES` | 024 Claude Routines: 2 of 4 carousels + 1 reel | Not built. Same manual-first approach as EDITOR. |
+| `SKILLS` | 040: 4 Instagram carousels + the video + email 01 | Asset is live (public skills repo). `/skills/` page pending. Manual DM is safe to run today. |

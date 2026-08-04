@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Merge Drop</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html, body {
+    height:100%;
+    background:#0e1015;
+    font-family: ui-sans-serif, -apple-system, "SF Pro Text", "Segoe UI", Inter, system-ui, sans-serif;
+    color:#e8eaf0;
+    overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+    touch-action:none;
+  }
+  #stage {
+    position:relative;
+    height:min(96vh, 1000px);
+    aspect-ratio: 460 / 720;
+    max-width:96vw;
+    user-select:none;
+    cursor:crosshair;
+    container-type: inline-size;
+  }
+  #game { display:block; width:100%; height:100%; border-radius:20px; }
+
+  /* ---------- HUD ---------- */
+  .hud {
+    position:absolute; top:0; left:0; right:0;
+    padding: 3.2% 4.5% 0;
+    display:flex; align-items:flex-start; justify-content:space-between;
+    pointer-events:none;
+  }
+  .label {
+    font-size:clamp(8px, 1.6cqw, 12px);
+    letter-spacing:.16em; text-transform:uppercase;
+    color:#6b7385; font-weight:600;
+  }
+  #score {
+    font-size:clamp(22px, 6.2cqw, 46px);
+    font-weight:650; letter-spacing:-.02em; line-height:1.05;
+    font-variant-numeric: tabular-nums;
+    margin-top:2px;
+  }
+  #best { font-size:clamp(9px,2.1cqw,14px); color:#6b7385; font-variant-numeric:tabular-nums; margin-top:3px; }
+  .right { display:flex; flex-direction:column; align-items:flex-end; gap:2px; }
+  #nextWrap {
+    width:clamp(46px, 13cqw, 88px); height:clamp(46px, 13cqw, 88px);
+    border-radius:16px;
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(255,255,255,.07);
+    display:flex; align-items:center; justify-content:center;
+    margin-top:4px;
+  }
+  #nextDot { border-radius:50%; transition: all .22s cubic-bezier(.34,1.56,.64,1); }
+
+  #mute {
+    pointer-events:auto; cursor:pointer;
+    margin-top:8px;
+    background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08);
+    color:#7d8496; border-radius:9px;
+    font-size:clamp(9px,2cqw,12px); font-weight:600; letter-spacing:.08em;
+    padding:5px 9px; font-family:inherit;
+  }
+  #mute:hover { color:#c9cede; border-color:rgba(255,255,255,.16); }
+
+  /* ---------- Game over ---------- */
+  #over {
+    position:absolute; inset:0;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:14px; border-radius:20px;
+    background:rgba(10,12,17,.78);
+    backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px);
+    opacity:0; pointer-events:none; transition:opacity .3s ease;
+  }
+  #over.show { opacity:1; pointer-events:auto; }
+  #over h1 { font-size:clamp(20px,5.4cqw,38px); font-weight:650; letter-spacing:-.02em; }
+  #over .fin { font-size:clamp(34px,10cqw,72px); font-weight:700; letter-spacing:-.03em; font-variant-numeric:tabular-nums; }
+  #over .sub { font-size:clamp(10px,2.4cqw,15px); color:#7d8496; margin-top:-8px; }
+  #restart {
+    margin-top:10px; cursor:pointer; font-family:inherit;
+    background:#e8eaf0; color:#0e1015; border:0;
+    padding:13px 30px; border-radius:999px;
+    font-size:clamp(12px,2.7cqw,17px); font-weight:650; letter-spacing:.01em;
+    transition: transform .14s cubic-bezier(.34,1.56,.64,1), background .14s;
+  }
+  #restart:hover { transform:scale(1.045); background:#fff; }
+  #restart:active { transform:scale(.97); }
+
+  #hint {
+    position:absolute; bottom:2.4%; left:0; right:0; text-align:center;
+    font-size:clamp(9px,2.1cqw,13px); color:#4d5364; letter-spacing:.03em;
+    pointer-events:none; transition:opacity .5s ease;
+  }
+</style>
+</head>
+<body>
+
+<div id="stage">
+  <canvas id="game"></canvas>
+
+  <div class="hud">
+    <div>
+      <div class="label">Score</div>
+      <div id="score">0</div>
+      <div id="best">Best 0</div>
+    </div>
+    <div class="right">
+      <div class="label">Next</div>
+      <div id="nextWrap"><div id="nextDot"></div></div>
+      <button id="mute">SOUND ON</button>
+    </div>
+  </div>
+
+  <div id="hint">Move to aim &nbsp;&middot;&nbsp; Click or Space to drop</div>
+
+  <div id="over">
+    <h1>Game Over</h1>
+    <div class="fin" id="finalScore">0</div>
+    <div class="sub" id="finalSub">Best 0</div>
+    <button id="restart">Play Again</button>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+/* ============================================================
+   WORLD  -  all physics happens in these fixed "world" units,
+   the canvas is just scaled to fit the screen.
+   ============================================================ */
+const W = 460, H = 720;      // world size
+const WALL_L = 16, WALL_R = 444;
+const FLOOR  = 700;
+const RIM    = 150;          // top edge of the open container
+const CR     = 14;           // rounded corner radius of the container
+const DANGER = 176;          // overflow line
+const DROP_Y = 78;
+
+const GRAVITY      = 2450;
+const FIXED_DT     = 1 / 120;
+const ITERATIONS   = 7;   // velocity (impulse) passes
+const POS_ITER     = 14;  // position-only relaxation passes (cheap: no impulse math)
+const RESTITUTION  = 0.11;   // ball vs ball
+const WALL_REST    = 0.14;
+const FRICTION     = 0.22;
+const WALL_FRIC    = 0.30;
+const LIN_DAMP     = 0.9993;
+const ANG_DAMP     = 0.992;
+const REST_SPEED   = 55;     // below this, kill the bounce so the pile stops jittering
+const SLOP         = 0.35;
+const CORRECT      = 0.65;
+const DROP_COOLDOWN= 0.42;
+const OVERFLOW_TIME= 1.35;   // seconds above the line before you lose
+
+// Eleven tiers, each roughly 1.22x the last.
+const RADII  = [16, 22, 29, 37, 46, 56, 68, 82, 97, 113, 130];
+const COLORS = ['#ff7a7a','#ffa15c','#ffd166','#c9e26b','#7fd18a',
+                '#5ccfc4','#59b0f0','#8b96f5','#b57ce8','#f07ec0','#34c07a'];
+const SPAWNABLE = [0,0,0,1,1,1,2,2,3,4];   // weighted toward the small ones
+const TOP_TIER = RADII.length - 1;
+
+/* ============================================================
+   Canvas
+   ============================================================ */
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+let scale = 1;
+
+function resize() {
+  const r = canvas.getBoundingClientRect();
+  const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+  canvas.width  = Math.max(1, Math.round(r.width  * dpr));
+  canvas.height = Math.max(1, Math.round(r.height * dpr));
+  scale = canvas.width / W;
+  updateHud();
+}
+window.addEventListener('resize', resize);
+
+/* ============================================================
+   Bodies  -  rigid discs with real rotational inertia
+   ============================================================ */
+let bodies = [], particles = [], pops = [], floaters = [];
+let score = 0, best = +(localStorage.getItem('mergeDropBest') || 0);
+let state = 'play';           // 'play' | 'over'
+let aimX = W / 2;
+let pending = pickTier(), nextTier = pickTier();
+let cooldown = 0, shake = 0;
+let combo = 0, lastMergeAt = -99, clock = 0;
+let uid = 1;
+
+function pickTier() { return SPAWNABLE[(Math.random() * SPAWNABLE.length) | 0]; }
+
+const BIRTH_T = 0.22;
+
+// `r` is the final radius; `cr` is the radius the physics actually uses this
+// frame. A merged ball starts at the size of the two that made it (r0) and
+// grows into its full size, so it shoulders its neighbours aside instead of
+// appearing inside them.
+function makeBody(x, y, tier, r0) {
+  const r = RADII[tier];
+  const m = Math.PI * r * r * 0.001;         // mass ~ area
+  return {
+    id: uid++, tier, r,
+    r0: r0 === undefined ? r : r0,
+    cr: r0 === undefined ? r : r0,
+    x: x, y: y, vx: 0, vy: 0,
+    a: (Math.random() - 0.5) * 0.6, av: 0,
+    invM: 1 / m,
+    invI: 1 / (0.5 * m * r * r),
+    dead: false, age: 0, over: 0,
+    birth: r0 === undefined ? 1 : 0
+  };
+}
+
+/* ============================================================
+   Physics
+   ============================================================ */
+let pairs = [];
+
+function buildPairs() {
+  pairs.length = 0;
+  const n = bodies.length;
+  for (let i = 0; i < n; i++) {
+    const a = bodies[i];
+    for (let j = i + 1; j < n; j++) {
+      const b = bodies[j];
+      // Margin must exceed how far a body can travel or be pushed inside one step,
+      // otherwise a contact that forms mid-solve would be missed entirely.
+      const rr = a.cr + b.cr + 20;
+      const dx = b.x - a.x, dy = b.y - a.y;
+      if (dx * dx + dy * dy <= rr * rr) pairs.push(a, b);
+    }
+  }
+}
+
+function applyImpulse(b, px, py, rx, ry) {
+  b.vx += px * b.invM;
+  b.vy += py * b.invM;
+  b.av += (rx * py - ry * px) * b.invI;
+}
+
+function solvePair(a, b) {
+  const dx = b.x - a.x, dy = b.y - a.y;
+  const d2 = dx * dx + dy * dy;
+  const rsum = a.cr + b.cr;
+  if (d2 >= rsum * rsum || d2 === 0) return;
+
+  const d = Math.sqrt(d2);
+  const nx = dx / d, ny = dy / d;
+  const pen = rsum - d;
+  const invSum = a.invM + b.invM;
+
+  // positional correction (with slop, so resting contacts don't fight)
+  const corr = Math.max(pen - SLOP, 0) / invSum * CORRECT;
+  a.x -= nx * corr * a.invM;  a.y -= ny * corr * a.invM;
+  b.x += nx * corr * b.invM;  b.y += ny * corr * b.invM;
+
+  // contact-point velocities include spin:  v + w x r
+  const rax =  nx * a.cr, ray =  ny * a.cr;
+  const rbx = -nx * b.cr, rby = -ny * b.cr;
+  const vax = a.vx - a.av * ray, vay = a.vy + a.av * rax;
+  const vbx = b.vx - b.av * rby, vby = b.vy + b.av * rbx;
+
+  const vn = (vbx - vax) * nx + (vby - vay) * ny;
+  if (vn > 0) return;                        // already separating
+
+  const e = (-vn < REST_SPEED) ? 0 : RESTITUTION;
+  const jn = -(1 + e) * vn / invSum;
+  applyImpulse(a, -jn * nx, -jn * ny, rax, ray);
+  applyImpulse(b,  jn * nx,  jn * ny, rbx, rby);
+
+  // tangential friction - this is what makes balls roll off each other
+  const tx = -ny, ty = nx;
+  const ax2 = a.vx - a.av * ray, ay2 = a.vy + a.av * rax;
+  const bx2 = b.vx - b.av * rby, by2 = b.vy + b.av * rbx;
+  const vt = (bx2 - ax2) * tx + (by2 - ay2) * ty;
+  const kt = invSum + a.cr * a.cr * a.invI + b.cr * b.cr * b.invI;
+  let jt = -vt / kt;
+  const max = FRICTION * jn;
+  if (jt >  max) jt =  max;
+  if (jt < -max) jt = -max;
+  applyImpulse(a, -jt * tx, -jt * ty, rax, ray);
+  applyImpulse(b,  jt * tx,  jt * ty, rbx, rby);
+}
+
+// Contact against immovable geometry; n points from the surface into the ball.
+function solveStatic(b, nx, ny, pen) {
+  if (pen <= 0) return;
+  const push = Math.max(pen - SLOP, 0) * CORRECT;
+  b.x += nx * push;
+  b.y += ny * push;
+
+  const rx = -nx * b.cr, ry = -ny * b.cr;
+  const vx = b.vx - b.av * ry, vy = b.vy + b.av * rx;
+  const vn = vx * nx + vy * ny;
+  if (vn > 0) return;
+
+  const e = (-vn < REST_SPEED) ? 0 : WALL_REST;
+  const jn = -(1 + e) * vn / b.invM;
+  applyImpulse(b, jn * nx, jn * ny, rx, ry);
+
+  const tx = -ny, ty = nx;
+  const vx2 = b.vx - b.av * ry, vy2 = b.vy + b.av * rx;
+  const vt = vx2 * tx + vy2 * ty;
+  const kt = b.invM + b.cr * b.cr * b.invI;
+  let jt = -vt / kt;
+  const max = WALL_FRIC * jn;
+  if (jt >  max) jt =  max;
+  if (jt < -max) jt = -max;
+  applyImpulse(b, jt * tx, jt * ty, rx, ry);
+}
+
+function cornerContact(b, cx, cy, side) {
+  if (side < 0 ? b.x > cx : b.x < cx) return;
+  if (b.y < cy) return;
+  const dx = b.x - cx, dy = b.y - cy;
+  const d = Math.hypot(dx, dy) || 1e-6;
+  const lim = CR - b.cr;
+  if (d <= lim) return;
+  solveStatic(b, -dx / d, -dy / d, d - lim);
+}
+
+function solveWalls(b) {
+  solveStatic(b,  1,  0, (WALL_L + b.cr) - b.x);   // left wall
+  solveStatic(b, -1,  0, b.x - (WALL_R - b.cr));   // right wall
+  solveStatic(b,  0, -1, b.y - (FLOOR - b.cr));    // floor
+  if (b.cr < CR) {                                  // rounded bottom corners
+    cornerContact(b, WALL_L + CR, FLOOR - CR, -1);
+    cornerContact(b, WALL_R - CR, FLOOR - CR,  1);
+  }
+}
+
+/* ---- position-only relaxation ------------------------------
+   Runs after the impulse solver. It moves bodies apart without
+   touching velocity, so it can push hard (no energy is added).
+   This is what keeps balls from visibly sinking into the floor
+   under a heavy stack, or overlapping after a merge.           */
+function relaxPair(a, b) {
+  const dx = b.x - a.x, dy = b.y - a.y;
+  const d2 = dx * dx + dy * dy;
+  const rsum = a.cr + b.cr;
+  if (d2 >= rsum * rsum || d2 === 0) return;
+  const d = Math.sqrt(d2);
+  const corr = (rsum - d - 0.05) * 0.7 / (a.invM + b.invM);
+  if (corr <= 0) return;
+  const nx = dx / d * corr, ny = dy / d * corr;
+  a.x -= nx * a.invM; a.y -= ny * a.invM;
+  b.x += nx * b.invM; b.y += ny * b.invM;
+}
+
+// Walls are immovable, so just clamp: guarantees nothing renders outside the jar.
+function clampWalls(b) {
+  if (b.x < WALL_L + b.cr) b.x = WALL_L + b.cr;
+  if (b.x > WALL_R - b.cr) b.x = WALL_R - b.cr;
+  if (b.y > FLOOR  - b.cr) b.y = FLOOR  - b.cr;
+  if (b.cr < CR) {
+    clampCorner(b, WALL_L + CR, FLOOR - CR, -1);
+    clampCorner(b, WALL_R - CR, FLOOR - CR,  1);
+  }
+}
+function clampCorner(b, cx, cy, side) {
+  if (side < 0 ? b.x > cx : b.x < cx) return;
+  if (b.y < cy) return;
+  const dx = b.x - cx, dy = b.y - cy;
+  const d = Math.hypot(dx, dy) || 1e-6;
+  const lim = CR - b.cr;
+  if (d <= lim) return;
+  b.x = cx + dx / d * lim;
+  b.y = cy + dy / d * lim;
+}
+
+function relax(passes) {
+  for (let it = 0; it < passes; it++) {
+    for (let i = 0; i < pairs.length; i += 2) relaxPair(pairs[i], pairs[i + 1]);
+    for (let i = 0; i < bodies.length; i++) clampWalls(bodies[i]);
+  }
+}
+
+function step(dt) {
+  for (let i = 0; i < bodies.length; i++) {
+    const b = bodies[i];
+    b.vy += GRAVITY * dt;
+    b.vx *= LIN_DAMP; b.vy *= LIN_DAMP; b.av *= ANG_DAMP;
+    b.x += b.vx * dt;
+    b.y += b.vy * dt;
+    b.a += b.av * dt;
+    b.age += dt;
+    if (b.birth < 1) {
+      b.birth = Math.min(1, b.birth + dt / BIRTH_T);
+      b.cr = b.r0 + (b.r - b.r0) * easeOutBack(b.birth);
+    }
+  }
+
+  buildPairs();
+  for (let it = 0; it < ITERATIONS; it++) {
+    for (let i = 0; i < pairs.length; i += 2) solvePair(pairs[i], pairs[i + 1]);
+    for (let i = 0; i < bodies.length; i++) solveWalls(bodies[i]);
+  }
+  relax(POS_ITER);
+
+  // A merge drops a much larger ball in where two smaller ones were, so it is
+  // born overlapping its neighbours. Relax again before anything gets drawn.
+  if (resolveMerges()) {
+    buildPairs();
+    relax(POS_ITER + 2);
+  }
+
+  checkOverflow(dt);
+}
+
+/* ============================================================
+   Merging
+   ============================================================ */
+function resolveMerges() {
+  let any = false;
+  for (let i = 0; i < pairs.length; i += 2) {
+    const a = pairs[i], b = pairs[i + 1];
+    if (a.dead || b.dead || a.tier !== b.tier || a.tier === TOP_TIER) continue;
+    const dx = b.x - a.x, dy = b.y - a.y;
+    const rsum = a.cr + b.cr + 0.5;
+    if (dx * dx + dy * dy > rsum * rsum) continue;
+    merge(a, b);
+    any = true;
+  }
+  if (any) bodies = bodies.filter(b => !b.dead);
+  return any;
+}
+
+function merge(a, b) {
+  a.dead = b.dead = true;
+  const tier = a.tier + 1;
+  const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+
+  const nb = makeBody(mx, my, tier, RADII[a.tier]);
+  nb.vx = (a.vx + b.vx) * 0.5;
+  nb.vy = (a.vy + b.vy) * 0.5 - 95;          // the little pop upward
+  nb.av = (a.av + b.av) * 0.5;
+  bodies.push(nb);
+
+  // score + combo for fast chain reactions
+  combo = (clock - lastMergeAt < 0.6) ? combo + 1 : 1;
+  lastMergeAt = clock;
+  const pts = ((tier + 1) * (tier + 2) / 2) * combo;
+  score += pts;
+
+  // juice
+  pops.push({ x: mx, y: my, r: RADII[tier] * 0.7, t: 0, life: 0.42, color: COLORS[tier] });
+  floaters.push({ x: mx, y: my, t: 0, life: 0.85, text: '+' + pts,
+                  combo: combo > 1 ? combo : 0, color: COLORS[tier] });
+  const n = 8 + tier * 2;
+  for (let i = 0; i < n; i++) {
+    const ang = (i / n) * Math.PI * 2 + Math.random() * 0.5;
+    const sp = 110 + Math.random() * 190 + tier * 12;
+    particles.push({
+      x: mx + Math.cos(ang) * RADII[tier] * 0.5,
+      y: my + Math.sin(ang) * RADII[tier] * 0.5,
+      vx: Math.cos(ang) * sp, vy: Math.sin(ang) * sp - 60,
+      r: 2 + Math.random() * (2.5 + tier * 0.5),
+      t: 0, life: 0.4 + Math.random() * 0.45, color: COLORS[tier]
+    });
+  }
+  shake = Math.min(11, shake + 1.6 + tier * 0.85);
+  sfxMerge(tier);
+  updateHud();
+}
+
+/* ============================================================
+   Overflow / game over
+   ============================================================ */
+function checkOverflow(dt) {
+  if (state !== 'play') return;
+  for (let i = 0; i < bodies.length; i++) {
+    const b = bodies[i];
+    if (b.age > 0.55 && b.y - b.cr < DANGER) {
+      b.over += dt;
+      if (b.over > OVERFLOW_TIME) { gameOver(); return; }
+    } else {
+      b.over = 0;
+    }
+  }
+}
+
+function dangerLevel() {
+  let m = 0;
+  for (const b of bodies) if (b.over > 0.15) m = Math.max(m, b.over / OVERFLOW_TIME);
+  return Math.min(1, m);
+}
+
+function gameOver() {
+  state = 'over';
+  if (score > best) { best = score; try { localStorage.setItem('mergeDropBest', best); } catch (e) {} }
+  document.getElementById('finalScore').textContent = score.toLocaleString();
+  document.getElementById('finalSub').textContent = 'Best ' + best.toLocaleString();
+  document.getElementById('over').classList.add('show');
+  sfxOver();
+}
+
+function reset() {
+  bodies = []; particles = []; pops = []; floaters = [];
+  score = 0; combo = 0; lastMergeAt = -99; cooldown = 0; shake = 0;
+  pending = pickTier(); nextTier = pickTier();
+  state = 'play';
+  document.getElementById('over').classList.remove('show');
+  updateHud();
+}
+
+/* ============================================================
+   Input
+   ============================================================ */
+function clampAim(x, tier) {
+  return Math.max(WALL_L + RADII[tier] + 2, Math.min(WALL_R - RADII[tier] - 2, x));
+}
+function toWorldX(clientX) {
+  const r = canvas.getBoundingClientRect();
+  return (clientX - r.left) / r.width * W;
+}
+
+const stage = document.getElementById('stage');
+stage.addEventListener('pointermove', e => { aimX = toWorldX(e.clientX); });
+stage.addEventListener('pointerdown', e => {
+  if (e.target.closest('#mute, #restart')) return;
+  audioInit();
+  aimX = toWorldX(e.clientX);
+  drop();
+});
+window.addEventListener('keydown', e => {
+  if (e.code === 'Space' || e.code === 'Enter') {
+    e.preventDefault();
+    audioInit();
+    if (state === 'over') reset(); else drop();
+  }
+  if (e.code === 'ArrowLeft')  aimX = clampAim(aimX - 20, pending);
+  if (e.code === 'ArrowRight') aimX = clampAim(aimX + 20, pending);
+});
+
+function drop() {
+  if (state !== 'play' || cooldown > 0) return;
+  const b = makeBody(clampAim(aimX, pending), DROP_Y, pending);
+  b.vy = 90;
+  bodies.push(b);
+  pending = nextTier;
+  nextTier = pickTier();
+  cooldown = DROP_COOLDOWN;
+  combo = 0;
+  sfxDrop();
+  updateHud();
+  document.getElementById('hint').style.opacity = '0';
+}
+
+document.getElementById('restart').addEventListener('click', () => { audioInit(); reset(); });
+
+/* ============================================================
+   Audio  -  tiny WebAudio blips, deeper as the circles get bigger
+   ============================================================ */
+let ac = null, muted = false;
+function audioInit() {
+  if (!ac) {
+    try { ac = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { ac = null; }
+  }
+  if (ac && ac.state === 'suspended') ac.resume();
+}
+function tone(freq, dur, vol, type, glide) {
+  if (!ac || muted) return;
+  const t = ac.currentTime;
+  const o = ac.createOscillator(), g = ac.createGain();
+  o.type = type || 'sine';
+  o.frequency.setValueAtTime(freq, t);
+  if (glide) o.frequency.exponentialRampToValueAtTime(Math.max(40, freq * glide), t + dur);
+  g.gain.setValueAtTime(0.0001, t);
+  g.gain.exponentialRampToValueAtTime(vol, t + 0.008);
+  g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.connect(g); g.connect(ac.destination);
+  o.start(t); o.stop(t + dur + 0.02);
+}
+function sfxMerge(tier) {
+  const f = 700 * Math.pow(0.885, tier);
+  tone(f, 0.22, 0.16, 'sine', 1.5);
+  tone(f * 1.5, 0.14, 0.055, 'triangle', 1.4);
+}
+function sfxDrop() { tone(190, 0.07, 0.05, 'triangle', 0.7); }
+function sfxOver() {
+  [520, 400, 300, 210].forEach((f, i) => setTimeout(() => tone(f, 0.3, 0.1, 'sine', 0.85), i * 130));
+}
+const muteBtn = document.getElementById('mute');
+muteBtn.addEventListener('click', () => {
+  muted = !muted;
+  muteBtn.textContent = muted ? 'SOUND OFF' : 'SOUND ON';
+});
+
+/* ============================================================
+   HUD
+   ============================================================ */
+const scoreEl = document.getElementById('score');
+const bestEl  = document.getElementById('best');
+const nextDot = document.getElementById('nextDot');
+function updateHud() {
+  scoreEl.textContent = score.toLocaleString();
+  bestEl.textContent = 'Best ' + Math.max(best, score).toLocaleString();
+  const wrap = document.getElementById('nextWrap').getBoundingClientRect();
+  const size = Math.max(12, Math.min(wrap.width * 0.78, wrap.width * (RADII[nextTier] / RADII[6])));
+  nextDot.style.width = nextDot.style.height = size + 'px';
+  nextDot.style.background = COLORS[nextTier];
+  nextDot.style.boxShadow = '0 0 22px ' + COLORS[nextTier] + '55';
+}
+
+/* ============================================================
+   Rendering
+   ============================================================ */
+function mix(hex, to, t) {
+  const r = parseInt(hex.slice(1, 3), 16),
+        g = parseInt(hex.slice(3, 5), 16),
+        b = parseInt(hex.slice(5, 7), 16);
+  return 'rgb(' + Math.round(r + (to - r) * t) + ',' +
+                  Math.round(g + (to - g) * t) + ',' +
+                  Math.round(b + (to - b) * t) + ')';
+}
+function easeOutBack(t) {
+  const c1 = 2.0, c3 = c1 + 1;
+  return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
+}
+
+function containerPath(g) {
+  g.beginPath();
+  g.moveTo(WALL_L, RIM);
+  g.lineTo(WALL_L, FLOOR - CR);
+  g.quadraticCurveTo(WALL_L, FLOOR, WALL_L + CR, FLOOR);
+  g.lineTo(WALL_R - CR, FLOOR);
+  g.quadraticCurveTo(WALL_R, FLOOR, WALL_R, FLOOR - CR);
+  g.lineTo(WALL_R, RIM);
+}
+
+function drawBall(g, b, alpha) {
+  const r = b.cr;
+  const c = COLORS[b.tier];
+
+  g.save();
+  g.globalAlpha = (alpha === undefined) ? 1 : alpha;
+  g.translate(b.x, b.y);
+
+  // soft contact shadow
+  g.fillStyle = 'rgba(0,0,0,0.22)';
+  g.beginPath(); g.arc(0, r * 0.14, r * 0.95, 0, 6.2832); g.fill();
+
+  const grad = g.createRadialGradient(-r * 0.32, -r * 0.38, r * 0.06, 0, 0, r * 1.05);
+  grad.addColorStop(0, mix(c, 255, 0.42));
+  grad.addColorStop(0.55, c);
+  grad.addColorStop(1, mix(c, 0, 0.22));
+  g.fillStyle = grad;
+  g.beginPath(); g.arc(0, 0, r, 0, 6.2832); g.fill();
+
+  // rim light along the top
+  g.lineWidth = Math.max(1, r * 0.05);
+  g.strokeStyle = 'rgba(255,255,255,0.16)';
+  g.beginPath(); g.arc(0, 0, r - g.lineWidth / 2, Math.PI * 1.05, Math.PI * 1.95); g.stroke();
+
+  // specular highlight
+  g.fillStyle = 'rgba(255,255,255,0.35)';
+  g.beginPath(); g.ellipse(-r * 0.33, -r * 0.4, r * 0.2, r * 0.13, -0.7, 0, 6.2832); g.fill();
+
+  // spin marker so rotation reads
+  g.rotate(b.a);
+  g.fillStyle = 'rgba(0,0,0,0.13)';
+  g.beginPath(); g.arc(r * 0.5, 0, Math.max(1.4, r * 0.13), 0, 6.2832); g.fill();
+
+  g.restore();
+}
+
+function render() {
+  const g = ctx;
+  g.setTransform(scale, 0, 0, scale, 0, 0);
+  if (shake > 0.05) g.translate((Math.random() - 0.5) * shake, (Math.random() - 0.5) * shake);
+
+  // backdrop
+  const bg = g.createLinearGradient(0, 0, 0, H);
+  bg.addColorStop(0, '#151924');
+  bg.addColorStop(1, '#0d0f15');
+  g.fillStyle = bg;
+  g.fillRect(-24, -24, W + 48, H + 48);
+
+  // inside of the well
+  g.save();
+  containerPath(g);
+  g.lineTo(WALL_R, RIM - 600); g.lineTo(WALL_L, RIM - 600); g.closePath();
+  g.clip();
+  const well = g.createLinearGradient(0, RIM, 0, FLOOR);
+  well.addColorStop(0, 'rgba(255,255,255,0.012)');
+  well.addColorStop(1, 'rgba(255,255,255,0.05)');
+  g.fillStyle = well;
+  g.fillRect(WALL_L, RIM - 600, WALL_R - WALL_L, FLOOR - RIM + 600);
+  g.restore();
+
+  // danger line, reddens as something sits above it
+  const dl = dangerLevel();
+  g.save();
+  g.setLineDash([9, 10]);
+  g.lineWidth = 2;
+  g.strokeStyle = dl > 0
+    ? 'rgba(255,' + Math.round(120 - 90 * dl) + ',' + Math.round(120 - 90 * dl) + ',' + (0.28 + 0.55 * dl) + ')'
+    : 'rgba(255,255,255,0.10)';
+  g.beginPath(); g.moveTo(WALL_L + 3, DANGER); g.lineTo(WALL_R - 3, DANGER); g.stroke();
+  g.restore();
+
+  for (let i = 0; i < bodies.length; i++) drawBall(g, bodies[i]);
+
+  // walls drawn over the balls so nothing appears to poke through
+  g.lineWidth = 6;
+  g.lineCap = 'round'; g.lineJoin = 'round';
+  g.strokeStyle = 'rgba(255,255,255,0.16)';
+  containerPath(g);
+  g.stroke();
+
+  // merge rings
+  for (const p of pops) {
+    const t = p.t / p.life;
+    g.globalAlpha = (1 - t) * 0.75;
+    g.lineWidth = 4 * (1 - t) + 1;
+    g.strokeStyle = p.color;
+    g.beginPath(); g.arc(p.x, p.y, p.r + t * p.r * 1.9, 0, 6.2832); g.stroke();
+  }
+  g.globalAlpha = 1;
+
+  // particles
+  for (const p of particles) {
+    const t = p.t / p.life;
+    g.globalAlpha = 1 - t * t;
+    g.fillStyle = p.color;
+    g.beginPath(); g.arc(p.x, p.y, p.r * (1 - t * 0.55), 0, 6.2832); g.fill();
+  }
+  g.globalAlpha = 1;
+
+  // floating score
+  g.textAlign = 'center';
+  for (const f of floaters) {
+    const t = f.t / f.life;
+    g.globalAlpha = t < 0.15 ? t / 0.15 : 1 - Math.pow((t - 0.15) / 0.85, 2);
+    g.fillStyle = '#fff';
+    g.font = '700 24px ui-sans-serif, system-ui, sans-serif';
+    g.fillText(f.text, f.x, f.y - 14 - t * 42);
+    if (f.combo) {
+      g.fillStyle = f.color;
+      g.font = '700 15px ui-sans-serif, system-ui, sans-serif';
+      g.fillText('COMBO x' + f.combo, f.x, f.y + 6 - t * 42);
+    }
+  }
+  g.globalAlpha = 1;
+
+  // aim guide + the piece waiting to drop
+  if (state === 'play') {
+    const x = clampAim(aimX, pending);
+    const ready = 1 - Math.max(0, cooldown / DROP_COOLDOWN);
+
+    g.save();
+    g.globalAlpha = 0.12 + 0.14 * ready;
+    g.setLineDash([5, 12]);
+    g.lineWidth = 2;
+    g.strokeStyle = COLORS[pending];
+    g.beginPath();
+    g.moveTo(x, DROP_Y + RADII[pending] + 8);
+    g.lineTo(x, FLOOR - 6);
+    g.stroke();
+    g.restore();
+
+    if (ready > 0.02) {
+      drawBall(g, { x: x, y: DROP_Y, cr: RADII[pending] * (0.55 + 0.45 * ready),
+                    tier: pending, a: 0 }, 0.35 + 0.65 * ready);
+    }
+  }
+
+  g.setTransform(1, 0, 0, 1, 0, 0);
+}
+
+/* ============================================================
+   Main loop
+   ============================================================ */
+let acc = 0, last = performance.now();
+function frame(now) {
+  let dt = (now - last) / 1000;
+  last = now;
+  if (dt > 0.1) dt = 0.1;
+  clock += dt;
+
+  if (state === 'play') {
+    acc += dt;
+    let guard = 0;
+    while (acc >= FIXED_DT && guard++ < 16) { step(FIXED_DT); acc -= FIXED_DT; }
+    if (acc > FIXED_DT) acc = 0;
+    if (cooldown > 0) cooldown -= dt;
+  } else {
+    acc = 0;
+  }
+
+  // effects keep animating even on the game-over screen
+  for (const p of particles) {
+    p.t += dt; p.vy += 1500 * dt;
+    p.x += p.vx * dt; p.y += p.vy * dt; p.vx *= 0.985;
+  }
+  particles = particles.filter(p => p.t < p.life);
+  for (const p of pops) p.t += dt;
+  pops = pops.filter(p => p.t < p.life);
+  for (const f of floaters) f.t += dt;
+  floaters = floaters.filter(f => f.t < f.life);
+  shake *= Math.pow(0.0015, dt);
+
+  render();
+  requestAnimationFrame(frame);
+}
+
+resize();
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>

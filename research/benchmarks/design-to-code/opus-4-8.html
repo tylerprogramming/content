@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bluebird — Innovation & Security</title>
+<style>
+  :root {
+    --blue: #1877f2;
+    --blue-deep: #0f6ae0;
+    --ink: #1b2b3a;
+    --muted: rgba(35, 55, 75, 0.6);
+    --glass: rgba(255, 255, 255, 0.28);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --page: #a9c1d6;
+    --radius: 26px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    background: var(--page);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+
+  /* ---------- Shell / hero card ---------- */
+  .hero {
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    border-radius: 34px;
+    overflow: hidden;
+    isolation: isolate;
+    box-shadow: 0 40px 80px -30px rgba(30, 55, 90, 0.45);
+    background: linear-gradient(180deg, #b7cede 0%, #cddbe4 42%, #eef3f2 100%);
+    min-height: 660px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Decorative bird backdrop (CSS-only stand-in for the photo) */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+      radial-gradient(closest-side at 52% 42%, rgba(26, 150, 220, 0.75), rgba(26, 150, 220, 0) 60%),
+      radial-gradient(closest-side at 55% 60%, rgba(40, 90, 200, 0.55), rgba(40, 90, 200, 0) 62%),
+      radial-gradient(closest-side at 50% 74%, rgba(230, 240, 245, 0.9), rgba(230, 240, 245, 0) 55%);
+  }
+  .bird {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46%;
+    max-width: 460px;
+    z-index: 1;
+    filter: drop-shadow(0 30px 40px rgba(20, 60, 110, 0.35));
+    pointer-events: none;
+  }
+
+  /* Giant watermark word */
+  .watermark {
+    position: absolute;
+    top: 26%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(64px, 15vw, 200px);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.55);
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.3);
+    user-select: none;
+    pointer-events: none;
+    line-height: 1;
+  }
+
+  /* ---------- Navbar ---------- */
+  nav {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 26px 34px;
+  }
+  .logo {
+    width: 46px; height: 46px;
+    display: grid; place-items: center;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .logo svg { width: 34px; height: 34px; }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 auto;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: rgba(30, 50, 70, 0.72);
+    font-size: 15px;
+    padding: 9px 18px;
+    border-radius: 999px;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-links a.active {
+    background: rgba(255, 255, 255, 0.55);
+    color: var(--ink);
+    box-shadow: 0 4px 12px rgba(30, 55, 90, 0.12);
+  }
+
+  .resources-btn {
+    background: #fff;
+    border: none;
+    color: var(--ink);
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(30, 55, 90, 0.15);
+    flex-shrink: 0;
+  }
+
+  /* ---------- Hero body ---------- */
+  .hero-body {
+    position: relative;
+    z-index: 4;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 34px;
+    gap: 30px;
+  }
+
+  .headline-block { max-width: 460px; }
+  .headline {
+    font-weight: 400;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.02;
+    color: #fff;
+    text-shadow: 0 6px 24px rgba(20, 50, 90, 0.25);
+  }
+  .headline .amp { font-family: Georgia, serif; font-style: italic; }
+  .subcopy {
+    margin-top: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    max-width: 260px;
+    line-height: 1.5;
+  }
+  .cta-row {
+    margin-top: 26px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    transition: transform 0.15s, box-shadow 0.2s;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-primary {
+    background: var(--blue);
+    color: #fff;
+    padding: 8px 8px 8px 26px;
+    box-shadow: 0 12px 26px -6px rgba(24, 119, 242, 0.6);
+  }
+  .btn-primary .arrow {
+    width: 36px; height: 36px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    display: grid; place-items: center;
+  }
+  .btn-ghost {
+    background: #fff;
+    color: var(--ink);
+    padding: 15px 30px;
+    box-shadow: 0 10px 24px rgba(30, 55, 90, 0.15);
+  }
+  .arrow svg { width: 16px; height: 16px; }
+
+  /* ---------- Bottom info row ---------- */
+  .info-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    align-items: end;
+  }
+
+  .card {
+    position: relative;
+    border-radius: var(--radius);
+    padding: 22px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 18px 40px -18px rgba(20, 50, 90, 0.4);
+    min-height: 150px;
+  }
+  .card .corner {
+    position: absolute;
+    top: 18px; right: 18px;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    display: grid; place-items: center;
+    color: var(--ink);
+  }
+  .corner svg { width: 15px; height: 15px; }
+
+  /* protection card */
+  .card-protect { display: flex; gap: 16px; align-items: center; }
+  .lock-ico {
+    width: 68px; height: 68px; flex-shrink: 0;
+    border-radius: 18px;
+    background: linear-gradient(160deg, rgba(255,255,255,0.6), rgba(200,225,245,0.3));
+    display: grid; place-items: center;
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.4);
+  }
+  .lock-ico svg { width: 38px; height: 38px; color: #cfe2f2; }
+  .tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.4);
+    color: var(--ink);
+    font-size: 11px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  .card-protect .title {
+    color: #fff;
+    font-size: 19px;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(20,50,90,0.25);
+  }
+
+  /* AI agent card (solid white, raised) */
+  .card-ai {
+    background: rgba(255, 255, 255, 0.92);
+    transform: translateY(-26px);
+  }
+  .card-ai .orb {
+    width: 60px; height: 60px;
+    border-radius: 18px;
+    margin-bottom: 16px;
+    background: radial-gradient(circle at 35% 30%, #7fd0ff, #1877f2 70%, #0b47a8);
+    box-shadow: 0 10px 22px -6px rgba(24, 119, 242, 0.6);
+  }
+  .card-ai h3 { font-size: 21px; font-weight: 600; line-height: 1.15; }
+  .card-ai p { margin-top: 10px; font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* stat card */
+  .card-stat .big {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+  }
+  .card-stat .big sup { font-size: 22px; vertical-align: super; }
+  .card-stat p {
+    margin-top: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 180px;
+  }
+
+  /* Active users pill */
+  .active-users {
+    position: absolute;
+    top: 46%;
+    right: 34px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: 8px 16px 8px 8px;
+    border-radius: 999px;
+    box-shadow: 0 12px 30px -12px rgba(20,50,90,0.4);
+  }
+  .avatars { display: flex; }
+  .avatars span {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.85);
+    margin-left: -12px;
+    background-size: cover;
+  }
+  .avatars span:first-child { margin-left: 0; }
+  .avatars span:nth-child(1){ background:linear-gradient(135deg,#f0b28a,#c97b4a); }
+  .avatars span:nth-child(2){ background:linear-gradient(135deg,#6b7580,#3a4048); }
+  .avatars span:nth-child(3){ background:linear-gradient(135deg,#e5a9a0,#b56b78); }
+  .avatars span:nth-child(4){ background:linear-gradient(135deg,#c4b7a4,#7a6f5c); }
+  .au-text { color: rgba(255,255,255,0.9); font-size: 13px; }
+  .au-text b { color: #fff; font-size: 15px; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px) {
+    .info-row { grid-template-columns: 1fr; }
+    .card-ai { transform: none; }
+    .active-users { position: static; margin: 20px 0 0 auto; width: max-content; }
+    .watermark { top: 30%; }
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 16px; }
+    nav { flex-wrap: wrap; padding: 20px; gap: 14px; }
+    .nav-links { order: 3; width: 100%; }
+    .logo { order: 1; }
+    .resources-btn { order: 2; margin-left: auto; }
+    .hero-body { padding: 22px; }
+    .bird { width: 70%; top: 10%; }
+    .cta-row .btn { flex: 1; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+  <main class="hero">
+    <!-- backdrop art -->
+    <div class="watermark">BLUEBIRD</div>
+    <svg class="bird" viewBox="0 0 200 240" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="body" cx="40%" cy="30%" r="80%">
+          <stop offset="0%" stop-color="#5ec8ff"/>
+          <stop offset="55%" stop-color="#1c8fe0"/>
+          <stop offset="100%" stop-color="#12489e"/>
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="150" rx="72" ry="86" fill="url(#body)"/>
+      <circle cx="100" cy="80" r="60" fill="url(#body)"/>
+      <circle cx="122" cy="66" r="10" fill="#0b1d2e"/>
+      <circle cx="125" cy="63" r="3" fill="#fff"/>
+      <path d="M158 78 L196 88 L158 96 Z" fill="#e88b4a"/>
+    </svg>
+
+    <!-- navbar -->
+    <nav>
+      <div class="logo" aria-label="Bluebird">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 26c10-2 18-6 30-14-3 8-7 13-13 16 6 0 11-1 17-4-6 8-16 12-27 10-4-1-7-4-7-8z" fill="currentColor"/>
+        </svg>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">industries</a></li>
+        <li><a href="#">threat intelligence</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <button class="resources-btn">Resources</button>
+    </nav>
+
+    <!-- active users pill -->
+    <div class="active-users">
+      <div class="avatars">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <span class="au-text">Active Users <b>+323</b></span>
+    </div>
+
+    <!-- hero body -->
+    <div class="hero-body">
+      <div class="headline-block">
+        <h1 class="headline">Innovation<br><span class="amp">&amp;</span> security</h1>
+        <p class="subcopy">We are at the forefront of merging cutting-edge technology.</p>
+        <div class="cta-row">
+          <button class="btn btn-primary">
+            Our Solutions
+            <span class="arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <button class="btn btn-ghost">Contact us</button>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <!-- protection -->
+        <div class="card card-protect">
+          <span class="corner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div class="lock-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/><path d="M12 15v2"/></svg>
+          </div>
+          <div>
+            <span class="tag">Perfect Security</span>
+            <div class="title">AI ensures total protection</div>
+          </div>
+        </div>
+
+        <!-- AI agent -->
+        <div class="card card-ai">
+          <span class="corner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div class="orb"></div>
+          <h3>Integrated AI<br>Agent</h3>
+          <p>Integrated AI agent for personalized client experiences.</p>
+        </div>
+
+        <!-- stat -->
+        <div class="card card-stat">
+          <span class="corner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div class="big">42<sup>%</sup></div>
+          <p>Join us in redefining the future of security with innovative solutions.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+<script>
+(function(){
+  var b = document.querySelector('.bird');
+  if(!b) return;
+  var img = document.createElement('img');
+  img.src = 'bird.png'; img.alt = 'Blue bird';
+  img.className = b.getAttribute('class') || 'bird';
+  var s = b.getAttribute('style'); if (s) img.setAttribute('style', s);
+  img.style.objectFit = 'contain';
+  b.parentNode.replaceChild(img, b);
+})();
+</script>
+</body>
+</html>

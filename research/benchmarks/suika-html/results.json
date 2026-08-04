@@ -1,0 +1,47 @@
+{
+  "prompt": "Build a complete, playable Suika (watermelon merge) game in a single self-contained HTML file, vanilla JavaScript and canvas, no libraries. Fruits drop from the top, same-size fruits merge into the next size with gravity and collisions, score goes up on each merge, and it is game over if the pile overflows the top. Make it fun to play.",
+  "results": [
+    {
+      "name": "opus-4.8",
+      "model_id": "claude-opus-4-8",
+      "label": "opus-4-8",
+      "ok": true,
+      "in": 10,
+      "out": 13764,
+      "cc_cost": 0.7299575,
+      "session_total_usd": 0.7306495,
+      "time": 174.289,
+      "kind": "html",
+      "file": "opus-4-8.html",
+      "cost": 0.34415
+    },
+    {
+      "name": "opus-5",
+      "model_id": "claude-opus-5",
+      "label": "opus-5",
+      "ok": true,
+      "in": 8,
+      "out": 27824,
+      "cc_cost": 1.1436034999999998,
+      "session_total_usd": 1.1442854999999998,
+      "time": 314.874,
+      "kind": "html",
+      "file": "opus-5.html",
+      "cost": 0.69564
+    },
+    {
+      "name": "fable-5",
+      "model_id": "claude-fable-5",
+      "label": "fable-5",
+      "ok": true,
+      "in": 8,
+      "out": 34113,
+      "cc_cost": 2.5775759999999996,
+      "session_total_usd": 2.5782629999999997,
+      "time": 442.908,
+      "kind": "html",
+      "file": "fable-5.html",
+      "cost": 1.70573
+    }
+  ]
+}

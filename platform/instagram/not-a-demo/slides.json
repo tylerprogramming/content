@@ -1,0 +1,96 @@
+{
+  "topic": "Why staged Claude Code business demos do not help, and what a real skill stack looks like",
+  "handle": "@tylerai_dev",
+  "brand_text": "AI",
+  "slides": [
+    {
+      "type": "cover",
+      "headline_lines": [
+        "Everyone fakes",
+        "these demos.",
+        "Mine actually run."
+      ],
+      "accent_words": [
+        "these",
+        "demos"
+      ],
+      "subtitle": "No pretend startup. This is the folder that does my real work."
+    },
+    {
+      "type": "pain",
+      "headline_lines": [
+        "Tired of the",
+        "fake build?"
+      ],
+      "accent_words": [
+        "fake",
+        "build"
+      ],
+      "bullets": [
+        "A business spun up in one prompt",
+        "A demo nobody ever opens again",
+        "An app you will never ship",
+        "You watch it, you build nothing"
+      ]
+    },
+    {
+      "type": "solution",
+      "headline_lines": [
+        "Automate the",
+        "work you",
+        "already do"
+      ],
+      "accent_words": [
+        "already",
+        "do"
+      ],
+      "subtitle": "Not a new business. The boring, repeated parts of the one you have.",
+      "bullets": []
+    },
+    {
+      "type": "how",
+      "headline_lines": [
+        "How to tell",
+        "it is real"
+      ],
+      "accent_words": [
+        "it",
+        "is",
+        "real"
+      ],
+      "bullets": [
+        "Can they open the actual file?",
+        "Has it run more than once?",
+        "Is it on a schedule you can see?",
+        "Does the output ship anywhere?"
+      ]
+    },
+    {
+      "type": "results",
+      "headline_lines": [
+        "What real",
+        "looks like"
+      ],
+      "accent_words": [
+        "looks",
+        "like"
+      ],
+      "bullets": [
+        "Small, boring, unglamorous files",
+        "The same ones used every week",
+        "Improved one line at a time",
+        "80 percent there, I do the rest"
+      ]
+    },
+    {
+      "type": "cta",
+      "summary_lines": [
+        "Skip the staged business builds.",
+        "Write down the task you keep redoing."
+      ],
+      "cta_action": "Comment",
+      "cta_word": "SKILLS",
+      "cta_subtext": "and I'll send you all 17 as files, plus where the folder goes"
+    }
+  ]
+}

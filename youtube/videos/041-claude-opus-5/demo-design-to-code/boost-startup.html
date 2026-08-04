@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Marketing — Boost Your Startup</title>
+
+<!--
+  Rebuilt from a single design screenshot (GraphicsFamily "Boost Your Startup"
+  landing page). One file, no framework, no network requests — all artwork
+  (rocket, waves, mesh, logo) is inline SVG / CSS.
+-->
+
+<style>
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+
+:root{
+  --navy-1:#0d1230;
+  --navy-2:#060916;
+  --peri:#5c6cff;
+  --peri-light:#8b96ff;
+  --text:#eef1fb;
+}
+
+html,body{ height:100%; }
+
+body{
+  font-family:"Poppins","Segoe UI",Helvetica,Arial,sans-serif;
+  background:var(--navy-2);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+.page{
+  position:relative;
+  min-height:100vh;
+  overflow:hidden;
+  background:
+    radial-gradient(120% 90% at 78% -10%, #1a1f4a 0%, transparent 55%),
+    linear-gradient(160deg, var(--navy-1) 0%, var(--navy-2) 70%);
+}
+
+/* ------------------------------------------------------------ header */
+header{
+  position:relative;
+  z-index:6;
+  display:flex;
+  align-items:center;
+  gap:2rem;
+  padding:1.9rem 4vw 1.2rem;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  flex-shrink:0;
+}
+.logo svg{ width:44px; height:44px; display:block; }
+.logo-name{ font-size:1.05rem; font-weight:700; letter-spacing:.01em; }
+.logo-slogan{ font-size:.58rem; font-weight:400; color:#aab2d0; letter-spacing:.04em; }
+
+nav{
+  display:flex;
+  gap:clamp(2rem, 6vw, 5.5rem);
+  margin:0 auto;
+}
+nav a{
+  color:var(--text);
+  text-decoration:none;
+  font-size:.85rem;
+  font-weight:500;
+  letter-spacing:.02em;
+  padding-bottom:.4rem;
+  position:relative;
+}
+nav a:hover{ color:var(--peri-light); }
+nav a.active::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height:1px;
+  background:var(--text);
+}
+
+.burger{
+  flex-shrink:0;
+  background:none;
+  border:0;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  padding:.4rem 0;
+}
+.burger span{
+  width:28px; height:2px;
+  background:#9aa6ee;
+  border-radius:2px;
+}
+
+/* -------------------------------------------------------------- hero */
+.hero{
+  position:relative;
+  z-index:5;
+  max-width:520px;
+  padding:clamp(1rem, 4vh, 3rem) 4vw 0;
+}
+.hero h1{
+  font-size:clamp(3.4rem, 7.5vw, 5.6rem);
+  font-weight:800;
+  line-height:1;
+  letter-spacing:-.01em;
+}
+.hero h2{
+  font-size:clamp(1.7rem, 3.8vw, 2.8rem);
+  font-weight:700;
+  color:var(--peri);
+  line-height:1.15;
+}
+.hero .rule{
+  width:min(270px, 70%);
+  height:3px;
+  margin:1.1rem 0 1.5rem;
+  background:linear-gradient(90deg, var(--peri), #7d8cff 70%, transparent);
+  border-radius:2px;
+}
+.hero p{
+  font-size:.92rem;
+  line-height:1.55;
+  max-width:340px;
+  color:#e6eaf6;
+}
+
+/* ------------------------------------------------- floating decor */
+.planet{
+  position:absolute;
+  z-index:3;
+  left:41%;
+  top:20%;
+  width:62px; height:62px;
+  border-radius:50%;
+  background:radial-gradient(circle at 32% 28%, #2b3468 0%, #141a3d 55%, #0b0f28 100%);
+  box-shadow:inset -6px -8px 16px rgba(0,0,0,.55);
+}
+
+.star{
+  position:absolute;
+  z-index:3;
+  height:2px;
+  background:linear-gradient(90deg, rgba(255,255,255,.95), transparent);
+  transform:rotate(-38deg);
+  border-radius:2px;
+}
+.star.s1{ left:44%; top:27%; width:70px; }
+.star.s2{ left:47%; top:14%; width:44px; opacity:.8; }
+.star.s3{ left:33%; top:44%; width:90px; opacity:.7; }
+.star.s4{ left:72%; top:14%; width:54px; opacity:.6; }
+.star.s5{ left:88%; top:20%; width:70px; opacity:.5; }
+
+.dots{
+  position:absolute;
+  z-index:6;
+  right:26px;
+  top:52%;
+  display:flex;
+  flex-direction:column;
+  gap:11px;
+}
+.dots i{
+  width:7px; height:7px;
+  border-radius:50%;
+  background:#4f77ff;
+}
+.dots i:nth-child(2){ opacity:.75; }
+.dots i:nth-child(3){ opacity:.5; }
+.dots i:nth-child(4){ opacity:.3; }
+
+/* ------------------------------------------------------------ rocket */
+.rocket{
+  position:absolute;
+  z-index:4;
+  right:12%;
+  top:23%;
+  width:clamp(160px, 19vw, 230px);
+  transform:rotate(45deg);
+  filter:drop-shadow(0 0 34px rgba(64,120,255,.35));
+}
+.rocket svg{ width:100%; height:auto; display:block; }
+
+/* ------------------------------------------------------------- waves */
+.mesh{
+  position:absolute;
+  z-index:1;
+  right:0;
+  bottom:0;
+  width:60%;
+  min-width:420px;
+  height:50%;
+}
+.mesh svg{ width:100%; height:100%; display:block; }
+
+.waves-back,
+.waves-front{
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height:56%;
+  pointer-events:none;
+}
+.waves-back{ z-index:2; }
+.waves-front{ z-index:3; }
+.waves-back svg,
+.waves-front svg{ width:100%; height:100%; display:block; }
+
+/* ------------------------------------------------------------ footer */
+.cta{
+  position:absolute;
+  z-index:7;
+  left:4vw;
+  bottom:clamp(1.2rem, 4vh, 2.4rem);
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.9rem;
+  background:#0a0c18;
+  color:#fff;
+  border:0;
+  border-radius:999px;
+  padding:.55rem .55rem .55rem 1.5rem;
+  font:inherit;
+  font-size:.95rem;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 10px 24px rgba(6,9,22,.35);
+  transition:transform .15s ease;
+}
+.btn:hover{ transform:translateY(-2px); }
+.btn .arrow{
+  width:34px; height:34px;
+  border-radius:50%;
+  background:#fff;
+  color:#0a0c18;
+  display:grid;
+  place-items:center;
+  font-size:1rem;
+}
+.site-url{
+  display:block;
+  margin-top:.9rem;
+  font-size:.95rem;
+  font-weight:700;
+  color:#0b0f23;
+}
+
+/* --------------------------------------------------------- responsive */
+@media (max-width:860px){
+  nav{ display:none; }
+  .rocket{ right:-4%; top:26%; width:200px; opacity:.95; }
+  .planet{ left:66%; top:14%; }
+  .hero{ max-width:100%; }
+  .hero p{ max-width:340px; }
+  .dots{ display:none; }
+  .mesh{ min-width:320px; height:38%; }
+  .page{ min-height:100svh; }
+}
+@media (max-width:520px){
+  .rocket{ width:130px; top:30%; right:22%; }
+  .star.s4,.star.s5{ display:none; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#1fd4c4"/>
+            <stop offset="1" stop-color="#3d7bff"/>
+          </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="21" fill="none" stroke="url(#lg)" stroke-width="3"
+                stroke-dasharray="92 40" stroke-linecap="round"
+                transform="rotate(120 24 24)"/>
+        <g transform="rotate(-18 24 24)">
+          <rect x="14" y="22" width="5" height="12" rx="2.5" fill="#fff"/>
+          <rect x="21.5" y="17" width="5" height="17" rx="2.5" fill="#fff"/>
+          <rect x="29" y="12" width="5" height="22" rx="2.5" fill="url(#lg)"/>
+        </g>
+      </svg>
+      <div>
+        <div class="logo-name">Digital Marketing</div>
+        <div class="logo-slogan">Company Slogan Here</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#" class="active">About</a>
+      <a href="#">Designer</a>
+      <a href="#">Features</a>
+      <a href="#">News</a>
+    </nav>
+
+    <button class="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="hero">
+    <h1>Boost</h1>
+    <h2>Your Startup</h2>
+    <div class="rule"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli ased do eiusmod
+       tempor incididunt ut labore et dolora magna aliqua. Quis ipsum
+       suspendisse</p>
+  </main>
+
+  <div class="planet"></div>
+  <span class="star s1"></span>
+  <span class="star s2"></span>
+  <span class="star s3"></span>
+  <span class="star s4"></span>
+  <span class="star s5"></span>
+
+  <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <!-- wireframe mesh, right side -->
+  <div class="mesh" aria-hidden="true">
+    <svg viewBox="0 0 700 340" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="meshG" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#17c8d8"/>
+          <stop offset=".55" stop-color="#2ad4a8"/>
+          <stop offset="1" stop-color="#63e85f"/>
+        </linearGradient>
+        <path id="meshLine" d="M0,150 C110,70 200,215 330,140 C440,77 520,55 610,140 C660,187 690,190 720,160"
+              fill="none" stroke="url(#meshG)" stroke-width="1.1"/>
+      </defs>
+      <g opacity=".75">
+        <use href="#meshLine" y="-14"/><use href="#meshLine" y="-7"/>
+        <use href="#meshLine" y="0"/><use href="#meshLine" y="7"/>
+        <use href="#meshLine" y="14"/><use href="#meshLine" y="21"/>
+        <use href="#meshLine" y="28"/><use href="#meshLine" y="35"/>
+        <use href="#meshLine" y="42"/><use href="#meshLine" y="49"/>
+        <use href="#meshLine" y="56"/><use href="#meshLine" y="63"/>
+        <use href="#meshLine" y="70"/><use href="#meshLine" y="77"/>
+        <use href="#meshLine" y="84"/><use href="#meshLine" y="91"/>
+        <use href="#meshLine" y="98"/><use href="#meshLine" y="105"/>
+        <use href="#meshLine" y="112"/><use href="#meshLine" y="119"/>
+        <use href="#meshLine" y="126"/><use href="#meshLine" y="133"/>
+        <use href="#meshLine" y="140"/><use href="#meshLine" y="147"/>
+        <use href="#meshLine" y="154"/><use href="#meshLine" y="161"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- back waves: pink blob + purple/blue body -->
+  <div class="waves-back" aria-hidden="true">
+    <svg viewBox="0 0 1180 430" preserveAspectRatio="none">
+      <defs>
+        <radialGradient id="gPink" cx="0" cy=".45" r="1.05">
+          <stop offset="0" stop-color="#ff5f52"/>
+          <stop offset=".45" stop-color="#f02988"/>
+          <stop offset="1" stop-color="#9a3af0"/>
+        </radialGradient>
+        <linearGradient id="gPeri" x1="0" y1="0" x2=".9" y2="1">
+          <stop offset="0" stop-color="#978cff"/>
+          <stop offset="1" stop-color="#5443ef"/>
+        </linearGradient>
+        <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4a3af0"/>
+          <stop offset="1" stop-color="#2f56f5"/>
+        </linearGradient>
+      </defs>
+
+      <!-- pink / magenta blob, far left -->
+      <path fill="url(#gPink)"
+            d="M0,30 C155,45 275,115 296,215 C312,310 232,390 110,430 L0,430 Z"/>
+
+      <!-- light periwinkle wave -->
+      <path fill="url(#gPeri)"
+            d="M0,112 C150,75 330,38 470,42 C600,46 630,100 700,148
+               C790,210 950,252 1180,307 L1180,430 L0,430 Z"/>
+
+      <!-- deeper blue wave -->
+      <path fill="url(#gBlue)" opacity=".96"
+            d="M0,154 C180,110 380,60 520,70 C640,80 640,140 720,190
+               C820,250 980,295 1180,338 L1180,430 L0,430 Z"/>
+    </svg>
+  </div>
+
+  <!-- front waves: lavender + white, plus bottom-right curves -->
+  <div class="waves-front" aria-hidden="true">
+    <svg viewBox="0 0 1180 430" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="gBlue2" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#3f66f5"/>
+          <stop offset="1" stop-color="#2bb8d8"/>
+        </linearGradient>
+      </defs>
+
+      <!-- soft lavender edge above the white wave -->
+      <path fill="#cdd3ff" opacity=".92"
+            d="M0,238 C145,168 290,178 430,250 C565,320 665,382 790,430 L0,430 Z"/>
+
+      <!-- white wave, bottom left -->
+      <path fill="#ffffff"
+            d="M0,272 C150,198 300,212 440,286 C575,357 655,405 745,430 L0,430 Z"/>
+
+      <!-- bottom-right: blue sliver then pale curve -->
+      <path fill="url(#gBlue2)" opacity=".9"
+            d="M690,430 C850,356 1020,346 1180,384 L1180,430 Z"/>
+      <path fill="#eef1ff"
+            d="M780,430 C920,384 1050,376 1180,406 L1180,430 Z"/>
+    </svg>
+  </div>
+
+  <!-- rocket -->
+  <div class="rocket" aria-hidden="true">
+    <svg viewBox="0 0 220 470">
+      <defs>
+        <linearGradient id="gBody" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#eaf1ff"/>
+          <stop offset=".55" stop-color="#b9cdf8"/>
+          <stop offset="1" stop-color="#8aa8ec"/>
+        </linearGradient>
+        <linearGradient id="gFin" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#4666f8"/>
+          <stop offset="1" stop-color="#1e30c0"/>
+        </linearGradient>
+        <linearGradient id="gFlame" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3f8df8"/>
+          <stop offset="1" stop-color="#2848e0" stop-opacity=".15"/>
+        </linearGradient>
+        <clipPath id="bodyClip">
+          <path d="M110,14 C161,80 173,182 160,302 C146,332 74,332 60,302 C47,182 59,80 110,14 Z"/>
+        </clipPath>
+      </defs>
+
+      <!-- flames -->
+      <path fill="url(#gFlame)" d="M110,326 L76,462 L110,416 L144,462 Z"/>
+      <path fill="#38d2f2" opacity=".95" d="M110,330 L92,428 L110,398 L128,428 Z"/>
+
+      <!-- side fins -->
+      <path fill="url(#gFin)" d="M62,225 C30,262 20,318 28,362 C56,340 72,314 78,282 Z"/>
+      <path fill="url(#gFin)" d="M158,225 C190,262 200,318 192,362 C164,340 148,314 142,282 Z"/>
+
+      <!-- body -->
+      <path fill="url(#gBody)"
+            d="M110,14 C161,80 173,182 160,302 C146,332 74,332 60,302 C47,182 59,80 110,14 Z"/>
+
+      <!-- diagonal white stripes, clipped to body -->
+      <g clip-path="url(#bodyClip)">
+        <rect x="10" y="150" width="200" height="20" fill="#ffffff" transform="rotate(-8 110 160)"/>
+        <rect x="10" y="192" width="200" height="20" fill="#ffffff" transform="rotate(-8 110 202)"/>
+        <!-- nose tint -->
+        <path fill="#6c92f2" opacity=".85"
+              d="M110,14 C132,42 143,72 147,100 C122,88 98,88 73,100 C77,72 88,42 110,14 Z"/>
+      </g>
+
+      <!-- windows -->
+      <g>
+        <circle cx="110" cy="122" r="27" fill="#f4f7ff"/>
+        <circle cx="110" cy="122" r="19" fill="#0e1630"/>
+        <circle cx="110" cy="262" r="24" fill="#f4f7ff"/>
+        <circle cx="110" cy="262" r="17" fill="#0e1630"/>
+      </g>
+
+      <!-- exhaust base -->
+      <path fill="#2440c8" d="M74,304 L146,304 L136,336 L84,336 Z"/>
+    </svg>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <button class="btn">Boost Now <span class="arrow">&#10142;</span></button>
+    <span class="site-url">www.graphicsfamily.com</span>
+  </div>
+
+</div>
+
+</body>
+</html>

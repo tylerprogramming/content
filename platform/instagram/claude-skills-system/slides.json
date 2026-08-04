@@ -1,0 +1,95 @@
+{
+  "topic": "17 Claude Code skills that run a real content business, all text files",
+  "handle": "@tylerai_dev",
+  "brand_text": "AI",
+  "slides": [
+    {
+      "type": "cover",
+      "headline_lines": [
+        "17 text files",
+        "run my whole",
+        "business"
+      ],
+      "accent_words": [
+        "17",
+        "text",
+        "files"
+      ],
+      "subtitle": "No code, no app. Here is what is actually inside the folder."
+    },
+    {
+      "type": "pain",
+      "headline_lines": [
+        "Still doing",
+        "all of it",
+        "by hand?"
+      ],
+      "accent_words": [
+        "hand"
+      ],
+      "bullets": [
+        "Guessing what to make next",
+        "Rewriting the same post 5 ways",
+        "Chasing comments all day",
+        "Doing the same admin every week"
+      ]
+    },
+    {
+      "type": "solution",
+      "headline_lines": [
+        "The fix is",
+        "one markdown",
+        "file"
+      ],
+      "accent_words": [
+        "markdown"
+      ],
+      "subtitle": "A skill is a folder with a SKILL.md in it. The top says when to use it, the rest is plain instructions.",
+      "bullets": []
+    },
+    {
+      "type": "how",
+      "headline_lines": [
+        "The 17, in",
+        "three parts"
+      ],
+      "accent_words": [
+        "three",
+        "parts"
+      ],
+      "bullets": [
+        "7 skills research and write",
+        "6 skills turn one video into a week",
+        "4 handle email and community",
+        "Every step is one command"
+      ]
+    },
+    {
+      "type": "results",
+      "headline_lines": [
+        "What they",
+        "actually do"
+      ],
+      "accent_words": [
+        "actually",
+        "do"
+      ],
+      "bullets": [
+        "Two days of work, now a few minutes",
+        "Comments gathered before I sit down",
+        "A week of posts from one video",
+        "Community admin from the terminal"
+      ]
+    },
+    {
+      "type": "cta",
+      "summary_lines": [
+        "You stop being the person doing the task.",
+        "You become the person reviewing the result."
+      ],
+      "cta_action": "Comment",
+      "cta_word": "SKILLS",
+      "cta_subtext": "and I'll send you all 17 as files, plus where the folder goes"
+    }
+  ]
+}

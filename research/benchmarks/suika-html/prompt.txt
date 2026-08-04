@@ -1,0 +1,1 @@
+Build a complete, playable Suika (watermelon merge) game in a single self-contained HTML file, vanilla JavaScript and canvas, no libraries. Fruits drop from the top, same-size fruits merge into the next size with gravity and collisions, score goes up on each merge, and it is game over if the pile overflows the top. Make it fun to play.

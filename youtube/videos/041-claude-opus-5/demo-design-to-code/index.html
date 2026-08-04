@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Folk Estate — Expert in designing a room</title>
+
+<!--
+  Rebuilt from a single design screenshot. One file, no framework, no network.
+
+  Photography: every photo area below is a CSS placeholder (class="ph ph-*"),
+  tone-matched to the original comp so the layout reads honestly offline.
+  To drop in real images, replace the `background` on any .ph-* rule with:
+      background: url("your-photo.jpg") center/cover no-repeat;
+-->
+
+<style>
+/* ------------------------------------------------------------------ tokens */
+:root{
+  --ink:        #262626;
+  --charcoal:   #4a4a4a;
+  --charcoal-d: #3d3d3d;
+  --orange:     #ee7623;
+  --orange-d:   #d1631a;
+  --body:       #7c7c7c;
+  --line:       #e4e4e4;
+  --paper:      #fff;
+
+  --wrap: 1180px;
+  --pad: 5vw;
+  --r: 6px;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font:400 15px/1.75 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{ max-width:100%; display:block; }
+figure{ margin:0; }
+
+h1,h2,h3{ margin:0; font-weight:800; letter-spacing:-.02em; line-height:1.12; }
+p{ margin:0; }
+a{ color:inherit; text-decoration:none; }
+ul{ margin:0; padding:0; list-style:none; }
+
+.wrap{ max-width:var(--wrap); margin-inline:auto; padding-inline:var(--pad); }
+
+.rule{ display:block; width:58px; height:3px; background:var(--orange); margin:14px 0 20px; }
+
+.lede{ color:var(--body); font-size:13.5px; max-width:52ch; }
+
+/* photo placeholders ------------------------------------------------------ */
+.ph{ position:relative; overflow:hidden; background:#dcdcdc; }
+.ph::after{                       /* film grain so flat fills read as photo */
+  content:""; position:absolute; inset:0; opacity:.13; pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* buttons ----------------------------------------------------------------- */
+.btn{
+  display:inline-block; padding:12px 26px; border:0; cursor:pointer;
+  background:var(--orange); color:#fff; border-radius:3px;
+  font:700 11px/1 inherit; letter-spacing:.14em; text-transform:uppercase;
+  transition:background .18s ease, transform .18s ease;
+}
+.btn:hover{ background:var(--orange-d); transform:translateY(-1px); }
+.btn--sm{ padding:9px 18px; font-size:10px; }
+
+/* ------------------------------------------------------------------ header */
+.site-header{ position:absolute; inset:0 0 auto; z-index:5; }
+
+.nav{
+  max-width:var(--wrap); margin-inline:auto;
+  display:flex; align-items:center; gap:26px; flex-wrap:wrap;
+  padding:16px 26px;
+  background:var(--charcoal-d);
+  border-radius:0 0 10px 10px;
+}
+
+.brand{ display:flex; align-items:center; gap:10px; margin-right:auto; }
+.brand svg{ width:34px; height:34px; flex:none; }
+.brand span{
+  color:#fff; font-weight:800; font-size:15px; line-height:1.02;
+  letter-spacing:.02em; text-transform:uppercase;
+}
+
+.nav-links{ display:flex; gap:24px; }
+.nav-links a{
+  color:#fff; font-size:10px; font-weight:600;
+  letter-spacing:.16em; text-transform:uppercase;
+  padding-bottom:4px; border-bottom:2px solid transparent;
+  transition:color .18s ease, border-color .18s ease;
+}
+.nav-links a:hover{ color:var(--orange); }
+.nav-links a[aria-current]{ color:var(--orange); border-bottom-color:var(--orange); }
+
+/* -------------------------------------------------------------------- hero */
+.hero{ position:relative; isolation:isolate; }
+
+.hero-photo{
+  position:absolute; inset:0; z-index:-1;
+  background:
+    radial-gradient(78% 56% at 50% 42%, rgba(0,0,0,0) 55%, rgba(0,0,0,.10) 100%),
+    linear-gradient(180deg,
+      rgba(58,62,70,0)   44%,
+      rgba(58,62,70,.62) 60%,
+      rgba(58,62,70,.62) 70%,
+      rgba(58,62,70,0)   82%),
+    linear-gradient(180deg,#edeeee 0 74%, #d8ccbc 74%, #cbbca9 100%);
+}
+.hero-photo::after{
+  content:""; position:absolute; inset:0; opacity:.11;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.hero-inner{
+  max-width:var(--wrap); margin-inline:auto; padding:0 var(--pad);
+  min-height:min(78vh,620px);
+  display:flex; align-items:center;
+}
+.hero-text{ margin-left:34%; max-width:400px; padding:126px 0 74px; }
+
+.hero-text h1{ font-size:clamp(30px,4.1vw,50px); }
+.hero-text p{
+  color:#fff; font-size:13px; line-height:1.85; margin:26px 0 24px;
+  max-width:34ch; text-shadow:0 1px 12px rgba(0,0,0,.45);
+}
+
+.hero-arrow{
+  position:absolute; top:52%; z-index:3;
+  width:34px; height:34px; display:grid; place-items:center;
+  border:0; border-radius:50%; cursor:pointer;
+  background:rgba(45,45,45,.68); color:#fff; font-size:17px; line-height:1;
+  transition:background .18s ease;
+}
+.hero-arrow:hover{ background:var(--orange); }
+.hero-arrow--prev{ left:2.4%; }
+.hero-arrow--next{ right:2.4%; }
+
+/* ------------------------------------------------------------------- about */
+.about{
+  position:relative; padding:76px 0 84px; overflow:hidden;
+}
+.about::before{                    /* faint blueprint linework, as in the comp */
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background-image:
+    repeating-linear-gradient(29deg, rgba(0,0,0,.05) 0 1px, transparent 1px 52px),
+    repeating-linear-gradient(-13deg, rgba(0,0,0,.038) 0 1px, transparent 1px 86px),
+    repeating-linear-gradient(74deg, rgba(0,0,0,.03) 0 1px, transparent 1px 120px);
+}
+
+.about-grid{
+  position:relative;
+  display:grid; grid-template-columns:.82fr 1fr 1.62fr;
+  gap:26px; align-items:start;
+}
+
+.about-circle{ margin:0; align-self:center; position:relative; padding-bottom:52px; }
+.about-circle .ph{
+  aspect-ratio:1; border-radius:50%;
+  background:
+    radial-gradient(38% 30% at 34% 62%, rgba(214,205,192,.95), transparent 70%),
+    radial-gradient(16% 12% at 74% 20%, rgba(200,154,104,.85), transparent 72%),
+    linear-gradient(165deg,#efe9e1 0 54%, #dcc9ae 100%);
+}
+.about-circle::after{              /* the tan triangle accent */
+  content:""; position:absolute; left:54%; bottom:0;
+  border-left:28px solid transparent; border-right:28px solid transparent;
+  border-bottom:46px solid #c89a68; transform:rotate(203deg);
+}
+
+.about-tall{ margin:0; }
+.about-tall .ph{
+  aspect-ratio:.78;
+  background:
+    radial-gradient(42% 26% at 50% 66%, rgba(70,72,76,.62), transparent 72%),
+    linear-gradient(190deg,#e9eaea 0 34%, #b9bcbe 62%, #8f9295 100%);
+}
+
+.about-card{
+  background:var(--paper); border:1px solid var(--orange);
+  padding:34px 36px 38px;
+}
+.about-card h2{ font-size:clamp(21px,2.4vw,28px); }
+.about-card p{ margin-bottom:26px; }
+
+/* ----------------------------------------------------------------- service */
+.services{ padding-block:8px 84px; }   /* block-only: keep .wrap's inline gutter */
+.services h2{ font-size:clamp(24px,3vw,32px); color:#565656; margin-bottom:30px; }
+
+.service-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+
+.service-card{
+  background:var(--charcoal); color:#fff;
+  padding:34px 24px 22px; text-align:center;
+  display:flex; flex-direction:column; align-items:center; gap:14px;
+  transition:transform .2s ease;
+}
+.service-card:nth-child(even){ background:var(--orange); }
+.service-card:hover{ transform:translateY(-5px); }
+.service-card svg{ width:44px; height:44px; stroke:#fff; fill:none; stroke-width:1.5; }
+.service-card h3{
+  font-size:11.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+}
+.service-card p{ font-size:11.5px; line-height:1.8; color:rgba(255,255,255,.86); }
+.service-card .more{
+  margin-top:auto; padding-top:14px;
+  font-size:9.5px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+  border-bottom:1px solid transparent;
+}
+.service-card .more:hover{ border-bottom-color:currentColor; }
+
+/* ----------------------------------------------------------------- gallery */
+.gallery{ background:var(--charcoal); padding:26px 0; }
+.gallery-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+.gallery-grid .ph{ aspect-ratio:1.06; }
+.g1{ background:linear-gradient(160deg,#efe7dc 0 46%, #c79a63 100%); }
+.g2{ background:linear-gradient(160deg,#66787a 0 52%, #98a3a1 100%); }
+.g3{ background:linear-gradient(160deg,#e6ddd2 0 40%, #a99781 100%); }
+.g4{ background:linear-gradient(160deg,#f2f1ec 0 48%, #b7a98f 100%); }
+
+/* -------------------------------------------------------------------- team */
+.team{ padding:78px 0; display:grid; gap:64px; overflow:hidden; }
+
+.team-row{
+  max-width:var(--wrap); width:100%; margin-inline:auto;
+  display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:clamp(28px,6vw,90px);
+}
+
+.person{
+  background:#8e8e8e; padding:34px;
+  display:flex; align-items:center; gap:26px;
+}
+.person h3{ color:#fff; font-size:14px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; }
+.person .role{ color:rgba(255,255,255,.82); font-size:12px; margin-top:4px; }
+.person .role::after{
+  content:""; display:block; width:26px; height:2px; background:rgba(255,255,255,.75); margin-top:12px;
+}
+.person .ph{
+  flex:none; width:min(46%,220px); aspect-ratio:.92;
+  border:6px solid #fff;
+  background:
+    radial-gradient(28% 22% at 50% 40%, rgba(206,178,152,.9), transparent 70%),
+    linear-gradient(172deg,#eef0f1 0 40%, #9aa6b0 100%);
+}
+
+/* the grey panels bleed off the page edge, as in the comp */
+.team-row--left .person{ margin-left:calc(50% - 50vw); padding-left:max(var(--pad),calc(50vw - 50%)); border-radius:0 14px 14px 0; }
+.team-row--right .person{ margin-right:calc(50% - 50vw); padding-right:max(var(--pad),calc(50vw - 50%)); border-radius:14px 0 0 14px; order:2; }
+.team-row--right .team-copy{ order:1; }
+.team-row--left{ padding-right:var(--pad); }
+.team-row--right{ padding-left:var(--pad); }
+
+.team-copy h2{ font-size:clamp(21px,2.6vw,29px); display:flex; align-items:center; gap:16px; }
+.team-copy h2 svg{ width:34px; height:34px; stroke:var(--orange); fill:none; stroke-width:1.6; flex:none; }
+
+/* ------------------------------------------------------------------- stats */
+.stats{ background:var(--charcoal); }
+.stats-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; padding:30px 0; }
+.stat{ display:flex; align-items:center; gap:14px; }
+.stat b{ color:var(--orange); font-size:clamp(30px,3.6vw,42px); font-weight:800; line-height:1; }
+.stat span{ color:#fff; font-size:10.5px; line-height:1.35; }
+
+/* ------------------------------------------------------------ testimonials */
+.testimonials{ padding-block:76px 84px; }
+.testimonials h2{ font-size:clamp(24px,3vw,32px); color:#565656; margin-bottom:30px; }
+.tst-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+
+.tst{
+  border:1px solid var(--line); background:var(--paper);
+  padding:28px 22px 30px; text-align:center;
+  display:flex; flex-direction:column; align-items:center; gap:4px;
+  transition:box-shadow .2s ease, transform .2s ease;
+}
+.tst:hover{ box-shadow:0 12px 30px rgba(0,0,0,.08); transform:translateY(-3px); }
+.tst .ph{ width:98px; aspect-ratio:1; border-radius:50%; margin-bottom:16px; }
+.t1{ background:linear-gradient(165deg,#dfe6ec 0 44%, #8fa4bb 100%); }
+.t2{ background:linear-gradient(165deg,#f3e6dd 0 44%, #cf9a76 100%); }
+.t3{ background:linear-gradient(165deg,#e7e7e4 0 44%, #9a9891 100%); }
+.t4{ background:linear-gradient(165deg,#eae4d8 0 44%, #b9a486 100%); }
+.tst h3{ font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+.tst .role{ color:var(--orange); font-size:11.5px; font-weight:600; }
+.tst p{ color:var(--body); font-size:11.5px; line-height:1.8; margin-top:8px; }
+
+/* ------------------------------------------------------------------ footer */
+.site-footer{ background:var(--charcoal); color:rgba(255,255,255,.78); padding:46px 0 24px; }
+.foot-grid{ display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:30px; }
+.site-footer h3{
+  color:#fff; font-size:12.5px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; margin-bottom:18px;
+}
+.site-footer li + li{ margin-top:8px; }
+.site-footer li a{ font-size:11.5px; }
+.site-footer li a:hover{ color:var(--orange); }
+.site-footer p{ font-size:11px; line-height:1.85; }
+
+.socials{ display:flex; gap:10px; justify-content:flex-end; }
+.socials a{
+  width:26px; height:26px; border-radius:50%; display:grid; place-items:center;
+  background:rgba(255,255,255,.9); color:var(--charcoal);
+  transition:background .18s ease, color .18s ease;
+}
+.socials a:hover{ background:var(--orange); color:#fff; }
+.socials svg{ width:13px; height:13px; fill:currentColor; }
+
+.foot-bottom{
+  margin-top:34px; padding-top:16px; border-top:1px solid rgba(255,255,255,.22);
+  font-size:10.5px; letter-spacing:.06em;
+}
+
+/* -------------------------------------------------------------- responsive */
+@media (max-width:1024px){
+  .about-grid{ grid-template-columns:.9fr 1fr; }
+  .about-card{ grid-column:1 / -1; }
+  .service-grid,.gallery-grid,.tst-grid{ grid-template-columns:repeat(2,1fr); }
+  .foot-grid{ grid-template-columns:repeat(2,1fr); }
+  .socials{ justify-content:flex-start; }
+  .hero-text{ margin-left:26%; }
+}
+
+@media (max-width:760px){
+  .nav{ justify-content:center; gap:16px; border-radius:0; padding:14px var(--pad); }
+  .brand{ margin-right:0; }
+  .nav-links{ order:3; width:100%; justify-content:center; flex-wrap:wrap; gap:16px; }
+
+  .hero-inner{ min-height:auto; }
+  .hero-text{ margin-left:0; padding:190px 0 70px; max-width:none; }
+  /* no photo behind the copy at this width, so drop the scrim and darken the text */
+  .hero-photo{ background:linear-gradient(180deg,#edeeee 0 74%, #d8ccbc 74%, #cbbca9 100%); }
+  .hero-text p{ color:#3a3a3a; text-shadow:none; }
+
+  .about-grid{ grid-template-columns:1fr; }
+  .about-circle{ max-width:260px; }
+  .about-tall .ph{ aspect-ratio:1.4; }
+
+  .team-row{ grid-template-columns:1fr; }
+  .team-row--left .person,.team-row--right .person{
+    margin-inline:calc(50% - 50vw); padding-inline:var(--pad); border-radius:0;
+  }
+  .team-row--right .person{ order:0; }
+  .team-row--left,.team-row--right{ padding-inline:0; }
+  .team-copy{ padding-inline:var(--pad); }
+
+  .stats-grid{ grid-template-columns:repeat(2,1fr); gap:26px; }
+}
+
+@media (max-width:520px){
+  .service-grid,.gallery-grid,.tst-grid,.foot-grid{ grid-template-columns:1fr; }
+  .person{ flex-direction:column; align-items:flex-start; }
+  .person .ph{ width:100%; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="#">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M4 32 L14 14 L24 32 Z" fill="#ee7623"/>
+        <path d="M20 32 L27 19 L34 32 Z" fill="#ee7623" opacity=".75"/>
+        <circle cx="27" cy="12" r="4" fill="#ee7623"/>
+      </svg>
+      <span>Folk<br>Estate</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#" aria-current="page">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a class="btn btn--sm" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ================================================================ hero -->
+  <section class="hero">
+    <div class="hero-photo" role="img" aria-label="Living room with a grey sofa, wooden chair and plants"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Expert in<br>designing a room</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a class="btn" href="#about">Discover</a>
+      </div>
+    </div>
+
+    <button class="hero-arrow hero-arrow--prev" aria-label="Previous slide">&#8249;</button>
+    <button class="hero-arrow hero-arrow--next" aria-label="Next slide">&#8250;</button>
+  </section>
+
+  <!-- =============================================================== about -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+
+      <figure class="about-circle">
+        <div class="ph" role="img" aria-label="Neutral living room with an armchair"></div>
+      </figure>
+
+      <figure class="about-tall">
+        <div class="ph" role="img" aria-label="Cluster of pendant lamps"></div>
+      </figure>
+
+      <article class="about-card">
+        <h2>Very nice design</h2>
+        <span class="rule"></span>
+        <p class="lede">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+        <a class="btn" href="#service">About us</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================================= service -->
+  <section class="services wrap" id="service">
+    <h2>Service</h2>
+
+    <div class="service-grid">
+
+      <article class="service-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M6 22 24 8l18 14"/><path d="M10 22v18h28V22"/>
+          <path d="M18 40V28h12v12"/><path d="M10 31h8M30 31h8"/>
+        </svg>
+        <h3>Lorem Ipsum</h3>
+        <p>Fusce facilisis dui placerat magna ut ultricies aliquam accumsan sed diam facilisis.</p>
+        <a class="more" href="#">More</a>
+      </article>
+
+      <article class="service-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="19" cy="19" r="8"/><circle cx="19" cy="19" r="3"/>
+          <path d="M19 7v4M19 27v4M7 19h4M27 19h4M11 11l3 3M24 24l3 3M27 11l-3 3M14 24l-3 3"/>
+          <circle cx="33" cy="33" r="6"/><circle cx="33" cy="33" r="2"/>
+          <path d="M33 24v3M33 39v3M24 33h3M39 33h3"/>
+        </svg>
+        <h3>Lorem Ipsum</h3>
+        <p>Fusce facilisis dui placerat magna ut ultricies aliquam accumsan sed diam facilisis.</p>
+        <a class="more" href="#">More</a>
+      </article>
+
+      <article class="service-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="9" y="9" width="30" height="30" rx="2"/>
+          <path d="M9 19h30M9 29h30"/>
+          <path d="M21 14h6M21 24h6M21 34h6"/>
+          <path d="M13 39v4M35 39v4"/>
+        </svg>
+        <h3>Lorem Ipsum</h3>
+        <p>Fusce facilisis dui placerat magna ut ultricies aliquam accumsan sed diam facilisis.</p>
+        <a class="more" href="#">More</a>
+      </article>
+
+      <article class="service-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="6" y="10" width="36" height="24" rx="2"/>
+          <path d="M20 34v5h8v-5M15 39h18"/>
+          <text x="24" y="26" text-anchor="middle" font-size="12" font-weight="700"
+                fill="#fff" stroke="none" font-family="system-ui, sans-serif">3D</text>
+        </svg>
+        <h3>Lorem Ipsum</h3>
+        <p>Fusce facilisis dui placerat magna ut ultricies aliquam accumsan sed diam facilisis.</p>
+        <a class="more" href="#">More</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================================= gallery -->
+  <section class="gallery" id="project">
+    <div class="wrap gallery-grid">
+      <figure class="ph g1" role="img" aria-label="Kitchen with open shelving"></figure>
+      <figure class="ph g2" role="img" aria-label="Dining room with framed art"></figure>
+      <figure class="ph g3" role="img" aria-label="Stone-tiled bathroom"></figure>
+      <figure class="ph g4" role="img" aria-label="White kitchen with fresh flowers"></figure>
+    </div>
+  </section>
+
+  <!-- ================================================================ team -->
+  <section class="team">
+
+    <div class="team-row team-row--left">
+      <div class="person">
+        <div>
+          <h3>Julia Ming</h3>
+          <p class="role">Designer</p>
+        </div>
+        <div class="ph" role="img" aria-label="Portrait of Julia Ming"></div>
+      </div>
+
+      <div class="team-copy">
+        <h2>
+          Always Creative
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M20 4l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+            <circle cx="31" cy="10" r="3"/>
+          </svg>
+        </h2>
+        <span class="rule"></span>
+        <p class="lede">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+
+    <div class="team-row team-row--right">
+      <div class="person">
+        <div>
+          <h3>Laurena</h3>
+          <p class="role">Designer</p>
+        </div>
+        <div class="ph" role="img" aria-label="Portrait of Laurena"></div>
+      </div>
+
+      <div class="team-copy">
+        <h2>
+          New Idea
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M20 8a8 8 0 0 0-5 14v3h10v-3a8 8 0 0 0-5-14z"/>
+            <path d="M17 29h6M18 33h4"/>
+            <path d="M20 2v3M6 16h3M31 16h3M10 6l2 2M30 6l-2 2"/>
+          </svg>
+        </h2>
+        <span class="rule"></span>
+        <p class="lede">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- =============================================================== stats -->
+  <section class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat"><b>10</b><span>Years<br>Experience</span></div>
+      <div class="stat"><b>7</b><span>Awards<br>Win</span></div>
+      <div class="stat"><b>20</b><span>Branch<br>Offices</span></div>
+      <div class="stat"><b>102</b><span>Clients</span></div>
+    </div>
+  </section>
+
+  <!-- ======================================================== testimonials -->
+  <section class="testimonials wrap" id="blog">
+    <h2>Testimoni</h2>
+
+    <div class="tst-grid">
+      <article class="tst">
+        <div class="ph t1" role="img" aria-label="Portrait of Alexander Riva"></div>
+        <h3>Alexander Riva</h3>
+        <p class="role">Lorem Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </article>
+
+      <article class="tst">
+        <div class="ph t2" role="img" aria-label="Portrait of Laura Love"></div>
+        <h3>Laura Love</h3>
+        <p class="role">Lorem Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </article>
+
+      <article class="tst">
+        <div class="ph t3" role="img" aria-label="Portrait of Rocky John"></div>
+        <h3>Rocky John</h3>
+        <p class="role">Lorem Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </article>
+
+      <article class="tst">
+        <div class="ph t4" role="img" aria-label="Portrait of Jack Alex"></div>
+        <h3>Jack Alex</h3>
+        <p class="role">Lorem Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================================================================ footer -->
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+
+      <div>
+        <h3>Department</h3>
+        <ul>
+          <li><a href="#about">Interior</a></li>
+          <li><a href="#service">Architecture</a></li>
+          <li><a href="#project">Furniture</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Total Solution</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+      </div>
+
+      <div>
+        <h3 aria-hidden="true">&nbsp;</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+      </div>
+
+      <div>
+        <div class="socials">
+          <a href="#" aria-label="Dribbble"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.5 6.2a8 8 0 0 1 1.4 4.3c-2-.4-4-.4-5.9-.1-.3-.7-.6-1.3-.9-1.9 2.1-.9 4-2 5.4-2.3zM12 4a8 8 0 0 1 4.9 1.7c-1.2 1-2.9 2-4.8 2.8A38 38 0 0 0 9.3 4.4 8 8 0 0 1 12 4zM7.3 5.3c1 1.2 2 2.6 2.9 4.1-2.3.7-4.7 1-6.8 1a8 8 0 0 1 3.9-5.1zM4 12.3c2.4 0 5.2-.4 7.9-1.3l.6 1.2c-3.2 1-5.9 2.9-7.5 5.3A8 8 0 0 1 4 12.3zm8 7.7a8 8 0 0 1-5.4-2.1c1.4-2.2 3.8-3.9 6.7-4.7.9 2.3 1.5 4.6 1.8 6.3-1 .3-2 .5-3.1.5zm4.9-1.4c-.3-1.6-.8-3.7-1.6-5.9 1.6-.2 3.3-.1 5 .3a8 8 0 0 1-3.4 5.6z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm3.3 5.2H8.7a1.5 1.5 0 0 0-1.5 1.5v6.6a1.5 1.5 0 0 0 1.5 1.5h6.6a1.5 1.5 0 0 0 1.5-1.5V8.7a1.5 1.5 0 0 0-1.5-1.5zM12 9.2A2.8 2.8 0 1 1 12 15a2.8 2.8 0 0 1 0-5.7zm0 1.4a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9zm3.3-2.1a.6.6 0 1 1 0 1.2.6.6 0 0 1 0-1.2z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1.6 6.6h1.3V6.5h-1.9c-1.6 0-2.6 1-2.6 2.7v1.3H8.9v2.1h1.5v5.4h2.2v-5.4h1.7l.3-2.1h-2V9.5c0-.6.3-.9 1-.9z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm5 7.6c0 3.4-2.6 7.4-7.4 7.4a7.3 7.3 0 0 1-4-1.2 5.2 5.2 0 0 0 3.8-1.1 2.6 2.6 0 0 1-2.4-1.8 2.6 2.6 0 0 0 1.2 0 2.6 2.6 0 0 1-2.1-2.6 2.6 2.6 0 0 0 1.2.3A2.6 2.6 0 0 1 6.5 7a7.4 7.4 0 0 0 5.3 2.7 2.6 2.6 0 0 1 4.4-2.4 5.2 5.2 0 0 0 1.7-.6 2.6 2.6 0 0 1-1.1 1.4 5.2 5.2 0 0 0 1.5-.4 5.3 5.3 0 0 1-1.3 1.4v.5z"/></svg></a>
+        </div>
+        <p style="margin-top:18px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+
+    </div>
+
+    <div class="foot-bottom">Copyright © 2026 Folk Estate. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>

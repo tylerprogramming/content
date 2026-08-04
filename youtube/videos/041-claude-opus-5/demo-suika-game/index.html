@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Merge Drop</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html, body {
+    height:100%; background:#0b0d12; overflow:hidden;
+    font-family: ui-sans-serif, -apple-system, "SF Pro Text", "Segoe UI", Inter, system-ui, sans-serif;
+    color:#e8eaf0;
+    display:flex; align-items:center; justify-content:center;
+    touch-action:none;
+  }
+  #stage {
+    position:relative; height:min(97vh, 1040px); aspect-ratio: 520 / 920;
+    max-width:97vw; user-select:none; container-type: inline-size;
+  }
+  #game { display:block; width:100%; height:100%; border-radius:22px; }
+
+  .lbl { font-size:2.05cqw; letter-spacing:.16em; text-transform:uppercase; color:#69718a; font-weight:600; }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* ---------------- play HUD ---------------- */
+  #hud { position:absolute; inset:0; pointer-events:none; opacity:0; transition:opacity .25s; }
+  #hud.on { opacity:1; }
+
+  #topbar { position:absolute; top:2.2%; left:5%; right:5%; display:flex; justify-content:space-between; }
+  #score { font-size:7.4cqw; font-weight:650; letter-spacing:-.03em; line-height:1; }
+  #goalRow { margin-top:1.4cqw; }
+  #goalText { font-size:2.5cqw; color:#aab2c6; font-weight:550; }
+  #goalBarBg { margin-top:1cqw; width:38cqw; height:1.3cqw; border-radius:99px; background:rgba(255,255,255,.08); overflow:hidden; }
+  #goalBar { height:100%; width:0%; border-radius:99px; background:linear-gradient(90deg,#5ccfc4,#7fd18a); transition:width .3s cubic-bezier(.4,0,.2,1); }
+
+  .rightcol { display:flex; flex-direction:column; align-items:flex-end; gap:1.5cqw; }
+  #drops { font-size:5cqw; font-weight:650; line-height:1; letter-spacing:-.02em; }
+  #drops.low { color:#ff8f8f; }
+  #queueRow { display:flex; align-items:center; gap:1.5cqw; }
+  .slot {
+    width:9cqw; height:9cqw; border-radius:2.4cqw;
+    background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08);
+    display:flex; align-items:center; justify-content:center; position:relative;
+  }
+  .slot.small { width:6.4cqw; height:6.4cqw; border-radius:1.8cqw; }
+  .slot .dot { border-radius:50%; transition:all .22s cubic-bezier(.34,1.56,.64,1); }
+  .slot .cap { position:absolute; bottom:-3.2cqw; font-size:1.7cqw; color:#5b6379; letter-spacing:.1em; }
+  #holdSlot { pointer-events:auto; cursor:pointer; }
+  #holdSlot.used { opacity:.35; }
+
+  /* ---------------- powerups ---------------- */
+  #powers {
+    position:absolute; left:4%; right:4%; bottom:1.4%;
+    display:flex; gap:2cqw; pointer-events:auto;
+  }
+  .pw {
+    flex:1; cursor:pointer; font-family:inherit; position:relative;
+    background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.09);
+    border-radius:2.6cqw; padding:1.7cqw 0 1.5cqw;
+    color:#c2c9db; font-size:2.15cqw; font-weight:650; letter-spacing:.1em;
+    transition:transform .12s cubic-bezier(.34,1.56,.64,1), background .15s, border-color .15s;
+  }
+  .pw:hover:not(.dim) { background:rgba(255,255,255,.1); transform:translateY(-2px); }
+  .pw:active:not(.dim) { transform:scale(.96); }
+  .pw .n { display:block; font-size:1.65cqw; color:#69718a; margin-top:.5cqw; letter-spacing:.06em; }
+  .pw.dim { opacity:.32; cursor:default; }
+  .pw.armed { background:rgba(255,209,102,.16); border-color:#ffd166; color:#ffd166; }
+
+  /* ---------------- screens ---------------- */
+  .screen {
+    position:absolute; inset:0; border-radius:22px; padding:6% 7%;
+    background:rgba(9,11,16,.9); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    display:flex; flex-direction:column; opacity:0; pointer-events:none; transition:opacity .28s;
+  }
+  .screen.on { opacity:1; pointer-events:auto; }
+  .title { font-size:6.6cqw; font-weight:700; letter-spacing:-.03em; }
+  .sub { font-size:2.5cqw; color:#69718a; margin-top:.6cqw; }
+
+  #plvRow { display:flex; align-items:center; gap:2.5cqw; margin-top:4cqw; }
+  #plvBadge {
+    width:11cqw; height:11cqw; border-radius:50%; flex:none;
+    background:linear-gradient(145deg,#8b96f5,#5ccfc4);
+    display:flex; align-items:center; justify-content:center;
+    font-size:4.4cqw; font-weight:700; color:#0b0d12;
+  }
+  #xpWrap { flex:1; }
+  #xpBarBg { height:1.5cqw; border-radius:99px; background:rgba(255,255,255,.08); overflow:hidden; margin-top:1.2cqw; }
+  #xpBar { height:100%; width:0%; border-radius:99px; background:linear-gradient(90deg,#8b96f5,#5ccfc4); transition:width .6s cubic-bezier(.4,0,.2,1); }
+
+  #levelGrid {
+    margin-top:4.5cqw; flex:1; overflow-y:auto; display:grid;
+    grid-template-columns:1fr 1fr; gap:2.6cqw; align-content:start; padding-right:1cqw;
+  }
+  #levelGrid::-webkit-scrollbar { width:3px; }
+  #levelGrid::-webkit-scrollbar-thumb { background:rgba(255,255,255,.14); border-radius:9px; }
+  .card {
+    cursor:pointer; text-align:left; font-family:inherit; color:inherit;
+    background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.09);
+    border-radius:3cqw; padding:2.8cqw 2.8cqw 2.4cqw; position:relative;
+    transition:transform .13s cubic-bezier(.34,1.56,.64,1), background .15s, border-color .15s;
+  }
+  .card:hover:not(.locked) { background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.2); transform:translateY(-3px); }
+  .card.locked { opacity:.35; cursor:default; }
+  .card .no { font-size:1.9cqw; color:#69718a; letter-spacing:.14em; font-weight:600; }
+  .card .nm { font-size:3.1cqw; font-weight:650; margin-top:.5cqw; letter-spacing:-.01em; }
+  .card .ob { font-size:2cqw; color:#8890a6; margin-top:.7cqw; }
+  .card .st { margin-top:1.6cqw; display:flex; gap:.9cqw; font-size:2.4cqw; letter-spacing:.1em; color:#3c4356; }
+  .card .st .on { color:#ffd166; }
+  .card.endless { grid-column:1 / -1; background:rgba(139,150,245,.1); border-color:rgba(139,150,245,.3); }
+
+  .btnrow { display:flex; gap:2.4cqw; margin-top:auto; padding-top:4cqw; }
+  .btn {
+    flex:1; cursor:pointer; font-family:inherit; border:0; border-radius:99px;
+    padding:3.1cqw 0; font-size:2.7cqw; font-weight:650; letter-spacing:.02em;
+    background:#e8eaf0; color:#0b0d12;
+    transition:transform .13s cubic-bezier(.34,1.56,.64,1), background .15s;
+  }
+  .btn:hover { transform:scale(1.03); background:#fff; }
+  .btn:active { transform:scale(.97); }
+  .btn.ghost { background:rgba(255,255,255,.08); color:#c2c9db; }
+  .btn.ghost:hover { background:rgba(255,255,255,.15); }
+
+  #result { align-items:center; justify-content:center; text-align:center; }
+  #resStars { display:flex; gap:3cqw; margin:3cqw 0 1cqw; }
+  #resStars span {
+    font-size:9cqw; color:#3c4356; transform:scale(.4); opacity:0;
+    transition:transform .45s cubic-bezier(.34,1.7,.5,1), opacity .3s, color .3s;
+  }
+  #resStars span.pop { transform:scale(1); opacity:1; }
+  #resStars span.won { color:#ffd166; text-shadow:0 0 5cqw rgba(255,209,102,.5); }
+  #resScore { font-size:11cqw; font-weight:700; letter-spacing:-.04em; line-height:1; margin-top:1cqw; }
+  #resXp { font-size:2.6cqw; color:#7fd18a; font-weight:600; margin-top:1.6cqw; letter-spacing:.03em; }
+  #resLvUp {
+    font-size:3.2cqw; font-weight:700; color:#ffd166; margin-top:2cqw;
+    letter-spacing:.04em; opacity:0; transform:translateY(8px);
+    transition:opacity .4s .5s, transform .4s .5s;
+  }
+  #resLvUp.on { opacity:1; transform:none; }
+  /* the result block is centred as a group, so the buttons must not be pushed
+     to the bottom by the shared .btnrow auto margin */
+  #result .btnrow { width:100%; margin-top:5cqw; padding-top:0; }
+</style>
+</head>
+<body>
+
+<div id="stage">
+  <canvas id="game"></canvas>
+
+  <!-- ============ play HUD ============ -->
+  <div id="hud">
+    <div id="topbar">
+      <div>
+        <div class="lbl">Score</div>
+        <div id="score" class="num">0</div>
+        <div id="goalRow">
+          <div id="goalText">-</div>
+          <div id="goalBarBg"><div id="goalBar"></div></div>
+        </div>
+      </div>
+      <div class="rightcol">
+        <div class="lbl" style="text-align:right">Drops</div>
+        <div id="drops" class="num">0</div>
+        <div id="queueRow">
+          <div class="slot small" id="q2"><div class="dot"></div></div>
+          <div class="slot small" id="q1"><div class="dot"></div></div>
+          <div class="slot" id="q0"><div class="dot"></div><div class="cap">NEXT</div></div>
+        </div>
+        <div class="slot" id="holdSlot" style="margin-top:3.4cqw"><div class="dot"></div><div class="cap">HOLD</div></div>
+      </div>
+    </div>
+
+    <div id="powers">
+      <button class="pw" data-p="shake">SHAKE<span class="n">0</span></button>
+      <button class="pw" data-p="undo">UNDO<span class="n">0</span></button>
+      <button class="pw" data-p="bomb">BOMB<span class="n">0</span></button>
+      <button class="pw" data-p="rainbow">PRISM<span class="n">0</span></button>
+    </div>
+  </div>
+
+  <!-- ============ map screen ============ -->
+  <div class="screen on" id="map">
+    <div class="title">Merge Drop</div>
+    <div class="sub">Aim with the mouse. Click or Space to drop. Shift to hold.</div>
+    <div id="plvRow">
+      <div id="plvBadge">1</div>
+      <div id="xpWrap">
+        <div class="lbl">Level <span id="plvNum">1</span> &middot; <span id="xpText" class="num">0 / 200 XP</span></div>
+        <div id="xpBarBg"><div id="xpBar"></div></div>
+      </div>
+    </div>
+    <div id="levelGrid"></div>
+  </div>
+
+  <!-- ============ result screen ============ -->
+  <div class="screen" id="result">
+    <div class="title" id="resTitle">Level Complete</div>
+    <div id="resStars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+    <div class="lbl">Score</div>
+    <div id="resScore" class="num">0</div>
+    <div id="resXp">+0 XP</div>
+    <div id="resLvUp">LEVEL UP</div>
+    <div class="btnrow">
+      <button class="btn ghost" id="btnMap">Levels</button>
+      <button class="btn ghost" id="btnRetry">Retry</button>
+      <button class="btn" id="btnNext">Next</button>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+/* ==========================================================================
+   1. WORLD CONSTANTS
+   All physics runs in these fixed units, in "jar space". The canvas is
+   scaled to fit the screen, and the jar may be rotated on top of that.
+   ========================================================================== */
+const W = 520, H = 920;
+const JAR_L = 30, JAR_R = 490;      // inner surfaces of the default jar
+const RIM   = 235;                  // top edge of the jar
+const FLOOR = 790;                  // inner floor surface
+const DANGER = 268;                 // overflow line
+const DROP_Y = 188;                 // where a piece hangs before you drop it
+const LADDER_Y = 832;               // tier ladder strip
+const PIVOT_X = W / 2, PIVOT_Y = FLOOR;   // the jar tilts about its floor centre
+const CAM_CY = (RIM + FLOOR) / 2;
+
+const GRAVITY = 2450;
+const FIXED_DT = 1 / 120;
+const ITERATIONS = 7;               // velocity (impulse) passes
+const POS_ITER = 14;                // position-only relaxation passes
+const RESTITUTION = 0.11;
+const WALL_REST = 0.14;
+const FRICTION = 0.22;
+const WALL_FRIC = 0.30;
+const LIN_DAMP = 0.9993;
+const ANG_DAMP = 0.992;
+const REST_SPEED = 55;
+const SLOP = 0.35;
+const CORRECT = 0.65;
+const DROP_COOLDOWN = 0.34;
+const OVERFLOW_TIME = 1.6;
+const BIRTH_T = 0.22;
+const SCORE_MULT = 5;      // cosmetic scale so scores read like a real game
+const TILT_GAIN = 0.000022;
+
+const RADII  = [16, 22, 29, 37, 46, 56, 68, 82, 97, 113, 130];
+const COLORS = ['#ff7a7a','#ffa15c','#ffd166','#c9e26b','#7fd18a',
+                '#5ccfc4','#59b0f0','#8b96f5','#b57ce8','#f07ec0','#34c07a'];
+const NAMES  = ['Red','Amber','Gold','Lime','Green','Teal','Blue','Indigo','Violet','Pink','Jade'];
+const TOP_TIER = RADII.length - 1;
+const BOMB_R = 26, PRISM_R = 30;
+
+/* ==========================================================================
+   2. LEVEL GEOMETRY + DEFINITIONS
+   Every collider is either a capsule (a thick segment) or a static circle.
+   The renderer draws the collider itself, so what you see is exactly what
+   the solver uses.
+   ========================================================================== */
+function seg(ax, ay, bx, by, r) { return { k:'seg', ax:ax, ay:ay, bx:bx, by:by, r: r || 7 }; }
+function circ(x, y, r)          { return { k:'circ', x:x, y:y, r:r }; }
+
+// Walls are placed so their *surface* lands exactly on l / r / bottom.
+function jarGeo(l, r, top, bottom, t) {
+  t = t || 7;
+  return [ seg(l - t, top, l - t, bottom + t * 2, t),
+           seg(r + t, top, r + t, bottom + t * 2, t),
+           seg(l - t, bottom + t, r + t, bottom + t, t) ];
+}
+
+const LEVELS = [
+  { name:'First Drops', blurb:'Learn the drop.',
+    geo:function(){ return jarGeo(JAR_L, JAR_R, RIM, FLOOR); },
+    goal:{type:'score', n:900}, drops:30, starScores:[1600,2400], spawn:[0,0,0,1,1,2] },
+
+  { name:'The Pillar', blurb:'Two wells, one plan.',
+    geo:function(){ return jarGeo(JAR_L, JAR_R, RIM, FLOOR).concat([seg(260,480,260,FLOOR,12)]); },
+    goal:{type:'tier', tier:5, n:1}, drops:36, starScores:[1100,1700] },
+
+  { name:'Slant', blurb:'Everything rolls downhill.',
+    geo:function(){ return [ seg(JAR_L-7,RIM,JAR_L-7,FLOOR+14,7), seg(JAR_R+7,RIM,JAR_R+7,FLOOR+14,7),
+                             seg(JAR_L-7,FLOOR-84,JAR_R+7,FLOOR+7,7) ]; },
+    goal:{type:'score', n:2200}, drops:36, starScores:[3400,4800] },
+
+  { name:'The Shelf', blurb:'A ledge that catches.',
+    geo:function(){ return jarGeo(JAR_L, JAR_R, RIM, FLOOR).concat([seg(JAR_L,545,196,561,9)]); },
+    goal:{type:'tier', tier:5, n:2}, drops:42, starScores:[1300,2000] },
+
+  { name:'Bumpers', blurb:'Aim is a suggestion.',
+    geo:function(){ return jarGeo(JAR_L, JAR_R, RIM, FLOOR).concat([
+                      circ(160,440,24), circ(360,440,24), circ(260,572,28) ]); },
+    goal:{type:'score', n:1800}, drops:42, starScores:[2900,4100] },
+
+  { name:'Hourglass', blurb:'Mind the waist.',
+    geo:function(){ return jarGeo(JAR_L, JAR_R, RIM, FLOOR).concat([
+                      seg(JAR_L-7,478,166,548,9), seg(JAR_R+7,478,354,548,9) ]); },
+    goal:{type:'tier', tier:6, n:1}, drops:48, starScores:[3000,4600] },
+
+  { name:'Balance', blurb:'The jar tips. Keep it even.', tilt:true, tiltGain:0.00004,
+    geo:function(){ return jarGeo(JAR_L, JAR_R, RIM, FLOOR); },
+    goal:{type:'score', n:2600}, drops:48, starScores:[3900,5400] },
+
+  { name:'Funnel', blurb:'Narrow at the bottom.',
+    geo:function(){ return [ seg(JAR_L-7,RIM,95,FLOOR+7,7), seg(JAR_R+7,RIM,425,FLOOR+7,7),
+                             seg(95,FLOOR+7,425,FLOOR+7,7) ]; },
+    goal:{type:'tier', tier:7, n:1}, drops:62, starScores:[6000,8600] },
+
+  { name:'Split Decision', blurb:'Two jars, one balance.', tilt:true,
+    geo:function(){ return jarGeo(JAR_L, JAR_R, RIM, FLOOR).concat([seg(260,400,260,FLOOR,12)]); },
+    goal:{type:'score', n:3200}, drops:56, starScores:[4800,6600] },
+
+  { name:'Endless', blurb:'No limit. Just you and the jar.', endless:true,
+    geo:function(){ return jarGeo(JAR_L, JAR_R, RIM, FLOOR); },
+    goal:{type:'score', n:99999999}, drops:0, starScores:[5000,9000] }
+];
+
+const DEFAULT_SPAWN = [0,0,0,1,1,1,2,2,3,4];
+
+/* ==========================================================================
+   3. SAVE / PROGRESSION
+   ========================================================================== */
+const SAVE_KEY = 'mergeDropSave2';
+let save = { lv:{}, xp:0, plv:1, seen:{} };
+try {
+  const raw = localStorage.getItem(SAVE_KEY);
+  if (raw) save = Object.assign(save, JSON.parse(raw));
+} catch (e) {}
+function persist() { try { localStorage.setItem(SAVE_KEY, JSON.stringify(save)); } catch (e) {} }
+
+function xpNeeded(n) { return 200 + (n - 1) * 160; }
+function unlockedLevels() {
+  let n = 1;
+  for (let i = 0; i < LEVELS.length - 1; i++) if (save.lv[i] && save.lv[i].stars > 0) n = i + 2;
+  return Math.min(n, LEVELS.length);
+}
+// Powerups arrive as the player levels up, so progression keeps paying out.
+const POWER_UNLOCK  = { shake:1, undo:2, bomb:4, rainbow:6 };
+const POWER_CHARGES = { shake:3, undo:2, bomb:1, rainbow:1 };
+function powerUnlocked(p) { return save.plv >= POWER_UNLOCK[p]; }
+
+/* ==========================================================================
+   4. CANVAS
+   ========================================================================== */
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+let scale = 1;
+function resize() {
+  const r = canvas.getBoundingClientRect();
+  const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+  canvas.width  = Math.max(1, Math.round(r.width  * dpr));
+  canvas.height = Math.max(1, Math.round(r.height * dpr));
+  scale = canvas.width / W;
+}
+window.addEventListener('resize', resize);
+
+/* ==========================================================================
+   5. RUNTIME STATE
+   ========================================================================== */
+let bodies = [], particles = [], pops = [], floaters = [], sparks = [];
+let geo = [];
+let level = LEVELS[0], levelIdx = 0;
+let screenName = 'map';                 // 'map' | 'play' | 'result'
+let phase = 'play';                     // 'play' | 'settling' | 'done'
+let score = 0, dropsUsed = 0, mergeCount = 0;
+let tierMade = {}, biggest = 0;
+let current = 0, queue = [], hold = null, holdLocked = false;
+let armed = null, charges = {};
+let aimX = W / 2, cooldown = 0;
+let combo = 0, lastMergeAt = -99, clock = 0, uid = 1;
+let tilt = 0, tiltVel = 0;
+let shake = 0, slowT = 0, flashT = 0;
+let camZoom = 1;
+let undoSnap = null;
+let overflowWorst = 0;
+let endTimer = 0;
+
+function pickTier() {
+  const t = (level && level.spawn) || DEFAULT_SPAWN;
+  return t[(Math.random() * t.length) | 0];
+}
+
+/* ==========================================================================
+   6. BODIES
+   `r` is the final radius; `cr` is the radius physics uses this frame. A
+   merged ball starts at the size of the two that made it and grows into
+   place, so it shoulders neighbours aside instead of appearing inside them.
+   ========================================================================== */
+function makeBody(x, y, tier, r0, kind) {
+  const r = kind === 'bomb' ? BOMB_R : kind === 'rainbow' ? PRISM_R : RADII[tier];
+  const m = Math.PI * r * r * 0.001;
+  const born = r0 === undefined ? r : r0;
+  return {
+    id: uid++, tier: tier, kind: kind || 'ball', r: r, r0: born, cr: born,
+    x: x, y: y, vx: 0, vy: 0,
+    a: (Math.random() - 0.5) * 0.6, av: 0,
+    invM: 1 / m, invI: 1 / (0.5 * m * r * r),
+    dead: false, age: 0, over: 0,
+    birth: r0 === undefined ? 1 : 0,
+    squash: 0, sqAng: 0, flash: 0
+  };
+}
+
+/* ==========================================================================
+   7. COLLISION PRIMITIVES
+   ========================================================================== */
+function closestOnSeg(px, py, ax, ay, bx, by) {
+  const dx = bx - ax, dy = by - ay;
+  const l2 = dx * dx + dy * dy;
+  let t = l2 ? ((px - ax) * dx + (py - ay) * dy) / l2 : 0;
+  t = t < 0 ? 0 : t > 1 ? 1 : t;
+  return [ax + dx * t, ay + dy * t];
+}
+
+// Returns [nx, ny, pen] with n pointing from the surface into the ball.
+function geoContact(b, g) {
+  let cx, cy;
+  if (g.k === 'circ') { cx = g.x; cy = g.y; }
+  else { const p = closestOnSeg(b.x, b.y, g.ax, g.ay, g.bx, g.by); cx = p[0]; cy = p[1]; }
+  let dx = b.x - cx, dy = b.y - cy;
+  let d = Math.sqrt(dx * dx + dy * dy);
+  const pen = (b.cr + g.r) - d;
+  if (pen <= 0) return null;
+  if (d < 1e-6) { dx = 0; dy = -1; d = 1; }
+  return [dx / d, dy / d, pen];
+}
+
+function applyImpulse(b, px, py, rx, ry) {
+  b.vx += px * b.invM;
+  b.vy += py * b.invM;
+  b.av += (rx * py - ry * px) * b.invI;
+}
+
+function addSquash(b, mag, nx, ny) {
+  if (mag < 0.9) return;
+  const s = Math.min(0.34, mag * 0.0016);
+  if (s > b.squash) { b.squash = s; b.sqAng = Math.atan2(ny, nx); }
+}
+
+/* ---- ball vs ball ---- */
+function solvePair(a, b) {
+  const dx = b.x - a.x, dy = b.y - a.y;
+  const d2 = dx * dx + dy * dy;
+  const rsum = a.cr + b.cr;
+  if (d2 >= rsum * rsum || d2 === 0) return;
+
+  const d = Math.sqrt(d2);
+  const nx = dx / d, ny = dy / d;
+  const invSum = a.invM + b.invM;
+
+  const corr = Math.max(rsum - d - SLOP, 0) / invSum * CORRECT;
+  a.x -= nx * corr * a.invM; a.y -= ny * corr * a.invM;
+  b.x += nx * corr * b.invM; b.y += ny * corr * b.invM;
+
+  const rax =  nx * a.cr, ray =  ny * a.cr;
+  const rbx = -nx * b.cr, rby = -ny * b.cr;
+  const vax = a.vx - a.av * ray, vay = a.vy + a.av * rax;
+  const vbx = b.vx - b.av * rby, vby = b.vy + b.av * rbx;
+
+  const vn = (vbx - vax) * nx + (vby - vay) * ny;
+  if (vn > 0) return;
+
+  const e = (-vn < REST_SPEED) ? 0 : RESTITUTION;
+  const jn = -(1 + e) * vn / invSum;
+  applyImpulse(a, -jn * nx, -jn * ny, rax, ray);
+  applyImpulse(b,  jn * nx,  jn * ny, rbx, rby);
+  addSquash(a, jn * a.invM, nx, ny);
+  addSquash(b, jn * b.invM, nx, ny);
+
+  const tx = -ny, ty = nx;
+  const ax2 = a.vx - a.av * ray, ay2 = a.vy + a.av * rax;
+  const bx2 = b.vx - b.av * rby, by2 = b.vy + b.av * rbx;
+  const vt = (bx2 - ax2) * tx + (by2 - ay2) * ty;
+  const kt = invSum + a.cr * a.cr * a.invI + b.cr * b.cr * b.invI;
+  let jt = -vt / kt;
+  const mx = FRICTION * jn;
+  if (jt >  mx) jt =  mx;
+  if (jt < -mx) jt = -mx;
+  applyImpulse(a, -jt * tx, -jt * ty, rax, ray);
+  applyImpulse(b,  jt * tx,  jt * ty, rbx, rby);
+}
+
+/* ---- ball vs static geometry ---- */
+function solveStatic(b, nx, ny, pen) {
+  const push = Math.max(pen - SLOP, 0) * CORRECT;
+  b.x += nx * push; b.y += ny * push;
+
+  const rx = -nx * b.cr, ry = -ny * b.cr;
+  const vx = b.vx - b.av * ry, vy = b.vy + b.av * rx;
+  const vn = vx * nx + vy * ny;
+  if (vn > 0) return;
+
+  const e = (-vn < REST_SPEED) ? 0 : WALL_REST;
+  const jn = -(1 + e) * vn / b.invM;
+  applyImpulse(b, jn * nx, jn * ny, rx, ry);
+  addSquash(b, jn * b.invM, nx, ny);
+
+  const tx = -ny, ty = nx;
+  const vx2 = b.vx - b.av * ry, vy2 = b.vy + b.av * rx;
+  const vt = vx2 * tx + vy2 * ty;
+  const kt = b.invM + b.cr * b.cr * b.invI;
+  let jt = -vt / kt;
+  const mx = WALL_FRIC * jn;
+  if (jt >  mx) jt =  mx;
+  if (jt < -mx) jt = -mx;
+  applyImpulse(b, jt * tx, jt * ty, rx, ry);
+}
+
+function solveGeo(b) {
+  for (let i = 0; i < geo.length; i++) {
+    const c = geoContact(b, geo[i]);
+    if (c) solveStatic(b, c[0], c[1], c[2]);
+  }
+}
+
+/* ---- position-only relaxation (adds no energy, so it can push hard) ---- */
+function relaxPair(a, b) {
+  const dx = b.x - a.x, dy = b.y - a.y;
+  const d2 = dx * dx + dy * dy;
+  const rsum = a.cr + b.cr;
+  if (d2 >= rsum * rsum || d2 === 0) return;
+  const d = Math.sqrt(d2);
+  const corr = (rsum - d - 0.05) * 0.7 / (a.invM + b.invM);
+  if (corr <= 0) return;
+  const nx = dx / d * corr, ny = dy / d * corr;
+  a.x -= nx * a.invM; a.y -= ny * a.invM;
+  b.x += nx * b.invM; b.y += ny * b.invM;
+}
+function relaxGeo(b) {
+  for (let i = 0; i < geo.length; i++) {
+    const c = geoContact(b, geo[i]);
+    if (c) { b.x += c[0] * c[2]; b.y += c[1] * c[2]; }   // full push-out
+  }
+}
+function relax(passes) {
+  for (let it = 0; it < passes; it++) {
+    for (let i = 0; i < pairs.length; i += 2) relaxPair(pairs[i], pairs[i + 1]);
+    for (let i = 0; i < bodies.length; i++) relaxGeo(bodies[i]);
+  }
+}
+
+/* ---- broadphase ---- */
+let pairs = [];
+function buildPairs() {
+  pairs.length = 0;
+  for (let i = 0; i < bodies.length; i++) {
+    const a = bodies[i];
+    for (let j = i + 1; j < bodies.length; j++) {
+      const b = bodies[j];
+      // Margin must exceed how far a body can move or be pushed within one
+      // step, or a contact forming mid-solve would be missed entirely.
+      const rr = a.cr + b.cr + 20;
+      const dx = b.x - a.x, dy = b.y - a.y;
+      if (dx * dx + dy * dy <= rr * rr) pairs.push(a, b);
+    }
+  }
+}
+
+/* ==========================================================================
+   8. STEP
+   ========================================================================== */
+function step(dt) {
+  // The jar tips like a scale toward whichever side carries more weight.
+  if (level && level.tilt) {
+    let torque = 0;
+    for (const b of bodies) torque += (b.x - PIVOT_X) / b.invM;
+    let target = torque * (level.tiltGain || TILT_GAIN);
+    if (target >  0.21) target =  0.21;
+    if (target < -0.21) target = -0.21;
+    tiltVel += ((target - tilt) * 26 - tiltVel * 6.5) * dt;
+    tilt += tiltVel * dt;
+  }
+  // Gravity expressed in jar space, so the contents slide when the jar leans.
+  const gx = GRAVITY * Math.sin(tilt), gy = GRAVITY * Math.cos(tilt);
+
+  for (let i = 0; i < bodies.length; i++) {
+    const b = bodies[i];
+    b.vx += gx * dt; b.vy += gy * dt;
+    b.vx *= LIN_DAMP; b.vy *= LIN_DAMP; b.av *= ANG_DAMP;
+    b.x += b.vx * dt; b.y += b.vy * dt; b.a += b.av * dt;
+    b.age += dt;
+    b.squash *= Math.pow(0.00035, dt);
+    if (b.flash > 0) b.flash = Math.max(0, b.flash - dt / 0.22);
+    if (b.birth < 1) {
+      b.birth = Math.min(1, b.birth + dt / BIRTH_T);
+      b.cr = b.r0 + (b.r - b.r0) * easeOutBack(b.birth);
+    }
+  }
+
+  buildPairs();
+  for (let it = 0; it < ITERATIONS; it++) {
+    for (let i = 0; i < pairs.length; i += 2) solvePair(pairs[i], pairs[i + 1]);
+    for (let i = 0; i < bodies.length; i++) solveGeo(bodies[i]);
+  }
+  relax(POS_ITER);
+
+  let changed = resolveSpecials();
+  if (resolveMerges()) changed = true;
+  if (changed) { buildPairs(); relax(POS_ITER); }
+
+  checkOverflow(dt);
+}
+
+/* ==========================================================================
+   9. MERGING + SPECIAL PIECES
+   ========================================================================== */
+function resolveMerges() {
+  let any = false;
+  for (let i = 0; i < pairs.length; i += 2) {
+    const a = pairs[i], b = pairs[i + 1];
+    if (a.dead || b.dead) continue;
+    if (a.kind !== 'ball' || b.kind !== 'ball') continue;
+    if (a.tier !== b.tier || a.tier === TOP_TIER) continue;
+    const dx = b.x - a.x, dy = b.y - a.y;
+    const rs = a.cr + b.cr + 0.5;
+    if (dx * dx + dy * dy > rs * rs) continue;
+    merge(a, b);
+    any = true;
+  }
+  if (any) bodies = bodies.filter(b => !b.dead);
+  return any;
+}
+
+function merge(a, b) {
+  a.dead = b.dead = true;
+  const tier = a.tier + 1;
+  const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+
+  const nb = makeBody(mx, my, tier, RADII[a.tier]);
+  nb.vx = (a.vx + b.vx) * 0.5;
+  nb.vy = (a.vy + b.vy) * 0.5 - 95;
+  nb.av = (a.av + b.av) * 0.5;
+  nb.flash = 1;
+  bodies.push(nb);
+
+  combo = (clock - lastMergeAt < 0.6) ? combo + 1 : 1;
+  lastMergeAt = clock;
+  const pts = ((tier + 1) * (tier + 2) / 2) * combo * SCORE_MULT;
+  score += pts;
+  mergeCount++;
+  tierMade[tier] = (tierMade[tier] || 0) + 1;
+  if (tier > biggest) biggest = tier;
+  if (!save.seen[tier]) { save.seen[tier] = 1; persist(); }
+
+  burst(mx, my, tier, COLORS[tier]);
+  floaters.push({ x:mx, y:my, t:0, life:0.9, text:'+' + pts,
+                  combo: combo > 1 ? combo : 0, color: COLORS[tier] });
+
+  // Big merges shove the neighbourhood, which sets off cascades you did not
+  // plan. This is the whole reason to write real physics for a merge game.
+  if (tier >= 4) shockwave(mx, my, 120 + tier * 26, 190 + tier * 62, nb);
+
+  shake = Math.min(13, shake + 1.4 + tier * 0.9);
+  if (combo >= 3) slowT = Math.max(slowT, 0.26);
+  if (tier >= 6) flashT = 1;
+  sfxMerge(tier, combo);
+  syncHud();
+  checkGoal();
+}
+
+function shockwave(x, y, radius, force, skip) {
+  for (const o of bodies) {
+    if (o === skip || o.dead) continue;
+    const dx = o.x - x, dy = o.y - y;
+    const d = Math.sqrt(dx * dx + dy * dy) || 1;
+    if (d > radius) continue;
+    const f = (1 - d / radius) * force;
+    o.vx += (dx / d) * f; o.vy += (dy / d) * f - f * 0.16;
+    o.av += (Math.random() - 0.5) * 4;
+  }
+  pops.push({ x:x, y:y, r:radius * 0.35, t:0, life:0.5, color:'#ffffff', wide:true });
+}
+
+function burst(x, y, tier, color) {
+  pops.push({ x:x, y:y, r:RADII[tier] * 0.7, t:0, life:0.45, color:color });
+  const n = 9 + tier * 2;
+  for (let i = 0; i < n; i++) {
+    const ang = (i / n) * Math.PI * 2 + Math.random() * 0.5;
+    const sp = 120 + Math.random() * 210 + tier * 14;
+    particles.push({ x:x + Math.cos(ang) * RADII[tier] * 0.5,
+                     y:y + Math.sin(ang) * RADII[tier] * 0.5,
+                     vx:Math.cos(ang) * sp, vy:Math.sin(ang) * sp - 70,
+                     r:2 + Math.random() * (2.5 + tier * 0.55),
+                     t:0, life:0.4 + Math.random() * 0.5, color:color });
+  }
+  for (let i = 0; i < 5 + tier; i++) {
+    sparks.push({ x:x, y:y, ang:Math.random() * 6.2832,
+                  d:RADII[tier] * 0.4, sp:200 + Math.random() * 260,
+                  t:0, life:0.3 + Math.random() * 0.25, color:color });
+  }
+}
+
+// Bombs and prisms resolve on first touch, before normal merging.
+function resolveSpecials() {
+  let any = false;
+  for (let i = 0; i < pairs.length; i += 2) {
+    const a = pairs[i], b = pairs[i + 1];
+    if (a.dead || b.dead) continue;
+    const sp = a.kind !== 'ball' ? a : (b.kind !== 'ball' ? b : null);
+    if (!sp) continue;
+    const other = sp === a ? b : a;
+    if (other.kind !== 'ball') continue;
+    const dx = b.x - a.x, dy = b.y - a.y;
+    const rs = a.cr + b.cr + 1;
+    if (dx * dx + dy * dy > rs * rs) continue;
+
+    if (sp.kind === 'bomb') detonate(sp);
+    else promote(sp, other);
+    any = true;
+  }
+  if (any) bodies = bodies.filter(b => !b.dead);
+  return any;
+}
+
+function detonate(bomb) {
+  bomb.dead = true;
+  const R = 118;
+  let hit = 0;
+  for (const o of bodies) {
+    if (o.dead || o === bomb) continue;
+    const d = Math.hypot(o.x - bomb.x, o.y - bomb.y);
+    if (d < R + o.cr * 0.5) {
+      o.dead = true; hit++;
+      score += (8 + o.tier * 4) * SCORE_MULT;
+      burst(o.x, o.y, Math.max(1, o.tier), COLORS[Math.max(0, o.tier)]);
+    }
+  }
+  shockwave(bomb.x, bomb.y, 230, 620, bomb);
+  pops.push({ x:bomb.x, y:bomb.y, r:40, t:0, life:0.55, color:'#ff9f5c', wide:true });
+  shake = 15; flashT = 1;
+  floaters.push({ x:bomb.x, y:bomb.y, t:0, life:0.9, text:hit + ' cleared', combo:0, color:'#ff9f5c' });
+  sfxBoom();
+  syncHud();
+}
+
+function promote(prism, ball) {
+  prism.dead = true;
+  if (ball.tier >= TOP_TIER) { score += 60 * SCORE_MULT; sfxMerge(TOP_TIER, 1); syncHud(); return; }
+  const t = ball.tier + 1;
+  ball.dead = true;
+  const nb = makeBody(ball.x, ball.y, t, RADII[ball.tier]);
+  nb.vy = -110; nb.flash = 1;
+  bodies.push(nb);
+  const pts = ((t + 1) * (t + 2) / 2) * 2 * SCORE_MULT;
+  score += pts; mergeCount++;
+  tierMade[t] = (tierMade[t] || 0) + 1;
+  if (t > biggest) biggest = t;
+  if (!save.seen[t]) { save.seen[t] = 1; persist(); }
+  burst(ball.x, ball.y, t, COLORS[t]);
+  floaters.push({ x:ball.x, y:ball.y, t:0, life:0.9, text:'+' + pts, combo:0, color:COLORS[t] });
+  shockwave(ball.x, ball.y, 150, 260, nb);
+  shake = 10; sfxMerge(t, 2);
+  syncHud(); checkGoal();
+}
+
+/* ==========================================================================
+   10. OVERFLOW / GOALS / RESULT
+   ========================================================================== */
+function checkOverflow(dt) {
+  if (phase === 'done') return;
+  overflowWorst = 0;
+  for (const b of bodies) {
+    if (b.age > 0.6 && b.y - b.cr < DANGER) {
+      b.over += dt;
+      if (b.over > overflowWorst) overflowWorst = b.over;
+      if (b.over > OVERFLOW_TIME) { finish(false); return; }
+    } else b.over = 0;
+  }
+}
+
+function goalProgress() {
+  const g = level.goal;
+  if (g.type === 'score')  return [Math.min(score, g.n), g.n];
+  if (g.type === 'merges') return [Math.min(mergeCount, g.n), g.n];
+  let c = 0;
+  for (let t = g.tier; t <= TOP_TIER; t++) c += tierMade[t] || 0;
+  return [Math.min(c, g.n), g.n];
+}
+function goalLabel() {
+  const g = level.goal;
+  if (level.endless) return 'Survive as long as you can';
+  if (g.type === 'score')  return 'Reach ' + g.n.toLocaleString() + ' points';
+  if (g.type === 'merges') return 'Make ' + g.n + ' merges';
+  return 'Make ' + (g.n > 1 ? g.n + ' ' : 'a ') + NAMES[g.tier] + (g.n > 1 ? 's' : '');
+}
+function goalMet() { const p = goalProgress(); return p[0] >= p[1]; }
+
+function checkGoal() {
+  if (phase === 'done' || level.endless) return;
+  if (goalMet()) { phase = 'done'; endTimer = 0.9; }
+}
+
+function finish(won) {
+  if (screenName === 'result') return;
+  phase = 'done';
+  screenName = 'result';
+
+  let stars = 0;
+  if (won) {
+    stars = 1;
+    for (const s of level.starScores) if (score >= s) stars++;
+  } else if (level.endless) {
+    for (const s of level.starScores) if (score >= s) stars++;
+  }
+
+  const prev = save.lv[levelIdx] || { stars:0, best:0 };
+  const fresh = won && prev.stars === 0;
+  const extra = Math.max(0, stars - prev.stars);
+  save.lv[levelIdx] = { stars: Math.max(prev.stars, stars), best: Math.max(prev.best, score) };
+
+  let xp = Math.floor(score / 200) + (fresh ? 70 : 0) + extra * 45;
+  if (!won && !level.endless) xp = Math.floor(xp * 0.35);
+  save.xp += xp;
+
+  let leveled = false;
+  while (save.xp >= xpNeeded(save.plv)) { save.xp -= xpNeeded(save.plv); save.plv++; leveled = true; }
+  persist();
+
+  showResult(won, stars, xp, leveled);
+  if (won) sfxWin(); else sfxLose();
+}
+
+/* ==========================================================================
+   11. RUN CONTROL
+   ========================================================================== */
+function startLevel(i) {
+  levelIdx = i;
+  level = LEVELS[i];
+  geo = level.geo();
+  bodies = []; particles = []; pops = []; floaters = []; sparks = [];
+  score = 0; dropsUsed = 0; mergeCount = 0; tierMade = {}; biggest = 0;
+  combo = 0; lastMergeAt = -99; cooldown = 0; shake = 0; slowT = 0; flashT = 0;
+  tilt = 0; tiltVel = 0; camZoom = 1;
+  hold = null; holdLocked = false; armed = null; undoSnap = null;
+  overflowWorst = 0; endTimer = 0; acc = 0;
+  charges = {};
+  for (const p in POWER_CHARGES) charges[p] = powerUnlocked(p) ? POWER_CHARGES[p] : 0;
+  queue = [pickTier(), pickTier(), pickTier()];
+  current = pickTier();
+  phase = 'play';
+  screenName = 'play';
+  aimX = W / 2;
+  syncScreens(); syncHud();
+}
+
+function dropsLeft() { return level.endless ? Infinity : level.drops - dropsUsed; }
+
+function snapshot() {
+  return { bodies: bodies.map(function(b){ return Object.assign({}, b); }),
+           score:score, dropsUsed:dropsUsed, mergeCount:mergeCount,
+           tierMade: Object.assign({}, tierMade), biggest:biggest,
+           current:current, queue:queue.slice(), hold:hold,
+           tilt:tilt, tiltVel:tiltVel };
+}
+function restore(s) {
+  bodies = s.bodies.map(function(b){ return Object.assign({}, b); });
+  score = s.score; dropsUsed = s.dropsUsed; mergeCount = s.mergeCount;
+  tierMade = Object.assign({}, s.tierMade); biggest = s.biggest;
+  current = s.current; queue = s.queue.slice(); hold = s.hold;
+  tilt = s.tilt; tiltVel = s.tiltVel;
+  combo = 0; lastMergeAt = -99;
+}
+
+function pieceRadius(t, kind) {
+  return kind === 'bomb' ? BOMB_R : kind === 'rainbow' ? PRISM_R : RADII[t];
+}
+function clampAim(x, t, kind) {
+  const r = pieceRadius(t, kind);
+  return Math.max(JAR_L + r + 2, Math.min(JAR_R - r - 2, x));
+}
+
+function drop() {
+  if (screenName !== 'play' || phase !== 'play' || cooldown > 0) return;
+  if (dropsLeft() <= 0) return;
+
+  undoSnap = snapshot();
+  const kind = armed || 'ball';
+  const b = makeBody(clampAim(aimX, current, kind), DROP_Y, current, undefined, kind);
+  b.vy = 95;
+  bodies.push(b);
+
+  if (kind === 'ball') { current = queue.shift(); queue.push(pickTier()); }
+  else charges[kind]--;
+  armed = null;
+  dropsUsed++;
+  cooldown = DROP_COOLDOWN;
+  combo = 0;
+  holdLocked = false;
+  sfxDrop();
+  syncHud();
+
+  if (dropsLeft() <= 0 && !level.endless) { phase = 'settling'; endTimer = 3.2; }
+}
+
+function doHold() {
+  if (screenName !== 'play' || phase !== 'play' || holdLocked || armed) return;
+  if (hold === null) { hold = current; current = queue.shift(); queue.push(pickTier()); }
+  else { const t = hold; hold = current; current = t; }
+  holdLocked = true;
+  sfxBlip(520);
+  syncHud();
+}
+
+function usePower(p) {
+  if (screenName !== 'play' || phase !== 'play') return;
+  if (!powerUnlocked(p) || charges[p] <= 0) return;
+
+  if (p === 'shake') {
+    charges[p]--;
+    for (const b of bodies) {
+      b.vx += (Math.random() - 0.5) * 520;
+      b.vy -= 120 + Math.random() * 260;
+      b.av += (Math.random() - 0.5) * 9;
+    }
+    shake = 16; sfxShake();
+  } else if (p === 'undo') {
+    if (!undoSnap) return;
+    charges[p]--;
+    restore(undoSnap); undoSnap = null;
+    cooldown = 0.15; sfxBlip(300);
+  } else {
+    armed = (armed === p) ? null : p;   // charge is spent when it is dropped
+    sfxBlip(660);
+  }
+  syncHud();
+}
+
+/* ==========================================================================
+   12. INPUT
+   ========================================================================== */
+// Undo the camera zoom and jar tilt so the cursor maps into jar space.
+function screenToJar(clientX, clientY) {
+  const rect = canvas.getBoundingClientRect();
+  let x = (clientX - rect.left) / rect.width * W;
+  let y = (clientY - rect.top) / rect.height * H;
+  x = (x - W / 2) / camZoom + W / 2;
+  y = (y - CAM_CY) / camZoom + CAM_CY;
+  const c = Math.cos(-tilt), s = Math.sin(-tilt);
+  const dx = x - PIVOT_X, dy = y - PIVOT_Y;
+  return [PIVOT_X + dx * c - dy * s, PIVOT_Y + dx * s + dy * c];
+}
+
+const stage = document.getElementById('stage');
+stage.addEventListener('pointermove', function (e) {
+  if (screenName !== 'play') return;
+  aimX = screenToJar(e.clientX, e.clientY)[0];
+});
+stage.addEventListener('pointerdown', function (e) {
+  audioInit();
+  if (screenName !== 'play') return;
+  if (e.target.closest('.pw, #holdSlot, .btn, .card')) return;
+  aimX = screenToJar(e.clientX, e.clientY)[0];
+  drop();
+});
+window.addEventListener('keydown', function (e) {
+  audioInit();
+  if (e.code === 'Space') { e.preventDefault(); drop(); }
+  else if (e.code === 'ShiftLeft' || e.code === 'ShiftRight') { e.preventDefault(); doHold(); }
+  else if (e.code === 'ArrowLeft')  aimX = clampAim(aimX - 22, current, armed);
+  else if (e.code === 'ArrowRight') aimX = clampAim(aimX + 22, current, armed);
+  else if (e.code === 'Escape' && screenName === 'play') { screenName = 'map'; syncScreens(); }
+  else if (e.code === 'Digit1') usePower('shake');
+  else if (e.code === 'Digit2') usePower('undo');
+  else if (e.code === 'Digit3') usePower('bomb');
+  else if (e.code === 'Digit4') usePower('rainbow');
+});
+document.getElementById('holdSlot').addEventListener('click', doHold);
+document.querySelectorAll('.pw').forEach(function (el) {
+  el.addEventListener('click', function () { usePower(el.dataset.p); });
+});
+
+/* ==========================================================================
+   13. AUDIO  -  merges land on a pentatonic scale, so chains play a melody
+   ========================================================================== */
+let ac = null, muted = false;
+const PENTA = [0, 2, 4, 7, 9];
+function audioInit() {
+  if (!ac) { try { ac = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { ac = null; } }
+  if (ac && ac.state === 'suspended') ac.resume();
+}
+function tone(freq, dur, vol, type, glide, delay) {
+  if (!ac || muted) return;
+  const t = ac.currentTime + (delay || 0);
+  const o = ac.createOscillator(), g = ac.createGain();
+  o.type = type || 'sine';
+  o.frequency.setValueAtTime(freq, t);
+  if (glide) o.frequency.exponentialRampToValueAtTime(Math.max(35, freq * glide), t + dur);
+  g.gain.setValueAtTime(0.0001, t);
+  g.gain.exponentialRampToValueAtTime(vol, t + 0.008);
+  g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.connect(g); g.connect(ac.destination);
+  o.start(t); o.stop(t + dur + 0.02);
+}
+function noteFreq(step) {
+  const s = PENTA[((step % 5) + 5) % 5] + 12 * Math.floor(step / 5);
+  return 196 * Math.pow(2, s / 12);
+}
+function sfxMerge(tier, combo) {
+  const step = (TOP_TIER - tier) + (combo - 1) * 2;
+  const f = noteFreq(step);
+  tone(f, 0.3, 0.15, 'sine');
+  tone(f * 2, 0.16, 0.045, 'triangle');
+  if (tier >= 5) tone(f / 2, 0.34, 0.1, 'sine', 0.9);
+}
+function sfxDrop()  { tone(180, 0.07, 0.045, 'triangle', 0.7); }
+function sfxBlip(f) { tone(f, 0.09, 0.05, 'triangle'); }
+function sfxShake() { for (let i = 0; i < 5; i++) tone(120 + Math.random() * 90, 0.09, 0.05, 'sawtooth', 0.7, i * 0.045); }
+function sfxBoom()  { tone(70, 0.5, 0.24, 'sawtooth', 0.35); tone(150, 0.3, 0.1, 'square', 0.4); }
+function sfxWin()   { [0, 2, 4, 7].forEach(function (s, i) { tone(noteFreq(s + 5), 0.34, 0.13, 'sine', 1, i * 0.11); }); }
+function sfxLose()  { [520, 400, 300, 210].forEach(function (f, i) { tone(f, 0.3, 0.1, 'sine', 0.85, i * 0.13); }); }
+
+/* ==========================================================================
+   14. DOM / UI
+   ========================================================================== */
+const $ = function (id) { return document.getElementById(id); };
+const hudEl = $('hud'), mapEl = $('map'), resEl = $('result');
+
+function syncScreens() {
+  hudEl.classList.toggle('on', screenName === 'play');
+  mapEl.classList.toggle('on', screenName === 'map');
+  resEl.classList.toggle('on', screenName === 'result');
+  if (screenName === 'map') buildMap();
+}
+
+function setDot(slotId, tier, kind) {
+  const slot = $(slotId), dot = slot.querySelector('.dot');
+  if (tier === null || tier === undefined) { dot.style.width = dot.style.height = '0px'; return; }
+  const w = slot.getBoundingClientRect().width || 40;
+  const r = (kind && kind !== 'ball') ? 30 : RADII[tier];
+  const size = Math.max(9, Math.min(w * 0.74, w * (r / RADII[6])));
+  dot.style.width = dot.style.height = size + 'px';
+  const c = kind === 'bomb' ? '#3a4050' : kind === 'rainbow' ? '#c9a7ff' : COLORS[tier];
+  dot.style.background = c;
+  dot.style.boxShadow = '0 0 18px ' + c + '66';
+}
+
+function syncHud() {
+  if (screenName !== 'play') return;
+  $('score').textContent = score.toLocaleString();
+  $('goalText').textContent = goalLabel();
+  const p = goalProgress();
+  $('goalBar').style.width = (level.endless ? 0 : Math.min(100, p[0] / p[1] * 100)) + '%';
+
+  const dl = dropsLeft();
+  $('drops').textContent = level.endless ? '∞' : dl;
+  $('drops').classList.toggle('low', !level.endless && dl <= 5);
+
+  setDot('q0', current, armed);
+  setDot('q1', queue[0]); setDot('q2', queue[1]);
+  setDot('holdSlot', hold);
+  $('holdSlot').classList.toggle('used', holdLocked);
+
+  document.querySelectorAll('.pw').forEach(function (el) {
+    const p = el.dataset.p;
+    const ok = powerUnlocked(p);
+    el.querySelector('.n').textContent = ok ? charges[p] : 'LV ' + POWER_UNLOCK[p];
+    el.classList.toggle('dim', !ok || charges[p] <= 0);
+    el.classList.toggle('armed', armed === p);
+  });
+}
+
+function buildMap() {
+  $('plvBadge').textContent = save.plv;
+  $('plvNum').textContent = save.plv;
+  const need = xpNeeded(save.plv);
+  $('xpText').textContent = save.xp + ' / ' + need + ' XP';
+  $('xpBar').style.width = Math.min(100, save.xp / need * 100) + '%';
+
+  const grid = $('levelGrid');
+  grid.innerHTML = '';
+  const unlocked = unlockedLevels();
+  LEVELS.forEach(function (L, i) {
+    const rec = save.lv[i] || { stars:0, best:0 };
+    const locked = i >= unlocked;
+    const c = document.createElement('button');
+    c.className = 'card' + (locked ? ' locked' : '') + (L.endless ? ' endless' : '');
+    let stars = '';
+    for (let s = 0; s < 3; s++) stars += '<span class="' + (s < rec.stars ? 'on' : '') + '">★</span>';
+    c.innerHTML =
+      '<div class="no">' + (L.endless ? 'BONUS' : 'LEVEL ' + (i + 1)) + (locked ? ' &middot; LOCKED' : '') + '</div>' +
+      '<div class="nm">' + L.name + '</div>' +
+      '<div class="ob">' + L.blurb + '</div>' +
+      '<div class="st">' + stars +
+      (rec.best ? '<span style="margin-left:auto;color:#69718a">' + rec.best.toLocaleString() + '</span>' : '') +
+      '</div>';
+    if (!locked) c.addEventListener('click', function () { audioInit(); startLevel(i); });
+    grid.appendChild(c);
+  });
+}
+
+function showResult(won, stars, xp, leveled) {
+  $('resTitle').textContent = won ? 'Level Complete' : (level.endless ? 'Jar Full' : 'Out of Drops');
+  $('resScore').textContent = score.toLocaleString();
+  $('resXp').textContent = '+' + xp + ' XP';
+  const els = $('resStars').children;
+  for (let i = 0; i < 3; i++) els[i].className = '';
+  for (let i = 0; i < 3; i++) {
+    (function (i) {
+      setTimeout(function () {
+        els[i].className = 'pop' + (i < stars ? ' won' : '');
+        if (i < stars) tone(noteFreq(4 + i * 2), 0.3, 0.12, 'sine');
+      }, 260 + i * 260);
+    })(i);
+  }
+  $('resLvUp').classList.toggle('on', leveled);
+  $('resLvUp').textContent = 'LEVEL UP  →  ' + save.plv;
+  $('btnNext').style.display = (won && levelIdx + 1 < LEVELS.length) ? '' : 'none';
+  syncScreens();
+}
+
+$('btnMap').addEventListener('click', function () { screenName = 'map'; syncScreens(); });
+$('btnRetry').addEventListener('click', function () { startLevel(levelIdx); });
+$('btnNext').addEventListener('click', function () { startLevel(Math.min(levelIdx + 1, LEVELS.length - 1)); });
+
+/* ==========================================================================
+   15. RENDERING
+   ========================================================================== */
+function mix(hex, to, t) {
+  const r = parseInt(hex.slice(1, 3), 16), g = parseInt(hex.slice(3, 5), 16), b = parseInt(hex.slice(5, 7), 16);
+  return 'rgb(' + Math.round(r + (to - r) * t) + ',' + Math.round(g + (to - g) * t) + ',' + Math.round(b + (to - b) * t) + ')';
+}
+function easeOutBack(t) { const c1 = 2.0, c3 = c1 + 1; return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2); }
+
+function drawBall(g, b, alpha) {
+  const r = b.cr;
+  g.save();
+  g.globalAlpha = alpha === undefined ? 1 : alpha;
+  g.translate(b.x, b.y);
+
+  // Squash and stretch along the contact normal: render-only, and the single
+  // biggest reason the collisions read as physical.
+  if (b.squash > 0.004) {
+    g.rotate(b.sqAng);
+    g.scale(1 - b.squash, 1 + b.squash * 0.62);
+    g.rotate(-b.sqAng);
+  }
+
+  g.fillStyle = 'rgba(0,0,0,0.22)';
+  g.beginPath(); g.arc(0, r * 0.14, r * 0.95, 0, 6.2832); g.fill();
+
+  if (b.kind === 'bomb') {
+    g.fillStyle = '#2b3040';
+    g.beginPath(); g.arc(0, 0, r, 0, 6.2832); g.fill();
+    g.strokeStyle = '#ff9f5c'; g.lineWidth = 3;
+    g.beginPath(); g.arc(0, 0, r * 0.62, clock * 4, clock * 4 + 4.4); g.stroke();
+    g.fillStyle = '#ff9f5c';
+    g.beginPath(); g.arc(0, 0, r * 0.22, 0, 6.2832); g.fill();
+  } else if (b.kind === 'rainbow') {
+    for (let i = 0; i < 6; i++) {
+      g.fillStyle = COLORS[(i * 2 + Math.floor(clock * 6)) % COLORS.length];
+      g.beginPath(); g.moveTo(0, 0);
+      g.arc(0, 0, r, i * 1.047, (i + 1) * 1.047); g.closePath(); g.fill();
+    }
+    g.fillStyle = 'rgba(255,255,255,.55)';
+    g.beginPath(); g.arc(0, 0, r * 0.34, 0, 6.2832); g.fill();
+  } else {
+    const c = COLORS[b.tier];
+    const grad = g.createRadialGradient(-r * 0.32, -r * 0.38, r * 0.06, 0, 0, r * 1.05);
+    grad.addColorStop(0, mix(c, 255, 0.42));
+    grad.addColorStop(0.55, c);
+    grad.addColorStop(1, mix(c, 0, 0.22));
+    g.fillStyle = grad;
+    g.beginPath(); g.arc(0, 0, r, 0, 6.2832); g.fill();
+
+    g.lineWidth = Math.max(1, r * 0.05);
+    g.strokeStyle = 'rgba(255,255,255,0.16)';
+    g.beginPath(); g.arc(0, 0, r - g.lineWidth / 2, Math.PI * 1.05, Math.PI * 1.95); g.stroke();
+
+    g.fillStyle = 'rgba(255,255,255,0.35)';
+    g.beginPath(); g.ellipse(-r * 0.33, -r * 0.4, r * 0.2, r * 0.13, -0.7, 0, 6.2832); g.fill();
+
+    g.rotate(b.a);
+    g.fillStyle = 'rgba(0,0,0,0.13)';
+    g.beginPath(); g.arc(r * 0.5, 0, Math.max(1.4, r * 0.13), 0, 6.2832); g.fill();
+    g.rotate(-b.a);
+  }
+
+  if (b.flash > 0) {
+    g.globalAlpha = b.flash * 0.75;
+    g.fillStyle = '#fff';
+    g.beginPath(); g.arc(0, 0, r, 0, 6.2832); g.fill();
+  }
+  g.restore();
+}
+
+function drawGeo(g) {
+  for (const c of geo) {
+    if (c.k === 'circ') {
+      const grad = g.createRadialGradient(c.x - c.r * 0.3, c.y - c.r * 0.3, c.r * 0.1, c.x, c.y, c.r);
+      grad.addColorStop(0, '#ffd9a8'); grad.addColorStop(1, '#e0913f');
+      g.fillStyle = grad;
+      g.beginPath(); g.arc(c.x, c.y, c.r, 0, 6.2832); g.fill();
+    } else {
+      g.lineCap = 'round';
+      g.lineWidth = c.r * 2;
+      g.strokeStyle = 'rgba(255,255,255,0.14)';
+      g.beginPath(); g.moveTo(c.ax, c.ay); g.lineTo(c.bx, c.by); g.stroke();
+      g.lineWidth = Math.max(1.5, c.r * 0.5);
+      g.strokeStyle = 'rgba(255,255,255,0.10)';
+      g.beginPath(); g.moveTo(c.ax, c.ay); g.lineTo(c.bx, c.by); g.stroke();
+    }
+  }
+}
+
+function drawLadder(g) {
+  const n = RADII.length;
+  const gap = (JAR_R - JAR_L) / (n - 1);
+  for (let i = 0; i < n; i++) {
+    const x = JAR_L + gap * i, y = LADDER_Y;
+    const rr = 7 + i * 1.05;
+    const got = save.seen[i] || i <= biggest;
+    g.globalAlpha = got ? 1 : 0.2;
+    g.fillStyle = got ? COLORS[i] : '#4a5164';
+    g.beginPath(); g.arc(x, y, rr, 0, 6.2832); g.fill();
+    if (i === biggest && biggest > 0) {
+      g.globalAlpha = 0.85; g.strokeStyle = '#fff'; g.lineWidth = 1.6;
+      g.beginPath(); g.arc(x, y, rr + 4.5, 0, 6.2832); g.stroke();
+    }
+  }
+  g.globalAlpha = 1;
+}
+
+function render() {
+  const g = ctx;
+  g.setTransform(scale, 0, 0, scale, 0, 0);
+
+  const bg = g.createLinearGradient(0, 0, 0, H);
+  bg.addColorStop(0, '#161a26'); bg.addColorStop(1, '#0b0d13');
+  g.fillStyle = bg;
+  g.fillRect(-30, -30, W + 60, H + 60);
+
+  if (screenName === 'map') { g.setTransform(1, 0, 0, 1, 0, 0); return; }
+
+  // danger vignette as the pile creeps over the line
+  const dl = Math.min(1, overflowWorst / OVERFLOW_TIME);
+  if (dl > 0.02) {
+    const v = g.createRadialGradient(W / 2, H / 2, W * 0.25, W / 2, H / 2, W * 0.78);
+    v.addColorStop(0, 'rgba(255,60,60,0)');
+    v.addColorStop(1, 'rgba(255,40,40,' + (0.42 * dl * (0.7 + 0.3 * Math.sin(clock * 9))) + ')');
+    g.fillStyle = v; g.fillRect(0, 0, W, H);
+  }
+
+  g.save();
+  if (shake > 0.05) g.translate((Math.random() - 0.5) * shake, (Math.random() - 0.5) * shake);
+  g.translate(W / 2, CAM_CY); g.scale(camZoom, camZoom); g.translate(-W / 2, -CAM_CY);
+  g.translate(PIVOT_X, PIVOT_Y); g.rotate(tilt); g.translate(-PIVOT_X, -PIVOT_Y);
+
+  // well interior
+  g.save();
+  g.beginPath(); g.rect(JAR_L, RIM - 400, JAR_R - JAR_L, FLOOR - RIM + 400); g.clip();
+  const well = g.createLinearGradient(0, RIM, 0, FLOOR);
+  well.addColorStop(0, 'rgba(255,255,255,0.012)');
+  well.addColorStop(1, 'rgba(255,255,255,0.05)');
+  g.fillStyle = well; g.fillRect(JAR_L, RIM - 400, JAR_R - JAR_L, FLOOR - RIM + 400);
+  g.restore();
+
+  // danger line
+  g.save();
+  g.setLineDash([9, 11]); g.lineWidth = 2;
+  g.strokeStyle = dl > 0
+    ? 'rgba(255,' + Math.round(120 - 90 * dl) + ',' + Math.round(120 - 90 * dl) + ',' + (0.3 + 0.55 * dl) + ')'
+    : 'rgba(255,255,255,0.09)';
+  g.beginPath(); g.moveTo(JAR_L + 3, DANGER); g.lineTo(JAR_R - 3, DANGER); g.stroke();
+  g.restore();
+
+  for (const b of bodies) drawBall(g, b);
+  drawGeo(g);
+
+  for (const p of pops) {
+    const t = p.t / p.life;
+    g.globalAlpha = (1 - t) * (p.wide ? 0.4 : 0.75);
+    g.lineWidth = (p.wide ? 7 : 4) * (1 - t) + 1;
+    g.strokeStyle = p.color;
+    g.beginPath(); g.arc(p.x, p.y, p.r + t * p.r * (p.wide ? 2.6 : 1.9), 0, 6.2832); g.stroke();
+  }
+  g.globalAlpha = 1;
+
+  for (const s of sparks) {
+    const t = s.t / s.life;
+    const d = s.d + s.sp * s.t;
+    g.globalAlpha = (1 - t) * 0.9;
+    g.strokeStyle = s.color; g.lineWidth = 2.4 * (1 - t) + 0.4;
+    g.beginPath();
+    g.moveTo(s.x + Math.cos(s.ang) * d, s.y + Math.sin(s.ang) * d);
+    g.lineTo(s.x + Math.cos(s.ang) * (d + 16 * (1 - t)), s.y + Math.sin(s.ang) * (d + 16 * (1 - t)));
+    g.stroke();
+  }
+  g.globalAlpha = 1;
+
+  for (const p of particles) {
+    const t = p.t / p.life;
+    g.globalAlpha = 1 - t * t;
+    g.fillStyle = p.color;
+    g.beginPath(); g.arc(p.x, p.y, p.r * (1 - t * 0.55), 0, 6.2832); g.fill();
+  }
+  g.globalAlpha = 1;
+
+  g.textAlign = 'center';
+  for (const f of floaters) {
+    const t = f.t / f.life;
+    g.globalAlpha = t < 0.15 ? t / 0.15 : 1 - Math.pow((t - 0.15) / 0.85, 2);
+    g.fillStyle = '#fff';
+    g.font = '700 26px ui-sans-serif, system-ui, sans-serif';
+    g.fillText(f.text, f.x, f.y - 14 - t * 46);
+    if (f.combo) {
+      g.fillStyle = f.color;
+      g.font = '700 16px ui-sans-serif, system-ui, sans-serif';
+      g.fillText('CHAIN x' + f.combo, f.x, f.y + 8 - t * 46);
+    }
+  }
+  g.globalAlpha = 1;
+
+  // the piece waiting at the spout + its aim guide
+  if (screenName === 'play' && phase === 'play' && dropsLeft() > 0) {
+    const kind = armed || 'ball';
+    const x = clampAim(aimX, current, kind);
+    const ready = 1 - Math.max(0, cooldown / DROP_COOLDOWN);
+    const col = kind === 'bomb' ? '#ff9f5c' : kind === 'rainbow' ? '#c9a7ff' : COLORS[current];
+    g.save();
+    g.globalAlpha = 0.1 + 0.16 * ready;
+    g.setLineDash([5, 13]); g.lineWidth = 2; g.strokeStyle = col;
+    g.beginPath();
+    g.moveTo(x, DROP_Y + pieceRadius(current, kind) + 8);
+    g.lineTo(x, FLOOR - 6);
+    g.stroke();
+    g.restore();
+    if (ready > 0.02) {
+      const r = pieceRadius(current, kind);
+      drawBall(g, { x:x, y:DROP_Y, cr:r * (0.55 + 0.45 * ready), tier:current,
+                    kind:kind, a:0, squash:0, sqAng:0, flash:0 }, 0.35 + 0.65 * ready);
+    }
+  }
+  g.restore();
+
+  drawLadder(g);
+
+  if (flashT > 0) {
+    g.globalAlpha = flashT * 0.16; g.fillStyle = '#fff'; g.fillRect(0, 0, W, H); g.globalAlpha = 1;
+  }
+  g.setTransform(1, 0, 0, 1, 0, 0);
+}
+
+/* ==========================================================================
+   16. MAIN LOOP
+   ========================================================================== */
+let acc = 0, last = performance.now();
+
+// Everything that moves the run forward lives here rather than inside the
+// render loop, so the win / loss transitions can be driven and tested apart
+// from drawing.
+function advance(dt, sdt) {
+  if (screenName === 'map') return;
+  if (sdt === undefined) sdt = dt;
+
+  acc += sdt;
+  let guard = 0;
+  while (acc >= FIXED_DT && guard++ < 16) { step(FIXED_DT); acc -= FIXED_DT; }
+  if (acc > FIXED_DT) acc = 0;
+  if (cooldown > 0) cooldown -= sdt;
+
+  // after the last drop, let the pile settle before judging the run
+  if (phase === 'settling') {
+    endTimer -= dt;
+    let moving = 0;
+    for (const b of bodies) moving = Math.max(moving, Math.abs(b.vx) + Math.abs(b.vy));
+    if (goalMet()) { phase = 'done'; endTimer = 0.9; }
+    else if (endTimer <= 0 || moving < 26) finish(false);
+  } else if (phase === 'done' && screenName === 'play') {
+    endTimer -= dt;
+    if (endTimer <= 0) finish(true);
+  }
+
+  // camera pulls back a little as the pile grows
+  let top = FLOOR;
+  for (const b of bodies) top = Math.min(top, b.y - b.cr);
+  const fill = Math.max(0, Math.min(1, (FLOOR - top) / (FLOOR - RIM)));
+  camZoom += ((1 - fill * 0.055) - camZoom) * Math.min(1, dt * 3.2);
+}
+function frame(now) {
+  let dt = (now - last) / 1000;
+  last = now;
+  if (dt > 0.1) dt = 0.1;
+  clock += dt;
+
+  // brief slow motion on a 3+ chain so you actually see the cascade
+  const ts = slowT > 0 ? 0.42 : 1;
+  if (slowT > 0) slowT = Math.max(0, slowT - dt);
+  const sdt = dt * ts;
+
+  advance(dt, sdt);
+
+  for (const p of particles) { p.t += dt; p.vy += 1500 * dt; p.x += p.vx * dt; p.y += p.vy * dt; p.vx *= 0.985; }
+  particles = particles.filter(function (p) { return p.t < p.life; });
+  for (const p of pops) p.t += dt;
+  pops = pops.filter(function (p) { return p.t < p.life; });
+  for (const s of sparks) s.t += dt;
+  sparks = sparks.filter(function (s) { return s.t < s.life; });
+  for (const f of floaters) f.t += dt;
+  floaters = floaters.filter(function (f) { return f.t < f.life; });
+  shake *= Math.pow(0.0015, dt);
+  if (flashT > 0) flashT = Math.max(0, flashT - dt / 0.3);
+
+  render();
+  requestAnimationFrame(frame);
+}
+
+resize();
+syncScreens();
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>

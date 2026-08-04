@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bluebird — Innovation &amp; Security</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  /* ============ tokens ============ */
+  :root {
+    --page-bg: #b1c8dd;
+    --ink: #17384f;
+    --ink-soft: rgba(255, 255, 255, 0.82);
+    --blue: #1379e8;
+    --blue-deep: #0f5fc4;
+    --glass: rgba(255, 255, 255, 0.16);
+    --glass-line: rgba(255, 255, 255, 0.42);
+    --radius-stage: 30px;
+    --radius-card: 20px;
+    --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --serif: "Instrument Serif", "Times New Roman", Georgia, serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 44px 24px;
+    font-family: var(--sans);
+    color: #fff;
+    background: var(--page-bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ============ stage / hero card ============ */
+  .stage {
+    position: relative;
+    width: min(1080px, 100%);
+    aspect-ratio: 1080 / 610;
+    min-height: 600px;
+    padding: 26px 34px 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    isolation: isolate;
+    border-radius: var(--radius-stage);
+    background:
+      radial-gradient(120% 90% at 50% 105%, rgba(255, 255, 255, 0.95) 0%, rgba(226, 243, 249, 0.5) 38%, rgba(198, 220, 234, 0) 70%),
+      linear-gradient(180deg, #c3d5e3 0%, #bcd2e2 42%, #cfe4ec 72%, #dff0f4 100%);
+    box-shadow: 0 40px 80px -30px rgba(23, 56, 79, 0.35);
+  }
+
+  /* ============ nav ============ */
+  .nav {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo {
+    display: inline-flex;
+    flex: 0 0 auto;
+    color: #fff;
+  }
+  .logo svg { display: block; width: 42px; height: auto; filter: drop-shadow(0 1px 2px rgba(23,56,79,.25)); }
+
+  .nav__links {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: clamp(6px, 1.4vw, 18px);
+  }
+
+  .nav__links a {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.92);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .nav__links a:hover { background: rgba(255, 255, 255, 0.18); }
+  .nav__links a[aria-current="page"] {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.55);
+  }
+
+  .btn-resources {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 999px;
+    background: #fff;
+    color: #2a4a60;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 6px 16px -8px rgba(23, 56, 79, 0.5);
+    transition: transform 0.18s ease;
+  }
+  .btn-resources:hover { transform: translateY(-1px); }
+
+  /* ============ giant wordmark ============ */
+  .wordmark {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin: 0;
+    text-align: center;
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(72px, 17.5vw, 196px);
+    line-height: 0.86;
+    letter-spacing: 0.01em;
+    user-select: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.78) 8%, rgba(255, 255, 255, 0.52) 55%, rgba(255, 255, 255, 0.1) 96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* ============ bird artwork (pure CSS) ============ */
+  .bird {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 16%;
+    width: min(46%, 430px);
+    aspect-ratio: 3 / 4;
+    transform: translateX(-46%);
+    pointer-events: none;
+  }
+
+  .bird__body {
+    position: absolute;
+    left: 8%;
+    top: 32%;
+    width: 78%;
+    height: 88%;
+    border-radius: 48% 52% 44% 56% / 38% 40% 62% 60%;
+    filter: blur(16px);
+    background:
+      radial-gradient(58% 42% at 62% 8%, rgba(255, 140, 92, 0.5) 0%, rgba(255, 140, 92, 0) 62%),
+      radial-gradient(70% 60% at 30% 18%, #1fa7e8 0%, #1d63d8 48%, rgba(29, 99, 216, 0) 78%),
+      linear-gradient(190deg, #2b8fe0 0%, #4358d8 34%, #9a63d0 58%, rgba(214, 216, 226, 0.4) 82%, rgba(232, 242, 245, 0) 100%);
+    opacity: 0.95;
+  }
+
+  .bird__tail {
+    position: absolute;
+    left: 26%;
+    top: 74%;
+    width: 44%;
+    height: 46%;
+    filter: blur(26px);
+    border-radius: 50% 50% 40% 60% / 60% 60% 40% 40%;
+    background: linear-gradient(200deg, rgba(120, 110, 220, 0.65), rgba(200, 220, 235, 0));
+  }
+
+  .bird__head {
+    position: absolute;
+    left: 14%;
+    top: 6%;
+    width: 66%;
+    aspect-ratio: 1 / 1.06;
+    border-radius: 52% 48% 46% 54% / 54% 56% 44% 46%;
+    filter: blur(1.4px);
+    background:
+      radial-gradient(38% 34% at 22% 22%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 70%),
+      radial-gradient(46% 40% at 86% 40%, rgba(255, 156, 110, 0.55) 0%, rgba(255, 156, 110, 0) 68%),
+      radial-gradient(80% 78% at 34% 30%, #35c4ef 0%, #159ce4 40%, #1667cf 78%, #14459e 100%);
+    box-shadow: inset -10px 14px 34px rgba(12, 40, 110, 0.45);
+  }
+
+  .bird__cheek {
+    position: absolute;
+    left: 20%;
+    top: 44%;
+    width: 46%;
+    height: 34%;
+    filter: blur(10px);
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(46, 210, 250, 0.75), rgba(46, 210, 250, 0));
+  }
+
+  .bird__eye {
+    position: absolute;
+    left: 47%;
+    top: 27%;
+    width: 15%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle at 34% 30%, #6f4634 0%, #2a1410 46%, #120708 100%);
+    box-shadow: 0 0 0 3px rgba(160, 90, 60, 0.5), 0 0 10px rgba(10, 20, 50, 0.4);
+  }
+  .bird__eye::after {
+    content: "";
+    position: absolute;
+    left: 22%;
+    top: 18%;
+    width: 26%;
+    height: 26%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .bird__beak {
+    position: absolute;
+    left: 66%;
+    top: 30%;
+    width: 40%;
+    height: 13%;
+    filter: blur(0.6px);
+    border-radius: 6% 60% 60% 8% / 40% 60% 42% 60%;
+    transform: rotate(11deg);
+    background: linear-gradient(120deg, #b8543c 0%, #8f3d2e 42%, #5e2a25 100%);
+    box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  /* soft haze so the bird melts into the card like the photo */
+  .bird__haze {
+    position: absolute;
+    inset: auto -20% -6% -20%;
+    height: 46%;
+    filter: blur(24px);
+    background: linear-gradient(180deg, rgba(240, 250, 252, 0) 0%, rgba(240, 250, 252, 0.85) 70%, rgba(240, 250, 252, 0.95) 100%);
+  }
+
+  /* ============ bottom content ============ */
+  .hero {
+    position: relative;
+    z-index: 4;
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .copy { max-width: 300px; }
+
+  .copy h1 {
+    margin: 0 0 12px;
+    font-weight: 300;
+    font-size: clamp(30px, 3.4vw, 38px);
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    text-shadow: 0 2px 14px rgba(23, 56, 79, 0.22);
+  }
+  .copy h1 .amp {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    padding-right: 6px;
+  }
+  .copy h1 .strong { font-weight: 500; }
+
+  .copy p {
+    margin: 0 0 22px;
+    max-width: 210px;
+    font-size: 11.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  .actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    border: 0;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .btn:hover { transform: translateY(-2px); }
+
+  .btn--primary {
+    padding: 7px 8px 7px 22px;
+    color: #fff;
+    background: linear-gradient(180deg, #2286f0, var(--blue-deep));
+    box-shadow: 0 12px 26px -12px rgba(15, 95, 196, 0.9);
+  }
+  .btn--primary .chev {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--blue);
+  }
+  .btn--primary .chev svg { width: 13px; height: 13px; }
+
+  .btn--ghost {
+    padding: 13px 24px;
+    color: #33546a;
+    background: #fff;
+    box-shadow: 0 10px 24px -14px rgba(23, 56, 79, 0.7);
+  }
+
+  /* right side */
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+    flex: 1 1 auto;
+    max-width: 640px;
+  }
+
+  .users {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 16px 6px 6px;
+    border-radius: 999px;
+    border: 1px solid var(--glass-line);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(14px) saturate(1.3);
+    -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  }
+
+  .avatars { display: flex; }
+  .avatars span {
+    width: 32px;
+    height: 32px;
+    margin-right: -10px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 6px rgba(23, 56, 79, 0.3);
+  }
+  .avatars span:nth-child(1) { background: radial-gradient(circle at 50% 32%, #f6d3b6 34%, #c98d63 35%, #6d3f28 100%); }
+  .avatars span:nth-child(2) { background: radial-gradient(circle at 50% 32%, #7c5340 34%, #4a2c1e 35%, #23120c 100%); }
+  .avatars span:nth-child(3) { background: radial-gradient(circle at 50% 32%, #ffe0c4 34%, #d3a07a 35%, #7b4c33 100%); }
+  .avatars span:nth-child(4) { background: radial-gradient(circle at 50% 32%, #f0c9a6 34%, #b3764f 35%, #4f2c1c 100%); margin-right: 0; }
+
+  .users__label { font-size: 12px; color: rgba(255, 255, 255, 0.9); }
+  .users__count { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+
+  /* ============ feature cards ============ */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: end;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 126px;
+    padding: 16px 18px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--glass-line);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(16px) saturate(1.25);
+    -webkit-backdrop-filter: blur(16px) saturate(1.25);
+    box-shadow: 0 18px 40px -26px rgba(23, 56, 79, 0.7);
+  }
+
+  .card__arrow {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  .card__arrow:hover { background: rgba(255, 255, 255, 0.35); }
+  .card__arrow svg { width: 12px; height: 12px; }
+
+  /* card 1 — security */
+  .card--security { padding-left: 96px; }
+  .card--security .lock {
+    position: absolute;
+    left: 4px;
+    bottom: 6px;
+    width: 92px;
+    height: auto;
+    filter: drop-shadow(0 8px 18px rgba(23, 56, 79, 0.35));
+  }
+  .chip {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.24);
+    font-size: 10px;
+    letter-spacing: 0.01em;
+  }
+  .card h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.32;
+    letter-spacing: -0.01em;
+  }
+  .card p {
+    margin: 8px 0 0;
+    font-size: 10.5px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  /* card 2 — white AI card */
+  .card--ai {
+    min-height: 176px;
+    justify-content: flex-start;
+    border-color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.94);
+    color: #23414f;
+  }
+  .card--ai .card__arrow {
+    border-color: rgba(35, 65, 79, 0.2);
+    background: transparent;
+    color: #4a6b7d;
+  }
+  .card--ai h3 { color: #1f3d4c; font-size: 17px; margin-top: 6px; }
+  .card--ai p { color: rgba(35, 65, 79, 0.62); margin-top: auto; padding-top: 12px; }
+  .card--ai .drop {
+    width: 46px;
+    height: 46px;
+    filter: drop-shadow(0 6px 14px rgba(19, 121, 232, 0.45));
+  }
+
+  /* card 3 — stat */
+  .card--stat { align-items: flex-start; }
+  .stat {
+    margin: 0;
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(44px, 5.2vw, 60px);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+  }
+  .stat sup {
+    font-family: var(--sans);
+    font-size: 0.36em;
+    font-weight: 400;
+    top: -0.85em;
+    margin-left: 4px;
+  }
+  .card--stat p { align-self: flex-end; text-align: right; max-width: 165px; margin-top: -12px; }
+
+  /* ============ responsive ============ */
+  @media (max-width: 1080px) {
+    .card--security { padding-left: 84px; }
+    .card--security .lock { width: 78px; }
+  }
+
+  @media (max-width: 940px) {
+    .stage { aspect-ratio: auto; padding: 22px 24px 26px; }
+    .hero { flex-direction: column; align-items: stretch; gap: 40px; }
+    .copy { max-width: none; }
+    .copy p { max-width: 280px; }
+    .panel { max-width: none; align-items: stretch; }
+    .users { align-self: flex-end; }
+    .bird { width: 320px; top: 12%; transform: translateX(-50%); opacity: 0.95; }
+    .wordmark { top: 16%; }
+  }
+
+  @media (max-width: 720px) {
+    body { padding: 18px 14px; }
+    .stage { min-height: 0; padding-top: 18px; border-radius: 24px; }
+    .nav__links {
+      order: 3;
+      width: 100%;
+      margin: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+      justify-content: flex-start;
+    }
+    .nav__links::-webkit-scrollbar { display: none; }
+    .nav { flex-wrap: wrap; justify-content: space-between; row-gap: 14px; }
+    .cards { grid-template-columns: 1fr; }
+    .card--ai { min-height: 150px; }
+    .card--stat p { align-self: flex-start; text-align: left; margin-top: 10px; }
+    .bird { position: relative; left: auto; top: auto; transform: none; width: 260px; margin: 18px auto 0; }
+    .wordmark { position: relative; top: auto; margin-top: 26px; }
+  }
+
+  @media (max-width: 420px) {
+    .actions .btn { flex: 1 1 100%; justify-content: space-between; }
+    .btn--ghost { justify-content: center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+  <main class="stage">
+    <!-- nav -->
+    <header class="nav">
+      <a class="logo" href="#" aria-label="Bluebird home">
+        <svg viewBox="0 0 64 22" fill="none" aria-hidden="true">
+          <path d="M2 15.5c9.4 1.9 18.6 1.2 27.6-2.1 7.9-2.9 15.4-7 22.4-12.2-1.1 4.3-3.3 8-6.4 11.1 3.9-.9 7.4-2.5 10.4-4.8-3.6 6.3-9.2 10.3-16.9 12-11.6 2.6-24.1.9-37.1-4z" fill="currentColor"/>
+        </svg>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="#" aria-current="page">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">industries</a></li>
+          <li><a href="#">threat intelligence</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-resources" type="button">Resources</button>
+    </header>
+
+    <!-- background wordmark -->
+    <p class="wordmark" aria-hidden="true">BLUEBIRD</p>
+
+    <!-- bird artwork -->
+    <div class="bird" aria-hidden="true">
+      <div class="bird__tail"></div>
+      <div class="bird__body"></div>
+      <div class="bird__head">
+        <div class="bird__cheek"></div>
+        <div class="bird__eye"></div>
+      </div>
+      <div class="bird__beak"></div>
+      <div class="bird__haze"></div>
+    </div>
+
+    <!-- bottom content -->
+    <div class="hero">
+      <div class="copy">
+        <h1>Innovation<br /><span class="amp">&amp;</span><span class="strong">security</span></h1>
+        <p>We are at the forefront of merging cutting-edge technology</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="#">
+            Our Solutions
+            <span class="chev" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M5.5 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a class="btn btn--ghost" href="#">Contact us</a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="users">
+          <div class="avatars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <span class="users__label">Active Users</span>
+          <span class="users__count">+323</span>
+        </div>
+
+        <div class="cards">
+          <!-- card 1 -->
+          <article class="card card--security">
+            <a class="card__arrow" href="#" aria-label="Perfect security details">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5l7-7M6 4.5h5.5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <svg class="lock" viewBox="0 0 100 118" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="shackle" x1="20" y1="8" x2="86" y2="60" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ffffff" stop-opacity=".95"/><stop offset="1" stop-color="#bfd9ea" stop-opacity=".7"/>
+                </linearGradient>
+                <linearGradient id="bodyg" x1="12" y1="52" x2="92" y2="114" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ffffff" stop-opacity=".92"/><stop offset=".55" stop-color="#d6e9f3" stop-opacity=".78"/><stop offset="1" stop-color="#9dc4de" stop-opacity=".8"/>
+                </linearGradient>
+              </defs>
+              <path d="M28 56V36a22 22 0 0 1 44 0v20" stroke="url(#shackle)" stroke-width="13" stroke-linecap="round"/>
+              <rect x="12" y="52" width="76" height="62" rx="20" fill="url(#bodyg)"/>
+              <path d="M50 70l14 6v10c0 8-6 13.5-14 16-8-2.5-14-8-14-16V76l14-6z" fill="#1379e8" fill-opacity=".55"/>
+              <path d="M44 86l4.5 4.5L58 81" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="chip">Perfect Security</span>
+            <h3>AI ensures total<br />protection</h3>
+          </article>
+
+          <!-- card 2 -->
+          <article class="card card--ai">
+            <a class="card__arrow" href="#" aria-label="Integrated AI agent details">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5l7-7M6 4.5h5.5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <svg class="drop" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="dropg" x1="10" y1="4" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#59d3ff"/><stop offset=".5" stop-color="#1c86f0"/><stop offset="1" stop-color="#0b3fb0"/>
+                </linearGradient>
+              </defs>
+              <path d="M24 3c8 8.5 17 15.4 17 25a17 17 0 1 1-34 0C7 18.4 16 11.5 24 3z" fill="url(#dropg)"/>
+              <path d="M17 33c-3-5-1.5-11 4-15.5 4.6-3.8 7.6-8 8-11.5-1 6-4 9.5-8.5 13.5-4 3.6-5.6 8.6-3.5 13.5z" fill="#fff" fill-opacity=".55"/>
+            </svg>
+            <h3>Integrated AI<br />Agent</h3>
+            <p>Integrated AI agent for personalized client experiences.</p>
+          </article>
+
+          <!-- card 3 -->
+          <article class="card card--stat">
+            <a class="card__arrow" href="#" aria-label="Impact details">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5l7-7M6 4.5h5.5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <p class="stat">42<sup>%</sup></p>
+            <p>Join us in redefining the future of security with innovative solutions</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+<script>
+(function(){
+  var b = document.querySelector('.bird');
+  if(!b) return;
+  var img = document.createElement('img');
+  img.src = 'bird.png'; img.alt = 'Blue bird';
+  img.className = b.getAttribute('class') || 'bird';
+  var s = b.getAttribute('style'); if (s) img.setAttribute('style', s);
+  img.style.objectFit = 'contain';
+  b.parentNode.replaceChild(img, b);
+})();
+</script>
+</body>
+</html>

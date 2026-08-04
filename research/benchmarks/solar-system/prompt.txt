@@ -1,0 +1,1 @@
+Create a 3D solar system in a single self-contained HTML file using three.js loaded from a CDN. The sun at the center, planets orbiting at different speeds, and a camera you can orbit with the mouse. No build step, it should just run when the file is opened.

@@ -1,0 +1,47 @@
+{
+  "prompt": "Write a Python program that shows a ball bouncing inside a spinning hexagon. The ball should be affected by gravity and friction, and it must bounce off the rotating walls realistically.",
+  "results": [
+    {
+      "name": "opus-4.8",
+      "model_id": "claude-opus-4-8",
+      "label": "opus-4-8",
+      "ok": true,
+      "in": 6,
+      "out": 3797,
+      "cc_cost": 0.42991100000000004,
+      "session_total_usd": 0.430549,
+      "time": 52.194,
+      "kind": "py",
+      "file": "opus-4-8.py",
+      "cost": 0.094955
+    },
+    {
+      "name": "opus-5",
+      "model_id": "claude-opus-5",
+      "label": "opus-5",
+      "ok": true,
+      "in": 8,
+      "out": 11047,
+      "cc_cost": 0.7523355,
+      "session_total_usd": 0.7529735,
+      "time": 126.414,
+      "kind": "py",
+      "file": "opus-5.py",
+      "cost": 0.276215
+    },
+    {
+      "name": "fable-5",
+      "model_id": "claude-fable-5",
+      "label": "fable-5",
+      "ok": true,
+      "in": 2,
+      "out": 4891,
+      "cc_cost": 0.532929,
+      "session_total_usd": 0.533567,
+      "time": 58.455,
+      "kind": "py",
+      "file": "fable-5.py",
+      "cost": 0.24457
+    }
+  ]
+}

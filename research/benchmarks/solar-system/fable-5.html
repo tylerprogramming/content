@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar System</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #000; }
+  #hud {
+    position: fixed; top: 16px; left: 16px; color: #cfd8ff;
+    font-family: system-ui, -apple-system, sans-serif; pointer-events: none;
+    text-shadow: 0 1px 4px #000;
+  }
+  #hud h1 { margin: 0 0 4px; font-size: 18px; font-weight: 600; letter-spacing: 1px; }
+  #hud p  { margin: 0; font-size: 12px; opacity: 0.7; }
+  #tip {
+    position: fixed; display: none; padding: 4px 10px; border-radius: 6px;
+    background: rgba(10, 14, 30, 0.85); border: 1px solid rgba(140, 160, 255, 0.4);
+    color: #e8edff; font: 13px system-ui, sans-serif; pointer-events: none;
+    transform: translate(12px, -50%); white-space: nowrap;
+  }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="hud">
+  <h1>SOLAR SYSTEM</h1>
+  <p>drag to orbit &bull; scroll to zoom &bull; right-drag to pan</p>
+</div>
+<div id="tip"></div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(55, innerWidth / innerHeight, 0.1, 3000);
+camera.position.set(0, 34, 70);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+document.body.appendChild(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.06;
+controls.minDistance = 12;
+controls.maxDistance = 400;
+
+// --- Lights ---
+scene.add(new THREE.AmbientLight(0xffffff, 0.18));
+const sunLight = new THREE.PointLight(0xfff2d0, 2.2, 0, 0); // decay 0: stylized, reaches Neptune
+scene.add(sunLight);
+
+// --- Starfield ---
+{
+  const starGeo = new THREE.BufferGeometry();
+  const N = 4000, pos = new Float32Array(N * 3);
+  for (let i = 0; i < N; i++) {
+    const r = 400 + Math.random() * 600;
+    const theta = Math.random() * Math.PI * 2;
+    const phi = Math.acos(2 * Math.random() - 1);
+    pos[i * 3]     = r * Math.sin(phi) * Math.cos(theta);
+    pos[i * 3 + 1] = r * Math.cos(phi);
+    pos[i * 3 + 2] = r * Math.sin(phi) * Math.sin(theta);
+  }
+  starGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({
+    color: 0xbfcaff, size: 1.1, sizeAttenuation: false, transparent: true, opacity: 0.85
+  })));
+}
+
+// --- Sun ---
+const sun = new THREE.Mesh(
+  new THREE.SphereGeometry(4, 48, 48),
+  new THREE.MeshBasicMaterial({ color: 0xffc93d })
+);
+sun.name = 'Sun';
+scene.add(sun);
+
+// Soft glow sprite (canvas radial gradient, additive)
+function glowTexture() {
+  const c = document.createElement('canvas');
+  c.width = c.height = 256;
+  const g = c.getContext('2d');
+  const grad = g.createRadialGradient(128, 128, 0, 128, 128, 128);
+  grad.addColorStop(0.0, 'rgba(255, 220, 130, 1)');
+  grad.addColorStop(0.25, 'rgba(255, 170, 60, 0.55)');
+  grad.addColorStop(0.6, 'rgba(255, 120, 30, 0.15)');
+  grad.addColorStop(1.0, 'rgba(255, 100, 20, 0)');
+  g.fillStyle = grad;
+  g.fillRect(0, 0, 256, 256);
+  return new THREE.CanvasTexture(c);
+}
+const glow = new THREE.Sprite(new THREE.SpriteMaterial({
+  map: glowTexture(), blending: THREE.AdditiveBlending, depthWrite: false, transparent: true
+}));
+glow.scale.setScalar(22);
+scene.add(glow);
+
+// --- Planets (stylized sizes/distances; speed ~ Kepler: faster when closer) ---
+const PLANETS = [
+  { name: 'Mercury', size: 0.5,  dist: 10, color: 0x9c8e7d, spin: 0.4  },
+  { name: 'Venus',   size: 0.9,  dist: 14, color: 0xe6c98a, spin: 0.2  },
+  { name: 'Earth',   size: 1.0,  dist: 18, color: 0x4f94cd, spin: 1.6, moon: true },
+  { name: 'Mars',    size: 0.7,  dist: 22, color: 0xc1550e, spin: 1.5  },
+  { name: 'Jupiter', size: 2.6,  dist: 31, color: 0xd8a56a, spin: 3.2  },
+  { name: 'Saturn',  size: 2.2,  dist: 40, color: 0xe3d0a4, spin: 3.0, ring: true, tilt: 0.45 },
+  { name: 'Uranus',  size: 1.6,  dist: 48, color: 0x9fd6d2, spin: 2.2, tilt: 1.4 },
+  { name: 'Neptune', size: 1.55, dist: 55, color: 0x4666e0, spin: 2.4  }
+];
+const K = 28; // orbital speed constant
+
+const bodies = [];       // for animation
+const pickables = [sun]; // for hover tooltip
+
+for (const p of PLANETS) {
+  const pivot = new THREE.Group(); // rotates -> planet orbits
+  scene.add(pivot);
+  pivot.rotation.y = Math.random() * Math.PI * 2; // random start phase
+
+  const holder = new THREE.Group();
+  holder.position.x = p.dist;
+  if (p.tilt) holder.rotation.z = p.tilt;
+  pivot.add(holder);
+
+  const mesh = new THREE.Mesh(
+    new THREE.SphereGeometry(p.size, 40, 40),
+    new THREE.MeshStandardMaterial({ color: p.color, roughness: 0.9, metalness: 0 })
+  );
+  mesh.name = p.name;
+  holder.add(mesh);
+  pickables.push(mesh);
+
+  if (p.ring) {
+    const ring = new THREE.Mesh(
+      new THREE.RingGeometry(p.size * 1.4, p.size * 2.3, 80),
+      new THREE.MeshBasicMaterial({ color: 0xcbb582, side: THREE.DoubleSide, transparent: true, opacity: 0.55 })
+    );
+    ring.rotation.x = -Math.PI / 2;
+    holder.add(ring);
+  }
+
+  let moonPivot = null;
+  if (p.moon) {
+    moonPivot = new THREE.Group();
+    holder.add(moonPivot);
+    const moon = new THREE.Mesh(
+      new THREE.SphereGeometry(0.27, 20, 20),
+      new THREE.MeshStandardMaterial({ color: 0xbbbbbb, roughness: 1 })
+    );
+    moon.name = 'Moon';
+    moon.position.x = 2;
+    moonPivot.add(moon);
+    pickables.push(moon);
+  }
+
+  // Orbit guide line
+  const pts = [];
+  for (let i = 0; i <= 128; i++) {
+    const a = (i / 128) * Math.PI * 2;
+    pts.push(new THREE.Vector3(Math.cos(a) * p.dist, 0, Math.sin(a) * p.dist));
+  }
+  const line = new THREE.Line(
+    new THREE.BufferGeometry().setFromPoints(pts),
+    new THREE.LineBasicMaterial({ color: 0x8899cc, transparent: true, opacity: 0.22 })
+  );
+  scene.add(line);
+
+  bodies.push({ pivot, mesh, moonPivot, orbitSpeed: K / Math.pow(p.dist, 1.5), spin: p.spin });
+}
+
+// --- Hover tooltip ---
+const tip = document.getElementById('tip');
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
+addEventListener('pointermove', (e) => {
+  pointer.set((e.clientX / innerWidth) * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+  raycaster.setFromCamera(pointer, camera);
+  const hit = raycaster.intersectObjects(pickables, false)[0];
+  if (hit) {
+    tip.textContent = hit.object.name;
+    tip.style.display = 'block';
+    tip.style.left = e.clientX + 'px';
+    tip.style.top = e.clientY + 'px';
+  } else {
+    tip.style.display = 'none';
+  }
+});
+
+// --- Animate ---
+const clock = new THREE.Clock();
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = Math.min(clock.getDelta(), 0.05);
+  sun.rotation.y += dt * 0.1;
+  for (const b of bodies) {
+    b.pivot.rotation.y += b.orbitSpeed * dt;
+    b.mesh.rotation.y += b.spin * dt;
+    if (b.moonPivot) b.moonPivot.rotation.y += 2.5 * dt;
+  }
+  controls.update();
+  renderer.render(scene, camera);
+}
+animate();
+
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>
+</body>
+</html>

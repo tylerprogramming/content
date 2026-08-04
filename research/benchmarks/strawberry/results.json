@@ -1,0 +1,47 @@
+{
+  "prompt": "How many r's are in the word strawberry?",
+  "results": [
+    {
+      "name": "opus-4.8",
+      "model_id": "claude-opus-4-8",
+      "label": "opus-4-8",
+      "ok": true,
+      "in": 2,
+      "out": 102,
+      "cc_cost": 0.1456205,
+      "session_total_usd": 0.1456205,
+      "time": 2.706,
+      "kind": "text",
+      "file": "opus-4-8.md",
+      "cost": 0.00256
+    },
+    {
+      "name": "opus-5",
+      "model_id": "claude-opus-5",
+      "label": "opus-5",
+      "ok": true,
+      "in": 2,
+      "out": 5,
+      "cc_cost": 0.143681,
+      "session_total_usd": 0.144283,
+      "time": 1.843,
+      "kind": "text",
+      "file": "opus-5.md",
+      "cost": 0.000135
+    },
+    {
+      "name": "fable-5",
+      "model_id": "claude-fable-5",
+      "label": "fable-5",
+      "ok": true,
+      "in": 2,
+      "out": 69,
+      "cc_cost": 0.29090900000000003,
+      "session_total_usd": 0.29150600000000004,
+      "time": 2.921,
+      "kind": "text",
+      "file": "fable-5.md",
+      "cost": 0.00347
+    }
+  ]
+}

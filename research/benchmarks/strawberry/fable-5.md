@@ -1,0 +1,1 @@
+Three. "Strawberry" has one r in "straw" and two in "berry" — s-t-r-a-w-b-e-r-r-y.

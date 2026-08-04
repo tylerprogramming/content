@@ -1,0 +1,51 @@
+{
+  "query": "Claude Code skills",
+  "total_found": 3,
+  "long_form_found": 3,
+  "shorts_found": 0,
+  "days": 90,
+  "top_n": 15,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "I Tried 100+ Claude Code Skills. These 6 Are The Best.",
+      "channel": "Tech With Tim",
+      "views": 43598,
+      "likes": 1092,
+      "comments": 48,
+      "upload_date": "20260529",
+      "duration": "19:19",
+      "duration_seconds": 1159,
+      "url": "https://youtube.com/watch?v=ZSvcxjNZdxk",
+      "description": "Claude Code skills are one of the most underrated features in AI coding right now \u2014 and most people aren't using them. I went through hundreds of them so you don't have to, and narrowed it down to the 6 that will actually make a difference in your workflow.\n\ngstack - https://github.com/garrytan/gsta",
+      "id": "ZSvcxjNZdxk"
+    },
+    {
+      "title": "5 Claude Code skills I use every single day (Senior Engineer Tips)",
+      "channel": "Maddy Zhang",
+      "views": 14099,
+      "likes": 544,
+      "comments": 38,
+      "upload_date": "20260610",
+      "duration": "10:23",
+      "duration_seconds": 623,
+      "url": "https://youtube.com/watch?v=AG2BxDXt2po",
+      "description": "Start building with Claude Code: http://clau.de/maddyzhang\n\nClaude Code is powerful, but most developers barely use 10% of it.\n\nThe difference is Skills.\n\nSkills turn Claude Code from a generic AI coding assistant into a workflow-aware engineering tool that can design, test, review, and improve code",
+      "id": "AG2BxDXt2po"
+    },
+    {
+      "title": "5 Claude Code Skills I Use Every Day to Ship Fast, Safe Code",
+      "channel": "Your Average Tech Bro",
+      "views": 9536,
+      "likes": 249,
+      "comments": 22,
+      "upload_date": "20260507",
+      "duration": "18:03",
+      "duration_seconds": 1083,
+      "url": "https://youtube.com/watch?v=QFDku45b_EQ",
+      "description": "Get 90% off Xero for 6 months. Terms & Conditions apply: https://referrals.xero.com/YourAverageTechBro_XeroCollabOne\n\nI use Claude Code and OpenAI Codex every day to build my startup as the sole developer.\n\nIn this video, I break down the AI coding skills and workflows I use inside my real codebase,",
+      "id": "QFDku45b_EQ"
+    }
+  ],
+  "shorts": []
+}

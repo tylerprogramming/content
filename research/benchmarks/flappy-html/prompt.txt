@@ -1,0 +1,1 @@
+Build Flappy Bird as a single self-contained HTML file, vanilla JavaScript, no libraries. The bird flaps on spacebar or click with gravity, pipes scroll in from the right with gaps, collision detection, a score counter, and a game over screen with restart.

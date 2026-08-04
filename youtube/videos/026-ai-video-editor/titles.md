@@ -1,6 +1,8 @@
 # Title Options: I Automated My Video Editing With Claude Code
 
-> 🔴 **UPLOADED TITLE (2026-07-22): "I Edit My Videos by Talking to Claude Code NOW"** — Tyler's final call at upload; steps off the "I Automated ___ With Claude Code" franchise pattern in favor of the "talking to Claude Code" angle. Video ID `AH1ZpX7SD9Y`, scheduled 8PM ET 2026-07-22.
+> 🔴 **LIVE TITLE (2026-07-23): "I Edit My Videos by Talking to Claude Code, here's how..."** — canonical video ID `cdvi2ooarDc` (public). Steps off the "I Automated ___ With Claude Code" franchise pattern in favor of the "talking to Claude Code" angle.
+>
+> ⚠️ First upload `AH1ZpX7SD9Y` ("...NOW", scheduled 8PM 2026-07-22) had an audio mistake and was replaced by `cdvi2ooarDc`. Do not use `AH1ZpX7SD9Y` for tracking.
 >
 > ✅ **FINAL TITLE (2026-06-26): "I Automated My Video Editing With Claude Code"** — mirrors the 2,809-view winner ("I Automated My Entire YouTube Workflow"). Signature package: black bg + face + huge text + orange + Claude asterisk + real-stat proof.
 >

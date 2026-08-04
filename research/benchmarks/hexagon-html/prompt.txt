@@ -1,0 +1,1 @@
+Create a single self-contained HTML file using vanilla JavaScript and canvas, no external libraries, that shows a ball bouncing inside a spinning hexagon. The ball is affected by gravity and friction and must bounce off the rotating walls realistically. It should start animating immediately when the page loads.

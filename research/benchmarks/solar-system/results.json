@@ -1,0 +1,47 @@
+{
+  "prompt": "Create a 3D solar system in a single self-contained HTML file using three.js loaded from a CDN. The sun at the center, planets orbiting at different speeds, and a camera you can orbit with the mouse. No build step, it should just run when the file is opened.",
+  "results": [
+    {
+      "name": "opus-4.8",
+      "model_id": "claude-opus-4-8",
+      "label": "opus-4-8",
+      "ok": true,
+      "in": 10,
+      "out": 4456,
+      "cc_cost": 0.446964,
+      "session_total_usd": 0.44763699999999995,
+      "time": 56.412,
+      "kind": "html",
+      "file": "opus-4-8.html",
+      "cost": 0.11145
+    },
+    {
+      "name": "opus-5",
+      "model_id": "claude-opus-5",
+      "label": "opus-5",
+      "ok": true,
+      "in": 10,
+      "out": 19539,
+      "cc_cost": 0.861664,
+      "session_total_usd": 0.862337,
+      "time": 225.311,
+      "kind": "html",
+      "file": "opus-5.html",
+      "cost": 0.488525
+    },
+    {
+      "name": "fable-5",
+      "model_id": "claude-fable-5",
+      "label": "fable-5",
+      "ok": true,
+      "in": 10,
+      "out": 10265,
+      "cc_cost": 1.650242,
+      "session_total_usd": 1.65091,
+      "time": 130.106,
+      "kind": "html",
+      "file": "fable-5.html",
+      "cost": 0.51335
+    }
+  ]
+}

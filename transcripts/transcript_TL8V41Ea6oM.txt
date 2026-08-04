@@ -1,0 +1,316 @@
+[00:00] Four AI agents you can build today that will save you hours of work every week.
+[00:05] You don't need any technical skills.
+[00:07] If you can type, you can build them and start using them today.
+[00:10] We'll do it together, step by step.
+[00:12] For those who are new here, I've spent more than 20 years as a CEO, board member, and
+[00:17] investor in tech and AI companies, and I use these agents in my work every day.
+[00:23] They're game changing.
+[00:24] But the agents are the easy part.
+[00:27] You want to learn not just the tools, but the way of thinking or the system that changes
+[00:32] how you work with AI agents forever.
+[00:34] And that system works on any AI, Claw, Gemini, Chachapiti, you pick.
+[00:38] We're going to build four agents around four pillars.
+[00:41] I call it four C's framework, coordination, creativity, clarity, and coaching.
+[00:48] Each of these pillars make your life less chaotic and more productive.
+[00:52] So let's get to the first pillar.
+[00:54] The first C is coordination, because before anything else, AI should stop your day from
+[01:01] getting hijacked.
+[01:02] Microsoft studied how we actually work, and the numbers are brutal.
+[01:06] The average worker gets 117 emails a day, and we're interrupted every two minutes by
+[01:13] an email or a meeting or a message.
+[01:17] That's 275 times a day.
+[01:20] And by the way, none of that counts the social media interruptions.
+[01:24] Our attention gets chopped into pieces every day.
+[01:28] So let's build a coordination agent that reads your inbox, checks the calendar, plans
+[01:34] your day, and gives you the time and attention back.
+[01:38] We will start by building the email agent first, and then we'll add the calendar right
+[01:43] after.
+[01:44] For this walkthrough, I'm using Clawed Cowork.
+[01:47] Chat is where you ask questions.
+[01:50] Cowork is where you assign work.
+[01:52] But don't get hung up on the interface.
+[01:54] If you use ChatGPT or Gemini or any other agent tool, the same principles will work.
+[02:00] The buttons will change.
+[02:02] The workflow will not.
+[02:03] So okay, here's the Clawed app.
+[02:06] You can select the mode, whether you want to be in a chat tab or a Cowork tab.
+[02:11] Select Cowork, and it switches you into tasks.
+[02:16] That's where we will build agents.
+[02:18] Now we want to think about email.
+[02:20] So the first thing we're going to do is connect Gmail, so the agent can reach and
+[02:25] access your inbox.
+[02:27] You do this from the plus menu, Connectors, Add Connectors, Browse, then Select.
+[02:34] And congratulations.
+[02:36] This is your first leap from chatbot to agent.
+[02:40] Once Gmail is connected, you no longer have to copy emails into your chat.
+[02:45] You can say, summarize my unread emails from yesterday, and the agent knows where to go
+[02:50] and what to do.
+[02:51] And by the way, if you're a little uneasy about letting AI into your inbox, that's a
+[02:57] good sign.
+[02:58] Trust your hesitation.
+[03:00] When you connect Gmail, Google shows you exactly what permissions you're giving it.
+[03:06] Read it.
+[03:07] Don't click through it blindly.
+[03:08] For the first demo, I want the agent to read and draft emails, not send them.
+[03:15] Now we write the prompt.
+[03:17] Same plain English you would type in chat.
+[03:19] The difference is that now you're handing it a job.
+[03:23] The prompt has five parts, the job, the tool, the categories, the output, and the boundary.
+[03:30] You could say something like, review my unread Gmail from the last 24 hours, sort it into
+[03:35] three buckets, urgent, informational, and ignore.
+[03:39] For anything urgent, draft a reply that sounds like me.
+[03:43] Don't send anything without my approval.
+[03:45] Here's the five parts in that one sentence, the job, the tool, the buckets, the output,
+[03:52] and the boundary.
+[03:53] Now underneath, every agent runs the same loop.
+[03:57] It reasons, it acts, it looks at the output, and reasons again.
+[04:03] Researchers have a name for it, react, reason, and act.
+[04:07] But email is only half of our coordination agent, correct?
+[04:12] Once we've used the email agent for a few days, or maybe even a few weeks, we're getting
+[04:18] comfortable now.
+[04:19] We're ready to add the second coordination layer, calendar.
+[04:23] Now for the walkthrough, same path as Gmail, plus menu, connectors, add connectors.
+[04:30] This time, select Google Calendar to connect to Google Calendar.
+[04:35] Again, I'm not giving the agent permission to move meetings or change my day without
+[04:41] my approval, at least in the beginning.
+[04:44] Here's what I would prompt.
+[04:45] Look at my Google Calendar for today and tomorrow, compare it against all the urgent emails that
+[04:51] you found, organize my day by telling me what creates conflict in my schedule, what needs
+[04:57] an action or prep before a meeting, and what can wait.
+[05:01] This is the moment the email and calendar start collaborating with each other.
+[05:07] Now the agent starts helping me shape my day.
+[05:11] Once I run both these email and calendar versions a few times, and I trust both outputs, I can
+[05:18] schedule the full coordination run every morning.
+[05:21] And from that point onward, every morning, you'll know exactly what your day is going
+[05:26] to look like.
+[05:27] In cowork, you do this by going to the schedule tab in the sidebar or using the schedule command
+[05:33] inside a task.
+[05:35] Of course, be careful about scheduling anything that touches sensitive data or acts on your
+[05:41] behalf without your approval.
+[05:43] And then as you get more comfortable, you can promote this agent as your executive assistant.
+[05:49] You can prompt, can you block two slots for 30 minutes each so I can go running with my
+[05:54] buddy?
+[05:55] The agent will find time for you so you can do things you want to do on your busy day.
+[06:00] So that's your coordination agent.
+[06:03] The first lesson, don't delegate the decision immediately.
+[06:08] First make the work visible, then make it efficient, then make it automatic, and then
+[06:14] and only then use your judgment to delegate and hand off slowly.
+[06:20] And the second lesson is to not hurry through this process.
+[06:26] Start with email, add calendar later, after you trust the output.
+[06:31] Let your agent earn higher responsibility one step at a time.
+[06:36] You know, we don't get promoted easily, neither should your agent.
+[06:40] And by the way, if you like these kind of frameworks and systems thinking, I write a
+[06:45] newsletter that goes deep into these themes every Tuesday.
+[06:49] One insight, one tool, one practice.
+[06:52] Link is below and it's free.
+[06:54] All right, now it's time to move to the second pillar, C for creativity.
+[07:00] Here you bring your rough cut, notes, documents, background, messy thoughts, whatever you already
+[07:07] have.
+[07:08] The agent helps assemble it into something you can judge.
+[07:12] You're still the director, you own the decision.
+[07:15] So let's do a walkthrough on how to build this agent.
+[07:19] This time you're giving the agent your rough cut and a target.
+[07:23] It is the same prompt skeleton from the last agent, the job, the tool, the categories,
+[07:29] the output, the boundary.
+[07:30] And for this particular agent, the output is where you focus the most, because that's
+[07:35] where you're going to define who it's for, how long, what format, what voice.
+[07:40] Okay, so let's use this creativity agent to make a PowerPoint presentation.
+[07:45] I open cloud cowork on my desktop and point it to a folder on my computer.
+[07:52] That folder is where I drop my rough notes and it's where the finished deck will be created
+[07:58] as well.
+[07:59] I give it the notes and tell it what I want.
+[08:02] Here are my notes for an idea.
+[08:04] I want to pitch this to the CFO.
+[08:07] Build me a short pitch deck.
+[08:09] Ask me questions if you have any gaps in your understanding.
+[08:12] I want eight to 10 slides and I want that pitch to last for maybe 15 minutes.
+[08:19] It will read my notes.
+[08:20] It'll ask me questions if it has any.
+[08:23] It'll even fill the gaps with a little research and build the actual deck.
+[08:29] What comes out is a real PowerPoint file that I can open and edit in Microsoft PowerPoint.
+[08:36] Now I can direct.
+[08:37] I see what's working, what's weak.
+[08:40] I can tell the agent what to change, make this longer, make this shorter, make this
+[08:46] a three bullet slide.
+[08:47] Can we make the opening slide cleaner?
+[08:50] Delete this slide, whatever comes to mind.
+[08:52] The agent will help you rebuild.
+[08:54] Now this deck came out as a real file because Claude uses something called a skill.
+[09:00] That's just a set of instructions for doing a specific job.
+[09:04] It ships with skills for PowerPoint, Word, Excel, PDFs, which is why you get real files.
+[09:11] Now what if you want to change the look and feel?
+[09:13] Well you can drop one of the decks that you like and ask the agent to match that style.
+[09:18] Another cool way of doing it is that you can even ask the agent to turn your brand
+[09:22] template into a skill.
+[09:24] From that point the agent will then always apply the same colors, the same fonts, the
+[09:29] same layout to every deck and document you'll ever make.
+[09:33] Now this is just one example of using skills.
+[09:37] You can come up with a hundred others.
+[09:39] We're not just learning tools here.
+[09:41] We're learning a new way of thinking.
+[09:43] Now make sure that the ultimate direction comes from you.
+[09:47] These agents are your multipliers.
+[09:49] If you come in clear, AI will multiply your clarity.
+[09:53] If you come in confused, well the AI multiplies the confusion.
+[09:57] And the best way to create that clarity is to do a lot of experiments and figure out
+[10:03] what's the best way to tweak your output and even your agents.
+[10:07] And over time you'll build a very strong intuition to get what you want.
+[10:14] But what if you're spending hours trying to understand a confusing and complex document?
+[10:20] What if you need clarity to even understand what's going on in that document?
+[10:24] That's our third time-saving pillar.
+[10:27] C for clarity.
+[10:29] We've all signed things we didn't understand.
+[10:32] A loan contract, a car lease, a medical report, an insurance policy.
+[10:37] It's all right there.
+[10:39] It's correct.
+[10:40] But it's so confusing.
+[10:42] Because many of these documents are written in a language built to protect those who wrote
+[10:48] them.
+[10:49] That's where the clarity agent will save you a ton of time and hassle.
+[10:53] It's your translator and that's what we're going to build.
+[10:56] The best way to understand what we're building is to think about two scopes.
+[11:01] A telescope and a microscope.
+[11:04] Sometimes what you're looking for is scattered across so many places that you need the agent
+[11:10] to pull it all together.
+[11:12] And sometimes it's the exact opposite.
+[11:15] Sometimes what you're looking for is buried so deep in a single dense document that the
+[11:21] agent has to dig in, extract the key ideas, explain the jargon, flag the risks.
+[11:28] That is your microscope.
+[11:29] So let's go through both of them and build both ideas.
+[11:33] Say I'm about to sign a deal with a company I don't know well.
+[11:38] So I can tell the agent, find out who they are.
+[11:41] Find out everything you can from the internet.
+[11:44] Analyze our past emails with them because, hey, we've already built our coordination
+[11:49] agent, remember?
+[11:50] Find out anything recent in the news.
+[11:54] And tell me more about this deal that I'm trying to strike with them.
+[11:58] And if I have uploaded documents, the agent will search all my documents, all my connected
+[12:04] tools, my Google Drive, and the web, and come back with one picture.
+[12:11] And what if I want to know more about their product or competitive strategy?
+[12:16] We let the agent do the work for us.
+[12:18] And the prompt could be, now go and do deep research on their core product from reliable
+[12:24] sources, create a document in my folder, and cite the sources.
+[12:29] Cloud co-work agents already have web search and deep research built in.
+[12:34] Same for Gemini and ChatGPT.
+[12:37] The interface may look different, but it's the same idea.
+[12:40] Two phrases I use the most when I work in telescope mode, please verify and be concise.
+[12:48] They can be super helpful.
+[12:51] Sometimes I take the research output from one AI engine to another one and make sure
+[12:56] I can cross verify.
+[12:58] That is my advisory board.
+[13:01] And there are three members in it, Cloud, Gemini, and ChatGPT.
+[13:05] And sometimes they fight among themselves, which is great for me.
+[13:09] Now it's time to change our scope.
+[13:11] We're going to use the microscope.
+[13:13] Let's say we have a contract from the same company.
+[13:16] I upload it.
+[13:18] The first mistake most people make is asking, summarize this contract.
+[13:23] A summary makes a confusing document shorter.
+[13:27] Sure.
+[13:28] But in legal contracts or long policies, the devil is always in the details.
+[13:34] So instead, my prompt would be read this document carefully, find the key terms like
+[13:41] fee structure and obligations and deadlines and exclusions and risks.
+[13:48] Pay attention to anything that's unclear or anything that makes me liable.
+[13:55] Create a table with five columns, what the contract says, what it means in plain English,
+[14:01] why it matters, the risk level, and the questions I should be asking.
+[14:07] Again, that's just one of many prompts you can give it.
+[14:10] But you get the point.
+[14:11] You want to break that document open, not get a bird's eye view on it.
+[14:16] That's what agents can do for you.
+[14:18] And now one more important thing, your mileage may vary, but I personally don't like uploading
+[14:26] sensitive information like personal financial data or medical reports.
+[14:33] So be mindful about all of that.
+[14:35] Alright, we're on to the fourth pillar.
+[14:38] This last agent helps you handle the moment once you're in the room.
+[14:42] The interview, the raise, the pitch.
+[14:45] With some conversations, you only get one shot.
+[14:48] That's why you have to rehearse.
+[14:49] I remember my first job interview.
+[14:52] It was a long time ago.
+[14:53] And I had no idea what to do, what to wear.
+[14:57] I didn't even know how to tie a tie.
+[15:00] I don't think I even owned a tie.
+[15:03] So I asked my roommate if I could borrow his tie.
+[15:07] His name was Mike Green, awesome, awesome roommate.
+[15:11] He said, sure, but do you know how to wear it?
+[15:16] And I shook my head and we both cracked up.
+[15:19] So he got a tie, tied it around his neck first, loosened it and handed it to me and
+[15:25] said good luck.
+[15:27] Of course, I walked in wearing a borrowed tie, but still had the same anxiety about
+[15:31] my first interview.
+[15:33] Turns out that when it comes to interview anxiety, I'm not alone.
+[15:36] In a survey done by JDP, 93% of people said they get anxious about job interviews.
+[15:43] That's almost all of us.
+[15:45] But the survey also said something very useful.
+[15:48] One of the best ways to reduce that anxiety is to practice that interview out loud.
+[15:54] That's the whole point of the coaching agent.
+[15:56] The first time you say the most important thing, you should not be in the most important
+[16:01] room.
+[16:02] We are going to build an agent that helps you rehearse.
+[16:05] I know CEOs who rehearse their entire board meeting with six or seven agents, where each
+[16:12] agent is designed to mimic the personality of a specific board member.
+[16:17] Yeah, it's that important.
+[16:19] We will use job interview as an example as we build it, but you can use it for any professional
+[16:25] or personal conversation or negotiations.
+[16:28] Okay, first, I add all the context, the company background, job description, my cover letter,
+[16:36] my resume, my position statement, and so on.
+[16:40] Second, we want to tell the agent who to be.
+[16:44] You are the hiring manager for a senior product role.
+[16:48] You are sharp, you're a little skeptical, and you've read my resume, so go ahead and
+[16:54] interview me.
+[16:55] Ask one question at a time and push back on weak answers like a real interviewer would.
+[17:01] And keep track of our entire interview so we can analyze and improve my performance.
+[17:08] And here's the move that makes it all real.
+[17:11] Don't type it, talk to it.
+[17:13] Turn on the voice mode on your phone.
+[17:16] So Chachi, PT, Gemini, Claude, they all let you speak out loud, and they all can have
+[17:22] natural conversation with you.
+[17:23] You can interrupt it, you can ask clarifying questions.
+[17:26] It's a real conversation.
+[17:28] I do this all the time on my walks.
+[17:31] And when I'm done, I want both the agent and me to break character.
+[17:35] I would say, okay, we're done with the interview.
+[17:39] Now you're my interview coach.
+[17:41] Tell me where I was weak, where I fumbled, what I should have said.
+[17:48] Tell me where I rambled on.
+[17:50] Give me three ways I could have answered that question better.
+[17:53] And once the coaching session is over, now you can turn up the heat.
+[17:58] Give that agent a persona of a tougher hiring manager.
+[18:03] Maybe you're applying to a startup, and the CEO will be the one interviewing you at the
+[18:08] end.
+[18:09] Give that persona to the agent.
+[18:11] Let the agent know that it should conduct the interview in that persona for 45 minutes,
+[18:17] and give you the last 15 minutes to ask questions to the CEO.
+[18:22] Because that will happen in real life.
+[18:25] And finally, once you're done with all your reps, don't forget to ask.
+[18:30] Turn what you've learned into a one-page prep card so I can review it before the interview.
+[18:36] Now you have something you can use.
+[18:38] Your goal here is not to create a set of scripted answers, but to build the capacity to deliver
+[18:46] good answers no matter what the questions are.
+[18:49] Like all great musicians, rehearsals teach you to build judgment and taste so you can
+[18:56] become comfortable improvising on stage.
+[18:59] So those are the four pillars.
+[19:02] You know, as AI becomes more entangled in our lives, there is definitely a sense of
+[19:08] fear running under all of this.
+[19:11] According to a recent survey, 70% of Americans believe AI will shrink job opportunities.
+[19:19] And among Gen Z, it is 81%.
+[19:22] Sure, some jobs will be displaced.
+[19:26] There will definitely be some pain around that.
+[19:30] But many, many more new jobs will be created over time because of AI.
+[19:37] We have been here before.
+[19:40] Every age has believed that the machine would swallow the person.
+[19:46] Charlie Chaplin showed it in Modern Times.
+[19:49] A man literally pulled into the gears of a factory.
+[19:53] And that was made in 1936.
+[19:56] If the contest is speed, memory, or faster output, machines will win every single time.
+[20:05] But I think the real contest will be about the things machines cannot own.
+[20:11] Your attention, your creativity, your clarity, and that one thing that matters most when
+[20:19] you build your career, your life, your company, your judgment.
+[20:25] Those are the four pillars we talked about.
+[20:28] Sure, the machines will keep getting smarter and faster.
+[20:35] Let them.
+[20:37] Use the machines.
+[20:38] You don't have to become one.
+[20:42] See you next week.
+[20:44] Thank you.
+[20:45] And I love you.

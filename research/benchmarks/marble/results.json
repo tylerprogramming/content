@@ -1,0 +1,47 @@
+{
+  "prompt": "A marble is put in a glass, the glass is turned upside down on a table, then the glass is picked up and put in the microwave. Where is the marble?",
+  "results": [
+    {
+      "name": "opus-4.8",
+      "model_id": "claude-opus-4-8",
+      "label": "opus-4-8",
+      "ok": true,
+      "in": 2,
+      "out": 265,
+      "cc_cost": 0.1837775,
+      "session_total_usd": 0.18440050000000002,
+      "time": 5.002,
+      "kind": "text",
+      "file": "opus-4-8.md",
+      "cost": 0.006634999999999999
+    },
+    {
+      "name": "opus-5",
+      "model_id": "claude-opus-5",
+      "label": "opus-5",
+      "ok": true,
+      "in": 2,
+      "out": 249,
+      "cc_cost": 0.185702,
+      "session_total_usd": 0.186335,
+      "time": 4.709,
+      "kind": "text",
+      "file": "opus-5.md",
+      "cost": 0.006234999999999999
+    },
+    {
+      "name": "fable-5",
+      "model_id": "claude-fable-5",
+      "label": "fable-5",
+      "ok": true,
+      "in": 2,
+      "out": 147,
+      "cc_cost": 0.37778799999999996,
+      "session_total_usd": 0.37840099999999993,
+      "time": 3.415,
+      "kind": "text",
+      "file": "fable-5.md",
+      "cost": 0.00737
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+The word "strawberry" has **3** r's: st**r**awbe**rr**y.
