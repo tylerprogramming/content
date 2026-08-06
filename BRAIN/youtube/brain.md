@@ -15,6 +15,8 @@ Part of the central BRAIN at `~/content/BRAIN/`. The living playbook for the Tyl
 - A status claim ("I Don't Edit Videos Anymore") is not a payoff. Needs time saved, $ result, or a specific number.
 - Title = payoff/stakes; thumbnail = the what/proof. Complement, don't repeat.
 - Out-of-niche confirmation [2026-08-02]: the two hardest 14-day outliers both carry a number in the title. "$10,000" (12.3K-sub channel, 1.53x its own sub count in 10 days) and "in 14 minutes" (149K subs, 41 views/day/1k subs). The number is doing the work, not the channel.
+- Insider/authority names pull like numbers [2026-08-05]: "Andrej Karpathy Just Fixed Claude Code's Biggest Weakness" hit 4.5x channel size in 2 days (55K on 12.3K subs); "6 NEW Rules by Anthropic Engineers" 0.43x in 2 days on 163K. A recognized insider name in the title is a payoff signal, same class as a number.
+- Killing a named subscription is a $ outcome [2026-08-05]: "This 1 Claude Skill fully replaces your Higgsfield Subscription" did 1.09x on a 163K channel. Naming the product being cancelled (and its monthly price early) works like a dollar figure. Tyler already runs the Kie.ai version of this stack daily.
 
 ## Topic reach [confirmed 2026-08-02]
 - The problem in the title must be one a non-creator also has. Creator-only promises (editing, thumbnails, uploading) cap the addressable click before the video is judged.
@@ -30,6 +32,7 @@ Part of the central BRAIN at `~/content/BRAIN/`. The living playbook for the Tyl
 ## Retention [confirmed 2026-06-22]
 - Fix the cold open: value in the first 60 seconds, proof-first, no slow intro.
 - Sharper version [2026-08-02]: put a number in the FIRST SENTENCE. All three top-performing agent videos this window do it ("$10,000", "Four AI agents", "14 minutes") and each names the specific gap it closes before second 30. Not a promise of value, a quantity.
+- Widened [2026-08-05]: the first sentence needs a number, an insider name, OR a named villain. This week's 4.5x video opens on a Karpathy clip, the 1.09x one opens "I just replaced Higgsfield" with the price seconds later. All three winners state their concrete hook in sentence one; none warms up.
 - Focused single-topic long-form (5-12 min) retains 35-53%; 20+ min courses retain 6-22%.
 - Long evergreen content is slow-burn via search; day-1 undersells it.
 - Shorts (~53% retention) and long-form (~34%) are different games - analyze separately.
@@ -42,6 +45,7 @@ Part of the central BRAIN at `~/content/BRAIN/`. The living playbook for the Tyl
 A flop is data about packaging, not a verdict on Tyler. Every result is A/B input.
 
 ## Changelog
+- 2026-08-05: Study pass read three 14-day lane winners end to end (jI4ZVB_MPhU, 9C4TRbucmhQ, gQeRjkb_Hlc). Added two Titles rules (insider names pull like numbers; killing a named subscription is a $ outcome) and widened the cold-open rule to number OR insider name OR named villain in sentence one. No rule contradicted. Full report in jarvis/reports/2026-08-05-study.md.
 - 2026-08-02: Study pass read three 14-day agent-lane winners end to end (V7_YUe5skv8, TL8V41Ea6oM, UyoVmQLekBc). Confirmed the number-in-title rule and the anti-masterclass rule with out-of-niche evidence, and sharpened the cold-open rule to "number in the first sentence." No rule contradicted. Full report in jarvis/reports/2026-08-02-study.md.
 - 2026-08-02: Tightened Titles rule and added Topic reach section. cdvi2ooarDc backfill review: 232 views in 10 days (23.2/day, roughly 31/day at day 7) vs T50plh-k3MY at 60/day at day 7. Below the 300-500 baseline, so that band is now a ceiling for outcome-free titles. Creator-only topic flagged as the second cap.
 - 2026-07-22: Confirmed Titles baseline rule with day 7 data. T50plh-k3MY finished at 419 views (60/day), confirming 300-500 baseline for "I Automated X" without outcome hooks. WJabXRVe8JQ at 130 views (day 3, 43/day) tracking to same baseline.

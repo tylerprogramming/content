@@ -1,0 +1,24 @@
+[00:00] Okay, Claude Opus 5 is out and I have to say generally it's better, but I won't say that
+[00:07] the output it produces for everything I've done is better than Fable 5. Okay, because that's the
+[00:11] things I've done like creating games, output for like thought process or reasoning hasn't always
+[00:18] been better. But here are the benchmarks that they have from Anthropic. You know, it's official,
+[00:24] so generally they're saying Opus 5 is better than Fable 5 and 4.8 and, you know, so. But the
+[00:31] major thing is that this is half the price. So right here, Fable 5 is $10 per million tokens
+[00:37] and then the output, if you can see that, is $50 per million tokens. And then for Opus 5,
+[00:42] it's $5 and then $25. So it's literally half the price. A lot of people are saying this may be
+[00:47] Fable 5.1, which I could kind of see that. It's like, why do we have all this about the government
+[00:53] and then, oh, let's extend Fable 5 for another few days. And then all of a sudden we have Opus
+[00:57] 5 and there's like nothing going on about it, but you know, whatever. I kind of compacted this game.
+[01:02] This is something that I've built. It wasn't one-shotted like many people say, like they
+[01:06] have one shot and it's something absolutely amazing. This took some time, but it didn't
+[01:09] take a lot. And if the one thing I'll say about Opus 5 is it's finding out all of the errors
+[01:14] by itself, which I didn't see as much in Fable 5 and it kind of, it's kind of similar to 4.8.
+[01:22] Just, I think that, you know, obviously it's just generally better with reasoning and understanding
+[01:26] what's wrong and doing it by itself without, without you having to do anything. But like I
+[01:30] said, this game right here, I kind of built this farm. We can, you know, you can change view,
+[01:35] you can zoom in, out, you know, create a little farmhouse. I can sleep in here,
+[01:40] you know, come back at night. There's like, yeah, basically what this create is more,
+[01:45] a little bit more to this, but either way it was, this is, I think it's a great model.
+[01:50] It's a great step forward, but it's for half the price. But Fable 5, anything I've done side
+[01:56] by side between Fable 5 and Opus 5, Fable 5 typically, typically does it in half the time
+[02:02] that Opus does. Of course, this has to do with prompting and we'll get to that later.

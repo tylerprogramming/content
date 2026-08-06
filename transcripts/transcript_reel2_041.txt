@@ -1,0 +1,28 @@
+[00:00] So, I did an experiment to have Opus 5 and Fable 5 do the same thing.
+[00:06] They have the same prompt that I'll have in the description and basically I took a screenshot
+[00:10] from a design from just some images online, which was this right here.
+[00:13] This is just some front end, just some image screenshot that I wanted to recreate a front
+[00:18] end basically HTML static site for it and to see what the cost and everything was separately.
+[00:23] So when I did that, the top one used Opus 5 and the bottom one used Fable 5.
+[00:29] So if we look here, the total costs are about the same, but with Opus 5 we had 122 input
+[00:36] and 85 output, whereas Fable 5 I had let's say 37,000 output, but they're about the same.
+[00:46] So this means that for half the cost, actually probably seems like less than half, that I
+[00:53] was able to do something, spend more than Fable 5 did with about the same price.
+[01:01] However, there were different results and the other thing is Fable 5 did it in less
+[01:04] than half the time that Opus did.
+[01:06] Opus took longer.
+[01:08] So this one is Opus.
+[01:10] So you see it's okay, right?
+[01:12] The rock shift is kind of strange.
+[01:15] The rain isn't that great.
+[01:18] And then if we look at this is, of course, in the mobile view for Fable 5, I generally
+[01:25] think in the mobile view, this is better.
+[01:29] But if we were to look at this in a wider view, like regular desktop view, I think that
+[01:34] Opus did a little bit better job.
+[01:36] But this is what I was saying.
+[01:37] You're going to get a lot of mixed reviews, obviously do your own research.
+[01:40] But some people are saying Opus 5 is all of a sudden just automatically better.
+[01:46] Some say Fable 5 has broken things for them.
+[01:48] I haven't had Fable 5 break anything for me and I tried it on 40 plus of my actual skills
+[01:53] just to kind of just to do some tests.
+[01:55] Nothing broke.

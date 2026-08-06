@@ -29,21 +29,22 @@ Note on accuracy: I recorded this on launch day, so verify the exact API model s
 
 ## SEO-Optimized Version
 
-Claude Opus 5 vs Claude Fable 5, tested on real builds instead of benchmarks. Opus 5 is half the price of Fable, so I built the same things twice and showed what each one cost.
+Claude Opus 5 vs Opus 4.8 vs Fable 5, tested on real builds instead of benchmarks. I ran the same prompts through all three models across six tests, and since Opus 5 is half the price of Fable, I show you what each one costs and where each one wins.
 
-Two camps formed after launch. One says Opus 5 is just a cheaper Fable, so cancel the expensive one. The other says it is a hard model to love that stops early and breaks your skills. I have been running it on my actual work and neither matched what I saw, so I stopped reading takes and built with it: a design turned straight into working code, then a landing page and a browser game built side by side on Opus 5 and Fable 5. Honest verdict at the end on where Opus 5 is plenty, where Fable still earns its price, and how the effort toggle controls what this costs you.
+I have been running Opus 5 on my actual work and I did not get the negative reactions people report online. So instead of reading you the benchmarks, I ran six real one-shot tests on all three models: a bouncing-ball hexagon, a 3D solar system, a Suika merge game, Flappy Bird, a design turned straight into working code, and a reasoning trio. Cost, speed, and quality for each, then a scorecard and my honest take: Opus 5 over-generates on builds but catches its own errors, Fable is consistently the priciest, and 4.8 is the cheapest. Where Opus 5 is plenty, where Fable earns its price, and how it actually shakes out.
 
 CHAPTERS
-00:00 - Is Opus 5 really better? [UPDATE]
-00:30 - What launched and what it costs [UPDATE]
-01:30 - The honest part: doubters vs what I actually saw [UPDATE]
-02:30 - Design to working code [UPDATE]
-03:30 - Head-to-head #1: landing page (Opus 5 vs Fable) + cost [UPDATE]
-06:30 - Head-to-head #2: browser game (Opus 5 vs Fable) + quality [UPDATE]
-09:30 - The effort toggle: control cost and quality [UPDATE]
-10:30 - Honest verdict: is it worth switching [UPDATE]
-
-(Run /yt-chapters on the final cut to true these up.)
+0:00 - Opus 5 is out: my real results
+1:48 - The pricing: half of Fable
+2:21 - The setup: 3 models, 6 tests
+3:04 - Test 1: hexagon ball (Python)
+5:33 - Test 2: 3D solar system
+8:05 - Test 3: Suika merge game
+9:41 - Test 4: Flappy Bird
+11:09 - Test 5: design to code (live)
+14:22 - Test 6: the reasoning trio
+15:16 - Scorecard + honest verdict
+17:33 - Get everything + wrap-up
 
 The exact brief, the game spec, and my effort-level settings are in my free community so you can run the same head-to-head yourself:
 https://www.skool.com/the-ai-agency

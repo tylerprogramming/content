@@ -72,7 +72,7 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 
 | Order | Video | Folder | Status |
 |---|---|---|---|
-| 1 | Claude Opus 5 (Is it really better?) | `041-claude-opus-5/` | ✅ **RECORDED 2026-07-26** → to edit |
+| 1 | Claude Opus 5 (3-way: 5 vs 4.8 vs Fable) | `041-claude-opus-5/` | ✅ **PUBLISHED 2026-08-05** as *Claude Opus 5 Is Half the Price, is it Worth It?* (`J5lkE_jBEko`, https://youtu.be/J5lkE_jBEko). 3-way / 6 tests; real chapters set. Full social in `social/`. **SCHEDULED via Blotato + Resend (max 1 post/platform/day, all times ET):** Fri 8/7 = Email 1 8am, X thread 8am, LinkedIn text 10am, Reel 1 → TikTok/IG/YT Shorts 1pm. Sat 8/8 = Email 2 8am, LinkedIn Reel 1 10am, Reel 2 → TikTok/IG/YT Shorts 1pm. Sun 8/9 = LinkedIn Reel 2 1pm. Mon 8/10 = Carousel (7 slides) → IG + LinkedIn 10am. Manual TODO: 2 Skool posts (Tyler, from `skool.md`). |
 | 2 | 17 Claude Code Skills That Run My Business | `040-claude-code-skills-run-my-business/` | ✅ **RE-RECORDED 2026-07-31** (supersedes the 07-28 take) → to edit |
 | 3 | I Automated My Publishing With Claude Code | `039-automated-publishing/` | Package complete. **Films next.** |
 | 4 | The Simple Claude Code YouTube Workflow | `037-youtube-workflow-simple/` | Package complete. |
