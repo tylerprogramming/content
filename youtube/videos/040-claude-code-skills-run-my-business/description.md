@@ -1,37 +1,24 @@
 # Description
 
-I run my entire content business out of one folder of Claude Code skills - 17 of them that research my next video, write my social posts, generate thumbnails, schedule a week of content, reply to my YouTube and TikTok comments, and run my Skool community. No team, and none of it is code, just plain text files. In this video I open up the real system (not a staged demo) and show you exactly how each skill works and how you'd build your own, even if you've never written a line of code.
+Get all 17 skills free (sign up here): https://free.tylerai.dev/youtube
 
-Every skill is just a text file. If you can describe a task, you can build one.
+I run my entire content business from Claude Code. In this video I walk through all 17 skills I actually use, grouped into three systems: the YouTube engine that researches and writes my videos, the distribution skills that turn one video into 30+ pieces across every platform, and the community and money skills that handle my email and my Skool. Every one is just a text file. You do not need to be an engineer to use any of them.
 
-Free skills, prompts, and the full setup are in my community - link below.
-
-Chapters:
-00:00 - Why most Claude Code money videos are fake [UPDATE]
-00:00 - What a skill actually is (it's just a text file) [UPDATE]
-00:00 - The content pipeline: research to published [UPDATE]
-00:00 - Comments + email on autopilot (running while I sleep) [UPDATE]
-00:00 - Running my Skool community from the terminal [UPDATE]
-00:00 - How to build your first skill [UPDATE]
-00:00 - Get the skills (free) [UPDATE]
-
-Free community + resources: https://free.tylerai.dev/youtube/
-
----
-
-## SEO-Optimized Version
-
-I run my entire content business on Claude Code skills - 17 of them that research my next video, write my posts, generate thumbnails, schedule a week of content, reply to my comments, and run my Skool community. No team and no code, just plain text-file skills. This is the real system, not a staged demo, and I show you exactly how each Claude Code skill works and how to build your own.
-
-Every skill is just a text file. If you can describe a task, you can build one. Free skills, prompts, and the full setup are in my community - link below.
+Sign up free and I will send you every skill in this video, plus the full setup: https://free.tylerai.dev/youtube
+Join the free community: https://www.skool.com/the-ai-agency
 
 Chapters:
-00:00 - Why most Claude Code money videos are fake [UPDATE]
-00:00 - What a Claude Code skill actually is (just a text file) [UPDATE]
-00:00 - The content pipeline: research to published [UPDATE]
-00:00 - Comments + email on autopilot (running while I sleep) [UPDATE]
-00:00 - Running my Skool community from the terminal [UPDATE]
-00:00 - How to build your first skill [UPDATE]
-00:00 - Get the skills (free) [UPDATE]
-
-Free community + resources: https://free.tylerai.dev/youtube/
+0:00 - The 17 skills that run my content business
+2:58 - /yt-search: find what is already working
+6:07 - /transcribe: study the winners
+7:57 - /yt-package: script, titles, hooks
+10:26 - /yt-seo: dial it in before you publish
+13:22 - /yt-analytics + /yt-replier
+14:23 - Distribution: /yt-shorts + /repurpose (1 video, 30+ pieces)
+17:37 - /social-copy: every platform plus email
+22:15 - Optional: /flash-video + /tiktok-replier
+23:06 - /instagram-writer: carousels
+23:50 - Community + money: /skool, /email, /harut, /journal
+30:34 - The skills I would start with first
+32:00 - The real unlock
+33:01 - Wrap up
