@@ -2,9 +2,10 @@
 
 ## Video
 
-**Title:** Claude Code + 17 Skills = My Entire Content Business
+**Title:** I Automated My Entire Content Workflow with Claude Code (swapped 2026-08-09 from "Claude Code + 17 Skills..." — CTR was 2.7%, mirrors the proven 008 workflow title)
 **Package:** `youtube/videos/040-claude-code-skills-run-my-business/`
 **YouTube URL:** https://youtube.com/watch?v=-dEeg0WnJxs (PUBLISHED 2026-08-09)
+**Thumbnail:** swapped 2026-08-09 to the 008-style (Tyler pointing + "Claude" + 17 labeled skill folders + "17 SKILLS"). File: `thumbnail.png` / `thumbnail-yt.jpg`.
 **Stage:** PUBLISHED — full social rollout SCHEDULED 2026-08-09 (Blotato + Resend)
 
 ---
