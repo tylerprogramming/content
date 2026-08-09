@@ -10,7 +10,7 @@ New one is up. I opened the actual folder that runs my content business, 17 Clau
 
 A few of them run on a schedule while I am asleep, which is still kind of weird to say out loud.
 
-What is the first task you would hand off? [VIDEO_URL]
+What is the first task you would hand off? https://youtube.com/watch?v=-dEeg0WnJxs
 
 ---
 
@@ -20,7 +20,7 @@ Most Claude Code videos build a fake business to show you what is possible. I di
 
 So this is the real stack instead, the 17 skills I actually use, including the parts that are not that impressive.
 
-Curious though, do you prefer the polished demos or the messy real ones? [VIDEO_URL]
+Curious though, do you prefer the polished demos or the messy real ones? https://youtube.com/watch?v=-dEeg0WnJxs
 
 ---
 
@@ -33,11 +33,11 @@ Question: If you could hand one repetitive task to Claude Code tomorrow, which w
 - Replying to comments and email
 - The boring admin stuff
 
-Whichever you pick, it starts as one text file. I walked through building one in about two minutes here: [VIDEO_URL]
+Whichever you pick, it starts as one text file. I walked through building one in about two minutes here: https://youtube.com/watch?v=-dEeg0WnJxs
 
 ---
 
 ## Notes
 
-- Fill `[VIDEO_URL]` after upload. 040 is not published yet.
+- Fill `https://youtube.com/watch?v=-dEeg0WnJxs` after upload. 040 is not published yet.
 - Reply to comments within the first hour, that window matters most.

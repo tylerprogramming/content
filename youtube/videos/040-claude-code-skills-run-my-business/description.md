@@ -1,10 +1,8 @@
-# Description
-
-Get all 17 skills free (sign up here): https://free.tylerai.dev/youtube
+Download the skills that run my content business, free (2-minute setup): https://free.tylerai.dev/content-automation
 
 I run my entire content business from Claude Code. In this video I walk through all 17 skills I actually use, grouped into three systems: the YouTube engine that researches and writes my videos, the distribution skills that turn one video into 30+ pieces across every platform, and the community and money skills that handle my email and my Skool. Every one is just a text file. You do not need to be an engineer to use any of them.
 
-Sign up free and I will send you every skill in this video, plus the full setup: https://free.tylerai.dev/youtube
+Get every skill in this video free: https://free.tylerai.dev/content-automation
 Join the free community: https://www.skool.com/the-ai-agency
 
 Chapters:

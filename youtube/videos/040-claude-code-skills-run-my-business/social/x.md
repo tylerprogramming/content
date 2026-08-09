@@ -40,7 +40,7 @@ You stop doing the task and start reviewing the result.
 **Reply 6 (link)**
 Full walkthrough of all 17, plus how to build your first one in about two minutes:
 
-[VIDEO_URL]
+https://youtube.com/watch?v=-dEeg0WnJxs
 
 ---
 

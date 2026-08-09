@@ -24,7 +24,7 @@ If you are picking a first one, do not go big. Pick the small thing you already 
 
 What would yours be? Drop it below and I will tell you how I would structure it.
 
-[VIDEO_URL]
+https://youtube.com/watch?v=-dEeg0WnJxs
 
 ---
 
@@ -62,11 +62,11 @@ Full walkthrough here, including building one live in about two minutes.
 
 Who has built one already? Curious what you pointed it at.
 
-[VIDEO_URL]
+https://youtube.com/watch?v=-dEeg0WnJxs
 
 ---
 
 ## Notes
 
-- Fill `[VIDEO_URL]` after upload.
+- Fill `https://youtube.com/watch?v=-dEeg0WnJxs` after upload.
 - No markdown bold or headers in the post bodies, Skool renders them oddly.

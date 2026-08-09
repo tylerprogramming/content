@@ -4,10 +4,9 @@
 
 **Title:** 17 Claude Code Skills That Actually Run My Business
 **Package:** `youtube/videos/040-claude-code-skills-run-my-business/`
-**YouTube URL:** not published yet, all posts carry a `[VIDEO_URL]` placeholder
-**Recorded:** 2026-07-28
-**Stage:** to edit
-**Social drafted:** 2026-07-29
+**YouTube URL:** https://youtube.com/watch?v=-dEeg0WnJxs (PUBLISHED 2026-08-09, as "Claude Code + 17 Skills = My Entire Content Business")
+**Recorded:** 2026-07-28 (final recut) | **Stage:** PUBLISHED — URL filled in all posts
+**Social drafted:** 2026-07-29, expanded 2026-08-09 (5 reel captions, 2 emails, 5 pinterest pins)
 
 ---
 
@@ -27,7 +26,7 @@
 | YouTube Community | Post + poll | 3 drafts in `community.md`. Option 1 on video day, Option 3 as a poll 2-3 days later. |
 | Skool | Post | 3 drafts in `skool.md`. Post 1 on video day, Post 2 works with no video. |
 
-**Blocked on:** video upload. Every platform needs `[VIDEO_URL]` filled in first, except Skool Post 2, which stands alone.
+**Blocked on:** video upload. Every platform needs `https://youtube.com/watch?v=-dEeg0WnJxs` filled in first, except Skool Post 2, which stands alone.
 
 ---
 

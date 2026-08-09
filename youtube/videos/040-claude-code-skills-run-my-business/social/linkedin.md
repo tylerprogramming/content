@@ -42,7 +42,7 @@ So pick the thing you did twice this week. That is your first one.
 
 What is the task you would hand off first?
 
-[VIDEO_URL]
+https://youtube.com/watch?v=-dEeg0WnJxs
 
 ---
 
@@ -78,7 +78,7 @@ The test I use now is simple. If I did it twice this month by hand, it should be
 
 What is the task you keep redoing?
 
-[VIDEO_URL]
+https://youtube.com/watch?v=-dEeg0WnJxs
 
 ---
 
