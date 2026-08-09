@@ -6,43 +6,27 @@ Put the video link in the first comment if you want max reach.
 
 ---
 
-## Post 1 - "Every task I did twice became a text file" (RECOMMENDED)
+## Post 1 - THE VIDEO POST (Monday launch, RECOMMENDED)
 
 Every task I did twice became a text file.
 
 Not an app. Not a script. A text file.
 
-So here is the problem I had. The same chores kept coming back every week. Research, writing, posting, replying, admin. Each one small, all of them together a second job.
+Here is the problem I had. The same chores came back every week. Research, writing, posting, replying, admin. Each one small, together a second job. And I kept solving them from scratch every time.
 
-And I kept solving them from scratch every single time.
+The fix was kind of boring. I wrote the instructions down once, in plain English, where Claude Code could find them.
 
-The fix was kind of boring. I wrote the instructions down once, in plain English, and saved them where Claude Code could find them.
+That is all a skill is. A folder with one text file in it. The top says when to use it. The rest is just the instructions, the same thing you would tell someone you were training. Nothing to install, no code to compile.
 
-That is all a skill is. A folder with one text file in it.
+I have 17 of these running my content business now. They research, write, post, and answer comments. A few run while I am asleep, all in draft mode so nothing goes out without me reading it first.
 
-Here is what that actually looks like.
+I have been an engineer for years and honestly none of this needed that. If you can describe a task, you can write one.
 
-The top of the file says when to use it. One or two lines.
-
-The rest is just the instructions, the same thing you would tell someone you were training.
-
-Nothing to install. No code to compile.
-
-Now it is a command I can run forever, and I improve it a little every time I use it.
-
-I have 17 of these running my content business now. They research, they write, they post, they answer comments, they handle the community admin.
-
-A few of them run on a schedule when I am not at my desk. Those default to draft mode, so nothing goes out without me reading it first.
-
-I have been an engineer for years, and honestly none of this needed that. If you can describe a task, you can write one.
+I just made a video walking through all 17, and I build one from scratch in about two minutes so you can see how little there is to it. It is here: https://youtube.com/watch?v=-dEeg0WnJxs
 
 The shift is not that the work disappears. It is that you stop being the person doing the task and start being the person reviewing the result.
 
-So pick the thing you did twice this week. That is your first one.
-
-What is the task you would hand off first?
-
-https://youtube.com/watch?v=-dEeg0WnJxs
+So pick the thing you did twice this week. That is your first one. What would you hand off first?
 
 ---
 
