@@ -57,29 +57,7 @@ There's a free tier to start, then paid plans if you grow into it. Let me connec
 
 ---
 
-## ~1:30 - 2:05 | Why not just a Claude connector? (the objection, head-on)
-
-[SHOW: Tyler to camera, or a quick cut to Claude's connectors screen.]
-
-Now, some of you are already thinking it. Claude has built-in connectors for this stuff. And you're right.
-
-So let me be straight about when you do NOT need Arcade. If you just want Claude to read your own Gmail or post to your own Slack, for you, the built-in connectors do that. Use them. Honestly.
-
-Here's when Arcade is the better call.
-
-One, you're building something for other people. Arcade does the OAuth per user, so everyone who uses what you build connects their own accounts. A connector logs into yours.
-
-Two, you're building your own agent, not just chatting inside Claude. Arcade is a runtime, so the same connected tools work in Claude Code, in your own code, anywhere MCP goes.
-
-Three, you want the auth handled like production. Real per-user scopes, tokens you never hold, a log of what ran.
-
-If none of that is you, use the connector. If any of it is, that's exactly what this is. And it's where the next video goes.
-
-[NOTE: This is the credibility beat. Say it plainly, admit when the connector wins. That honesty is what makes the rest land. ~30 seconds.]
-
----
-
-## 1:30 - 5:30 | Connect it live
+## ~1:00 - 4:30 | Connect it live
 
 [SHOW: Arcade dashboard. Start a small on-screen timer here so the "7 minutes" is honest.]
 
@@ -196,6 +174,18 @@ And there it is in Slack. Posted as me.
 So, three different apps, three real actions, one setup. And I could just as easily have had it summarize open GitHub issues, or file one to ClickUp. Same idea. The tools are already there.
 
 [NOTE: Keep expectations honest. It's not always perfect. Say something like: "Is it perfect every time? No. Sometimes it grabs the wrong email or you have to nudge the prompt. Treat it like a capable assistant you still check, not autopilot."]
+
+---
+
+## ~6:30 | Wait, doesn't Claude already have connectors?
+
+[SHOW: quick cut to Claude's connectors screen, then back to the terminal.]
+
+Quick one, because someone is typing it right now. Yes, Claude has built-in connectors. If you just want Claude to touch your own accounts, use them. They are great.
+
+You reach for Arcade when it is more than that. When you are building for other people, so each user connects their own accounts, not yours. When it is your own agent, not just chatting inside Claude. Or when you want the auth run like production. That is the line, and that is where the next video goes.
+
+[NOTE: ~20 seconds. It lands harder here, right after they watched it work, than it would up front.]
 
 ---
 
