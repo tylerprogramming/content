@@ -1,7 +1,7 @@
 # Script - Build a Real AI Agent in 7 Minutes: Claude Code + Arcade
 
 Target runtime: 8-10 min. Direct, doable, honest. Tyler's voice: short sentences, person talking, "here's the thing," "right?", admit the limits, drafts before sends.
-Format: BUILD-ONE-AGENT. We build ONE specific working agent, start to finish, live, with a visible 7-minute timer. Not a lecture, not a broad "connect all your apps" tour (that's the companion video, 042).
+Format: BUILD-ONE-AGENT. We build ONE specific working agent, start to finish, live. Not a lecture, not a broad "connect all your apps" tour (that's the companion video, 045). No on-screen timer; "about seven minutes" stays as a spoken claim only.
 The agent: a morning brief. Reads today's Google Calendar + unread Gmail, summarizes the day, flags which emails need a reply, then drafts those replies in draft/safe mode.
 
 Standing rules: no em dashes, no hype words (insane, crazy, game-changer), no money amounts in the title, no hashtags. Show real runs. Drafts before sends. Tyler is a software engineer, 8 years, IBM and Chase, now AI engineer at Pfizer. Never imply he is not a developer.
@@ -22,15 +22,15 @@ Let me build this whole thing from scratch. About seven minutes. Starting now."
 
 ---
 
-## [0:15-0:45] THE STAKES - why this is usually hard
+## [0:15-0:40] THE STAKES - why this is usually hard
 
 [SHOW: Tyler on camera. Simple text builds: "TOOLS + AUTH". The word AUTH gets circled.]
 
-"So here's the thing about a real agent. Not a chatbot, a real one that does a job. It needs two things. Tools, and permission to use them.
+"A real agent, not a chatbot, one that actually does a job, needs two things. Tools, and permission to use them.
 
-The tools are easy. It's the permission that stops everyone. Connecting an AI to your actual Gmail means OAuth, tokens, scopes. That's the wall people hit and quit at.
+The tools are easy. And I'll be honest, connecting one app to Claude for yourself is easy too. The auth bites when you want an agent doing this on its own, touching your real accounts while you are not sitting there watching it. That is OAuth, tokens, scopes, refresh, per user. I've built these integrations at Fortune 500 companies. That part is genuinely the hard part.
 
-I've built these integrations at Fortune 500 companies. The auth is genuinely the hard part. So we're not going to build it. We're going to let something else handle it, and spend our seven minutes on the agent itself."
+So we're not going to build it. We hand the auth to something else, and spend our time on the agent itself."
 
 ---
 
@@ -42,9 +42,11 @@ I've built these integrations at Fortune 500 companies. The auth is genuinely th
 
 [SHOW: arcade.dev landing page. Tagline visible: "Ship agents, not auth infrastructure."]
 
-"The thing I'm using is called Arcade. One line on what it is: it's a runtime for agents that handles the auth for you. Their whole pitch is ship agents, not auth infrastructure. They've got something like seven thousand five hundred prebuilt tools across eighty-one servers. Gmail, Calendar, Slack, GitHub, all of it. You don't wire up OAuth, it does the per-user OAuth for you. You click authorize once and it manages the tokens."
+"The thing I'm using is called Arcade. One line: it's a runtime for agents that handles the auth for you. Their whole pitch is ship agents, not auth infrastructure. Thousands of prebuilt tools across the apps you already use, Gmail, Calendar, Slack, GitHub, all of it. You don't wire up OAuth, it does the per-user OAuth for you. You click authorize once, and it manages the tokens."
 
 [DISCLOSURE: if partner/sponsored, say it here, plainly. "Arcade's sponsoring this one, and I'd use it either way, here's why."]
+
+[NOTE: don't quote a hard tool/server count on camera unless you re-checked it that day. "Thousands" is safe and doesn't age.]
 
 ### Build a Gateway [1:15-1:50]
 
@@ -72,15 +74,15 @@ claude mcp list
 
 "And there it is, arcade, connected. Quick honesty note: the first time the agent actually touches Gmail, it's going to pop an OAuth screen and ask me to authorize. That's the good kind of friction. It means my token isn't hardcoded anywhere. I authorize once, and it's done."
 
-[NOTE: you can trigger and clear the OAuth authorize now, off-timer, so the live build doesn't stall on it. Show the authorize screen briefly so viewers see it's real, then start the timer clean.]
+[NOTE: trigger and clear the OAuth authorize now, before the build, so the live run doesn't stall on it. Show the authorize screen briefly so viewers see it's real, then start the build clean.]
 
 ---
 
-## [2:30-6:30] BUILD THE AGENT LIVE - start the timer
+## [2:30-6:30] BUILD THE AGENT LIVE
 
-[SHOW: start the 7:00 timer in the corner. It runs for real from here.]
+[SHOW: clean terminal, Claude Code ready.]
 
-"Okay. Timer's on. Let me build the agent."
+"Okay. Let me build the agent."
 
 ### The prompt [2:30-3:30]
 
@@ -128,15 +130,13 @@ It's reading through the inbox now. Sorting the stuff that needs me from the stu
 
 ---
 
-## [6:30-8:00] PAYOFF - the real output - stop the timer
+## [6:30-8:00] PAYOFF - the real output
 
 [SHOW: the finished output. Read real lines off the screen.]
 
-"Look at that. Stop the timer."
+"Look at that.
 
-[SHOW: stop the timer. Note the time on screen.]
-
-"So here's what it gave me. The day, in order: a nine a.m. standup, a call at eleven, a block for filming this afternoon. Then the emails that need me. It flagged three. This one from a viewer asking about the last video. This one about a partnership. And this one where someone's waiting on an answer from me. It skipped the newsletters and the receipts, exactly like I asked.
+So here's what it gave me. The day, in order: a nine a.m. standup, a call at eleven, a block for filming this afternoon. Then the emails that need me. It flagged three. This one from a viewer asking about the last video. This one about a partnership. And this one where someone's waiting on an answer from me. It skipped the newsletters and the receipts, exactly like I asked.
 
 And then, the drafts."
 
@@ -176,13 +176,13 @@ And I've got a free community if you want to build these alongside other people 
 
 Two more things. If you want to connect all your apps to Claude Code, not just these two, I made a companion video that's all about that setup, I'll link it. And if you want the full thing, start to finish, there's a whole course. But start with this one agent. Tell me in the comments what you'd have yours do first. I'll see you in the next one."
 
-[End card: subscribe + the companion "connect all your apps" (042) thumbnail.]
+[End card: subscribe + the companion "connect all your apps" (045) thumbnail.]
 
 ---
 
 ## Filming notes
 - The retention zone is the live build, 2:30 to 6:30. Keep it moving, cut the thinking time in the edit, never fake the output.
-- Pre-clear the OAuth authorize off-timer before the build so the seven minutes is spent on the agent, not waiting on a login screen. Show the authorize screen briefly so viewers know it's real.
+- Pre-clear the OAuth authorize before the build so the run is spent on the agent, not waiting on a login screen. Show the authorize screen briefly so viewers know it's real.
 - Pre-run the exact morning-brief prompt once before filming to confirm it behaves, and keep a real backup output on hand in case the live run stalls.
 - The Fortune 500 / engineer line is authority, not a flex. Use it once in the stakes section, plainly.
 - Everything on screen is real: real Gateway, real inbox, real calendar, real drafts. No mockups.
