@@ -23,37 +23,25 @@ All from the terminal. On my real accounts. A few minutes to set up, and I never
 
 ---
 
-## 0:15 - 0:45 | The pain
+## 0:12 - 0:50 | The pain, then Arcade (one fast move)
 
-[SHOW: Tyler on camera, or terminal with Claude Code sitting there, unable to do anything with real apps.]
+[SHOW: terminal with Claude Code, then cut straight to arcade.dev.]
 
-Here's the honest version. Claude Code can already reach outside tools. You can add an MCP server, you can flip on a connector, and for one app, for yourself, that part is genuinely easy. I'm not going to pretend it isn't.
+Quick and honest. Connecting Claude to one app, for yourself, is easy. Add an MCP server, or flip on a connector, done.
 
-The auth is where it gets real. The second you want a bunch of apps, or you want to build something other people log into, or you want an agent doing this while you are not at your desk, you are the one holding it. Setting up the OAuth, storing the tokens, refreshing them, walking each user through their own consent, a little server to keep it all running.
+The auth is where it gets real. The moment you want a bunch of apps, or other people using it, or your own agent running while you are gone, you are the one holding the OAuth, the tokens, the refresh, and a little server to keep it alive. Eight years as an engineer, that is always the part that eats the afternoon.
 
-I've done this for a living. Eight years as a software engineer, at IBM, at Chase, now doing AI work at Pfizer. That auth layer is always the part that eats the afternoon.
+[SHOW: arcade.dev homepage, the tagline.]
 
-So the trick isn't writing better auth code. It's not writing it at all.
+So that is what Arcade is. An MCP runtime that handles the auth for you. Their words: ship agents, not auth infrastructure.
 
----
+[SHOW: the tools catalog, quick scroll.]
 
-## 0:45 - 1:30 | What Arcade is, one breath
+Thousands of prebuilt tools across the apps you already use, and it does the per-user OAuth so you never hold a token. Free tier to start.
 
-[SHOW: arcade.dev homepage. Highlight the tagline "Ship agents, not auth infrastructure." Then the tools/servers count.]
+Let me just connect it.
 
-That's what Arcade does. In one breath: Arcade is an MCP runtime that handles the auth for you.
-
-Their tagline is "ship agents, not auth infrastructure." That's the whole idea.
-
-[SHOW: the tools catalog, scroll it a bit.]
-
-They give you thousands of prebuilt MCP tools across the apps you already use. Gmail, Calendar, Drive, Slack, GitHub, Notion, Salesforce, a lot more.
-
-You don't build the connection. You pick the tools you want, and Arcade does the per-user OAuth for you. You click authorize once, and it manages the tokens after that.
-
-There's a free tier to start, then paid plans if you grow into it. Let me connect it.
-
-[NOTE: Keep this section tight. It should feel like one exhale, not a product tour. Don't quote a hard tool count on camera unless you re-check it that day. "Thousands" is safe.]
+[NOTE: Whole thing under ~40 seconds. Two beats of pain, pivot straight into Arcade, then go. Don't quote a hard tool count unless you re-checked it that day; "thousands" is safe.]
 
 ---
 
