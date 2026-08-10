@@ -27,11 +27,11 @@ All from the terminal. On my real accounts. A few minutes to set up, and I never
 
 [SHOW: Tyler on camera, or terminal with Claude Code sitting there, unable to do anything with real apps.]
 
-Here's the thing. Claude Code is great, but out of the box it can't touch your real apps. It can't read your Gmail. It can't see your calendar. It can't post to Slack.
+Here's the honest version. Claude Code can already reach outside tools. You can add an MCP server, you can flip on a connector, and for one app, for yourself, that part is genuinely easy. I'm not going to pretend it isn't.
 
-And normally, connecting it means building an integration. Which means OAuth. Tokens. Scopes. Refresh flows. A little server to hold it all together.
+The auth is where it gets real. The second you want a bunch of apps, or you want to build something other people log into, or you want an agent doing this while you are not at your desk, you are the one holding it. Setting up the OAuth, storing the tokens, refreshing them, walking each user through their own consent, a little server to keep it all running.
 
-I've done this for a living. Eight years as a software engineer, at IBM, at Chase, now doing AI work at Pfizer. The auth layer is always the hard part. It's the part that eats your afternoon.
+I've done this for a living. Eight years as a software engineer, at IBM, at Chase, now doing AI work at Pfizer. That auth layer is always the part that eats the afternoon.
 
 So the trick isn't writing better auth code. It's not writing it at all.
 
