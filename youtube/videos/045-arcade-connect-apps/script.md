@@ -1,4 +1,4 @@
-# Script - 042 Give Claude Code Access to Your Real Apps in 7 Minutes (Arcade MCP)
+# Script - 045 Give Claude Code Access to Your Real Apps in 7 Minutes (Arcade MCP)
 
 Target length: 8 to 10 minutes.
 Voice: Tyler talking to a friend over his shoulder. Short sentences. No hype. No em dashes. Software engineer, lean into the auth angle.
@@ -13,13 +13,13 @@ Voice: Tyler talking to a friend over his shoulder. Short sentences. No hype. No
 
 [SHOW: terminal already open, Claude Code running. Screen recording of the finished result scrolling: calendar summary, drafted email replies, a Slack post confirmation.]
 
-So this is Claude Code. And right now it just read my calendar, pulled the two emails that actually need a reply, and drafted them. Then it posted my standup to Slack.
+This is Claude Code. Watch what it just did.
 
-All from the terminal. Using my real accounts.
+It read my calendar, pulled the two emails that actually need a reply, and drafted them. Then it posted my standup to Slack.
 
-That took about seven minutes to set up. No code, no OAuth headaches. Let me show you exactly how.
+All from the terminal. On my real accounts. A few minutes to set up, and I never touched an OAuth token. Let me show you.
 
-[NOTE: Get right into it. No "hey guys, welcome back." First words are the demo.]
+[NOTE: Get right into it. No "hey guys, welcome back." First words are the demo. Keep this to ~12 seconds, tight. The whole hook is the result on screen.]
 
 ---
 
@@ -47,13 +47,35 @@ Their tagline is "ship agents, not auth infrastructure." That's the whole idea.
 
 [SHOW: the tools catalog, scroll it a bit.]
 
-They give you over seven thousand five hundred prebuilt tools, across eighty one MCP servers. Gmail, Google Calendar, Docs, Sheets, Drive, Slack, GitHub, Notion, Asana, a lot more.
+They give you thousands of prebuilt MCP tools across the apps you already use. Gmail, Calendar, Drive, Slack, GitHub, Notion, Salesforce, a lot more.
 
-You don't build the connection. You pick the tools you want, and Arcade does the per-user OAuth for you. You click authorize once per tool, and it manages the tokens after that.
+You don't build the connection. You pick the tools you want, and Arcade does the per-user OAuth for you. You click authorize once, and it manages the tokens after that.
 
-That's it. Let me connect it.
+There's a free tier to start, then paid plans if you grow into it. Let me connect it.
 
-[NOTE: Keep this section tight. It should feel like one exhale, not a product tour.]
+[NOTE: Keep this section tight. It should feel like one exhale, not a product tour. Don't quote a hard tool count on camera unless you re-check it that day. "Thousands" is safe.]
+
+---
+
+## ~1:30 - 2:05 | Why not just a Claude connector? (the objection, head-on)
+
+[SHOW: Tyler to camera, or a quick cut to Claude's connectors screen.]
+
+Now, some of you are already thinking it. Claude has built-in connectors for this stuff. And you're right.
+
+So let me be straight about when you do NOT need Arcade. If you just want Claude to read your own Gmail or post to your own Slack, for you, the built-in connectors do that. Use them. Honestly.
+
+Here's when Arcade is the better call.
+
+One, you're building something for other people. Arcade does the OAuth per user, so everyone who uses what you build connects their own accounts. A connector logs into yours.
+
+Two, you're building your own agent, not just chatting inside Claude. Arcade is a runtime, so the same connected tools work in Claude Code, in your own code, anywhere MCP goes.
+
+Three, you want the auth handled like production. Real per-user scopes, tokens you never hold, a log of what ran.
+
+If none of that is you, use the connector. If any of it is, that's exactly what this is. And it's where the next video goes.
+
+[NOTE: This is the credibility beat. Say it plainly, admit when the connector wins. That honesty is what makes the rest land. ~30 seconds.]
 
 ---
 
