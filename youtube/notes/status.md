@@ -3,7 +3,7 @@
 > **Live pipeline state — the operational source of truth.** What's recording next, what's with the editor, what's queued.
 > For full content inventory across all platforms, see `~/content/system/tracker.md`.
 >
-> **Open this first.** Last updated: 2026-08-02
+> **Open this first.** Last updated: 2026-08-10
 > **Also tracked in ClickUp:** YouTube list (id 901710640585), Space "Team Space". Keep both in sync on every stage change — this file is the source of truth. (ClickUp reconciled 2026-07-22: confirmed 021/023/024/025/028/034 complete; marked `026` (scheduled tonight) + 6 already-live back-catalog videos (011/012 + Antigravity, YT Workflow, Build ANYTHING, 23 Concepts) complete; `86e2drehj` social push + `027` remain in progress.)
 
 ---
@@ -87,6 +87,19 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 ⚠️ **`/skool` does not exist** in `~/.claude/skills/`. The 10th reel is parked over it, and the same gap sits in **Part 3 of the long form (9:30-11:30)** and in the "17" on the on-screen wall. Check the take before it goes to the editor. Tyler's call, deferred 2026-07-31.
 **Emails (040 / community):** 5-email Skool onboarding sequence drafted 2026-07-31 in `emails/campaigns/skool-onboarding-2026-07/` (free member → cohort, Harut-derived). Needs the cohort application link, the workshop date, and a real member story before it can send.
 **Instagram (040):** 4 carousels rendered 2026-07-29 in `platform/instagram/` (`claude-skills-system`, `first-claude-skill`, `skills-on-a-schedule`, `not-a-demo`) with captions + PDFs. Nothing scheduled yet.
+
+---
+
+## 🔌 Arcade series (045-047) — arcade.dev lane
+
+| Video | Folder | Stage |
+|---|---|---|
+| **045 Give Claude Code Access to Your Real Apps** | `045-arcade-connect-apps/` | **FILMED 2026-08-10 → editing.** Script finalized: honest auth reframe (connecting one app is easy; auth bites at scale/multi-user/own-agent), pain+Arcade merged (build ~0:50), "why not a connector" beat after the demo, facts checked vs live site. 4 reels in `reels.md`. ClickUp `86e2kukfp`. |
+| **046 Build a Real AI Agent in 7 Minutes** | `046-arcade-build-agent/` | **Script finalized 2026-08-10, film-ready** (same Arcade session as 045). Honest auth, on-screen timer dropped, companion ref → 045. Format: morning-brief agent (Calendar+Gmail → summary + flagged replies → drafts). ClickUp `86e2kukg1` (in progress). |
+| **047 Arcade MCP Course (~30 min)** | (to package) | Planned: Code + Cowork + Web. ClickUp `86e2kukgv`. |
+
+**045 ↔ 046 pair:** 045 = connect your apps (the setup), teases 046; 046 = build one real agent (the payoff), references 045 as the companion. Film back-to-back in one Arcade setup session.
+**Disclosure:** confirm sponsor/partner status with Arcade before publishing; if sponsored, say so on camera + in the description.
 
 ---
 
