@@ -99,39 +99,41 @@ The work does not disappear. You just stop starting from a blank screen every mo
 
 ---
 
-## Reel 4 — "I never touched an OAuth token" (the honest hook)
+## Reel 4 — "How to make an MCP server in 2026 (the easy way)"
 
 **Spoken (word for word):**
-"Here's the part I care about as an engineer. I connected Claude Code to my real Gmail, and I never touched an OAuth token. When it first used the tool, it sent me to Google's real consent screen. I approved it. That's it. The token gets stored and refreshed for me. I never pasted it, it's not in a config file, it's not in my repo. That's the difference between a demo and something I'd actually run."
+"How you make an MCP server in 2026 is not how you did it before. The old way was write the server, handle the OAuth, host it somewhere, keep it running. The new way, you go to arcade.dev, create a gateway, and add the tools you want. Prebuilt ones, or your own. You get a hosted URL back, and the auth is already handled. That URL is your MCP server. Same idea as coding one, way less of your afternoon."
 
-[SHOW: the Google OAuth consent screen appearing, approving it, then the tool working. Cut to a config file that does NOT contain a token.]
+[SHOW: split screen. Left, a code editor full of OAuth boilerplate. Right, the arcade.dev gateway builder: create gateway, add Gmail + Calendar + a custom tool, copy the hosted URL. Then hand that URL to Claude Code.]
 
 **TikTok:**
-I connected Claude Code to my real Gmail and never touched an OAuth token. It sent me to Google's real consent screen, I approved once, done. No token in a config file. That is the difference from a demo.
-#claudecode #ai #aiagents #oauth #claudeai
+The 2026 way to make an MCP server: don't code it, assemble it. Go to arcade.dev, create a gateway, add the tools you want, get a hosted URL with the auth handled. That URL is your server.
+#claudecode #mcp #ai #aiagents #arcade
 
 **Instagram Reels:**
-I gave Claude Code my real Gmail and never touched an OAuth token. Approve once on Google's real screen, and it handles the rest. That is what makes it real, not a demo. Full video on my channel.
-#claudecode #ai #aiagents #security #claudeai
+How you make an MCP server in 2026: create a gateway on arcade.dev, add your tools, get a hosted URL with the auth already handled. No boilerplate. Full walkthrough on my channel.
+#claudecode #mcp #ai #aiagents #arcade
 
 **YouTube Shorts:**
-I connected my real Gmail to Claude Code and never touched a token.
+How to make an MCP server in 2026 (the easy way).
 #shorts #claudecode #ai
 
 **LinkedIn:** (value post, Tyler voice)
-The part I care about as an engineer: I connected Claude Code to my real Gmail and never touched an OAuth token.
+How you stand up an MCP server in 2026 is not how you did it a year ago.
 
-The first time it used the tool, it sent me to Google's actual consent screen. I approved it. The token is stored and refreshed for me. I never pasted it, it is not in a config file, it is not in my repo.
+The old way: write the server, wire up the OAuth, host it, keep it alive. The new way: create a gateway, add the tools you want, and get a hosted URL with the auth already handled.
 
-I have built these integrations at big companies. The auth is the part that eats the afternoon, and it is the part most demos quietly skip.
+That URL is your MCP server. You can put prebuilt tools on it or your own. You can hand it to Claude Code, to your own code, or to other people.
 
-That is the line between something you show once and something you actually run. Handle the auth like it matters, and the rest gets boring in the best way.
+The skill is not writing the server anymore. It is knowing what you want it to do. The plumbing got cheap, so spend your time on the part that is actually yours.
+
+What would you put on yours first?
 
 ---
 
 ## Post order
-1 (one-line add) → 3 (1-min email/calendar payoff) → 2 (simple MCP server) → 4 (no OAuth token).
-Reason: open with the quick win, then the payoff, then demystify, then the credibility beat.
+1 (one-line add) → 3 (1-min email/calendar payoff) → 2 (simple MCP server) → 4 (make a server in 2026).
+Reason: open with the quick win, then the payoff, then demystify what a server is, then the timely how-to.
 
 ## Notes
 - Fill the video URL once 045 is live.
