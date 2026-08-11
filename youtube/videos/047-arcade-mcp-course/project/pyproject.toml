@@ -13,6 +13,8 @@ dependencies = [
     "crewai[tools]",      # CrewAI crew (module 4). NOTE: do NOT add crewai-arcade (deprecated)
     "python-dotenv",
     "httpx",              # used by the custom tool examples
+    "langchain-openai>=1.4.3",
+    "openai>=2.53.0",
 ]
 
 # This is an application, not a library — don't try to build/install it as a package.

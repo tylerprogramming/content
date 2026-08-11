@@ -24,7 +24,6 @@ from langchain.agents import create_agent
 from langchain_core.messages import AIMessage, ToolMessage
 from langchain_core.runnables import RunnableConfig
 from langchain_core.tools import StructuredTool
-from langchain_anthropic import ChatAnthropic
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.types import Command, interrupt
 from pydantic import BaseModel, Field, create_model
@@ -35,9 +34,21 @@ ARCADE_USER_ID = os.getenv("ARCADE_USER_ID")
 MCP_SERVERS: List[str] = []                                   # e.g. ["Slack"] for a whole toolkit
 TOOLS = ["Gmail_ListEmails", "Gmail_SendEmail", "Gmail_WhoAmI"]
 SYSTEM_PROMPT = "You are a helpful assistant that can use Gmail tools."
-MODEL = "claude-opus-4-8"
 
 TYPE_MAPPING = {"string": str, "number": float, "integer": int, "boolean": bool, "array": list, "json": dict}
+
+
+def build_model():
+    """Pick the chat model from env. LLM_PROVIDER=openai (default) or anthropic.
+    The agent is model-agnostic, so swapping providers changes nothing else."""
+    provider = os.getenv("LLM_PROVIDER", "openai").lower()
+    if provider == "anthropic":
+        from langchain_anthropic import ChatAnthropic
+        return ChatAnthropic(model=os.getenv("ANTHROPIC_MODEL", "claude-opus-4-8"),
+                             api_key=os.getenv("ANTHROPIC_API_KEY"))
+    from langchain_openai import ChatOpenAI
+    return ChatOpenAI(model=os.getenv("OPENAI_MODEL", "gpt-5.4-mini"),
+                      api_key=os.getenv("OPENAI_API_KEY"))
 
 
 def get_python_type(val_type: str) -> Any:
@@ -137,7 +148,7 @@ async def stream(agent, input_data, config) -> List[Any]:
 async def main():
     client = AsyncArcade()  # reads ARCADE_API_KEY
     tools = await get_arcade_tools(client, tools=TOOLS, mcp_servers=MCP_SERVERS or None)
-    model = ChatAnthropic(model=MODEL, api_key=os.getenv("ANTHROPIC_API_KEY"))
+    model = build_model()
     agent = create_agent(system_prompt=SYSTEM_PROMPT, model=model, tools=tools, checkpointer=MemorySaver())
 
     print(f"\nAgent ready with {len(tools)} tools. Type 'quit' to exit.")

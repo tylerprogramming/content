@@ -1,35 +1,42 @@
-# Hooks - 044 Arcade MCP Course
+# Hooks — 047 Full Arcade Course
 
-Three word-for-word cold opens, each a different technique. Pick one. All open fast, no preamble.
+**The value (say it plainly, it's the spine of the whole video):**
+By the end, you can build real AI agents that connect to anything you use, with no
+auth headaches, and it's simpler than you'd expect. You leave with agents you
+actually use, a free blueprint, and a setup pack to install them yourself.
 
----
-
-## Hook 1 - Show the result first (recommended)
-
-"Watch this. Same tools, three places.
-
-In the terminal, Claude Code just read my calendar and drafted two replies. On my desktop in Cowork, the same Claude went through my inbox. And in the browser, on claude.ai, it pulled my open issues and posted a standup to Slack.
-
-I set that up once. One gateway, three surfaces, same tools.
-
-The hard part connecting AI to your real apps has always been the auth, the OAuth, the tokens. Something else handles all of that now. Let me show you the whole thing, start to finish."
+Voice: Tyler to a friend. Short sentences. No hype words. No em dashes. Open fast (no channel intro). Cold open is filmed LAST (needs the real module footage for the montage).
 
 ---
 
-## Hook 2 - The problem, plainly (Tyler's default reframe)
+## Hook 1 — value-forward (RECOMMENDED)
 
-"Claude is great, but out of the box it can't touch your real apps. Not your Gmail, not your calendar, not your Slack.
+[SHOW: fast cuts of the payoff — Claude Code pulling Gmail; a terminal printing "Deployed"; a LangChain agent answering; a CrewAI crew running; a calendar at 6:31 AM filling itself with time-blocks.]
 
-And the reason isn't Claude. It's the auth. I've built these integrations at big companies for eight years, and connecting software to your accounts safely is genuinely the hard part. OAuth, tokens, scopes, refresh, all of it.
+"By the end of this, you'll have real AI agents running on your own accounts. Your email, your calendar, your tasks, anything you want to connect. And you'll build them without ever touching an auth token or storing a password. That was always the hard part. It isn't anymore. You'll leave with agents you actually use, plus a free blueprint and a setup pack so you can run them yourself. Let me show you how simple it got."
 
-So in this course I'm going to remove that part completely. We build one thing, and then we plug it into Claude Code, into Cowork on the desktop, and into claude.ai in the browser. One gateway, three surfaces, same tools. Then we actually use it on all three."
+**Why:** leads with the viewer's outcome (real agents on real accounts), names the pain it removes (auth), promises simplicity, and lands the free downloads. The montage shows the breadth so the runtime feels earned.
+
+**Optional punch-in (timely curiosity spike, right after the promise):**
+"And heads up, most of what's online about this is already outdated. The two most popular libraries for it just got deprecated. I'll show you how it actually works now."
 
 ---
 
-## Hook 3 - The stakes / contrast
+## Hook 2 — "everything you found is outdated" (contrarian / timely)
 
-"Most people set this kind of thing up once, in one place, and stop there.
+"Quick heads up before you build anything. If you looked up how to connect AI agents to your apps this year, a lot of what you found already stopped working. The two most popular libraries for it just got deprecated. So I figured out how it actually works now, and I'm going to build the whole thing with you, so you walk away with agents you actually use."
 
-We're going to do something better. We build one connection, and then the exact same set of tools shows up in three different Claudes. The terminal for building. The desktop app for everyday work. The browser for when you're not even at your machine.
+---
 
-One gateway, three surfaces, same tools. And by the end you'll have a real morning-brief agent, real inbox triage, and a real repo-to-Slack standup running. Let's build it."
+## Hook 3 — engineer / the auth wall
+
+"The hard part of an AI agent was never the AI. It's letting it into your real accounts without doing something reckless with your passwords. I spent eight years building exactly these integrations at IBM and Chase. In this video we hand that whole problem to one tool, and you build agents that work across your real apps, on a schedule that runs without you. No tokens in a file."
+
+---
+
+## The promise checklist (make sure the intro delivers all of it)
+- Real AI agents, on YOUR real accounts (email, calendar, tasks, anything)
+- No auth headaches, no passwords/tokens to store
+- Simpler than expected
+- You can USE them by the end
+- Free blueprint + free setup pack to install them yourself

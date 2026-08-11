@@ -4,6 +4,18 @@
 **Status:** BUILDING (2026-08-11). Research in flight (Arcade custom-tool/deploy, LangChain, CrewAI, arcadepy + concepts + latest). Code project scaffolded at `project/`; code fills in once research lands.
 **Target runtime:** 55-65 min. Chaptered, modular, project-based.
 
+**Working title:** How to Build AI Agents in 2026 (The Right Way) — options in `titles.md`.
+**LLM:** OpenAI `gpt-5.4-mini` for filming/testing (viewer's own credits); one env var (`LLM_PROVIDER`) flips to Claude. Model-agnostic is a teaching beat.
+**Hook:** value-forward, see `hooks.md` (Hook 1).
+
+## The value (the spine — say it in the hook, deliver it in the build)
+By the end, the viewer can build real AI agents connected to anything they use, with **no auth headaches**, and it's **simpler than they expect**. They leave with **agents they actually use**, a **free blueprint**, and a **setup pack** to install them.
+
+## Free downloads (lead magnets)
+- **Blueprint** — `blueprint-build-ai-agents.md` (one-page system + the 5 builds). Offer as a shareable page/PDF.
+- **Setup Pack** — `project/INSTALL.md` (install the agents in ~10 min, copy-paste, uv-based).
+- **The code** — the runnable `project/` folder.
+
 ## Thesis
 One video that takes you from "what is Arcade" to a real, working project: your apps in Claude Code, your OWN custom MCP server, the same tools driving a LangChain agent AND a CrewAI crew, and a scheduled agent running on a VPS with access to your stuff. The through-line: Arcade handles auth, so the SAME tools work everywhere — Claude Code, your own code, any framework.
 

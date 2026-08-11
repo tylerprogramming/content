@@ -28,7 +28,6 @@ import os
 import sys
 from datetime import date, datetime
 
-from anthropic import Anthropic
 from arcadepy import Arcade
 from dotenv import load_dotenv
 
@@ -38,7 +37,6 @@ USER_ID = os.environ["ARCADE_USER_ID"]
 WORK_START = "09:00"
 WORK_END = "17:00"
 PLAN_CALENDAR = "AI Plan"          # a separate calendar you can clear; NOT your main one
-MODEL = "claude-opus-4-8"
 
 # ── Tool names ───────────────────────────────────────────────────────────────
 # Calendar CreateEvent is confirmed from the Arcade quickstart. The exact ClickUp
@@ -49,7 +47,22 @@ CAL_CREATE_TOOL = "GoogleCalendar.CreateEvent"    # confirmed
 CLICKUP_TASKS_TOOL = "ClickUp.GetTasks"           # TODO: confirm via --discover (name + input schema)
 
 client = Arcade()                  # reads ARCADE_API_KEY
-anthropic = Anthropic()            # reads ANTHROPIC_API_KEY
+
+
+def chat(prompt: str) -> str:
+    """Send a prompt to the configured LLM. LLM_PROVIDER=openai (default) or anthropic."""
+    provider = os.getenv("LLM_PROVIDER", "openai").lower()
+    if provider == "anthropic":
+        from anthropic import Anthropic
+        msg = Anthropic().messages.create(
+            model=os.getenv("ANTHROPIC_MODEL", "claude-opus-4-8"),
+            max_tokens=2000, messages=[{"role": "user", "content": prompt}])
+        return msg.content[0].text
+    from openai import OpenAI
+    resp = OpenAI().chat.completions.create(
+        model=os.getenv("OPENAI_MODEL", "gpt-5.4-mini"),
+        messages=[{"role": "user", "content": prompt}])
+    return resp.choices[0].message.content
 
 
 def run_tool(tool_name: str, tool_input: dict):
@@ -97,11 +110,7 @@ hours. Leave short breaks.
 Return ONLY a JSON array, no prose, each item:
 {{"summary": "<task>", "start_datetime": "{context['date']}T09:00:00", "end_datetime": "{context['date']}T10:00:00"}}"""
 
-    msg = anthropic.messages.create(
-        model=MODEL, max_tokens=2000,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    text = msg.content[0].text.strip()
+    text = chat(prompt).strip()
     text = text[text.find("["): text.rfind("]") + 1]      # tolerate stray prose
     return json.loads(text)
 

@@ -100,12 +100,20 @@ def get_arcade_tools(client: Arcade, *, tools=None, mcp_servers=None, user_id: s
     ]
 
 
+def build_llm() -> LLM:
+    """Pick the LLM from env. LLM_PROVIDER=openai (default) or anthropic.
+    CrewAI's native LLM takes a '<provider>/<model>' string; Anthropic needs max_tokens."""
+    provider = os.getenv("LLM_PROVIDER", "openai").lower()
+    if provider == "anthropic":
+        return LLM(model=f"anthropic/{os.getenv('ANTHROPIC_MODEL', 'claude-opus-4-8')}", max_tokens=4096)
+    return LLM(model=f"openai/{os.getenv('OPENAI_MODEL', 'gpt-5.4-mini')}")
+
+
 def main():
     client = Arcade()  # reads ARCADE_API_KEY
     arcade_tools = get_arcade_tools(client, tools=TOOLS, mcp_servers=MCP_SERVERS or None, user_id=ARCADE_USER_ID)
 
-    # Claude via CrewAI's native LLM (max_tokens required for Anthropic models).
-    llm = LLM(model="anthropic/claude-opus-4-8", max_tokens=4096)
+    llm = build_llm()  # openai by default; set LLM_PROVIDER=anthropic to use Claude
 
     agent = Agent(
         role="Communication Manager",

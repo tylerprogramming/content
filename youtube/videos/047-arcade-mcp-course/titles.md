@@ -1,18 +1,19 @@
-# Titles - 044 Arcade MCP Course
+# Titles — 047 Full Arcade Course
 
-**Recommended:** Connect Claude to All Your Apps: The Complete Arcade MCP Course
+Rules: under ~70 chars, no money amounts, no hype words. "In 2026" frames it as current (and rhymes with 048's "Make an MCP Server in 2026"). Run /yt-seo before locking; A/B the top two at 48-72h.
 
-1. **Connect Claude to All Your Apps: The Complete Arcade MCP Course** [RECOMMENDED]
-   Says exactly what it is: a full course, the outcome ("all your apps"), and the tool. "Complete Course" sets the length expectation for a 30-minute watch and pulls search intent for people looking to learn the whole thing, not a quick tip.
+## Recommended
+1. **How to Build AI Agents in 2026 (The Right Way)** — 46 chars. Clean, searchable, matches the framing. The parenthetical promises there's a wrong way (curiosity) without overclaiming.
 
-2. **One Setup, Three Claudes: The Full Arcade MCP Course**
-   Leads with the core promise of the video, one gateway working across Claude Code, Cowork, and the web app. "Three Claudes" is curiosity bait that the thumbnail can pay off.
+## Strong alternates
+2. **How to Build AI Agents in 2026 (Most Tutorials Are Wrong)** — 56. Leans on the real, timely finding (langchain-arcade + crewai-arcade deprecated). High curiosity; make sure the video pays it off in the first 2 min.
+3. **Build Real AI Agents in 2026 (Connect Anything, No Auth)** — 55. Value-forward: names the two biggest promises (connect anything, no auth).
+4. **The Correct Way to Build AI Agents in 2026** — 43. Punchier version of #1.
+5. **How to Build AI Agents That Connect to Anything (2026)** — 53. Search-leaning on the "connect to anything" intent.
 
-3. **Give Claude Code, Cowork, and Claude.ai Access to Your Real Apps (Arcade Course)**
-   Names all three surfaces plainly for search. Longer, but every word is a keyword someone actually types.
+## A/B plan
+Launch with #1. If CTR is soft at 48-72h, swap to #2 (the "most tutorials are wrong" angle is the sharper hook, but riskier — only if the intro delivers on it).
 
-4. **The Only Arcade MCP Tutorial You Need (Claude Code + Cowork + Web)**
-   "Only tutorial you need" signals depth and completeness. The parenthetical spells out the three surfaces for anyone scanning.
-
-5. **Connect Claude to Gmail, Calendar, Slack, and GitHub Everywhere (Arcade MCP Course)**
-   Lists the concrete apps people care about, plus "everywhere" for the cross-surface angle. Strong search match for the specific app names.
+## Notes
+- Keep "2026" in the title — it signals current/correct, which is the whole differentiator given the deprecations.
+- Do NOT put the framework names (LangChain/CrewAI/Arcade) in the title; they narrow reach. Save them for the description + chapters.
