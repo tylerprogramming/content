@@ -96,9 +96,13 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 |---|---|---|
 | **045 Give Claude Code Access to Your Real Apps** | `045-arcade-connect-apps/` | **FILMED 2026-08-10 → editing.** Script finalized: honest auth reframe (connecting one app is easy; auth bites at scale/multi-user/own-agent), pain+Arcade merged (build ~0:50), "why not a connector" beat after the demo, facts checked vs live site. 4 reels in `reels.md`. ClickUp `86e2kukfp`. |
 | **046 Build a Real AI Agent in 7 Minutes** | `046-arcade-build-agent/` | **Script finalized 2026-08-10, film-ready** (same Arcade session as 045). Honest auth, on-screen timer dropped, companion ref → 045. Format: morning-brief agent (Calendar+Gmail → summary + flagged replies → drafts). ClickUp `86e2kukg1` (in progress). |
-| **047 Arcade MCP Course (~30 min)** | (to package) | Planned: Code + Cowork + Web. ClickUp `86e2kukgv`. |
+| **048 How to Make an MCP Server in 2026 (No Code)** | `048-arcade-make-mcp-server/` | **Planning** (plan.md written 2026-08-10). Assemble a gateway → hosted URL → `claude mcp add` → use it. Long-form of Reel 4; evergreen how-to, distinct from 045's showcase. Next: /yt-package. ClickUp `86e2rcmnt`. |
+| **049 Build Your Own Custom MCP Server with Arcade** | `049-arcade-build-custom-mcp-server/` | **Planning** (plan.md written 2026-08-10). Write + deploy a custom tool as an MCP server (auth + hosting handled). Builder / "you could ship this" lane. ⚠️ **Fact-check Arcade Tool SDK + `arcade deploy` before scripting.** ClickUp `86e2rcmqw`. |
+| **047 Arcade MCP Course (~30 min)** | `047-arcade-mcp-course/` | Planned: Code + Cowork + Web. Ties the arc together. ClickUp `86e2kukgv`. |
 
+**The arc:** 045 connect apps → 046 build an agent → 048 make a server (no code) → 049 build your own custom server → 047 the course.
 **045 ↔ 046 pair:** 045 = connect your apps (the setup), teases 046; 046 = build one real agent (the payoff), references 045 as the companion. Film back-to-back in one Arcade setup session.
+**048 ↔ 049 pair:** 048 = assemble a server from prebuilt tools (no code) → teases 049; 049 = write + deploy your own custom tool. Progression: use → build.
 **Disclosure:** confirm sponsor/partner status with Arcade before publishing; if sponsored, say so on camera + in the description.
 
 ---
