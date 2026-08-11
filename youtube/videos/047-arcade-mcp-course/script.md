@@ -11,10 +11,16 @@ Everything real: real gateway, real accounts, real deploys, real runs. Draft/saf
 
 ## MODULE 0 — COLD OPEN + ROADMAP  [film last]
 
-### The hook (result-first)
-[SHOW: fast cuts of the payoff — Claude Code pulling Gmail; a terminal printing "Deployed"; a LangChain agent answering; a CrewAI crew running; a calendar at 6:31 AM filling itself with time-blocks.]
+### The hook (modeled on Sabrina Ramonov's top-tutorial structure)
+[SHOW: open on Tyler to camera for the "two types" line, then fast cuts of the payoff — Claude Code pulling Gmail; a terminal printing "Deployed"; a LangChain agent answering; a CrewAI crew running; a calendar filling itself with time-blocks at 6:31 AM.]
 
-"By the end of this, you'll have real AI agents running on your own accounts. Your email, your calendar, your tasks, anything you want to connect. And you'll build them without ever touching an auth token or storing a password. That was always the hard part. It isn't anymore. You'll leave with agents you actually use, plus a free blueprint and a setup pack so you can run them yourself. Let me show you how simple it got."
+"There are two types of people trying to build AI agents right now. The ones still reading about it, and the ones who actually connected AI to their real apps and let it start doing the work. And the gap between them isn't coding. It's one thing: giving the AI permission to touch your accounts without doing something reckless with your passwords. That's the wall everyone hits.
+
+So in this video I hand you the way past it, and by the end you'll have real agents running on your email, your calendar, your tasks, even one running on a server every morning while you sleep. You don't need to be an engineer for any of it.
+
+I've spent eight years building exactly these integrations, at IBM, at Chase, now at Pfizer, so trust me: this used to be the hard part, and it isn't anymore. Let's build."
+
+[NOTE: beats — pattern-interrupt hook → the ONE problem (auth) → ① DELIVERABLE ("by the end you'll have...") → ② objection pre-empt ("you don't need to be an engineer") → ③ credibility (IBM/Chase/Pfizer, delayed to HERE on purpose so the hook earns attention first — her tutorial move) → ④ hard cut ("Let's build"). Into the content by ~1:00.]
 
 ### The roadmap (say exactly what we're doing + the 24/7 payoff)
 [SHOW: Tyler to camera, or a simple 5-step list building on screen.]
