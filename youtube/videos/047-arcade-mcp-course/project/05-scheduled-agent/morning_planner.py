@@ -26,7 +26,7 @@ Run:      python morning_planner.py            # dry run, prints the plan
 import json
 import os
 import sys
-from datetime import date, datetime
+from datetime import date, timedelta
 
 from arcadepy import Arcade
 from dotenv import load_dotenv
@@ -38,13 +38,13 @@ WORK_START = "09:00"
 WORK_END = "17:00"
 PLAN_CALENDAR = "AI Plan"          # a separate calendar you can clear; NOT your main one
 
-# ── Tool names ───────────────────────────────────────────────────────────────
-# Calendar CreateEvent is confirmed from the Arcade quickstart. The exact ClickUp
-# task-listing tool name + inputs vary by catalog version — run this file with
-# --discover once to print your account's real tool names, then set these.
-CAL_LIST_TOOL = "GoogleCalendar.ListEvents"       # TODO: confirm via --discover
-CAL_CREATE_TOOL = "GoogleCalendar.CreateEvent"    # confirmed
-CLICKUP_TASKS_TOOL = "ClickUp.GetTasks"           # TODO: confirm via --discover (name + input schema)
+# ── Tool names + inputs (all confirmed live via --discover, 2026-08) ─────────
+CAL_LIST_TOOL = "GoogleCalendar.ListEvents"       # inputs: min_end_datetime, max_start_datetime
+CAL_CREATE_TOOL = "GoogleCalendar.CreateEvent"    # inputs: summary, start_datetime, end_datetime, calendar_id
+CLICKUP_TASKS_TOOL = "Clickup.GetTasksByScope"    # inputs: workspace_id, scope, due_date_lt, include_closed, limit
+
+WORKSPACE_ID = os.getenv("CLICKUP_WORKSPACE_ID", "")          # your ClickUp team/workspace id (from the app URL)
+PLAN_CALENDAR_ID = os.getenv("PLAN_CALENDAR_ID", "primary")   # set to a wipeable "AI Plan" calendar id once you trust it
 
 client = Arcade()                  # reads ARCADE_API_KEY
 
@@ -86,9 +86,18 @@ def discover():
 
 def gather_context() -> dict:
     today = date.today().isoformat()
-    tasks = run_tool(CLICKUP_TASKS_TOOL, {})              # TODO: pass your list/filter inputs
-    events = run_tool(CAL_LIST_TOOL, {"min_end_datetime": f"{today}T00:00:00",
-                                      "max_start_datetime": f"{today}T23:59:59"})
+    tomorrow = (date.today() + timedelta(days=1)).isoformat()
+    tasks = run_tool(CLICKUP_TASKS_TOOL, {
+        "workspace_id": WORKSPACE_ID,
+        "scope": "all",              # all workspace tasks; narrow to specific lists via item_ids if you prefer
+        "due_date_lt": tomorrow,     # due today or overdue
+        "include_closed": False,
+        "limit": 20,
+    })
+    events = run_tool(CAL_LIST_TOOL, {
+        "min_end_datetime": f"{today}T00:00:00",
+        "max_start_datetime": f"{today}T23:59:59",
+    })
     return {"date": today, "tasks": tasks, "events": events}
 
 
@@ -121,7 +130,7 @@ def write_blocks(blocks: list[dict]):
             "summary": f"[Plan] {b['summary']}",
             "start_datetime": b["start_datetime"],
             "end_datetime": b["end_datetime"],
-            # "calendar_id": PLAN_CALENDAR,   # TODO: confirm CreateEvent's calendar arg via --discover
+            "calendar_id": PLAN_CALENDAR_ID,   # 'primary' by default; point at a wipeable calendar until trusted
         })
         print(f"  created: {b['start_datetime']}  {b['summary']}")
 
