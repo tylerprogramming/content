@@ -5,6 +5,7 @@
 **Target runtime:** 55-65 min. Chaptered, modular, project-based.
 
 **Working title:** How to Build AI Agents in 2026 (The Right Way) — options in `titles.md`.
+**Code repo:** https://github.com/tylerprogramming/arcade-course (the runnable project + INSTALL — see `CODE.md`; no longer mirrored in this repo).
 **LLM:** OpenAI `gpt-5.4-mini` for filming/testing (viewer's own credits); one env var (`LLM_PROVIDER`) flips to Claude. Model-agnostic is a teaching beat.
 **Hook:** value-forward, see `hooks.md` (Hook 1).
 

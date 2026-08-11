@@ -18,6 +18,7 @@ After the setup, we do three real walkthroughs, one on each surface: a morning-b
 29:00 - Module 6: Which surface when + safety + what's next [UPDATE]
 
 ## Links
+- Get the code (free, all modules): https://github.com/tylerprogramming/arcade-course
 - Arcade: https://www.arcade.dev/
 - Arcade MCP clients (Claude Code, Desktop, Web): https://docs.arcade.dev/en/get-started/mcp-clients
 - Claude custom connectors (remote MCP): https://support.claude.com/en/articles/11503834-build-custom-connectors-via-remote-mcp-servers
