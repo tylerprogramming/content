@@ -126,7 +126,89 @@ claude mcp list
 ---
 
 ## MODULE 3 — BUILD YOUR OWN TOOL / MCP SERVER  [~12 min]  (project/02-custom-tool)
-> TO WRITE. Beats: why (prebuilt is great until your thing is custom) → `uv tool install arcade-mcp` → `arcade new` → write a tool (`@app.tool`, no-auth + secret + OAuth) → `uv run server.py http` test → `arcade login` + `arcade deploy` → add to the gateway → call it from Claude Code. Free tier hosts one server.
+
+[NOTE: the "you could build anything" module. Build ONE small real tool live, deploy it, call it from Claude Code. Framework is `arcade-mcp` (the CURRENT SDK; the old TDK is dead). Reference tool: `project/02-custom-tool/server.py`. PRE-TEST the deploy before filming — it can be slow, and you want it warm.]
+
+### Why build your own [~1 min]
+[SHOW: Tyler to camera, or the Arcade tool catalog.]
+
+"So far we've used tools Arcade already built, and there are thousands of them. They cover most of what you'll want. But eventually you hit the thing that's yours. An internal API. A niche service. Your own product. When that happens, you build the tool yourself, and Arcade still handles the hosting and the auth. Let me show you how little there is to it."
+
+### Install + scaffold [~2 min]
+[SHOW: terminal.]
+
+"One thing to install, once."
+```
+uv tool install arcade-mcp
+```
+"That gives me the arcade command. Now I scaffold a new server."
+```
+arcade new my_server
+cd my_server/src/my_server
+```
+[SHOW: open server.py — it ships with example tools.]
+
+"That's a full project. A pyproject file, an env file for secrets, and this server file. The server file is the whole thing."
+
+### Write a tool [~3 min]
+[SHOW: write/paste a small tool in server.py. Keep it readable on screen.]
+
+"A tool is just a Python function with a decorator. Here's one that takes a GitHub repo and returns its star count."
+```python
+from typing import Annotated
+import httpx
+from arcade_mcp_server import MCPApp
+
+app = MCPApp(name="my_server", version="1.0.0")
+
+@app.tool
+async def github_repo_stars(
+    repo: Annotated[str, "owner/name, e.g. 'ArcadeAI/arcade-mcp'"],
+) -> Annotated[int, "The repo's current star count"]:
+    """Return how many stars a public GitHub repository has."""
+    async with httpx.AsyncClient() as client:
+        r = await client.get(f"https://api.github.com/repos/{repo}")
+        r.raise_for_status()
+        return int(r.json()["stargazers_count"])
+
+if __name__ == "__main__":
+    app.run(transport="stdio")
+```
+"That's the whole tool. The decorator makes it a tool. The little Annotated notes and the docstring are what the AI reads to know how to use it. If it needed a login, like Gmail, you'd add one line, `requires_auth`, and Arcade runs the OAuth. If it needed an API key, `requires_secrets`, and Arcade stores it. This one's a public API, so we're done."
+
+### Test it locally [~2 min]
+[SHOW: run it in HTTP mode.]
+```
+uv run server.py http
+```
+[SHOW: open http://127.0.0.1:8000/docs, run the tool with a repo name, see the star count.]
+
+"Arcade gives me a local test page. I type a repo, run the tool, there's the star count. It works. Now let's put it online."
+
+### Deploy it [~2 min]
+[SHOW: cd back to the project root, the folder with pyproject.toml.]
+```
+cd ../..
+arcade login
+arcade deploy -e src/my_server/server.py
+```
+"Log in once, then deploy. Arcade packages my server, checks it, and stands it up as a hosted MCP server in the cloud. On the free plan you get one hosted server, which is all we need. And now my tool shows up in my Arcade catalog, right next to Gmail and Calendar."
+
+[NOTE: deploy runs from the folder that has pyproject.toml (`my_server/`), entrypoint `-e src/my_server/server.py`. Confirm it appears in the dashboard before moving on.]
+
+### Use your tool from Claude Code [~2 min]
+[SHOW: add the new tool to your gateway in the dashboard (the same gateway from Module 2), then Claude Code.]
+
+"Last step. I add my new tool to my gateway, the same one from module two. Now Claude Code can use it."
+[SHOW: ask Claude Code.]
+
+> "How many stars does the ArcadeAI arcade-mcp repo have? Use my github tool."
+
+[SHOW: Claude Code calls your tool, returns the number.]
+
+"There it is. That number came from a tool I wrote ten minutes ago, running in the cloud, called by Claude Code. That's your own MCP server. Anything you can write as a function, you can hand to an agent this way, and you never touched the hosting or the auth."
+
+[NOTE: if the live deploy is slow or flaky, cut to a pre-deployed version. Never fake the output.]
 
 ## MODULE 4 — SAME TOOLS IN LANGCHAIN  [~10 min]  (project/03-langchain)
 > TO WRITE. Beats: the 2026 truth (langchain-arcade deprecated) → `uv run 03-langchain/agent.py` → authorize once → it uses Gmail. Point out: same tools, a framework.
