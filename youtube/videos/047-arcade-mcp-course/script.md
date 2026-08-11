@@ -153,7 +153,7 @@ cd my_server/src/my_server
 ### Write a tool [~3 min]
 [SHOW: write/paste a small tool in server.py. Keep it readable on screen.]
 
-"A tool is just a Python function with a decorator. Here's one that takes a GitHub repo and returns its star count."
+"A tool is just a Python function with a decorator. Here's one that takes a GitHub repo and returns its star count. No login needed, it just hits GitHub's public API."
 ```python
 from typing import Annotated
 import httpx
@@ -174,7 +174,7 @@ async def github_repo_stars(
 if __name__ == "__main__":
     app.run(transport="stdio")
 ```
-"That's the whole tool. The decorator makes it a tool. The little Annotated notes and the docstring are what the AI reads to know how to use it. If it needed a login, like Gmail, you'd add one line, `requires_auth`, and Arcade runs the OAuth. If it needed an API key, `requires_secrets`, and Arcade stores it. This one's a public API, so we're done."
+"That's the whole tool. The decorator makes it a tool. The little Annotated notes and the docstring are what the AI reads to know how to use it. This one's a public API, so no login. But if it DID need one, like Gmail, you'd add one line, `requires_auth`, and Arcade runs the OAuth. If it needed an API key, `requires_secrets`, and Arcade stores it."
 
 ### Test it locally [~2 min]
 [SHOW: run it in HTTP mode.]
