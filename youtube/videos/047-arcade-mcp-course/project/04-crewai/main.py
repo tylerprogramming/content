@@ -72,10 +72,12 @@ class ArcadeTool(BaseTool):
             self._client = Arcade()
         self._auth_tool()
         print(f"Calling {self.arcade_tool_name}...")
-        result = self._client.tools.execute(tool_name=self.arcade_tool_name, input=kwargs, user_id=self.user_id)
-        if not result.success:
-            return f"Tool error: {result.output.error.message}"
-        return result.output.value
+        clean = {k: v for k, v in kwargs.items() if v is not None and v != ""}
+        result = self._client.tools.execute(tool_name=self.arcade_tool_name, input=clean, user_id=self.user_id)
+        out = result.output
+        if getattr(out, "error", None):
+            return f"Tool error: {getattr(out.error, 'message', out.error)}"
+        return str(out.value)
 
 
 def get_arcade_tools(client: Arcade, *, tools=None, mcp_servers=None, user_id: str = "") -> list[ArcadeTool]:

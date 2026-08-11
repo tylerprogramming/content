@@ -90,7 +90,7 @@ async def arcade_to_langchain(client: AsyncArcade, tool: ToolDefinition) -> Stru
                 raise RuntimeError(f"Authorization was not completed for {tool.name}")
 
         # execute
-        filtered = {k: v for k, v in kwargs.items() if v is not None}
+        filtered = {k: v for k, v in kwargs.items() if v is not None and v != ""}
         resp = await client.tools.execute(tool_name=tool.qualified_name, input=filtered, user_id=user_id)
         if resp.output and resp.output.value:
             return resp.output.value
