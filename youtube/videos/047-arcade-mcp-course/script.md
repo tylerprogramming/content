@@ -27,9 +27,9 @@ By the end of this, you'll have your own AI agents running 24/7 on your own serv
 
 ---
 
-## MODULE 1 — WHAT ARCADE ACTUALLY IS (the concepts, fast) [~5-6 min]
+## MODULE 1 — WHAT ARCADE ACTUALLY IS (the concepts, fast) [~5-6 min]  [FILM LAST, with the hook]
 
-[NOTE: the ONLY lecture in the course. Keep it tight and concrete. Build a simple diagram on screen as you name each layer: tool → MCP server → gateway (one URL) → engine.]
+[NOTE: talking-head, so record it LAST (after the demos), same as the cold open. The ONLY lecture in the course. Keep it tight and concrete. Build a simple diagram on screen as you name each layer: tool → MCP server → gateway (one URL) → engine.]
 
 [SHOW: Tyler to camera.]
 
