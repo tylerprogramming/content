@@ -15,20 +15,31 @@ The hands-on project for the full Arcade.dev course (video 047). Open this folde
 | 5 | `05-scheduled-agent/` | The **Morning Planner**: ClickUp → Claude plans → writes Calendar time-blocks. Runs on a schedule on a VPS. |
 | — | `deploy/` | Host the scheduled agent on a Hostinger VPS (cron / systemd). |
 
-## Setup
+## Setup (uv — the modern standard)
 
-1. **Python 3.11+**. Create a venv:
+Deps live in `pyproject.toml`, locked in `uv.lock`, on **Python 3.12** (pinned in `.python-version`). uv installs that Python for you — into its own managed dir, shared across projects, never touching your system Python.
+
+1. **Install uv** once: `brew install uv` (or `pip3 install uv`, or the installer at https://docs.astral.sh/uv).
+2. **Create the env + install everything** (uv fetches Python 3.12 automatically):
    ```
-   python3 -m venv .venv && source .venv/bin/activate
+   uv sync
    ```
-2. **Install deps** (pinned versions land after research):
+3. **Install the custom-server CLI** for module 2 (a separate global tool):
    ```
-   pip install -r requirements.txt
+   uv tool install arcade-mcp
    ```
-3. **Secrets**: copy `.env.example` to `.env` and fill it in. **Never commit `.env`** (it's gitignored).
+4. **Secrets**: copy `.env.example` to `.env` and fill it in. **Never commit `.env`** (gitignored).
    ```
    cp .env.example .env
    ```
+5. **Run** anything through uv — no manual activate needed:
+   ```
+   uv run 05-scheduled-agent/morning_planner.py --discover
+   uv run 03-langchain/agent.py
+   uv run 04-crewai/main.py
+   ```
+
+> **pip fallback** (if you don't want uv): `python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt` — but you'll need Python 3.11+ installed yourself.
 
 ## Accounts you'll need
 - Arcade (API key) · Anthropic (Claude API key) · Google (Calendar + Gmail) · ClickUp · optional Hostinger VPS.
