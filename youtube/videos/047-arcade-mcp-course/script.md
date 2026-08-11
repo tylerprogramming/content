@@ -210,8 +210,42 @@ arcade deploy -e src/my_server/server.py
 
 [NOTE: if the live deploy is slow or flaky, cut to a pre-deployed version. Never fake the output.]
 
-## MODULE 4 — SAME TOOLS IN LANGCHAIN  [~10 min]  (project/03-langchain)
-> TO WRITE. Beats: the 2026 truth (langchain-arcade deprecated) → `uv run 03-langchain/agent.py` → authorize once → it uses Gmail. Point out: same tools, a framework.
+## MODULE 4 — SAME TOOLS IN LANGCHAIN  [~10 min]  (03-langchain/agent.py)
+
+[NOTE: the "not just Claude" module. Same Arcade tools, now driving a LangChain/LangGraph agent in code. Lead with the 2026 truth (langchain-arcade is deprecated). Run from ~/arcade-course. PRE-TEST agent.py before filming and pre-authorize Gmail so the run is smooth.]
+
+### The 2026 truth [~1.5 min]
+[SHOW: Tyler to camera, or a quick shot of the deprecated PyPI page.]
+
+"Claude Code is great, but you're not always inside Claude. Sometimes you're building your own agent, in your own code, with a framework like LangChain. So let me show you the same tools running there.
+
+And I have to say this up front, because it'll save you hours. If you google how to use Arcade with LangChain, you'll find a package called langchain-arcade. Don't use it. It got deprecated. Same story with the CrewAI one, which we'll see next. The way that actually works now is to use the Arcade SDK directly and wrap the tools yourself. It's a little setup code, and I've already written it for you in the project. Let me walk through it."
+
+### The code [~3 min]
+[SHOW: open 03-langchain/agent.py, scroll to the key parts.]
+
+"Here's the whole idea. I load the Arcade tools I want by name, Gmail list emails, Gmail send. I wrap each one so LangChain understands it. Then I hand them to a normal LangChain agent. The one interesting part is authorization: the first time the agent wants a tool I haven't approved, it pauses, gives me a link, I approve, and it continues. Arcade holds the token after that.
+
+And notice the model up here. It's OpenAI by default, but it's one line to switch to Claude. The agent doesn't care, the tools don't change. That's the point, this is model-agnostic and framework-agnostic."
+
+### Run it [~4 min]
+[SHOW: terminal in ~/arcade-course.]
+```
+uv run 03-langchain/agent.py
+```
+[SHOW: it says the agent is ready. Type a request.]
+
+> "Summarize my three most recent unread emails."
+
+[SHOW: if Gmail isn't authorized yet it prints a link — click, approve, return. If you authorized Gmail earlier (Module 2), it runs straight through.]
+
+"If I'd never connected Gmail, it'd hand me a link right here, I approve once, done. Since I already authorized it back in Claude Code, same account, same user, it just runs. Watch."
+
+[SHOW: the agent calls the Gmail tool, returns the summary.]
+
+"There it is. A LangChain agent, using my real Gmail, through the exact same Arcade connection I set up at the start. No new auth, no tokens in my code. I built the agent, Arcade handled the access."
+
+[NOTE: keep any send in draft; don't actually send on camera. If create_agent/tool-wrapping errors on the day, that's why we pre-test — never debug on camera, cut to a working take.]
 
 ## MODULE 5 — SAME TOOLS IN CREWAI  [~10 min]  (project/04-crewai)
 > TO WRITE. Beats: crewai-arcade also deprecated → same arcadepy pattern → `uv run 04-crewai/main.py`. The payoff line: learn the SDK once, use it anywhere. Optional on-camera model swap (OpenAI → Claude, one env var).
