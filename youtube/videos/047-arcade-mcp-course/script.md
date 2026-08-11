@@ -29,26 +29,34 @@ By the end of this, you'll have your own AI agents running 24/7 on your own serv
 
 ## MODULE 1 — WHAT ARCADE ACTUALLY IS (the concepts, fast) [~5-6 min]
 
-[SHOW: Tyler to camera. Simple text builds as you name each piece.]
+[NOTE: the ONLY lecture in the course. Keep it tight and concrete. Build a simple diagram on screen as you name each layer: tool → MCP server → gateway (one URL) → engine.]
 
-"Before we build, thirty seconds on what makes this work, because it's the whole trick.
+[SHOW: Tyler to camera.]
 
-A real agent needs two things. Tools, and permission to use them. The tools are easy. The permission is where everyone gets stuck. Connecting an AI to your real Gmail means OAuth, tokens, scopes, refreshing them, keeping them safe. I spent eight years building exactly this at IBM and Chase. It's the part that eats the afternoon.
+"Before we build anything, give me sixty seconds on how this works, because it's the whole trick of the video.
 
-The tool we're using is called Arcade, and its whole job is to take that off your plate."
+A real agent needs two things. Tools, and permission to use them. The tools are the easy part. The permission is where everyone gets stuck. Letting an AI into your real Gmail means OAuth, tokens, scopes, refreshing them, keeping them safe. I spent eight years building exactly this at IBM and Chase. It's the part that eats the afternoon, every time.
 
-[SHOW: arcade.dev homepage, the tagline "ship agents, not auth infrastructure."]
+The whole job of the tool we're using, Arcade, is to take that off your plate."
 
-"Here are the only words you need to know.
+[SHOW: arcade.dev homepage, tagline "ship agents, not auth infrastructure."]
 
-A **tool** is one action an agent can take. Read an email. Create a calendar event.
-A bunch of tools for one app, like Gmail, is an **MCP server**.
-A **gateway** bundles the servers you want behind one URL. That URL is what your agent connects to.
-And the **engine** underneath runs the logins and holds the tokens for you, per user, so you never store one.
+"Four words and you've got it.
 
-That's it. You pick tools, you get a URL, and the auth is handled. The same URL works in Claude Code, in your own Python, in any framework, and on a server. That one idea is the whole video."
+[SHOW: each term appears and stacks into a little diagram as you say it.]
 
-[NOTE: don't quote a hard tool count on camera unless you re-checked it that day. "Thousands" is safe. Keep this section tight, it's the only lecture in the course.]
+A **tool** is one action. Read an email. Create a calendar event.
+A bunch of tools for one app is an **MCP server**. Gmail is one. Calendar is another.
+A **gateway** is the tools you pick, bundled behind one URL. Think of it like a front desk with a single address: your agent talks to that one URL, and the gateway figures out which tool to run.
+And underneath it all, the **engine** runs the logins and holds your tokens, per user, so you never store one.
+
+So the whole flow is just this: pick your tools, get a URL, and the auth is handled for you.
+
+And here's why that matters. That same setup works in Claude Code, in the Claude desktop app, on the web, in your own Python, inside LangChain or CrewAI, and on a server running while you sleep. You connect once. You use it everywhere. That one idea is the entire course.
+
+Alright. Enough talking. Let's connect some apps."
+
+[NOTE: don't quote a hard tool count on camera unless you re-checked it that day, "thousands" is safe. The deeper gateway detail (routing, auth modes, when you DON'T need one — your Python agents skip it) lives in Module 2 where you actually build the gateway. Keep Module 1 to the four words + the payoff line.]
 
 ---
 
