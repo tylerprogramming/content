@@ -178,7 +178,9 @@ Here's why that's even possible. Remember I said Arcade is a runtime, not just a
 
 [SHOW: the schedule. Keep it simple.]
 
-[FACT-CHECK: pick the simplest real scheduler for the demo (cron/launchd, or a hosted runner). If a local scheduler needs the machine on, say so honestly on camera, or use a hosted schedule so the "runs while I'm away" claim is true.]
+[FACT-CHECK: pick the simplest real scheduler for the demo. Local cron works but needs the machine on, so host it on an always-on box - a **Hostinger VPS** - and cron it there, so "runs while I'm away" is literally true. Note the Hostinger angle honestly (own it if there's any relationship). Say the local-vs-hosted tradeoff plainly on camera.]
+
+[OPTION: stronger "takes an action" agent. Instead of (or after) the email-draft agent, feature the **Morning Planner**: reads ClickUp tasks + Calendar, then WRITES time blocks to a separate "AI Plan" calendar around your meetings. It acts, not just drafts. Full spec + shareable blueprint: `blueprint-morning-planner.md`. If we lead with this, keep the safe pattern (writes to a wipeable calendar, you approve).]
 
 "That's it. Tomorrow morning, the brief and the drafts are waiting before I sit down. It ran without me. That is the difference between a chat and an agent.
 
