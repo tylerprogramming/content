@@ -294,8 +294,75 @@ uv run 04-crewai/main.py
 
 [NOTE: the model swap is a nice flex but adds time and needs an ANTHROPIC_API_KEY in .env; skip if the module runs long. Keep any send in draft.]
 
-## MODULE 6 — RUN IT 24/7 ON A SERVER  [~10-12 min]  (project/05-scheduled-agent + deploy)
-> TO WRITE. The Morning Planner (ClickUp → plan → write calendar blocks). Beats: `--discover` → dry run → `--apply` into the "AI Plan" calendar → schedule it LOCALLY with cron → then SSH into a Hostinger VPS and set up the same cron/systemd there so it runs without your laptop. This is the "24/7 on your own server" payoff from the roadmap.
+## MODULE 6 — RUN IT 24/7 ON A SERVER: the Morning Planner  [~12 min]  (05-scheduled-agent + deploy)
+
+[NOTE: the finale + the roadmap payoff. This one makes it an AGENT — it runs on its own, on a server, every morning. It also TAKES AN ACTION (writes your calendar), not just reads. Run from ~/arcade-course.
+⚠️ LEAST-tested path: needs ClickUp AND Google Calendar authorized (two new consents) plus the plan step. PRE-RUN a full dry-run before filming and pre-clear both auths. Writes go to a wipeable calendar with a [Plan] tag — keep it safe.]
+
+### The hook [~1 min]
+[SHOW: Tyler to camera, then the result: a calendar filling with time-blocks, early-morning timestamp.]
+
+"Everything so far ran when I ran it. But a real agent runs when I'm not there. So for the finale, I'm building the one I actually use. Every morning, before I'm even up, it reads my to-do list and my calendar, plans my day, and writes the time-blocks straight into my calendar. And it does it on a server, so my laptop doesn't even have to be on. Let me show you."
+
+### What it does [~1 min]
+[SHOW: morning_planner.py, or a simple 4-step graphic.]
+
+"Here's the whole job. It reads today's tasks from ClickUp. It reads my calendar to see what's already booked. It hands both to the model and asks it to fit the tasks into the open slots around my meetings. Then it writes those blocks back to my calendar. Read, plan, act. This is the first agent in the video that actually does something, instead of just telling me something."
+
+### See the real tool names [~1 min]
+```
+uv run 05-scheduled-agent/morning_planner.py --discover
+```
+"Quick honesty step. This prints the exact tool names my Arcade account has for ClickUp and Calendar, so I'm wiring real ones, not guessing."
+
+### Dry run — plan, don't write [~3 min]
+```
+uv run 05-scheduled-agent/morning_planner.py
+```
+[SHOW: first run authorizes ClickUp, then Google Calendar — click through both once. Then it prints the plan.]
+
+"First time, it asks me to connect ClickUp and my calendar, same one-time approval as always. Then, and this matters, it runs in safe mode by default. It prints the plan it WANTS to make and writes nothing. So I can look first. There's my day, blocked out around my meetings."
+
+### Apply it [~2 min]
+```
+uv run 05-scheduled-agent/morning_planner.py --apply
+```
+[SHOW: open Google Calendar — the [Plan] blocks appear.]
+
+"Now I let it write. And there they are, in my actual calendar, tagged Plan so I know the agent made them. It's writing to a calendar I can wipe in one click until I fully trust it. That's the rule for anything that takes an action: safe first, trust later."
+
+### Schedule it locally [~2 min]
+[SHOW: crontab.]
+
+"It works when I run it. Let's make it run on its own. Simplest way, on my machine, is cron."
+```
+crontab -e
+# 6:30am daily (uses the project's venv python):
+30 6 * * * cd ~/arcade-course && ~/arcade-course/.venv/bin/python 05-scheduled-agent/morning_planner.py --apply
+```
+"Now it fires every morning at six thirty. But there's a catch: my laptop has to be awake for cron to run. So let's do it the real way, on a server."
+
+### Run it 24/7 on a Hostinger VPS [~2-3 min]
+[SHOW: SSH into the VPS. Steps from deploy/README.md.]
+
+"I've got a small Hostinger VPS. I copy the project up, install it the same way, authorize once, and set the exact same schedule there. The server never sleeps, so it runs every single morning whether my laptop's open or not."
+```
+# from your Mac: copy the project up
+scp -r ~/arcade-course root@YOUR_VPS_IP:~/arcade-course
+ssh root@YOUR_VPS_IP
+cd ~/arcade-course && curl -LsSf https://astral.sh/uv/install.sh | sh
+uv sync
+uv run 05-scheduled-agent/morning_planner.py     # click the auth links once
+crontab -e                                         # add the same 6:30am line (VPS paths)
+```
+"And that's it. The plan and the blocks are waiting for me every morning, made by an agent running on a server, on my real accounts, and I never stored a token anywhere."
+
+[DISCLOSURE: if Hostinger is a partner, say so here, plainly.]
+
+### Close the build [~30s]
+"So that's the whole thing. My apps in Claude Code, in the desktop app, and on the web. A tool I built myself. The same tools in LangChain and CrewAI. And now an agent running on a server around the clock. One connection at the start powered every bit of it."
+
+[NOTE: tighten the VPS section in the edit. The key beat is 'local cron needs the laptop on, the server doesn't.' If the live VPS is slow, pre-set it up and show the result (crontab -l + a real run log).]
 
 ## MODULE 7 — WRAP + FREE STUFF  [~2-3 min]
 > TO WRITE. Recap the 5 builds. Point to the free blueprint + setup pack + community. CTA.
