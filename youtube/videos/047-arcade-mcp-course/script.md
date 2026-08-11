@@ -61,6 +61,8 @@ That's it. You pick tools, you get a URL, and the auth is handled. The same URL 
 
 "Step one, I build a gateway. In the Arcade dashboard I hit create, I give it a slug, and I pick the tools I want. For this whole course I'll add Gmail, Google Calendar, and ClickUp. I save it, and it hands me a URL."
 
+[NOTE: set the gateway's auth mode to "Arcade Auth" (NOT "Arcade Headers") — Headers mode is incompatible with Claude Desktop, and we connect Desktop later this module.]
+
 [SHOW: the generated URL, of the form https://api.arcade.dev/mcp/<slug>. Copy it.]
 
 "That URL is my toolbox. Copy it."
@@ -93,11 +95,23 @@ claude mcp list
 
 "And this isn't a Claude Code trick. It's just a URL. Let me add the exact same gateway to the Claude desktop app, and to Claude on the web."
 
-[STEPS — ⚠️ pending verified click-paths (research in flight). Do NOT film until confirmed; menu names (Connectors/Extensions), plan requirements, and remote-URL handling change often:]
-- **Claude Desktop:** [exact menu path TBD] → add a custom connector → paste `https://api.arcade.dev/mcp/<slug>` → authorize once.
-- **Claude.ai web:** [exact menu path + plan requirement TBD] → add a custom connector → paste the same URL → authorize.
+[STEPS — verified vs live docs 2026-08 (Arcade + Anthropic). The menu is "Connectors" (not Integrations/Extensions).]
+
+**Claude Desktop:**
+1. Avatar (bottom-left corner) → Settings (or Cmd+,)
+2. Open the **Connectors** tab → **Add custom connector**
+3. Name it "Arcade", paste `https://api.arcade.dev/mcp/<slug>` → **Add**
+4. Click **Connect** → approve in the browser (the Arcade Auth sign-in)
+> Remote HTTP works directly here — no `mcp-remote`, no JSON config file (the JSON `claude_desktop_config.json` only supports LOCAL servers). Optional: **Configure** to toggle individual tools.
+
+**Claude.ai web:**
+1. **Customize → Connectors → Add custom connector**
+2. Paste the same URL → **Add** → **Connect** → approve
+> Free plan = one custom connector. On Team/Enterprise an Owner adds it first (Organization settings → Connectors → Add → Custom → Web), then each member clicks Connect.
 
 "Same tools, now in three Claude surfaces, and I only connected once. That's the whole point of a gateway. And in a minute we'll point Python at that same URL too."
+
+[NOTE: `arcade configure claude` exists but sets up a LOCAL server — do NOT use it for the hosted gateway; use the Connectors UI above. Minor: the button reads "Add custom connector" (Anthropic) / "Add custom Connector" (Arcade doc) — same button.]
 
 [NOTE: pre-clear the OAuth once before filming so the on-camera approve is smooth, or show the real first-time approve if it's quick. Keep any write action (drafting/sending) in draft mode.]
 

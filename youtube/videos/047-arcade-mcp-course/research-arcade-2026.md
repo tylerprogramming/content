@@ -183,6 +183,13 @@ print(resp.output.value)               # tool output on resp.output.value
 
 ---
 
+## MODULE 2 — Connect the gateway to Claude clients  ✅ researched
+Gateway URL: `https://api.arcade.dev/mcp/{slug}`. **Set gateway auth mode = "Arcade Auth"** (NOT "Arcade Headers" — Headers breaks Claude Desktop).
+- **Claude Code:** `claude mcp add arcade --transport http "<url>"` → verify `claude mcp list` / `get`. (confirmed current)
+- **Claude Desktop:** avatar (bottom-left) → Settings → **Connectors** tab → **Add custom connector** → name + paste URL → Add → **Connect** (browser Arcade Auth). Remote HTTP direct — no `mcp-remote`; `claude_desktop_config.json` only supports LOCAL stdio. `arcade configure claude` = local only, don't use for the hosted gateway.
+- **Claude.ai web:** **Customize → Connectors → Add custom connector** → paste URL → Add → Connect. Free = 1 custom connector; Team/Enterprise: an Owner adds first (Org settings → Connectors → Add → Custom → Web), members Connect individually.
+- Menu label is **Connectors** (not Integrations/Extensions). Sources: support.claude.com custom-connectors articles; docs.arcade.dev/get-started/mcp-clients/claude-desktop + /claude-code (last-updated 2026-07-27).
+
 ## ⚠️ Confirm-on-film-day (unresolved from live docs)
 - Exact `pip install arcade-mcp` line (README shows only `uv tool install`).
 - Exact ClickUp task-tool name + input schema (use planner `--discover`).
