@@ -88,6 +88,17 @@ claude mcp list
 
 "There's my day, and the emails that need me. Real inbox, real calendar, and I never handled a token. That's the foundation. Everything else in this video is just pointing more things at that same connection."
 
+### Same URL, the other Claude apps (Desktop + Web)
+[SHOW: Claude Desktop, then claude.ai — add the SAME gateway URL as a custom connector.]
+
+"And this isn't a Claude Code trick. It's just a URL. Let me add the exact same gateway to the Claude desktop app, and to Claude on the web."
+
+[STEPS — ⚠️ pending verified click-paths (research in flight). Do NOT film until confirmed; menu names (Connectors/Extensions), plan requirements, and remote-URL handling change often:]
+- **Claude Desktop:** [exact menu path TBD] → add a custom connector → paste `https://api.arcade.dev/mcp/<slug>` → authorize once.
+- **Claude.ai web:** [exact menu path + plan requirement TBD] → add a custom connector → paste the same URL → authorize.
+
+"Same tools, now in three Claude surfaces, and I only connected once. That's the whole point of a gateway. And in a minute we'll point Python at that same URL too."
+
 [NOTE: pre-clear the OAuth once before filming so the on-camera approve is smooth, or show the real first-time approve if it's quick. Keep any write action (drafting/sending) in draft mode.]
 
 ---
