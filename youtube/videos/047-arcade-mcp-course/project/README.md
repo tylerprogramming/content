@@ -35,7 +35,7 @@ Deps live in `pyproject.toml`, locked in `uv.lock`, on **Python 3.12** (pinned i
 5. **Run** anything through uv — no manual activate needed:
    ```
    uv run 05-scheduled-agent/morning_planner.py --discover
-   uv run 03-langchain/agent.py
+   uv run 03-langchain/email_agent.py
    uv run 04-crewai/main.py
    ```
 

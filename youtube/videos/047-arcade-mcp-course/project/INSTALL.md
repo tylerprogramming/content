@@ -68,7 +68,7 @@ screen. Approve once. That's the only auth you ever do.
 ## 7. Run the agents
 ```
 # LangChain agent (chat that can use your Gmail):
-uv run 03-langchain/agent.py
+uv run 03-langchain/email_agent.py
 
 # CrewAI crew (same tools, different framework):
 uv run 04-crewai/main.py
