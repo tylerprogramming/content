@@ -1,30 +1,30 @@
-# Description - 044 Arcade MCP Course
+# Description - How to Build AI Agents in 2026 (The Right Way)
 
-This is the complete course on connecting Claude to your real apps with Arcade. You build one Arcade Gateway, a single bundle of prebuilt MCP tools behind one URL, and then plug that same gateway into all three Claude surfaces: Claude Code in the terminal, Claude Cowork on the desktop, and claude.ai in the browser. One gateway, three surfaces, same tools.
+Learn how to build real AI agents in 2026, connected to your actual apps, with no auth headaches. You connect your accounts once through Arcade, then use those same tools everywhere: in Claude Code, the Claude desktop app and the web, in your own Python with LangChain and CrewAI, and in an agent that runs on a schedule on a server. By the end you have built five things, including your own MCP server that you deploy yourself, and a morning planner that reads your tasks and your calendar and blocks out your day for you.
 
-Arcade is an MCP runtime with 7,500+ prebuilt tools across 81 servers, and its whole job is to handle the auth. Normally, connecting AI to your Gmail, Calendar, Slack, or GitHub means fighting OAuth, tokens, and scopes. Arcade does the per-user OAuth for you. You authorize each tool once and it manages the rest. I've built these integrations at big companies for years, and the auth layer is always the hard part, so that is the piece worth removing.
-
-After the setup, we do three real walkthroughs, one on each surface: a morning-brief agent in Claude Code (Gmail + Calendar), inbox triage plus a file task in Cowork, and a repo-to-Slack standup from the browser. Everything that sends stays in draft or safe mode first. We close with which surface to use when, and why this is safe enough for real work.
+Most tutorials for this are already outdated, the popular langchain-arcade and crewai-arcade packages are both deprecated, so everything here uses the current, working way, verified against the live docs. All the code is free in the repo below, and it runs on OpenAI or Claude with one setting.
 
 ## Chapters
-00:00 - The result: all three surfaces working [UPDATE]
-00:45 - The promise + what you'll build [UPDATE]
-02:30 - Module 0: Why the auth is the hard part [UPDATE]
-04:30 - Module 1: Build the Arcade Gateway [UPDATE]
-09:00 - Module 2: Connect all three surfaces [UPDATE]
-15:00 - Module 3: Walkthrough 1, morning brief in Claude Code [UPDATE]
-20:00 - Module 4: Walkthrough 2, inbox triage in Cowork [UPDATE]
-25:00 - Module 5: Walkthrough 3, repo to Slack standup in the web app [UPDATE]
-29:00 - Module 6: Which surface when + safety + what's next [UPDATE]
+00:00 - Intro: what you'll build [UPDATE]
+01:00 - What Arcade actually is (tools, gateways, auth) [UPDATE]
+06:00 - Connect your apps to Claude Code, Desktop and Web [UPDATE]
+14:00 - Build your own MCP server (arcade-mcp) [UPDATE]
+26:00 - The same tools in LangChain (and adding Slack in one line) [UPDATE]
+36:00 - The same tools in CrewAI [UPDATE]
+44:00 - Run it 24/7: the Morning Planner on a server [UPDATE]
+56:00 - Wrap and the free code [UPDATE]
 
 ## Links
 - Get the code (free, all modules): https://github.com/tylerprogramming/arcade-course
 - Arcade: https://www.arcade.dev/
-- Arcade MCP clients (Claude Code, Desktop, Web): https://docs.arcade.dev/en/get-started/mcp-clients
+- Add Arcade to Claude Code, Desktop, and Web: https://docs.arcade.dev/en/get-started/mcp-clients
 - Claude custom connectors (remote MCP): https://support.claude.com/en/articles/11503834-build-custom-connectors-via-remote-mcp-servers
 - Join the community: [SKOOL LINK]
-- Companion short, Give Claude Code Your Real Apps in 7 Minutes: [LINK]
+
+## Companion videos
+- Give Claude Code Access to Your Real Apps (Arcade): [045 LINK]
+- Build a Smart AI Agent in 2026: [046 LINK]
 
 ---
 
-[DISCLOSURE: if this is a sponsored or partner video with Arcade, add the disclosure line here and say it on camera.]
+[DISCLOSURE: if this is a sponsored or partner video with Arcade (and/or Hostinger for the VPS), add the disclosure line here and say it on camera.]
