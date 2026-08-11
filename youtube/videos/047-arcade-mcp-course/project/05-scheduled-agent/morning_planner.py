@@ -26,7 +26,7 @@ Run:      python morning_planner.py            # dry run, prints the plan
 import json
 import os
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 
 from arcadepy import Arcade
 from dotenv import load_dotenv
@@ -103,8 +103,10 @@ def gather_context() -> dict:
 
 def plan_day(context: dict) -> list[dict]:
     """Ask Claude to fit tasks into open slots. Returns a list of time blocks."""
+    now_hhmm = datetime.now().strftime("%H:%M")
     prompt = f"""You are my scheduling assistant. Today is {context['date']}.
-My work hours are {WORK_START} to {WORK_END}.
+My work hours are {WORK_START} to {WORK_END}. It is currently {now_hhmm}.
+Only schedule blocks from now onward (or from {WORK_START} if the workday has not started yet). Never schedule anything earlier than the current time.
 
 Fixed calendar events today (do not move these):
 {json.dumps(context['events'], indent=2, default=str)}
