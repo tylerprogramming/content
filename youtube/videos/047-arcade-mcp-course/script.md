@@ -260,8 +260,39 @@ uv run 03-langchain/email_slack_agent.py
 
 [NOTE: use a scratch Slack channel, pre-authorize Slack before filming. Keep any email send in draft; don't actually send on camera. If create_agent/tool-wrapping errors on the day, that's why we pre-test — never debug on camera, cut to a working take.]
 
-## MODULE 5 — SAME TOOLS IN CREWAI  [~10 min]  (project/04-crewai)
-> TO WRITE. Beats: crewai-arcade also deprecated → same arcadepy pattern → `uv run 04-crewai/main.py`. The payoff line: learn the SDK once, use it anywhere. Optional on-camera model swap (OpenAI → Claude, one env var).
+## MODULE 5 — SAME TOOLS IN CREWAI  [~8-10 min]  (04-crewai/main.py)
+
+[NOTE: the "it's not just LangChain" module — proves framework-agnostic. Faster than Module 4 (viewers get the pattern now). Run from ~/arcade-course. VERIFIED working with gpt-5.4-mini. Pre-authorize Gmail.]
+
+### The hook [~1 min]
+[SHOW: Tyler to camera.]
+
+"So we did LangChain. But maybe you don't use LangChain. Maybe you're a CrewAI person, or your team is. So let me prove the whole point of this video: the tools don't care what framework you're in. I'm going to hand the exact same Gmail tools to a completely different framework, CrewAI, and I want you to notice how little actually changes.
+
+Same warning as before, by the way: there's an old crewai-arcade package too, and it's also deprecated. So we do it the current way, straight through the SDK."
+
+### The code [~3 min]
+[SHOW: open 04-crewai/main.py, next to the LangChain file if you can.]
+
+"Put this next to the LangChain one. The Arcade part is basically identical. I load the tools, I wrap them, I handle the one-time auth inside the wrapper. The only thing that's really different is the CrewAI shape around it: I define an agent, give it a task, put it in a crew. That's CrewAI's world, not Arcade's. The Arcade half didn't move.
+
+That's the real lesson of these two modules. You learn Arcade's SDK once, and the framework is just the wrapper you put around it."
+
+### Run it [~3 min]
+[SHOW: terminal in ~/arcade-course.]
+```
+uv run 04-crewai/main.py
+```
+[SHOW: it calls Gmail.WhoAmI and Gmail.ListEmails, then prints my email + three recent subject lines.]
+
+"And there it is. A CrewAI agent, using my real Gmail, through the same Arcade connection from the very beginning. It looked me up, pulled my recent emails, listed the subjects. Same tools, same auth, different framework, and almost no new code."
+
+### Optional flex: swap the model [~1 min]
+[SHOW: open .env, change LLM_PROVIDER from openai to anthropic, re-run.]
+
+"One more thing if you want it. This ran on OpenAI. I change one setting, the provider, to Claude, and run it again. Same tools, same agent. Arcade doesn't care what model you use either. Model-agnostic, framework-agnostic. That's the whole point."
+
+[NOTE: the model swap is a nice flex but adds time and needs an ANTHROPIC_API_KEY in .env; skip if the module runs long. Keep any send in draft.]
 
 ## MODULE 6 — RUN IT 24/7 ON A SERVER  [~10-12 min]  (project/05-scheduled-agent + deploy)
 > TO WRITE. The Morning Planner (ClickUp → plan → write calendar blocks). Beats: `--discover` → dry run → `--apply` into the "AI Plan" calendar → schedule it LOCALLY with cron → then SSH into a Hostinger VPS and set up the same cron/systemd there so it runs without your laptop. This is the "24/7 on your own server" payoff from the roadmap.
