@@ -1,51 +1,25 @@
 # YouTube Description
 
-I run an entire YouTube channel as a one-person business - research, scripts, thumbnails, shorts, distribution, analytics, and an email list - using Claude Code. This is the full course. I show you every skill, every command, and at the end you build your own first skill so you can start your own.
+Everything about this video, the idea, the research, the script, the thumbnails, even the scheduling, was done with Claude Code skills. No editor to plan it, no thumbnail designer, and no day spent guessing what to make. In this video I walk you through the exact workflow I use to run my YouTube channel as a one-person business, one skill at a time, so you can run it yourself.
 
-This is not a faceless cash-cow channel or a get-rich-quick scheme. It's the real system one person uses to run a real channel, with Claude Code doing the heavy lifting.
+You'll see all nine skills in order: research what's already working, transcribe a winning video, build the full video package with titles, hooks, and a script, generate thumbnails, optimize the SEO, cut it into Shorts, write the social copy for every platform, add chapters, and upload. By the end you'll understand the whole system and be able to run it on your own channel.
 
-What you'll learn:
-- What a Claude Code skill is and how to run your first one (no coding background needed)
-- The research engine: finding proven topics and angles with one command
-- Planning a full video package - titles, hooks, script, filming guide - in minutes
-- AI thumbnails and animated motion graphics
-- Turning one long video into a week of YouTube Shorts
-- Uploading, scheduling, and A/B testing titles and thumbnails
-- Reading your analytics and closing the loop
-- Replying to comments at scale
-- Turning viewers into an email list
-- Building your own custom skill from scratch, live
+## Chapters
+0:00 - Made entirely with these skills
+0:41 - What is a Claude Code skill?
+1:16 - Research what's working (/yt-search)
+4:02 - Transcribe a winning video
+6:16 - Build the full video package
+10:58 - AI thumbnails (Kie.ai)
+13:12 - SEO the title and description
+14:47 - Turn it into YouTube Shorts
+16:18 - Social copy for every platform
+17:00 - Chapters
+18:10 - The full workflow, start to finish
+18:50 - Upload to YouTube
+19:41 - Get the skills (free)
 
-🎬 Chapters
-[RUN /chapters ON THE FINAL CUT - placeholder below, true up after edit]
-0:00 The 1-person YouTube machine
-3:00 Why now
-7:00 Setup + what a skill is
-15:00 The research engine
-25:00 Learn from winning videos
-32:00 Plan the full video
-42:00 Thumbnails + motion graphics
-52:00 Post-production
-58:00 One video into a week of Shorts
-66:00 Upload, schedule, optimize
-74:00 Engagement on autopilot
-79:00 Turn viewers into an email list
-86:00 Build your first skill + 30-day plan
-
-🔗 Get the free skills + my newsletter
-The exact skills from this course, plus more starters, and the new AI workflows I build every week:
-https://free.tylerai.dev/youtube/
-
+## Links
+- Free community, get the skills and see how others are using them: https://www.skool.com/the-ai-agency
+- My newsletter, the skills plus the new AI workflows I build every week: https://free.tylerai.dev/youtube/
 - Claude Code: https://claude.com/code
-- Anthropic's official skills repo: https://github.com/anthropics/skills
-
-📬 Subscribe for more Claude Code workflows. New videos Mondays and Thursdays.
-
-#claudecode #claudeai #ai #claudecodetips #aiautomation
-
----
-
-## SEO notes (finalize with /seo before upload)
-- Recommended title: How I Run a 1-Person YouTube Business with Claude Code (Full Course)
-- Target keywords: 1 person business claude, one person business ai, claude code youtube, automate youtube with ai, claude code full course, 1 person youtube business
-- Tags (15-20): build after /seo pass.
