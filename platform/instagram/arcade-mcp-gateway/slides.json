@@ -406,6 +406,10 @@
           "Read and send mail as you",
           "Read your calendar",
           "Post to your Slack"
+        ],
+        "brand": [
+          "#4800B8",
+          "#C018B4"
         ]
       }
     },
@@ -479,5 +483,5 @@
       "cta_subtext": "and I'll send the setup"
     }
   ],
-  "brand_path": "assets/arcade-logo.png"
+  "brand_path": "assets/arcade-brand.png"
 }
