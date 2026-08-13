@@ -20,10 +20,18 @@ data before rendering; leave already-published archives as they went out.
   comments and 10.4K saves. Ours have been 180 to 197 words.
 - Reach explains part of that gap, so this is a strong prior rather than a
   proven cause. It costs nothing to test and the direction is one way.
-- Tags: `#claudecode #claudeai #ai #claudecodetips #aiautomation`. The only set
-  visible on a reference is @ibraviz.ai's `#claude #claudecode #ai #jarvis
-  #reel` - they tag the topic, not just the tool. No agent or business tag
-  appeared on any screenshot; do not add one and call it observed.
+- Tags in slots, three fixed and two per post:
+  `#claudecode #aiagents #ai #<topic> #carousel`
+
+  The topic slot is copied from @ibraviz.ai, the only reference whose tags were
+  visible (`#claude #claudecode #ai #jarvis #reel`). Four of their five name the
+  tool or the category; the fifth names the subject, which is the one reaching
+  people searching for the thing rather than the software. Swap it every post:
+  `#mcp`, `#arcade`, `#claudeskills`, `#obsidian`.
+
+  `#aiagents` is a deliberate bet, not an observation - it appeared on no
+  screenshot. It is there because it is the category to be found in. If a post
+  is not about agents, swap it rather than leaving it in out of habit.
 
 ## The natural experiment sitting in here [confirmed 2026-08-13]
 

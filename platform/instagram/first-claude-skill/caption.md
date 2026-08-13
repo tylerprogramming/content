@@ -12,4 +12,4 @@ Every skill running my business now started as a rough text file I improved a li
 
 Comment SKILLS and I'll send you all 17 as files, plus where the folder goes.
 
-#claudecode #claudeai #ai #claudecodetips #aiautomation
+#claudecode #aiagents #ai #claudeskills #carousel
