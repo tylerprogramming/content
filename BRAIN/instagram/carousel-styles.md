@@ -5,6 +5,26 @@ Swipe files: `platform/instagram/swipe/2026-08-13/`.
 
 Every hex below was **sampled from the pixels**, not eyeballed off a screenshot.
 
+## Handle [confirmed 2026-08-13]
+
+Every carousel, every platform: **@tylerreedai**. The older decks print
+`@tylerai_dev`, which is not the account anything posts to. Fix it in the deck
+data before rendering; leave already-published archives as they went out.
+
+## Captions [confirmed 2026-08-13]
+
+- **Under 40 words**, then five hashtags. The carousel is the content; the
+  caption's only job is to get the comment.
+- The two references that out-saved us both run 5 to 6 word captions.
+  @ibraviz.ai's is literally "Comment JARVIS for the setup!" against 4,026
+  comments and 10.4K saves. Ours have been 180 to 197 words.
+- Reach explains part of that gap, so this is a strong prior rather than a
+  proven cause. It costs nothing to test and the direction is one way.
+- Tags: `#claudecode #claudeai #ai #claudecodetips #aiautomation`. The only set
+  visible on a reference is @ibraviz.ai's `#claude #claudecode #ai #jarvis
+  #reel` - they tag the topic, not just the tool. No agent or business tag
+  appeared on any screenshot; do not add one and call it observed.
+
 ## The natural experiment sitting in here [confirmed 2026-08-13]
 
 Two of these three are the *same carousel*. @ibraviz.ai and @theromanknox both
