@@ -72,6 +72,8 @@ Run under the skills venv, which has the Google client libraries:
 ## Related
 
 - `~/content/youtube/thumbnails/assets/build-thumb-refs.py` — draws reference
-  thumbnail layouts and a 210px feed-size check
+  thumbnail layouts and a 210px feed-size check. The PNGs it writes are
+  gitignored (repo convention: media is local-only), so the script is the
+  artifact that syncs, not the images. Rerun it after a fresh clone.
 - `~/content/youtube/ideas/2026-08-13-next-ideas.md` — what to film, generated
   against these findings

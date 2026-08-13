@@ -53,7 +53,16 @@ white — light on light — and it did **0.9% CTR on 19,334 impressions**.
 2. **`ANY APP`** with no face and the logo row doubled in size — the faceless
    variant, in case the trust argument above is wrong. Keep for the day-7 swap.
 
-Reference renders: `thumbnails/reference/` (run `assets/build-thumb-refs.py`).
+Reference renders: `~/content/youtube/thumbnails/reference/`. They are gitignored
+build artifacts, so on a fresh clone regenerate them:
+
+```bash
+~/.claude/skills/.venv/bin/python3 \
+  ~/content/youtube/thumbnails/assets/build-thumb-refs.py
+```
+
+Each render is written twice: full size, and a `-feedcheck` version with the
+210px feed-size crop pasted alongside it. **Judge the feedcheck one.**
 
 ## What not to do
 

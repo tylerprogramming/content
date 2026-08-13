@@ -1,0 +1,19 @@
+{
+  "generations": [
+    {
+      "prompt": "Warm cinematic desk scene at dawn, dark blurred home office background with soft golden window light, shallow depth of field, a single clean floating terminal window card center-left with three smaller minimal glyph cards branching below it on thin connector lines, warm purple and rust bokeh, high contrast, empty negative space across the left third, professional photography lighting, no text",
+      "mode": "Text-to-image",
+      "model": "nano-banana-pro",
+      "model_name": "Nano Banana Pro",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [],
+      "generated_at": "2026-08-02T15:35:33.551531",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_1785699330203_u8uu63.png"
+      ]
+    }
+  ]
+}

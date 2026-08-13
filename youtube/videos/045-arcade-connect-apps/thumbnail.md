@@ -47,7 +47,16 @@ Pick light or dark deliberately, then make the type fight it.
 2. **`CAN'T` → `CAN`** — same layout, shorter words so the type goes bigger.
    Keep for the day-7 swap.
 
-Reference renders: `thumbnails/reference/` (run `assets/build-thumb-refs.py`).
+Reference renders: `~/content/youtube/thumbnails/reference/`. They are gitignored
+build artifacts, so on a fresh clone regenerate them:
+
+```bash
+~/.claude/skills/.venv/bin/python3 \
+  ~/content/youtube/thumbnails/assets/build-thumb-refs.py
+```
+
+Each render is written twice: full size, and a `-feedcheck` version with the
+210px feed-size crop pasted alongside it. **Judge the feedcheck one.**
 
 ## What not to do
 
