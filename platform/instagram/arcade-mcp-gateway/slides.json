@@ -57,10 +57,6 @@
             "txt"
           ],
           [
-            "  arcade: connected",
-            "dim"
-          ],
-          [
             "> AUTHORIZE ONCE, THEN IT ACTS_",
             "accent"
           ]
@@ -320,7 +316,7 @@
         "title": "claude mcp list",
         "lines": [
           [
-            "clickup-assistant   \\u2714 Connected",
+            "tyler-assistant     \u2714 Connected",
             "txt"
           ],
           [
@@ -403,7 +399,15 @@
         }
       ],
       "circled": "It acts as you. That is the point, and the risk.",
-      "live_step": 2
+      "live_step": 2,
+      "consent": {
+        "app": "Arcade",
+        "scopes": [
+          "Read and send mail as you",
+          "Read your calendar",
+          "Post to your Slack"
+        ]
+      }
     },
     {
       "watermark": "Step 4:",
@@ -474,5 +478,6 @@
       "cta_word": "ARCADE",
       "cta_subtext": "and I'll send the setup"
     }
-  ]
+  ],
+  "brand_path": "assets/arcade-logo.png"
 }
