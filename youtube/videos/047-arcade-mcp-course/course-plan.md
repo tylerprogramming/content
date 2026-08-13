@@ -67,7 +67,7 @@ project/
 - Chaptered, so each module can be filmed and edited as a unit; assemble into one long-form + break modules into standalone shorts/clips later.
 - Everything real: real gateway, real deploy, real agents, real runs. Draft/safe mode on anything that writes.
 - No keys/tokens on screen: env vars, gitignored `.env`, and Arcade holds the OAuth.
-- Disclosure: if sponsored/partner with Arcade (and/or Hostinger for the VPS), say so on camera + in the description. Do not blur two sponsors — call each out plainly where it appears.
+- Disclosure: Arcade is NOT sponsored [confirmed 2026-08-13]. Only the Hostinger VPS section is open — if they are a partner, say so plainly on camera at that section and in the description.
 
 ## Research: DONE (2026-08-11) — see `research-arcade-2026.md`
 All code in `project/` is written against verified, current Arcade docs. Key findings:

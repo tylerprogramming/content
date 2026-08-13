@@ -220,7 +220,7 @@ Safety (this is the trust beat, don't rush):
 Close on the core line + CTA:
 > "One gateway, three surfaces, same tools. Build the connection once, assemble what you need from prebuilt tools wherever Claude is. Tell me in the comments what you connect first and on which surface, I read them. Links below. Pick one tool, one surface, and just try it."
 
-If partner/sponsored: restate the disclosure on camera before the end screen.
+Arcade is not sponsored, so no disclosure is needed for it. If Hostinger is a partner, restate that disclosure on camera before the end screen.
 
 ---
 

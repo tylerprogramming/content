@@ -7,7 +7,7 @@ Distinct from 049: here we build an AGENT (the logic that does a task, using exi
 
 Standing rules: no em dashes, no hype words (insane, crazy, game-changer), no money amounts in the title, no hashtags. Show real runs. Drafts before sends. Tyler is a software engineer, 8 years, IBM and Chase, now AI engineer at Pfizer. Never imply he is not a developer.
 
-[DISCLOSURE: if sponsored/partner with Arcade, say so on camera and in the description.]
+[No disclosure needed — Arcade is not sponsored, confirmed 2026-08-13.]
 
 ---
 

@@ -2,7 +2,7 @@
 
 In this video I build one real, working AI agent start to finish, live, in about seven minutes. It's a morning brief agent: it reads my Google Calendar and my unread Gmail, tells me what my day looks like, flags the emails that actually need a reply, and drafts those replies for me. The hard part of any agent is the auth, so I use Arcade to handle the per-user OAuth and skip building it entirely. I built these integrations at Fortune 500 companies the hard way, so trust me, this is the part that actually matters, and Arcade takes it off your plate.
 
-[DISCLOSURE: if this is sponsored or a partner piece with Arcade, say so here and on camera.]
+[No disclosure needed — Arcade is not sponsored, confirmed 2026-08-13.]
 
 Grab the exact agent prompt and setup I use (copy it, point it at your own inbox) plus my newsletter: https://free.tylerai.dev/youtube/
 

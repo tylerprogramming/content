@@ -2,7 +2,7 @@
 
 A do-this / click-that playbook. Shoot the build once, for real. Keep sends in draft mode first.
 
-[DISCLOSURE: if this is a sponsored/partner video with Arcade, say it on camera in the cold open and put it in the description.]
+[No disclosure needed — Arcade is not sponsored, confirmed 2026-08-13.]
 
 ---
 

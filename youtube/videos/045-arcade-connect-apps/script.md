@@ -3,7 +3,7 @@
 Target length: 8 to 10 minutes.
 Voice: Tyler talking to a friend over his shoulder. Short sentences. No hype. No em dashes. Software engineer, lean into the auth angle.
 
-[DISCLOSURE: if this is a sponsored/partner video with Arcade, say so on camera and in the description.]
+[No disclosure needed — Arcade is not sponsored, confirmed 2026-08-13.]
 
 [NOTE: Do the whole build once, on camera, for real. Keep any send or destructive action in draft or safe mode first. Have a scratch Slack channel and a throwaway-ish Gmail context ready so nothing embarrassing shows.]
 

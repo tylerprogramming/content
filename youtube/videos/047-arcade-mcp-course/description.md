@@ -1,4 +1,4 @@
-# Description - MCP Full Beginner Course: Build AI Agents That Connect to Anything
+# Description - How To Give AI Agents Access To ALL Your Apps (Full MCP Course)
 
 A full MCP course for beginners: how to build real AI agents that connect to your actual apps, with no auth headaches. You connect your accounts once through Arcade.dev, then use those same tools everywhere: in Claude Code, the Claude desktop app and the web, in your own Python with LangChain and CrewAI, and in an agent that runs on a schedule on a server. By the end you have built five things, including your own MCP server that you deploy yourself, and a morning planner that reads your tasks and your calendar and blocks out your day for you.
 
@@ -27,4 +27,4 @@ Most tutorials for this are already outdated, the popular langchain-arcade and c
 
 ---
 
-[DISCLOSURE: if this is a sponsored or partner video with Arcade (and/or Hostinger for the VPS), add the disclosure line here and say it on camera.]
+[DISCLOSURE: Arcade is NOT sponsored (confirmed 2026-08-13), no line needed for them. If Hostinger is a partner for the VPS section, add that disclosure here and say it on camera.]

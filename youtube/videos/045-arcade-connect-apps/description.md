@@ -21,4 +21,4 @@ I've built integrations at big companies for years, and the auth layer is always
 
 ---
 
-[DISCLOSURE: if this is a sponsored or partner video with Arcade, add the disclosure line here and say it on camera.]
+[No disclosure needed — Arcade is not sponsored, confirmed 2026-08-13.]

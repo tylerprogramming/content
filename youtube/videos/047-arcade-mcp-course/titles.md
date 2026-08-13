@@ -1,9 +1,16 @@
 # Titles — 047 Full Course
 
-> ## RECOMMENDED (2026-08-13, rev 3)
-> **MCP Full Beginner Course: Build AI Agents That Connect to Anything**
+> ## LOCKED (2026-08-13, rev 3 — Tyler's pick)
+> **How To Give AI Agents Access To ALL Your Apps (Full MCP Course)**
 >
-> 66 chars. Leads with the term people search. Alternates and evidence below.
+> 63 chars. Outcome-led, with the searched term in the parenthetical.
+> Evidence and the swap plan below.
+
+Chosen over the term-led variant because it mirrors the grammar of the single
+best video on the channel — *How To Use AI Agents To Do ALL Your Work* — which
+did **7.4% CTR and 237 subscribers**, more than the last twenty-nine uploads
+combined. Same `How To … AI Agents … ALL Your …` frame, same promise shape, and
+`(Full MCP Course)` still carries the search term for the query pool below.
 
 ## Why this changed twice
 
@@ -75,21 +82,20 @@ search volume**, which is what Claude Cowork and the old Arcade course both were
 Rewrite the rule as: *course framing only earns its keep on a term that already
 has demand. Check the term before committing to the wrapper.*
 
-## Recommended
+## Locked
 
-1. **MCP Full Beginner Course: Build AI Agents That Connect to Anything** — 66.
-   The searched term first, the exact `Full Beginner Course` string the winners
-   carry, outcome in the back half. MCP is also honest to scope: the course
-   builds a custom MCP server, LangChain, CrewAI and a scheduled VPS agent.
-   Arcade is the gateway inside it, not the subject.
+1. **How To Give AI Agents Access To ALL Your Apps (Full MCP Course)** — 63.
+   The outcome is the headline and the search term rides in the parenthetical,
+   so it competes in the `mcp course` pool without spending the front of the
+   title on jargon. Directly modelled on the channel's best video.
 
 ## Strong alternates
 
-2. **How To Give AI Agents Access To ALL Your Apps (Full MCP Course)** — 63.
-   Mirrors the grammar of your single best video — *How To Use AI Agents To Do
-   ALL Your Work* — 7.4% CTR and 237 subs. Leads with outcome, keeps MCP in the
-   parenthetical for search. Pick this one if the thumbnail is carrying the
-   technical signal.
+2. **MCP Full Beginner Course: Build AI Agents That Connect to Anything** — 66.
+   Term-first. The exact `Full Beginner Course` string the winners carry. MCP is
+   honest to scope here: the course builds a custom MCP server, LangChain,
+   CrewAI and a scheduled VPS agent. Arcade is the gateway inside it, not the
+   subject. This is the day-7 swap.
 3. **MCP Servers Full Course: Give AI Agents Access to Any App** — 56. Shortest,
    closest to Firecrawl's shape, which is the highest CTR on the channel at 9.1%.
 4. **MCP Full Course for Beginners (Build 5 Real AI Agents)** — 55. Sabrina's
@@ -105,8 +111,14 @@ video was swapped off a well-chosen title at 48-72h and is now at 0.9% on 19,334
 impressions; the locked title was never actually tested.
 
 If it is genuinely soft at day 7, swap to **#2** — that is a different *strategy*
-(outcome-led instead of term-led), which is the only kind of swap worth the reset.
+(term-led instead of outcome-led), which is the only kind of swap worth the reset.
 Swapping to a shorter or cleverer version of the same strategy tests nothing.
+
+**What to actually watch, and it is not CTR.** These two options are a clean test
+of the demand thesis, because they differ in *where* the search term sits. If #1
+pulls solid CTR but impressions stall in the low thousands the way Claude Cowork
+did, the parenthetical is not doing enough work to enter the query pool — that is
+the signal to swap, and it shows up in impressions days before CTR settles.
 
 ## Notes
 

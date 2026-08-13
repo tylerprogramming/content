@@ -3,7 +3,7 @@
 Format: PROJECT-BASED COURSE, filmed module-by-module (assemble into one ~1hr long-form; each module also stands alone as a clip). Voice: Tyler to a friend. Short sentences. No hype words. No em dashes. Open fast.
 LLM: OpenAI `gpt-5.4-mini` on screen (one env flip to Claude). Model-agnostic is a teaching beat.
 Everything real: real gateway, real accounts, real deploys, real runs. Draft/safe mode on anything that writes. No keys/tokens on screen (env vars, gitignored `.env`).
-[DISCLOSURE: if sponsored/partner with Arcade (and Hostinger for the VPS), say so on camera + in the description. Call each out where it appears; don't blur them.]
+[DISCLOSURE: Arcade is NOT sponsored (confirmed 2026-08-13). Only Hostinger is open — if they are a partner for the VPS section, say so on camera there and in the description.]
 
 > STATUS: Modules 0-2 drafted. Modules 3-7 to write next. Cold open (Module 0) is filmed LAST (needs the module footage for the montage).
 
