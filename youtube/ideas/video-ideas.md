@@ -221,7 +221,14 @@
 - **Angle:** Claude Code + Cowork + skills ecosystem as a coordinated land grab. Opinion + landscape, the exact shape that won with Antigravity.
 - **Date Added:** 2026-06-26
 
-### Format B - "I automated my X" (the workflow format, best sub driver)
+### Format B - "I automated my X" — RETITLE BEFORE FILMING [corrected 2026-08-13]
+
+**This label was wrong.** It is not the best sub driver, it is the worst format
+on the channel: seven "I" videos, 37,004 impressions, **15 subscribers**. Nobody
+searches "I automated my X" and Suggested is at 5.9%, so these videos have no
+route to a viewer. The builds below are good; the promise is not. Retitle each
+one as second-person instruction before it gets filmed, or attach a number and a
+stake the way Sabrina's 3.6x outlier does. See `2026-08-13-next-ideas.md`.
 
 ### 21. 27 Claude Code Skills That Run My Entire Business
 - **Status:** In Progress
