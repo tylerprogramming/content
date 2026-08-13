@@ -62,7 +62,10 @@
           ]
         ]
       },
-      "live_step": 0
+      "live_step": 0,
+      "brand_colors": [
+        "#C018B4"
+      ]
     },
     {
       "headline_lines": [
