@@ -1,0 +1,118 @@
+{
+  "topic": "Arcade MCP Gateway",
+  "handle": "@tylerreedai",
+  "brand_text": "AI",
+  "topic_short": "ARCADE MCP",
+  "kicker": "THE GATEWAY",
+  "steps": ["GATEWAY", "CONNECT", "AUTHORIZE", "RUN"],
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "SHIP AGENTS, NOT AUTH",
+      "headline_lines": ["Claude Code", "with your apps"],
+      "accent_lines": ["with your apps"],
+      "headline_size": 96,
+      "aside": "one command, then it can act →",
+      "rows": [
+        {"label": "Gateway", "sub": "you pick the tools", "glyph": "grid"},
+        {"label": "One command", "sub": "claude mcp add", "glyph": "terminal"},
+        {"label": "OAuth once", "sub": "per tool, per account", "glyph": "check"},
+        {"label": "Real actions", "sub": "sends, posts, files", "glyph": "claude"}
+      ],
+      "terminal": {"title": "arcade . connect", "lines": [
+        ["> claude mcp add arcade --transport http <URL>", "txt"],
+        ["> claude mcp list", "txt"],
+        ["  arcade: connected", "dim"],
+        ["> AUTHORIZE ONCE, THEN IT ACTS_", "accent"]
+      ]},
+      "live_step": 0
+    },
+    {
+      "headline_lines": ["What the", "gateway is."],
+      "accent_lines": ["gateway is."],
+      "note": ["One endpoint.", "Many tools.", "No token juggling."],
+      "lines": [
+        {"glyph": "grid", "segments": [
+          ["A gateway is ", "plain"], ["the set of tools you picked", "bold"],
+          [", on one URL.", "plain"]]},
+        {"glyph": "terminal", "segments": [
+          ["Claude Code adds it with ", "plain"], ["one line", "mark"], [".", "plain"]]},
+        {"glyph": "claude", "segments": [
+          ["7,500+ tools across ", "plain"], ["81 MCP servers", "bold"], [".", "plain"]]},
+        {"glyph": "check", "segments": [
+          ["Gmail, Calendar, Slack, GitHub, ", "plain"], ["Linear", "underline"], [".", "plain"]]}
+      ],
+      "quad": [
+        {"glyph": "grid", "label": "Pick"},
+        {"glyph": "terminal", "label": "Add"},
+        {"glyph": "check", "label": "Authorize"},
+        {"glyph": "claude", "label": "Run"}
+      ],
+      "live_step": 0
+    },
+    {
+      "headline_lines": ["Why the", "auth matters."],
+      "accent_lines": ["auth matters."],
+      "note": {"title": "What you skip", "items": ["OAuth screens", "Token refresh",
+                                                    "Scope debugging", "Storing secrets"]},
+      "lines": [
+        {"status": "bad", "segments": [
+          ["Old way:", "bold"], [" you build the OAuth flow yourself", "plain"]]},
+        {"status": "good", "segments": [
+          ["New way:", "bold"], [" authorize once, per tool, per account", "plain"]]},
+        {"status": "loop", "segments": [
+          ["The catch:", "bold"], [" it acts as you, so every call is logged", "plain"]]}
+      ],
+      "proof": {"title": "arcade . run", "lines": [
+        ["> what needs a reply today?", "txt"],
+        ["  reading calendar + gmail...", "dim"],
+        ["> 3 THAT ACTUALLY MATTER_", "accent"]
+      ]},
+      "live_step": 2
+    },
+    {
+      "watermark": "Step 1:",
+      "headline_lines": ["Build the", "gateway."],
+      "accent_lines": ["gateway."],
+      "note": ["Pick tools.", "Copy the URL.", "That's the setup."],
+      "chips": [
+        {"label": "What it is", "items": [
+          "An account, then a gateway",
+          "Tick the tools you actually want",
+          "It hands you one HTTP URL"]},
+        {"label": "The rule", "items": [
+          "Start with two tools, not twenty"]}
+      ],
+      "circled": "Fewer tools, better answers.",
+      "live_step": 0
+    },
+    {
+      "headline_lines": ["The four", "parts."],
+      "accent_lines": ["parts."],
+      "note": ["Four parts.", "One URL.", "That's it."],
+      "panel": {"rows": [
+        {"k": "Gateway", "v": "The tools you chose, on one endpoint"},
+        {"k": "Claude Code", "v": "The client that calls them"},
+        {"k": "OAuth", "v": "Handled by Arcade, once per tool"},
+        {"k": "Audit log", "v": "Every action it took, as you"}
+      ]},
+      "cards": [
+        {"lines": ["Morning brief", "from Calendar + Gmail"]},
+        {"lines": ["Draft the replies", "that actually matter"]},
+        {"lines": ["Post the standup", "to Slack"]},
+        {"lines": ["Triage the repo", "file the top issue"]}
+      ],
+      "live_step": 3
+    },
+    {
+      "type": "cta",
+      "summary_lines": [
+        "You stop building integrations.",
+        "You assemble an agent from tools."
+      ],
+      "cta_action": "Comment",
+      "cta_word": "ARCADE",
+      "cta_subtext": "and I'll send the setup"
+    }
+  ]
+}
