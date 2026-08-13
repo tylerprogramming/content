@@ -12,6 +12,14 @@ Part of the central BRAIN at `~/content/BRAIN/`. The living playbook for the Tyl
 - Showcase winners: "I Automated My Entire YouTube Workflow" (2,803), "Google is Winning With Antigravity" (2,405), "Build ANYTHING With Claude Code" (1,862).
 
 ## Titles [confirmed 2026-08-02]
+- **Competitor teardown, 180 videos across 6 channels [confirmed 2026-08-13]** — full doc at `youtube/analytics/2026-08-13-competitor-teardown.md`. Scored vs each channel's OWN median.
+  - **Sabrina is not the model.** 353K subs, 5,970 median long-form = 1.7% of subs. Tyler is 1.4%. She is in the same hole. **Study Chase AI (31% of subs per video, 162K) and IndyDevDan (22.6%, 144K)** - best performing AND closest in size.
+  - Money in title **1.89x** (n=8), borrowed authority **1.25x** (n=10), versus/tested **1.21x** (n=4). ALL-CAPS emphasis does nothing on its own: 1.01x vs 1.00x across 36 videos, it is table stakes.
+  - "I ..." splits again, same as on our own channel: I + external subject or stake wins (I Tested X vs Y 3.30x, I asked Claude Code to make me as much money as possible 2.93x, I Built $1M Marketing Team 2.71x); I + personal hobby project dies (I Built an AI Agent That Works While I Sleep **0.27x** on a 253K channel). "Works while I sleep" is a dead angle, not an untried one.
+  - **Duration is a barbell:** under 10 min 1.56x, 10-35 min ~1.00x, **35-60 min 0.72x (dead zone)**, 60+ min 2.11x (incl. Claude Code for Non-Coders 6 Hour Course, 149K views). Ship under 20 min or a real course, never 40.
+  - **Borrowed authority is Tyler's unused asset.** Ondrej's top 3 are all "credentialed person reveals their setup" (Ex-NASA 3.55x, L8 Principal 2.11x, 10x developer 1.82x). Tyler does not need to borrow: 8 yrs SWE at IBM and Chase, now AI engineer at Pfizer. It appears in zero titles, thumbnails or hooks in the last 30 videos.
+  - **Thumbnails: the before/after split is the gap.** 6 of their 18 top thumbnails are a split or transformation (SLOP->FIXED, LOOP ENG x | SDLC check, WEEK 1 | WEEK 6). Zero of Tyler's last 9. Chase's best video in the set - 5.10x, 256,518 views - is a plain before/after of a webpage with NO face.
+  - Same topic, different package: Chase "Turn Claude Into A Design GENIUS In 3 Simple Steps" 256,518 views vs Tyler "Claude Design is Incredible" 521. Reaction vs viewer outcome.
 - Concrete OUTCOME or curiosity gap, never a description.
 - Winning in-niche patterns: $ outcomes ("Claude Code + YouTube = $62K/Month"), % + time ("97% in 16 min"), insider/authority ("How Anthropic Engineers ACTUALLY..."), curiosity ("#1 Problem").
 - No-outcome-hook titles ("I Automated X", "I Don't X Anymore") are now landing BELOW the old 300-500 week-1 baseline, not at it. Treat 300-500 as a ceiling for this class, not a floor. Three in a row: 483, 171, 232.

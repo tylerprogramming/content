@@ -1,0 +1,31 @@
+date,age_days,title,dur,seconds,is_short,views,outlier,likes,comments,engagement_pct,id,thumb
+2026-08-12,0,Zuck is finally back...,0:48,48,True,2477,0.14,69,8,3.11,HHlWC6uAgkc,https://i.ytimg.com/vi/HHlWC6uAgkc/hqdefault.jpg
+2026-08-10,2,Ex-Uber dev explains his Multi-Agent Workflow,45:26,2726,False,20178,0.48,449,81,2.63,utb7zYbK10c,https://i.ytimg.com/vi/utb7zYbK10c/hqdefault.jpg
+2026-08-08,4,My double DGX Spark setup,0:52,52,True,43461,2.52,979,74,2.42,hST4u6lhY5U,https://i.ytimg.com/vi/hST4u6lhY5U/hqdefault.jpg
+2026-08-07,5,Ex-NASA dev reveals his Agentic Engineering Workflow,58:37,3517,False,150229,3.55,4106,279,2.92,xgkjtF89-44,https://i.ytimg.com/vi/xgkjtF89-44/hqdefault.jpg
+2026-08-06,6,GUIs are not dead,0:45,45,True,9779,0.57,219,28,2.53,08lTuvYITxQ,https://i.ytimg.com/vi/08lTuvYITxQ/hqdefault.jpg
+2026-08-05,7,Let agents write your tests,1:20,80,True,13898,0.81,423,34,3.29,i-S99NwmsQA,https://i.ytimg.com/vi/i-S99NwmsQA/hqdefault.jpg
+2026-08-04,8,DeepSeek V4 Flash is INSANE,1:12,72,True,47284,2.75,1205,57,2.67,I_ap_mlJBqg,https://i.ytimg.com/vi/I_ap_mlJBqg/hqdefault.jpg
+2026-08-02,10,The Most Important Paper in AI History,0:34,34,True,32311,1.88,889,52,2.91,52_wce7E3aQ,https://i.ytimg.com/vi/52_wce7E3aQ/hqdefault.jpg
+2026-08-02,10,Don’t use AI Agents without using these 8 skills,30:52,1852,False,40043,0.95,1808,107,4.78,clrUbBtD2j4,https://i.ytimg.com/vi/clrUbBtD2j4/hqdefault.jpg
+2026-08-01,11,My Biggest AI Mistake...,0:51,51,True,36806,2.14,939,44,2.67,FtyePPCE5q0,https://i.ytimg.com/vi/FtyePPCE5q0/hqdefault.jpg
+2026-07-31,12,Why I Run Agents Overnight,0:59,59,True,29956,1.74,773,75,2.83,p3Gqwtk-qAQ,https://i.ytimg.com/vi/p3Gqwtk-qAQ/hqdefault.jpg
+2026-07-29,14,Anthropic's shady tactics...,1:04,64,True,9196,0.53,279,26,3.32,nWzWlFAudoQ,https://i.ytimg.com/vi/nWzWlFAudoQ/hqdefault.jpg
+2026-07-28,15,New Cursor plan…,0:56,56,True,36703,2.13,1088,336,3.88,GR4cCUL51wU,https://i.ytimg.com/vi/GR4cCUL51wU/hqdefault.jpg
+2026-07-27,16,"Agentic Engineering, explained by a 10x developer",42:33,2553,False,76870,1.82,1452,219,2.17,FU5_kpTAVDo,https://i.ytimg.com/vi/FU5_kpTAVDo/hqdefault.jpg
+2026-07-27,16,Opus 5 - better than Fable?,1:03,63,True,12624,0.73,215,35,1.98,_t-Hbg-3_CU,https://i.ytimg.com/vi/_t-Hbg-3_CU/hqdefault.jpg
+2026-07-25,18,Remote Work is the #1 Productivity Killer,0:41,41,True,12064,0.7,210,58,2.22,k9Gd1fYYWa8,https://i.ytimg.com/vi/k9Gd1fYYWa8/hqdefault.jpg
+2026-07-24,19,AI Concepts tier list,0:27,27,True,14853,0.86,223,28,1.69,z8pjFF9-Vss,https://i.ytimg.com/vi/z8pjFF9-Vss/hqdefault.jpg
+2026-07-24,19,"Build Anything with Kimi K3, Here’s How",30:16,1816,False,140831,3.33,3609,246,2.74,ZW7R3qNw4nk,https://i.ytimg.com/vi/ZW7R3qNw4nk/hqdefault.jpg
+2026-07-23,21,The major bottleneck with AI Coding in 2026,1:39,99,True,12982,0.75,535,21,4.28,GapEWqXgKHk,https://i.ytimg.com/vi/GapEWqXgKHk/hqdefault.jpg
+2026-07-22,21,People are using AI wrong,0:24,24,True,17215,1.0,304,20,1.88,GCI7pydoc-M,https://i.ytimg.com/vi/GCI7pydoc-M/hqdefault.jpg
+2026-07-21,22,Ranking AI CEOs,0:43,43,True,9053,0.53,106,22,1.41,wN1qJPuPI44,https://i.ytimg.com/vi/wN1qJPuPI44/hqdefault.jpg
+2026-07-19,24,KimiK3 - The Biggest moment in Open Source AI ever...,1:12,72,True,81183,4.72,1842,81,2.37,SK8SSr7-JaY,https://i.ytimg.com/vi/SK8SSr7-JaY/hqdefault.jpg
+2026-07-17,26,L8 Principal's Agentic Engineering Setup (just copy him),61:50,3710,False,89337,2.11,2320,136,2.75,8ZgpAXe5V5w,https://i.ytimg.com/vi/8ZgpAXe5V5w/hqdefault.jpg
+2026-07-15,28,Bad Claude Code Habits,0:34,34,True,40307,2.34,487,31,1.29,Z1NTwYuuvvw,https://i.ytimg.com/vi/Z1NTwYuuvvw/hqdefault.jpg
+2026-07-13,30,"Tailscale, Clearly Explained (Beginner's Guide)",28:29,1709,False,42300,1.0,1320,75,3.3,eNn2tT-lrz4,https://i.ytimg.com/vi/eNn2tT-lrz4/hqdefault.jpg
+2026-07-13,30,AI Coding Agents tier list,1:01,61,True,133965,7.78,1993,144,1.6,H-MU1gXsf2U,https://i.ytimg.com/vi/H-MU1gXsf2U/hqdefault.jpg
+2026-07-09,34,What Top 1% of Agentic Engineers Do Differently,53:31,3211,False,25116,0.59,545,67,2.44,EWk9PBbKqzc,https://i.ytimg.com/vi/EWk9PBbKqzc/hqdefault.jpg
+2026-07-07,36,Fine-Tune the biggest open-source models (even with a bad PC),29:08,1748,False,27035,0.64,1008,65,3.97,kxstlfc8Lw4,https://i.ytimg.com/vi/kxstlfc8Lw4/hqdefault.jpg
+2026-07-02,41,Fable 5 is back… here is my plan,30:30,1830,False,22500,0.53,753,153,4.03,0akM-5lBurA,https://i.ytimg.com/vi/0akM-5lBurA/hqdefault.jpg
+2026-06-29,44,Hermes Agent just reached Fable level… Mixture Of Agents,36:01,2161,False,47315,1.12,1367,137,3.18,40ikbH0Ba-g,https://i.ytimg.com/vi/40ikbH0Ba-g/hqdefault.jpg
