@@ -4,104 +4,464 @@
   "brand_text": "AI",
   "topic_short": "ARCADE MCP",
   "kicker": "THE GATEWAY",
-  "steps": ["GATEWAY", "CONNECT", "AUTHORIZE", "RUN"],
+  "steps": [
+    "BUILD",
+    "CONNECT",
+    "AUTHORIZE",
+    "ASK"
+  ],
   "slides": [
     {
       "type": "cover",
       "kicker": "SHIP AGENTS, NOT AUTH",
-      "headline_lines": ["Claude Code", "with your apps"],
-      "accent_lines": ["with your apps"],
-      "headline_size": 96,
-      "aside": "one command, then it can act →",
-      "rows": [
-        {"label": "Gateway", "sub": "you pick the tools", "glyph": "grid"},
-        {"label": "One command", "sub": "claude mcp add", "glyph": "terminal"},
-        {"label": "OAuth once", "sub": "per tool, per account", "glyph": "check"},
-        {"label": "Real actions", "sub": "sends, posts, files", "glyph": "claude"}
+      "headline_lines": [
+        "Claude Code",
+        "with your apps"
       ],
-      "terminal": {"title": "arcade . connect", "lines": [
-        ["> claude mcp add arcade --transport http <URL>", "txt"],
-        ["> claude mcp list", "txt"],
-        ["  arcade: connected", "dim"],
-        ["> AUTHORIZE ONCE, THEN IT ACTS_", "accent"]
-      ]},
+      "accent_lines": [
+        "with your apps"
+      ],
+      "headline_size": 96,
+      "aside": "one command, then it can act \u2192",
+      "rows": [
+        {
+          "label": "Gateway",
+          "sub": "you pick the tools",
+          "glyph": "grid"
+        },
+        {
+          "label": "One command",
+          "sub": "claude mcp add",
+          "glyph": "terminal"
+        },
+        {
+          "label": "OAuth once",
+          "sub": "per tool, per account",
+          "glyph": "check"
+        },
+        {
+          "label": "Real actions",
+          "sub": "sends, posts, files",
+          "glyph": "claude"
+        }
+      ],
+      "terminal": {
+        "title": "arcade . connect",
+        "lines": [
+          [
+            "> claude mcp add arcade --transport http <URL>",
+            "txt"
+          ],
+          [
+            "> claude mcp list",
+            "txt"
+          ],
+          [
+            "  arcade: connected",
+            "dim"
+          ],
+          [
+            "> AUTHORIZE ONCE, THEN IT ACTS_",
+            "accent"
+          ]
+        ]
+      },
       "live_step": 0
     },
     {
-      "headline_lines": ["What the", "gateway is."],
-      "accent_lines": ["gateway is."],
-      "note": ["One endpoint.", "Many tools.", "No token juggling."],
+      "headline_lines": [
+        "What the",
+        "gateway is."
+      ],
+      "accent_lines": [
+        "gateway is."
+      ],
+      "note": [
+        "One endpoint.",
+        "Many tools.",
+        "No token juggling."
+      ],
       "lines": [
-        {"glyph": "grid", "segments": [
-          ["A gateway is ", "plain"], ["the set of tools you picked", "bold"],
-          [", on one URL.", "plain"]]},
-        {"glyph": "terminal", "segments": [
-          ["Claude Code adds it with ", "plain"], ["one line", "mark"], [".", "plain"]]},
-        {"glyph": "claude", "segments": [
-          ["7,500+ tools across ", "plain"], ["81 MCP servers", "bold"], [".", "plain"]]},
-        {"glyph": "check", "segments": [
-          ["Gmail, Calendar, Slack, GitHub, ", "plain"], ["Linear", "underline"], [".", "plain"]]}
+        {
+          "glyph": "grid",
+          "segments": [
+            [
+              "A gateway is ",
+              "plain"
+            ],
+            [
+              "the set of tools you picked",
+              "bold"
+            ],
+            [
+              ", on one URL.",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "glyph": "terminal",
+          "segments": [
+            [
+              "Claude Code adds it with ",
+              "plain"
+            ],
+            [
+              "one line",
+              "mark"
+            ],
+            [
+              ".",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "glyph": "claude",
+          "segments": [
+            [
+              "7,500+ tools across ",
+              "plain"
+            ],
+            [
+              "81 MCP servers",
+              "bold"
+            ],
+            [
+              ".",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "glyph": "check",
+          "segments": [
+            [
+              "Gmail, Calendar, Slack, GitHub, ",
+              "plain"
+            ],
+            [
+              "Linear",
+              "underline"
+            ],
+            [
+              ".",
+              "plain"
+            ]
+          ]
+        }
       ],
       "quad": [
-        {"glyph": "grid", "label": "Pick"},
-        {"glyph": "terminal", "label": "Add"},
-        {"glyph": "check", "label": "Authorize"},
-        {"glyph": "claude", "label": "Run"}
+        {
+          "glyph": "grid",
+          "label": "Pick"
+        },
+        {
+          "glyph": "terminal",
+          "label": "Add"
+        },
+        {
+          "glyph": "check",
+          "label": "Authorize"
+        },
+        {
+          "glyph": "claude",
+          "label": "Run"
+        }
       ],
       "live_step": 0
     },
     {
-      "headline_lines": ["Why the", "auth matters."],
-      "accent_lines": ["auth matters."],
-      "note": {"title": "What you skip", "items": ["OAuth screens", "Token refresh",
-                                                    "Scope debugging", "Storing secrets"]},
-      "lines": [
-        {"status": "bad", "segments": [
-          ["Old way:", "bold"], [" you build the OAuth flow yourself", "plain"]]},
-        {"status": "good", "segments": [
-          ["New way:", "bold"], [" authorize once, per tool, per account", "plain"]]},
-        {"status": "loop", "segments": [
-          ["The catch:", "bold"], [" it acts as you, so every call is logged", "plain"]]}
+      "headline_lines": [
+        "Why the",
+        "auth matters."
       ],
-      "proof": {"title": "arcade . run", "lines": [
-        ["> what needs a reply today?", "txt"],
-        ["  reading calendar + gmail...", "dim"],
-        ["> 3 THAT ACTUALLY MATTER_", "accent"]
-      ]},
+      "accent_lines": [
+        "auth matters."
+      ],
+      "note": {
+        "title": "What you skip",
+        "items": [
+          "OAuth screens",
+          "Token refresh",
+          "Scope debugging",
+          "Storing secrets"
+        ]
+      },
+      "lines": [
+        {
+          "status": "bad",
+          "segments": [
+            [
+              "Old way:",
+              "bold"
+            ],
+            [
+              " you build the OAuth flow yourself",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "status": "good",
+          "segments": [
+            [
+              "New way:",
+              "bold"
+            ],
+            [
+              " authorize once, per tool, per account",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "status": "loop",
+          "segments": [
+            [
+              "The catch:",
+              "bold"
+            ],
+            [
+              " it acts as you, so every call is logged",
+              "plain"
+            ]
+          ]
+        }
+      ],
+      "proof": {
+        "title": "arcade . run",
+        "lines": [
+          [
+            "> what needs a reply today?",
+            "txt"
+          ],
+          [
+            "  reading calendar + gmail...",
+            "dim"
+          ],
+          [
+            "> 3 THAT ACTUALLY MATTER_",
+            "accent"
+          ]
+        ]
+      },
       "live_step": 2
     },
     {
       "watermark": "Step 1:",
-      "headline_lines": ["Build the", "gateway."],
-      "accent_lines": ["gateway."],
-      "note": ["Pick tools.", "Copy the URL.", "That's the setup."],
-      "chips": [
-        {"label": "What it is", "items": [
-          "An account, then a gateway",
-          "Tick the tools you actually want",
-          "It hands you one HTTP URL"]},
-        {"label": "The rule", "items": [
-          "Start with two tools, not twenty"]}
+      "headline_lines": [
+        "Build the",
+        "gateway."
       ],
-      "circled": "Fewer tools, better answers.",
-      "live_step": 0
+      "accent_lines": [
+        "gateway."
+      ],
+      "note": [
+        "Pick tools.",
+        "Copy the URL.",
+        "That's the setup."
+      ],
+      "chips": [
+        {
+          "label": "What it is",
+          "items": [
+            "An account, then a gateway",
+            "Tick the tools you actually want",
+            "It hands you one HTTP URL"
+          ]
+        }
+      ],
+      "circled": "Two tools, not twenty.",
+      "live_step": 0,
+      "flow": [
+        {
+          "label": "Account",
+          "sub": "arcade.dev"
+        },
+        {
+          "label": "Gateway",
+          "sub": "name it"
+        },
+        {
+          "label": "Pick tools",
+          "sub": "Gmail, Slack"
+        },
+        {
+          "label": "Copy URL",
+          "sub": "one endpoint"
+        }
+      ]
     },
     {
-      "headline_lines": ["The four", "parts."],
-      "accent_lines": ["parts."],
-      "note": ["Four parts.", "One URL.", "That's it."],
-      "panel": {"rows": [
-        {"k": "Gateway", "v": "The tools you chose, on one endpoint"},
-        {"k": "Claude Code", "v": "The client that calls them"},
-        {"k": "OAuth", "v": "Handled by Arcade, once per tool"},
-        {"k": "Audit log", "v": "Every action it took, as you"}
-      ]},
-      "cards": [
-        {"lines": ["Morning brief", "from Calendar + Gmail"]},
-        {"lines": ["Draft the replies", "that actually matter"]},
-        {"lines": ["Post the standup", "to Slack"]},
-        {"lines": ["Triage the repo", "file the top issue"]}
+      "watermark": "Step 2:",
+      "headline_lines": [
+        "Connect it",
+        "to Claude."
       ],
+      "accent_lines": [
+        "to Claude."
+      ],
+      "note": [
+        "One command.",
+        "One URL.",
+        "No server to run."
+      ],
+      "chips": [
+        {
+          "label": "The command",
+          "items": [
+            "claude mcp add <name> --transport http <URL>",
+            "claude mcp list, to check it took"
+          ]
+        }
+      ],
+      "proof": {
+        "title": "claude mcp list",
+        "lines": [
+          [
+            "clickup-assistant   \\u2714 Connected",
+            "txt"
+          ],
+          [
+            "morning-assistant   ! Needs authentication",
+            "dim"
+          ],
+          [
+            "> ONE GATEWAY PER ASSISTANT_",
+            "accent"
+          ]
+        ]
+      },
+      "live_step": 1
+    },
+    {
+      "watermark": "Step 3:",
+      "headline_lines": [
+        "Authorize",
+        "once."
+      ],
+      "accent_lines": [
+        "once."
+      ],
+      "note": [
+        "Per tool.",
+        "Per account.",
+        "Then it is done."
+      ],
+      "lines": [
+        {
+          "status": "loop",
+          "segments": [
+            [
+              "First call to a tool ",
+              "plain"
+            ],
+            [
+              "pops an OAuth screen",
+              "bold"
+            ],
+            [
+              ".",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "status": "good",
+          "segments": [
+            [
+              "You approve it once. ",
+              "plain"
+            ],
+            [
+              "Arcade holds the token",
+              "bold"
+            ],
+            [
+              ".",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "status": "bad",
+          "segments": [
+            [
+              "Nothing is hardcoded. ",
+              "plain"
+            ],
+            [
+              "No secrets in your repo",
+              "bold"
+            ],
+            [
+              ".",
+              "plain"
+            ]
+          ]
+        }
+      ],
+      "circled": "It acts as you. That is the point, and the risk.",
+      "live_step": 2
+    },
+    {
+      "watermark": "Step 4:",
+      "headline_lines": [
+        "Then just",
+        "ask it."
+      ],
+      "accent_lines": [
+        "ask it."
+      ],
+      "note": [
+        "Read first.",
+        "Then act.",
+        "Approve the rest."
+      ],
+      "cards": [
+        {
+          "lines": [
+            "Morning brief",
+            "Calendar + Gmail"
+          ]
+        },
+        {
+          "lines": [
+            "Draft the replies",
+            "that matter"
+          ]
+        },
+        {
+          "lines": [
+            "Post the standup",
+            "to Slack"
+          ]
+        },
+        {
+          "lines": [
+            "Triage the repo",
+            "file the top issue"
+          ]
+        }
+      ],
+      "proof": {
+        "title": "arcade . act",
+        "lines": [
+          [
+            "> draft replies to the two that matter",
+            "txt"
+          ],
+          [
+            "  gmail.write_draft x2",
+            "dim"
+          ],
+          [
+            "> DRAFTED. NOT SENT_",
+            "accent"
+          ]
+        ]
+      },
       "live_step": 3
     },
     {
