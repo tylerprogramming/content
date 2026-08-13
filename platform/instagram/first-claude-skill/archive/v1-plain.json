@@ -1,0 +1,93 @@
+{
+  "topic": "Build your first Claude Code skill in 2 minutes, no code",
+  "handle": "@tylerai_dev",
+  "brand_text": "AI",
+  "slides": [
+    {
+      "type": "cover",
+      "headline_lines": [
+        "Build your",
+        "first skill",
+        "in 2 minutes"
+      ],
+      "accent_words": [
+        "first",
+        "skill"
+      ],
+      "subtitle": "No code. This is genuinely the whole process."
+    },
+    {
+      "type": "pain",
+      "headline_lines": [
+        "Think this",
+        "needs code?"
+      ],
+      "accent_words": [
+        "code"
+      ],
+      "bullets": [
+        "Waiting until you learn to code",
+        "Buying another tool instead",
+        "Starting with something too big",
+        "Planning it for weeks, building none"
+      ]
+    },
+    {
+      "type": "solution",
+      "headline_lines": [
+        "It is just a",
+        "text file"
+      ],
+      "accent_words": [
+        "text",
+        "file"
+      ],
+      "subtitle": "The same instructions you would give someone you were training. Nothing to install, nothing to compile.",
+      "bullets": []
+    },
+    {
+      "type": "how",
+      "headline_lines": [
+        "The",
+        "4 steps"
+      ],
+      "accent_words": [
+        "4",
+        "steps"
+      ],
+      "bullets": [
+        "Pick the task you did twice",
+        "Make a folder with a SKILL.md",
+        "Up top, say when to use it",
+        "Below, write the steps plainly"
+      ]
+    },
+    {
+      "type": "results",
+      "headline_lines": [
+        "What you",
+        "get back"
+      ],
+      "accent_words": [
+        "get",
+        "back"
+      ],
+      "bullets": [
+        "Save it and it is a command",
+        "Same steps, every single time",
+        "Fix one line each time you run it",
+        "Mine got good by being used"
+      ]
+    },
+    {
+      "type": "cta",
+      "summary_lines": [
+        "Do not plan the perfect one. Write the rough one.",
+        "Then fix the line that annoyed you."
+      ],
+      "cta_action": "Comment",
+      "cta_word": "SKILLS",
+      "cta_subtext": "and I'll send you all 17 as files, plus where the folder goes"
+    }
+  ]
+}

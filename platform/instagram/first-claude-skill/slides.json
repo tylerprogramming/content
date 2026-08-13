@@ -1,26 +1,76 @@
 {
   "topic": "Build your first Claude Code skill in 2 minutes, no code",
-  "handle": "@tylerai_dev",
+  "handle": "@tylerreedai",
   "brand_text": "AI",
   "slides": [
     {
       "type": "cover",
       "headline_lines": [
         "Build your",
-        "first skill",
-        "in 2 minutes"
+        "first skill"
       ],
       "accent_words": [
         "first",
         "skill"
       ],
-      "subtitle": "No code. This is genuinely the whole process."
+      "subtitle": "No code. This is genuinely the whole process.",
+      "aside": "no code, and it runs forever \u2192",
+      "rows": [
+        {
+          "label": "Folder",
+          "sub": "where it lives",
+          "glyph": "folder"
+        },
+        {
+          "label": "SKILL.md",
+          "sub": "the one file",
+          "glyph": "doc"
+        },
+        {
+          "label": "Frontmatter",
+          "sub": "when Claude uses it",
+          "glyph": "claude"
+        },
+        {
+          "label": "Plain English",
+          "sub": "the instructions",
+          "glyph": "text"
+        }
+      ],
+      "hero_path": "assets/hero-skillmd.png",
+      "terminal": {
+        "title": "skill \u00b7 live",
+        "lines": [
+          [
+            "> mkdir ~/.claude/skills/skool-post",
+            "txt"
+          ],
+          [
+            "> vim SKILL.md",
+            "txt"
+          ],
+          [
+            "> claude",
+            "txt"
+          ],
+          [
+            "> RUNS FOREVER_",
+            "accent"
+          ]
+        ]
+      },
+      "live_step": 0,
+      "kicker": "THE 2-MINUTE BUILD",
+      "accent_lines": [
+        "first skill"
+      ],
+      "headline_size": 112
     },
     {
       "type": "pain",
       "headline_lines": [
-        "Think this",
-        "needs code?"
+        "What",
+        "a skill is."
       ],
       "accent_words": [
         "code"
@@ -30,26 +80,210 @@
         "Buying another tool instead",
         "Starting with something too big",
         "Planning it for weeks, building none"
-      ]
+      ],
+      "accent_lines": [
+        "a skill is."
+      ],
+      "note": [
+        "One folder.",
+        "One file.",
+        "Zero code."
+      ],
+      "lines": [
+        {
+          "glyph": "text",
+          "segments": [
+            [
+              "You ",
+              "plain"
+            ],
+            [
+              "write it once.",
+              "bold"
+            ],
+            [
+              " Claude runs it forever.",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "glyph": "doc",
+          "segments": [
+            [
+              "SKILL.md",
+              "bold"
+            ],
+            [
+              " is the ",
+              "plain"
+            ],
+            [
+              "file",
+              "underline"
+            ],
+            [
+              ". Frontmatter is ",
+              "plain"
+            ],
+            [
+              "when",
+              "underline"
+            ],
+            [
+              ".",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "glyph": "claude",
+          "segments": [
+            [
+              "Runs on ",
+              "plain"
+            ],
+            [
+              "any Claude Code setup",
+              "mark"
+            ],
+            [
+              " - nothing to install.",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "glyph": "check",
+          "segments": [
+            [
+              "Fully editable. ",
+              "plain"
+            ],
+            [
+              "Change one line.",
+              "bold"
+            ],
+            [
+              " That's it.",
+              "plain"
+            ]
+          ]
+        }
+      ],
+      "quad": [
+        {
+          "glyph": "folder",
+          "label": "Make"
+        },
+        {
+          "glyph": "doc",
+          "label": "Write"
+        },
+        {
+          "glyph": "terminal",
+          "label": "Save"
+        },
+        {
+          "glyph": "check",
+          "label": "Run"
+        }
+      ],
+      "live_step": 1
     },
     {
       "type": "solution",
       "headline_lines": [
-        "It is just a",
-        "text file"
+        "Why it",
+        "works."
       ],
       "accent_words": [
         "text",
         "file"
       ],
       "subtitle": "The same instructions you would give someone you were training. Nothing to install, nothing to compile.",
-      "bullets": []
+      "bullets": [],
+      "accent_lines": [
+        "works."
+      ],
+      "note": {
+        "title": "The advantage",
+        "items": [
+          "No app to install",
+          "No code to write",
+          "No config to learn",
+          "Just a text file"
+        ]
+      },
+      "lines": [
+        {
+          "glyph": "tag",
+          "segments": [
+            [
+              "Old way:",
+              "bold"
+            ],
+            [
+              " you re-explain the same task",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "glyph": "check",
+          "segments": [
+            [
+              "New way:",
+              "bold"
+            ],
+            [
+              " you explain it once, then call it",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "glyph": "clock",
+          "segments": [
+            [
+              "The loop:",
+              "bold"
+            ],
+            [
+              " write, use, fix the annoying line",
+              "plain"
+            ]
+          ]
+        }
+      ],
+      "proof": {
+        "title": "skool-post . run",
+        "lines": [
+          [
+            "> claude",
+            "txt"
+          ],
+          [
+            "> /skool-post ~/content/youtube/041",
+            "txt"
+          ],
+          [
+            "  reading package. drafting post...",
+            "dim"
+          ],
+          [
+            "> DONE IN 14 SECONDS_",
+            "accent"
+          ]
+        ]
+      },
+      "live_step": 1
     },
     {
       "type": "how",
       "headline_lines": [
         "The",
-        "4 steps"
+        "4 steps."
       ],
       "accent_words": [
         "4",
@@ -60,13 +294,92 @@
         "Make a folder with a SKILL.md",
         "Up top, say when to use it",
         "Below, write the steps plainly"
-      ]
+      ],
+      "accent_lines": [
+        "4 steps."
+      ],
+      "note": [
+        "Four steps.",
+        "One file.",
+        "That's it."
+      ],
+      "table": {
+        "header": [
+          "Step",
+          "What you do"
+        ],
+        "rows": [
+          {
+            "glyph": "folder",
+            "name": "Make",
+            "segments": [
+              [
+                "A folder in ",
+                "plain"
+              ],
+              [
+                "~/.claude/skills",
+                "bold"
+              ]
+            ]
+          },
+          {
+            "glyph": "doc",
+            "name": "Write",
+            "segments": [
+              [
+                "One ",
+                "plain"
+              ],
+              [
+                "SKILL.md",
+                "bold"
+              ],
+              [
+                " inside it",
+                "plain"
+              ]
+            ]
+          },
+          {
+            "glyph": "claude",
+            "name": "Describe",
+            "segments": [
+              [
+                "When to use it, in ",
+                "plain"
+              ],
+              [
+                "plain English",
+                "bold"
+              ]
+            ]
+          },
+          {
+            "glyph": "check",
+            "name": "Run",
+            "segments": [
+              [
+                "Call it by name. ",
+                "plain"
+              ],
+              [
+                "Forever.",
+                "bold"
+              ]
+            ]
+          }
+        ]
+      },
+      "closer": "start with the one you did twice",
+      "pill": "Do this now",
+      "live_step": 2
     },
     {
       "type": "results",
       "headline_lines": [
         "What you",
-        "get back"
+        "get back."
       ],
       "accent_words": [
         "get",
@@ -77,7 +390,92 @@
         "Same steps, every single time",
         "Fix one line each time you run it",
         "Mine got good by being used"
-      ]
+      ],
+      "accent_lines": [
+        "get back."
+      ],
+      "note": [
+        "Write once.",
+        "Run it",
+        "every week."
+      ],
+      "lines": [
+        {
+          "glyph": "clock",
+          "segments": [
+            [
+              "The task stops being ",
+              "plain"
+            ],
+            [
+              "a decision",
+              "mark"
+            ]
+          ]
+        },
+        {
+          "glyph": "text",
+          "segments": [
+            [
+              "You review output instead of ",
+              "plain"
+            ],
+            [
+              "making it",
+              "bold"
+            ]
+          ]
+        },
+        {
+          "glyph": "doc",
+          "segments": [
+            [
+              "Every skill starts ",
+              "plain"
+            ],
+            [
+              "rough",
+              "bold"
+            ],
+            [
+              " and gets better",
+              "plain"
+            ]
+          ]
+        },
+        {
+          "glyph": "check",
+          "segments": [
+            [
+              "Nothing here needed ",
+              "plain"
+            ],
+            [
+              "an engineer",
+              "bold"
+            ]
+          ]
+        }
+      ],
+      "quad": [
+        {
+          "glyph": "folder",
+          "label": "Make"
+        },
+        {
+          "glyph": "doc",
+          "label": "Write"
+        },
+        {
+          "glyph": "terminal",
+          "label": "Save"
+        },
+        {
+          "glyph": "check",
+          "label": "Run"
+        }
+      ],
+      "live_step": 3
     },
     {
       "type": "cta",
@@ -89,5 +487,13 @@
       "cta_word": "SKILLS",
       "cta_subtext": "and I'll send you all 17 as files, plus where the folder goes"
     }
+  ],
+  "topic_short": "FIRST SKILL",
+  "kicker": "THE 2-MINUTE BUILD",
+  "steps": [
+    "FOLDER",
+    "FILE",
+    "SAVE",
+    "RUN"
   ]
 }
