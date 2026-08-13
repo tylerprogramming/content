@@ -13,6 +13,7 @@ Warm, direct, humble, teaching a friend over his shoulder. He is walking you thr
 - The test: if a post could headline a YouTube-growth channel, it is wrong. Rewrite it as a Claude Code / automation insight that applies to anyone's repetitive work, not just creators.
 - YouTube is the *setting* for his automation, not the *topic*. The takeaway should transfer to someone who has never made a video.
 - This applies to every "tactic" or "how-to" angle across LinkedIn, X, Skool, Instagram, and email.
+- Confirmed with numbers [2026-08-12]: the same content workflow topic written as "I run my whole content business out of one folder of text files" pulled 162 on Instagram, the highest reading in the store and more than double the next post (76, 63, 59, 30, 28). The folder framing transfers to anyone with repetitive work; a YouTube-workflow framing would not have. Setting, not topic, holds.
 
 ## Real speech patterns (measured from transcripts)
 Frequency in ~30k words of transcript, so you can see what is genuinely him:
