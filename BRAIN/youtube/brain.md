@@ -4,7 +4,7 @@ Part of the central BRAIN at `~/content/BRAIN/`. The living playbook for the Tyl
 
 ## Identity [confirmed 2026-06-22]
 - **Tyler is a SHOWCASE creator, not a teacher.** Proven lane: 10-18 min showcase of a new/hot tool or capability ("I connected X to Y", "I automated Z", "Google is winning with X").
-- AVOID "Master / Full Course / Explained / Tutorial" framing - that framing is the drag regardless of length (worst video: teach + 32 min = 171 views).
+- "Full Course / Tutorial / For Beginners" framing is NOT the drag [corrected 2026-08-13]. It is on the four best videos on the channel (Firecrawl 9.1% CTR, AI Agents 7.4%, AgentKit 6.0%, Crew AI 5.5% - 554 subs between them vs 86 from the last 29 uploads). The drag is course framing wrapped around a term nobody searches: Claude Cowork Full Course got 4,588 impressions to Firecrawl's 30,981 on the same title shape. Impressions are served before anyone clicks, so that 6.8x gap is demand, not CTR. **Check the head term has search volume before committing to the wrapper.**
 - Holds outside the channel [2026-08-02]: a 4-hour "AI AGENTS MASTERCLASS" on a 73.9K-sub channel pulled 21 views/day/1k subs in the same 14-day window where short outcome-titled builds pulled 41 to 153. Same lane, same week, one fifth the pull.
 - Showcase winners: "I Automated My Entire YouTube Workflow" (2,803), "Google is Winning With Antigravity" (2,405), "Build ANYTHING With Claude Code" (1,862).
 

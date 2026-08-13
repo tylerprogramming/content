@@ -1,17 +1,23 @@
-# Titles — 047 Full Arcade Course
+# Titles — 047 Full Course
 
-> ## RECOMMENDED (2026-08-13, rewritten against CTR data)
-> **Arcade Full Beginner Course: Build AI Agents That Connect to Anything**
+> ## RECOMMENDED (2026-08-13, rev 3)
+> **MCP Full Beginner Course: Build AI Agents That Connect to Anything**
 >
-> 68 chars. Follows the exact pattern of the four highest-performing videos on
-> this channel. Alternates and the evidence below.
+> 66 chars. Leads with the term people search. Alternates and evidence below.
 
-## Why this changed
+## Why this changed twice
 
-The previous recommendation was `How to Build AI Agents in 2026 (The Right Way)`,
-with a note: *"Do NOT put the framework names in the title; they narrow reach."*
+**v1** said: *"Do NOT put the framework names in the title; they narrow reach."*
 
-The CTR pull on 2026-08-13 says the opposite, and it is not close.
+**v2** (earlier today) said the opposite — *"lead with the tool name, it is in all
+four top performers"* — and put **Arcade** first.
+
+Both were wrong, for the same reason: they were rules about *tool names* when the
+real variable is **search demand for the head term**.
+
+## The evidence that settles it
+
+Four best long-form videos on the channel:
 
 | Video | Impressions | CTR | Views | Subs |
 |---|---|---|---|---|
@@ -20,62 +26,97 @@ The CTR pull on 2026-08-13 says the opposite, and it is not close.
 | Firecrawl Full Beginner Course | 30,981 | **9.1%** | 7,656 | **98** |
 | Crew AI Full Tutorial For Beginners | 40,141 | **5.5%** | 7,855 | **75** |
 
-**These four videos produced 554 subscribers. The last 29 uploads produced 86.**
-Four videos, 6.4x the subscribers of twenty-nine.
+554 subscribers from four videos. 86 from the last twenty-nine.
 
-They are also the highest-impression videos on the channel and the only
-long-form consistently above the 4.8% channel average, at 5.5 to 9.1% against a
-recent long-form median of 3.0%.
+Now the two videos that used **identical framing** and died:
 
-Every one of them **leads with the tool name**. Every one carries **Full**,
-**Course**, or **Tutorial**. Two carry **For Beginners**.
+| Video | Impressions | CTR | Views |
+|---|---|---|---|
+| Claude Cowork Full Course: Build Your AI Employee (2026-07-03) | 4,588 | 3.5% | 524 |
+| The BEST MCP Tooling, Authentication, and Integration \| Arcade Full Course (8mo ago) | — | — | **1,100** |
 
-## The BRAIN rule this contradicts
+Same wrapper. Course framing did not save either one.
 
-`BRAIN/youtube/brain.md` [confirmed 2026-06-22] says:
+**The difference is impressions, not CTR.** Firecrawl got 30,981 impressions;
+Claude Cowork got 4,588. That is a 6.8x gap on the same title shape, and CTR
+cannot cause it — impressions are served *before* anyone clicks. YouTube had a
+standing pool of people searching "firecrawl" and nobody searching "claude
+cowork". The title did not fail to convert. It failed to get shown.
+
+**So the rule is: the head term has to be something people already type.**
+Course framing is the wrapper. The searched term is the engine. Firecrawl,
+CrewAI, AgentKit and "AI agents" all had demand. Arcade and Claude Cowork did not.
+
+### Checked, not assumed
+
+YouTube search, 2026-08-13:
+
+- **`mcp full course`** returns Microsoft Developer's *MCP for Beginners* (12
+  lessons), CampusX's *Model Context Protocol* playlist, and theailanguage's
+  *MCP End-To-End Course 2026*. Three established channels have built full
+  courses on the term. That is a demand signal, and it is contested ground.
+- **`arcade dev`** returns four results. One is Arcade's own explainer at 538
+  views. One is **your own Arcade course at 1.1K**. The single video with reach
+  is Arcade's *9.1x 7 Minute Apps with Arcade* at 290K, and it leads with an
+  outcome number, not the brand.
+
+You already ran the Arcade-first title on this channel. It got 1.1K views.
+
+## The BRAIN rule this scopes
+
+`BRAIN/youtube/brain.md` [confirmed 2026-06-22]:
 
 > *AVOID "Master / Full Course / Explained / Tutorial" framing - that framing is
-> the drag regardless of length (worst video: teach + 32 min = 171 views).*
+> the drag regardless of length.*
 
-That rule was written from one bad video. The impressions and CTR data across
-four videos says course framing is this channel's **best** format, not its
-worst. The rule needs scoping, not obeying, on this release.
-
-**Honest caveat:** these are older videos and a share of their CTR is
-search-intent, where a course title naturally converts. But 106,000 impressions
-is not a search-only number, and the subscriber counts are real regardless of
-where the click came from.
+Half right, wrongly attributed. Course framing is not the drag; it is on the four
+best videos here. The drag is **course framing wrapped around a term with no
+search volume**, which is what Claude Cowork and the old Arcade course both were.
+Rewrite the rule as: *course framing only earns its keep on a term that already
+has demand. Check the term before committing to the wrapper.*
 
 ## Recommended
 
-1. **Arcade Full Beginner Course: Build AI Agents That Connect to Anything** — 68.
-   Tool name first, `Full Beginner Course` exactly as the winners carry it,
-   outcome in the back half.
+1. **MCP Full Beginner Course: Build AI Agents That Connect to Anything** — 66.
+   The searched term first, the exact `Full Beginner Course` string the winners
+   carry, outcome in the back half. MCP is also honest to scope: the course
+   builds a custom MCP server, LangChain, CrewAI and a scheduled VPS agent.
+   Arcade is the gateway inside it, not the subject.
 
 ## Strong alternates
 
-2. **Arcade Full Course: Build AI Agents That Connect to Any App (No Auth)** — 69.
-   Adds the differentiator that no competitor can claim.
-3. **The Complete Arcade Course: AI Agents, Custom MCP Servers, No Auth** — 66.
-   Leans on scope. Good if the thumbnail carries the beginner signal instead.
-4. **Build AI Agents That Connect to Anything (Full Arcade Course, 5 Builds)** — 71.
-   Sabrina's parenthetical-number move. Slightly over length.
-5. **How to Build AI Agents in 2026 (The Right Way)** — 46. The previous
-   recommendation, kept as the control. No tool name, no course signal.
+2. **How To Give AI Agents Access To ALL Your Apps (Full MCP Course)** — 63.
+   Mirrors the grammar of your single best video — *How To Use AI Agents To Do
+   ALL Your Work* — 7.4% CTR and 237 subs. Leads with outcome, keeps MCP in the
+   parenthetical for search. Pick this one if the thumbnail is carrying the
+   technical signal.
+3. **MCP Servers Full Course: Give AI Agents Access to Any App** — 56. Shortest,
+   closest to Firecrawl's shape, which is the highest CTR on the channel at 9.1%.
+4. **MCP Full Course for Beginners (Build 5 Real AI Agents)** — 55. Sabrina's
+   parenthetical-number move. Only if all five builds actually ship in the cut.
+5. **Arcade Full Beginner Course: Build AI Agents That Connect to Anything** — 68.
+   The v2 recommendation, kept as the control. Do not launch with it.
 
 ## A/B plan
 
 Launch with #1. **Do not swap inside 7 days.** BRAIN [2026-08-12]: a payoff word
 buys the first 72 hours, not the week, and day-1 multiples flatter. The Opus 5
-video was swapped off a well-chosen title at 48-72h and is now sitting at 0.9%
-on 19,334 impressions; the locked title was never actually tested.
+video was swapped off a well-chosen title at 48-72h and is now at 0.9% on 19,334
+impressions; the locked title was never actually tested.
 
-If it is genuinely soft at day 7, swap to #2, not to a shorter or cleverer one.
+If it is genuinely soft at day 7, swap to **#2** — that is a different *strategy*
+(outcome-led instead of term-led), which is the only kind of swap worth the reset.
+Swapping to a shorter or cleverer version of the same strategy tests nothing.
 
 ## Notes
 
-- Keep the tool name first. It is in all four top performers and the "narrows
-  reach" note is contradicted by the impressions data.
-- `2026` is optional here. It signals currency, but none of the four winners use
-  a year, and the course-plan's deprecation angle is already carried by "no auth".
+- **Contested is fine; empty is not.** Three channels have MCP courses. Competing
+  for a term with demand beats owning a term with none — that is the whole lesson
+  of the 4,588-impression Claude Cowork release.
+- Keep **Arcade out of the title and in the first line of the description**, where
+  it costs nothing and still catches the few people searching it.
+- No year. None of the four winners use one, and the deprecation angle is carried
+  by the body copy.
 - Under 70 chars so nothing truncates on mobile.
+- `thumbnail.md` is unaffected — `CONNECT ANYTHING` / `ANY TOOL` still reads
+  correctly against every option above.
