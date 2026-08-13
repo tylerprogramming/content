@@ -1,6 +1,14 @@
 # Titles - 042 Arcade Connect Apps
 
-**Recommended:** Give Claude Code Access to Your Real Apps in 7 Minutes (Arcade MCP)
+**Recommended (locked 2026-08-13):** Claude Code Can Finally Use ANY Tool (7 Minutes, No Code)
+
+Chosen by Tyler. Keeps the 7-minute time bound, which is the shape of the only
+video on this channel to clear 4% CTR in a year (How to Create Your First Claude
+Routine in 2 Minutes, 4.7%, 22 subs). ANY Tool is the completeness move that
+carries Sabrina Ramonov's outliers. Trade-off accepted: it loses the search
+surface that naming Gmail or Slack would buy.
+
+**Previous:** Give Claude Code Access to Your Real Apps in 7 Minutes (Arcade MCP)
 
 1. **Give Claude Code Access to Your Real Apps in 7 Minutes (Arcade MCP)** [RECOMMENDED]
    Promises the outcome and the time, names the tool, and matches Arcade's own "7-minute" framing. "Real apps" is the hook, that is what people actually want.

@@ -1,6 +1,11 @@
 # Titles - 043 Arcade Build Agent
 
-**Recommended:** Build a Real AI Agent in 7 Minutes: Claude Code + Arcade
+**Recommended (locked 2026-08-13):** Build a Real AI Agent in 7 Minutes with Claude Code
+
+Chosen by Tyler. Drops the second tool name for a cleaner read. Keeps the number
+and the time bound, which is the proven shape on this channel.
+
+**Previous:** Build a Real AI Agent in 7 Minutes: Claude Code + Arcade
 
 1. **Build a Real AI Agent in 7 Minutes: Claude Code + Arcade** [RECOMMENDED]
    Promises one real thing built start to finish, names the time and both tools. Matches Arcade's "7-minute" framing and signals a live build, not a lecture. Under 70 chars.

@@ -1,19 +1,81 @@
 # Titles — 047 Full Arcade Course
 
-Rules: under ~70 chars, no money amounts, no hype words. "In 2026" frames it as current (and rhymes with 048's "Make an MCP Server in 2026"). Run /yt-seo before locking; A/B the top two at 48-72h.
+> ## RECOMMENDED (2026-08-13, rewritten against CTR data)
+> **Arcade Full Beginner Course: Build AI Agents That Connect to Anything**
+>
+> 68 chars. Follows the exact pattern of the four highest-performing videos on
+> this channel. Alternates and the evidence below.
+
+## Why this changed
+
+The previous recommendation was `How to Build AI Agents in 2026 (The Right Way)`,
+with a note: *"Do NOT put the framework names in the title; they narrow reach."*
+
+The CTR pull on 2026-08-13 says the opposite, and it is not close.
+
+| Video | Impressions | CTR | Views | Subs |
+|---|---|---|---|---|
+| How To Use AI Agents To Do ALL Your Work - Full | 106,385 | **7.4%** | 18,282 | **237** |
+| OpenAI AgentKit Full Beginner Course | 106,740 | **6.0%** | 11,629 | **144** |
+| Firecrawl Full Beginner Course | 30,981 | **9.1%** | 7,656 | **98** |
+| Crew AI Full Tutorial For Beginners | 40,141 | **5.5%** | 7,855 | **75** |
+
+**These four videos produced 554 subscribers. The last 29 uploads produced 86.**
+Four videos, 6.4x the subscribers of twenty-nine.
+
+They are also the highest-impression videos on the channel and the only
+long-form consistently above the 4.8% channel average, at 5.5 to 9.1% against a
+recent long-form median of 3.0%.
+
+Every one of them **leads with the tool name**. Every one carries **Full**,
+**Course**, or **Tutorial**. Two carry **For Beginners**.
+
+## The BRAIN rule this contradicts
+
+`BRAIN/youtube/brain.md` [confirmed 2026-06-22] says:
+
+> *AVOID "Master / Full Course / Explained / Tutorial" framing - that framing is
+> the drag regardless of length (worst video: teach + 32 min = 171 views).*
+
+That rule was written from one bad video. The impressions and CTR data across
+four videos says course framing is this channel's **best** format, not its
+worst. The rule needs scoping, not obeying, on this release.
+
+**Honest caveat:** these are older videos and a share of their CTR is
+search-intent, where a course title naturally converts. But 106,000 impressions
+is not a search-only number, and the subscriber counts are real regardless of
+where the click came from.
 
 ## Recommended
-1. **How to Build AI Agents in 2026 (The Right Way)** — 46 chars. Clean, searchable, matches the framing. The parenthetical promises there's a wrong way (curiosity) without overclaiming.
+
+1. **Arcade Full Beginner Course: Build AI Agents That Connect to Anything** — 68.
+   Tool name first, `Full Beginner Course` exactly as the winners carry it,
+   outcome in the back half.
 
 ## Strong alternates
-2. **How to Build AI Agents in 2026 (Most Tutorials Are Wrong)** — 56. Leans on the real, timely finding (langchain-arcade + crewai-arcade deprecated). High curiosity; make sure the video pays it off in the first 2 min.
-3. **Build Real AI Agents in 2026 (Connect Anything, No Auth)** — 55. Value-forward: names the two biggest promises (connect anything, no auth).
-4. **The Correct Way to Build AI Agents in 2026** — 43. Punchier version of #1.
-5. **How to Build AI Agents That Connect to Anything (2026)** — 53. Search-leaning on the "connect to anything" intent.
+
+2. **Arcade Full Course: Build AI Agents That Connect to Any App (No Auth)** — 69.
+   Adds the differentiator that no competitor can claim.
+3. **The Complete Arcade Course: AI Agents, Custom MCP Servers, No Auth** — 66.
+   Leans on scope. Good if the thumbnail carries the beginner signal instead.
+4. **Build AI Agents That Connect to Anything (Full Arcade Course, 5 Builds)** — 71.
+   Sabrina's parenthetical-number move. Slightly over length.
+5. **How to Build AI Agents in 2026 (The Right Way)** — 46. The previous
+   recommendation, kept as the control. No tool name, no course signal.
 
 ## A/B plan
-Launch with #1. If CTR is soft at 48-72h, swap to #2 (the "most tutorials are wrong" angle is the sharper hook, but riskier — only if the intro delivers on it).
+
+Launch with #1. **Do not swap inside 7 days.** BRAIN [2026-08-12]: a payoff word
+buys the first 72 hours, not the week, and day-1 multiples flatter. The Opus 5
+video was swapped off a well-chosen title at 48-72h and is now sitting at 0.9%
+on 19,334 impressions; the locked title was never actually tested.
+
+If it is genuinely soft at day 7, swap to #2, not to a shorter or cleverer one.
 
 ## Notes
-- Keep "2026" in the title — it signals current/correct, which is the whole differentiator given the deprecations.
-- Do NOT put the framework names (LangChain/CrewAI/Arcade) in the title; they narrow reach. Save them for the description + chapters.
+
+- Keep the tool name first. It is in all four top performers and the "narrows
+  reach" note is contradicted by the impressions data.
+- `2026` is optional here. It signals currency, but none of the four winners use
+  a year, and the course-plan's deprecation angle is already carried by "no auth".
+- Under 70 chars so nothing truncates on mobile.
