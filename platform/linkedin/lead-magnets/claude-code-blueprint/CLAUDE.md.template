@@ -1,0 +1,44 @@
+# CLAUDE.md
+
+Copy this into your project root, delete what does not apply, and add a line every time you
+correct Claude on something. It is read at the start of every session.
+
+## What this project is
+
+<One or two sentences. What it does, who it is for, what stage it is at.>
+
+## Stack and conventions
+
+- Language / framework:
+- Package manager:
+- Tests run with:
+- Formatting / lint:
+
+## How I want you to work
+
+- Ask before <the thing you never want done silently, e.g. installing new dependencies>.
+- Prefer editing existing files over creating new ones.
+- Match the surrounding code style rather than importing a new one.
+- When something is ambiguous, say so and propose an option rather than guessing.
+
+## Where things go
+
+- Source:
+- Tests:
+- Scripts:
+- Docs:
+
+## Never
+
+- <Things that have burned you. Be specific. "Never commit to main." "Never rewrite the
+  migration files." "Never add a comment explaining what the line obviously does.">
+
+## Writing style, if this project produces prose
+
+- <Voice notes, banned words, formatting rules.>
+
+---
+
+**How to grow this file:** do not write it all up front. Every time you find yourself
+correcting Claude, add the correction here as one line. After a few weeks it is genuinely
+tuned to you, and you will notice you have stopped repeating yourself.

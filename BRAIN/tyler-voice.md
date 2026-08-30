@@ -14,6 +14,7 @@ Warm, direct, humble, teaching a friend over his shoulder. He is walking you thr
 - YouTube is the *setting* for his automation, not the *topic*. The takeaway should transfer to someone who has never made a video.
 - This applies to every "tactic" or "how-to" angle across LinkedIn, X, Skool, Instagram, and email.
 - Confirmed with numbers [2026-08-12]: the same content workflow topic written as "I run my whole content business out of one folder of text files" pulled 162 on Instagram, the highest reading in the store and more than double the next post (76, 63, 59, 30, 28). The folder framing transfers to anyone with repetitive work; a YouTube-workflow framing would not have. Setting, not topic, holds.
+- Confirmed again on the counter-case [2026-08-18]: the folder post is now 171 and still the account's best. The "YouTube business that runs itself" post, three days later, read 76 on day 1 and 77 on day 6, one view in five days, and its X version did 40 against a day-1 median of **81.5 (n=16, corrected 2026-08-22** from the stale 101; see the day-1 median rule in `youtube/brain.md`), which is 0.49x and still the worst reading in the set. Same week, same author, same underlying system. **The framing that names the machine anyone owns keeps compounding; the framing that names the YouTube business stops the day it is posted.** The transfer test is not a style preference, it is the difference between the two readings.
 
 ## Real speech patterns (measured from transcripts)
 Frequency in ~30k words of transcript, so you can see what is genuinely him:

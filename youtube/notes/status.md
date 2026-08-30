@@ -66,6 +66,16 @@ The winning lane = **"I Automated My ___ With Claude Code"** (showcase). Mirrors
 
 ---
 
+## 🔥 FRESH / FILMING NOW (added 2026-08-28)
+
+| Video | Folder | Status |
+|---|---|---|
+| How To Build AI Agents in 2026 (5 Steps, No Code) | `videos/050-build-ai-agents-2026/` | ✅ **RECORDED 2026-08-29 → WITH EDITOR.** Built the `social-me` skill live (renamed from social-research on camera), Apify MCP + yt_transcript.py + `grilling` roast, ran it, scheduled it. Post-edit: /yt-chapters, thumbnail (designer), /yt-seo already done, queue upload. |
+| DeepSeek Harness: The Open-Source Claude Code (Setup + Features) | `deepseek-harness/` | **Package built 2026-08-28.** Breakout term (NeuralNine 222k = ~20-30x his norm). Honest how-to; HERO beat = run Claude Code as a subagent (nobody else covering). ClickUp `86e30q32d`. SEO done 2026-08-28. **Maybe film tonight** after 050. Film dep: subagent providers ship disabled - confirm enable step + `which claude`. |
+| Set Up Hermes Agent (Claude Code Users Start Here) | `hermes-agent-start-here/` | Package built 2026-08-25. Own identity (NOT "first agent in 5 steps" - that's 050). Queued. |
+
+---
+
 ## 🎬 RECORD BATCH (packaged 036-041, order set 2026-07-24)
 
 Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resources".
@@ -94,11 +104,11 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 
 | Video | Folder | Stage |
 |---|---|---|
-| **045 Give Claude Code Access to Your Real Apps** | `045-arcade-connect-apps/` | **FILMED 2026-08-10 → editing.** Script finalized: honest auth reframe (connecting one app is easy; auth bites at scale/multi-user/own-agent), pain+Arcade merged (build ~0:50), "why not a connector" beat after the demo, facts checked vs live site. 4 reels in `reels.md`. ClickUp `86e2kukfp`. |
+| **045 Give Claude Code Access to Your Real Apps** | `045-arcade-connect-apps/` | **EDITED 2026-08-16 → thumbnail + upload.** Final: `~/Movies/Camtasia/045 - arcade.dev/045 - arcade.dev - FINAL.mp4`, **12:00.6**. Apps shown are Gmail/Calendar/Drive/Docs/Slack/ClickUp — **no GitHub**, despite the pre-production package. `description.md` rewritten against the delivered cut with 19 real chapters; `tags.txt` updated; locked title left intact and post-production candidates appended to `titles.md`. ⚠️ Locked title says "In 7 Minutes", film is 12:00.6 — watch first-24h retention for an early cliff. Thumbnail not built (brief in `thumbnail.md`). 4 reels in `reels.md`. ClickUp `86e2kukfp`. |
 | **046 Build a Smart AI Agent in 2026** | `046-arcade-build-agent/` | **Reworked to HYBRID 2026-08-10** (retitled from "Real AI Agent in 7 Minutes"). Part 1: build the morning-brief agent in Claude Code (Calendar+Gmail → day summary + flagged replies → drafts). Part 2: move the same job into a small Python script + schedule it, so it runs on its own (the "real agent / in 2026" payoff). ⚠️ **Part 2 needs an Arcade-from-code fact-check + code/scheduler prep before filming** (shared research with 049). ClickUp `86e2kukg1` (in progress). |
 | **048 How to Make an MCP Server in 2026 (No Code)** | `048-arcade-make-mcp-server/` | **Planning** (plan.md written 2026-08-10). Assemble a gateway → hosted URL → `claude mcp add` → use it. Long-form of Reel 4; evergreen how-to, distinct from 045's showcase. Next: /yt-package. ClickUp `86e2rcmnt`. |
 | **049 Build Your Own Custom MCP Server with Arcade** | `049-arcade-build-custom-mcp-server/` | **Planning** (plan.md written 2026-08-10). Write + deploy a custom tool as an MCP server (auth + hosting handled). Builder / "you could ship this" lane. ⚠️ **Fact-check Arcade Tool SDK + `arcade deploy` before scripting.** ClickUp `86e2rcmqw`. |
-| **047 Arcade — Full Course (~1hr)** | `047-arcade-mcp-course/` | **BUILDING 2026-08-11.** Concepts + Claude Code + build your OWN MCP server (`arcade-mcp`) + LangChain + CrewAI + scheduled VPS agent (Morning Planner on Hostinger). `course-plan.md` + `project/` scaffold done; code fills in from live-docs research. Key finding: Arcade TDK superseded by **`arcade-mcp`** (`MCPApp`/`@app.tool`/`arcade deploy`), GA 2025-10-17. ClickUp `86e2kukgv` (in progress). |
+| **047 Arcade — Full Course (~1hr)** | `047-arcade-mcp-course/` | **FINAL DELIVERED 2026-08-19 → chapters + thumbnail + upload.** `~/Movies/Camtasia/047 - arcade.dev full course/047 - arcade.dev full course - FINAL.mp4`, **56:29**, 561 MB. First 2 min rebuilt to the Nate Herk teardown: face-free ~65%, longest bare-face run under 4s (was 18.2s). Seedance cold open + dawn room + kitchen b-roll (3 of 6 generated used), wall cutaway with real brand marks, morning-brief HUD, `code-scroll`, six-module teaser. Camera is a **rounded-rect PIP**, every clip zoom-keyframed to a word. Verified: 0 speech clipped across 351 boundaries, PIP present throughout, seam clean. ⚠️ **description + chapters are STALE** (written against the v1 55:11 cut — every timestamp wrong, first minute completely different). Motion kit recorded in `/yt-edit` → `reference/MOTION-KIT.md`. ClickUp `86e2kukgv`. |
 
 **The arc:** 045 connect apps → 046 build an agent → 048 make a server (no code) → 049 build your own custom server → 047 the course.
 **045 ↔ 046 pair:** 045 = connect your apps (the setup), teases 046; 046 = build one real agent (the payoff), references 045 as the companion. 045 + 046 Part 1 can film in one Arcade setup session; 046 Part 2 (code + schedule) needs the from-code fact-check + prep first, so film it after.

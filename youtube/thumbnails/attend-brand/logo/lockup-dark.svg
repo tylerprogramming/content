@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 64" width="236" height="64" role="img" aria-label="Attend">
+  <title>Attend</title>
+  <g>
+    <!-- plunger -->
+    <circle cx="32" cy="8.5" r="3.2" fill="#C9CDD4"/>
+    <rect x="30.4" y="10.5" width="3.2" height="14.5" fill="#C9CDD4"/>
+    <!-- dome (lifted for contrast on dark) -->
+    <path d="M13 43a19 19 0 0 1 38 0Z" fill="#5BAFE8"/>
+    <!-- gold band -->
+    <rect x="10.5" y="43" width="43" height="4.2" rx="2.1" fill="#E0A860"/>
+    <!-- base -->
+    <path d="M7 47.2h50v4.3a5 5 0 0 1-5 5H12a5 5 0 0 1-5-5Z" fill="#CE3E2E"/>
+  </g>
+  <text x="74" y="43" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="34" font-weight="700" letter-spacing="-1.1" fill="#FFFFFF">Attend</text>
+</svg>

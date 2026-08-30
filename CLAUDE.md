@@ -63,7 +63,17 @@ Skills live in the separate `tylerprogramming/claude-skills` repo at `~/claude-s
 - `/yt-search` writes to `research/`
 - `/yt-package` writes to `youtube/videos/<NNN-slug>/`
 - `/social-copy` writes to the package's `social/` folder
+- `/linkedin-writer` writes the LinkedIn post to the package's `social/linkedin.md` (or `platform/linkedin/` when standalone). Reads `BRAIN/linkedin/brain.md` first; defaults to the **build post** format, which is the only shape that has broken out on the account.
 - `/yt-upload` handles YouTube API uploads/edits (replaced Blotato for long-form)
+
+## Lifestyle OS (personal — kept here for convenience, separate from content)
+
+Tyler also runs a personal whole-life tracker from this machine (runs, lifts, meals, water, caffeine, weight, reading). It is **not** part of the content pipeline:
+
+- **Logging** → the **lifestyle Supabase project** via the `/lifestyle` skill (the project id lives in private config, intentionally *not* in this repo).
+- **Dashboard** → rebuilt to `~/lifestyle/dashboard.html` via the `/lifestyle-show` skill.
+- Key tables: `meal_plan` (planned meals + actuals), `cardio_log` (runs), `activity_log` (daily macro totals), `weight_log`, `caffeine_log`, `daily_checkin`.
+- Content/recording **time-blocks** (Claude course, Blotato, Arcade) are scheduled on **Google Calendar** (`America/New_York`). Blotato showcase source: `research/youtube/2026-06-20-blotato.md` (+ `.json`).
 
 ## Git workflow
 

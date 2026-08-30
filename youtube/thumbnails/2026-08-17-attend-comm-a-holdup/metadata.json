@@ -1,0 +1,22 @@
+{
+  "generations": [
+    {
+      "prompt": "A confident man in a dark t-shirt on the right third of the frame, matching the face in the reference image exactly, smiling warmly at the camera and holding a modern smartphone up toward the viewer in one hand. The phone screen faces the camera and clearly displays a clean white community analytics dashboard: a bold headline number '896 members', smaller stats reading '16 joined this week' and '0.3% churn', a horizontal segmented progress bar in green, orange and red, and a rising line chart, all rendered crisply in navy blue #2A3B8F with warm vermilion #CE3E2E and tan gold #E0A860 accents. Behind him on a warm near-white surface sit an open silver MacBook Pro and a tablet on a stand, both showing the same white dashboard interface, slightly out of focus. Background is a clean warm off-white studio, color #FAF7F0, with soft even lighting. On the left third, large bold true-black sans-serif text reading 'Run your Skool community in 10 minutes a day' with a small navy reception-bell icon and the word 'Attend' beneath it. Crisp, premium, high contrast, uncluttered. Absolutely no neon, no glow effects, no robots, no circuit boards, no gibberish text.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tyler.png"
+      ],
+      "generated_at": "2026-08-17T15:49:18.612602",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_74e12c087a74cf05c787aaa42f882e82.png",
+        "https://tempfile.aiquickdraw.com/workers/images/image_db49ac5925746aeb36e524569844f50a.png"
+      ]
+    }
+  ]
+}

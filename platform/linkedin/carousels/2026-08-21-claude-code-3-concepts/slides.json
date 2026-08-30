@@ -1,0 +1,332 @@
+{
+ "topic": "The 23 Claude Code concepts, and the three that matter first",
+ "handle": "@tylerreedai",
+ "topic_short": "CLAUDE CODE",
+ "kicker": "THE BEGINNER BLUEPRINT",
+ "steps": [
+  "CONTEXT",
+  "CLAUDE.MD",
+  "PLAN",
+  "REWIND"
+ ],
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "THE BEGINNER BLUEPRINT",
+   "headline_lines": [
+    "23 concepts.",
+    "You need three."
+   ],
+   "accent_lines": [
+    "You need three."
+   ],
+   "headline_size": 92,
+   "aside": "a year in, I still use six \u2192",
+   "rows": [
+    {
+     "label": "Context",
+     "sub": "why answers drift",
+     "glyph": "wave"
+    },
+    {
+     "label": "CLAUDE.md",
+     "sub": "your rules, once",
+     "glyph": "doc"
+    },
+    {
+     "label": "Plan Mode",
+     "sub": "think, then build",
+     "glyph": "check"
+    },
+    {
+     "label": "Rewind",
+     "sub": "undo anything",
+     "glyph": "clock"
+    }
+   ],
+   "terminal": {
+    "title": "claude \u00b7 start",
+    "lines": [
+     [
+      "> claude",
+      "txt"
+     ],
+     [
+      "> /init",
+      "txt"
+     ],
+     [
+      "> THREE CONCEPTS, THEN BUILD_",
+      "accent"
+     ]
+    ]
+   },
+   "live_step": 0
+  },
+  {
+   "type": "pain",
+   "headline_lines": [
+    "Why most",
+    "quit early."
+   ],
+   "accent_lines": [
+    "quit early."
+   ],
+   "note": [
+    "23 concepts.",
+    "A blank terminal.",
+    "No idea which matter."
+   ],
+   "lines": [
+    {
+     "glyph": "terminal",
+     "segments": [
+      [
+       "The first session is a ",
+       "plain"
+      ],
+      [
+       "black screen",
+       "bold"
+      ],
+      [
+       " and a blinking cursor",
+       "plain"
+      ]
+     ]
+    },
+    {
+     "glyph": "wave",
+     "segments": [
+      [
+       "Answers ",
+       "plain"
+      ],
+      [
+       "quietly get worse",
+       "underline"
+      ],
+      [
+       " and you blame the model",
+       "plain"
+      ]
+     ]
+    }
+   ],
+   "live_step": 0,
+   "proof": {
+    "title": "claude \u00b7 context",
+    "lines": [
+     [
+      "> context 41% used",
+      "dim"
+     ],
+     [
+      "> context 89% used",
+      "txt"
+     ],
+     [
+      "> IT STARTS FORGETTING_",
+      "accent"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "solution",
+   "headline_lines": [
+    "Learn",
+    "three first."
+   ],
+   "accent_lines": [
+    "three first."
+   ],
+   "subtitle": "The other twenty can wait until you hit a wall",
+   "note": {
+    "title": "The shortcut",
+    "items": [
+     "Three, not 23",
+     "On real work",
+     "For one week"
+    ]
+   },
+   "live_step": 1,
+   "lines": [
+    {
+     "glyph": "wave",
+     "segments": [
+      [
+       "Context window, so answers ",
+       "plain"
+      ],
+      [
+       "stop drifting",
+       "underline"
+      ]
+     ]
+    },
+    {
+     "glyph": "doc",
+     "segments": [
+      [
+       "CLAUDE.md",
+       "bold"
+      ],
+      [
+       ", so you stop re-explaining yourself",
+       "plain"
+      ]
+     ]
+    },
+    {
+     "glyph": "check",
+     "segments": [
+      [
+       "Plan Mode, so it ",
+       "plain"
+      ],
+      [
+       "thinks before it builds",
+       "bold"
+      ]
+     ]
+    }
+   ],
+   "proof": {
+    "title": "claude \u00b7 /init",
+    "lines": [
+     [
+      "> /init",
+      "txt"
+     ],
+     [
+      "> CREATED CLAUDE.MD_",
+      "accent"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "how",
+   "headline_lines": [
+    "The",
+    "three."
+   ],
+   "accent_lines": [
+    "three."
+   ],
+   "table": {
+    "header": [
+     "Concept",
+     "What it does"
+    ],
+    "rows": [
+     {
+      "glyph": "wave",
+      "name": "Context",
+      "segments": [
+       [
+        "Short term memory. Manage it with ",
+        "plain"
+       ],
+       [
+        "/compact",
+        "bold"
+       ]
+      ]
+     },
+     {
+      "glyph": "doc",
+      "name": "CLAUDE.md",
+      "segments": [
+       [
+        "Your rules, read ",
+        "plain"
+       ],
+       [
+        "every session",
+        "bold"
+       ]
+      ]
+     },
+     {
+      "glyph": "check",
+      "name": "Plan Mode",
+      "segments": [
+       [
+        "Shift+Tab. Explores ",
+        "plain"
+       ],
+       [
+        "before it writes",
+        "bold"
+       ]
+      ]
+     }
+    ]
+   },
+   "pill": "Start here",
+   "closer": "add one more the first time you hit a wall",
+   "live_step": 2
+  },
+  {
+   "type": "results",
+   "headline_lines": [
+    "What",
+    "changes."
+   ],
+   "accent_lines": [
+    "changes."
+   ],
+   "quad": [
+    {
+     "glyph": "check",
+     "label": "Fewer redos"
+    },
+    {
+     "glyph": "doc",
+     "label": "Same rules"
+    },
+    {
+     "glyph": "terminal",
+     "label": "No drift"
+    },
+    {
+     "glyph": "clock",
+     "label": "Undo anything"
+    }
+   ],
+   "note": [
+    "Not smarter.",
+    "Just far less",
+    "re-explaining."
+   ],
+   "live_step": 3,
+   "proof": {
+    "title": "claude \u00b7 plan mode",
+    "lines": [
+     [
+      "> refactor the auth flow",
+      "txt"
+     ],
+     [
+      "> 4 STEPS PROPOSED, NO FILES TOUCHED_",
+      "accent"
+     ]
+    ]
+   }
+  },
+  {
+   "type": "cta",
+   "summary_lines": [
+    "Do not learn all 23. Use three on real work for a week.",
+    "Then add one the first time you hit a wall that needs it."
+   ],
+   "cta_action": "Comment",
+   "cta_word": "BLUEPRINT",
+   "cta_subtext": "and I'll send you the three-concept starter plus my CLAUDE.md"
+  }
+ ],
+ "brand_text": "AI",
+ "brand_path": null
+}

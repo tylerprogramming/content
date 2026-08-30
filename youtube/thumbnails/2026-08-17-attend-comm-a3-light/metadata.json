@@ -1,0 +1,21 @@
+{
+  "generations": [
+    {
+      "prompt": "A confident man in a black t-shirt on the right third of the frame, matching the face in the reference image exactly, smiling warmly and holding a large modern smartphone up toward the viewer. The phone screen faces the camera and shows a clean white app: a large bold navy number '4,182' with 'members' beneath it, then '63 joined this week' and '0.9% churn', a segmented progress bar in green, tan and vermilion, and a rising line chart. At the very bottom of the phone screen a clear app navigation bar with four small evenly spaced tab labels reading 'Dashboard', 'Needs you', 'Members' and 'Posts', with a small red circular badge showing '12' above the 'Needs you' tab. Behind him on a warm near-white surface, an open MacBook Pro and a tablet on a stand show the same white dashboard, slightly out of focus. Warm off-white studio background, color #FAF7F0, soft even lighting. On the left third, large bold true-black sans-serif text reading 'Run your Skool community in 10 minutes a day', and at the bottom left a small reception desk bell icon with a navy blue dome, a tan gold band and a vermilion red base, beside the word 'Attend' in bold black. Crisp, premium, uncluttered. Absolutely no neon, no glow, no robots, no gibberish text, all text must be real and correctly spelled.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 1,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tyler.png"
+      ],
+      "generated_at": "2026-08-17T16:07:47.494742",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_94f4a4707a125d29d44fd52a2c3341b7.png"
+      ]
+    }
+  ]
+}

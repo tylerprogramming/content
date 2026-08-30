@@ -1,0 +1,22 @@
+{
+  "generations": [
+    {
+      "prompt": "Bold high-contrast thumbnail on a deep charcoal background, color #14161A. On the right, a confident man in a black t-shirt matching the face in the reference image exactly, smiling at the camera, holding a large modern smartphone up toward the viewer. The phone screen faces the camera and shows a clean bright white app inbox titled 'Needs you': a vertical stack of three white message cards, each with a small circular avatar, a short bold name line and two lines of grey placeholder text, and the top card has a prominent navy blue pill-shaped button reading 'Approve' and a smaller grey button reading 'Edit'. At the very bottom of the phone screen a clear app navigation bar with four small evenly spaced tab labels reading 'Dashboard', 'Needs you', 'Members' and 'Posts', with a small red circular badge showing '12' above the 'Needs you' tab. An open MacBook Pro and a tablet float below and left of the phone, showing a bright white analytics dashboard with a large bold navy '4,182 members' and a rising line chart. On the left, very large bold white text reading 'Attend', and beneath it four short white text lines each preceded by a small vermilion dot, reading exactly: 'Every DM answered', 'Every quiet member spotted', 'Every cancel caught early', 'You approve every send'. Punchy, modern, cinematic rim lighting. Absolutely no neon signage, no robots, no gibberish text, all text must be real and correctly spelled.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tyler.png"
+      ],
+      "generated_at": "2026-08-17T16:06:45.427776",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_9b3686a73586e28257207de019793fbb.png",
+        "https://tempfile.aiquickdraw.com/workers/images/image_101108da22830e8c34115112bd4f9793.png"
+      ]
+    }
+  ]
+}

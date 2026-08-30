@@ -1,3 +1,5 @@
+> ⚠️ SUPERSEDED (2026-08-13): the LOCKED intro is in `script.md` now - the shorter, result-first Sabrina-structure intro (ONE tool = Blotato, NO email/Resend, 8 platforms). The hooks below are older versions (they mention email + "seven platforms") - reference only.
+
 # Hooks - I Automated Publishing My Content With Claude Code
 
 Cold-open rule for this video: proof of RESULT in sentence one - "I didn't publish this video, Claude did." Then the negative contrast (all the apps he didn't open), then name the pain (the posting grind), then the promise, then the free doc. Every variant is 10-20 seconds, fast, no throat-clearing, no "hey what's up guys." Payoff first.

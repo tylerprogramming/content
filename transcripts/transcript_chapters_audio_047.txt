@@ -1,0 +1,1167 @@
+[00:00] This is Claude running on my real account.
+[00:02] This morning it read my email.
+[00:03] It found the one thread that actually mattered, wrote it up as a doc,
+[00:07] filed it in my drive and paste the summary to my team in Slack.
+[00:11] There are six apps and I never touched one of them.
+[00:14] And the one thing everybody gets stuck on, well, it's not the AI.
+[00:17] It's letting it into your real account without doing something reckless with
+[00:21] your passwords. That's the wall. So by the end of this,
+[00:24] you'll have a real Claude agents running on your email, your calendar,
+[00:27] your tasks and even one running on a server every morning while you sleep.
+[00:32] There's no stored passwords,
+[00:34] there's no tokens in the file and you don't need to be an engineer for any of
+[00:38] this.
+[00:39] I spent my last eight years as a software engineer building these integrations
+[00:43] at IBM chase and now Pfizer. So trust me, these used to be the hard parts.
+[00:48] I'll show you what actually works now. So here's the plan.
+[00:50] We're going to connect your apps, build the agents,
+[00:53] then the one that runs while you sleep. Let's build. All right.
+[00:56] So getting started, we are at arcade.dev.
+[00:59] So once you go here at the top right or in the middle,
+[01:01] you can go ahead and sign up if you haven't already. It's free.
+[01:03] Just use your Google, uh, Google sign in. And then once you do that,
+[01:07] you will be greeted with the arcade dashboard that we are about to see.
+[01:12] So we have a lot going on here, but the first,
+[01:15] first thing is we're going to just go and create a gateway so you can see it in
+[01:18] action and then kind of explain some things. So on the left hand side here,
+[01:21] we see an MCP gateway. Now, again, a gateway is,
+[01:25] all it is is just a collection of servers,
+[01:28] which are just a collection of tools such as getting your emails or getting
+[01:33] your calendar events, whatever that may be.
+[01:35] You're getting your tasks from ClickUp or linear or something like that.
+[01:38] It's just a collection of things you would like it to do.
+[01:41] So what we're going to do at the top right is click create MCP gateway.
+[01:45] Now we're going to give us a name, right? So we want this,
+[01:47] I want this to be something simple.
+[01:48] So I just want to gather the tasks that I have through ClickUp.
+[01:51] So this is going to be my ClickUp assistant.
+[01:54] And then now I'm here on number two for selecting the apps.
+[01:57] We need to search for these tools or MCP servers.
+[02:01] So I'm going to type in ClickUp or just click. And you can see here,
+[02:04] right here, ClickUp. You can come in here by clicking the tools.
+[02:08] You can see all the tools. So create a task just like you would.
+[02:12] If you went to the website, you can create comments for that task.
+[02:15] You can retrieve all of them, et cetera, right?
+[02:18] So we're going to then click the back button here in the middle.
+[02:20] So it says back to MCP servers, just check mark this.
+[02:23] And then now you see you have a selected panel.
+[02:26] So these are all of the tools for ClickUp. You could,
+[02:29] if you want to go into here and then uncheck.
+[02:31] So you only have like a specific set of skills or a specific set of
+[02:36] tools that you want to use, but we're just going to leave it as that is for now.
+[02:40] So then on number three at the bottom here, you just want to do,
+[02:44] just choose members for this project and they just sign in with their arcade
+[02:48] account. So then all we do is click, create MCP gateway, click it.
+[02:52] And now we have ways to connect to this. So depending on what you use,
+[02:56] if you use VS code cursor, if you use the cloud desktop app, which we will,
+[03:00] I will show you how to do that or use cloud code codex or just straight MCP URL,
+[03:05] which we will show later in this video, we're just going to do cloud code for now,
+[03:09] but whatever one you want to choose now, yes, this shows the service information.
+[03:14] I will be removing this so that by the end,
+[03:16] but I'm going to go and copy this.
+[03:19] Now I'm going to go into cloud code to add this and then we can test it.
+[03:25] Okay. So here I am in my terminal. I'm just going to paste. I just copied.
+[03:29] So this is just me pasting it. I'm going to press enter.
+[03:31] And you can see it says added HTTP MCP server,
+[03:35] click up assistant because that's what we named it. Okay.
+[03:38] Now I'm just going to type in cloud, let this. Okay.
+[03:40] So now we have this opened up. I'm going to switch to auto mode. Just again,
+[03:44] this shift tab down at the bottom left, you can see,
+[03:47] and then I'm going to type slash MCP. Okay. And what this is going to do,
+[03:50] this is an MCP gateway of for a collection of servers.
+[03:54] So now you can see I have click up assistant right here.
+[03:56] So it says it needs authentication. So I'm going to press enter. Now it's,
+[04:01] I just need to basically authenticate. It's going to do that.
+[04:04] It's going to open up a new window.
+[04:06] This is now going to go to arcade.dev to actually authenticate this,
+[04:09] make sure it's me. So now you can see here, this is the click of assistant.
+[04:13] We want to allow permission for cloud code.
+[04:16] So now it says it's connected and the connect and the authentication is
+[04:18] successful. We're going to go back. Sorry.
+[04:21] We're going to go back to our terminal.
+[04:23] Now you can see it says authentication is successful.
+[04:26] Now we can begin using this. So let's, first thing is I,
+[04:30] let's test this for my click up assistant.
+[04:33] Can you get me all my in progress tasks?
+[04:38] So I know I specifically had to say for my click up assistant assistant,
+[04:42] because I have multiple things through, you know,
+[04:45] demoing connected to click up.
+[04:46] So just I want to use this specific one that we just created and it's going to
+[04:49] call the click up assistant. Okay.
+[04:52] It's going to essentially call the tools associated to getting my
+[04:56] progress or my task that are in progress.
+[04:59] So it's calling it two times,
+[05:00] meaning that it's calling two different tools to gather everything. And it did,
+[05:04] right? So 11 tasks in progress across my workspace.
+[05:07] So my YouTube workspace in click up and I have a social CRM one,
+[05:12] right? So these are all of my in progress.
+[05:14] So here's just kind of some videos and where things are currently in
+[05:18] progress. And these are just some things.
+[05:22] This is my social CRM that I'm working on and just where I'm at. And this is
+[05:26] great. This is exactly what I want now, just to kind of give a little bit,
+[05:31] what else it can do, right? These are,
+[05:33] you can do whatever the tools for that server.
+[05:36] So click up. If we go back, let's just go back here.
+[05:41] Our click of assistant. Now you see it's a part of our MCP gateway.
+[05:44] You can click this little pencil icon to edit MCP gateway. And again,
+[05:48] these tools, right? These are all the tools that were available.
+[05:52] So you basically a lot of get a lot of getting information from your,
+[05:57] from your ClickUp account, but let's create a comment. Okay. So I'm back here.
+[06:01] Let's just do for actually this right here is a video that this is a part of.
+[06:06] So can you add a comment to zero four seven arcade that I am working on module
+[06:16] two right now? Okay.
+[06:18] So because this knows we're in this context of of the workspace for ClickUp,
+[06:24] it's should now post a comment here in this specific in that specific task.
+[06:31] So it did. So it says, it says comment added,
+[06:33] but now let's just make sure that it's actually there.
+[06:35] And what's kind of funny is I still have to,
+[06:36] I have to log in because I really don't go into the actual app as much anymore.
+[06:41] Now with MCP servers.
+[06:42] So if we come in here and this is, these are all of my in progress.
+[06:46] So this is the full hour course, right? This is,
+[06:49] now let's look for comments and right here just now working on module tool
+[06:55] module two right now. So it worked.
+[06:57] I was able to basically connect the MCP server to something that I wanted and it
+[07:02] worked right away. This is,
+[07:04] this is just how easy it is to connect something with an MCP gateway through
+[07:09] arcade data and allow you to do this. Now what's great is, you know,
+[07:13] this is, this is also always going to be off. I'm never going to see it,
+[07:17] which is great. And if I allowed people to come into this, that could use this,
+[07:21] they would also have to, you know, sign in as well,
+[07:24] but only for people that I want access to this.
+[07:27] Now let's go ahead and see what the same thing I use cloud code,
+[07:31] but what if we want to use the cloud app? Well, here's what we do.
+[07:34] You see right here, back at arcade.dev we're on our,
+[07:37] on this kind of the main page. Uh, now we're in MCP gateways.
+[07:40] Now to edit this or find another connection you see here,
+[07:44] there's a connect button client to my ClickUp assistant.
+[07:47] So I'm gonna choose connect. I want to use cloud desktop.
+[07:51] So it's going to tell me,
+[07:52] go to settings connectors and add custom connector and paste the URL below.
+[07:56] So I'm going to copy this URL. I'm going to now open up the cloud app.
+[08:00] And just to kind of follow me, it says, go to settings,
+[08:02] then connectors add custom connector. Uh,
+[08:05] so if we come down here to the bottom left, we're gonna go to settings and see,
+[08:09] add connectors. Now up here at the top, right,
+[08:12] there's an add custom connector. So name,
+[08:16] I'm just gonna call this ClickUp assistant. It says remotes MCP server URL.
+[08:20] It's going to basically paste in what we got.
+[08:23] You don't need to worry about the, uh, the advanced settings that those are
+[08:26] optional. Then we're going to click add. Now it's checking the connected,
+[08:29] checking the connection. Now we need to connect.
+[08:31] So I'm going to go ahead and click connect.
+[08:33] Now it's going to go back here to arcade, arcade deb,
+[08:36] because this is a separate application that has to have that connection.
+[08:40] So now it's authorizing, authorizing access. Again,
+[08:43] I want to click allow and then this will let us go back. Okay.
+[08:46] So now we can go back here. Now it is approved. Okay.
+[08:51] So the, the app kind of makes it look a little nicer, right?
+[08:55] So there's a total of 25 tools,
+[08:59] but the 19 are read only and then six are right. So create task, comment,
+[09:04] comment, reply, update task. Right? So while we're here, let's go ahead and do this.
+[09:08] Let's update the task. So instead of in progress,
+[09:12] we could say let's, and now while we're here now,
+[09:16] what you don't need to look at also can do here is all these are set to need
+[09:20] approval. So create task needs approval.
+[09:22] I don't want to like really have to approve everything.
+[09:25] So I'm going to say create task, comment, create task, comment, reply. Okay.
+[09:30] So what I'm going to do is reply to the comment that we just made in cloud code,
+[09:34] but do it here in the cloud app. So I'm going to have a, I'm going to go to home.
+[09:39] Okay. And basically I'm gonna say, can you, can you reply? All right.
+[09:43] So now I'm just going to be in a new chat where I'm gonna say,
+[09:45] can you reply to my comment?
+[09:46] I just made 10 minutes ago for zero four seven that the cloud app was successful.
+[09:51] I know there's spelling mistakes and grammar mistakes in this, but yeah,
+[09:53] I don't care. So I'm going to go ahead and send this.
+[09:57] And what's going to do is it's,
+[10:00] it's just going to determine that it's going to need to go use the click up
+[10:05] assistant and all that. And that's actually what it's doing right now.
+[10:07] Saying it's using who am I to figure out to me,
+[10:11] fuzzy search tasks by name. So, cause I didn't give it specific task.
+[10:15] It's going to probably look for like do some searches.
+[10:18] Like it's probably going to end up doing zero four seven, find it. Yeah,
+[10:21] here it is. The task is here's the actual serial, the ID for it.
+[10:24] Then here's the title that we would see. So it says,
+[10:27] let me find your recent comment, found the comment for just a few minutes ago,
+[10:31] working on module two right now. So it's going to go and reply to it. Done.
+[10:34] It replied. Cloud app was successful to the most recent comment. Okay.
+[10:38] So now if we just go back right here, let's just go ahead and refresh this.
+[10:44] Then we can see, Oh, there's a reply right here.
+[10:46] And cloud app was successful.
+[10:48] So that's what we just did through the cloud app.
+[10:50] So this is just one amazing thing we can do with this, right? It's,
+[10:54] if you just create MCP server or have MCP server installed to cloud code,
+[10:58] that's fine. Especially for personal use, right?
+[11:00] You can do this if you want to that way,
+[11:02] but then it's just for that application. But here we can,
+[11:06] we can use the same MCP server or the same MCP gateway that's comprised of
+[11:11] multiple tools and servers that you want to use. It can be customized.
+[11:14] It can be done anywhere. As we just showed you, we can,
+[11:17] we're going to continue further on this progress, but this was amazing.
+[11:21] And this is just simply how quickly you can get anything run. Okay.
+[11:25] So far we have been testing with arcade pre built tools.
+[11:29] Then he gives us thousands of them to choose from.
+[11:31] We really just chose one MCP server with 24 tools that it has.
+[11:35] But what if you want to do something for your specific tools or custom tools
+[11:40] that you want to use? Maybe something that's for your own specific product.
+[11:45] Well, this is when you would build your own MCP server. And again,
+[11:48] when you build your own, you can use it wherever you want. Okay.
+[11:51] So let's go ahead and see how we do that right now.
+[11:55] And there are just a few commands that we're going to need to make this happen,
+[11:58] but it's okay. I will show you where to get those.
+[12:01] The first one is we're just going to install arcade MCPs MCP.
+[12:05] And again, no, I'm not like, I guess not. Okay.
+[12:09] So this is going to require some coding, but again,
+[12:11] you don't actually have to code.
+[12:12] So I'm going to do it from a point where you don't have to code and actually
+[12:16] Claude came, I had talked to Claude and it came up with this for me.
+[12:19] So I'm just going to give it these steps,
+[12:21] which is you need to first install arcade MCPs library.
+[12:26] And then we are basically going to scaffold or create a new server locally that
+[12:30] we can use. Okay. And all I'm doing here is basically,
+[12:32] I just typed this in.
+[12:33] These are like the two steps to actually create this new server locally.
+[12:36] And it's just telling me what I need to install.
+[12:40] I just asked it to do it for me basically. And now it's going to be one.
+[12:43] So here I am in antigravity. I'm going to open this folder.
+[12:46] I'm going to choose my server. That is the one that we just created.
+[12:50] And yes, trust the authors. And so what happened was,
+[12:55] this is actually the code that, uh, that we,
+[12:59] that was just created from Claude.
+[13:01] And this is essentially just a custom MCP server. This is what you see.
+[13:06] It was what you don't see on the backend that arcade.dev takes care of.
+[13:10] So this tool, see where it says tool, right?
+[13:13] Let me kind of come in a little bit. So this tool right here,
+[13:17] this is an example tool of what they're doing.
+[13:20] So whenever you're reading emails, it has all the code to actually, you know,
+[13:23] read those, get your emails and read them for you, right?
+[13:26] This is just more just seeing it more now. So this one, for instance,
+[13:30] this is just a simple greet. You, it's going to ask you for your name.
+[13:33] It's going to say, hello, whatever your name is.
+[13:35] This is, this is just going to whisper a secret,
+[13:39] just some secret message that you have.
+[13:40] And this gives you the last four characters of it back to you right here.
+[13:44] And then this tool, this is the one that we care about. This is a star repo.
+[13:47] This is one where what we're going to do a showcase of is we're going to give a
+[13:51] GitHub repository name, and it's going to come back with the amount of stars,
+[13:54] you know, kind of like popularity of that, of that specific code base.
+[13:59] I'm going to do, and all I want to do right now,
+[14:00] I'm going to show you an easier way to do all of this, right.
+[14:02] But just to show the example of how this works,
+[14:04] I'm going to basically run this MCP server on my local machine. Okay.
+[14:09] So I'm just going to run the server, this file server.py. Okay.
+[14:13] It doesn't really don't worry about any of this.
+[14:15] What I'm going to do is just take an example and then we'll find an easier way
+[14:19] to actually show this to you. Okay. I need to do that.
+[14:22] I need to do that last part over. Okay.
+[14:23] So just to show this running locally before we actually put this out to
+[14:27] arcade.dev to make it much easier for us, just to see,
+[14:31] make sure that it's working, which I always do test, test first,
+[14:34] is I want to run this on my computer. So I'm just going to,
+[14:38] I'm going to go into this folder right here, my server. I'm going to run this,
+[14:42] run the server. PY. Okay. So now it's running.
+[14:46] The next thing is I want to add this local server just on my computer
+[14:51] to cloud code so that I can then test it out. So I could come here.
+[14:55] I could just open up another terminal here within antigravity,
+[14:59] or I can go back and whatever your preference is,
+[15:02] where you want to use cloud code.
+[15:03] So Claude has told me while I was helping set this up to just copy paste this,
+[15:07] press control C twice to get out of cloud code.
+[15:10] I'm going to just paste that in there.
+[15:13] It says added standard input output MCP server with that,
+[15:17] with a specific command. I'm going to go back into Claude. Okay.
+[15:20] Now I'm going to type slash MCP like we did earlier. And as you can see,
+[15:24] my server, my underscore server, this is what's connected.
+[15:27] So if I press enter, I can say then view tools.
+[15:31] And there's a greet a stars repo and then whisper secret. Okay.
+[15:35] So what I'm going to do is if you can actually just go into each of those, right?
+[15:40] And see exactly what they do, but we're going to now try to use one of those.
+[15:44] Okay. I want to use the greet with the name,
+[15:49] Tyler that probably doesn't make sense,
+[15:51] but hopefully it figures out what that means. So it's going to find a tool.
+[15:55] So it's going to, yes, use, I forgot to do always use auto mode.
+[15:58] So it called my server greet with the name Tyler. It returned. Hello, Tyler.
+[16:04] And that's exactly what the code tells us to do for that specific tool.
+[16:08] Now, what I want to do is I want to tell it how many stars do you want?
+[16:12] So I asked how many stars does the GitHub repo arcade MCP server have using the
+[16:17] my server tool? I'm going to start, I'm going to stop that.
+[16:20] So this is now starting what we did for the greet is fine.
+[16:23] But then after that cut to this. Okay. So now the next one is,
+[16:26] I want to add a star,
+[16:28] which is the other tool to that same GitHub repo. So first off,
+[16:33] let's how many stars does our arc,
+[16:38] if I can spell right, arcade dash MCP have in GitHub.
+[16:41] So that's going to go out to find how many stars it has.
+[16:43] And then we're going to add one with our tool. Okay.
+[16:46] So searching GitHub for the arcade MCP repo should just take a minute.
+[16:50] Not even a minute. Okay. So there's a thousand and one stars. Okay, great.
+[16:53] Can you now add a star using the,
+[16:57] my server tool again, spelling, as long as you're close enough, it'll see what,
+[17:01] it'll know what you're doing. So we're going to, it should go in.
+[17:05] It should tell us that it's going to use that tool that we have locally
+[17:09] on our MCP. So it's calling my server,
+[17:12] which is the name of our local MCP server on here. It says, okay,
+[17:17] well it's saying that my service MCP server has no arcade API key
+[17:21] configured can't authorize. So this means that we now need to log in.
+[17:26] It's telling us we can just go ahead and log in.
+[17:28] So I'm just going to do what it says.
+[17:29] My exclamation point means that you can run it within cloud code.
+[17:32] So authentication successful. We're going to come back here.
+[17:34] And now I believe it's going to continue. Yeah, it's going,
+[17:38] now it's going to continue calling my server. Okay.
+[17:41] So it went ahead and started it.
+[17:42] So now it takes it from 1,001 to 1,002. That's great.
+[17:47] So what we just showed is that we can run,
+[17:50] we can create our own MCP server and you don't have to code it, right?
+[17:54] Claude is here to help you do that. And then once you do that,
+[17:58] you can run it locally on your computer and then add it to cloud code to work.
+[18:03] But what if we want to make this more of an official MCP server?
+[18:07] Because as of right now,
+[18:08] running this MCP server means that my computer has to be on in this server has
+[18:12] to be running.
+[18:12] So if my computer were to restart or that specific or I somehow for whatever
+[18:17] reason, stop that server, then it won't work anymore. No matter what I do,
+[18:20] because that server has to be running 24 seven,
+[18:22] if I want to be able to use it 24 seven. Okay.
+[18:24] So what we can do is actually publish this to arcade.dev and then add it from
+[18:30] there.
+[18:30] So it's always running on their servers and we don't have to worry about that.
+[18:33] So how do we do that? Now,
+[18:36] what I basically need to do in here is come back up to the top level and I need
+[18:40] to deploy this.
+[18:42] So I'm going to type in arcade deploy and then from the top level folder,
+[18:48] run this command. So basically I'm going to be running this server.py.
+[18:53] Once I do that, I'm already, I already logged in.
+[18:57] I don't care about the secret. This is just,
+[18:59] I'm just kind of showing you an example. So the server started it.
+[19:02] The deployment is in progress. This could take a few minutes.
+[19:05] So what's what we will see is that this will then show up on on in our arcade
+[19:11] MCP gateway. So if I come back here, I come back to the arcade dashboard,
+[19:15] right? This is the gateway. So these are all the ones that I've created.
+[19:19] These are a mix of servers. For instance, this multi-tool,
+[19:23] this has a total of six different MCP servers with a total of over a hundred
+[19:29] actual tools that I'm using. Okay.
+[19:31] But what will happen is we'll have this show up here whenever it's done locally
+[19:36] deploying to here. Okay, let's check.
+[19:39] So it's still getting logs ready. The deployment is in progress.
+[19:43] This is just running now and I'll just do one right here as well.
+[19:46] It's in progress, right?
+[19:47] It's taking logs and it's kind of just basically running a server on their,
+[19:53] so running this MCP server on their servers. Okay.
+[19:56] So it says deployment successful server is running.
+[19:58] I do not want it to deploy the full logs.
+[20:01] So now we can go back here. I'm under my MCP gateways.
+[20:05] It's going to go ahead and refresh the page and what we should see coming up
+[20:09] here. Let's see here. I'm sorry. I need to restart.
+[20:13] That part over is, I am sorry. I apologize. It's under the servers,
+[20:17] not MCP gateways. I apologize. It's under the server.
+[20:19] So this is now an arcade hosted server, right?
+[20:24] Now you see there are, we can look at the tools. So if we click this,
+[20:27] there's a greet whisper secret and star repo.
+[20:31] So these are all the tools that we created locally,
+[20:35] but now it's being hosted through, uh, through arcade.dev. Okay.
+[20:39] So now we have the server, right? Now, what do I want to do with this? Well,
+[20:43] we can edit this. We can delete the server. We can do whatever you want.
+[20:46] Let's create a gateway for these tools. So let's go to MCP gateways,
+[20:50] create MCP gateway. I'm going to say my server custom tools or know what?
+[20:56] I just want to use the one tool. So a star, a repo, that's it.
+[21:00] And then I'm going to look for my server right here.
+[21:03] My server version 1.0 go in here.
+[21:06] And I only want to have it star repo. So now back to this,
+[21:10] we have one of the three tools selected going to come down here.
+[21:13] Just members of this project. It's perfectly fine.
+[21:15] I want you now create an MCP gateway. I want to add this to cloud code.
+[21:20] Okay. So I'm going to copy this now. Now back in the cloud code,
+[21:25] I'm going to come in here. Oops. Under arcade dev.
+[21:28] I want to come in here and say, I want to exit out of that. Paste this,
+[21:31] paste that in. Now it's added an HTTP server.
+[21:35] Now I'm going to open up back quad and then I'll be able to then go to slash MCP.
+[21:40] So first off, now we see star a repo. It needs authentication.
+[21:44] So let's go in here, authenticate. It's going to open up the arcade.dev just to
+[21:49] say, Hey,
+[21:49] do you want to make sure that you allow this with your software or your
+[21:54] application? So yes, I do want to come back here. That is successful.
+[21:57] I do want to disable. So if you type slash MCP,
+[22:01] the one that we had locally, it says connected, but it just hasn't re we haven't
+[22:05] reef. Like it's not actually connected. Right? So I want to disable this.
+[22:08] So now that's disabled. Okay. So I want to press escape,
+[22:12] come back here and can you star a repo for me?
+[22:17] Let's look for one real quick. Here's a repo on diagram design.
+[22:21] I found a 6,100 stars. I might even like make like a short on this or something,
+[22:25] but it looks like it's basically a bunch of designs for Claude for different
+[22:27] types of things that you may want to explain essentially.
+[22:31] So I'm going to say copy this GitHub URL,
+[22:35] this one and just paste this in. So I'm going to ask you,
+[22:39] can you start a repo for me?
+[22:40] And it's going to load the star tool schema first.
+[22:44] So it's calling star a repo.
+[22:46] This is our MCP gateway that we created inside of arcade.dev that has
+[22:51] one tool for an MCP server that we created and uploaded.
+[22:56] So now it's going to find this one.
+[22:57] It's just making sure that I'm logged into GitHub, which I am. So, uh, well,
+[23:01] I believe I am. The arcade GitHub connection isn't authorized to star.
+[23:05] Your local dates is logged in. Okay. So one head. Okay. So it started,
+[23:09] but not through, Oh, because it's get up to them.
+[23:13] Like we relaxed the scope needed to start. Okay. I need to,
+[23:16] I need to reauthorize my arcade GitHub connection with public repo scope.
+[23:20] It's good to know where you're going to go through this error together.
+[23:23] So all I've done is I've added GitHub to my MCP gateway.
+[23:27] I'm not going to save the changes. Okay.
+[23:29] So now we have GitHub and my custom server.
+[23:32] I'm going to come back back here. So type slash MCP.
+[23:36] I want to now, because we've done that. See,
+[23:39] it does say there are two tools now, basically two MCP servers.
+[23:43] I just want to reauthenticate just so that we can restart and use this.
+[23:47] Now we're going to find another GitHub repo.
+[23:50] So I'm going to allow that connection.
+[23:53] Here's one about agent skills. So I'm going to come back in here. Say, okay,
+[23:58] now star this one. So what's this going to do? It's going to call,
+[24:02] it's going to use our star, our repo tool,
+[24:05] find this and then star it for us. Okay.
+[24:08] And that is exactly how you can create something more custom,
+[24:12] which we'll do later on in this course.
+[24:14] But this is just to show you an example of that. Okay.
+[24:17] So now we create something that you can create your own tools for upload to
+[24:21] arcade.dev, which is now an MCP server.
+[24:24] Then you create an MCP gateway that uses those tools from that server to do
+[24:29] whatever you want. And now it's running 24 seven. Okay. And that's great.
+[24:32] And you get the authentication part of that as well,
+[24:33] that you don't have to worry about, which is something that's so far,
+[24:37] everything's been inside of cloud,
+[24:39] but you're not always going to build your AI agents in cloud.
+[24:42] And a lot of times people will write their own code using frameworks like
+[24:46] link chain or crew AI. So then the question is,
+[24:48] can we give those agents the same tools just like let,
+[24:52] just like we have been doing? And well, the answer is yes.
+[24:55] I'm going to save you a lot of time and show you how to do that right now.
+[24:58] And the first thing we're gonna do is we're actually going to use lane chain.
+[25:01] Now this has been around for a few years and I started,
+[25:04] I started using this in 2024, but I didn't,
+[25:06] wasn't particularly fond of it because in that version,
+[25:10] the documentation and how they were saying the libraries,
+[25:13] it's not really a big deal, but it constantly changed.
+[25:15] So everything kept breaking.
+[25:17] They have since updated and everything feels a lot smoother now.
+[25:22] So in order to understand how we're going to do this through a coding framework,
+[25:26] we just need to understand arcade, the arcade.dev a little bit more.
+[25:31] So just going back to their dashboard, right?
+[25:33] This dashboard is just showing you stuff about you, right? What you've been,
+[25:36] how you've been using it. So there are a total of 8,100 tools,
+[25:41] a lot of tools to use from arcade.dev. We have three servers,
+[25:44] three MCP servers, and we have nine secrets,
+[25:47] which you can store secrets in here.
+[25:48] So there's a playground here where you can just kind of chat. You can,
+[25:53] you can execute a specific tool if you would like,
+[25:57] but you can just chat and like have it, you know,
+[25:59] do things for like your email, Slack messages.
+[26:02] You can publish a new post on LinkedIn, et cetera. Okay.
+[26:06] So then we can go to your projects. So I have one project or this,
+[26:10] I'm sorry, this is, I have one active project. And in that project,
+[26:14] I only have one member. So if you want to be a part of my project,
+[26:16] I could add you in here as well.
+[26:18] Then you would have access to things or any MCP servers or gateways that I
+[26:22] give to that project. That'll be under that project.
+[26:26] So then we have a tool catalog. This is basically all of the tools.
+[26:29] I said there's 8,140 of them total, all the tools you can kind of search through
+[26:33] here, right? So here's Airtable. So I can search Airtable, right?
+[26:37] And this is going to have a lot of tools. Airtable has quite a few tools, right?
+[26:41] I don't know exactly how many here, but there are a lot.
+[26:44] There's actually a total of 10 pages. So what?
+[26:46] At least a hundred or almost a hundred,
+[26:48] almost a hundred tools in here just for Airtable.
+[26:50] So you can kind of see if you have something specific for you.
+[26:53] You can see it's a Microsoft to see what tools they have for Microsoft
+[26:57] applications. So there's Datadog, right? There there's a lot, there's a lot.
+[27:01] Excel, there's OneDrive, right?
+[27:05] There's just so many Outlook calendar, Outlook mail, et cetera.
+[27:08] This is a great way to figure out what works best for you and how you're going
+[27:11] to use it. So then of course, what we've already done, MCP gateways,
+[27:14] gateway again is a collection of tools or server MCP
+[27:19] servers for you to use.
+[27:21] Then you just have this URL and it's easy to insert into any IDE,
+[27:27] Claude code, Codex, chat, GPT, et cetera, wherever you want to use it,
+[27:31] you can use it. And this makes it very simple. Then we have user resources.
+[27:35] This allows you to bring your own identity provider.
+[27:38] I'm not really going to get into that in this course.
+[27:41] That's a little bit more than what we need to worry about today.
+[27:44] But if you are curious, please let me know in the comments. Now the servers,
+[27:48] these are the MCP servers.
+[27:50] So this is the one that we had just created and now it's being hosted by
+[27:55] arcade.dev. Okay. That means that we created it,
+[27:58] we published it or deployed it to arcade.dev and now they,
+[28:03] now it's running there and we can use it wherever we want. Now for secrets,
+[28:06] you can create your own secrets and they,
+[28:07] these can be used as part of your MCP servers or within code that we're going to
+[28:12] see. So connections, right? So these are like,
+[28:16] these are connections that I have already like pre kind of pre authorized before.
+[28:20] So then when we go to use this again,
+[28:23] I don't need to authorize into this specific app because for any new app that
+[28:27] you haven't used before. So for instance, like Calendly, if you've never done it,
+[28:31] it's going to ask you to authorize you to log into your Calendly specific
+[28:35] account, not just arcade.dev for the first time. So connected users, you know,
+[28:40] these are just various emails and different, you know, the,
+[28:44] the provider that I've used to actually create that connection.
+[28:48] So here's my ClickUp connection, Google, Reddit, et cetera.
+[28:52] User verification, this just some verification,
+[28:56] the end users whenever you're invited to like my project and you must be signed
+[29:01] into arcade.dev to authorize it. Right.
+[29:03] And then we have contextual access.
+[29:06] We're not really going to get too much of this, but much into this,
+[29:10] but this is the pipeline for how tools work because there is a process behind the
+[29:13] scenes. They just make it seem very easy,
+[29:15] but there's a process on how everything works. Okay. And then just,
+[29:18] these are just, this is just logging. You know,
+[29:20] I deleted a couple of systems for a previous, for another video,
+[29:23] and then billing and documentation. And then finally,
+[29:26] you do need an arcade dev API key. Okay.
+[29:30] So this course demo is the one that I created for this video.
+[29:34] And what that did is just gave me an API key that I need to use for what I want
+[29:39] to code these AI agents and we needed it for the actual MCP server as well.
+[29:45] Okay. So now let's go ahead and look at the code. And again,
+[29:48] you will have access to all of this, but first we have an email agent.
+[29:53] Okay. So basically what this is going to do, right. And if you're,
+[29:56] if you're curious, of course I.
+[30:00] really code all this anymore, I had AI help me.
+[30:02] It looked through documentation for a link chain
+[30:05] and then all of Arcade's documentation and built this
+[30:07] and we're gonna see if it works.
+[30:09] But the idea with this is, we can give it specific tools
+[30:13] or a whole kit of tools.
+[30:15] So essentially an MCP server.
+[30:17] Kit, MCP server, interchangeable.
+[30:19] So tools, what it's gonna do is it's gonna be able
+[30:21] to list emails, it's gonna be able to send an email
+[30:23] and then just ask, get information about me.
+[30:26] And this is just a helpful assistant that uses Gmail tools
+[30:29] and these are all just functions that connect to Arcade.
+[30:32] Some of them are specific for link chain.
+[30:35] But this is just basically to make all of this run.
+[30:38] Okay, I'm not gonna really get into the weeds of this code.
+[30:40] Okay, but you do need an Arcade API key
+[30:43] and you also need an Open API key or Anthropic API key,
+[30:47] whatever provider you wanna use.
+[30:49] But, and that would be three, two, one.
+[30:51] Okay, so in here for the, this is where I would paste
+[30:53] my Arcade API key.
+[30:54] This is the LLM provider, the Open API key,
+[30:57] the OpenAI model, Anthropic key.
+[30:59] If you wanted to use one, Arcade user ID, et cetera.
+[31:02] You would just place this with your email.
+[31:04] But yeah, these are the places that you would store
+[31:07] those specific things.
+[31:08] So now, I already have that.
+[31:09] So what I'm gonna just do is I'm here inside Arcade course.
+[31:13] I'm just gonna say uv run and then 03 link chain
+[31:16] and then just run the email agent first.
+[31:19] So what it's gonna do is just, it should just ask me.
+[31:21] So it's ready with three tools.
+[31:22] So I'm just gonna say what are the last three unread emails?
+[31:27] So then it's going to call the Gmail list emails.
+[31:32] It did that already, right?
+[31:33] And then here are the last three unread emails.
+[31:37] And I say how many total emails do I have
+[31:41] from last 24 hours?
+[31:43] Okay, and so now it's gonna call the same thing,
+[31:45] list emails, and this is gonna give me a number here
+[31:48] of the total emails I've gotten in the last 24 hours.
+[31:52] Okay, so this is just an example.
+[31:53] It finally finished.
+[31:55] And it says you have about 30 emails
+[31:58] from the last 24 hours.
+[31:59] Okay, great.
+[32:00] Remember, I'm gonna stop this local agent.
+[32:03] That's great.
+[32:04] But again, you can make these more complicated.
+[32:07] So over here, I also have an email Slack agent.
+[32:10] So instead here, the big difference is for MCP servers,
+[32:13] I gave it the whole Slack MCP server.
+[32:16] So everything related to Slack,
+[32:19] it's gonna have access to now, okay?
+[32:21] So I'm gonna clear this and essentially what I'm gonna do
+[32:24] is in email Slack, I'm gonna do the same thing.
+[32:26] I'm just going to uv run 03
+[32:29] and then do the email Slack agent.
+[32:32] Okay, so can you summarize all emails
+[32:36] from the last 24 hours and send a message in Slack
+[32:42] to the hashtag AI channel?
+[32:44] So now what it's gonna do is gonna,
+[32:46] first off, it's going to call again,
+[32:48] list, get all the emails.
+[32:50] So it's gonna get all the emails
+[32:51] and it's gonna summarize them.
+[32:53] And then it's going to come up with a message.
+[32:55] So here's Slack, it's just getting the data I need.
+[32:58] So send the Slack message, done.
+[33:01] Okay, so it already did it.
+[33:02] So let's go ahead and check in Slack
+[33:04] just to make sure we got it.
+[33:06] So I'm gonna go to Slack, go into my workspace.
+[33:09] I want to stay in the web.
+[33:11] Please, when this is done, use Slack in the browser.
+[33:14] And here we go in the AI channel.
+[33:17] Yeah, here's quick summary from the last 24 hours.
+[33:19] Great, that worked.
+[33:20] That's exactly what I wanted to know.
+[33:23] And again, with Lanchain specific agents,
+[33:26] these are amazing.
+[33:27] And the things that we'll show you later
+[33:29] is you can set this to run on a schedule 24 seven.
+[33:34] So that's constantly checking for your emails,
+[33:36] getting up, giving you updates.
+[33:37] It can check for specific things on your emails.
+[33:40] You can look for like sponsorships.
+[33:43] If you're looking for specific replies from people,
+[33:46] if it's something based on your work, your team, et cetera,
+[33:49] it can go in and do that.
+[33:50] You can have a check every minute even.
+[33:53] And then as soon as it flags one,
+[33:54] it's gonna send you a message in Slack.
+[33:55] There's just so many possibilities you can do with this.
+[33:58] And you're not tied to cloud code.
+[34:00] You can create agents however you want.
+[34:03] Everything is a tool.
+[34:05] You figure out the one that's best for you
+[34:06] and the one that you want to use.
+[34:07] But Arcade.dev makes that so much simpler.
+[34:10] Now in that same vein,
+[34:12] this I'm gonna use another framework just to show you.
+[34:15] You can use anywhere.
+[34:16] This is Crew AI.
+[34:17] This is actually has my most popular video
+[34:20] for whenever I gave a full two and a half hour course
+[34:22] on how to use this and how to code and develop AI agents.
+[34:25] I'm gonna go back to this
+[34:26] and I'm gonna show you how to do it as well.
+[34:28] This, it's been a little while since I've come back to them,
+[34:31] but they're amazing.
+[34:34] And this is updated and I love how this actually looks.
+[34:36] I love how the website looks now.
+[34:38] But in the same way,
+[34:40] this is another framework that you can use.
+[34:43] You can look up the Crew AI documentation right here.
+[34:47] So oops, that was, it went to link chain.
+[34:50] So you can go to, if I can get the correct one,
+[34:53] Crew AI documentation, sponsors.
+[34:56] You come in here and you can just figure out
+[34:58] how to install everything.
+[34:59] I'm just gonna show you what you need to do.
+[35:02] I'll have all that ready for you and they read me.
+[35:04] But this is the same way.
+[35:06] They actually have guides on how to develop
+[35:09] for specific things, right?
+[35:11] This is how you can,
+[35:13] they even have skills for Crew AI, et cetera.
+[35:15] Let's go ahead and let's go into how I developed this.
+[35:20] So go into antigravity here,
+[35:21] have another section for Crew AI.
+[35:23] So I'm going to exit out of the previous one we did.
+[35:26] I'm going to clear that.
+[35:27] And now I'm just going to UV run 04
+[35:30] and then main Python file.
+[35:32] So now we're in the Crew AI section of this.
+[35:35] It's instead what you see here,
+[35:37] I don't have it kind of doing something specific
+[35:38] as I wanted to get emails and then give me insight.
+[35:42] Okay, so let's just look at the Crew AI code really quick.
+[35:45] So before, by the way,
+[35:46] there used to be with Arcade,
+[35:49] there used to be specific libraries.
+[35:51] Not, don't do that anymore, okay?
+[35:54] The idea, especially with LangChain and Crew AI
+[35:55] is just to build, install Crew AI,
+[35:58] LangChain separately, install the Arcade SDK,
+[36:00] and then just build around that, okay?
+[36:03] Again, Claude is here to help you with this,
+[36:04] give the documentation and they can help you build it, right?
+[36:07] So here, just at the top,
+[36:08] I give you some things that you need to do,
+[36:09] but same thing, the tools,
+[36:12] it's just list emails and just who am I,
+[36:15] just to make sure I am who I am, who I'm logging into.
+[36:18] So here's just some things about Arcade
+[36:21] that we need to have from the SDK.
+[36:25] And then we're just moving down here, right?
+[36:27] This is the main file that we care about.
+[36:28] So the Crew is just an agent,
+[36:32] so it's a communication manager,
+[36:34] help them with their Gmail requests.
+[36:36] We're giving them all of the Arcade tools, right?
+[36:39] So the two that we just listed.
+[36:41] The task is I want you to look up who I am in Gmail
+[36:45] and list the subjects of those three most recent emails.
+[36:48] The expected output is my email address
+[36:50] and a bullet list of those three subject lines, okay?
+[36:54] And then here is the Crew.
+[36:55] We give it the agent, the task,
+[36:56] and we kick it off whenever we run this.
+[36:59] Okay, so I'm gonna go ahead and open this up.
+[37:01] I am going to then run Crew AI main Python file.
+[37:05] And this isn't set up to ask me a question,
+[37:08] it's just going to run it, okay?
+[37:11] So I got a sponsorship summary and then an invitation,
+[37:13] right, and my email address.
+[37:15] This is my YouTube email address.
+[37:17] And this is, I mean, that was very quick, right?
+[37:19] So imagine running, having that done every minute,
+[37:22] checking for specific things,
+[37:24] and then it's just sending that to you in Slack
+[37:26] like we mentioned before,
+[37:27] or it can actually write an email for you.
+[37:29] And that's what I mean by you can have these running,
+[37:32] even though this is a simple example,
+[37:34] you can have these running in the background 24-7
+[37:37] constantly checking for things, right?
+[37:40] I did not write this code, right?
+[37:42] I used to write this code, but now with AI it's gotten so good
+[37:44] I don't write this anymore, right?
+[37:46] And it's okay because you just give the documentation
+[37:48] and it will do whatever you need for you.
+[37:50] And this is exactly what I've had Claude do.
+[37:53] Actually, if I come back here,
+[37:55] there was actually an error
+[37:56] with the way it handled the GPT-54 mini
+[38:00] passing an empty page token.
+[38:01] Guess what?
+[38:02] I told it, it fixed it, and it verified itself, right?
+[38:04] And then I was able to run it and make sure that it worked.
+[38:07] Okay, so it has worked.
+[38:08] This is how you actually run this with crew AI.
+[38:11] These are two frameworks,
+[38:12] link chain and crew AI that I enjoy,
+[38:14] I'm crew AI more so, but yeah, here we go.
+[38:18] And this is what I wanna show you.
+[38:19] And next we're going to get how to create a scheduled agent
+[38:22] that I have been in three, two, one.
+[38:24] Everything so far ran when we run it,
+[38:27] but a real agent that's working for you
+[38:30] doesn't need your input to do something.
+[38:33] So we're gonna build another agent
+[38:35] and then we're gonna show you it working,
+[38:37] what it can do,
+[38:38] and then we're gonna actually have it run on a schedule
+[38:41] so that we aren't actually a part of the process.
+[38:44] We build it, we let it run.
+[38:46] And then with these AI agents, right,
+[38:48] it's not that you set it once and never look at it.
+[38:50] You get the output from it, right?
+[38:51] And then you can always improve it,
+[38:52] but I'm gonna show you how you can do that
+[38:55] in a couple of different ways.
+[38:56] And then in this first one,
+[38:57] it's going to be a morning to-do list.
+[38:59] So it's gonna look at my click up, my email,
+[39:02] so my task and my calendar,
+[39:04] and see what I need to do for the rest of the day.
+[39:07] And don't worry, we will end up doing something again
+[39:11] where you can add this,
+[39:12] you can even do this with co-work,
+[39:14] create a routine with Claude,
+[39:15] and I'll show you how to do more with Claude
+[39:18] with these agents, okay?
+[39:20] So here we are in this morning agent planner.
+[39:22] All this is gonna do, let's just see,
+[39:24] every morning, we're gonna read today's task
+[39:27] and the Google Calendar and ask Claude
+[39:29] to time block the day around the meetings and work hours,
+[39:31] okay, that's all this is essentially doing.
+[39:34] We're not gonna get into the code or anything like that.
+[39:36] This is what it's doing, it's getting specific tools
+[39:39] from Rk.dev, meaning I have my API key
+[39:42] that we'd already gotten before earlier in this course,
+[39:44] and I'm essentially going to start running this.
+[39:46] I'm gonna say uv run, just to do a little test,
+[39:49] and then we're going to do 05,
+[39:51] go into scheduled agent, and then the morning planner.
+[39:53] So I'm gonna run this first just to simply test it out,
+[39:56] and then I'll show you how we can schedule this for later.
+[39:59] Okay, so there's nothing in my morning planner,
+[40:01] dry run with nothing written,
+[40:03] okay, so now I need to rerun apply with create blocks, okay.
+[40:06] So now I'm gonna do this again and type dash dash apply,
+[40:10] whoops, if I can spell apply, A-P-P-L-Y, right?
+[40:14] So the dry run, we know that it actually does something.
+[40:18] Okay, let's do this again, oops.
+[40:21] I'm gonna set that part up
+[40:22] where I started running the terminal test.
+[40:24] So the first thing is we are going to run this again,
+[40:26] so we're gonna say, or just start running it,
+[40:28] uv run, and then go into here for scheduled agent,
+[40:32] morning planner, I'm just gonna do a simple dry run,
+[40:36] it's just to make sure that it runs
+[40:37] and that this is working, okay, great.
+[40:40] So now I also wanted to do discover,
+[40:43] because what this does is it's gonna show you
+[40:45] actually the actual tools that we have attached to this.
+[40:47] So here's ClickUp tools, so it's basically,
+[40:50] it's probably all of the ClickUp tools,
+[40:51] and Google Calendar, this is some of them
+[40:53] basically creating, deleting events,
+[40:55] listing calendar events, et cetera.
+[40:57] Okay, and so now what I'm gonna do is
+[41:03] I'm gonna act as if the agent is actually going to
+[41:05] create a block around things that I have to do today.
+[41:08] So it's going to get my ClickUp task,
+[41:11] anything I have to do today, it's going to get anything
+[41:13] that I need from Calendar, and then it's going to tell,
+[41:17] it's going to come up with an idea
+[41:19] of a block that I need to do.
+[41:20] So the morning plan was to finish editing this video
+[41:25] from 9 a.m. to 2.15 p.m.
+[41:29] That's when I need to finish editing this video,
+[41:32] even though I have more on my calendar,
+[41:34] this is just based on some information about me,
+[41:37] this is what I wanted it to do.
+[41:38] Okay, of course I can't actually do this in the morning
+[41:41] because of work, but this is just to show you
+[41:45] how you can do this.
+[41:46] And just to kind of show you what it would look like here,
+[41:48] it blocked off on my calendar,
+[41:50] and anything with a plan is what it said to kind of,
+[41:53] those are the times I should block off.
+[41:55] So in the morning, and then also finish later in the day.
+[41:58] And then these client calls,
+[42:00] the timestamps and everything.
+[42:02] So this is an idea, this is not what I'm doing today,
+[42:04] this is an idea of how it could create it for you.
+[42:08] Okay, so like I mentioned, we want this to run
+[42:10] at specific times during the, probably every morning,
+[42:14] so early in the morning, so then I can see
+[42:16] that by the time I wake up on my calendar,
+[42:19] times I should have blocked off to do things.
+[42:21] So how to schedule this is.
+[42:23] First off, you're gonna use something called crontabs.
+[42:26] I'm not gonna show you the actual code to do that.
+[42:29] Instead, to make it easier for everybody,
+[42:31] I'm just gonna open up Cloud and say,
+[42:33] can you schedule the morning planner.py
+[42:37] with apply on it every morning at 6 a.m. on my computer?
+[42:44] Okay, so it's gonna do some variation of this, right?
+[42:47] But it's basically going to, whoops,
+[42:49] going to allow, allow for everything on here.
+[42:53] Don't, the allow part, just wanna get rid of.
+[42:55] But now I put auto mode on, don't even need to say that.
+[42:58] Okay, so what this is going to do
+[42:59] is it's gonna set this up for me.
+[43:01] Like I said, it's gonna do something with cron,
+[43:02] so it's a cron job, and now I won't need to worry about this
+[43:06] as long as my computer is on, it will then,
+[43:09] every morning at like 6 a.m., execute what we just did,
+[43:14] where it'll block off a part of my calendar,
+[43:16] and then when I wake up, I can view my calendar
+[43:18] and see what it's telling me I should do for that day.
+[43:21] And then every time, you can give it some knowledge
+[43:25] of when you work, your kids, et cetera,
+[43:28] what do you do, do you have events going on,
+[43:30] whatever that is, and then it can help go around that.
+[43:33] Okay, so just a couple things to note,
+[43:34] if my Mac is asleep at 6 a.m.,
+[43:36] it will run the job when I basically wake it up.
+[43:40] So you can do that by just not letting it power off
+[43:42] whenever, not having the screen saver, et cetera,
+[43:44] it just doesn't go to sleep, that's one way to fix that,
+[43:47] or just whenever you wake up, it'll then run it.
+[43:50] But this will work, and so now every morning at 6 a.m.,
+[43:54] as long as my computer's not asleep, it's going to run.
+[43:56] And if you were curious, there will be a deploy readme
+[44:00] that shows you exactly how this is
+[44:02] how you would schedule with Cron.
+[44:05] But however you do it, this is a way to set this up
+[44:10] so that now every day, on your computer,
+[44:12] you have something running for you,
+[44:14] you have an actual agent running in the background.
+[44:17] Okay, so I have a small module here
+[44:20] that I just want to go over with you
+[44:21] for just a couple minutes.
+[44:22] Now, the thing about having a schedule agent
+[44:25] on your local machine is that if it's asleep
+[44:27] or it's powered off, then you have to restart it.
+[44:29] There's ways around that, right?
+[44:31] But the more I talk about it and the more I explain
+[44:34] the things that you can do to make it work,
+[44:36] just having it on your local computer,
+[44:37] and that's, it's fine, that works,
+[44:39] but the problem is you maybe just want this
+[44:43] running somewhere in the cloud 24-7
+[44:48] and it's constantly doing things for you.
+[44:51] You can update it through code as well,
+[44:54] so you can update it on that VPS
+[44:56] and then it's just running, right?
+[44:58] It's just so much less effort to just have it running
+[45:02] and paying for something on the cloud.
+[45:03] So, one way you can do that is you can go to hostinger.com,
+[45:07] you can create, you can get a VPS,
+[45:11] so let's just say we're gonna do a KVM VPS,
+[45:15] and you can pay for it, it's like $7, $8 a month,
+[45:18] get something for best latency,
+[45:19] so I'll get the United States one,
+[45:21] and then once I create that, do the same process, right?
+[45:24] So, here I have one, I would go into here,
+[45:27] I would open up a terminal, which you can use
+[45:29] Cloud Code for, so I can just start it,
+[45:33] I can tell it what I want, it can create the code
+[45:35] for you here, you can set up your GitHub repository here,
+[45:39] anything you want to, I'm now in a VPS,
+[45:42] meaning I'm on an online server, I can ask it to do things,
+[45:46] and I can then schedule an agent for me
+[45:51] based on Lang chain or slash loop or slash schedule,
+[45:56] whatever you wanna do, it doesn't matter
+[45:58] because now it's on 24-7,
+[46:00] as long as your subscription is up to paid,
+[46:02] you could actually use the scheduling aspect
+[46:04] for Cloud Code as well through here.
+[46:06] So, there are just so many ways and things you can do
+[46:09] when it's easier when it's on a cloud server, okay?
+[46:12] This is something I just wanted to go over with you,
+[46:14] I'm not gonna get too much into it,
+[46:15] but just wanted to talk about that for a second.
+[46:17] Okay, so now for the last thing I wanna show you
+[46:20] is that you can actually use routines on the web app
+[46:23] or the desktop app right here to then create something
+[46:27] that's gonna be scheduled every day,
+[46:30] and now we can do that by adding an MCP server
+[46:33] or gateway through arcade.dev.
+[46:36] Okay, so now here I'm on the app, right?
+[46:38] If you're typically in home, you can go to scheduled here
+[46:41] and you can create a new task,
+[46:43] but if you just also go to code, you can go to routines,
+[46:47] and what this is gonna do is you can tell it
+[46:49] what you want automated, right?
+[46:51] I want to know all my tasks from ClickUp,
+[46:56] what's on my calendar, and a summary of my emails
+[47:01] from the last 24 hours at 7 a.m. every morning, okay?
+[47:08] So we can do something like this,
+[47:09] I'm gonna say draft routine,
+[47:11] and it's gonna come up with essentially a prompt, right?
+[47:13] And what we can do here is these are connectors,
+[47:17] right down here, right?
+[47:18] These are connectors.
+[47:19] We're gonna add our own custom connector
+[47:22] by creating our own MCP gateway through arcade.dev.
+[47:26] So I'm gonna just kind of show you what that looks like.
+[47:29] I'm gonna just kind of exit out of all these.
+[47:32] As you saw, we had the ClickUp Assistant
+[47:33] from earlier in the course,
+[47:35] but I'm just gonna get rid of these,
+[47:36] and once you add a connector, scratch that last part,
+[47:39] and what I want to do first is I'm just gonna go ahead
+[47:42] and click create, we'll come back to this, right?
+[47:45] Just this, I want this working,
+[47:47] and we can come back and edit this
+[47:50] by up here at the top, right?
+[47:50] We can edit this, and so I accidentally deleted those,
+[47:54] but because we haven't created it yet,
+[47:56] I'm gonna come down here to settings like we did earlier.
+[47:59] Once you go to settings, you're gonna go to connectors,
+[48:01] and what we need to do is add,
+[48:03] at the top right, a custom connector.
+[48:05] This is going to be Morning Assistant.
+[48:09] You can name it whatever you want, if I can spell.
+[48:11] Then we need this remote MCP URL.
+[48:13] So we're gonna go back to arcade.dev now.
+[48:15] We are going to go to MCP gateway,
+[48:18] and we're gonna create our own gateway,
+[48:21] which is a combination of tools and servers
+[48:23] to make this happen.
+[48:25] So we had ClickUp, we had email, and we had calendar.
+[48:27] So it's gonna be Google Calendar and Gmail.
+[48:30] So we're gonna click create MCP gateway,
+[48:32] and we're gonna call this one also just to match,
+[48:34] Morning Assistant, so I know.
+[48:36] I'm going to search for, in the apps here, Gmail.
+[48:39] Just select all of Gmail.
+[48:41] I'm also going to do, I said calendar, Google Calendar,
+[48:44] and then I said ClickUp, so I'm gonna do ClickUp, okay?
+[48:47] So now all of those are there.
+[48:49] I am going to just numbers of this project,
+[48:52] create MCP gateway, great.
+[48:53] Now I want to add this to Cloud Desktop.
+[48:56] So this is the one I want to choose.
+[48:59] Settings, connectors, we're already there.
+[49:00] I'm just gonna copy this, go back to the app, paste this,
+[49:05] add, just checking the connection.
+[49:07] It's going to ask us to connect.
+[49:08] We're gonna connect.
+[49:09] So take us back to arcade.dev.
+[49:12] We're just going to allow this.
+[49:14] I think this just takes a minute, so allow it.
+[49:16] And now we'll have authorized access, okay?
+[49:19] So we're gonna go to open Cloud Code.
+[49:20] We're back here, that's good.
+[49:22] And now we have all of these tools, right?
+[49:25] So basically, all of these tools, though,
+[49:27] because I want this to run without me thinking,
+[49:29] I don't want to need approval.
+[49:30] I'm just gonna say always allow,
+[49:32] because it's only gonna do specific things.
+[49:33] You could come in here, you could do a little bit more,
+[49:35] like you don't want the trash email
+[49:38] or anything like that, right?
+[49:39] You could definitely come in here and optimize this,
+[49:41] which I would recommend doing,
+[49:43] especially anything that's updated,
+[49:45] so writing or deleting, I would recommend coming here
+[49:49] and maybe doing things like don't delete events,
+[49:51] don't triage emails like here, things like that, right?
+[49:54] But just for now, I'm gonna show have always allow.
+[49:58] So under Cloud Code here,
+[50:00] you see I have a routine, a morning briefing.
+[50:02] I am going to, at the top right,
+[50:04] click the edit button where the pencil icon is.
+[50:06] And for the connectors, I'm going to remove all of these.
+[50:09] Just gonna remove all these connectors,
+[50:11] and we don't need these right here.
+[50:13] I'm going to add a connector.
+[50:14] I am going to look for the morning assistant.
+[50:17] You can see it's got the logo for arcade.dev.
+[50:20] Cloud can use all tools from this, including rates, yes.
+[50:23] That's fine.
+[50:24] I'm going to click save.
+[50:25] Okay, so now we just have this one connector.
+[50:27] And just to show, you can also update instructions, right?
+[50:30] So they're pretty simple.
+[50:31] So fetch all open tasks from ClickUp
+[50:33] and list them by priority to due date.
+[50:35] Fetch today's calendar events and summarize the schedule,
+[50:37] and then fetch emails from the last 24 hours,
+[50:39] summarized by sender or thread,
+[50:41] and flag anything urgent or requiring action.
+[50:43] Okay, so we just did this in a few minutes.
+[50:46] Now, to test this out, at the top right,
+[50:49] there is also a run now.
+[50:51] So I'm gonna click run now.
+[50:52] It's gonna take a couple minutes,
+[50:54] but basically every day at 7 a.m. now,
+[50:57] it's going to call this MCP gateway,
+[51:00] get the tools that's then gonna call my Gmail,
+[51:03] my calendar, and my ClickUp where I create tasks
+[51:06] for what I do with my content schedule
+[51:07] and some other things, right?
+[51:08] Some other projects that I have, like my school CRM,
+[51:11] and it's going to run.
+[51:12] Now, just to let you know with this,
+[51:14] it's that I say 7 a.m.,
+[51:15] that doesn't mean it runs exactly at 7 a.m. every day.
+[51:18] It can be definitely quite a few minutes after that
+[51:21] when it's finished running, just so you're aware,
+[51:24] but this is a very simple way to make this happen.
+[51:28] Okay, so it can show you what you have,
+[51:32] what you've already scheduled,
+[51:33] the runs that were scheduled, when they run,
+[51:35] but this one is specifically a manual one,
+[51:37] so we can just come into here.
+[51:38] You can see it's going to gather the data.
+[51:41] It's going to use the morning assistant,
+[51:43] so it's using a bunch of tools, right?
+[51:45] So Whoami, Google, ClickUp, Whoami,
+[51:48] just to make sure, ListEvents,
+[51:50] GetTaskedByAssignee, SearchEmails, right?
+[51:53] These are all the coding tools
+[51:55] that we kind of saw a glimpse of
+[51:57] with LaneChain and CrewAI.
+[51:59] These are tools that are developed and coded in Arcade.dev.
+[52:04] They have a repository for them,
+[52:06] and it's just calling those,
+[52:07] but it's using our login to specifically get ours,
+[52:11] and that's where the authentication,
+[52:13] that's where a lot of the magic's happening
+[52:15] that you really don't need to worry about.
+[52:17] Okay, so it's going to see the verify couple threads
+[52:19] to check if Tyler already applied
+[52:20] before flagging them as needing attention.
+[52:24] Okay, this is, we're just watching it as it's running,
+[52:26] and this is really good, right?
+[52:28] Because now, even though this is called a routine,
+[52:33] it essentially is an agent that is scheduled to run.
+[52:37] Now, you can enter this to run more often, less often.
+[52:41] It can do, it can search up things on the web for you.
+[52:45] It can search things for, as far as content goes.
+[52:48] You can connect to Appify, which I've done.
+[52:50] So with Appify, you can then search Instagram,
+[52:53] YouTube, and other things automatically.
+[52:55] Maybe do a couple times a day,
+[52:56] and it's gonna search for your tags or keywords,
+[53:02] and find out what's been doing well lately for you,
+[53:04] so then you can, it can come back, analyze them,
+[53:07] and give you ideas for titles,
+[53:09] and just in general video ideas
+[53:12] that you can start your creation,
+[53:14] and you can use how it's structured
+[53:16] to help you out with your videos, which I do often.
+[53:20] Okay, great, so let's actually see what happened here.
+[53:23] So let's see what happened.
+[53:24] It finished over here on the left.
+[53:26] You can see that it created an artifact for me,
+[53:29] just to kind of show me what's going on throughout the day,
+[53:31] what to do, there's, here's all stuff
+[53:34] that needs attention, right?
+[53:37] Then you can upload stuff on Bluetooth,
+[53:39] and some of the stuff I've already taken care of.
+[53:40] I don't have any open tasks assigned necessarily
+[53:43] for today to finish.
+[53:45] It came up with the summary over here,
+[53:47] and now what the great thing about all this is,
+[53:50] is once I see this, I can go back to the instructions,
+[53:54] so I can go back to routines here,
+[53:56] so I can go to the morning briefing, click this,
+[53:59] and I can like, I can click the pencil icon to edit,
+[54:01] and I can edit these, you know,
+[54:03] like don't show certain things,
+[54:04] or actually wanna look for specific replies,
+[54:08] people that talk to me in email,
+[54:09] like specific emails or domains,
+[54:13] whatever you want, I could add Slack to this,
+[54:16] I could add, I mean, I could have it create a document
+[54:19] to summarize everything for me,
+[54:21] but also for notifications,
+[54:23] I have it set to push notifications,
+[54:25] so let's like, in the morning,
+[54:26] when I see this around seven,
+[54:28] probably 7.05 or 7.10 a.m.,
+[54:30] I will get a push notification on my phone
+[54:32] with this summary right here, okay?
+[54:35] And this is, and that's awesome,
+[54:36] that's exactly what I want,
+[54:37] so I think that this is a good kind of way
+[54:42] to really create agents without having to deal with code,
+[54:45] not to worry about, it's another option, right?
+[54:48] There's always options.
+[54:49] So this has been, this is actually a really amazing way.
+[54:54] You see, it did take a while to manage, or to run,
+[54:56] that's okay, it doesn't matter.
+[54:58] It's gonna run for you quick enough, right?
+[55:01] So I think that this will help you so much,
+[55:04] especially if you have a business,
+[55:07] and you just need to organize,
+[55:09] an organizing agent can be so helpful for you,
+[55:14] especially if you're a solopreneur,
+[55:16] or you're just an entrepreneur
+[55:17] trying to get things going, okay?
+[55:19] Or if you're already making a lot of money,
+[55:21] and now you need to condense some things,
+[55:24] this will help you.
+[55:25] Okay, so you have learned a lot,
+[55:26] and basically this is coming down
+[55:28] to how helpful MCP servers are,
+[55:30] but also RKDev even making it easier to use them, right?
+[55:34] There's so much that goes on in the background
+[55:36] to make these work that you don't have to worry about.
+[55:40] This is just amazing, this is an amazing company.
+[55:43] Like I mentioned, I'm getting seven apps, right?
+[55:46] And they are very helpful,
+[55:48] they've given me some other things.
+[55:49] Not to promote it or anything,
+[55:51] I'm just doing it because I love using it so much.
+[55:55] So please watch this, join my free school community,
+[55:59] I will show you this, plus how to use other things,
+[56:01] a lot of things related to Claude Code,
+[56:03] or Claude specifically, including co-work.
+[56:06] Join, I am here to help you,
+[56:07] I also offer one-on-ones just for 30 minutes
+[56:11] to kind of help you, give you a path
+[56:13] on what you can do for your business to help you out,
+[56:16] and maybe where AI, where you're missing,
+[56:18] where AI is the link to help you even further.
+[56:21] So I'm here to help you,
+[56:23] here are some more videos for you to watch.
+[56:25] In the meantime, thank you again,
+[56:26] and I will see you next week.

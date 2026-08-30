@@ -1,0 +1,239 @@
+[00:00] Today we're going to take a look at the new DeepSeek harness.
+[00:02] Yesterday, on August 13th, they released a developer preview and the approach that they're
+[00:07] taking is very unique and interesting.
+[00:09] The philosophy is that everything in this harness is a plugin and I mean everything.
+[00:13] The UI sidebar, the tool use capabilities, the system prompt, everything can be activated
+[00:18] and deactivated.
+[00:19] We can even use something called creator mode to describe what capabilities we would like
+[00:23] to see in this harness and it's going to develop them in the session and activate them as features.
+[00:28] So basically, we can extend the capabilities of this harness just by prompting.
+[00:32] The second unique thing about this harness is that absolutely everything is traceable.
+[00:36] Every message, every tool call, every skill that is loaded, everything can be analyzed
+[00:40] in detail.
+[00:41] Basically, the complete opposite of Anthropic's approach of hiding the thinking process.
+[00:45] I think this is super interesting so if you like this video, let me know by hitting the
+[00:48] like button and subscribing and now let us get right into it.
+[00:58] Alright, so we're going to take a look at the DeepSeek harness in this video today.
+[01:04] Yesterday, they released the developer preview.
+[01:06] Today I'm recording on August 14th, hopefully also releasing on the same day and this is
+[01:11] just a preview.
+[01:12] So this is not a mature product, this is just to see what direction this is going into and
+[01:15] the headline here as you can see is everything is a plugin.
+[01:19] So I would say that this tool has two major points.
+[01:21] Everything is a plugin and also if you scroll down a little bit, every run is traceable.
+[01:25] Everything can be analyzed in detail.
+[01:27] You can see every single call, every single tool call, every single message, every single
+[01:31] skill that's loaded.
+[01:32] This is the complete opposite of Anthropic hiding their thinking process.
+[01:36] You can literally see absolutely everything.
+[01:39] So if we go to the repository, you will see that this DeepSeek harness here is based on
+[01:42] something called Cordis.
+[01:44] It also has here its own GitHub repository and also it links to a paper.
+[01:49] So you can click on this paper.
+[01:50] If you're interested in the formal mathematical explanation of this, you can open the PDF.
+[01:56] It will show you a paper and basically they come up with their own formal paradigm.
+[01:59] I didn't read the paper.
+[02:01] It's quite mathematical.
+[02:02] You can see it covers a lot but the basic idea is that every action can be reversed.
+[02:06] So they come up with their own sort of calculus where every action has an opposite action.
+[02:10] So a revert action, essentially an inverse action and the focus is on dynamic composition,
+[02:16] temporal composability.
+[02:18] So I can add something and I can remove it and basically it doesn't have any unwanted
+[02:22] side effects and also spatial composability, the ability to declare and reactively manage
+[02:26] inter-component dependencies.
+[02:28] If you're interested in that, take a look at the paper.
+[02:30] I'm not going to cover this today.
+[02:31] I want to take a more practical approach.
+[02:33] I want to install the harness and show you how it works.
+[02:36] So the best way in my opinion is to run from source.
+[02:38] So what I'm going to do is I'm going to open up my terminal, navigate to my tutorial directory
+[02:42] and here I'm going to run these commands.
+[02:44] So I'm going to clone the repository here and then I'm going to install it using pnpm.
+[02:48] So I'm going to go into, actually I can type this out myself, into the DeepSeq harness,
+[02:53] pnpm install, then pnpm run build and then we can run the web interface.
+[02:59] So pnpm run build, there you go, the build is done.
+[03:04] Now we can go and say pnpm dsh web.
+[03:07] So this is going to open the web UI, this is how we're going to use this harness.
+[03:11] So I can click on this link here and it's going to open the DeepSeq harness in the web.
+[03:15] Now you can see I already have some sessions here.
+[03:17] I can archive those if I want to.
+[03:20] But the first time you run this, it's going to ask you for the DeepSeq API key.
+[03:24] So what you want to do here is you want to go to deepseq.com or platform.deepseq.com
+[03:29] and then you can go to API keys, create an API key, copy it, paste it and then you're
+[03:33] going to be in the harness.
+[03:35] However you don't have to use the DeepSeq API, you can go to settings directly, models
+[03:39] and you can connect your own provider.
+[03:41] So you can go to add provider and for example you can go with OpenCodeGo, in my case I did
+[03:46] exactly that.
+[03:47] I have an API key here, I copied it and I'm using OpenCodeGo here to access the open models.
+[03:53] Also I connected my own custom OLAMMA, I have OLAMMA running on my Dell Pro Max with GB10,
+[03:59] so the Dell device that's basically a DGX Spark implementation.
+[04:03] I have OLAMMA running there and there I have some models that I can connect to as well.
+[04:07] So you can add custom providers like this or you can add providers using API keys.
+[04:12] You cannot as far as I know connect the ChatGPT subscription but besides that you have a ton
+[04:17] of providers that you can connect to easily.
+[04:19] So let us start by playing around a bit.
+[04:21] First of all I want to target my tutorial directory so I'm going to click here on this
+[04:24] folder and I'm going to click add workspace.
+[04:27] This is going to open my file dialog, I'm going to create here workspace as a directory
+[04:31] and in here I want to be working.
+[04:35] Also the default here is going to be standard mode.
+[04:37] This is if you go to settings, the agent preset, we have standard mode, we have code mode,
+[04:41] we have minimal mode and creator mode.
+[04:44] These are basically a different level of capability you could say and this here is for creating
+[04:50] plugins.
+[04:51] We're going to talk about this later.
+[04:52] You can also create your own custom preset with creator mode.
+[04:56] This is exactly what this is for but we're going to just go with the standard mode now
+[04:59] so I'm going to go back here and I'm going to just tell it to do something.
+[05:03] I'm going to select my OpenCodeGo models, let's go with something like GLM 5.2 and I'm
+[05:08] going to just tell it to create a simple flask to do app because the first thing I
+[05:15] want to show you is how we can actually trace everything because that is super impressive.
+[05:21] We can see every single thing that is happening.
+[05:23] Of course we see the thinking process, we see the bash calls but if we go here to trajectory,
+[05:28] we can analyze every single step graphically so I can also select here a certain section
+[05:34] if I want to focus on it but I can also click on the individual things.
+[05:37] So first of all I have the system prompt.
+[05:39] What exactly is the system prompt?
+[05:41] Then I have my user prompt and then I have the context that is loaded here and also what
+[05:46] the assistant is doing, the assistant message, the thinking process I have here.
+[05:50] I can see the preview, I can see the raw text, I can see the tool call here so it calls a
+[05:56] bash tool to run a command which direct reads in and to list the content of the directory.
+[06:01] I can see the exact payload, I can see the result of this tool call.
+[06:05] Every single thing is traceable here and I also get the stats how long it took, how
+[06:09] many turns I have.
+[06:10] You can see exactly when it happened, the duration of the call.
+[06:14] Every single thing is traceable and we can also export here the session log.
+[06:18] So here I can save this as a zip file by clicking the button and if we take a look at it, I
+[06:23] can open it and it contains a session.jsonl so let me go to my tutorial directory here
+[06:31] and we can take a look at this session.jsonl and you can see exactly what is happening
+[06:36] here.
+[06:37] Notice this is just a head command so we only see the first couple of lines.
+[06:41] But yeah, so super transparent and this should work now so I should be able to run this by
+[06:47] going into my tutorial directory, going into the workspace and then saying sourcevn probably
+[06:55] bin activate and then I should be able to say python3-apppy and then I should be able
+[07:01] to visit this to do that.
+[07:04] Not a very complicated task but it worked.
+[07:06] But let's now talk about the plugin system because that is super impressive how modular
+[07:10] this thing is.
+[07:11] If I go to settings, you will see in the plugin section here that I have a plugin list and
+[07:16] this plugin list is literally every single thing that you see here.
+[07:20] It is so granular that I can just disable the sidebar for example.
+[07:24] So this UI sidebar here, this is a plugin.
+[07:27] It can be activated or deactivated.
+[07:30] Now we don't do this here in the UI, probably in future versions you will be able to just
+[07:35] enable disable with a click of a button.
+[07:38] Currently we do that with a config file.
+[07:40] So we can open up a terminal, I can zoom in a bit, then we can go to the .dsh directory
+[07:45] here, we can go to profiles, we can go to web and in here we have a cordis patch yaml
+[07:52] file.
+[07:53] So if I go to this cordis patch yaml file, I can make changes.
+[07:56] The default is an empty list but I can for example disable the sidebar.
+[08:00] So the only thing I would have to do is I would have to say dash ID is UI sidebar and
+[08:05] then I would have to indent and say disabled is true.
+[08:10] And I think we only have two spaces here so that's a proper indentation.
+[08:14] Save this, close this and if I now reload my harness, the sidebar is gone because I
+[08:20] deactivated the plugin for it.
+[08:22] And this is possible with every single sub-feature here.
+[08:25] And you can also see if I go to the repository, they encourage you to add plugins yourself.
+[08:31] So everybody will be able to create such plugins, you can easily activate them, deactivate them.
+[08:36] Again this is just a developer preview, it's a little bit scuffed how you have to handle
+[08:40] everything but it's going to get more and more mature and also more user friendly over
+[08:45] time I guess.
+[08:46] So we can just go back here, remove this or comment this out and add the empty list
+[08:51] again.
+[08:52] Then if I reload in real time, I'm going to get the sidebar back.
+[08:57] And again you can do that with all the different plugins that you have here.
+[09:01] However, you can also create your own plugins.
+[09:03] This is the most interesting thing.
+[09:05] I can start a new session here in creator mode which is specifically made for dynamically
+[09:09] adding plugins and I can just say that I want to have a simple plugin added here.
+[09:14] So I'm going to use a very simple example here.
+[09:15] Let me go to something like DeepSeek V for Flash or let's go with Pro, it's going to
+[09:21] be more capable to do that and let's go with reasoning mode high.
+[09:24] I'm going to say add a plugin for a cat overlay that is running from left to right and back
+[09:36] all the time at the bottom of the screen.
+[09:41] So not a very useful plugin but this is basically a cat animation that's going to go left and
+[09:45] right at the bottom of the screen and it's going to add this as a plugin.
+[09:48] You can see by using creator mode, it automatically loads the Cordis plugin development skill
+[09:54] and it knows what to do.
+[09:55] So there you go.
+[09:56] Now it's done and it asks me to confirm that I want to add this plugin.
+[09:59] I can approve this by clicking this button and now I have a cat.
+[10:03] Now the animation is not very beautiful but the cat is floating from left to right.
+[10:07] I can of course keep prompting and say animate it.
+[10:09] I want to see it stepping or something.
+[10:11] But now I have this plugin dynamically loaded into my session and I can also stop it.
+[10:15] So it removes the cat.
+[10:16] I can also start it again and this is of course a very useless plugin so let's go ahead and
+[10:20] do something more useful.
+[10:22] Add a plugin and of course don't forget to go to creator mode here.
+[10:26] Add a plugin for a calculator overlay in the bottom right.
+[10:33] I want to have a simple GUI calculator tool.
+[10:40] And now it's also done with that so I can approve this one and there you go.
+[10:43] I have a calculator plugin and maybe I should move my camera.
+[10:47] Let me move it to the top right.
+[10:49] Now I have this calculator plugin here.
+[10:51] I can probably, I mean I don't see the buttons.
+[10:53] I guess this is going to be plus.
+[10:54] No, this was minus.
+[10:56] So there is of course stuff that can be improved.
+[10:58] This was division.
+[10:59] Great.
+[11:00] What do we have here?
+[11:01] This is addition.
+[11:02] So that's going to be multiplication I guess.
+[11:04] There you go.
+[11:05] And of course I can go back and forth with this.
+[11:07] I can say adjust this.
+[11:08] But the idea is I can just install plugins here in real time while using this.
+[11:14] And I can of course persist them.
+[11:16] So these are just active for the current session now.
+[11:18] But I can of course persist them and I think over time this is going to get more and more
+[11:22] sophisticated.
+[11:23] We're going to have a plugin ecosystem.
+[11:24] But the whole approach that this tool is taking is super impressive for me.
+[11:27] So I really like the fact that we can see every single thing, every little thing that
+[11:31] is happening behind the scenes here.
+[11:33] This is full transparency, 100%.
+[11:35] We can connect different providers.
+[11:37] Maybe I want to show you this as well.
+[11:39] If I move my camera back down, I will activate NVIDIA Sync.
+[11:42] This connects to my Dell Pro Max with GB10.
+[11:45] I can connect to OLAMA.
+[11:46] So here I can go to OLAMA and this is going to tell me that OLAMA is running.
+[11:52] So I can use my models there too.
+[11:54] For example, let's go with GPT open source, 120 billion parameters.
+[12:00] And I can say, I can just say hello.
+[12:03] I'm not going to give it a big task now.
+[12:05] And there you go.
+[12:06] It answers hello.
+[12:07] How can I assist you today?
+[12:08] So this is just showing that we can connect this.
+[12:10] Again, this is done by going to models, going to custom provider, and then I have my OLAMA
+[12:15] provider here.
+[12:16] I can also load the available models because now I have multiple.
+[12:19] I can say fetch, and then I can see that I also have additional GEMMA models here that
+[12:24] I downloaded yesterday.
+[12:25] So I can apply this and use those.
+[12:28] But this is super convenient.
+[12:29] Again, we have the trajectory.
+[12:30] We can see everything.
+[12:31] We can use our own models, different providers.
+[12:33] And we have this plugin ecosystem here or this plugin system where everything is a plugin.
+[12:38] Every single feature here, every UI element can be activated or deactivated, which makes
+[12:43] this super customizable and modular.
+[12:45] So definitely something to keep on your watch list.
+[12:47] So that's it for this video today.
+[12:48] I hope you enjoyed it and hope you learned something.
+[12:51] If so, let me know by hitting the like button and leaving a comment in the comment section
+[12:53] down below.
+[12:54] Also, in case you're interested on my website, you'll find a services tab and a tutoring
+[12:57] tab that you can contact me if you need help with a project.
+[13:00] If you need a freelancer or a consultant, you'll find the LinkedIn and the email links
+[13:05] at the bottom of both pages.
+[13:06] Besides that, don't forget to subscribe to this channel and hit the notification bell
+[13:09] to not miss a single future video for free.
+[13:11] Other than that, thank you very much for watching.
+[13:13] See you in the next video and bye.
+[13:30] Transcribed by https://otter.ai

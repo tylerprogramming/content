@@ -64,6 +64,21 @@ saves. That is the metric to copy toward.
 our exact topic, while our own Jarvis video is unshot. The topic is proven and
 contested. Being late to it is the risk, not being unoriginal.
 
+**CONFIRMED, and it has left Instagram [2026-08-19].** A third JARVIS OS build
+went up as a 99.6 min YouTube tutorial on 08-17 (Komputer Mechanic,
+`u7f0ygnrvf8`, 5,667 views on 6,990 subs, 0.81x, the second hardest ratio in a
+25-video 14-day pool across three lanes). Same four parts, four agents plus a
+mission control HUD plus local voice plus markdown as memory, and it charges
+$10/mo for the 26 prompts. So the clone count is three in six days and the
+format now travels to long-form video, not just carousels. Two things follow.
+The topic is still open, since a 6,990-sub channel clearing 0.8x means demand
+is carrying it rather than channel size. And the credibility move in Style A
+has an escalation: their proof is a terminal screenshot, this video's proof is
+a live unscripted voice call in the first 90 seconds with the agent's own
+mistakes left in. **We have a running system and they have a recorded one; the
+deck should show the thing failing and recovering, which is the one slide none
+of the three clones can produce.**
+
 ---
 
 ## Style A — "Electric" (@ibraviz.ai) [confirmed 2026-08-13]
@@ -183,3 +198,15 @@ busy without making it clearer. Kept in the swipe file as the control case.
   hardcoded palette** (`#F5F0E8` / `#1C1C1C` / `#C4713A`) and does not read the
   themes folder. It has already drifted from `cream.json` by a few points per
   channel. Fix that before adding a fourth place for colours to live.
+
+## Changelog
+
+- 2026-08-19: Study pass confirmed the "proven and contested" call with a third
+  JARVIS OS clone, this one a 99.6 min YouTube tutorial (`u7f0ygnrvf8`, 0.81x
+  its channel size, paywalled at $10/mo). Format has crossed from carousels to
+  long-form video in six days. Added the escalation on the show-the-thing-running
+  rule: a terminal screenshot is the floor, a live unscripted run with the
+  mistakes left in is what the strongest clone did, and a slide showing our
+  system fail and recover is the one none of them can make. Report in
+  jarvis/reports/2026-08-19-study.md.
+- 2026-08-13: seeded from the swipe file pulled 08-12/13.

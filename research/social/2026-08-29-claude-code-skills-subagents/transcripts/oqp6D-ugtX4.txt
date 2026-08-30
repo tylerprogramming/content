@@ -1,0 +1,282 @@
+Okay, so early today, Claude Code copied 
+my favorite feature from Codex by adding
+the ability for Claude Code sessions to now send 
+messages to one another. So I'll be going through
+everything to do with this feature because 
+if you're anything like me and you spend 10
+hours every single day inside of Claude Code, 
+then any new small feature that can streamline
+your workflows can pay dividends over the long 
+term. So as example, I had a session of Claude
+Code over here that was monitoring the production 
+logs over 12 hours to basically make sure nothing
+crazy happened. During the rollout of a brand 
+new feature. And I identified two small issues
+that are worth fixing over here. And I can 
+basically fix this issue inside of a brand
+new session and do a nice handoff between them. 
+So rather than fixing it inside this session,
+I can split the pain by doing Command+D. I am 
+using a terminal called cmux and there will be a
+link to cmux down below. And then I can run Claude 
+over here and then give the session a name. So I'm
+going to call it Claude --name worker fix. And 
+if on the left-hand side, I now do ListAgents,
+then this will list all the subagents inside this 
+Claude Code session and all the other Claude Code
+sessions that are running. I can see that I have 
+108 Claude Code sessions running, and many of them
+are running on cloud sandbox containers, which 
+is why I have so many. But I can see right over
+here at the top, it says worker fix started 13 
+seconds ago. And now I'm going to say, okay,
+so for the worker fix, can you basically send a 
+message to the worker fix session to make a fix?
+And then open up a brand new PR for this, using 
+a brand new worktree. And then pressing enter,
+it will use the SendMessage tool inside of Claude 
+Code that was previously reserved just for sending
+messages to subagents and in between agents when 
+it comes to agent teams to now send a message to
+the other session instead. And now we can see 
+it's been sent over successfully. So over here
+it says encryption rollout basically told you 
+this, and now it's working on this issue. And
+I could have said, once the other session is 
+done, send a message back telling me like,
+hey, it's been completed. Another way that I've 
+used this feature is to remake some of my skills,
+but for the Claude 5 generational models. So 
+they often say that you should either delete
+your skills or you should remake them. So what 
+I like to do is working backwards from the goal
+of the skill. I actually do have a video about 
+this in my Agentic Coding School called Goal In
+Strategy Out. Essentially I can get another 
+session on the right-hand side and then say
+to left-hand side session, hey, can you give the 
+goal of this skill to the session called remaking
+skill. Tell it not to invoke the skill and don't 
+describe anything more than the goal. See if it
+comes up with a brand new strategy for achieving 
+the same goal. And now the left-hand side over
+here will send a message to the right-hand 
+side with some description being like, hey,
+this is what we're trying to do here. Don't invoke 
+the skill. Basically see if you can come up with a
+better way to achieve this. And I could have 
+many of these running in parallel and I can
+inspect them and follow along to see what they're 
+actually doing. And maybe I can figure out an even
+better skill or maybe do some kind of A/B test and 
+realize that agent no longer needed the skill. So
+I could also like take this further and fan out in 
+like 3, 4 different ways and be like, okay, come
+up with 4 different strategies, spin up a bunch of 
+Claude Code sessions in panes, follow that goal,
+and then we can remake our skill that we use every 
+single day. Now, one of the annoying things about
+this workflow right now is I had to spin up 
+a brand new pane to do this instead. And it
+would be really nice if Claude Code could instead 
+spin up brand new panes for me. And this is why I
+really like cmux over here, because they provide 
+you a CLI that basically allows Claude Code to
+manage its own workspace and launch other panes, 
+workspaces, split panes and stuff like that. And I
+actually have a whole dedicated video all about 
+cmux inside of my Agentic Coding School. It's
+completely free to watch and you don't need an 
+account. It will be linked down below if you're
+interested. And if you do like it, then you can 
+look at all the other classes that I have. There
+are like 350 lessons right now all about Agentic 
+Coding. But essentially because cmux provides a
+list of commands kind of like this, such as cmux 
+new workspace, cmux like split pane as well,
+because it provides these commands over here, it 
+means that Claude Code can trigger these commands,
+launch a brand new session in a new pane, and then 
+start sending messages and receiving messages from
+that session. But of course, Claude Code does 
+not know how to do this by default, which is
+why I made a skill called peer sessions. And it 
+basically teaches Claude Code how to combine this
+new ability that it has with the cmux CLI. So 
+let me actually go ahead and launch a brand new
+Claude Code session. And do peer sessions by 
+doing a /peer sessions and saying, okay, for
+all the open PRs that we have right now, can you 
+open a new pane and then do a code review of each
+one in a new worktree? And this will allow Claude 
+Code to now make a brand new workspace for itself,
+launch a bunch of sessions in parallel, and then 
+send messages to all of them and do follow-ups and
+receive messages back. And now you can see that it 
+made a brand new workspace over here with 3 panes
+side by side. And basically it's sending messages 
+over there one by one saying like, hey, can you
+fix this and do this code review and whatever? 
+And you can see at the very bottom over here,
+when done, send me a message back using this. And 
+we have a socket running over here that I can send
+a message back to. But the interesting thing is 
+we can use a socket with other coding agent tools.
+So I can use this with Codex as well. So I'll be 
+going through that in a second, but this is how
+we get Claude to basically manage and launch new 
+instances of itself. But this is now the Claude
+equivalent of me basically copying over this 
+command, going to Codex and then pasting it in
+over here and then replacing pain with thread 
+instead. And of course in Codex we know that
+we can spin up many different threads from one 
+coordinator. So now we can have Claude behave as
+a coordinator and send and receive messages from 
+other sessions. Let's now actually do something
+else and use the same skill with Codex as well. So 
+if I do /peer sessions, I can just say something
+like, Hey, so what are the sessions running on 
+my machine? And it will say you have 31 Claude
+Code sessions running on your machine right now. 
+24 of them are reachable and 27 are non-reachable
+because the version of Claude Code that they're 
+running is an older version. So I'm basically
+going to say, okay, cool, can you go to worker fix 
+session and then tell it to send you a progress
+report of what exactly happened? And now you can 
+see that it basically sent a message over to that
+Claude Code session. Saying like, hey, gimme a 
+precise report, and then it will receive it back
+from that session. So this is how, another way in 
+which we can get Codex and Claude to communicate
+with one another. Now you're probably thinking, 
+okay, why would I want to do this? Why don't I
+just use Claude -p or Codex -execute to spin up 
+the headless versions or use subagents instead?
+And one of the big advantages of having actual 
+panes means that you can easily follow up on a
+previous session. It's much easier to manage and 
+you can see the entire path that it followed. So
+when you have subagents kind of like this, then 
+it's really hard to kind of like follow up with
+a subagent, ask it more questions. The subagent 
+often disappears from the view once it is done.
+And many people prefer having many different 
+panes instead for the kinds of tasks they're
+doing because they can see the entire path of what 
+happened and they can follow up with sessions more
+easily. And one way that you may want to follow 
+up with them is to basically use -peer sessions,
+the skill again, and say, hey, can you launch 
+a bunch of new sessions and basically make me
+some artifacts to help me understand the key 
+technologies that we used in this solution over
+here, explained at a couple of different 
+levels with like interactive diagrams and
+stuff like that. And once it launches a brand new 
+workspace for this and launches all the artifacts,
+I can go back into each individual session, do a 
+nice follow-up, do more discussion and stuff like
+that. So I will be using this process more and 
+more, especially when it comes to understanding
+new technologies I care about. Because like it is 
+doing now by spinning up 4 different sessions to
+make artifacts for me, I don't have all of this 
+cluttered inside of one session instead. Now
+another workflow that you may want to consider 
+here is that if you like to implement plans or
+specs in phases, then you can basically combine 
+this with the brand new stacked PRs feature,
+stacked pull requests feature inside of GitHub, 
+where you have one PR stacked on a previous one.
+By doing something kind of like tagging a plan 
+that we have, so this is like a plan for adding
+two-factor authentication to application. Hey, 
+can you use GitHub stacked PRs? And for each
+phase of this plan, can you basically implement 
+it in a brand new pane? Once that phase is done,
+start a brand new pane and open up a pull request 
+in between as a stacked PR. So I will give it the
+link as well for stacked PR so it knows how it 
+works, because I think it's a brand new feature
+that isn't quite yet in the training data. You 
+may want to make a separate skill for this as
+well. And it will basically go through the process 
+and make a brand new pane for each phase of the
+plan. And I can quickly go back and check each 
+one and follow up with it as well. So this can
+be a nice way of splitting your workup into phases 
+and coordinating them if you like doing that. Now,
+another pretty nice thing that you can do is have 
+your Claude sessions communicate across different
+machines. So I will have a session running over 
+here, which is my local version, and this project
+is actually deployed on this server over here. 
+So I'm going to quickly SSH into the server and
+running Claude on this server. I'm basically 
+gonna give it a name by doing /rename and then
+calling it Hetzner example. And I can say to my 
+local session being like, hey, can you talk to
+the Hetzner example session and ask it for its 
+specs? And then both of the sessions can talk
+across different devices. Now this means that you 
+can have a coordinator session on one device and a
+coordinated session on another device, and you can 
+have both of those talking back and forth with one
+another. So it actually turned out the reason why 
+it didn't work over here is because I don't have
+remote control enabled. So let me enable remote 
+control and now doing ListAgents, then I should
+be able to see all the other sessions. And let 
+me resend that message again. And now it finally
+picked up on the remote control session. It sent 
+a message. So the message appeared over here,
+message from peer. And then it's like, hey, do 
+you want to execute this command? So I will turn
+this to auto mode as well. So the nice thing is 
+that the permission modes for that session carry
+over well between different sessions. It will 
+then get the specs and then send it back to the
+local session. And now these specs have come back 
+over here. Now this can be pretty handy because
+we may want to negotiate on some kind of like 
+configuration between two different servers, two
+different sessions running in different servers. 
+And that could be some kind of like contract, API
+contract, or it could be like a testing strategy 
+or just you want to delegate some heavy work over
+to a remote session instead. Basically there are 
+a lot of possibilities here. And I think this like
+pretty fundamental primitive unlocks a lot of 
+them. And you can do tons of stuff like having
+Codex or Grok Code, for example. Managing all your 
+Claude Code sessions, having like many different
+coordinators across different devices. You can 
+have like schedules running on a regular basis,
+which automatically make a new pane, run some 
+kind of work, and then you just scroll through
+and check to make sure everything looks good. 
+Basically, I will be experimenting around a bunch
+as well. And all the workflows I end up settling 
+on, I will be sharing inside my Agentic Coding
+School. So if you are interested in learning about 
+every single feature inside of Claude Code and
+Codex, and also learning about building software 
+with agents running in loops, a lot of techniques
+when it comes to agentic engineering, context 
+engineering, prompt engineering, then this is
+probably the most advanced and comprehensive set 
+of classes that you will find online to do with
+this subject. I actually released a brand new 
+class all about building Slack agents because
+I increasingly found myself moving a lot of 
+my work over to Slack instead. So right now,
+a lot of my routines and a lot of the work that 
+I do is done via Slack instead. And this is kind
+of the shift that I'm seeing happening in the 
+industry. Which is why I decided to make an entire
+class about it. So if you are interested, then 
+there will be a link down below, and by signing up
+and joining the Discord, you can ask me and other 
+class members any questions that you may have.

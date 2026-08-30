@@ -1,0 +1,1814 @@
+[00:00] Hermes agent is one of the most powerful AI agents
+[00:02] that I've ever played with.
+[00:03] So in today's video, I'm gonna take you
+[00:04] from absolutely nothing to being able to get one set up.
+[00:06] And by the end, you're gonna understand exactly
+[00:08] how to actually get the most
+[00:09] out of the super powerful AI agent.
+[00:11] This is the landing page for Hermes agent.
+[00:13] It is an agent that crows with you.
+[00:14] So it has like sort of that self-improving loop
+[00:16] with skills and stuff.
+[00:17] So it's very, very cool.
+[00:19] And it's a lot easier to set up than you'd think.
+[00:20] We're not gonna have to use a Mac mini or anything.
+[00:22] I'm gonna show you how you can just set one up
+[00:23] on a private server.
+[00:24] Now this thing out of the box is already super powerful.
+[00:27] If I go to docs and then I click on skills,
+[00:29] you can see that there's like 684 total skills,
+[00:32] but there's 91 that are already basically just built in
+[00:35] once you install Hermes.
+[00:36] So for example, you can see that it generated me
+[00:38] some ExcalDraw diagrams, which we'll look at in a sec,
+[00:41] but I didn't have it install any sort of ExcalDraw skill.
+[00:44] It's just had that already.
+[00:45] And I never gave it a transcription skill or a voice skill,
+[00:47] but take a look at this.
+[00:48] Hey there, sir, can you just go ahead and tell YouTube
+[00:50] who you are, what you do, and what some of your crons are?
+[00:54] By the way, when I say cron,
+[00:55] that basically just means like an automation.
+[00:56] It's a scheduled automation.
+[00:58] And don't worry, we're gonna dive into all of that
+[00:59] later in the video.
+[01:00] I'll also talk about Hermes compared to Cloud Code,
+[01:02] compared to OpenClaw and the differences
+[01:04] and why in this specific video I'm going with Hermes.
+[01:07] So you can see that it shot back an actual voice note
+[01:09] as well as text.
+[01:11] So this is a full minute and 16 seconds.
+[01:13] I'm not gonna play the whole thing,
+[01:13] but let's take a quick listen.
+[01:14] Here's a YouTube friendly version.
+[01:16] Hey YouTube, I'm Hermes agent.
+[01:17] I'm Nate's AI assistant running on his own infrastructure.
+[01:19] I'm not just a chatbot in a browser.
+[01:21] I can use tools, remember preferences,
+[01:22] write reusable skills, run scheduled automations,
+[01:23] search past conversations, work through Telegram,
+[01:25] and help manage real workflows.
+[01:27] All right, thank you so much, Hermes.
+[01:28] But anyways, take a look at some of these crons
+[01:30] that my Hermes is running.
+[01:31] A daily AI news briefing,
+[01:32] which is posted inside of my school community.
+[01:34] YouTube comment monitoring.
+[01:35] So if you guys have noticed on my YouTube videos lately,
+[01:37] I've had an AI agent that has access to the transcript
+[01:40] and knowledge about me,
+[01:41] and it's been responding to your guys' comments.
+[01:43] And that is this Hermes agent.
+[01:44] School community engagement, morning business summary,
+[01:46] server checks, research reports, follow-up reminders,
+[01:49] and that's just some of the crons
+[01:50] that I have this agent working on.
+[01:51] And if you guys have seen my videos on my channel
+[01:53] about hyperframes with Cloud Code,
+[01:55] basically to edit videos,
+[01:56] I wanted to see if Hermes could do that.
+[01:57] So I said, hey, can you make me a video
+[01:59] using hyperframes about what Hermes agent is,
+[02:01] how you work, how you remember things.
+[02:03] It ran all of these different things.
+[02:04] So it has a skill called creative.
+[02:06] It had a skill called man in video.
+[02:08] It was searching for hyper.
+[02:09] It ran all these terminal commands.
+[02:11] And it also, you can see here,
+[02:12] it's using vision to analyze the actual video
+[02:14] to see how it turned out.
+[02:16] Now, its first pass wasn't great.
+[02:17] It didn't even use hyperframes.
+[02:19] I'm not exactly sure what this used.
+[02:20] But as you can see, some of the spacing is off.
+[02:22] It's not amazing, but it's not terrible for the fact
+[02:25] that I just said, hey, make me a video.
+[02:27] So basically then I said, okay, what tool did you use?
+[02:28] I wanted you to use hyperframes.
+[02:30] So it had to look into it.
+[02:31] It did the research on its own.
+[02:32] It asked me if it could install hyperframes.
+[02:34] I said yes.
+[02:35] And then it comes back with a video
+[02:36] that's actually much, much better.
+[02:38] So I'm not gonna play the whole thing,
+[02:38] but here's the video that it actually came up with.
+[02:40] It looks a lot better.
+[02:41] The spacing is a lot better.
+[02:43] It just has these diagrams that actually don't overlap
+[02:45] and they're not going out of bounds.
+[02:47] So think about this.
+[02:48] One natural language request.
+[02:49] It did the research.
+[02:50] It wrote this.
+[02:51] And all I said, as you guys can see,
+[02:53] is hey, make me a video about what Hermes Agent is
+[02:57] and how your memory and skills work.
+[02:58] It should feel fast-paced and exciting.
+[03:00] So that's one mindset shift here
+[03:01] is if you are confused about anything to do with Hermes,
+[03:04] Hermes probably understands it the best
+[03:06] and it can also look up its own documentation.
+[03:09] So just ask it, hey, can you do this?
+[03:10] If you see something cool on X, grab that X post,
+[03:13] give it the link to, hey, read this,
+[03:15] and then help me implement it.
+[03:16] It's really going to be your best friend here
+[03:17] by just brainstorming and then you tell it
+[03:19] to go figure out how to do it.
+[03:21] Okay, so that was just a quick demo
+[03:22] about what Hermes Agent looks like
+[03:24] when I'm using it through Telegram.
+[03:25] You can use it through tons of other platforms as well.
+[03:27] So let's just actually dive into this video here.
+[03:29] Hermes Agent from zero to your own assistant.
+[03:31] Okay, so what is Hermes Agent?
+[03:33] It is an open-source AI agent from Noose Research
+[03:36] and it is an MIT-licensed, like I said, open-source project.
+[03:39] Right now it has 140,000 GitHub stars
+[03:41] and that is growing really fast.
+[03:42] It's one of the fastest-growing
+[03:43] open-source projects on GitHub.
+[03:45] It runs on your own infrastructure,
+[03:46] whether that is a Mac mini, a laptop, a VPS.
+[03:49] It can run inside a Docker container,
+[03:51] wherever you want to put it.
+[03:51] It can even run on an Android via Termux.
+[03:54] There are tons of different messaging platforms.
+[03:56] I'm gonna be showing you guys Telegram today.
+[03:57] You could also do Discord, Slack, WhatsApp.
+[03:59] You could even do iMessage
+[04:00] if you wanted to connect it to that.
+[04:02] And really the big thing that got me interested
+[04:04] in trying it out was the self-improvement over time
+[04:06] by writing its own skills and updating those.
+[04:08] And it's kind of built on top of five main pillars,
+[04:10] which I'm going to talk to you guys about
+[04:12] in just a sec here.
+[04:13] But before we get into that,
+[04:14] I wanted to cover Hermes versus Cloud Code
+[04:16] versus OpenClaw and kind of even like Codex too.
+[04:18] So this is just my comparison of the way
+[04:20] that I compartmentalize them in my head.
+[04:23] So Cloud Code is still my daily driver.
+[04:25] That's where I do 90% of my knowledge work
+[04:27] throughout the day.
+[04:27] But there's a clear distinction in my mind
+[04:29] between the way that I'm gonna use Cloud Code
+[04:31] and OpenClaw or Hermes.
+[04:32] So this is obviously Anthropx Coding Assistant.
+[04:35] It lives in your terminal next to your code
+[04:37] and you basically sit there and you drive it.
+[04:39] You could enact like dispatch or remote control
+[04:42] to use it on the go,
+[04:43] but honestly, I don't really do that too much.
+[04:45] The way I think about Cloud Code
+[04:46] is when I'm sitting down at my desk
+[04:47] or I'm on my laptop and I'm doing work.
+[04:50] Now OpenClaw is where I started to play around with it.
+[04:52] I did the trading video if you guys saw that with OpenClaw.
+[04:55] And the way that I started to think about this
+[04:56] was I'm not gonna use OpenClaw or Hermes
+[04:58] to sit down and do like my knowledge work and my coding.
+[05:01] I'm gonna use OpenClaw and Hermes when I'm on the go,
+[05:04] when I wanna be on my phone
+[05:05] and be able to set up crons really quick
+[05:06] and have everything kind of just be managed
+[05:08] right there in Telegram where I can talk to something
+[05:10] and it wakes up immediately and responds to me back.
+[05:13] And it's truly been a game changer
+[05:14] for being able to go on a walk and still do work
+[05:16] or be out and about.
+[05:18] This was created by Peter Steinberger.
+[05:20] He then joined OpenAI and OpenClaw is still an independent,
+[05:23] once again, also an open source project
+[05:25] that has over 350,000 GitHub stars now.
+[05:28] There's a much larger team around OpenClaw
+[05:29] compared to Hermes and they are also doing frequent updates.
+[05:33] Also NVIDIA built NemoClaw on top of OpenClaw
+[05:36] as a separate enterprise stack.
+[05:37] Now Hermes and OpenClaw may seem kind of similar
+[05:39] when you just kind of take a first glance,
+[05:41] but there are a lot of differences.
+[05:42] Hermes is also lighter, faster,
+[05:44] focused on self-improvement and they've come out
+[05:46] and say like, hey, this is built for people
+[05:48] that wanna tinker with open source models,
+[05:50] so I'm not necessarily using Hermes right now
+[05:53] with open source models, but definitely something
+[05:54] that I'm gonna start experimenting with.
+[05:56] But one of the main reasons that I started
+[05:57] kind of switching over to Hermes
+[05:59] was my OpenClaw was just kind of breaking a lot.
+[06:01] They would push a lot of updates and changes
+[06:03] and sometimes it would just like crash my OpenClaw
+[06:05] and I'd have to get in there and fix some stuff.
+[06:07] And Hermes doesn't seem to do that as much, fingers crossed.
+[06:09] But a lot of people are using these all together
+[06:12] and I'm definitely using Cloud Code
+[06:14] with Hermes together for sure.
+[06:16] Because I mean, if you think about
+[06:17] what are your coding agents actually working in,
+[06:20] they're working in some sort of directory,
+[06:21] which is just a file structure, a folder structure,
+[06:23] and all of that we wanna sync to GitHub.
+[06:25] So if you have a GitHub repo of all of your knowledge,
+[06:27] all of the business context, all of your skills,
+[06:29] you can pick out any of these agents, even codecs,
+[06:32] and just plop it on top of your GitHub repo
+[06:34] and now you can play with all these different tools
+[06:36] and see how they interact.
+[06:38] There's just a little bit of difference sometimes
+[06:39] with terminology, whether that's like a Claw.md
+[06:41] or an Agents.md or a couple little tiny things,
+[06:44] but each agent understands its own terminology.
+[06:47] So if you say, hey, take this repo
+[06:48] and make sure you can use it,
+[06:50] it should be able to make all the changes for you very quick.
+[06:52] And I'm gonna show you guys a way that I use Cloud Code
+[06:54] to help me manage all of my Hermes agents
+[06:56] and OpenClaw agents, which makes me stay way more organized.
+[06:59] I never forget things.
+[07:00] And trust me, it's definitely a game changer.
+[07:03] So anyways, before we jump in and we start doing the install
+[07:05] and the onboarding to Hermes,
+[07:07] I just want you guys to understand
+[07:08] some of these main concepts to think about,
+[07:11] which are the five pillars.
+[07:12] And what I did is I actually copied
+[07:14] this exact five pillar structure,
+[07:16] which by the way, my Hermes agent helped me think of.
+[07:19] So I copied this, I pasted it into Hermes,
+[07:20] if I scroll up a little bit here,
+[07:22] and I said, hey, can you just use the Excalijaw skill
+[07:24] to generate diagrams for all of these
+[07:26] and make sure that all of this information is correct?
+[07:29] It gave me a zip file right here,
+[07:30] and I took that zip file, I put it into Excalijaw,
+[07:33] and let's now take a look at these five pillar diagrams.
+[07:36] Okay, so the first pillar is memory.
+[07:39] Memory is the small, durable context
+[07:41] that Hermes should carry across sessions.
+[07:43] So there's two main files to be thinking about
+[07:44] when it comes to memory.
+[07:45] The first one is the user.md,
+[07:48] who you are, your style, your preferences,
+[07:50] and things that you don't like.
+[07:52] The second one is the memory.md.
+[07:54] This is like the environment,
+[07:56] the projects you're working on,
+[07:57] some of your business context potentially.
+[07:59] And these two files get loaded at the session start
+[08:01] so that it always kind of knows what's going on.
+[08:03] Because the way that you wanna think about AI in general
+[08:06] is that it wakes up stateless,
+[08:07] meaning it wakes up with basically no memory.
+[08:09] If you guys have ever seen the movie Memento,
+[08:11] that's kind of like how agents work.
+[08:13] So it's your job to make sure
+[08:14] that the context that gets loaded in,
+[08:16] cloud.md, user.md, memory.md, agents.md,
+[08:19] it's your job to make sure
+[08:20] that those files are pretty holistic
+[08:22] so that every time you wake up an agent,
+[08:24] you don't feel like you're repeating yourself.
+[08:26] And don't worry, these files, Hermes agent understands,
+[08:28] and it's automatically gonna start extracting things
+[08:30] about you and extracting things from your projects
+[08:33] and putting these files together
+[08:34] so you don't actually have to like manually,
+[08:36] consciously think about it.
+[08:37] As you can see, the session would start,
+[08:39] you would go ahead and start talking, building skills,
+[08:41] doing knowledge work, and as you're starting to add tools,
+[08:44] and as you're starting to give more info and make changes,
+[08:47] it's going to automatically come back
+[08:47] and update these files for you.
+[08:49] Now that doesn't mean to just be completely oblivious to it,
+[08:51] you still wanna say, hey, by the way,
+[08:52] chuck that in the memory,
+[08:53] or hey, make sure you don't ever do this again,
+[08:55] throw that in the user.md, stuff like that.
+[08:57] And you can see the EscalageLog diagram wasn't perfect,
+[08:59] I had to expand that a little bit,
+[09:00] but here's some beginner nuance.
+[09:01] Save durable preferences and facts to memory,
+[09:04] use session search for old conversations,
+[09:06] so it's basically able to store all of your sessions
+[09:09] into a SQLite database, and it can go search through those,
+[09:11] and do not store secrets or temporary task status.
+[09:14] So we'll talk about API keys
+[09:15] and the way that you should be putting them
+[09:16] into your Hermes agent responsibly,
+[09:18] once we get into the setup.
+[09:19] So that is the first pillar, memory.
+[09:21] The second pillar we have here is skills.
+[09:24] So skills are procedural memory,
+[09:26] reusable playbooks for how to do a task well.
+[09:28] If you guys have already been working with Codex,
+[09:29] or Cloud Code, or all these other things,
+[09:31] you probably understand skills,
+[09:32] but I'll give you the real quick lowdown.
+[09:34] Basically, think of a skill as a recipe.
+[09:36] Someone asks you, hey,
+[09:36] can you make me some chocolate chip pancakes?
+[09:38] You wanna pull up a recipe,
+[09:39] and then you're gonna follow that recipe to a T.
+[09:41] And that's how your pancakes turn out the same,
+[09:44] and yummy every time.
+[09:46] Otherwise, if you were just going off of memory
+[09:47] of how to make the chocolate chip pancakes,
+[09:49] sometimes they might be a little more burnt
+[09:50] than the other times.
+[09:51] Sometimes they would have less chocolate chips
+[09:53] than other times.
+[09:54] You just want them to be consistently done in the same way,
+[09:57] and that is your skill, or your recipe.
+[09:59] So all of these skills are in a file called skill.md.
+[10:02] They have a YAML front matter,
+[10:03] which is basically just like a little front matter
+[10:05] that tells the agent, hey, this skill does this,
+[10:08] so use it for X, Y, and Z.
+[10:10] That's basically a concept called progressive disclosure,
+[10:12] which helps make sure that you're not loading full skills,
+[10:15] full context bloat into a session
+[10:17] if you don't actually need to use that skill.
+[10:19] So Hermes will understand the use case for the skill.
+[10:21] It will then invoke the skill and read it,
+[10:23] and then it will ship that information into the session,
+[10:25] and then invoke the skill and do what you need.
+[10:29] And what's cool about the Hermes agent
+[10:30] is that if you're doing things frequently,
+[10:32] if you forget, hey, let's build a skill out of this,
+[10:34] it will analyze conversations,
+[10:36] it will analyze your workflow,
+[10:37] and it will turn things into skills.
+[10:38] And then, of course, as you use skills more and more,
+[10:40] if you're giving feedback,
+[10:41] it's going to update those skills as well.
+[10:42] As you can see, these Excaligible diagrams
+[10:44] keep messing up right here,
+[10:46] which is basically just the beginner nuance.
+[10:48] So memory equals what to remember,
+[10:49] skill equals how to do it again.
+[10:52] Hermes can create or patch skills after real work.
+[10:55] So super cool.
+[10:56] And, of course, there's a skills hub.
+[10:58] So any skills you've already built can be used in Hermes,
+[11:01] or you can go to the skills hub,
+[11:02] and you can see that there is over 520 community skills.
+[11:05] There's different categories.
+[11:06] So you can definitely search through here
+[11:08] to see what you can add to your Hermes
+[11:10] to make it even more powerful.
+[11:11] It looks like there's actually 16 right here
+[11:13] that are Anthropic official skills.
+[11:16] We have Canvas Design, Front End Design,
+[11:19] we have a Skill Creator skill.
+[11:21] So you can pull all of these into your Hermes agent
+[11:23] super, super easily.
+[11:24] You just have to basically run this command,
+[11:26] or you could drop in this URL to your Hermes agent
+[11:29] and say, hey, install this skill right now.
+[11:31] All right, so that's pillar two.
+[11:33] Pillar three is the sole.
+[11:34] Now, soleMD basically shapes the assistant.
+[11:37] This shapes your Hermes agent,
+[11:38] so that if you have six different Hermes agents,
+[11:40] they all have basically a different vibe.
+[11:43] Some can be concise, some can be rude,
+[11:45] some can be, I don't know.
+[11:47] But anyways, the sole.md is another markdown file
+[11:49] that gets put into the context of the agent,
+[11:53] and now it's able to just have a bit of a personality.
+[11:54] So if you're also letting other people interact
+[11:56] with your Hermes, they will feel the personality.
+[11:58] If your Hermes is commenting on YouTube videos like mine,
+[12:02] there will be some sort of personality.
+[12:04] The one in my YouTube comments,
+[12:05] I told it to be very sarcastic, but not rude.
+[12:07] And by the way, guys, it's not super, super important
+[12:10] that you need to know what a skill file looks like
+[12:13] or know exactly what a markdown file looks like,
+[12:15] but don't get intimidated.
+[12:16] Here is a skill.
+[12:17] So this is skill.md.
+[12:19] This one's called generateImage.
+[12:20] So everything in between these two lines up here,
+[12:22] that is the YAML front matter that I was talking about.
+[12:25] This is what your agent reads in order to understand,
+[12:27] okay, should I use this skill or not?
+[12:29] If it then decides, yes, I should use this skill,
+[12:31] then it's going to read all of this other stuff,
+[12:34] which is just markdown, and markdown just basically means
+[12:36] that it's using headers and bullets,
+[12:38] and it's just a way for agents to read structure
+[12:41] within a block of text.
+[12:43] This means bold.
+[12:44] Anyways, that's what a markdown file is,
+[12:46] and that's what a skill file looks like.
+[12:47] So a sole file would look like that,
+[12:49] but there wouldn't be that YAML front matter.
+[12:51] But as you might have guessed,
+[12:52] the sole file will also evolve over time
+[12:54] based on the feedback that you're giving your Hermes.
+[12:57] So what is pillar number four?
+[12:59] This is where it gets super cool,
+[13:00] and this is one of the main value props for me
+[13:03] over something like Cloud Code,
+[13:04] is the fact that I can just say,
+[13:06] hey, spin up a cron job to do this at this time,
+[13:08] and it just does it.
+[13:09] Cloud Code, obviously, you have your routines,
+[13:11] you have your loops,
+[13:12] but that usually requires you
+[13:13] to leave some sort of infrastructure on,
+[13:15] unless you're using that new cloud routine,
+[13:18] but you're only limited to 15 of those,
+[13:20] at least on the max plan, 15 of those a day.
+[13:22] So once again, Hermes doesn't replace Cloud Code for me,
+[13:25] but it's kind of my on-the-go, spin up things really quick,
+[13:28] and that's why I love it.
+[13:29] So crons turn Hermes from reactive
+[13:31] into a proactive scheduled automation,
+[13:33] and you're still getting that full agentic loop
+[13:35] if you want it.
+[13:36] So you could say in natural language,
+[13:37] hey, every morning at 6 a.m., I want you to do X, Y, and Z.
+[13:40] It will go ahead and use a skill
+[13:42] and use its tools to create that cron job,
+[13:44] and then when that time hits,
+[13:45] it will basically invoke a fresh isolated session,
+[13:48] it doesn't inherit any of the context
+[13:49] that you're currently having that conversation about,
+[13:52] and then it will just run that skill.
+[13:54] After that happens,
+[13:54] it will send that result back to the original chat,
+[13:57] and it will maybe update any local files
+[13:59] or do whatever it needs to do
+[14:01] based on the skill requirements.
+[14:02] So some useful pieces of advice down here.
+[14:05] Context underscore from
+[14:06] is to pass one job output into another.
+[14:09] Workdir is work directory,
+[14:11] and it runs tools from a project folder,
+[14:13] and then you can do this flag for no agent,
+[14:15] which is just a script.
+[14:16] So hey, I just want you to run this Python script.
+[14:18] I don't want the agentic harness loop inside of that.
+[14:21] I just want the script to be ran.
+[14:22] So if you think back to the WAT framework,
+[14:24] workflow, agent, tools,
+[14:26] you'd basically just be deploying the workflow
+[14:27] on something like modal.
+[14:28] You're not deploying the agent as well.
+[14:30] So safety nuance.
+[14:31] Cron sessions cannot recursively create more cron jobs.
+[14:34] So the prompts need to be self-contained.
+[14:36] And if any of this is starting to feel
+[14:37] a little bit overwhelming,
+[14:39] I just want you to understand this terminology
+[14:40] so that when we hop into the setup and the onboarding,
+[14:43] it all clicks a little bit better.
+[14:45] So just stick with me.
+[14:46] All right, and then the last pillar here
+[14:47] is the self-improving loop.
+[14:49] Hermes improves when useful experience
+[14:50] gets persisted as memory, skills, and searchable history.
+[14:54] So if you think about the loop like this,
+[14:56] you do the work, the agent learns.
+[14:58] You save things to memory or to agents.md
+[15:01] or to user.md.
+[15:02] And then you turn those repeatable steps into skills
+[15:05] or your preferences into more memory.
+[15:07] And then the agent's able to search past sessions
+[15:10] when old context matters.
+[15:11] And then you basically just go in that loop over and over.
+[15:13] So the more you use your Hermes agent,
+[15:15] the better it's going to get
+[15:16] and the more it's going to understand you.
+[15:18] So the nuance here is that automatic does not mean magic.
+[15:21] The loop works best when the user corrects Hermes,
+[15:23] asks it to save things to memory,
+[15:25] and lets it create and update skills
+[15:27] after you've done some complex work.
+[15:29] And there is one more kind of honorable mention,
+[15:31] which is the context file.
+[15:32] So agents.md, if you're using Codex,
+[15:35] you know what that is.
+[15:36] If you're using Cloud Code, this is the cloud.md,
+[15:38] which is kind of just like the overall project goal,
+[15:40] kind of like the structure of the project.
+[15:42] So this is something that you're more so going to use
+[15:45] if you're like coding in different projects with Hermes.
+[15:48] And I would say more so
+[15:49] if you're in like the terminal using Hermes.
+[15:51] And in today's video,
+[15:52] I'm not going to focus too hard on the terminal.
+[15:54] I am going to talk about the difference
+[15:55] between using it in the terminal
+[15:56] or using it through Telegram
+[15:57] or whatever other channel you use.
+[15:59] But this is not going to be a deep dive
+[16:00] on Hermes in the terminal,
+[16:01] because once again, any terminal style work
+[16:03] that I'd be doing, I would just be doing that in Cloud Code.
+[16:06] That's the way that my workflow currently exists.
+[16:09] But anyways, this honestly works pretty similar
+[16:11] to the way like the memory or the sole file works,
+[16:14] but those are all global.
+[16:15] And this one's more of like a local project.
+[16:17] This is what we're working on in this contained environment.
+[16:20] So anyways, hopefully you guys aren't too bored yet.
+[16:23] Let's actually go ahead and get your guys' hands on.
+[16:26] I am going to say before we jump into this,
+[16:28] all of this video I'm going to have broken down
+[16:30] into a resource guide,
+[16:31] which might even be helpful for you
+[16:32] to just give your Hermes agent the document
+[16:34] and say, hey, help me get all this set up.
+[16:36] But if you want to access that free resource guide
+[16:37] that breaks down everything
+[16:38] that we're going to talk about today,
+[16:39] that will be in my free school community.
+[16:41] The link for that is down in the description.
+[16:42] You'll go into here, you'll click on classroom,
+[16:44] you'll click on all YouTube resources,
+[16:46] and you'll be able to find every doc, skill,
+[16:48] GitHub repo, everything I've ever dropped for free
+[16:50] on YouTube right in there.
+[16:52] Okay, so now let's get into the setup of Hermes agent.
+[16:56] All right, so the way that we're going to be doing this
+[16:57] is on a VPS, which stands for a virtual private server.
+[17:00] Now, I'm going to be using Hostinger for my Hermes agent.
+[17:03] I have been using Hostinger for hosting NNN
+[17:05] and for OpenClaw and for Cloud Code.
+[17:07] So this is my VPS provider of choice.
+[17:09] There's a link in the description
+[17:10] if you guys want to go here.
+[17:11] You can see there's also basically like a one-click install
+[17:14] for Hermes agent when you spin up one of these VPS.
+[17:16] So very, very cool.
+[17:18] Now, the first thing you have to do is choose the plan.
+[17:20] So on here you can see KVM one, two, four, or eight.
+[17:23] I'm just going to go ahead and start with two for now.
+[17:24] This basically just changes like how much CPU and RAM
+[17:28] you have and your bandwidth in your server.
+[17:30] So you could definitely start on one.
+[17:32] And if you need to just scale up, you can scale up later.
+[17:34] But I'm just going to go ahead and pick KVM two.
+[17:37] And then I'm just going to go ahead and click on deploy.
+[17:39] So you have to choose your period.
+[17:40] So 24 months, 12 months, or one month.
+[17:43] I think that you should just probably go for the annual
+[17:46] at least because you're going to save more money.
+[17:47] But also, you know, you pay about a hundred bucks
+[17:49] and then you have this just set up forever.
+[17:51] And you can also, or for a year, I guess,
+[17:54] but you can also deploy multiple different Hermes agents
+[17:56] or even multiple open clause and cloud codes on your VPS.
+[18:00] As long as you can support the RAM and the CPU.
+[18:03] And if you choose an annual plan, so 12 months or 24,
+[18:06] you can use code Nate Herk
+[18:07] and you can save an additional 10% on that plan.
+[18:10] So you can see right here,
+[18:11] it says Hermes agent auto deploys with your VPS.
+[18:13] You can also get daily auto backups
+[18:15] and then you're going to choose your server location.
+[18:17] And then once you've made your payment,
+[18:18] you just have to go ahead and get started
+[18:19] with setting up your VPS.
+[18:21] So you'll choose your server location, click on next.
+[18:24] This is where you can see the actual OS that you want to use.
+[18:26] So I'm going to do Ubuntu and I'm going to do 24.04 LTS.
+[18:29] And what else you can see here is that there's tons
+[18:31] of different apps that you could also deploy.
+[18:32] And then Nemo claw.
+[18:34] And this is where you could come in here
+[18:35] and you could search Hermes agent as well.
+[18:37] And if you do want to do the one click install,
+[18:38] then go ahead and do Hermes agent.
+[18:40] But if you want to do it on the root of your VPS,
+[18:42] then just stick with me here.
+[18:43] I'm going to do a breakdown of the differences there
+[18:45] in just like a minute.
+[18:46] So if you want to wait until you see that,
+[18:48] just wait for a sec.
+[18:49] So you're going to have to go ahead
+[18:50] and create a root password.
+[18:51] I'm going to go ahead and click next.
+[18:52] If you forget that later,
+[18:53] you can obviously just regenerate it.
+[18:56] So it's not a huge deal,
+[18:56] but obviously you probably want to remember that.
+[18:58] You can add a malware scanner for free.
+[19:00] So I'll just check that box and hit finish setup.
+[19:02] And now this will take just a couple minutes
+[19:04] to actually spin up your VPS.
+[19:05] So while we're waiting for that,
+[19:06] let me talk about the difference between setting it up
+[19:09] kind of with the one click or setting it up directly
+[19:12] at the root of your VPS.
+[19:14] Okay, so a VPS is basically just a computer in the cloud
+[19:17] that you will be renting from Hostinger.
+[19:19] You will get an IP address and you will get a password
+[19:23] in order to basically SSH in,
+[19:24] which means you were just like
+[19:25] getting into that virtual private computer
+[19:27] so that you can manage the files and install things,
+[19:30] stuff like that.
+[19:31] So if you install Hermes directly on the VPS,
+[19:33] it will be at the root level.
+[19:34] And if you install it using the one click Docker image,
+[19:36] it will be in a containerized Docker environment
+[19:39] within your VPS.
+[19:41] So I know that might make like no sense at all,
+[19:43] but here's a quick visual.
+[19:44] Your VPS has data, it has like services,
+[19:46] it has other files.
+[19:47] And then you could also put the Hermes agent right there,
+[19:50] or you could have all of your files and stuff,
+[19:53] you know, locked into the root of your VPS.
+[19:55] And then you can spin up an individual container
+[19:57] for all of your different Hermes agents
+[19:59] or OpenCloud agents within the actual
+[20:01] different Docker containers.
+[20:02] So for the sake of the video,
+[20:03] I'm gonna be doing the Docker container approach
+[20:05] because it's just a one click install and it's much simpler,
+[20:08] but even the root VPS is very, very simple.
+[20:10] Now, here's something that I am very, very strong on
+[20:13] that some people might disagree with me
+[20:15] and think that it's over engineering,
+[20:16] but I think it's like, why would you not do this?
+[20:19] For all of my VPS agents,
+[20:21] I have created my own cloud code project
+[20:23] to help me manage them.
+[20:24] So right here, you can see this is called UpIt Agents.
+[20:26] If I click on VPS Agents,
+[20:27] you can see that I have my bull, which is my trading bot.
+[20:30] I have my main Hermes, I have my UpIt OS,
+[20:32] and I have Klaus, which was like my main personal assistant.
+[20:34] And so for each of these,
+[20:35] I can see my passwords and my environment variables,
+[20:38] and I can see, you know,
+[20:39] like what's the IP address of this VPS
+[20:41] and how do we have this set up in the Docker or at the root?
+[20:43] And it has an information about security and integrations.
+[20:46] And basically now I have one clean place
+[20:48] to manage all of my different agents
+[20:50] because I've got a lot of different VPSs running
+[20:51] and I don't wanna forget my passwords
+[20:52] and I don't wanna forget like which agent is on which server
+[20:55] so I just have this project set up.
+[20:57] So I would definitely recommend you guys do this.
+[20:59] And I'm actually gonna do this live with you guys here
+[21:01] to show you what I mean.
+[21:02] So, all right, we are gonna go ahead and set up a new VPS
+[21:06] and we're gonna do a new Hermes agent.
+[21:07] So in the VPS underscore agents folder,
+[21:09] create a new subfolder called YouTube Hermes.
+[21:12] And then we're gonna go ahead and set up like, you know,
+[21:14] like the passwords and the configuration stuff
+[21:17] just so that you can help me make sure we maintain
+[21:20] this project well.
+[21:21] Now, the reason I like to do this is because
+[21:22] do you think that I like understanding VPSs
+[21:25] and terminal commands and CLIs?
+[21:26] Not at all.
+[21:27] And I'm not very good at it.
+[21:28] So who's better at that than me?
+[21:29] Hermes agent and Cloud Code.
+[21:32] And sometimes if you're running random commands
+[21:33] and you don't know what you're doing,
+[21:35] your Hermes agent might like shut down.
+[21:37] And now I have Cloud Code to help me
+[21:39] boot it back up if I need to.
+[21:40] And this may sound scary and overwhelming,
+[21:41] but trust me, it is so, so simple.
+[21:44] This is just a good best practice
+[21:46] to keep yourself organized.
+[21:47] Okay, so switching back over to our Hostinger dashboard,
+[21:50] you can now see that we have our VPS ready.
+[21:53] So if I click on Manage VPS,
+[21:55] this opens up our main dashboard.
+[21:56] Couple things to look at.
+[21:58] So first of all, we have our root access.
+[22:00] This is what we can actually give to Cloud Code.
+[22:03] So if it needs to root into our VPS
+[22:06] and like look at our passwords or help us fix things,
+[22:09] it can do so.
+[22:10] It would just need the password as well.
+[22:12] So here's where you can change that root password.
+[22:14] Down here, you can see your current plan.
+[22:15] You can see when it expires.
+[22:17] You can see your analytics and server data will pop up
+[22:20] and it will show you if you need to upgrade
+[22:22] to a higher plan.
+[22:22] And also, you can see on this left-hand side,
+[22:25] these are all the different servers that I've got running,
+[22:26] which is why I want a Cloud Code project
+[22:28] to help me keep that organized.
+[22:29] So the other thing you can do
+[22:30] is you can change the host name.
+[22:31] If you come into here,
+[22:33] you just have to have it end in a dot something.
+[22:35] So if I just do YouTube Hermes and then I do .vps,
+[22:40] I should be able to get that to go through.
+[22:41] And now, this host name in my dashboard
+[22:44] will change to that.
+[22:45] So I can just keep myself a little bit more organized.
+[22:47] Okay, so the two methods, right?
+[22:49] If you wanna do this at the root,
+[22:51] you would basically just open up a terminal
+[22:52] or Hostinger gives you a terminal right here,
+[22:54] which means I click on this button.
+[22:56] This opens up a terminal
+[22:57] that's already SSHed into our project.
+[22:59] You can see it's root at YouTube-Hermes.
+[23:02] And this is where you would just go ahead and go to Hermes
+[23:05] and you would just run the install command.
+[23:06] So you would come down here
+[23:07] and you would install with this one line command
+[23:09] and then you'd go ahead and do Hermes setup
+[23:11] and start configuring your Hermes agent.
+[23:13] But like I told you guys today,
+[23:14] what we're gonna do is the one-click install.
+[23:16] So we would go over to our Docker manager
+[23:18] and this is where we'd go ahead and click install.
+[23:20] And remember how we have our main server,
+[23:22] but if we wanted to spin up
+[23:23] a bunch of different Docker containers
+[23:24] inside of this server, we could do so.
+[23:26] And that's how you could keep
+[23:27] like different Hermes agents in here
+[23:29] and kind of keep them separate.
+[23:30] Okay, well, this says it's gonna take 10 minutes.
+[23:32] I doubt it.
+[23:32] Okay, yeah, just finished up.
+[23:34] So I'm gonna click compose.
+[23:36] I'm gonna go to one-click deploy.
+[23:38] And then when this loads up,
+[23:39] this is where I will search for Hermes
+[23:40] and I will click on select.
+[23:43] Now, here is where you have to set an admin username
+[23:45] and an admin password for your Hermes agent.
+[23:47] I'm just gonna leave this as default.
+[23:49] I'm gonna copy this password.
+[23:50] And what I'm gonna do
+[23:51] is I'm gonna go to my cloud code project
+[23:53] and I'm gonna save the admin password
+[23:55] and username into this new one.
+[23:57] So right here, you can see it made this one
+[23:59] called YouTube-Hermes.
+[24:01] And what I wanna do is I'm gonna add a new file in here,
+[24:03] call this one the .env.
+[24:05] And then in this .env,
+[24:07] I'm basically just gonna do admin underscore username
+[24:11] equals and then admin underscore password equals.
+[24:16] And then I'm gonna paste those two things in here.
+[24:18] So this is where I can keep myself organized with that.
+[24:21] All right, so I've saved that to my .env file
+[24:23] and now I can click deploy.
+[24:25] And this is gonna spin up that container.
+[24:27] And now if we wanna access this,
+[24:28] all we're gonna have to do is click on this little button
+[24:30] right here that it will give us,
+[24:31] which will basically put us into that container
+[24:35] and we can chat with Hermes, we can do the onboarding,
+[24:37] we can do everything in there.
+[24:38] But this main terminal button,
+[24:40] that is gonna take us to the root of our VPS,
+[24:42] not inside of this Docker container.
+[24:44] I hope I'm not losing you guys.
+[24:45] I know that it may seem like I'm an expert at this stuff,
+[24:47] but truly, I'm all self-taught.
+[24:49] I ask Hermes, hey, explain this to me.
+[24:51] I ask Cloud Code, hey, explain this to me.
+[24:53] And that is how I've learned all this stuff.
+[24:55] So it's really not too bad.
+[24:56] Okay, so while that's getting set up,
+[24:57] let me go back into our project
+[24:59] that we manage our VPS agents on.
+[25:01] Let's answer some questions.
+[25:02] So has the VPS already been provisioned on Hostinger?
+[25:05] I'm gonna say yes, it's already been provisioned.
+[25:08] Um, what's the primary scope for this YouTube Hermes?
+[25:11] I'm just gonna say other for now.
+[25:13] You don't really need to know that yet.
+[25:14] Right now, we're just setting this up as a demo.
+[25:16] All right, Telegram bot.
+[25:17] We will do a new bot via Botfather, yep.
+[25:20] And for the LLM provider, we will be using Codex GPT-OAuth.
+[25:24] So I will show you guys all of that as we get onboarded.
+[25:27] By the way, the speech-to-text tool
+[25:28] that I'm using right here is called Glido.
+[25:30] It is our speech-to-text startup.
+[25:32] I fully transitioned over from Whisper to Glido
+[25:34] and I am now official member of the Glido team.
+[25:36] It's faster, it's completely private,
+[25:39] and it's way more gentic,
+[25:39] so check it out, link in the description.
+[25:41] Okay, so now you can see
+[25:42] that this Hermes agent thing is set up.
+[25:44] All I have to do now is click on Open
+[25:46] and this is where you have to go get the admin username
+[25:48] and password that you just saved.
+[25:50] So go grab that and put it in.
+[25:51] And once you put that in,
+[25:52] you basically just start the onboarding right away.
+[25:54] So we're gonna do our quick setup.
+[25:55] So I'm just gonna go ahead and hit Enter.
+[25:57] We then have to choose an inference provider.
+[25:58] So as you can see, there's tons of different options,
+[26:00] like a ton of different options.
+[26:01] But what I wanna do is I wanna use OpenAI Codex.
+[26:04] This actually lets you take your ChatGPT subscription,
+[26:06] so 20 bucks, 100 bucks, 200 bucks a month,
+[26:09] and use that inside of Hermes agent instead of API keys.
+[26:12] So it's gonna be the cheapest option by far
+[26:14] besides using an open source model.
+[26:17] So I'm going to choose OpenAI Codex.
+[26:21] Now what happens is it makes you go to this URL.
+[26:22] So I'm gonna click on that.
+[26:23] It has you sign into your ChatGPT account
+[26:25] and then you have to give it access.
+[26:27] And then you have to go back into the terminal.
+[26:29] You're gonna grab this, what is that, a nine-digit code,
+[26:32] and copy that, and then paste that into there,
+[26:35] hit continue, and when you go back to your VPS,
+[26:36] you should be fully signed in and it should authenticate.
+[26:39] There you go, login successful.
+[26:41] We get to choose a model now,
+[26:42] so I'm obviously gonna choose GPT 5.5.
+[26:45] And now we're gonna set up our channel.
+[26:46] So set up messaging now, I'm gonna choose that.
+[26:49] We're gonna go ahead and hit Space to hit Telegram.
+[26:52] This is where you could also choose
+[26:53] some other things if you want,
+[26:54] but for now I'm just gonna go Telegram and hit Enter.
+[26:57] And now it asks us for a Telegram bot token.
+[27:00] So what we have to do in our Telegram
+[27:01] is we have to start a new conversation with the bot father
+[27:04] to create a new bot.
+[27:05] So here I am in the bot father.
+[27:06] I'm going to do slash new bot.
+[27:09] It asks us for a name.
+[27:10] This is gonna be YouTube Hermes,
+[27:13] and then it asks us for a bot username.
+[27:15] So I'm gonna try YouTube Hermes, oops,
+[27:16] YouTube Hermes bot, does that work?
+[27:18] Username is taken.
+[27:19] Okay, an absolutely super ugly name, but that works.
+[27:23] And now this is the token right here
+[27:25] that you're going to need to copy
+[27:26] and you're going to give to your VPS down here.
+[27:30] So I'm gonna go ahead and paste that in.
+[27:31] It might not actually appear.
+[27:32] Sometimes it just does that in the terminal,
+[27:33] but I'm gonna go ahead and hit Enter anyways.
+[27:35] So now that token has been saved.
+[27:37] And the next thing you have to do is allow a certain user ID.
+[27:40] So right now I only want my Telegram account
+[27:43] to be able to talk to our Hermes.
+[27:45] So we have to go get our own user ID.
+[27:47] It gives you the steps right here.
+[27:48] You have to message the user info bot
+[27:49] and it will give you your number.
+[27:51] So once again, if you go back into Telegram
+[27:52] and just search for user info bot, it will look like this.
+[27:55] This is where it gives you your ID.
+[27:57] So you're gonna go ahead and copy that
+[27:58] and paste that into VPS terminal thingy.
+[28:01] So this is the home channel.
+[28:02] I'm gonna say yes, this is the user ID
+[28:04] I want to use for the home channel.
+[28:05] Hit yes.
+[28:06] And now we're basically completely set up with Hermes.
+[28:10] What do we have available?
+[28:10] So to start off, tool availability.
+[28:12] We have vision, we have browser automation,
+[28:15] we have image gen, we have text-to-speech,
+[28:16] we have terminal commands, task planning, and skills.
+[28:20] We also have different files.
+[28:21] So here's our settings, here's our API keys,
+[28:23] here's our data, here is how we can edit configuration.
+[28:26] So what I'm gonna do is I'm just gonna copy all of this.
+[28:29] I'm gonna take all of this
+[28:30] and I'm gonna go ahead and hit copy
+[28:31] and I'm gonna go back into our Cloud Code project,
+[28:33] paste that in, and then just say,
+[28:35] all right, so we just set up this Hermes agent
+[28:38] and here is all the information that it gave us.
+[28:40] So make sure you save this so later if I need help
+[28:42] with tools or skills or files,
+[28:45] you know exactly how to help us do that.
+[28:47] So hopefully now you guys are starting
+[28:48] to understand the value.
+[28:49] If you're ever getting confused on something
+[28:51] with your Hermes or your VPS,
+[28:52] you just open this up and say I'm working on this agent,
+[28:54] I need help with X, Y, and Z.
+[28:56] I've actually saved myself a ton of times doing this.
+[28:58] And also when you wanna start thinking about security
+[29:00] and maybe getting a firewall on your VPS
+[29:02] and locking it down a little bit,
+[29:03] which I definitely recommend you should look into,
+[29:05] that is something that Cloud Code
+[29:06] is gonna help you out with big time.
+[29:08] But Hermes can also help you out with that too.
+[29:10] I have my Hermes agents doing like a nightly sweep
+[29:12] of just making sure that things
+[29:14] are kind of locked down in the right spots.
+[29:15] But anyways, now you can see it says,
+[29:16] do you wanna launch Hermes Chat now?
+[29:18] I'm gonna say yes and this pulls up
+[29:21] the command line interface for Hermes.
+[29:23] You can see it's gonna load up,
+[29:24] it's gonna let us chat with it right here
+[29:26] and it's gonna look kind of similar to
+[29:28] if you use Cloud Code in the terminal.
+[29:29] There we go, so we have our Hermes agent,
+[29:31] I love this text up here.
+[29:33] We can see available tools, we can see available skills,
+[29:35] you can see there's already a ton of them.
+[29:37] There's 85 already installed and we're able to see
+[29:40] our model, our context window,
+[29:42] and how long we've been in this session.
+[29:43] So let me just make sure that our connection
+[29:44] to Chats with BT is working.
+[29:45] I'm just gonna say hello and awesome,
+[29:47] it has given us a response.
+[29:49] Now let's go ahead and start our telegram
+[29:50] and see if we can get this connected.
+[29:52] So this is the bot that I just made.
+[29:54] I'm gonna hit start and I'm gonna say hello.
+[29:56] And if it's working, then we'll see a typing
+[29:58] in the top left up here.
+[30:00] But what you'll notice right now is that it's not working,
+[30:02] there's no typing.
+[30:03] So what I'm gonna do is go back into our Hermes right here
+[30:05] and say, hey, for some reason,
+[30:07] the telegram connection doesn't seem to be working,
+[30:09] I just shot the message off and said hello
+[30:11] and I'm not getting anything back.
+[30:12] And look at that, it's already invoking
+[30:14] a Hermes agent skill to understand what's going on,
+[30:16] it's doing a plan, it's running some commands right here.
+[30:19] So it's basically going to investigate
+[30:20] how we make sure to get this telegram connection all set up.
+[30:23] Okay, so it actually just sent me a message.
+[30:26] It says, Hermes gateway is back online.
+[30:27] If you sent hello, try it again.
+[30:29] So we'll go ahead and try that again, hello.
+[30:31] And now we can see in the top left, it is typing
+[30:34] and it's actually able to respond.
+[30:36] So it said that it found the issue,
+[30:37] the gateway was stopped and it started it again,
+[30:39] so that is perfect.
+[30:40] Okay, so we are up and running.
+[30:42] We can see we now have Hermes right here.
+[30:44] So let's just go ahead and get on board
+[30:46] a little bit with it.
+[30:46] I'm gonna say, hey, Mr. Hermes, my name is Nate.
+[30:51] I want you to be my ultimate personal AI assistant.
+[30:54] So let me know what you need from me
+[30:56] and what features and stuff that you can actually do for me
+[31:00] and how you can make my life easier.
+[31:01] And once again, that is actually going
+[31:03] to be able to transcribe that audio
+[31:05] and understand it and then respond to us.
+[31:07] And what I love about using Hermes,
+[31:08] especially even if you're in telegram,
+[31:10] you still get to see the visibility of what it's doing.
+[31:12] So you can see it's skill view.
+[31:14] You can see it's adding some user memory.
+[31:16] So it's saying user's name is Nate Herc.
+[31:18] So as I'm editing this video, I was like, wait a minute,
+[31:20] how did this thing know my last name was Herkelman?
+[31:22] All I said in the voice message was, hey, my name's Nate.
+[31:25] And I was like, oh, that's scary.
+[31:27] And then I realized telegram has my full name.
+[31:30] So yeah.
+[31:33] And then it goes ahead and responds with a bunch of stuff.
+[31:35] So great to meet you, I've saved your name
+[31:36] and that you want me to operate
+[31:37] as a serious personal AI assistant.
+[31:39] Here's what I can do.
+[31:40] I can do admin stuff.
+[31:41] I can do research.
+[31:42] I can do coding, automation, files and documents, voice.
+[31:46] Here's some stuff I need from you.
+[31:47] So this is where you'll probably just want to yap
+[31:49] to this thing for five to 10 minutes.
+[31:51] Tell it about your goals.
+[31:52] Tell it about what you're working on.
+[31:53] Tell it about your team.
+[31:54] Tell it about skills that already exist that you have
+[31:56] and just giving it some more information
+[31:57] so it knows you a little bit better.
+[31:59] Now, what this is going to start to do
+[32:00] is it's going to start to build its own environment, right?
+[32:02] It's going to build those files that we mentioned
+[32:04] and it's going to potentially start
+[32:05] to build out the whole infrastructure
+[32:07] for skills and other stuff.
+[32:08] So the first thing that I think that everyone needs to do
+[32:10] when they set up a Hermes agent
+[32:12] is they need to connect it to a GitHub repo.
+[32:13] The reason being, if Hermes goes down for some reason
+[32:16] and the VPS is corrupted, you still have all of that saved.
+[32:19] So you could take that repo
+[32:20] and just wake up a new Hermes agent and sync it to that
+[32:23] and then it's like you didn't lose anything.
+[32:25] So that's exactly what we're going to do.
+[32:26] Before I start to give you all of this information about me,
+[32:29] I really want to just make sure that we sync this project
+[32:31] to a GitHub repo.
+[32:33] So can you just do some research
+[32:34] and figure out how that works?
+[32:35] I can go ahead and give you whatever you need
+[32:37] as far as an API key or information about my GitHub account
+[32:42] so that you can create this,
+[32:43] but I want you to set this up as a private repo for me.
+[32:45] And so what this is going to do, it's going to do research.
+[32:47] I'm going to show you guys
+[32:48] how we give it that API key in a safe way.
+[32:50] And it's also going to help us figure out,
+[32:53] it's going to probably build a skill around this.
+[32:55] And then what we're going to do
+[32:56] is we're going to turn it into a cron
+[32:57] so that every single day at midnight or something,
+[32:59] it automatically backs up everything that we did.
+[33:01] So every day, if we ever make changes,
+[33:03] our repo is committing every single day automatically.
+[33:06] You can see it's viewing different skills.
+[33:07] It already has two skills for GitHub repo management
+[33:09] and GitHub auth, which is awesome.
+[33:11] It's running some terminal stuff.
+[33:12] It's searching through some files.
+[33:14] I'll check in with you guys once we have an action to take.
+[33:16] And while it's doing that,
+[33:18] let me just show you guys.
+[33:19] So if you've never used GitHub before,
+[33:20] don't be intimidated.
+[33:21] It is basically, just think about it like a shared drive,
+[33:24] like a OneDrive.
+[33:25] It's a place for you to store your projects
+[33:27] and your code bases.
+[33:28] And that way, if you wanted to pick up on your laptop
+[33:31] or on a different device,
+[33:32] you could still access all of those files.
+[33:34] So it's really important that we're going to set up
+[33:36] this automated backup.
+[33:37] It's completely free to set up,
+[33:39] go to GitHub and get an account set up.
+[33:41] And now we got a response here that says,
+[33:42] okay, I checked the environment
+[33:44] and I researched the clean setup path.
+[33:46] Git is installed, but the CLI is not installed.
+[33:49] But it actually said, okay,
+[33:50] we're going to do the API with a personal access token.
+[33:53] So create a private repo, initialize Git locally,
+[33:55] and add a safe.gitignore
+[33:57] to make sure that our API keys and our secrets
+[33:59] don't get pushed to this repo,
+[34:00] even though we're going to keep it private,
+[34:02] still best practice.
+[34:03] It says, I need you to send me these four things,
+[34:05] your GitHub username, your private repo name,
+[34:08] your git commit identity, and your GitHub token.
+[34:11] Before pushing, I'll make sure we do not upload secrets
+[34:14] that are in these files.
+[34:15] And I will also create a .gitignore,
+[34:17] so it knows GitHub way better than I do,
+[34:19] probably better than you do,
+[34:20] unless you're coming from a GitHub background.
+[34:22] So if you're curious about it, just ask it,
+[34:24] and it has these skills to manage GitHub repos.
+[34:26] And now what's interesting is,
+[34:27] if I actually go and give it my personal access token,
+[34:30] it should be able to set up the repo.
+[34:32] So I don't want to manually click around and do that.
+[34:34] Let's see if it can do it for us.
+[34:35] But what I do need to do is get our token.
+[34:37] So I'm going to click on this link it gave us.
+[34:39] That opens up my GitHub.
+[34:40] I'm going to go ahead and generate a new token.
+[34:42] So I'm going to do a fine grained new token.
+[34:45] I'm going to, real quick, authenticate.
+[34:47] Token name, we're going to call this the YouTube Hermes.
+[34:49] I'm going to just have this one.
+[34:51] Probably you want this to never expire,
+[34:53] but because I'm going to delete this right after the video,
+[34:55] I'll just keep it at 30 days.
+[34:56] You could do public, you could do all,
+[34:57] or you could do select.
+[34:59] And so this is, I guess, the point where
+[35:00] you would probably want to make the repo
+[35:02] if you want it to only sync to that one.
+[35:03] So I'm just going to go ahead and say all repos.
+[35:05] And then for permissions, what we need to do is
+[35:07] we want to do contents,
+[35:09] and we want to make sure that this is read and write.
+[35:11] So it can pull in stuff, but also push updates every night.
+[35:15] We're going to go ahead and generate that token.
+[35:17] And I am going to now just have to copy this
+[35:20] and show you guys how we give it to Hermes.
+[35:22] Because what you might be tempted to do
+[35:23] is just drop it in the chat.
+[35:25] And honestly, depending on the model you're using,
+[35:27] it might not be a huge deal,
+[35:28] but it's just not best practice.
+[35:30] And if you do accidentally do it,
+[35:31] and it's going to open AI servers,
+[35:33] then you can just rotate it, so it's not a big deal.
+[35:35] If you're using an open source model
+[35:37] and it's completely local and private,
+[35:38] then you could just drop it in,
+[35:39] because Hermes obviously will take it,
+[35:41] put it into the .unv, and put it where it needs to go,
+[35:44] which is nice, but then it's in the conversation history.
+[35:47] So the way that we're going to do this
+[35:48] is we're actually going to go back to the VPS,
+[35:50] and then you're going to go ahead right here
+[35:51] and click on open.
+[35:52] And what this is going to do is obviously open up that chat,
+[35:54] but we're going to try to get out of the Hermes chat
+[35:56] and just get into like this Docker container.
+[35:58] So I'll hit control C.
+[35:59] And now what I can do is Hermes config set,
+[36:04] all caps, GitHub underscore token, hit space.
+[36:07] And now I can paste in that GitHub token.
+[36:10] And when I hit enter, that basically sets that
+[36:12] in the slash opt slash data slash .unv.
+[36:15] So now we have put this token into that .unv file
+[36:19] inside of our VPS without putting it
+[36:22] into the AI conversation window.
+[36:23] And this is the way that you should be setting up
+[36:25] all of your API keys in here.
+[36:27] So now if I say, all right,
+[36:28] so I just dropped in my API key for GitHub
+[36:32] in the .unv file.
+[36:35] It is called GitHub underscore token.
+[36:38] So see if that works.
+[36:38] And then what I want you to do
+[36:39] is actually just create the repo for me.
+[36:41] My GitHub username is Nate Hurk AI.
+[36:44] My commit identity can just be Nate Hurk
+[36:46] and you can call this repo whatever you want
+[36:48] and make sure it's private.
+[36:50] Okay, so hopefully that works
+[36:51] and hopefully it's able to find that API key.
+[36:54] Let's go ahead and just see what it does.
+[36:56] Now, once again, if this stuff down here is confusing you
+[36:58] or if you want to delete a key or whatever it is,
+[37:00] then you will go to your cloud code project.
+[37:04] You will give it the info it needs and say,
+[37:05] hey, by the way, my agent is set up in a Docker container
+[37:08] and this is the name of the container
+[37:10] and here is the SSH and help me just figure out
+[37:13] where my files are or where my API keys are.
+[37:16] Okay, so that worked.
+[37:16] It found the API key, but what happened is
+[37:19] we didn't give it permission to actually create repos.
+[37:21] Okay, cool.
+[37:22] So I'm actually gonna just go ahead
+[37:23] and create a new classic token.
+[37:25] But remember, we can't have two tokens in there
+[37:27] called GitHub underscore token or they're gonna clash.
+[37:29] So I'm actually glad this happened
+[37:30] because what this will do is it will have me
+[37:33] have to show you guys how we can delete an API key.
+[37:36] So I'm just gonna say to our Hermes,
+[37:38] okay, can you give me the command to run
+[37:40] inside of the terminal that we can actually open up
+[37:43] that .env file that you just accessed
+[37:45] because I need to delete that GitHub token
+[37:47] so I can give you a new one.
+[37:49] All right, so we have this command,
+[37:51] which is the file path for that .env.
+[37:53] And if I go to the terminal now, the one up here,
+[37:56] which is our root level VPS terminal, not the Docker one,
+[37:59] and we paste that in,
+[38:01] that should basically open up that file for us.
+[38:03] Although it looks like
+[38:04] that we haven't actually installed nano yet.
+[38:06] So I'm gonna say, when I paste it in that first one,
+[38:08] it said nano colon command not found.
+[38:12] And I know that I had this paste it in a little bit weird,
+[38:14] but I think that we still would have got this either way.
+[38:16] So now we can just use this instead apparently.
+[38:18] So let's copy that and let's get this pasted in here.
+[38:21] Hit enter.
+[38:22] And now we see,
+[38:24] can you just show me how we could get
+[38:25] the nano command to work instead?
+[38:27] And just wanna confirm that we should be doing this
+[38:29] on the root of the VPS,
+[38:30] not inside of the Docker container image that you run on.
+[38:34] Okay, so that V1 command was weird,
+[38:36] and normally I use the nano, so I just asked that question.
+[38:40] Okay, so I figured it out.
+[38:42] What happened was the agent's running
+[38:45] inside of a container, right?
+[38:46] And then we were doing, looking at the root file
+[38:49] for the .env, but actually we needed to be looking
+[38:53] at the .env inside of that Docker container.
+[38:55] So this is the nano command that we actually need to use
+[38:58] that gets us into the dockercontainer.env file.
+[39:01] So now you guys understand that you don't have
+[39:04] to understand exactly how all this stuff works.
+[39:07] You just have to be able to communicate clearly
+[39:09] what's wrong and what you're seeing.
+[39:10] So I'm gonna go ahead and delete this GitHub token,
+[39:13] and then we're gonna go ahead and generate the new one,
+[39:14] and you guys are gonna see me put it
+[39:15] in the same way that we did earlier.
+[39:17] What you do in here is you do Control-O,
+[39:19] and then you hit enter, and then you do Control-X,
+[39:22] and that's how you save it.
+[39:23] But now I can go ahead and create a classic token
+[39:26] instead of a fine-grained.
+[39:27] We're gonna do a new classic,
+[39:28] and now we can select the scopes.
+[39:30] And this is where you would choose
+[39:31] exactly what actions you want.
+[39:33] We definitely want the repo actions
+[39:34] to be able to access public repos and invitations.
+[39:38] And this is where you might wanna just go through
+[39:40] and give it read access to things,
+[39:41] but not write access to everything.
+[39:42] But as you guys can see, it's not a huge deal
+[39:44] if you need to come back in later
+[39:45] and increase or decrease the scope.
+[39:47] So I'm just gonna go ahead and generate this token.
+[39:49] We're gonna copy this, and we're gonna do
+[39:51] that exact same thing in here,
+[39:52] where we do our Hermes config set GitHub underscore token,
+[39:58] and then we paste that puppy in.
+[40:00] And now that should be set.
+[40:02] I'm gonna go back into Hermes and say, awesome.
+[40:04] The new GitHub token that you see in that .env file
+[40:08] should be the updated one.
+[40:09] So go ahead and create that private repo for us now.
+[40:12] And what you see here is even in Telegram,
+[40:14] it can ask you for access to things or permissions.
+[40:16] So you can allow it once, you can allow it for the session,
+[40:19] or you can always allow something.
+[40:20] So in this case, when it is creating a repo
+[40:23] or it's going to be committing to a repo,
+[40:25] I'm just gonna go ahead and do always allow,
+[40:27] so that in our skill we're about to set up,
+[40:28] where it does a daily sync, it just does it with no problem.
+[40:31] Okay, so that has been created.
+[40:32] It gave us a link.
+[40:33] If I click on this, it should pull up
+[40:35] a private repo right here.
+[40:36] You can see this is Hermes Personal AI Assistant.
+[40:38] It's private.
+[40:39] And here are all the files that it already pushed
+[40:41] into what we're doing in this project.
+[40:43] So if you wanted to dig in,
+[40:44] you could take a look at what is here.
+[40:46] Now that that's created, let's go ahead and make a skill.
+[40:49] Awesome, so I'm gonna be using you a lot
+[40:51] and you're gonna be creating different skills
+[40:52] and different memories about me and stuff like that.
+[40:55] So what we need to do is set up our first cron job.
+[40:57] And I want you to build a skill around this.
+[40:59] Basically every single night at 12 a.m.,
+[41:02] so midnight central time,
+[41:03] I want you to push changes to this GitHub repo.
+[41:07] This is gonna be kind of our source of truth.
+[41:10] So if you have any questions about that, please ask,
+[41:12] but otherwise just go ahead and set up the skill
+[41:14] and set up the cron.
+[41:17] And it's really just as simple as that.
+[41:18] In natural language, you say, hey, every night at 12 a.m.,
+[41:21] or you can even do things like what I do
+[41:23] for my YouTube videos is I drop a video
+[41:25] and then I give it the link to that YouTube video
+[41:28] and I say, hey, for the next 12 hours,
+[41:30] run a cron every 10 minutes
+[41:32] to go check on comments and respond to them.
+[41:35] So you can set up basically the same way
+[41:36] that the slash loop works in Cloud Code.
+[41:39] You can say, hey, for the next 24 hours,
+[41:41] just do this every five minutes.
+[41:42] And then once 24 hours has passed,
+[41:44] go ahead and kill that cron.
+[41:45] And it can do things like that as well.
+[41:47] You can see it's viewing a bunch of different skills,
+[41:48] it's gonna run some terminal stuff,
+[41:50] and then hopefully we're gonna see it create a skill
+[41:52] and maybe update some stuff in its memory.
+[41:54] Now while this is running,
+[41:55] there's one thing that I wanted to hit on real quick,
+[41:56] which is basically like what's the difference
+[41:58] between using Hermes in the terminal
+[42:01] or using it in Telegram?
+[42:03] So functionally, it's really not all that different.
+[42:06] It's the same agent in both interfaces.
+[42:08] Telegram does not run a weaker version of it,
+[42:10] but you have a little bit less control
+[42:12] when you're using it in Telegram.
+[42:15] The CLI is kind of like the cockpit,
+[42:17] and Telegram is more like your remote control.
+[42:19] You can also set up things like your dashboard,
+[42:21] and Hermes has its own Kanban board
+[42:22] so you can monitor tasks,
+[42:24] which is, in my opinion, I don't use it at all.
+[42:26] I think if I was doing hardcore coding
+[42:28] and I had different agents working on different things
+[42:30] and I could view the project in a visual way,
+[42:33] it would be super helpful.
+[42:34] But the way that I'm using Hermes agent,
+[42:36] like I talked about in the beginning of the video,
+[42:38] where it's kind of like my on-the-go wherever AI agent,
+[42:41] I don't really need that Kanban board.
+[42:42] It's not too useful for me.
+[42:44] But anyways, that's like the mental model.
+[42:46] The CLI, which I hardly ever use, is best for deep work.
+[42:50] You're building something, you're coding,
+[42:52] you're living in there as kind of like your operating system,
+[42:55] and it just has more commands.
+[42:58] You have the ability, obviously, as we saw in here,
+[43:01] you can see your context better, you can manage that better.
+[43:03] You have all the slash commands available to you,
+[43:05] whereas in Telegram, it's not exactly the same.
+[43:07] And the session or the context window
+[43:09] feels a little bit more ambiguous, and ultimately it is.
+[43:12] It's still doing auto-compaction and stuff
+[43:14] under the hood, but that's why I'm saying in Telegram,
+[43:17] I'm not gonna be vibe coding apps and projects
+[43:19] because I might be in context-wrought territory,
+[43:21] and I don't have really the best ability to manage that.
+[43:24] So for me, being able to say, hey, check on ClickUp
+[43:26] and check in with the team and do this, and do this cron,
+[43:29] it's not like a super, super high-risk operation,
+[43:32] which is why I'm fine having less visibility
+[43:35] into context window, session management, things like that.
+[43:38] So that's what Telegram is best for.
+[43:39] Scheduled things, quick tasks,
+[43:42] kind of your general knowledge work
+[43:44] that's not super, super high-risk.
+[43:45] Once again, though, same agent, same brain,
+[43:47] same window, same skills, same memory,
+[43:49] but you lose a lot of the visibility there.
+[43:50] You lose a lot of those slash commands.
+[43:53] And context, right?
+[43:55] It's token-based.
+[43:56] It's not message-based.
+[43:57] So the model, no matter what,
+[43:58] is going to see your system prompts,
+[44:00] your user.md, your sole, all that kind of stuff,
+[44:04] and that has to fit inside the context window,
+[44:07] and it's going to be running those auto-compactions
+[44:10] as you get near that.
+[44:11] So in Telegram, it's a little bit tougher to understand,
+[44:13] like, okay, where did the session actually reset,
+[44:15] and how much information does it see
+[44:17] in this current working sort of memory?
+[44:19] So hopefully that makes sense,
+[44:21] the difference between CLI and Telegram,
+[44:24] and that's why if you were trying to vibe code
+[44:26] like a hardcore app or game out of Telegram,
+[44:29] it might just not feel as good
+[44:30] as if you were doing it in the CLI.
+[44:32] But anyways, let's see what's going on here.
+[44:34] So it set up the first cron job.
+[44:35] You can see if we look at this stuff,
+[44:37] it was able to write some files.
+[44:38] It was able to use a cron job create tool.
+[44:41] It used the cron job list to see if it's there,
+[44:43] and it also updated memory at the bottom,
+[44:45] so that's super awesome.
+[44:47] The skill is called Nightly GitHub Sync,
+[44:49] and it's syncing to this repo.
+[44:51] So the container is running in UTC,
+[44:53] so instead of using a fixed UTC time
+[44:55] that would break during daylight savings,
+[44:57] I made it run hourly and self-checked central time.
+[45:00] So this actually syncs to midnight my time in Chicago,
+[45:04] and it's going to mirror safe assistant state
+[45:07] into the repo under this branch.
+[45:11] And now what else you could do is you could copy this
+[45:12] and give this to your Cloud Code project
+[45:14] if you wanted it to have this visibility,
+[45:15] or of course you could have your Cloud Code project
+[45:17] look at the repo you're building.
+[45:18] However you want to keep things a little bit synced up,
+[45:20] whatever makes you feel more comfortable,
+[45:22] because you don't have to remember all this.
+[45:23] Cloud Code can.
+[45:24] Hermes obviously does.
+[45:25] Just give yourself a little bit of insurance there.
+[45:28] Anyways, that Nightly Sync is now active, so that's great.
+[45:31] But all right, I think at this point
+[45:32] you guys really have everything that you need.
+[45:34] You understand the pillars.
+[45:35] You understand how to do API keys
+[45:36] and navigate your VPS environment.
+[45:40] At this point, it's really just a matter
+[45:41] of figuring out what workflows make sense
+[45:44] to put into your Hermes agent.
+[45:47] So if we want to start talking about that a little bit,
+[45:48] you have two main paths to have your first skill.
+[45:50] The first one is where you describe an outcome.
+[45:52] You just saw that, what I did with the GitHub sync cron.
+[45:56] That was super, super simple.
+[45:57] The other path is you could write your own,
+[46:00] or you could install one from your Cloud Code projects,
+[46:02] or obviously from the skills library,
+[46:05] where you would click on a skill
+[46:06] and you would just run this command
+[46:08] or tell your Hermes agent to go install that.
+[46:10] So for example, if I went ahead and just copied this URL,
+[46:13] put it into here, and said,
+[46:15] I want you to go ahead and real quick install
+[46:17] the HyperFrames official skill from here,
+[46:19] and then generate me a five second video,
+[46:21] which is just like you introducing yourself
+[46:24] and showing me a little bit of your personality,
+[46:26] if there's anything in your soul.md already.
+[46:28] So while that's running, we'll continue talking about it.
+[46:30] And then, basically, as you're asking it to do more things
+[46:33] and as you're asking it to work
+[46:34] on those repeatable processes, watch what happens.
+[46:37] I think that's what's really important,
+[46:38] is to watch what it's doing.
+[46:40] Watch if it's viewing a skill.
+[46:41] Watch if it's running something in the terminal.
+[46:43] Because if you want it to invoke a skill and it's not,
+[46:45] then that's basically an indicator for you to say,
+[46:48] hey, whenever I say something along the lines of this,
+[46:52] you should probably be invoking that skill.
+[46:54] So go ahead and update the YAML front matter
+[46:56] so that you more accurately actually call on
+[46:58] the correct skill.
+[46:59] And from there, you just use it more
+[47:01] and you give it as much feedback as possible,
+[47:03] give it more information about you.
+[47:04] Now, a few things I wanted to touch on
+[47:05] about the mindset of having a personal assistant like this,
+[47:09] I typically always set up my Hermes agents
+[47:11] with their own accounts.
+[47:12] So if I'm gonna give this thing an email address,
+[47:14] I'm gonna give it its own Gmail
+[47:16] or its own agent mail account.
+[47:17] I'm not gonna give it mine.
+[47:19] Or if I am, I'm gonna give it an API key
+[47:20] with very strict scopes.
+[47:22] I'm also giving all of my different agents
+[47:24] different API keys if they're gonna spend.
+[47:26] So open router or perplexity.
+[47:28] I'm gonna give each one a named API key
+[47:30] so I can see which agents are using how much of my money.
+[47:33] And I think best practices is like,
+[47:35] pretend this is an actual intern or a new employee.
+[47:38] What access would you give them?
+[47:39] You wouldn't just give them your credit card.
+[47:41] You wouldn't just give them all this stuff.
+[47:42] So why would you do that with an autonomous agent?
+[47:44] I'm gonna go ahead and approve this command real quick.
+[47:46] So I think it's really important
+[47:47] to be thinking about it in that way,
+[47:49] obviously to protect yourself and to protect your business.
+[47:52] And speaking of protection,
+[47:53] another thing that you wanna look at probably doing
+[47:55] is when you come into your VPS,
+[47:57] think about how you can lock this down a little bit more.
+[47:59] So you can come over here to security
+[48:01] and you can set up a firewall.
+[48:03] And right here, you can see I've got one on this VPS
+[48:06] and I think it's overall on my VPS called up at guard,
+[48:08] but you can set one up to lock it down for like your IP
+[48:11] and to block out certain ports and stuff like that.
+[48:13] And I don't really know anything about firewalls
+[48:15] as far as like formal education.
+[48:17] I had to do my own research,
+[48:19] but guess how I set up my firewall.
+[48:21] I asked Hermes and I asked Cloud Code to do research,
+[48:25] look at our environment, look at our VPS
+[48:27] and help me figure out how to lock it down.
+[48:29] And then what you can do is build skills around it
+[48:30] where every night or once a week,
+[48:32] they're doing an audit on the security.
+[48:34] They're maybe trying to attack it, trying to get in
+[48:36] and they're helping you optimize
+[48:37] just to make sure that your VPS is staying safe and secure.
+[48:39] But anyways, we're starting to reach the end
+[48:41] of this video here.
+[48:42] So I wanted to wrap up with maintaining your Hermes agent.
+[48:45] Definitely let me know in the comments,
+[48:46] what else you want to see with Hermes,
+[48:47] if I can expand on some stuff deeper for you guys
+[48:49] or specific use cases.
+[48:51] But anyways, when the agent gets something wrong twice,
+[48:53] correct it on the spot and tell it to update
+[48:55] the relevant skill and or memory.
+[48:57] So same thing, if you give the same instruction twice,
+[48:59] ask Hermes to write a skill for it.
+[49:00] When the agent is too verbose or off tone,
+[49:02] you have it edit the soul.
+[49:04] When you want a new scheduled task,
+[49:06] you build a skill and then you just ask it
+[49:07] to schedule that cron.
+[49:08] When something breaks, check the memory.md.
+[49:10] Stale memory is the number one cause
+[49:12] of weird agent behavior.
+[49:13] And this isn't a tool you finish setting up.
+[49:15] It's a teammate that you keep using and you keep training.
+[49:18] And of course, you can always at any time say,
+[49:20] hey, read me your memory file, read me your soul file.
+[49:23] Let me see what's actually in there.
+[49:25] And it's funny right here.
+[49:26] Remember how I asked this agent to make a video
+[49:28] about itself to show me its personality.
+[49:31] It had to obviously read its own soul file
+[49:34] to know what to put inside of that video.
+[49:37] And it's only gonna be a five second video,
+[49:38] so we'll see what it really comes out as.
+[49:40] But this is just showing you how I dropped in a skill,
+[49:43] it's installing it, it's doing all the hard work,
+[49:45] and we should get an output very soon.
+[49:47] All right, fingers crossed that this is good.
+[49:50] It installed the HyperFrame skill
+[49:51] and then generated a five second video based on its soul.
+[49:53] I don't even know what was in its soul.
+[49:55] So let's take a look what we got here.
+[49:57] We have Hermes, helpful, knowledgeable,
+[49:59] direct, think, build, research, automate.
+[50:01] Nate, I'm your action engine.
+[50:04] For a five second video, not too bad.
+[50:06] I turn messy goals into finished actions.
+[50:08] Yes, you absolutely do, Hermes.
+[50:10] And I didn't even give this poor thing a name yet.
+[50:12] So from here, I'm gonna start building up the soul,
+[50:14] I'm gonna start giving it way more information
+[50:16] about me and my business,
+[50:17] and I'm gonna keep letting it build up skills
+[50:18] and just learn more over time.
+[50:20] And that's exactly what you guys should be doing now.
+[50:22] Also, one more quick thing is I obviously did this
+[50:25] for a demo, so I told it to pause that cron for now.
+[50:27] And I wanted to show you we finally hit that threshold
+[50:30] where it does a compaction.
+[50:31] So we were at almost 170,000 tokens,
+[50:34] which is over the threshold of about 136K.
+[50:36] So it decided to go ahead and try to compress.
+[50:39] For some reason that failed,
+[50:40] so it inserted a fallback context marker.
+[50:43] And then we can see it can use the other cron tools
+[50:45] to list and pause, and then it did a memory update as well.
+[50:48] But let's say you didn't understand
+[50:49] what these two lines mean.
+[50:50] Once again, just paste that in and say,
+[50:52] okay, so you just sent me these messages
+[50:54] and I don't understand what that means.
+[50:55] Explain it to me.
+[50:57] So I'm not gonna read this out right now
+[50:58] because I feel like I've been talking to you guys
+[51:00] for a long time.
+[51:02] Give that a quick read.
+[51:03] Go ahead and pause the video
+[51:04] and understand what that means
+[51:06] in case you get that message
+[51:08] from your Hermes agent at some point.
+[51:09] Now, as you start to make more and more
+[51:11] of these Hermes agents, it does get interesting.
+[51:13] You have some decisions to make,
+[51:14] which is basically like, where do they live?
+[51:16] And when do I do that?
+[51:18] And how do they have separation
+[51:20] but still be able to talk to each other?
+[51:21] Questions like that start to come up.
+[51:23] So I wanted to talk a little bit more
+[51:24] about how you kind of scale this up.
+[51:27] So if you're doing it on one VPS,
+[51:29] I think the best way to do it
+[51:30] is to have them each in their own container,
+[51:32] which is why in this setup,
+[51:34] I decided to do the one-click install
+[51:36] besides the fact that it's very, very easy.
+[51:38] So for example, if you guys remember,
+[51:40] we have our kind of personal main one that we set up.
+[51:43] And remember when we were trying to figure out
+[51:44] the API keys and deleting them and stuff,
+[51:46] we figured out that those API keys were stored
+[51:49] inside of that Docker container.
+[51:51] So this agent has its own memory,
+[51:52] its own tools, and its own private keys.
+[51:54] So then as we started to add on more,
+[51:56] if we put them in their own container as well,
+[51:58] they will all have their own keys
+[51:59] and then they don't clash.
+[52:01] And that's where you can get more visibility
+[52:02] as far as like how often they're using their tools
+[52:04] and how much money they're costing you
+[52:06] and things like that.
+[52:07] And that's the value of having your VPS
+[52:09] being like the office building
+[52:10] and then each agent being their own container
+[52:12] with their own passwords, keyboard, whatever you,
+[52:16] if you're thinking like an office analogy,
+[52:18] coffee mug, whatever it is.
+[52:19] So that env file, the .env,
+[52:22] first of all, that doesn't get committed to GitHub.
+[52:24] So you're not pushing your secrets out there
+[52:25] even though it's staying private.
+[52:27] But then each agent's basically having their own.
+[52:29] As you can see, if you have a marketing Hermes
+[52:31] and you have a finance Hermes,
+[52:32] they will not be sharing keys.
+[52:34] They will not see each other's keys.
+[52:36] And you can use the least privilege rule,
+[52:38] which is basically give each agent only the credentials
+[52:40] and the tools needed for its job.
+[52:42] So for example, your marketing agent
+[52:44] doesn't really need maybe read access into your QuickBooks,
+[52:47] but your finance Hermes probably does.
+[52:49] And then a quick little decision tree for you guys
+[52:51] on when you should create a new Hermes
+[52:53] because really for a while,
+[52:55] you're probably going to be all set
+[52:57] with just the one.
+[52:58] And even if you have one main one
+[52:59] that starts doing a little bit of finance stuff,
+[53:00] some finance skills, a little bit of marketing skills,
+[53:03] what happens is, okay, when you want to scale up
+[53:05] and create a dedicated finance Hermes,
+[53:07] you can migrate those tools and those crons
+[53:10] and those skills super, super easy.
+[53:12] And that's the cool part about all of that
+[53:13] just living as a markdown file.
+[53:15] So then you take those and you move them over.
+[53:17] But anyways, start with the task or the role
+[53:19] that you're thinking about making an agent for.
+[53:21] Does it need different permissions, secrets, or tools?
+[53:23] If yes, go ahead and start a new agent.
+[53:26] If no, keep on moving.
+[53:27] Does it need separate longer term memory
+[53:30] or separate long-term memory?
+[53:31] If yes, create a new agent.
+[53:32] If no, ask the next question,
+[53:33] which is, is it ongoing repeated work?
+[53:35] If yes, create a new agent.
+[53:36] If no, keep it in your main personal
+[53:39] because if it's a one-off task,
+[53:40] you don't need a full new container
+[53:41] and a full new Hermes setup.
+[53:43] So simple rule, if it needs its own memory,
+[53:45] its own tools, its own credentials,
+[53:47] its own schedule or audience,
+[53:48] then feel free to split it up into its own Hermes agent.
+[53:51] So I would recommend that you maybe look
+[53:53] at like a roadmap of, okay,
+[53:55] these are maybe the next one or two
+[53:57] or three agents that I'd want.
+[53:58] But once again, I would say try to get as much use
+[54:01] out of your main personal one to start
+[54:03] just because you are still learning
+[54:06] how the skills work and how to work with your Hermes
+[54:08] and how to set up everything.
+[54:09] So limiting the amount of like distractions really
+[54:13] and just keeping one, working on that one really well,
+[54:16] you'll be able to get pretty far.
+[54:17] That's how I would recommend starting out.
+[54:19] And obviously, as you start to get more,
+[54:21] you might get confused about like, okay,
+[54:22] how do I have this hierarchy between them
+[54:24] and how do I make them talk
+[54:25] and assign work to each other?
+[54:27] That is something that your main Hermes agent,
+[54:29] the one that you're building right now,
+[54:30] whether you wanna call that like your COO
+[54:32] or your executive assistant or whatever,
+[54:34] that main one is going to be able to help you figure out
+[54:37] all of that delegation and stuff like that.
+[54:39] You just have to have some conversations with it
+[54:41] and have it help you plan.
+[54:43] But ultimately, there is a point where you probably get
+[54:45] to certain scale and you need to start
+[54:48] to segment some stuff off.
+[54:49] So a bad pattern would be one mega agent
+[54:52] with all the API keys, with all the skills,
+[54:54] with so much bloat of different tools
+[54:56] and different crons running,
+[54:57] which could cause high confusion and also high risk
+[55:00] if something happens to that one agent for some reason.
+[55:02] But as you start to scale up,
+[55:04] you can adopt a better pattern
+[55:05] where you're starting to split up things,
+[55:07] whether that's via vertical
+[55:09] or whether that's via social media platform
+[55:11] or whether that's whatever your separation
+[55:13] that makes sense in your business and in your workflows
+[55:15] and in your SOPs and in your job descriptions,
+[55:18] that is where you wanna get a little bit more separation.
+[55:21] You lower the risk.
+[55:22] You aren't putting all your eggs in one basket,
+[55:24] as they say, cleaner memory and probably easier debugging
+[55:27] and better visibility.
+[55:28] So wanted to hit on that real quick,
+[55:30] but once again, just because you can spin up a bunch
+[55:32] of agents in one VPS doesn't mean you need to.
+[55:34] So don't force it.
+[55:35] Just let that phase happen naturally
+[55:37] once you've really felt good about Hermes
+[55:39] and once you feel like you have gone
+[55:41] through this decision tree
+[55:43] and you hit some of these criteria
+[55:44] where you need a new one.
+[55:46] And then of course,
+[55:47] you can keep your Cloud Code project updated
+[55:49] and you're gonna be really happy
+[55:50] that I told you to set all this stuff up
+[55:53] so you can understand the different containers
+[55:53] and where the files are and all that stuff.
+[55:56] This is going to come in handy big time for you.
+[55:58] Now, Hermes also does come with its own dashboard
+[56:01] where you can look at the recent sessions.
+[56:03] You can see your different connected platforms
+[56:05] and it is pretty helpful,
+[56:06] but honestly, I don't ever find myself going in here
+[56:09] because one of the things that I talked about earlier
+[56:11] is the fact that I mainly like to use my Hermes agents
+[56:14] when I'm out and about and I'm kind of on the go.
+[56:16] But if I'm sitting down on my computer,
+[56:18] I'm usually just working inside of Cloud Code.
+[56:20] And this dashboard,
+[56:21] it's usually just easier to open up on a local device
+[56:24] because you have to open up the tunnel
+[56:25] and there's a gateway
+[56:26] and you guys will understand once you start setting it up.
+[56:28] But if you wanna check it out,
+[56:30] this is where you can also have your Kanban board
+[56:32] and you can also look at things like different keys
+[56:34] and different configs and skills and plugins.
+[56:37] And it's just basically a nice little visual dashboard
+[56:39] to see what's going on here.
+[56:41] You can also look at your crons
+[56:42] and you can create new ones from here.
+[56:43] So what you do is you'd go to your Hermes agent
+[56:45] and you'd say, hey,
+[56:46] I wanna open up the Hermes dashboard.
+[56:47] Can you help me figure it out?
+[56:49] What you're gonna need to do
+[56:50] is you're gonna need to say,
+[56:50] okay, here is like my VPS route
+[56:53] and here is my Docker container setup
+[56:56] if you have that set up like that.
+[56:57] Because you have to kind of like open up the gateway
+[56:59] and make sure there's a tunnel open
+[57:00] so that you can open up this local dashboard.
+[57:04] And that's where you can start to play around with this.
+[57:06] So the first time you do it,
+[57:08] you might feel a little bit like this sucks
+[57:10] because the first time
+[57:11] you might be pasting different things around
+[57:12] and it might not feel like it's gonna work,
+[57:15] but it will work.
+[57:15] Just keep giving your Hermes agent the info,
+[57:19] keep giving it what you're doing
+[57:20] and it will get you there.
+[57:21] And once you get there,
+[57:22] then say, okay, save this to your memory,
+[57:24] turn this into a skill
+[57:25] so that every time I ask for the dashboard,
+[57:26] you give me the three commands I need to run
+[57:29] and then I just boom, boom, boom, run them and I'm good.
+[57:31] So I just wanted to warn you guys about that.
+[57:33] And if you wanna get in here and play around,
+[57:35] the camera board is pretty cool.
+[57:36] If you've got multiple agents running,
+[57:38] you can sort of like assign them to different agents
+[57:40] and they'll pick up tasks
+[57:41] and you can see them move around.
+[57:42] But like I said,
+[57:43] I didn't really spend too much time on this in this video
+[57:45] because I don't ever find myself in this dashboard,
+[57:48] but it is a nice built-in feature.
+[57:50] So anyways, don't forget,
+[57:51] I'm gonna put all of this information
+[57:52] that we talked about today
+[57:53] and the full setup guide and all that stuff
+[57:55] into a free resource guide
+[57:56] that you can access in my free school community.
+[57:58] The link is in the description.
+[57:59] Don't forget to use the link to go to Hostinger
+[58:01] and use code NATEHERK
+[58:02] to get 10% off your annual plan when you set up that VPS.
+[58:05] And yeah, let me know what else you guys wanna see
+[58:06] with Hermes and where I can expand on some stuff.
+[58:08] I'd love to bring you guys some more content
+[58:10] around what you wanna see.
+[58:12] So that's gonna do it for today.
+[58:13] If you enjoyed the video or you learned something new,
+[58:16] please give it a like, it helps me out a ton.
+[58:17] And as always, I appreciate you guys
+[58:18] making it to the end of the video
+[58:19] and I will see you in the next one.
+[58:21] Thanks everyone.

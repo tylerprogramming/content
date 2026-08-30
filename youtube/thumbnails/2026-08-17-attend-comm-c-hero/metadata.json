@@ -1,0 +1,22 @@
+{
+  "generations": [
+    {
+      "prompt": "Premium product hero thumbnail on a warm near-white studio background, color #FAF7F0. Three devices grouped closely in the centre-left on a clean surface: an open silver MacBook Pro, a tablet on a slim stand, and a smartphone, all showing the same bright white community analytics dashboard with a large bold number '896 members', smaller stats '16 joined this week' and '0.3% churn', a segmented green-orange-red progress bar, a member list with circular avatars and a rising line chart, rendered in navy blue #2A3B8F with vermilion #CE3E2E, tan gold #E0A860 and sky blue #5BAFE8 accents. On the right, a confident man in a dark t-shirt matching the face in the reference image exactly, smiling at the camera, leaning in from the edge of frame and holding a second smartphone up toward the viewer showing the same dashboard. A small navy and vermilion reception desk bell sits in the foreground. Across the top left, large bold true-black sans-serif text reading 'Nothing gets missed.' with a smaller black wordmark 'Attend' beneath. Soft even studio lighting, crisp, calm, premium, generous negative space. Absolutely no neon, no glow, no robots, no gibberish text.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tyler.png"
+      ],
+      "generated_at": "2026-08-17T15:52:14.243203",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_ae556c5cfd57870ac172183e27afc400.png",
+        "https://tempfile.aiquickdraw.com/workers/images/image_d8d8978e237ff4de3830edf86aae196a.png"
+      ]
+    }
+  ]
+}

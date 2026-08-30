@@ -1,0 +1,371 @@
+[00:00] This entire video, the idea, the research, the script,
+[00:03] the thumbnails and being scheduled sitting on my channel,
+[00:07] all done from these skills that I'm going to show you how to use today.
+[00:10] I didn't hire an editor to plan it.
+[00:12] I didn't pay a thumbnail designer and I didn't spend the whole day just guessing
+[00:15] what I want to make. I sat down,
+[00:17] I talked to Claude with these skills and we came up with ideas on what I'm going
+[00:21] to record.
+[00:22] And I'm going to show you how to use all nine of these skills in order,
+[00:26] what they do and how they're going to help you.
+[00:28] I have a Google doc here for everything you need.
+[00:30] Plus a GitHub repo to where you can get these. And by the end,
+[00:32] you'll be able to run this exact workflow yourself.
+[00:35] This repeatable system is also inside of my free school community where you can
+[00:39] communicate with others on how they're using it as well.
+[00:41] While we're starting with step one, what is a skill?
+[00:43] A skill is just something that allows you to do a repeatable action over and
+[00:47] over again, such as YouTube search, which I'm about to show you.
+[00:50] This is a skill that I've created.
+[00:52] It's just a text file that allows me to do something with Claude
+[00:57] and their AI model to perform some research on a topic that I give it.
+[01:02] And then a skill can have accompanying files, such as coding files.
+[01:06] In this case,
+[01:06] I have a Python file that uses a free open source library in order to actually
+[01:11] search on YouTube to get the titles,
+[01:14] topics and thumbnails and everything that's doing well for other videos.
+[01:16] So we're going to go ahead and get started with the first skill.
+[01:19] So that's slash YouTube search. Then you see here,
+[01:22] it says searches YouTube by keywords using a library called YouTube download
+[01:26] player and finds recent videos, splits them into long form and shorts,
+[01:29] ranks them and then gives me back those ideas so that then we can use those
+[01:35] for potential videos that we want to make.
+[01:36] So let's say I want to just type in the topic,
+[01:39] Claude code and Claude and let's just do Claude code for now is going to
+[01:44] understand what the skill YouTube searches,
+[01:46] and it's going to kick off a Python function right here.
+[01:50] So our Python file search YouTube,
+[01:53] and it's going to look for Claude code in the last 30 days,
+[01:56] get the top 15 of a total of 50 videos.
+[02:00] So it's going to search for 50 videos and get the top 15 of those.
+[02:04] And then it's going to give me details about those that we can use later on.
+[02:08] Okay. So this is the first step in this process.
+[02:12] And the difference between search and deep research is that deep research does
+[02:16] some other things as well.
+[02:18] So we will go ahead and transcribe videos that had found automatically for you
+[02:22] without kind of asking you which ones you actually want to,
+[02:26] it's just going to,
+[02:26] whatever the top five were it's going to go ahead and do some transcribing and
+[02:30] then come up with packages right here that you may want to create. Okay.
+[02:34] But I want to show you the full process.
+[02:36] This deep research is if you kind of have done it before and then you can go
+[02:40] ahead and use that to kind of make it a little easier.
+[02:42] Now this process does typically take like a few minutes because it's going to be
+[02:46] searching YouTube and gathering all this information.
+[02:48] So we'll be back whenever this is done. Okay. So it finished,
+[02:51] it researched Claude code for the last 30, just for the last 30 days.
+[02:54] You can increase that to 90 days, whatever.
+[02:56] So it got 14 videos in this window based on tags.
+[03:00] So if the videos were tagged with that, uh,
+[03:02] the views to range from 532 views to 147,000.
+[03:06] So it gave me the top of the five. So, um, you know, Nate is doing,
+[03:10] obviously he's doing very well. So it gives me, it gives me who did it, uh,
+[03:14] views, Traverti media and old, I would say he's been around for a long time,
+[03:18] but it's nice to see him. So it also gave me thumbnails, right?
+[03:20] So in the thumbnail, it gives me, it's like, he has the text,
+[03:23] this should be illegal on a crown Claude logo rating, a hundred dollar bills,
+[03:26] no face on that one. This is easy. I promise from futurepedia.
+[03:31] They can use that quite a bit and master Claude code with zero technical
+[03:34] experience.
+[03:34] These are just also ideas to use from thumbnails that it also downloaded from
+[03:39] these videos. So thumbnail pattern read, it goes over that,
+[03:41] the title pattern read, and then gives me video ideas for me.
+[03:45] So I ran 27 Claude's Claude code skills to build my entire content business.
+[03:50] Okay. Claude code plus potato,
+[03:52] bloated eagles a week of content one afternoon and just kind of comes up with
+[03:56] these ideas that I could use and then it also saves them locally for me.
+[04:02] Okay. Okay. We have these videos,
+[04:04] but now we want to understand the structure,
+[04:06] like the actual spoken words within those videos so that maybe we can structure
+[04:10] our videos a little bit better. Similar to what I did for this video. Okay.
+[04:13] So we were done with YouTube search and that means we're going to move on to the
+[04:16] transcribe skill. So out of these five,
+[04:19] you can have a transcribe all five or you could even have a transcribe just a
+[04:24] couple of those or however many you want. Right. But for this video,
+[04:27] I'm just going to do the top one. So I'm going to say slash transcribe,
+[04:31] uh, Nate's video. Again, whenever you're doing skills,
+[04:35] I don't even have to say slash transcribe.
+[04:37] I can just say transcribe Nate's video and we'll understand that there's a skill
+[04:41] called transcribe and Nate's video equals number one winner from the research.
+[04:46] So it's going to go ahead and transcribe that.
+[04:48] Now I actually don't know how long it is.
+[04:50] It can take a couple of minutes for it to actually transcribe everything. All
+[04:53] right. And I'm just using the whisper model to do this.
+[04:56] It could use the free version if you install it on your, on your computer,
+[04:59] or you can use opening eyes, whisper pay, just using their API endpoints.
+[05:03] So whichever one may work for you,
+[05:05] but it's going to go ahead and transcribe the video right here.
+[05:09] So it saves the transcript here on my computer slash content, slash scripts,
+[05:13] and then save that specific transcript.
+[05:15] So this is actually a 28 minute video.
+[05:18] And then what it's going to do is give me ideas about how it's structured so
+[05:21] that I can learn from people that are doing well and figure out maybe what I
+[05:26] can do better. Right. It's saying that stop the yes, man.
+[05:29] There's a roast skill that comes up with a council of personas to stress test
+[05:34] the idea, make it check its own work, manage your context,
+[05:37] stop being a bottleneck. These are ideas for using cloud code and then why it
+[05:41] works, right? So there's a problem, study it, fix it.
+[05:43] And live proof is a repeatable format, right?
+[05:46] So money framing on a real build, not abstract tips, custom skills.
+[05:50] Everybody can ask custom skills, right? Some of these are used very often,
+[05:54] heavy free school community, CTA woven into in at every upgrade.
+[05:57] So heavy free school community, CTA woven in at every upgrade.
+[06:01] So that's something that I could even understand do as well,
+[06:03] knowing what they're doing. Okay.
+[06:05] So now this is a strong reference for a YouTube package. Now what happened here?
+[06:09] Now it transcribed it and it gave me ideas on why it did well.
+[06:12] So we're finished with the transcribe and now I'm going to show you what the
+[06:15] YouTube package does for you. So it's even given me a suggestion.
+[06:20] This is a strong reference for a YouTube package,
+[06:22] your natural counter angle 27 club code skills that run my entire
+[06:26] business that I'm just basically going to say, yes,
+[06:29] go ahead and create the YouTube package.
+[06:33] Now this is just using the YouTube package skill,
+[06:36] which is going to create six different files locally for me to
+[06:41] create this. And what's going to do is going to come up with all the titles,
+[06:45] different hooks, a script, things that I should be preparing for the video.
+[06:49] So things that may need to create ahead of time,
+[06:52] it's going to give me what it used as research for the video so that I know
+[06:57] how it came to these ideas.
+[06:59] And then it's also going to come up with thumbnail ideas for me as well.
+[07:02] So it's starting the video package.
+[07:04] It's also kicking off some web research in parallel.
+[07:07] It's running different web search. It's running, you know,
+[07:09] is doing this by itself, right? Um, that's part of the two packages.
+[07:13] Those read web research to kind of figure out what we could potentially use as
+[07:17] part of this whole YouTube package that I could record later on.
+[07:20] And that's the whole point of this.
+[07:21] This is setting us up to record a video to end up publishing,
+[07:26] but we're doing all this research ahead of time so that we're not just coming up
+[07:30] trying to come up with ideas on our own.
+[07:32] We can see what works and then convert them into something that you are actually
+[07:35] doing for your niche. Kind of funny.
+[07:37] It says some things like every claim has a research study behind it.
+[07:41] One continuous weaknesses. The product is fake slash stage.
+[07:45] He never actually ships or earns a real dollar. Only three skills, all generic.
+[07:48] I mean they are kind of generic skills to be honest, but that's okay. I mean,
+[07:51] that's people that they work, right? Okay.
+[07:54] So this is just giving me ideas on what I can do.
+[07:57] So now it's asking me questions about what I want to do,
+[08:00] how I want to actually package this video. So it's saying,
+[08:02] what's the core framing for your version?
+[08:04] Real skills that run a real business. Yes.
+[08:09] Which of your real skills should anchor the onscreen demos?
+[08:15] So I want to do my content pipeline and automation and my school.
+[08:18] And then where are we aiming this at?
+[08:20] So creators slash entrepreneurs include the school CTA.
+[08:25] I don't want anything fake. I want it to be probably,
+[08:28] it's going to probably be longer than that. So I'm going to send my submit my
+[08:31] answers. Okay.
+[08:32] So it asked me questions about how I want to do things and that was going to go
+[08:37] ahead and create all the files for me. This is going to take a few minutes.
+[08:39] What's going to create everything, how I want this video to be structured.
+[08:42] And this is kind of the one that takes the longest because now it's building
+[08:46] everything you want for your video.
+[08:48] So I have a couple of things happening right now.
+[08:49] So it's actually building a bunch of files right here are the hooks right here.
+[08:53] It says titles, right? Description, MD, just markdown.
+[08:57] It's just basically text file. So don't be scared of that tags to use on YouTube.
+[09:01] So what I'm going to show you is you see here, I've used it quite a bit, right?
+[09:04] So it's saving it into specifically a content folder that I have on my machine,
+[09:08] which it would do for you. I've used it quite a bit.
+[09:10] So it's saving it under Claude code skills, run my business.
+[09:12] So if I scroll down a little bit right here, this is a new folder.
+[09:16] These are all the files that it's creating, right? So reference thumbnails,
+[09:19] right? These, these are basically Nate perks,
+[09:21] reference thumbnail from the video that we are using as a reference,
+[09:25] create analysis, description, hooks, tags, titles, and YouTube.
+[09:29] This is basically a description or ideas of what we can use for our thumbnails,
+[09:33] which we will then turn into thumbnails here soon.
+[09:35] And let's just look at the hooks real quick. So if I open this up,
+[09:40] you see, so there are different, it gives you a few hooks, right?
+[09:43] So anti demo, a bold claim proof.
+[09:46] First this is the actual text that we can use to say in the beginning of the
+[09:50] video,
+[09:50] it just gives you kind of multiple different ideas and kind of why it gives you
+[09:54] that. Okay. So it's pretty awesome. Um, now it's going to create it,
+[09:58] just create the script, right? So we just look at that real quick,
+[10:01] look at what the script looks like. So the target length told the 15 minutes of
+[10:05] this one, I feel like it'd be longer, right?
+[10:07] So this is an example hook that I would say gives you what you could do as far
+[10:11] as like the editing part of the video during that portion kind of gives you a
+[10:15] timeframe of what you'd say. So we're going to say what this video is in the
+[10:18] promise. This is all what I would say right here. Moving on,
+[10:22] talk about what a skill actually is right here for the next like minute or so.
+[10:27] Then we scroll down to part one, the cut, the actual pipeline.
+[10:30] So research to publish demo kind of the YouTube search club cook,
+[10:34] kind of what we just did here.
+[10:36] And then we're going to move on to social copy, which is pretty powerful.
+[10:40] And then we're going to basically go on and on and on and on.
+[10:42] And it's just, it's going to do all of this, right?
+[10:45] I have my own like slash school command to post to my community and sink
+[10:47] members, right? There's a bunch of things that we can do here.
+[10:50] It is all part of the script. You don't have to go verbatim,
+[10:54] but it at least gives you a path moving forward on what to say.
+[10:58] We just finished the package and what it's actually doing now,
+[11:02] because of the way I have the package set up,
+[11:05] it's going to go ahead and create some thumbnails for me as well,
+[11:09] which I am using Kai dot AI. So if we go there real quick, Kai,
+[11:14] Kai dot AI,
+[11:16] this is a platform that I like because it puts a bunch of different video
+[11:20] models, image models,
+[11:22] a lot of different AI models for us to use at a cheaper price. Okay.
+[11:27] So we can use a native banana pro is still my favorite.
+[11:30] See during five pro just came out. I haven't tested it, but there's videos,
+[11:34] texting and just general knowledge models. But the pricing here is good.
+[11:38] It's just all in one, right? There's several of these are software like this,
+[11:41] but I like this one in particular for me. And so it's worked the best out.
+[11:45] And like I said, it's relatively cheap. Okay.
+[11:46] So what it's doing right now is that it's actually going to base off my face
+[11:52] reference. So I have a local face reference.
+[11:54] This is just like me pointing or something.
+[11:57] And it's going to generate three thumbnail concepts. So total, it costs me,
+[12:01] it's going to cost a little 27 cents,
+[12:03] but this is the same as saying slash thumbnail and then going ahead and
+[12:07] creating a book. I'm sorry. Is it, I think I changed the name. Yeah.
+[12:12] YouTube thumbnail.
+[12:15] It's going to go ahead and I can say, uh,
+[12:18] use this video as reference thumbnail to create three more.
+[12:21] That's essentially what this is doing. Or I can say, I want,
+[12:25] you can give it any prompt and it's going to go ahead and just do this
+[12:28] automatically and it would do this for you as well. Okay.
+[12:30] So what I'm going to show you is here are the three thumbnail designs that it
+[12:35] has created for me. So it looked like it used one, right? This,
+[12:38] this isn't exactly the reference image.
+[12:40] Like it's updated the reference image of me,
+[12:42] but here are the three different thumbnails that it has created, right?
+[12:46] These are good ideas. This doesn't mean that I have to use this,
+[12:49] but these are just ideas that it had come up with. And I could take these,
+[12:53] edit them. Just, I could have brand new ideas, whatever I want to do.
+[12:58] But it's pretty cool that based on what I'm talking about,
+[13:02] it's generating thumbnails that could work. Right.
+[13:06] And then based off some of its research,
+[13:08] it just gives you a clear direction or what you may want to do.
+[13:12] Let's go ahead and now look, talk about S E O.
+[13:15] Here's like the actual timeline, the outline of what I would do for the video.
+[13:20] So here's part one, here's part two, part three,
+[13:24] and this is what it's talking about.
+[13:25] It gave me the reasons for the thumbnails, et cetera.
+[13:28] So now what I want to do, I want to slash it's even give me the idea, right?
+[13:32] Want me to run SEO slash YouTube SEO on this
+[13:37] video package please.
+[13:39] And what this is going to do is make sure that the titles and
+[13:43] descriptions are going to be as best as they possibly can
+[13:48] by doing research, um,
+[13:51] based on videos that we've done the research on and also, uh,
+[13:54] do some web search as well.
+[13:56] It's going to fade this out through title patterns and just kind of what's been
+[13:59] working in other niches. Okay. And so it basically finished the SEO.
+[14:03] Here's like a scorecard that it gives for titles that I could use it.
+[14:07] Like it really likes the 27 cloud code skills that actually run my business.
+[14:11] Here's some other ideas.
+[14:13] You can do a B testing with these titles as well.
+[14:16] It tells you why it thinks these are better, but um,
+[14:20] and also all the also tags and updated and updated the titles and the
+[14:24] description for this video as well.
+[14:27] So we went ahead and updated quite a few things, right? So if we go here, uh,
+[14:31] we can see the tag where I see the tags were just updated.
+[14:36] The description was just updated like a minute ago, right?
+[14:39] And so it just,
+[14:40] this is really to help you out to really narrow down to help you do the best that
+[14:43] you possibly can. Okay. So that's SEO. Now what is YouTube shorts, right?
+[14:49] Well, long form isn't the only way to put out content where they're also short
+[14:54] form, right? Or portrait style. So if we come back here,
+[14:56] I'm going to say slash YouTube shorts,
+[14:59] get ideas from this video package.
+[15:03] What this is going to do now,
+[15:04] this is going to come up with YouTube short ideas just from this
+[15:09] video or any other potential idea that we have, right?
+[15:14] But it's going to come up with short ideas,
+[15:15] maybe a minute long or even 32nd long clips that I can write.
+[15:19] So based on this video,
+[15:21] like while you're already in the zone of recording this video,
+[15:25] you can go ahead and just run these as well. So it's doing this right now.
+[15:29] It's coming up with five short form ideas.
+[15:31] What a cloud code skill actually is.
+[15:33] I stopped guessing what videos to make.
+[15:35] Claude could replies to my comments while I sleep.
+[15:37] Every cloud code demos fake. Here's a real one.
+[15:39] Build your first cloud code skill in 60 seconds. So these are just,
+[15:42] these are some ideas that give you two talking head to screen recording and then
+[15:46] one mix. And I could talk about this, right?
+[15:47] And we can just go on and talk with,
+[15:49] this is a simple way to come up with other ways to push out content.
+[15:53] And remember if you have one short form,
+[15:56] one short form that could be pushed out to take TARC, YouTube shorts,
+[16:00] Instagram, reels, Facebook, real, whatever there's a,
+[16:03] whatever those are called now blue sky.
+[16:05] And there's probably a couple others, right?
+[16:07] So one can be distributed like probably seven different platforms, right?
+[16:10] And that's just one short.
+[16:11] And then you can also do text form content on LinkedIn about it.
+[16:15] Except I'll LinkedIn is another one. One YouTube short is pretty powerful.
+[16:18] Okay. So shorts. And then what is social copy?
+[16:22] This one I'm not going to go super in depth in because I say this for another
+[16:25] video, but social copy, what this does, let's just read this.
+[16:28] It create platform ready social media,
+[16:30] text posts and static visuals from a YouTube video package or any topic.
+[16:34] So it generates X LinkedIn text carousel and image posts, Instagram,
+[16:39] YouTube community posts in my school and school posts, right?
+[16:42] So just from this is basically make copies.
+[16:45] And I think it does emails also for a bunch of different platforms.
+[16:49] So take this video and then once you have it like recorded,
+[16:53] run social copy on the video and it's going to come up with a,
+[16:56] it's going to come up with social media copy for everything else, right?
+[17:00] That's why this is so powerful. And then even before this,
+[17:03] there's one on here called chapters. So if I run YouTube chapter,
+[17:07] say let's say we record the video, it's been edited, right?
+[17:11] The hardest part about any content creation is actually doing the recording and
+[17:14] the editing, right? That's, that's, that's the hardest part.
+[17:16] That's not what this video is about.
+[17:18] I have a video that's coming about coming out for AI video editing,
+[17:22] but if I do slash YouTube chapters,
+[17:25] what this does is if we look in the description here of this package,
+[17:31] when this opens, right, we have these chapters, right?
+[17:33] But we don't actually have the chapters and this is just a description,
+[17:37] a sample description and some just other things that it has here, right?
+[17:40] So it's free community and resources.
+[17:42] But the problem is the obviously these chapters because it's good to have
+[17:46] chapters and new videos, especially for things like this,
+[17:48] then that's not obviously accurate.
+[17:50] So you just simply run slash chapters on your recorded video.
+[17:54] It's going to transcribe it and then update your description.
+[17:56] That's exactly what it does.
+[17:57] It extracts the audio transcribes it and then updates the video pack description
+[18:00] with real timestamps. Okay.
+[18:02] But this is for after you have recorded your video.
+[18:06] And then once that is done, you would run social copy on it. Okay.
+[18:10] So we have the chapters and then the social copy. All right.
+[18:13] So this is the exact flow that you'll run the search.
+[18:17] You then transcribe, you'll create a YouTube package,
+[18:22] SEO on it, generate thumbnails. Then the human part, I guess, of this,
+[18:28] you know, as far as what doesn't, you're not dealing really with anything.
+[18:30] AI is filming and editing. Now you could use editing,
+[18:33] which I said I'm coming out the video on how to help edit it.
+[18:37] Like you can use AI to edit. Then after that, you're going to run chapters,
+[18:41] which is going to update the description and you're gonna actually transcribe
+[18:44] your own video. Then you're going to have YouTube shorts, the cut short scripts.
+[18:47] You could do that before or after whichever you want to do.
+[18:49] And then there isn't a YouTube upload skill.
+[18:53] And this video isn't edited yet by the time I'm actually showing this, right?
+[18:56] Running everything or that video that we're actually, I'm going to create,
+[19:00] but this one does require a one-time setup.
+[19:02] So can I think cloud code to YouTube?
+[19:04] I do have the information here whenever you see this one, how to do that.
+[19:07] But essentially what this does is slash YouTube upload,
+[19:11] or I would just say up this just uploads and manages videos.
+[19:15] So it's actually used as YouTube's data API. There's several, lots of APIs,
+[19:20] but this is the data API version three and it's going to upload and schedule
+[19:24] everything for you.
+[19:26] But I do have another video where I use blow Tato that I'm going to be recording
+[19:29] to show you how to publish and do a lot of, it's very powerful. I love it.
+[19:34] I've been using it for a long time,
+[19:37] but this is another skill that you can use that I will be giving you as well.
+[19:41] Okay, awesome. So like I said, you can get all this in my free school community.
+[19:44] I will also have a link that you can sign up for my newsletter and you can get
+[19:48] all of these right away without actually coming here also.
+[19:51] But this is really going to help you if you're any kind of content creator.
+[19:56] You know, if you're trying to,
+[19:57] if you're trying to come up and you're having trouble with ideas,
+[20:00] this is going to help you. I promise. Thank you for watching.
+[20:03] What's these videos to learn more.

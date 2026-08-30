@@ -1,0 +1,12 @@
+{
+  "usage limits + cost": ["usage limit", "token limit", "rate limit", "hit the cap", "\\blimits?\\b", "\\btokens?\\b", "cheaper", "\\bfree\\b", "\\bcosts?\\b", "subscription", "gratis", "\\bplan\\b"],
+  "subagents + agent teams": ["sub-?agents?", "agent team", "multiple agents", "\\d+ agents", "orquestre", "parallel agents", "agents that", "one agent"],
+  "skill mechanics": ["skill\\.md", "frontmatter", "invocation", "\\btriggers?\\b", "how to build (a|your own) skill", "description field", "when .{0,12}skill"],
+  "skill + plugin roundups": ["\\d+ (must-?have )?(claude )?(code )?(skills|plugins)", "skills library", "must-?have", "awesome", "\\binstall\\b", "\\bstack\\b"],
+  "replace a paid tool": ["\\breplaces?\\b", "alternative", "instead of paying", "cancel your", "\\bstop paying\\b", "obsolete"],
+  "CLAUDE.md + memory": ["claude\\.md", "agents\\.md", "\\bmemory\\b", "claude-?mem", "context engineering", "\\bcontexto?\\b"],
+  "courses + full guides": ["\\bcourse\\b", "\\bcurso\\b", "\\bguide\\b", "tutorial", "강의", "beginner", "ultimate", "everything you need", "\\d+\\+? hours"],
+  "build a specific thing": ["\\bwebsites?\\b", "\\bapps?\\b", "\\bgames?\\b", "jarvis", "\\bresumes?\\b", "dashboard", "\\bbuilt? (a|an|my)\\b"],
+  "money + side hustles": ["\\bmoney\\b", "\\brich\\b", "\\$\\d", "income", "side hustle", "\\bbusiness\\b", "\\bsell\\b"],
+  "prompting technique": ["\\bpromp?t", "\\bloop engineering\\b", "graph engineering", "gauntlet"]
+}

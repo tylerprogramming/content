@@ -1,0 +1,138 @@
+[
+ {
+  "slug": "r1-nano",
+  "engine": "nano",
+  "seconds": 87.5,
+  "ok": true,
+  "file": "r1-nano.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r1-gpt",
+  "engine": "gpt",
+  "seconds": 53.4,
+  "ok": true,
+  "file": "r1-gpt.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r1-seedream",
+  "engine": "seed",
+  "seconds": 206.2,
+  "ok": true,
+  "file": "r1-seedream.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r2a-nano",
+  "engine": "nano",
+  "seconds": 119.1,
+  "ok": true,
+  "file": "r2a-nano.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r2b-nano",
+  "engine": "nano",
+  "seconds": 136.6,
+  "ok": true,
+  "file": "r2b-nano.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r2a-gpt",
+  "engine": "gpt",
+  "seconds": 118.3,
+  "ok": true,
+  "file": "r2a-gpt.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r2b-gpt",
+  "engine": "gpt",
+  "seconds": 125.3,
+  "ok": true,
+  "file": "r2b-gpt.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r3-nano",
+  "engine": "nano",
+  "seconds": 34.5,
+  "ok": true,
+  "file": "r3-nano.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r3-gpt",
+  "engine": "gpt",
+  "seconds": 50.4,
+  "ok": true,
+  "file": "r3-gpt.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r4a-nano",
+  "engine": "nano",
+  "seconds": 67.3,
+  "ok": true,
+  "file": "r4a-nano.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r4b-nano",
+  "engine": "nano",
+  "seconds": 91.6,
+  "ok": true,
+  "file": "r4b-nano.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r4a-gpt",
+  "engine": "gpt",
+  "seconds": 75.0,
+  "ok": true,
+  "file": "r4a-gpt.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r4b-gpt",
+  "engine": "gpt",
+  "seconds": 66.6,
+  "ok": true,
+  "file": "r4b-gpt.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r6a-nano",
+  "engine": "nano",
+  "seconds": 141.1,
+  "ok": true,
+  "file": "r6a-nano.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r6a-gpt",
+  "engine": "gpt",
+  "seconds": 141.7,
+  "ok": true,
+  "file": "r6a-gpt.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r6b-nano",
+  "engine": "nano",
+  "seconds": 76.7,
+  "ok": true,
+  "file": "r6b-nano.png",
+  "stderr": ""
+ },
+ {
+  "slug": "r6b-gpt",
+  "engine": "gpt",
+  "seconds": 92.6,
+  "ok": true,
+  "file": "r6b-gpt.png",
+  "stderr": ""
+ }
+]

@@ -1,0 +1,3476 @@
+[{
+  "title": "Cursor 3.0 - Full Course for Beginners",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "Tv8mLrLtyxo",
+  "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo",
+  "thumbnailUrl": "https://i.ytimg.com/vi/Tv8mLrLtyxo/maxresdefault.jpg",
+  "viewCount": 61576,
+  "date": "2026-07-29T13:18:17.000Z",
+  "likes": 1400,
+  "location": null,
+  "channelName": "Tech With Tim",
+  "channelUrl": "https://www.youtube.com/@TechWithTim",
+  "channelUsername": "TechWithTim",
+  "collaborators": null,
+  "channelId": "UC4JX40jDee_tINbkjycV4Sg",
+  "numberOfSubscribers": 2070000,
+  "duration": "00:52:21",
+  "commentsCount": 65,
+  "text": "Download Cursor for Free: https://cursor.com/\nStart using Wispr Flow for Free: https://ref.wisprflow.ai/TechWithTim-...\n\nCursor 3.0 is here — and if you've never used it before, this is the only video you need. I walk through every feature from scratch, assume zero prior knowledge, and show you exactly how to go from download to shipping real code with AI.\n\nCursor is a full AI-powered IDE built on top of VS Code. Unlike CLI tools like Claude Code or Codex where you're blindly trusting the agent, Cursor gives you complete visibility and control — you can see every file, read every change, and use real developer tools while still letting AI do the heavy lifting.\n\n🚀 Tools I Use\nGet 10% off with code techwithtim\nOpenclaw setup: https://www.hostinger.com/techwithtim\nVPS setup: https://www.hostinger.com/techwithtim10 \nWispr Flow (Best AI Dictation): https://ref.wisprflow.ai/TechWithTim-...\n\n⏳ Timestamps ⏳\n00:00 | Cursor 3.0 Course\n00:51 | What is Cursor?\n02:10 | Cursor Setup/Download\n02:50 | Pricing\n03:43 | Major NEW Changes\n05:40 | Cursor UI Walkthrough\n08:00 | New Project Setup\n09:10 | Prompting Best Practices\n10:10 | Wispr Flow\n12:46 | Plan Mode\n15:16 | Agent Use/Build\n18:23 | Model Selection\n21:00 | Reviewing Code\n26:56 | Cursor Browser + Design Mode\n29:10 | Parallel Agents & Subagents\n35:50 | Cloud Agents - Environment Setup\n42:25 | Precise Edits, Quick Edit, and Tab\n45:22 | Rules & Skills\n48:18 | MCP & Plugins\n49:51 | Sidechats\n51:06 | Automations\n\n#Cursor #cursorai  #aicoding  #aidevtools  #Cursor3 #claudecode  #codingtutorial  #AIIDE #buildwithai  #softwaredevelopment",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://cursor.com/",
+      "text": "https://cursor.com/"
+    },
+    {
+      "url": "https://ref.wisprflow.ai/TechWithTim-jul26",
+      "text": "https://ref.wisprflow.ai/TechWithTim-..."
+    },
+    {
+      "url": "https://www.hostinger.com/techwithtim",
+      "text": "https://www.hostinger.com/techwithtim"
+    },
+    {
+      "url": "https://www.hostinger.com/techwithtim10",
+      "text": "https://www.hostinger.com/techwithtim10"
+    },
+    {
+      "url": "https://ref.wisprflow.ai/TechWithTim-jul26",
+      "text": "https://ref.wisprflow.ai/TechWithTim-..."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=51s",
+      "text": "00:51"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=130s",
+      "text": "02:10"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=170s",
+      "text": "02:50"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=223s",
+      "text": "03:43"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=340s",
+      "text": "05:40"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=480s",
+      "text": "08:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=550s",
+      "text": "09:10"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=610s",
+      "text": "10:10"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=766s",
+      "text": "12:46"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=916s",
+      "text": "15:16"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=1103s",
+      "text": "18:23"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=1260s",
+      "text": "21:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=1616s",
+      "text": "26:56"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=1750s",
+      "text": "29:10"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=2150s",
+      "text": "35:50"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=2545s",
+      "text": "42:25"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=2722s",
+      "text": "45:22"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=2898s",
+      "text": "48:18"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=2991s",
+      "text": "49:51"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&t=3066s",
+      "text": "51:06"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/cursor",
+      "text": "#Cursor"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/cursorai",
+      "text": "#cursorai"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aicoding",
+      "text": "#aicoding"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aidevtools",
+      "text": "#aidevtools"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/cursor3",
+      "text": "#Cursor3"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#claudecode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/codingtutorial",
+      "text": "#codingtutorial"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiide",
+      "text": "#AIIDE"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/buildwithai",
+      "text": "#buildwithai"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/softwaredevelopment",
+      "text": "#softwaredevelopment"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 2,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#Cursor",
+    "#buildwithai",
+    "#claudecode"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": true
+},
+{
+  "title": "Claude Code New Features, Explained",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "SkY-tR9kf-k",
+  "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k",
+  "thumbnailUrl": "https://i.ytimg.com/vi/SkY-tR9kf-k/maxresdefault.jpg",
+  "viewCount": 53151,
+  "date": "2026-08-17T18:00:14.000Z",
+  "likes": 1200,
+  "location": "The Startup Ideas Podcast Episodes",
+  "channelName": "Greg Isenberg",
+  "channelUrl": "https://www.youtube.com/@GregIsenberg",
+  "channelUsername": "GregIsenberg",
+  "collaborators": null,
+  "channelId": "UCPjNBjflYl0-HQtUvOx0Ibw",
+  "numberOfSubscribers": 702000,
+  "duration": "00:48:10",
+  "commentsCount": 110,
+  "text": "Get Claude Code: https://startup-ideas-pod.link/claude...\n\nIn this solo episode I lay out the exact system I use to turn Claude Code into what I call an AI employee. My premise is simple: give Claude the same things you would give a person joining your company (a workspace, memory, a brief, a clear ticket, eyes, review, a schedule, and permissions). I build the whole setup live around a real idea I found on ideabrowser.com, a missed-lead responder for med spas, and I share the specific prompts I use at each step. By the end, the product, the customer feedback, the docs, the demos, the reviews, and the recurring work all live inside one operating loop. I close with a seven-day plan you can run at your own pace. \n\nAnd a special thank you to Claude and Anthropic for supporting the podcast. \n\nSetup Claude Code to be your 24/7 employee: https://startup-ideas-pod.link/Claude...\n\nTimestamps\n\n00:00 – Intro: The AI Employee Map\n05:47 – Step 1: Creating The Workspace In Claude Desktop\n14:53 – Step 2: The Brief And Plan Mode\n18:08 – Step 3: The Ticket And Defining Done\n22:15 – Step 4: The Eyes And Desktop Preview\n26:13 – Step 5: Review In Layers And The Diff View\n29:34 – Step 6: The Schedule And Routines\n34:32 – Step 7: Parallel Agents And Worktree Isolation\n39:14 – Step 8: Permissions: Safe, Ask First, Human-Owned\n41:15 – Step 9: Skills, Connectors, And Hooks\n44:28 – The Seven-Day Plan\n47:42 – Closing Thoughts\n\nKey Points\n\n• I treat Claude Code like a new hire: workspace, memory, brief, ticket, eyes, review, schedule, permissions.\n• The repo brain teaches Claude how I work and what good looks like.\n• Plan mode comes first: Claude reads the context, proposes an approach, and waits for my approval.\n• One ticket at a time means one task, one finish line, and one reviewable change.\n• The eyes matter: Claude opens the app in desktop preview, clicks the flow, checks the console, and reports what a buyer experiences.\n• Routines and permissions turn a chat tool into a 24/7 operator with clear boundaries.\n\nThe #1 tool to find startup ideas/trends - https://www.ideabrowser.com\n\nLCA helps Fortune 500s and fast-growing startups build their future - from Warner Music to Fortnite to Dropbox. We turn 'what if' into reality with AI, apps, and next-gen products https://latecheckout.agency/\n\nThe Vibe Marketer - Resources for people into vibe marketing/marketing with AI: https://www.thevibemarketer.com/\n\nFIND ME ON SOCIAL\n\nX/Twitter:   / gregisenberg  \n\nInstagram:   / gregisenberg  \n\nLinkedIn:   / gisenberg  ",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://startup-ideas-pod.link/claude-greg",
+      "text": "https://startup-ideas-pod.link/claude..."
+    },
+    {
+      "url": "https://startup-ideas-pod.link/Claude-code",
+      "text": "https://startup-ideas-pod.link/Claude..."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=347s",
+      "text": "05:47"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=893s",
+      "text": "14:53"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=1088s",
+      "text": "18:08"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=1335s",
+      "text": "22:15"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=1573s",
+      "text": "26:13"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=1774s",
+      "text": "29:34"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=2072s",
+      "text": "34:32"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=2354s",
+      "text": "39:14"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=2475s",
+      "text": "41:15"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=2668s",
+      "text": "44:28"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k&t=2862s",
+      "text": "47:42"
+    },
+    {
+      "url": "https://www.ideabrowser.com/",
+      "text": "https://www.ideabrowser.com"
+    },
+    {
+      "url": "https://latecheckout.agency/",
+      "text": "https://latecheckout.agency/"
+    },
+    {
+      "url": "https://www.thevibemarketer.com/",
+      "text": "https://www.thevibemarketer.com/"
+    },
+    {
+      "url": "https://twitter.com/gregisenberg",
+      "text": "  / gregisenberg  "
+    },
+    {
+      "url": "https://instagram.com/gregisenberg/",
+      "text": "  / gregisenberg  "
+    },
+    {
+      "url": "https://www.linkedin.com/in/gisenberg/",
+      "text": "  / gisenberg  "
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 5,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": true
+},
+{
+  "title": "2026년 클로드, 1시간 올인원 강의 (claude)",
+  "translatedTitle": "2026 Claude: 1-Hour All-in-One Masterclass",
+  "type": "video",
+  "id": "If_U_zmXWYo",
+  "url": "https://www.youtube.com/watch?v=If_U_zmXWYo",
+  "thumbnailUrl": "https://i.ytimg.com/vi/If_U_zmXWYo/maxresdefault.jpg",
+  "viewCount": 496367,
+  "date": "2026-08-04T03:58:48.000Z",
+  "likes": 25000,
+  "location": null,
+  "channelName": "ZZIK BOT",
+  "channelUrl": "https://www.youtube.com/@ZZIKBOT",
+  "channelUsername": "ZZIKBOT",
+  "collaborators": null,
+  "channelId": "UCCgm1VmWrNQQO1aJ51Iu9Sg",
+  "numberOfSubscribers": 47200,
+  "duration": "01:10:39",
+  "commentsCount": 413,
+  "text": "목차: \n00:00 클로드 7가지 도구 요약\n06:40 클로드 코드 기초\n14:24 클로드 코드 영상 제작 자동화\n19:25 클로드 코드 + 옵시디언 메모 자동화\n28:43 클로드 디자인 1/2\n34:54 클로드 디자인 2/2\n40:56 클로드 코워크\n46:24 클로드 스킬\n52:34 클로드 엑셀 자동화 (사업자필수)\n01:01:15 웹 클로드 기능 정리\n\n모든 기능을 완벽히 사용하실 필요는 없습니다. 00:00 '클로드 도구 요약' 영상을 보시고 필요하신 기능들만 익히시면 됩니다.\n\n다만, 한 번의 구독으로 영상 속 대부분의 기능을 사용할 수 있는데 몰라서 안 쓰고 계셨다면, 지금까지 구독료의 절반도 사용하지 못하고 계셨던 겁니다.\n\n시청해주셔서 감사합니다 ^^\n\n다양한 생성형AI 자료(+PDF): https://litt.ly/zzikbot",
+  "translatedText": "Table of Contents:\n\n00:00 Summary of Claude's 7 Tools\n06:40 Claude Code Basics\n14:24 Claude Code Video Production Automation\n19:25 Claude Code + Obsidian Memo Automation\n28:43 Claude Design 1/2\n34:54 Claude Design 2/2\n40:56 Claude Co-working\n46:24 Claude Skills\n52:34 Claude Excel Automation (Essential for Business Owners)\n01:01:15 Web Claude Feature Summary\n\nYou do not need to use every feature perfectly. Please watch the 00:00 'Claude Tools Summary' video and learn only the features you need.\n\nHowever, most of the features shown in the video are available with a single subscription. If you haven't been using them because you didn't know about them, you have been missing out on less than half of your subscription fee so far.\n\nThank you for watching ^^\n\nVarious Generative AI Resources (+PDF): https://litt.ly/zzikbot",
+  "descriptionLinks": [
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo&t=400s",
+      "text": "06:40"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo&t=864s",
+      "text": "14:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo&t=1165s",
+      "text": "19:25"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo&t=1723s",
+      "text": "28:43"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo&t=2094s",
+      "text": "34:54"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo&t=2456s",
+      "text": "40:56"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo&t=2784s",
+      "text": "46:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo&t=3154s",
+      "text": "52:34"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo&t=3675s",
+      "text": "01:01:15"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo",
+      "text": "00:00"
+    },
+    {
+      "url": "https://litt.ly/zzikbot",
+      "text": "https://litt.ly/zzikbot"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 0,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "This NEW Claude Prompting Technique is blowing people's minds (gauntlet-loop)",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "BNjzXcEXmg4",
+  "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4",
+  "thumbnailUrl": "https://i.ytimg.com/vi/BNjzXcEXmg4/maxresdefault.jpg",
+  "viewCount": 188296,
+  "date": "2026-08-05T22:46:20.000Z",
+  "likes": 5800,
+  "location": null,
+  "channelName": "Jay E | RoboNuggets",
+  "channelUrl": "https://www.youtube.com/@RoboNuggets",
+  "channelUsername": "RoboNuggets",
+  "collaborators": null,
+  "channelId": "UCgscS8mBsQZ5sFRkJIFWD7Q",
+  "numberOfSubscribers": 174000,
+  "duration": "00:13:30",
+  "commentsCount": 199,
+  "text": "Get the /gauntlet-loop skill for free ➡ https://www.skool.com/robonuggets-fre... search for n70\nGet our Claude Code Masterclass and start earning from AI 🚀 https://www.skool.com/robonuggets\n\nGet RUBRIC - The Command Centre for AI Agents: https://www.getrubric.app/\n\n***\n\n\nOur AI Partner Tools (affiliate revenue go to community perks):\n🥚 Free trial of Blotato: https://blotato.com/?ref=robonuggets\n🥚 Free trial of n8n: https://n8n.partnerlinks.io/o3jqtj032c02\n🥚 Free trial of Make https://www.make.com/en/register?pc=r...\n🥚 Free trial of ElevenLabs: https://try.elevenlabs.io/m5mn2jkv5rzk\n🥚 Free credits at Apify:  https://www.apify.com?fpr=sffv1\n\n---\nAbout Me 👋🏻\n\nHey thanks for watching! I'm Jay - spent my career in data and brand building, founded the ROBO Group to help forward-looking businesses grow with AI, and now teaching what I know through this channel and the RoboNuggets community.\n\nIf you learned something new and want to see more, support the channel by subscribing:    / @robonuggets  \n\nFollow on other platforms 🔻\n➗ Instagram:   / robonuggets  \n➖ Tiktok:   / robonuggets  \n✖️ Twitter/X:    / robonuggets  \n➕ LinkedIn:   / j-enri  \n\nFor business, reach out at https://robolabs.so\n\nLeave me a comment if you have a specific request! Thanks.\nJay\n\n---\n\nTimestamps\n00:00 - Intro\n00:43 - Where this came from\n02:25 - Why Karpathy says this matters\n03:01 - The gauntlet loop prompt, broken down\n04:01 - Subagent orchestration in 3 levels\n05:03 - Anthropic called this back in 2024\n07:23 - Test 1: a real 3D apartment walkthrough\n10:41 - Test 2: a product landing page\n11:39 - Where the gauntlet loop can go wrong\n12:57 - Get the skill\n\n#AIAgents #AgenticAI #AIAutomation #OpenClaw #ClaudeCode #Antigravity #MCPProtocol #Anthropic #AIAgency #AgentBuilding #AITools #AIWorkflow #AutonomousAgents #MultiAgent #VibeCoding",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://www.skool.com/robonuggets-free/classroom/750914f0",
+      "text": "https://www.skool.com/robonuggets-fre..."
+    },
+    {
+      "url": "https://www.skool.com/robonuggets",
+      "text": "https://www.skool.com/robonuggets"
+    },
+    {
+      "url": "https://www.getrubric.app/",
+      "text": "https://www.getrubric.app/"
+    },
+    {
+      "url": "https://blotato.com/?ref=robonuggets",
+      "text": "https://blotato.com/?ref=robonuggets"
+    },
+    {
+      "url": "https://n8n.partnerlinks.io/o3jqtj032c02",
+      "text": "https://n8n.partnerlinks.io/o3jqtj032c02"
+    },
+    {
+      "url": "https://www.make.com/en/register?pc=robonuggets",
+      "text": "https://www.make.com/en/register?pc=r..."
+    },
+    {
+      "url": "https://try.elevenlabs.io/m5mn2jkv5rzk",
+      "text": "https://try.elevenlabs.io/m5mn2jkv5rzk"
+    },
+    {
+      "url": "https://www.apify.com/?fpr=sffv1",
+      "text": "https://www.apify.com?fpr=sffv1"
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCgscS8mBsQZ5sFRkJIFWD7Q",
+      "text": "   / @robonuggets  "
+    },
+    {
+      "url": "https://www.instagram.com/robonuggets",
+      "text": "  / robonuggets  "
+    },
+    {
+      "url": "https://www.tiktok.com/@robonuggets",
+      "text": "  / robonuggets  "
+    },
+    {
+      "url": "https://www.twitter.com/robonuggets",
+      "text": "  / robonuggets  "
+    },
+    {
+      "url": "https://www.linkedin.com/in/j-enri/",
+      "text": "  / j-enri  "
+    },
+    {
+      "url": "https://robolabs.so/",
+      "text": "https://robolabs.so"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4&t=43s",
+      "text": "00:43"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4&t=145s",
+      "text": "02:25"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4&t=181s",
+      "text": "03:01"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4&t=241s",
+      "text": "04:01"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4&t=303s",
+      "text": "05:03"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4&t=443s",
+      "text": "07:23"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4&t=641s",
+      "text": "10:41"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4&t=699s",
+      "text": "11:39"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BNjzXcEXmg4&t=777s",
+      "text": "12:57"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiagents",
+      "text": "#AIAgents"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/agenticai",
+      "text": "#AgenticAI"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiautomation",
+      "text": "#AIAutomation"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/openclaw",
+      "text": "#OpenClaw"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#ClaudeCode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/antigravity",
+      "text": "#Antigravity"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/mcpprotocol",
+      "text": "#MCPProtocol"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/anthropic",
+      "text": "#Anthropic"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiagency",
+      "text": "#AIAgency"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/agentbuilding",
+      "text": "#AgentBuilding"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aitools",
+      "text": "#AITools"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiworkflow",
+      "text": "#AIWorkflow"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/autonomousagents",
+      "text": "#AutonomousAgents"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/multiagent",
+      "text": "#MultiAgent"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/vibecoding",
+      "text": "#VibeCoding"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 0,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#OpenClaw",
+    "#Antigravity",
+    "#ClaudeCode"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "Pare de Usar 1 Agente de IA Por Vez: Orquestre Agentes de IA #ia #claudecode #codex #gratis #devbr",
+  "translatedTitle": "Stop Using Only 1 AI Agent at a Time: Orchestrate AI Agents #ai #claudecode #codex #free #dev",
+  "type": "video",
+  "id": "8jvrucR7QCU",
+  "url": "https://www.youtube.com/watch?v=8jvrucR7QCU",
+  "thumbnailUrl": "https://i.ytimg.com/vi/8jvrucR7QCU/maxresdefault.jpg",
+  "viewCount": 52071,
+  "date": "2026-08-09T20:45:25.000Z",
+  "likes": 2900,
+  "location": null,
+  "channelName": "Kauã Miguel - Dev",
+  "channelUrl": "https://www.youtube.com/@kc_1t",
+  "channelUsername": "kc_1t",
+  "collaborators": null,
+  "channelId": "UCuFdW0jIctCUSVqXtr5ImIA",
+  "numberOfSubscribers": 11500,
+  "duration": "00:19:42",
+  "commentsCount": 225,
+  "text": "Orquestrar agentes de IA é botar vários pra trabalhar ao mesmo tempo, em vez de um só. Dá pra fazer com subagents do Claude Code, com vários terminais abertos, ou com apps feitos pra isso. A diferença entre eles é o quanto a ferramenta faz por você. Rodar dois agentes no mesmo projeto costuma dar conflito, e é aí que entra o isolamento por git worktree. Ferramenta de gerenciar agente de IA ainda não tem padrão consolidado, e isso é justamente o que torna a área interessante agora. Nesse vídeo eu te mostro 4 ferramentas gratuitas pra orquestrar seus agentes, da mais simples até a mais completa, incluindo a Alethe, que é open source e fui eu que fiz. Tudo funcionando com o agente que você já usa.\n\n⏱️ TIMESTAMPS\n0:00 - Intro\n0:13 - O que é orquestrar (do simples ao complexo)\n1:04 - Subagents: uma IA chamando outras\n1:52 - Vários terminais e abas\n2:01 - Apps de orquestração\n2:20 - A área ainda não tem padrão, e isso é bom\n2:47 - Alethe: a ferramenta que eu fiz\n3:07 - De onde nasceu a Alethe\n5:31 - Remote control pelo celular\n6:45 - Como baixar e instalar a Alethe\n9:29 - CodeAgentSwarm: workspace de agentes\n11:49 - Kanban e tasks pro agente\n12:26 - Claude Squad: tudo no terminal\n13:37 - Orca: o ADE completo\n14:38 - Comparando as quatro\n15:29 - Orca na prática: worktree, CLI e mobile\n17:27 - Qual delas escolher\n18:40 - Awesome Agent Orchestrators: 150+ ferramentas\n19:16 - Maestro (só pra Mac)\n19:44 - Encerramento\n\n🔗 FERRAMENTAS DO VÍDEO\n→ Alethe (open source, minha): https://github.com/Kc1t/alethe-agents\n→ Orca (ADE completo): https://www.onorca.dev\n→ CodeAgentSwarm: https://www.codeagentswarm.com\n→ Claude Squad: https://github.com/smtg-ai/claude-squad\n→ Maestro (só Mac): https://themaestri.app\n→ Awesome Agent Orchestrators (150+ tools): https://github.com/andyrewlee/awesome-agent-orchestrators\n→ Qual modelo seu PC roda? https://canirunai.kc1t.com\n\n🔗 VÍDEOS RELACIONADOS\n→ Minha Tier List Definitiva das Ferramentas de IA pra Programar em 2026: https://youtu.be/3s87nbwD1A4\n→ Entenda de Vez a Diferença Entre Essas Ferramentas de IA: https://youtu.be/ak8-kN1PTWQ\n→ Como Usar o Codex da OpenAI 100% DE GRAÇA com Modelos TOP: https://youtu.be/VqhHRYforv0\n\n⚠️ FICA A DICA\nAntes de sair rodando quatro agentes no mesmo repositório, entenda que sem isolamento eles editam os mesmos arquivos ao mesmo tempo, e um sobrescreve o trabalho do outro sem avisar. Você só descobre depois, no diff. Por isso vale começar com git worktree, que dá uma cópia separada do projeto pra cada agente, e só ativar o modo sem confirmação depois que você já confia no fluxo. Rodar tudo em YOLO num projeto de verdade, sem isolamento e sem revisar, é pedir pra ter dor de cabeça.\n\n🚀 VPS PRA RODAR SEUS PROJETOS (STAYCLOUD)\nSe você quer deixar seus agentes trabalhando sem depender do seu PC ligado, dá pra rodar tudo numa VPS e acessar de onde estiver. A VPS brasileira que eu uso, com servidor no Brasil, acesso root e suporte em português:\n→ https://br.staycloud.com.br/kauamiguel\n\n📱 ME SEGUE\n→ Instagram: https://instagram.com/kc1t_dev\n→ Portfolio: https://kc1t.com\n→ GitHub: https://github.com/kc1t\n\n💬 ENTRA NO DISCORD\n→ https://discord.gg/W2khMQb8VW\n\n---\nSe esse vídeo te ajudou, deixa o like e se inscreve! Comenta aí: quantos agentes você consegue tocar ao mesmo tempo sem se perder? 🚀\n\n#ia #iagratis #claudecode #codex #opencode #gratis #programacao #orquestracao #agentesdeia #subagents #alethe #orca #worktree #devbr #vibecoding #terminalai #iaparaprogramar #produtividade #opensource #alternativaclaudecode",
+  "translatedText": "Orchestrating AI agents means getting several to work simultaneously, instead of just one. This can be done with Claude Code sub-agents, multiple open terminals, or apps specifically designed for this purpose. The difference between them lies in how much the tool does for you. Running two agents in the same project often leads to conflicts, and that's where isolation via Git Worktree comes in. AI agent management tools still lack a consolidated standard, and that's precisely what makes the field interesting now. In this video, I'll show you four free tools to orchestrate your agents, from the simplest to the most complete, including Alethe, which is open source and was developed by me. All working with the agent you already use.\n\n⏱️ TIMESTAMPS\n0:00 - Intro\n0:13 - What is orchestration (from simple to complex)\n1:04 - Subagents: one AI calling others\n1:52 - Multiple terminals and tabs\n2:01 - Orchestration apps\n2:20 - The area still doesn't have a standard, and that's good\n2:47 - Alethe: the tool I made\n3:07 - Where Alethe came from\n5:31 - Remote control via mobile phone\n6:45 - How to download and install Alethe\n9:29 - CodeAgentSwarm: agent workspace\n11:49 - Kanban and tasks for the agent\n12:26 - Claude Squad: everything in the terminal\n13:37 - Orca: the complete ADE\n14:38 - Comparing the four\n15:29 - Orca in practice: worktree, CLI and mobile\n17:27 - Which one to choose\n18:40 - Awesome Agent Orchestrators: 150+ Tools\n19:16 - Maestro (Mac only)\n19:44 - Closing\n\n🔗 TOOLS FROM THE VIDEO\n→ Alethe (open source, mine): https://github.com/Kc1t/alethe-agents\n→ Orca (complete ADE): https://www.onorca.dev\n→ CodeAgentSwarm: https://www.codeagentswarm.com\n→ Claude Squad: https://github.com/smtg-ai/claude-squad\n→ Maestro (Mac only): https://themaestri.app\n→ Awesome Agent Orchestrators (150+ tools): https://github.com/andyrewlee/awesome...\n→ What PC model does your PC run? https://canirunai.kc1t.com\n\n🔗 RELATED VIDEOS\n→ My Definitive Tier List of AI Tools for Programming in 2026:    • Minha Tier List Definitiva das Ferramentas...  \n→ Understand Once and For All the Difference Between These AI Tools:    • Entenda de Vez a Diferença Entre Essas Fer...  \n→ How to Use the OpenAI Codex 100% FREE with TOP Models:    • Como Usar o Codex da OpenAI 100% DE GRAÇA ...  \n\n⚠️ TIP\nBefore running four agents in the same repository, understand that without isolation they edit the same files at the same time, and one overwrites the work of the other without warning. You only find out later, in the diff. That's why it's worth starting with git worktree, which gives a separate copy of the project to each agent, and only activate the no-confirmation mode after you trust the flow. Running everything in YOLO on a real project, without isolation and without review, is asking for trouble.\n\n🚀 VPS TO RUN YOUR PROJECTS (STAYCLOUD)\nIf you want to keep your agents working without depending on your PC being on, you can run everything on a VPS and access it from anywhere. The Brazilian VPS I use, with a server in Brazil, root access and support in Portuguese:\n→ https://br.staycloud.com.br/kauamiguel\n\n📱 FOLLOW ME\n→ Instagram:   / kc1t_dev  \n→ Portfolio: https://kc1t.com\n→ GitHub: https://github.com/kc1t\n\n💬 JOIN THE DISCORD\n→   / discord  \n\n---\nIf this video helped you, leave a like and subscribe! Comment below: how many agents can you run simultaneously without getting lost? 🚀\n\n#ai #freeai #claudecode #codex #opencode #free #programming #orchestration #aiagents #subagents #alethe #orca #worktree #devbr #vibecoding #terminalai #aiforprogramming #productivity #opensource #alternativeclaudecode",
+  "descriptionLinks": [
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU",
+      "text": "0:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=13s",
+      "text": "0:13"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=64s",
+      "text": "1:04"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=112s",
+      "text": "1:52"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=121s",
+      "text": "2:01"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=140s",
+      "text": "2:20"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=167s",
+      "text": "2:47"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=187s",
+      "text": "3:07"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=331s",
+      "text": "5:31"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=405s",
+      "text": "6:45"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=569s",
+      "text": "9:29"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=709s",
+      "text": "11:49"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=746s",
+      "text": "12:26"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=817s",
+      "text": "13:37"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=878s",
+      "text": "14:38"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=929s",
+      "text": "15:29"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=1047s",
+      "text": "17:27"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=1120s",
+      "text": "18:40"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8jvrucR7QCU&t=1156s",
+      "text": "19:16"
+    },
+    {
+      "url": "https://github.com/Kc1t/alethe-agents",
+      "text": "https://github.com/Kc1t/alethe-agents"
+    },
+    {
+      "url": "https://www.onorca.dev/",
+      "text": "https://www.onorca.dev"
+    },
+    {
+      "url": "https://www.codeagentswarm.com/",
+      "text": "https://www.codeagentswarm.com"
+    },
+    {
+      "url": "https://github.com/smtg-ai/claude-squad",
+      "text": "https://github.com/smtg-ai/claude-squad"
+    },
+    {
+      "url": "https://themaestri.app/",
+      "text": "https://themaestri.app"
+    },
+    {
+      "url": "https://github.com/andyrewlee/awesome-agent-orchestrators",
+      "text": "https://github.com/andyrewlee/awesome..."
+    },
+    {
+      "url": "https://canirunai.kc1t.com/",
+      "text": "https://canirunai.kc1t.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3s87nbwD1A4",
+      "text": "   • Minha Tier List Definitiva das Ferramentas...  "
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ak8-kN1PTWQ",
+      "text": "   • Entenda de Vez a Diferença Entre Essas Fer...  "
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VqhHRYforv0",
+      "text": "   • Como Usar o Codex da OpenAI 100% DE GRAÇA ...  "
+    },
+    {
+      "url": "https://br.staycloud.com.br/kauamiguel",
+      "text": "https://br.staycloud.com.br/kauamiguel"
+    },
+    {
+      "url": "https://instagram.com/kc1t_dev",
+      "text": "  / kc1t_dev  "
+    },
+    {
+      "url": "https://kc1t.com/",
+      "text": "https://kc1t.com"
+    },
+    {
+      "url": "https://github.com/kc1t",
+      "text": "https://github.com/kc1t"
+    },
+    {
+      "url": "https://discord.gg/W2khMQb8VW",
+      "text": "  / discord  "
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/ai",
+      "text": "#ai"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/freeai",
+      "text": "#freeai"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#claudecode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/codex",
+      "text": "#codex"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/opencode",
+      "text": "#opencode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/free",
+      "text": "#free"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/programming",
+      "text": "#programming"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/orchestration",
+      "text": "#orchestration"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiagents",
+      "text": "#aiagents"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/subagents",
+      "text": "#subagents"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/alethe",
+      "text": "#alethe"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/orca",
+      "text": "#orca"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/worktree",
+      "text": "#worktree"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/devbr",
+      "text": "#devbr"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/vibecoding",
+      "text": "#vibecoding"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/terminalai",
+      "text": "#terminalai"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiforprogramming",
+      "text": "#aiforprogramming"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/productivity",
+      "text": "#productivity"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/opensource",
+      "text": "#opensource"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/alternativeclaudecode",
+      "text": "#alternativeclaudecode"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 6,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "19 Claude Code Mistakes \"Pro\" Users Are Still Making",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "icM0ewXGvAw",
+  "url": "https://www.youtube.com/watch?v=icM0ewXGvAw",
+  "thumbnailUrl": "https://i.ytimg.com/vi/icM0ewXGvAw/maxresdefault.jpg",
+  "viewCount": 71836,
+  "date": "2026-08-22T15:42:49.000Z",
+  "likes": 1700,
+  "location": null,
+  "channelName": "Simon Scrapes",
+  "channelUrl": "https://www.youtube.com/@simonscrapes",
+  "channelUsername": "simonscrapes",
+  "collaborators": null,
+  "channelId": "UCdCR4-uYOg5ju-IUuDnfnQA",
+  "numberOfSubscribers": 96900,
+  "duration": "00:20:12",
+  "commentsCount": 78,
+  "text": "🚀 Build agentic systems that run your business: https://skool.com/scrapes \n👀 Be the brand AI recommends: https://dub.sh/rankspot-yt\nDon't miss the next build -    / @simonscrapes  \n\nThe rules you learned for prompting Claude Code have been completely rewritten in the last six months. From using personas to managing your context window, most people are still running on old, inefficient advice. In this video, we're breaking down 19 rookie mistakes that even pro Claude Code users are still making, and showing you the modern, correct way to get the most out of the model.\n\n00:00 - Mistake 1\n02:05 - Mistake 2 - Do Not Do this\n02:21 - Mistake 3 - routines + tool access\n02:58 - Mistake 4 - overloading connectors\n03:32 - Mistake 5 - MCPs do not eat Context\n04:18 - Mistake 6 - skills don’t coexist\n05:26 - Mistake 7 - subagent management (7x cost)\n06:39 - Mistake 8 - be careful on fast mode\n07:53 - Mistake 9 - never edit your Claude.md\n08:51 - Mistake 10 - impact of a long Claude.md\n10:37 - Mistake 11 - subagents skip these files\n11:57 - Mistake 12 - stop compacting\n13:08 - Mistake 13 - large context windows are bad\n14:05 - Mistake 14 - compact only some of the session\n14:48 - Mistake 15 - hack to edit your plan\n15:42 - Mistake 16 - cheaper models are more expensive\n16:30 - Mistake 17 - stop acting as a verification loop\n17:56 - Mistake 18 - history deletes itself\n18:52 - Mistake 19 - commands you never knew\n\n#claudecode #claudecodetutorial #claudeai",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://skool.com/scrapes",
+      "text": "https://skool.com/scrapes"
+    },
+    {
+      "url": "https://dub.sh/rankspot-yt",
+      "text": "https://dub.sh/rankspot-yt"
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCdCR4-uYOg5ju-IUuDnfnQA",
+      "text": "   / @simonscrapes  "
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=125s",
+      "text": "02:05"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=141s",
+      "text": "02:21"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=178s",
+      "text": "02:58"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=212s",
+      "text": "03:32"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=258s",
+      "text": "04:18"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=326s",
+      "text": "05:26"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=399s",
+      "text": "06:39"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=473s",
+      "text": "07:53"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=531s",
+      "text": "08:51"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=637s",
+      "text": "10:37"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=717s",
+      "text": "11:57"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=788s",
+      "text": "13:08"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=845s",
+      "text": "14:05"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=888s",
+      "text": "14:48"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=942s",
+      "text": "15:42"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=990s",
+      "text": "16:30"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=1076s",
+      "text": "17:56"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=icM0ewXGvAw&t=1132s",
+      "text": "18:52"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#claudecode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecodetutorial",
+      "text": "#claudecodetutorial"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudeai",
+      "text": "#claudeai"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 3,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#claudecodetutorial",
+    "#claudeai",
+    "#claudecode"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "The Ultimate Beginner’s Guide to Claude AI",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "9oJySubZRSA",
+  "url": "https://www.youtube.com/watch?v=9oJySubZRSA",
+  "thumbnailUrl": "https://i.ytimg.com/vi/9oJySubZRSA/maxresdefault.jpg",
+  "viewCount": 356687,
+  "date": "2026-08-10T11:00:20.000Z",
+  "likes": 10000,
+  "location": null,
+  "channelName": "Metics Media",
+  "channelUrl": "https://www.youtube.com/@MeticsMedia",
+  "channelUsername": "MeticsMedia",
+  "collaborators": null,
+  "channelId": "UCuwpzP90g1LuGk6JUNms_AQ",
+  "numberOfSubscribers": 681000,
+  "duration": "01:00:48",
+  "commentsCount": 205,
+  "text": "The complete Claude AI tutorial for beginners: climb all 6 levels, from your first prompt to Claude working while you're away. Files, deep research, projects, connectors, Cowork, and building real websites with Claude Code.\n✅ Omnisend (30% for 3 Months with Code MM30): https://meticsmedia.com/omnisend-MSK\n\nIn this Claude AI tutorial for beginners you'll learn:\n✔️ What Claude AI is and how to create a free Claude account\n✔️ How to write AI prompts that get great results (context, task, format)\n✔️ Claude models explained (Sonnet, Opus, Haiku) plus usage limits and effort settings\n✔️ Uploading files and images for AI document analysis\n✔️ Web search and Deep Research: cited AI research reports\n✔️ Creating Excel spreadsheets, Word documents, and interactive web pages with AI\n✔️ Claude Projects, personal instructions, memory, and importing your ChatGPT memory\n✔️ The Claude mobile app and desktop app\n✔️ Connecting Claude to your apps with connectors and MCP (Google Calendar, Omnisend email marketing)\n✔️ Installing Claude Skills\n✔️ Cowork: letting an AI agent work on your computer autonomously\n✔️ Scheduled tasks: AI automation that runs every day\n✔️ Claude Design for website design and Claude Code for building real websites and apps — no coding required\n\n🔗 Links Mentioned in Video\nClaude signup: https://claude.ai\nOmnisend MCP server URL: https://mcp.omnisend.com/v2/mcp\nDeploy video:    • The BEST Way to Deploy a Claude AI Website...  \nShopify guide:    • The Ultimate Beginner's Guide to Shopify  \n$10K website video:    • Build $10,000 Websites using Claude Code (...  \n\n📍 Exclusive Deals & Discounts: https://meticsmedia.com/deals\n\n⏱️ Timestamps\n00:00 Intro: The 6 Levels of Claude\n\n00:57 Level 1 — Talk To Claude\n01:01 What Is Claude AI?\n01:50 Create Your Free Claude Account\n03:52 How to Write Good Prompts\n07:18 Pick the Right Model\n\n09:38 Level 2 — Give Claude Your World\n09:42 Upload Files & Images\n11:56 Web Search & Deep Research\n\n16:39 Level 3 — Make Real Things\n17:06 Create Documents, Spreadsheets & Web Pages\n\n20:16 Level 4 — Make Claude Know You\n20:20 Organize Your Work with Projects\n22:20 Make Claude Remember You\n25:29 Claude on Your Phone & Desktop\n\n28:54 Level 5 — Connect Your Apps\n29:05 Connect Claude to Your Apps \n37:00 Install & Use Skills\n\n39:47 Level 6 — Claude Works Without You\n40:10 Let Claude Work While You're Away\n43:46 Schedule Claude to Work Every Day\n46:40 The Final Evolution: Claude Code\n47:35 Design a Website with Claude Design\n52:14 Build the Website with Claude Code\n57:07 Build Your Own App with Claude Code\n\n📄 Disclosure\nSome of the links are affiliate links. If you make a purchase through them, we earn a small commission at no extra cost to you. This helps us keep our videos free for everyone.",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://meticsmedia.com/omnisend-MSK",
+      "text": "https://meticsmedia.com/omnisend-MSK"
+    },
+    {
+      "url": "https://claude.ai/",
+      "text": "https://claude.ai"
+    },
+    {
+      "url": "https://mcp.omnisend.com/v2/mcp",
+      "text": "https://mcp.omnisend.com/v2/mcp"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=S60kl9RfzDg",
+      "text": "   • The BEST Way to Deploy a Claude AI Website...  "
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wQGabloRalM",
+      "text": "   • The Ultimate Beginner's Guide to Shopify  "
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VMvZuhcDdnw",
+      "text": "   • Build $10,000 Websites using Claude Code (...  "
+    },
+    {
+      "url": "https://meticsmedia.com/deals",
+      "text": "https://meticsmedia.com/deals"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=57s",
+      "text": "00:57"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=61s",
+      "text": "01:01"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=110s",
+      "text": "01:50"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=232s",
+      "text": "03:52"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=438s",
+      "text": "07:18"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=578s",
+      "text": "09:38"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=582s",
+      "text": "09:42"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=716s",
+      "text": "11:56"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=999s",
+      "text": "16:39"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=1026s",
+      "text": "17:06"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=1216s",
+      "text": "20:16"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=1220s",
+      "text": "20:20"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=1340s",
+      "text": "22:20"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=1529s",
+      "text": "25:29"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=1734s",
+      "text": "28:54"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=1745s",
+      "text": "29:05"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=2220s",
+      "text": "37:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=2387s",
+      "text": "39:47"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=2410s",
+      "text": "40:10"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=2626s",
+      "text": "43:46"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=2800s",
+      "text": "46:40"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=2855s",
+      "text": "47:35"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=3134s",
+      "text": "52:14"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9oJySubZRSA&t=3427s",
+      "text": "57:07"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 2,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": true
+},
+{
+  "title": "最近話題の「ループエンジニアリング」「グラフエンジニアリング」とは？Claude Codeでの実践例を含めて解説してみた",
+  "translatedTitle": "What Are \"Loop Engineering\" and \"Graph Engineering\"? An Explanation Including Practical Examples ...",
+  "type": "video",
+  "id": "cehtaE2YCxc",
+  "url": "https://www.youtube.com/watch?v=cehtaE2YCxc",
+  "thumbnailUrl": "https://i.ytimg.com/vi/cehtaE2YCxc/maxresdefault.jpg",
+  "viewCount": 54927,
+  "date": "2026-08-08T09:00:20.000Z",
+  "likes": 1100,
+  "location": null,
+  "channelName": "にゃんたのAIチャンネル",
+  "channelUrl": "https://www.youtube.com/@aivtuber2866",
+  "channelUsername": "aivtuber2866",
+  "collaborators": null,
+  "channelId": "UCZQVTC3uLCyuJUOcRlguazA",
+  "numberOfSubscribers": 93200,
+  "duration": "00:30:59",
+  "commentsCount": 83,
+  "text": "🏢【受付中】企業様向けAI活用の相談窓口を設置しています。\n「AIで業務効率化できるか一緒に考えてほしい」「AIがわかる人を育てたい」という企業様向けに、研修から業務改善の定着まで伴走支援いたします。\n▼登録はこちら（登録は1分ほど・本目的以外では営業しません）\nhttps://forms.gle/sPVYtBkZpeaJ7URS9 \n\n---------------------------------------------------------------------------\nにゃんた初の書籍が発売中！📚\nAmazonのページ ▶︎https://amzn.to/3QMrFnY\n『ゼロからわかるDifyの教科書 ～生成AI × ノーコードでかんたん業務効率化』\n\nこんにちは、にゃんたです。\n\n今回は、最近海外を中心に話題になっている「ループエンジニアリング」や「グラフエンジニアリング」といった概念について解説しました！\n\nプロンプトエンジニアリングやコンテキストエンジニアリングなどの用語を整理しつつ、AIの精度を高めるための仕組みを紹介しています。\n\n動画の後半では、私が実際にマニュアル作成を行うケースを題材にして、Claude Codeのサブエージェント機能を使ったループの組み方も実践してみました！\n\n最新の論文データからも分かるように、AIの精度を上げるには「別のAIに評価させてフィードバックを回す」ことが非常に有効です。\n\n「普段使っているAIの出力精度がなかなか上がらない…」と悩んでいる方や、より高度なAIの使い方を知りたい方は、ぜひ参考に試してみてください🙆‍♂️\n\n---------------------------------------------------------------------------\n\n■動画で紹介している論文\nRefineBench: Evaluating Refinement Capability of Language Models via Checklists\nhttps://arxiv.org/abs/2511.22173\n\n■Andrej KarpathyさんのX\nhttps://x.com/karpathy/status/2030371219518931079\n\n---------------------------------------------------------------------------\n\n■LINE公式で限定コンテンツ配布中！\n▼登録はこちらから行えます▼\nhttps://liff.line.me/2004040861-3Jvq4bAG\n\n今ならキーワード「プレゼント」と入力すると\n・ChatGPTのプロンプトまとめ\n・Claudeのプロンプトまとめ\n・Difyのまとめ\nを無料でお渡ししています！\n\n■チャプター\n00:00 ループ・グラフ・ハーネスエンジニアリングの全体像\n00:52 プロンプト・コンテキスト・ハーネスの違い\n06:25 ループ・グラフエンジニアリングの違い\n11:14 グラフエンジニアリングとワークフローの関係\n13:26 検証AIで回答精度を高めるループ設計\n16:01 Claude CodeのLoop・Goalコマンド比較\n17:06 Claude Codeサブエージェントの仕組み\n19:11 メイン・検証エージェントの改善ループ\n21:24 Claude Codeで操作マニュアル生成を実験\n23:16 検証エージェント有無の品質比較\n24:53 AI自己修正と外部フィードバックの精度比較\n28:38 チェックリスト検証と局所最適の対策\n\n■関連動画\nhttps://youtu.be/7t3zmNFkPnM\n\n■Udemy\nChatGPTAPIの使い方講座も作成しているので興味があれば是非！(クーポン発行してます！)\nhttps://linktr.ee/nyanta_youtuber \n\n■X, インスタグラム\nhttps://twitter.com/vtuber_nyanta\nhttps://www.instagram.com/vtuber_nyanta/\n\n■にゃんたの連絡先\nvtuber.nyanta@gmail.com\n\n※上記製品リンクURLはAmazonアソシエイトのリンクを使用しています。\n---------------------------------------------------------------------------\n■楽曲提供\nフリーBGM DOVA-SYNDROME : http://dova-s.jp/\n効果音ラボ : https://soundeffect-lab.info/\n\n■編集\nにゃんた妻\n　一言：最近は、動画編集より背景画像づくりに時間がかかっている気がします…😆\n---------------------------------------------------------------------------\n#AI  #生成AI",
+  "translatedText": "🏢【Now Accepting Applications】We have set up a consultation service for companies regarding the use of AI.\n\nFor companies that want to \"think together about whether AI can improve business efficiency\" or \"want to train people who understand AI,\" we will provide comprehensive support from training to the establishment of business improvements.\n\n▼Register here (Registration takes about 1 minute - We will not sell anything other than this purpose)\nhttps://forms.gle/sPVYtBkZpeaJ7URS9\n\n---------------------------------------------------------------------------\nNyanta's first book is now on sale! 📚\nAmazon page ▶︎https://amzn.to/3QMrFnY\n\"The Dify Textbook from Scratch: Easy Business Efficiency Improvement with Generative AI x No-Code\"\n\nHello, this is Nyanta.\n\nThis time, I explained concepts such as \"loop engineering\" and \"graph engineering,\" which have recently become popular, mainly overseas!\n\nWhile organizing terms such as prompt engineering and context engineering, I introduced mechanisms for improving the accuracy of AI.\n\nIn the latter half of the video, I demonstrated how to create loops using Claude Code's sub-agent function, using a case study of my actual manual creation process!\n\nAs recent research data shows, \"having another AI evaluate and provide feedback\" is extremely effective in improving AI accuracy.\n\nIf you're struggling with the accuracy of your usual AI output, or if you want to learn more advanced AI usage, please try this out! 🙆‍♂️\n\n---------------------------------------------------------------------------\n\n■Papers introduced in the video\nRefineBench: Evaluating Refinement Capability of Language Models via Checklists\nhttps://arxiv.org/abs/2511.22173\n\n■Andrej Karpathy's X\nhttps://x.com/karpathy/status/2030371...\n\n---------------------------------------------------------------------------\n\n■Exclusive content available on LINE Official Account!\n\n▼Register here▼\nhttps://liff.line.me/2004040861-3Jvq4bAG\n\nEnter the keyword \"present\" now and receive the following for free!\n\n・ChatGPT prompt summary\n\n・Claude prompt summary\n\n・Dify summary\n\n\n\n■Chapters\n00:00 Overview of Loop, Graph, and Harness Engineering\n00:52 Differences between Prompt, Context, and Harness\n06:25 Differences between Loop and Graph Engineering\n11:14 Relationship between Graph Engineering and Workflow\n13:26 Loop Design to Improve Answer Accuracy with Validation AI\n16:01 Comparison of Claude Code's Loop and Goal Commands\n17:06 How Claude Code Sub-Agents Work\n19:11 Improvement Loops for Main and Validation Agents\n21:24 Experimenting with Operation Manual Generation using Claude Code\n23:16 Quality Comparison with and Without Validation Agents\n24:53 Accuracy Comparison of AI Self-Correction and External Feedback\n28:38 Checklist Validation and Countermeasures for Local Optima\n\n■Related Video\n   • AIが自動で実験して改善してくれる！Claude Codeで自己改善ループを作る方法...  \n\n■Udemy\nWe also have a course on how to use the ChatGPTAPI, so please check it out if you're interested! (Coupon available!)\nhttps://linktr.ee/nyanta_youtuber\n\n■X, Instagram\n  / vtuber_nyanta  \n  / vtuber_nyanta  \n\n■Nyanta's Contact Information\nvtuber.nyanta@gmail.com\n\n*The above product link URL uses an Amazon Associate link.\n\n---------------------------------------------------------------------------\n■Music Provided by\nFree BGM DOVA-SYNDROME: http://dova-s.jp/\nSound Effect Lab: https://soundeffect-lab.info/\n\n■Editing\nNyanta's Wife\n　A word: Lately, I feel like I'm spending more time creating background images than editing videos...😆\n---------------------------------------------------------------------------\n#AI #GenerativeAI",
+  "descriptionLinks": [
+    {
+      "url": "https://forms.gle/sPVYtBkZpeaJ7URS9",
+      "text": "https://forms.gle/sPVYtBkZpeaJ7URS9"
+    },
+    {
+      "url": "https://amzn.to/3QMrFnY",
+      "text": "https://amzn.to/3QMrFnY"
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.22173",
+      "text": "https://arxiv.org/abs/2511.22173"
+    },
+    {
+      "url": "https://x.com/karpathy/status/2030371219518931079",
+      "text": "https://x.com/karpathy/status/2030371..."
+    },
+    {
+      "url": "https://liff.line.me/2004040861-3Jvq4bAG",
+      "text": "https://liff.line.me/2004040861-3Jvq4bAG"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=52s",
+      "text": "00:52"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=385s",
+      "text": "06:25"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=674s",
+      "text": "11:14"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=806s",
+      "text": "13:26"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=961s",
+      "text": "16:01"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=1026s",
+      "text": "17:06"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=1151s",
+      "text": "19:11"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=1284s",
+      "text": "21:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=1396s",
+      "text": "23:16"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=1493s",
+      "text": "24:53"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cehtaE2YCxc&t=1718s",
+      "text": "28:38"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7t3zmNFkPnM",
+      "text": "   • AIが自動で実験して改善してくれる！Claude Codeで自己改善ループを作る方法...  "
+    },
+    {
+      "url": "https://linktr.ee/nyanta_youtuber",
+      "text": "https://linktr.ee/nyanta_youtuber"
+    },
+    {
+      "url": "https://twitter.com/vtuber_nyanta",
+      "text": "  / vtuber_nyanta  "
+    },
+    {
+      "url": "https://www.instagram.com/vtuber_nyanta/",
+      "text": "  / vtuber_nyanta  "
+    },
+    {
+      "url": "http://dova-s.jp/",
+      "text": "http://dova-s.jp/"
+    },
+    {
+      "url": "https://soundeffect-lab.info/",
+      "text": "https://soundeffect-lab.info/"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/ai",
+      "text": "#AI"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/generativeai",
+      "text": "#GenerativeAI"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 4,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "The Ultimate Claude Code Tutorial (Beginner to Pro)",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "OVm2AGTxYuE",
+  "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE",
+  "thumbnailUrl": "https://i.ytimg.com/vi/OVm2AGTxYuE/maxresdefault.jpg",
+  "viewCount": 34971,
+  "date": "2026-08-17T14:53:19.000Z",
+  "likes": 0,
+  "location": null,
+  "channelName": "Zinho Automates",
+  "channelUrl": "https://www.youtube.com/@zinhoautomates",
+  "channelUsername": "zinhoautomates",
+  "collaborators": null,
+  "channelId": "UC3i3qKQ5aR_guegQj5bhOMw",
+  "numberOfSubscribers": 73000,
+  "duration": "00:20:20",
+  "commentsCount": 15,
+  "text": "The Ultimate Claude Code Tutorial (Beginner to Pro). Join our FREE community with the guide & free prompts & tips and tricks: https://www.skool.com/ai-launchpad/about\n\nChapters\n00:00 - Intro\n01:24 - Interface & Setup\n03:29 - Prompting\n05:17 - Voice & Plan\n06:54 - Build & Preview\n07:27 - Iteration\n08:11 - Review like a manager\n09:31 - /init\n11:24 - Skills\n12:25 - MCP & Connectors\n13:24 - Parallel & Walking away\n14:27 - /compact & /clear & /doctor\n15:54 - Gauntlet loop\n17:30 - Ship it & What's next\n18:08 - Rules\n19:18 - Outro\n\nFor business inquiries including sponsorships and collaborations, please email:\nbusiness@zinhomedia.com",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://www.skool.com/ai-launchpad/about",
+      "text": "https://www.skool.com/ai-launchpad/about"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=84s",
+      "text": "01:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=209s",
+      "text": "03:29"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=317s",
+      "text": "05:17"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=414s",
+      "text": "06:54"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=447s",
+      "text": "07:27"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=491s",
+      "text": "08:11"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=571s",
+      "text": "09:31"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=684s",
+      "text": "11:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=745s",
+      "text": "12:25"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=804s",
+      "text": "13:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=867s",
+      "text": "14:27"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=954s",
+      "text": "15:54"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=1050s",
+      "text": "17:30"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=1088s",
+      "text": "18:08"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OVm2AGTxYuE&t=1158s",
+      "text": "19:18"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 8,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "KI Team erstellen mit Claude (für Anfänger)",
+  "translatedTitle": "How to Build an AI Team with Claude (For Beginners)",
+  "type": "video",
+  "id": "2JF8VMPwUUs",
+  "url": "https://www.youtube.com/watch?v=2JF8VMPwUUs",
+  "thumbnailUrl": "https://i.ytimg.com/vi/2JF8VMPwUUs/maxresdefault.jpg",
+  "viewCount": 31615,
+  "date": "2026-07-30T18:00:38.000Z",
+  "likes": 1400,
+  "location": null,
+  "channelName": "Calvin Hollywood (AI)",
+  "channelUrl": "https://www.youtube.com/@calvinweischeslischt",
+  "channelUsername": "calvinweischeslischt",
+  "collaborators": null,
+  "channelId": "UCWIGLQhEkdlfpCCGP7oMbZg",
+  "numberOfSubscribers": 102000,
+  "duration": "00:23:35",
+  "commentsCount": 213,
+  "text": "Ich habe zwei Communitys zum Thema AI \n\n1️⃣ Claude Masterclass\nDieser Community kannst du 7 Tage gratis beitreten, um mit Claude noch besser zu werden. Wir haben einen Grundlagenkurs und eine Menge Tutorials, wie ich Claude im Alltag und Business nutze\nhttps://www.skool.com/claude-masterclass-2202\n\n2️⃣ AI Content Creation für Social Media\nDieser Community kannst du gratis beitreten - es geht zu 100% um AI Content Creation für Social Media \nhttps://www.skool.com/aicontentcommunity\n\n🚀 Wenn du direkt meine Kurse möchtest, dann hole dir dieses Bundle von über 20 Premium Videokursen zum Thema AI Content Creation und AI Businessaufbau \nhttps://aicontentcreation.store/\n\n🎨 Meine AI Artworks auf Instagram:\nhttps://www.instagram.com/calvin_hollywood_artworks\n\n—\n\n📌 Über mich:\n\nHi, ich bin Calvin Hollywood — AI Content Creator aus Schwetzingen.\n\nAuf diesem Kanal zeige ich dir, wie du mit Claude und AI-Tools wie Higgsfield, Nano Banana, Kling und Seedance richtig guten Content erstellst. Alles ungeschnitten, alles ehrlich, kein Hype.\n20 Jahre Photoshop & Fotografie, heute AI Content Creator. Skool Ambassador für D-A-CH.\n\n#KI #Claude #AIContent\n\n🚀 Ich habe ein MEGA AI Kursbundle, mit Kusen zu Higgsfield, AI Content Claude uvm. Wenn dich das interessiert, schau hier mal vorbei. \n➡️ https://aicontentcreation.store/\n\n🎨 Meine AI Artworks findest du hier:\n➡️ https://www.instagram.com/calvin_hollywood_artworks\n\nKI-Agenten einfach erklärt: Lerne heute, wie du dein eigenes KI-Team aufbaust, selbst wenn du absolute Anfänger-Vorkenntnisse hast.\n\nViele haben nach meinem letzten Video nachgefragt, wie genau KI-Agenten und Sub-Agents funktionieren. Wenn du dich fragst, wie diese Technologie in der Praxis zusammenarbeitet, ist dieses Video genau für dich gemacht. Ich breche das komplexe Thema KI-Team auf die absolute Basis herunter, damit jeder den Aufbau und die Logik dahinter versteht.\n\nWir gehen Schritt für Schritt durch, was ein KI-Agent eigentlich ist und warum Sub-Agents für die Effizienz entscheidend sind. Mein Ziel ist es, dass du nach diesem Video keine Fragezeichen mehr hast, wenn es um moderne KI-Agenten geht. Am Ende weißt du genau, wie man diese Strukturen für sich nutzt.\n\nAbonniere den Kanal für wöchentliche KI-Updates und schreibe mir in die Kommentare, welches Thema rund um KI-Agenten oder Automatisierung dich als Nächstes interessiert.",
+  "translatedText": "I have two communities focused on AI:\n\n1️⃣ Claude Masterclass\n\nYou can join this community for 7 days free of charge to improve your skills with Claude. We have a basic course and lots of tutorials on how I use Claude in everyday life and business:\n\nhttps://www.skool.com/claude-mastercl...\n\n2️⃣ AI Content Creation for Social Media\nYou can join this community for free – it's 100% about AI content creation for social media:\n\nhttps://www.skool.com/aicontentcommunity\n\n🚀 If you'd like to get my courses directly, get this bundle of over 20 premium video courses on AI content creation and building an AI business:\n\nhttps://aicontentcreation.store/\n\n🎨 My AI artwork on Instagram:\n\n  / calvin_hollywood_artworks  \n\n—\n\n📌 About me:\n\nHi, I'm Calvin Hollywood – an AI content creator from Schwetzingen.\n\n\nOn this channel, I'll show you how to create truly great content with Claude and AI tools like Higgsfield, Nano Banana, Kling, and Seedance. All unedited, all honest, no hype.\n\n20 years of Photoshop & photography, now an AI Content Creator. Skool Ambassador for Germany, Austria, and Switzerland.\n\n#AI #Claude #AIContent\n\n🚀 I have a MEGA AI course bundle with courses on Higgsfield, AI Content Claude, and much more. If you're interested, check it out here.\n\n➡️ https://aicontentcreation.store/\n\n🎨 You can find my AI artwork here:\n\n➡️   / calvin_hollywood_artworks  \n\nAI agents explained simply: Learn today how to build your own AI team, even if you're a complete beginner.\n\n\nMany of you asked about how AI agents and sub-agents work after my last video. If you're wondering how this technology works in practice, this video is for you. I'll break down the complex topic of AI teams to their very basics so everyone can understand the structure and logic behind them.\n\nWe'll go through step by step what an AI agent actually is and why sub-agents are crucial for efficiency. My goal is that after this video, you'll have no more questions about modern AI agents. By the end, you'll know exactly how to leverage these structures for your own benefit.\n\nSubscribe to the channel for weekly AI updates and let me know in the comments what topic related to AI agents or automation you'd like to see covered next.",
+  "descriptionLinks": [
+    {
+      "url": "https://www.skool.com/claude-masterclass-2202",
+      "text": "https://www.skool.com/claude-mastercl..."
+    },
+    {
+      "url": "https://www.skool.com/aicontentcommunity",
+      "text": "https://www.skool.com/aicontentcommunity"
+    },
+    {
+      "url": "https://aicontentcreation.store/",
+      "text": "https://aicontentcreation.store/"
+    },
+    {
+      "url": "https://www.instagram.com/calvin_hollywood_artworks",
+      "text": "  / calvin_hollywood_artworks  "
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/ai",
+      "text": "#AI"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claude",
+      "text": "#Claude"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aicontent",
+      "text": "#AIContent"
+    },
+    {
+      "url": "https://aicontentcreation.store/",
+      "text": "https://aicontentcreation.store/"
+    },
+    {
+      "url": "https://www.instagram.com/calvin_hollywood_artworks",
+      "text": "  / calvin_hollywood_artworks  "
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 9,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#Claude",
+    "#KI",
+    "#AIContent"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "This Claude Skill Just Fixed Loop Engineering",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "D_uojDHkbw4",
+  "url": "https://www.youtube.com/watch?v=D_uojDHkbw4",
+  "thumbnailUrl": "https://i.ytimg.com/vi/D_uojDHkbw4/maxresdefault.jpg",
+  "viewCount": 19290,
+  "date": "2026-08-14T15:34:43.000Z",
+  "likes": 745,
+  "location": null,
+  "channelName": "AI LABS",
+  "channelUrl": "https://www.youtube.com/@AILABS-393",
+  "channelUsername": "AILABS-393",
+  "collaborators": null,
+  "channelId": "UCelfWQr9sXVMTvBzviPGlFw",
+  "numberOfSubscribers": 156000,
+  "duration": "00:14:31",
+  "commentsCount": 29,
+  "text": "The gauntlet loop lets Claude Code one-shot entire games.\nGet started with SerpApi using 250 free credits and pull real search data straight into your build: https://serpapi.com/?utm_source=youtu...\n\nThe Claude Code gauntlet loop is how people are one-shotting games, 3D worlds and full websites from a single prompt. This breaks down how the claude gauntlet loop actually works, why it's fine for a gauntlet loop game but falls apart on a real project, and how the fix was already shipped. Works with Opus 5, Claude Opus 5, AI agents and agentic coding.\n\nCommunity with All Resources: https://ailabspro.io/?v=D_uojDHkbw4\n\nThe Roundup, our daily newsletter covering the AI stories that matter. Join now: https://www.theroundup.so/\n\nThe original gauntlet loop prompt: https://x.com/mattshumer_/status/2081...\n\nMatt Pocock Skills: https://github.com/mattpocock/skills\n\nIt started when Matt Shumer posted a Claude-built first-person shooter made from one prompt, then named the method the gauntlet loop. The whole thing is a 3-line prompt, so the gauntlet loop 3 parts are simple: the first line defines what you're building and the quality bar, the second line splits the work across sub-agents, and the third line sets an existing product (Call of Duty) as the standard a blind critic checks the work against. Add \"ultracode\" and it runs a whole fleet of sub-agents at once, the diamond graph that makes this ai loop engineering, not just one agent looping.\n\nThis video was sponsored by SerpApi\n\nBut the gauntlet loop claude code pattern has two problems. The main agent writes its own checks, and the quality bar is an existing product. That's why gauntlet loop game coding works, there's always something to compare to, and why it breaks the moment you build something new with nothing to copy.\n\nThe fix is Wayfinder, a planning skill from Matt Pocock. It clears the \"fog\" out of a plan by turning every undecided question into research, then writes a spec and an answer key the loop can check itself against, the same job Call of Duty did, but for an app that doesn't exist yet. We modified the skill, then ran the gauntlet loop on a real HR system for our own team. It built in 1 hour 33 minutes, used around 40% of a session (roughly $116 on the API), and every check in the answer key passed. Everything worked, the design only came out okay.\n\nWhether you're running claude code design gauntlet loop experiments or your own loop engineering setup, this is how you make the loop hold up on real work.\n\n00:00 Intro\n00:56 Loops\n01:24 Origin\n02:43 The Prompt\n05:40 Sponsor\n06:32 The Problems\n08:20 Wayfinder\n10:45 Demo\n\nHashtags:\n#ai #claude #claudecode #kimik3 #opus5 #claudeai #claudecowork #gauntletloop",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://serpapi.com/?utm_source=youtube&utm_campaign=ailabs_august_2026",
+      "text": "https://serpapi.com/?utm_source=youtu..."
+    },
+    {
+      "url": "https://ailabspro.io/?v=D_uojDHkbw4",
+      "text": "https://ailabspro.io/?v=D_uojDHkbw4"
+    },
+    {
+      "url": "https://www.theroundup.so/",
+      "text": "https://www.theroundup.so/"
+    },
+    {
+      "url": "https://x.com/mattshumer_/status/2081100592689324502",
+      "text": "https://x.com/mattshumer_/status/2081..."
+    },
+    {
+      "url": "https://github.com/mattpocock/skills",
+      "text": "https://github.com/mattpocock/skills"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D_uojDHkbw4",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D_uojDHkbw4&t=56s",
+      "text": "00:56"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D_uojDHkbw4&t=84s",
+      "text": "01:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D_uojDHkbw4&t=163s",
+      "text": "02:43"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D_uojDHkbw4&t=340s",
+      "text": "05:40"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D_uojDHkbw4&t=392s",
+      "text": "06:32"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D_uojDHkbw4&t=500s",
+      "text": "08:20"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D_uojDHkbw4&t=645s",
+      "text": "10:45"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/ai",
+      "text": "#ai"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claude",
+      "text": "#claude"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#claudecode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/kimik3",
+      "text": "#kimik3"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/opus5",
+      "text": "#opus5"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudeai",
+      "text": "#claudeai"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecowork",
+      "text": "#claudecowork"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/gauntletloop",
+      "text": "#gauntletloop"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 13,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#claudecowork",
+    "#kimik3",
+    "#claudeai"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "CLAUDE CODE 2026: Curso Completo en Español (actualizado)",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "h49d1-d_fYk",
+  "url": "https://www.youtube.com/watch?v=h49d1-d_fYk",
+  "thumbnailUrl": "https://i.ytimg.com/vi/h49d1-d_fYk/maxresdefault.jpg",
+  "viewCount": 474784,
+  "date": "2026-07-31T15:01:03.000Z",
+  "likes": 47000,
+  "location": null,
+  "channelName": "Benjamín Cordero",
+  "channelUrl": "https://www.youtube.com/@bencord",
+  "channelUsername": "bencord",
+  "collaborators": null,
+  "channelId": "UCpq8lHHliCS3oBt-gfL0bKQ",
+  "numberOfSubscribers": 203000,
+  "duration": "06:17:21",
+  "commentsCount": 784,
+  "text": "👉 El curso más completo de Claude Code en español, desde cero y sin programar: 6 horas, 17 módulos y 8 proyectos reales armados en vivo.\n\nLa versión anterior de este curso llegó a +500.000 visitas y quedó como el curso de Claude Code más visto en español. Esta es la reconstrucción desde cero, con todo lo nuevo.\n\nSoy Ben, cofundador de Imperio Agéntico, y llevo +3 años enseñando IA aplicada y automatizaciones en español.\n\nCreo las cuentas contigo, instalo Claude Code en Mac y en Windows desde la app de escritorio (nada de terminal) y armamos 8 proyectos que quedan funcionando.\n\nA los 62 minutos tu primera página web ya está publicada en internet, con tu propio link.\n\n📥 Guía descargable del curso, gratis: https://claudecode.imperioagentico.co...\n\n⏱️ ÍNDICE\n\n0:00 Módulo 0 · Bienvenida: el mapa del curso y las 2 reglas\n19:15 Módulo 1 · El ecosistema Claude: Chat, Cowork, Design y Code\n26:23 Módulo 2 · Instalación en Mac y Windows desde cero\n34:45 Módulo 3 · La interfaz completa: sesiones, modelos, esfuerzo y permisos\n40:36 Módulo 4 · Tu primer proyecto: una landing real publicada con Vercel\n1:06:23 Módulo 5 · Tokens, límites y ventana de contexto\n1:31:23 Módulo 6 · Control: modos de permisos, Plan Mode y checkpoints\n1:46:42 Módulo 7 · CLAUDE.md, memoria y estructura de archivos\n2:03:30 Módulo 8 · Skills: tu forma de trabajar convertida en agentes\n2:32:05 Módulo 9 · MCP y conectores: el traductor universal\n3:02:16 Módulo 10 · Subagentes y Ultracode: un ejército trabajando en paralelo\n3:35:43 Módulo 11 · Loops y Goals: que trabaje solo mientras no estás\n4:04:19 Módulo 12 · Automatización 24/7: Routines de Anthropic y n8n\n4:45:54 Módulo 13 · El agente investigador: scraping de X sin API ni MCP\n4:57:56 Módulo 14 · Tu segundo cerebro en Obsidian\n5:24:13 Módulo 15 · Proyecto final: un media buyer con Meta MCP\n5:59:28 Módulo 16 · Próximos pasos y tu roadmap\n6:02:34 Qué hacer ahora\n\n👉 QUÉ VAS A SABER HACER AL TERMINAR\n\n✅ Instalar Claude Code desde cero en Mac o Windows, sin tocar el terminal\n✅ Publicar una web real en internet creando tu cuenta de Vercel en vivo\n✅ Saber cuánto cuesta esto de verdad y cómo no quemar tu plan a mitad de mes\n✅ Darle memoria a Claude con CLAUDE.md para que te recuerde entre sesiones\n✅ Crear tus propios Skills: tu criterio convertido en procesos que corren solos\n✅ Conectar tus herramientas por MCP y controlar el navegador cuando no hay API\n✅ Levantar agentes en paralelo con subagentes y Ultracode\n✅ Dejar automatizaciones corriendo 24/7 en Routines de Anthropic y en n8n\n\n🛠️ LOS 8 PROYECTOS QUE ARMAMOS EN VIVO\n\n1️⃣ Una landing para una clínica dental, publicada con Vercel\n2️⃣ Sherlock, el superinvestigador de mercado: un plan de negocio completo con Ultracode\n3️⃣ Un scout de tendencias corriendo en loop\n4️⃣ Un cotizador que responde clientes solo, armado en n8n\n5️⃣ Un newsletter personal automatizado en Routines de Anthropic\n6️⃣ Un agente que entra a la web y saca tendencias, sin API ni MCP\n7️⃣ Un segundo cerebro con 20 videos interconectados en Obsidian\n8️⃣ Matías, el media buyer: genera los creativos, los sube a Meta, testea y analiza\n\nOjo: para seguirlo paso a paso necesitas el plan Pro de Claude ($17 al mes). Yo parto ahí, te muestro en qué minuto exacto se llena la cuota y qué hacer cuando pasa.\n\n🔧 Herramientas que aparecen: Claude Code, Claude Chat, Claude Cowork, Claude Design, Vercel, n8n, Obsidian, Higgsfield, Meta Ads, Google Trends y Excalidraw.\n\n👑 DÓNDE SEGUIR DESPUÉS DEL CURSO\n\nImperio Agéntico es la comunidad donde aplicamos todo esto todos los días: +3.000 miembros, 5 sesiones en vivo por semana y +100 horas de cursos.\n\nQuedamos #1 del mundo en los Skool Games, la primera comunidad de IA en español en lograrlo.\n\n📌 RECURSOS\n\n📥 Guía descargable del curso (gratis): https://claudecode.imperioagentico.co...\n🎨 Higgsfield (generación de creativos): https://higgsfield.ai?fpr=benjamin27\n\n👑 Comunidad Imperio Agéntico: https://www.skool.com/imperio\n\nTodo el video va sin cortes, incluidos los momentos donde algo NO sale a la primera. Ahí es donde se aprende a resolver de verdad.\n\nCuéntame abajo qué te pareció 👇 Los leo todos.\n\nSuscríbete para más IA aplicada y automatizaciones en español.\n\n#ClaudeCode #Anthropic #InteligenciaArtificial #Automatizacion #MCP",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://claudecode.imperioagentico.com/guia",
+      "text": "https://claudecode.imperioagentico.co..."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk",
+      "text": "0:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=1155s",
+      "text": "19:15"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=1583s",
+      "text": "26:23"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=2085s",
+      "text": "34:45"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=2436s",
+      "text": "40:36"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=3983s",
+      "text": "1:06:23"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=5483s",
+      "text": "1:31:23"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=6402s",
+      "text": "1:46:42"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=7410s",
+      "text": "2:03:30"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=9125s",
+      "text": "2:32:05"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=10936s",
+      "text": "3:02:16"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=12943s",
+      "text": "3:35:43"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=14659s",
+      "text": "4:04:19"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=17154s",
+      "text": "4:45:54"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=17876s",
+      "text": "4:57:56"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=19453s",
+      "text": "5:24:13"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=21568s",
+      "text": "5:59:28"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=h49d1-d_fYk&t=21754s",
+      "text": "6:02:34"
+    },
+    {
+      "url": "https://claudecode.imperioagentico.com/guia",
+      "text": "https://claudecode.imperioagentico.co..."
+    },
+    {
+      "url": "https://higgsfield.ai/?fpr=benjamin27",
+      "text": "https://higgsfield.ai?fpr=benjamin27"
+    },
+    {
+      "url": "https://www.skool.com/imperio",
+      "text": "https://www.skool.com/imperio"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#ClaudeCode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/anthropic",
+      "text": "#Anthropic"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/inteligenciaartificial",
+      "text": "#InteligenciaArtificial"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/automatizacion",
+      "text": "#Automatizacion"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/mcp",
+      "text": "#MCP"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 1,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#MCP",
+    "#ClaudeCode",
+    "#Automatizacion"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "This 1 Claude Skill fully replaces your Higgsfield Subscription",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "9C4TRbucmhQ",
+  "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ",
+  "thumbnailUrl": "https://i.ytimg.com/vi/9C4TRbucmhQ/maxresdefault.jpg",
+  "viewCount": 285758,
+  "date": "2026-07-31T01:46:08.000Z",
+  "likes": 10000,
+  "location": null,
+  "channelName": "Jay E | RoboNuggets",
+  "channelUrl": "https://www.youtube.com/@RoboNuggets",
+  "channelUsername": "RoboNuggets",
+  "collaborators": null,
+  "channelId": "UCgscS8mBsQZ5sFRkJIFWD7Q",
+  "numberOfSubscribers": 174000,
+  "duration": "00:15:41",
+  "commentsCount": 219,
+  "text": "Get the skill blueprint for free ➡️ https://www.skool.com/robonuggets-free search for n68\nLearn to build & sell AI Systems businesses pay for 🚀 https://www.skool.com/robonuggets/abo...\n\nGet RUBRIC - The Command Centre for AI Agents: https://www.getrubric.app/\n\n***\n\n\nOur AI Partner Tools (affiliate revenue go to community perks):\n🥚 Free trial of Blotato: https://blotato.com/?ref=robonuggets\n🥚 Free trial of n8n: https://n8n.partnerlinks.io/o3jqtj032c02\n🥚 Free trial of Make https://www.make.com/en/register?pc=r...\n🥚 Free trial of ElevenLabs: https://try.elevenlabs.io/m5mn2jkv5rzk\n🥚 Free credits at Apify:  https://www.apify.com?fpr=sffv1\n\n---\nAbout Me 👋🏻\n\nHey thanks for watching! I'm Jay - spent my career in data and brand building, founded the ROBO Group to help forward-looking businesses grow with AI, and now teaching what I know through this channel and the RoboNuggets community.\n\nIf you learned something new and want to see more, support the channel by subscribing:    / @robonuggets  \n\nFollow on other platforms 🔻\n➗ Instagram:   / robonuggets  \n➖ Tiktok:   / robonuggets  \n✖️ Twitter/X:    / robonuggets  \n➕ LinkedIn:   / j-enri  \n\nFor business, reach out at https://robolabs.so\n\nLeave me a comment if you have a specific request! Thanks.\nJay\n\n---\n\nTimestamps\n00:00 - Intro\n00:34 - Generating the ads with /generate\n02:12 - From one image to a full website\n03:25 - What Higgsfield actually is\n04:46 - The terms update and the deletion window\n06:39 - The pay as you go alternatives\n07:59 - Are they actually cheaper\n09:59 - Video costs and which one I use\n11:57 - Inside the skill and how it routes\n13:25 - The gallery, the styles and the blueprint\n\n#AIAgents #AgenticAI #AIAutomation #OpenClaw #ClaudeCode #Antigravity #MCPProtocol #Anthropic #AIAgency #AgentBuilding #AITools #AIWorkflow #AutonomousAgents #MultiAgent #VibeCoding",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://www.skool.com/robonuggets-free",
+      "text": "https://www.skool.com/robonuggets-free"
+    },
+    {
+      "url": "https://www.skool.com/robonuggets/about?ref=c1365a0fede2445292bc2bbd2b9e9359",
+      "text": "https://www.skool.com/robonuggets/abo..."
+    },
+    {
+      "url": "https://www.getrubric.app/",
+      "text": "https://www.getrubric.app/"
+    },
+    {
+      "url": "https://blotato.com/?ref=robonuggets",
+      "text": "https://blotato.com/?ref=robonuggets"
+    },
+    {
+      "url": "https://n8n.partnerlinks.io/o3jqtj032c02",
+      "text": "https://n8n.partnerlinks.io/o3jqtj032c02"
+    },
+    {
+      "url": "https://www.make.com/en/register?pc=robonuggets",
+      "text": "https://www.make.com/en/register?pc=r..."
+    },
+    {
+      "url": "https://try.elevenlabs.io/m5mn2jkv5rzk",
+      "text": "https://try.elevenlabs.io/m5mn2jkv5rzk"
+    },
+    {
+      "url": "https://www.apify.com/?fpr=sffv1",
+      "text": "https://www.apify.com?fpr=sffv1"
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCgscS8mBsQZ5sFRkJIFWD7Q",
+      "text": "   / @robonuggets  "
+    },
+    {
+      "url": "https://www.instagram.com/robonuggets",
+      "text": "  / robonuggets  "
+    },
+    {
+      "url": "https://www.tiktok.com/@robonuggets",
+      "text": "  / robonuggets  "
+    },
+    {
+      "url": "https://www.twitter.com/robonuggets",
+      "text": "  / robonuggets  "
+    },
+    {
+      "url": "https://www.linkedin.com/in/j-enri/",
+      "text": "  / j-enri  "
+    },
+    {
+      "url": "https://robolabs.so/",
+      "text": "https://robolabs.so"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ&t=34s",
+      "text": "00:34"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ&t=132s",
+      "text": "02:12"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ&t=205s",
+      "text": "03:25"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ&t=286s",
+      "text": "04:46"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ&t=399s",
+      "text": "06:39"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ&t=479s",
+      "text": "07:59"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ&t=599s",
+      "text": "09:59"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ&t=717s",
+      "text": "11:57"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9C4TRbucmhQ&t=805s",
+      "text": "13:25"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiagents",
+      "text": "#AIAgents"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/agenticai",
+      "text": "#AgenticAI"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiautomation",
+      "text": "#AIAutomation"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/openclaw",
+      "text": "#OpenClaw"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#ClaudeCode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/antigravity",
+      "text": "#Antigravity"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/mcpprotocol",
+      "text": "#MCPProtocol"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/anthropic",
+      "text": "#Anthropic"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiagency",
+      "text": "#AIAgency"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/agentbuilding",
+      "text": "#AgentBuilding"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aitools",
+      "text": "#AITools"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiworkflow",
+      "text": "#AIWorkflow"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/autonomousagents",
+      "text": "#AutonomousAgents"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/multiagent",
+      "text": "#MultiAgent"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/vibecoding",
+      "text": "#VibeCoding"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 4,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#OpenClaw",
+    "#Antigravity",
+    "#ClaudeCode"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "Claude Code + Seedance 2.5 = Insane Websites",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "YUWBku1cNEA",
+  "url": "https://www.youtube.com/watch?v=YUWBku1cNEA",
+  "thumbnailUrl": "https://i.ytimg.com/vi/YUWBku1cNEA/maxresdefault.jpg",
+  "viewCount": 223145,
+  "date": "2026-08-09T11:17:30.000Z",
+  "likes": 6100,
+  "location": null,
+  "channelName": "Kyle Skelly",
+  "channelUrl": "https://www.youtube.com/@kyleslyf",
+  "channelUsername": "kyleslyf",
+  "collaborators": null,
+  "channelId": "UCzg28zIOfS6Upd-nAQG4JtA",
+  "numberOfSubscribers": 56700,
+  "duration": "00:10:29",
+  "commentsCount": 121,
+  "text": "Try Seedance 2.5 now - https://higgsfield.ai/s/seedance-2-5-...\nLearn how to create stunning, professional-looking websites using Claude Code and generate AI assets.\n\nLearn the full AI workflow and unlock all templates - https://futuredesigner.io/\n\nFollow me on: https://x.com/KyleSkelly\nAll my links here: https://kyleskelly.com\n\nIn this full walkthrough, I’ll show you how I designed a beautiful animated landing page using modern AI workflows and clean design practices.\n\nWhether you're a designer, developer, or indie creator, this tutorial will help you create visually impressive sites faster than ever before — with no code required.\n\nWhat you'll learn:\n– Design process in Figma\n– The different ways to get a design into Claude\n– How to fine-tune your design in claude\n– Bring it to life using AI assets \n\n#Claude #ClaudeCode #Fable #Opus #AITutorial #WebDesign #ChatGPTDesign #AIDesignWorkflow #LandingPageDesign #UIDesign #NoCodeDesign #ModernWebDesign #Figma #designwithai #higgsfield #higgsfieldAI",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://higgsfield.ai/s/seedance-2-5-kyleslyf-OlRcCm",
+      "text": "https://higgsfield.ai/s/seedance-2-5-..."
+    },
+    {
+      "url": "https://futuredesigner.io/",
+      "text": "https://futuredesigner.io/"
+    },
+    {
+      "url": "https://x.com/KyleSkelly",
+      "text": "https://x.com/KyleSkelly"
+    },
+    {
+      "url": "https://kyleskelly.com/",
+      "text": "https://kyleskelly.com"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claude",
+      "text": "#Claude"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#ClaudeCode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/fable",
+      "text": "#Fable"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/opus",
+      "text": "#Opus"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aitutorial",
+      "text": "#AITutorial"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/webdesign",
+      "text": "#WebDesign"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/chatgptdesign",
+      "text": "#ChatGPTDesign"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aidesignworkflow",
+      "text": "#AIDesignWorkflow"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/landingpagedesign",
+      "text": "#LandingPageDesign"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/uidesign",
+      "text": "#UIDesign"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/nocodedesign",
+      "text": "#NoCodeDesign"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/modernwebdesign",
+      "text": "#ModernWebDesign"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/figma",
+      "text": "#Figma"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/designwithai",
+      "text": "#designwithai"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/higgsfield",
+      "text": "#higgsfield"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/higgsfieldai",
+      "text": "#higgsfieldAI"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 6,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#higgsfieldAI",
+    "#higgsfield",
+    "#UIDesign"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": true
+},
+{
+  "title": "How to Build $10K Websites in Minutes (Claude AI)",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "snErQUyqwCU",
+  "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=167s",
+  "thumbnailUrl": "https://i.ytimg.com/vi/snErQUyqwCU/maxresdefault.jpg",
+  "viewCount": 259780,
+  "date": "2026-08-13T11:00:27.000Z",
+  "likes": 12000,
+  "location": null,
+  "channelName": "Metics Media",
+  "channelUrl": "https://www.youtube.com/@MeticsMedia",
+  "channelUsername": "MeticsMedia",
+  "collaborators": null,
+  "channelId": "UCuwpzP90g1LuGk6JUNms_AQ",
+  "numberOfSubscribers": 681000,
+  "duration": "00:25:09",
+  "commentsCount": 307,
+  "text": "Build $10K websites in minutes using Claude AI, even if you've never written a single line of code. This tutorial walks you through the whole process with Claude Code, from a blank screen to a live site on your own domain.\n✅ Hostinger (Exclusive Discount): https://meticsmedia.com/hostinger-ESV\n✅ Higgsfield (Best Deal): https://meticsmedia.com/higgsfield-ESV\n\n➡️ Claude: https://claude.ai\n🎁 Free $10K Website Skill: https://drive.google.com/file/d/1zxwm...\n\nLearn how to build a $10,000 website with Claude AI without paying a developer, buying a theme, or touching a line of code. This tutorial covers the entire process step by step, starting with the free skill that teaches Claude Code exactly how to build these sites. You'll connect Higgs Field so Claude generates your images and that scrolling hero video on its own, answer a few questions about your brand, and watch it build the whole site around what actually makes people buy. Then Claude Code deploys it live on your custom domain through Hostinger and keeps pushing updates whenever you ask. It works for any niche, loads fast, and looks just as good on mobile.\n\nWhat You'll Learn:\n✔️ How to get the free skill that builds these websites for you\n✔️ Which Claude plan you actually need, and how Opus compares to Fable\n✔️ How to set up Claude Code with the right model, effort, and workspace\n✔️ How to connect Higgs Field so Claude generates your images and scroll video\n✔️ How to design your scrolling hero section, the part that makes these sites feel expensive\n✔️ How to preview your site and request revisions in plain English\n✔️ How to deploy live on your own custom domain and push updates anytime\n\n📍 Exclusive Deals & Discounts: https://meticsmedia.com/deals\n\n⏱️ Timestamps\n0:00 Intro\n2:47 Set Up Claude Code\n6:37 Connect Higgsfield\n8:54 Add the Claude Skill\n9:35 Start Building Your Website\n11:49 Generate Your Video and Images\n14:56 Claude Builds Your Site\n15:26 Preview and Revisions\n18:50 Get Hosting and Domain\n21:49 Connect to Hosting & Go Live\n23:48 hPanel Tour\n24:40 Next Steps\n\n📄 Disclosure\nSome of the links are affiliate links. If you make a purchase through them, we earn a small commission at no extra cost to you. This helps us keep our videos free for everyone.",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://meticsmedia.com/hostinger-ESV",
+      "text": "https://meticsmedia.com/hostinger-ESV"
+    },
+    {
+      "url": "https://meticsmedia.com/higgsfield-ESV",
+      "text": "https://meticsmedia.com/higgsfield-ESV"
+    },
+    {
+      "url": "https://claude.ai/",
+      "text": "https://claude.ai"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1zxwmiXhc4J1naWgUGQILa-oBjtmFB_2o/view?usp=drive_link",
+      "text": "https://drive.google.com/file/d/1zxwm..."
+    },
+    {
+      "url": "https://meticsmedia.com/deals",
+      "text": "https://meticsmedia.com/deals"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU",
+      "text": "0:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=167s",
+      "text": "2:47"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=397s",
+      "text": "6:37"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=534s",
+      "text": "8:54"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=575s",
+      "text": "9:35"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=709s",
+      "text": "11:49"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=896s",
+      "text": "14:56"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=926s",
+      "text": "15:26"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=1130s",
+      "text": "18:50"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=1309s",
+      "text": "21:49"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=1428s",
+      "text": "23:48"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snErQUyqwCU&t=1480s",
+      "text": "24:40"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 5,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "Give Me 50 Minutes, I'll Give You 1000+ Hours Of Claude Code Knowledge (2026 Guide)",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "U6k4MeVks_Y",
+  "url": "https://www.youtube.com/watch?v=U6k4MeVks_Y",
+  "thumbnailUrl": "https://i.ytimg.com/vi/U6k4MeVks_Y/maxresdefault.jpg",
+  "viewCount": 23870,
+  "date": "2026-08-11T20:19:56.000Z",
+  "likes": 676,
+  "location": null,
+  "channelName": "Chase AI",
+  "channelUrl": "https://www.youtube.com/@Chase-H-AI",
+  "channelUsername": "Chase-H-AI",
+  "collaborators": null,
+  "channelId": "UCoy6cTJ7Tg0dqS-DI-_REsA",
+  "numberOfSubscribers": 166000,
+  "duration": "00:51:28",
+  "commentsCount": 33,
+  "text": "⚡Claude Code Masterclass: https://www.skool.com/chase-ai\n🔥FREE community: https://www.skool.com/chase-ai-community\n\n💻 Need custom work? Book a consult 💻\nhttps://chaseai.io\n\n1000+ hours of Claude Code lessons condensed into 50 minutes. This is everything you need to focus on each level: beginner, intermediate, and advanced. \n\n⏰TIMESTAMPS:\n0:00 - Intro\n0:27 - Beginner\n14:26 - Intermediate\n30:30 - Advanced\n\nRESOURCES FROM THIS VIDEO:\n➡️ Master Claude Code: https://www.skool.com/chase-ai\n➡️ My Website: https://www.chaseai.io\n\n#claudecode",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://www.skool.com/chase-ai",
+      "text": "https://www.skool.com/chase-ai"
+    },
+    {
+      "url": "https://www.skool.com/chase-ai-community",
+      "text": "https://www.skool.com/chase-ai-community"
+    },
+    {
+      "url": "https://chaseai.io/",
+      "text": "https://chaseai.io"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=U6k4MeVks_Y",
+      "text": "0:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=U6k4MeVks_Y&t=27s",
+      "text": "0:27"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=U6k4MeVks_Y&t=866s",
+      "text": "14:26"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=U6k4MeVks_Y&t=1830s",
+      "text": "30:30"
+    },
+    {
+      "url": "https://www.skool.com/chase-ai",
+      "text": "https://www.skool.com/chase-ai"
+    },
+    {
+      "url": "https://www.chaseai.io/",
+      "text": "https://www.chaseai.io"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#claudecode"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 11,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#claudecode"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "Why Graph Engineering will 10x your Claude/Codex",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "JWhICz1QR8M",
+  "url": "https://www.youtube.com/watch?v=JWhICz1QR8M",
+  "thumbnailUrl": "https://i.ytimg.com/vi/JWhICz1QR8M/maxresdefault.jpg",
+  "viewCount": 181341,
+  "date": "2026-08-03T18:30:26.000Z",
+  "likes": 3700,
+  "location": "The Startup Ideas Podcast Episodes",
+  "channelName": "Greg Isenberg",
+  "channelUrl": "https://www.youtube.com/@GregIsenberg",
+  "channelUsername": "GregIsenberg",
+  "collaborators": null,
+  "channelId": "UCPjNBjflYl0-HQtUvOx0Ibw",
+  "numberOfSubscribers": 702000,
+  "duration": "00:26:28",
+  "commentsCount": 249,
+  "text": "I go solo on this one to break down graph engineering, the term I keep seeing go viral on X. I define it in plain English: prompt engineering is how you ask AI a better question, context engineering is how you give AI better information, and graph engineering is how you design the work around the AI so it lives as a managed workflow instead of one giant chat. I walk through the vocabulary (jobs, arrows, state), separate knowledge graphs from agent graphs, and run a full worked example on whether to launch an AI bookkeeping product for Shopify merchants. Then I show three levels of implementation, from manual lanes on a whiteboard up to LangGraph and n8n, plus ready-made graphs for support, content, and code. You leave with a repeatable way to turn one AI workflow you already run into a map of steps, checks, handoffs, loops, and human approvals.\n\nTimestamps\n\n00:00 – Intro\n01:24 – Prompt Engineering, Context Engineering, Graph Engineering\n02:50 – Chat vs Graph\n03:35 – Defining Terms and Workflows\n06:44 – Knowledge Graphs vs Agent Graphs\n08:47 – When to use Graph Engineering\n10:01 – Example: AI Bookkeeping For Shopify Merchants\n13:22 – The Diamond Pattern Graph Visualized\n15:10 – Three Levels of Implementation\n17:14 – Customer Support Graph\n18:45 – Content Creation Graph\n19:30 – Coding Graph\n20:42 – The Trap Of Oversized Graphs\n22:22 – Building Your First Graph\n24:53 – Closing Thoughts\n\nKey Points\n\n• Graph engineering means designing the work around the AI: jobs connected by arrows, with shared state moving between them.\n\n• Knowledge graphs help AI understand how information connects; agent graphs help AI understand how work should move.\n\n• Reserve a graph for work with multiple steps, multiple sources, parallel paths, checks, risks, or approvals.\n\n• Separate the writer from the checker, since a single model grading its own answer inflates confidence.\n\n• Draw and run the graph manually first; add LangGraph, n8n, or Make com once the structure proves itself.\n\n• Aim for the smallest graph that raises quality, and place the human gate where mistakes get expensive.\n\n\nNumbered Section Summaries\n\n1. Why Graph Engineering Is Trending I open with my honest first reaction to the term and place it alongside prompt engineering, context engineering, agent engineering, and vibe coding. I land on graph engineering as one of the useful ones, because it changes how you think about getting work done with AI.\n\n2. Jobs, Arrows, And State A graph is jobs connected by arrows, with state as the shared record of what the system knows so far. I use customer support and YouTube production to show that real work already runs this way, with some steps in sequence and others in parallel.\n\n3. Knowledge Graphs Versus Agent Graphs Knowledge graphs let AI reason across relationships between customers, companies, products, and teams, which helps where standard RAG returns the nearest-looking paragraph. Agent graphs govern how work moves between planner, researchers, skeptic, synthesizer, and human. This episode focuses on agent graphs, since that is the version you can apply this week.\n\n\n4. Three Levels Of Implementation Level one runs manually with separate lanes and a drawing on Excalidraw or tldraw. Level two uses Claude Code, Codex, or a repo where each step writes its own file, leaving a paper trail you can compare and reuse. Level three brings in LangGraph for state checkpoints and human-in-the-loop approvals, AutoGen GraphFlow for branches and loops, and n8n or Make.com where the graph touches Slack, email, Airtable, or a CRM.\n\n5. Graphs For Support, Content, And Code A support graph classifies the issue, checks account context, searches docs and policy, drafts a reply, runs a checker for accuracy, tone, and risk, then routes refunds and angry customers to a human. A content graph moves from research to thesis, examples, hook, script, and a checker on specificity and pacing before branching into titles, thumbnails, and captions. A coding graph plans, edits, reviews the diff, runs tests, checks the UI, hunts edge cases, and ends at a human approving the pull request.\n\n\nThe #1 tool to find startup ideas/trends - https://www.ideabrowser.com\n\nLCA helps Fortune 500s and fast-growing startups build their future - from Warner Music to Fortnite to Dropbox. We turn 'what if' into reality with AI, apps, and next-gen products https://latecheckout.agency/\n\nThe Vibe Marketer - Resources for people into vibe marketing/marketing with AI: https://www.thevibemarketer.com/\n\nFIND ME ON SOCIAL\n\nX/Twitter:   / gregisenberg  \nInstagram:   / gregisenberg  \nLinkedIn:   / gisenberg  ",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=84s",
+      "text": "01:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=170s",
+      "text": "02:50"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=215s",
+      "text": "03:35"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=404s",
+      "text": "06:44"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=527s",
+      "text": "08:47"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=601s",
+      "text": "10:01"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=802s",
+      "text": "13:22"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=910s",
+      "text": "15:10"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=1034s",
+      "text": "17:14"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=1125s",
+      "text": "18:45"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=1170s",
+      "text": "19:30"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=1242s",
+      "text": "20:42"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=1342s",
+      "text": "22:22"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JWhICz1QR8M&t=1493s",
+      "text": "24:53"
+    },
+    {
+      "url": "https://www.ideabrowser.com/",
+      "text": "https://www.ideabrowser.com"
+    },
+    {
+      "url": "https://latecheckout.agency/",
+      "text": "https://latecheckout.agency/"
+    },
+    {
+      "url": "https://www.thevibemarketer.com/",
+      "text": "https://www.thevibemarketer.com/"
+    },
+    {
+      "url": "https://twitter.com/gregisenberg",
+      "text": "  / gregisenberg  "
+    },
+    {
+      "url": "https://instagram.com/gregisenberg/",
+      "text": "  / gregisenberg  "
+    },
+    {
+      "url": "https://www.linkedin.com/in/gisenberg/",
+      "text": "  / gisenberg  "
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 12,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "Claude Code Just Made Subagents Feel Obsolete",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "oqp6D-ugtX4",
+  "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4",
+  "thumbnailUrl": "https://i.ytimg.com/vi/oqp6D-ugtX4/maxresdefault.jpg",
+  "viewCount": 29349,
+  "date": "2026-08-08T07:24:58.000Z",
+  "likes": 684,
+  "location": null,
+  "channelName": "Ray Amjad",
+  "channelUrl": "https://www.youtube.com/@RAmjad",
+  "channelUsername": "RAmjad",
+  "collaborators": null,
+  "channelId": "UCLA7cJBnqr0nLF2bQBD9uUg",
+  "numberOfSubscribers": 48000,
+  "duration": "00:11:10",
+  "commentsCount": 92,
+  "text": "🚀 Agentic Coding for Serious Engineers: https://www.agenticcoding.school/?utm...\n\nStay at the cutting-edge of agentic coding 👉 https://www.agenticcoding.school/news...\n\nTo keep my takes honest, I've never accepted a sponsor. My own products keep it running...\n\n—— MY CLASSES ——\n\n🚀 Agentic Coding for Serious Engineers: https://www.agenticcoding.school/?utm...\n\n🚃 Train your team of engineers: https://www.agenticcoding.school/comp...\n\n🧠 1:1 consulting: https://cal.com/ray-amjad/consulting\n\n—— MY APPS ——\n\nHere are a select few...\n\n💬 AgentStack, build customer support agents: https://www.agentstack.build/?utm_sou...\n\n📦 Impello AI, low-cost sandboxes for your agents: https://www.impello.ai/?utm_source=yo...\n\n🎙️ HyperWhisper, write 5x faster with your voice on MacOS & Windows:\nhttps://www.hyperwhisper.com/?utm_sou...\nhttps://github.com/ray-amjad/hyperwhi...\n100% FREE & OPEN SOURCE\n\n📲 Tensor AI, never miss the AI News:\non iOS: https://apps.apple.com/us/app/ai-news...\non Android: https://play.google.com/store/apps/de...\n100% FREE\n\n📹 VidTempla, tools to help agents manage your YouTube channel: http://vidtempla.com/?utm_source=yout...\nOPEN SOURCE\n\n—————\n\nCONNECT WITH ME\n🐦 X: https://x.com/@theramjad\n👥 LinkedIn:   / rayamjad  \n📸 Instagram:   / theramjad  \n🌍 My website/blog: https://www.rayamjad.com/\n\n—————\n\nLinks:\nCmux: https://cmux.com/\nMy Cmux Tutorial: https://www.agenticcoding.school/watc...\nPeer Sessions Skill: https://github.com/ray-amjad/peer-ses...\n\nTimestamps:\n00:00 - Intro\n00:21 - The Handoff\n00:53 - ListAgents\n01:17 - SendMessage\n01:52 - Remaking Skills\n03:00 - cmux Panes\n03:56 - Peer Sessions\n04:52 - Codex Bridge\n06:06 - Why Not Subagents\n07:27 - Stacked PRs\n08:27 - Across Machines\n10:20 - The Class\n11:02 - Outro",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://www.agenticcoding.school/?utm_source=youtube&utm_campaign=oqp6D-ugtX4",
+      "text": "https://www.agenticcoding.school/?utm..."
+    },
+    {
+      "url": "https://www.agenticcoding.school/newsletter?utm_source=youtube&utm_campaign=oqp6D-ugtX4",
+      "text": "https://www.agenticcoding.school/news..."
+    },
+    {
+      "url": "https://www.agenticcoding.school/?utm_source=youtube&utm_campaign=oqp6D-ugtX4",
+      "text": "https://www.agenticcoding.school/?utm..."
+    },
+    {
+      "url": "https://www.agenticcoding.school/company-training?utm_source=youtube&utm_campaign=oqp6D-ugtX4",
+      "text": "https://www.agenticcoding.school/comp..."
+    },
+    {
+      "url": "https://cal.com/ray-amjad/consulting",
+      "text": "https://cal.com/ray-amjad/consulting"
+    },
+    {
+      "url": "https://www.agentstack.build/?utm_source=youtube&utm_campaign=oqp6D-ugtX4",
+      "text": "https://www.agentstack.build/?utm_sou..."
+    },
+    {
+      "url": "https://www.impello.ai/?utm_source=youtube&utm_campaign=oqp6D-ugtX4",
+      "text": "https://www.impello.ai/?utm_source=yo..."
+    },
+    {
+      "url": "https://www.hyperwhisper.com/?utm_source=youtube&utm_campaign=oqp6D-ugtX4",
+      "text": "https://www.hyperwhisper.com/?utm_sou..."
+    },
+    {
+      "url": "https://github.com/ray-amjad/hyperwhisper-app",
+      "text": "https://github.com/ray-amjad/hyperwhi..."
+    },
+    {
+      "url": "https://apps.apple.com/us/app/ai-news-tensor-ai/id6746403746",
+      "text": "https://apps.apple.com/us/app/ai-news..."
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=app.tensorai.tensorai",
+      "text": "https://play.google.com/store/apps/de..."
+    },
+    {
+      "url": "http://vidtempla.com/?utm_source=youtube&utm_campaign=oqp6D-ugtX4",
+      "text": "http://vidtempla.com/?utm_source=yout..."
+    },
+    {
+      "url": "https://x.com/@theramjad",
+      "text": "https://x.com/@theramjad"
+    },
+    {
+      "url": "https://www.linkedin.com/in/rayamjad/",
+      "text": "  / rayamjad  "
+    },
+    {
+      "url": "https://www.instagram.com/theramjad/",
+      "text": "  / theramjad  "
+    },
+    {
+      "url": "https://www.rayamjad.com/",
+      "text": "https://www.rayamjad.com/"
+    },
+    {
+      "url": "https://cmux.com/",
+      "text": "https://cmux.com/"
+    },
+    {
+      "url": "https://www.agenticcoding.school/watch/MzA_UmHA?utm_source=youtube&utm_medium=video_description&utm_campaign=oqp6D-ugtX4",
+      "text": "https://www.agenticcoding.school/watc..."
+    },
+    {
+      "url": "https://github.com/ray-amjad/peer-sessions",
+      "text": "https://github.com/ray-amjad/peer-ses..."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=21s",
+      "text": "00:21"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=53s",
+      "text": "00:53"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=77s",
+      "text": "01:17"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=112s",
+      "text": "01:52"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=180s",
+      "text": "03:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=236s",
+      "text": "03:56"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=292s",
+      "text": "04:52"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=366s",
+      "text": "06:06"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=447s",
+      "text": "07:27"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=507s",
+      "text": "08:27"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=620s",
+      "text": "10:20"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oqp6D-ugtX4&t=662s",
+      "text": "11:02"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 10,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "Curso de CLAUDE desde CERO (Completo)",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "ZLheIoICg7A",
+  "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=14653s",
+  "thumbnailUrl": "https://i.ytimg.com/vi/ZLheIoICg7A/maxresdefault.jpg",
+  "viewCount": 212700,
+  "date": "2026-08-09T02:45:05.000Z",
+  "likes": 13000,
+  "location": null,
+  "channelName": "Soy Dalto",
+  "channelUrl": "https://www.youtube.com/@soydalto",
+  "channelUsername": "soydalto",
+  "collaborators": null,
+  "channelId": "UCtoo4_P6ilCj7jwa4FmA5lQ",
+  "numberOfSubscribers": 1080000,
+  "duration": "05:16:34",
+  "commentsCount": 423,
+  "text": "Bienvenidos al MEJOR CURSO de CLAUDE disponible en internet.\n\nEste curso está 100% basado en la 'Antropic Academy', en la documentación oficial de Claude y cuenta con el aval técnico de Hostgator.\n\nTEMARIO\n\n-- PRIMEROS PASOS --\n0:00:00 - Introducción\n0:03:50 - Entendiendo Claude\n0:09:39 - Casos de uso\n0:19:51 - Claude vs otras IA\n0:28:35 - Descargar Claude\n0:33:05 - Explorando la interfaz\n0:43:45 - Conversando con Claude\n\n-- CONCEPTOS BÁSICOS --\n0:44:12 - Que es un Prompt\n0:45:41 - Mejorando los Prompts\n0:53:58 - System Prompt\n1:00:47 - Obtener mejores respuestas\n1:12:21 - Iteración\n1:22:37 - Modelos, Esfuerzo y Pensamiento\n1:38:09 - JSON Prompts\n\n-- CLAUDE BÁSICO --\n1:45:04 - Archivos\n1:52:25 - Resumen de Documentos\n1:58:45 - Analisis de Tablas y PDF\n2:05:41 - Crear documentos\n2:14:08 - Crear guiones, mails y más\n\n-- CLAUDE INTERMEDIO --\n2:24:27 - Artifacts\n2:30:17 - Crear páginas WEB\n3:02:51 - Crear herramienta de trabajo\n3:17:40 - Entendiendo Projects\n3:20:37 - Crear un Project\n3:28:21 - RAG\n3:36:53 - Investigación vs Búsqueda\n3:41:38 - Skills\n3:50:21 - Conectores\n\n-- CLAUDE AVANZADO --\n\n3:57:54 - MCP\n4:04:13 - Claude Code\n4:06:48 - Claude en Terminal\n4:10:03 - Goals, Loops y Hooks\n4:19:05 - Subagentes\n4:28:06 - Claude API\n\n-- PUBLICAR TUS PROYECTOS --\n\n4:39:33 - Que es un VPS\n4:41:03 - Crear server y acceso SSH\n4:49:02 - Subir proyecto a internet\n4:51:59 - Levantar Web\n4:57:13 - Conectar dominio\n5:02:25 - Mantenimiento\n5:05:47 - Como seguir aprendiendo\n\n\n**** VPS que usé en el video ****\nhttps://www.hostgator.la/7553-80-3-46...\n\n********** Seguime en INSTAGRAM ************\n  / soydalto  \n\n**** CANAL DE EMPRENDIMIENTOS *****\nDalto Emprende: https://goo.gl/c8xn2F\n\n***** Y Si tenes TWITTER *****\n  / soydalto  \n\nPLATAFORMA DE IA RECOMENDADA:\nhttps://www.hostgator.la/7553-79-3-45...\n\nComo este curso es gratis, en caso de que quieras (y puedas) hacer algún aporte económico será muy bienvenido y lo usaremos para crear mejores contenidos. \nPayPal: https://paypal.me/soydalto\nOtra forma: Hacete miembro del canal (dando click en \"unirse\")",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A",
+      "text": "0:00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=230s",
+      "text": "0:03:50"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=579s",
+      "text": "0:09:39"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=1191s",
+      "text": "0:19:51"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=1715s",
+      "text": "0:28:35"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=1985s",
+      "text": "0:33:05"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=2625s",
+      "text": "0:43:45"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=2652s",
+      "text": "0:44:12"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=2741s",
+      "text": "0:45:41"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=3238s",
+      "text": "0:53:58"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=3647s",
+      "text": "1:00:47"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=4341s",
+      "text": "1:12:21"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=4957s",
+      "text": "1:22:37"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=5889s",
+      "text": "1:38:09"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=6304s",
+      "text": "1:45:04"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=6745s",
+      "text": "1:52:25"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=7125s",
+      "text": "1:58:45"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=7541s",
+      "text": "2:05:41"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=8048s",
+      "text": "2:14:08"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=8667s",
+      "text": "2:24:27"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=9017s",
+      "text": "2:30:17"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=10971s",
+      "text": "3:02:51"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=11860s",
+      "text": "3:17:40"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=12037s",
+      "text": "3:20:37"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=12501s",
+      "text": "3:28:21"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=13013s",
+      "text": "3:36:53"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=13298s",
+      "text": "3:41:38"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=13821s",
+      "text": "3:50:21"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=14274s",
+      "text": "3:57:54"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=14653s",
+      "text": "4:04:13"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=14808s",
+      "text": "4:06:48"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=15003s",
+      "text": "4:10:03"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=15545s",
+      "text": "4:19:05"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=16086s",
+      "text": "4:28:06"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=16773s",
+      "text": "4:39:33"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=16863s",
+      "text": "4:41:03"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=17342s",
+      "text": "4:49:02"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=17519s",
+      "text": "4:51:59"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=17833s",
+      "text": "4:57:13"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=18145s",
+      "text": "5:02:25"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZLheIoICg7A&t=18347s",
+      "text": "5:05:47"
+    },
+    {
+      "url": "https://www.hostgator.la/7553-80-3-46.html",
+      "text": "https://www.hostgator.la/7553-80-3-46..."
+    },
+    {
+      "url": "https://instagram.com/soydalto/",
+      "text": "  / soydalto  "
+    },
+    {
+      "url": "https://goo.gl/c8xn2F",
+      "text": "https://goo.gl/c8xn2F"
+    },
+    {
+      "url": "https://twitter.com/soydalto",
+      "text": "  / soydalto  "
+    },
+    {
+      "url": "https://www.hostgator.la/7553-79-3-45.html",
+      "text": "https://www.hostgator.la/7553-79-3-45..."
+    },
+    {
+      "url": "https://paypal.me/soydalto",
+      "text": "https://paypal.me/soydalto"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 7,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "Claude Opus 5 Took 7 Hours to Build This Game",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "MsFYd8EdAXw",
+  "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw",
+  "thumbnailUrl": "https://i.ytimg.com/vi/MsFYd8EdAXw/maxresdefault.jpg",
+  "viewCount": 211493,
+  "date": "2026-08-01T01:16:15.000Z",
+  "likes": 5300,
+  "location": null,
+  "channelName": "RemakeBench",
+  "channelUrl": "https://www.youtube.com/@remakebench",
+  "channelUsername": "remakebench",
+  "collaborators": null,
+  "channelId": "UCd0dV_0HxwmLtvMv7iwx0fA",
+  "numberOfSubscribers": 5190,
+  "duration": "00:12:23",
+  "commentsCount": 446,
+  "text": "I tested Claude Opus 5 across nine frozen graphics and game-development tasks against Claude Fable 5, GPT-5.6 Sol and Kimi K3.\n\nEach run received one request and used its provider’s disclosed agent stack.\n\nInspect all nine tests, 32 disclosed records, timings, token ledgers and cost receipts:\nhttps://www.remakebench.com/claude-op...\n\nPlay Shrine Exploration and inspect its public evidence and Builder package:\nhttps://www.remakebench.com/library/s...\n\nChapters\n00:00 — Claude Opus 5 and the testing rules\n00:48 — Off-Road: invisible tires and the $124 result\n02:42 — Space Flight Stage 2: landing on generated planets\n04:43 — Neo-Gothic City: detail versus cost\n05:36 — Infinite Cathedral: Opus’s strongest visual round\n06:29 — MacBook Pro: Opus comes in cheaper than Fable\n06:55 — JRPG Boss Battle: cinematic quality versus value\n08:04 — Jungle Temple: strong result at four times the cost\n08:41 — Oasis Outpost: more detail, more time\n09:30 — Shrine Exploration: 7 hours 41 minutes and 14/40\n11:44 — Final verdict: visual quality versus time and cost\n\n#ClaudeOpus5 #ClaudeFable5 #GPT56Sol #KimiK3 #AIGameDev #AICoding #RemakeBench",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://www.remakebench.com/claude-opus-5-game-building-test?utm_source=youtube&utm_medium=description&utm_campaign=opus5_max_suite&utm_content=results",
+      "text": "https://www.remakebench.com/claude-op..."
+    },
+    {
+      "url": "https://www.remakebench.com/library/shrine-exploration-v1?utm_source=youtube&utm_medium=description&utm_campaign=opus5_max_suite&utm_content=builder_pack",
+      "text": "https://www.remakebench.com/library/s..."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=48s",
+      "text": "00:48"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=162s",
+      "text": "02:42"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=283s",
+      "text": "04:43"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=336s",
+      "text": "05:36"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=389s",
+      "text": "06:29"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=415s",
+      "text": "06:55"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=484s",
+      "text": "08:04"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=521s",
+      "text": "08:41"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=570s",
+      "text": "09:30"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MsFYd8EdAXw&t=704s",
+      "text": "11:44"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudeopus5",
+      "text": "#ClaudeOpus5"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudefable5",
+      "text": "#ClaudeFable5"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/gpt56sol",
+      "text": "#GPT56Sol"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/kimik3",
+      "text": "#KimiK3"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aigamedev",
+      "text": "#AIGameDev"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aicoding",
+      "text": "#AICoding"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/remakebench",
+      "text": "#RemakeBench"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 10,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#ClaudeFable5",
+    "#KimiK3",
+    "#ClaudeOpus5"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "I Have Spent 1000+ Hours With Claude Code. This Is What I Learned",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "YAsxyoTWFDA",
+  "url": "https://www.youtube.com/watch?v=YAsxyoTWFDA",
+  "thumbnailUrl": "https://i.ytimg.com/vi/YAsxyoTWFDA/maxresdefault.jpg",
+  "viewCount": 228123,
+  "date": "2026-08-18T01:21:12.000Z",
+  "likes": 8600,
+  "location": null,
+  "channelName": "The Coding Sloth",
+  "channelUrl": "https://www.youtube.com/@TheCodingSloth",
+  "channelUsername": "TheCodingSloth",
+  "collaborators": null,
+  "channelId": "UCxVPH8W2ayMey1-b0SY8rBQ",
+  "numberOfSubscribers": 633000,
+  "duration": "00:22:30",
+  "commentsCount": 288,
+  "text": "Try Brilliant's tutor for free: https://brilliant.org/TheCodingSloth/ You’ll also get 20% off an annual Premium subscription.\n\nFinally remembered my YouTube password. Anyways enjoy everything I learned from suffering a bunch of hours with Claude Code. If you have any cool workflows or tips, definitely let me know.\n\n// USEFUL CLAUDE CODE TOOLS//\nponytail: https://github.com/DietrichGebert/pon...\nrtk-ai: https://github.com/rtk-ai/rtk\ncaveman: https://caveman.so/\nskills.sh: https://www.skills.sh/\n\n// NEWSLETTER //\nSloth Bytes: https://slothbytes.beehiiv.com/subscribe\n\n// BUSINESS INQUIRIES //\nFor business: thecodingsloth@smoothmedia.co\nFor brand partnerships: https://tally.so/r/mZVvKa\n\n// SOCIALS //\nTwitter:   / thecodingsloth1  \nTikTok:   / thecodingsloth  \nDiscord:   / discord  \n\n// TOOLS/THINGS I REALLY LIKE //\nIf you wanna build 10x developer level projects check out CodeCrafters (40% off):\nhttps://app.codecrafters.io/join?via=...\nIf you want to build an awesome newsletter like Sloth Bytes I use beehiiv (20% off):\nhttps://www.beehiiv.com?via=the-codin...\n\n(some of these links are affiliates, so I'll earn some money which supports the channel!)\n\nThis video was sponsored by Brilliant.",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://brilliant.org/TheCodingSloth/",
+      "text": "https://brilliant.org/TheCodingSloth/"
+    },
+    {
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "text": "https://github.com/DietrichGebert/pon..."
+    },
+    {
+      "url": "https://github.com/rtk-ai/rtk",
+      "text": "https://github.com/rtk-ai/rtk"
+    },
+    {
+      "url": "https://caveman.so/",
+      "text": "https://caveman.so/"
+    },
+    {
+      "url": "https://www.skills.sh/",
+      "text": "https://www.skills.sh/"
+    },
+    {
+      "url": "https://slothbytes.beehiiv.com/subscribe",
+      "text": "https://slothbytes.beehiiv.com/subscribe"
+    },
+    {
+      "url": "https://tally.so/r/mZVvKa",
+      "text": "https://tally.so/r/mZVvKa"
+    },
+    {
+      "url": "https://twitter.com/TheCodingSloth1",
+      "text": "  / thecodingsloth1  "
+    },
+    {
+      "url": "https://www.tiktok.com/@thecodingsloth",
+      "text": "  / thecodingsloth  "
+    },
+    {
+      "url": "https://discord.gg/2ByMHqTNca",
+      "text": "  / discord  "
+    },
+    {
+      "url": "https://app.codecrafters.io/join?via=TheCodingSloth",
+      "text": "https://app.codecrafters.io/join?via=..."
+    },
+    {
+      "url": "https://www.beehiiv.com/?via=the-coding-sloth",
+      "text": "https://www.beehiiv.com?via=the-codin..."
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 8,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": true
+},
+{
+  "title": "10 Claude AI Side Hustles That Can Pay A Full-Time Income (Ranked List)",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "jVOk8oc-a70",
+  "url": "https://www.youtube.com/watch?v=jVOk8oc-a70",
+  "thumbnailUrl": "https://i.ytimg.com/vi/jVOk8oc-a70/maxresdefault.jpg",
+  "viewCount": 314745,
+  "date": "2026-07-31T14:00:30.000Z",
+  "likes": 9400,
+  "location": null,
+  "channelName": "Patrick Dang",
+  "channelUrl": "https://www.youtube.com/@patrickdang",
+  "channelUsername": "patrickdang",
+  "collaborators": null,
+  "channelId": "UCLOzkJ9W9fntCGyYfUwMPew",
+  "numberOfSubscribers": 414000,
+  "duration": "00:31:49",
+  "commentsCount": 290,
+  "text": "Try Higgsfield: https://go.founderx.net/7c510924\n\n💻 Join my FREE LIVE training where I reveal how you can build your profitable 1-Person Business + Personal Brand with AI in the next 30 days - https://go.founderx.net/84d3e6db\n\nGet Instant Access to My Free Claude Skill the 1-Person AI Powered Business Idea Generator & List Builder: https://go.founderx.net/359b4af3\n\nBook a Call: https://go.founderx.net/a6cd808f\n\nThe #1 Claude AI Side Hustle Nobody Is Talking About:    • The #1 Claude AI Side Hustle Nobody Is Tal...  \n\nHelped a Stranger Build a 1-Person AI Business ($5,500/mo with Claude):    • I Helped a Stranger Build a 1-Person AI Bu...  \n\nHow I'd Start a 1-Person Business With Claude AI in 30 Days:    • How I'd Start a 1-Person Business With Cla...  \n\nIG: https://go.founderx.net/dd7ec401\nLinkedIn: https://go.founderx.net/5ea69975\n📲 Private Telegram (the stuff I can't post here): https://go.founderx.net/b9d00b49",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://go.founderx.net/7c510924",
+      "text": "https://go.founderx.net/7c510924"
+    },
+    {
+      "url": "https://go.founderx.net/84d3e6db",
+      "text": "https://go.founderx.net/84d3e6db"
+    },
+    {
+      "url": "https://go.founderx.net/359b4af3",
+      "text": "https://go.founderx.net/359b4af3"
+    },
+    {
+      "url": "https://go.founderx.net/a6cd808f",
+      "text": "https://go.founderx.net/a6cd808f"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=uJeHGmMir5Q",
+      "text": "   • The #1 Claude AI Side Hustle Nobody Is Tal...  "
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YFlCDHYsWyg",
+      "text": "   • I Helped a Stranger Build a 1-Person AI Bu...  "
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gRcBu8LyfGo",
+      "text": "   • How I'd Start a 1-Person Business With Cla...  "
+    },
+    {
+      "url": "https://go.founderx.net/dd7ec401",
+      "text": "https://go.founderx.net/dd7ec401"
+    },
+    {
+      "url": "https://go.founderx.net/5ea69975",
+      "text": "https://go.founderx.net/5ea69975"
+    },
+    {
+      "url": "https://go.founderx.net/b9d00b49",
+      "text": "https://go.founderx.net/b9d00b49"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 3,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "Claude Design Just Unlocked AI Motion Graphics",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "97Y5cz7H8SM",
+  "url": "https://www.youtube.com/watch?v=97Y5cz7H8SM",
+  "thumbnailUrl": "https://i.ytimg.com/vi/97Y5cz7H8SM/maxresdefault.jpg",
+  "viewCount": 180567,
+  "date": "2026-08-04T18:59:11.000Z",
+  "likes": 4600,
+  "location": null,
+  "channelName": "Futurepedia",
+  "channelUrl": "https://www.youtube.com/@futurepedia_io",
+  "channelUsername": "futurepedia_io",
+  "collaborators": null,
+  "channelId": "UC_RovKmk0OCbuZjA8f08opw",
+  "numberOfSubscribers": 744000,
+  "duration": "00:16:14",
+  "commentsCount": 207,
+  "text": "Claude Design Guide: https://clickhubspot.com/arci\n\nMore from Futurepedia:\n👉 Join the Skill Leap AI education platform! Try it free and explore 20+ top-rated courses in AI: https://bit.ly/futurepediaSL\n\nSummary:\nClaude Design has a hidden superpower: motion graphics. It can create a wide variety of motion graphics for data visualization, explainer videos, and more using the animation template. But one extremely powerful and unique option is working from a transcript. You can drop in a transcript and get motion graphics synced up to the words you're speaking and it's extremely simple to achieve.\n\nChapters\n0:00 Intro\n0:40 Overview and Access\n1:40 Create from a Prompt\n4:48 Create from an Image\n6:23 Multiple Reference Images\n12:58 Design Systems",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://clickhubspot.com/arci",
+      "text": "https://clickhubspot.com/arci"
+    },
+    {
+      "url": "https://bit.ly/futurepediaSL",
+      "text": "https://bit.ly/futurepediaSL"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=97Y5cz7H8SM",
+      "text": "0:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=97Y5cz7H8SM&t=40s",
+      "text": "0:40"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=97Y5cz7H8SM&t=100s",
+      "text": "1:40"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=97Y5cz7H8SM&t=288s",
+      "text": "4:48"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=97Y5cz7H8SM&t=383s",
+      "text": "6:23"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=97Y5cz7H8SM&t=778s",
+      "text": "12:58"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 11,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "Paste This Into Claude, Never Hit a Token Limit Again",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "Y8vAQ1FgNbM",
+  "url": "https://www.youtube.com/watch?v=Y8vAQ1FgNbM",
+  "thumbnailUrl": "https://i.ytimg.com/vi/Y8vAQ1FgNbM/maxresdefault.jpg",
+  "viewCount": 174028,
+  "date": "2026-07-29T14:00:20.000Z",
+  "likes": 6700,
+  "location": "SEATTLE",
+  "channelName": "AI News & Strategy Daily | Nate B Jones",
+  "channelUrl": "https://www.youtube.com/@NateBJones",
+  "channelUsername": "NateBJones",
+  "collaborators": null,
+  "channelId": "UC0C-17n9iuUQPylguM1d-lQ",
+  "numberOfSubscribers": 317000,
+  "duration": "00:20:16",
+  "commentsCount": 557,
+  "text": "Running out of AI tokens on ChatGPT, Claude, or OpenAI Codex? Here are the 15 rules I use to cut reused input and get more real work out of the same plan.\n\nFull post w/ Token Saver Skill + Guide:\nhttps://natesnewsletter.substack.com/...\n\nMy Links 🔗\n👉🏻 Newsletter: https://natesnewsletter.substack.com/\n👉🏻 X: https://x.com/natebjones\n👉🏻 TikTok:   / nate.b.jones  \n👉🏻 Instagram:   / nate.b.jones  \n\nWhat's really happening inside your AI token limits?\n\nThe common story is that hitting a limit means you asked too much — but the real question is how much of every request you never typed.\n\nIn this video, I share the inside scoop on keeping your AI desk clean:\n\nWhy your tenth message costs far more than your first\nHow reused input quietly dominates every request you send\nWhat the Token Saver skill automates inside Codex and Claude Code\nWhere a local check beats any skill running after the call\n\nBetter tools are coming, but deciding what a job actually needs to remember stays the work you own.\n\nChapters:\n00:00 you keep running out of claude, codex or chatgpt tokens\n04:40 rule one, edit your mistakes instead of arguing with them\n11:13 the token saver skill and what it automates for you\n15:35 prompt caching and when it actually matters\n16:23 ringer as an intermediary before the model provider\n18:51 keeping your desk clean and what comes next\n\nListen to this video as a podcast.\n\nSpotify: https://open.spotify.com/show/0gkFdjd...\nApple Podcasts: https://podcasts.apple.com/us/podcast...",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://natesnewsletter.substack.com/p/reduce-ai-token-usage?r=1z4sm5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "text": "https://natesnewsletter.substack.com/..."
+    },
+    {
+      "url": "https://natesnewsletter.substack.com/",
+      "text": "https://natesnewsletter.substack.com/"
+    },
+    {
+      "url": "https://x.com/natebjones",
+      "text": "https://x.com/natebjones"
+    },
+    {
+      "url": "https://www.tiktok.com/@nate.b.jones",
+      "text": "  / nate.b.jones  "
+    },
+    {
+      "url": "https://www.instagram.com/nate.b.jones",
+      "text": "  / nate.b.jones  "
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Y8vAQ1FgNbM",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Y8vAQ1FgNbM&t=280s",
+      "text": "04:40"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Y8vAQ1FgNbM&t=673s",
+      "text": "11:13"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Y8vAQ1FgNbM&t=935s",
+      "text": "15:35"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Y8vAQ1FgNbM&t=983s",
+      "text": "16:23"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Y8vAQ1FgNbM&t=1131s",
+      "text": "18:51"
+    },
+    {
+      "url": "https://open.spotify.com/show/0gkFdjd1wptEKJKLu9LbZ4",
+      "text": "https://open.spotify.com/show/0gkFdjd..."
+    },
+    {
+      "url": "https://podcasts.apple.com/us/podcast/ai-news-strategy-daily-with-nate-b-jones/id1877109372",
+      "text": "https://podcasts.apple.com/us/podcast..."
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 13,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+skills&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [],
+  "isMembersOnly": false,
+  "input": "claude code skills",
+  "isPaidContent": false
+},
+{
+  "title": "🚀DeepSeek V4 Flash全面实测：Claude Code接入后连续开发7个项目，最便宜的国产模型！性能、速度与真实短板全曝光！对比Kimi K3优点和缺点都藏不住！是否超越Opus 4.8",
+  "translatedTitle": null,
+  "type": "video",
+  "id": "d_5GYmICVTk",
+  "url": "https://www.youtube.com/watch?v=d_5GYmICVTk",
+  "thumbnailUrl": "https://i.ytimg.com/vi/d_5GYmICVTk/maxresdefault.jpg",
+  "viewCount": 37129,
+  "date": "2026-07-31T12:45:17.000Z",
+  "likes": 413,
+  "location": null,
+  "channelName": "AI超元域",
+  "channelUrl": "https://www.youtube.com/@AIsuperdomain",
+  "channelUsername": "AIsuperdomain",
+  "collaborators": null,
+  "channelId": "UCIomFkAj4Vq_rGX2Jot7D8A",
+  "numberOfSubscribers": 75600,
+  "duration": "00:13:11",
+  "commentsCount": 134,
+  "text": "🚀🚀🚀视频简介：\nDeepSeek V4 Flash深度评测：跑分接近Claude Opus 4.8，但面对Godot复杂游戏为何上下文直接爆满？\n✅ DeepSeek 发布了 DeepSeek V4 Flash 0731：284B 总参数、13B 激活参数、100 万 Token 上下文，官方基准表现接近 Claude Opus 4.8，价格却更加便宜。\n本期视频将它接入 Claude Code，实测宇宙飞船、骑马游戏、古戈尔齿轮、SVG 手绘动画、Manim 数学可视化、Godot 3D 游戏和原生 iOS App，并与 Kimi K3 进行对比。全部测试最终仅花费约 1.42 元。💰\n它能否替代昂贵模型？又是否适合作为 Codex 和 Claude Code 的 SubAgent？视频中揭晓！\n\n👉👉👉我对开源项目: https://github.com/win4r/\n👉👉👉请我喝咖啡: https://ko-fi.com/aila\n\n🔥🔥🔥 YouTube时间戳\n00:00 DeepSeek V4 Flash发布与官方跑分\n01:24 在Claude Code中接入DeepSeek API\n01:55 知识截止日期与基础能力测试\n02:19 复刻《极光》小说宇宙飞船\n04:08 开发《荒野大镖客》骑马游戏\n05:30 Three.js古戈尔齿轮动画\n06:36 SVG手绘灯泡动画测试\n07:31 Manim二次函数可视化\n08:30 Godot 4侏罗纪坦克射击游戏\n10:00 开发原生iOS背单词App\n12:20 API成本、使用建议与最终总结\n\n#deepseek #deepseekv4 #deepseekv4pro #deepseekv4flash #claudecode #kimik3 #kimi #aicoding #aigc #agi #vibecoding #ai #aiagents #agents #llm",
+  "translatedText": null,
+  "descriptionLinks": [
+    {
+      "url": "https://github.com/win4r/",
+      "text": "https://github.com/win4r/"
+    },
+    {
+      "url": "https://ko-fi.com/aila",
+      "text": "https://ko-fi.com/aila"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=84s",
+      "text": "01:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=115s",
+      "text": "01:55"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=139s",
+      "text": "02:19"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=248s",
+      "text": "04:08"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=330s",
+      "text": "05:30"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=396s",
+      "text": "06:36"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=451s",
+      "text": "07:31"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=510s",
+      "text": "08:30"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=600s",
+      "text": "10:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d_5GYmICVTk&t=740s",
+      "text": "12:20"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/deepseek",
+      "text": "#deepseek"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/deepseekv4",
+      "text": "#deepseekv4"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/deepseekv4pro",
+      "text": "#deepseekv4pro"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/deepseekv4flash",
+      "text": "#deepseekv4flash"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#claudecode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/kimik3",
+      "text": "#kimik3"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/kimi",
+      "text": "#kimi"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aicoding",
+      "text": "#aicoding"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aigc",
+      "text": "#aigc"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/agi",
+      "text": "#agi"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/vibecoding",
+      "text": "#vibecoding"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/ai",
+      "text": "#ai"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/aiagents",
+      "text": "#aiagents"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/agents",
+      "text": "#agents"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/llm",
+      "text": "#llm"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 7,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#aigc",
+    "#agi",
+    "#kimik3"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+},
+{
+  "title": "Claude Code Curso Práctico: Crea Proyectos Reales con Skills, MCPs y Plan Mode",
+  "translatedTitle": "Claude Code Practical Course: Build Real Projects with Skills, MCPs, and Plan Mode",
+  "type": "video",
+  "id": "8SS943hFIgo",
+  "url": "https://www.youtube.com/watch?v=8SS943hFIgo",
+  "thumbnailUrl": "https://i.ytimg.com/vi/8SS943hFIgo/maxresdefault.jpg",
+  "viewCount": 22274,
+  "date": "2026-08-09T01:50:35.000Z",
+  "likes": 989,
+  "location": null,
+  "channelName": "Fazt",
+  "channelUrl": "https://www.youtube.com/@FaztTech",
+  "channelUsername": "FaztTech",
+  "collaborators": null,
+  "channelId": "UCX9NJ471o7Wie1DQe94RVIg",
+  "numberOfSubscribers": 683000,
+  "duration": "01:15:37",
+  "commentsCount": 58,
+  "text": "Claude Code es uno de los mejores harness para escribir código con Claude… y la mayoría solo usa el 20%.\n\nEn este curso te muestro desde lo básico hasta intermedio: instalación, modelos, modos de trabajo, CLAUDE.md, skills, MCPs, subagentes, plugins y cómo crear proyectos reales desde la terminal.\n\nVas a aprender:\n\n✅ Cómo instalar y autenticarte correctamente en Windows, Mac y Linux\n✅ Diferencia entre Opus, Sonnet, Haiku y los niveles de esfuerzo (High, Extra High, Max, Ultra)\n✅ Modos de trabajo: Manual, Plan Mode, Auto Mode y Bypass Permissions\n✅ Usar Plan Mode + Bypass para proyectos serios sin que te interrumpa\n✅ Rewind, continuar sesiones y manejar el contexto con /compact\n✅ Pasar imágenes para diseñar interfaces\n✅ Crear y usar Skills (incluyendo Impeccable para diseño)\n✅ MCPs con Chrome DevTools y subagentes en paralelo\n✅ Plugins y la carpeta .claude para configurar todo\n\n⏱️ Indice\n00:00 Introducción: qué verás en el curso\n00:44 Qué es Claude Code, planes y suscripciones\n02:11 Instalación y primer inicio de sesión\n03:37 Ejecutar Claude Code: terminal y directorio de trabajo (pwd, cd)\n05:31 Los modelos: Opus, Fable, Sonnet y Haiku (/model)\n07:51 Esfuerzo del modelo (/effort): de low a ultra\n09:41 Modos de trabajo: manual, accept edits, plan y auto\n15:29 Modo bypass permissions (--dangerously-skip-permissions)\n17:53 Volver a versiones anteriores con /rewind\n19:31 Salir y reanudar sesiones: -c, /resume y /rename\n22:41 Qué es el contexto (/context)\n24:56 Compactar la conversación (/compact)\n26:25 Trabajar con imágenes: recrear un diseño de referencia\n29:52 Referenciar archivos y carpetas con @\n32:47 Preguntar sin interrumpir la sesión (/btw)\n34:33 Integraciones: VS Code, extensión y otras interfaces\n39:31 El archivo CLAUDE.md y el comando /init\n44:01 La carpeta .claude y permisos (/permissions)\n45:55 Skills: crea tus propias instrucciones\n51:45 Instalar skills de la comunidad (skills.sh, impecable, superpowers)\n1:02:53 MCPs: conectar Claude con otras plataformas (Chrome DevTools)\n1:07:06 Subagentes y Agent Teams: trabajo en paralelo\n1:12:24 Plugins (ejemplo: Claude SEO)\n1:14:32 Cierre y despedida\n\n🌐 Mis redes son:\n💻 Sitio web: fazt.dev\n📧 Correo: fazt@fazt.dev\n🐦 X/Twitter: @FaztTech\n\nSi este video te ayudó, deja un like ❤️, comenta qué parte te gustó más o qué quieres ver en el siguiente video. Suscríbete para no perderte las actualizaciones de Claude Code y herramientas de IA.\n\n#ClaudeCode #ClaudeCodeTutorial #IA #Programacion #Skills #MCP #Subagentes #Antropic #ClaudeAI #TutorialIA #AgenticCoding #FaztTech",
+  "translatedText": "Claude Code is one of the best tools for writing code with Claude… and most people only use 20% of it.\n\nIn this course, I'll show you everything from the basics to intermediate: installation, models, working modes, CLAUDE.md, skills, MCPs, subagents, plugins, and how to create real projects from the terminal.\n\nYou will learn:\n\n✅ How to install and authenticate correctly on Windows, Mac, and Linux\n✅ The difference between Opus, Sonnet, Haiku, and effort levels (High, Extra High, Max, Ultra)\n✅ Working modes: Manual, Plan Mode, Auto Mode, and Bypass Permissions\n✅ Using Plan Mode + Bypass for serious projects without interruption\n✅ Rewinding, continuing sessions, and managing context with /compact\n✅ Passing images to design interfaces\n✅ Creating and using Skills (including Impeccable for design)\n✅ MCPs with Chrome DevTools and parallel subagents\n✅ Plugins and the .claude folder for configuring everything\n\n⏱️ Index\n00:00 Introduction: what you will see in the course\n00:44 What is Claude Code, plans, and subscriptions\n02:11 Installation and first login\n03:37 Running Claude Code: terminal and working directory (pwd, cd)\n05:31 Models: Opus, Fable, Sonnet, and Haiku (/model)\n07:51 Model effort (/effort): from low to ultra\n09:41 Working modes: manual, accept edits, plan, and auto\n15:29 Bypassing permissions mode (--dangerously-skip-permissions)\n17:53 Reverting to previous versions with /rewind\n19:31 Exiting and resuming sessions: -c, /resume, and /rename\n22:41 What is context (/context)?\n24:56 Compacting the conversation (/compact)\n26:25 Working with images: recreating a reference design\n29:52 Referencing files and folders with @\n32:47 Asking without interrupting the session (/btw)\n34:33 Integrations: VS Code, extensions, and other interfaces\n39:31 The CLAUDE.md file and the command /init\n44:01 The .claude folder and permissions (/permissions)\n45:55 Skills: Create your own instructions\n51:45 Installing community skills (skills.sh, flawless, superpowers)\n1:02:53 MCPs: Connecting Claude with other platforms (Chrome DevTools)\n1:07:06 Sub-agents and Agent Teams: Working in parallel\n1:12:24 Plugins (example: Claude SEO)\n1:14:32 Closing and farewell\n\n🌐 My social media:\n💻 Website: fazt.dev\n📧 Email: fazt@fazt.dev\n🐦 Twitter: @FaztTech\n\nIf this video helped you, leave a like ❤️, comment on what part you liked most or what you want to see in the next video. Subscribe so you don't miss updates on Claude Code and AI tools.\n\n#ClaudeCode #ClaudeCodeTutorial #IA #Programming #Skills #MCP #Subagents #Antropic #ClaudeAI #TutorialIA #AgenticCoding #FaztTech",
+  "descriptionLinks": [
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo",
+      "text": "00:00"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=44s",
+      "text": "00:44"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=131s",
+      "text": "02:11"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=217s",
+      "text": "03:37"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=331s",
+      "text": "05:31"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=471s",
+      "text": "07:51"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=581s",
+      "text": "09:41"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=929s",
+      "text": "15:29"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=1073s",
+      "text": "17:53"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=1171s",
+      "text": "19:31"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=1361s",
+      "text": "22:41"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=1496s",
+      "text": "24:56"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=1585s",
+      "text": "26:25"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=1792s",
+      "text": "29:52"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=1967s",
+      "text": "32:47"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=2073s",
+      "text": "34:33"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=2371s",
+      "text": "39:31"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=2641s",
+      "text": "44:01"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=2755s",
+      "text": "45:55"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=3105s",
+      "text": "51:45"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=3773s",
+      "text": "1:02:53"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=4026s",
+      "text": "1:07:06"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=4344s",
+      "text": "1:12:24"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8SS943hFIgo&t=4472s",
+      "text": "1:14:32"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecode",
+      "text": "#ClaudeCode"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudecodetutorial",
+      "text": "#ClaudeCodeTutorial"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/ia",
+      "text": "#IA"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/programming",
+      "text": "#Programming"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/skills",
+      "text": "#Skills"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/mcp",
+      "text": "#MCP"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/subagents",
+      "text": "#Subagents"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/antropic",
+      "text": "#Antropic"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/claudeai",
+      "text": "#ClaudeAI"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/tutorialia",
+      "text": "#TutorialIA"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/agenticcoding",
+      "text": "#AgenticCoding"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/fazttech",
+      "text": "#FaztTech"
+    }
+  ],
+  "subtitles": null,
+  "aiVideoDescription": null,
+  "aiVideoSummary": null,
+  "order": 12,
+  "commentsTurnedOff": false,
+  "fromYTUrl": "https://www.youtube.com/results?search_query=claude+code+subagents&sp=CAMSBAgEEAE%3D",
+  "isMonetized": null,
+  "hashtags": [
+    "#ClaudeCodeTutorial",
+    "#ClaudeAI",
+    "#IA"
+  ],
+  "isMembersOnly": false,
+  "input": "claude code subagents",
+  "isPaidContent": false
+}]

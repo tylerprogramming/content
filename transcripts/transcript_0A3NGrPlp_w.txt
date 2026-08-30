@@ -1,0 +1,61 @@
+[00:00] Google's new tool lets you connect to anything instantly.
+[00:02] Google just dropped what some are already calling
+[00:04] the most powerful workspace CLI on the internet.
+[00:07] So if you've got a ton of stuff
+[00:08] that lives in the Google environment, just like I do,
+[00:11] then you're gonna love this
+[00:12] because now any of my Cloud Code projects
+[00:14] can access everything.
+[00:15] And all I had to do was install one simple thing.
+[00:18] So here you can see, I said, what can you do with GWS,
+[00:20] which is Google Workspace CLI.
+[00:23] So it can search, list, upload, download, move, copy, share,
+[00:26] anything in my Google Drive.
+[00:28] It can do anything in my Gmail.
+[00:30] It can do anything in my calendar.
+[00:31] It can do anything with Google Docs.
+[00:33] Same thing with Sheets.
+[00:34] Same thing with Slides.
+[00:35] And it also has multi-step workflow recipes.
+[00:38] So these are basically like skills.
+[00:40] So I don't know how many times
+[00:41] you guys have tried to use something like Cloud
+[00:42] or end-to-end to build you a Google Doc,
+[00:45] and you do this over API.
+[00:46] And it ends up just looking like something like this.
+[00:48] It literally just looks like raw markdown
+[00:50] and it's obviously horrible.
+[00:52] And sometimes to go along with a YouTube video,
+[00:54] I make resource guides that look like this,
+[00:55] but obviously they have to be formatted.
+[00:57] I've got like a header up here
+[00:58] and I've got links and different things in this format.
+[01:02] But now I can literally just take the link
+[01:03] to a YouTube video.
+[01:04] I can drop that into Cloud Code
+[01:05] and say, create me a YouTube resource guide.
+[01:08] It's gonna go ahead and download that transcript
+[01:10] from the video.
+[01:11] And now what it's doing is it's creating the Google Doc,
+[01:13] not via API call, not via MCP,
+[01:16] but via a bash command,
+[01:18] meaning it's literally running a terminal command
+[01:20] in order to talk to Google and make this.
+[01:23] And now it finished this up.
+[01:24] It gave me the link.
+[01:25] I'll click into this
+[01:26] and we can see, boom, we have an actual resource guide.
+[01:28] It's got the image inserted up here as a header.
+[01:30] It's got a link that goes right back to my YouTube channel.
+[01:33] It breaks down the market, traditional automation.
+[01:35] It goes through all this stuff.
+[01:35] And then even has my CTA at the bottom,
+[01:37] as you can see after all of these horizontal lines
+[01:40] to join the plus group.
+[01:41] So that was obviously just one quick example,
+[01:43] but there's so many different benefits here
+[01:45] using this Workspace CLI,
+[01:46] especially as it gets better and better over time.
+[01:48] If you wanna watch the full breakdown,
+[01:49] then click on that play button right here
+[01:51] and I'll see you guys over there.

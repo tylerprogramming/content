@@ -84,3 +84,57 @@ this is a showcase, not a search play, and 047 covers the search side.
 
 5. **Connect Claude Code to Any App Without Fighting OAuth (Arcade MCP)**
    Speaks to the developer who knows the auth pain. "Any app" widens the scope and "without fighting OAuth" is the credible engineer wedge.
+
+---
+
+# Post-production candidates (2026-08-16)
+
+**The locked title above still stands.** These were generated after the cut existed,
+against shapes Tyler supplied, and are recorded here so the pre-production reasoning
+is not lost if one of them gets picked. Nothing here has a competitor teardown behind
+it the way the locked pick does.
+
+## One thing to settle first: the 7-minute claim
+
+The locked title says **In 7 Minutes**. The delivered film is **12:00.6**. The claim is
+defensible as *setup* time (the first gateway genuinely takes "a minute or two in real
+time" at 3:52, and it matches Arcade's own framing and the 7 Minute Apps brand), but a
+12-minute video whose title says 7 minutes reads to some viewers as a runtime promise,
+and a broken runtime promise shows up as a retention cliff in the first 30 seconds.
+Worth watching in the first-24h retention graph rather than pre-emptively changing.
+
+## Shapes Tyler supplied
+
+**"The Problem with [Topic]"** (avg 230.5K). Fits the video's actual spine, which is
+problem then solution: local-only MCP is fine for you, and breaks the moment you need
+more than you.
+
+1. The Problem With Every MCP Server Tutorial
+2. The Problem With Connecting Claude Code To Your Apps
+
+**"The [Number] Levels of [Topic]"** (avg 221.3K). The strongest of the three here,
+because the video already visualises the levels: the "just you / local only" card at
+0:30 is level 1, and the always-on infographic at 0:38 is levels 2 and 3.
+
+3. The 3 Levels Of MCP Servers (Most People Stop At 1)
+4. The 3 Levels Of Connecting Claude Code To Your Apps
+
+If either of these runs, add "LEVEL 1" to the solo card and "LEVEL 2 / 3" to the
+infographic so the title pays off on screen. Roughly twenty minutes of work in
+`~/Movies/Camtasia/045 - arcade.dev/scripts/`.
+
+**"[Topic] Explained in [Number] Minutes"** (avg 162.6K). Weakest of the three by
+Tyler's own averages, and it collides with the 7-minute claim above. Fallback only.
+
+5. MCP Servers Explained In 12 Minutes
+
+## First-person, "I did X"
+
+6. I Connected 6 Apps To Claude Code With One MCP Server (Full Guide)
+7. I Gave Claude Code Access To Every App I Use (Full Build)
+
+**On the number six:** the gateway ends with Calendar, Gmail, Drive, Slack, Docs and
+ClickUp, and at 9:59 he says on camera "I have five different servers here in this
+whole gateway" before adding ClickUp as the sixth. The "powered by seven applications"
+line at 0:00 is the outlier and nothing on screen supports it. Any title using a count
+should use **six**.

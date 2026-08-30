@@ -1,0 +1,22 @@
+{
+  "generations": [
+    {
+      "prompt": "Bold high-contrast thumbnail on a deep charcoal background, color #14161A. On the right, a confident man in a black t-shirt matching the face in the reference image exactly, smiling at the camera, holding a large modern smartphone up toward the viewer in his right hand. The phone screen faces the camera and shows a clean bright white app: a large bold navy number '4,182' with the word 'members' beneath it, then '63 joined this week' and '0.9% churn', a horizontal segmented progress bar in green, tan and vermilion, and a rising line chart. At the very bottom of the phone screen there is a clear app navigation bar with four small evenly spaced tab labels reading 'Dashboard', 'Needs you', 'Members' and 'Posts', with a small red circular badge showing '12' above the 'Needs you' tab. An open MacBook Pro and a tablet float below and left of the phone showing the same white dashboard, glowing softly. On the left, very large bold white text reading 'Attend', and beneath it four short white text lines each preceded by a small vermilion dot, reading exactly: 'Every DM answered', 'Every quiet member spotted', 'Every cancel caught early', 'You approve every send'. Punchy, modern, cinematic rim lighting. Absolutely no neon signage, no robots, no gibberish text, all text must be real and correctly spelled.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tyler.png"
+      ],
+      "generated_at": "2026-08-17T16:05:03.035948",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_708554a1509675881335adf5bce6caab.png",
+        "https://tempfile.aiquickdraw.com/workers/images/image_0d1946e073947446aad626701f82e52d.png"
+      ]
+    }
+  ]
+}

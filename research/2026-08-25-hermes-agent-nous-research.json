@@ -1,0 +1,51 @@
+{
+  "query": "Hermes Agent Nous Research",
+  "total_found": 3,
+  "long_form_found": 3,
+  "shorts_found": 0,
+  "days": 45,
+  "top_n": 15,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "Hermes Agent Fundamentals In 29 Minutes",
+      "channel": "Tina Huang",
+      "views": 313962,
+      "likes": 10477,
+      "comments": 429,
+      "upload_date": "20260720",
+      "duration": "29:40",
+      "duration_seconds": 1780,
+      "url": "https://youtube.com/watch?v=5_N84t1rUU0",
+      "description": "\ud83d\udcdd Video Resources \ud83d\udc49 https://www.lonelyoctopus.com/download-resource-hermes\n\n\ud83d\udc19 Free 28-Day AI Sprint Roadmap - pick your goal to get a clear, day-by-day path forward \ud83d\udc49 https://www.lonelyoctopus.com/ai-sprint-roadmap\n\n\ud83e\udd16 Want to get ahead in your career using AI? Join the waitlist for my AI Agent Bootc",
+      "id": "5_N84t1rUU0"
+    },
+    {
+      "title": "Hermes Agent just got 10X Better... I\u2019m Done",
+      "channel": "Jack Roberts",
+      "views": 52342,
+      "likes": 1077,
+      "comments": 104,
+      "upload_date": "20260720",
+      "duration": "20:13",
+      "duration_seconds": 1213,
+      "url": "https://youtube.com/watch?v=sJt1sQO87sc",
+      "description": "\ud83d\udcc8 FULL Hermes Course: https://bit.ly/4wRk62c\n\u26a1\ufe0f Zapier: https://bit.ly/4ftQzVq\n\ud83d\udd25 Firecrawl: https://bit.ly/4aHCD8A\n\nHermes agent just got five major upgrades and I'm showing you all of them. New models including Grok 4.5 and Kimi K3, parallel tool calls, 60x faster web search with Firecrawl, complet",
+      "id": "sJt1sQO87sc"
+    },
+    {
+      "title": "Hermes Agent - Crash Course for Beginners (AI Agent)",
+      "channel": "Adrian Twarog",
+      "views": 37220,
+      "likes": 645,
+      "comments": 18,
+      "upload_date": "20260721",
+      "duration": "22:18",
+      "duration_seconds": 1338,
+      "url": "https://youtube.com/watch?v=4sAmpcSOVEw",
+      "description": "Hermes Agent Crash Course so you can run your own locally hosted or cloud based agent using Hermes. If you've been exploring AI Agents that this video will cover the terminal, web and desktop app installation, setup and use!\n\n\ud83d\udfe7 Zapier MCP Server\nhttps://bit.ly/4vKJSUW\n\n\ud83d\udfe3 Hostinger VPS Setup\nhttp://h",
+      "id": "4sAmpcSOVEw"
+    }
+  ],
+  "shorts": []
+}

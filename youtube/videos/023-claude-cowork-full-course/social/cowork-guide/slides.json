@@ -1,0 +1,285 @@
+{
+ "topic": "Claude Cowork starter guide",
+ "handle": "@tylerreedai",
+ "brand_text": "AI",
+ "brand_path": null,
+ "topic_short": "COWORK",
+ "kicker": "THE STARTER GUIDE",
+ "steps": [
+  "FOLDER",
+  "MEMORY",
+  "HAND OFF",
+  "SCHEDULE"
+ ],
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "THE STARTER GUIDE",
+   "headline_lines": [
+    "Claude Cowork.",
+    "One folder."
+   ],
+   "accent_lines": [
+    "One folder."
+   ],
+   "headline_size": 92,
+   "aside": "it opens your files and acts \u2192",
+   "rows": [
+    {
+     "label": "Your folder",
+     "sub": "its working memory",
+     "glyph": "folder"
+    },
+    {
+     "label": "CLAUDE.md",
+     "sub": "how you train it",
+     "glyph": "doc"
+    },
+    {
+     "label": "Connectors",
+     "sub": "Gmail, Notion, Slack",
+     "glyph": "grid"
+    },
+    {
+     "label": "Scheduled",
+     "sub": "runs without you",
+     "glyph": "clock"
+    }
+   ],
+   "terminal": {
+    "title": "cowork \u00b7 start",
+    "lines": [
+     [
+      "> point me at ~/work",
+      "txt"
+     ],
+     [
+      "> READING 41 FILES_",
+      "accent"
+     ]
+    ]
+   },
+   "live_step": 0
+  },
+  {
+   "type": "solution",
+   "headline_lines": [
+    "What it",
+    "actually is."
+   ],
+   "accent_lines": [
+    "actually is."
+   ],
+   "subtitle": "Not an AI employee. Claude with access to a folder.",
+   "lines": [
+    {
+     "glyph": "folder",
+     "segments": [
+      [
+       "It reads ",
+       "plain"
+      ],
+      [
+       "your folder",
+       "bold"
+      ],
+      [
+       ", Gmail, Notion and Slack",
+       "plain"
+      ]
+     ]
+    },
+    {
+     "glyph": "grid",
+     "segments": [
+      [
+       "It reads the web through ",
+       "plain"
+      ],
+      [
+       "Claude in Chrome",
+       "bold"
+      ]
+     ]
+    },
+    {
+     "glyph": "doc",
+     "segments": [
+      [
+       "One folder is its ",
+       "plain"
+      ],
+      [
+       "memory",
+       "underline"
+      ]
+     ]
+    }
+   ],
+   "note": {
+    "title": "The whole trick",
+    "items": [
+     "One folder",
+     "One CLAUDE.md",
+     "Read every task"
+    ]
+   },
+   "proof": {
+    "title": "cowork \u00b7 receipts",
+    "lines": [
+     [
+      "> 6 photos in",
+      "txt"
+     ],
+     [
+      "> EXPENSE SHEET OUT, 1 DUPLICATE FLAGGED_",
+      "accent"
+     ]
+    ]
+   },
+   "live_step": 1
+  },
+  {
+   "type": "how",
+   "headline_lines": [
+    "Setup",
+    "that sticks."
+   ],
+   "accent_lines": [
+    "that sticks."
+   ],
+   "table": {
+    "header": [
+     "Step",
+     "What you do"
+    ],
+    "rows": [
+     {
+      "glyph": "terminal",
+      "name": "Open",
+      "segments": [
+       [
+        "The Claude ",
+        "plain"
+       ],
+       [
+        "desktop app",
+        "bold"
+       ],
+       [
+        ", not the website",
+        "plain"
+       ]
+      ]
+     },
+     {
+      "glyph": "folder",
+      "name": "Point",
+      "segments": [
+       [
+        "At ",
+        "plain"
+       ],
+       [
+        "one folder",
+        "bold"
+       ],
+       [
+        ", not five",
+        "plain"
+       ]
+      ]
+     },
+     {
+      "glyph": "doc",
+      "name": "Interview",
+      "segments": [
+       [
+        "Ask it to write ",
+        "plain"
+       ],
+       [
+        "about-me.md",
+        "bold"
+       ]
+      ]
+     },
+     {
+      "glyph": "check",
+      "name": "Grow",
+      "segments": [
+       [
+        "Turn that into ",
+        "plain"
+       ],
+       [
+        "CLAUDE.md",
+        "bold"
+       ]
+      ]
+     }
+    ]
+   },
+   "pill": "Start here",
+   "closer": "step one is where most people quietly go wrong",
+   "live_step": 1
+  },
+  {
+   "type": "results",
+   "headline_lines": [
+    "What to",
+    "hand it."
+   ],
+   "accent_lines": [
+    "hand it."
+   ],
+   "quad": [
+    {
+     "glyph": "folder",
+     "label": "Sort a folder"
+    },
+    {
+     "glyph": "doc",
+     "label": "Receipts to sheet"
+    },
+    {
+     "glyph": "text",
+     "label": "The weekly report"
+    },
+    {
+     "glyph": "check",
+     "label": "Triage the inbox"
+    }
+   ],
+   "note": [
+    "Anything you can",
+    "check in ten",
+    "seconds."
+   ],
+   "proof": {
+    "title": "cowork \u00b7 monday",
+    "lines": [
+     [
+      "> scheduled: build my analytics report",
+      "txt"
+     ],
+     [
+      "> DONE BEFORE YOU HAD COFFEE_",
+      "accent"
+     ]
+    ]
+   },
+   "live_step": 2
+  },
+  {
+   "type": "cta",
+   "summary_lines": [
+    "Find the boring repeatable part and hand that off.",
+    "Keep anything where 85 percent right is worse than nothing."
+   ],
+   "cta_action": "Comment",
+   "cta_word": "COWORK",
+   "cta_subtext": "and I'll send you this guide plus the exact scheduled tasks I run"
+  }
+ ]
+}

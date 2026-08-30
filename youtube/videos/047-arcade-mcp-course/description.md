@@ -5,14 +5,18 @@ A full MCP course for beginners: how to build real AI agents that connect to you
 Most tutorials for this are already outdated, the popular langchain-arcade and crewai-arcade packages are both deprecated, so everything here uses the current, working way, verified against the live docs. All the code is free in the repo below, and it runs on OpenAI or Claude with one setting.
 
 ## Chapters
-00:00 - Intro: what you'll build [UPDATE]
-01:00 - What Arcade actually is (tools, gateways, auth) [UPDATE]
-06:00 - Connect your apps to Claude Code, Desktop and Web [UPDATE]
-14:00 - Build your own MCP server (arcade-mcp) [UPDATE]
-26:00 - The same tools in LangChain (and adding Slack in one line) [UPDATE]
-36:00 - The same tools in CrewAI [UPDATE]
-44:00 - Run it 24/7: the Morning Planner on a server [UPDATE]
-56:00 - Wrap and the free code [UPDATE]
+0:00 - Intro: what you'll build
+0:56 - Create your first MCP gateway (Claude Code)
+7:27 - Use it in the Claude desktop app
+11:21 - Build your own MCP server (no code)
+18:03 - Deploy it so it runs 24/7
+24:32 - The same tools in your own code + the Arcade dashboard
+29:45 - Code agent: LangChain (email + Slack)
+34:16 - Code agent: CrewAI
+38:19 - Build a scheduled agent (morning planner)
+44:17 - Run it 24/7 on a VPS (Hostinger)
+46:17 - Schedule it with Claude Routines
+55:23 - Wrap-up + free code
 
 ## Links
 - Get the code (free, all modules): https://github.com/tylerprogramming/arcade-course

@@ -1,0 +1,22 @@
+{
+  "generations": [
+    {
+      "prompt": "Bold high-contrast community thumbnail on a deep charcoal background, color #14161A. On the right third, a confident man in a dark t-shirt matching the face in the reference image exactly, smiling at the camera and holding a modern smartphone up toward the viewer. The phone screen faces the camera and clearly shows a clean white community dashboard with a large bold number '896 members', smaller stats '16 joined this week' and '0.3% churn', a segmented green-orange-red progress bar and a rising line chart, in navy blue #2A3B8F with vermilion #CE3E2E and tan gold #E0A860 accents. Floating beside him, an open MacBook Pro and a tablet display the same bright white dashboard, glowing softly against the dark background. On the left, very large bold text reading 'Attend' in white, and beneath it a short list of four short white bullet lines each preceded by a small vermilion dot. Punchy, modern, cinematic rim lighting on the man. Absolutely no neon signage, no robots, no circuit boards, no gibberish text.",
+      "mode": "Remix (image + text)",
+      "model": "nano-banana-2",
+      "model_name": "Nano Banana 2",
+      "count": 2,
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "format": "png",
+      "reference_images": [
+        "https://tempfile.redpandaai.co/kieai/194131/thumbnails/references/tyler.png"
+      ],
+      "generated_at": "2026-08-17T15:50:38.428924",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/workers/images/image_ff662833eae7d503cd04e01421add2e0.png",
+        "https://tempfile.aiquickdraw.com/workers/images/image_19a26488cf8a9de12111d42a6318943f.png"
+      ]
+    }
+  ]
+}

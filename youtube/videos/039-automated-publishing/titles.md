@@ -66,7 +66,7 @@ For YouTube Test & Compare - these are the three thumbnail variants to test. Sha
 
 **Concept 1 - The one-command grid (RECOMMENDED, test first)**
 - Left third: Tyler pointing at the screen with intent, slight "watch this" grin.
-- Right two-thirds: a clean grid of 7 platform logos (YouTube, TikTok, Instagram, LinkedIn, X, Pinterest, email/newsletter) all lit up / glowing, with orange connector lines running back to a single terminal prompt.
+- Right two-thirds: a clean grid of 8 platform logos (YouTube, TikTok, Instagram, LinkedIn, X, Pinterest, Bluesky, Threads) all lit up / glowing, with orange connector lines running back to a single terminal prompt.
 - Overlay text: "ONE COMMAND." (white) / "EVERYWHERE." (orange).
 - Real proof element: the 7-platform grid lighting up from one command. Tells the whole one-to-many story before a word is read. Strongest for this video.
 
