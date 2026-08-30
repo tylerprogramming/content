@@ -71,7 +71,7 @@ The winning lane = **"I Automated My ___ With Claude Code"** (showcase). Mirrors
 | Video | Folder | Status |
 |---|---|---|
 | How To Build AI Agents in 2026 (5 Steps, No Code) | `videos/050-build-ai-agents-2026/` | ✅ **RECORDED 2026-08-29 → WITH EDITOR.** Built the `social-me` skill live (renamed from social-research on camera), Apify MCP + yt_transcript.py + `grilling` roast, ran it, scheduled it. Post-edit: /yt-chapters, thumbnail (designer), /yt-seo already done, queue upload. |
-| DeepSeek Harness: The Open-Source Claude Code (Setup + Features) | `deepseek-harness/` | **Package built 2026-08-28.** Breakout term (NeuralNine 222k = ~20-30x his norm). Honest how-to; HERO beat = run Claude Code as a subagent (nobody else covering). ClickUp `86e30q32d`. SEO done 2026-08-28. **Maybe film tonight** after 050. Film dep: subagent providers ship disabled - confirm enable step + `which claude`. |
+| DeepSeek Harness: The Open-Source Claude Code (Setup + Features) | `videos/056-deepseek-harness/` | **FILMING 2026-08-30.** Breakout term (NeuralNine 222k = ~20-30x his norm). Honest how-to. Film from `RUNSHEET.md` + `SHOTLIST.md`. Structure updated on live findings: his existing `.agents/skills` load in dsh unported (beat 6) and the custom Tyler preset shows beside the four shipped modes (beat 7); plugin segment reframed to the honest version after community plugins broke the profile. HERO = run Claude Code as a subagent. ClickUp `86e30q32d`. SEO done 2026-08-28. **Pre-roll blockers:** `OLLAMA_CONTEXT_LENGTH=64000 ollama serve` and `npm i -g @deepseek-ai/dsh`. |
 | Set Up Hermes Agent (Claude Code Users Start Here) | `hermes-agent-start-here/` | Package built 2026-08-25. Own identity (NOT "first agent in 5 steps" - that's 050). Queued. |
 
 ---
