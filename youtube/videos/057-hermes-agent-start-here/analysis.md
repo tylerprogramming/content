@@ -75,3 +75,58 @@ Open-source, self-hosted, MIT-licensed AI agent by Nous Research. Released Feb 2
 - https://www.mindstudio.ai/blog/what-is-hermes-agent-openclaw-alternative
 - Local research brief: `~/content/research/youtube/hermes-agent-nous/index.md`
 - YouTube search data: `~/content/research/2026-08-25-hermes-agent.json` + `-thumbnails/`
+
+---
+
+## Memory model — verified against the docs 2026-08-31
+
+Source: `hermes-agent.nousresearch.com/docs/user-guide/features/memory`. Not yet confirmed on a
+running install, so **check the folder on camera before narrating the file count.**
+
+### The actual model (two tiers, and the caps are what explain it)
+
+| | What | Where | Limit |
+|---|---|---|---|
+| **Tier 1** | `MEMORY.md` (agent's own notes) + `USER.md` (user profile) | `~/.hermes/memories/` | **2,200 chars (~800 tok)** and **1,375 chars (~500 tok)** |
+| **Tier 2** | Every session, full-text searchable, LLM-summarized | `~/.hermes/state.db` (SQLite FTS5) | unbounded |
+
+**Why the caps exist, and why this is the beat:** tier 1 loads as a **frozen snapshot into the
+system prompt at session start** — every session, every time. So it must stay small or you pay for
+your whole history on every message. That reframes the cap from a limitation into the architecture:
+**a tiny always-loaded profile plus an unlimited on-demand archive.** Nobody in the competitor set
+explains this.
+
+### Corrections to the earlier script
+- Path is **`~/.hermes/memories/`** (plural), files are **UPPERCASE**. Script said `memory/user.md`.
+- **Two** core memory files, not three. Tina names a third (`SOUL.md`) as the persona file; the memory
+  docs describe only two bounded stores. Verify in the folder.
+- The `memory` tool has three actions: **add / replace / remove**. There is **no read action** — the
+  content auto-injects into context.
+
+### Zero-friction alternatives to Honcho (what to show instead)
+
+Both are first-party, both are config lines, neither needs an account:
+
+1. **`background_review`** — a post-turn self-improvement fork that saves discoveries to memory and
+   skills automatically. Can be pointed at a cheaper model.
+```yaml
+auxiliary:
+  background_review:
+    enabled: true
+    provider: openrouter
+    model: google/gemini-3-flash-preview
+    extra_tools: []
+```
+2. **`write_approval`** — stage every memory write for human approval instead of writing straight
+   through. Review the queue with **`/memory pending`** (and `/skills pending` for skills).
+```yaml
+memory:
+  write_approval: false   # true = stage all writes for approval
+skills:
+  write_approval: false
+```
+
+`write_approval` is the better demo of the two: it is visual (a queue you can show), it is a
+one-line change, and "memory with a code review step" is the engineer read. **Use these as tier 3
+instead of Honcho** — Honcho is a third-party signup with credits, which is friction in a
+start-here video and dates the video if it changes.

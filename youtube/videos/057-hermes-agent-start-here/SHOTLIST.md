@@ -109,18 +109,22 @@ That one sentence turns a continuity problem into a credibility beat. Do not try
   - style rule: short sentences, no em dashes → pays off in the very next answer
 - **5.2a** [C] Watch the status line say *running memory*
 - **5.2b** [C] **Prove it is USED, not just stored,** before opening any file: "Given what you now know about me, what would you not bother explaining to me?" It should skip what an agent is and how Claude Code works, and answer short
-- **5.3** [E] Open the `.hermes` folder in Finder
-- **5.4** [E] Open `memory/user.md` in a text editor. **Scroll it slowly. This is the money shot**
+- **5.3** [E] Open **`~/.hermes/memories/`** in Finder (plural, and the files are UPPERCASE)
+- **5.4** [E] Open **`USER.md`** in a text editor. **Scroll it slowly. This is the money shot**
 - **5.5** [A] "That is a markdown file. On my machine. I can read exactly what my agent believes about me."
-- **5.6** [E] Show the other core files: one about you, one about your setup, one about the agent
+- **5.6** [E] Show **`MEMORY.md`**, the agent's own notes about your setup and what is in progress. ⚠️ **Count the files on camera before you narrate.** Docs say two bounded stores; Tina also names a `SOUL.md` persona file
 - **5.7** [E] **Edit a line live.** Delete something wrong, type something you want it to always know
 - **5.8** [A] The contrast: "ChatGPT has memory, but you cannot open it. You cannot read the file. You cannot fix a line."
 - **5.9** [F] Tier list building: **1 core files / 2 session history / 3 optional plugins**
 - **5.10** [C] **CUT TO MATURE — say the seam out loud.** New session: "Based on everything you know about how I work, draft the outline for my next video. Do not ask me any questions first."
 - **5.11** [C] It searches past sessions and returns an outline in your actual format
 - **5.12** [A] "One sentence, no context, and it did not ask me a single question." **This proves memory is USED, not stored.** Deliberately not Tina's "remind me what we talked about" recall demo
-- **5.12a** [A] **The bloat tip:** keep the core files short. They load every time, so a fat memory file makes the agent slower and worse. Specific facts, not essays. The database takes the long tail
-- **5.13** [A] Tier three, ~15 seconds, NAMED NOT BUILT: user-modeling service, or an Obsidian vault. "The ceiling is higher than this, but the two tiers you just watched are the default and they are enough"
+- **5.12a** [A] **The "oh, that is why" beat.** The two files are hard-capped, ~2,200 and ~1,375 characters. Not a limitation, the architecture: they load into the system prompt at every session start, so they must stay small
+- **5.12b** [A] Land the model: **a tiny profile that is always loaded, plus an unlimited archive searched on demand.** Nobody in the competitor set explains this
+- **5.13** [E] **Zero-friction tier 3, no accounts.** Show `auxiliary.background_review` in `config.yaml` — it curates memory after your turns on its own, and can run on a cheap model
+- **5.13a** [E] **`memory.write_approval: true`** — the better demo. It queues writes instead of writing straight through
+- **5.13b** [C] Run **`/memory pending`**, show a staged write. "Nothing goes into my agent's head without me seeing it. That is memory with a code review step, and it is a config line, not a service"
+- **5.13c** [A] Name the ceiling in one line, do NOT build it: an external user-modeling service, or an Obsidian vault. "The two tiers you just watched are the default, they need no accounts, and they are enough"
 - **5.14** [A] The compounding close: "A session tool is exactly as good on day two hundred as day one. This one is not."
 
 ## 6. SKILLS — 6:15-8:00

@@ -140,13 +140,15 @@ Ten seconds in and it already talks to me differently. And notice it kept the an
 
 And here is what I want you to actually look at.
 
-[SHOW: the .hermes folder in Finder, then memory/user.md open in a text editor]
+[SHOW: ~/.hermes/memories/ in Finder, then USER.md open in a text editor]
 
 That is a markdown file. On my machine. I can open it, read it, and see exactly what my agent believes about me, in plain English.
 
 [SHOW: scroll the file slowly]
 
-There are a few of these. One about me, one about my setup, one about the agent itself. And because it is just a file, I can edit it. If it learned something wrong, I delete the line. If I want it to always know something, I type it in myself.
+There are two of them. USER dot MD is about me. MEMORY dot MD is the agent's own notes, what it has figured out about my setup and what is in progress. And because they are just files, I can edit them. If it learned something wrong, I delete the line. If I want it to always know something, I type it in myself.
+
+[NOTE: VERIFY ON CAMERA. Docs say two bounded stores in ~/.hermes/memories/. Tina also mentions a SOUL.md persona file. Look in the folder before you narrate the count.]
 
 [NOTE: land this. Compare to a black box on purpose.]
 
@@ -171,9 +173,35 @@ Brand new session, one sentence, no context. And it did not ask me a single ques
 
 That is the difference between an agent that stores things and an agent that uses them.
 
-And one piece of housekeeping, because this is where people wreck it later. Keep those core files short. It is tempting to dump your whole life in there, but they load every single time, so a bloated memory file makes the agent slower and worse. Specific facts, not essays. The database is where the long tail goes.
+And here is the detail that makes the whole design click, which I have not seen anyone explain.
 
-There is a third tier I am not going to set up here. You can plug in a user-modeling service that watches how you work and picks up patterns you have not told it, or point the whole thing at an Obsidian vault so its memory and your notes become the same thing. Worth knowing the ceiling is a lot higher than this. But the two tiers you just watched are the default, they need no accounts, and they are genuinely enough.
+Those two files are capped. Hard limits, about twenty two hundred characters and about thirteen hundred. You cannot dump your life story in there even if you want to.
+
+[SHOW: the character counts, or the cap in the docs]
+
+And that is not a limitation, that is the point. Those files get loaded into the system prompt at the start of every single session. Every one. So they have to stay small or you would be paying for your entire history on every message you send.
+
+So now the two tiers actually make sense as a design. A tiny profile that is always loaded, and an unlimited archive that gets searched only when it is needed. Small and always on, big and on demand. That is the whole memory model.
+
+[NOTE: this is the "oh, that is why" beat. It reframes the cap from a limit into an architecture.]
+
+Now, two settings worth knowing, and neither one costs you an account.
+
+First, it curates itself. There is a background review that runs after your turns and saves what it learned, on its own. You can point that at a cheap model so it costs almost nothing.
+
+[SHOW: the background_review block in config.yaml]
+
+Second, and this is the one I would turn on. You can make it ask permission before it writes anything to memory.
+
+[SHOW: config - memory: write_approval: true]
+
+Flip that, and instead of writing straight to the file, it queues the change and you review it.
+
+[SHOW: run /memory pending, show a staged write]
+
+So nothing goes into your agent's head without you seeing it first. That is memory with a code review step, and it is a config line, not a service.
+
+There is a ceiling above this, an external user-modeling service that spots patterns you never told it, or pointing the whole thing at an Obsidian vault. I am not setting those up here. The two tiers you just watched are the default, they need no accounts, and they are genuinely enough.
 
 [SHOW: back to camera]
 
