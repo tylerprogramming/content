@@ -14,9 +14,13 @@ If you already use Claude Code, you are going to get this one fast. Hermes is th
 
 [SHOW: Hermes running in a terminal + the desktop app, quick]
 
-It is a free, open-source agent from Nous Research. It runs on your own server. It remembers everything. It writes its own skills as it works. And it keeps going while your laptop is closed.
+It is a free, open-source agent from Nous Research. It runs on your own machine. It remembers everything. It writes its own skills as it works. And it keeps going while your laptop is closed.
+
+Here is the part nobody tells you though. Most people install this, poke at it for ten minutes, and never open it again. And it is almost always the same three things they skipped. Get those three right and it stops being a toy and starts being staff.
 
 Before I set it up, look at what that actually gets you.
+
+[NOTE: the three things = the three features (memory, a self-written skill, one cron on an always-on host). The outro already pays this off word for word - "if you set up just those three things." This line is what sets it up. Stakes framing borrowed from Tina's open, compressed to 12 seconds.]
 
 [NOTE: no channel intro. 20-25 seconds max, then hard cut to the montage]
 
