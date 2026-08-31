@@ -121,9 +121,16 @@ That one sentence turns a continuity problem into a credibility beat. Do not try
 - **5.12** [A] "One sentence, no context, and it did not ask me a single question." **This proves memory is USED, not stored.** Deliberately not Tina's "remind me what we talked about" recall demo
 - **5.12a** [A] **The "oh, that is why" beat.** The two files are hard-capped, ~2,200 and ~1,375 characters. Not a limitation, the architecture: they load into the system prompt at every session start, so they must stay small
 - **5.12b** [A] Land the model: **a tiny profile that is always loaded, plus an unlimited archive searched on demand.** Nobody in the competitor set explains this
-- **5.13** [E] **Zero-friction tier 3, no accounts.** Show `auxiliary.background_review` in `config.yaml` — it curates memory after your turns on its own, and can run on a cheap model
-- **5.13a** [E] **`memory.write_approval: true`** — the better demo. It queues writes instead of writing straight through
+- **5.13** [B] **How you change anything.** `hermes config` prints current settings. `hermes config edit` opens the YAML. `hermes config set KEY VAL` routes automatically: API keys to `.env`, everything else to `config.yaml`. Also `get`, `unset`, `check`, `migrate`
+- **5.13a** [B] **Zero-friction tier 3, no accounts.** Set the background review live:
+  - `hermes config set auxiliary.background_review.enabled true`
+  - `hermes config set auxiliary.background_review.provider openrouter`
+  - `hermes config set auxiliary.background_review.model deepseek/deepseek-v4-flash`
+  - Omitting provider/model defaults to `auto` = your main chat model, so setting them IS the saving
+- **5.13a2** [F] **The price beat, ~10s.** Docs suggest `google/gemini-3-flash-preview` = **$0.50/M in, $3.00/M out**. `deepseek/deepseek-v4-flash` = **$0.087/M in, $0.174/M out**. ~6x cheaper in, ~17x cheaper out, both tool-capable. On a job that reviews every turn, output price is what bites. "Read the docs, then check the number"
+- **5.13a3** [B] **`hermes config set memory.write_approval true`** — the better demo of the two
 - **5.13b** [C] Run **`/memory pending`**, show a staged write. "Nothing goes into my agent's head without me seeing it. That is memory with a code review step, and it is a config line, not a service"
+- **5.13b2** [C] **"You can just ask it."** Say: "turn on memory write approval for me and show me what you changed." It has a terminal and file access, so it edits its own config. ⚠️ **Not the documented path** — teach `hermes config set` first, then show this as what you are actually running. Do not present it as the supported way
 - **5.13c** [A] Name the ceiling in one line, do NOT build it: an external user-modeling service, or an Obsidian vault. "The two tiers you just watched are the default, they need no accounts, and they are enough"
 - **5.14** [A] The compounding close: "A session tool is exactly as good on day two hundred as day one. This one is not."
 

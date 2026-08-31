@@ -187,19 +187,56 @@ So now the two tiers actually make sense as a design. A tiny profile that is alw
 
 Now, two settings worth knowing, and neither one costs you an account.
 
-First, it curates itself. There is a background review that runs after your turns and saves what it learned, on its own. You can point that at a cheap model so it costs almost nothing.
+First, it curates itself. There is a background review that runs after your turns and saves what it learned, on its own. And you can point that at a cheaper model than the one you are actually chatting with.
 
-[SHOW: the background_review block in config.yaml]
+Here is how you change anything in this thing, by the way, because you do not have to go hunting for files.
 
-Second, and this is the one I would turn on. You can make it ask permission before it writes anything to memory.
+[SHOW: terminal]
+```
+hermes config
+```
 
-[SHOW: config - memory: write_approval: true]
+That prints your current settings. And to change one, you set it by key.
+
+[SHOW: terminal, typing each]
+```
+hermes config set auxiliary.background_review.enabled true
+hermes config set auxiliary.background_review.provider openrouter
+hermes config set auxiliary.background_review.model deepseek/deepseek-v4-flash
+```
+
+It figures out where each value belongs on its own. API keys go to your env file, everything else goes to the config. And if you would rather just see the whole thing, `hermes config edit` opens it in your editor.
+
+[SHOW: hermes config edit, the auxiliary block on screen]
+
+Now, about that model I just picked, because this is worth ten seconds.
+
+The docs suggest a Gemini Flash model as the cheap option. I looked it up. It is fifty cents per million in and three dollars per million out.
+
+[SHOW: on-screen price comparison]
+
+The DeepSeek Flash model is eight cents in and seventeen cents out. Same job, tool-capable, and it is roughly six times cheaper going in and seventeen times cheaper coming out. On a job that reviews every single turn you take, the output price is the one that gets you. So read the docs, then check the number.
+
+[NOTE: this is the engineer beat. Do not just repeat the docs example, price it.]
+
+Second setting, and this is the one I would actually turn on. You can make it ask permission before it writes anything to memory.
+
+[SHOW: terminal]
+```
+hermes config set memory.write_approval true
+```
 
 Flip that, and instead of writing straight to the file, it queues the change and you review it.
 
 [SHOW: run /memory pending, show a staged write]
 
-So nothing goes into your agent's head without you seeing it first. That is memory with a code review step, and it is a config line, not a service.
+So nothing goes into your agent's head without you seeing it first. That is memory with a code review step, and it is one command, not a service.
+
+And one more thing worth pointing out, since it has a terminal and it can edit files. You can just ask it. I said "turn on memory write approval for me and show me what you changed," and it went and did it.
+
+[SHOW: asking the agent, it edits the config and reports the diff]
+
+That is not the documented way, so I would learn the config command first. But it is a good reminder of what you are actually running here. It can change itself.
 
 There is a ceiling above this, an external user-modeling service that spots patterns you never told it, or pointing the whole thing at an Obsidian vault. I am not setting those up here. The two tiers you just watched are the default, they need no accounts, and they are genuinely enough.
 
