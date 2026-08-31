@@ -114,10 +114,23 @@ First move, and the thing everyone skips: tell it about yourself.
 
 [SHOW: typing the line below]
 ```
-Here is a bit about me, please remember this: I'm a software engineer building AI content. Keep answers concise.
+Here's some stuff about me I want you to remember. I'm a software engineer, 8 years, now doing AI engineering. I run a YouTube channel called tylerreedai about Claude and AI automation. I already use Claude Code every day. When you write for me: short sentences, no em dashes.
 ```
 
+[NOTE: every fact in that line is load-bearing later. The channel name pays off in the skills beat when it already knows whose channel to compare against. "Claude Code every day" pays off in the outro. The style rule pays off in the very next answer, on screen.]
+
 Watch the bottom. It says running memory. It just wrote that to disk.
+
+Now before I show you the file, watch this, because storing it is not the interesting part. Using it is.
+
+[SHOW: type the follow-up]
+```
+Given what you now know about me, what would you not bother explaining to me?
+```
+
+[SHOW: it answers - it won't explain what an agent is, or how Claude Code works, and the answer itself is short]
+
+Ten seconds in and it already talks to me differently. And notice it kept the answer short, because I told it to once.
 
 And here is what I want you to actually look at.
 

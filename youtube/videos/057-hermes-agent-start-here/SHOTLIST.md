@@ -101,7 +101,13 @@ That one sentence turns a continuity problem into a credibility beat. Do not try
 ## 5. MEMORY — THE HERO — 4:00-6:15 · **starts FRESH, cuts to MATURE**
 
 - **5.1** [A] "If you only take one thing from this video, take this one"
-- **5.2** [C] **FRESH:** type the about-me line, watch the status say *running memory*
+- **5.2** [C] **FRESH:** type the about-me line. Every fact in it is load-bearing later:
+  - software engineer, 8 years, now AI engineering
+  - YouTube channel **tylerreedai**, Claude and AI automation → pays off at 6.3
+  - already uses Claude Code daily → pays off at 9.1
+  - style rule: short sentences, no em dashes → pays off in the very next answer
+- **5.2a** [C] Watch the status line say *running memory*
+- **5.2b** [C] **Prove it is USED, not just stored,** before opening any file: "Given what you now know about me, what would you not bother explaining to me?" It should skip what an agent is and how Claude Code works, and answer short
 - **5.3** [E] Open the `.hermes` folder in Finder
 - **5.4** [E] Open `memory/user.md` in a text editor. **Scroll it slowly. This is the money shot**
 - **5.5** [A] "That is a markdown file. On my machine. I can read exactly what my agent believes about me."
