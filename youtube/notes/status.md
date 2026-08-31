@@ -3,7 +3,7 @@
 > **Live pipeline state — the operational source of truth.** What's recording next, what's with the editor, what's queued.
 > For full content inventory across all platforms, see `~/content/system/tracker.md`.
 >
-> **Open this first.** Last updated: 2026-08-10
+> **Open this first.** Last updated: 2026-08-31
 > **Also tracked in ClickUp:** YouTube list (id 901710640585), Space "Team Space". Keep both in sync on every stage change — this file is the source of truth. (ClickUp reconciled 2026-07-22: confirmed 021/023/024/025/028/034 complete; marked `026` (scheduled tonight) + 6 already-live back-catalog videos (011/012 + Antigravity, YT Workflow, Build ANYTHING, 23 Concepts) complete; `86e2drehj` social push + `027` remain in progress.)
 
 ---
@@ -72,7 +72,7 @@ The winning lane = **"I Automated My ___ With Claude Code"** (showcase). Mirrors
 |---|---|---|
 | How To Build AI Agents in 2026 (5 Steps, No Code) | `videos/050-build-ai-agents-2026/` | ✅ **RECORDED 2026-08-29 → WITH EDITOR.** Built the `social-me` skill live (renamed from social-research on camera), Apify MCP + yt_transcript.py + `grilling` roast, ran it, scheduled it. Post-edit: /yt-chapters, thumbnail (designer), /yt-seo already done, queue upload. |
 | DeepSeek Harness: The Open-Source Claude Code (Setup + Features) | `videos/056-deepseek-harness/` | ✅ **RECORDED 2026-08-30 → WITH EDITOR.** Filmed from `RUNSHEET.md` + `SHOTLIST.md` (10 beats, ~12 min). Structure landed on the live findings: rewritten harness explainer up front, his `.agents/skills` loading in dsh unported, the custom Tyler preset beside the four shipped modes, Claude Code as a subagent (HERO), and the honest plugin segment. ClickUp `86e30q32d`. **Post-edit:** /yt-chapters for real timestamps → thumbnail brief to designer (`yt-thumbnail.md`, Concept A primary, Concept B "IT RUNS CLAUDE CODE" as the A/B) → /yt-seo already done 2026-08-28 → /yt-shorts + /social-copy → /yt-upload and schedule. Cover fast, the term is peaking. |
-| Set Up Hermes Agent (Claude Code Users Start Here) | `hermes-agent-start-here/` | Package built 2026-08-25. Own identity (NOT "first agent in 5 steps" - that's 050). Queued. |
+| Set Up Hermes Agent (Claude Code Users Start Here) | `videos/057-hermes-agent-start-here/` | 🔴 **NEXT TO FILM** (Tyler's call 2026-08-31). Numbered 057 + moved under videos/ 2026-08-31. Package complete: script, titles, hooks, filming-guide, description, tags, thumbnail brief, plus a `setup-checklist.md`. Own identity (NOT "first agent in 5 steps" - that was 038, now superseded by 050). Contested lane, not empty: Tina Huang 314k, Nate Herk 349k, Greg Isenberg 161k. ⚠️ Working title "Hermes Agent Explained in 10 Minutes" breaks packaging rule #2 (no "Explained") - pick from `titles.md` before filming. ClickUp `86e31d3j9`. Refs transcribed: Tina Huang 29:40 (`transcript_5_N84t1rUU0.txt`), Greg Isenberg (`transcript_hermes_greg.txt`). |
 
 ---
 
@@ -86,7 +86,7 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 | 2 | 17 Claude Code Skills That Run My Business | `040-claude-code-skills-run-my-business/` | ✅ **RE-RECORDED 2026-07-31** (supersedes the 07-28 take) → to edit |
 | 3 | I Automated My Publishing With Claude Code | `039-automated-publishing/` | Package complete. **Films next.** |
 | 4 | The Simple Claude Code YouTube Workflow | `037-youtube-workflow-simple/` | Package complete. |
-| 5 | Build Your First AI Agent (No Code) | `038-build-first-ai-agent/` | Package complete. |
+| 5 | ~~Build Your First AI Agent (No Code)~~ | `038-build-first-ai-agent/` | 🗄️ **SUPERSEDED 2026-08-31 by `050-build-ai-agents-2026` (recorded 2026-08-29).** Same video, do not film. Archive candidate. |
 | backup | ElevenLabs Dubbing v2 | `036-elevenlabs-dubbing-v2/` | Package complete. |
 
 **Reels (039):** 5 reel scripts ready in `039-automated-publishing/reels.md` (fan-out flagship, queue-fills payoff, Pinterest sleeper, not-a-spam-cannon, automate-one-platform). To cut after recording.
@@ -142,6 +142,7 @@ Prompts docs for the batch live in Google Drive → "Tyler AI - YouTube Resource
 | Video | Folder | Why |
 |---|---|---|
 | Cowork 30-Min Course | `013-claude-cowork-course-30/` | Superseded by the masterclass + clearly-explained versions |
+| Build Your First AI Agent (No Code) | `038-build-first-ai-agent/` | Superseded 2026-08-31 by `050-build-ai-agents-2026`, recorded 2026-08-29. Same video. |
 
 > Repo cleaned 2026-06-24: stray root dupes/leftovers archived to `youtube/_archive/`; empty `067-` deleted. Root is now active packages only.
 
