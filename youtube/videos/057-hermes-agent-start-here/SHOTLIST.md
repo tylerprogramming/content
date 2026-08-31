@@ -100,7 +100,8 @@ That one sentence turns a continuity problem into a credibility beat. Do not try
 
 ## 5. MEMORY — THE HERO — 4:00-6:15 · **starts FRESH, cuts to MATURE**
 
-- **5.1** [A] "If you only take one thing from this video, take this one"
+- **5.1** [A] **Open on the pain, not the feature:** the last time you opened Claude Code on a week-old project, you spent two minutes re-explaining it. Every session. None of it sticks. "That is not a bug, that is what a session is. But it is the tax."
+- **5.1a** [A] Tier plan for this video: **1 and 2 deep, 3 named only.** Tina spends 7 min here and still says the defaults are fine for most people. Do not set up a third-party service in a start-here video
 - **5.2** [C] **FRESH:** type the about-me line. Every fact in it is load-bearing later:
   - software engineer, 8 years, now AI engineering
   - YouTube channel **tylerreedai**, Claude and AI automation → pays off at 6.3
@@ -115,10 +116,11 @@ That one sentence turns a continuity problem into a credibility beat. Do not try
 - **5.7** [E] **Edit a line live.** Delete something wrong, type something you want it to always know
 - **5.8** [A] The contrast: "ChatGPT has memory, but you cannot open it. You cannot read the file. You cannot fix a line."
 - **5.9** [F] Tier list building: **1 core files / 2 session history / 3 optional plugins**
-- **5.10** [C] **CUT TO MATURE — say the seam out loud.** New session, ask "remind me what we discussed about my content workflow earlier this week"
-- **5.11** [C] It runs a session search and answers with real detail
-- **5.12** [A] "Brand new session. I did not paste anything in or re-explain who I am. It just knew."
-- **5.13** [A] Tier three in one line: deeper user modeling, or point it at an Obsidian vault
+- **5.10** [C] **CUT TO MATURE — say the seam out loud.** New session: "Based on everything you know about how I work, draft the outline for my next video. Do not ask me any questions first."
+- **5.11** [C] It searches past sessions and returns an outline in your actual format
+- **5.12** [A] "One sentence, no context, and it did not ask me a single question." **This proves memory is USED, not stored.** Deliberately not Tina's "remind me what we talked about" recall demo
+- **5.12a** [A] **The bloat tip:** keep the core files short. They load every time, so a fat memory file makes the agent slower and worse. Specific facts, not essays. The database takes the long tail
+- **5.13** [A] Tier three, ~15 seconds, NAMED NOT BUILT: user-modeling service, or an Obsidian vault. "The ceiling is higher than this, but the two tiers you just watched are the default and they are enough"
 - **5.14** [A] The compounding close: "A session tool is exactly as good on day two hundred as day one. This one is not."
 
 ## 6. SKILLS — 6:15-8:00

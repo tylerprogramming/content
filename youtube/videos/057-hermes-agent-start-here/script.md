@@ -108,9 +108,15 @@ But you do not have to pay per token. At the very end I will show you how to run
 
 ## [4:00 - 6:15] Feature 1 (the big one) — It remembers everything
 
-This is the feature. If you only take one thing from this video, take this one, because it is the thing I said Claude Code structurally cannot do.
+Think about the last time you opened Claude Code on a project you had not touched in a week.
 
-First move, and the thing everyone skips: tell it about yourself.
+You spent the first two minutes re-explaining it. What the stack is, how you like things done, what you already tried. You do that every session. Every day. And none of it sticks, because the session ends and it is gone.
+
+That is not a bug, that is what a session is. But it is the tax, and it is the thing this fixes.
+
+[NOTE: open on the pain, not on "this is the feature". The audience has lived this one.]
+
+So. First move, and the thing everyone skips: tell it about yourself.
 
 [SHOW: typing the line below]
 ```
@@ -154,14 +160,20 @@ Tier two is every conversation you have ever had with it. All of them get writte
 
 [SHOW: brand new session, type below]
 ```
-Remind me what we discussed about my content workflow earlier this week.
+Based on everything you know about how I work, draft the outline for my next video. Do not ask me any questions first.
 ```
 
-[SHOW: it runs a session search and answers with the real detail]
+[SHOW: it searches past sessions and produces an outline that is actually in his format]
 
-Brand new session. It went and found it. And notice what did not happen: I did not paste anything in, I did not point it at a file, I did not re-explain who I am. It just knew.
+[NOTE: deliberately NOT "remind me what we talked about." That recite-a-past-conversation demo is exactly what Tina does, same sentence shape, and it only proves storage. This one proves the memory is load bearing: it produces work, in his format, with zero context given.]
 
-Tier three is optional and I will not set it up here, but you can plug in deeper user modeling, or point it at an Obsidian vault so its memory and your notes are the same thing.
+Brand new session, one sentence, no context. And it did not ask me a single question, because it did not need to. It knows the channel, it knows how I structure these, it has seen the last dozen.
+
+That is the difference between an agent that stores things and an agent that uses them.
+
+And one piece of housekeeping, because this is where people wreck it later. Keep those core files short. It is tempting to dump your whole life in there, but they load every single time, so a bloated memory file makes the agent slower and worse. Specific facts, not essays. The database is where the long tail goes.
+
+There is a third tier I am not going to set up here. You can plug in a user-modeling service that watches how you work and picks up patterns you have not told it, or point the whole thing at an Obsidian vault so its memory and your notes become the same thing. Worth knowing the ceiling is a lot higher than this. But the two tiers you just watched are the default, they need no accounts, and they are genuinely enough.
 
 [SHOW: back to camera]
 
