@@ -1,8 +1,10 @@
 # Script — Set Up Hermes Agent in 10 Minutes (Claude Code Users Start Here)
 
-Target: ~10 min. Conversational, short sentences. `[SHOW: ...]` = on screen. `[NOTE: ...]` = production.
+Target: ~13 min. Conversational, short sentences. `[SHOW: ...]` = on screen. `[NOTE: ...]` = production.
 
-**Structure change (v2):** hook lands by 0:30, then a punchy "look what it does" montage of real results (0:30-1:00), then straight into the live install. The old talky "what is it vs Claude Code" section is cut - the montage and the feature demos carry the differentiation. See `filming-guide.md` for record order: the montage is filmed LAST as cutaways.
+**Structure change (v3, 2026-08-31):** the "what is it / why would I run this" section is BACK, and it is the segment that makes the rest land. v2 cut it and let the montage carry the differentiation; that was wrong. The same beat carried video 056 and it is what people searching a tool name actually need. Memory is also promoted from a 90-second feature to the hero, because it is the one thing Claude Code structurally cannot do, and the script already says so. Target moves ~10:30 → ~13:00, still less than half Tina's 29:40.
+
+See `filming-guide.md` for record order: the montage is filmed LAST as cutaways.
 
 ---
 
@@ -42,7 +44,37 @@ Here is the whole setup, and the three features that make it worth running.
 
 ---
 
-## [1:00 - 2:30] Install and pick a model (LIVE RECORDING STARTS HERE)
+## [1:00 - 2:30] What this actually is, and why you'd run one
+
+Before we install anything, thirty seconds on what this thing is, because the category is new and the name does not tell you.
+
+Hermes is not a chatbot and it is not a coding tool. It is a process that runs.
+
+[SHOW: a plain diagram - CLAUDE CODE = a session you open. HERMES = a process that stays running.]
+
+And that one difference is the whole thing. Think about how you use Claude Code. You open it in a repo. It does the work. You close it. And when you open it again, it does not know you. Every session starts from nothing. That is not a flaw, that is the design. It is a specialist you call in.
+
+Hermes is the opposite shape. It starts once and it does not stop. Which buys you three things a session-based tool structurally cannot do.
+
+[SHOW: three items building on screen as you say them]
+
+One, it remembers. Not context inside one conversation, actual memory on disk that survives across every session, forever.
+
+Two, it runs when you are not there. Scheduled, on its own, at three in the morning, laptop closed.
+
+Three, it reaches you anywhere. Telegram, Discord, Slack, email. Same agent, same memory, on your phone.
+
+[SHOW: back to camera]
+
+So the honest answer to "why would I run this if I already have Claude Code" is that they are not for the same work. Claude Code is for the code. This is for everything around the code that you currently do by hand. Watching things. Checking things. Drafting things. Remembering things. The work that is not hard, it is just constant.
+
+It is free, it is open source, it is from Nous Research, and it runs on your own machine or a five dollar server. There is one real cost and I will be straight about it up front: it only works while the machine it lives on is awake. We will deal with that later in the video.
+
+[NOTE: 90 seconds, do not let it drift. If a read runs long, cut the "not a flaw, that is the design" line.]
+
+---
+
+## [2:30 - 4:00] Install and pick a model (LIVE RECORDING STARTS HERE)
 
 Let's install it. Two ways, pick whichever fits you.
 
@@ -70,35 +102,61 @@ But you do not have to pay per token. At the very end I will show you how to run
 
 ---
 
-## [2:30 - 4:00] Feature 1 — It remembers everything
+## [4:00 - 6:15] Feature 1 (the big one) — It remembers everything
 
-First thing to do, and the thing everyone skips: tell it about yourself.
+This is the feature. If you only take one thing from this video, take this one, because it is the thing I said Claude Code structurally cannot do.
+
+First move, and the thing everyone skips: tell it about yourself.
 
 [SHOW: typing the line below]
 ```
 Here is a bit about me, please remember this: I'm a software engineer building AI content. Keep answers concise.
 ```
 
-Watch this. It says running memory. It just wrote that to disk.
+Watch the bottom. It says running memory. It just wrote that to disk.
 
-Here is where it lives.
+And here is what I want you to actually look at.
 
 [SHOW: the .hermes folder in Finder, then memory/user.md open in a text editor]
 
-That is plain markdown. You can read exactly what your agent knows about you. A file about you, a file about your setup, a file about the agent itself.
+That is a markdown file. On my machine. I can open it, read it, and see exactly what my agent believes about me, in plain English.
 
-And that is just the first tier. Every conversation you have also gets saved to a database. So when I start a brand new session and ask about something from last week, it searches its own history and pulls it back.
+[SHOW: scroll the file slowly]
 
-[SHOW: new session, type below, it runs session search and answers]
+There are a few of these. One about me, one about my setup, one about the agent itself. And because it is just a file, I can edit it. If it learned something wrong, I delete the line. If I want it to always know something, I type it in myself.
+
+[NOTE: land this. Compare to a black box on purpose.]
+
+Think about how different that is from every assistant you have used. ChatGPT has memory, but you cannot open it. You cannot read the file. You cannot fix a line. Here the memory is yours, it is text, and it is sitting in a folder.
+
+That is tier one. There are two more.
+
+[SHOW: on-screen list building: 1 core files / 2 session history / 3 optional plugins]
+
+Tier two is every conversation you have ever had with it. All of them get written to a database on disk and summarized, so it can search its own history. Watch.
+
+[SHOW: brand new session, type below]
 ```
 Remind me what we discussed about my content workflow earlier this week.
 ```
 
-This is the thing Claude Code cannot do out of the box. It remembers.
+[SHOW: it runs a session search and answers with the real detail]
+
+Brand new session. It went and found it. And notice what did not happen: I did not paste anything in, I did not point it at a file, I did not re-explain who I am. It just knew.
+
+Tier three is optional and I will not set it up here, but you can plug in deeper user modeling, or point it at an Obsidian vault so its memory and your notes are the same thing.
+
+[SHOW: back to camera]
+
+Here is why this matters more than it sounds. Every one of these tools starts a session from zero. So you spend the first two minutes of every session re-explaining your setup, your preferences, your project. Multiply that by every session, every day. This is the thing that stops.
+
+And the compounding part: the longer it runs, the better it gets, because it knows more about you. A session-based tool is exactly as good on day two hundred as it was on day one. This one is not.
+
+[NOTE: this is the hero beat now, ~2:15. Let the file on screen breathe. Do not rush the "I can edit it" moment.]
 
 ---
 
-## [4:00 - 5:45] Feature 2 — It writes its own skills
+## [6:15 - 8:00] Feature 2 — It writes its own skills
 
 Second feature, and this is the one Claude Code users will feel at home with: skills.
 
@@ -137,7 +195,7 @@ I did the exact same move to build a skill that drafts my Skool post from a new 
 
 ---
 
-## [5:45 - 8:30] Feature 3 — It runs on a schedule, without you
+## [8:00 - 10:45] Feature 3 — It runs on a schedule, without you
 
 Third feature, and this is the one that turns it from a chatbot into an employee: cron jobs and gateways.
 
@@ -184,7 +242,7 @@ Now picture this. It is on that five dollar server, on twenty four seven. Overni
 
 ---
 
-## [8:30 - 9:30] Bonus — Run it 100% local and free (desktop or terminal)
+## [10:45 - 11:45] Bonus — Run it 100% local and free (desktop or terminal)
 
 One more, because I promised you free. You can run this entirely on your own machine, no API keys. I already have Ollama installed, so let me point Hermes at it. I will show you both ways, terminal and the desktop app.
 
@@ -225,7 +283,7 @@ Now everything is private. The model is on your machine, the memory is on your m
 
 ---
 
-## [9:30 - 10:30] Where it fits, and what's next
+## [11:45 - 13:00] Where it fits, and what's next
 
 So here is how I think about it as a software engineer. This is not Claude Code versus Hermes. I run both.
 
@@ -235,7 +293,9 @@ Claude Code is my specialist. I open it in a repo when I am writing serious code
 
 If you set up just those three things - memory, a self-written skill, and one cron job on a server that stays on - you already have something most people never get to.
 
-Next I am going to show you exactly how I use it every day, and how to run it fully private with a local model. If you want those, subscribe so you catch them.
+Everything I showed you here is running on mine right now. The competitor watch, the comment drafts, the morning brief. That is not a demo I built for the video, that is the setup.
+
+The next one is the multi-agent version, where several of these run at once and hand work to each other. If you want that, subscribe so you catch it.
 
 [SHOW: end card]
 

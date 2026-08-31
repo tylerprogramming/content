@@ -1,3 +1,5 @@
+**⚠️ UPDATED 2026-08-31 (v3):** the script now runs ~13 min, not ~10. Two changes: a new **"what this actually is, and why you'd run one"** segment at 1:00-2:30 (it was cut in v2, it is back and it is what makes the rest land), and **memory promoted to the hero beat** at 4:00-6:15 with the editable markdown file as the money shot. Timings below may still read v2 - trust `script.md`.
+
 # Filming Guide — Set Up Hermes Agent in 10 Minutes
 
 The do-this / click-that version. Follow it top to bottom while recording. Target ~10 min finished.
