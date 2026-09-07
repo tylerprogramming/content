@@ -10,7 +10,7 @@ This is Tyler's **content operations repo** — the working home of his YouTube 
 | `system/tracker.md` | **Content inventory** — what exists across all platforms. |
 | `system/INDEX.md` | File-finder front door when you don't know where something lives. |
 
-**ClickUp sync rule:** the pipeline is mirrored in ClickUp (YouTube list id `901710640585`). `youtube/notes/status.md` is the source of truth — whenever a video moves stages, update the file **and** the ClickUp task.
+**ClickUp sync rule:** the pipeline is mirrored in ClickUp (YouTube list id `901710640585`). `youtube/notes/status.md` is the source of truth — whenever a video moves stages, update the file **and** the ClickUp task. ClickUp statuses (set 2026-09-07) are the pipeline: `idea` (also parked videos and COURSE/planning tasks) → `packaged` (film queue) → `filming` → `editing` → `publish` → `complete`. Move the task's status, not its name prefix.
 
 ## Folder map
 
