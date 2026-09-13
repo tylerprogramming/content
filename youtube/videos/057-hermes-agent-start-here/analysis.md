@@ -130,3 +130,6 @@ skills:
 one-line change, and "memory with a code review step" is the engineer read. **Use these as tier 3
 instead of Honcho** — Honcho is a third-party signup with credits, which is friction in a
 start-here video and dates the video if it changes.
+
+## Creator breakdowns
+- Tina Huang, 29:40: `~/content/research/youtube/creator-breakdowns/2026-09-12-tina-huang-hermes-fundamentals.md` (beat table, rhythm, gaps, our-beat plan)
