@@ -1,6 +1,13 @@
-# Hermes setup — where we are (2026-09-12)
+# Hermes setup — where we are (2026-09-12, corrected 2026-09-15)
 
-Working state for video 057 + the "personal agency" build. Everything below is verified on Tyler's Mac Studio today.
+Working state for video 057 + the "personal agency" build.
+
+> **Corrections applied 2026-09-15** (re-read off the machine, see `analysis.md` for the full table):
+> 1. Roster is **four** profiles: `coder`, `coder-reviewer`, `packager`, `researcher`. The table below said two. `packager` carries the `yt-package` skill; `coder-reviewer` is a near-duplicate of `coder` and should be hidden or deleted before filming the roster.
+> 2. Local model tags are **`qwen3.8:27b-q8_0`** and **`gemma4:e4b`**, not `qwen3.8:latest`. `background_review` is pointed at `gemma4:e4b`.
+> 3. Version is **v0.21.3 (2026.9.14)**, 107 commits behind upstream.
+> 4. Coder's cron last ran **ok at 2026-09-14 21:05**; the 8am run that day was 15 minutes late. The two default-profile routines are both `ok`.
+> 5. Gateway logged a Slack Socket Mode reconnect on 09-14 16:22. Check Slack first if it looks dead on film day.
 
 ## Running
 
@@ -46,10 +53,11 @@ Us: same spine, half the explainer, and the ending beats hers: Bots tab handoff 
 
 ## Next (in order)
 
-1. Open desktop Bots tab, confirm both bots + avatars render.
+1. Open desktop Bots tab, confirm all four bots + avatars render. Hide or delete `coder-reviewer`.
 2. `coder cron run "coder: morning repo check"` once; confirm Slack card shape.
-3. Optional: second Slack app for Coder only (pays off the ending).
-4. Rewrite 057 script to 30 min with these beats.
+3. **Dry-run the full handoff chain end to end** (Researcher -> Packager -> Coder -> PR -> Slack). This is the video's ending and all three links are still unverified. Fallbacks in `filming-guide.md`.
+4. Optional: second Slack app for Coder only (pays off the ending).
+5. ~~Rewrite 057 script to 30 min with these beats.~~ **Done 2026-09-15.** Package rebuilt to v4: `titles.md`, `hooks.md`, `script.md`, `filming-guide.md`, `description.md`, `tags.txt`, `yt-thumbnail.md`, `analysis.md`. The 13-minute v3 files are archived in `_v3-13min/`.
 
 ## Files
 

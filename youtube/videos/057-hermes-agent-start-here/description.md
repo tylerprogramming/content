@@ -1,25 +1,34 @@
 # Description
 
----
+Hermes Agent is the free, open-source agent from Nous Research that runs on your own machine, remembers every session in files you can open and edit, writes its own skills as it works, and keeps running on a schedule after you close the laptop. If you already use Claude Code, this is the always-on other half: Claude Code is the specialist you open inside a repo, this is the one that handles everything around it. In this video I set it up from scratch in about thirty minutes.
 
-Hermes Agent is the free, open-source AI agent from Nous Research that runs on your own machine, remembers every session, writes its own skills as it works, and keeps running on a schedule after you close the laptop. If you already use Claude Code, this is the always-on other half. In this video I get you fully set up and walk through the three features that actually matter: persistent memory, self-written skills, and scheduled jobs, plus how to run it 100% local and free with Ollama.
+We go through the install, the memory model and why those files are capped, skills it writes for itself, scheduled jobs that deliver to Slack, and running the whole thing locally and free on Ollama. Then the part I actually built this for: a roster of named bots that hand work to each other, ending with one of them opening a pull request on GitHub and another one telling me about it on my phone.
 
-Free setup notes and every command from this video are in the community below.
+Setup notes and every command from this video are in the free community below.
 
 ## Chapters
-00:00 - Hook [UPDATE]
-00:30 - What it actually does (demos) [UPDATE]
-01:00 - Install it (terminal or desktop) [UPDATE]
-02:30 - Feature 1: it remembers everything [UPDATE]
-04:00 - Feature 2: it writes its own skills [UPDATE]
-05:45 - Feature 3: scheduled jobs, gateways + where to host it [UPDATE]
-08:30 - Run it 100% local and free [UPDATE]
-09:30 - Where it fits with Claude Code [UPDATE]
+00:00 - [UPDATE] Cold open
+00:40 - [UPDATE] What it is, and why run one next to Claude Code
+02:00 - [UPDATE] Where it lives
+02:30 - [UPDATE] Install and say hi
+05:00 - [UPDATE] Memory you can open and edit
+08:30 - [UPDATE] Session memory, and why the files are capped
+11:30 - [UPDATE] Two settings worth changing
+13:30 - [UPDATE] Skills, and porting your Claude Code skills over
+17:00 - [UPDATE] Routines: jobs that run without you
+20:30 - [UPDATE] Running it free and local
+23:00 - [UPDATE] Bots that hand work to each other
+29:00 - [UPDATE] Where it fits with Claude Code
 
 ## Links
-👉 Free community (setup notes + commands): [UPDATE - Skool link]
-🔗 Hermes Agent: https://hermes-agent.nousresearch.com
-🔗 GitHub: https://github.com/NousResearch/hermes-agent
+Free community (setup notes + every command): [UPDATE - Skool link]
+Hermes Agent: https://hermes-agent.nousresearch.com
+GitHub: https://github.com/NousResearch/hermes-agent
+Ollama: https://ollama.com
 
 ## Follow
 [UPDATE - standard channel links block]
+
+---
+
+[NOTE, not for the upload box: chapter times are the script's planned times. Regenerate them from the final cut with /yt-chapters before upload. The first line is front-loaded for the "hermes agent" head term on purpose; do not move the product name later.]
