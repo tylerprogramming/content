@@ -7,18 +7,27 @@ We go through the install, the memory model and why those files are capped, skil
 Setup notes and every command from this video are in the free community below.
 
 ## Chapters
-00:00 - [UPDATE] Cold open
-00:40 - [UPDATE] What it is, and why run one next to Claude Code
-02:00 - [UPDATE] Where it lives
-02:30 - [UPDATE] Install and say hi
-05:00 - [UPDATE] Memory you can open and edit
-08:30 - [UPDATE] Session memory, and why the files are capped
-11:30 - [UPDATE] Two settings worth changing
-13:30 - [UPDATE] Skills, and porting your Claude Code skills over
-17:00 - [UPDATE] Routines: jobs that run without you
-20:30 - [UPDATE] Running it free and local
-23:00 - [UPDATE] Bots that hand work to each other
-29:00 - [UPDATE] Where it fits with Claude Code
+0:00 What mine does while I'm not there
+0:57 What we're covering, and Claude Code
+1:35 Hardware: four places it can live
+2:30 Install: terminal and desktop
+4:00 Connect a model and say hello
+5:05 Tell it about yourself
+6:40 Where memory lives on disk
+8:35 Settings and per-bot config
+9:20 Tools and the Capabilities tab
+10:20 Messaging: Slack on your phone
+11:15 MCP servers
+11:40 Skills: turning a task into a skill
+14:40 Cron jobs and the Slack card
+17:40 Memory deep dive: three files, SOUL.md
+19:20 Session search and the memory graph
+21:00 Background review and write approval
+22:40 Profiles: creating a new bot
+25:25 Local models with Ollama
+28:20 Bots handing work to each other
+31:20 The kanban board
+32:40 Wrap up
 
 ## Links
 Free community (setup notes + every command): [UPDATE - Skool link]
@@ -29,6 +38,3 @@ Ollama: https://ollama.com
 ## Follow
 [UPDATE - standard channel links block]
 
----
-
-[NOTE, not for the upload box: chapter times are the script's planned times. Regenerate them from the final cut with /yt-chapters before upload. The first line is front-loaded for the "hermes agent" head term on purpose; do not move the product name later.]

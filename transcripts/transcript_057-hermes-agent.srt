@@ -1,0 +1,5756 @@
+1
+00:00:00,000 --> 00:00:02,220
+Welcome to the full Hermes agent setup guide.
+
+2
+00:00:02,600 --> 00:00:04,960
+Setting up your Hermes agent is important.
+
+3
+00:00:05,100 --> 00:00:07,060
+It's the difference between having a terrible time
+
+4
+00:00:07,060 --> 00:00:09,060
+or building something that's sustainable
+
+5
+00:00:09,060 --> 00:00:11,480
+that you can build on top of and improve
+
+6
+00:00:11,480 --> 00:00:13,880
+and even self-improve every single day.
+
+7
+00:00:13,980 --> 00:00:15,020
+It's been quite a few weeks
+
+8
+00:00:15,020 --> 00:00:17,520
+since I've been using Hermes agent and I love it.
+
+9
+00:00:17,620 --> 00:00:18,880
+Here I have multi-agents
+
+10
+00:00:18,880 --> 00:00:21,080
+and they work together to build something.
+
+11
+00:00:21,200 --> 00:00:22,220
+Here is a Kanban board
+
+12
+00:00:22,220 --> 00:00:24,680
+where I had something in the triage lane here
+
+13
+00:00:24,680 --> 00:00:27,840
+and it launched everything to the rightful agent
+
+14
+00:00:27,840 --> 00:00:30,040
+to build till I finally got a full script
+
+15
+00:00:30,040 --> 00:00:31,380
+with everything that I needed to know.
+
+16
+00:00:31,500 --> 00:00:32,940
+Here is it connected to my Slack.
+
+17
+00:00:33,080 --> 00:00:35,480
+So the agent is connected to a messaging capability,
+
+18
+00:00:35,860 --> 00:00:37,140
+tell me what I need to do for YouTube.
+
+19
+00:00:37,140 --> 00:00:40,640
+And then for my SaaS called attend for school CRM,
+
+20
+00:00:40,920 --> 00:00:42,740
+this is everything that I need to catch up on.
+
+21
+00:00:42,880 --> 00:00:44,520
+And there are some things that are late,
+
+22
+00:00:44,620 --> 00:00:45,960
+but I haven't written off yet.
+
+23
+00:00:46,060 --> 00:00:46,560
+So in this video,
+
+24
+00:00:46,680 --> 00:00:48,800
+I'm gonna go through my whole Hermes agent setup
+
+25
+00:00:48,800 --> 00:00:51,300
+with all the tricks and commands that I used
+
+26
+00:00:51,300 --> 00:00:52,600
+in the prompts along the way.
+
+27
+00:00:52,660 --> 00:00:54,000
+They're gonna make a big difference
+
+28
+00:00:54,000 --> 00:00:56,360
+for your experience with Hermes agent.
+
+29
+00:00:56,360 --> 00:00:57,120
+Without further ado,
+
+30
+00:00:57,120 --> 00:00:58,160
+let's get started.
+
+31
+00:00:58,280 --> 00:00:59,980
+All right, here is the outline for today's video.
+
+32
+00:01:00,060 --> 00:01:02,720
+We're gonna start off talking about the hardware choices,
+
+33
+00:01:02,720 --> 00:01:04,560
+basically where your Hermes agent is going to live.
+
+34
+00:01:04,740 --> 00:01:06,340
+We'll go through the download and setup process,
+
+35
+00:01:06,600 --> 00:01:07,800
+walk through the major features.
+
+36
+00:01:07,960 --> 00:01:10,020
+So memory, skills, cron jobs, and profiles,
+
+37
+00:01:10,320 --> 00:01:12,380
+of course, including how to set each one up properly.
+
+38
+00:01:12,600 --> 00:01:14,840
+I'll also talk about how to use open source models,
+
+39
+00:01:15,000 --> 00:01:16,880
+and then we'll explore the desktop
+
+40
+00:01:16,880 --> 00:01:18,620
+so you are familiar with it.
+
+41
+00:01:18,680 --> 00:01:19,200
+And then finally,
+
+42
+00:01:19,260 --> 00:01:20,960
+once we have all that down in the fundamentals
+
+43
+00:01:20,960 --> 00:01:22,740
+and you already started creating things,
+
+44
+00:01:23,020 --> 00:01:25,900
+I'll show you how to set up a multi-agent process.
+
+45
+00:01:25,900 --> 00:01:26,620
+And by the way,
+
+46
+00:01:26,620 --> 00:01:28,460
+if you're wondering if this replaces cloud code,
+
+47
+00:01:28,680 --> 00:01:30,220
+no, I still use cloud code every day.
+
+48
+00:01:30,440 --> 00:01:34,320
+I just use Hermes agent for much of the work.
+
+49
+00:01:34,440 --> 00:01:36,000
+Okay, so let's get started with the hardware, right?
+
+50
+00:01:36,060 --> 00:01:37,700
+We basically have four options.
+
+51
+00:01:37,940 --> 00:01:39,500
+The first one is you can get something
+
+52
+00:01:39,500 --> 00:01:40,500
+dedicated for yourself.
+
+53
+00:01:40,820 --> 00:01:42,100
+So like a Mac mini, Mac studio,
+
+54
+00:01:42,100 --> 00:01:45,140
+or some computer that you can have
+
+55
+00:01:45,140 --> 00:01:48,020
+that can run, has the ability to run local models,
+
+56
+00:01:48,140 --> 00:01:50,220
+but you may still need to use cloud models
+
+57
+00:01:50,220 --> 00:01:53,420
+for some of the major things you wanna do.
+
+58
+00:01:53,540 --> 00:01:54,680
+And not everybody can do that.
+
+59
+00:01:54,720 --> 00:01:55,740
+I totally understand.
+
+60
+00:01:55,740 --> 00:01:56,520
+And so the second,
+
+61
+00:01:56,620 --> 00:01:57,820
+the third option is a VPS.
+
+62
+00:01:57,820 --> 00:01:59,840
+I have actually quite a few through Hostinger
+
+63
+00:01:59,840 --> 00:02:01,120
+and they're very simple.
+
+64
+00:02:01,120 --> 00:02:03,520
+I think they actually have a Hermes agent set up
+
+65
+00:02:03,520 --> 00:02:06,720
+for a VPS to make it even easier for you.
+
+66
+00:02:06,720 --> 00:02:09,500
+The third option is if you have a spare laptop
+
+67
+00:02:09,500 --> 00:02:11,240
+or a computer that can be dedicated
+
+68
+00:02:11,240 --> 00:02:12,460
+just for the Hermes agent.
+
+69
+00:02:12,460 --> 00:02:14,760
+So it may not be able to run local models,
+
+70
+00:02:14,760 --> 00:02:17,520
+but as long as you can get everything set up there,
+
+71
+00:02:17,520 --> 00:02:18,600
+and then it just has to be connected
+
+72
+00:02:18,600 --> 00:02:21,020
+through one of your subscriptions that you already have.
+
+73
+00:02:21,020 --> 00:02:23,100
+And finally, you can, of course,
+
+74
+00:02:23,100 --> 00:02:25,640
+just use the computer that you're already working on.
+
+75
+00:02:25,740 --> 00:02:26,500
+You can,
+
+76
+00:02:26,500 --> 00:02:28,500
+there are ways to set up so it's running 24 seven.
+
+77
+00:02:28,500 --> 00:02:30,000
+Okay, so I'm gonna have this link,
+
+78
+00:02:30,000 --> 00:02:32,220
+but we're gonna get right into how to install it
+
+79
+00:02:32,220 --> 00:02:33,720
+and running your first Hermes agent.
+
+80
+00:02:33,720 --> 00:02:34,940
+There are two ways.
+
+81
+00:02:34,940 --> 00:02:39,940
+So at hermesagent.newsresource.com,
+
+82
+00:02:39,980 --> 00:02:40,800
+there'll be the link here.
+
+83
+00:02:40,800 --> 00:02:42,920
+There are two ways you can click Mac, Linux or Windows,
+
+84
+00:02:42,920 --> 00:02:45,120
+and this is just installing it through command line.
+
+85
+00:02:45,120 --> 00:02:47,660
+So if you prefer to have a terminal UI or TUI,
+
+86
+00:02:47,660 --> 00:02:48,500
+do it this way.
+
+87
+00:02:48,500 --> 00:02:49,620
+Okay, you just simply copy this.
+
+88
+00:02:49,620 --> 00:02:50,520
+You're gonna paste this in.
+
+89
+00:02:50,520 --> 00:02:51,980
+I already have it downloaded,
+
+90
+00:02:51,980 --> 00:02:54,060
+but it will take a few minutes for you.
+
+91
+00:02:54,060 --> 00:02:55,700
+And it's just installing right now.
+
+92
+00:02:55,700 --> 00:02:57,720
+And you have to just go through some options,
+
+93
+00:02:57,720 --> 00:02:59,760
+but this is how you can use this as well.
+
+94
+00:02:59,760 --> 00:03:00,700
+And once you kind of get through it,
+
+95
+00:03:00,700 --> 00:03:02,640
+this is what it's going to look like.
+
+96
+00:03:02,640 --> 00:03:06,720
+They'll have Hermes agent, very yellow, orange logo.
+
+97
+00:03:06,720 --> 00:03:08,100
+You can just simply type hello.
+
+98
+00:03:08,100 --> 00:03:09,640
+I have my cloud subscription actually,
+
+99
+00:03:09,640 --> 00:03:10,920
+so I'm using Fable 1.
+
+100
+00:03:10,920 --> 00:03:13,600
+And then here it is working, already giving me a response.
+
+101
+00:03:13,600 --> 00:03:14,580
+You can do this way,
+
+102
+00:03:14,580 --> 00:03:16,280
+but this is the only time I'm gonna show you
+
+103
+00:03:16,280 --> 00:03:17,120
+how to do it through the terminal
+
+104
+00:03:17,120 --> 00:03:18,440
+because the rest of this video,
+
+105
+00:03:18,440 --> 00:03:20,160
+we're gonna be using the Hermes desktop.
+
+106
+00:03:20,160 --> 00:03:22,440
+So to do that, on the same page,
+
+107
+00:03:22,440 --> 00:03:25,000
+you're gonna just choose either download from macOS
+
+108
+00:03:25,000 --> 00:03:26,160
+or deploy to the cloud.
+
+109
+00:03:26,160 --> 00:03:27,780
+I'm gonna choose download from macOS.
+
+110
+00:03:27,780 --> 00:03:30,060
+And then once that is set up,
+
+111
+00:03:30,060 --> 00:03:32,260
+the first thing that you have a blank space,
+
+112
+00:03:32,260 --> 00:03:35,140
+you won't have all this here with you that I have.
+
+113
+00:03:35,140 --> 00:03:36,840
+So I'm gonna take inside of a bunch of sessions.
+
+114
+00:03:36,840 --> 00:03:39,060
+It's just, it looks very similar
+
+115
+00:03:39,060 --> 00:03:41,500
+to what the Cloud AI desktop app
+
+116
+00:03:41,500 --> 00:03:42,880
+or ChatGPT would look like,
+
+117
+00:03:42,880 --> 00:03:45,260
+where you have the sessions for your talking.
+
+118
+00:03:45,260 --> 00:03:46,660
+You can have connectors,
+
+119
+00:03:46,660 --> 00:03:47,980
+but here they call them capabilities
+
+120
+00:03:47,980 --> 00:03:49,360
+where you can install skills and all that.
+
+121
+00:03:49,360 --> 00:03:50,440
+We're gonna get to this,
+
+122
+00:03:50,440 --> 00:03:54,000
+but it's not too far from other desktop apps.
+
+123
+00:03:54,000 --> 00:03:55,180
+But the first thing we need to do
+
+124
+00:03:55,180 --> 00:03:58,280
+before we can talk to it is we need to set up a model.
+
+125
+00:03:58,280 --> 00:03:59,760
+So at the top right here,
+
+126
+00:03:59,760 --> 00:04:02,400
+when you go to open settings, just click this.
+
+127
+00:04:02,400 --> 00:04:04,180
+You're gonna go on left-hand side,
+
+128
+00:04:04,180 --> 00:04:05,900
+gonna go to providers.
+
+129
+00:04:05,900 --> 00:04:07,780
+And as you can see here,
+
+130
+00:04:07,780 --> 00:04:09,340
+they already have the main ones, right?
+
+131
+00:04:09,340 --> 00:04:12,040
+So news portal, you can get some credits to ChatGPT
+
+132
+00:04:12,040 --> 00:04:15,820
+or your Codex subscription or Cloud basically.
+
+133
+00:04:15,820 --> 00:04:16,800
+So choose one of these,
+
+134
+00:04:16,800 --> 00:04:18,680
+you can use ChatGPT or Codex or Cloud.
+
+135
+00:04:18,680 --> 00:04:19,800
+I'm gonna choose this one,
+
+136
+00:04:19,800 --> 00:04:21,000
+or I'm gonna choose Anthropix.
+
+137
+00:04:21,000 --> 00:04:22,200
+So just run this, right?
+
+138
+00:04:22,200 --> 00:04:23,900
+You're gonna copy this,
+
+139
+00:04:24,000 --> 00:04:27,040
+go into a terminal, paste it, just do the setup.
+
+140
+00:04:27,040 --> 00:04:28,220
+Just takes a couple of minutes.
+
+141
+00:04:28,220 --> 00:04:29,620
+And then you're gonna come back here and say,
+
+142
+00:04:29,620 --> 00:04:30,460
+I've signed in.
+
+143
+00:04:30,460 --> 00:04:32,000
+So I'm setting up Cloud code.
+
+144
+00:04:32,000 --> 00:04:34,420
+I just paste that into a terminal, just like this.
+
+145
+00:04:34,420 --> 00:04:36,380
+It came here, I want to authorize.
+
+146
+00:04:36,380 --> 00:04:37,600
+And then come back to your desktop.
+
+147
+00:04:37,600 --> 00:04:39,320
+What it's gonna give you is a token
+
+148
+00:04:39,320 --> 00:04:40,860
+that you can save for yourself.
+
+149
+00:04:40,860 --> 00:04:42,200
+You're gonna say, I've signed in.
+
+150
+00:04:42,200 --> 00:04:44,380
+And now it's going to say, you're connected.
+
+151
+00:04:44,380 --> 00:04:45,220
+Now at the top left,
+
+152
+00:04:45,220 --> 00:04:47,460
+you're gonna simply back at the main desktop screen,
+
+153
+00:04:47,460 --> 00:04:48,380
+type new session.
+
+154
+00:04:48,380 --> 00:04:50,740
+I'm gonna say, hello, how are you?
+
+155
+00:04:50,740 --> 00:04:52,500
+So doing fine, what are you working on?
+
+156
+00:04:52,500 --> 00:04:54,000
+And just note at the bottom right here,
+
+157
+00:04:54,000 --> 00:04:57,500
+under the chat bar, I can choose from Anthropix,
+
+158
+00:04:57,500 --> 00:04:59,540
+I can choose whatever model I want to
+
+159
+00:04:59,540 --> 00:05:00,900
+and the reasoning as well.
+
+160
+00:05:00,900 --> 00:05:02,060
+Okay, great.
+
+161
+00:05:02,060 --> 00:05:03,340
+You now had your first conversation,
+
+162
+00:05:03,340 --> 00:05:05,420
+which means now we can open the floodgates
+
+163
+00:05:05,420 --> 00:05:06,840
+and we can just get going.
+
+164
+00:05:06,840 --> 00:05:08,780
+Okay, the setup is always typically
+
+165
+00:05:08,780 --> 00:05:10,900
+one of the harder parts for anything that you do.
+
+166
+00:05:10,900 --> 00:05:13,280
+So now what I want to do is the first thing is
+
+167
+00:05:13,280 --> 00:05:15,800
+we want to know more about us, right?
+
+168
+00:05:15,800 --> 00:05:18,240
+If you have used any other type of subscription
+
+169
+00:05:18,240 --> 00:05:21,040
+or whatever you're using that you've done work on before,
+
+170
+00:05:21,040 --> 00:05:22,080
+I'm gonna give you a prompt
+
+171
+00:05:22,080 --> 00:05:23,820
+and we're gonna extract some information
+
+172
+00:05:23,820 --> 00:05:24,740
+about ourselves.
+
+173
+00:05:24,740 --> 00:05:25,920
+So I'm gonna do it right now
+
+174
+00:05:25,920 --> 00:05:28,400
+and then give it to Hermes' agent so we can get going.
+
+175
+00:05:28,400 --> 00:05:31,620
+Okay, so I just basically am going to open up Cloud Code.
+
+176
+00:05:31,620 --> 00:05:32,460
+I'm gonna paste this,
+
+177
+00:05:32,460 --> 00:05:34,340
+which is basically write a short paragraph about me
+
+178
+00:05:34,340 --> 00:05:36,620
+so I can hand to a new AI assistant, right?
+
+179
+00:05:36,620 --> 00:05:37,920
+And just want it in plain text.
+
+180
+00:05:37,920 --> 00:05:39,800
+Of course, after I log in again
+
+181
+00:05:39,800 --> 00:05:42,560
+for the third time in the last four hours,
+
+182
+00:05:42,560 --> 00:05:45,040
+and once it gives me this information,
+
+183
+00:05:45,040 --> 00:05:47,720
+I'm gonna copy and paste it to Hermes' agent.
+
+184
+00:05:47,720 --> 00:05:49,860
+Okay, so it gave it to me in plain text.
+
+185
+00:05:49,860 --> 00:05:51,180
+I'm going to simply copy this.
+
+186
+00:05:51,180 --> 00:05:53,560
+I'm just gonna simply say, here's a bit
+
+187
+00:05:53,820 --> 00:05:55,880
+about myself, save this.
+
+188
+00:05:55,880 --> 00:05:58,760
+Paste that, and then we are going to let it go
+
+189
+00:05:58,760 --> 00:06:00,640
+so it can save this into memory.
+
+190
+00:06:00,640 --> 00:06:03,200
+So it has some information already about me,
+
+191
+00:06:03,200 --> 00:06:05,260
+which it will now have some information about you.
+
+192
+00:06:05,260 --> 00:06:08,160
+And we know because it says saved to memory right here.
+
+193
+00:06:08,160 --> 00:06:10,560
+You will see little things like this during conversations
+
+194
+00:06:10,560 --> 00:06:13,540
+where it has saved or done something with memory
+
+195
+00:06:13,540 --> 00:06:17,400
+because you have chatted about something it thought
+
+196
+00:06:17,400 --> 00:06:20,060
+that it should be saving for the future.
+
+197
+00:06:20,060 --> 00:06:22,000
+So now what I'm gonna just paste in is say,
+
+198
+00:06:22,000 --> 00:06:23,100
+given what you know about me,
+
+199
+00:06:23,100 --> 00:06:25,600
+what would you bother not explaining to me?
+
+200
+00:06:25,600 --> 00:06:28,520
+Okay, so language and tooling basics,
+
+201
+00:06:28,520 --> 00:06:30,280
+what cloud code or Hermes your skills are,
+
+202
+00:06:30,280 --> 00:06:34,300
+why a bun, how no, no build stack is a choice,
+
+203
+00:06:34,300 --> 00:06:37,000
+FFmpeg, the school ecosystem, et cetera, right?
+
+204
+00:06:37,000 --> 00:06:37,920
+So this is good.
+
+205
+00:06:37,920 --> 00:06:41,440
+So now I know that it can over explain things,
+
+206
+00:06:41,440 --> 00:06:43,480
+the models can, but with this memory,
+
+207
+00:06:43,480 --> 00:06:45,880
+it's gonna make sure that it doesn't do that for me
+
+208
+00:06:45,880 --> 00:06:47,200
+because I already know that information.
+
+209
+00:06:47,200 --> 00:06:48,720
+And speaking of this,
+
+210
+00:06:48,720 --> 00:06:51,580
+where does all of this stay on your computer, right?
+
+211
+00:06:51,580 --> 00:06:52,260
+It has to, there has to be a way to do this.
+
+212
+00:06:52,260 --> 00:06:52,260
+
+
+213
+00:06:52,260 --> 00:06:52,260
+
+
+214
+00:06:52,260 --> 00:06:52,400
+It has to be a way to do this.
+
+215
+00:06:52,400 --> 00:06:52,440
+It has to be a way to do this.
+
+216
+00:06:52,440 --> 00:06:52,480
+It has to be a way to do this.
+
+217
+00:06:52,480 --> 00:06:53,320
+It has to be a way to do this.
+
+218
+00:06:53,320 --> 00:06:55,820
+There has to physically be somewhere on your computer
+
+219
+00:06:55,820 --> 00:06:57,780
+where it saves all this information.
+
+220
+00:06:57,780 --> 00:07:00,620
+Well, like how mysterious Claude can be
+
+221
+00:07:00,620 --> 00:07:02,160
+about where it stores its files,
+
+222
+00:07:02,160 --> 00:07:03,760
+I'm gonna show you where Hermes does this.
+
+223
+00:07:03,760 --> 00:07:05,480
+And it's basically the same place.
+
+224
+00:07:05,480 --> 00:07:09,080
+Okay, so I'm just going to go to my users,
+
+225
+00:07:09,080 --> 00:07:10,360
+and then of course my name,
+
+226
+00:07:10,360 --> 00:07:13,580
+I'm going to use Command Shift period.
+
+227
+00:07:13,580 --> 00:07:16,220
+This is going to expose hidden files.
+
+228
+00:07:16,220 --> 00:07:17,800
+And what you'll see here, like, you know,
+
+229
+00:07:17,800 --> 00:07:20,860
+here's dot Claude up here, here is dot Hermes.
+
+230
+00:07:20,860 --> 00:07:21,780
+So if I expand this,
+
+231
+00:07:21,780 --> 00:07:26,060
+here is a bunch of information that we will get to.
+
+232
+00:07:26,060 --> 00:07:28,660
+But the one we're gonna look at right now is memories,
+
+233
+00:07:28,660 --> 00:07:30,340
+because there's different types of memory.
+
+234
+00:07:30,340 --> 00:07:32,880
+So the first one is there's a memory
+
+235
+00:07:32,880 --> 00:07:34,920
+and then a user markdown file.
+
+236
+00:07:34,920 --> 00:07:36,520
+So if we look at the user one, right,
+
+237
+00:07:36,520 --> 00:07:38,820
+this is similar, this is basically information
+
+238
+00:07:38,820 --> 00:07:40,000
+that I had just saved.
+
+239
+00:07:40,000 --> 00:07:42,480
+So about me, eight years as a software engineer,
+
+240
+00:07:42,480 --> 00:07:45,620
+I'm now an engineer at Pfizer, my school, SAS, et cetera.
+
+241
+00:07:45,620 --> 00:07:48,360
+Right, this is really information about me,
+
+242
+00:07:48,360 --> 00:07:49,260
+about the actual user.
+
+243
+00:07:49,260 --> 00:07:50,880
+So you have information about you.
+
+244
+00:07:50,880 --> 00:07:51,620
+But if I then go,
+
+245
+00:07:51,620 --> 00:07:52,460
+I'm gonna go into memory.
+
+246
+00:07:52,460 --> 00:07:54,240
+Now if I go into the memory markdown file,
+
+247
+00:07:54,240 --> 00:07:56,340
+so here it has like some information about bots,
+
+248
+00:07:56,340 --> 00:07:58,900
+my repo, things that I get scheduled,
+
+249
+00:07:58,900 --> 00:08:00,880
+local models that I tend to use,
+
+250
+00:08:00,880 --> 00:08:02,160
+things that I've just done, right?
+
+251
+00:08:02,160 --> 00:08:04,880
+So about how I use hyperframes.
+
+252
+00:08:04,880 --> 00:08:07,600
+So this is like context that can be spread out
+
+253
+00:08:07,600 --> 00:08:10,440
+throughout other agents or sessions that I use.
+
+254
+00:08:10,440 --> 00:08:12,780
+And all this is built in for it to do that for you, right?
+
+255
+00:08:12,780 --> 00:08:16,100
+So it's going to self-learn as you use this,
+
+256
+00:08:16,100 --> 00:08:18,620
+and which to me is wonderful.
+
+257
+00:08:18,620 --> 00:08:21,080
+There's actually different AI memory libraries
+
+258
+00:08:21,080 --> 00:08:21,420
+that do this.
+
+259
+00:08:21,420 --> 00:08:22,380
+So if you're self-learning,
+
+260
+00:08:22,380 --> 00:08:23,880
+I believe they're using Honcho,
+
+261
+00:08:23,880 --> 00:08:26,260
+but this is going to make your life easier.
+
+262
+00:08:26,260 --> 00:08:27,640
+And if you haven't noticed already,
+
+263
+00:08:27,640 --> 00:08:31,200
+there's a lot of things that you can do from the desktop.
+
+264
+00:08:31,200 --> 00:08:32,820
+Okay, and if you're wondering,
+
+265
+00:08:32,820 --> 00:08:33,740
+if you're curious,
+
+266
+00:08:33,740 --> 00:08:35,560
+my text looks more zoomed in
+
+267
+00:08:35,560 --> 00:08:36,640
+because I changed that in the settings,
+
+268
+00:08:36,640 --> 00:08:38,160
+you can change the font there.
+
+269
+00:08:38,160 --> 00:08:39,040
+But at the top right,
+
+270
+00:08:39,040 --> 00:08:41,060
+let's just do a quick tour of the settings.
+
+271
+00:08:41,060 --> 00:08:42,320
+So if you go to settings,
+
+272
+00:08:42,320 --> 00:08:43,740
+okay, so the first thing here,
+
+273
+00:08:43,740 --> 00:08:46,040
+you'll see I have an applies to default coder,
+
+274
+00:08:46,040 --> 00:08:47,380
+code reviewer, package and researcher.
+
+275
+00:08:47,380 --> 00:08:48,500
+These are just bots that I,
+
+276
+00:08:48,500 --> 00:08:50,300
+or agents that I already have created.
+
+277
+00:08:50,300 --> 00:08:51,140
+You can just set
+
+278
+00:08:51,140 --> 00:08:52,740
+the default model you want for these.
+
+279
+00:08:52,740 --> 00:08:53,760
+So if you scroll down a little bit,
+
+280
+00:08:53,760 --> 00:08:54,600
+there's a lot of settings.
+
+281
+00:08:54,600 --> 00:08:56,400
+I'm not going to go over all of them in this video,
+
+282
+00:08:56,400 --> 00:08:57,840
+but memory and context,
+
+283
+00:08:57,840 --> 00:08:58,920
+you know, here are,
+
+284
+00:08:58,920 --> 00:09:00,640
+here are some interesting things that you can have.
+
+285
+00:09:00,640 --> 00:09:01,620
+There's some settings,
+
+286
+00:09:01,620 --> 00:09:04,780
+like how much like context that you want.
+
+287
+00:09:04,780 --> 00:09:05,620
+You know, you can have,
+
+288
+00:09:05,620 --> 00:09:08,220
+you can choose your different memory providers, et cetera.
+
+289
+00:09:08,220 --> 00:09:09,980
+And then providers,
+
+290
+00:09:09,980 --> 00:09:12,060
+you can actually set API keys here
+
+291
+00:09:12,060 --> 00:09:13,960
+for different like open router.
+
+292
+00:09:13,960 --> 00:09:15,940
+If you want to have different providers
+
+293
+00:09:15,940 --> 00:09:18,380
+to use different models,
+
+294
+00:09:18,380 --> 00:09:21,020
+you will do something with local agents here soon.
+
+295
+00:09:21,020 --> 00:09:22,360
+And then there's a lot more going on,
+
+296
+00:09:22,360 --> 00:09:25,160
+but I want to move on to some of the major features
+
+297
+00:09:25,160 --> 00:09:26,080
+of Hermes.
+
+298
+00:09:26,080 --> 00:09:28,800
+And the first one is, are the tools, right?
+
+299
+00:09:28,800 --> 00:09:32,620
+So this has a bunch of pre-configured tools
+
+300
+00:09:32,620 --> 00:09:35,920
+already set up for you, such as web search.
+
+301
+00:09:35,920 --> 00:09:37,920
+So if I type in search for the web,
+
+302
+00:09:37,920 --> 00:09:40,400
+what changed in the latest Hermes agent release
+
+303
+00:09:40,400 --> 00:09:41,240
+and give it three things,
+
+304
+00:09:41,240 --> 00:09:44,200
+three things a cloud code user would care about.
+
+305
+00:09:44,200 --> 00:09:46,060
+And while that is running at the top left,
+
+306
+00:09:46,060 --> 00:09:47,680
+we'll come back to this quite a few times,
+
+307
+00:09:47,680 --> 00:09:49,440
+but there's a capabilities tab.
+
+308
+00:09:49,440 --> 00:09:50,620
+If we come in here and you go to,
+
+309
+00:09:50,620 --> 00:09:55,200
+you know, there's a lot here that are already enabled,
+
+310
+00:09:55,200 --> 00:09:56,040
+right?
+
+311
+00:09:56,040 --> 00:09:58,340
+There's more, there's more that I can enable if I want to,
+
+312
+00:09:58,340 --> 00:09:59,180
+right?
+
+313
+00:09:59,180 --> 00:10:01,680
+I mean, there's Spotify, Kanban tools, video analysis.
+
+314
+00:10:01,680 --> 00:10:03,940
+There's, there's a lot going on here,
+
+315
+00:10:03,940 --> 00:10:07,140
+but it already has some here that we're actually using
+
+316
+00:10:07,140 --> 00:10:09,180
+right now, such as web search and scraping.
+
+317
+00:10:09,180 --> 00:10:10,020
+And here we, here we go.
+
+318
+00:10:10,020 --> 00:10:12,580
+It already did the research for us.
+
+319
+00:10:12,580 --> 00:10:14,240
+It just, you know, this is just the latest thing
+
+320
+00:10:14,240 --> 00:10:16,400
+that Hermes agent had pushed out recently.
+
+321
+00:10:16,400 --> 00:10:17,640
+I think it was just yesterday.
+
+322
+00:10:17,640 --> 00:10:19,620
+Yeah, it's the 16th, 16th, so two days ago.
+
+323
+00:10:19,620 --> 00:10:20,620
+And this is just how simple
+
+324
+00:10:20,620 --> 00:10:22,340
+it is to use these tools that already,
+
+325
+00:10:22,340 --> 00:10:23,840
+that already has enabled for you.
+
+326
+00:10:23,840 --> 00:10:24,940
+So if you use cloud code,
+
+327
+00:10:24,940 --> 00:10:27,700
+it's a similar concept for a tool set.
+
+328
+00:10:27,700 --> 00:10:31,000
+Now, the next thing is there are integrations and messaging.
+
+329
+00:10:31,000 --> 00:10:33,400
+So for instance, if I go to the messaging,
+
+330
+00:10:33,400 --> 00:10:35,320
+the messaging tab over here, you know,
+
+331
+00:10:35,320 --> 00:10:37,800
+here is how I have Slack set up already.
+
+332
+00:10:37,800 --> 00:10:39,600
+This is how I got my message.
+
+333
+00:10:39,600 --> 00:10:40,880
+So this is how I, so I mean,
+
+334
+00:10:40,880 --> 00:10:43,560
+this is how I got this message about what's happening
+
+335
+00:10:43,560 --> 00:10:46,960
+because I set up an agent in my Slack
+
+336
+00:10:46,960 --> 00:10:48,700
+and then it's just getting information.
+
+337
+00:10:48,700 --> 00:10:50,420
+It's sending information over to this.
+
+338
+00:10:50,420 --> 00:10:52,140
+So I can just simply read it on my phone.
+
+339
+00:10:52,140 --> 00:10:55,520
+But as you can see, there's WhatsApp, Signal, Twilio.
+
+340
+00:10:55,520 --> 00:10:57,680
+I mean, there's so many others that you can connect to here
+
+341
+00:10:57,680 --> 00:10:58,520
+and it's pretty simple.
+
+342
+00:10:58,520 --> 00:11:00,420
+So if I did Telegram, it has the setup guide.
+
+343
+00:11:00,420 --> 00:11:04,180
+There's a QR code, Discord, it's easy, you know,
+
+344
+00:11:04,180 --> 00:11:06,080
+use whatever one that you would prefer to use.
+
+345
+00:11:06,080 --> 00:11:09,860
+And as you can see, you can do this per bot or agent as well.
+
+346
+00:11:09,860 --> 00:11:11,460
+And while we're here at capabilities,
+
+347
+00:11:11,460 --> 00:11:13,800
+the next thing in this realm of what we're talking about,
+
+348
+00:11:13,800 --> 00:11:15,020
+of course, is MCP, right?
+
+349
+00:11:15,020 --> 00:11:16,800
+So if you come over here to MCP,
+
+350
+00:11:16,800 --> 00:11:19,300
+you can install a bunch of these.
+
+351
+00:11:19,300 --> 00:11:20,140
+So you can either do it
+
+352
+00:11:20,140 --> 00:11:23,080
+this way or if we go to our chat,
+
+353
+00:11:23,080 --> 00:11:26,400
+I can simply say, help me connect to the ClickUp MCP.
+
+354
+00:11:26,400 --> 00:11:27,880
+It might give you, it'll probably give you
+
+355
+00:11:27,880 --> 00:11:30,480
+a terminal command, just follow the process.
+
+356
+00:11:30,480 --> 00:11:31,900
+It's very simple.
+
+357
+00:11:31,900 --> 00:11:33,960
+You know, the idea is they're making
+
+358
+00:11:33,960 --> 00:11:36,340
+all these integrations, third-party connections,
+
+359
+00:11:36,340 --> 00:11:37,920
+everything easy for you to use
+
+360
+00:11:37,920 --> 00:11:40,840
+so that your agents have more capabilities.
+
+361
+00:11:40,840 --> 00:11:43,480
+So now let's move on to the second feature.
+
+362
+00:11:43,480 --> 00:11:45,680
+And I think it's the one that really made,
+
+363
+00:11:45,680 --> 00:11:47,980
+that really has made Hermes, you know, popular.
+
+364
+00:11:47,980 --> 00:11:49,180
+And that is skills.
+
+365
+00:11:49,180 --> 00:11:51,680
+You see, Hermes advertises itself
+
+366
+00:11:51,680 --> 00:11:54,060
+as the agent that grows with you.
+
+367
+00:11:54,060 --> 00:11:56,180
+What that means is it learns over time
+
+368
+00:11:56,180 --> 00:11:57,900
+what you're doing based on the conversations
+
+369
+00:11:57,900 --> 00:11:58,740
+that you're having.
+
+370
+00:11:58,740 --> 00:12:02,380
+And it will actually develop skills for you by itself
+
+371
+00:12:02,380 --> 00:12:04,540
+if it deems that it's worthy for that to happen.
+
+372
+00:12:04,540 --> 00:12:05,560
+Maybe you've done it more than once.
+
+373
+00:12:05,560 --> 00:12:06,560
+It's like, okay, you know what?
+
+374
+00:12:06,560 --> 00:12:07,420
+Let's build a skill for it.
+
+375
+00:12:07,420 --> 00:12:08,780
+It can do that for you.
+
+376
+00:12:08,780 --> 00:12:10,580
+If you build a cloud code skill,
+
+377
+00:12:10,580 --> 00:12:14,500
+it's just a markdown file, essentially at the lowest level,
+
+378
+00:12:14,500 --> 00:12:16,200
+at the basic level of what it is,
+
+379
+00:12:16,200 --> 00:12:18,880
+then this is very similar, almost the same thing.
+
+380
+00:12:18,880 --> 00:12:21,660
+But if we go to capabilities and then we go to skills,
+
+381
+00:12:21,660 --> 00:12:24,280
+we see that I already have some,
+
+382
+00:12:24,280 --> 00:12:26,140
+and you can see the ones they learned.
+
+383
+00:12:26,140 --> 00:12:29,040
+This means that it created that essentially by itself.
+
+384
+00:12:29,040 --> 00:12:31,440
+I didn't tell it to create that for me.
+
+385
+00:12:31,440 --> 00:12:34,040
+Now that doesn't mean every skill is worth it,
+
+386
+00:12:34,040 --> 00:12:36,000
+but it is very, it's, you know,
+
+387
+00:12:36,000 --> 00:12:38,580
+it's pretty telling that it's able to understand,
+
+388
+00:12:38,580 --> 00:12:41,160
+okay, I've done file system organization enough.
+
+389
+00:12:41,160 --> 00:12:42,820
+Let's just create a skill for it.
+
+390
+00:12:42,820 --> 00:12:45,360
+But if you also, there's a skills hub,
+
+391
+00:12:45,360 --> 00:12:48,880
+you can see there's like almost 100,000 community skills.
+
+392
+00:12:48,880 --> 00:12:51,200
+And there's some that are already connected.
+
+393
+00:12:51,200 --> 00:12:54,100
+So here's Apple notes, reminders, cloud code.
+
+394
+00:12:54,100 --> 00:12:55,440
+So, you know, pointing them over,
+
+395
+00:12:55,440 --> 00:12:58,160
+iMessage, a whole Hermes agent, architecture,
+
+396
+00:12:58,160 --> 00:13:01,580
+diagram, cloud design, you know, P5,
+
+397
+00:13:01,580 --> 00:13:03,100
+if you're worried about that JavaScript framework,
+
+398
+00:13:03,100 --> 00:13:05,080
+there's just so many here that you can go through.
+
+399
+00:13:05,080 --> 00:13:06,940
+You can go to productivity.
+
+400
+00:13:06,940 --> 00:13:08,760
+It already has a lot here for you,
+
+401
+00:13:08,760 --> 00:13:11,400
+but you can scroll down for more that like you don't have,
+
+402
+00:13:11,400 --> 00:13:13,800
+but a lot of them are already like,
+
+403
+00:13:13,800 --> 00:13:17,540
+a lot of these are already built in to Hermes agents.
+
+404
+00:13:17,540 --> 00:13:18,700
+Now what I did was,
+
+405
+00:13:18,700 --> 00:13:20,080
+I simply asked,
+
+406
+00:13:20,080 --> 00:13:21,840
+say, can you look at my last 10 uploads
+
+407
+00:13:21,840 --> 00:13:24,180
+and tell me which title pattern is winning?
+
+408
+00:13:24,180 --> 00:13:25,020
+So it did.
+
+409
+00:13:25,020 --> 00:13:27,900
+And you know, clearly the last one is the one that's winning
+
+410
+00:13:27,900 --> 00:13:31,200
+that just uploaded a couple of days ago on DeepSeek Harness.
+
+411
+00:13:31,200 --> 00:13:32,820
+So it's going to,
+
+412
+00:13:32,820 --> 00:13:34,620
+it's going to figure that out.
+
+413
+00:13:34,620 --> 00:13:36,660
+And then it's going to hopefully tell me
+
+414
+00:13:36,660 --> 00:13:38,520
+which ones aren't working and which ones are working,
+
+415
+00:13:38,520 --> 00:13:40,940
+which it is kind of doing down here.
+
+416
+00:13:40,940 --> 00:13:43,440
+And then I can reuse that and just make,
+
+417
+00:13:43,440 --> 00:13:46,540
+and you know, basically use those again for future bidders,
+
+418
+00:13:46,540 --> 00:13:48,700
+future bidders like this one,
+
+419
+00:13:48,700 --> 00:13:50,560
+to hopefully, you know, gain more traction.
+
+420
+00:13:50,560 --> 00:13:52,380
+But now what I want to do is I say,
+
+421
+00:13:52,380 --> 00:13:56,260
+I want you to make this into a skill for checking my titles,
+
+422
+00:13:56,260 --> 00:13:59,300
+because this won't be the only time that I ever do this.
+
+423
+00:13:59,300 --> 00:14:00,780
+So now it's going to design the skill
+
+424
+00:14:00,780 --> 00:14:03,880
+that pulls recent uploads via YouTube download player,
+
+425
+00:14:03,880 --> 00:14:04,720
+et cetera.
+
+426
+00:14:04,720 --> 00:14:06,420
+And it's just going to go ahead and do all this for me.
+
+427
+00:14:06,420 --> 00:14:08,540
+And just like we already,
+
+428
+00:14:08,540 --> 00:14:10,880
+we already saw the memory markdown files.
+
+429
+00:14:10,880 --> 00:14:13,380
+If you again are in .Hermes, right?
+
+430
+00:14:13,380 --> 00:14:15,580
+If we go to the top level .Hermes,
+
+431
+00:14:15,580 --> 00:14:18,240
+you come all the way down to skills.
+
+432
+00:14:18,240 --> 00:14:19,620
+They are bundled up together.
+
+433
+00:14:19,620 --> 00:14:23,180
+So this one is considered a productivity skill right here.
+
+434
+00:14:23,180 --> 00:14:25,840
+I mean, it just created right now, right now it's 5 27 PM.
+
+435
+00:14:25,840 --> 00:14:30,020
+So it just created this here is, you know, a title check.
+
+436
+00:14:30,020 --> 00:14:32,200
+So it actually created a code for it.
+
+437
+00:14:32,200 --> 00:14:35,360
+It is going to create the skill markdown file for it,
+
+438
+00:14:35,360 --> 00:14:37,940
+but it is going to also have some code with it.
+
+439
+00:14:37,940 --> 00:14:39,280
+And this is doing it by itself.
+
+440
+00:14:39,280 --> 00:14:40,960
+And it will continue to use this in the future.
+
+441
+00:14:40,960 --> 00:14:42,520
+Whenever I ask it to do the same thing.
+
+442
+00:14:42,520 --> 00:14:45,200
+And as I spoke right, there's a skill markdown file
+
+443
+00:14:45,200 --> 00:14:46,840
+for us to use.
+
+444
+00:14:46,840 --> 00:14:48,180
+Now, one more major feature,
+
+445
+00:14:48,180 --> 00:14:52,040
+are cron jobs or essentially scheduled tasks.
+
+446
+00:14:52,040 --> 00:14:54,340
+So a cron job, you don't have to know what that,
+
+447
+00:14:54,340 --> 00:14:55,580
+you know, if you haven't heard that before,
+
+448
+00:14:55,580 --> 00:14:57,400
+it's basically just a scheduled task
+
+449
+00:14:57,400 --> 00:14:59,020
+that runs automatically at certain times
+
+450
+00:14:59,020 --> 00:15:00,440
+without you having to manage it.
+
+451
+00:15:00,440 --> 00:15:02,260
+You know, a lot of things we do in life.
+
+452
+00:15:02,260 --> 00:15:06,080
+And now with AI can be recurring.
+
+453
+00:15:06,080 --> 00:15:07,560
+You probably do a lot of things that seem
+
+454
+00:15:07,560 --> 00:15:08,720
+around the same time,
+
+455
+00:15:08,720 --> 00:15:10,740
+or they do the same thing every day.
+
+456
+00:15:10,740 --> 00:15:12,740
+Well, we can create a scheduled job for that.
+
+457
+00:15:12,740 --> 00:15:14,000
+So you don't have to think about it.
+
+458
+00:15:14,000 --> 00:15:15,980
+It just gives you the output of whatever that is.
+
+459
+00:15:15,980 --> 00:15:18,120
+So, so on the top left,
+
+460
+00:15:18,120 --> 00:15:20,920
+there is a scheduled jobs here and you can see,
+
+461
+00:15:20,920 --> 00:15:23,040
+these are three that I actually have.
+
+462
+00:15:23,040 --> 00:15:25,600
+Here are some, here it has blueprints here
+
+463
+00:15:25,600 --> 00:15:26,940
+for all other, you know,
+
+464
+00:15:26,940 --> 00:15:29,860
+other ones that you can go ahead and get started with.
+
+465
+00:15:29,860 --> 00:15:31,720
+So for instance, you know, for YouTube,
+
+466
+00:15:31,720 --> 00:15:33,320
+like what's next, right?
+
+467
+00:15:33,320 --> 00:15:36,480
+The last time it ran was on 9 15.
+
+468
+00:15:36,480 --> 00:15:38,680
+The Lumberman run history isn't exactly correct,
+
+469
+00:15:38,680 --> 00:15:40,940
+but actually delivered to Slack because I set,
+
+470
+00:15:40,940 --> 00:15:44,200
+I set up Slack on the messaging capabilities
+
+471
+00:15:44,200 --> 00:15:46,060
+that I showed earlier in this video.
+
+472
+00:15:46,060 --> 00:15:47,160
+So you can trigger this now,
+
+473
+00:15:47,160 --> 00:15:48,020
+but let's go ahead and just,
+
+474
+00:15:48,020 --> 00:15:49,980
+let's create a new one.
+
+475
+00:15:49,980 --> 00:15:51,480
+So I'm gonna click a new cron, right?
+
+476
+00:15:51,480 --> 00:15:54,040
+I can name this whatever I want to.
+
+477
+00:15:54,040 --> 00:15:58,440
+So I'm gonna say Jarvis PR checks the prompt.
+
+478
+00:15:58,440 --> 00:15:59,400
+This is whatever you want.
+
+479
+00:15:59,400 --> 00:16:03,140
+I want to have check my GitHub specifically for two extra,
+
+480
+00:16:03,140 --> 00:16:05,860
+let's just do, yeah, let's just do this one.
+
+481
+00:16:05,860 --> 00:16:08,540
+And I want to check for the commits failed,
+
+482
+00:16:08,540 --> 00:16:10,480
+you know, failed delivery for anything,
+
+483
+00:16:10,480 --> 00:16:12,060
+open PRs, et cetera, review them,
+
+484
+00:16:12,060 --> 00:16:12,920
+and then give me something.
+
+485
+00:16:12,920 --> 00:16:14,620
+So I want this done daily.
+
+486
+00:16:14,620 --> 00:16:18,000
+I want it sent to Slack and,
+
+487
+00:16:18,020 --> 00:16:20,000
+yeah, let's just use the default model.
+
+488
+00:16:20,000 --> 00:16:23,260
+So this right now it's set to be every day at 9 AM.
+
+489
+00:16:23,260 --> 00:16:25,380
+And I'm okay with that for this test,
+
+490
+00:16:25,380 --> 00:16:28,400
+but you could go to custom here and you can,
+
+491
+00:16:28,400 --> 00:16:31,040
+you can use, it says you can use phrases like weekdays
+
+492
+00:16:31,040 --> 00:16:33,260
+at 9 AM, et cetera, whatever you want to do.
+
+493
+00:16:33,260 --> 00:16:34,100
+But I'm just gonna use,
+
+494
+00:16:34,100 --> 00:16:36,920
+I'm just gonna say daily and click create cron.
+
+495
+00:16:36,920 --> 00:16:39,620
+So now I have one Jarvis PR checks.
+
+496
+00:16:39,620 --> 00:16:40,600
+It's exactly what it is.
+
+497
+00:16:40,600 --> 00:16:42,240
+I'm just gonna say trigger now.
+
+498
+00:16:42,240 --> 00:16:44,420
+So it's gonna go ahead and run this.
+
+499
+00:16:44,420 --> 00:16:47,980
+And then we will have something in Slack or a message.
+
+500
+00:16:48,020 --> 00:16:50,300
+You know, telling me whatever it is that's happened
+
+501
+00:16:50,300 --> 00:16:51,760
+in the last 24 hours.
+
+502
+00:16:51,760 --> 00:16:53,240
+And it says, everything is good.
+
+503
+00:16:53,240 --> 00:16:55,060
+Everything's all green, nothing needs you.
+
+504
+00:16:55,060 --> 00:16:57,740
+So I haven't done anything with that specific repo
+
+505
+00:16:57,740 --> 00:16:58,580
+in the last 24 hours.
+
+506
+00:16:58,580 --> 00:17:01,280
+So that's actually accurate, but it was that easy, right?
+
+507
+00:17:01,280 --> 00:17:03,380
+We just got this running and you know,
+
+508
+00:17:03,380 --> 00:17:04,600
+right here is the actual check.
+
+509
+00:17:04,600 --> 00:17:06,720
+If I wanted to go into this, you actually go,
+
+510
+00:17:06,720 --> 00:17:09,500
+you actually go into this scheduled job specifically
+
+511
+00:17:09,500 --> 00:17:11,060
+to see the output right here.
+
+512
+00:17:11,060 --> 00:17:12,400
+Now, the thing is, you know,
+
+513
+00:17:12,400 --> 00:17:14,600
+this is a process that actually has to run.
+
+514
+00:17:14,600 --> 00:17:17,400
+So if you're running like on your local machine,
+
+515
+00:17:17,400 --> 00:17:19,640
+then it has to be awake.
+
+516
+00:17:19,640 --> 00:17:21,700
+You know, you can't be turned off
+
+517
+00:17:21,700 --> 00:17:22,880
+and I don't think it can be slept.
+
+518
+00:17:22,880 --> 00:17:25,000
+I don't think it can be sleeping while it's running.
+
+519
+00:17:25,000 --> 00:17:28,660
+So to fix that, if you go back to settings at the top, right
+
+520
+00:17:28,660 --> 00:17:32,180
+and then you go to advanced and then you see at the top,
+
+521
+00:17:32,180 --> 00:17:33,640
+this is actually the first one that says,
+
+522
+00:17:33,640 --> 00:17:34,480
+keep computer awake.
+
+523
+00:17:34,480 --> 00:17:37,200
+Just go ahead and turn that on so that it's always running.
+
+524
+00:17:37,200 --> 00:17:38,040
+Okay, great.
+
+525
+00:17:38,040 --> 00:17:40,040
+So we've covered a lot of the major features.
+
+526
+00:17:40,040 --> 00:17:43,280
+So there's one more concept that I kind of put into its own.
+
+527
+00:17:43,280 --> 00:17:45,580
+And generally, I think this is very important.
+
+528
+00:17:45,580 --> 00:17:47,240
+I just don't think it's the hot,
+
+529
+00:17:47,240 --> 00:17:48,080
+the topic to talk about.
+
+530
+00:17:48,080 --> 00:17:50,480
+It's not talked about enough for sure.
+
+531
+00:17:50,480 --> 00:17:51,740
+And that is memory.
+
+532
+00:17:51,740 --> 00:17:53,860
+If you've used other agents before,
+
+533
+00:17:53,860 --> 00:17:55,200
+you can get frustrated with memory.
+
+534
+00:17:55,200 --> 00:17:59,520
+Having a good memory protocol or a good way to retrieve memory
+
+535
+00:17:59,520 --> 00:18:03,060
+and accurate memory for what you're doing can really,
+
+536
+00:18:03,060 --> 00:18:05,660
+can really enhance what you're doing with AI.
+
+537
+00:18:05,660 --> 00:18:07,920
+And Hermes has a good system for this.
+
+538
+00:18:07,920 --> 00:18:09,060
+And, you know, just to go back,
+
+539
+00:18:09,060 --> 00:18:10,300
+we've already talked about memories,
+
+540
+00:18:10,300 --> 00:18:13,960
+the two that were, that are kept secret,
+
+541
+00:18:13,960 --> 00:18:16,920
+unless you, unless you visually open that up,
+
+542
+00:18:16,920 --> 00:18:18,580
+then you can see memory and user.
+
+543
+00:18:18,580 --> 00:18:23,580
+But the third tier of memory is for your agents, right?
+
+544
+00:18:23,900 --> 00:18:24,900
+And they actually have it,
+
+545
+00:18:24,900 --> 00:18:27,580
+they have something called sole markdown file.
+
+546
+00:18:27,580 --> 00:18:30,180
+So at the top level, everybody's going to have one.
+
+547
+00:18:30,180 --> 00:18:31,680
+This is for the actual Hermes,
+
+548
+00:18:31,680 --> 00:18:33,420
+the default Hermes agent bot.
+
+549
+00:18:33,420 --> 00:18:36,780
+So if I open this, it says, you are a Hermes agent.
+
+550
+00:18:36,780 --> 00:18:38,600
+Let me increase that a little bit.
+
+551
+00:18:38,600 --> 00:18:40,500
+You are Hermes agent built by news research,
+
+552
+00:18:40,500 --> 00:18:42,160
+be direct, match the length of the reply
+
+553
+00:18:42,160 --> 00:18:44,240
+to the weight of the ask, et cetera.
+
+554
+00:18:44,240 --> 00:18:46,760
+But whenever we go to create,
+
+555
+00:18:46,760 --> 00:18:49,200
+a bot or what they're really calling profiles,
+
+556
+00:18:49,200 --> 00:18:50,340
+each of them have the same thing.
+
+557
+00:18:50,340 --> 00:18:53,080
+So here profiles, my coder, code reviewer,
+
+558
+00:18:53,080 --> 00:18:53,980
+packager and researcher.
+
+559
+00:18:53,980 --> 00:18:55,360
+So a researcher, you know,
+
+560
+00:18:55,360 --> 00:18:58,440
+it has its own set of set of things and files.
+
+561
+00:18:58,440 --> 00:19:01,520
+You can open up, you can open up its sole
+
+562
+00:19:01,520 --> 00:19:03,040
+markdown file as well.
+
+563
+00:19:03,040 --> 00:19:03,940
+And then here it is.
+
+564
+00:19:03,940 --> 00:19:05,540
+You are a researcher, Tyler's research bot.
+
+565
+00:19:05,540 --> 00:19:06,860
+You live in Slack as researcher
+
+566
+00:19:06,860 --> 00:19:09,080
+and in the Hermes desktop bots roster.
+
+567
+00:19:09,080 --> 00:19:11,580
+And this is just information about what it should be doing.
+
+568
+00:19:11,580 --> 00:19:13,540
+Okay. So that's the like things for its job,
+
+569
+00:19:13,540 --> 00:18:53,740
+but it also has, it also stores, you know,
+
+570
+00:18:53,740 --> 00:19:14,580
+the things that you're doing.
+
+571
+00:19:14,580 --> 00:19:15,620
+So you can see, you can see the things that you're doing.
+
+572
+00:19:15,620 --> 00:19:16,580
+And then you can see the things that you're doing.
+
+573
+00:19:16,580 --> 00:19:17,420
+So you can see the things that you're doing.
+
+574
+00:19:17,420 --> 00:19:18,240
+So you can see the things that you're doing.
+
+575
+00:19:18,240 --> 00:19:19,080
+So you can see the things that you're doing.
+
+576
+00:19:19,080 --> 00:19:19,920
+So you can see the things that you're doing.
+
+577
+00:19:19,920 --> 00:19:20,760
+So you can see the things that you're doing.
+
+578
+00:19:20,760 --> 00:19:21,580
+So you can see the things that you're doing.
+
+579
+00:19:21,580 --> 00:19:22,420
+So you can see the things that you're doing.
+
+580
+00:19:22,420 --> 00:19:23,240
+So you can see the things that you're doing.
+
+581
+00:19:23,240 --> 00:19:24,080
+So you can see the things that you're doing.
+
+582
+00:19:24,080 --> 00:19:24,920
+So you can see the things that you're doing.
+
+583
+00:19:24,920 --> 00:19:25,760
+So you can see the things that you're doing.
+
+584
+00:19:25,760 --> 00:19:26,580
+So you can see the things that you're doing.
+
+585
+00:19:26,580 --> 00:19:27,420
+So you can see the things that you're doing.
+
+586
+00:19:27,420 --> 00:19:28,260
+So you can see the things that you're doing.
+
+587
+00:19:28,260 --> 00:19:29,100
+So you can see the things that you're doing.
+
+588
+00:19:29,100 --> 00:19:29,940
+So you can see the things that you're doing.
+
+589
+00:19:29,940 --> 00:19:30,780
+So you can see the things that you're doing.
+
+590
+00:19:30,780 --> 00:19:31,780
+So you can see the things that you're doing.
+
+591
+00:19:31,780 --> 00:19:32,780
+So you can see the things that you're doing.
+
+592
+00:19:32,780 --> 00:19:33,780
+So you can see the things that you're doing.
+
+593
+00:19:33,780 --> 00:19:34,780
+So you can see the things that you're doing.
+
+594
+00:19:34,780 --> 00:19:35,780
+So you can see the things that you're doing.
+
+595
+00:19:35,780 --> 00:19:36,780
+So you can see the things that you're doing.
+
+596
+00:19:36,780 --> 00:19:37,780
+So you can see the things that you're doing.
+
+597
+00:19:37,780 --> 00:19:38,780
+So you can see the things that you're doing.
+
+598
+00:19:38,780 --> 00:19:39,780
+So you can see the things that you're doing.
+
+599
+00:19:39,780 --> 00:19:40,780
+So you can see the things that you're doing.
+
+600
+00:19:40,780 --> 00:19:41,780
+So you can see the things that you're doing.
+
+601
+00:19:41,780 --> 00:19:42,780
+So you can see the things that you're doing.
+
+602
+00:19:42,780 --> 00:19:43,780
+So you can see the things that you're doing.
+
+603
+00:19:43,780 --> 00:19:44,780
+So you can see the things that you're doing.
+
+604
+00:19:44,780 --> 00:19:45,780
+So you can see the things that you're doing.
+
+605
+00:19:45,780 --> 00:19:46,780
+So you can see the things that you're doing.
+
+606
+00:19:46,780 --> 00:19:47,780
+So you can see the things that you're doing.
+
+607
+00:19:47,780 --> 00:19:48,780
+So you can see the things that you're doing.
+
+608
+00:19:48,780 --> 00:19:49,780
+So you can see the things that you're doing.
+
+609
+00:19:49,780 --> 00:19:50,780
+So you can see the things that you're doing.
+
+610
+00:19:50,780 --> 00:19:51,780
+So you can see the things that you're doing.
+
+611
+00:19:51,780 --> 00:19:52,780
+So you can see the things that you're doing.
+
+612
+00:19:52,780 --> 00:19:53,780
+So you can see the things that you're doing.
+
+613
+00:19:53,780 --> 00:19:54,780
+So you can see the things that you're doing.
+
+614
+00:19:54,780 --> 00:19:55,780
+So you can see the things that you're doing.
+
+615
+00:19:55,780 --> 00:19:56,780
+So you can see the things that you're doing.
+
+616
+00:19:56,780 --> 00:19:57,780
+So you can see the things that you're doing.
+
+617
+00:19:57,780 --> 00:19:58,780
+So you can see the things that you're doing.
+
+618
+00:19:58,780 --> 00:19:59,780
+So you can see the things that you're doing.
+
+619
+00:19:59,780 --> 00:20:00,780
+So you can see the things that you're doing.
+
+620
+00:20:00,780 --> 00:20:01,780
+So you can see the things that you're doing.
+
+621
+00:20:01,780 --> 00:20:02,780
+So you can see the things that you're doing.
+
+622
+00:20:02,780 --> 00:20:03,780
+So you can see the things that you're doing.
+
+623
+00:20:03,780 --> 00:20:04,780
+So you can see the things that you're doing.
+
+624
+00:20:04,780 --> 00:20:05,780
+So you can see the things that you're doing.
+
+625
+00:20:05,780 --> 00:20:06,780
+So you can see the things that you're doing.
+
+626
+00:20:06,780 --> 00:20:07,780
+So you can see the things that you're doing.
+
+627
+00:20:07,780 --> 00:20:08,780
+So you can see the things that you're doing.
+
+628
+00:20:08,780 --> 00:20:09,780
+So you can see the things that you're doing.
+
+629
+00:20:09,780 --> 00:20:10,780
+So you can see the things that you're doing.
+
+630
+00:20:10,780 --> 00:20:11,780
+So you can see the things that you're doing.
+
+631
+00:20:11,780 --> 00:20:12,780
+So you can see the things that you're doing.
+
+632
+00:20:12,780 --> 00:20:13,780
+So you can see the things that you're doing.
+
+633
+00:20:13,780 --> 00:20:14,780
+So you can see the things that you're doing.
+
+634
+00:20:14,780 --> 00:20:15,780
+So you can see the things that you're doing.
+
+635
+00:20:15,780 --> 00:20:16,780
+So you can see the things that you're doing.
+
+636
+00:20:16,780 --> 00:20:17,780
+So you can see the things that you're doing.
+
+637
+00:20:17,780 --> 00:20:18,780
+So you can see the things that you're doing.
+
+638
+00:20:18,780 --> 00:20:19,780
+So you can see the things that you're doing.
+
+639
+00:20:19,780 --> 00:20:20,780
+So you can see the things that you're doing.
+
+640
+00:20:20,780 --> 00:20:21,780
+So you can see the things that you're doing.
+
+641
+00:20:21,780 --> 00:20:22,780
+So you can see the things that you're doing.
+
+642
+00:20:22,780 --> 00:20:23,780
+So you can see the things that you're doing.
+
+643
+00:20:23,780 --> 00:20:24,780
+So you can see the things that you're doing.
+
+644
+00:20:24,780 --> 00:20:25,780
+So you can see the things that you're doing.
+
+645
+00:20:25,780 --> 00:20:26,780
+So you can see the things that you're doing.
+
+646
+00:20:26,780 --> 00:20:27,780
+So you can see the things that you're doing.
+
+647
+00:20:27,780 --> 00:20:28,780
+So you can see the things that you're doing.
+
+648
+00:20:28,780 --> 00:20:29,780
+So you can see the things that you're doing.
+
+649
+00:20:29,780 --> 00:20:30,780
+So you can see the things that you're doing.
+
+650
+00:20:30,780 --> 00:20:31,780
+So you can see the things that you're doing.
+
+651
+00:20:31,780 --> 00:20:32,780
+So you can see the things that you're doing.
+
+652
+00:20:32,780 --> 00:20:33,780
+So you can see the things that you're doing.
+
+653
+00:20:33,780 --> 00:20:34,780
+So you can see the things that you're doing.
+
+654
+00:20:34,780 --> 00:20:35,780
+So you can see the things that you're doing.
+
+655
+00:20:35,780 --> 00:20:36,780
+So you can see the things that you're doing.
+
+656
+00:20:36,780 --> 00:20:37,780
+So you can see the things that you're doing.
+
+657
+00:20:37,780 --> 00:20:38,780
+So you can see the things that you're doing.
+
+658
+00:20:38,780 --> 00:20:39,780
+So you can see the things that you're doing.
+
+659
+00:20:39,780 --> 00:20:40,780
+So you can see the things that you're doing.
+
+660
+00:20:40,780 --> 00:20:41,780
+So you can see the things that you're doing.
+
+661
+00:20:41,780 --> 00:20:42,780
+So you can see the things that you're doing.
+
+662
+00:20:42,780 --> 00:20:43,780
+So you can see the things that you're doing.
+
+663
+00:20:43,780 --> 00:20:44,780
+So you can see the things that you're doing.
+
+664
+00:20:44,780 --> 00:20:45,780
+So you can see the things that you're doing.
+
+665
+00:20:45,780 --> 00:20:46,780
+So you can see the things that you're doing.
+
+666
+00:20:46,780 --> 00:20:47,780
+So you can see the things that you're doing.
+
+667
+00:20:47,780 --> 00:20:48,780
+So you can see the things that you're doing.
+
+668
+00:20:48,780 --> 00:20:49,780
+So you can see the things that you're doing.
+
+669
+00:20:49,780 --> 00:20:50,780
+So you can see the things that you're doing.
+
+670
+00:20:50,780 --> 00:20:51,780
+So you can see the things that you're doing.
+
+671
+00:20:51,780 --> 00:20:52,780
+So you can see the things that you're doing.
+
+672
+00:20:52,780 --> 00:20:53,780
+So you can see the things that you're doing.
+
+673
+00:20:53,780 --> 00:20:54,780
+So you can see the things that you're doing.
+
+674
+00:20:54,780 --> 00:20:55,780
+So you can see the things that you're doing.
+
+675
+00:20:55,780 --> 00:20:56,780
+So you can see the things that you're doing.
+
+676
+00:20:56,780 --> 00:20:57,780
+So you can see the things that you're doing.
+
+677
+00:20:57,780 --> 00:20:58,780
+So you can see the things that you're doing.
+
+678
+00:20:58,780 --> 00:20:59,780
+So you can see the things that you're doing.
+
+679
+00:20:59,780 --> 00:21:00,780
+So you can see the things that you're doing.
+
+680
+00:21:00,780 --> 00:21:01,780
+So you can see the things that you're doing.
+
+681
+00:21:01,780 --> 00:21:02,780
+So you can see the things that you're doing.
+
+682
+00:21:02,780 --> 00:21:03,780
+So you can see the things that you're doing.
+
+683
+00:21:03,780 --> 00:21:04,780
+So you can see the things that you're doing.
+
+684
+00:21:04,780 --> 00:21:05,780
+So you can see the things that you're doing.
+
+685
+00:21:05,780 --> 00:21:06,780
+So you can see the things that you're doing.
+
+686
+00:21:06,780 --> 00:21:07,780
+So you can see the things that you're doing.
+
+687
+00:21:07,780 --> 00:21:08,780
+So you can see the things that you're doing.
+
+688
+00:21:08,780 --> 00:21:09,780
+So you can see the things that you're doing.
+
+689
+00:21:09,780 --> 00:21:10,780
+So you can see the things that you're doing.
+
+690
+00:21:10,780 --> 00:21:11,780
+So you can see the things that you're doing.
+
+691
+00:21:11,780 --> 00:21:12,780
+So you can see the things that you're doing.
+
+692
+00:21:12,780 --> 00:21:13,780
+So you can see the things that you're doing.
+
+693
+00:21:13,780 --> 00:21:14,780
+So you can see the things that you're doing.
+
+694
+00:21:14,780 --> 00:21:15,780
+So you can see the things that you're doing.
+
+695
+00:21:15,780 --> 00:21:16,780
+So you can see the things that you're doing.
+
+696
+00:21:16,780 --> 00:21:17,780
+So you can see the things that you're doing.
+
+697
+00:21:17,780 --> 00:21:18,780
+So you can see the things that you're doing.
+
+698
+00:21:18,780 --> 00:21:19,780
+So you can see the things that you're doing.
+
+699
+00:21:19,780 --> 00:21:20,780
+So you can see the things that you're doing.
+
+700
+00:21:20,780 --> 00:21:21,780
+So you can see the things that you're doing.
+
+701
+00:21:21,780 --> 00:21:22,780
+So you can see the things that you're doing.
+
+702
+00:21:22,780 --> 00:21:23,780
+So you can see the things that you're doing.
+
+703
+00:21:23,780 --> 00:21:24,780
+So you can see the things that you're doing.
+
+704
+00:21:24,780 --> 00:21:25,780
+So you can see the things that you're doing.
+
+705
+00:21:25,780 --> 00:21:26,780
+So you can see the things that you're doing.
+
+706
+00:21:26,780 --> 00:21:27,780
+So you can see the things that you're doing.
+
+707
+00:21:27,780 --> 00:21:28,780
+So you can see the things that you're doing.
+
+708
+00:21:28,780 --> 00:21:29,780
+So you can see the things that you're doing.
+
+709
+00:21:29,780 --> 00:21:30,780
+So you can see the things that you're doing.
+
+710
+00:21:30,780 --> 00:21:31,780
+So you can see the things that you're doing.
+
+711
+00:21:31,780 --> 00:21:32,780
+So you can see the things that you're doing.
+
+712
+00:21:32,780 --> 00:21:33,780
+So you can see the things that you're doing.
+
+713
+00:21:33,780 --> 00:21:34,780
+So you can see the things that you're doing.
+
+714
+00:21:34,780 --> 00:21:35,780
+So you can see the things that you're doing.
+
+715
+00:21:35,780 --> 00:21:36,780
+So you can see the things that you're doing.
+
+716
+00:21:36,780 --> 00:21:37,780
+So you can see the things that you're doing.
+
+717
+00:21:37,780 --> 00:21:38,780
+So you can see the things that you're doing.
+
+718
+00:21:38,780 --> 00:21:39,780
+So you can see the things that you're doing.
+
+719
+00:21:39,780 --> 00:21:40,780
+So you can see the things that you're doing.
+
+720
+00:21:40,780 --> 00:21:41,780
+So you can see the things that you're doing.
+
+721
+00:21:41,780 --> 00:21:42,780
+So you can see the things that you're doing.
+
+722
+00:21:42,780 --> 00:21:43,780
+So you can see the things that you're doing.
+
+723
+00:21:43,780 --> 00:21:44,780
+So you can see the things that you're doing.
+
+724
+00:21:44,780 --> 00:21:45,780
+So you can see the things that you're doing.
+
+725
+00:21:45,780 --> 00:21:46,780
+So you can see the things that you're doing.
+
+726
+00:21:46,780 --> 00:21:47,780
+So you can see the things that you're doing.
+
+727
+00:21:47,780 --> 00:21:48,780
+So you can see the things that you're doing.
+
+728
+00:21:48,780 --> 00:21:49,780
+So you can see the things that you're doing.
+
+729
+00:21:49,780 --> 00:21:50,780
+So you can see the things that you're doing.
+
+730
+00:21:50,780 --> 00:21:51,780
+So you can see the things that you're doing.
+
+731
+00:21:51,780 --> 00:21:52,780
+So you can see the things that you're doing.
+
+732
+00:21:52,780 --> 00:21:53,780
+So you can see the things that you're doing.
+
+733
+00:21:53,780 --> 00:21:54,780
+So you can see the things that you're doing.
+
+734
+00:21:54,780 --> 00:21:55,780
+So you can see the things that you're doing.
+
+735
+00:21:55,780 --> 00:21:56,780
+So you can see the things that you're doing.
+
+736
+00:21:56,780 --> 00:21:57,780
+So you can see the things that you're doing.
+
+737
+00:21:57,780 --> 00:21:58,780
+So you can see the things that you're doing.
+
+738
+00:21:58,780 --> 00:21:59,780
+So you can see the things that you're doing.
+
+739
+00:21:59,780 --> 00:22:00,780
+So you can see the things that you're doing.
+
+740
+00:22:00,780 --> 00:22:01,780
+So you can see the things that you're doing.
+
+741
+00:22:01,780 --> 00:22:02,780
+So you can see the things that you're doing.
+
+742
+00:22:02,780 --> 00:22:03,780
+So you can see the things that you're doing.
+
+743
+00:22:03,780 --> 00:22:04,780
+So you can see the things that you're doing.
+
+744
+00:22:04,780 --> 00:22:05,780
+So you can see the things that you're doing.
+
+745
+00:22:05,780 --> 00:22:06,780
+So you can see the things that you're doing.
+
+746
+00:22:06,780 --> 00:22:07,780
+So you can see the things that you're doing.
+
+747
+00:22:07,780 --> 00:22:08,780
+So you can see the things that you're doing.
+
+748
+00:22:08,780 --> 00:22:09,780
+So you can see the things that you're doing.
+
+749
+00:22:09,780 --> 00:22:10,780
+So you can see the things that you're doing.
+
+750
+00:22:10,780 --> 00:22:11,780
+So you can see the things that you're doing.
+
+751
+00:22:11,780 --> 00:22:12,780
+So you can see the things that you're doing.
+
+752
+00:22:12,780 --> 00:22:13,780
+So you can see the things that you're doing.
+
+753
+00:22:13,780 --> 00:22:14,780
+So you can see the things that you're doing.
+
+754
+00:22:14,780 --> 00:22:15,780
+So you can see the things that you're doing.
+
+755
+00:22:15,780 --> 00:22:16,780
+So you can see the things that you're doing.
+
+756
+00:22:16,780 --> 00:22:17,780
+So you can see the things that you're doing.
+
+757
+00:22:17,780 --> 00:22:18,780
+So you can see the things that you're doing.
+
+758
+00:22:18,780 --> 00:22:19,780
+So you can see the things that you're doing.
+
+759
+00:22:19,780 --> 00:22:20,780
+So you can see the things that you're doing.
+
+760
+00:22:20,780 --> 00:22:21,780
+So you can see the things that you're doing.
+
+761
+00:22:21,780 --> 00:22:22,780
+So you can see the things that you're doing.
+
+762
+00:22:22,780 --> 00:22:23,780
+So you can see the things that you're doing.
+
+763
+00:22:23,780 --> 00:22:24,780
+So you can see the things that you're doing.
+
+764
+00:22:24,780 --> 00:22:25,780
+So you can see the things that you're doing.
+
+765
+00:22:25,780 --> 00:22:26,780
+So you can see the things that you're doing.
+
+766
+00:22:26,780 --> 00:22:27,780
+So you can see the things that you're doing.
+
+767
+00:22:27,780 --> 00:22:28,780
+So you can see the things that you're doing.
+
+768
+00:22:28,780 --> 00:22:29,780
+So you can see the things that you're doing.
+
+769
+00:22:29,780 --> 00:22:30,780
+So you can see the things that you're doing.
+
+770
+00:22:30,780 --> 00:22:31,780
+So you can see the things that you're doing.
+
+771
+00:22:31,780 --> 00:22:32,780
+So you can see the things that you're doing.
+
+772
+00:22:32,780 --> 00:22:33,780
+So you can see the things that you're doing.
+
+773
+00:22:33,780 --> 00:22:34,780
+So you can see the things that you're doing.
+
+774
+00:22:34,780 --> 00:22:35,780
+So you can see the things that you're doing.
+
+775
+00:22:35,780 --> 00:22:36,780
+So you can see the things that you're doing.
+
+776
+00:22:36,780 --> 00:22:37,780
+So you can see the things that you're doing.
+
+777
+00:22:37,780 --> 00:22:38,780
+So you can see the things that you're doing.
+
+778
+00:22:38,780 --> 00:22:39,780
+So you can see the things that you're doing.
+
+779
+00:22:39,780 --> 00:22:40,780
+So you can see the things that you're doing.
+
+780
+00:22:40,780 --> 00:22:41,780
+So you can see the things that you're doing.
+
+781
+00:22:41,780 --> 00:22:42,780
+So you can see the things that you're doing.
+
+782
+00:22:42,780 --> 00:22:43,780
+So you can see the things that you're doing.
+
+783
+00:22:43,780 --> 00:22:44,780
+So you can see the things that you're doing.
+
+784
+00:22:44,780 --> 00:22:45,780
+So you can see the things that you're doing.
+
+785
+00:22:45,780 --> 00:22:46,780
+So you can see the things that you're doing.
+
+786
+00:22:46,780 --> 00:22:47,780
+So you can see the things that you're doing.
+
+787
+00:22:47,780 --> 00:22:48,780
+So you can see the things that you're doing.
+
+788
+00:22:48,780 --> 00:22:49,780
+So you can see the things that you're doing.
+
+789
+00:22:49,780 --> 00:22:50,780
+So you can see the things that you're doing.
+
+790
+00:22:50,780 --> 00:22:51,780
+So you can see the things that you're doing.
+
+791
+00:22:51,780 --> 00:22:52,780
+So you can see the things that you're doing.
+
+792
+00:22:52,780 --> 00:22:53,780
+So you can see the things that you're doing.
+
+793
+00:22:53,780 --> 00:22:54,780
+So you can see the things that you're doing.
+
+794
+00:22:54,780 --> 00:22:55,780
+So you can see the things that you're doing.
+
+795
+00:22:55,780 --> 00:22:56,780
+So you can see the things that you're doing.
+
+796
+00:22:56,780 --> 00:22:57,780
+So you can see the things that you're doing.
+
+797
+00:22:57,780 --> 00:22:58,780
+So you can see the things that you're doing.
+
+798
+00:22:58,780 --> 00:22:59,780
+So you can see the things that you're doing.
+
+799
+00:22:59,780 --> 00:23:00,780
+So you can see the things that you're doing.
+
+800
+00:23:00,780 --> 00:23:01,780
+So you can see the things that you're doing.
+
+801
+00:23:01,780 --> 00:23:02,780
+So you can see the things that you're doing.
+
+802
+00:23:02,780 --> 00:23:03,780
+So you can see the things that you're doing.
+
+803
+00:23:03,780 --> 00:23:04,780
+So you can see the things that you're doing.
+
+804
+00:23:04,780 --> 00:23:05,780
+So you can see the things that you're doing.
+
+805
+00:23:05,780 --> 00:23:06,780
+So you can see the things that you're doing.
+
+806
+00:23:06,780 --> 00:23:07,780
+So you can see the things that you're doing.
+
+807
+00:23:07,780 --> 00:23:08,780
+So you can see the things that you're doing.
+
+808
+00:23:08,780 --> 00:23:09,780
+So you can see the things that you're doing.
+
+809
+00:23:09,780 --> 00:23:10,780
+So you can see the things that you're doing.
+
+810
+00:23:10,780 --> 00:23:11,780
+So you can see the things that you're doing.
+
+811
+00:23:11,780 --> 00:23:12,780
+So you can see the things that you're doing.
+
+812
+00:23:12,780 --> 00:23:13,780
+So you can see the things that you're doing.
+
+813
+00:23:13,780 --> 00:23:14,780
+So you can see the things that you're doing.
+
+814
+00:23:14,780 --> 00:23:15,780
+So you can see the things that you're doing.
+
+815
+00:23:15,780 --> 00:23:16,780
+So you can see the things that you're doing.
+
+816
+00:23:16,780 --> 00:23:17,780
+So you can see the things that you're doing.
+
+817
+00:23:17,780 --> 00:23:18,780
+So you can see the things that you're doing.
+
+818
+00:23:18,780 --> 00:23:19,780
+So you can see the things that you're doing.
+
+819
+00:23:19,780 --> 00:23:20,780
+So you can see the things that you're doing.
+
+820
+00:23:20,780 --> 00:23:21,780
+So you can see the things that you're doing.
+
+821
+00:23:21,780 --> 00:23:22,780
+So you can see the things that you're doing.
+
+822
+00:23:22,780 --> 00:23:23,780
+So you can see the things that you're doing.
+
+823
+00:23:23,780 --> 00:23:24,780
+So you can see the things that you're doing.
+
+824
+00:23:24,780 --> 00:23:25,780
+So you can see the things that you're doing.
+
+825
+00:23:25,780 --> 00:23:26,780
+So you can see the things that you're doing.
+
+826
+00:23:26,780 --> 00:23:27,780
+So you can see the things that you're doing.
+
+827
+00:23:27,780 --> 00:23:28,780
+So you can see the things that you're doing.
+
+828
+00:23:28,780 --> 00:23:29,780
+So you can see the things that you're doing.
+
+829
+00:23:29,780 --> 00:23:30,780
+So you can see the things that you're doing.
+
+830
+00:23:30,780 --> 00:23:31,780
+So you can see the things that you're doing.
+
+831
+00:23:31,780 --> 00:23:32,780
+So you can see the things that you're doing.
+
+832
+00:23:32,780 --> 00:23:33,780
+So you can see the things that you're doing.
+
+833
+00:23:33,780 --> 00:23:34,780
+So you can see the things that you're doing.
+
+834
+00:23:34,780 --> 00:23:35,780
+So you can see the things that you're doing.
+
+835
+00:23:35,780 --> 00:23:36,780
+So you can see the things that you're doing.
+
+836
+00:23:36,780 --> 00:23:37,780
+So you can see the things that you're doing.
+
+837
+00:23:37,780 --> 00:23:38,780
+So you can see the things that you're doing.
+
+838
+00:23:38,780 --> 00:23:39,780
+So you can see the things that you're doing.
+
+839
+00:23:39,780 --> 00:23:40,780
+So you can see the things that you're doing.
+
+840
+00:23:40,780 --> 00:23:41,780
+So you can see the things that you're doing.
+
+841
+00:23:41,780 --> 00:23:42,780
+So you can see the things that you're doing.
+
+842
+00:23:42,780 --> 00:23:43,780
+So you can see the things that you're doing.
+
+843
+00:23:43,780 --> 00:23:44,780
+So you can see the things that you're doing.
+
+844
+00:23:44,780 --> 00:23:45,780
+So you can see the things that you're doing.
+
+845
+00:23:45,780 --> 00:23:46,780
+So you can see the things that you're doing.
+
+846
+00:23:46,780 --> 00:23:47,780
+So you can see the things that you're doing.
+
+847
+00:23:47,780 --> 00:23:48,780
+So you can see the things that you're doing.
+
+848
+00:23:48,780 --> 00:23:49,780
+So you can see the things that you're doing.
+
+849
+00:23:49,780 --> 00:23:50,780
+So you can see the things that you're doing.
+
+850
+00:23:50,780 --> 00:23:51,780
+So you can see the things that you're doing.
+
+851
+00:23:51,780 --> 00:23:52,780
+So you can see the things that you're doing.
+
+852
+00:23:52,780 --> 00:23:53,780
+So you can see the things that you're doing.
+
+853
+00:23:53,780 --> 00:23:54,780
+So you can see the things that you're doing.
+
+854
+00:23:54,780 --> 00:23:55,780
+So you can see the things that you're doing.
+
+855
+00:23:55,780 --> 00:23:56,780
+So you can see the things that you're doing.
+
+856
+00:23:56,780 --> 00:23:57,780
+So you can see the things that you're doing.
+
+857
+00:23:57,780 --> 00:23:58,780
+So you can see the things that you're doing.
+
+858
+00:23:58,780 --> 00:23:59,780
+So you can see the things that you're doing.
+
+859
+00:23:59,780 --> 00:24:00,780
+So you can see the things that you're doing.
+
+860
+00:24:00,780 --> 00:24:01,780
+So you can see the things that you're doing.
+
+861
+00:24:01,780 --> 00:24:02,780
+So you can see the things that you're doing.
+
+862
+00:24:02,780 --> 00:24:03,780
+So you can see the things that you're doing.
+
+863
+00:24:03,780 --> 00:24:04,780
+So you can see the things that you're doing.
+
+864
+00:24:04,780 --> 00:24:05,780
+So you can see the things that you're doing.
+
+865
+00:24:05,780 --> 00:24:06,780
+So you can see the things that you're doing.
+
+866
+00:24:06,780 --> 00:24:07,780
+So you can see the things that you're doing.
+
+867
+00:24:07,780 --> 00:24:08,780
+So you can see the things that you're doing.
+
+868
+00:24:08,780 --> 00:24:09,780
+So you can see the things that you're doing.
+
+869
+00:24:09,780 --> 00:24:10,780
+So you can see the things that you're doing.
+
+870
+00:24:10,780 --> 00:24:11,780
+So you can see the things that you're doing.
+
+871
+00:24:11,780 --> 00:24:12,780
+So you can see the things that you're doing.
+
+872
+00:24:12,780 --> 00:24:13,780
+So you can see the things that you're doing.
+
+873
+00:24:13,780 --> 00:24:14,780
+So you can see the things that you're doing.
+
+874
+00:24:14,780 --> 00:24:15,780
+So you can see the things that you're doing.
+
+875
+00:24:15,780 --> 00:24:16,780
+So you can see the things that you're doing.
+
+876
+00:24:16,780 --> 00:24:17,780
+So you can see the things that you're doing.
+
+877
+00:24:17,780 --> 00:24:18,780
+So you can see the things that you're doing.
+
+878
+00:24:18,780 --> 00:24:19,780
+So you can see the things that you're doing.
+
+879
+00:24:19,780 --> 00:24:20,780
+So you can see the things that you're doing.
+
+880
+00:24:20,780 --> 00:24:21,780
+So you can see the things that you're doing.
+
+881
+00:24:21,780 --> 00:24:22,780
+So you can see the things that you're doing.
+
+882
+00:24:22,780 --> 00:24:23,780
+So you can see the things that you're doing.
+
+883
+00:24:23,780 --> 00:24:24,780
+So you can see the things that you're doing.
+
+884
+00:24:24,780 --> 00:24:25,780
+So you can see the things that you're doing.
+
+885
+00:24:25,780 --> 00:24:26,780
+So you can see the things that you're doing.
+
+886
+00:24:26,780 --> 00:24:27,780
+So you can see the things that you're doing.
+
+887
+00:24:27,780 --> 00:24:28,780
+So you can see the things that you're doing.
+
+888
+00:24:28,780 --> 00:24:29,780
+So you can see the things that you're doing.
+
+889
+00:24:29,780 --> 00:24:30,780
+So you can see the things that you're doing.
+
+890
+00:24:30,780 --> 00:24:31,780
+So you can see the things that you're doing.
+
+891
+00:24:31,780 --> 00:24:32,780
+So you can see the things that you're doing.
+
+892
+00:24:32,780 --> 00:24:33,780
+So you can see the things that you're doing.
+
+893
+00:24:33,780 --> 00:24:34,780
+So you can see the things that you're doing.
+
+894
+00:24:34,780 --> 00:24:35,780
+So you can see the things that you're doing.
+
+895
+00:24:35,780 --> 00:24:36,780
+So you can see the things that you're doing.
+
+896
+00:24:36,780 --> 00:24:37,780
+So you can see the things that you're doing.
+
+897
+00:24:37,780 --> 00:24:38,780
+So you can see the things that you're doing.
+
+898
+00:24:38,780 --> 00:24:39,780
+So you can see the things that you're doing.
+
+899
+00:24:39,780 --> 00:24:40,780
+So you can see the things that you're doing.
+
+900
+00:24:40,780 --> 00:24:41,780
+So you can see the things that you're doing.
+
+901
+00:24:41,780 --> 00:24:42,780
+So you can see the things that you're doing.
+
+902
+00:24:42,780 --> 00:24:43,780
+So you can see the things that you're doing.
+
+903
+00:24:43,780 --> 00:24:44,780
+So you can see the things that you're doing.
+
+904
+00:24:44,780 --> 00:24:45,780
+So you can see the things that you're doing.
+
+905
+00:24:45,780 --> 00:24:46,780
+So you can see the things that you're doing.
+
+906
+00:24:46,780 --> 00:24:47,780
+So you can see the things that you're doing.
+
+907
+00:24:47,780 --> 00:24:48,780
+So you can see the things that you're doing.
+
+908
+00:24:48,780 --> 00:24:49,780
+So you can see the things that you're doing.
+
+909
+00:24:49,780 --> 00:24:50,780
+So you can see the things that you're doing.
+
+910
+00:24:50,780 --> 00:24:51,780
+So you can see the things that you're doing.
+
+911
+00:24:51,780 --> 00:24:52,780
+So you can see the things that you're doing.
+
+912
+00:24:52,780 --> 00:24:53,780
+So you can see the things that you're doing.
+
+913
+00:24:53,780 --> 00:24:54,780
+So you can see the things that you're doing.
+
+914
+00:24:54,780 --> 00:24:55,780
+So you can see the things that you're doing.
+
+915
+00:24:55,780 --> 00:24:56,780
+So you can see the things that you're doing.
+
+916
+00:24:56,780 --> 00:24:57,780
+So you can see the things that you're doing.
+
+917
+00:24:57,780 --> 00:24:58,780
+So you can see the things that you're doing.
+
+918
+00:24:58,780 --> 00:24:59,780
+So you can see the things that you're doing.
+
+919
+00:24:59,780 --> 00:25:00,780
+So you can see the things that you're doing.
+
+920
+00:25:00,780 --> 00:25:01,780
+So you can see the things that you're doing.
+
+921
+00:25:01,780 --> 00:25:02,780
+So you can see the things that you're doing.
+
+922
+00:25:02,780 --> 00:25:03,780
+So you can see the things that you're doing.
+
+923
+00:25:03,780 --> 00:25:04,780
+So you can see the things that you're doing.
+
+924
+00:25:04,780 --> 00:25:05,780
+So you can see the things that you're doing.
+
+925
+00:25:05,780 --> 00:25:06,780
+So you can see the things that you're doing.
+
+926
+00:25:06,780 --> 00:25:07,780
+So you can see the things that you're doing.
+
+927
+00:25:07,780 --> 00:25:08,780
+So you can see the things that you're doing.
+
+928
+00:25:08,780 --> 00:25:09,780
+So you can see the things that you're doing.
+
+929
+00:25:09,780 --> 00:25:10,780
+So you can see the things that you're doing.
+
+930
+00:25:10,780 --> 00:25:11,780
+So you can see the things that you're doing.
+
+931
+00:25:11,780 --> 00:25:12,780
+So you can see the things that you're doing.
+
+932
+00:25:12,780 --> 00:25:13,780
+So you can see the things that you're doing.
+
+933
+00:25:13,780 --> 00:25:14,780
+So you can see the things that you're doing.
+
+934
+00:25:14,780 --> 00:25:15,780
+So you can see the things that you're doing.
+
+935
+00:25:15,780 --> 00:25:16,780
+So you can see the things that you're doing.
+
+936
+00:25:16,780 --> 00:25:17,780
+So you can see the things that you're doing.
+
+937
+00:25:17,780 --> 00:25:18,780
+So you can see the things that you're doing.
+
+938
+00:25:18,780 --> 00:25:19,780
+So you can see the things that you're doing.
+
+939
+00:25:19,780 --> 00:25:20,780
+So you can see the things that you're doing.
+
+940
+00:25:20,780 --> 00:25:21,780
+So you can see the things that you're doing.
+
+941
+00:25:21,780 --> 00:25:22,780
+So you can see the things that you're doing.
+
+942
+00:25:22,780 --> 00:25:23,780
+So you can see the things that you're doing.
+
+943
+00:25:23,780 --> 00:25:24,780
+So you can see the things that you're doing.
+
+944
+00:25:24,780 --> 00:25:25,780
+So you can see the things that you're doing.
+
+945
+00:25:25,780 --> 00:25:26,780
+So you can see the things that you're doing.
+
+946
+00:25:26,780 --> 00:25:27,780
+So you can see the things that you're doing.
+
+947
+00:25:27,780 --> 00:25:28,780
+So you can see the things that you're doing.
+
+948
+00:25:28,780 --> 00:25:29,780
+So you can see the things that you're doing.
+
+949
+00:25:29,780 --> 00:25:30,780
+So you can see the things that you're doing.
+
+950
+00:25:30,780 --> 00:25:31,780
+So you can see the things that you're doing.
+
+951
+00:25:31,780 --> 00:25:32,780
+So you can see the things that you're doing.
+
+952
+00:25:32,780 --> 00:25:33,780
+So you can see the things that you're doing.
+
+953
+00:25:33,780 --> 00:25:34,780
+So you can see the things that you're doing.
+
+954
+00:25:34,780 --> 00:25:35,780
+So you can see the things that you're doing.
+
+955
+00:25:35,780 --> 00:25:36,780
+So you can see the things that you're doing.
+
+956
+00:25:36,780 --> 00:25:37,780
+So you can see the things that you're doing.
+
+957
+00:25:37,780 --> 00:25:38,780
+So you can see the things that you're doing.
+
+958
+00:25:38,780 --> 00:25:39,780
+So you can see the things that you're doing.
+
+959
+00:25:39,780 --> 00:25:40,780
+So you can see the things that you're doing.
+
+960
+00:25:40,780 --> 00:25:41,780
+So you can see the things that you're doing.
+
+961
+00:25:41,780 --> 00:25:42,780
+So you can see the things that you're doing.
+
+962
+00:25:42,780 --> 00:25:43,780
+So you can see the things that you're doing.
+
+963
+00:25:43,780 --> 00:25:44,780
+So you can see the things that you're doing.
+
+964
+00:25:44,780 --> 00:25:45,780
+So you can see the things that you're doing.
+
+965
+00:25:45,780 --> 00:25:46,780
+So you can see the things that you're doing.
+
+966
+00:25:46,780 --> 00:25:47,780
+So you can see the things that you're doing.
+
+967
+00:25:47,780 --> 00:25:48,780
+So you can see the things that you're doing.
+
+968
+00:25:48,780 --> 00:25:49,780
+So you can see the things that you're doing.
+
+969
+00:25:49,780 --> 00:25:50,780
+So you can see the things that you're doing.
+
+970
+00:25:50,780 --> 00:25:51,780
+So you can see the things that you're doing.
+
+971
+00:25:51,780 --> 00:25:52,780
+So you can see the things that you're doing.
+
+972
+00:25:52,780 --> 00:25:53,780
+So you can see the things that you're doing.
+
+973
+00:25:53,780 --> 00:25:54,780
+So you can see the things that you're doing.
+
+974
+00:25:54,780 --> 00:25:55,780
+So you can see the things that you're doing.
+
+975
+00:25:55,780 --> 00:25:56,780
+So you can see the things that you're doing.
+
+976
+00:25:56,780 --> 00:25:57,780
+So you can see the things that you're doing.
+
+977
+00:25:57,780 --> 00:25:58,780
+So you can see the things that you're doing.
+
+978
+00:25:58,780 --> 00:25:59,780
+So you can see the things that you're doing.
+
+979
+00:25:59,780 --> 00:26:00,780
+So you can see the things that you're doing.
+
+980
+00:26:00,780 --> 00:26:01,780
+So you can see the things that you're doing.
+
+981
+00:26:01,780 --> 00:26:02,780
+So you can see the things that you're doing.
+
+982
+00:26:02,780 --> 00:26:03,780
+So you can see the things that you're doing.
+
+983
+00:26:03,780 --> 00:26:04,780
+So you can see the things that you're doing.
+
+984
+00:26:04,780 --> 00:26:05,780
+So you can see the things that you're doing.
+
+985
+00:26:05,780 --> 00:26:06,780
+So you can see the things that you're doing.
+
+986
+00:26:06,780 --> 00:26:07,780
+So you can see the things that you're doing.
+
+987
+00:26:07,780 --> 00:26:08,780
+So you can see the things that you're doing.
+
+988
+00:26:08,780 --> 00:26:09,780
+So you can see the things that you're doing.
+
+989
+00:26:09,780 --> 00:26:10,780
+So you can see the things that you're doing.
+
+990
+00:26:10,780 --> 00:26:11,780
+So you can see the things that you're doing.
+
+991
+00:26:11,780 --> 00:26:12,780
+So you can see the things that you're doing.
+
+992
+00:26:12,780 --> 00:26:13,780
+So you can see the things that you're doing.
+
+993
+00:26:13,780 --> 00:26:14,780
+So you can see the things that you're doing.
+
+994
+00:26:14,780 --> 00:26:15,780
+So you can see the things that you're doing.
+
+995
+00:26:15,780 --> 00:26:16,780
+So you can see the things that you're doing.
+
+996
+00:26:16,780 --> 00:26:17,780
+So you can see the things that you're doing.
+
+997
+00:26:17,780 --> 00:26:18,780
+So you can see the things that you're doing.
+
+998
+00:26:18,780 --> 00:26:19,780
+So you can see the things that you're doing.
+
+999
+00:26:19,780 --> 00:26:20,780
+So you can see the things that you're doing.
+
+1000
+00:26:20,780 --> 00:26:21,780
+So you can see the things that you're doing.
+
+1001
+00:26:21,780 --> 00:26:22,780
+So you can see the things that you're doing.
+
+1002
+00:26:22,780 --> 00:26:23,780
+So you can see the things that you're doing.
+
+1003
+00:26:23,780 --> 00:26:24,780
+So you can see the things that you're doing.
+
+1004
+00:26:24,780 --> 00:26:25,780
+So you can see the things that you're doing.
+
+1005
+00:26:25,780 --> 00:26:26,780
+So you can see the things that you're doing.
+
+1006
+00:26:26,780 --> 00:26:27,780
+So you can see the things that you're doing.
+
+1007
+00:26:27,780 --> 00:26:28,780
+So you can see the things that you're doing.
+
+1008
+00:26:28,780 --> 00:26:29,780
+So you can see the things that you're doing.
+
+1009
+00:26:29,780 --> 00:26:30,780
+So you can see the things that you're doing.
+
+1010
+00:26:30,780 --> 00:26:31,780
+So you can see the things that you're doing.
+
+1011
+00:26:31,780 --> 00:26:32,780
+So you can see the things that you're doing.
+
+1012
+00:26:32,780 --> 00:26:33,780
+So you can see the things that you're doing.
+
+1013
+00:26:33,780 --> 00:26:34,780
+So you can see the things that you're doing.
+
+1014
+00:26:34,780 --> 00:26:35,780
+So you can see the things that you're doing.
+
+1015
+00:26:35,780 --> 00:26:36,780
+So you can see the things that you're doing.
+
+1016
+00:26:36,780 --> 00:26:37,780
+So you can see the things that you're doing.
+
+1017
+00:26:37,780 --> 00:26:38,780
+So you can see the things that you're doing.
+
+1018
+00:26:38,780 --> 00:26:39,780
+So you can see the things that you're doing.
+
+1019
+00:26:39,780 --> 00:26:40,780
+So you can see the things that you're doing.
+
+1020
+00:26:40,780 --> 00:26:41,780
+So you can see the things that you're doing.
+
+1021
+00:26:41,780 --> 00:26:42,780
+So you can see the things that you're doing.
+
+1022
+00:26:42,780 --> 00:26:43,780
+So you can see the things that you're doing.
+
+1023
+00:26:43,780 --> 00:26:44,780
+So you can see the things that you're doing.
+
+1024
+00:26:44,780 --> 00:26:45,780
+So you can see the things that you're doing.
+
+1025
+00:26:45,780 --> 00:26:46,780
+So you can see the things that you're doing.
+
+1026
+00:26:46,780 --> 00:26:47,780
+So you can see the things that you're doing.
+
+1027
+00:26:47,780 --> 00:26:48,780
+So you can see the things that you're doing.
+
+1028
+00:26:48,780 --> 00:26:49,780
+So you can see the things that you're doing.
+
+1029
+00:26:49,780 --> 00:26:50,780
+So you can see the things that you're doing.
+
+1030
+00:26:50,780 --> 00:26:51,780
+So you can see the things that you're doing.
+
+1031
+00:26:51,780 --> 00:26:52,780
+So you can see the things that you're doing.
+
+1032
+00:26:52,780 --> 00:26:53,780
+So you can see the things that you're doing.
+
+1033
+00:26:53,780 --> 00:26:54,780
+So you can see the things that you're doing.
+
+1034
+00:26:54,780 --> 00:26:55,780
+So you can see the things that you're doing.
+
+1035
+00:26:55,780 --> 00:26:56,780
+So you can see the things that you're doing.
+
+1036
+00:26:56,780 --> 00:26:57,780
+So you can see the things that you're doing.
+
+1037
+00:26:57,780 --> 00:26:58,780
+So you can see the things that you're doing.
+
+1038
+00:26:58,780 --> 00:26:59,780
+So you can see the things that you're doing.
+
+1039
+00:26:59,780 --> 00:27:00,780
+So you can see the things that you're doing.
+
+1040
+00:27:00,780 --> 00:27:01,780
+So you can see the things that you're doing.
+
+1041
+00:27:01,780 --> 00:27:02,780
+So you can see the things that you're doing.
+
+1042
+00:27:02,780 --> 00:27:03,780
+So you can see the things that you're doing.
+
+1043
+00:27:03,780 --> 00:27:04,780
+So you can see the things that you're doing.
+
+1044
+00:27:04,780 --> 00:27:05,780
+So you can see the things that you're doing.
+
+1045
+00:27:05,780 --> 00:27:06,780
+So you can see the things that you're doing.
+
+1046
+00:27:06,780 --> 00:27:07,780
+So you can see the things that you're doing.
+
+1047
+00:27:07,780 --> 00:27:08,780
+So you can see the things that you're doing.
+
+1048
+00:27:08,780 --> 00:27:09,780
+So you can see the things that you're doing.
+
+1049
+00:27:09,780 --> 00:27:10,780
+So you can see the things that you're doing.
+
+1050
+00:27:10,780 --> 00:27:11,780
+So you can see the things that you're doing.
+
+1051
+00:27:11,780 --> 00:27:12,780
+So you can see the things that you're doing.
+
+1052
+00:27:12,780 --> 00:27:13,780
+So you can see the things that you're doing.
+
+1053
+00:27:13,780 --> 00:27:14,780
+So you can see the things that you're doing.
+
+1054
+00:27:14,780 --> 00:27:15,780
+So you can see the things that you're doing.
+
+1055
+00:27:15,780 --> 00:27:16,780
+So you can see the things that you're doing.
+
+1056
+00:27:16,780 --> 00:27:17,780
+So you can see the things that you're doing.
+
+1057
+00:27:17,780 --> 00:27:18,780
+So you can see the things that you're doing.
+
+1058
+00:27:18,780 --> 00:27:19,780
+So you can see the things that you're doing.
+
+1059
+00:27:19,780 --> 00:27:20,780
+So you can see the things that you're doing.
+
+1060
+00:27:20,780 --> 00:27:21,780
+So you can see the things that you're doing.
+
+1061
+00:27:21,780 --> 00:27:22,780
+So you can see the things that you're doing.
+
+1062
+00:27:22,780 --> 00:27:23,780
+So you can see the things that you're doing.
+
+1063
+00:27:23,780 --> 00:27:24,780
+So you can see the things that you're doing.
+
+1064
+00:27:24,780 --> 00:27:25,780
+So you can see the things that you're doing.
+
+1065
+00:27:25,780 --> 00:27:26,780
+So you can see the things that you're doing.
+
+1066
+00:27:26,780 --> 00:27:27,780
+So you can see the things that you're doing.
+
+1067
+00:27:27,780 --> 00:27:28,780
+So you can see the things that you're doing.
+
+1068
+00:27:28,780 --> 00:27:29,780
+So you can see the things that you're doing.
+
+1069
+00:27:29,780 --> 00:27:30,780
+So you can see the things that you're doing.
+
+1070
+00:27:30,780 --> 00:27:31,780
+So you can see the things that you're doing.
+
+1071
+00:27:31,780 --> 00:27:32,780
+So you can see the things that you're doing.
+
+1072
+00:27:32,780 --> 00:27:33,780
+So you can see the things that you're doing.
+
+1073
+00:27:33,780 --> 00:27:34,780
+So you can see the things that you're doing.
+
+1074
+00:27:34,780 --> 00:27:35,780
+So you can see the things that you're doing.
+
+1075
+00:27:35,780 --> 00:27:36,780
+So you can see the things that you're doing.
+
+1076
+00:27:36,780 --> 00:27:37,780
+So you can see the things that you're doing.
+
+1077
+00:27:37,780 --> 00:27:38,780
+So you can see the things that you're doing.
+
+1078
+00:27:38,780 --> 00:27:39,780
+So you can see the things that you're doing.
+
+1079
+00:27:39,780 --> 00:27:40,780
+So you can see the things that you're doing.
+
+1080
+00:27:40,780 --> 00:27:41,780
+So you can see the things that you're doing.
+
+1081
+00:27:41,780 --> 00:27:42,780
+So you can see the things that you're doing.
+
+1082
+00:27:42,780 --> 00:27:43,780
+So you can see the things that you're doing.
+
+1083
+00:27:43,780 --> 00:27:44,780
+So you can see the things that you're doing.
+
+1084
+00:27:44,780 --> 00:27:45,780
+So you can see the things that you're doing.
+
+1085
+00:27:45,780 --> 00:27:46,780
+So you can see the things that you're doing.
+
+1086
+00:27:46,780 --> 00:27:47,780
+So you can see the things that you're doing.
+
+1087
+00:27:47,780 --> 00:27:48,780
+So you can see the things that you're doing.
+
+1088
+00:27:48,780 --> 00:27:49,780
+So you can see the things that you're doing.
+
+1089
+00:27:49,780 --> 00:27:50,780
+So you can see the things that you're doing.
+
+1090
+00:27:50,780 --> 00:27:51,780
+So you can see the things that you're doing.
+
+1091
+00:27:51,780 --> 00:27:52,780
+So you can see the things that you're doing.
+
+1092
+00:27:52,780 --> 00:27:53,780
+So you can see the things that you're doing.
+
+1093
+00:27:53,780 --> 00:27:54,780
+So you can see the things that you're doing.
+
+1094
+00:27:54,780 --> 00:27:55,780
+So you can see the things that you're doing.
+
+1095
+00:27:55,780 --> 00:27:56,780
+So you can see the things that you're doing.
+
+1096
+00:27:56,780 --> 00:27:57,780
+So you can see the things that you're doing.
+
+1097
+00:27:57,780 --> 00:27:58,780
+So you can see the things that you're doing.
+
+1098
+00:27:58,780 --> 00:27:59,780
+So you can see the things that you're doing.
+
+1099
+00:27:59,780 --> 00:28:00,780
+So you can see the things that you're doing.
+
+1100
+00:28:00,780 --> 00:28:01,780
+So you can see the things that you're doing.
+
+1101
+00:28:01,780 --> 00:28:02,780
+So you can see the things that you're doing.
+
+1102
+00:28:02,780 --> 00:28:03,780
+So you can see the things that you're doing.
+
+1103
+00:28:03,780 --> 00:28:04,780
+So you can see the things that you're doing.
+
+1104
+00:28:04,780 --> 00:28:05,780
+So you can see the things that you're doing.
+
+1105
+00:28:05,780 --> 00:28:06,780
+So you can see the things that you're doing.
+
+1106
+00:28:06,780 --> 00:28:07,780
+So you can see the things that you're doing.
+
+1107
+00:28:07,780 --> 00:28:08,780
+So you can see the things that you're doing.
+
+1108
+00:28:08,780 --> 00:28:09,780
+So you can see the things that you're doing.
+
+1109
+00:28:09,780 --> 00:28:10,780
+So you can see the things that you're doing.
+
+1110
+00:28:10,780 --> 00:28:11,780
+So you can see the things that you're doing.
+
+1111
+00:28:11,780 --> 00:28:12,780
+So you can see the things that you're doing.
+
+1112
+00:28:12,780 --> 00:28:13,780
+So you can see the things that you're doing.
+
+1113
+00:28:13,780 --> 00:28:14,780
+So you can see the things that you're doing.
+
+1114
+00:28:14,780 --> 00:28:15,780
+So you can see the things that you're doing.
+
+1115
+00:28:15,780 --> 00:28:16,780
+So you can see the things that you're doing.
+
+1116
+00:28:16,780 --> 00:28:17,780
+So you can see the things that you're doing.
+
+1117
+00:28:17,780 --> 00:28:18,780
+So you can see the things that you're doing.
+
+1118
+00:28:18,780 --> 00:28:19,780
+So you can see the things that you're doing.
+
+1119
+00:28:19,780 --> 00:28:20,780
+So you can see the things that you're doing.
+
+1120
+00:28:20,780 --> 00:28:21,780
+So you can see the things that you're doing.
+
+1121
+00:28:21,780 --> 00:28:22,780
+So you can see the things that you're doing.
+
+1122
+00:28:22,780 --> 00:28:23,780
+So you can see the things that you're doing.
+
+1123
+00:28:23,780 --> 00:28:24,780
+So you can see the things that you're doing.
+
+1124
+00:28:24,780 --> 00:28:25,780
+So you can see the things that you're doing.
+
+1125
+00:28:25,780 --> 00:28:26,780
+So you can see the things that you're doing.
+
+1126
+00:28:26,780 --> 00:28:27,780
+So you can see the things that you're doing.
+
+1127
+00:28:27,780 --> 00:28:28,780
+So you can see the things that you're doing.
+
+1128
+00:28:28,780 --> 00:28:29,780
+So you can see the things that you're doing.
+
+1129
+00:28:29,780 --> 00:28:30,780
+So you can see the things that you're doing.
+
+1130
+00:28:30,780 --> 00:28:31,780
+So you can see the things that you're doing.
+
+1131
+00:28:31,780 --> 00:28:32,780
+So you can see the things that you're doing.
+
+1132
+00:28:32,780 --> 00:28:33,780
+So you can see the things that you're doing.
+
+1133
+00:28:33,780 --> 00:28:34,780
+So you can see the things that you're doing.
+
+1134
+00:28:34,780 --> 00:28:35,780
+So you can see the things that you're doing.
+
+1135
+00:28:35,780 --> 00:28:36,780
+So you can see the things that you're doing.
+
+1136
+00:28:36,780 --> 00:28:37,780
+So you can see the things that you're doing.
+
+1137
+00:28:37,780 --> 00:28:38,780
+So you can see the things that you're doing.
+
+1138
+00:28:38,780 --> 00:28:39,780
+So you can see the things that you're doing.
+
+1139
+00:28:39,780 --> 00:28:40,780
+So you can see the things that you're doing.
+
+1140
+00:28:40,780 --> 00:28:41,780
+So you can see the things that you're doing.
+
+1141
+00:28:41,780 --> 00:28:42,780
+So you can see the things that you're doing.
+
+1142
+00:28:42,780 --> 00:28:43,780
+So you can see the things that you're doing.
+
+1143
+00:28:43,780 --> 00:28:44,780
+So you can see the things that you're doing.
+
+1144
+00:28:44,780 --> 00:28:45,780
+So you can see the things that you're doing.
+
+1145
+00:28:45,780 --> 00:28:46,780
+So you can see the things that you're doing.
+
+1146
+00:28:46,780 --> 00:28:47,780
+So you can see the things that you're doing.
+
+1147
+00:28:47,780 --> 00:28:48,780
+So you can see the things that you're doing.
+
+1148
+00:28:48,780 --> 00:28:49,780
+So you can see the things that you're doing.
+
+1149
+00:28:49,780 --> 00:28:50,780
+So you can see the things that you're doing.
+
+1150
+00:28:50,780 --> 00:28:51,780
+So you can see the things that you're doing.
+
+1151
+00:28:51,780 --> 00:28:52,780
+So you can see the things that you're doing.
+
+1152
+00:28:52,780 --> 00:28:53,780
+So you can see the things that you're doing.
+
+1153
+00:28:53,780 --> 00:28:54,780
+So you can see the things that you're doing.
+
+1154
+00:28:54,780 --> 00:28:55,780
+So you can see the things that you're doing.
+
+1155
+00:28:55,780 --> 00:28:56,780
+So you can see the things that you're doing.
+
+1156
+00:28:56,780 --> 00:28:57,780
+So you can see the things that you're doing.
+
+1157
+00:28:57,780 --> 00:28:58,780
+So you can see the things that you're doing.
+
+1158
+00:28:58,780 --> 00:28:59,780
+So you can see the things that you're doing.
+
+1159
+00:28:59,780 --> 00:29:00,780
+So you can see the things that you're doing.
+
+1160
+00:29:00,780 --> 00:29:01,780
+So you can see the things that you're doing.
+
+1161
+00:29:01,780 --> 00:29:02,780
+So you can see the things that you're doing.
+
+1162
+00:29:02,780 --> 00:29:03,780
+So you can see the things that you're doing.
+
+1163
+00:29:03,780 --> 00:29:04,780
+So you can see the things that you're doing.
+
+1164
+00:29:04,780 --> 00:29:05,780
+So you can see the things that you're doing.
+
+1165
+00:29:05,780 --> 00:29:06,780
+So you can see the things that you're doing.
+
+1166
+00:29:06,780 --> 00:29:07,780
+So you can see the things that you're doing.
+
+1167
+00:29:07,780 --> 00:29:08,780
+So you can see the things that you're doing.
+
+1168
+00:29:08,780 --> 00:29:09,780
+So you can see the things that you're doing.
+
+1169
+00:29:09,780 --> 00:29:10,780
+So you can see the things that you're doing.
+
+1170
+00:29:10,780 --> 00:29:11,780
+So you can see the things that you're doing.
+
+1171
+00:29:11,780 --> 00:29:12,780
+So you can see the things that you're doing.
+
+1172
+00:29:12,780 --> 00:29:13,780
+So you can see the things that you're doing.
+
+1173
+00:29:13,780 --> 00:29:14,780
+So you can see the things that you're doing.
+
+1174
+00:29:14,780 --> 00:29:15,780
+So you can see the things that you're doing.
+
+1175
+00:29:15,780 --> 00:29:16,780
+So you can see the things that you're doing.
+
+1176
+00:29:16,780 --> 00:29:17,780
+So you can see the things that you're doing.
+
+1177
+00:29:17,780 --> 00:29:18,780
+So you can see the things that you're doing.
+
+1178
+00:29:18,780 --> 00:29:19,780
+So you can see the things that you're doing.
+
+1179
+00:29:19,780 --> 00:29:20,780
+So you can see the things that you're doing.
+
+1180
+00:29:20,780 --> 00:29:21,780
+So you can see the things that you're doing.
+
+1181
+00:29:21,780 --> 00:29:22,780
+So you can see the things that you're doing.
+
+1182
+00:29:22,780 --> 00:29:23,780
+So you can see the things that you're doing.
+
+1183
+00:29:23,780 --> 00:29:24,780
+So you can see the things that you're doing.
+
+1184
+00:29:24,780 --> 00:29:25,780
+So you can see the things that you're doing.
+
+1185
+00:29:25,780 --> 00:29:26,780
+So you can see the things that you're doing.
+
+1186
+00:29:26,780 --> 00:29:27,780
+So you can see the things that you're doing.
+
+1187
+00:29:27,780 --> 00:29:28,780
+So you can see the things that you're doing.
+
+1188
+00:29:28,780 --> 00:29:29,780
+So you can see the things that you're doing.
+
+1189
+00:29:29,780 --> 00:29:30,780
+So you can see the things that you're doing.
+
+1190
+00:29:30,780 --> 00:29:31,780
+So you can see the things that you're doing.
+
+1191
+00:29:31,780 --> 00:29:32,780
+So you can see the things that you're doing.
+
+1192
+00:29:32,780 --> 00:29:33,780
+So you can see the things that you're doing.
+
+1193
+00:29:33,780 --> 00:29:34,780
+So you can see the things that you're doing.
+
+1194
+00:29:34,780 --> 00:29:35,780
+So you can see the things that you're doing.
+
+1195
+00:29:35,780 --> 00:29:36,780
+So you can see the things that you're doing.
+
+1196
+00:29:36,780 --> 00:29:37,780
+So you can see the things that you're doing.
+
+1197
+00:29:37,780 --> 00:29:38,780
+So you can see the things that you're doing.
+
+1198
+00:29:38,780 --> 00:29:39,780
+So you can see the things that you're doing.
+
+1199
+00:29:39,780 --> 00:29:40,780
+So you can see the things that you're doing.
+
+1200
+00:29:40,780 --> 00:29:41,780
+So you can see the things that you're doing.
+
+1201
+00:29:41,780 --> 00:29:42,780
+So you can see the things that you're doing.
+
+1202
+00:29:42,780 --> 00:29:43,780
+So you can see the things that you're doing.
+
+1203
+00:29:43,780 --> 00:29:44,780
+So you can see the things that you're doing.
+
+1204
+00:29:44,780 --> 00:29:45,780
+So you can see the things that you're doing.
+
+1205
+00:29:45,780 --> 00:29:46,780
+So you can see the things that you're doing.
+
+1206
+00:29:46,780 --> 00:29:47,780
+So you can see the things that you're doing.
+
+1207
+00:29:47,780 --> 00:29:48,780
+So you can see the things that you're doing.
+
+1208
+00:29:48,780 --> 00:29:49,780
+So you can see the things that you're doing.
+
+1209
+00:29:49,780 --> 00:29:50,780
+So you can see the things that you're doing.
+
+1210
+00:29:50,780 --> 00:29:51,780
+So you can see the things that you're doing.
+
+1211
+00:29:51,780 --> 00:29:52,780
+So you can see the things that you're doing.
+
+1212
+00:29:52,780 --> 00:29:53,780
+So you can see the things that you're doing.
+
+1213
+00:29:53,780 --> 00:29:54,780
+So you can see the things that you're doing.
+
+1214
+00:29:54,780 --> 00:29:55,780
+So you can see the things that you're doing.
+
+1215
+00:29:55,780 --> 00:29:56,780
+So you can see the things that you're doing.
+
+1216
+00:29:56,780 --> 00:29:57,780
+So you can see the things that you're doing.
+
+1217
+00:29:57,780 --> 00:29:58,780
+So you can see the things that you're doing.
+
+1218
+00:29:58,780 --> 00:29:59,780
+So you can see the things that you're doing.
+
+1219
+00:29:59,780 --> 00:30:00,780
+So you can see the things that you're doing.
+
+1220
+00:30:00,780 --> 00:30:01,780
+So you can see the things that you're doing.
+
+1221
+00:30:01,780 --> 00:30:02,780
+So you can see the things that you're doing.
+
+1222
+00:30:02,780 --> 00:30:03,780
+So you can see the things that you're doing.
+
+1223
+00:30:03,780 --> 00:30:04,780
+So you can see the things that you're doing.
+
+1224
+00:30:04,780 --> 00:30:05,780
+So you can see the things that you're doing.
+
+1225
+00:30:05,780 --> 00:30:06,780
+So you can see the things that you're doing.
+
+1226
+00:30:06,780 --> 00:30:07,780
+So you can see the things that you're doing.
+
+1227
+00:30:07,780 --> 00:30:08,780
+So you can see the things that you're doing.
+
+1228
+00:30:08,780 --> 00:30:09,780
+So you can see the things that you're doing.
+
+1229
+00:30:09,780 --> 00:30:10,780
+So you can see the things that you're doing.
+
+1230
+00:30:10,780 --> 00:30:11,780
+So you can see the things that you're doing.
+
+1231
+00:30:11,780 --> 00:30:12,780
+So you can see the things that you're doing.
+
+1232
+00:30:12,780 --> 00:30:13,780
+So you can see the things that you're doing.
+
+1233
+00:30:13,780 --> 00:30:14,780
+So you can see the things that you're doing.
+
+1234
+00:30:14,780 --> 00:30:15,780
+So you can see the things that you're doing.
+
+1235
+00:30:15,780 --> 00:30:16,780
+So you can see the things that you're doing.
+
+1236
+00:30:16,780 --> 00:30:17,780
+So you can see the things that you're doing.
+
+1237
+00:30:17,780 --> 00:30:18,780
+So you can see the things that you're doing.
+
+1238
+00:30:18,780 --> 00:30:19,780
+So you can see the things that you're doing.
+
+1239
+00:30:19,780 --> 00:30:20,780
+So you can see the things that you're doing.
+
+1240
+00:30:20,780 --> 00:30:21,780
+So you can see the things that you're doing.
+
+1241
+00:30:21,780 --> 00:30:22,780
+So you can see the things that you're doing.
+
+1242
+00:30:22,780 --> 00:30:23,780
+So you can see the things that you're doing.
+
+1243
+00:30:23,780 --> 00:30:24,780
+So you can see the things that you're doing.
+
+1244
+00:30:24,780 --> 00:30:25,780
+So you can see the things that you're doing.
+
+1245
+00:30:25,780 --> 00:30:26,780
+So you can see the things that you're doing.
+
+1246
+00:30:26,780 --> 00:30:27,780
+So you can see the things that you're doing.
+
+1247
+00:30:27,780 --> 00:30:28,780
+So you can see the things that you're doing.
+
+1248
+00:30:28,780 --> 00:30:29,780
+So you can see the things that you're doing.
+
+1249
+00:30:29,780 --> 00:30:30,780
+So you can see the things that you're doing.
+
+1250
+00:30:30,780 --> 00:30:31,780
+So you can see the things that you're doing.
+
+1251
+00:30:31,780 --> 00:30:32,780
+So you can see the things that you're doing.
+
+1252
+00:30:32,780 --> 00:30:33,780
+So you can see the things that you're doing.
+
+1253
+00:30:33,780 --> 00:30:34,780
+So you can see the things that you're doing.
+
+1254
+00:30:34,780 --> 00:30:35,780
+So you can see the things that you're doing.
+
+1255
+00:30:35,780 --> 00:30:36,780
+So you can see the things that you're doing.
+
+1256
+00:30:36,780 --> 00:30:37,780
+So you can see the things that you're doing.
+
+1257
+00:30:37,780 --> 00:30:38,780
+So you can see the things that you're doing.
+
+1258
+00:30:38,780 --> 00:30:39,780
+So you can see the things that you're doing.
+
+1259
+00:30:39,780 --> 00:30:40,780
+So you can see the things that you're doing.
+
+1260
+00:30:40,780 --> 00:30:41,780
+So you can see the things that you're doing.
+
+1261
+00:30:41,780 --> 00:30:42,780
+So you can see the things that you're doing.
+
+1262
+00:30:42,780 --> 00:30:43,780
+So you can see the things that you're doing.
+
+1263
+00:30:43,780 --> 00:30:44,780
+So you can see the things that you're doing.
+
+1264
+00:30:44,780 --> 00:30:45,780
+So you can see the things that you're doing.
+
+1265
+00:30:45,780 --> 00:30:46,780
+So you can see the things that you're doing.
+
+1266
+00:30:46,780 --> 00:30:47,780
+So you can see the things that you're doing.
+
+1267
+00:30:47,780 --> 00:30:48,780
+So you can see the things that you're doing.
+
+1268
+00:30:48,780 --> 00:30:49,780
+So you can see the things that you're doing.
+
+1269
+00:30:49,780 --> 00:30:50,780
+So you can see the things that you're doing.
+
+1270
+00:30:50,780 --> 00:30:51,780
+So you can see the things that you're doing.
+
+1271
+00:30:51,780 --> 00:30:52,780
+So you can see the things that you're doing.
+
+1272
+00:30:52,780 --> 00:30:53,780
+So you can see the things that you're doing.
+
+1273
+00:30:53,780 --> 00:30:54,780
+So you can see the things that you're doing.
+
+1274
+00:30:54,780 --> 00:30:55,780
+So you can see the things that you're doing.
+
+1275
+00:30:55,780 --> 00:30:56,780
+So you can see the things that you're doing.
+
+1276
+00:30:56,780 --> 00:30:57,780
+So you can see the things that you're doing.
+
+1277
+00:30:57,780 --> 00:30:58,780
+So you can see the things that you're doing.
+
+1278
+00:30:58,780 --> 00:30:59,780
+So you can see the things that you're doing.
+
+1279
+00:30:59,780 --> 00:31:00,780
+So you can see the things that you're doing.
+
+1280
+00:31:00,780 --> 00:31:01,780
+So you can see the things that you're doing.
+
+1281
+00:31:01,780 --> 00:31:02,780
+So you can see the things that you're doing.
+
+1282
+00:31:02,780 --> 00:31:03,780
+So you can see the things that you're doing.
+
+1283
+00:31:03,780 --> 00:31:04,780
+So you can see the things that you're doing.
+
+1284
+00:31:04,780 --> 00:31:05,780
+So you can see the things that you're doing.
+
+1285
+00:31:05,780 --> 00:31:06,780
+So you can see the things that you're doing.
+
+1286
+00:31:06,780 --> 00:31:07,780
+So you can see the things that you're doing.
+
+1287
+00:31:07,780 --> 00:31:08,780
+So you can see the things that you're doing.
+
+1288
+00:31:08,780 --> 00:31:09,780
+So you can see the things that you're doing.
+
+1289
+00:31:09,780 --> 00:31:10,780
+So you can see the things that you're doing.
+
+1290
+00:31:10,780 --> 00:31:11,780
+So you can see the things that you're doing.
+
+1291
+00:31:11,780 --> 00:31:12,780
+So you can see the things that you're doing.
+
+1292
+00:31:12,780 --> 00:31:13,780
+So you can see the things that you're doing.
+
+1293
+00:31:13,780 --> 00:31:14,780
+So you can see the things that you're doing.
+
+1294
+00:31:14,780 --> 00:31:15,780
+So you can see the things that you're doing.
+
+1295
+00:31:15,780 --> 00:31:16,780
+So you can see the things that you're doing.
+
+1296
+00:31:16,780 --> 00:31:17,780
+So you can see the things that you're doing.
+
+1297
+00:31:17,780 --> 00:31:18,780
+So you can see the things that you're doing.
+
+1298
+00:31:18,780 --> 00:31:19,780
+So you can see the things that you're doing.
+
+1299
+00:31:19,780 --> 00:31:20,780
+So you can see the things that you're doing.
+
+1300
+00:31:20,780 --> 00:31:21,780
+So you can see the things that you're doing.
+
+1301
+00:31:21,780 --> 00:31:22,780
+So you can see the things that you're doing.
+
+1302
+00:31:22,780 --> 00:31:23,780
+So you can see the things that you're doing.
+
+1303
+00:31:23,780 --> 00:31:24,780
+So you can see the things that you're doing.
+
+1304
+00:31:24,780 --> 00:31:25,780
+So you can see the things that you're doing.
+
+1305
+00:31:25,780 --> 00:31:26,780
+So you can see the things that you're doing.
+
+1306
+00:31:26,780 --> 00:31:27,780
+So you can see the things that you're doing.
+
+1307
+00:31:27,780 --> 00:31:28,780
+So you can see the things that you're doing.
+
+1308
+00:31:28,780 --> 00:31:29,780
+So you can see the things that you're doing.
+
+1309
+00:31:29,780 --> 00:31:30,780
+So you can see the things that you're doing.
+
+1310
+00:31:30,780 --> 00:31:31,780
+So you can see the things that you're doing.
+
+1311
+00:31:31,780 --> 00:31:32,780
+So you can see the things that you're doing.
+
+1312
+00:31:32,780 --> 00:31:33,780
+So you can see the things that you're doing.
+
+1313
+00:31:33,780 --> 00:31:34,780
+So you can see the things that you're doing.
+
+1314
+00:31:34,780 --> 00:31:35,780
+So you can see the things that you're doing.
+
+1315
+00:31:35,780 --> 00:31:36,780
+So you can see the things that you're doing.
+
+1316
+00:31:36,780 --> 00:31:37,780
+So you can see the things that you're doing.
+
+1317
+00:31:37,780 --> 00:31:38,780
+So you can see the things that you're doing.
+
+1318
+00:31:38,780 --> 00:31:39,780
+So you can see the things that you're doing.
+
+1319
+00:31:39,780 --> 00:31:40,780
+So you can see the things that you're doing.
+
+1320
+00:31:40,780 --> 00:31:41,780
+So you can see the things that you're doing.
+
+1321
+00:31:41,780 --> 00:31:42,780
+So you can see the things that you're doing.
+
+1322
+00:31:42,780 --> 00:31:43,780
+So you can see the things that you're doing.
+
+1323
+00:31:43,780 --> 00:31:44,780
+So you can see the things that you're doing.
+
+1324
+00:31:44,780 --> 00:31:45,780
+So you can see the things that you're doing.
+
+1325
+00:31:45,780 --> 00:31:46,780
+So you can see the things that you're doing.
+
+1326
+00:31:46,780 --> 00:31:47,780
+So you can see the things that you're doing.
+
+1327
+00:31:47,780 --> 00:31:48,780
+So you can see the things that you're doing.
+
+1328
+00:31:48,780 --> 00:31:49,780
+So you can see the things that you're doing.
+
+1329
+00:31:49,780 --> 00:31:50,780
+So you can see the things that you're doing.
+
+1330
+00:31:50,780 --> 00:31:51,780
+So you can see the things that you're doing.
+
+1331
+00:31:51,780 --> 00:31:52,780
+So you can see the things that you're doing.
+
+1332
+00:31:52,780 --> 00:31:53,780
+So you can see the things that you're doing.
+
+1333
+00:31:53,780 --> 00:31:54,780
+So you can see the things that you're doing.
+
+1334
+00:31:54,780 --> 00:31:55,780
+So you can see the things that you're doing.
+
+1335
+00:31:55,780 --> 00:31:56,780
+So you can see the things that you're doing.
+
+1336
+00:31:56,780 --> 00:31:57,780
+So you can see the things that you're doing.
+
+1337
+00:31:57,780 --> 00:31:58,780
+So you can see the things that you're doing.
+
+1338
+00:31:58,780 --> 00:31:59,780
+So you can see the things that you're doing.
+
+1339
+00:31:59,780 --> 00:32:00,780
+So you can see the things that you're doing.
+
+1340
+00:32:00,780 --> 00:32:01,780
+So you can see the things that you're doing.
+
+1341
+00:32:01,780 --> 00:32:02,780
+So you can see the things that you're doing.
+
+1342
+00:32:02,780 --> 00:32:03,780
+So you can see the things that you're doing.
+
+1343
+00:32:03,780 --> 00:32:04,780
+So you can see the things that you're doing.
+
+1344
+00:32:04,780 --> 00:32:05,780
+So you can see the things that you're doing.
+
+1345
+00:32:05,780 --> 00:32:06,780
+So you can see the things that you're doing.
+
+1346
+00:32:06,780 --> 00:32:07,780
+So you can see the things that you're doing.
+
+1347
+00:32:07,780 --> 00:32:08,780
+So you can see the things that you're doing.
+
+1348
+00:32:08,780 --> 00:32:09,780
+So you can see the things that you're doing.
+
+1349
+00:32:09,780 --> 00:32:10,780
+So you can see the things that you're doing.
+
+1350
+00:32:10,780 --> 00:32:11,780
+So you can see the things that you're doing.
+
+1351
+00:32:11,780 --> 00:32:12,780
+So you can see the things that you're doing.
+
+1352
+00:32:12,780 --> 00:32:13,780
+So you can see the things that you're doing.
+
+1353
+00:32:13,780 --> 00:32:14,780
+So you can see the things that you're doing.
+
+1354
+00:32:14,780 --> 00:32:15,780
+So you can see the things that you're doing.
+
+1355
+00:32:15,780 --> 00:32:16,780
+So you can see the things that you're doing.
+
+1356
+00:32:16,780 --> 00:32:17,780
+So you can see the things that you're doing.
+
+1357
+00:32:17,780 --> 00:32:18,780
+So you can see the things that you're doing.
+
+1358
+00:32:18,780 --> 00:32:19,780
+So you can see the things that you're doing.
+
+1359
+00:32:19,780 --> 00:32:20,780
+So you can see the things that you're doing.
+
+1360
+00:32:20,780 --> 00:32:21,780
+So you can see the things that you're doing.
+
+1361
+00:32:21,780 --> 00:32:22,780
+So you can see the things that you're doing.
+
+1362
+00:32:22,780 --> 00:32:23,780
+So you can see the things that you're doing.
+
+1363
+00:32:23,780 --> 00:32:24,780
+So you can see the things that you're doing.
+
+1364
+00:32:24,780 --> 00:32:25,780
+So you can see the things that you're doing.
+
+1365
+00:32:25,780 --> 00:32:26,780
+So you can see the things that you're doing.
+
+1366
+00:32:26,780 --> 00:32:27,780
+So you can see the things that you're doing.
+
+1367
+00:32:27,780 --> 00:32:28,780
+So you can see the things that you're doing.
+
+1368
+00:32:28,780 --> 00:32:29,780
+So you can see the things that you're doing.
+
+1369
+00:32:29,780 --> 00:32:30,780
+So you can see the things that you're doing.
+
+1370
+00:32:30,780 --> 00:32:31,780
+So you can see the things that you're doing.
+
+1371
+00:32:31,780 --> 00:32:32,780
+So you can see the things that you're doing.
+
+1372
+00:32:32,780 --> 00:32:33,780
+So you can see the things that you're doing.
+
+1373
+00:32:33,780 --> 00:32:34,780
+So you can see the things that you're doing.
+
+1374
+00:32:34,780 --> 00:32:35,780
+So you can see the things that you're doing.
+
+1375
+00:32:35,780 --> 00:32:36,780
+So you can see the things that you're doing.
+
+1376
+00:32:36,780 --> 00:32:37,780
+So you can see the things that you're doing.
+
+1377
+00:32:37,780 --> 00:32:38,780
+So you can see the things that you're doing.
+
+1378
+00:32:38,780 --> 00:32:39,780
+So you can see the things that you're doing.
+
+1379
+00:32:39,780 --> 00:32:40,780
+So you can see the things that you're doing.
+
+1380
+00:32:40,780 --> 00:32:41,780
+So you can see the things that you're doing.
+
+1381
+00:32:41,780 --> 00:32:42,780
+So you can see the things that you're doing.
+
+1382
+00:32:42,780 --> 00:32:43,780
+So you can see the things that you're doing.
+
+1383
+00:32:43,780 --> 00:32:44,780
+So you can see the things that you're doing.
+
+1384
+00:32:44,780 --> 00:32:45,780
+So you can see the things that you're doing.
+
+1385
+00:32:45,780 --> 00:32:46,780
+So you can see the things that you're doing.
+
+1386
+00:32:46,780 --> 00:32:47,780
+So you can see the things that you're doing.
+
+1387
+00:32:47,780 --> 00:32:48,780
+So you can see the things that you're doing.
+
+1388
+00:32:48,780 --> 00:32:49,780
+So you can see the things that you're doing.
+
+1389
+00:32:49,780 --> 00:32:50,780
+So you can see the things that you're doing.
+
+1390
+00:32:50,780 --> 00:32:51,780
+So you can see the things that you're doing.
+
+1391
+00:32:51,780 --> 00:32:52,780
+So you can see the things that you're doing.
+
+1392
+00:32:52,780 --> 00:32:53,780
+So you can see the things that you're doing.
+
+1393
+00:32:53,780 --> 00:32:54,780
+So you can see the things that you're doing.
+
+1394
+00:32:54,780 --> 00:32:55,780
+So you can see the things that you're doing.
+
+1395
+00:32:55,780 --> 00:32:56,780
+So you can see the things that you're doing.
+
+1396
+00:32:56,780 --> 00:32:57,780
+So you can see the things that you're doing.
+
+1397
+00:32:57,780 --> 00:32:58,780
+So you can see the things that you're doing.
+
+1398
+00:32:58,780 --> 00:32:59,780
+So you can see the things that you're doing.
+
+1399
+00:32:59,780 --> 00:33:00,780
+So you can see the things that you're doing.
+
+1400
+00:33:00,780 --> 00:33:01,780
+So you can see the things that you're doing.
+
+1401
+00:33:01,780 --> 00:33:02,780
+So you can see the things that you're doing.
+
+1402
+00:33:02,780 --> 00:33:03,780
+So you can see the things that you're doing.
+
+1403
+00:33:03,780 --> 00:33:04,780
+So you can see the things that you're doing.
+
+1404
+00:33:04,780 --> 00:33:05,780
+So you can see the things that you're doing.
+
+1405
+00:33:05,780 --> 00:33:06,780
+So you can see the things that you're doing.
+
+1406
+00:33:06,780 --> 00:33:07,780
+So you can see the things that you're doing.
+
+1407
+00:33:07,780 --> 00:33:08,780
+So you can see the things that you're doing.
+
+1408
+00:33:08,780 --> 00:33:09,780
+So you can see the things that you're doing.
+
+1409
+00:33:09,780 --> 00:33:10,780
+So you can see the things that you're doing.
+
+1410
+00:33:10,780 --> 00:33:11,780
+So you can see the things that you're doing.
+
+1411
+00:33:11,780 --> 00:33:12,780
+So you can see the things that you're doing.
+
+1412
+00:33:12,780 --> 00:33:13,780
+So you can see the things that you're doing.
+
+1413
+00:33:13,780 --> 00:33:14,780
+So you can see the things that you're doing.
+
+1414
+00:33:14,780 --> 00:33:15,780
+So you can see the things that you're doing.
+
+1415
+00:33:15,780 --> 00:33:16,780
+So you can see the things that you're doing.
+
+1416
+00:33:16,780 --> 00:33:17,780
+So you can see the things that you're doing.
+
+1417
+00:33:17,780 --> 00:33:18,780
+So you can see the things that you're doing.
+
+1418
+00:33:18,780 --> 00:33:19,780
+So you can see the things that you're doing.
+
+1419
+00:33:19,780 --> 00:33:20,780
+So you can see the things that you're doing.
+
+1420
+00:33:20,780 --> 00:33:21,780
+So you can see the things that you're doing.
+
+1421
+00:33:21,780 --> 00:33:22,780
+So you can see the things that you're doing.
+
+1422
+00:33:22,780 --> 00:33:23,780
+So you can see the things that you're doing.
+
+1423
+00:33:23,780 --> 00:33:24,780
+So you can see the things that you're doing.
+
+1424
+00:33:24,780 --> 00:33:25,780
+So you can see the things that you're doing.
+
+1425
+00:33:25,780 --> 00:33:26,780
+So you can see the things that you're doing.
+
+1426
+00:33:26,780 --> 00:33:27,780
+So you can see the things that you're doing.
+
+1427
+00:33:27,780 --> 00:33:28,780
+So you can see the things that you're doing.
+
+1428
+00:33:28,780 --> 00:33:29,780
+So you can see the things that you're doing.
+
+1429
+00:33:29,780 --> 00:33:30,780
+So you can see the things that you're doing.
+
+1430
+00:33:30,780 --> 00:33:31,780
+So you can see the things that you're doing.
+
+1431
+00:33:31,780 --> 00:33:32,780
+So you can see the things that you're doing.
+
+1432
+00:33:32,780 --> 00:33:33,780
+So you can see the things that you're doing.
+
+1433
+00:33:33,780 --> 00:33:34,780
+So you can see the things that you're doing.
+
+1434
+00:33:34,780 --> 00:33:35,780
+So you can see the things that you're doing.
+
+1435
+00:33:35,780 --> 00:33:36,780
+So you can see the things that you're doing.
+
+1436
+00:33:36,780 --> 00:33:37,780
+So you can see the things that you're doing.
+
+1437
+00:33:37,780 --> 00:33:38,780
+So you can see the things that you're doing.
+
+1438
+00:33:38,780 --> 00:33:39,780
+So you can see the things that you're doing.
+
+1439
+00:33:39,780 --> 00:33:40,780
+So you can see the things that you're doing.
+
