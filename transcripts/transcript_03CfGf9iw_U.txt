@@ -1,0 +1,522 @@
+[00:00] Let's talk about hooks. It's a new
+[00:03] mechanism for tying to different places
+[00:05] in the agent life cycle in the Copilot
+[00:07] CLI, Visual Studio Code, and other
+[00:09] places like Claude Code. In this video,
+[00:11] we're going to jump into what in the
+[00:13] world they even are, how they actually
+[00:15] work behind the scenes, and why I think
+[00:17] one of them, but only one, might be the
+[00:20] most important tool in your AI toolbox.
+[00:23] So, if you're ready,
+[00:25] let's do it. All right. So, let's just
+[00:27] start with what happens when you engage
+[00:30] in a chat with the agent. So, the first
+[00:32] thing that you do is you send a prompt
+[00:35] to the agent. And then the next thing
+[00:37] that happens is that the agent loop then
+[00:41] starts. And what this looks like is the
+[00:43] first thing that it does is thinking and
+[00:45] reasoning, and you see all those tokens
+[00:47] come back in the chat. And then the next
+[00:49] thing that it does is it does uh tool
+[00:52] calls. So, these are things like reading
+[00:55] files, writing files, executing bash
+[00:58] scripts, and it may do uh some tool
+[01:01] calls, or it may just do one tool call.
+[01:03] It just depends on whatever tool calls
+[01:05] the agent decides it needs to do.
+[01:07] And then, what will happen is maybe the
+[01:11] agent decides that it needs to launch a
+[01:13] subagent. And that subagent is really
+[01:16] doing the same thing as the agent. It's
+[01:19] reasoning and then making tool calls.
+[01:22] And these things here, it's important to
+[01:24] note that the agent and the subagent,
+[01:26] these are actually loops. So, what
+[01:28] happens here is this agent runs and runs
+[01:31] and runs until it doesn't have any more
+[01:35] tool calls to make. And when it doesn't
+[01:36] have any more tool calls to make, then
+[01:38] it's done.
+[01:40] That's what's actually happening. That's
+[01:41] how the agent knows it's finished is
+[01:43] when there's no more tool calls. And the
+[01:45] subagent works exactly the same way.
+[01:46] They're actually loops. So, this thing
+[01:48] just runs over and over and over again.
+[01:50] And then at some point, right at the end
+[01:52] of this thing, you get this like
+[01:54] response where it tells you what it did
+[01:56] or it's done,
+[01:57] etc., right? And so, this is what the
+[02:00] actual
+[02:01] chat process looks like here, or kind of
+[02:04] like at a high level, how it works.
+[02:07] Uh let's just connect some of these
+[02:08] arrows here, so I feel good about this.
+[02:10] Good. Now, what hooks allow you to do
+[02:13] are to execute events at various points
+[02:16] in this right here, which we might call
+[02:18] the agent life cycle. And keep in mind
+[02:20] that this may continue, right? So, you
+[02:22] may have another prompt down here uh at
+[02:25] the bottom.
+[02:27] And then you get another agent loop, so
+[02:29] like this whole this whole thing starts
+[02:32] over again, right? And this may be to
+[02:34] you, it's all the same chat session, and
+[02:37] the context of all of what happened up
+[02:39] here gets passed down in here as well.
+[02:42] But this right here is essentially the
+[02:44] agent life cycle. And so, hooks allow us
+[02:46] to execute some commands at different
+[02:48] points, as we said. So, the first one is
+[02:51] when you start a new session and send
+[02:54] your first prompt, an event called
+[02:56] session start fires. So, that's the
+[02:58] first one.
+[03:00] And then every time you send a prompt,
+[03:03] there is a user prompt submitted event
+[03:06] that fires. And these are the hooks.
+[03:08] They're really just events, but they're
+[03:09] called hooks.
+[03:11] So, user prompt submitted, and it's
+[03:12] important to note that this user prompt
+[03:13] submitted will fire again, right? Down
+[03:16] here, if you do another prompt, it will
+[03:18] fire again, whereas session start only
+[03:20] fires after the very first message in a
+[03:22] session. And then, the next one that
+[03:25] happens is before tool calls, before and
+[03:27] after, we have pre-tool
+[03:31] pre-tool use.
+[03:33] And then we have one after it, and that
+[03:35] hook is called post-tool use. Post-tool
+[03:40] use.
+[03:41] And then for our sub-agents here, we
+[03:43] actually have events for those as well.
+[03:45] So, there's a hook for the sub-agent
+[03:47] that's sub-agent start.
+[03:51] And I believe one for sub agent stop.
+[03:55] Okay.
+[03:56] And then we have one event here at the
+[03:59] very end right here at the response,
+[04:02] which is basically
+[04:04] session end session end.
+[04:08] And then we have one more hook that
+[04:10] fires just kind of it doesn't really
+[04:12] have a place in the life cycle just
+[04:14] wherever this might occur, which is just
+[04:16] air at it's either on air or error
+[04:18] occurred. I think it's error occurred
+[04:20] and this just fires whenever there's an
+[04:22] error
+[04:23] in here. So what these hooks allow you
+[04:25] to do is that you can handle any one of
+[04:27] these and some of these hooks are
+[04:29] blocking and some of them are not. So
+[04:31] for instance, sometimes all you can do
+[04:33] is handle what happened, but in the case
+[04:35] of hooks like pre tool use, you can
+[04:37] actually say based on whatever you
+[04:40] decide in this hook, yes or no, you may
+[04:43] or may not call this tool and that's
+[04:45] going to be powerful here in a minute we
+[04:47] talk about that. Okay, so the high level
+[04:50] that's how it works. Let's jump in and
+[04:52] build our first hook. All right, so I'm
+[04:54] in Visual Studio Code here and I'm going
+[04:56] to use the CLI, but we're also going to
+[04:58] use the chat in Visual Studio Code.
+[05:00] Hooks are close enough almost identical
+[05:03] in the CLI and Visual Studio Code that
+[05:06] they work the same way in both places
+[05:08] and actually it's easier to test using
+[05:10] Visual Studio Code and we'll see why
+[05:11] that is here in just a second. So first,
+[05:14] let's go to user settings and just look
+[05:16] for hooks. And we want to make sure that
+[05:19] hooks are enabled because right now they
+[05:21] are in preview.
+[05:23] And then if you want to use existing
+[05:24] Cloud hooks, you can turn that on and
+[05:26] then this custom agent hooks
+[05:28] we'll talk about that here in a second.
+[05:31] But it's important to note that like
+[05:32] where do your hooks actually go? Well,
+[05:34] they're just JSON files and they can go
+[05:36] in your project, which are these
+[05:37] settings here either under .github or
+[05:39] .cloud folders
+[05:41] or they can go in global folders, right?
+[05:43] This is on your user profile.copilot
+[05:46] or .cloud. So with those settings
+[05:49] enabled,
+[05:50] let's go back here and on the agents
+[05:52] one, you can, at the time of this
+[05:55] recording, actually specify hooks
+[05:58] directly in your agent. We should see
+[06:01] that here. Yes, we can. And so, we can
+[06:03] specify hooks that we want this
+[06:06] particular agent to execute. We won't
+[06:08] actually do this in this video, but just
+[06:10] know that uh this is an experimental
+[06:12] mode at the moment and you can do this.
+[06:15] So, let's go ahead and work on creating
+[06:17] our first agent.
+[06:19] So, the first thing we're going to want
+[06:21] to do is create,
+[06:23] in our GitHub folder, a new folder.
+[06:25] Let's call it hooks.
+[06:27] And then we just need a JSON file to
+[06:30] define our hooks. And because we're
+[06:33] developers, we're going to do a hello
+[06:34] world. And it's just a JSON file. That's
+[06:36] all it is.
+[06:38] Now, because we've created this JSON
+[06:40] file inside this hooks folder, Visual
+[06:42] Studio Code is going to know about the
+[06:45] format of this file. So, I'm going to
+[06:46] control space, and then we want to set
+[06:49] version to one, and then we can start
+[06:51] defining our hooks here.
+[06:54] Now, for our hooks here, let's go ahead
+[06:57] and start and let's do the user prompt
+[07:00] submitted.
+[07:01] And we're going to start with this one
+[07:02] because it's just easiest to test
+[07:04] because it's going to fire every single
+[07:05] time we send a prompt. So, just super
+[07:07] easy to test. And notice that you can
+[07:09] have multiple
+[07:11] uh handlers here for any hook, right?
+[07:14] So, you can have multiple hooks and you
+[07:16] can have multiple handlers.
+[07:18] Okay. So, let's start with our first one
+[07:20] here. We're going to define our first
+[07:21] hook. So, first we need a type, and the
+[07:23] only type that is currently out there
+[07:25] right now is command. Easy enough. And
+[07:28] then, basically, what do we want to do
+[07:30] when this command, when this hook fires?
+[07:32] And so, we have bash and PowerShell,
+[07:35] right? Obviously, for cross-platform.
+[07:37] I'm going to choose bash for this video.
+[07:39] If you're on Windows, you would probably
+[07:41] choose PowerShell unless you're using
+[07:43] WSL. So, let's pick Bash and then let's
+[07:46] just go ahead and echo out "Hello,
+[07:48] world." Why not?
+[07:50] Okay. Now, let's go ahead and see how
+[07:53] this hook is actually executed.
+[07:56] So, I'm going to go back to the CLI
+[07:58] here.
+[07:59] Let's go ahead and collapse this.
+[08:01] And I'm going to start the CLI.
+[08:05] All right, we're going to switch to a
+[08:06] smaller model because these are hooks
+[08:08] and so we don't really need model
+[08:09] performance. These things are
+[08:11] deterministic, which means we get to
+[08:12] decide when they fire, not the model.
+[08:14] So, we can use a very small model for
+[08:16] this. So, the first thing that I want to
+[08:17] do here is I'm just going to say hi. And
+[08:21] let's see what happens. Hmm, well, we
+[08:22] don't see any output from the hook. And
+[08:25] if we try it inside of
+[08:28] the Visual Studio Code chat here, let's
+[08:30] see what happens.
+[08:32] Well, we we don't see our "Hello, world"
+[08:34] message. And the reason for that is
+[08:36] because it doesn't show up here or here.
+[08:38] But if we go to the bottom panel here
+[08:41] and we go to output, then we can look at
+[08:44] chat hooks, then we'll actually see the
+[08:47] "Hello, world", right? So, if I do this
+[08:48] again,
+[08:50] we get another entry here. Now, notice
+[08:53] that this only works for Visual Studio
+[08:56] Code. So, if I come and put something
+[08:58] here in the CLI, if I say hi,
+[09:02] nothing actually happens. This request
+[09:04] came from the chat. The CLI doesn't
+[09:06] actually log anything. And that's why
+[09:08] when you're doing hooks,
+[09:10] it's just easier to test with the VS
+[09:12] Code chat here. So, you can see your
+[09:14] output here. The other way that we could
+[09:16] do it here is we could just pipe this
+[09:18] somewhere else. So, we could say, "Let's
+[09:20] send this to
+[09:22] log uh
+[09:24] uh session.log,
+[09:26] okay?" So, we're just going to log this
+[09:27] out to a file. I'm going to change my
+[09:29] tab size here just to make this
+[09:34] Okay, perfect. Now, let's go back and
+[09:37] I'm going to collapse this sidebar and
+[09:39] let's use the CLI and I'm just going to
+[09:41] say hi. And where do you think that
+[09:43] session file is going to go here?
+[09:45] It actually doesn't go anywhere and
+[09:47] that's another thing to know is that
+[09:49] with the CLI
+[09:50] every time you make a change to a hook,
+[09:52] you need to reload the CLI and you can
+[09:54] do that with {slash} new. But in the VS
+[09:57] Code chat, you don't actually have to do
+[10:00] that. So, I'm just going to say if I
+[10:01] come back here and say hi,
+[10:04] you can see the file is created right
+[10:06] here in session.log.
+[10:09] So, the file is created at the root of
+[10:11] the project. So, if you don't otherwise
+[10:13] specify
+[10:14] the root of the project is where it's
+[10:16] looking. If you wanted to specify, you
+[10:18] could come and say current working
+[10:20] directory here. We could change this and
+[10:22] if we said it's in {dot} github {slash}
+[10:25] hooks, now if we run this, let's go
+[10:28] back.
+[10:33] And if we say hi,
+[10:35] now our session log actually shows up in
+[10:37] the hooks folder. So, this is important
+[10:40] to understand the path and this really
+[10:41] confused me when I was putting this
+[10:42] video together is what where does this
+[10:45] actually execute and what does this
+[10:47] current working directory do? So, what
+[10:49] it does is it basically just says
+[10:51] execute this inside of this folder and
+[10:54] when you do that
+[10:56] then it becomes relative and that's
+[10:58] important when using scripts. So, let's
+[11:00] talk about scripts cuz that's how you're
+[11:02] going to handle this. So, obviously you
+[11:04] can't put your whole bash command in
+[11:06] here.
+[11:07] That wouldn't make sense at some point.
+[11:09] It would be way too long. So, what you
+[11:11] could do instead though is you could
+[11:13] create a folder. So, let's go into
+[11:14] GitHub and say new folder and let's call
+[11:16] it scripts here. And if we wanted to, we
+[11:18] could even put this inside of the hooks
+[11:20] folder to make this a little cleaner.
+[11:23] Let's create a new file. Just call it
+[11:25] hello world.
+[11:27] Hello world.sh
+[11:29] and this will be our bash script. And
+[11:31] the first thing we want to do is make
+[11:33] this script executable.
+[11:35] And now we can echo out
+[11:38] something like
+[11:39] hello from the script, hello from the
+[11:43] script file.
+[11:44] And we can send that to our session log.
+[11:49] Okay, so to call this then, what we need
+[11:51] to do is come back here, remove all of
+[11:54] this here, and then we just need to pass
+[11:56] the location
+[11:58] of the scripts. Now, this will work
+[12:00] because we've already specified that
+[12:02] we're in the hooks folder. So, we can
+[12:04] just pass a relative path to the
+[12:06] scripts. If we didn't have this, this
+[12:09] would fail. This would have to be like
+[12:11] this. It would have to be .github/hooks
+[12:14] like this, and then /scripts.
+[12:17] But because we had the relative path
+[12:20] there, we can just pass /scripts,
+[12:23] and this will work.
+[12:24] So, let's go ahead and run this. So,
+[12:26] we'll just say hi. We'll say hi a lot.
+[12:28] Oh, and look. So, this is good me I made
+[12:30] an error, and Visual Studio Code is
+[12:33] really good about this where it says
+[12:34] warning from the user prompt submit
+[12:35] hooks. We can take a look at this, and
+[12:37] it says permission denied. Oh,
+[12:40] interesting. So, what's going on here?
+[12:41] Well, in bash, you have to make a script
+[12:43] executable by changing its properties
+[12:46] with chmod. So, let's go ahead and do
+[12:49] that. Let's go to the terminal, and we
+[12:51] can just change it to executable with
+[12:53] the chmod command there. So, let's go
+[12:56] back. Let's try our hook again. Let's
+[12:59] say hi.
+[13:00] All right, and this time we did not get
+[13:02] a warning, which means it executed
+[13:03] successfully. So, let's go to our
+[13:05] session log here, and there it is.
+[13:08] Hello from the script file. Now, for
+[13:11] each of these hooks that you have,
+[13:13] you're going to get some input from the
+[13:15] hook itself. So, in our script file
+[13:17] here, let's just define a variable, and
+[13:19] then what we want to do is just get the
+[13:20] input, and in bash, we can do it just
+[13:23] like this, right? And then what we want
+[13:25] want is just output this
+[13:27] to the session log here. So, we're just
+[13:29] going to echo our input into the session
+[13:33] log here.
+[13:34] Okay? Now, let's go ahead and run again.
+[13:37] I'll just say hi. And this time, we
+[13:40] should see Yep, there it is. So, here's
+[13:42] the JSON that gets passed in as the
+[13:45] input to this script. Now, this is
+[13:48] really hard to read like this. So,
+[13:50] there's a built-in tool in Bash, and
+[13:52] there's probably one for PowerShell as
+[13:53] well, that's called jq. So, let's come
+[13:56] back here, and we're just going to ask
+[13:57] to you pretty print the input, and it
+[14:00] will automatically use jq to do that
+[14:02] into our session log here. Let's go back
+[14:04] and say hi.
+[14:06] Come back to our session log, and now,
+[14:08] look at that. Look at how nice this is.
+[14:10] So, we're getting the hook event name, a
+[14:12] timestamp, an ID, a transcript path,
+[14:15] which is actually going to the chat
+[14:18] transcripts, you can get the whole
+[14:19] thing, what the prompt was, and then the
+[14:21] current working directory, which we've
+[14:23] already talked about. Okay. So, pretty
+[14:26] much every hook gets the same thing.
+[14:28] Some of hooks get different things, you
+[14:29] have to look at the docs for that.
+[14:31] So, when you're in a hook, you can do
+[14:34] things like send things back out to the
+[14:37] agent. So, to demonstrate a real-world
+[14:40] use case here, what we're going to do is
+[14:42] change this from user prompt submitted
+[14:45] and we're actually going to do on
+[14:47] session start. And on session start,
+[14:49] what we want to do is we're going to
+[14:51] rename this a little bit to get ENV
+[14:53] here. So, let's do that, and let's let's
+[14:56] rename this hello world script here to
+[14:59] just We'll just say get ENV
+[15:03] like this. Okay. If we want to actually
+[15:05] send something back, what could we send
+[15:07] back? Well, perhaps we would want the
+[15:09] agent to know about the user's node
+[15:11] version without having to ask. So, for
+[15:13] instance, right now, if I say, "What
+[15:15] version of node is this user running?"
+[15:20] Uh it will try and run a Bash command to
+[15:22] figure that out, but we can actually
+[15:24] inject that into the session as part of
+[15:27] the context. You can see it's doing
+[15:29] right there. So, let's go ahead and stop
+[15:30] that. So, what we want to do here is
+[15:32] first get the user's node version.
+[15:36] All right, there it is. And then to pass
+[15:38] it back, we just need to pass back JSON
+[15:41] in the right structure. And hook output
+[15:43] looks like this.
+[15:46] Now, for this, we don't need all these
+[15:48] fields. We need the event name, but we
+[15:50] don't need this deny here. We can't
+[15:52] actually deny the hook. We can't deny
+[15:54] the session start. We can deny a tool
+[15:57] call,
+[15:58] but we can't deny a session start. So,
+[15:59] we're going to take this out. And we're
+[16:01] going to take out this updated input.
+[16:03] It's just this additional context that
+[16:06] we want. And because I already have this
+[16:09] typed up, we want it in a special format
+[16:11] here because we're working in bash. Let
+[16:13] me just copy it in. Uh, it looks like
+[16:15] that. So, we're using uh, the JQ library
+[16:18] here to format this as output that we're
+[16:21] going to echo it back out just like
+[16:23] that. But, you can see here it hook
+[16:24] specific output, right? Event name,
+[16:26] session start, additional context, the
+[16:28] user's node version is, and then we're
+[16:31] sending it back. So, we're injecting
+[16:33] context into the agent session. So,
+[16:35] let's make sure we started a new one.
+[16:37] We're on Haiku 4.5. And now let's just
+[16:40] ask, "What version of node is the user
+[16:43] running?"
+[16:45] And this time it just answers
+[16:46] immediately, right? There's no tool call
+[16:48] because we injected that context into
+[16:52] the agent. And that's pretty powerful.
+[16:54] It's one of the common uses for hooks is
+[16:55] to just inject content into the agent.
+[16:58] Now, as I talked about at the beginning
+[17:01] of this video, I do want to show you
+[17:03] where I think this is actually useful
+[17:05] because I don't know that it's useful to
+[17:07] me at least to log things or inject
+[17:09] context. But, the pre-tool use hook is
+[17:11] powerful and I want to show you how I
+[17:13] used it. The whole problem with the
+[17:16] right now
+[17:17] is that it is non-deterministic. In
+[17:19] other words, we don't know what it's
+[17:20] going to do. And it lies pathologically.
+[17:24] And so we need gates that we can force
+[17:26] the model through that will ensure that
+[17:28] it does what it said that it did. And
+[17:30] the pre-tool-use hook is brilliant for
+[17:33] this. So I created one that forces the
+[17:36] model to write code that successfully
+[17:38] lints in order to write the code with a
+[17:42] pre-tool-use hook. And we can go through
+[17:44] that here and look at the actual code.
+[17:46] It's a little bit long here, but
+[17:48] essentially it uses that JQ library to
+[17:51] run ESLint on the changed file. And if
+[17:53] it doesn't lint, then it denies the
+[17:56] right. And the model has to keep trying
+[17:58] until it gets this right. So if we look
+[18:01] at some of the output here, this was a
+[18:02] large run on this project here, and you
+[18:05] can see that it's trying to write this
+[18:06] Firebase admin right here, but it keeps
+[18:09] failing the lint right here. So lint
+[18:12] errors must be fixed before editing
+[18:14] other files. Right here. It keeps
+[18:16] failing the lint. So it looks at this
+[18:18] and it keeps going. It has to fix the
+[18:21] lint errors, so it goes back, does some
+[18:22] research, tries again, fails again. Then
+[18:25] it goes back and says, "Well, I got to
+[18:26] fix this." Tries again, and it fails
+[18:29] again. And it just keeps doing this
+[18:31] until it gets it right, and the file
+[18:34] actually lints. And I think this is
+[18:36] brilliant because this forces the AI to
+[18:39] write code the way you would, which is
+[18:42] that you write the code, and if there's
+[18:44] red squigglies under it, you don't move
+[18:45] on. You fix the errors.
+[18:48] But AI will move on and just rationalize
+[18:50] why that error is okay or fix it in some
+[18:53] hacky way. But the pre-tool-use hook
+[18:55] forces it to write lintable code.
+[18:59] And I think that's brilliant. I'm doing
+[19:01] this on all of my projects now. I don't
+[19:03] trust the AI to lint or test its code
+[19:05] after it's done. I want it linted at the
+[19:08] time that it writes the file, or it
+[19:10] cannot move on. It can't do anything
+[19:12] else until it fixes that issue. That's
+[19:14] your rundown on hooks in the Copilot CLI
+[19:17] and Visual Studio Code. You can use
+[19:20] those today. Some of them are in
+[19:22] experimental mode, so make sure you have
+[19:24] all of that stuff toggled on, but thanks
+[19:26] for watching and as always,
+[19:29] happy coding.
