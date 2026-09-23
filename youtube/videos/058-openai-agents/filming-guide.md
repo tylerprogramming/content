@@ -2,7 +2,7 @@
 
 The "do this, click that" version. Film from this without reading the script. Target 11 to 12 minutes. Hard ceiling 15.
 
-**Version:** v2, 2026-09-19. Matches `script.md` v2. The v1 guide had you write `create_session.py`, `send.py`, and `stream.py` by hand and had the agent write `04_self_hosted.py` live. All of that exists now in `~/dev/ai/openai_agents_058/self_hosted/`. Nothing here asks you to write code. Beat 8 is a test the agent writes and runs.
+**Version:** v2, 2026-09-19. Matches `script.md` v2. The v1 guide had you write `create_session.py`, `send.py`, and `stream.py` by hand and had the agent write `04_self_hosted.py` live. All of that exists now in `~/dev/ai/frameworks/openai/openai_agents_058/self_hosted/`. Nothing here asks you to write code. Beat 8 is a test the agent writes and runs.
 
 Beat numbers match the beat table in `script.md`. Every beat is tell, show past, do live. The past example for the whole video is `github.com/tylerprogramming/ai/pull/22` (merged 09-17) plus the `self_hosted/` kit written after it. Have both open before you roll.
 
@@ -21,7 +21,7 @@ Tyler ran the full path end to end on this Mac on 09-19 and it worked. The rows 
 | 5 | 6b | The harness refuses the delete | Send "Delete the meeting note, it is old." Check the file still exists. | If it deletes, `cp` the note back from the repo and cut beat 6b. Do not keep a beat the tool did not earn. |
 | 6 | 7 | `sessions.py cost <id>` shows token usage right after a turn | Run it 10 seconds after `final_answer`. | If `usage not reported yet`, wait 60 seconds and run again. Say the number on screen or say nothing. |
 | 7 | 7 | The cost block at the end of `01_hosted_sandbox.py` | Run demo 1 the morning of. Keep the terminal scrollback. | If usage is None, `sessions.py cost` on that id a minute later. |
-| 8 | 8 | Second session pointed at the repo connects | Ctrl-C executor and watcher. `create_session.py ~/dev/ai/openai_agents_058`. Watcher, then executor. | Same fixes as rows 2 and 3. |
+| 8 | 8 | Second session pointed at the repo connects | Ctrl-C executor and watcher. `create_session.py ~/dev/ai/frameworks/openai/openai_agents_058`. Watcher, then executor. | Same fixes as rows 2 and 3. |
 | 9 | 8 | The agent writes a correct `tests/test_cost.py` and runs it | Send the beat 8 task. Read the file. It must assert 0.0332 for the token case. | Wrong number: send a second message pointing at the mistake. That is a better beat. Two failures: fall back to "Write a docstring for every function in common.py that lacks one." `git checkout . && rm -rf tests` between attempts. Do not fake the file. |
 | 10 | 8 | Second message adds the container test without re-reading `common.py` | Watch the stream for `cat common.py`. | If it re-reads, fine. Just do not say "it did not read it again." |
 | 11 | 9 | Coder on a local model does the `index.md` task cleanly | Run it once in Hermes on the local model. Note the model tag. | If it needs a cloud model, say so on camera and show the cost. |
@@ -34,13 +34,13 @@ Time the dry run. Write the number in `analysis.md` under "Dry run." After the d
 
 ## Pre-recording setup
 
-1. Notes folder: `~/agents-demo/workspace/` must have all seven files, six notes plus `AGENTS.md`. Re-copy from `~/dev/ai/openai_agents_058/self_hosted/workspace/` if in doubt. Undo any dry-run edits (`buy stamps`, `index.md`).
-2. Real folder: `~/dev/ai/openai_agents_058`. The kit files can be committed or not, your call, but `tests/` must not exist. `rm -rf tests` if the dry run left it.
+1. Notes folder: `~/agents-demo/workspace/` must have all seven files, six notes plus `AGENTS.md`. Re-copy from `~/dev/ai/frameworks/openai/openai_agents_058/self_hosted/workspace/` if in doubt. Undo any dry-run edits (`buy stamps`, `index.md`).
+2. Real folder: `~/dev/ai/frameworks/openai/openai_agents_058`. The kit files can be committed or not, your call, but `tests/` must not exist. `rm -rf tests` if the dry run left it.
 3. `.env` in the repo has `OPENAI_API_KEY`. Never on screen.
 4. Environment key made on the dashboard Agents tab and exported as `CODEX_API_KEY` in pane A only, off camera. Never on screen. Check pane A's scrollback before every take.
 5. `npm install -g @openai/codex@alpha` done. Beat 3 runs it again on camera; it is idempotent.
 6. `uv sync` done in the repo.
-7. Terminal: one window, three panes, all starting in `~/dev/ai/openai_agents_058/self_hosted`:
+7. Terminal: one window, three panes, all starting in `~/dev/ai/frameworks/openai/openai_agents_058/self_hosted`:
    - Pane A (left): the executor. `CODEX_API_KEY` exported here.
    - Pane B (right top): the watcher, `stream.py`.
    - Pane C (right bottom): commands. `04_self_hosted.py`, `send.py`, `sessions.py`, `git status`.
@@ -74,7 +74,7 @@ BEFORE ROLLING (beats 4 and 5 are pre-run; you show them connected, you do not b
 Pane C, from the repo root:
 
 ```
-cd ~/dev/ai/openai_agents_058
+cd ~/dev/ai/frameworks/openai/openai_agents_058
 uv run python 04_self_hosted.py
 ```
 
@@ -83,7 +83,7 @@ Leave the output in scrollback (you scroll to it in beat 4). Copy the exec-serve
 Pane B (watcher goes up FIRST, the stream does not replay):
 
 ```
-cd ~/dev/ai/openai_agents_058/self_hosted
+cd ~/dev/ai/frameworks/openai/openai_agents_058/self_hosted
 uv run python stream.py <session id>
 ```
 
@@ -119,7 +119,7 @@ uv run python sessions.py cost <session id>
 Beat 8. Ctrl-C pane A and pane B. Pane C:
 
 ```
-uv run python create_session.py ~/dev/ai/openai_agents_058
+uv run python create_session.py ~/dev/ai/frameworks/openai/openai_agents_058
 ```
 
 Pane B with the new id, then pane A with the new URL and environment id. Then pane C:

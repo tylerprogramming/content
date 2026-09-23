@@ -14,7 +14,7 @@ Voice: Tyler's. "So" openers, short sentences, hedge instead of hype. No em dash
 | Claim in the script | How it was checked |
 |---|---|
 | PR #22 merged 2026-09-17, three demos on main | `gh pr view 22` |
-| `04_self_hosted.py` and `self_hosted/` kit exist, uncommitted | `git status` in `~/dev/ai/openai_agents_058` |
+| `04_self_hosted.py` and `self_hosted/` kit exist, uncommitted | `git status` in `~/dev/ai/frameworks/openai/openai_agents_058` |
 | `01_hosted_sandbox.py` ran clean today | Tyler ran it |
 | `04` ran, executor connected, `send.py` got a `final_answer` on the notes folder | Tyler ran it, session `sess_025e1b...` |
 | `session.environment.id` and `.remote_url` are the attribute names | SDK source, `openai/types/beta/environment.py` |
@@ -42,7 +42,7 @@ Voice: Tyler's. "So" openers, short sentences, hedge instead of hype. No em dash
 | 6 | Step 3: send work, on the notes folder | 4:30 - 6:00 | `send.py`. Stream: `ls`, `cat`, `final_answer`. Second message edits `todo.md`. `cat` it. | Tell: sending work, session stays alive. Show past: demo 1's `primes.py` in `/workspace/outputs`, gone in an hour. Do live: a read, then a write that stays. |
 | 6b | The folder has rules | 6:00 - 6:30 | `workspace/AGENTS.md`. Ask it to delete the meeting note. It refuses. | Tell: one AGENTS.md in every folder; Claude Code, Hermes, and now this all read it. Do live: the refusal. |
 | 7 | What it costs, and where it stops | 6:30 - 7:30 | `sessions.py cost`. Pricing page Containers row. Overview limits. | Tell: no API fee, tokens, containers. Show past: demo 1's cost block from this morning. Do live: `sessions.py cost` on the self-hosted session, read the number. |
-| 8 | **The build: the API works in my real repo** | 7:30 - 9:15 | THE SEAM. `cd ~/dev/ai/openai_agents_058`. New session, new executor. Agent reads `common.py`, writes a test, runs it here. Second message on the same session. `git status`. | Tell: same three steps, real folder. Show past: the four demos and the kit as they sit. Do live: the agent writes `tests/test_cost.py` and runs it on this Mac. |
+| 8 | **The build: the API works in my real repo** | 7:30 - 9:15 | THE SEAM. `cd ~/dev/ai/frameworks/openai/openai_agents_058`. New session, new executor. Agent reads `common.py`, writes a test, runs it here. Second message on the same session. `git status`. | Tell: same three steps, real folder. Show past: the four demos and the kit as they sit. Do live: the agent writes `tests/test_cost.py` and runs it on this Mac. |
 | 9 | The same folder, the local agent, for zero | 9:15 - 10:15 | Hermes desktop, Coder, local model tag. Same folder. Two-column overlay. | Tell: I already run an agent here. Show past: PR #22 and the kit, both written by Coder. Do live: Coder does the notes task on a local model. Then the "reach for which" table. |
 | 10 | CTA | 10:15 - 10:45 | Camera. End card, 057 left. | Tell: everything is in the repo. Ask what they pointed it at. 057 is the other half. |
 
@@ -302,11 +302,11 @@ That second one is the thing for me. I ran this against a folder of my own notes
 
 Right, I am switching folders. Everything so far was a clean folder I made for this video, six notes and nothing else. This is my actual repo, the one that PR merged into. Because reading six fake notes proves the plumbing and nothing else. If this is real, it should be able to do a job in a codebase.
 
-[SHOW: terminal, `cd ~/dev/ai/openai_agents_058 && ls`. Four demos, `common.py`, `self_hosted/`, `README.md`.]
+[SHOW: terminal, `cd ~/dev/ai/frameworks/openai/openai_agents_058 && ls`. Four demos, `common.py`, `self_hosted/`, `README.md`.]
 
 Same three steps. New session, pointed here instead of the notes folder.
 
-[SHOW: `uv run python self_hosted/create_session.py ~/dev/ai/openai_agents_058`. Three values.]
+[SHOW: `uv run python self_hosted/create_session.py ~/dev/ai/frameworks/openai/openai_agents_058`. Three values.]
 
 [NOTE: the second session needs its own executor. Ctrl-C the first one, run `codex exec-server` again with the new URL and id. Watcher first, again. Show the flip once, fast. Do not narrate it twice.]
 
