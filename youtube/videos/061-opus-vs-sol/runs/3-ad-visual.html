@@ -1,0 +1,86 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>061 #3: the Attend ad, Opus 5.5 vs GPT-6 Sol</title>
+<style>
+  :root{--bg:#1c1d20;--card:#111214;--card2:#1a1b1f;--text:#fff;--muted:#a9abb3;--violet:#6d5cff;--red:#ff4d4d;--amber:#f4b942}
+  *{box-sizing:border-box;margin:0}
+  body{background:#0b0b0c;font-family:-apple-system,Inter,Helvetica,Arial,sans-serif;color:var(--text);padding:40px}
+  h1{font-size:22px;font-weight:600;color:var(--muted);margin-bottom:24px;letter-spacing:.2px}
+  .row{display:flex;gap:40px;align-items:flex-start}
+  .ad{width:540px;height:960px;background:var(--bg);border-radius:28px;padding:56px 44px 48px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+  .who{position:absolute;top:18px;left:0;right:0;text-align:center;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .hook{font-size:44px;font-weight:800;line-height:1.05;letter-spacing:-.02em;margin-top:28px}
+  .hook.small{font-size:38px}
+  .phone{margin:36px auto 0;width:300px;background:#000;border-radius:38px;padding:12px;box-shadow:0 30px 60px rgba(0,0,0,.6);transform:rotate(-6deg)}
+  .screen{background:var(--card);border-radius:28px;padding:22px 18px 18px;min-height:470px}
+  .brand{font-weight:700;font-size:15px;color:var(--text);text-align:center;margin-bottom:14px}
+  .brand b{color:var(--violet)}
+  .sec{font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin:10px 0 8px}
+  .tile{background:var(--card2);border-radius:14px;padding:14px;margin-bottom:10px}
+  .tile .n{font-size:26px;font-weight:800}
+  .tile .n.red{color:var(--red)} .tile .n.amber{color:var(--amber)}
+  .tile .l{font-size:13px;color:var(--muted);margin-top:2px}
+  .person{display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:14px;padding:12px;margin-bottom:10px;border:1px solid rgba(255,77,77,.35)}
+  .av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#8b7cff,#4a3fd1);flex:none}
+  .person .nm{font-weight:700;font-size:14px}
+  .person .st{font-size:12px;color:var(--red);margin-top:2px}
+  .btn{background:var(--violet);color:#fff;border-radius:12px;padding:12px;text-align:center;font-weight:700;font-size:13px;margin-top:8px}
+  .list{list-style:none;padding:0;margin:0}
+  .list li{display:flex;justify-content:space-between;font-size:13px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+  .list li span:last-child{color:var(--muted)}
+  .list li.hot span:last-child{color:var(--amber)}
+  .list li.gone span:last-child{color:var(--red)}
+  .body{margin-top:auto;text-align:center;font-size:20px;line-height:1.35;color:var(--text)}
+  .body b{display:block;font-size:24px;margin-bottom:8px}
+  .cta{margin-top:18px;text-align:center;font-size:14px;color:var(--muted);letter-spacing:.04em}
+  .cta span{background:var(--violet);color:#fff;padding:10px 22px;border-radius:999px;font-weight:700;letter-spacing:0}
+  .notes{margin-top:28px;display:flex;gap:40px}
+  .notes div{width:540px;font-size:14px;line-height:1.55;color:var(--muted)}
+  .notes b{color:#fff}
+  .em{color:var(--red);font-weight:700}
+</style>
+<h1>061 #3: same swipe file, same prompt. Only the words changed.</h1>
+<div class="row">
+
+  <!-- OPUS -->
+  <div class="ad">
+    <div class="who">Claude Opus 5.5</div>
+    <div class="hook">Your most active member hasn't posted in two weeks.<br>Did you notice?</div>
+    <div class="phone"><div class="screen">
+      <div class="brand"><b>A</b>ttend</div>
+      <div class="sec">Cooling this week</div>
+      <div class="person"><div class="av"></div><div><div class="nm">Marcus D.</div><div class="st">Posted daily. Quiet 14 days.</div></div></div>
+      <div class="person"><div class="av" style="background:linear-gradient(135deg,#f4b942,#c77d12)"></div><div><div class="nm">Priya S.</div><div class="st">3 comments a week. Now 0.</div></div></div>
+      <div class="tile"><div class="n amber">14%</div><div class="l">of members cooling. Quiet, not gone.</div></div>
+      <div class="btn">Message Marcus first</div>
+    </div></div>
+    <div class="body"><b>Catch them while they're cooling</b>Regulars don't quit overnight. They slow down first. Attend shows you who.</div>
+    <div class="cta"><span>Learn more</span></div>
+  </div>
+
+  <!-- SOL -->
+  <div class="ad">
+    <div class="who">GPT-6 Sol</div>
+    <div class="hook small">Your member count won't tell you who stopped showing up.</div>
+    <div class="phone"><div class="screen">
+      <div class="brand"><b>A</b>ttend</div>
+      <div class="sec">Members by status</div>
+      <ul class="list">
+        <li><span>Active</span><span>612</span></li>
+        <li class="hot"><span>Cooling</span><span>84</span></li>
+        <li class="gone"><span>Drifting</span><span>31</span></li>
+        <li class="gone"><span>Gone</span><span>12</span></li>
+      </ul>
+      <div class="tile" style="margin-top:14px"><div class="n">739</div><div class="l">Member count. Unchanged this month.</div></div>
+      <div class="btn">Open the cooling list</div>
+    </div></div>
+    <div class="body"><b>Find the members going quiet</b>Your member count stays the same when someone stops showing up. Attend shows you who's cooling off so you know who to contact.</div>
+    <div class="cta"><span>Learn more about Attend</span></div>
+  </div>
+</div>
+
+<div class="notes">
+  <div><b>Opus.</b> Hook names one person and asks a question. Proof is a number (14%), and it warned that number is from a mockup. Screen shows two named people, because the script is about "one person you already know by name." 87 words by <code>wc</code>. 0 em dashes.</div>
+  <div><b>Sol.</b> Hook names a metric. Proof is the feature list (active, cooling, drifting, gone), so the screen is a table. Body copy runs 24 words longer. <span class="em">1 em dash</span> in the title line after being told none. Cleaner, safer, less specific.</div>
+</div>
+</body>

@@ -1,0 +1,125 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Attend ads: three concepts</title>
+<style>
+  :root{--bg:#1c1d20;--ink:#0b0b0c;--text:#fff;--muted:#a9abb3;--violet:#6d5cff;--red:#ff4d4d;--amber:#f4b942;--paper:#f6f3ea}
+  *{box-sizing:border-box;margin:0}
+  body{background:#0b0b0c;font-family:-apple-system,Inter,Helvetica,Arial,sans-serif;color:var(--text);padding:36px}
+  h1{font-size:20px;font-weight:600;color:var(--muted);margin-bottom:8px}
+  p.sub{color:var(--muted);font-size:14px;margin-bottom:28px;max-width:900px;line-height:1.5}
+  .row{display:flex;gap:32px;align-items:flex-start;flex-wrap:wrap}
+  .ad{width:420px;height:747px;border-radius:24px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+  .tag{position:absolute;top:14px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+  .note{width:420px;font-size:13px;line-height:1.5;color:var(--muted);margin-top:12px}
+  .note b{color:#fff}
+
+  /* ---------- A: the empty chair (Opus script) ---------- */
+  .a{background:radial-gradient(120% 70% at 50% 0%,#2a2b31 0%,#141518 60%,#0b0b0c 100%);padding:70px 36px 40px}
+  .a .hook{font-size:34px;font-weight:800;line-height:1.08;letter-spacing:-.02em}
+  .a .hook em{font-style:normal;color:var(--amber)}
+  .a .grid{margin:34px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;width:300px}
+  .a .seat{aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,#8b7cff,#4a3fd1);position:relative}
+  .a .seat:nth-child(3){background:linear-gradient(135deg,#f4b942,#c77d12)}
+  .a .seat:nth-child(6){background:linear-gradient(135deg,#5ad1a0,#2c8f6a)}
+  .a .seat.gone{background:transparent;border:2px dashed rgba(255,255,255,.25)}
+  .a .seat.gone::after{content:"14 days";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:10px;color:var(--red);font-weight:700;white-space:nowrap}
+  .a .cap{margin-top:16px;text-align:center;font-size:13px;color:var(--muted)}
+  .a .cap b{color:var(--red)}
+  .a .body{margin-top:auto;font-size:19px;line-height:1.35}
+  .a .body b{display:block;font-size:23px;margin-bottom:6px}
+  .a .cta{margin-top:16px;display:inline-block;align-self:flex-start;background:var(--violet);padding:11px 20px;border-radius:999px;font-weight:700;font-size:14px}
+
+  /* ---------- B: the receipt (Sol script) ---------- */
+  .b{background:var(--ink);padding:56px 30px 34px;align-items:center}
+  .b .hook{font-size:30px;font-weight:800;line-height:1.1;letter-spacing:-.02em;text-align:center;max-width:340px}
+  .b .receipt{margin-top:26px;width:300px;background:var(--paper);color:#1a1a1a;padding:22px 20px 18px;font-family:"SF Mono",Menlo,monospace;font-size:12.5px;line-height:1.7;position:relative;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+  .b .receipt::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:12px;background:linear-gradient(135deg,var(--paper) 25%,transparent 25%) -6px 0/12px 12px,linear-gradient(225deg,var(--paper) 25%,transparent 25%) 0 0/12px 12px}
+  .b .receipt h4{font-weight:700;text-align:center;letter-spacing:.14em;font-size:12px;margin-bottom:8px}
+  .b .receipt .ln{display:flex;justify-content:space-between}
+  .b .receipt .ln.dim{color:#8a8a8a}
+  .b .receipt .ln.hot{color:#b3261e;font-weight:700}
+  .b .receipt hr{border:0;border-top:1px dashed #999;margin:8px 0}
+  .b .receipt .tot{display:flex;justify-content:space-between;font-weight:700;font-size:14px}
+  .b .body{margin-top:auto;text-align:center;font-size:18px;line-height:1.35;max-width:340px}
+  .b .body b{display:block;font-size:22px;margin-bottom:6px}
+  .b .cta{margin-top:14px;background:var(--violet);padding:11px 22px;border-radius:999px;font-weight:700;font-size:14px}
+
+  /* ---------- C: the text thread (mine, off both) ---------- */
+  .c{background:#000;padding:54px 26px 34px}
+  .c .hook{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center}
+  .c .thread{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+  .c .msg{max-width:78%;padding:11px 14px;border-radius:18px;font-size:15px;line-height:1.35}
+  .c .them{background:#26262a;align-self:flex-start;border-bottom-left-radius:6px}
+  .c .me{background:var(--violet);align-self:flex-end;border-bottom-right-radius:6px}
+  .c .stamp{font-size:11px;color:var(--muted);text-align:center;margin:6px 0 2px}
+  .c .stamp.gap{color:var(--red);font-weight:700}
+  .c .bot{background:#141418;border:1px solid rgba(109,92,255,.5);align-self:flex-start;border-radius:14px;max-width:88%;font-size:14px}
+  .c .bot small{display:block;color:var(--violet);font-weight:700;font-size:11px;letter-spacing:.08em;margin-bottom:4px}
+  .c .body{margin-top:auto;font-size:19px;line-height:1.35}
+  .c .body b{display:block;font-size:23px;margin-bottom:6px}
+  .c .cta{margin-top:14px;display:inline-block;align-self:flex-start;background:#fff;color:#000;padding:11px 20px;border-radius:999px;font-weight:700;font-size:14px}
+</style>
+
+<h1>Attend: three ad concepts</h1>
+<p class="sub">A and B are the two model scripts from 061, rendered as posts instead of read as text. C is a third shape neither model wrote. All three: dark, one CTA, no price, no em dash, the product is a screen not a claim.</p>
+
+<div class="row">
+  <div>
+    <div class="ad a">
+      <div class="tag">A · Opus script · "the empty chair"</div>
+      <div class="hook">Your most active member hasn't posted in <em>two weeks.</em><br>Did you notice?</div>
+      <div class="grid">
+        <div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div>
+        <div class="seat"></div><div class="seat"></div><div class="seat gone"></div><div class="seat"></div>
+        <div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div>
+      </div>
+      <div class="cap">12 regulars. <b>One went quiet.</b> Your dashboard says 12.</div>
+      <div class="body"><b>Catch them while they're cooling.</b>Regulars don't quit overnight. They slow down first. Attend shows you who.</div>
+      <div class="cta">Learn more</div>
+    </div>
+    <div class="note"><b>Why this shape:</b> the script is about one person. So the visual is one gap in a row of faces, not a chart. The "12 / says 12" line is the whole product in nine words.</div>
+  </div>
+
+  <div>
+    <div class="ad b">
+      <div class="tag">B · Sol script · "the receipt"</div>
+      <div class="hook">Your member count won't tell you who stopped showing up.</div>
+      <div class="receipt">
+        <h4>SKOOL · THIS MONTH</h4>
+        <div class="ln"><span>Members</span><span>739</span></div>
+        <div class="ln"><span>New this month</span><span>+18</span></div>
+        <div class="ln dim"><span>Posts</span><span>412</span></div>
+        <hr>
+        <div class="ln dim"><span>Stopped posting</span><span>??</span></div>
+        <div class="ln dim"><span>Stopped reading</span><span>??</span></div>
+        <div class="ln dim"><span>About to leave</span><span>??</span></div>
+        <hr>
+        <div class="tot"><span>Attend says</span><span></span></div>
+        <div class="ln hot"><span>Cooling</span><span>84</span></div>
+        <div class="ln hot"><span>Drifting</span><span>31</span></div>
+      </div>
+      <div class="body"><b>Find the members going quiet.</b>Skool prints the top half. Attend prints the bottom.</div>
+      <div class="cta">Learn more about Attend</div>
+    </div>
+    <div class="note"><b>Why this shape:</b> Sol's script is about a metric that lies. A receipt with three lines reading "??" makes the lie physical. The body copy is mine; Sol's was 24 words longer and said the same thing.</div>
+  </div>
+
+  <div>
+    <div class="ad c">
+      <div class="tag">C · neither model · "the thread"</div>
+      <div class="hook">Real DM. Names changed.</div>
+      <div class="thread">
+        <div class="stamp">Aug 3</div>
+        <div class="msg them">just finished module 4, this is the best course ive bought</div>
+        <div class="msg me">love to hear it. keep going</div>
+        <div class="stamp gap">28 days</div>
+        <div class="bot"><small>ATTEND · MONDAY BRIEF</small>Marcus hasn't opened the community in 28 days. Last message was positive. Draft a check-in?</div>
+        <div class="msg me">hey marcus, saw you hit module 4 last month. stuck on anything?</div>
+        <div class="msg them">honestly yeah. life got busy. thanks for asking</div>
+      </div>
+      <div class="body"><b>The ones who leave don't say goodbye.</b>Attend notices the silence and writes the first line for you.</div>
+      <div class="cta">Learn more</div>
+    </div>
+    <div class="note"><b>Why this shape:</b> nobody in the swipe file uses a conversation. The 28-day gap is the ad. The Attend card in the middle of a real-looking thread shows the product doing its one job without a dashboard shot. This is the one I'd test first.</div>
+  </div>
+</div>
