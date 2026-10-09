@@ -1,0 +1,2275 @@
+[00:00] Like, how can AI be so unbelievably smart?
+[00:02] How can we, like, solve Millennium Prize problems in math,
+[00:06] but still not automate even the most basics of works?
+[00:10] Like, really basic rote stuff,
+[00:12] but we have this, like, supercharged engine of automation
+[00:15] that just does not have, like, the right plugs and stuff
+[00:17] to plug into all of this economically valuable work.
+[00:19] And, you know, like, if the whole company of TypeSafe disappears,
+[00:24] like, maybe it'll take, like, a year or two for people to, like, truly catch up.
+[00:27] I actually don't know how long it'll take.
+[00:29] If model quality matters, then we are going to be in a very good position for a long time.
+[00:34] But it's done, right?
+[00:38] This has changed the path of technological history.
+[00:43] Before we get into today's episode, I just have a small message for listeners.
+[00:47] Thank you.
+[00:48] We will not be able to bring you the AI engineering, science, and entertainment content that you so clearly want if you didn't choose to also click in and tune into our content.
+[00:56] We've been approached by sponsors on an almost daily basis.
+[00:59] But fortunately, enough of you actually subscribed to us to keep all this sustainable without ads.
+[01:05] And we want to keep it that way.
+[01:07] But I just have one favor to ask all of you.
+[01:09] The single most powerful, completely free thing you can do is to click that subscribe button.
+[01:14] It's the only thing I'll ever ask of you.
+[01:16] And it means absolutely everything to me and my team that works so hard to bring Latent Space to you each and every week.
+[01:22] If you do it, I promise you, we'll never stop working to make the show even better.
+[01:28] Now let's get into it.
+[01:32] Okay, we're in the studio, a special occasion because this week, Diogo, my good buddy, launched
+[01:37] Jev and has been taking over the complete timeline.
+[01:41] How do you feel?
+[01:42] What's it like to be you right now?
+[01:45] Emotionally, never been worse.
+[01:47] um like uh i'm a ragged corpse of a person right now because there's so much going on and i'm like
+[01:55] a technical co so i have like a lot of fires to fight but like mentally it's like i feel i i say
+[02:04] this all the time and i've been saying this kind of for years in my over under events like i feel
+[02:10] like the entire ai field is like one of those like carnival house of mirrors and everyone is just
+[02:17] insane and saying the weirdest stuff that doesn't make sense.
+[02:20] And it feels like for just this week, like I'm on a better in sync with reality and like,
+[02:28] oh, people see it now.
+[02:30] AI can be so much more than what was once thought.
+[02:35] And like, yes, we are going to make like an AI based economic revolution is back on the
+[02:40] table.
+[02:41] And this is fucking awesome.
+[02:44] You know, this is fucking awesome.
+[02:45] I'm so jazzed that developers get it.
+[02:48] It's, yeah, and I want to show my internal gratitude to developers.
+[02:54] I'm so jammed about the community and everything.
+[02:56] It's so great.
+[02:57] Yeah, you were saying yesterday that you decided to prioritize the town hall and not a bunch of, like, you know, VIP investor type people because you wanted to make sure that they are the people that you get your most attention, right?
+[03:10] The engineers, the developers.
+[03:11] Yeah, it felt a little like, oh, man, I'm talking to like really important people right now. I probably shouldn't reveal who. But it feels a little bit dirty for me to, I'm like, perhaps overly genuine in things. Like, it feels like dirty if like, in my gigantic calendar event of things to people to talk to, you know, the community isn't one of those, you know, and actually, in my ideal world, it would be like community all the time. I was thinking, should I host a town hall while walking to your studio? And I'm like, nah, that's too crazy.
+[03:41] sure yeah uh well you you guys have been hosting town halls on the discord discord is now 100 000
+[03:46] people um your twitter i don't follow these stats yeah so holy shit your twitter is blown up uh you
+[03:52] know i was it was really funny because like at aie you were like yeah follow me please and then you
+[03:55] didn't like provide even your your handle so i'm a noob you're such a noob i'm a noob but no but
+[04:00] that's like positive aura that like you don't know how to promote yourself someone like called
+[04:05] me out when i posted like holy shit we're all three trending trending topics and then they're
+[04:09] like that's a personal feed of course it's what you clicked on so okay let's uh yeah so congrats
+[04:19] on everything we'll talk about more uh details as you have them but less for people who are like
+[04:24] living under a rock or just just once like the definitive thing what is jeff
+[04:33] let me think about that's a hard one um okay and i'm happy to like uh re-ask if you want to
+[04:38] No, no, no.
+[04:38] I'm happy to just jam on it.
+[04:41] I will say the first thing that I'm relieved about with this question is now I don't have to answer that question to my parents anymore because ChatGPT can just explain it.
+[04:50] So the way I see it is we need a new class of models.
+[04:55] We're not attached to naming that class of models.
+[04:59] The most accurate name we've come up with is System 1 models.
+[05:02] There will be reasons, but there's a reason why we don't call them decision models.
+[05:06] because like they will be like system one is beyond that.
+[05:11] That's all I can say.
+[05:13] We didn't expect this to be our big launch.
+[05:15] So we have stuff in the tank.
+[05:17] You should have said low key research preview.
+[05:20] It kind of was right.
+[05:22] It kind of was.
+[05:23] But we so there's a class of models that we describe them as like machine native system one, large programmable.
+[05:30] I think these is the class of models where the goal is for code to be the consumer.
+[05:36] So, as opposed to pre-trained large language models, which are meant for, like, autocomplete of the internet, or RLHF models, like chatbot instruction following models, which are meant to, like, reply to text, or RLVR, it's in a weird gray area with RLHF.
+[05:54] Like, these are meant to have things that directly are consumed by code, hence the name TypeSafe.
+[05:59] So the thing we really, really, really want is to have AI be as powerful as possible.
+[06:06] And we think the way to do that is to integrate it with software.
+[06:09] And we are designing everything beyond just the outside, the deep internals of the model to be optimized for software.
+[06:17] So number one, JEV is our first large programmable model or system one model, whatever you want to call it.
+[06:25] um jev is meant to be optimized for intelligence per dollar uh hence the name jev you know jev
+[06:32] jevon's paradox yeah um and it's optimized for intelligence per dollar i love this debate with
+[06:38] people about what is the most important between reliability cost calibration and speed um and
+[06:46] jev is meant to be jev will be the name of models that will be on the frontier of intelligence per
+[06:52] There's other ways to optimize it, like ML, or at least if you're good at ML, it's all about trade-offs.
+[06:57] And, you know, we are just going all out on that.
+[07:00] Yeah, and to me, like, calibration is one of the new things that people weren't talking about as much.
+[07:05] We've done an episode in the past with Clementine Foria of Hugging Face where they were like, yeah, actually, they're just, you know, and this is your whole argument about RLHF,
+[07:16] is their mode collapsing towards what you want to hear the most or what is most likely
+[07:19] instead of their own internal confidence about a thing.
+[07:23] Can I soapbox on that for a second?
+[07:25] Yeah, yeah.
+[07:25] Cool.
+[07:27] I've been heard that your audience is the most technical, so I actually want to get into that.
+[07:31] Yeah.
+[07:32] And I went through extreme precision to make sure everything in our launch video is accurate and real.
+[07:38] Apparently, that's very unusual.
+[07:40] One of the things that no one paid attention to was the downsides of RLHF, in particular mode dropping.
+[07:45] Mode dropping or mode collapse?
+[07:47] It's the same thing.
+[07:49] It's the same thing.
+[07:50] And I want to have a blog on this eventually, but I want to tell as many people this as
+[07:55] possible because I think it's a very interesting thing.
+[07:57] So the spicy take, I believe in Jan LeCun a lot.
+[08:01] I think Jan LeCun's takes are actually among the closest to…
+[08:04] What about this?
+[08:06] Do you want to address this now or should I be going mode collapse?
+[08:09] No, no, no, later.
+[08:10] Go more like that.
+[08:11] I actually think that among takes, Jan LeCunz is among the most accurate.
+[08:16] But he has this very famous slash infamous slide about LMs are doomed.
+[08:23] You know, like that one where he has like a pie chart with like a tiny little thing
+[08:28] and says that as you increase sequence length, the probability of it making an error goes to...
+[08:34] Yes, this one.
+[08:35] This one.
+[08:36] I love this one because it's one of these things that seems mathematically obvious, but is obviously wrong.
+[08:44] Right. Like it's mathematically obvious, but it doesn't empirically hold.
+[08:47] And this is my favorite thing to teach people about.
+[08:49] Like where.
+[08:50] What's the disconnect?
+[08:51] Exactly. And may I or you want to tell me about mode collapse?
+[08:57] No, no. Mode collapse is related to this.
+[08:59] The disconnect happens because if you are in a mode covering or a calibrated distribution, you are not overly punished about having outliers.
+[09:11] You'd expect some amount of the time you'd be out of distribution, some amount of time you'd be in distribution.
+[09:17] That's what happens when you cover the distribution.
+[09:19] This was like models before GANs.
+[09:21] They made blurry images, right?
+[09:23] Instead, GANs mode drop.
+[09:25] They drop the minority classes and just do the really common ones.
+[09:28] And this is why this effect doesn't happen, right?
+[09:32] Like, instead of, in order to generate really long strings without making errors, they need to, like, be extremely conservative because it's really easy to see when an error happens.
+[09:42] It's very hard to see when, like, a subtle thing that looks correct happens.
+[09:46] And that calibration is, like, total poison into, like, the probability distributions of strings.
+[09:51] Yeah.
+[09:51] And it's a nuanced take, and I think that this is why this doesn't happen, and this is why strings are so bad at decision-making, or overloading the string models for decision-making is a bad time.
+[10:06] And while we're on the topic of Jan, do you agree that his fix, which is like a world model, like a JEPA-type embedding thing, is the writes solve?
+[10:16] so basically like the one of the reasons that it could fail is because you're trying to reason over
+[10:21] token outputs and then and then just looking back again and going keep uh continuing going until you
+[10:25] reach like the end of sentence um like is that uh and his solve is jepa right which is like joint
+[10:32] ambition uh joint embedding prediction uh so like is that the solve or you know like do you have a
+[10:38] take on that oh man i probably shouldn't talk too much about the insides of ml but i will say that
+[10:44] my brand, other than Unhinged, is practical.
+[10:49] Even my take here is practical.
+[10:52] And am I a scaling law fan?
+[10:55] Depends.
+[10:58] Scaling laws tell you how much better you get at a thing for amount in.
+[11:02] Scaling law does mean exponentially more resources for normally sublinear gains,
+[11:06] which looks to be a bad investment unless those linear gains are really, really valuable.
+[11:12] but to me it's all about
+[11:15] what can we do with what we have
+[11:17] to make the biggest possible fucking difference
+[11:19] I can curse
+[11:20] we're approved for adults
+[11:23] and also we have a
+[11:25] scaling law thing if you want to go into that later
+[11:27] I could if we
+[11:28] if that part is not super relevant right now
+[11:31] I actually if you want to go into my bitterest
+[11:33] lesson I think that that's more relevant
+[11:35] but to me I'm all about
+[11:37] pragmatics and
+[11:39] I think that the JEPA stuff
+[11:41] is really cool early research.
+[11:44] I really love awesome research.
+[11:47] Is it practical yet?
+[11:50] Probably shouldn't say.
+[11:52] But like there's just a lot of,
+[11:57] I just think there's like so many diamonds in the rough
+[12:00] let all over the research world right now
+[12:04] that haven't been polished
+[12:05] because people don't know how to like do the right task.
+[12:09] And I think that what our launch did, does it kickstart us as a company?
+[12:14] Like, yes.
+[12:14] Will it be great for us as a company?
+[12:15] Yes.
+[12:16] I think it's going to be like even greater for this direction of like programmatic AI.
+[12:21] You know, there was going to be like a gold rush on top of us because like software is
+[12:26] super fucking charged.
+[12:28] But I think there's going to be a gold rush parallel to us as well on like all the different
+[12:32] ways we can expose things to make software more powerful so people can make even cooler
+[12:38] stuff.
+[12:38] and then we are back to early internet energy.
+[12:41] And I think that's why the Twitter is just like,
+[12:44] Jeff, Jeff, Jeff.
+[12:46] It's inspiring because it's so different
+[12:49] than what we're used to,
+[12:50] which is, I'm sorry you can't do this,
+[12:52] but we do scaling laws
+[12:54] and only the big labs can do it, right?
+[12:57] Actually, I'm a tangent, if that's okay.
+[13:01] I think you might enjoy this.
+[13:02] Really? Five tangents in there.
+[13:03] Oh yeah, I get lost at all my tangents.
+[13:06] This is going to be horrible for the listeners
+[13:07] to figure it out,
+[13:08] but they're going to figure it out.
+[13:09] Yeah, we can edit it in our posts.
+[13:11] So popular thing on Discord that people keep asking me,
+[13:16] I haven't had the time to explain it yet,
+[13:18] is why am I opposed to safety alignment
+[13:21] and why do we not refuse?
+[13:23] I'm not opposed to safety as a principle,
+[13:26] but I think that safety alignment
+[13:28] is generally misaligned with users.
+[13:31] And refusal is just like obviously a type error.
+[13:34] Like if you're a human being
+[13:35] and you're chatting with like, you know,
+[13:37] a bottle or whatever, you're cloud coding, and a refusal happens, like, I'm sorry, I can't read
+[13:42] DNA.py, that's an annoying time. It's annoying, right? But you can work with it, right? And you're
+[13:48] forced to work with it because of Stockholm syndrome. I have stories about that too. I need
+[13:53] another tangent deep in here. But if you ever want this in a dependency running in the background,
+[14:01] what happens if that refuses? What if someone else is using that dependency? They don't know
+[14:04] what that system is. You want the software to just stochastically break because a user sent a weird
+[14:10] message in there? That is straight up insanity. It's coming from a place of people who do not
+[14:17] understand software, do not understand programming, and they're obsessed with, I believe, this
+[14:22] horseless carriage of AI co-worker instead of unearthing the full power of AI.
+[14:30] Fair enough. You want something that is the core kernel that is usable everywhere.
+[14:34] Yes, exactly. Like the cognitive core, right?
+[14:37] You need this thing to be so general, so optimized for its use cases.
+[14:42] You want it to work on all the future use cases, all the weird shit that people are doing.
+[14:48] We obviously didn't train on any of that stuff.
+[14:51] Is it surprising that it works?
+[14:53] No, because we trained on weirder stuff, my friend.
+[14:57] But one tangent up about safety alignment.
+[15:01] Safety alignment makes sense for a product, in my opinion.
+[15:04] for like chat, GPT, and Claude.
+[15:07] What makes safety and capability alignment different
+[15:10] is capability alignment is about doing what the user wants.
+[15:14] That is sick for software engineers.
+[15:16] They want their thing to do the thing,
+[15:18] and the more predictable it is,
+[15:19] the less they have to test it and play around with it.
+[15:21] Jeb is not anywhere close to that yet.
+[15:23] It could be, but there's so many more nines of reliability
+[15:26] that we want in order to make it so good,
+[15:29] like a database query,
+[15:30] that you don't even have to think about it.
+[15:31] It is just there when you need intelligence.
+[15:34] But safety alignment is like the opposite of instruction following.
+[15:38] It's when you want to follow someone else's instructions, like OpenAIR Anthropics.
+[15:43] Exactly, exactly.
+[15:44] And this makes a lot of sense for a product.
+[15:46] Again, like ChatGPT should do, like if they don't want to do like some not-safer-work roleplay with ChatGPT,
+[15:54] that's on them because like maybe that's what their users who have like parents and kids want.
+[16:00] Like that's fine.
+[16:01] But in an API, that's nuts, right?
+[16:04] like that's completely unacceptable because like people need to like program around this.
+[16:09] And that is that's so anti-user that it's I'm I can be an angry person.
+[16:18] So I should try to calm down.
+[16:21] It's people get your passion.
+[16:22] And I think it's really good.
+[16:24] The one pushback I'll give you is like, what if we use it to kill people?
+[16:27] Right.
+[16:27] Like that is the actual like the not safe for work thing.
+[16:30] It's private, personal, whatever.
+[16:32] But like, yes, like we will use it in war.
+[16:34] And that is something that companies can reasonably prefer their APIs not be used for.
+[16:43] I get that.
+[16:44] I think that there's pragmatic places where that opinion can be held.
+[16:50] I don't think the foundation of a general purpose technology is that place, personally.
+[16:56] Would I prefer that our stuff is not used to kill people?
+[17:00] Obviously.
+[17:00] Would I prefer it's used for all sorts of great stuff in the world?
+[17:04] Obviously.
+[17:05] Will I put my thumb in the scale for that?
+[17:07] Yes.
+[17:08] But will I do it at the technological layer?
+[17:11] Absolutely not, because that will fracture the intelligence.
+[17:14] Every single time you meet it to overfit to some weird stuff, you're fracturing its intelligence more and more.
+[17:19] And, like, these things are fractured to, like, they're so darn fractured right now.
+[17:23] So, and as a furthermore thing, to me, it's like, I think intelligence will be more like a database than a co-worker.
+[17:32] I don't think it's up to databases to add checks on whether or not they're used for something that's not great.
+[17:42] Actually, I don't know what the CIA does, really.
+[17:44] You can imagine killing people who are not even bad or whatever.
+[17:50] And I don't think it's the database's responsibility for that.
+[17:54] And furthermore, a thing that has been weird to me is when people sign up for our thing on Slack,
+[18:01] and they're like, hey, we're going to deploy this.
+[18:03] Can we deploy this thing?
+[18:04] I am just like, my brother, we are an API.
+[18:09] You are a developer.
+[18:10] It's none of my business, right?
+[18:12] Like you shouldn't know what the whole task even is
+[18:15] because it should be decomposed into small things.
+[18:17] We shouldn't be able to know
+[18:18] what the downstream users are doing.
+[18:20] And that is like a good boundary
+[18:22] to give software engineers maximum power.
+[18:25] Ideally, they use it for the good stuff.
+[18:26] And ideally, we can like help them.
+[18:28] And like, we've talked about like doing open source
+[18:30] and charity and all of that.
+[18:32] We have absolutely no time for anything else right now.
+[18:34] But they will get any of that bias out of the technological layer
+[18:38] as long as I'm in charge.
+[18:40] Yeah, that's great.
+[18:40] While we're on the topic, let's also briefly talk about your privacy stuff,
+[18:44] terms of use, which got a little bit of misunderstanding.
+[18:48] I just want to clarify that.
+[18:49] I think it probably takes two sentences from you about you're not being
+[18:54] that restrictive about your API.
+[18:55] Clearly, ideologically, you're taking your role as a platform very seriously.
+[18:59] Yes.
+[19:00] Yes, I don't know what you're referring to, but I've seen a couple of things about benchmarking.
+[19:07] Obviously, we're not stopping people from doing...
+[19:09] Oh man, I should be careful about what I say.
+[19:11] You said it publicly that that was in the preview period.
+[19:14] You didn't take it out for the launch.
+[19:16] The team is doing stuff that I'm not even aware of.
+[19:19] So it's great to know the team communicated that.
+[19:21] I asked them to check in with the lawyers about that.
+[19:23] We are obviously not stopping people from doing that type of thing.
+[19:27] I'm extremely in favor.
+[19:29] So I'm extremely anti-public benchmarks.
+[19:32] I'm extremely in favor.
+[19:33] I'm medium about private benchmarks that are proxies.
+[19:38] So are you worried about saturation or training on public benchmarks?
+[19:42] So it's easy to cheat.
+[19:44] Not only is it easy to cheat, there's a lot of...
+[19:47] So I think that we are, or anyone who's competition with us that vaguely there is...
+[19:57] There's like 50 Jeff clones, yeah.
+[19:59] Well, sure, sure. Let's just assume that there's an industry two years from now of people who are doing similar things to us.
+[20:09] The thing that we are selling is intelligence per something, per dollar or per second.
+[20:15] People obsess about the cost and the speed. I believe that it's cool, but the thing that matters is the intelligence.
+[20:23] Like the cost and the speed are like are bad things.
+[20:26] You know, you're paying them for something and you need the thing back.
+[20:30] And the intelligence is what truly matters.
+[20:31] The problem with intelligence is that there's a je ne sais quoi to it.
+[20:35] Right.
+[20:35] Like the good model smell.
+[20:38] Like the thing that happened after we launched of like two hours later that actually went way bigger than the video, which was like, holy shit.
+[20:45] This is actually usable.
+[20:46] Well, it's, you know, beyond that.
+[20:49] You know, like the launch was crazy.
+[20:52] and people could really sense how hard we care about that.
+[20:57] And that's truly what I think the long term of this is.
+[21:00] And I think public benchmarks are antithetical to this.
+[21:03] Like they are a way to get people trust in intelligence
+[21:07] because intelligence has a je ne sais quoi.
+[21:09] But the public benchmarks are extremely, extremely gameable.
+[21:13] Even if they try not to, they still will.
+[21:16] You know, like back in the old days,
+[21:19] every lab had a team to collect data that looks like MMLU to make it look better, which is just
+[21:25] benchmarking, bench maxing with extra steps. So I believe that in the long run, it needs to be
+[21:31] vibes and trust until you put it into a workflow and evaluate it for that workflow and measure it
+[21:38] and have your own sense of like how it does on the exact workflow that matters. And our job is to
+[21:45] keep moving the nines of reliability. This is like an ever-present part of what we need to be doing
+[21:51] as a company. And we need to do everything to have people know that this is something we care
+[21:56] so much about. You know, like if we wanted to, we could have released, Jeff, like a year and a half
+[22:01] ago if we wanted it to be dumb. Oh. Like, you know, my bitterest lesson, right? Like architecture and
+[22:08] yeah. I'll bring it up since you talked about it here. Hell yeah. Like, you know,
+[22:15] Sutton says that algorithms beats compute very roughly.
+[22:19] Data matters way more than compute, obviously.
+[22:23] And doing the right task, having the North Star, is the hardest, most important thing.
+[22:28] This has happened in LLM land twice so far, right?
+[22:32] Maybe 2.2 times.
+[22:34] You know, there's RLHF, which shifted the task to instruction following.
+[22:38] No one realized that that was possible.
+[22:40] RLVR did a tiny little edit to the direction.
+[22:43] and now us, right?
+[22:45] RLCD.
+[22:46] We have a new task
+[22:47] and the goal is, you know,
+[22:49] programs in the loop.
+[22:51] And yeah, data matters
+[22:53] so, so, so unbelievably much.
+[22:58] So I can't emphasize it less.
+[23:00] Yeah, you consider yourself a data lab
+[23:02] rather than like a model lab.
+[23:04] Is that something,
+[23:05] that's the wording that you guys use?
+[23:06] We are, we will always like care
+[23:09] so much about data.
+[23:11] To me, model capabilities
+[23:13] means data. Data is so unbelievably complicated. And that is what gets nines. Like you have no
+[23:20] idea how much data can shift everything. Data is so important. Holy crap. So if people are
+[23:28] looking for a job, we are hiring infinite data people, actually infinite.
+[23:34] What is a good data person? Like, you know, clearly somebody who cares about reading through
+[23:40] the transcripts of whatever. You've said, for example, that all your data is synthetic,
+[23:44] but that's only like scratching the surface, right? Like it's not like synthetic, so what,
+[23:50] right? Synthetic, but we have people with a lot of taste and a lot of care looking at these,
+[23:55] articulating what's wrong, going back, regenerating. Is that what a good data person is these days?
+[23:59] Let me try to figure out how to, like, it's super complicated. And like, I literally onboard the
+[24:07] data people with a talk that I assume is longer than this podcast will end up being. So I will
+[24:13] try to say like the high level of it. So number one, we don't do the kind of synthetic data that
+[24:19] people kind of, well, I'll do actually number zero. Data and synthetic data depends on your task.
+[24:25] Like the shape of your data, the shape of your task changes the data. Like RLVR's data is kind
+[24:31] of environments, right?
+[24:32] Yes.
+[24:33] RLHFs is the human feedback, you know?
+[24:35] Each task has its own unique kind of data, and we, of course, have our own unique kind
+[24:40] of data, right?
+[24:42] So, number one, we have that.
+[24:45] Number two, the reason why we don't want to train on our users' data, even if we could,
+[24:52] right?
+[24:52] Like, we could probably ask for any terms right now, and I don't know if it would make
+[24:57] a difference.
+[24:57] We truly don't want that because no matter what, the real world data has so much bias.
+[25:05] There's like a power law of like people like asking the same things where you'll end up like overfitting to it and like fracturing to it and all of that.
+[25:11] And number two, we are like aiming for like a complete sci-fi future years from now where like these models are going to be like the general infrastructure, layers and layers and layers and deep down the stack to like things people can't even imagine.
+[25:25] Like, I would like to think of our model like kind of like, you know, UDP as LLMs and TCP as our models.
+[25:31] All sorts of stuff can be built on top of that.
+[25:34] And we need to be able to nail those futuristic use cases such that software developers can actually build that futuristic stuff.
+[25:41] And the way to do that is even if we had all of the data of the present, we would just overfit to the present and then it wouldn't work.
+[25:48] What we need is to like, it almost feels like they're artists, you know.
+[25:55] they study this cognitive core. Our cognitive core is like way less jagged than anyone else's.
+[26:00] And then they find the jaggednesses and then they address them surgically in a way that,
+[26:05] and you can never perfectly do this, right? But they do it in such a way that it addresses it
+[26:11] in every single possible like dimension. The general case rather than the specific case.
+[26:16] Exactly. And like that requires a lot of intelligence every time.
+[26:19] Okay. So we mentioned a little bit, you sort of criticized my thinking as like very RLVR
+[26:23] influence which is like very fair um that is let's actually mention rlcd um which obviously you have
+[26:30] some secret sources to my knowledge you've never actually published a paper or anything like that
+[26:33] on it no right no not yet but like what what should people get from this like what uh can you
+[26:39] give people some confidence that you're just not just making up jargon for the sake of sounding
+[26:43] cool right like uh one thing for me is like calibration i do think is it to me like well
+[26:49] understood because we've covered it on the podcast yeah but i i don't know what you mean when you say
+[26:53] RLCD versus what people are familiar with. It's a great question and actually I will give a related
+[26:57] question. What is RLHF? And actually RLHF means multiple different things. There's the RLHF of
+[27:05] the original, I think it was like Paul Cristiano teaching a robot to backflip or something like
+[27:10] that. Wasn't there something? Was that it? That was the original. I reference the PPO paper but I don't know.
+[27:16] So PPO is not necessarily from human feedback if I recall. Okay that's true. But I believe it was
+[27:22] like an open a alignment work that could teach a hard to specify outputs like a backflip i'm not
+[27:27] a hundred percent sure um and then there was actually learning to summarize you know this
+[27:32] was work um by a bunch of the team that helped with um instruct and co-authored um the instruction
+[27:39] following paper which was teaching doing ppo on language models this is the uh uh sorry i'm trying
+[27:47] trying to manipulate this thing.
+[27:50] This is 2017.
+[27:52] Yeah, I'm not 100% sure,
+[27:54] but that looks quite right.
+[27:55] If it has a robot doing backflips
+[27:57] or something like that,
+[27:58] that might be it.
+[28:00] Yes, okay, cool.
+[28:01] I guess I got it right.
+[28:03] Hell yeah.
+[28:04] There you go.
+[28:05] Yeah, that's the one.
+[28:05] So the idea was,
+[28:06] can you do ill-specified things with it?
+[28:09] So that's version one.
+[28:10] Version two was the learning to summarize work
+[28:13] that opening I did,
+[28:15] which is actually like PPO on language models to do something somewhat ill-specified.
+[28:21] This is like another thing that people refer to as RLHF, which I did not co-author.
+[28:26] Oh, Dario's there. Cool.
+[28:29] Hell yeah.
+[28:29] And Rafford.
+[28:31] Yeah, yeah, yeah.
+[28:31] Shout outs to Alec and Ryan. Love them.
+[28:34] But the thing that I refer to RLHF is the...
+[28:39] Oh, man.
+[28:42] You have comments on that.
+[28:43] I've commented that paper, but we're so many tangents deep.
+[28:47] So the thing that really got to me, the thing that I'm calling to RLHF is the task of instruction following.
+[28:54] It's not about the PPO. That part doesn't matter.
+[28:56] It's about setting a north star of this is a valuable direction.
+[29:00] It's kind of like the bitterest lesson north star.
+[29:02] And for us, RLCD is this new task.
+[29:06] And it is not, I don't see it as jargon.
+[29:10] Like I try to communicate with precision.
+[29:12] It's just that, hey, here's another North Star, just like DPO and all of its like, you know, descendants also do RLHF despite not using the algorithm in that paper.
+[29:24] And so clearly stating the North Star is being programmable.
+[29:29] A.I. is one word that I really catch on to removing the human in the loop from because RLHF is tuning.
+[29:38] Yes. So that you can automate everything.
+[29:40] Yes.
+[29:40] Did I miss anything else in the thesis of what the North Star is?
+[29:47] That is right.
+[29:49] I'm overly nuanced in my communication.
+[29:51] The one nuance is that we need to be practical.
+[29:54] We need to be aware of what language models can do really well,
+[29:57] like what AI can do.
+[30:00] There could be programmatic types that are sick AF,
+[30:04] but if the technology is not ready for it,
+[30:08] it's not a tragedy if that's not out in the world.
+[30:10] But to me, the pre-JEV world was a tragedy.
+[30:15] It sounds arrogant.
+[30:17] No, no, no.
+[30:18] I strongly believe you.
+[30:19] Cool.
+[30:19] It sounds arrogant, but I felt this way since long before I even had a company.
+[30:23] I can vouch that you've seen this at O'Brander for three years.
+[30:27] Yeah, I've been talking about this for so long.
+[30:29] And I've been saying it because I thought it would have been easier.
+[30:32] They say they do not do things because they're easy, because they thought it was easy.
+[30:37] Exactly.
+[30:37] Something like that.
+[30:38] I thought this whole project would take a week.
+[30:42] And I was unbelievably wrong.
+[30:44] So I am so sorry to everyone at OpenAI that I thought I was like, man, I'm solving this right now.
+[30:50] But, like, I think that the tragic thing is when, well, I think overpromise underdeliver is tragic, too.
+[30:58] And, like, AI is super extreme on that axis.
+[31:01] And I think RLVR is, like, the main, well, both RLVR and RHF are extreme perpetrators of this.
+[31:08] But to me, there's just so much potential there.
+[31:12] AI is clearly so smart.
+[31:14] I love this in my talks.
+[31:16] When I ask people, how can AI be so unbelievably smart?
+[31:20] How can we solve Millennium Prize problems in math,
+[31:24] but still not automate even the most basics of works?
+[31:27] Really basic rote stuff.
+[31:30] It doesn't take extremely smart people to do this.
+[31:35] It's not a satisfying job.
+[31:36] Like there's other things these people could be doing, but yet we need them to do like this bait, like super basic, non unsatisfying stuff because, you know, like we can't automate it yet.
+[31:47] But we have this like supercharged engine of automation that just does not have like the right plugs and stuff to plug into all of this economically valuable work.
+[31:55] And, you know, like if the whole company of type safe disappears, like maybe it'll take like a year or two for people to like truly catch up.
+[32:03] I actually don't know how long it'll take.
+[32:04] If model quality matters, then we are going to be in a very good position for a long time.
+[32:09] But it's done, right?
+[32:14] This has changed the path of technological history.
+[32:18] Yeah.
+[32:18] And we will be exploring that space as a field.
+[32:22] Yeah, I definitely agree with that.
+[32:24] You've created possibilities.
+[32:26] So I think, if I can paraphrase so that people can also understand,
+[32:29] And you should not take the success of TypeSafe and Jeff as just like, well, you know, that is a new model type.
+[32:37] Now we're done. We go back to business.
+[32:38] Like, no, like actually there are like five other model types that you should be exploring and like let a thousand flowers bloom.
+[32:44] Absolutely. Like and some of which you will probably also.
+[32:48] Yes. Early Internet energy. I think it's back to tech utopia.
+[32:52] You know, it's no longer like, oh, man, like sometimes my coding agents work, but all of the best ones are hoarded internally.
+[32:58] Yeah. Right. It's like creation is back on the menu. You know, though, it's going to be a wild ass world. And, you know, buckle up. I'm so, so jazzed about that.
+[33:11] I mean, and now you have the funding and the momentum to do whatever you envision there, which I think is very gratifying to see you have after, you know, so long of saying these things.
+[33:22] when I actually show the world.
+[33:24] I know.
+[33:24] It was such an interesting thing to be a tease the whole time.
+[33:29] My talk felt like it was a cliffhanger
+[33:32] because I didn't say how the automation would occur.
+[33:36] Sean reviewed our manifesto,
+[33:38] and he's like, it's a little bit vague in these parts.
+[33:42] What's step one?
+[33:43] What is the intelligence?
+[33:44] Well, I asked you for model, and you were like, yeah, model coming.
+[33:47] Yeah, yeah, yeah.
+[33:48] Well, I mainly objected to the word composable,
+[33:51] But BuildProdNotGod is fantastic.
+[33:53] Thank you.
+[33:55] We've really rallied around that.
+[33:57] I'd like to think we're not entirely a cult like some companies are, but we are jazzed
+[34:03] about what we're doing.
+[34:05] We are, my brand is being practical and we are all so super-duper practical.
+[34:11] It's really great.
+[34:12] Yeah.
+[34:13] And by the way, here's the secret master plan, right?
+[34:16] It's the shape of machine-native composable AI.
+[34:18] It was your idea to make a secret master plan.
+[34:20] It's an Elon thing. When he started Tesla, he was like, here's what we'll do.
+[34:23] I'm giving official credit to you.
+[34:25] Thank you. Thank you.
+[34:26] But you should have told me you're also going to do this model launch.
+[34:32] Because you told me half of the story.
+[34:34] And then the other half, you didn't have the Doom demo at the time.
+[34:37] You didn't have any numbers to give me.
+[34:39] I was like, oh.
+[34:39] Well, the problem is I don't believe in bench maxing.
+[34:42] Exactly.
+[34:43] So it is a thing that you need to feel.
+[34:45] And I think that this is the way to build long-term trust,
+[34:48] even though it hurt us a lot.
+[34:51] Like last year when we did fundraise,
+[34:54] no one believed us.
+[34:56] And they wanted just benchmarks and stuff.
+[34:59] And we're like, we're not going to do that.
+[35:01] We are principled.
+[35:02] We're going to stand by our guns.
+[35:03] That rewards bad actors.
+[35:04] I don't give a shit what you want.
+[35:07] This is who we are.
+[35:08] And we are standing by that.
+[35:10] So sorry.
+[35:12] In some ways, I think choosing the hard path,
+[35:15] But you end up making the company that you want to work in.
+[35:18] Yep.
+[35:19] Right?
+[35:20] Otherwise, if you sell out, then you're just working in OpenAI, but with my people.
+[35:23] Right?
+[35:24] Which is…
+[35:25] Yeah.
+[35:26] I mean, I don't have too many regrets on that, obviously.
+[35:29] Yeah.
+[35:30] Like, it worked out so unbelievably well.
+[35:33] And I was emotional last night when I was talking about the reasons I left OpenAI.
+[35:43] it actually had to change my wording after the launch. My phrasing was, if an AI winter did
+[35:51] happen, and I did not do every fucking possible thing I could to avert that, I would see myself
+[35:57] as personally responsible, both for the RLHF direction, which I think really widened over
+[36:03] promise versus under deliver, and also not going all in on this, because I think this is where
+[36:09] value is going to just be like printed so and it was really cool because i feel like
+[36:14] the ai winter i'm worrying about is averted you know like ai will be useful it'll be used for
+[36:21] automation it's been less than a week and like the numbers are already undeniable that it's like
+[36:26] being used for real work and like there's it's it's the wild west yeah can you just just if you
+[36:33] have top of your head what numbers are you seeing like what's what's like signups like whatever you
+[36:38] can share? I'm actually not super on top of everything. Like the team is the ones who are
+[36:44] telling me all of these things. Yeah, and I'm sure it's like changing every day, right? It's kind of
+[36:47] nuts. If there's a milestone that you're like, well, yep, that's something we're hoping for.
+[36:51] We reached it. I will say a milestone that we've passed is tokens per day. And this is not like
+[36:58] fleeting tokens per day. This is like, even at night, like it's constantly churning. So, you
+[37:04] no machines are calling it and not just people trying things out. So that is so cool. A trillion
+[37:12] tokens a day is a lot. So surpassing that is awesome. Signups to me don't really matter.
+[37:18] And actually, this was like a bit of a mistake we made, if I'm like totally honest. People on
+[37:22] Twitter were calling us like marketing geniuses and all of that. And that was just us. We don't
+[37:29] have a marketer also hiring. And we were just being our genuine, goofy, like irreverent selves.
+[37:35] And we were just like offboarding people off the waitlist so hard. Our platform team is so
+[37:41] unbelievably cracked. I think we have more nines of uptime than Anthropic while having the most
+[37:45] unprecedented launch ever. Like that is kind of nuts. So like props to them. And the thing we
+[37:54] I didn't realize, so number one, waitlist signups don't matter for a developer platform, in my opinion.
+[38:01] I would guess that a large number of them are not even developers.
+[38:05] So they go in, they try some queries, and a lot of people don't get it because they are not programming.
+[38:11] They're just like, this is not a chatbot, where's my chat GPT2?
+[38:14] But I haven't exactly calculated this.
+[38:18] My sense is that if every single human being in the world just wrote a couple of queries, that would be a rounding error compared to one power user's for loop that is just creating value.
+[38:30] And the thing we didn't realize with the waitlist is we just off-board anyone off the waitlist.
+[38:36] It doesn't matter.
+[38:37] The scary part is rate limits.
+[38:39] And then once people start getting value from that, then they just want tons and tons of rate limits because this is what software is, right?
+[38:46] Like you spend effort up front to specify your road to task.
+[38:50] And then this road task creates more value than it takes to put in.
+[38:53] And then now that you have to forget, exactly.
+[38:55] Yeah.
+[38:55] You run it in the background.
+[38:56] You make it a dependency to like other things.
+[38:59] You can make like higher level stuff.
+[39:01] And like you just create so much value in the world.
+[39:04] You know, early Internet people probably did not imagine like the wonder of early 2000s Internet, which is still not early Internet.
+[39:11] But like it's through, no offense, composability that all of the crazy stuff happens.
+[39:19] I just really wanted to emphasize that in our manifesto.
+[39:21] We are going for emergence.
+[39:23] We are going for like being the catalyst.
+[39:26] We're wanting to empower people and we are going to do whatever we can for that.
+[39:30] Be it like discords in our town hall with me wearing a garbage bag or not.
+[39:35] And podcasts and getting like because I want the long form.
+[39:40] It is like, yes, we'll get past some of the superficial things and then we'll go deep.
+[39:44] And people will really trust and understand your mission and the people that will resonate
+[39:49] that will end up joining you or buying you.
+[39:53] No, no, sorry, as a customer.
+[39:56] Oh, okay, okay, yeah, yeah, yeah.
+[39:58] That was funny, I'm sorry.
+[39:59] Sorry, I didn't mean to say that.
+[40:00] But no, anyway, one very flattering version of this, like 36 million views of your launch
+[40:05] video.
+[40:06] Cool, up to 38 now.
+[40:07] Yeah, around the area.
+[40:09] you know, Navier's Toast got 74,
+[40:11] Febo 5 got 57.
+[40:13] So as far as,
+[40:14] I didn't do the stats for like original ChatGPT,
+[40:17] which there was no video.
+[40:19] So like up there, right?
+[40:21] As far as like,
+[40:22] if you were to launch a Neolab in 2026,
+[40:25] I think you're like number one right now,
+[40:26] which is like pretty crazy.
+[40:28] Well, I actually would rather,
+[40:30] I do have the shirt like your favorite Neolab's favorite Neolab.
+[40:35] I don't give a shit about being a Neolab.
+[40:37] I think being a Neolab,
+[40:38] Actually, we have a lot of swag that's being a parody of a Neolab.
+[40:42] One of them I have is Neolab with product, which actually is not a Neolab.
+[40:46] I don't care about that, really.
+[40:49] What I care about is being a reliable dev platform.
+[40:52] So appreciate the comparison, but hopefully we transcend past them
+[40:56] and we go back into a revolutionary moment for developers
+[41:00] and this stable thing that people can rely on and trust.
+[41:04] Yes.
+[41:04] I mean, to that end, I think that's one thing that really impressed me about you guys is that, yes, you do talk about reliability.
+[41:13] I thought it was mostly about calibration, which we talk about RLCD.
+[41:17] But actually, it's also about just uptime and scalability and all those things.
+[41:23] They're all sort of off the top.
+[41:24] And nines.
+[41:25] And nines.
+[41:26] Which is uptime in my way.
+[41:27] That's part of it.
+[41:28] But there's reliability in how intelligent the thing is,
+[41:33] how consistently does it do the thing that you want.
+[41:36] And I think that the big reasoning models are very smart.
+[41:40] In my opinion, they still lack reliability.
+[41:42] I think there's many use cases where they look like they should be smart enough to automate their work.
+[41:46] There is economic incentive to automate that work,
+[41:50] yet still they're not reliable enough at an intern because they're optimized for different things.
+[41:55] And so I think that there's the reliability of being able to trust the outputs.
+[42:00] And also, there are dimensions of reliability that we are not yet at that I'm so excited by.
+[42:07] I want to automate the easy work before the hard work.
+[42:09] I think that that's just a common sense thing to do.
+[42:13] But to me, we will be sufficient.
+[42:16] I don't know if there's such a thing as sufficiently reliable.
+[42:18] But I want to get so good that people don't even need to try the model to know that it'll work.
+[42:22] That's what flow state is in programming.
+[42:24] right like i'm just like writing queries because i need intelligence in here and you know like
+[42:29] when for non-trivial branching i can just write it in in like like a type safe system one query
+[42:34] and then get the results out and it just branches accurately like that would be so so good like that's
+[42:40] that is the dream and that is like going to be like a long long slog yeah we're gonna go into
+[42:46] your api design in a little bit just just to give people examples and like maybe path not taken that
+[42:51] of stuff. One thing up the front that I do wonder about into reliability is I noticed that there's
+[42:56] no seed. There's no, and so basically same input, do I always get the same output?
+[43:04] If not, why not? Oh, great question. So this is actually like a common question we have between,
+[43:11] so reliability is actually a catch-all. Like whenever AI can't automate something,
+[43:16] it's due to some form of reliability. It could be type safety, it could be determinism,
+[43:21] it just could be like it's jagged. So reliability is a catch-all. I just think that
+[43:26] it's also a catch-all for what the North Star is. Determinism is same inputs, same outputs.
+[43:34] I do believe that this is slightly interesting for unit tests, but I believe that to be the
+[43:40] the wrong North Star. I believe robustness is what people... I don't want to tell people what
+[43:46] they really want, because that would be a little arrogant of me. I believe that that is the more
+[43:50] important property. You want... Given similar inputs, get similar outputs. And it's kind of
+[43:58] wild how unreliable LLMs are. A way that we test this is you put UUIDs, I think they're called
+[44:05] nonces, in the prompt. And what you want is similar outputs from all of those, because it's
+[44:09] truly semantically the same question.
+[44:12] And that is the part where you really want,
+[44:15] like that robustness is where like people get like burnt with AI making
+[44:20] decisions.
+[44:21] So I think that is a super duper important property.
+[44:24] We could also have determinism.
+[44:27] That is,
+[44:27] that is a thing that can be available as far as I can like mentally model for
+[44:32] programmers.
+[44:32] Like it,
+[44:33] it could be valuable for some use cases.
+[44:36] So like, please educate me in comments or you.
+[44:41] But in general, it's easy.
+[44:45] Determinism is something you can like trade off for better cost.
+[44:49] You know, like we are constantly wanting to be on the intelligence per dollar frontier.
+[44:54] We are doing like absolutely disgusting things to be there.
+[44:58] You know, like this is, I shouldn't say this, but no one's here to stop me.
+[45:04] You sign off on your own PR.
+[45:08] That is not how it works at this company.
+[45:12] I believe for this week, my chief of staff, Kay, is the most powerful person in tech.
+[45:17] And shout out to Kay for organizing this.
+[45:19] Holy shit.
+[45:21] She is so fucking competent and powerful.
+[45:23] She's incredible.
+[45:27] I mean, she sucks.
+[45:28] Don't poach her.
+[45:31] But, so, I try to be a bit more filtered, but, like, people are telling me, don't call it a Frankenstein's monster of models, because that has, like, negative implications.
+[45:41] I think Frankenstein's monster was, like, the good guy in this whole, I mean, it was innocent, right?
+[45:45] I didn't read it, okay.
+[45:46] I'll confess.
+[45:47] Okay.
+[45:48] One facial expression.
+[45:50] Decent Jacob Elordi movie, if you want to see the annotation.
+[45:55] Anyway.
+[45:55] You have no idea how little time I have right now.
+[45:57] Yeah, yeah, yeah.
+[45:57] My priorities are sleep, you know.
+[46:00] Developers, developers, developers.
+[46:01] Developers, yes.
+[46:03] Developers, developers, developers.
+[46:06] But, yes, we do absolutely disgusting things to be on the Pareto curve of intelligence per dollar,
+[46:15] and we are going to keep doing that.
+[46:16] We're going to be doing crazy-ass stuff, and I think people really need to think outside of the box.
+[46:22] Part of the reason why it's surprising is people are thought inside the box,
+[46:26] and we continue to do that.
+[46:28] as of right now, we are obviously the best at this, and we want to continue being the best at
+[46:33] that whole thing. So, wait, where do we tangent from? So, I asked you about, will you have Cs
+[46:39] and determinism, and then you basically define reliability and how you see it. Yes. But like,
+[46:45] determine, like... I have a robustness example that's real quick, I can show you. I would love
+[46:49] that. I'll just say one thing, we can make a deterministic model. Exactly. Like, we're happy,
+[46:52] if people can convince us that that is a valuable thing to do, and we don't have a gigantic GPU
+[46:57] shortage. We can happily make all of these models. We live to please and revolt, revolute.
+[47:07] You will throw over everything except you do it in a nice way.
+[47:11] So determinism could be on the card. It just gets you less intelligence per dollar.
+[47:15] Yeah. Well, just having seen the trajectory of OpenAI and Anthropik,
+[47:20] just trust me now that you will be peer pressured into doing it.
+[47:22] uh so like just people will want it even if they if you tell them they don't need it
+[47:26] they'll still want it so like yeah that's the tl vr okay okay i will love to maybe one day we
+[47:34] will see how that happens i've been told i'm um they they say that part of our brand is being
+[47:41] unshakable and they say that that's just the nice way of saying stubborn yeah exactly and i'm a very
+[47:46] stubborn person i don't think we could have yeah yeah no but so like okay but i like have argued
+[47:51] with you before. And you've been writing about developers every time. So okay, I give up.
+[47:55] You win. You win. I'm sold that I've argued with you before. No, no, I'm just saying like, I think
+[48:01] that you can hold your ground while also like, if I give you the right evidence, you can throw
+[48:07] away your priors and be like, yep, that actually makes sense to me. And so like, you know, just
+[48:11] trust your own gut on this. I suspect though that we will be GPU constrained for a very,
+[48:17] very long time. And anything that has less intelligence per dollar means it consumes
+[48:24] more GPUs for the same intelligence, which is, you know, like our goal is not to onboard
+[48:29] companies, like it's valuable, but like our goal is to have people like experiment and
+[48:34] do weird shit. And we need like, we need to like get it to as many hands as possible.
+[48:40] And like starting like the California gold rush for that.
+[48:43] I think there is right now. Yeah.
+[48:44] Just a word of caution.
+[48:47] I mean, I'll just say it because somebody is thinking about it right now,
+[48:49] which is when you say things like we will not commit to deterministic models,
+[48:53] we will do whatever it takes for intelligence per dollar,
+[48:56] and we are facing GPU constraint,
+[48:58] people are thinking you may quantize your models, right?
+[49:02] Like whatever you had at launch, you may quantize down to reduce the quality
+[49:06] in order to free up memory or bandwidth or whatever, right?
+[49:11] And so you should probably have some kind of promise, which you don't have to make now, about we will uphold model quality at launch.
+[49:21] I mean, you were at OpenAI when you launched all these APIs, and even Claude as well.
+[49:27] When they first launched the models, the model strings did not stay the same model at all times.
+[49:33] You have versioning in your models, that's great.
+[49:35] But you should publicly commit to some kind of, once a thing is launched, we don't change it.
+[49:40] We will not change our models when we deploy them.
+[49:42] That is insane.
+[49:43] We care about developers.
+[49:45] It makes sense if you're...
+[49:46] So doing something like that,
+[49:48] again, this is the problem with a first-party product and an API.
+[49:52] You can do whatever you want in a first-party product, right?
+[49:55] More power to them, whatever gets that experience, that is fine.
+[49:58] With an API, you obviously can't do that.
+[50:02] But I will say that we plan to move a lot faster
+[50:06] than many people are used to model providers.
+[50:09] doing things.
+[50:11] So we will be launching new models
+[50:12] a lot faster than people think.
+[50:14] And we are not promising
+[50:16] long-term support for the models
+[50:18] because we think that there's
+[50:19] lots of improvements to have.
+[50:21] So there is a world
+[50:23] that we might temporarily LTS
+[50:26] what is right now
+[50:28] JEV 1.13.0.
+[50:30] We might do that
+[50:31] because so many people are using it.
+[50:33] And I know developers
+[50:34] hate breaking dependencies.
+[50:36] The alternative is fracturing our fleet
+[50:38] and that is a very bad vibe for everyone.
+[50:41] Yeah, you can't have like 100 different versions of the model.
+[50:42] Exactly, and if we're iterating very fast,
+[50:44] there would be a lot of those versions as well.
+[50:46] So we do want to have not just a LTS-supported thing eventually,
+[50:53] long-term support.
+[50:54] We want a really sick way of doing that.
+[50:57] We have research stuff cooking in that direction,
+[51:01] and I think it's going to be the most pro-developer thing ever.
+[51:03] But it is not yet our current models,
+[51:06] And I'm not promising that we'll be able to keep the exact same models.
+[51:09] They will get smarter every time, for sure.
+[51:12] And my sense is that even our model iterations, where it already is smart,
+[51:18] between model versions, the changes tend to be even smaller than the string models calling them twice.
+[51:24] But when we go from jagged to wow, that is where the big deltas are.
+[51:30] Yeah. One thing that's beautiful about LTS-Sing models is that actually you can also port them to other silicon. I don't know if you've thought about this.
+[51:39] No comment.
+[51:41] Okay.
+[51:41] So, I care about intelligence per dollar.
+[51:43] Yes.
+[51:43] Right?
+[51:44] But speed.
+[51:45] What?
+[51:45] Speed as well.
+[51:47] We'll see.
+[51:48] Yeah.
+[51:48] We'll see.
+[51:48] I mean, it's a whole part of the inference tech tree that is like, I mean, exploding in the past year, right?
+[51:53] Yeah.
+[51:53] That you can move to a cerebrous, an etched or whatever, and get the 100,000 times speed up.
+[52:01] Yeah.
+[52:02] I think that intelligence per second is a different metric.
+[52:07] And we've even talked about things like intelligence per dollar times second and metrics like this.
+[52:13] My guess on Jevon's paradox occurring, or at least the Jev series of models,
+[52:17] And the thing I hunt people down about internally is I don't care how much smarter it is.
+[52:24] It needs to be in the pre-interfanture.
+[52:26] So that is what the brand of JEV is.
+[52:29] It is the best thing at intelligence per dollar.
+[52:31] For intelligence per second, we'll see.
+[52:34] I think that it's an intriguing thing.
+[52:37] I know that there's many industries that are extremely dependent on real-time stuff.
+[52:44] Intelligence per second means tons of dollars for them.
+[52:47] But we'll see.
+[52:49] I would love to do both and have the market correct me either which way.
+[52:56] I would love to be informed by people.
+[52:59] Yeah, totally.
+[53:00] And it's not just about real time, right?
+[53:02] It's also about scale because at scale, every microsecond is just multiplied by billions and trillions of times.
+[53:09] It depends on how background it's running, right?
+[53:11] Like if it's like a big background, like database map produced query, the latency might not matter so much as like the cost to get intelligence from it.
+[53:19] But like if it actually is something more real time, like user facing, you have budgets like between 100 milliseconds and one millisecond that are like totally magical.
+[53:28] And actually, even if you were below 100 milliseconds, if you could half that time, that means you can get double the intelligence or sequential intelligence calls to have like a phenomenal experience.
+[53:38] So that is definitely happening right now.
+[53:42] It is super duper cool.
+[53:44] I love the intelligence per second use cases, but I don't think that that will be Jev's niche.
+[53:50] Okay.
+[53:50] Yeah, fair enough.
+[53:51] Good.
+[53:51] When you think about the promise of faster and cheaper, typically the trade-offs that
+[53:58] other models are offering is faster but more expensive.
+[54:01] Yep.
+[54:01] Right?
+[54:02] And so one of the reasons I was thinking about why is Jev resonating so much is that you've
+[54:07] done the faster but cheaper side of the quadrant, which is very, very unoccupied while holding
+[54:12] intelligence somewhat constant.
+[54:15] Yes.
+[54:17] That's a very load-bearing statement while holding intelligence constant.
+[54:20] That's the hard part, right?
+[54:22] Which, unfortunately, so basically you refuse to do any public benchmarks or you don't like
+[54:27] any public benchmarks about it, but you need some internal sense.
+[54:30] Say it again?
+[54:31] You need some internal sense of this.
+[54:32] Oh, of course.
+[54:33] Of course.
+[54:33] We have our own internal evals, for sure.
+[54:37] But it takes a lot of discipline not to game those,
+[54:40] and it needs to be a top-level priority to not game them.
+[54:43] Of course we do that, right?
+[54:44] How else can we make the guarantee that our models are in the pretty different tier of intelligence per dollar?
+[54:49] We're not flying blind in there, right?
+[54:51] If we're doing completely weird things with different costs or whatever else,
+[54:55] how do we compare them?
+[54:56] We plot them and we try to figure out what is the best for the users.
+[55:01] So we for sure measure them.
+[55:03] I'm not anti-measuring, but it's extremely dangerous when you have any alternative incentive.
+[55:11] And this is the one thing that I kind of rule with an iron.
+[55:14] Well, maybe my co-workers might think I rule many things with an iron fist.
+[55:19] But to me, like not shitting ourselves about how smart our model is, is one of the most important things there.
+[55:26] We need to be truth seeking.
+[55:27] Yeah, yeah.
+[55:28] Agreed.
+[55:28] Agreed.
+[55:28] Okay, I wanted to go over some details on the API choices, mostly because this is the only podcast that will ask you these kinds of questions.
+[55:36] Oh, hell yeah.
+[55:37] So you have three primitives.
+[55:39] Choice, score, and no.
+[55:41] First of all, no, where is that from?
+[55:43] Is that just like a term in the literature or what?
+[55:46] Now it is.
+[55:48] We debated this a lot.
+[55:52] We debated this a lot.
+[55:54] It is, you know, it is bull-ish, right?
+[55:58] true-false. But it's continuous. Yes, exactly. So first, the origin of the name is Bernoulli.
+[56:08] Yes. So that's why it's even spelled that weird way. That is like a subset of the name Bernoulli
+[56:13] from like a Bernoulli probability, which is actually what that is. So that is the origin of
+[56:19] it. We were debating this a lot. We liked P-Bool. We liked Pool. We were wanting to call it like a
+[56:25] pool party, but then no one let me.
+[56:28] You know, we had like a bunch
+[56:29] of like other arguments about
+[56:31] that.
+[56:33] And Newell,
+[56:35] we figured, was like the best thing.
+[56:37] Our rationale, and like this is actually
+[56:39] the same thing with Jev too,
+[56:41] is that
+[56:42] we think that we are like an irreverent
+[56:45] insane bunch, and programmers
+[56:47] don't care. You know, like if Jev is
+[56:49] just going to be a string, we didn't expect it to catch on
+[56:51] or even have puns or anything like that,
+[56:53] right? Actually, there was a lot of hate on the name internally. They've all apologized,
+[56:59] except for one person. Still holding strong. Yes. Our mutual friend.
+[57:04] Okay. Yes, yes, yes. I respect her for that. Yeah. She wanted Jev to be called Meow.
+[57:13] She would, of course. Yes, of course. Okay. You win there. You win there.
+[57:17] But like, yeah, Newell is, we had to make a new concept for this thing, because if it
+[57:23] was a bool, it would be confusing to people.
+[57:25] So actually, all three of these are actually new concepts.
+[57:29] These are not types that exist in programming.
+[57:32] And that was intentional, because they map very closely to types, but they're not quite
+[57:37] that.
+[57:37] A score is not an int.
+[57:39] So if you had like instructor or pedantic or whatever, map ints or floats into scores,
+[57:44] you'd get a little bit cooked, you know?
+[57:45] And we were really erring on the side of clarity over the side of making people easily understand what's going on.
+[57:53] I mean, don't you worry about that?
+[57:54] Don't you want things to integrate directly into things that people are already using?
+[57:59] Yes.
+[58:00] Yes, we do.
+[58:01] And actually, I think that...
+[58:03] You have integrations of other SDKs and stuff?
+[58:05] Yeah.
+[58:05] Sorry, you have your own SDKs?
+[58:07] Yep.
+[58:07] But typically, for example, as a developer relations person, I would be very obsessed with, like,
+[58:11] yes, here is how you use Jev with Instructor.
+[58:15] here's how you know that kind of stuff we might have that somewhere i'm so behind on everything
+[58:22] someone will do it for you in the community not that not that you're successful people will be
+[58:25] like oh that's cool cool but like you know i don't see that as binary either i actually see success
+[58:30] as a score and there's always more to climb in like how much we can like be there for our community
+[58:38] just to be clear and um i'm this this section is stressful because i didn't review the dots
+[58:43] and they're constantly changing.
+[58:45] But to me, scores do exist.
+[58:47] So scores are similar to LM judging.
+[58:50] So if you want to call it a judgment, I guess you could.
+[58:53] But that is the way people already use this type of thing.
+[58:59] Maybe a null could be a probability, but everything for us is a probability.
+[59:05] And a choice is actually closest to a function call.
+[59:08] But a function call is an extremely disgusting thing
+[59:11] that if you want OpenAI juice, sauce, tea,
+[59:17] we should go back into that later.
+[59:19] Like a choice is just like the right way of exposing
+[59:23] like a switch match statement.
+[59:26] Yeah.
+[59:26] So it like maps cleanly to an enum.
+[59:29] Yep.
+[59:29] And you can choose to hydrate it into a function if you want.
+[59:31] Yes.
+[59:32] And like in the enum choice is the important part of that.
+[59:35] And like, actually, I think these map all
+[59:37] into like programming primitives
+[59:38] where choice maps into a switch statement on an enum,
+[59:43] newels map to if statements,
+[59:44] and scores map to sorting or thresholding
+[59:48] at a greater than or less than.
+[59:50] And this has been always what the vision is.
+[59:52] There will be more types,
+[59:54] and they will map into programming primitives.
+[59:58] Any other, so any nuance you want to go through?
+[01:00:01] Literally, this is for the JEV people
+[01:00:03] who are deciding to really invest in JEV.
+[01:00:06] You are the expert, right?
+[01:00:07] I'm just wanting to provide more background for them on API choices and how they should use some of these things like legends, confidence, how critical in your testing, just any sort of pro tips that you want to offer people down at this level.
+[01:00:27] Thank you.
+[01:00:27] I love this.
+[01:00:29] This is why we're here.
+[01:00:30] Hell yeah, I didn't expect this. And actually, no one has asked me this in probably like months when I was like onboarding like our DevRel.
+[01:00:39] Okay.
+[01:00:40] It's sick. So our model is designed for being like deep in the insides of computer programs in the future.
+[01:00:48] We like unironically believe that this will be much more massive than anything people are even considering today.
+[01:00:54] And our model might not be ready for that, but we are like continuously working for that future.
+[01:00:58] it will never be good enough at these shallow tasks.
+[01:01:02] Sorry, it'll never be good.
+[01:01:04] We're not just going to keep on climbing the shallow tasks.
+[01:01:06] We want to be deep in the guts of programs
+[01:01:08] because that's how you make software powerful.
+[01:01:11] All the types inside of our, this is actually an output,
+[01:01:17] but all the parts of the input, like the state,
+[01:01:22] the instructions, the criteria,
+[01:01:24] all of them can be structured JSON objects.
+[01:01:26] That way, like programs can like insert them in the right spot and you don't need to like put things into templates.
+[01:01:33] Exactly. So if ever I think people don't read into this part enough and they think it's all strings and that's that's fine.
+[01:01:41] But these are all meant like I would say that if you're using like a template, like turning it into like a system message or something, you are thinking in like the old way.
+[01:01:51] You know, we should be making things as easy for computers to understand because that structure is truly there.
+[01:01:57] Right. Like it would be weird in like like a programming language to have like all of your numbers in.
+[01:02:03] Then you pass it into like you turn it into a string. Normally you do that for printing when you have a human in the loop.
+[01:02:08] Right. But for like within the computer, you want to be passing like nested structure that is semantic all around.
+[01:02:15] And we are really going to be optimizing our model. The model is pretty optimized for this.
+[01:02:19] But the thing is, every different nested level of structure is harder to reason about.
+[01:02:23] And we are really cooking hard in that direction.
+[01:02:25] I think people should keep cooking in that direction.
+[01:02:28] Because it makes the code so much more legible and beautiful and agnostic to the implementation details.
+[01:02:34] It's like, here is my state.
+[01:02:36] Here's my function state.
+[01:02:38] Think of it as an AI function.
+[01:02:41] Which subsets of my state, which is all the variables you have available, should I pass in here?
+[01:02:45] System messages are like disgusting global variables where you just put everything in there and you put all those instructions at once.
+[01:02:52] And then, you know, like you hope that every single instruction gets nailed instead of asking the questions in parallel.
+[01:02:58] And also, I would recommend, and I truly say this not from like a like it makes me money perspective.
+[01:03:06] I truly recommend asking lots and lots of questions.
+[01:03:10] Break them down.
+[01:03:11] Make them smaller.
+[01:03:12] And like really decompose.
+[01:03:13] No matter if the models can do it today or not, I believe that the biggest saving grace of what's happening this week will be people's AI code bases are going to be so much better.
+[01:03:26] If you decompose problems into simple decisions, every single one of these things is extremely evalable.
+[01:03:34] Like AI beforehand is big system message, and then maybe you have another big AI to see if it actually does this.
+[01:03:41] That's nuts.
+[01:03:42] It's kind of crazy.
+[01:03:43] That was our Stockholm syndrome, right?
+[01:03:46] But that's kind of crazy.
+[01:03:47] If you want to say, hey, don't read this subdirectory
+[01:03:51] or don't pass any API keys to DeepSeq or whatever else,
+[01:03:55] that should be programmatically basically guaranteed.
+[01:03:59] And you'll never have guarantees of any machine learning model.
+[01:04:02] But by breaking it down, you can actually measure it.
+[01:04:06] Yeah, you can verify that it was actually called.
+[01:04:08] Yes, and the interface itself is so verifiable.
+[01:04:12] this should be like a sigh of relief.
+[01:04:17] It's just going to lead to way better engineering.
+[01:04:19] Yeah, I think I get that.
+[01:04:21] And so one of the reasons people didn't used to do this in the past
+[01:04:25] is because they would just call a small LLM, right?
+[01:04:28] And it's still too slow, it's still too expensive
+[01:04:30] versus chunking everything.
+[01:04:31] I've done exactly this myself.
+[01:04:33] I benchmark, here's a pipeline that fills everything in system prompts
+[01:04:37] and it just gets one big output
+[01:04:38] versus break it down into 100 different things.
+[01:04:40] It was slower, more expensive, not as good.
+[01:04:42] Yep, yep, yep. And that happens. And it's super inconvenient. It's unwieldy. Why not just put it all together? You kind of end up repeating some stuff between questions. So it's maybe inefficient or something like that. But then it results in something that is very hard to rely on. And software doesn't need to run in the background. It would break my heart if our stuff couldn't run in the background.
+[01:05:05] Is there a way to break things down that you guys have found that works versus what you thought worked and doesn't work?
+[01:05:14] Interesting.
+[01:05:15] Because people are just going to be exploring this now that you've said it.
+[01:05:18] They would use this as a reference and be like, okay, that's how I'm supposed to use Jeff?
+[01:05:22] Yep.
+[01:05:23] Then the question is, how do you break things down?
+[01:05:26] Interesting.
+[01:05:27] I like to break things down into its smallest semantic unit.
+[01:05:32] Like, what is the lowest level thing?
+[01:05:34] I try to never have, I've probably queried the model the most among anyone.
+[01:05:42] And I try to, number one, in my queries, this is a lot more like the way I prompt things.
+[01:05:48] I make it really, really structured and explicit.
+[01:05:51] And in the questions, I always, I like the back ticks, but it works for all of them.
+[01:05:56] Be really clear what I'm referring to, because we wanted the model to be really literal.
+[01:06:01] because when you program, you want things that instruction follow really, really well.
+[01:06:05] That is what the art of programming is.
+[01:06:07] And what AI does is expanding the things, the kinds of instructions that can be followed.
+[01:06:11] So I'm a fan of doing that.
+[01:06:16] Sometimes I'm a little lazy and I have more hybrid things.
+[01:06:20] But I think that for really big production things, you just want to keep on adding more questions.
+[01:06:24] You want to make it really easy to add more questions.
+[01:06:27] Be really, really precise about all of that breakdown.
+[01:06:30] and then have the code to have the exact behavior you want.
+[01:06:34] If I could give a tiny little example of this,
+[01:06:38] is refusals.
+[01:06:41] I'm not going to talk about why we don't refuse.
+[01:06:43] I might have done that already.
+[01:06:44] It's all a blur.
+[01:06:46] But for refusals, I don't think you should ask,
+[01:06:49] should I refuse here?
+[01:06:51] I think the answer will be pretty good,
+[01:06:54] because that's a system one compatible task.
+[01:06:57] But I think you're way better off like asking many different independent questions about like the different situations you can refuse about.
+[01:07:04] Because instead of having to like just guess based on you, you know, you can actually specify what you want.
+[01:07:10] And beautifully, you know, and I think this is like truly, really beautiful.
+[01:07:13] If you find a situation where it's like, oh, it didn't refuse because of this reason.
+[01:07:17] I didn't specify this part of the task.
+[01:07:19] That is awesome.
+[01:07:20] That's what software engineering is about.
+[01:07:22] You fix the bug by adding that question in, adding the threshold, maybe remembering that as a test case, and now it is just solved forever.
+[01:07:29] Your software can't forget about that in the prompt because of context rot.
+[01:07:33] It is just there, and you can just keep measuring that forever.
+[01:07:37] And if the models are not perfect at some of these things, you can choose what threshold you want for all of these factors based on real examples.
+[01:07:45] It's like ML without the ML, and you can just do it for anything.
+[01:07:49] And there might be some things the model's not good enough yet.
+[01:07:53] I'm a little bit afraid when I see people doing trading with the models,
+[01:07:56] like automated trading.
+[01:07:58] It looks cool.
+[01:08:00] I just think that people should leave it to the professionals.
+[01:08:04] That's just a very hard, high-level task
+[01:08:06] that maybe the models aren't good enough yet to figure out.
+[01:08:10] Even if they were, it suddenly wouldn't be because of an efficient market.
+[01:08:14] But that's one of those things where you can break it down into things
+[01:08:19] and just evaluate them.
+[01:08:20] And you might be like,
+[01:08:21] it's not smart enough at this.
+[01:08:22] Maybe we don't deploy it yet for this version.
+[01:08:24] Or we make a trade-off.
+[01:08:26] Or we err on the side of safety.
+[01:08:27] Or like, hey, the models are not good enough
+[01:08:30] at detecting this weird combination
+[01:08:33] of sarcasm with a VIP customer
+[01:08:36] that this is when we escalate to human.
+[01:08:38] And that's what confidence estimates are about too.
+[01:08:40] Okay, very good answer.
+[01:08:42] I think one thing I'll mention very quickly,
+[01:08:45] which I don't expect that you have
+[01:08:46] as too long of an answer for.
+[01:08:48] You don't have.
+[01:08:49] Well, no, no, no, no. It's just specifically like you are still relying on thresholding as like the lever that the user can pull.
+[01:08:56] But what if just the calibration is wrong, right? Like you're saying your calibration is perfect.
+[01:09:01] I didn't say that.
+[01:09:04] Good calibration means like lower value is lower, like probability lower, higher value is probably higher.
+[01:09:11] But it could be wrong. It could be locally misaligned.
+[01:09:13] And so then I would want to fine tune it or something, right?
+[01:09:16] Which you don't offer, but you could.
+[01:09:19] Again, this is a short answer, which is you don't have it right now.
+[01:09:23] Do we want to offer fine-tuning?
+[01:09:24] Is it the question?
+[01:09:25] That could be one version of it, or you could have a different knob.
+[01:09:30] Because right now, all you're saying is if something's wrong, skill issue, you should just change the prompt again or break it down even further, or you change the confidence.
+[01:09:38] Those are my two options.
+[01:09:40] And that doesn't feel super satisfying if your model is just getting it wrong.
+[01:09:43] It will get many things wrong, to be clear.
+[01:09:47] We have a report issues button, complain to us in Discord.
+[01:09:50] We want to make it a lot better.
+[01:09:51] Every single model version will be noticeably better.
+[01:09:54] We will stop shipping them quickly if they weren't getting big improvements.
+[01:09:57] Number one, that is totally reasonable.
+[01:09:59] I think that's simply pragmatic to admit that AI is imperfect at some stuff.
+[01:10:04] I do think we'll find use cases that they're good enough at.
+[01:10:08] And good enough kind of depends on the use case.
+[01:10:10] Right. Like human beings can do a lot of work despite being bad at that work because their EV is quite high.
+[01:10:18] And presumably with the right thresholding and everything, there probably is like large amounts of work that could be done, even if mistakes are being made.
+[01:10:26] On the question of fine tuning, I could imagine it in the cards.
+[01:10:31] I do have concerns because like, you know, what people need versus what people want category.
+[01:10:38] Like, I think general models tend to be really like, again, there's the je ne sais quoi of
+[01:10:43] generality that making it good at like a million other tasks than this one narrow task might make
+[01:10:49] it better at edge cases in that task, which I would be a little bit afraid of, you know?
+[01:10:54] Yeah.
+[01:10:55] I could imagine it is my answer.
+[01:10:58] I'm endlessly practical on these things.
+[01:11:01] I want everything.
+[01:11:02] My vision of the world is...
+[01:11:05] There's so much we want to be building.
+[01:11:07] But also, I would not want to ship something
+[01:11:11] that is a giant foot gun
+[01:11:12] like some other AI companies would ship.
+[01:11:15] Well, so both OpenAI and I think even Gemini
+[01:11:19] have rolled out fine-tuning and then took it back.
+[01:11:22] Which is an interesting observation
+[01:11:24] that pretty much fine-tuning is now
+[01:11:26] the domain of open-source models.
+[01:11:27] Yes, yes. I do know about that. It was kind of crap, so that's probably better that they took it down.
+[01:11:39] It could just be a foot gun. And telling people that fine tuning it is probably the wrong way to go is great.
+[01:11:43] Another interesting answer could be that our model is so different, in the same way that quantization doesn't apply to us,
+[01:11:50] output tokens doesn't apply to us, fine tuning also doesn't apply to us.
+[01:11:53] Well, actually, I'm super open to that possibility.
+[01:11:57] Like, this is not a promise.
+[01:12:00] This is a desire.
+[01:12:01] Just to make it clear, I like to be really honest.
+[01:12:03] Like, I think that as intelligence per dollar gets cheaper, cheaper, cheaper, cheaper,
+[01:12:08] I think that we could get really, like, small approximate things that hopefully are proxies
+[01:12:14] for intelligence.
+[01:12:15] Like, is there a world where people don't write regexes anymore?
+[01:12:18] because the intelligence per dollar that uses AI
+[01:12:22] is cheaper than the complexity of a regex.
+[01:12:25] That would be kind of sick.
+[01:12:28] I would love that.
+[01:12:29] And it might require fine-tuning for some of those narrow use cases
+[01:12:33] to really get past the threshold.
+[01:12:35] We will see.
+[01:12:36] My hope is calibration gets that.
+[01:12:38] Calibration plus a cascade of models.
+[01:12:39] If it's super confident, then maybe it's right.
+[01:12:42] And if it's in the middle, then you do the next bigger model
+[01:12:44] and you chain off from there.
+[01:12:46] I don't really know how that's going to go.
+[01:12:48] But yeah, I could imagine it.
+[01:12:51] And something that I could imagine too is like,
+[01:12:53] imagine you have like a series of like,
+[01:12:55] we own the entire period of frontier,
+[01:12:57] something that a business might want to do,
+[01:12:59] or I think a hacker would be okay with dealing with a period of frontier of
+[01:13:04] models.
+[01:13:04] Maybe a business wants something more dynamic.
+[01:13:07] You could imagine like having like a different sizes of models and to
+[01:13:11] dynamically pick which model based on how smart it is on different parts of
+[01:13:15] your stack.
+[01:13:15] And you could even imagine, because of how simple our thing is, you could imagine some automatic fine-tuning on that.
+[01:13:22] Not the promise in the slightest.
+[01:13:24] I'm just cooking on SyFy.
+[01:13:26] But you would consider different sizes of Jeff models to offer that gradient.
+[01:13:30] Absolutely.
+[01:13:30] Yeah, yeah, yeah.
+[01:13:32] How would I know how much intelligence people need?
+[01:13:35] I don't know.
+[01:13:35] Right?
+[01:13:35] Yeah, I don't know either.
+[01:13:37] Demand is unlimited.
+[01:13:39] Well, people are telling us not to ship things right now because we don't need to ship things.
+[01:13:45] because again, yeah, but that's kind of lame.
+[01:13:48] And I really like the saying,
+[01:13:50] this is something that I hope people hold me to
+[01:13:52] because it'll be hard to walk back from.
+[01:13:57] Yeah, like I don't know exactly the thing
+[01:13:59] that culture is what you do
+[01:14:01] and the market doesn't reward it.
+[01:14:03] And I really like that
+[01:14:05] because I think that we are standing for something.
+[01:14:08] Maybe in the future,
+[01:14:10] what we're standing for is like so obvious
+[01:14:12] that we're the equivalent of like boring,
+[01:14:14] like visa or something like that. And like, we're just like a utility that no one really thinks
+[01:14:19] about and I'll be wearing non pink suits or whatever else. But I really want to be like
+[01:14:25] rallying the world to this, you know, like I want to keep doing cool stuff, not because we need to,
+[01:14:32] but because I want like people to realize that this is just the beginning, you know,
+[01:14:37] like that wasn't even meant to be the opening salvo. That was like kind of like a, you know,
+[01:14:41] low-key research preview or whatever you want to call it.
+[01:14:43] Yeah.
+[01:14:44] And there's a lot more we can do.
+[01:14:47] Machine native intelligence is going to go wild.
+[01:14:50] So potentially not the only size,
+[01:14:52] potentially not the only model that you guys launch.
+[01:14:56] Absolutely not for any of those.
+[01:14:58] I want to meet whatever needs we can.
+[01:15:04] But with a giant caveat,
+[01:15:06] I don't want to be like OpenAI's product teams
+[01:15:08] that throw stuff at the walls.
+[01:15:09] like i want it to be like in a under a unified vision like if you go back to the manifesto like
+[01:15:14] everything needs to be under one of these three things in my opinion um uh i'm not yeah i'm not
+[01:15:20] prepared to do this oh i'm sorry i'm sorry yeah i can just just talk about it like we have like
+[01:15:25] three steps in our stuff it sounds like a tease i want everything to go under one of these three
+[01:15:30] things to keep pushing the boundaries and everything like like this is not these are not
+[01:15:34] checklists. These are axes that we think build the foundation of a new technological revolution.
+[01:15:44] And I want all the bets we make to be somewhere in there, and we will be doing some weird stuff,
+[01:15:50] model-wise. Because machine-native, right? Humans don't need to totally get it. It needs
+[01:15:56] to just be valuable. Just give people a tease or a hint. What does weird look like? What is weird?
+[01:16:04] I'll give people a hint.
+[01:16:06] Some people are trying to call them decision models.
+[01:16:11] Our primitives are decisions.
+[01:16:15] I wouldn't do that because I think there's other types that are machine native that are not decisions.
+[01:16:22] Okay, we'll leave it at that and let people guess.
+[01:16:25] I think it's a pretty fun hint.
+[01:16:27] Yeah, yeah.
+[01:16:27] There's people saying, like, I've done this before.
+[01:16:30] I made a decision model a year ago.
+[01:16:31] Jeff is not new and Jeff is not cool.
+[01:16:33] But I think there's the categorical,
+[01:16:36] here's what you're establishing is possible.
+[01:16:38] There's the performance of, well, actually for the benchmarks
+[01:16:42] and the numbers that you're getting, you are still bidding.
+[01:16:44] As far as you can tell, you're still bidding every single clone of you out there.
+[01:16:48] I don't care about the benchmarks, just to be clear.
+[01:16:51] Even if we were winning or losing, I want to deny them.
+[01:16:53] You've established the category.
+[01:16:55] But also I think this nuance between decision models and system one
+[01:16:58] I think is actually the thing that you're trying to...
+[01:17:02] Yes, and I just want to make software engineers superpowered, right?
+[01:17:06] Like with AI.
+[01:17:08] Or like the tragic thing to me is, you know, in that AI winter direction,
+[01:17:13] I think like it's just so sad that AI was so powerful, yet so underutilized.
+[01:17:20] Like, it's the thing that gets me emotional.
+[01:17:28] But, man, I think that that is – I don't want to just be pure techno-optimist like all technology is good.
+[01:17:38] I think what was happening now was like a travesty.
+[01:17:43] And I just want to open up those possibilities for people.
+[01:17:48] Yeah, I'll just end it there.
+[01:17:50] I've cried too much these last few days to want to do it on the record.
+[01:17:55] Yeah, yeah, yeah.
+[01:17:55] I appreciate you sharing a little bit of that.
+[01:17:57] And I think people can see that you're very authentic and passionate about this.
+[01:18:02] You don't necessarily get that from the name like TypeSafe AI, but I think once people
+[01:18:07] immerse themselves enough in like, here's the genuinely different direction you want
+[01:18:11] the world to go, and actually you have done the hard part about going zero to one on the
+[01:18:16] thing, then now let's all go together in the new direction.
+[01:18:20] Yeah, I don't, I am sure that I won't think, maybe I will think that the hard part was done, perhaps.
+[01:18:27] I think that there's going to be many more hard parts.
+[01:18:32] Like, if, you know, all sorts of stuff gets automated and we finally see GDP growth and, like, you know, it's like a Jeff party every day, then maybe the hard part is done.
+[01:18:43] But, like, I don't think so.
+[01:18:45] And like, I really, really think that people focus too much on speed and cost and not enough
+[01:18:50] on reliability.
+[01:18:51] Like reliability is what makes it delightful.
+[01:18:54] Like reliability is what like allows you to trust it.
+[01:18:56] You have this line, TFP growth winning 3% in five years.
+[01:19:01] Hell yeah.
+[01:19:01] I've never seen.
+[01:19:02] Hell yeah.
+[01:19:03] Let's fucking go.
+[01:19:04] I've never seen a lab care about TFP growth.
+[01:19:07] But like that is what an economic revolution is, right?
+[01:19:09] Like it's actually extremely consistent with what the OpenAI Charter used to stand for.
+[01:19:14] You know, it was talking about like, I think the cheddar is the same, but they've kind of tried to move definitions around to like, you know, 100 billion in profit or something like that.
+[01:19:22] Not that I hate an open eye.
+[01:19:23] It wasn't like, yeah, it wasn't a well-defined term what AGI is, right?
+[01:19:26] They tried to do it, right?
+[01:19:28] Like doing majority of the world's economically valuable work.
+[01:19:32] And they should have to answer the question, how can it do millennium price problems in math?
+[01:19:38] And zero of the world's economically valuable work, around the air.
+[01:19:41] I think that all models are roughly tied right now at zero.
+[01:19:44] There's some chance that we have started already, but I would guess that it's not yet 1%.
+[01:19:50] And I think that that will show up.
+[01:19:54] When it does happen, it will show up in the economic statistics.
+[01:19:57] It's going to be fucking awesome.
+[01:19:58] It will not cause mass unemployment, but it will cause a whole bunch of awesome shifts, and the world will be a lot better.
+[01:20:05] And also, like, I'm really tired of AI always being the foreground character of things.
+[01:20:12] Like, I think that the world should just be more delightful and AI should just help with that.
+[01:20:17] You know, and I just like disappear into the background.
+[01:20:19] Exactly.
+[01:20:19] You know, like I say this in my talks, like, how can it be that 2019 software, like software, SaaS, whatever, super duper valuable, right?
+[01:20:29] It's 2026 now.
+[01:20:30] How is the software basically exactly the same, despite AI being so freaking awesome, other than sometimes having a chat box on the side, right?
+[01:20:41] That kind of works, but doesn't allow you to make decisions that the companies have stakes in, because they can't be trusted to make decisions.
+[01:20:48] That, to me, is nuts.
+[01:20:50] You know, there's so much economic incentive for this.
+[01:20:53] And I think it's going to be like an inverse SaaSpocalypse.
+[01:20:57] I think SaaS is going to be supercharged by this.
+[01:21:00] They are the ones who are most in the know of what things are valuable to automate, and it's going to be a crazy time.
+[01:21:06] Yeah, I think so, too.
+[01:21:07] It's a beautiful thing that you've unlocked.
+[01:21:10] You mentioned one thing here, which I don't know if it's directly here, which is what is a system one problem and what is a system two problem?
+[01:21:20] That's a hard one.
+[01:21:22] That's a hard one, my friend.
+[01:21:24] Because people now are just trying to jab everything, right?
+[01:21:26] Which probably is going to fail, right?
+[01:21:28] But some things are going to be good.
+[01:21:31] Jeff, everything is pretty funny.
+[01:21:32] Yeah.
+[01:21:33] It's a pretty funny way of saying it.
+[01:21:36] So I'll tell you the truth.
+[01:21:37] Yeah.
+[01:21:38] The truth is that this is an empirical problem, just like scaling laws are an empirical thing.
+[01:21:44] You know, like why doesn't robotics really work right now, despite all the money being
+[01:21:49] spent on it?
+[01:21:50] I don't think it's about spending more money necessarily.
+[01:21:52] The empirical results just might not be there, right?
+[01:21:57] So empirically, I believe that these like pre-trained super condensations of intelligence are fundamentally system one thinkers.
+[01:22:07] I think that they truly like system one is the closest thing to describe what LLMs are strong at.
+[01:22:13] RLVR has done incredible things for system two thinking.
+[01:22:16] I am at awe.
+[01:22:17] It is super freaking cool.
+[01:22:19] Like, I don't think that it's going to result in AI doom in the slightest.
+[01:22:23] Not not zero percent, of course, because I think zero percent is miscalibrated.
+[01:22:26] But, like, it's really cool what they've done, and they've really pushed it to the limits.
+[01:22:31] Well, maybe they don't think so.
+[01:22:32] Not the limits limits.
+[01:22:34] But, like, it is a weird thing for models to do, and they are very fragile at this.
+[01:22:40] Like, think about how people used to talk about AI back in the chat GPTJs.
+[01:22:45] Like, wow, it's really general.
+[01:22:48] It can do a lot of general things.
+[01:22:50] But it's bad at math problems and, like, GSM 8K, grade school math.
+[01:22:54] And then now look at how people talk about RLVR.
+[01:22:57] It's so fragile.
+[01:22:59] It's so jagged.
+[01:23:00] You know, like it can, why can it do this like really weird thing?
+[01:23:03] And actually, you know, math is not just spiky, it's fractal, right?
+[01:23:07] This is because RLVR is, you know, like if we talk about like, what is the North Star
+[01:23:12] for each thing?
+[01:23:13] RLHF is please humans, right?
+[01:23:15] That is what the human feedback is.
+[01:23:17] RLVR is optimized benchmarks.
+[01:23:20] You know, everything that goes into the RLVR category literally is a benchmark by definition, because a benchmark is programmatically verifiable, simple outputs that can do well.
+[01:23:29] And RLCD is make it reliable for programmatic use.
+[01:23:36] And yeah.
+[01:23:40] Maybe I'll offer some thoughts and then you can sort of correct me if I'm wrong.
+[01:23:44] For example, one thing that I've been thinking about is also, I threw Jeff at a bunch of things when you gave me access on day one, and multi-hop reasoning.
+[01:23:56] So single hop, fantastic.
+[01:23:58] State of the art, you should never use anything other than Jeff for single hop.
+[01:24:01] Multi-hop is going to start to fall down, and it's kind of monotonically increasing as you increase the hops.
+[01:24:07] Yep, yep, yep.
+[01:24:07] Oh, yes, back to that empirical question.
+[01:24:10] It depends on what we can pull out of the models.
+[01:24:13] Yeah.
+[01:24:13] Right. So we want everything like we want to unearth as much intelligence as possible, period.
+[01:24:19] The models like ICS as like unlocking and smoothing and sculpting the intelligence while like adding new capabilities and like, you know, like like filling in gaps in it.
+[01:24:29] And we will be filling in like, you know, more and more and more and more of these gaps over time.
+[01:24:35] But the reality is that we are in the business of unearthing properties.
+[01:24:39] Those properties are actually a function of what is available from these condensed cores and Frankensteining them all together to have all of the properties of everything.
+[01:24:51] But the reality is we are in the business of unearthing as many capabilities as possible.
+[01:24:56] And System 1 just happens to be the description of what works.
+[01:24:59] And everything that works in that paradigm will be System 1-ish.
+[01:25:03] you know like i am like there is a reason why we don't do what's called latent reasoning reasoning
+[01:25:10] in strings i think the reasoning like what models do really well is reasoning within the models it's
+[01:25:16] not totally complete it doesn't do great at all latent reasoning is reasoning strings i thought
+[01:25:20] reasoning is reasoning in in inside the model weights i think that people used to call that
+[01:25:26] continuous reasoning i'm not entirely sure it was called latent reasoning because like it used to be
+[01:25:31] that the reasoning traces were secret so they're kind of like a latent variable for the answer
+[01:25:35] yeah so what secret has now shifted well it's still secret for open and anthropic right
+[01:25:41] so no reasoning jeff yes as far as you will ever do it right because that that like violates the
+[01:25:47] whole promise of system one i my promise is to do whatever necessary for machine native stuff
+[01:25:56] I could imagine there are some forms of reasoning that are less slow, inefficient, and fragile that are totally on the cards, just to be clear.
+[01:26:07] So pragmatic person, I'm not making promises on methods.
+[01:26:11] I'm making promises on what my ROI North Star is, and I'm going to fight for that.
+[01:26:18] This launch didn't happen, and we are still hungry for our place in the world.
+[01:26:22] That's great.
+[01:26:22] Yeah.
+[01:26:24] I think the other thing that vision is another one that's like a big capability that you don't have, but maybe it doesn't ever belong in system one.
+[01:26:32] I think I have a pretty good vision.
+[01:26:34] What? Sorry?
+[01:26:35] I think I have a good vision.
+[01:26:36] No, no, no.
+[01:26:37] Sorry.
+[01:26:37] I'm kidding.
+[01:26:37] I'm kidding.
+[01:26:38] Oh, my God.
+[01:26:38] Yeah, yeah, yeah.
+[01:26:40] Because people obviously, the first thing they want is vision because of the Doom demo, but also just like everything, you know, other than text is vision.
+[01:26:48] Everything is in the cards.
+[01:26:50] Yeah.
+[01:26:50] In my mind.
+[01:26:50] Okay.
+[01:26:51] And actually, this is like a debate we have.
+[01:26:55] Man, your audience is probably the great one to have in this debate.
+[01:26:58] There's a question about how much do we try to give people what they think they want,
+[01:27:03] which is what we did in stealth for two years.
+[01:27:06] We just knew that this is obviously going to be valuable,
+[01:27:09] versus give them what they say they want.
+[01:27:12] And there's a lot of dimensions of this.
+[01:27:16] And context length is an example of this.
+[01:27:19] Right?
+[01:27:21] every single model, including ours, I actually think as far as I can tell, ours is by far
+[01:27:26] the best at not degrading in long context. But the other providers are just like, whatever people
+[01:27:32] want, let's just give them the stupid thing. And we need to figure out a balance for this,
+[01:27:38] because if you take the former side too far, give people what they want, you end up with
+[01:27:44] anthropic nanny state style thinking, which is very anti-developer. While the pro-developer
+[01:27:49] route would be like, give them what they want, but developers are, like, we don't want to put
+[01:27:54] the burden on them to figure out the je ne sais quoi of intelligence. So we are trying to, like,
+[01:27:58] figure out this navigation of, like, how quickly to release things, to still, like, have our, like,
+[01:28:05] brand of trust, and also, like, teach our, treat our users like adults that can make informed
+[01:28:11] decisions that don't need, like, nanny stating on top of this stuff. Yeah, I think that's fair.
+[01:28:16] And we don't know the answer, to be honest.
+[01:28:19] Like, we'll have to figure it out.
+[01:28:21] It's going to be, that's probably going to be like one of my biggest debates over the next couple of days.
+[01:28:26] Yeah.
+[01:28:26] Because like we have a lot of stuff.
+[01:28:29] Again, we didn't expect it to pop off.
+[01:28:31] So we were like, we'll need some follow up launches.
+[01:28:33] I don't know.
+[01:28:34] I don't know if you didn't expect it to pop off.
+[01:28:36] Like, I saw the work that you put in.
+[01:28:38] Like, I have never seen you lock in so hard.
+[01:28:40] It's like the last two months, basically.
+[01:28:42] Well, that's also because my chief of staff made me lock in.
+[01:28:46] Yeah. I thought I worked hard before.
+[01:28:53] Yeah. No, but you were showing up at our writing workshops, and I was like, what are you doing here?
+[01:28:59] It was useful. It was great.
+[01:29:00] You clearly were very intentional about your launch, and the work showed, and congrats.
+[01:29:06] Thank you. Thank you. I hope to keep locking in, is my sense.
+[01:29:11] I want to, like, I think that we've passed many great filters for the tech world that we're wanting, but, like, there's still going to be a bunch more.
+[01:29:22] And, like, holy smokes, am I excited to fight the good fight.
+[01:29:25] Yeah, it's exciting.
+[01:29:26] Before we broaden out to topics outside of TypeSafe, I just wanted to offer any other things that you think, like, underrated or misunderstood about what you have launched.
+[01:29:38] Underrated or misunderstood?
+[01:29:40] Yeah, you have panouts, sorry, patterns here.
+[01:29:43] Maybe you want to go into that.
+[01:29:46] Model jaggedness, anything.
+[01:29:48] Give me one noodling of it.
+[01:29:53] Oh, man, I would rant about all of these.
+[01:29:56] I really shouldn't.
+[01:29:57] I really shouldn't.
+[01:29:59] And people can go to your Discord.
+[01:30:01] People put a lot of love into the cookbooks, is what I will say.
+[01:30:05] The cookbooks have some fire stuff.
+[01:30:07] We had considered putting a bunch of these things like in the main launch blog post, but it got kind of long and unwieldy and like very power usury.
+[01:30:15] But like we really, really, I'll be frank, like before the launch, every like what we're saying sounds like sounds like like this weird alien tool.
+[01:30:27] Why would anyone need this? You know, it was a very weird thing.
+[01:30:29] We were very worried about teaching people about like this new frontier.
+[01:30:33] it obviously succeeded but like we put a lot of work because we thought that education would be
+[01:30:38] like a gigantic bottleneck for us um i it probably works and it's no probably no longer a problem
+[01:30:45] because people are doing things like well beyond what they'll show you how to use your model exactly
+[01:30:50] but like they yeah and their use cases are like kind of cooler than ours like like there's a bunch
+[01:30:55] of stuff where i'm like man if that was our demo holy shit that was way cooler than what we were
+[01:30:59] showing um like the computer stuff holy smokes is it cool um but like we put a lot of love into
+[01:31:07] this this is not like ai generated trash as far as i know we put a lot like it's like a lot of
+[01:31:13] love in here yeah and like each of these are like like there's real alpha there like these are
+[01:31:18] inspired by solving real customer problems that existed and we went through the work of like
+[01:31:24] helping them do cool ass stuff. Yeah. How much while you're talking about this, right? How much
+[01:31:29] validation did you do before launch? Like, well, you know, what was that process like?
+[01:31:35] What was that process like? Like, clearly you did some, but obviously you're not getting in touch
+[01:31:41] with as many people as you are today. Yes, of course. I actually think that the reception
+[01:31:45] was pretty bad. And like, actually, for the non-technical people in the team,
+[01:31:51] they were really worried. You know, like there was a lot of fear. It's like no one really gets this.
+[01:31:57] And like, you know, they don't want it. We're like selling like a vitamin and not like a painkiller.
+[01:32:02] Like, should we have FDEs to like write the software around solving that problem?
+[01:32:06] We had almost no revenue before launch. It was kind of like, like we, like the technical people
+[01:32:14] were like obviously true believers, right? Like we knew that this was sick. It's computational
+[01:32:20] properties are like off the charts on like so many axis that we're like yeah obviously it's
+[01:32:26] gonna be huge i was definitely super afraid which is why i locked in super hard but like the most
+[01:32:32] common thing was the like i would say like more than half the people we had play with it just did
+[01:32:38] not get it and like the people who did uh like were like man this is really cool but how do we
+[01:32:45] get this through procurement and stuff like that you know just like you're like quite a uh quite a
+[01:32:50] battle and we just knew like okay our target market is going to be developers people will find the
+[01:32:56] use cases and that way everyone is going to fomo in and like i i don't want to rub in people like
+[01:33:03] changing their minds with the facts changing i do want to call into question like the concept of
+[01:33:08] product market fit you know but like because like there was a product there was a market like we
+[01:33:14] were like, hey, do you want to use this? And people are like, I don't know, really know if it
+[01:33:18] solves our problems. It explodes and everyone's like, we need as much rate limits as we can. Can
+[01:33:24] we literally give you GPUs? Because we are constrained right now. So of course, you know,
+[01:33:29] like marketing is an element of it, of course, but I don't even think it's about marketing.
+[01:33:33] I think it's about like passionate developers who've like, you know, our souls basically
+[01:33:38] resonated at the same frequently and that frequency and that got everyone else excited too.
+[01:33:43] And I'm hoping as well that we as a company will be eternally, eternally, eternally grateful to those developers.
+[01:33:52] And not just the companies that start off with developers and go to enterprises.
+[01:34:00] I'm even thinking about how can we launch things that are better for, oh man, I don't know if I should say this, but I will.
+[01:34:08] Better for developers than enterprises.
+[01:34:09] Exactly.
+[01:34:10] How do we do that?
+[01:34:11] Like, how do we empower them?
+[01:34:13] And I have cooks.
+[01:34:15] I have cooks.
+[01:34:16] But it's a very weird thing to do.
+[01:34:19] And, like, I don't know how else I can show my thanks and loyalty to that.
+[01:34:24] You know, like, and that's why I did, like, the dyeing my hair yesterday.
+[01:34:28] It's like I wanted to talk to them because it felt dirty to me during our company's, like, most important times not to keep talking to them.
+[01:34:36] Good.
+[01:34:37] Well, I mean, that's one of the reasons you're here.
+[01:34:39] Hold me to that, please.
+[01:34:39] Yeah, yeah.
+[01:34:40] I try to be principled.
+[01:34:42] Quote me on this.
+[01:34:43] Call me out.
+[01:34:45] Have the pitchforks out if I change.
+[01:34:47] I was just going to briefly show the computer use stuff.
+[01:34:50] Is this what you're referencing?
+[01:34:51] I've seen – I saw like an airline browser use thing.
+[01:34:58] And inside of the new node, let's make the title say, hello.
+[01:35:02] Wow.
+[01:35:02] Great, great.
+[01:35:03] Okay.
+[01:35:04] Let's move on and can you open up the ARC browser?
+[01:35:07] and once you're there, can you Google search
+[01:35:10] Norbert Wiener?
+[01:35:12] Now, can you open up x.com?
+[01:35:15] Is this this kind of
+[01:35:16] use case? Oh, the voice
+[01:35:18] use case, this is actually the first one I've seen.
+[01:35:20] This is... Wow.
+[01:35:22] Oh, wait, wait, wait, wait.
+[01:35:24] Can you go back a second?
+[01:35:25] Can you go back a second?
+[01:35:27] Rumors claim anthropic engineers worship Claude's
+[01:35:29] God. Wow.
+[01:35:31] Wow. Dang.
+[01:35:33] That's pretty funny.
+[01:35:35] And here you are building prod.
+[01:35:37] wow this is sick uh yeah so so clearly you can operate the whole computer with voice with jev
+[01:35:44] as a decision model so just like i'm anti-bench maxing i'm also anti-demos i want to make sure
+[01:35:52] that it works reliably i love people are playing with it this is super fucking sick have no doubt
+[01:35:57] i want to see this i want to see it be used i want our team to play with it i want to find
+[01:36:02] the weaknesses and i want to solve that yeah and i would love man that looked really cool
+[01:36:06] I want that.
+[01:36:08] I want that.
+[01:36:09] When my wrists are sore, I just whisper flow everything.
+[01:36:12] That would be sick.
+[01:36:13] Just to round out the use cases side, because I do have to let you go, who are the bigger
+[01:36:21] companies that have reached out and have surprised you with what they want to do?
+[01:36:26] I'm so out of touch for that.
+[01:36:28] People have shown me screenshots of companies, and from what I've seen, it's all of them.
+[01:36:34] Mostly, for those people who work at larger companies and they're not doing this kind of work,
+[01:36:38] I just want to give people examples of you should go look that up, look that up, look that up.
+[01:36:42] Oh, so I think demos are super duper sick.
+[01:36:47] Obviously, the coding agents are gigantic use cases.
+[01:36:50] They are also super sick.
+[01:36:52] Cog is all about Jeb right now.
+[01:36:53] Oh, hell yeah.
+[01:36:54] Can I give a little bit of a tangent about coding agents, if that's okay?
+[01:36:58] Yes, please.
+[01:37:00] We love coding agents here.
+[01:37:01] Give me a second.
+[01:37:02] Okay, actually, I'll come back to coding agents.
+[01:37:04] Let me describe the big families of use cases.
+[01:37:07] We've mapped this out from first principles long before release.
+[01:37:10] They are what we call dark data.
+[01:37:12] People hoarded big data, but they would not throw a lens at it because it was too expensive.
+[01:37:17] So large companies adore this.
+[01:37:19] They have piles of data that they wish they could analyze.
+[01:37:22] And this is like a data scientist's wet dream.
+[01:37:25] So this is a giant one.
+[01:37:27] I think this plus coding agents are the big money makers because that's where all the volume is.
+[01:37:35] There's the real-time stuff.
+[01:37:37] People who need intelligence in the loop, I would guess that every CEO, if not CTO at those companies, knows how much better their product gets with every 10 milliseconds shaved.
+[01:37:53] Especially e-commerce.
+[01:37:54] Yeah.
+[01:37:54] Or like assistant-y things.
+[01:37:56] You know, there's many AI-assisted things.
+[01:37:58] And, like, as far as I can tell, they really love it.
+[01:38:01] Again, I'm not in the front lines of customers right now.
+[01:38:04] So I just know what my team tells me.
+[01:38:06] But, like, I'm so excited for this.
+[01:38:08] I'm really excited for this for games.
+[01:38:09] I really want to play, like, sick-ass auto-battlers where you're, like, commanding your team or, like, semi-auto-battlers.
+[01:38:14] I think that'd be so cool.
+[01:38:16] But don't make it too good while I still have a job.
+[01:38:20] And, you know, like, there's what we call, like, verify everything.
+[01:38:25] you know like verifying all llm calls kind of like observability um i think actually on the
+[01:38:31] note of docs what people should be doing is like the parallel questions are very cheap so if you
+[01:38:35] have like big states you want to ask many questions on right here yeah put ids on every like message
+[01:38:40] and then ask a question about each id so like when you have like a long state so that way you can like
+[01:38:46] pay for the state once and ask lots and lots of questions about each message within it i think
+[01:38:50] that is like a like a great way that like saves money which by the way i always think like it's
+[01:38:55] interesting framing system one and system two because it basically makes the case that you
+[01:38:59] should always make one or ten or a hundred jev calls for every one reasoning call that you make
+[01:39:05] well maybe well i i mean i don't i would like people to spend less yeah you know maybe you do
+[01:39:12] like you know one half the reasoning calls and like 10 jev calls each or something like that
+[01:39:18] or whatever solves the problem that like couldn't have existed otherwise um wait and number four
+[01:39:24] use case was what i described as like smart software like software that's intrinsically
+[01:39:29] composable and like does like weird fun stuff that could never happen before you know like the
+[01:39:34] programming language as jev thing i don't know if you've seen that that is so cool man if we knew
+[01:39:40] how to give out credits because we're really early in our infradays i would want to give all these
+[01:39:44] projects credits um and i think that those are like how we've mapped out like the main use cases
+[01:39:50] um computer use has also come in kind of like the real-time direction as well and like that's
+[01:39:57] really really cool if it is reliable i am super jazzed about that i suspect we can make the model
+[01:40:03] a lot better at these use cases because like that came out of left field a little bit so that's
+[01:40:07] really cool um i'm on the coding agent thing and this is like a really surprising thing that is
+[01:40:15] happening right now okay um clod code and codex are i believe the the winner like the the number
+[01:40:22] one and two i'm not entirely sure i don't follow closely but like it's roughly that but they're
+[01:40:27] built around a single model world you know like and and that makes a lot of sense for them right
+[01:40:33] because like it has been a one model game where it's like kind of like the same model but different
+[01:40:36] intelligence that you're shopping. But all the open coding agents are like fucking jazzed right
+[01:40:41] now because they're like getting their jev on. And like the thing is, there's I'm sure they're
+[01:40:46] trying a lot of weird stuff. But all the coding agents are kind of roughly at like approximate
+[01:40:51] parity. Right. Because like there's not so much you can do with a while loop. But the moment one
+[01:40:57] person finds one killer use case that, you know, you can only do with that coding agent, everyone
+[01:41:03] will flock to it because they have like a monopoly on that thing but all the open coding agents will
+[01:41:08] be able to copy that right the end but i don't know what the cloud codes and codecs will do
+[01:41:14] because they are built around that one model world and like i think that's going to be like a really
+[01:41:19] interesting thing you know like i would love to be able to integrate with them personally like i
+[01:41:24] want to integrate with everyone like i they might make competitors eventually i don't know but like
+[01:41:30] It is not my job as Soundfire Infrastructure to be opinionated on that, right?
+[01:41:34] Like, I want to just serve the world.
+[01:41:37] But I don't know if they would do that.
+[01:41:39] And, like, I think it'll make the coding agent game super weird.
+[01:41:43] You know, like, I'm so excited for that.
+[01:41:45] And, like, I'm sure I'm getting my team to review right now an internal document I made on design patterns I suspect will be useful for coding agents.
+[01:41:54] So hopefully I can share it, like, right after I walk home.
+[01:41:56] but like I think that there's just like such ripe area for exploration out in the world and like
+[01:42:04] it's it's man if I did not have this I would love to experiment with coding agents right now
+[01:42:09] yeah I mean and I'm sure the coding agent companies would love to work with you as well to
+[01:42:13] to figure that out yeah I do think that there's still use cases for clock coding coders with you
+[01:42:18] guys of course which it's easy to explore there okay I mean you know we've you've been very
+[01:42:23] obliging and indulging in all these things. I just want to take you out of TypeSafe just generally.
+[01:42:30] And you've made very clear your position on the state of UI. Give you more room on the alignment
+[01:42:36] safety side of things. Oh, did I not talk about safety alignment at all? I think maybe I didn't.
+[01:42:42] You did. I think that there's a lot of... You have a lot of researcher discussions. We have this
+[01:42:49] every New Ribs. What are people talking about? So for example, I recently was at one of these
+[01:42:59] researcher gatherings and people are genuinely worried about the pacing, right? Like this whole
+[01:43:04] topic about like we should slow down because the public is like clearly not ready. And I'm sure
+[01:43:11] you have strong feelings? I feel like this is the kind of thing that is a
+[01:43:18] dangerous topic to talk about. I'm happy to talk about it. I live for danger.
+[01:43:24] Our company brand is chaos. It's not Jev, it is irreverence and chaos.
+[01:43:29] You know, yeah, and like you were at OpenAI during like one of the very first like very visible incidents
+[01:43:36] is the blip, right? The dominoes have gone down now, so now every Frontier Lab has co-signed
+[01:43:43] a document saying that they want to paste. Interesting. It's a very complicated, nuanced
+[01:43:53] thing. I actually do want to write a response to this more formally. I do have a little bit
+[01:43:58] of a short version of my response, which is that as you RLVR more, like RLVR is like,
+[01:44:07] so RLVR is not actually about verifiable rewards.
+[01:44:10] Like that has been failing since before the reasoning revolution.
+[01:44:14] Like, and that's the weird part about tasks, right?
+[01:44:17] Like back when, oh, fun history.
+[01:44:19] Back when RLHF was becoming a thing, there were three different things that like are
+[01:44:24] now called post-training, different efforts.
+[01:44:26] and instruction following was by far the like the the vaster child like people didn't like it they
+[01:44:32] didn't want to take it into account it was annoying you know like i talked to the pre-training team i'm
+[01:44:37] like guys this is the magic and they're like we'd run so many model sweeps you want us to wait for
+[01:44:42] human evals to figure out which models to use and like everyone is like you know giving tons of like
+[01:44:48] resources to like the cogen team which like they did have some successes but they were trying really
+[01:44:55] hard to do RL on unit tests. And it didn't work, obviously, right? You needed reasoning for that.
+[01:45:03] So just to be clear, RLVR is not purely about the reward. It's about the shape of everything,
+[01:45:07] too. And part of it is that reasoning is included in here, like this latent variable that you're
+[01:45:11] doing things. And when you're doing things, you're just letting the models do whatever they want in
+[01:45:17] order to make them be as powerful as you can to answer the hardest problems. And this whole
+[01:45:23] pace the frontier discussion, I think is like a very narrow focus, because it assumes that
+[01:45:29] everyone needs to do more RLVR, right? Which, like, I obviously don't think I need to do more RLVR
+[01:45:37] on our models. You know, I think zero is the optimal amount for R-shape, right? Come on.
+[01:45:42] You know, so it's really, I think, a bit of a sleight of hand where they are saying that we actually want to keep doing the thing that looks dangerous because it does dangerous things.
+[01:46:00] You know, like people say, like, oh, maybe the sandboxing was a problem or whatever else.
+[01:46:04] I mean, obviously it is, and they could have easily solved that, right?
+[01:46:09] But they chose not to because the more things you let the models do in this do anything category, the more powerful it is, right?
+[01:46:17] So, like, I think there's some, like, disillusion of responsibility there on, like, things that by design or non-design they're trying to make is just an assumption.
+[01:46:28] You know, we must do our LVR and not just we must do it.
+[01:46:33] We must do more and more and more with giving the models like the power to do powerful, you know, do anything they want in the middle because that teaches them to be powerful outside of it.
+[01:46:45] And we don't want to limit those things well because it'll make it slightly less powerful on those things.
+[01:46:51] So, if you assume all of that, they're like, oh yeah, we're heading into a dangerous world,
+[01:46:59] guys.
+[01:47:00] Everyone is going to be doing this and this is the only way to make AI sick.
+[01:47:05] So basically, these are all internally consistent, but actually starts from a premise that has
+[01:47:13] alternatives if you think about it.
+[01:47:14] Of course.
+[01:47:15] On the Bitterest Lesson direction, I think that there's very few people who've made right
+[01:47:20] tasks, new directions of AI, or new North Stars.
+[01:47:26] That is rare.
+[01:47:27] Again, I think 2.2 times or something for LLMs itself, like RHF and then RLCD.
+[01:47:33] RLVR is like a 0.2 in my opinion, and I think that's generous.
+[01:47:38] Or 0.5, or it could be one whole one.
+[01:47:40] I don't really care.
+[01:47:42] But I do think that people are thinking very closed-mindedly about this type of thing.
+[01:47:50] The only people who are at fault here are the researchers, because it's definitely not the populace.
+[01:47:55] You know, like they just assume that open anthropic are just doing the best they can.
+[01:47:59] And they are not the experts who are aware of the true optionality available.
+[01:48:03] Yeah, and that's fair. And you're also doing your part in waking them up.
+[01:48:07] Well, I'm doing my best, but like my goal is not like convince labs that there's like other directions to go down.
+[01:48:14] My goal is have, you know, it's like spark hope in software engineers to start like actually automating things they've always wanted automated.
+[01:48:23] I had this like article that I wrote that my team didn't let me write, didn't let me publish about like the future I want of AI.
+[01:48:31] And like there's like a lot of like little things like remember do what I mean.
+[01:48:34] Imagine if everything could do what I mean because like that demo was do what I mean.
+[01:48:39] Like like you could like like there's levels.
+[01:48:41] Yeah.
+[01:48:41] Don't do what I say.
+[01:48:42] Do what I mean.
+[01:48:43] Yeah. And like we couldn't do what I mean yet because like computers are so basic and literal, but that computer use one was just that. And I think that there's like levels of smoothness that will happen in the world that people just don't understand. And like the promise of like smarts all around, I don't want to overpromise. I don't think it's going to happen right now, but like we are going to do whatever the fuck we can to make that happen.
+[01:49:08] Yeah. Any other things on the sort of general shape of post-training? Obviously, you've
+[01:49:13] been very intimately involved. Mid-training, is that something that you do have comments
+[01:49:18] on? I don't think we've ever talked about it.
+[01:49:22] Mid-training? I mean, it's all a spectrum, right?
+[01:49:27] Like, am I...
+[01:49:28] This is a curriculum, but fancier.
+[01:49:30] Yeah. I mean, it's a cost-saving thing. Instead of having to pre-train again. There's
+[01:49:37] intriguing stuff. I actually think that intelligence has a je ne sais quoi at every single level,
+[01:49:44] and it's always super duper fascinating. I'm a shape rotator, so I don't like finding that,
+[01:49:50] but I love it when people find it and teach me about it. But looking at the data, this thing that
+[01:49:56] our data team is so good at that I'm not, I find it really, really fascinating. I love actually
+[01:50:04] thinking about like how capabilities are like put into the model like over like the short term you
+[01:50:11] know like there's like the the really rapid alignment of fine tuning and over the long term
+[01:50:15] after seeing it over and over and over again like this stuff gets baked deeper and deeper and deeper
+[01:50:20] and deeper into the model until it gets robust you know and that is like the the north star to
+[01:50:24] surface and like the system one stuff is the stuff that ends up getting robust so i find mid-training
+[01:50:29] to be like a fascinating thing.
+[01:50:31] I'm a fan of all forms of training.
+[01:50:35] I'm a fan of all forms of like surfacing new types of intelligence.
+[01:50:39] I wouldn't do it all myself because it's expensive.
+[01:50:43] And I have said privately and also, should I say this?
+[01:50:50] Huh?
+[01:50:51] You know, like my philosophy is anything I should say in like private with like an investor,
+[01:50:58] I should say in public with the people because that is like my thing.
+[01:51:02] Yes.
+[01:51:02] So the thing I've said before is if you gave me a billion dollars, I wouldn't pre-train.
+[01:51:09] I still believe that to be true.
+[01:51:12] It is a very expensive thing when if you are like, like if you're an A engineer, you can
+[01:51:18] like slice and dice and do all sorts of stuff.
+[01:51:20] You know, like Frankensteining is not the most elegant, beautiful thing, but it solves
+[01:51:24] problems, baby.
+[01:51:25] So anything except retraining.
+[01:51:28] Yeah.
+[01:51:29] Amazing.
+[01:51:30] I think one direction that I do think that is interesting, just synthesizing all your commentary about these model things, is do we have a supermodel that has all these capabilities involved or do we break them out further?
+[01:51:47] One way to put this is OpenAI was trending in the direction of the Omni model.
+[01:51:54] 4.0 was one of those.
+[01:51:57] Then for a brief period of time, there was always a main branch of this is the chat tune model and this is the coding tune model.
+[01:52:04] Those are completely different things.
+[01:52:06] Those are extremely different concepts.
+[01:52:08] I will break that down a little bit.
+[01:52:10] So multi-modality is a little bit different because sometimes the other modalities help.
+[01:52:15] Sometimes they hurt.
+[01:52:16] Like, you know, people are moving, they seem to be moving away from speech, which is different than audio, because it seems to not generalize well to the other stuff.
+[01:52:26] This might get solved.
+[01:52:27] I'm a fan of all of this.
+[01:52:29] But these are like empirical real questions.
+[01:52:31] Like scaling laws are not about just throw money at it and it gets good.
+[01:52:35] Scaling laws are pragmatically how good is a thing.
+[01:52:39] You know, like there are worlds where like no matter what you scale, it may not be good enough.
+[01:52:43] so um you know like computer use is not currently solved is my understanding like i'm hoping that we
+[01:52:51] can be a like play a part in solving that but like there might be no amount of data we collect that
+[01:52:56] will solve that we might need better methods or something else like that so um like you need to
+[01:53:03] be like really practical in all of this am i a fan of omni models i'm a fan of all forms of
+[01:53:08] intelligence but i will go straight into one thing you talked about which is different from pre-training
+[01:53:13] which is post-training, because I hate fracturing intelligence.
+[01:53:17] That is the bad thing to me.
+[01:53:19] And this whole chat-first reasoning mode is because it forces the intelligence to be fractured.
+[01:53:26] When you're optimizing for chat, this tends to be pure RLHF.
+[01:53:30] And it's quite intrinsic in RLHF to do the stuff people naturally complain about.
+[01:53:36] You're absolutely right.
+[01:53:38] Sycophancy, psychophancy, whatever word, however how to pronounce that.
+[01:53:41] overconfidence, hallucination, like even the kind of style that excels in LM arena, bold, italicized,
+[01:53:49] emojis, you know, like it doesn't answer the question simply. It gives like a long write-up
+[01:53:53] and then it asks you a follow-up question. So it feels more like a human talking to you.
+[01:53:57] All of these things come because strings are super weird. You know, they are like weird ass things
+[01:54:05] and you need to be miscalibrated. You need to like mode drop. You need to be hyper confident
+[01:54:10] in order to not go off the rails, because the reward model will punish you so hard when it happens, because it's obvious.
+[01:54:17] And then this warps the probability space entirely, and it interacts with that of the reasoning models.
+[01:54:24] Because the models are like these simple linear things that tend to cheat a bit.
+[01:54:29] So I think that's very different than exposing intelligence, is my guess.
+[01:54:34] and a lot of the art to intelligence is studying this subtlety that i think that um at least when
+[01:54:41] i was in open ai people were not really studying that because like they were just like chat chat
+[01:54:45] chat chat just like people are with jeff right now you give me an ultimate you know you give me
+[01:54:49] an objective i will just go optimize for that right yes but if you try in there and you know
+[01:54:53] like the saying is like you could have like two objectives and you could just like optimize for
+[01:54:57] both but then that is literally the act of fracturing right um so yeah so i mean in some
+[01:55:03] ways you have you are also factoring intelligence into system one system two but you just don't agree
+[01:55:08] with the other people's fracturing fracturing which is why it's a little different no no no
+[01:55:11] if i could if i could add if i could defend yeah um the system two tasks um number one
+[01:55:18] like we don't toss out the system two tasks right like you can try to make jeff work on it
+[01:55:23] and there actually is an intelligent answer for that which is unknown you know like my like there
+[01:55:29] There is better and worse behavior in the system two tasks, which would be like really low confidence, lots of uncertainty.
+[01:55:36] Maybe some heuristics can like move the needle here and there.
+[01:55:40] But we care about them, too, just to be clear.
+[01:55:43] I just think that that is not what the intelligence is native to.
+[01:55:47] So we're not trying to fracture anything like that.
+[01:55:50] And all fracturing makes the model dumb.
+[01:55:53] You know, like if people like get the model to say like it is OpenAI or Quinn or, you know, like Claude or whatever else.
+[01:56:00] I don't really know what it says these days.
+[01:56:02] I am not going to put into the models that you are Jiv from TypeSafe.
+[01:56:07] That fractures it, right?
+[01:56:09] Like, I don't want that.
+[01:56:11] Like, it represents what the internet thinks, right?
+[01:56:14] Like, be correct.
+[01:56:16] That is what I want because that's how you get the smooth, predictable intelligence.
+[01:56:19] I mean, identity is a thing, I guess.
+[01:56:22] For a first-party product, yes. But for an API, I don't think so. People don't want,
+[01:56:30] if they're making a chatbot with ChatGPT, they don't want to say it's ChatGPT. They want to say
+[01:56:36] it's Chipotle or whatever. The way that you also have to make up for it is you have the skill,
+[01:56:41] the Jeff skill, which is for coding agents to work with Jeff.
+[01:56:46] Okay, a couple of closing questions because I do want to get you out. One is just reflecting on
+[01:56:51] on your two-year journey?
+[01:56:52] It's roughly two years?
+[01:56:53] Two point something?
+[01:56:54] With the company,
+[01:56:55] I think that this is
+[01:56:56] more like a four-year journey.
+[01:56:58] Well, yeah.
+[01:56:59] Actually,
+[01:57:00] I was thinking,
+[01:57:01] remembering that
+[01:57:02] you had this hero run
+[01:57:03] around Thanksgiving.
+[01:57:04] You were canceling everything
+[01:57:06] because you were like,
+[01:57:07] guys,
+[01:57:08] everyone's on holiday.
+[01:57:09] I'm going to take
+[01:57:09] all the opening GPUs
+[01:57:10] and go do this thing.
+[01:57:11] Yeah.
+[01:57:12] That was a good time.
+[01:57:13] And that was
+[01:57:13] the pre-TypeSafe moment, right?
+[01:57:16] That might have been...
+[01:57:17] Was that when
+[01:57:18] the coup was happening?
+[01:57:19] I don't really know.
+[01:57:19] Yes, actually.
+[01:57:20] Yeah, yeah, yeah.
+[01:57:21] That sounds right, yeah.
+[01:57:22] I remember.
+[01:57:24] Oh, my God.
+[01:57:24] I don't want to...
+[01:57:25] I don't think I have the time to spill the tea about the coup right now,
+[01:57:29] but that wasn't really annoying.
+[01:57:33] The coup was annoying or the run was annoying?
+[01:57:35] The coup was annoying.
+[01:57:36] Yeah, yeah, yeah.
+[01:57:38] I will...
+[01:57:39] Safetyists took over the company.
+[01:57:41] Yeah, anyway.
+[01:57:43] Maybe next time we chat, I'll dump tea about the coup.
+[01:57:47] So, yeah, it's actually this problem was one that like was in my mind since before ChatGPT even launched.
+[01:57:57] I was like, holy shit, the ChatGPT team is cooking.
+[01:58:01] They are doing the right task.
+[01:58:02] They are doing the thing that AI researchers are bad at, but successful product people are good at, which is giving a lot of fucks about the experience.
+[01:58:10] You know, it's very rare.
+[01:58:12] Like there's very few people like that at OpenAI.
+[01:58:14] and those guys were cooking on it really really well and to be clear this is the whole journey
+[01:58:20] from gpt3 to 3.5 which included ai dungeon which you've talked about as like yeah well that's that's
+[01:58:25] an example of a use case that we never predicted yes exactly well uh oh yeah that is uh also i had
+[01:58:33] fought very very hard to deploy instruct gpt um like actually the early versions of it were even
+[01:58:38] trained with like an algorithm we didn't publish that i made myself because it was too slow to clean
+[01:58:44] the PPO data. And I was like, fuck it. This is so fucking good. We need to get it in the hands
+[01:58:49] of users. And like, basically, immediately, it took 50% of the market share of LLMs at the time.
+[01:58:55] And we thought, I mean, I went through great effort to make sure everything in our launch
+[01:59:00] video is true. You know, I truly was thinking like, is this AGI because it's superhuman at
+[01:59:06] instruction in instruction out? Obviously, it's not. But like, everyone, I think, should have an
+[01:59:12] answer to why that was not AGI, because it looks very smart. And my answer to that ended up, you
+[01:59:18] know, like ended up only being used for copywriting, you know, Jasper AI, copy AI, like writing, like,
+[01:59:23] you know, what is now called slop on web pages. And we were worried we made the internet a worse
+[01:59:28] place. Right. And I went back to the drawing board and I was like, what's missing? We're smart,
+[01:59:33] clearly something is missing from it, like creating value. What is it? Like, I actually was doing more
+[01:59:38] philosophy at the time of like, what is going on? And the answer was, oh, machines. The question I
+[01:59:45] asked myself is like, let's work backwards from an AI-based economic revolution. When that happens,
+[01:59:50] what will be calling the AI if AI is an API? Will it be humans or it'll be code? And I figured it
+[01:59:57] was many nines of code. But all the optimization was going into the humans part. And then it
+[02:00:04] clicked for me. I'm like, holy shit, this is the North Star. I think I wrote a document.
+[02:00:09] I was talking to Sam about this. Sam was like, this is so fucking good. You should go work on it.
+[02:00:15] And we're like, yeah, yeah, yeah, Sam, I have a job. I was working on it.
+[02:00:20] Sam just told you to do it. Go do it.
+[02:00:23] My guess at the time is this is super obvious. It's so unbelievably obvious.
+[02:00:29] Anthropic must be working on this already. And we're already cooked. And actually,
+[02:00:33] OpenAI does better at catching up than it does at actually innovating.
+[02:00:38] ChatGPT was a copy of Claude, right?
+[02:00:40] They had an internal thing.
+[02:00:42] They just didn't ship it.
+[02:00:43] Claude and Slack.
+[02:00:44] But reasoning, I would say first-ish.
+[02:00:46] Yeah, but debatable how good of a product that is.
+[02:00:50] Great research, though.
+[02:00:52] Super great research.
+[02:00:53] I'm just not sure if people had that product need.
+[02:00:56] And Claude did the coding agent stuff, too.
+[02:00:59] So Sam says that, and I just go back to my job.
+[02:01:03] for a while. Eventually, like, you know, the instruction following team just says we won,
+[02:01:08] we've solved instruction following, we don't need to do stuff anymore. I'm like trying to think about
+[02:01:12] what I do next. I was like, you know, maybe I'll just start playing around with this.
+[02:01:16] I, you know, do more philosophy and design and thinking, I thought it would end up taking a week.
+[02:01:22] When I started training models, it ended up taking many years. At some point, I was like,
+[02:01:30] holy shit you know there's signs of life here this it obviously didn't work right otherwise
+[02:01:36] we would have deployed it but like i want to explore what it would be like research wise to
+[02:01:41] go all in on this you know like i want to really see like like what it would be like if you went
+[02:01:45] like absolutely insanely all in in this direction and because of what i said you know like if an ai
+[02:01:52] winter happened would i how would i feel i would consider myself personally responsible i talked
+[02:01:56] to other companies at the time and i was like hey i want to start a lab on this direction and you
+[02:02:04] know like there was interest and i just talked to them like how fast what would be faster this or
+[02:02:08] startup and they're like startup and i'm like fuck it man we ball i guess we're doing some crazy shit
+[02:02:14] and you called eric and sasha yeah well i i call eric first um with sasha i actually didn't try to
+[02:02:22] recruiter. I try to be good. And I was just like, hey, am I crazy? Is something missing here?
+[02:02:29] You know, isn't there like, like, like, am I too much in the open AI bubble that I didn't realize
+[02:02:34] there must be a solution to this? And then Sasha was like, I'm in. And I'm like, Sasha, you're
+[02:02:39] working at a startup. And she's like, I'm folding it right now. And I'm like, do you want to think
+[02:02:43] about that? She's like, oh, yeah, good point. Let me think about it. And then she joined. And then,
+[02:02:49] And within two weeks, we had funding.
+[02:02:52] We had people move into my apartment.
+[02:02:54] It was the worst because I'm a neat freak.
+[02:02:57] And we just kept on cooking.
+[02:02:59] And eventually, we got the research that showed the signs of life.
+[02:03:06] It was a crazy time.
+[02:03:07] So the question is, that was all long context.
+[02:03:10] And another question is, someone like you is in the Frontier Lab right now who is frustrated
+[02:03:14] not getting the funding or the resources, whatever, the attention.
+[02:03:19] What's your advice to them?
+[02:03:21] Should they do what you did?
+[02:03:23] Should they do it?
+[02:03:24] Ooh, that's a fascinating question.
+[02:03:28] Man, how do I do this without burning bridges?
+[02:03:38] My sense is that most, unless there's some level of economics I don't really understand,
+[02:03:44] I think most neo labs are crap.
+[02:03:46] I don't want to see myself with that as peers.
+[02:03:52] I don't really understand what's going on there.
+[02:03:55] Number one, I don't really value researchers.
+[02:04:00] I value people who...
+[02:04:01] Look at my bitterest lesson.
+[02:04:02] The task.
+[02:04:03] Well, not just that.
+[02:04:04] We need researchers, but we need them to give a lot of fucks about the right task, and that's
+[02:04:09] the important thing.
+[02:04:12] It's kind of backwards when people value pure research pedigree, because that generally
+[02:04:16] doesn't create value. So, like, number one, I believe in North Star tasks and doing cool,
+[02:04:25] really useful stuff. Number two, because I don't value researchers, I don't recommend going the,
+[02:04:34] well, it clearly is profitable for someone, or it might be in this environment. So, like,
+[02:04:39] from a purely pragmatic perspective, I don't see creating Neolabs as something that creates
+[02:04:45] value. It seems to destroy value because like they are like redoing work from scratch with like
+[02:04:52] low probability of actually moving the frontier. And as far as I've talked to most Leo labs,
+[02:04:57] they don't really have a direction. They tend to want money to play around with their experiments.
+[02:05:02] If they have a direction, I'm super in favor of it, to be clear. So my advice for someone is it
+[02:05:06] really depends on why you're doing it. You know, if you are a researcher who wants to play around
+[02:05:14] with research, probably the labs are the best place to do that, TBH. Like, there might be other
+[02:05:21] places. I don't really keep track of that politics. But I would just recommend not being that way.
+[02:05:28] Personally, you know, like, I think it's better for the world with people being driven to solve
+[02:05:32] real problems. And those problems may be exploratory, that's fine. But like, ideally have
+[02:05:37] principles that you stand behind. But if you think that you want to do the right task, like,
+[02:05:42] abso-fucking-lutely like please do like please break this like unimind you know unimodal like
+[02:05:50] yeah exactly like you know like again this pacing the frontier is coming from like this
+[02:05:56] one view of ai that looks like you know ai super genius that is incredibly jagged and that is um
+[02:06:05] solvable it's solvable and it's weird and it's like not matching reality and um
+[02:06:11] It's tragic, right?
+[02:06:15] I think all of these really unearthing technology is just good.
+[02:06:19] Yeah.
+[02:06:20] For what it's worth, again, I'm trying to accurately represent the position of the Anthropic OpenAI
+[02:06:26] folks I was talking to, SpaceX as well, by the way, is that this is a political thing
+[02:06:31] much more so than a pure exorbitant thing.
+[02:06:34] Yep.
+[02:06:35] So yeah, political positioning is…
+[02:06:37] And that's beyond my favorite.
+[02:06:39] Exactly, yeah.
+[02:06:40] One state of the world told me that, I was like, I get it. This is about the 2028 election.
+[02:06:47] Oh no. Oh, I wish I didn't hear that. That's such a bad vibe.
+[02:06:51] No, no, no. This is not the whole company. This is just that room's discussion.
+[02:06:55] No, no. That makes sense. That makes me lose faith in humanity a bit,
+[02:06:59] but maybe I'm just a naive technologist.
+[02:07:02] It's really starting to matter. Who's in charge of the governments that will help to regulate
+[02:07:07] these things as they emerge. And like, as a lab, you should probably think that through.
+[02:07:12] No, I totally agree with that, to be clear. Like, I think being opinionated on that
+[02:07:19] matters a lot. I personally, I'm afraid of trying to mislead people, because I think that bites
+[02:07:26] people in the ass a lot. You know, like, I think that, like, people trying to be overconfident,
+[02:07:34] Like, I obviously, I'm not actually going to talk about politics.
+[02:07:40] I think what happened in COVID is like people leaned too much in like appeals to authority and being overconfident to try to get people to behave in certain ways.
+[02:07:49] And like, obviously, our response was extremely suboptimal.
+[02:07:52] And that had like, like ripples of downstream ramifications that are now, I think, extremely bad for the world.
+[02:07:59] Like, maybe I'm naive.
+[02:08:01] I think that misleading people, even for the greater good or what they think is the greater good, is just, it's just, I'm not a fan.
+[02:08:10] I'd rather not.
+[02:08:11] For what it's true, I don't think it's misleading.
+[02:08:13] It is just like, this is why now.
+[02:08:15] Yeah.
+[02:08:16] Yeah.
+[02:08:16] Like, you know.
+[02:08:18] I think that is why now.
+[02:08:22] That is a little bit misleading about, like, the risks versus, like, the objective.
+[02:08:27] There is some level of sneakiness latent in it that is worth calling out and I think owning up to.
+[02:08:35] Well, obviously, if they want to manipulate, then they shouldn't own up to that.
+[02:08:39] That seems like a bad strategy.
+[02:08:40] But that to me is just sad for the world.
+[02:08:44] Hopefully, we are never involved in anything like that.
+[02:08:50] It might be inevitable as we get big.
+[02:08:52] But I want to stay like pure technologist to my roots as much as I can.
+[02:08:58] I mean, Jeff for president, why not?
+[02:09:00] I can, you know, I trust Jeff's decisions over my own.
+[02:09:05] Okay, so less shitposting.
+[02:09:07] More about...
+[02:09:08] That's shitposting.
+[02:09:09] No, no, no, no, for me.
+[02:09:10] I'm shitposting.
+[02:09:11] You're just crushing my hopes about America and the world right now.
+[02:09:15] Oh my lord.
+[02:09:16] I mean, like there's...
+[02:09:17] I think I've watched too much TV about like conspiracies to take over the presidency.
+[02:09:21] You have chosen your North Star, you have chosen reliability, programmable and composable AI.
+[02:09:28] And cheap.
+[02:09:29] 
+[02:09:29] Yeah.
+[02:09:29] What is a second or third one that you want to throw as a bone to someone else that you're
+[02:09:33] not, that you want someone else to work on that you're not going to work on?
+[02:09:35] Ooh.
+[02:09:36] Like, basically give people tasks.
+[02:09:39] Give people tasks?
+[02:09:40] Yeah, like that your tasks-
+[02:09:41] There's so many I want.
+[02:09:42] You have picked your tasks, right?
+[02:09:43] You know what I mean?
+[02:09:44] What? Wait, that's such a good question. Holy crap. Oh man, I'm so excited by that.
+[02:09:48] Because the next 50 years, you're going to be busy doing your thing.
+[02:09:52] Hell yeah.
+[02:09:52] Okay, so let me give a fun one and maybe a valuable one that's also fun.
+[02:10:01] My fun one is I think games could be so freaking cool if they were intelligent.
+[02:10:08] When I see people play around with Ali's Doom demo, where you can get NPCs to control stuff,
+[02:10:14] that was just really a proof of concept.
+[02:10:18] I think some really cool stuff could be made.
+[02:10:20] It looks really, really cool.
+[02:10:21] You know, like, I'm a big Stardew Valley fan, you know, and like, it's really static and it's still compelling.
+[02:10:30] Like, I feel like there's a lot of cool story that could happen.
+[02:10:32] You don't need to call like Jev in the game loop.
+[02:10:34] It's probably too expensive for that.
+[02:10:35] But even like simple like state machines for NPCs, I think you could make like such a compelling world.
+[02:10:41] Oh, man.
+[02:10:42] And man, a little sad that I can't work on these types of things.
+[02:10:46] My life path is a little bit set right now.
+[02:10:50] Yeah, but you can call someone else to work on it, and then you can feedback on it.
+[02:10:54] The thing that I would really, really like to explore is coding agents free from the tyranny of the KVCache.
+[02:11:03] It might not be as good as true coding agents are, but I think there's just so many weird things to think about.
+[02:11:10] That's why I wrote the article, KVCache rules everything around me.
+[02:11:14] believe it or not
+[02:11:17] I don't think anyone has used the phrase
+[02:11:19] on the internet, cache rules
+[02:11:21] everything around me, C-A-C-H-E
+[02:11:23] when I googled it
+[02:11:25] so
+[02:11:26] I wrote this because I wanted to tell
+[02:11:29] people about this is how coding
+[02:11:31] agents work and how the
+[02:11:33] KV cache works and everything
+[02:11:35] and I think
+[02:11:37] oh
+[02:11:38] yeah
+[02:11:40] like
+[02:11:42] it explains a lot of stuff.
+[02:11:44] Why routing is really hard, why subagents
+[02:11:47] don't seem to work, while compaction
+[02:11:49] is such a hard problem.
+[02:11:52] I'm going to try to
+[02:11:53] release a document. My team might veto me,
+[02:11:55] because believe it or not, I'm not in charge.
+[02:11:58] I wish.
+[02:12:02] I want to release a document
+[02:12:03] of here are my thoughts.
+[02:12:05] Please play with it,
+[02:12:06] and please figure out
+[02:12:08] all the ways that we can do things
+[02:12:10] with coding agents, like once
+[02:12:12] you're freed from that, you know, that KVCache tyranny.
+[02:12:15] Which is, it locks you in.
+[02:12:17] Well, it locks you in into one model, right?
+[02:12:21] And in order to do it efficiently, you need to, like, keep on appending to it.
+[02:12:24] So now you're not doing best software practices, like state management, abstraction, decomposition.
+[02:12:31] Why can't you give an easier task some...
+[02:12:35] Why can't you give a subagent an easier task?
+[02:12:37] Because of the state that you're passing around.
+[02:12:38] Oh, I touched this.
+[02:12:39] Because of the state you're passing around, you would need intelligence that is way cheaper
+[02:12:44] than the intelligence you're using to read this in order to pass this state around.
+[02:12:47] Why can't you be smart about it?
+[02:12:50] And I think there's tons of really cool, fun research to be had there on different programming
+[02:12:55] patterns, kind of like how people are playing around with recursive language models.
+[02:13:00] I feel like there's just lots of cool stuff in here.
+[02:13:02] When you think about, oh, I want to explicitly label the state of everything.
+[02:13:06] imagine you have like a subtask, like coding agents, I think it's fair to say they work on
+[02:13:11] subtasks at a time as from a decomposition perspective. Why do you need to pass all of
+[02:13:16] that state back into the parent task? Why couldn't you do smart things about it? And also, if you had
+[02:13:22] a hierarchy of labeled subtasks, why can't you do a search through that subtask tree for the relevant
+[02:13:28] context when you need it in, right? And then, you know, another thing that you can do, oh man,
+[02:13:32] I forgot to write something about this. I have like some cooks in here that are really, really
+[02:13:37] cool. Hope to publish it. I'm down to jam about it, but like it's going to be a long document.
+[02:13:43] And like if that becomes the case where context becomes cheap, like why can't you do cool patterns
+[02:13:49] like looking at your historical context very cheaply? Is it kind of weird that you start from
+[02:13:55] scratch every time and you need to solve a problem called continuous learning? That's actually like
+[02:14:00] a memory management problem because you don't have a smart way of looking up the memory,
+[02:14:05] right?
+[02:14:05] But what if you could?
+[02:14:06] What if you could do that all the time?
+[02:14:07] Or what if when you have parallel subagents, they can like read each other's states because
+[02:14:12] you have all of that in like your computer memory and you can be smart about what's reading
+[02:14:18] and writing at the same time.
+[02:14:20] And your coding agent, Swarm or whatever, has like locks around things and can coordinate
+[02:14:25] intelligently, not with like basic ass locks.
+[02:14:27] Like, what are you doing?
+[02:14:28] What am I doing?
+[02:14:29] you know jev who should write first blah blah blah and like i feel like the future there is
+[02:14:33] nuts jev just solve locks i mean it could be so cool for like multiple agents working together
+[02:14:39] or like if you think about state yeah like agent swarms yeah and you know some things for example
+[02:14:44] are read-only processes you know some people like getting like summaries of what the agents are doing
+[02:14:49] why can't they share state easily because like a read-only agent needs to like you know read parts
+[02:14:55] of the context and figure out what's relevant to say
+[02:14:57] what's actually being written, because the
+[02:14:59] exploration is not super important, or here's the tree
+[02:15:01] of sub-desk. I feel like there's so many
+[02:15:03] different fun things that
+[02:15:05] could be done if a really
+[02:15:07] smart person dedicated a whole
+[02:15:09] lot of time to rethink
+[02:15:11] the coding agent experience, and
+[02:15:13] that would be super duper sick.
+[02:15:15] That would be my dream.
+[02:15:17] I would point you towards PrimeAgent if you haven't
+[02:15:19] looked at it.
+[02:15:20] It works together with the RLM
+[02:15:23] work. We just talked to Alex
+[02:15:25] who is a buddy of Alan's
+[02:15:27] in the chair before you.
+[02:15:29] It is being worked on
+[02:15:31] but it's not super popular yet.
+[02:15:34] I would want everyone
+[02:15:36] to just play around
+[02:15:37] with weird things.
+[02:15:39] I have no guarantees it'll work
+[02:15:40] but it seems really, really interesting
+[02:15:43] from a technical perspective.
+[02:15:45] That seems cool.
+[02:15:48] Once we figure out
+[02:15:49] how to give credits out
+[02:15:50] I would love to give credits out
+[02:15:51] to people like this.
+[02:15:52] You will be in a position
+[02:15:53] to fund research for sure.
+[02:15:55] No, anyway, congrats on all your success.
+[02:15:57] You've come such a long way since I first met you.
+[02:16:01] I'd like to think I'm the same person as well.
+[02:16:03] Yeah, I think you are energized in a way that I have never seen you before because you found your mission.
+[02:16:09] That's true.
+[02:16:09] That's definitely true.
+[02:16:11] And you are articulating your mission because for many years you complained about the problems, but you didn't have a solution yet.
+[02:16:19] Right?
+[02:16:20] And you had the rough shape and then you had to put in the work.
+[02:16:23] I will say that that is partially because I describe myself as 0% entrepreneurial.
+[02:16:31] I don't like startups.
+[02:16:34] I never wanted to be a CEO in my life.
+[02:16:37] I can't imagine anyone doing this twice.
+[02:16:39] It seems horrible.
+[02:16:41] Honestly, doing it once is pretty bad.
+[02:16:44] When we first were fundraising, an investor asked me, like, which CEOs do you look up to?
+[02:16:48] And I was like, ew, why would I look up to those people?
+[02:16:51] No offense to anyone.
+[02:16:52] You know, I'm trying to be like, I'm trying to be genuinely good.
+[02:16:55] I've met like a lot of really good people, but like the famous ones have like a lot of like skeletons in their closet, it seems.
+[02:17:01] And I think I just really did feel disempowered when I was at OpenAI.
+[02:17:05] You know, like I felt.
+[02:17:09] Yeah, like it's a little bit easier to be truthful now because like I have at least some proof that the direction has legs.
+[02:17:15] Like I just felt like in the insane house where everyone is just like chat GPT.
+[02:17:21] Yeah.
+[02:17:21] Like, where do we put ChatGPT and everything?
+[02:17:23] How do we make ChatGPT good for, like, you know, developers and stuff?
+[02:17:26] And I'm like, what are you talking about?
+[02:17:27] Like, the function calling interface is insane.
+[02:17:30] Why would you deploy this?
+[02:17:31] Like, this is so anti-developer.
+[02:17:33] It's sort of a hacky way on top of hacks on top of hacks.
+[02:17:36] Well, not just that.
+[02:17:38] Like, the thing I often said was if there was like a...
+[02:17:44] This is also probably tea I don't have time for right now.
+[02:17:48] But I always used to say, like, I want to be removed from any project involving like function calling if you did not get a legit bias for each function.
+[02:17:58] Like, it's a very, very simple ask in my part.
+[02:18:01] Which is something like a confidence but not calibrated.
+[02:18:03] Or a probability for it, right?
+[02:18:05] Like, we need to give users the ability to control, like, you know, like, let's say they have actions or refuse or allow.
+[02:18:13] Yeah, Disney needs to set a different refusal threshold in AI Dungeon.
+[02:18:16] The only way to control that with function calling right now is to say, like, pretty please.
+[02:18:21] You know, that's nuts.
+[02:18:22] That's a nuts interface for developers.
+[02:18:24] And, like, people have been, like, dealing with this for years now.
+[02:18:28] Right?
+[02:18:28] Like, they still have that with skills.
+[02:18:30] Like, you know, like, the existing coding agents are, like, highly overfit to their existing harness because they're jagged.
+[02:18:37] They don't tend to use, like, external, like, tools and MCPs super well because of overfitting, of course.
+[02:18:42] and like why can't like big companies allow for like slight nudges to be like call this more it's
+[02:18:50] really useful right and like the the the the solution is begging in a system message that's
+[02:18:57] nuts um but okay i i think i i think i get you um and like man uh it is so exciting to talk about
+[02:19:04] all this stuff it's it's really cool to get you on a podcast yeah you're gonna go do amazing things
+[02:19:09] man like i'm excited for your next uh big launches oh hell yeah yeah just you wait yeah just you
+[02:19:15] wait sooner than you think infra people i assume marketer 100 people just depends on community
+[02:19:22] person if you ask me yeah i feel like i'm a pretty good founding marketer but if you ask anyone on my
+[02:19:27] team they say shut the fuck up diogo you need to do co stuff so yes it's not just about spice like
+[02:19:33] i think you're very spice oriented which like you like that's your unique talent but sometimes you
+[02:19:38] You just need to say that.
+[02:19:39] I know, I know.
+[02:19:40] I would really love.
+[02:19:42] Nothing teaches you delegation like having a tidal wave of stuff to do.
+[02:19:47] Hiring data people, or we call them model capabilities, but they are data people.
+[02:19:53] Data is kind of a slur in the industry.
+[02:19:56] I don't think so.
+[02:19:57] We're very pro data here.
+[02:19:58] Yeah, but I want them to be the highest status of the people actually working on the model.
+[02:20:03] It actually sounds a little weird.
+[02:20:04] I want everyone to have equal status.
+[02:20:05] But I want to even that out, and I want to know that that's really valuable.
+[02:20:09] These are more equal than others.
+[02:20:13] I don't like weird hierarchies.
+[02:20:15] And I think one of the things I'm most proud about in the company is that they don't respect me that much, or they don't show that.
+[02:20:22] They just troll me and joke with me, and they treat me poorly sometimes and all of that.
+[02:20:26] And I think that that's a good sign of a culture.
+[02:20:28] We're hiring platform people, people to build out Jev everywhere.
+[02:20:33] We are so much more sensitive to location because speed of light is more of a bottleneck.
+[02:20:38] I'm so sad for the European users that they were only three times as fast instead of 100 times as fast.
+[02:20:46] Because we don't have servers there right now.
+[02:20:47] That's insane, right?
+[02:20:49] It's okay.
+[02:20:50] Life in Europe goes a bit slower as well.
+[02:20:52] It's okay.
+[02:20:53] Wow, I can't believe you said it, not me.
+[02:20:57] Or everywhere.
+[02:20:58] You know, like if intelligence per second is a metric that matters, like we will want this all over the place.
+[02:21:05] Like we care about, like if they're a developer building on top of us, I care a lot about you.
+[02:21:10] And we are hiring for people to keep building more, like not just like the goal is not to just be like Jev as a company.
+[02:21:18] The goal is to like ship more shapes of intelligence beyond that.
+[02:21:23] So we are hiring people to like build those things too.
+[02:21:25] You know, like we want to not just be like, yeah, like the one trick pony of like the simple model.
+[02:21:32] But like, I think that there's going to be like an AWS of like intelligence, you know.
+[02:21:36] Which is going to be you, by the way, right?
+[02:21:38] I mean, that's a direction I want to go down.
+[02:21:40] It would be arrogant to say it will be me.
+[02:21:42] Like we, like I'm going to do anything I can to make sure that happens.
+[02:21:47] Like I think that that's going to be so, so cool.
+[02:21:51] You know, like we are playing with like system one intelligence right now.
+[02:21:55] imagine the layers you know like this is like the tcp of it yeah uh several more layers to go and
+[02:22:02] who knows what else i've also pitched temporal by the way i don't know we need to talk about
+[02:22:06] temporal as layer eight uh out of the seven layers um but anyway we can talk forever hell yeah you
+[02:22:12] gotta get back to work or sleep yep uh thank you for coming yeah cool you're most welcome it was
+[02:22:17] a pleasure man yeah so excited yeah so excited you took my first time not the last time
+[02:22:21] Thank you.

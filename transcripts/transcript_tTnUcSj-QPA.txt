@@ -1,0 +1,361 @@
+0:00 There's a new AI model in town from the
+0:02 co-inventor of Chat GPT and it is
+0:04 insanely cheap and incredibly fast. It's
+0:06 called Jev. And just to show you how
+0:08 fast it is, I'll send this prompt and
+0:11 that is real time. It gave me an output
+0:13 for less than a second and at a fraction
+0:16 of the cost. So today I'll explain Jev
+0:18 for you simply and also some of the best
+0:20 ways by which you can integrate Jev with
+0:22 the agentic harnesses you use like cloud
+0:24 code to make your setup faster, your
+0:26 systems cheaper, and even build new
+0:28 things and automate parts of your
+0:29 business that weren't possible before.
+0:32 Let's dive into it. So first of all,
+0:33 what is Jev? And I won't go super deep
+0:36 into this, but basically Jev is a new AI
+0:38 model that is quite interesting because
+0:40 it was released by a co-inventor of
+0:42 ChachiBT. So this person Dooo, he made
+0:45 this post that already has something
+0:47 like 38 million views. And he says here
+0:49 that Jev is a new type of frontier AI
+0:51 model that is 20 to 200 times faster and
+0:55 40 to 400 times cheaper. And if you look
+0:57 at the rate card for this model, that is
+0:59 indeed the case. It is around 24 times
+1:01 cheaper than Haiku and around 230 times
+1:04 cheaper than Fable 5.1. And a big part
+1:06 of why that is is because its output
+1:08 tokens, basically its response to you as
+1:11 the user, is always free. and they only
+1:13 charge for the input tokens, which is
+1:15 essentially your prompt. And it's super
+1:17 cheap. It's only four cents per million
+1:19 tokens. Now, a big part of why it's so
+1:21 fast and so inexpensive is because Jev
+1:24 can only answer in three shapes. So,
+1:26 when you ask it a question, it can
+1:27 either give you a binary response
+1:29 whether that statement is true or false.
+1:31 It can provide a selection against a
+1:33 menu of options, or it can also give you
+1:35 a response that is based on scale. Let's
+1:38 say from 0 to 10. And even though this
+1:39 sounds like a big limitation for the
+1:41 model, this is actually the genius
+1:43 behind why it's so effective in the use
+1:45 cases that we'll go through later. But
+1:46 before we go to that, one key thing to
+1:48 remember is that Jev is not actually a
+1:51 large language model. And the way that
+1:53 Typesafe, which is the company behind
+1:54 Jev, talks about this is that they're
+1:56 saying that Jev is the first system one
+1:58 model, whereas all the other AI models
+2:00 like Fable, Astra, and the others are
+2:03 what they're calling system 2 models.
+2:05 Now, in case you've read this book
+2:06 called Thinking Fast and Slow, that
+2:08 system one and system two dichotomy of
+2:10 how humans and people think might be
+2:12 familiar to you, but essentially the
+2:14 difference between these systems is that
+2:16 system one is all about thinking fast
+2:18 and making snap decisions. And so, Jev
+2:20 as an AI model just optimizes against
+2:22 this and so it just outputs
+2:24 classifications and can do that really,
+2:26 really fast and really, really cheaply.
+2:28 Whereas LLMs and other general purpose
+2:30 models like Fable or Astra, they can
+2:32 output text and they do that by writing
+2:34 each word one by one, but it gives them
+2:36 more flexibility of what it can output
+2:38 obviously. But that would have the
+2:40 drawback of these system two models
+2:42 thinking slower versus its system one
+2:44 counterparts. And so really if there's
+2:46 one takeaway from all of this, I think
+2:47 the best way that you can use Jev right
+2:49 now is to combine both. Combine a system
+2:51 one model like Jev with a system 2 model
+2:54 like the claude models. And so I'll show
+2:56 you some use cases of how you can get
+2:58 started and actually get value from this
+2:59 today. But first, let's get you set up
+3:01 so that you can actually use Jev. And as
+3:03 with any other AI model, it's actually
+3:05 available through a variety of
+3:06 platforms. You can obviously use it by
+3:08 connecting to Typesafe, who is the
+3:10 company behind Jev. And as per their
+3:12 expost at the time of this recording
+3:14 today, they just announced that Jev is
+3:16 now actually available to everyone
+3:17 because previous to this just hours ago,
+3:19 there used to be a wait list to access
+3:21 it. So, if you go to this URL, you'll be
+3:23 able to sign up there and actually get
+3:25 your API key to connect it to Claude. At
+3:27 least when I was testing it personally
+3:28 and throughout the use cases that I'll
+3:30 go through here, I connected to Jev via
+3:32 open router, which is the service that
+3:34 always gets updated with the newest AI
+3:36 models as they get released. So, you can
+3:37 just access that through this URL. And
+3:39 so, to set it up with cloud or any
+3:40 agentic harness that you're using, it's
+3:42 just one prompt away as usual. And you
+3:44 can just take a screenshot of this if
+3:45 you need a starter prompt to set that
+3:47 up. Or if you want the prompts and the
+3:48 setup guide for everything that I'll
+3:50 cover here in this lesson. I also made
+3:52 this PDF guide which you can just grab
+3:54 for free below and you can just send
+3:55 that to your agent for all of the good
+3:57 nuggets that you can pick up in this
+3:59 video. So once you set that up and you
+4:00 confirm with Claude that you have access
+4:02 to Jev like what I did here, now we can
+4:04 get to actually using it. And I'll
+4:06 actually talk about this through three
+4:07 levels by which you can use Jev. And by
+4:09 the way, if you want to learn how to
+4:10 build and sell AI systems that
+4:12 businesses actually pay for, then that's
+4:14 pretty much all we do over at the
+4:16 Robbernuggets community, where not only
+4:17 do you get access to the Claude Living
+4:19 Master Class, which we update every week
+4:21 and takes you from zero to mastery with
+4:23 the latest on AI, but you also get
+4:24 access to our agents as a service
+4:26 course, which walks you through how to
+4:28 actually get paid for all these AI
+4:30 skills that you are learning. You also
+4:31 get to be part of a genuinely great
+4:33 community of AI builders. In fact, you
+4:35 can see just some of the recent wins our
+4:37 members are getting from the program
+4:38 right here. So if you want to start
+4:39 earning from AI then check that just in
+4:41 the pin comment below. Now back to the
+4:42 video and the first one is to integrate
+4:44 Jev with your own agentic operating
+4:46 system. Basically the way you work with
+4:48 your agents so that you can get faster
+4:50 results and cheaper systems. So less
+4:52 token burn. Now because the way we use
+4:54 agents differ depending on the work that
+4:56 we do. I'm sure that you can also find
+4:57 ways to use Jev outside of what I'll
+4:59 talk about. But just to give you an idea
+5:01 here are two use cases that I am testing
+5:03 out so far using this model. The first
+5:05 one is around model routing which is
+5:07 basically letting Jev automate the
+5:09 choice of the model depending on the
+5:11 task that we are giving Claude. And this
+5:13 is important because remember it is not
+5:15 really practical for you to use Fable
+5:17 all the time because out of all the
+5:18 models that is the most expensive. Same
+5:20 thing with Opus. If you just default to
+5:22 Opus every time then that can also drain
+5:24 your usage quite a lot. And for a lot of
+5:26 tasks sometimes Sonnet and Haiku which
+5:28 are the cheaper models are actually
+5:30 enough. But the problem there is for you
+5:33 to switch through these models and
+5:34 decide the right model for each task.
+5:36 That decision usually lies with you as
+5:38 the user. And so there wasn't really a
+5:40 quick and cost- effective way for us to
+5:42 automate model routing up until Jev. And
+5:45 so to set this up, you can just use this
+5:46 prompt for you to get started. And just
+5:48 to give you a visual demo of the test
+5:50 that I set up, essentially what I asked
+5:52 Cloud to do is to do a comparison of
+5:54 around 12 prompts with Jev and another
+5:56 one where it's running with Fable 5.1
+5:58 every time. And you can see here that
+6:00 because of Jeb and the fact that it's
+6:02 actually routing to the right model
+6:03 depending on the task, it actually
+6:05 resulted to 70% savings because nine out
+6:08 of those 12 tasks never needed the top
+6:10 auto anyway. So that is quite useful.
+6:12 But obviously you have to try it out for
+6:13 the work that you do specifically just
+6:15 to see if the output that you are
+6:16 getting is still good enough in exchange
+6:18 for the tokens that you are saving. But
+6:20 it's just great that we now have this
+6:22 new class of AI models that can actually
+6:24 do these types of decisions for us. Now,
+6:26 in practice, if you're testing this out,
+6:28 I do advise you to make a skill command
+6:30 first where you can switch jev off or
+6:32 on. For example, here in this Claude
+6:33 session, you can see I typed in /jv on.
+6:36 And so, for this whole session, whenever
+6:37 I assign it tasks, Claude will now use
+6:39 Jev in order to find the right model for
+6:41 that task. One example of that is this
+6:44 where I ask it to find the file path
+6:45 where the Jev router script lives. You
+6:47 can see that for that task, Jev actually
+6:49 assigned a Haiku helper, which is the
+6:51 cheapest model to find at file path,
+6:53 which is much more efficient for your
+6:55 token usage because if Jev wasn't there
+6:57 routing to Haiku, then we would have
+6:59 used Opus 5 here, which is the default
+7:01 that I'm using for this session. The
+7:03 second use case is making Claude become
+7:04 more efficient when finding the right
+7:06 skills. So again, this is just a visual
+7:08 demo of a test that I ran. But
+7:10 essentially what this shows is 14 tests
+7:13 where if you send it a prompt and you
+7:15 ask it to find a specific skill in my
+7:17 workspace, you can see here that Jev
+7:19 takes much less time to find the right
+7:21 skills versus if you just default to
+7:24 something like Opus 5, for example. And
+7:26 so in total for those 14 tests, Jev was
+7:29 able to find the right skill within 5
+7:30 seconds while Opus 5 took around 30
+7:33 seconds. And just to show you how Jev
+7:35 was used in this specific use case,
+7:37 basically your input is the task that
+7:39 you are trying to do. Jev then looks at
+7:40 that and the options that it can choose
+7:42 from would be your skills itself. So at
+7:45 least for me, if you can see, I have
+7:46 something like 145 skills in my
+7:49 workspace. And so because Jev is really
+7:51 quick, it can almost instantly output
+7:53 the right skill from that list which
+7:55 Claude then loads. And so if you want to
+7:57 test that out for yourself, then you can
+7:58 just copy this prompt and send it to
+8:00 your agent. Now, beyond just level one
+8:02 of giving you faster and cheaper
+8:03 systems, if we get to level two, this is
+8:06 actually how we use Jev for more
+8:08 business use cases because with Jev, you
+8:10 can actually make automations that are
+8:11 almost at lightning speed and doesn't
+8:13 cost as much as the other AI models. And
+8:16 just to give a visual demo, let's say
+8:17 you have a 100 emails and the automation
+8:19 that you are building needs to answer a
+8:21 business question, which for this case,
+8:23 we want to know which of these emails
+8:24 are actually leads that we can contact.
+8:26 But obviously it can be others like if
+8:28 these are customer support tickets then
+8:30 you can triage which ones are needing
+8:31 the most support. But at least for this
+8:33 demo what we'll show is Jev doing the
+8:35 classification here in this column. And
+8:37 then we'll also use Haiku as well as
+8:39 Fable in order to show the difference
+8:41 between the speed and cost of these
+8:43 models. So when I click run, these will
+8:45 now show the time it took for these
+8:47 models to classify each of these emails
+8:49 in full. So let's go ahead and run that.
+8:52 And as you can see that took Jeff like
+8:53 no time at all. within less than a
+8:56 second, it was able to classify all of
+8:58 those leads, whether they're warm,
+8:59 whether it's not a lead, whether it's
+9:01 cold, which is much faster and much
+9:03 cheaper versus these other models. And
+9:05 so, when it comes to business
+9:06 automations, that is where Jev really
+9:08 shines. If you have a huge volume of
+9:10 things and there's a business question
+9:12 that's associated to those things, then
+9:14 this is a good candidate for you to use
+9:16 Jev in. So, for example, in enterprise,
+9:18 there's a huge industry with regard to
+9:20 detecting invoice fraud. Spam detection
+9:22 software also has a good use case for
+9:24 this. Community moderation is another.
+9:26 Same when it comes to high volume
+9:28 requests for any refunds and even
+9:30 classifying your customers if they are
+9:32 churning or not if you're running a
+9:33 subscription software business for
+9:35 example. And so that's the pattern that
+9:36 I think would be good for you to think
+9:38 about in your company or in your
+9:39 business. What are the things that you
+9:41 are receiving in volume that you need to
+9:43 classify? And if you introduce Jev in
+9:44 there and because it is so quick and it
+9:46 is so cheap, then you'll be able to
+9:48 upgrade your automations through just a
+9:50 few prompts. And finally, we get to
+9:52 level three, which is building apps that
+9:54 have now just become possible and cost
+9:56 effective because of system one models
+9:58 like Jev. And again, this differs per
+10:00 person, but just to give you an idea of
+10:02 what I immediately use it for. In our
+10:04 line of work, as you might expect, I
+10:06 generate a lot of images as well as
+10:08 videos, and I put them all here in my
+10:10 OS, which I name as Rubric. Now, because
+10:12 I have hundreds of images on here, it's
+10:14 often the case that I need to search for
+10:16 specific images. And let's say if I type
+10:18 in claude in here, unfortunately, what
+10:20 this will give me are images where the
+10:22 file names contain the word claude. So,
+10:24 it's sort of like your standard CtrlF.
+10:26 But if we integrate Jev into that image
+10:28 search, and this is just a quick demo so
+10:30 that I can show you side by side. If I
+10:32 type Claude in here, you can see that
+10:33 the file name search here returns only a
+10:36 few results. But the search powered by
+10:38 Jev actually enables us to search images
+10:40 and videos by meaning instead of just
+10:42 the file name. And so if you have an
+10:44 application where users need to search
+10:45 for things a lot, then Jev might be good
+10:47 to try to see if that is going to
+10:49 improve user experience for your app.
+10:51 Another application that I found that is
+10:53 powered by Jev is this one from Kits who
+10:56 made this app called Unclutter. And
+10:57 basically what it does is it's a Chrome
+10:59 extension where whenever you toggle it
+11:01 on, it basically auto cleans up pages
+11:03 from any elements that are classified as
+11:06 slop. And the one that is doing that
+11:08 classifying is Jev under the hood. And
+11:10 it basically just looks at all of the
+11:11 elements in a page, gives a quick
+11:13 decision if they are ads, if they are
+11:15 cookie banners, and it just removes all
+11:16 of that when the switch is toggled. And
+11:18 so there you go. That is what Javis and
+11:20 a few use cases and ideas for you to
+11:23 take advantage of this new paradigm by
+11:25 which AI models are created and used. I
+11:27 hope that was useful and as usual,
+11:29 thanks for watching until the end. And
+11:30 I'm also curious like what would you use
+11:32 Jev for? Let me know down below and I'll
+11:34 see you all next time. Cheers. [music]

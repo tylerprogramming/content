@@ -1,0 +1,56 @@
+[00:00] I'm going to let you in on a secret about my life. Here's what my morning looks like. Every morning at 9:00 a.m. an AI agent I built wakes up. It reads Hacker News, writes me a summary, and
+[00:11] drops the whole thing on my phone before I've had my morning coffee. I don't even need any new apps. It sent it to me on my Telegram. This is the Hermes agent, and it's doing things that even OpenClaw
+[00:22] cannot do. For those of you watching who have not heard of Hermes, that's completely fine. I'm going to explain both from the ground up, then show you the wildest demos I've seen in an AI
+[00:32] tool this year. I've given this AI a list of tasks needed, an analyst, an assistant, an editor, and three different subscription tools. And not only did it accomplish it for me, it
+[00:42] also cost me less money than other tools. It cut my AI bill by a whole lot. Hi, I'm Vaibhav. I run three AI companies profitably, and my goal is to
+[00:52] teach AI to 1 billion people across the globe. I share tools, the latest AI updates, and a lot of tips and tricks in my free WhatsApp community called Staying Ahead. If you'd like to be a
+[01:03] part of it, you'll find the link in the description. Okay, let's start with the simplest explanation about what Hermes really is. Hermes is an AI agent built by Nous Research, which is one of the
+[01:13] biggest open-source AI labs in the world. For those of you who don't know what an AI agent is, here's the easiest way to think about it. An agent does everything you ask it to on your
+[01:24] computer. It can go to websites, click buttons, read things, write files, and send it to you in a message. And it can do all of this while you're sleeping, watching a movie, or in a meeting. You
+[01:35] hand it a job, and it just does the job. Here's why Hermes is a step up from your usual agents. Every time Hermes finishes a task, it writes down what it learned, like a notebook for itself. So, the next
+[01:46] time you ask for the same thing, it doesn't figure it out from scratch. It reads its own notes and runs in 5 seconds flat. Claude doesn't do this. ChatGPT doesn't do this. Nothing else
+[01:57] I've tested does real self-learning like this. This is genuinely new. Okay, but here's the problem. An agent that never sleeps needs a computer that never sleeps. Your laptop sleeps, you close
+[02:08] the lid, and the work is gone. Your agent dies with it. So, what you need is a server, a computer that lives on the internet 24/7 that you can access from anywhere, that stays on even when your
+[02:20] Wi-Fi goes down. That computer is what Hostinger gives you. Simplest way to think about Hostinger, it's a company that rents you a small piece of a computer that sits in a data center
+[02:30] somewhere. That computer runs round the clock. And because it's always on, your agent is always on, always available on every channel you connect it to. When
+[02:39] you self-host on your own VPS, your data stays yours. Your agent runs in its own isolated environment, but it can still talk to all your other tools when you want it to. Plus, your agent actually
+[02:51] remembers things. Hostinger uses persistent Docker volumes, which is a fancy way of saying every skill it learns and every memory it builds survives restarts. So, your agent gets
+[03:02] smarter every single day instead of starting from zero. In the past, setting up a server was genuinely painful. Hostinger killed all of that. They built a one-click template specifically for
+[03:13] Hermes. This is what it looks like. Hostinger shows you pricing based on your region. Pick the KVM 2 plan and click deploy. The 12-month option is the most affordable plan. And if you're
+[03:24] still on the fence, Hostinger gives you 30 days to try it. Don't like it, you get your money back, no questions. This video was sponsored by Hostinger, so first-time users also get a discount
+[03:34] code for this tool. Use the coupon code called Staying Ahead. You get 20% off any plan that's 12 months or longer. Link is in the description. Now, all you do is wait for 60 seconds and your agent
+[03:46] is live. Now, that was for first-time users. For existing users, here's how to set it up. I log in to Hostinger. I click VPS. I click manage. I click
+[03:56] one-click deploy. I type Hermes. I click select. It gives me a username and a password. I copy the password. I click deploy. That's it. That's the install.
+[04:06] In about 60 seconds, you'll see the project go from created to running. And once it says running, you click open, you log in, and you're set. Now, we connect Hermes to Telegram, because
+[04:16] here's the part that's actually wild. You don't have to log into a dashboard. You don't have to open an app. You just text it from your phone. Let me show you the setup in 30 seconds, then we run the
+[04:27] first demo. You go to Telegram. You search BotFather. You type /newbot. You give it a name. BotFather sends you a token. You paste that token into Hermes. Hermes asks for your Telegram user ID.
+[04:40] You search User Info Bot, copy your ID, paste it. Done. Your bot is live. This looks scary on screen, but it's just copy and paste. Now, I open my new bot. I send it one message. Watch this. I'm
+[04:52] typing right now. Go to Hacker News. Grab the top 15 posts. Capture the title, the score, the author, comment count, and URL. Save it as a PDF. Before you finish, write down what you learned.
+[05:04] Hermes thinks for a second. It picks the right skill on its own. It opens Hacker News in a browser. It reads all 15 posts. It builds a PDF. And it sends the PDF straight to my Telegram. Look at
+[05:16] this. Now, this is just 5 minutes of work for me. That was the first use case. I want to see if Hermes can generate and edit images. So, I tell it, "Go to my YouTube channel. Grab the 12
+[05:27] most recent videos as thumbnails. Combine them into a 4 by 3 PNG grid. Send it back to me." OpenClaw could technically do this, but it took 10 minutes of setting up scripts, and it
+[05:37] broke half the time. Hermes opens YouTube. It pulls my channel. It downloads 12 thumbnails one by one. It opens an image library. It builds a grid. It saves the file. It sends the
+[05:49] PNG back to my phone. About 90 seconds in total, but that's a small use case. Let's make things more challenging in the next prompt. Now, what if I want Hermes to monitor four AI competitors
+[06:00] for me? Let's try it out. I picked OpenAI, Anthropic, Google's Gemini, and xAI's Grok. I want it to study their homepage, their product pages, and their
+[06:10] blog every day at 9:00 a.m. I want a PDF in my Telegram every morning that tells me exactly what each company changed in the last 24 hours. New product launches,
+[06:21] pricing updates, anything that matters. I paste the prompt. I press enter. And Hermes does something I've never seen another agent do. It splits itself into agents. Watch this. One agent goes to
+[06:33] OpenAI. Another goes to Anthropic. Another goes to Gemini. Another goes to Grok. They all run in parallel reading, summarizing, comparing. This used to be an actual paid job. Companies hired
+[06:45] people called market intelligence analysts to do this exact thing. They charged between 80,000 and 2 lakh rupees a month just to scan competitors and write reports. About 8 minutes later, my
+[06:56] Telegram pings. There it is, the AI competitors intelligence report in PDF form. Each company has its own section. New launches, pricing changes, notable announcements, what changed today versus
+[07:08] yesterday, all summarized. This was exciting, but I haven't even shown you the part that does my actual job. So, now let me show you something that creators on this channel will love. I
+[07:19] tell Hermes how to write like me. My content style is simple, punchy, curiosity-driven, and beginner-friendly. Whenever I ask for scripts, avoid jargon and write like a YouTube educator. Then
+[07:30] I even ask it to analyze my channel and write a test script. Two reasons this matters. One, showing it your existing content is how you train AI in your style. Without that, the AI guesses and
+[07:41] doesn't actually sound like you. Two, downloading transcripts manually to feed it to an AI means opening YouTube Studio, doing copy-paste, fixing the formatting, saving the file, and
+[07:53] repeating it for every video. Now, here is the part that no other agent can do. And the reason OpenClaw users are migrating in droves. Hermes has real memory. Across every session, whatever
+[08:05] I've told it before about my content style or my lack of jargon, my hooks, demos, it updates its memory. I see a notification that says memory updated and user profile updated. There's now a
+[08:16] profile inside Hermes called Vaibhav with my style preferences, tone, and my brand guidelines. This means tomorrow, when I open Hermes, I don't have to explain who I am. The week after that,
+[08:26] when I open Hermes, it remembers what I worked on this week. A month from now, it knows my content calendar. A year from now, this thing has more context on my business than half my team. Now,
+[08:36] here's the part that matters. It also says that a new skill, YouTube channel analysis, has been created. Hermes didn't just write the script, it learned how to write the script. Next time I
+[08:47] ask, it'll be even better. Two months from now, it'll be writing scripts I barely have to edit. This is what self-improving means. The skill files inside Hermes literally rewrite
+[08:57] themselves based on how you use them. Step back for a second. A year ago, none of this existed. If I wanted what Hermes does today, I needed three people, a research analyst at maybe 80,000 rupees
+[09:09] a month, a content assistant at maybe 40,000 rupees a month, and a video producer at maybe 60,000 rupees a month. That's almost 2 lakh rupees a month, 24
+[09:20] lakhs a year for tasks that Hermes does for a fraction of the cost. But I'm not saying you should fire your team. I'm saying you should free your team. Let Hermes do the boring stuff, the
+[09:30] scraping, the summarizing, the first drafts, the competitor scans. So, your real team can do the things only humans can do. So, that's it. A year ago, that list of tasks needed an analyst, an
+[09:42] assistant, an editor, and three different subscription tools can today be done by one tool. Hope you enjoyed this demo. A quick note for all of you. 70% of the people watching this video
+[09:53] right now are not subscribed, which means YouTube is not going to show you the next one. We're coming out with a lot of new exciting content around AI. Subscribe so you don't miss it. And if
+[10:04] you want to watch videos on similar tools, I highly recommend the one on Open Claw. I'll attach the link here. See you in the next video.

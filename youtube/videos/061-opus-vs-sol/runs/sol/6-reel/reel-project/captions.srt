@@ -1,0 +1,95 @@
+1
+00:00:00,020 --> 00:00:02,390
+research we did earlier, I just grabbed
+
+2
+00:00:02,400 --> 00:00:04,000
+where it saved the research, and when it's
+
+3
+00:00:04,050 --> 00:00:06,800
+done, the atcoder will open a PR on my
+
+4
+00:00:06,800 --> 00:00:09,630
+content repo, save that in for save it as
+
+5
+00:00:09,630 --> 00:00:11,380
+a save the PR with all of the files is
+
+6
+00:00:11,400 --> 00:00:13,520
+created, and then post the link to slack.
+
+7
+00:00:13,520 --> 00:00:15,900
+So when I press enter, the report that was
+
+8
+00:00:15,900 --> 00:00:17,840
+created, and then maybe do some more
+
+9
+00:00:17,840 --> 00:00:18,600
+research.
+
+10
+00:00:18,600 --> 00:00:20,790
+So the researcher is now going to actually
+
+11
+00:00:20,790 --> 00:00:22,290
+refresh the hooks research from the
+
+12
+00:00:22,290 --> 00:00:24,550
+existing report, produce a data file, a
+
+13
+00:00:24,560 --> 00:00:26,260
+reference transcript of the breakdown and
+
+14
+00:00:26,260 --> 00:00:26,840
+everything.
+
+15
+00:00:26,860 --> 00:00:28,470
+Then when it lands, it's going to give
+
+16
+00:00:28,470 --> 00:00:30,090
+that to the add packager and then that
+
+17
+00:00:30,100 --> 00:00:30,550
+coder.
+
+18
+00:00:30,560 --> 00:00:33,680
+So it decided that it actually needed to
+
+19
+00:00:33,740 --> 00:00:35,690
+go to another agent first as well, only
+
+20
+00:00:35,690 --> 00:00:37,640
+gave it to agents, but it decided that we
+
+21
+00:00:37,640 --> 00:00:39,750
+needed a third agent, the research agent
+
+22
+00:00:39,750 --> 00:00:41,690
+to actually give us everything that we
+
+23
+00:00:41,690 --> 00:00:44,280
+need to actually create this package.
+
+24
+00:00:44,280 --> 00:00:45,000
+And so this is

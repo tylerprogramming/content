@@ -1,0 +1,21 @@
+#!/bin/bash
+# Pre-run every remaining 061 use case on both profiles. One folder per model per case.
+# Runs cases sequentially per model, both models in parallel. Logs to runs/<model>/<case>/out.txt.
+set -u
+R=~/content/youtube/videos/061-opus-vs-sol
+cd "$R/inputs"
+run_model() {
+  m=$1
+  for c in 1-website 3-ad 4-game 2-review; do
+    d="$R/runs/$m/$c"; mkdir -p "$d"
+    [ "$c" = "3-ad" ] && cp "$R/inputs/attend-ad-swipe.md" "$d/"
+    ( cd "$d" && /usr/bin/time -p hermes -p "$m" chat -q "Work in this folder and write every file there: $d
+
+$(cat "$R/prompts/$c.md")" > out.txt 2>&1 ) 2> "$d/time.txt"
+    echo "$m $c done $(grep real "$d/time.txt")"
+  done
+}
+run_model opus &
+run_model sol &
+wait
+echo ALL DONE

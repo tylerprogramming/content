@@ -1,0 +1,56 @@
+Query: Read attend-ad-swipe.md in this folder. It is my swipe file of ad scripts
+that worked for Attend, a CRM for Skool community owners. Write ONE new 
+30-second video ad script for Attend in that same structure. Hook in the first 3
+seconds, one pain, one proof line, one CTA. No em dashes, no hype words (insane,
+crazy, game-changer), no prices. Under 90 words. Then in one line tell me which 
+existing script in the swipe file it is closest to and why yours is different.
+Initializing agent...
+────────────────────────────────────────
+
+  ┊ 📖 read      attend-ad-swipe.md  0.1s [File not found: attend-ad-swipe.md]
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Locating**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 🔎 find      attend-ad-swipe.md  0.2s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Loading humanizer skill**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 📚 skill     humanizer  0.0s
+  ┊ 📖 read      attend-ad-swipe.md  0.0s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Selecting the Attend proof**
+└──────────────────────────────────────────────────────────────────────────────┘
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+V8 — “The quiet members”
+30s · problem aware · at the desk · 9:16 iPhone
+
+HOOK (locked):
+> “Your member count won’t tell you who stopped showing up.”
+
+BEATS
+1. A member can go quiet without leaving your Skool community.
+2. Proof: Attend sorts members into active, cooling, drifting, and gone.
+3. Open the cooling list. Pick someone to check in with while they’re still reachable.
+4. CTA: Learn more about Attend.
+
+HEADLINE: Find the members going quiet  
+BODY: Your member count stays the same when someone stops showing up. Attend shows you who’s cooling off so you know who to contact.
+
+Closest to V5: both address quiet members, but this one ends with a specific action instead of a general view of decay.
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Resume this session with:
+  hermes --resume 20260923_191728_270978 -p sol
+  hermes -c "Write Attend video ad script" -p sol
+
+Session:        20260923_191728_270978
+Title:          Write Attend video ad script
+Duration:       29s
+Messages:       10 (1 user, 8 tool calls)
+real 31.14
+user 2.08
+sys 2.14

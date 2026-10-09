@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait"><head><meta charset="UTF-8"><meta name="viewport" content="width=1080,height=1920"><title>Bot handoff reel</title><script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#101514;color:#f4f3e9;font-family:Montserrat,sans-serif}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden}
+#canvas{position:absolute;inset:0;background:#101514}
+#top{position:absolute;top:85px;left:72px;right:72px;height:255px;display:flex;flex-direction:column;justify-content:center;border-top:3px solid #a5dc76}
+#eyebrow{font:700 27px 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#b8e78e}
+#headline{font:400 100px/1 'League Gothic',sans-serif;letter-spacing:.02em;margin:22px 0 0;text-transform:uppercase}
+#rule{position:absolute;left:72px;right:72px;top:350px;border-top:2px solid #526257}
+#screen-frame{position:absolute;left:45px;top:445px;width:990px;height:825px;border:3px solid #7a9476;border-radius:18px;pointer-events:none;box-shadow:0 35px 90px #050908}
+#source-video{position:absolute;left:45px;top:445px;width:1467px;height:825px;object-fit:fill;max-width:none;clip-path:inset(0 477px 0 0 round 16px)}
+#screen-label{position:absolute;left:72px;top:405px;font:700 26px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#d6e0d2}
+#chain{position:absolute;left:72px;right:72px;top:1310px;font:700 29px 'IBM Plex Mono',monospace;color:#b8e78e;letter-spacing:.02em}
+.caption{position:absolute;left:72px;right:72px;top:1402px;height:250px;display:flex;align-items:flex-start;justify-content:center;text-align:center}
+.caption span{display:block;width:100%;font:700 56px/1.22 Montserrat,sans-serif;color:#f9f8ee;text-shadow:0 3px 12px #000,0 5px 28px #000;overflow-wrap:break-word}
+#footer{position:absolute;left:72px;right:72px;bottom:130px;border-top:2px solid #526257;padding-top:27px;font:700 23px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#b9cbbb}
+#title-card{position:absolute;left:0;top:0;width:1080px;height:400px;background:#101514;display:flex;flex-direction:column;justify-content:center;padding:46px 72px;z-index:20}
+#title-kicker{font:700 26px 'IBM Plex Mono',monospace;color:#b8e78e;letter-spacing:.13em}
+#title-main{font:400 102px/.92 'League Gothic',sans-serif;text-transform:uppercase;letter-spacing:.015em;margin:18px 0 16px}
+#title-sub{font:700 28px/1.2 Montserrat,sans-serif;color:#c5d3c1;border-top:3px solid #a5dc76;padding-top:14px}
+#lower-third{position:absolute;left:72px;top:1120px;width:790px;height:140px;padding:25px 32px;background:#e9f2df;color:#14241a;border-radius:9px;z-index:10}
+#lower-third strong{display:block;font:700 32px 'IBM Plex Mono',monospace}
+#lower-third small{display:block;margin-top:10px;font:700 26px Montserrat,sans-serif}
+</style></head><body><div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="45">
+<div id="canvas" data-layout-ignore></div>
+<video id="source-video" class="clip" src="source.mp4" data-start="0" data-duration="45" data-track-index="1" muted playsinline></video>
+<audio id="source-audio" class="clip" src="source.mp4" data-start="0" data-duration="45" data-track-index="2" data-volume="1"></audio>
+<div id="screen-frame" data-layout-ignore></div>
+<div id="top" class="clip" data-start="2.6" data-duration="42.4" data-track-index="4"><div id="eyebrow">HERMES AGENT / WORKFLOW</div><h1 id="headline">BOTS HAND OFF THE WORK</h1></div><div id="rule" data-layout-ignore></div>
+<div id="screen-label" class="clip" data-start="2.6" data-duration="42.4" data-track-index="5">LIVE DEMO • 057</div><div id="chain">RESEARCHER → PACKAGER → CODER</div>
+<div class="clip caption" id="caption-1" data-start="0.02" data-duration="2.370" data-track-index="6"><span>research we did earlier, I just grabbed</span></div>
+<div class="clip caption" id="caption-2" data-start="2.4" data-duration="1.600" data-track-index="6"><span>where it saved the research, and when it's</span></div>
+<div class="clip caption" id="caption-3" data-start="4.05" data-duration="2.750" data-track-index="6"><span>done, @coder will open a PR on my</span></div>
+<div class="clip caption" id="caption-4" data-start="6.8" data-duration="2.830" data-track-index="6"><span>content repo, save the PR with</span></div>
+<div class="clip caption" id="caption-5" data-start="9.63" data-duration="1.750" data-track-index="6"><span>all of the files it's created,</span></div>
+<div class="clip caption" id="caption-6" data-start="11.4" data-duration="2.120" data-track-index="6"><span>and then post the link to Slack.</span></div>
+<div class="clip caption" id="caption-7" data-start="13.52" data-duration="2.380" data-track-index="6"><span>So when I press enter... The report that was</span></div>
+<div class="clip caption" id="caption-8" data-start="15.9" data-duration="1.940" data-track-index="6"><span>created, and then maybe do some more</span></div>
+<div class="clip caption" id="caption-9" data-start="17.84" data-duration="0.760" data-track-index="6"><span>research.</span></div>
+<div class="clip caption" id="caption-10" data-start="18.6" data-duration="2.190" data-track-index="6"><span>So the researcher is now going to actually</span></div>
+<div class="clip caption" id="caption-11" data-start="20.79" data-duration="1.500" data-track-index="6"><span>refresh the Hooks research from the</span></div>
+<div class="clip caption" id="caption-12" data-start="22.29" data-duration="2.260" data-track-index="6"><span>existing report, produce a data file, a</span></div>
+<div class="clip caption" id="caption-13" data-start="24.56" data-duration="1.700" data-track-index="6"><span>reference transcript with a breakdown and</span></div>
+<div class="clip caption" id="caption-14" data-start="26.26" data-duration="0.580" data-track-index="6"><span>everything.</span></div>
+<div class="clip caption" id="caption-15" data-start="26.86" data-duration="1.610" data-track-index="6"><span>Then when it lands, it's going to give</span></div>
+<div class="clip caption" id="caption-16" data-start="28.47" data-duration="1.620" data-track-index="6"><span>that to @packager and then @coder.</span></div>
+<div class="clip caption" id="caption-18" data-start="30.56" data-duration="3.120" data-track-index="6"><span>So it decided that it actually needed to</span></div>
+<div class="clip caption" id="caption-19" data-start="33.74" data-duration="1.950" data-track-index="6"><span>go to another agent first as well. I only</span></div>
+<div class="clip caption" id="caption-20" data-start="35.69" data-duration="1.950" data-track-index="6"><span>gave it two agents, but it decided that we</span></div>
+<div class="clip caption" id="caption-21" data-start="37.64" data-duration="2.110" data-track-index="6"><span>needed a third agent, the research agent</span></div>
+<div class="clip caption" id="caption-22" data-start="39.75" data-duration="1.940" data-track-index="6"><span>to actually give us everything that we</span></div>
+<div class="clip caption" id="caption-23" data-start="41.69" data-duration="2.590" data-track-index="6"><span>need to actually create this package.</span></div>
+<div id="footer">ONE REQUEST / THREE SPECIALISTS</div>
+<div id="title-card" class="clip" data-start="0" data-duration="2.6" data-track-index="10"><div id="title-kicker">HERMES AGENT / 057</div><div id="title-main">ONE REQUEST.<br>THREE BOTS.</div><div id="title-sub">Research → package → pull request</div></div>
+<div id="lower-third" class="clip" data-start="17" data-duration="5" data-track-index="9"><strong>THE HANDOFF</strong><small>Researcher → Packager → Coder</small></div>
+</div><script>
+window.__timelines=window.__timelines||{};
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#title-main',{y:70,opacity:0},{y:0,opacity:1,duration:.65,ease:'power3.out'},0.1);
+tl.fromTo('#title-sub',{y:30,opacity:0},{y:0,opacity:1,duration:.45,ease:'power2.out'},0.6);
+tl.fromTo('#lower-third',{x:-80,opacity:0},{x:0,opacity:1,duration:.45,ease:'power3.out'},17.1);
+tl.fromTo('#chain',{opacity:.65},{opacity:1,duration:1.2,repeat:20,yoyo:true,ease:'sine.inOut'},2.7);
+window.__timelines.main=tl;
+</script></body></html>

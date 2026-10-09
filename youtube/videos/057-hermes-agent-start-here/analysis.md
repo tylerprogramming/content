@@ -133,3 +133,62 @@ start-here video and dates the video if it changes.
 
 ## Creator breakdowns
 - Tina Huang, 29:40: `~/content/research/youtube/creator-breakdowns/2026-09-12-tina-huang-hermes-fundamentals.md` (beat table, rhythm, gaps, our-beat plan)
+
+---
+
+## Update 2026-09-15: v0.21 changes the video, and machine state verified
+
+### v0.21.0 "Pantheon", released 2026-08-31
+
+This shipped after the analysis above was written and it is the reason the ending of this video exists. From the release notes:
+
+- **Bot Mode is bundled and on by default in the desktop app.** Every profile becomes a named bot with an avatar and a place in a shared roster. Group chats, @-mentions from the composer. Before this, multi-agent meant plumbing.
+- **Bot-to-bot direct messages.** Any agent can message another by handle via `message_agent`, across profiles and gateways. Replies land in each agent's canonical Bot Chat, so the conversation is durable and inspectable rather than fire-and-forget.
+- **Cron jobs that remember.** Scheduled jobs now load and update persistent memory, `continuity=true` carries a run's output into the next one, and each job gets a notepad. This is why the script's "fresh session every run" gotcha now has a "unless you turn continuity on" clause.
+- **Subagent steering.** `delegate_task` can list, steer mid-flight, or stop children early.
+- The agent can drive the desktop's own browser; the MCP surface became a dashboard.
+
+Tina's video predates all of this (she filmed on the pre-0.20 desktop, her "Skills and Tools" panel is now **Capabilities**). Her multi-agent payoff is Discord-driven builds. Ours is the roster the product now ships with. That gap is the video.
+
+Sources added:
+- https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.31
+- https://hermes-agent.nousresearch.com/docs/user-guide/bot-mode
+- https://hermes-agent.nousresearch.com/docs/user-guide/profiles
+- https://hermes-agent.nousresearch.com/docs/user-guide/desktop
+
+### Bot Mode, the parts that matter on camera
+
+- **A bot is a profile.** `~/.hermes/profiles/<name>/`, its own config, memory, skills, credentials, sessions. Bot Mode is a UI over that primitive: `hermes -p <bot> chat` opens the same agent and bot routines show up in `hermes cron list`. Say this on camera, it removes the "new concept" tax.
+- **The teammate roster is in the system prompt.** Each profile's title and description are what other bots read when choosing a recipient. So the description field is functional, not decorative.
+- **`message_agent` only exists in canonical Bot Chat sessions.** Regular chats, group-room member sessions and CLI sessions never see it. This is the documented reason for the limit already recorded in STATE.md, and it is worth stating correctly: it is a Bot Chat gate, not a Slack bug.
+- The canonical Bot Chat is a forever-chat. `/new` inside it forks the relationship, so do not type that on camera.
+
+### Machine state verified 2026-09-15
+
+Read off this install, not remembered:
+
+| Fact | Value | Source |
+|---|---|---|
+| Version | v0.21.3 (2026.9.14), 107 commits behind upstream | `hermes --version` |
+| Profiles | coder, coder-reviewer, packager, researcher | `ls ~/.hermes/profiles/` |
+| Memory files | MEMORY.md (2,101 bytes), USER.md (1,328 bytes) | `ls -la ~/.hermes/memories/` |
+| Local models | `gemma4:e4b`, `qwen3.8:27b-q8_0` | `ollama list` |
+| Coder routine | `0 8 * * 1-5`, deliver slack, skill code-review, last run **ok** 2026-09-14 21:05, next 09-15 08:00, ran 15 min late on the 8am | `hermes -p coder cron list` |
+| Default routines | "Attend: today", "YouTube: What's Next", both last status **ok** | `~/.hermes/cron/jobs.json` |
+| GitHub | `gh` authed as tylerprogramming, ssh | `gh auth status` |
+| Desktop app | Hermes.app installed | `/Applications` |
+
+**Corrections to STATE.md** (which was written 09-12 and is now stale in four places):
+
+1. The roster is **four** profiles, not two. `packager` exists and has the `yt-package` skill. `coder-reviewer` also exists and is a near-duplicate of `coder`.
+2. Local model tag is **`qwen3.8:27b-q8_0`**, not `qwen3.8:latest`. Second model `gemma4:e4b` is what `background_review` is pointed at.
+3. Gateway log shows the multiplexer now serving `coder-reviewer` too, and a Slack Socket Mode reconnect warning on 09-14 at 16:22. Not a blocker, but if Slack looks dead on film day, that is the first thing to check.
+4. The default profile has **no** cron jobs of its own under `hermes cron list`; the two live ones are in `~/.hermes/cron/jobs.json` and the third belongs to `coder`.
+
+### Still unverified, and the script marks all three
+
+1. A bot-to-bot handoff completing end to end with the reply landing. STATE.md says "sent, reply landing not yet eyeballed" and nothing since has changed that.
+2. Coder opening a real PR on tylerprogramming/content unattended.
+3. The Slack ping arriving from Coder as the last link in that chain.
+
+These three are the video's ending. Fallbacks are in `filming-guide.md` under "Verify before you roll". The rule stands: if it does not land, cut the beat and cut the matching promise from the hook. Do not film a fake PR.

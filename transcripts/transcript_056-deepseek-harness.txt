@@ -1,0 +1,369 @@
+[00:00:00,000] Half of YouTube is telling you that DeepSea Karnas is the end of Claude Code.
+[00:00:04,600] It's not.
+[00:00:05,560] But it is one of the most interesting things to happen to agents this year,
+[00:00:09,700] and the repo itself has hit over 200,000 GitHub stars,
+[00:00:13,900] which may not be the best metric, but that does mean it has become very popular.
+[00:00:17,960] It's open source, it runs any model, including local free ones,
+[00:00:21,300] and it can run Claude Code for you as a sub-agent.
+[00:00:24,420] But, you know, quick thing first, I think that's not really talked about enough,
+[00:00:27,300] is what exactly is a harness?
+[00:00:28,860] So, right, this whole thing is called DeepSea Karnas.
+[00:00:31,100] What does the harness mean?
+[00:00:32,940] A model on its own doesn't do much.
+[00:00:35,700] DeepSea, Claude, any of them.
+[00:00:37,160] You text in and you have text out.
+[00:00:38,780] It doesn't read a local file, doesn't have tools that you connect with,
+[00:00:41,800] and it can't remember, it doesn't have great memory,
+[00:00:44,320] and it can't even decide when to stop something because it's just a simple check.
+[00:00:48,420] So when we think of something like a coding agent,
+[00:00:50,400] it's the code that's wrapped around the model, right?
+[00:00:52,980] So it's the loop that calls the model, it's the tool that you're asking it to use,
+[00:00:56,980] it gets the feedback from that result, and then does it again.
+[00:00:59,820] So the tools themselves, what gets loaded into the context, and what gets cut,
+[00:01:04,280] permissions, the interface you're looking at, that whole wrapper of those things is called the harness.
+[00:01:09,820] And you've already been using them more likely.
+[00:01:12,040] Claude Code is a harness, Codex is a harness, and then Cursor itself is also a harness.
+[00:01:17,200] Now, the difference between those and this open-source DeepSeek harness is that everything inside of this is a plugin.
+[00:01:25,460] And I'll show you what exactly I mean by that.
+[00:01:28,120] So here we are.
+[00:01:28,980] This is deepseek.com slash harness, and you can view it on GitHub,
+[00:01:32,900] and whenever you do, you'll come to this page and you see, like we already showed,
+[00:01:36,320] 200, almost 205,000 GitHub stars.
+[00:01:39,540] Okay, so let's go ahead and get to installing this so we can see this in action,
+[00:01:43,440] and I can show you what it's all about.
+[00:01:45,120] So the first thing is we're going to go to deepseek.com slash harness,
+[00:01:49,500] and you see it from there's a quick start, and there's an install from source.
+[00:01:53,000] Installing from source is actually cloning the whole repo, which you don't need to do,
+[00:01:56,500] but we're just going to go to the quick start, and then copy this node command.
+[00:02:00,320] Then we're just going to go ahead and open up a terminal.
+[00:02:01,980] I'm going to paste that in here.
+[00:02:03,560] Now, I've already installed it, but for you, it may take a couple of minutes.
+[00:02:07,880] Okay, so I already had this installed, right?
+[00:02:09,280] As you can see, it already opened this up,
+[00:02:11,760] but that may take a little bit more time for you as it did for me.
+[00:02:14,440] So what it's doing is it's opening up a web app essentially locally for you.
+[00:02:19,160] Okay, that's exactly what this is.
+[00:02:21,600] Now, when you first get here, it'll ask you to do something with a deepseek key.
+[00:02:25,880] Just skip it, and don't worry about that because I'm going to show you what to do differently.
+[00:02:29,360] Just so you're aware, there is a desktop harness.
+[00:02:33,120] There's a desktop version of the deepseek harness, right?
+[00:02:35,940] So DSH, which is what you'll need to get familiar with, desktop.
+[00:02:39,980] This is not built from deepseek.
+[00:02:42,580] This is a third party.
+[00:02:43,960] You can use this if you want, so it's an actual app, like locally on your computer,
+[00:02:48,900] but I wouldn't recommend doing that right now.
+[00:02:50,800] Just use the web app that we're talking about.
+[00:02:52,660] Okay, so like this screen, like many other, you know, whether you claw to HTTP or any other wrapper for the models,
+[00:02:59,900] you know, it does have the basic things.
+[00:03:01,280] You can start a new session here.
+[00:03:02,780] This is the folder that these are currently working out of.
+[00:03:05,900] You can create a new workspace, so essentially start, you know, start these models on different folders, new session, et cetera.
+[00:03:12,760] But what we want to do, though, in order to actually do anything, we need to have a model tied to this.
+[00:03:18,520] So the first thing I'm going to show you how to do is open router.
+[00:03:20,780] So you go to settings, you're going to go to models.
+[00:03:22,940] You can see that I already have an open router one.
+[00:03:25,560] So first off, you just go to openrouter.com or .ai, I'm sorry.
+[00:03:29,420] You can go ahead and grab an API key.
+[00:03:31,100] You just have to put some credits in there.
+[00:03:32,820] I put $10 of credits in here just so I could test it out.
+[00:03:36,040] But once you do that, then you go ahead and get your API key here.
+[00:03:39,660] It takes just a minute.
+[00:03:40,540] You're going to click add a provider.
+[00:03:42,620] And as you can see here, they have so many providers already, right?
+[00:03:46,080] You can basically use not literally everything, but many things.
+[00:03:49,140] But you just simply come down to, well, I already have open router, right?
+[00:03:52,600] So you click open router, just paste in your API key here and click apply.
+[00:03:56,120] And that's exactly what I did here, right?
+[00:03:58,100] So this is open router and I have my API key there.
+[00:04:01,280] So now on this new session, I'm going to come here to the model.
+[00:04:04,660] I'm going to click on this model again.
+[00:04:06,400] And so that I can now use open router.
+[00:04:09,700] And these are all the models that you can use from open router.
+[00:04:12,780] I am using the DeepSeq V4 Flash because I want to test it out.
+[00:04:17,260] It's also cheap, but that's what you're going to use.
+[00:04:19,260] And then we can just simply start typing.
+[00:04:21,060] Hello, how are you?
+[00:04:22,120] And then this is going to now start, this is just going to start the conversation and we
+[00:04:26,720] can go from here.
+[00:04:28,000] Okay.
+[00:04:28,260] So this is how are you going to, this is one way to do it with open router.
+[00:04:31,040] Now, what you could also do is use Ollama so that you have any downloaded AI model on
+[00:04:36,720] your computer locally.
+[00:04:37,760] You can just use that as well.
+[00:04:39,180] So I already have Ollama running right here.
+[00:04:41,840] So I have that.
+[00:04:43,780] I downloaded a couple of AI models to use, and now I want to show you how to use that
+[00:04:48,660] within this harness.
+[00:04:50,180] So again, we're going to go to settings.
+[00:04:51,740] We are going to go to models.
+[00:04:53,600] You're going to add a custom provider this time.
+[00:04:56,520] Okay.
+[00:04:56,700] So we're going to put Ollama here as the provider ID, which also is going to be the display
+[00:05:00,980] name.
+[00:05:01,500] I'm going to just paste this base URL in, which is standard for Ollama.
+[00:05:06,420] Open AI completions for the API key that you can just put Ollama if you want.
+[00:05:11,400] It doesn't really matter.
+[00:05:12,640] You're going to choose to click the button for fetch available.
+[00:05:15,720] So that's right here, fetch available models.
+[00:05:17,460] I'm just going to use Gemma for, for this one, add selected create provider.
+[00:05:21,880] Don't save that.
+[00:05:22,600] Okay.
+[00:05:22,860] And now you can see, we have a green that typically means that you were good to go.
+[00:05:26,260] If you don't see a green or potentially red, then that's not good, right?
+[00:05:30,480] Then you did something has been done wrong.
+[00:05:32,720] So exit out of this, as you can see here, I already did something now on the provider.
+[00:05:36,440] You're going to model.
+[00:05:37,520] And if you're up here anywhere, you're going to scroll all the way down to Gemma four.
+[00:05:40,960] And now we can say, what is the meaning of life and try again.
+[00:05:45,580] Okay.
+[00:05:45,840] So this is now using an AI model on my, and of course, it's going to give me this answer
+[00:05:52,080] that I am not going to read back to you because I still don't know.
+[00:05:56,540] And I don't think it will help me out anyways.
+[00:05:58,040] I've set that apart over in three, two, one.
+[00:05:59,940] Okay.
+[00:06:00,200] Now we're going to move on and I'm going to show you how to use club code as a sub
+[00:06:04,060] agent here soon, but just let's get a little bit more familiar with this because I want
+[00:06:08,100] to show you something that they're calling trajectory.
+[00:06:10,540] Okay.
+[00:06:10,800] It's this tab right up here that you can see trajectory trajectory.
+[00:06:14,320] So first thing, the workspaces right here on left, click a new one.
+[00:06:17,300] Cause I want to use a new folder.
+[00:06:19,400] I'm just going to go ahead and let's say, let's do, I should just keep it over here on
+[00:06:23,700] the main one.
+[00:06:24,440] And now what I essentially want to do is just say, Hey, create a simple flask to do app.
+[00:06:29,880] So I'm going to send this.
+[00:06:30,960] I am using Gemma four.
+[00:06:32,880] It's going to go ahead and create that for me.
+[00:06:34,120] Now, what I'm going to show you is that you can actually see everything that it's doing.
+[00:06:38,720] So right here, the user create a simple flask to do app.
+[00:06:42,380] So this was in the trajectory, right?
+[00:06:43,760] It's still, it's still working, right?
+[00:06:45,560] But the, in the trajectory, I say, create the flask.
+[00:06:48,820] And then as part of the context, the current runtime context, and then this is, you know,
+[00:06:53,580] it's talking about a skill that it can use the assistant.
+[00:06:57,660] This is a tool, right?
+[00:06:59,520] Then it's calling the assistant.
+[00:07:00,480] Again, the tool does is the right tool to actually write the code, probably to a file, I assume.
+[00:07:05,860] And then the assistant again, and it's going to keep doing this until it's done.
+[00:07:09,540] So it already actually already produced.
+[00:07:10,800] That is saying the app file has been created with the flash structure.
+[00:07:14,060] So if I click on this here, it is, here's just a general to dues, HTML file.
+[00:07:18,680] They created for me, right?
+[00:07:20,220] This has been very simple.
+[00:07:21,840] That took, that was not nothing at all to run.
+[00:07:25,360] Okay.
+[00:07:25,740] I almost said that part of where I'm going to show you app.py file.
+[00:07:28,260] And so here we go.
+[00:07:28,800] It wrote the app, a Python file, and I got to see everything that it did with it.
+[00:07:34,440] So for instance, I want to start the trajectory, hold your trajectory thing over.
+[00:07:38,700] And so what happened here is it actually already finished, but while, you know, while it's running
+[00:07:43,200] or even whenever it's done, you can see everything, the whole conversation, essentially in every,
+[00:07:48,860] every part of the conversation.
+[00:07:50,280] So the user was me, right?
+[00:07:52,380] This was the preview because that's what I asked, right?
+[00:07:55,140] Here's context, right?
+[00:07:56,460] Here's just some information about it, where I'm at.
+[00:07:59,460] Here is, uh, here's actually like some information, how style.
+[00:08:03,700] So it's probably things that I've already ran it with, like how I like to do things.
+[00:08:07,420] So in this, then we have the assistant, right?
+[00:08:09,160] It's, it's using a skill.
+[00:08:11,040] So here's the schema for it, right?
+[00:08:13,360] This is like essentially everything that you need to know.
+[00:08:15,340] Here's the prompt, everything, payload, result, schema.
+[00:08:19,000] This is just everything you need to know possibly about the whole conversation that we had with
+[00:08:22,800] the model it's right here.
+[00:08:24,820] Okay.
+[00:08:25,200] That's great.
+[00:08:25,700] But another feature that it has is that it actually builds its own tools.
+[00:08:30,220] So what we're going to do is go down to settings and you can see here
+[00:08:33,320] in general for agent preset, there's actually a standard mode.
+[00:08:36,260] Well, we can choose creator mode.
+[00:08:38,280] Okay.
+[00:08:38,420] So in creator mode, what I'm going to do is just type this added plugin for a
+[00:08:42,980] calculator overlay in the bottom, right?
+[00:08:45,260] A simple GUI calculator.
+[00:08:46,680] Okay.
+[00:08:46,880] So, so it's going to basically pull in is its own plug in development skill, create
+[00:08:51,600] all this for me.
+[00:08:52,400] And no, it's not going to be perfect.
+[00:08:53,840] We can iterate over this, but again, this is all a plugin and I'm going to show you
+[00:08:59,060] how everything is a plugin here after this is done.
+[00:09:01,640] And so while it's doing this in the settings, again, we go to plugins, you see, there's
+[00:09:05,140] a plugin list.
+[00:09:06,200] If I do sidebar, this UI sidebar right here, it's enabled.
+[00:09:10,760] That's literally this sidebar over here on the left-hand side.
+[00:09:14,660] That is a plugin.
+[00:09:15,780] So this whole harness desktop harness, everything inside of this is a plugin.
+[00:09:21,840] So this is also when we're going to go to go back to the plugin list and I type in tool
+[00:09:26,880] or let's see, let's type in Claude code.
+[00:09:28,980] This tool sub agent right now is disabled, but this is the sub agent tool for Claude code,
+[00:09:33,900] which we will enable and we'll show you how to use very soon.
+[00:09:36,420] But any, like, just like I mentioned, everything in here is a plugin.
+[00:09:39,480] There's a total of 165 anything you can think of in here.
+[00:09:42,660] It's a plugin, the UI settings.
+[00:09:44,400] It's also a plugin symbol, which means when I say the overlay here at the bottom, right?
+[00:09:49,440] This should create a calculator for me.
+[00:09:52,140] That's just overlaying on top of this web application.
+[00:09:55,920] Okay.
+[00:09:56,200] So I had a minor hiccup whenever it tried to restart the web server on its own.
+[00:09:59,980] And it actually had a mess up.
+[00:10:02,080] I had to use Claude code to do this, but I'm going to, you know, it is what it is.
+[00:10:06,040] But now we'll see you on the bottom.
+[00:10:08,320] Okay.
+[00:10:08,680] So now what we have down the bottom right here is this calculator.
+[00:10:11,520] Now I don't like the coloring, but you know, it does work.
+[00:10:15,160] There's equal sign somewhere.
+[00:10:16,440] Yeah.
+[00:10:16,660] But I do now have a calculator.
+[00:10:18,260] This is whenever I open up my deep sea harness.
+[00:10:21,520] I just now have this overlaid on my UI as a plugin.
+[00:10:24,840] And as you can see here and the plugins list, if I type calculator, it is right there.
+[00:10:29,340] Now I do need to kind of probably make this better, but this is just to show you that
+[00:10:33,120] literally everything on here is a plugin.
+[00:10:35,280] And if you, if I were to disable this, right?
+[00:10:37,380] So if I just go in here, if I, or if I actually can't do it from here, I have to
+[00:10:41,080] tell it to disable it by open the configuration file, actually.
+[00:10:44,720] And if I disabled it, it would disappear.
+[00:10:46,960] So if I say, can you disable the sidebar UI and calculator?
+[00:10:52,520] So it's going to flip those.
+[00:10:53,320] You could find the files, flip them to be disabled.
+[00:10:55,820] I'm just going to have it do it for me right here.
+[00:10:57,600] But now whenever it's, it's going to disable the sidebar and the calculator, they'll no
+[00:11:02,160] longer appear.
+[00:11:02,980] That is Simba welcome.
+[00:11:04,440] And as soon as I refreshed, as you can see, there's no sidebar and there's no
+[00:11:07,740] calculator because they were disabled.
+[00:11:09,760] Everything here is a plugin as I'm going to keep mentioning to you, which is great
+[00:11:13,740] because that means that you can build things on top of this web app or your desk or your
+[00:11:18,720] deep seat, deep seek harness.
+[00:11:21,240] If I can speak right.
+[00:11:22,480] Look, and now they're back as soon as I flip them on.
+[00:11:25,240] Okay.
+[00:11:25,740] So now what I want to get into is I want to enable the plugin for sub agents with Claude
+[00:11:32,100] code, which is exactly what I'm going to explain it.
+[00:11:34,740] So can you now enable the sub agent with Claude code plugin?
+[00:11:41,040] Like I said, everything is a plugin.
+[00:11:42,300] So once we do this, we can actually delegate task to Claude code.
+[00:11:46,620] I don't think I just need to start that part over.
+[00:11:48,960] And so now that we understand that everything in here is a plugin, which is different, right?
+[00:11:54,180] If it has to be a guess, or cursor, which they do have plugins VS code, they have plugins
+[00:11:58,680] or extensions, I guess, Claude code, you know, those you're kind of set in stone with how
+[00:12:04,200] it looks and what it can do.
+[00:12:06,180] But with this, you're completely free to do whatever you want, right?
+[00:12:11,580] Which is, which can be good, can be bad, your choice.
+[00:12:14,280] I think it's different.
+[00:12:15,360] And I think that is also why this really is a harness, but now to enable Claude code now
+[00:12:21,820] to delegate tasks to the sub agent.
+[00:12:23,880] Again, this is a plugin.
+[00:12:24,800] So we just need to copy this in, which I will, or paste this in, which I will give to you,
+[00:12:29,200] but this is going to add the sub agent for Claude code.
+[00:12:32,880] So this is a plugin.
+[00:12:34,140] It's downloading it.
+[00:12:35,280] And once this is here, it'll be enabled and we can start using Claude code to delegate
+[00:12:39,960] tasks for.
+[00:12:40,760] Okay.
+[00:12:41,120] And I just simply asked it to enable the Claude code sub agent.
+[00:12:44,660] Kind of went through a whole thing here, but now we need to do is restart this.
+[00:12:48,920] So DSH web, or you can just paste in what you did initially to actually install it.
+[00:12:54,400] It will do the same thing.
+[00:12:55,800] So here we are again.
+[00:12:57,100] Now, if we go back to settings, then go to plugins, I go to plugin list and I go to sub agent.
+[00:13:03,320] Okay.
+[00:13:03,700] And like always with the plugins, you just have to restart the server.
+[00:13:07,620] And so now what I'm going to do is say, can you delegate a task?
+[00:13:11,760] You can probably do this with skills.
+[00:13:13,280] You can have, um, you can have it from here on out in your presets.
+[00:13:16,920] So let's say, Hey, I want to use my subscription for a Claude code to delegate these tasks initially.
+[00:13:22,380] If it seems like it needs like a lot, like it's a lot longer running tasks.
+[00:13:26,800] So can you delegate a task to search for a YouTube video and SEO for deep seek harness.
+[00:13:35,860] Okay.
+[00:13:36,020] So now that we have, uh, now that we have this skill here.
+[00:13:39,600] So if we go to settings or plugins, I'm sorry, go to plugins, then we search for Claude.
+[00:13:44,280] And we have this sub agent Claude code.
+[00:13:46,700] This is now in naval.
+[00:13:48,600] Okay.
+[00:13:49,520] Which is exactly what we want to do.
+[00:13:52,340] Okay.
+[00:13:52,680] And we got these right now.
+[00:13:53,800] These errors are just because deep seek itself tried to do the web research with API key,
+[00:13:58,700] which I did not give it yet.
+[00:14:00,260] So it's actually delegating the, like the YouTube search and the Google search also to
+[00:14:06,220] the Claude sub agent as well.
+[00:14:07,940] So we'll be back whenever this is done.
+[00:14:09,300] Now, one thing about deep seek harness is with all these plugins and with we able to do
+[00:14:13,600] anything, especially locally.
+[00:14:15,160] So why said, can you delegate a task to the Claude sub agent to code a simple Fibonacci sequence?
+[00:14:20,920] So the tool call, the tool call was for the sub agent, right?
+[00:14:25,060] So this is, this was specifically for Claude code.
+[00:14:28,360] And so it's using Claude code CLI to do this.
+[00:14:31,260] Um, then it's going to have the tool call to check for it.
+[00:14:36,600] So this is a specific sub agent and here the sub agent, you know, it was the message.
+[00:14:41,880] This was the message back, right?
+[00:14:43,440] So this is the actual code for that.
+[00:14:45,520] Here's the result from sub agent and just did a simple case.
+[00:14:49,060] Okay.
+[00:14:49,780] And this is how you can easily add.
+[00:14:53,260] I do not, I did not give any API keys for Claude.
+[00:14:55,720] So I know that it didn't do that.
+[00:14:58,320] We had to use my subscription, which you just need to make sure you have Claude code enabled
+[00:15:02,280] on your computer.
+[00:15:03,040] But this is great.
+[00:15:04,360] Uh, because we can also use that as part of, as part of this harness.
+[00:15:09,940] I do want to share with you Composio who I've done videos on before they have this TLDR
+[00:15:14,940] for 10, uh, deep seek harness plugins.
+[00:15:18,580] Be careful.
+[00:15:19,160] Number two, don't use it.
+[00:15:20,420] In my opinion, I tried it and it was an explosive amount of things on, on the UI.
+[00:15:26,440] Do not use it.
+[00:15:27,060] I didn't try all of these, but I know Gen UI is supposed to be good.
+[00:15:31,480] Uh, the 2E is supposed to be good vision toolkit.
+[00:15:33,820] The first one was fine.
+[00:15:34,780] It didn't really add like a whole lot.
+[00:15:37,460] Um, but yeah, you don't want some actually.
+[00:15:39,700] No, I'm sorry.
+[00:15:40,580] This one is, was the one that was too much.
+[00:15:42,480] I think this one was just, uh, this was just simple tools, right?
+[00:15:46,120] This one added a skins multiple.
+[00:15:48,340] It was just insane.
+[00:15:49,640] I had to remove it right away.
+[00:15:51,540] And they just kind of describe it a little bit more of what, what I've been doing.
+[00:15:54,860] So this harness, it surrounds the model with access to environment tools, sessions,
+[00:15:59,660] files, workflows, and other runtime capabilities.
+[00:16:02,320] So you had the model and everything around it is now, now you had this harness for those
+[00:16:07,180] models and this is agnostic, right?
+[00:16:08,820] So you can do many different models, anything locally, right?
+[00:16:12,540] And I just showed you how to also use Claude with this, right?
+[00:16:15,400] So this has become popular.
+[00:16:17,100] And the more we have open source things like this, they are going to be more popular and
+[00:16:22,380] you should try these out and use them more.
+[00:16:24,420] Okay.
+[00:16:24,800] So the verdict is this replacing cloud code today.
+[00:16:27,920] No.
+[00:16:28,640] Right.
+[00:16:29,180] It is not going to replace it.
+[00:16:30,340] I know that is a very popular one, get home, but that doesn't mean it's going to replace
+[00:16:33,520] it.
+[00:16:33,560] Although this is a way that you, you can use this and it could replace what you do day
+[00:16:38,800] to day.
+[00:16:39,560] Right.
+[00:16:39,740] So now you have this specific harness that is working just for you, the way you want it
+[00:16:43,980] to, you could put this on a VPS.
+[00:16:45,500] So it's always running.
+[00:16:46,280] So it's not even on your, just look, just on your local machine, but you know, we had
+[00:16:50,300] different tools for everything, right?
+[00:16:51,680] If you're using something like anything and trying to compare it, it depends on what you
+[00:16:55,400] need and what works for you, right?
+[00:16:57,760] This is the same thing as mapping in software engineering.
+[00:17:00,720] It's just now that with AI and all these different tools that is readily available for everybody,
+[00:17:05,320] we're having all these discussions.
+[00:17:07,020] Everything is a tool.
+[00:17:08,640] It depends on what you want.
+[00:17:10,240] And yes, some tools are better suited for different jobs.
+[00:17:13,600] That's great.
+[00:17:14,100] Use them for that job, but they don't need to be used for everything.
+[00:17:16,880] And a lot of times they shouldn't be.
+[00:17:18,240] Okay.
+[00:17:18,740] So I will have this video and everything accompanying it, all the files in my, in description below.
+[00:17:24,900] And it'll be in my free school community as well for you to download and see as well.
+[00:17:29,560] Thank you for watching.
+[00:17:30,620] Here are some more videos. I'll see you soon.

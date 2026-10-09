@@ -1,0 +1,19 @@
+[00:00] Let's go over how to use a webhook trigger.
+[00:02] So you create a node called the webhook trigger.
+[00:04] Here, the webhook gives us a test and production URL.
+[00:06] We're just going to do the test URL for right now because that is what we can use while testing.
+[00:10] Production will be used whenever you set this to active.
+[00:13] So this URL, when somebody creates a post request to this URL, I'm going to receive it.
+[00:19] And this is the path they need, and I want to respond with a specific webhook node.
+[00:24] I'm also going to test if the post request that we're being sent has this token.
+[00:27] And if it does, then we can proceed.
+[00:29] We're going to insert a row into the database table and then respond to that webhook.
+[00:33] Okay, now my workflow is waiting.
+[00:35] I'm going to send this test URL in my terminal.
+[00:38] So this is the URL for my webhook with the path lead slash new.
+[00:42] And here is the data, including the token to make sure that we are the ones passing this in.
+[00:47] You can see the workflow completed and we got back that it was okay and that the new ID for the inserted row is 38.
+[00:55] now if I pass in an incorrect token they say somebody else got my URL and they
+[01:00] try to pass this in nothing happens because you can see here the if
+[01:04] statement returned false because that token didn't match with what I have
+[01:08] locally

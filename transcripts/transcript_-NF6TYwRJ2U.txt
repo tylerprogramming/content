@@ -1,0 +1,72 @@
+[00:00] What if your AI agent was already working before you even woke up? Fetching the latest news, building your morning brief, going through your inbox, setting up your entire day, and sending
+[00:12] you a summary on Slack before your alarm even goes off in the morning. Now, that sounds amazing, right? And that's exactly what Hermes agent can do. Hermes
+[00:23] is an open-source AI agent that works like a real employee, and manages your tasks, runs on a schedule, and gets smarter with every single conversation without you ever having to lift a
+[00:36] finger. Now, in today's video, I am going to be showing you how to set up Hermes agent the right way, and how to [music] actually use it to automate your
+[00:46] daily tasks. Now, before we dive into the topic, we have a free school community where I share all of the free prompts and full setup doc guides. All of that is in the description below, but
+[00:56] right now, let's set up Hermes agent. Now, we are over to the PC, and let's get into the setup. And that is going to start with a decision that most tutorials completely skip over. Hermes
+[01:07] does have a desktop app, and for testing things out, getting a feel for it, it's totally fine. But, the moment you close your laptop, every single one of your agents stops working. And that kind of
+[01:20] defeats the entire point. Now, you want an agent that works for you while you sleep, while you travel, while you are out for your morning coffee, while you are living your life. Not one that you
+[01:31] have to baby sit. That's why I run everything on VPS instead. So, it's basically a computer in the cloud that never turns off. Your agent that runs on a 24/7, it's not touching your CPU or
+[01:43] your battery, and you can send it a task from your phone on a train, and just handles everything. And it does so quietly in the background. Now, let's get into your VPS setup. And honestly,
+[01:57] this is way easier than it sounds. Hostinger has a one-click installation for Hermes. So, there's no terminal commands, no manual configuration, there's nothing like that involved. Just
+[02:07] go over to the link hostinger.com/zenhoautomates. I'm going to leave that for you down in the description below. And, once you are on Hostinger, you'll [music] see two
+[02:17] ways to run Hermes. A fully managed version where everything's handled for you, or the VPS option. Now, we are going to be going for the VPS option because that's where you get full
+[02:28] control. It's your data, your API keys, all of it on your own infrastructure. Now, on the VPS side, if the plan comes with the one-click Hermes setup. So, I
+[02:40] don't want you to overthink it. Now, KVM one is fine for the testing, but I would suggest going with KVM two. Two cores, eight gigs of RAM, it's the sweet spot
+[02:50] for running Hermes smoothly once you hook it up to Telegram, Discord, all of that. Now, pick that one, and then let's keep on going. Now, before you do anything else, make sure to add in my
+[03:00] coupon code at zenhoautomates so that you can get 10% off. Then, you are going to choose your billing period. Now, I would personally go with the 24-month plan. That's the best value for your
+[03:11] money. And, honestly, if you are serious about running an AI agent, then you'll want it to run long-term anyway. So, now that being said, 12 months is a solid
+[03:21] deal, too, if you'd rather not commit that far out. Either way, you are getting a good price. Now, you're going to click on continue, and then you'll
+[03:31] land on a screen with an admin username and password. You are just going to save those somewhere safe. You'll need them to log in to Hermes web terminal later on. Then, you're going to hit deploy,
+[03:40] then you're going to scroll down, and you're going to click on skip. And then, you'll see your Hermes agent project spinning up. Now, this usually takes just a few minutes, and once it's ready,
+[03:50] you'll be inside your VPS dashboard. Now, on the left side, you'll find all of your server info, the tabs, and the settings. Now, you are going to go over
+[03:59] to the Docker manager, and then you're going to do projects, and then you're going to click that, and you will then see Hermes Agent listed as a Docker project. Now, look at the end of the
+[04:10] project name, you'll see four letters. Copy those and save them somewhere because you are going to need them just in a second. Now, it's time to run the setup wizard. This is where we connect
+[04:21] everything, your AI model, your Slack bot, and all the core settings that make the agent actually work. Now, before we do that, let's open up the terminal. You're going to go to the right of the
+[04:32] dashboard, and then you're going to click terminal, and this is how we talk directly to the VPS. You are going to type this command to navigate to your project folder, cd/docker/hermes-agent-
+[04:46] and then you're going to paste in those four characters using until shift and V, and then you're going to press enter. And now, get inside the container by
+[04:57] typing in docker compose exec-it hermes-agent/bin/bash. Then, you're going to press enter, and
+[05:07] now you are inside. Now, you're going to type hermes setup, and then you're going to press enter, and you'll see a question asking you how you'd like to set up Hermes. Now, we are going to be
+[05:18] going with a quick setup, so make sure that that's selected, and then you're going to press enter, and now you'll see a list of all the AI providers that Hermes works with. There are a lot of
+[05:29] options over here, but for this video specifically, we are going with Open Router. Now, the reason that I like Open Router is pretty simple. One API key, over 200 models, you are not tied to one
+[05:42] provider. If you want to try a different model tomorrow, then one command is all you need, and you'll be done. Now, you are going to press the down arrow to select open router and then you're going
+[05:53] to press enter and you'll see that there's no open router API key configured yet. So, it will show you a link to get one. Then you're going to
+[06:02] highlight that link and then you're going to right click and you're going to open it and if this is your first time using open router, go ahead and sign up. Now, once you are in, then you're going
+[06:12] to click on create API key. Then you're going to give it a name. I'm going to call mine Hermes Agent just to keep it simple. And now, here is a super important step. Set a credit limit. This
+[06:25] is your cost guardrail. If you don't want to go over a certain amount, then enter your limit over here. And I'm going to leave this blank for now. So, you can choose when to reset your limit.
+[06:36] You can set it for daily, weekly, or even monthly, or you can just leave it off for now. So, for explanation, I'm going to be going with no explanation
+[06:46] and I'm going to click create. And now, your API key will appear. Then I'm going to click on copy and I'm going to make sure to keep it safe once again. Now, please remember, do not share this with
+[06:58] anyone. Now, before we go back to the terminal, make sure that your billing is set up in open router. Go to the credits on the left side and then add a payment method or you can just add credits
+[07:09] directly. Without this, nothing is going to work. So, make sure you take your time to sort this out. Now, once that's done, switch back to the terminal and then paste in your API key using
+[07:20] control, shift, and V. And then you're going to press enter. Now, nothing will show on screen. That is pretty expected. It's just how the terminal handles sensitive input. Then you're going to
+[07:31] choose your model and you're going to hit enter to select it. And now, that your Hermes Agent is set up with your VPS, it's time to choose how you actually want to talk to your agent. So,
+[07:43] you can choose from Telegram, Discord, WhatsApp, email. There's a bunch of different options. I'm going to set it up with Slack because I use it most of the time, and it's basically where I get
+[07:54] all of my updates anyway. Now, here is what you need to get your Slack bot set up. You're going to open the browser, and then you're going to go to api.slack.com/apps,
+[08:05] and then you're going to click create new app, and then select from scratch. Then you're going to give your app a name. I'm going to call mine Hermes Agent, and then you are going to select
+[08:15] your workspace, and you're going to click create app. Now, go to OAuth and permissions in the left sidebar, scroll down to bot token scopes, and add in the following scopes: chat:write,
+[08:25] im:history, im:read, and im:write. Now, once those are all added, then scroll back up, and then you're going to click install to workspace, and then you're
+[08:35] going to click allow to authorize it. Now, you'll see your bot user OAuth token. Then you're going to copy that token, and you're going to paste it into the Slack wizard in the terminal. And
+[08:45] now, you're going to need one more thing: your Slack member ID. You're going to open up Slack, you're going to click on your profile picture in the top left, you're going to click your name,
+[08:54] and then you're going to click copy member ID. Now, paste that into the terminal when it asks for allowed user IDs, and then you're going to press enter. [music]
+[09:03] Now, this is extremely important. Without this step, your bot won't know who it's allowed to talk to. Once you are done, you will see Hermes as an app
+[09:14] in your Slack workspace, and now I'm just going to create a channel called Hermes Agent, and then I'm going to start chatting with the agent directly in Slack. Now, the setup wizard is now
+[09:25] done. Out of the box, you are already looking at about 28 tools and 75 skills already loaded in, and they are ready to use. Now, when you give Hermes a task, it doesn't just do it and forget it. It
+[09:38] delights itself a recipe for how it handled that task. It saves it, and then it pulls it up the next time something similar comes in. It gets sharper every single time, and that's really what I
+[09:49] like about this. That's the core of how Hermes improves itself over time. Now, let's say you don't believe me. Here's a live example, and I want you to type this in Slack. Research the top trending
+[10:00] AI tools right now and give me the top three. Now, once you are done, save your approach as a new skill called YouTube video research. Then, it does the
+[10:10] research, it returns the results, and it saves the entire workflow permanently. Now, next time you need it, it already knows exactly how you like it done. Hermes remembers things about you across
+[10:22] every conversation, and that's what makes this so powerful. What I want you to do is type this in Slack. Remember that I like my responses to be short and direct. No long explanations unless they
+[10:34] are needed. That's it. Then, it's saved. Now, every future response follows that exact rule, and you can now just view, you can update, or you can delete
+[10:43] memories anytime you want all from Slack. You can schedule tasks in plain language without prompting first. If you want to do that, just type in Slack, "Can you set up a weekly job that runs
+[10:54] every Monday at 9:00 a.m. that researches the top three trending AI tools using YouTube video research skill that we created earlier?" Then, it
+[11:05] confirms the job name, the schedule, the skill, the delivery channel, and the next run time. Now, your agent is a now running that autonomously every single
+[11:16] week. There's no input needed from you at all. Okay, so now we have to discuss one more thing. This is something that I actually use every day. We are going to take Hermes, and we're going to take
+[11:26] everything that it can do, and we're going to put it into a single job, a morning brief. [music] Now, here's what I want. Every morning before I'm up, I want the latest news, my calendar for
+[11:37] the day, and also the weather, all in one Slack message, so I can open my eyes, I can check my phone, and my whole day is already laid out. I'll just prompt it in Slack to pull the latest AI
+[11:49] news, the stock info, and my calendar, and give me a full brief. That's it. No code whatsoever, no setup screens. It confirms the schedule, the steps, and
+[12:00] the way it's sending it. And now, every morning, this lands in Slack. News, calendar, weather, all of it is done, and this just makes my life so much
+[12:10] easier. And that's it. You now have your own Hermes agent up and running, learning from every task that you give it, messaging you directly on Slack, and handling things on schedule
+[12:21] automatically. So, if you want to build your own, click the link to hosting a VPS in the description below. The more you use it, the better it gets. Also, don't forget to join the free school
+[12:31] community. That link, too, is down in the description below. That is where I share all of the AI workflows, the setups, the tools, and everything that you can start using right now. So, I
+[12:41] just want to say thank you so much for making it all the way till the end. Give this video a like, and also subscribe to the channel, and also don't forget to drop a comment down below, and tell me
+[12:48] what you think of Hermes. And also, check out one of the videos popping up the screen right now, and I, as always, will catch you on the next one.

@@ -1,0 +1,767 @@
+[00:00] Welcome to the full Hermes agent setup guide.
+[00:02] Setting up your Hermes agent is important.
+[00:05] It's the difference between having a terrible time
+[00:07] or building something that's sustainable
+[00:09] that you can build on top of and improve
+[00:11] and even self-improve every single day.
+[00:13] It's been quite a few weeks
+[00:15] since I've been using Hermes agent and I love it.
+[00:17] Here I have multi-agents
+[00:18] and they work together to build something.
+[00:21] Here is a Kanban board
+[00:22] where I had something in the triage lane here
+[00:24] and it launched everything to the rightful agent
+[00:27] to build till I finally got a full script
+[00:30] with everything that I needed to know.
+[00:31] Here is it connected to my Slack.
+[00:33] So the agent is connected to a messaging capability,
+[00:35] tell me what I need to do for YouTube.
+[00:37] And then for my SaaS called attend for school CRM,
+[00:40] this is everything that I need to catch up on.
+[00:42] And there are some things that are late,
+[00:44] but I haven't written off yet.
+[00:46] So in this video,
+[00:46] I'm gonna go through my whole Hermes agent setup
+[00:48] with all the tricks and commands that I used
+[00:51] in the prompts along the way.
+[00:52] They're gonna make a big difference
+[00:54] for your experience with Hermes agent.
+[00:56] Without further ado,
+[00:57] let's get started.
+[00:58] All right, here is the outline for today's video.
+[01:00] We're gonna start off talking about the hardware choices,
+[01:02] basically where your Hermes agent is going to live.
+[01:04] We'll go through the download and setup process,
+[01:06] walk through the major features.
+[01:07] So memory, skills, cron jobs, and profiles,
+[01:10] of course, including how to set each one up properly.
+[01:12] I'll also talk about how to use open source models,
+[01:15] and then we'll explore the desktop
+[01:16] so you are familiar with it.
+[01:18] And then finally,
+[01:19] once we have all that down in the fundamentals
+[01:20] and you already started creating things,
+[01:23] I'll show you how to set up a multi-agent process.
+[01:25] And by the way,
+[01:26] if you're wondering if this replaces cloud code,
+[01:28] no, I still use cloud code every day.
+[01:30] I just use Hermes agent for much of the work.
+[01:34] Okay, so let's get started with the hardware, right?
+[01:36] We basically have four options.
+[01:37] The first one is you can get something
+[01:39] dedicated for yourself.
+[01:40] So like a Mac mini, Mac studio,
+[01:42] or some computer that you can have
+[01:45] that can run, has the ability to run local models,
+[01:48] but you may still need to use cloud models
+[01:50] for some of the major things you wanna do.
+[01:53] And not everybody can do that.
+[01:54] I totally understand.
+[01:55] And so the second,
+[01:56] the third option is a VPS.
+[01:57] I have actually quite a few through Hostinger
+[01:59] and they're very simple.
+[02:01] I think they actually have a Hermes agent set up
+[02:03] for a VPS to make it even easier for you.
+[02:06] The third option is if you have a spare laptop
+[02:09] or a computer that can be dedicated
+[02:11] just for the Hermes agent.
+[02:12] So it may not be able to run local models,
+[02:14] but as long as you can get everything set up there,
+[02:17] and then it just has to be connected
+[02:18] through one of your subscriptions that you already have.
+[02:21] And finally, you can, of course,
+[02:23] just use the computer that you're already working on.
+[02:25] You can,
+[02:26] there are ways to set up so it's running 24 seven.
+[02:28] Okay, so I'm gonna have this link,
+[02:30] but we're gonna get right into how to install it
+[02:32] and running your first Hermes agent.
+[02:33] There are two ways.
+[02:34] So at hermesagent.newsresource.com,
+[02:39] there'll be the link here.
+[02:40] There are two ways you can click Mac, Linux or Windows,
+[02:42] and this is just installing it through command line.
+[02:45] So if you prefer to have a terminal UI or TUI,
+[02:47] do it this way.
+[02:48] Okay, you just simply copy this.
+[02:49] You're gonna paste this in.
+[02:50] I already have it downloaded,
+[02:51] but it will take a few minutes for you.
+[02:54] And it's just installing right now.
+[02:55] And you have to just go through some options,
+[02:57] but this is how you can use this as well.
+[02:59] And once you kind of get through it,
+[03:00] this is what it's going to look like.
+[03:02] They'll have Hermes agent, very yellow, orange logo.
+[03:06] You can just simply type hello.
+[03:08] I have my cloud subscription actually,
+[03:09] so I'm using Fable 1.
+[03:10] And then here it is working, already giving me a response.
+[03:13] You can do this way,
+[03:14] but this is the only time I'm gonna show you
+[03:16] how to do it through the terminal
+[03:17] because the rest of this video,
+[03:18] we're gonna be using the Hermes desktop.
+[03:20] So to do that, on the same page,
+[03:22] you're gonna just choose either download from macOS
+[03:25] or deploy to the cloud.
+[03:26] I'm gonna choose download from macOS.
+[03:27] And then once that is set up,
+[03:30] the first thing that you have a blank space,
+[03:32] you won't have all this here with you that I have.
+[03:35] So I'm gonna take inside of a bunch of sessions.
+[03:36] It's just, it looks very similar
+[03:39] to what the Cloud AI desktop app
+[03:41] or ChatGPT would look like,
+[03:42] where you have the sessions for your talking.
+[03:45] You can have connectors,
+[03:46] but here they call them capabilities
+[03:47] where you can install skills and all that.
+[03:49] We're gonna get to this,
+[03:50] but it's not too far from other desktop apps.
+[03:54] But the first thing we need to do
+[03:55] before we can talk to it is we need to set up a model.
+[03:58] So at the top right here,
+[03:59] when you go to open settings, just click this.
+[04:02] You're gonna go on left-hand side,
+[04:04] gonna go to providers.
+[04:05] And as you can see here,
+[04:07] they already have the main ones, right?
+[04:09] So news portal, you can get some credits to ChatGPT
+[04:12] or your Codex subscription or Cloud basically.
+[04:15] So choose one of these,
+[04:16] you can use ChatGPT or Codex or Cloud.
+[04:18] I'm gonna choose this one,
+[04:19] or I'm gonna choose Anthropix.
+[04:21] So just run this, right?
+[04:22] You're gonna copy this,
+[04:24] go into a terminal, paste it, just do the setup.
+[04:27] Just takes a couple of minutes.
+[04:28] And then you're gonna come back here and say,
+[04:29] I've signed in.
+[04:30] So I'm setting up Cloud code.
+[04:32] I just paste that into a terminal, just like this.
+[04:34] It came here, I want to authorize.
+[04:36] And then come back to your desktop.
+[04:37] What it's gonna give you is a token
+[04:39] that you can save for yourself.
+[04:40] You're gonna say, I've signed in.
+[04:42] And now it's going to say, you're connected.
+[04:44] Now at the top left,
+[04:45] you're gonna simply back at the main desktop screen,
+[04:47] type new session.
+[04:48] I'm gonna say, hello, how are you?
+[04:50] So doing fine, what are you working on?
+[04:52] And just note at the bottom right here,
+[04:54] under the chat bar, I can choose from Anthropix,
+[04:57] I can choose whatever model I want to
+[04:59] and the reasoning as well.
+[05:00] Okay, great.
+[05:02] You now had your first conversation,
+[05:03] which means now we can open the floodgates
+[05:05] and we can just get going.
+[05:06] Okay, the setup is always typically
+[05:08] one of the harder parts for anything that you do.
+[05:10] So now what I want to do is the first thing is
+[05:13] we want to know more about us, right?
+[05:15] If you have used any other type of subscription
+[05:18] or whatever you're using that you've done work on before,
+[05:21] I'm gonna give you a prompt
+[05:22] and we're gonna extract some information
+[05:23] about ourselves.
+[05:24] So I'm gonna do it right now
+[05:25] and then give it to Hermes' agent so we can get going.
+[05:28] Okay, so I just basically am going to open up Cloud Code.
+[05:31] I'm gonna paste this,
+[05:32] which is basically write a short paragraph about me
+[05:34] so I can hand to a new AI assistant, right?
+[05:36] And just want it in plain text.
+[05:37] Of course, after I log in again
+[05:39] for the third time in the last four hours,
+[05:42] and once it gives me this information,
+[05:45] I'm gonna copy and paste it to Hermes' agent.
+[05:47] Okay, so it gave it to me in plain text.
+[05:49] I'm going to simply copy this.
+[05:51] I'm just gonna simply say, here's a bit
+[05:53] about myself, save this.
+[05:55] Paste that, and then we are going to let it go
+[05:58] so it can save this into memory.
+[06:00] So it has some information already about me,
+[06:03] which it will now have some information about you.
+[06:05] And we know because it says saved to memory right here.
+[06:08] You will see little things like this during conversations
+[06:10] where it has saved or done something with memory
+[06:13] because you have chatted about something it thought
+[06:17] that it should be saving for the future.
+[06:20] So now what I'm gonna just paste in is say,
+[06:22] given what you know about me,
+[06:23] what would you bother not explaining to me?
+[06:25] Okay, so language and tooling basics,
+[06:28] what cloud code or Hermes your skills are,
+[06:30] why a bun, how no, no build stack is a choice,
+[06:34] FFmpeg, the school ecosystem, et cetera, right?
+[06:37] So this is good.
+[06:37] So now I know that it can over explain things,
+[06:41] the models can, but with this memory,
+[06:43] it's gonna make sure that it doesn't do that for me
+[06:45] because I already know that information.
+[06:47] And speaking of this,
+[06:48] where does all of this stay on your computer, right?
+[06:51] It has to, there has to be a way to do this.
+[06:52] 
+[06:52] 
+[06:52] It has to be a way to do this.
+[06:52] It has to be a way to do this.
+[06:52] It has to be a way to do this.
+[06:52] It has to be a way to do this.
+[06:53] There has to physically be somewhere on your computer
+[06:55] where it saves all this information.
+[06:57] Well, like how mysterious Claude can be
+[07:00] about where it stores its files,
+[07:02] I'm gonna show you where Hermes does this.
+[07:03] And it's basically the same place.
+[07:05] Okay, so I'm just going to go to my users,
+[07:09] and then of course my name,
+[07:10] I'm going to use Command Shift period.
+[07:13] This is going to expose hidden files.
+[07:16] And what you'll see here, like, you know,
+[07:17] here's dot Claude up here, here is dot Hermes.
+[07:20] So if I expand this,
+[07:21] here is a bunch of information that we will get to.
+[07:26] But the one we're gonna look at right now is memories,
+[07:28] because there's different types of memory.
+[07:30] So the first one is there's a memory
+[07:32] and then a user markdown file.
+[07:34] So if we look at the user one, right,
+[07:36] this is similar, this is basically information
+[07:38] that I had just saved.
+[07:40] So about me, eight years as a software engineer,
+[07:42] I'm now an engineer at Pfizer, my school, SAS, et cetera.
+[07:45] Right, this is really information about me,
+[07:48] about the actual user.
+[07:49] So you have information about you.
+[07:50] But if I then go,
+[07:51] I'm gonna go into memory.
+[07:52] Now if I go into the memory markdown file,
+[07:54] so here it has like some information about bots,
+[07:56] my repo, things that I get scheduled,
+[07:58] local models that I tend to use,
+[08:00] things that I've just done, right?
+[08:02] So about how I use hyperframes.
+[08:04] So this is like context that can be spread out
+[08:07] throughout other agents or sessions that I use.
+[08:10] And all this is built in for it to do that for you, right?
+[08:12] So it's going to self-learn as you use this,
+[08:16] and which to me is wonderful.
+[08:18] There's actually different AI memory libraries
+[08:21] that do this.
+[08:21] So if you're self-learning,
+[08:22] I believe they're using Honcho,
+[08:23] but this is going to make your life easier.
+[08:26] And if you haven't noticed already,
+[08:27] there's a lot of things that you can do from the desktop.
+[08:31] Okay, and if you're wondering,
+[08:32] if you're curious,
+[08:33] my text looks more zoomed in
+[08:35] because I changed that in the settings,
+[08:36] you can change the font there.
+[08:38] But at the top right,
+[08:39] let's just do a quick tour of the settings.
+[08:41] So if you go to settings,
+[08:42] okay, so the first thing here,
+[08:43] you'll see I have an applies to default coder,
+[08:46] code reviewer, package and researcher.
+[08:47] These are just bots that I,
+[08:48] or agents that I already have created.
+[08:50] You can just set
+[08:51] the default model you want for these.
+[08:52] So if you scroll down a little bit,
+[08:53] there's a lot of settings.
+[08:54] I'm not going to go over all of them in this video,
+[08:56] but memory and context,
+[08:57] you know, here are,
+[08:58] here are some interesting things that you can have.
+[09:00] There's some settings,
+[09:01] like how much like context that you want.
+[09:04] You know, you can have,
+[09:05] you can choose your different memory providers, et cetera.
+[09:08] And then providers,
+[09:09] you can actually set API keys here
+[09:12] for different like open router.
+[09:13] If you want to have different providers
+[09:15] to use different models,
+[09:18] you will do something with local agents here soon.
+[09:21] And then there's a lot more going on,
+[09:22] but I want to move on to some of the major features
+[09:25] of Hermes.
+[09:26] And the first one is, are the tools, right?
+[09:28] So this has a bunch of pre-configured tools
+[09:32] already set up for you, such as web search.
+[09:35] So if I type in search for the web,
+[09:37] what changed in the latest Hermes agent release
+[09:40] and give it three things,
+[09:41] three things a cloud code user would care about.
+[09:44] And while that is running at the top left,
+[09:46] we'll come back to this quite a few times,
+[09:47] but there's a capabilities tab.
+[09:49] If we come in here and you go to,
+[09:50] you know, there's a lot here that are already enabled,
+[09:55] right?
+[09:56] There's more, there's more that I can enable if I want to,
+[09:58] right?
+[09:59] I mean, there's Spotify, Kanban tools, video analysis.
+[10:01] There's, there's a lot going on here,
+[10:03] but it already has some here that we're actually using
+[10:07] right now, such as web search and scraping.
+[10:09] And here we, here we go.
+[10:10] It already did the research for us.
+[10:12] It just, you know, this is just the latest thing
+[10:14] that Hermes agent had pushed out recently.
+[10:16] I think it was just yesterday.
+[10:17] Yeah, it's the 16th, 16th, so two days ago.
+[10:19] And this is just how simple
+[10:20] it is to use these tools that already,
+[10:22] that already has enabled for you.
+[10:23] So if you use cloud code,
+[10:24] it's a similar concept for a tool set.
+[10:27] Now, the next thing is there are integrations and messaging.
+[10:31] So for instance, if I go to the messaging,
+[10:33] the messaging tab over here, you know,
+[10:35] here is how I have Slack set up already.
+[10:37] This is how I got my message.
+[10:39] So this is how I, so I mean,
+[10:40] this is how I got this message about what's happening
+[10:43] because I set up an agent in my Slack
+[10:46] and then it's just getting information.
+[10:48] It's sending information over to this.
+[10:50] So I can just simply read it on my phone.
+[10:52] But as you can see, there's WhatsApp, Signal, Twilio.
+[10:55] I mean, there's so many others that you can connect to here
+[10:57] and it's pretty simple.
+[10:58] So if I did Telegram, it has the setup guide.
+[11:00] There's a QR code, Discord, it's easy, you know,
+[11:04] use whatever one that you would prefer to use.
+[11:06] And as you can see, you can do this per bot or agent as well.
+[11:09] And while we're here at capabilities,
+[11:11] the next thing in this realm of what we're talking about,
+[11:13] of course, is MCP, right?
+[11:15] So if you come over here to MCP,
+[11:16] you can install a bunch of these.
+[11:19] So you can either do it
+[11:20] this way or if we go to our chat,
+[11:23] I can simply say, help me connect to the ClickUp MCP.
+[11:26] It might give you, it'll probably give you
+[11:27] a terminal command, just follow the process.
+[11:30] It's very simple.
+[11:31] You know, the idea is they're making
+[11:33] all these integrations, third-party connections,
+[11:36] everything easy for you to use
+[11:37] so that your agents have more capabilities.
+[11:40] So now let's move on to the second feature.
+[11:43] And I think it's the one that really made,
+[11:45] that really has made Hermes, you know, popular.
+[11:47] And that is skills.
+[11:49] You see, Hermes advertises itself
+[11:51] as the agent that grows with you.
+[11:54] What that means is it learns over time
+[11:56] what you're doing based on the conversations
+[11:57] that you're having.
+[11:58] And it will actually develop skills for you by itself
+[12:02] if it deems that it's worthy for that to happen.
+[12:04] Maybe you've done it more than once.
+[12:05] It's like, okay, you know what?
+[12:06] Let's build a skill for it.
+[12:07] It can do that for you.
+[12:08] If you build a cloud code skill,
+[12:10] it's just a markdown file, essentially at the lowest level,
+[12:14] at the basic level of what it is,
+[12:16] then this is very similar, almost the same thing.
+[12:18] But if we go to capabilities and then we go to skills,
+[12:21] we see that I already have some,
+[12:24] and you can see the ones they learned.
+[12:26] This means that it created that essentially by itself.
+[12:29] I didn't tell it to create that for me.
+[12:31] Now that doesn't mean every skill is worth it,
+[12:34] but it is very, it's, you know,
+[12:36] it's pretty telling that it's able to understand,
+[12:38] okay, I've done file system organization enough.
+[12:41] Let's just create a skill for it.
+[12:42] But if you also, there's a skills hub,
+[12:45] you can see there's like almost 100,000 community skills.
+[12:48] And there's some that are already connected.
+[12:51] So here's Apple notes, reminders, cloud code.
+[12:54] So, you know, pointing them over,
+[12:55] iMessage, a whole Hermes agent, architecture,
+[12:58] diagram, cloud design, you know, P5,
+[13:01] if you're worried about that JavaScript framework,
+[13:03] there's just so many here that you can go through.
+[13:05] You can go to productivity.
+[13:06] It already has a lot here for you,
+[13:08] but you can scroll down for more that like you don't have,
+[13:11] but a lot of them are already like,
+[13:13] a lot of these are already built in to Hermes agents.
+[13:17] Now what I did was,
+[13:18] I simply asked,
+[13:20] say, can you look at my last 10 uploads
+[13:21] and tell me which title pattern is winning?
+[13:24] So it did.
+[13:25] And you know, clearly the last one is the one that's winning
+[13:27] that just uploaded a couple of days ago on DeepSeek Harness.
+[13:31] So it's going to,
+[13:32] it's going to figure that out.
+[13:34] And then it's going to hopefully tell me
+[13:36] which ones aren't working and which ones are working,
+[13:38] which it is kind of doing down here.
+[13:40] And then I can reuse that and just make,
+[13:43] and you know, basically use those again for future bidders,
+[13:46] future bidders like this one,
+[13:48] to hopefully, you know, gain more traction.
+[13:50] But now what I want to do is I say,
+[13:52] I want you to make this into a skill for checking my titles,
+[13:56] because this won't be the only time that I ever do this.
+[13:59] So now it's going to design the skill
+[14:00] that pulls recent uploads via YouTube download player,
+[14:03] et cetera.
+[14:04] And it's just going to go ahead and do all this for me.
+[14:06] And just like we already,
+[14:08] we already saw the memory markdown files.
+[14:10] If you again are in .Hermes, right?
+[14:13] If we go to the top level .Hermes,
+[14:15] you come all the way down to skills.
+[14:18] They are bundled up together.
+[14:19] So this one is considered a productivity skill right here.
+[14:23] I mean, it just created right now, right now it's 5 27 PM.
+[14:25] So it just created this here is, you know, a title check.
+[14:30] So it actually created a code for it.
+[14:32] It is going to create the skill markdown file for it,
+[14:35] but it is going to also have some code with it.
+[14:37] And this is doing it by itself.
+[14:39] And it will continue to use this in the future.
+[14:40] Whenever I ask it to do the same thing.
+[14:42] And as I spoke right, there's a skill markdown file
+[14:45] for us to use.
+[14:46] Now, one more major feature,
+[14:48] are cron jobs or essentially scheduled tasks.
+[14:52] So a cron job, you don't have to know what that,
+[14:54] you know, if you haven't heard that before,
+[14:55] it's basically just a scheduled task
+[14:57] that runs automatically at certain times
+[14:59] without you having to manage it.
+[15:00] You know, a lot of things we do in life.
+[15:02] And now with AI can be recurring.
+[15:06] You probably do a lot of things that seem
+[15:07] around the same time,
+[15:08] or they do the same thing every day.
+[15:10] Well, we can create a scheduled job for that.
+[15:12] So you don't have to think about it.
+[15:14] It just gives you the output of whatever that is.
+[15:15] So, so on the top left,
+[15:18] there is a scheduled jobs here and you can see,
+[15:20] these are three that I actually have.
+[15:23] Here are some, here it has blueprints here
+[15:25] for all other, you know,
+[15:26] other ones that you can go ahead and get started with.
+[15:29] So for instance, you know, for YouTube,
+[15:31] like what's next, right?
+[15:33] The last time it ran was on 9 15.
+[15:36] The Lumberman run history isn't exactly correct,
+[15:38] but actually delivered to Slack because I set,
+[15:40] I set up Slack on the messaging capabilities
+[15:44] that I showed earlier in this video.
+[15:46] So you can trigger this now,
+[15:47] but let's go ahead and just,
+[15:48] let's create a new one.
+[15:49] So I'm gonna click a new cron, right?
+[15:51] I can name this whatever I want to.
+[15:54] So I'm gonna say Jarvis PR checks the prompt.
+[15:58] This is whatever you want.
+[15:59] I want to have check my GitHub specifically for two extra,
+[16:03] let's just do, yeah, let's just do this one.
+[16:05] And I want to check for the commits failed,
+[16:08] you know, failed delivery for anything,
+[16:10] open PRs, et cetera, review them,
+[16:12] and then give me something.
+[16:12] So I want this done daily.
+[16:14] I want it sent to Slack and,
+[16:18] yeah, let's just use the default model.
+[16:20] So this right now it's set to be every day at 9 AM.
+[16:23] And I'm okay with that for this test,
+[16:25] but you could go to custom here and you can,
+[16:28] you can use, it says you can use phrases like weekdays
+[16:31] at 9 AM, et cetera, whatever you want to do.
+[16:33] But I'm just gonna use,
+[16:34] I'm just gonna say daily and click create cron.
+[16:36] So now I have one Jarvis PR checks.
+[16:39] It's exactly what it is.
+[16:40] I'm just gonna say trigger now.
+[16:42] So it's gonna go ahead and run this.
+[16:44] And then we will have something in Slack or a message.
+[16:48] You know, telling me whatever it is that's happened
+[16:50] in the last 24 hours.
+[16:51] And it says, everything is good.
+[16:53] Everything's all green, nothing needs you.
+[16:55] So I haven't done anything with that specific repo
+[16:57] in the last 24 hours.
+[16:58] So that's actually accurate, but it was that easy, right?
+[17:01] We just got this running and you know,
+[17:03] right here is the actual check.
+[17:04] If I wanted to go into this, you actually go,
+[17:06] you actually go into this scheduled job specifically
+[17:09] to see the output right here.
+[17:11] Now, the thing is, you know,
+[17:12] this is a process that actually has to run.
+[17:14] So if you're running like on your local machine,
+[17:17] then it has to be awake.
+[17:19] You know, you can't be turned off
+[17:21] and I don't think it can be slept.
+[17:22] I don't think it can be sleeping while it's running.
+[17:25] So to fix that, if you go back to settings at the top, right
+[17:28] and then you go to advanced and then you see at the top,
+[17:32] this is actually the first one that says,
+[17:33] keep computer awake.
+[17:34] Just go ahead and turn that on so that it's always running.
+[17:37] Okay, great.
+[17:38] So we've covered a lot of the major features.
+[17:40] So there's one more concept that I kind of put into its own.
+[17:43] And generally, I think this is very important.
+[17:45] I just don't think it's the hot,
+[17:47] the topic to talk about.
+[17:48] It's not talked about enough for sure.
+[17:50] And that is memory.
+[17:51] If you've used other agents before,
+[17:53] you can get frustrated with memory.
+[17:55] Having a good memory protocol or a good way to retrieve memory
+[17:59] and accurate memory for what you're doing can really,
+[18:03] can really enhance what you're doing with AI.
+[18:05] And Hermes has a good system for this.
+[18:07] And, you know, just to go back,
+[18:09] we've already talked about memories,
+[18:10] the two that were, that are kept secret,
+[18:13] unless you, unless you visually open that up,
+[18:16] then you can see memory and user.
+[18:18] But the third tier of memory is for your agents, right?
+[18:23] And they actually have it,
+[18:24] they have something called sole markdown file.
+[18:27] So at the top level, everybody's going to have one.
+[18:30] This is for the actual Hermes,
+[18:31] the default Hermes agent bot.
+[18:33] So if I open this, it says, you are a Hermes agent.
+[18:36] Let me increase that a little bit.
+[18:38] You are Hermes agent built by news research,
+[18:40] be direct, match the length of the reply
+[18:42] to the weight of the ask, et cetera.
+[18:44] But whenever we go to create,
+[18:46] a bot or what they're really calling profiles,
+[18:49] each of them have the same thing.
+[18:50] So here profiles, my coder, code reviewer,
+[18:53] packager and researcher.
+[18:53] So a researcher, you know,
+[18:55] it has its own set of set of things and files.
+[18:58] You can open up, you can open up its sole
+[18:53] the things that you're doing.
+[19:00] open up its sole markdown file as well. And then here it is. You are a researcher, Tyler's research
+[19:05] bot. You live in Slack as researcher and in the Hermes desktop bots roster. And this is just
+[19:09] information about what it should be doing. Okay. So that's the like things for its job,
+[19:13] but it also has, it also stores, uh, all of our chat. So it actually has a state,
+[19:20] it was just a local database just for you. So it's called state.db that you could open this.
+[19:24] Mine is, you know, 1.3 megabytes.
+[19:27] So there's a lot of information here.
+[19:29] All of my chat conversations, you could, it will use this for certain things.
+[19:34] So for instance, I'm going to give it this prompt.
+[19:37] I'm going to say, based on everything you know about how it works, draft the outline
+[19:40] for my next video.
+[19:41] Don't ask me questions first.
+[19:43] So based on everything I've done, all the conversations we have, it will dig into that
+[19:47] and all of the other memory files that we've already covered.
+[19:51] And then it will come up with something for me.
+[19:53] And it won't be something completely random.
+[19:55] It'll be something based, only based on what I have done.
+[19:59] Okay, so I created one for Claude Code Hooks.
+[20:01] It's the full setup.
+[20:02] It actually made the script.
+[20:04] It looks like it made the script, did some title checks for me.
+[20:07] Here's the outline of what I would do for that video, et cetera.
+[20:10] It even gave me thumbnail suggestions, things I did, you know,
+[20:13] these are the things that I can probably help it verify more.
+[20:16] It gives me the next step, actually, on actually creating everything.
+[20:19] It's even going to write a new idea in my status markdown file, and then they click up task.
+[20:26] It just hasn't written that yet, but these are the next things it can do for me.
+[20:29] So this is, I mean, that's how I work.
+[20:32] So, and that's amazing, right?
+[20:33] So it's learned over time as I've been using Herbie's agent what I do.
+[20:38] And this is a perfect example of how having good memory can really enhance your experience.
+[20:43] Now, if I type slash journey here, this is like a memory graph, okay?
+[20:49] So it's pretty cool how things are linked together.
+[20:54] I think the orange diamonds are memories.
+[20:57] The circles are skills that were created at specific times for whatever it was and whenever they were used.
+[21:04] So this is just a visual representation of what I've been doing.
+[21:07] Now, something that it can do is that it can actually take every time you say anything, it can see if that should become a part of memory somewhere.
+[21:18] right so what i'm going to set up well actually i already have it set up i want to give you i'll
+[21:23] have these three commands for you but i have a hermes config where i can set background review
+[21:28] enabled to true so it's going to in the background spin up an agent that's going to take the last
+[21:33] message you had or the last interaction with an agent or set or in a session and see if that
+[21:39] should be a part of memory so then here is i want to use olama because i just want to use a simple
+[21:43] Gemma 4 model locally. So it's always free when it's doing this. You can use different models,
+[21:51] but whenever I do this, then it's basically going to be set up for me either way. And now,
+[21:58] every time I do something, it's going to be checking using a local free model, so I don't
+[22:02] have to worry about tokens. But you can just use GPT-5 mini or something simple, a simple cloud
+[22:08] model that will help you also. Type slash memory. It brings up pending. It brings up different ones,
+[22:13] but I can do pending. So basically here are nine pending memory rights that I can approve or
+[22:19] reject, right? So here's one for background review consolidation or place on the user.
+[22:26] This is something, you know, these are all different things that I could look at more
+[22:29] if I wanted to. Here's something actually about me. So me as engineer, but I can approve or reject
+[22:35] these also if I want to. Now, I know we haven't gotten to local models yet. We are almost there,
+[22:40] But the first thing, really leading up to the last section is we're going to talk about profiles, which are essentially bots, which are essentially agents, whatever you want to call them.
+[22:51] But we have to call them profiles here because that's how they're stored.
+[22:54] But they're also just out of its own section for bots.
+[22:57] So in the top left, you can see here I have some already.
+[23:00] So here's my default Hermes agent, coder, researcher, packager, review code.
+[23:06] These are all different agents that I have.
+[23:08] Okay, but we are going to create a new one.
+[23:09] So I'm going to click new.
+[23:11] I want a new bot.
+[23:13] And you can, you know, you can give this different, you can randomize this, whatever.
+[23:16] I'm going to give it this emoji.
+[23:20] So yeah, I can say inbox.
+[23:22] I can simply, I can call this inbox triage.
+[23:24] Inbox triage for the title.
+[23:27] So now what should this bot do?
+[23:28] Take incoming emails, organize them by importance.
+[23:32] As this is going to be very simple, it's going to take incoming emails, organize them by
+[23:36] importance and tell me a brief bulleted summary. Okay. You can, you can come down here into
+[23:41] advanced and do more things. We are not going to do with that, but just simply create the bot.
+[23:44] Okay. And now it's going to, now it is here. Here is the image triage bot. Now what I could do is,
+[23:50] you know, I could give it some more context. I wanted to, this is simply going to use Gmail
+[23:54] or whatever email provider, and we can get started working with this. Review my emails from the last
+[24:00] 24 hours. Okay. And it just directed me on what it needed to do. I did that quickly. It's
+[24:05] authenticated now is pulling the last 24 hours. And so now this agent is going to know similar,
+[24:11] like this is how it should be working from here on out because remember these agents have their
+[24:16] own memory. So this is a new agent that's created a profile and it's going to have its own memory.
+[24:21] Also yesterday I had to create using a different agent, basically go out and research the new
+[24:28] OpenAI agents through API, which just came out like less than a week ago. And I had to understand
+[24:34] it actually create the code for it and this is what it doing this is what it did so in my main ai
+[24:41] github repo it created the pr for me and basically coded everything to have all the tests and
+[24:47] everything that was all done through an agent that i created and then here's information um about
+[24:52] everything that that i asked it to do and then you know that i like i've actually lied to you in the
+[24:57] very beginning i said we would never be going back to terminal but i'm doing this one time because
+[25:01] you can just open separate chats and determine if you want so if you say open hermes chat
+[25:05] dash p for profile inbox triage that's the agent now i can just talk specifically if you want to do
+[25:11] it this way with that agent or profile right your available skills that we can give it
+[25:16] etc we can do a lot here uh i can say draft or apply whatever i want i can do the same thing
+[25:21] if i'd like to but i'm not i'm not going to do that but this is what you can do just so you're
+[25:25] aware that you can also do this this way okay so now how do we get local models running with
+[25:31] termi's agent i know many of you have probably been waiting on this so now let's dig into that
+[25:36] so i'm going to use olama as example you know you can just download here get olama running i have a
+[25:42] separate video on how to do that specifically but once you do that at the top of your menu bar if
+[25:46] you have mac you will see that you'll have olama ready to go then you need to pull a model but
+[25:52] there are a couple ways you can do it. I think this is the easiest. So if you go to the models
+[25:56] page, these are like, you can filter it, but this is right now by the most popular. So for instance,
+[26:01] I use Gemma 4. So if I scroll down here, I mean, I didn't do this a little bit ago, so I guess it's
+[26:07] not as popular anymore, but you know, we can do another one. Let me just search for it. So Gemma
+[26:12] 4 here, right? I think you can actually do, it's set up right here. You can just copy this. Hermes
+[26:18] agent olama launch hermes model 4 or model is gem before simply gonna paste that in here it's gonna
+[26:24] ask me if i want to download gem before so you don't even have to pull you i forgot that you can
+[26:29] just do it this way once you launch it you can have it download it i'm gonna say yes i already
+[26:33] have downloaded which is why it's doing this so now i actually have done before i can literally
+[26:37] talk to the default hermes agent if i want to right now but now to get it working with the
+[26:45] with other sessions, with other agents that you want to specifically within desktop, what you
+[26:49] need to do is go to providers, go to custom endpoints, and just create another endpoint.
+[26:57] So call it olama. The provider ID will be olama-launch. This is the endpoint URL. It's the
+[27:03] exact same one. And then this is the only model that I have locally. You do not need an AAPI key,
+[27:10] or I think you can type in something test. You can type in just some string. It doesn't matter.
+[27:14] literally type test. So then once you do that, it says the endpoint is reachable, found three models,
+[27:20] which means then on the friendly greeting right here, I can now come down here. And if you click
+[27:26] the model all the way, I think it's all the way down for you. Yes. You can see now a Gemma 4. It
+[27:30] actually loaded the Gemma 4 latest and the E4B for me as well. So I can now I can start using
+[27:36] one of these to test it. And all you have, oh, I did not like that. Let me just, let me go to
+[27:42] another one sorry i think i know why i didn't like that let me do gemma 4 high confirm i think that
+[27:47] was about context length i'm not we're not getting that right now but as long as you have a llama
+[27:50] working you are fine so now i can say hello this is just to confirm that it can actually use the
+[27:57] model so i think it's actually okay so it's because it's big it's summarizing the thread first
+[28:00] and then it's going to respond so instead let's go to a new session where at gemma 4 say hello
+[28:04] okay and it simply responded so here it works is connected to our local model using olama as
+[28:12] the provider. Okay, so now we get into the fun part, which is kind of taking a lot of those
+[28:16] things that we've already done. Now we're going to have multiple agents do something for us. And
+[28:20] I'm going to show you how to do it in two different ways. So the first thing we're going to do is I go
+[28:24] to bots, I go to Hermes, this is the default bot. And then I'm saying, yeah, actually, oops,
+[28:31] I want that. I want to say build the package for the Claude Hooks research we did earlier,
+[28:35] I just grabbed where it saved the research. And when it's done, the at coder will open a PR
+[28:40] on my content repo, save the PR with all of the files that's created, and then post the link to
+[28:46] Slack. So when I press enter, here it's already establishing what agents need to take care of this
+[28:52] and then so forth. And so what we're going to see next, yeah, right here, awaiting a response
+[28:57] from at Packager. Once the package is built, I will message at Coder. I actually want to move
+[29:02] this back up to Fable 5.1. And so it's going to then the Packager, right? It says, I think it
+[29:09] sees something like this right here. Okay, so it's actually saying the app package refused,
+[29:14] right? So I just ran through this and I said, yeah, take the report that was created and then
+[29:18] maybe do some more research. So the researcher is now going to actually refresh the Hook's research
+[29:23] from the existing report, produce a data file, a reference transcript with a breakdown and
+[29:28] everything. And then when it lands, it's going to give that to the app packager and then app coder.
+[29:32] So it decided that it actually needed to go to another agent first as well. I only gave it two
+[29:38] agents, but it decided that we needed a third agent, the research agent to actually give us
+[29:42] everything that we need to actually create this package. And so this is going, this,
+[29:47] this will take a few minutes, right? Um, so it's actually, here's the background command.
+[29:51] So it's kind of pulling to wait. So the research, we go, we can go back up here and it's going to,
+[29:58] it's going to give us, it could give us some information, right? So, uh, here is basically
+[30:04] going to like see what it can find. It's trying to figure out some more research, some more videos
+[30:09] or something about clawed code hooks. So what's, what's happening here, right? Is it's talking to
+[30:13] Hermes. And so again, this is going to be a little while. I'm going to go ahead and show you the
+[30:16] previous one that I did, but the researcher, Hermes is talking to the researcher. It's going to
+[30:22] have the packager create everything and then the coder. So in the past one right here, the packager
+[30:28] created an analysis, titles, hooks, script, description. It created all of these files for
+[30:33] me for a YouTube video package. And then the coder went ahead and it created, okay, so here,
+[30:41] here's the packager's chatbot. It basically created and sent to me a P, here's the PR.
+[30:47] So if we were to go to look at that right here is one of the PRs. I did two of them and I showed
+[30:51] you right in the very beginning, this is the PR for OpenAI Agents demo. So we see the files changed,
+[30:56] right it created as a dot env here's the python for different examples here's a readme to kind of
+[31:03] explain everything what i need to do and it you know it did all this for me and sent this to me
+[31:08] in slack when it was done and for the current one is now handing off to app packager with everything
+[31:12] it asked for because the researcher was okay so the next way i want to show you because that's
+[31:17] still working for using multi-agents is to use the kanban board that i showed you in the very
+[31:22] beginning so the first thing you need to do is go to capabilities at the top go all the good plugins
+[31:27] and then just enable the kanban board okay so it's going to give you everything that you need
+[31:31] so then kanban will show up over here i had already done this with opennei agents so these
+[31:36] were all this was everything that was needed to make that pr that i just showed you so i'm going
+[31:42] to create a new task i'm going to give it a rough idea that i want to create this kind of video
+[31:46] The assignee will be the researcher.
+[31:50] I don't need to worry about skills.
+[31:53] I think it'll understand what it needs to do.
+[31:55] I'm going to create task.
+[31:56] Now, it goes to triage.
+[31:58] It doesn't do anything.
+[31:59] You can simply drag and drop it to ready.
+[32:01] Now, watch.
+[32:02] As soon as I do, it knows it needs to start working.
+[32:05] You can click on this, and you can kind of see the worker.
+[32:08] It's initializing the agent, checking for duplicate work, etc.
+[32:14] It's going to automatically understand what skills it needs to do in order to get this.
+[32:18] And then this will go ahead and perform everything I need to.
+[32:22] This will probably be a separate video to be able to completely work with Motha agents from the Kanban board.
+[32:28] And this is just how effective everything.
+[32:31] And this is just an amazing way to work with agents.
+[32:35] I am really liking this harness.
+[32:37] It's a word that's getting used a lot.
+[32:39] I have the previous DeepSeek video that talks about it.
+[32:41] but please, please start using Kermis Agent.
+[32:44] I really think I love this and I've been using it.
+[32:46] Absolutely amazing.
+[32:47] Okay, so we've done a lot.
+[32:49] This was a full setup guide.
+[32:51] There's a lot going on here, I understand,
+[32:52] but if you watch this video, you have any questions,
+[32:54] of course, please leave them down
+[32:55] in the comment section below.
+[32:56] I will help you out through anything.
+[32:58] I am going to have this in my school community.
+[33:00] So here is my plug.
+[33:01] I will have everything here in my school community
+[33:03] that you need as well.
+[33:04] You can join.
+[33:04] It'll be in the description below.
+[33:05] It is free for right now.
+[33:07] I have a bunch of classes and courses specifically here.
+[33:10] We need a hold of.
+[33:11] We have weekly sessions that I can help you out with.
+[33:14] So please join.
+[33:15] I am here to help you set up agents to help you be successful.
+[33:18] And if you haven't watched it, here's my DeepSeek video and another AI agents video to get you started right away.

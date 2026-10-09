@@ -1,0 +1,75 @@
+[00:00] There's a reason Hermes's agent hit 150,000 GitHub stars in just 7 weeks. It does something no other AI agent can. It learns your habits, remembers your preferences, and works quietly in the
+[00:10] background on Telegram, Discord, or Slack. So, in this video, I'm going to show you how to set it up from scratch, get your first integration live, and unlock the features everyone's talking
+[00:18] about. Hermes's agent is an open-source AI agent built by News Research, and the simplest way to think about it is that it's a personal AI assistant that lives on a server instead of a website,
+[00:27] connects to your messaging apps instead of a browser, and gets better at your work over time instead of starting from scratch every conversation. It works with over 200 models through providers
+[00:35] like Open Router, OpenAI, Anthropic, and News Portal, so you're not locked into any one AI company, and you can switch models anytime without changing anything about your setup. [music] The three
+[00:43] features that set it apart from everything else are skills, memory, and cron jobs. Skills are workflows that Hermes creates automatically after you complete a complex task, and the skills
+[00:52] improve on their own. News Research's internal testing shows that agents with 20 or more self-created skills complete similar tasks 40% faster than a fresh instance, because the agent stops
+[01:01] rediscovering the process every time and just runs the workflow it already refined. Memory works across every conversation. Hermes builds a persistent profile of who you are, what you're
+[01:10] working on, and how you like things done, and it carries that context into every future session. The combination of self-improving skills, persistent memory, and scheduled automation is what
+[01:19] makes Hermes feel different from [music] using ChatGPT or Claude, because it's not a tool you visit when you need something, it's a tool that's always running and always learning. If you're
+[01:27] coming from OpenClaude, Hermes also supports a full migration. When you install it, Hermes detects your OpenClaude setup and offers to import your existing configuration, your user profile, your skills, and your memory,
+[01:37] so you don't have to start over from zero. The catch is that Hermes needs to run on a server, and setting that up used to be the hard part, but Hostinger made it significantly easier, and I'll
+[01:45] show you exactly how. The fastest way to get the Hermes agent running is through Hostinger's one-click Docker template, and I'll walk you through the entire setup step-by-step. I'll head over to
+[01:53] the link in the description, and that'll take you straight to the deploy screen. On the right side, you'll see the VPS plans, and by default, it's set to KVM 2, which gives you two virtual CPU
+[02:02] cores, 8 GB of RAM, 100 GB of NVMe storage, and 8 TB of bandwidth, and that's more than enough to run Hermes comfortably. I'll click deploy from over here. The billing period defaults to 24
+[02:12] months, but you can switch to 12 months or 1 month. I'd go with 24 months because it has the best value and a free domain for the first year. Right down below, you can toggle on daily auto
+[02:21] backups and choose your server location. Hostinger auto selects the location with the best latency for you, so you can leave it on the default. If you use the link in the video description, the
+[02:29] coupon will be auto applied to your order, so you get the best available price. On the right, you can review your order and then click continue to go through payment and account creation.
+[02:37] After checkout, you'll get to the Hermes agent configuration screen. It shows an admin username and an admin password. The username defaults to Hermes, and you can leave it as is. The password is
+[02:47] automatically generated, so copy it and save it somewhere safe because you'll need it to log into the web terminal. Once you click deploy, Hostinger starts provisioning your server and installing
+[02:55] Hermes through a Docker container. On the dashboard, you'll see Hermes agent listed as a Docker project in the Docker manager section, alongside something called Traefik, which handles
+[03:03] networking. And this is where you'll notice the project name ends with four characters, something like Hermes agent 703Y. Take note of those four characters because you'll need them in a second.
+[03:12] Now, click the terminal button in the top right corner of the VPS dashboard. This opens the Hostinger web terminal, which is how you communicate with your server directly. The first command
+[03:20] you'll run is to navigate to your Hermes project directory. I'll type cd/ docker/hermes agent and then paste in those four characters from the Docker manager. Then I'll run docker compose
+[03:30] execute hermes agent/bin/bash to get inside the running container, and now I'm inside Hermes. From here, I'll type hermes setup and press enter, and this launches the setup wizard. It asks
+[03:39] whether you want a quick setup or a full setup, and I'll go ahead and choose quick. The first thing the wizard asks for is your AI model provider. I'll select OpenRouter because it gives you
+[03:47] access to over 200 models with a single API key, and you can switch between them anytime with one command. To get an API key, I'll head over to openrouter.ai, create an account, and click create API
+[03:58] key. I'd recommend setting a credit limit, something like $25 with a monthly reset, so you don't accidentally spend more than you planned while testing. You'll also need to make sure you have
+[04:06] billing set up on OpenRouter by adding credits, because without credits, the API key won't work even if it's created. Once I paste the key into Hermes, I'll pick my model. If you want to keep costs
+[04:16] low, OpenRouter has three models available, including one called Owl that handles basic tasks without any charge. If you want stronger output, GPT-3.5 or Claude Sonnet work well through
+[04:25] OpenRouter, and the cost per task typically lands between a few cents and a couple of dollars depending on complexity. And one feature worth knowing about is OpenRouter's auto-routing, which lets Hermes choose
+[04:34] different models for different tasks automatically. Simple questions go to a cheaper model, and complex tasks go to a stronger one, so you save tokens without manually switching every time. The
+[04:43] entire setup from clicking deploy to having Hermes respond to your first message takes about 10 minutes, and the majority of that is waiting for the server to provision. At this point,
+[04:51] Hermes is running on the server, but it's sitting in a terminal window that you'd have to keep open to talk to it. And that defeats the entire purpose of having a 24/7 agent. The setup wizard
+[04:59] fixes that by connecting Hermes to a messaging platform. You'll see Telegram, Discord, Slack, WhatsApp, Signal, and Email in the list, and I'll select Telegram. It asks for two things: a bot
+[05:08] token and your Telegram user ID. For the bot token, I'll open Telegram, search for BotFather, and type /newbot. BotFather asks for a display name and a username that ends in bot, and once I
+[05:18] create it, BotFather sends back a token. I'll copy that token and paste it into the Hermes terminal. For the user ID, I'll search for @userinfobot on Telegram, and I'll type /start, and it
+[05:28] immediately shows me my numeric ID. I'll copy that and paste it into Hermes as well. Hermes then asks if you want to use your user ID as the home channel for delivering cron job results and
+[05:36] notifications, and I'll press Y to confirm. And that finishes the setup wizard. But before you can message your agent on Telegram, you need to start the gateway, which is what keeps Hermes
+[05:45] connected to Telegram around the clock. In the terminal, I'll paste in Hermes allow root gateway equal one Hermes gateway run and press enter. Once the gateway is running, I can go over to
+[05:54] Telegram, open my bot and send a message and Hermes responds. If the gateway isn't running, your messages won't get answered, your cron jobs won't execute, and nothing happens in the background.
+[06:03] So, making sure the gateway is active is the one thing you want to verify before you walk away from the setup. One thing I'd recommend doing right away is creating a Telegram group for your
+[06:11] Hermes bot and turning on topics inside the group settings. Topics let you separate conversations by category. So, you can have one thread for social media, one for business analytics, one
+[06:19] for personal tasks, and each one stays organized instead of everything piling into one chat. To make topics work, go back to BotFather, select your bot, open bot settings, and turn off group
+[06:28] privacy. If you skip this step, the bot won't be able to read messages inside the group. Also, you need to make the bot an admin for it to reply to your messages. Hermes also supports voice
+[06:37] memos on Telegram, so you can send a voice message instead of typing and Hermes transcribes it and responds. With Telegram connected and the gateway running, Hermes is now a 24/7 assistant
+[06:46] you can message from anywhere. But before you start giving it access to everything, there are four things you should know about keeping it safe. Hermes is locked down out of the box,
+[06:53] and there are four built-in safety features that matter. The first is the pairing code system. Only users whose Telegram IDs you approved during setup can talk to your agent. If someone else
+[07:02] finds your bot on Telegram, they'll be ignored entirely. The second is container isolation. Because Hermes runs inside a Docker container on Hostinger, even if something goes wrong, it can't
+[07:11] touch your host system. That's a built-in guardrail you get for free with the one-click template. If your agent tries to do something like deleting files or making a major system change,
+[07:19] it stops and asks you first before taking action. And the fourth is the skill scanner. When you install new skills, Hermes automatically checks them for unsafe code before they run. My
+[07:28] advice for getting started is to stick with Telegram for the first few days, pick one or two skills that solve a problem you actually have, and start there. Don't connect your main email or
+[07:36] banking info right away. Start small, build trust with the agent, and expand from there. And because those four guardrails are in place, you'll never need to touch the terminal again,
+[07:44] because everything from creating jobs to building skills to updating your preferences happens inside the same Telegram conversation you're already using. To show you what that looks like,
+[07:52] I'll create a cron job right now without leaving Telegram. To create a cron job, you just tell Hermes what you want in plain language. If I type create a cron job that sends me a tech news summary
+[08:01] every morning at 8:00 a.m., Hermes sets the schedule and confirms the job all from that single message. I'll set up another one as an example. I'll type every Monday at 8:30 a.m., pull the
+[08:11] latest sales data and send me a summary of this week's performance compared to last week. Hermes creates the job, shows me the schedule, and from that point on, the report lands in my Telegram every
+[08:19] Monday morning without me sending a single prompt. If I want to see all my active jobs, I can just ask, "Show me a list of all current jobs." And Hermes lists them out with their schedules and
+[08:27] delivery channels. I can pause, edit, or remove any of them right from the conversation. Skills work the same way. If I type, "Take what we just did and save it as a skill called weekly report
+[08:36] builder." Hermes saves the workflow, and I can call it anytime. And as of the latest version, Hermes includes an autonomous curator that reviews your skill library on a 7-day cycle, grades
+[08:46] each skill, consolidates overlapping ones, and removes outdated entries so your library stays clean without you maintaining it. For customizing how Hermes behaves, there are three files
+[08:54] that control everything. The first is souls.md, which sets your agent's personality, whether that's casual and friendly or concise and professional. The second is agents.md, which sets
+[09:04] specific rules for how Hermes handles your work, like your preferred writing tone, output format, or coding style. And the third is user.md, which is Hermes's memory about you. Everything
+[09:13] from your name and job to your preferences and active projects lives here and gets updated automatically as you interact with the agent. You don't need to edit these files manually. You
+[09:21] can update them through Telegram by telling Hermes directly. If I type, "Remember that I prefer short and direct responses with no long explanations unless needed." Hermes saves that into
+[09:30] its memory and applies it to every conversation going forward. The more context these files have, the better Hermes performs, because every prompt runs through your personality, your
+[09:39] rules, and your personal context before it generates a response. And once you have skills running, cron jobs firing, and memory building in the background, the one thing you want to keep an eye on
+[09:47] is how much all of that is costing you. Because the AI model behind Hermes charges per message, and it adds up faster than you'd expect if you're not paying attention. The way to think about
+[09:56] it is that you have expensive models for complex thinking, mid-tier models for daily tasks, and cheap or free models for routine jobs and scheduled reports. You don't have to run everything on the
+[10:04] most expensive model. In Telegram, you can type {slash} model and it shows your current model with the option to switch to any other model on Open Router instantly. And if you want specific jobs
+[10:13] to use different models, you can tell Hermes directly. If I say I want the daily tech news summary job to run on Opus 4.7 instead of my default model, Hermes makes that change for that job
+[10:23] only, while everything else stays on the cheaper default. That way you get the extra reasoning power where you need it without driving up the cost of everyday conversations. The current version ships
+[10:32] with 118 bundled skills out of the box, supports 18 messaging platforms, and works with over 200 AI models, all under the MIT license, which means the software itself is completely free, and
+[10:42] you only pay for the server and the AI model calls. So, if you want to get Hermes agent running today, the fastest way to do it is through Hostinger's one-click template. And I've left the
+[10:50] link in the description with the discount auto applied. Thank you for watching, and I'll see you in the next one.

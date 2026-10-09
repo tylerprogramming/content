@@ -1,0 +1,580 @@
+[00:00] So I've been playing around with Opus 5.5 and GBD6 Sol all day long, and I just ran them across 10 different use cases.
+[00:05] I'm talking things like building websites, editing videos, building slide decks, browser use, tons of reasoning, and then a few other things as well.
+[00:14] So let's not waste any time and just get straight into this video.
+[00:16] Okay, so before we start looking at all these comparisons, I wanted to talk about the pricing of these two models real quick.
+[00:21] So Opus 5.5 on the left is double the price of GBD6 Sol on the right.
+[00:25] you can see that Opus is $4 for the input and $20 for the output, whereas Sol is $2 and $10.
+[00:32] Now, the reason I wanted to bring this up is because when I first glance at these prices,
+[00:35] my instinct is like, okay, well, Opus is probably going to be a little bit better than Sol. That's
+[00:41] typically just what you think when something's a little bit more expensive. Now, I know a lot of
+[00:44] you guys might disagree with that perspective, but the way that I like to think about AI models
+[00:47] is I like to think about, okay, if I had a hundred bucks and I gave a hundred bucks to Opus and I
+[00:52] gave a hundred bucks to Sol, which one would give me a better output or better quality for that a
+[00:57] hundred bucks? So that's why I think it's important to sort of look at that metric and sort of, you
+[01:01] know, now I have a little bit of a feeling of what I think these models might be like, but obviously
+[01:04] that's why we run tests. So anyways, now that we got that out of the way, let's jump into some
+[01:08] examples. So real quick, before we jump into the 10 use cases, I wanted to do a real simple example
+[01:13] just to show you what they feel like and how they think. So on the left, we have Sol and on the right,
+[01:17] we have Opus, and this is the Cloud desktop app and the Codex desktop app. And I shot off this
+[01:21] prompt that says, pull in my two latest Firefly calls for Q4 planning and ingest those transcripts
+[01:27] into the wiki. I spelled that wrong, so hopefully it knows what I meant. And I said, then find me
+[01:30] my last AIS Plus Q&A where I brought up N8N. So these are two different tasks. One is ingesting
+[01:36] calls into a wiki and one is finding something. So it'll be interesting to see how they think about
+[01:40] doing these in parallel. The other thing is this isn't super, super simple. These two calls combined
+[01:44] is about four hours of transcript. So it has to create all those links and the indexes and link
+[01:49] everything together. So it's not super simple, but I just want to see how these models feel
+[01:52] and how quick and lightweight they feel as well. And you can see so far, Sol seems to be cooking
+[01:57] way ahead of Opus 5.5. It's doing these both things in parallel. Like I said, it's looking
+[02:02] for the new Firefly's calls and adjusting them. And it's also locating the Q&A in parallel.
+[02:08] So this is pretty interesting. It's been about six minutes now and Claude came back and said,
+[02:11] hey, I noticed that something else is also doing this. So it noticed Codex doing it.
+[02:15] and Codex so far has the answer wrong about when I last mentioned NNN. It said August 17th,
+[02:21] but the right answer is what Opus found, which was September 14th. So anyways, I said overwrite,
+[02:25] it's okay. Both of these models are still spinning, and Sol just finished, as you can see,
+[02:28] and it got this answer wrong, and that's not good, right? Like, it's not that hard for a model to look
+[02:32] through a bunch of transcripts and find the most recent one where NNN was mentioned. It's probably
+[02:36] because it was spelled out wrong, like NN or NNN, as you can see here, when it was actually
+[02:40] transcribed, but still, I feel like that is a problem that Sol should have found for me,
+[02:44] And they finished up in basically the same amount of time, but Opus' answer here was definitely better.
+[02:49] So this very quick experiment gives us a little bit of a baseline to take into account as we head into the next 10 actual use cases.
+[02:55] So let's jump right in.
+[02:56] Okay, so the first one was a quick website design.
+[02:58] I gave, in all 10 of these examples, I gave both models the exact same prompt.
+[03:02] So here is one output.
+[03:03] I won't tell you which one this was yet.
+[03:05] We have perk form.
+[03:06] Your morning shouldn't require two drinks.
+[03:07] We can see as we move our mouse, the keys and the can and the background are on a different layer.
+[03:12] We start to scroll down and we get this little animation right here.
+[03:14] You can see the layering come into play. And now we have a different image down here. Coffee in one hand, protein in the other.
+[03:20] Two purchases, two things to carry, a shaker to rinse, blah, blah, blah.
+[03:23] Or we have, oh, pull the tab. I like that little animation. That's kind of cool.
+[03:28] We get some smoke coming out, your coffee and protein, one can.
+[03:32] We keep scrolling down here. We have text animations with all the text coming into view.
+[03:36] Pick your first can here. Okay, a nice little rotation animation.
+[03:39] I do think that that's actually pretty clean.
+[03:41] and we come down here to some FAQ and then we have out the door. I'm not sure if that's a glitch
+[03:46] or it just leaves frame really quick. But anyways, this was one output. Let's take a look at the
+[03:51] other one right here. We can see if we reload, we get your morning shouldn't require two drinks.
+[03:56] Not as strong of a hero image right now, but we scroll in. We start to get some different text
+[04:00] animations as well. We get like a little opening of vault. We have a weird packaging style image
+[04:04] rather than like a realistic looking image. So I think that was a bad design choice there.
+[04:08] but you can see that both of these are keeping the same sort of like narrative and the same branding
+[04:12] we're getting all the same sort of like text animations we're getting once again the packaging
+[04:17] pictures rather than like real product images which I don't love and this overall this one
+[04:22] just seems a lot more simple definitely not as premium as this first one so this first one was
+[04:26] definitely the winner when it comes to design and style and this one was opus 5.5 and this one was
+[04:31] gbt6 soul real quick guys by the way if you want the skill that I use to generate scroll driven and
+[04:37] layered websites just like these examples that you saw, then you can grab this for completely
+[04:41] free. The link for that will be down in the description. Let's get back to the video.
+[04:44] Now, when we take a look at the pricing, we can see here they both took about 35 minutes. Opus
+[04:48] took a little longer and Opus also cost three times as much. So $18.32 compared to $5.89.
+[04:54] But right now, this one, even though with the price, the winner of this experiment is going
+[04:58] to Opus 5.5, no doubt. So $1.0, Opus 5.5. Okay. So example number two is something that I think
+[05:04] is just a really, really cool benchmark that I might keep doing for all these models, where I
+[05:08] basically give them this frame IO link with tons of different videos, 100 gigabytes of videos from
+[05:13] our recent AIS Live event. And I basically just ask them to create a sizzle reel, a 30-second
+[05:18] sizzle reel that helps us market the next event, which is October 17th and 18th. If you guys are
+[05:22] interested, definitely check it out. I'll put a link to the event in the description. But anyways,
+[05:26] I basically want them to look through everything, tell a story out of it, and make a high-energy
+[05:29] sizzle reel. So let's take a look at both outputs. This first one will be Opus 5.5.
+[05:34] Hello, hello, AIS Live.
+[05:36] Oh my God, I'm so excited for this.
+[05:39] Let's get some energy going in here.
+[05:54] It's been a great two days.
+[05:56] wow okay that was my first time watching that and i will say that that is so
+[06:08] so impressive like that almost feels more impressive to me than when astra did that on
+[06:14] its first try so that was really really good i mean look at how it did the layering here and you
+[06:20] know some of it felt a little bit static but the music the sound effects the pacing the way it came
+[06:24] in and out all of this layering i mean i thought that this was actually really really good like
+[06:29] definitely better than i thought it was going to give me all right now we will take a look at
+[06:32] soul's version this has been so energizing
+[06:35] cloud code is my primary driver
+[06:54] I can go to bed, come back, and it'll still be working.
+[07:03] Okay. I mean, it's still impressive, but it does not give me the same energy. It didn't have the
+[07:09] same just like fast-paced feel. It doesn't get me as excited for the next event compared to Opus'
+[07:14] version. So Opus 5.5 definitely wins that in my opinion. So Opus is two for two right now.
+[07:20] and you can see here when it comes to time and pricing,
+[07:23] Opus was faster, five minutes faster,
+[07:25] as well as only double the cost.
+[07:28] So even though Opus was five bucks more expensive here,
+[07:31] I'm giving this one to Opus.
+[07:33] Opus is two and oh right now.
+[07:34] And I'm so, so glad that we're actually seeing this
+[07:36] because Opus 5 was really bad.
+[07:38] Like I haven't used Opus 5 in a long time.
+[07:40] I was using 4.8 and Opus 5 was just so, so bad.
+[07:43] It was so slow, but Opus 5.5 so far,
+[07:45] I've really, really been enjoying it.
+[07:47] So I'm feeling good about getting back
+[07:49] a little bit more usage on my Claude subscription now because I really do like both of these
+[07:53] harnesses and they've got different good models. Like I do really, really love Astra, but Opus 5.5
+[07:58] for the cost, I'm getting excited about it. But anyways, let's move on to use case number three.
+[08:02] All right. So for use case number three, we are doing an Instagram reel. So I told it to use
+[08:06] hyperframes. I told it to edit it. I gave both models the same footage and same prompt. Let's
+[08:10] this time start with GBD6 Souls output. And I'm not going to play the entire reel, but here we go.
+[08:15] Stop prompting Claude. Andre Carpathy thinks there's a much better way to work with AI,
+[08:18] and his method has three layers.
+[08:20] Layer one is the spec.
+[08:21] Instead of giving Claude a task
+[08:22] and hoping it understands you,
+[08:24] work with it to create a detailed spec first.
+[08:27] Have Claude interview you
+[08:28] about what you're actually trying to achieve,
+[08:29] then break the work into smaller checkpoints
+[08:31] before it starts.
+[08:32] Layer two is the verifier.
+[08:33] Before Claude does anything,
+[08:35] define exactly what a good result looks like,
+[08:36] then give it ways to actually check its own work,
+[08:38] whether that's another AI model or real data
+[08:40] or tests that it can run on its own.
+[08:42] Okay, not impressed at all.
+[08:44] There's a weird like humming noise in the background.
+[08:46] there's not really that many engaging animations or there's no music at all. I think that this is a
+[08:52] very meh output. Astra does a much better job with editing reels and editing videos, but this is just
+[08:58] not something that I would have put on my Instagram account for real. I would have wanted to iterate
+[09:03] a lot more than just what we see here. And now let's take a look at Opus 5.5's version of this
+[09:08] reel. Stop prompting Claude. Andre Carpathy thinks there's a much better way to work with AI,
+[09:12] and his method has three layers.
+[09:14] Layer one is the spec.
+[09:15] Instead of giving Claude a task
+[09:16] and hoping it understands you,
+[09:17] work with it to create a detailed spec first.
+[09:20] Have Claude interview you
+[09:21] about what you're actually trying to achieve,
+[09:22] then break the work into smaller checkpoints
+[09:24] before it starts.
+[09:25] Layer two is the verifier.
+[09:26] Before Claude does anything,
+[09:27] define exactly what a good result looks like,
+[09:29] then give it ways to actually check its own work,
+[09:31] whether that's another AI model or real data
+[09:33] or tests that it can run on its own.
+[09:35] Okay, that was really good.
+[09:37] Like this is so much better.
+[09:38] It's more engaging.
+[09:39] Look at these like typing animations,
+[09:40] the sound effects you guys noticed.
+[09:42] All of this was more engaging.
+[09:44] It's still not something that I would probably put on my Instagram, but this is like without
+[09:48] a shadow of a doubt, significantly better than what we just got from GBD6, Sol.
+[09:52] And this version was pretty interesting with the price and cost.
+[09:55] It took double the time with Opus 5.5 and like four times the cost.
+[09:59] But once again, in this case, I would pay the premium there.
+[10:02] The question would be, okay, so Opus spent 11 bucks and Sol spent almost three bucks.
+[10:07] if we iterated with soul over and over to get to 11 bucks of spend would it be where opuses or would
+[10:13] it be better i think that's the interesting question to sort of think about but also like
+[10:16] you love the ability to just one-shot stuff and they both use the same skills they both have the
+[10:20] exact same stuff it seems like there's just more potential over here with a lot of this sort of
+[10:24] like design and creative stuff so far so anyways right now opus is three for three so we're heading
+[10:30] into the next experiment with opus being up three oh so let's go on to number four all right so in
+[10:34] this example, I gave both models a ton of data, like a ton of data. And I said, hey, build me a
+[10:38] Google Sheet analytics and then build me a dashboard as well. So this was Opus 5.5's Google
+[10:43] Sheet. This one looks pretty clean. You can see that we've got these different boxes with different
+[10:47] metrics like AR, MRR, customers, gross margin. We have all these stats. We have these visualizations
+[10:53] right here. We can move into a P&L. We can move into SaaS metrics with more visualizations. We
+[10:58] can see cash and runway, unit economics, pricing, headcount, go-to-market, pipeline,
+[11:03] customers and then some data notes as well. I think that this looks pretty well. It feels branded.
+[11:08] We have, you know, clearly some sort of color theme with like black or a dark blue and orange.
+[11:13] And yeah, this looks pretty good. We also got a pitch deck, which I can open up right here.
+[11:17] And you can see that we have like a logo has been created. Once again, we have sort of like
+[11:22] that navy blue and dark blue or sorry, navy blue and orange. What I meant to say, we have a picture
+[11:26] here. We've got this stuff is coming through pretty simple, but also pretty clean. We have
+[11:31] more data visualization, some more B-roll or not B-roll images being generated. It's not too bad.
+[11:36] It's not too wordy, but it's not too premium either. So it's just all right. And then it also
+[11:41] created us an analytics dashboard. We can see right here that we have, I mean, this looks very
+[11:46] vibe coded, very AI generated, but hey, the dashboard seems to be functional. It has different
+[11:51] ways for us to switch through. This is obviously using the same data that we saw on our Google
+[11:56] sheet that it made for us earlier. I like this highlighting effect. Same down here. So not too
+[12:01] bad of a dashboard. Oh, we can also switch between different tabs and switch between different modes
+[12:06] as well here. So that's pretty cool. And then the last thing you see that it created for us here was
+[12:09] a landing page, which is running locally. And we can see we have an image here with different like,
+[12:14] you know, paper and clipboard things flying around. These are on different layers. So that's
+[12:18] a nice little scroll animation here. We've got a Monday brief. We come down here into a little bit
+[12:23] of an animation with filling in some gaps here. We have more text coming in dynamically. We've got
+[12:30] a little scroll animation here. So very clean. You can tell it's obviously AI generated. It just
+[12:35] feels a little bit AI generated. But hey, there's some nice animations in here and some nice layering
+[12:39] that definitely gives it a little bit of an edge. So anyways, that was Opus. Let's go over to
+[12:44] Sol and see what it was able to do with all of this data. Okay, so we have once again a PowerPoint,
+[12:48] we have a Google Sheet, we have an analytics dashboard and a client page. So let's take a
+[12:52] look real quick at the actual slide deck. We can see that we have very similar. I wouldn't say that
+[12:58] anything here is too different. Honestly, this looks almost exactly the same as the one that
+[13:03] Opus 5.5 generated for us. And you know what I'm actually suspicious of? Is this the exact same
+[13:08] deck? This might be the exact same one. They might have gotten confused and gotten in each other's
+[13:12] way there and just like one of them grabbed the other deck, which is pretty interesting.
+[13:16] Okay. So somehow along the way, these two models started working together. They probably started
+[13:21] to work inside of the same project folder and I didn't yet specify in this example, I didn't say,
+[13:25] Hey, make sure you're not overwriting any other agents work. So this is a really interesting
+[13:29] point. Like, I don't know exactly what to do here. Um, I think they built everything the exact same,
+[13:34] which is really, really interesting. They literally created everything together. And in this case,
+[13:38] they both still spent money and soul spent way more here actually. So it ran for eight minutes
+[13:44] longer and it costs three bucks more. So this is honestly a little bit of a weird one. I'm not
+[13:49] going to like assign a winner here and I'm sorry if you guys are like pissed off that I let them do
+[13:54] that in this in this specific example but they took a ton of data and they had to build kind of
+[13:59] a story out of it and create four deliverables and they sort of collaborated on that which I
+[14:02] thought was interesting anyways here's what we got on the the cost and the runtime for the specific
+[14:09] example okay guys real quick in the moment of filming I didn't think anything too much of it
+[14:13] but while I was editing I was like wait a minute that doesn't really make sense so I went back to
+[14:17] this session and I did the math again and I found out that this actually was only codex
+[14:21] $3.60 and about nine minutes. So the previous figures, I was like, wait a minute, that just
+[14:27] doesn't really seem to add up. So at the end of this video, when we're going over the total cost,
+[14:32] just subtract about 19 bucks from GBD6 Sol's total cost, but everything else was pretty consistent.
+[14:41] Once again, apologize for messing this one up. I should have put that in the prompt. I normally do,
+[14:46] Didn't really think to do it for this one for some reason, but either way, I fixed it.
+[14:51] And just to show you guys what happened, I had both GBT Sol and Opus inspect the logs on both sides,
+[14:59] and they both agreed on what happened here, which is really interesting.
+[15:02] Basically, I gave Claude the request, and it began creating files.
+[15:06] And then Codex got the same request, obviously, in the same repo,
+[15:11] but what happened is the first time I sent this to Codex, it failed,
+[15:14] because like GBD6 Soul was still rolling out
+[15:16] and I was like, oh, I got to get on these prompts.
+[15:18] So it failed.
+[15:19] And then when I resumed it, what was this?
+[15:21] 16 minutes later,
+[15:23] Claude was already like pretty far along the way
+[15:25] with building.
+[15:26] So it basically just grabbed all of the stuff
+[15:29] that Claude was working on
+[15:30] and then started editing those files on top
+[15:33] while Claude was still working.
+[15:34] So I truly think that some of these deliverables
+[15:36] would have been better
+[15:37] if maybe if Soul didn't get in there
+[15:40] and make some changes.
+[15:41] But obviously it's hard to say.
+[15:43] But I think that some of the stuff
+[15:44] that looked a little bit AI generated.
+[15:46] I'm wondering if maybe that's because
+[15:48] Sol got in here and made some changes.
+[15:50] But I do think that the deck looks pretty good.
+[15:51] And I think that this Google Sheet
+[15:53] does overall look still pretty solid.
+[15:55] So anyways, we're gonna move on to the next experiment,
+[15:57] but I wanted to at least show you guys
+[15:58] like the order of events there and what happened
+[16:00] because I think that actually is pretty interesting.
+[16:02] But anyways, moving on to use case number five,
+[16:05] we have this game.
+[16:07] So we're gonna first look at GBT6 Sol's version.
+[16:11] It created a game called Small Hours.
+[16:12] I gave them the same prompt, obviously.
+[16:15] And this thing is loading up super slow.
+[16:16] My computer down there also started to get quite loud.
+[16:18] So this thing must be a pretty large game.
+[16:21] Okay, so here it is.
+[16:22] We basically will just be walking around with WASD, clicking to interact, and mouse to look around.
+[16:28] So I'll hit begin.
+[16:30] We see the Wren Museum of Miniatures closed for good at 6 o'clock tonight.
+[16:34] Everything your grandmother built goes to auction in the morning.
+[16:38] You sat down in her reading chair to say goodbye.
+[16:42] Okay, we got some sound effects coming in.
+[16:47] Wow.
+[16:48] Okay, so this is like really telling me a story here.
+[16:49] Okay, cool.
+[16:51] So this is me able to look around, move around.
+[16:55] Honestly, not too bad from like a design perspective.
+[16:57] Although my mouse, if it goes out of frame, that's it.
+[17:00] Like my mouse isn't locked.
+[17:01] You see my mouse is nowhere.
+[17:03] I'm moving my mouse around, but like nothing's happening until I bring it back into frame,
+[17:06] which is a problem because if I want to do a full 360, I can't.
+[17:10] So that's a little bit weird.
+[17:11] A little bit of an issue there.
+[17:12] I'm not even sure like how I'd go about trying to fix that. But anyways, walking around here.
+[17:18] Okay. Click to interact. Switch on the sewing room light. Right there. Right there.
+[17:28] Switch on the parents' bedroom light. Oh, that's just telling me what I can do. Interesting.
+[17:33] wow i mean this is honestly unplayable because of this mouse thing like i can't
+[17:41] i can't turn this way if i want to because my mouse goes out of screen that's not good but
+[17:46] honestly like as far as the storyline goes and the way this feels like it feels smooth it's just
+[17:51] this mouse issue which honestly i can't even play this anymore because of that so i'm gonna have to
+[17:55] stop we're gonna go over to opus version you know what's awful is the exact same thing happened here
+[18:01] as what happened in the previous version.
+[18:05] So they literally, once again,
+[18:06] started working on each other's files.
+[18:08] And obviously that's like a prompt error
+[18:09] because I didn't specify in these prompts
+[18:11] not to edit any other files.
+[18:13] Usually I do say that,
+[18:14] but in this one I just kind of
+[18:15] was shooting off these prompts.
+[18:16] So unfortunately we'll have to take the outputs here
+[18:18] with a bit of a grain of salt
+[18:20] because they started working on the same thing.
+[18:22] But I don't think that this experiment
+[18:24] is just totally ruined
+[18:24] because the pricing is still really interesting to me
+[18:27] because somehow we still had Opus work
+[18:29] for two and a half hours almost
+[18:30] with Sol working for an hour
+[18:32] and Opus coming in at four times more expensive.
+[18:34] So unfortunately, guys, I'm sorry that that happened.
+[18:36] I mean, we have seen so far that Opus does seem to be better
+[18:39] when it comes to actually giving us these sorts of outputs.
+[18:42] But I think it's important to understand,
+[18:44] like, where would the handoff be
+[18:45] between these two types of models?
+[18:47] All right, well, okay, well, number six,
+[18:49] these agents did not work on the exact same deliverable.
+[18:52] Thank goodness.
+[18:52] So let's go ahead and launch these up.
+[18:54] Basically, what I had them do
+[18:55] is look through my past 100 YouTube videos.
+[18:57] I'll show you the prompt up here.
+[18:58] and I wanted them to create me basically a 3D playable world explaining all these concepts
+[19:04] from YouTube. I thought this was interesting to see how they reasoned about this and how they
+[19:07] thought about telling a story out of this. So let's open these up and take a look. Okay,
+[19:11] so this one is Opus's output. We'll go ahead and start exploring. We can see that we walk forward
+[19:16] with W. Okay, we can move like this. So we've got kind of this cartoon 3D world where we're
+[19:22] We're able to walk inside and take a look.
+[19:26] I can sprint with space.
+[19:28] This is our guide.
+[19:28] We can talk to Nova.
+[19:30] Whoa.
+[19:31] This building was made from 100 of Nate's videos.
+[19:34] Walk into any road.
+[19:36] Read it.
+[19:37] Okay, cool.
+[19:37] I also can throw these balls for some reason.
+[19:43] I can grab a ball and I can throw it.
+[19:46] Okay, cool.
+[19:49] So we can see we can come into here how AI thinks.
+[19:52] We have sort of like an interactive world where we can look at tokens.
+[19:54] You can see AI reads word pieces.
+[19:57] We can look at things like the model harness, and we can press E to learn.
+[20:03] So basically, I can come to all of these little dashboards, and I can ask how it works.
+[20:07] We also see that there's some sort of game here.
+[20:11] Use the next word machine.
+[20:14] The cat sat on the...
+[20:17] Interesting.
+[20:17] Okay, so it's like I'm dropping balls in here to see like almost like how it chooses the next word, the way that an LLM generates the next word.
+[20:26] So there's obviously a bit of an issue up there because the balls were getting stuck, probably because I dropped so many at once.
+[20:32] But that is kind of cool.
+[20:33] It's a cool like little simulation of how this should work, except for the balls are getting stuck too often.
+[20:38] But anyways, that's an interactive way to explain these concepts.
+[20:42] I'm not obviously going to go into every single one of these rooms, but there's quite a few.
+[20:44] Right here we have the context window,
+[20:46] and all of these have the same sort of explainers,
+[20:48] but they all seem to have some sort of game as well.
+[20:51] You can see I can add blocks,
+[20:52] and I can see how a context window fills up,
+[20:55] which is pretty cool.
+[20:56] So we're getting these interactive experiences
+[20:58] as we're learning more about different concepts.
+[21:00] So I'm not gonna go into a ton of these, like I said.
+[21:03] We have Agent Arena, we have Prompt Power,
+[21:06] Team of Helpers, Skills Workshop.
+[21:08] Let's actually head into the Skills Workshop real quick
+[21:10] and see what the game is here.
+[21:12] It's a recipe robot.
+[21:14] So we basically build a tower.
+[21:17] I'm not really controlling anything here, so that's getting boring.
+[21:20] But anyways, this is pretty cool how I was able to go through, create this 3D world for us.
+[21:24] And we have all of these different concepts, memory, automation, building, model garage.
+[21:31] Anyways, that's not too bad of an output.
+[21:33] And now we'll open up the Idea Atlas from Sol.
+[21:37] You can see this one's a little bit different vibe, obviously not as realistic at all with the way that you move around and you can just like walk through the fountain.
+[21:43] but similar sort of feel we have real world results we'll pop into here real quick
+[21:48] also i can't get rid of this overlay for some reason which is kind of annoying
+[21:51] like this is just way too crowded i would say of an interface we can come in here for ideas
+[21:57] bottleneck outcome baseline delivery i think in here we can make maybe read
+[22:01] it's not letting me read these things click to read how to help okay i would click with my mouse
+[22:08] rather than like interacting with um e but anyways this one doesn't obviously feel as good
+[22:13] Like this would be harder to spend, I don't know, some time in.
+[22:16] Like the other one, I think I could have sat in there for maybe 15 minutes before I got bored.
+[22:20] But in here, I'm like already a little bit over this.
+[22:22] It's a little bit overwhelming.
+[22:23] It just doesn't feel as real.
+[22:25] And this is where you can see sort of like the design and the realism come into play.
+[22:30] So like earlier, that previous example where we were in that museum, that was definitely Opus kind of like carrying the load there.
+[22:36] That was definitely Opus making most of that code and designing most of that actual game.
+[22:40] So anyways, this one's going to go to opus 5.5 as well
+[22:43] And now look at the cost on this one for opus. This was an hour and 45 minutes for soul
+[22:47] This was about 50 minutes and opus was 60 bucks, whereas soul was eight dollars and 55 cents
+[22:51] So i'm going to give this one to opus even though it was way more expensive
+[22:55] The outputs are just coming back way better. I'm just i'm pretty impressed by opus so far
+[22:59] All right, so this next one we're going to start with soul. It's pretty interesting
+[23:01] I said I wanted to take a trip from october 1st to the 30th. I want to go to super cool ai events
+[23:06] I want to see cool nature. I'm in chicago. I want to also get out of the country
+[23:09] and I just basically gave it this really vague idea and said that I wanted to turn my itinerary
+[23:13] into this 3D world that I can explore. So I was really trying to see what they could do with like
+[23:17] building experiences from you know pretty vague ideas and you'll see right here that it asked me
+[23:22] a question and that is one thing that I did notice about Sol more often is that it actually stopped
+[23:27] and asked you questions a lot more than Opus 5.5. Some people might say that's good, some people
+[23:31] might say that's bad. I personally love when they stop to ask questions because it means that they're
+[23:35] really trying to understand what I want. But sometimes when you do things like a slash goal,
+[23:40] maybe you don't want it to ask you a question because you want it to keep going. So usually
+[23:44] though, what I've noticed with Codex is when it stops to ask you a question, it doesn't actually
+[23:47] stop. It'll inject a question into the chat, but if you don't answer it, it'll still keep going.
+[23:50] So I do really like the way that Sol asks questions. So anyways, here is the output we
+[23:55] got from Sol. We have 30 days, one orbit. We just have this kind of globe. So I'm not sure,
+[23:59] I'm not really getting the 3D experience I was hoping to get, but I wasn't too specific. So
+[24:04] anyways, this is what we see here. We can see we're going to start from Chicago to San Francisco.
+[24:10] It's giving me a link right here. This is going to kayak.com. So it's going to a flight. It seems
+[24:15] like this one is going to the Hyatt Regency in San Francisco. So it's providing me all these
+[24:20] links, which I did ask for. I asked for all of the links. We can see the order is San Francisco,
+[24:25] Yosemite, Amsterdam. Not going to say that. That's an Iceland. I don't know how to pronounce
+[24:29] these things south coast toronto algonquin niagara falls vegas zion bryce canyon grand canyon red
+[24:35] rock canyon we have the entire plan here and all of these looks like it links me back to one of the
+[24:40] places on the actual 3d globe which i'm able to click in and it basically like pulls up the little
+[24:46] itinerary for that day and all of these have links that i could go book things or grab tickets or
+[24:51] whatever it is so it's really not too bad for a simple itinerary it seems to have thought through
+[24:55] a lot and plan a lot of stuff out, so it's not too bad, but I wish the 3D globe experience was better.
+[25:00] And here we have Claude Code's version with Opus. This one, honestly very similar, although the map
+[25:05] seems to be better. It's also numbered here, so I can click in. Okay, this is definitely more of
+[25:10] what I was looking for when I said I wanted the globe for it to be interactive. And you can see
+[25:14] that if I'm going to these different stops, actually not there, here, it's actually taking
+[25:18] me more inside of what I'm actually doing and where I'm going. This is definitely more of what
+[25:23] I was looking for. They're planning out very similar things. You can see the orders a bit
+[25:27] different, but this one had San Francisco Tech Week, which is something that I was hoping it
+[25:31] would actually include. This is like the 9th through, I don't know, a few days later. But
+[25:35] this one, I'm not sure if it actually included San Francisco Tech Week. Yeah, this one had us
+[25:39] in San Francisco right at the beginning of the month, and there wasn't any sort of big event
+[25:43] here. It was literally just going to San Francisco. So this one did better research that I would have
+[25:47] trusted more for saying, hey, I wanted to go to cool AI events throughout the month of October.
+[25:52] This one definitely was doing better.
+[25:54] It also picked out some other AI events in San Jose.
+[25:57] And then just the experience of this interface, besides the loading of the globe being pretty slow, the experience here is significantly better.
+[26:04] So this is going to sound repetitive.
+[26:07] I think overall, Opus is just a much better model.
+[26:10] I think that it was also like, I don't know.
+[26:12] I feel like GBD 5.6 Sol was much better than Opus 5, but Opus 5.5 is now much better than GBD 6 Sol.
+[26:19] They ran for basically the same amount of time, and Opus 5.5 here was three times the cost of
+[26:23] Sol. But here's one that's really, really, really, really interesting to me. I'm starting with the
+[26:29] pricing just to show you how interesting this one is. So this was a code base. I had Astra design
+[26:33] this experiment, and I kept this all neutral at the beginning, so it didn't know it was judging
+[26:37] an opening eye model versus a Claude model. But I had to design this experiment with a massive code
+[26:41] base and then had to actually make them like fix it and analyze stuff and repair stuff.
+[26:49] And what came back was that Sol did better.
+[26:53] Sol got 100 out of 100, whereas Opus got 97 out of 100 and passed all 30 checks, whereas
+[26:58] Opus missed one of them.
+[26:59] And what else is interesting about this is not only did Opus cost basically 20 times
+[27:03] more and was two times slower, but Sol actually stopped halfway through because of some sort
+[27:09] of security thing.
+[27:10] Like it wouldn't let me continue on.
+[27:12] So I had to pause both of them.
+[27:13] And then I had to tell Asher what happened.
+[27:14] And then Asher said, okay, let's switch it up a little bit and then send this prompt
+[27:17] back to both of them.
+[27:18] But Opus didn't stop.
+[27:20] Sol stopped because of some sort of cybersecurity thing and safety thing, but Opus didn't.
+[27:24] And I just wanted to call that out because I thought that was really interesting.
+[27:26] But what ended up happening was Sol somehow ran for $1 on this massive code base and did
+[27:32] better.
+[27:33] And so I think like it's really interesting to see how different these models are and
+[27:36] where they excel.
+[27:37] because with a lot of these quick tasks or a lot of these more code, I don't want to say
+[27:41] code writing tasks, but maybe like code reviewing and execution and repairing,
+[27:47] Sol has been really good. But then we also saw something like at the beginning of this video
+[27:50] where it missed one of my Fireflies transcripts where I said NNN and it just gave me the wrong
+[27:55] answer. So obviously one test like this isn't definitive, but in this case, Sol actually does
+[28:01] come out on top and I would say by a wide margin. For one-twentieth of the cost and getting better
+[28:06] output. That's pretty good. All right, so these last two, 9 and 10, have to do with browser use.
+[28:10] And this one's very interesting to me because historically, Codex with pretty much whatever
+[28:15] model has almost always beat Cloud Code with whatever model when it came to browser use.
+[28:20] And I've loved Codex for browser use. So let's see how this one goes. I basically gave them both
+[28:24] the same prompt. I gave them a course structure with the videos and descriptions and everything.
+[28:28] And I told them to make the course inside of my free school AIS. So in here, here's the classroom.
+[28:33] You can see if I scroll down and I give this a refresh real quick, we should see we have two new classrooms in here.
+[28:38] We have the sole iOS and the Opus iOS. Let's click into sole. We can see that it uploaded all the videos.
+[28:44] They're all labeled as drafts one through 15. Each video has the description, key points, key quotes, resources.
+[28:50] And as I flip through, we can see that all of them hopefully are uploaded correctly.
+[28:54] It seems like it's got all of these rights and we have properly linked documentation or resources and skills.
+[29:02] and they're all named, they're all linked.
+[29:04] So this looks pretty good.
+[29:05] I don't think we're gonna notice
+[29:06] anything significantly different from these two,
+[29:08] except for maybe like the cost and time.
+[29:10] So let's look at the opus one.
+[29:12] We can see, okay, the only difference here
+[29:14] is that it didn't make each page as a draft.
+[29:16] It just made the overall course as a draft,
+[29:18] which honestly I think is a little bit smarter.
+[29:19] But anyways, introduction, mindset,
+[29:22] all of these have the same description, key points,
+[29:25] the same things are linked.
+[29:27] Although this one linked it here, but also linked it here.
+[29:31] It duplicated some work. It linked things twice, which isn't as good, right? Like I don't want it
+[29:35] to link everything twice. That just doesn't really make too much sense. But besides that,
+[29:39] nothing really to pick on here with this course. And I was expecting Sol to come in and be cheaper
+[29:45] here. But in this case, Opus 5.5 was faster and cheaper and had that tiny little mess up.
+[29:51] So in this case, I would be giving this one to Opus because the results were basically the same.
+[29:56] Opus also didn't make each individual page a draft, which I thought was a nice touch
+[29:59] and it was cheaper and faster.
+[30:01] So Opus and Cloud Code have actually won
+[30:04] a browser use case, which I haven't seen them do
+[30:06] in my experience with Cloud Code versus Codex in a while.
+[30:09] So let's move on to number 10, which is the last one.
+[30:11] It's also another browser use case.
+[30:13] Okay, so this use case is slowly becoming
+[30:15] one of my favorite benchmark tests with new models.
+[30:18] I gave them a reference image, which I'll pull up real quick.
+[30:20] It was this image right here.
+[30:22] This was an AI generated image of me and Adam Sandler.
+[30:25] And basically what I told them to do
+[30:26] was I told them to open up Canva
+[30:27] and use like the drawing and painting tools to recreate this.
+[30:31] And look what Opus 5.5 gave us.
+[30:33] That is actually a really, really good output.
+[30:35] Like I wasn't expecting it to be this good
+[30:37] because when I've done this in the past,
+[30:39] even with models like Fable,
+[30:40] we got something back that was horrible.
+[30:41] And this is actually better than Astra's output
+[30:43] that it gave me when I did this a few weeks ago.
+[30:46] And then when I gave this to Sol,
+[30:48] first of all, just tried to create an image.
+[30:50] And I was like, okay, that's cheating.
+[30:51] That's not what I wanted you to do.
+[30:52] So I had it like, I just did it again.
+[30:55] I gave it another prompt,
+[30:56] but it ended up giving me this output.
+[30:57] And I was like, okay, I'm wondering if maybe it just needs to try again because the first time it made an image.
+[31:03] So I let it have another try.
+[31:04] I spun up another session and I told it to do it again.
+[31:07] And then it gave me this type of output again, which is just comically bad.
+[31:11] So I'm not exactly sure what happened in the degradation from GBD6 Astra to GBD6 Sol with browser use and with this Canva test.
+[31:20] But this is just horrific.
+[31:21] And obviously, like, we don't even have to debate that Cloud Code is going to take this one as well.
+[31:26] opus 5.5 has just really really really impressed me so far and yeah um you can take a look at the
+[31:34] speed and cost here as well opus was slower you know 30 minutes slower and about four times more
+[31:39] expensive but the output is just so much better so this is where we're at after all those experiments
+[31:44] you can see that we had one two three four five six seven seven wins for opus 5.5 and one win for
+[31:51] soul and then two that just like didn't count because i guess i messed up that was definitely
+[31:55] my fault. So seven to one, Opus 5.5. What about the total stats here? Well, Opus 5.5 was eight
+[32:02] minutes or sorry, eight hours and 40 minutes across all of the experiments. Sol was five hours and 51
+[32:07] minutes across all the experiments. So Opus was a little bit slower and also cost about three times
+[32:11] as much at 213 bucks compared to Sol's $74.46. So once again, we kind of came into this experiment
+[32:18] understanding that Opus is a bigger model. It's a little bit bigger, a little bit more expensive.
+[32:22] And my gut was telling me that, okay, I think Opus 5.5 might be a little bit better than
+[32:27] Sol based on the pricing.
+[32:28] But 5.6 Sol was really good.
+[32:31] And Opus 5 was really bad.
+[32:33] So it's a big jump here.
+[32:34] And I'm really excited to see what's going to come next from Anthropic with maybe their
+[32:38] next Fable model or something.
+[32:39] Because obviously, they've been really grinding on the feedback that they've been getting
+[32:43] on X and just their internal use and everything.
+[32:46] And I'm honestly a little bit disappointed in Sol.
+[32:48] It feels more like this is a GPT-6 Luna or Terra.
+[32:51] Like this doesn't feel, I don't know, 5.6 Soul is really good.
+[32:55] I thought that GBT6 Soul was going to be better.
+[32:58] I do like how the pricing is really cheap.
+[33:00] That was like exciting, but now we know why it's so much cheaper.
+[33:05] So anyways, guys, to sort of wrap this up into as concise of one sentence as I can try to make,
+[33:10] I would say OBUS 5.5 is a major step up from OBUS 5.
+[33:15] GBT6 Soul is a step down from 5.6 Soul.
+[33:18] It feels more like a GBD6 Luna that might come out.
+[33:23] I would trust Claude Opus more for creativity and for some judgment calls.
+[33:30] And I would maybe want to defer some work to GBD6 Astra if I know very, very specifically what I want.
+[33:37] And I just want them to execute step one, step two, step three, step four.
+[33:40] I think a pretty cool scenario would be using Opus 5.5 as the orchestrator that spins up and sends off very specific instructions to a bunch of little GBD6 Sol workers.
+[33:51] What I think is very cool is that Opus 5.5 and GBD6 Sol are both cheaper than their predecessors with Opus 5 and with GBD6, or sorry, GBD5.6.
+[34:00] I'm about to lose my mind here.
+[34:02] I've been up all day.
+[34:04] It's late.
+[34:05] And I have just like 5.5, 6, 5.6, just all these little numbers in my head.
+[34:09] So forgive me, but that's kind of how I feel. Anyways, that's going to do it for this one.
+[34:13] If you guys enjoyed, you learned something new, please give it a like. It helps me out a ton.
+[34:16] And as always, I appreciate you guys making it to the end of the video and I'll see you all in the next one.
+[34:20] Thanks, everyone.

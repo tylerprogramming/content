@@ -1,0 +1,55 @@
+[00:00] So, I've been doing a Hermes Asian masterclass, which is a kind of exhaustive look at Hermes Asian. But, I understand that everyone doesn't necessarily want to dive into 5 hours of videos. So, I want to do this uh quick
+[00:11] start video, which is going to get you from absolutely nothing to a working Hermes Asian in just 10 minutes. And then once you get your agent up and working, if you decide you want to
+[00:20] explore more, you can check out the masterclass or other videos I have on Hermes Asian. But, let's get to it. Step one, installation. So, you're going to want to go to
+[00:30] github.com uh {slash} new research {slash} Hermes Agent and go down to the quick install. This you could see is the command for
+[00:40] Linux, Mac OS, WSL, Termux, but we're going to be using Windows. I'm on a Windows machine here. Just put in that same command. And it'll start installing all the
+[00:51] dependencies here. Uh once it's installed, it'll go to the setup wizard. So, we're going to just do the quick setup right now. So, do one.
+[01:03] And this will log us into new portal. I have a new portal account, but you can create your own for free. And once you do that, you can select your model.
+[01:14] I'm going to do 20 here. And keep the terminal back end. Everything else is going to be pretty much default. So, now to set up the messaging,
+[01:25] um you're going to have to do a little bit more. You could see there's a lot of different options for messaging. Right now, they have 25 here.
+[01:35] And you're going to have to configure them. So, so I'm going to do a demo one of setting this up using Telegram. And then the second part is going to be setting up with the new iMessage uh
+[01:46] function using Photon. And this is if you don't have a Mac. If you only have a Windows like me, there is actually a way to connect to iMessage with your agent. So, I'll show
+[01:56] you uh both ways right now, starting with Telegram and then with iMessage. And I should emphasize that all messaging goes through the gateway. So, whenever you want to use a messaging
+[02:07] app, you need to have the gateway set up or just run it directly from here. If you do Hermes Gateway install, it'll install it as like a background process
+[02:18] so that when you reboot your computer or whatever device you have your Hermes agent on, it'll be automatically running or you can just do it at manually like this gateway Hermes Gateway and then
+[02:27] you're ready to connect to your messaging platform. So, let's configure Telegram first. Space and Telegram Discord. In Telegram, you can see all the
+[02:38] different connectors they have. So, Telegram bot token. And if you've used other bots like Open Claw, you'll know this process, but it
+[02:50] starts you have to be in Telegram either on your phone or desktop. Go to @BotFather. You can just search for it and then do {slash} new bot. So, you can see here I did new bot here.
+[03:03] I've set up a bunch of bots previously, but we can do one from scratch here. What is the new bot going to be called? Please choose a name for the bot. Let's call it Admiral. This
+[03:13] Admiral Hermes bot. Okay. So, there you go. You have your new bot. It's very easy.
+[03:23] This is the link to it. You're going to see the token down here. And I'll be blocking out part of this. Never expose your bot token. But, this is what you're going to need
+[03:32] to give here in the terminal. Telegram bot token. So, just copy and paste that. Telegram bot token saved. To find your Telegram user ID,
+[03:45] so this is going to allow list so that only you can talk to your bot. You do this by messaging user info bot on Telegram And it'll give you a a numeric ID.
+[03:56] You can see this is it. Get ID. You just do user and it'll show your user ID here. So, let's go back here. Let's talk to Admiral.
+[04:15] See it's typing. There we go. Hi, how can I help you today? So, that was just a quick demo, a little clip from the masterclass videos for us setting up with Telegram.
+[04:26] And next is going to be about iMessage. So, this is the main command Hermes photon setup. Uh and then phone and then your phone number.
+[04:36] Okay, so I've just updated. And I'm just going to put in my my number. So, I will blank this out, but you just put your phone number here.
+[04:47] Okay, so once I clicked enter on that, it popped up this automatically in my browser. And this is where you're going to create your account. So, I just did it through my uh tonby at
+[04:57] tonby studio email. And you can bind your phone number here. So, they'll send you a six-digit code. You just put it in. When you go through that, then you're
+[05:06] going to authorize the device with the same code that it gave you in the terminal. So, once you've authorized, it's going to give you a phone number here. Um I'm going to be blocking this out as
+[05:16] well cuz this is the number you have to text from your phone to talk to your agent. Uh but, before I do that, I have to make sure the gateway is started. Okay, so you can just do Hermes gateway or Hermes
+[05:27] gateway restart if you already had one running. Now, if you want to check everything, you do Hermes photon status here. It'll give you all the It'll give you the number
+[05:37] for your agent as well as your own number over here and show you where all everything is set up. So, then you're You're ready to text your agent. So, I'm here on my iPhone
+[05:47] right now. You could see I already said hello. It's responded, "Hello there. What can I help you with today?" And ask, "Can you check uh the status of my cron
+[05:59] jobs?" You can just check it right here on my iPhone at any time. So, you can see it's thinking. And there you go.
+[06:14] Uh it came back, "You've active one active cron job and all the details uh for it." Once you have your Hermes agent set up, you have a model selected, you have your messaging set up, you can
+[06:26] start customizing it. And one of the ways you do this is with a skill. Now, a skill is just a package of instructions for your agent. You enter Hermes chat to open up the TUI. And from
+[06:36] here, you can simply check out the skills, search, browse. And you can see here, these are just some of the official options from New
+[06:46] Research. And there's many ways to install skills, but you can just ask your agent, "Install the concept diagram skill." Then create a diagram of the Hermes agent setup process.
+[06:55] You can see the agent installed the skill itself. You can see it's done and we can look at our little diagram right here. Here it is, using the concept diagram skill.
+[07:06] This is just one example. There's also other skills and other plugins, other MCP servers to connect your Hermes agent with external software and give it all sorts of abilities.
+[07:17] A few other commands you should know, Hermes dashboard in the terminal. This will open up a local server. And in the browser, you can check this. This is the dashboard. It has all
+[07:27] different tabs here with information about your chat sessions, files, models, everything you would need. Another useful command is Hermes desktop, and this will install this nice little
+[07:37] desktop app for an experience similar to like the Codex app. And this is the same agent you've been talking with in messaging in the TUI in the terminal. You have all of your
+[07:46] sessions here, all the previous conversations and work you've done, your profiles. Uh you can set up skills and tools, messaging, and a lot more. So, there's really a lot of different
+[07:56] ways to work with Hermes agent and talk with it, just depending on your use case and your preferences. Inside the TUI, you can easily switch models just by doing {slash} model.
+[08:08] And then you can switch to whichever provider you have set up. Hermes agent also has a built-in memory system so that when you tell it to remember things, it stores this, and these memories
+[08:18] persist across different sessions. So, one of the most useful features of Hermes agent is what are called cron jobs. And if you're not familiar with this word, it just means any task that the
+[08:28] agent performs on a specific schedule. You can simply create these by telling your agent, you know, create a cron job that sends me the day's major
+[08:37] sports scores and AI news to my iMessage. You can alter what the job itself is and where it's sent, as well as many other things.
+[08:47] And this created the cron job. So, this is going to be sent to my phone, text to me every morning at 9:30. And you could see, here it is on my phone,
+[08:58] sent to me. I got all the latest scores, as well as the top AI news of the day, every day. And that's it. You have a working agent installed locally on your machine that
+[09:10] you can talk to with your messaging app. You can give your agent new skills and abilities. You can access it through the dashboard or through the desktop app. And you've
+[09:20] already set up your first cron job. So, this has been Hermes agent quick start, just a quick look if you're starting from zero and want a quick guide. But obviously there's a lot more
+[09:30] to learn when it comes to Hermes agent. And if you'd like to learn more, please check out my Hermes agent masterclass. There are going to be 10 videos in all, close to 5 hours answering hopefully all
+[09:42] or at least most of the questions you might have about Hermes Aegen. But this is going to be it for this video. Thank you for watching.

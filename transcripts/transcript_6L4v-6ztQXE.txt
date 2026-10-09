@@ -1,0 +1,140 @@
+[00:00] Most AI agents look great in a demo until you actually try to use them every day.
+[00:05] They forget what you told them last week.
+[00:07] They lose momentum between sessions.
+[00:09] And if you try to run them locally, the whole setup depends on your laptop staying on,
+[00:14] your environment not breaking, and you being willing to babysit it every time something goes wrong.
+[00:19] So in this video, I want to show you a much better setup.
+[00:22] I'm going to deploy Hermes agent on Hostinger, walk through the full setup step by step,
+[00:27] and then turn it into an always-on AI assistant that can actually do useful work in the background
+[00:33] with persistent memory, recurring tasks, and your data staying on your own infrastructure.
+[00:38] If you're ready to make AI your superpower, welcome.
+[00:43] Every video gives you new tools, new tricks, and simple shortcuts to level up your workflow instantly.
+[00:50] No fluff, no geek talk, just practical power you can use today.
+[00:55] If you haven't seen Hermes Agent before, the short version is this. It's not built to be just another chat window. Hermes is designed more like an AI assistant you keep around long term. It can store memory, improve from repeated tasks, work across different channels, and handle recurring jobs instead of starting from zero every single time you open it.
+[01:16] And that's what makes it interesting because if you pair an agent like that with the right
+[01:20] infrastructure, it stops feeling like a toy demo and starts feeling like something you could
+[01:25] actually use in a real workflow. So in this video, I'll show you the full hosting or setup,
+[01:31] how to get Hermes running, and then I'll use it to build a practical research assistant.
+[01:35] So you can see why self-hosting an AI agent like this makes a lot of sense.
+[01:39] The big difference with Hermes is that it's built around the idea of persistence.
+[01:43] Instead of treating every session like a fresh start, Hermes can keep memory, build up context over time, and even create or refine skills based on repeated tasks.
+[01:53] So if you keep using it for the same kind of work, research, summaries, monitoring, reporting, it's designed to become more useful as it learns how you want that work done.
+[02:02] It also supports the kind of things you'd expect from a serious AI agent setup.
+[02:07] Multiple model options, web research, long context handling, recurring tasks, and connections to communication tools like Telegram, Slack, Discord, and more.
+[02:16] So the value here isn't just, I can ask AI a question.
+[02:19] It's more like, I can give this thing a role, keep it online, and let it become better at that role over time.
+[02:25] And once that's the goal, where you run it matters just as much as what the agent can do.
+[02:30] Because if you're trying to build an agent that actually works in the background, local setup becomes the problem very quickly.
+[02:36] If your laptop sleeps, the agent stops.
+[02:40] If you want it checking something every morning, sending updates to a team channel, or keeping track of long-running tasks over time,
+[02:46] you don't want that depending on whether your computer is open on your desk.
+[02:50] And that's the part I think a lot of people underestimate with AI agents.
+[02:53] The model can be great. The interface can be great. The features can be great.
+[02:57] But if the system underneath it isn't stable, then you don't really have an assistant.
+[03:02] You just have another tool that still needs your constant attention.
+[03:05] For Hermes specifically, that's a waste because the whole point is to have something persistent,
+[03:11] something that remembers, improves, and stays available.
+[03:14] So instead of running it locally, I'd rather give it a proper home on a VPS where it can
+[03:19] stay online 24-7 and keep working even when I'm not at my computer.
+[03:23] This video is sponsored by Hostinger.
+[03:25] And what I like about their setup here is that they've removed a lot of the usual friction that comes with self-hosting an AI tool.
+[03:32] If you go to the Hermes agent page on Hostinger, they already have a pre-configured Docker template for it.
+[03:37] So instead of piecing everything together manually, you can start from an environment that's already built for this exact deployment.
+[03:44] That makes a big difference, especially if you like the idea of self-hosting but don't want the setup process to become its own side project.
+[03:51] because the real goal here isn't I want to spend my weekend configuring infrastructure.
+[03:56] The goal is I want Hermes running, I want it stable, I want it always available,
+[04:00] and I want my memory, API keys, and business context to live on my own VPS rather than somewhere I don't control.
+[04:08] So let me show you the exact flow.
+[04:10] And if you want to follow along with the same setup, I'll have my hostinger link in the description
+[04:14] plus a coupon code you can use for an extra discount on the Hermes Agent VPS plan.
+[04:19] So once you're on the Hermes agent landing page, the first thing you'll do is choose the VPS plan you want to use.
+[04:26] For a setup like this, I'd go with a plan that gives you enough room to run Hermes comfortably over time,
+[04:31] especially if you want to use it for things like recurring research tasks, multi-step automations, or even multiple agents later on.
+[04:39] One thing I like here is that you're not locked into some per-agent pricing model.
+[04:43] You're using your VPS resources, which gives you more flexibility depending on how serious
+[04:49] you want the setup to become.
+[04:51] If you already know you want to keep the agent running long term, I'd also look at the longer
+[04:55] plans because they usually bring the monthly cost down quite a bit.
+[04:59] So from here, just choose the plan you want, add it to the cart, and go through the checkout
+[05:03] flow like normal.
+[05:05] During checkout, make sure to apply the coupon code for the extra discount.
+[05:08] So if you want to replicate this setup exactly, use the link in my description, pick the Hermes
+[05:14] Agent VPS plan and apply my code before you finish checkout.
+[05:18] Now let's actually deploy it.
+[05:20] If you came in through the Hermes Agent page on Hostinger, the nice thing is that the Hermes
+[05:24] template should already be preselected so you can move straight into the deployment
+[05:29] flow without having to search around for the right container setup.
+[05:32] If you're starting from inside Hostinger's panel instead, you can go into the Docker
+[05:36] manager. Search for Hermes agent and launch the template from there. Once you select it,
+[05:41] you'll get to the configuration screen. This is where you'll set up the environment variables and
+[05:46] connect the services Hermes is going to use. So depending on your workflow, that might include
+[05:51] your model provider, API credentials, and any extra services or channels you want the agent
+[05:56] to work with later. What I like here is that you're not doing the annoying part from scratch.
+[06:01] You're not manually building the whole environment just to get to a usable starting point. Hostinger
+[06:06] is basically handling the deployment foundation for you and you're focusing on configuring Hermes
+[06:11] for your workflow. So once those settings are in place, go ahead and deploy it. After the deployment
+[06:17] finishes, open the Hermes dashboard and make sure the first launch completes successfully. This is
+[06:22] the point where the setup goes from theoretical to practical because now Hermes isn't just something
+[06:27] you plan to use one day. It's live, it has a permanent environment, and it's ready to actually
+[06:32] do work. And that's where it gets interesting. So rather than just looking at the dashboard and
+[06:36] saying, cool, it's installed, I want to use Hermes for something practical. Let's say I want an AI
+[06:41] assistant that monitors a group of competitor websites, product pages, or AI tool launches,
+[06:47] then sends me a clean summary every morning in Discord or Telegram so I don't have to manually
+[06:51] check everything myself. That's the kind of workflow where Hermes makes a lot of sense.
+[06:56] So the first thing I do is define the task clearly. Something like, monitor these specific
+[07:01] websites, check for updates or changes, summarize what actually matters, and send the result
+[07:06] to me every morning.
+[07:07] That alone already shows why hosting matters.
+[07:10] Because once Hermes is running on the VPS, it can keep doing that job even when my laptop
+[07:15] is closed.
+[07:16] I don't need to leave a local machine running, and I don't need to keep restarting anything
+[07:20] to make sure the workflow survives.
+[07:21] From there, I'd connect Hermes to the channel I actually use.
+[07:25] Maybe Discord, maybe Telegram, maybe Slack if this is for a team workflow.
+[07:29] That way the output shows up where I already work instead of forcing me to keep checking a separate dashboard.
+[07:34] Now let's say I want to go one step further.
+[07:37] Instead of just asking for raw updates, I want Hermes to compare the new information with previous announcements,
+[07:42] spot what changed, and write the summary in a way that's actually useful for decision making.
+[07:48] That's where the persistent memory and learning side becomes more interesting.
+[07:51] Because the more context Hermes keeps about what I care about, how I want updates summarized,
+[07:56] which sources matter, and what kind of output is actually useful,
+[08:00] the less it feels like I'm prompting from scratch every time,
+[08:03] it starts to behave more like a system with continuity.
+[08:06] And even if competitor monitoring isn't your use case,
+[08:10] the same structure works for a lot of things.
+[08:12] Content research, trend tracking, daily market updates,
+[08:15] lead research, internal summaries, recurring reporting,
+[08:18] basically any workflow where information comes in continuously
+[08:21] and you want an AI assistant to stay on top of it for you.
+[08:24] that's the setup I find much more compelling than just,
+[08:27] look, here's another chatbot,
+[08:29] because now you're building something
+[08:30] that can stay active in the background,
+[08:32] keep context, and actually support the way you work.
+[08:36] And for me, that's the real value of running Hermes this way.
+[08:39] First, it stays online.
+[08:41] It's not tied to whether my computer is awake,
+[08:43] whether I forgot to leave something running,
+[08:45] or whether a local setup breaks
+[08:46] the moment I stop paying attention to it.
+[08:49] Second, it gives you a lot more control over your data.
+[08:52] If Hermes is storing memory,
+[08:53] conversation history, recurring tasks, and API keys, I'd much rather keep that inside my own
+[08:59] VPS environment than scatter it across different third-party tools. Third, it makes the self-improving
+[09:05] part more meaningful. If an agent is supposed to remember things, improve over time, and become
+[09:10] more specialized around repeated tasks, then it needs a stable environment to live in. Otherwise,
+[09:15] you're constantly resetting the exact thing that makes it valuable. And finally, Hostinger makes
+[09:20] the barrier to entry a lot lower here. You still get the benefits of self-hosting, privacy,
+[09:25] persistence, control, always-on availability, but without turning the setup into a technical mess.
+[09:31] So if you've been interested in AI agents, but the infrastructure side always felt like the part
+[09:37] that made it not worth the effort, this is one of the cleaner ways to get started. So that's the
+[09:42] setup. If you want to run your own self-improving AI assistant with persistent memory, recurring
+[09:47] tasks and a proper always-on environment, Hermes Agent is definitely worth looking at,
+[09:53] and deploying it on Hostinger is one of the easiest ways to do it without overcomplicating
+[09:57] the process. If you want to try the same setup, I'll leave my Hostinger link in the description
+[10:02] along with my coupon code so you can get an extra discount on the Hermes Agent VPS plan.
+[10:07] And if you want, I can also make a follow-up video going deeper into the Hermes side itself,
+[10:12] like how I'd structure better recurring workflows,
+[10:16] how to connect it into a real content or research pipeline,
+[10:19] and which types of agent tasks are actually worth automating.
+[10:23] Thanks for watching, and I'll see you in the next one.
