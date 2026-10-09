@@ -1,0 +1,577 @@
+[00:00] Oh boy, it's new model time.
+[00:01] This one's very different though.
+[00:02] This isn't our usual new LLM that's slightly better at code.
+[00:05] And it's not going to be the type of thing
+[00:07] that the model counter guy is going to show up and say,
+[00:09] look, best new model.
+[00:10] If anything, this might take the counter guy out of his job
+[00:12] because this model is for data processing.
+[00:15] It's by a company called TypeSafe AI, and it's called JEV.
+[00:18] The point of this model isn't to generate text, write code,
+[00:21] or do all the things that we expect models to do today.
+[00:24] It is classification.
+[00:26] This model is the best model ever made to take data
+[00:29] and organize it and classify it.
+[00:31] It returns JSON perfectly in a type-safe format.
+[00:34] When you give it a format, it does it, and it does it well.
+[00:37] That means this model isn't going to replace things like Fable or Astra.
+[00:40] Well, hopefully not.
+[00:41] If you are using Fable and Astra for the stuff you can do with this,
+[00:43] I have a lot of questions for you.
+[00:45] All that said, this model is incredibly capable,
+[00:48] and that's why it's blown up on Twitter.
+[00:50] I've seen demos of everything from lightning-fast computer use,
+[00:52] even in, like, the iOS simulator,
+[00:54] to the model playing Minecraft at lightning speed,
+[00:57] to compaction that takes under a second instead of multiple minutes.
+[01:00] I can't wait to show you all the best things you can do with this model.
+[01:03] But first, we got to classify something.
+[01:04] The next section, which is the sponsor break.
+[01:06] You're not a developer.
+[01:07] You can skip this ad.
+[01:08] But if you are, you should listen close.
+[01:09] Have you ever sent a prompt to CloudCode, Codex, Cursor, or some other tool
+[01:13] and been surprised that it took hours when you expected it to take minutes?
+[01:16] Did you check to see why?
+[01:18] Because I would bet good money is a very good chance that a handful of things happened.
+[01:22] Maybe it took too long to download the Docker image.
+[01:24] Maybe it spun up and had some error when it did.
+[01:26] maybe the CI that it was trying to run took forever.
+[01:29] Maybe it pushed it up to GitHub
+[01:30] and the CI run on there was going to take hours long.
+[01:33] I cannot tell you how many times I've run into this.
+[01:35] Wouldn't it be nice if your agents
+[01:36] could do all of those things way faster and more reliably
+[01:39] and when those things failed, you got insight into it?
+[01:42] Imagine taking all of these eight minute builds
+[01:44] and knocking them down to 20 seconds
+[01:45] or building and testing three React apps
+[01:48] and seven Go binaries in 30 seconds
+[01:50] or making your cross-platform builds
+[01:52] 10 to 20 times faster.
+[01:54] Hopefully you get the idea now
+[01:55] because today's sponsor is Depot
+[01:57] and they are trying their damnedest
+[01:58] to make AI more capable,
+[02:00] not by giving it things it can't do already,
+[02:03] but by making all of the things it does do
+[02:04] more reliable and faster.
+[02:06] Whether you're looking for a faster
+[02:07] and cheaper alternative to GitHub Actions
+[02:09] or just a nice place to let your agents run
+[02:11] or a cache for all the Docker images
+[02:12] you and your team are using,
+[02:14] Depot provides all of this and more.
+[02:15] Their CI platform is fully compatible
+[02:17] with GitHub Actions,
+[02:18] which means you could swap over trivially.
+[02:20] But if you don't want to deal with GitHub's downtime,
+[02:22] you can move fully over to Depot's platform,
+[02:24] still compatible with actions,
+[02:26] but without having to worry about GitHub's reliability.
+[02:28] You can also transform those workflows
+[02:29] to let them run in parallel,
+[02:31] which ends up being comically faster
+[02:33] than the alternatives on GitHub.
+[02:35] Their CLI is incredible too.
+[02:36] You and your agents will understand it immediately.
+[02:38] It makes it trivial to migrate your CI,
+[02:40] run it without pushing up code,
+[02:42] diagnose things when they go wrong,
+[02:44] find secrets and clone them across different places,
+[02:46] and more.
+[02:46] You'd even SSH into a session while it is running
+[02:49] to figure out what's going wrong in real time.
+[02:51] And when I say you, obviously, I mean your agents.
+[02:53] GitHub actions were poorly assembled for humans over 10 years ago.
+[02:56] Depot was crafted carefully for agents today.
+[02:59] Figure out what that means at soydiv.link slash depot.
+[03:01] Quick breakdown on how this all happened, because it's actually been pretty crazy to watch.
+[03:05] It feels like it just poof appeared and took over my entire Twitter feed.
+[03:09] Like half of what I've been seeing is all of the stuff about Jev.
+[03:12] It was created by Diogo, who used to work at OpenAI.
+[03:15] He apparently helped co-invent ChatGPT as well as RLHF.
+[03:19] And as great as RLHF is for model behaviors, it is not helping as much with classification,
+[03:24] which is the thing he cares about.
+[03:25] If you focus more on the classifying side and less on the general usage of text generation
+[03:30] side, what you can get is way, way faster and way, way cheaper.
+[03:34] In particular, all output tokens being free.
+[03:37] The cost characteristics of this model are almost as insane as the speed.
+[03:40] Both are crazy.
+[03:41] So let's read through the announcement.
+[03:43] The core concept here is System 1 Models.
+[03:46] This is an idea that comes from Thinking Fast and Slow by Daniel Kahneman.
+[03:50] System one is the fast and intuitive judgment of your brain,
+[03:53] the part of your brain that could do things without effort,
+[03:56] that looks at somebody and is like, yeah, that shirt's blue.
+[03:58] System two is slow and deliberate reasoning.
+[04:00] In type safe's framing,
+[04:01] JEV handles the first kind of task while reasoning models still handle the second.
+[04:05] They named it JEV after Jevin's paradox,
+[04:07] which I actually think is pretty cute.
+[04:08] The idea is that when the steam engine gets more efficient,
+[04:11] it actually increased coal consumption, not decreased,
+[04:14] because now that power is cheaper, we can use it for more things.
+[04:18] That is really the right way to think of this model.
+[04:20] It's not unlocking new capabilities that weren't possible before.
+[04:24] It's making them fast and cheap enough that they're way more viable than they've been.
+[04:28] But what are those cases?
+[04:29] What is this valuable for?
+[04:31] Pretty much anything that needs to be classified.
+[04:34] Think organizing videos by their topic in my YouTube channel,
+[04:37] figuring out if an email is important or not,
+[04:39] and what category it should be put under.
+[04:42] Things like safety and moderation,
+[04:43] identifying what messages are safe and which ones aren't
+[04:46] and what makes them unsafe.
+[04:47] There's so many things you can use it for.
+[04:49] And when it's as insanely fast as this model is,
+[04:52] the results are kind of crazy.
+[04:53] We'll go to the official announcement in a sec,
+[04:55] but first I just want to show you how insanely fast the model is
+[04:58] with an example of something it can do.
+[05:00] Not saying it can do it well,
+[05:01] you'll actually see the type one, type two distinction here.
+[05:03] But this is a game of checkers that I built to use JEV.
+[05:06] JEV takes the whole board as an input, as a state,
+[05:10] not an image because it doesn't have vision. It takes the board state as data, and then it chooses
+[05:15] what to move based on the output it gives. So here it might say it wants to move B6 to C5.
+[05:23] I go first, so I'll make a move. Watch how fast it responds. I'm clicking now. Yeah, it's practically
+[05:30] instant. There is a catch, though. It's not very smart. I was able to barely pay attention while
+[05:41] playing and crush this model. Yeah, it's just, it's not good. I was barely paying attention,
+[05:47] and I'm going to crush it here. The point I'm trying to make is that it's super fast,
+[05:51] but it's not using the reasoning part of its brain, so to speak. It is just processing the
+[05:57] data. Let's take a look at what Diogo had to say. Models have been superhuman at chat for years,
+[06:02] so where's all the automation? This has been my driving question for the last four years.
+[06:07] At OpenAI, I helped build the methods that make language models useful at following instructions
+[06:10] and talking with people. The work ended up as the research behind ChatGPT. At the time,
+[06:15] I thought maybe chat models would lead to AGI, but despite the hype, it became obvious to me
+[06:19] that there was something really big missing. After two years in stealth, countless technical
+[06:22] challenges, and research breakthroughs, he's beyond excited to announce that today TypeSafe
+[06:26] AI is releasing its first System 1 model, a new class of Frontier model built to make
+[06:31] fast structured decisions that software can use directly.
+[06:33] This is one of the biggest important pieces to understand.
+[06:36] The point of this model is to integrate it into your code.
+[06:40] This model isn't even useful if a human triggers it.
+[06:42] The model is useful if the human triggers some code to run or something else triggers
+[06:46] some code to run.
+[06:47] And when the code runs, it passes certain data to this model and then it comes back
+[06:52] with JSON.
+[06:53] That's when it's useful, when it's integrated almost like a function in your code
+[06:56] base. In order to do this, they had to build a new stack entirely focused on automation,
+[07:00] new model architectures, parallel samplers for maximum efficiency, and training methods that
+[07:04] they call reinforcement learning for calibrated decisions. The first public version of this is
+[07:09] Jeb, which is now available in early access. It is invite only, but you can get access to it on
+[07:13] things like OpenRouter, the Vercel AI Gateway, and a couple other places. While Jeb gives up
+[07:17] string generation, it's optimized for structural outputs, and it can't hallucinate. This is a key
+[07:22] piece. Since it has to give the output in a certain format, it's not going to change or make up the
+[07:28] format, which happens a hilarious amount. Think of JEV as a frontier intelligence function call.
+[07:34] Unstructured state in, typed probabilistic decisions out. That's the key piece. You hand
+[07:38] it some bullshit text data and you get back a type safe shape. There have been other attempts
+[07:43] to do this in various different ways, from attempts to train models to act like this,
+[07:47] to tools to force other models to behave similarly too.
+[07:50] One that I really liked once it clicked for me is called BAML.
+[07:54] The point of BAML was to make a language
+[07:57] that interfaces between agents and real code
+[08:00] so that you can define something in a syntax
+[08:02] that, of course, agents understand,
+[08:04] but also to give a specific format and instruction set
+[08:07] to the model to get it to output a certain shape.
+[08:11] They frame it kind of like TypeScript,
+[08:12] but as the interface from the TypeScript to the LLM.
+[08:15] For example, here is a text sentiment classifier that they have on their site.
+[08:18] You give it a label type, which positive, negative, or neutral are valid for,
+[08:22] a verdict, which has label and confidence, which is a float.
+[08:25] And you define the function classify.
+[08:26] It takes in text.
+[08:27] It outputs a verdict.
+[08:28] You use OpenAI, GBD55 here as the client.
+[08:31] You hand it the prompt.
+[08:32] You use their special formatting things.
+[08:33] And then you can call this in your TypeScript code
+[08:36] in order to get a formatted correctly output.
+[08:39] FAML is basically a made-up language,
+[08:41] but what makes it cool is how well it interfaces with other languages
+[08:44] and how it fixes all the things that can go wrong.
+[08:47] For example, I was using this a bunch with GPT-OSS-120b
+[08:50] to find comments that mentioned sponsors and things.
+[08:53] And when I did that,
+[08:54] I had a really good experience with it.
+[08:55] It all just worked.
+[08:56] And when I tried to move off BAML
+[08:57] for another thing I was doing,
+[08:58] I learned that apparently GPT-OSS-120b
+[09:01] doesn't format JSON correctly half the time.
+[09:04] One of the many things they do with BAML
+[09:06] is in their runtime,
+[09:07] they fix the malformatting in the JSON outputs
+[09:10] to make sure it is guaranteed to match the format
+[09:12] it puts on the tin.
+[09:13] When you say this is the response format and you call it through BAML, that's the format you get.
+[09:18] Sometimes that takes time, though, because it has to reformat it, fix it, change it,
+[09:21] all with code that it's running.
+[09:23] And even some high-end models can sometimes screw these things up.
+[09:27] Jev literally can't.
+[09:28] If you give it a JSON format, you get back that JSON format.
+[09:31] It doesn't handle things like a message history well as input.
+[09:34] It's really looking for structured program state, like data it can use to make decisions.
+[09:39] I already see people getting confused, so I want to be really, really clear here.
+[09:42] The point of things like BAML, like JEV, and like all structured outputs is because LLMs are not deterministic.
+[09:50] If I have code that formats someone's name, it will always do the same thing when I call it with a given name.
+[09:56] If I have an LLM that I ask to format the name, it might do something else.
+[10:00] If I have a function that returns a user object that has a name colon string and an age colon number,
+[10:06] and I write code to get that, it will always be that shape.
+[10:09] If I call an LLM, it might screw up the formatting of the name.
+[10:13] It might use a float for age instead of an int.
+[10:14] There's a lot of different things that can go wrong.
+[10:16] The point of Jev is that you can call it as reliably as you call code.
+[10:21] And it's really fast, kind of like code.
+[10:23] It also can do this for a bunch of inputs at once in parallel, which is super, super cool.
+[10:28] And the token cost is insanely low.
+[10:31] It's about $0.04 per million tokens in, compared to $10 per million on a model like Fable.
+[10:38] I see more confusion in chat already.
+[10:40] So is it deterministic?
+[10:42] The format of the output is yes.
+[10:44] There are two ways things can be deterministic,
+[10:46] the shape and the content.
+[10:48] The content isn't deterministic,
+[10:49] but it should be quite reliable.
+[10:51] The actual format is what is deterministic.
+[10:53] It will always give you the format that you define.
+[10:56] And on the topic of cost,
+[10:57] the tokens out are free because it's so cheap.
+[10:59] They frame it as too cheap to meter.
+[11:01] Meanwhile, with LLMs,
+[11:02] the output tokens are so expensive.
+[11:04] It's often the majority cost
+[11:06] when you're doing stuff like this.
+[11:08] Traditional LLMs can take three to over 300 seconds
+[11:11] to do the type of classification work
+[11:12] that this model can do in 70 to 500 milliseconds.
+[11:16] That is actually 40 to 200 X faster.
+[11:18] There's no doubt on that claim.
+[11:19] That is real and true and based.
+[11:21] Even if prompted for a confidence estimate,
+[11:23] models tend to be overconfident and inconsistent.
+[11:26] Model can do a task 95% of the time,
+[11:28] but doesn't say when it's in the 5%.
+[11:29] You can't automate the task.
+[11:31] Meanwhile, Jev will always communicate confidence
+[11:33] and uncertainty with every output.
+[11:35] So you can calibrate around the accuracy numbers you get, and the answers also tend to be more consistent.
+[11:40] I like the framing here of one of the good use cases being a smart if statement.
+[11:44] I know a lot of y'all don't code anymore, sadly.
+[11:46] I get it.
+[11:47] But if statements were a great way of thinking of logic.
+[11:50] And that's what this model is for, is a thing you put between states to decide what path you go down
+[11:56] or to map reduce over a giant pile of data in order to get insights out of it.
+[12:01] And this is one of the coolest things you can do with it, real-time applications.
+[12:04] not that like it'll build the app,
+[12:07] but as a tool in the app
+[12:08] because it responds in just under 500 milliseconds,
+[12:11] worst case, you can do something silly
+[12:13] like a search with it
+[12:14] or the demo I just showed with chess or checkers.
+[12:17] This demo for Matt is really cool as well
+[12:18] where you can define a term
+[12:21] and ask it to generate a color palette effectively for it.
+[12:24] And it shifts that bar at the bottom
+[12:25] and it's practically real time
+[12:27] because the model is so quick to respond.
+[12:29] The final use case they have in their example list here
+[12:32] is verifying everything.
+[12:34] Score, judge, verify, guardrail, and detect jailbreaks of LLM prompts, reasoning traces,
+[12:38] and outputs.
+[12:39] Stuff like that.
+[12:40] I want to make a quick point, though, because one of the questions I've seen the most, by
+[12:43] far, is something along the lines of, wait, so if I use four different LLMs to generate
+[12:48] an output, I could use this to judge it.
+[12:51] You do understand how expensive it would be to generate all four of those, and how silly
+[12:56] it would be to have a model that's only using one side of its brain.
+[13:00] Judge that.
+[13:01] the benefit of other LLMs is that they can reason. They can think through the decision.
+[13:06] They can walk through your code base using agentic tools in order to figure out what
+[13:10] changes to make. They can grow their own context over time and prompt themselves with subagents.
+[13:15] They can do all of these different things. It makes no sense at all to give a model that takes
+[13:18] a bit of text input and immediately responds with JSON. Three different implementations of
+[13:23] something by three different LLMs. It just doesn't know enough to make a good decision there.
+[13:27] I want to beat into your guys' heads how this works.
+[13:29] And I'm sorry for those who get it because it's going to be tedious,
+[13:32] but I'm increasingly tired of comment sections
+[13:34] that fundamentally don't understand what's being talked about.
+[13:37] This is a model that works like a switch statement.
+[13:39] It is roughly as intelligent as a switch statement.
+[13:42] It's for classifying things.
+[13:45] It doesn't know how to look through a code base to make a good decision.
+[13:48] It doesn't have the intelligence to distinguish between the outputs of language models.
+[13:53] And most importantly, the context window is tiny.
+[13:56] It's only 32k tokens. That doesn't mean it's not cool. And it is cool as hell. The speed and the
+[14:02] cost is insane. They do a comparison here against an LLM for responding to a query.
+[14:10] TypeSafe race, ask LLM versus TypeSafe. He got back the response immediately. It was given 27
+[14:15] questions about a bunch of data, and it responded to all of them with the right format, with numbers
+[14:22] ranking them and the type, as well as confidence on its decisions for these things. It took 0.114
+[14:28] seconds, and it cost an amount that rounds to zero. Meanwhile, Terra, once it finally finished,
+[14:34] took nine seconds and cost 1.3 cents. That is a comical gap here. 170x cheaper and 70-something
+[14:42] times faster. Respect to them for keeping the cost per workflow in their chart in log, they could
+[14:47] have made this linear and it would have looked hilarious. The only models they measured that had
+[14:52] better classification in their demo workflows than JEV or Sol and Opus 5. They didn't test
+[14:58] Fable or Astro, but those are way too expensive. You shouldn't even look at them for this.
+[15:01] But it is outranking DSV for Flash in various tests for ranking things. And it owns the Pareto
+[15:08] Frontier with almost two orders of magnitude, again, because it's very specifically focused
+[15:13] on this one thing. They didn't publish the bench they used here, but they gave some examples.
+[15:17] There's an alert. The next step is a question. Is this unauthorized activity with options
+[15:22] for what it can choose. Once that happens, we determine different flows it goes through.
+[15:27] And if we have decided that this is an incident, then we ask what state is the incident in?
+[15:32] And it has 11 readings for it. It processes all the data. We then ask what action it thinks we
+[15:39] should take. And then we rank the results after. They are surprisingly transparent with a lot of
+[15:44] things. They love to say all the things the model isn't good at. This is where the numbers on their
+[15:48] homepage come from, the 193.6x faster and 444.6x cheaper, but they say that they expect this is
+[15:55] the higher end of real world gains. The context of these workflows were not deliberately chosen
+[15:59] nor constructed to make our model look good. Cool. They're using the average of GPD6 Astra
+[16:04] and Fable 5.1 as the reference answer. That's why they don't appear in the list and also why the
+[16:10] data might not be perfect since those models might be wrong as well. The LLMs use their System 1 LLM
+[16:16] wrapper, which constrains LLMs to output structured decisions compatible with their API.
+[16:20] We found it to be the most accurate way to get decisions from LLMs, but this tends to be slower
+[16:24] and more expensive than giving decisions without probabilities. I find that they love to tie the
+[16:28] idea of hallucination and type safety, type safety being you have a contract for what it should
+[16:33] output and it follows the contract. That's why they're type safe AI, because the shape of the
+[16:37] data will always be honored. Hallucination goes a lot further than hallucinating fields in a return
+[16:43] type, but in this particular case, it can be pretty brutal if your LM hallucinates that it
+[16:47] can change the fields when it can't. That does suck for type safety. The way they frame it here
+[16:52] is that having a hallucinated tool call can be inconvenient for an agent, but it's an absolute
+[16:56] deal breaker if it's part of a system with latency guarantees or if it's buried several layers deep
+[17:01] in a dependency chain. Yep, that part I absolutely agree with. No matter how smart an existing model
+[17:05] is, it can still hallucinate and have type errors. They show that here, where crazy enough, Astra
+[17:10] actually has more errors with structured tool outputs than Sol, Terra, and Luna. It actually
+[17:17] has more than Terra and Luna combined, which is kind of crazy. But then you start to look at
+[17:21] models from a certain Anthropic, where Haiku had a 45.5% error rate. That model is so bad,
+[17:29] and it needs to stop being used for anything. It's about a year old now. It might be over that.
+[17:34] Just Anthropic is treating Haiku as dead. We should do them the favor of doing the same.
+[17:38] But of course, the number that matters here is JEV with a 0%.
+[17:41] This is for structured output errors.
+[17:43] When you give it a JSON format and tell it to honor it, Haiku cannot do it.
+[17:48] And we switch over to tool call error rates.
+[17:50] Funny enough, and throwaway models start doing a lot better, and OpenAI models start to have more problems.
+[17:55] But of course, JEV still is at 0.
+[17:57] It honors the format it's given.
+[17:59] They made a demo of it playing Doom, and the engineer who made it was concerned about cost.
+[18:03] but they figured out even though it's running 10 times a second, the cost would still be under $7
+[18:09] an hour because of how efficient the model is and how cheap it is to run. Remember, it doesn't have
+[18:15] vision. So this is all from game state data that it's being given. The application state is handed
+[18:19] to the model and it's given the JSON format on what it should decide to do next. And it decides.
+[18:23] You will see some quirks with that though. Watch how often it just rotates left and right wildly.
+[18:30] That's because every single frame it's told, make a decision.
+[18:34] So it doesn't necessarily know what decision it made before.
+[18:36] It doesn't know it turned left, so keep turning left.
+[18:38] So it's like, okay, looking here, I'll turn left.
+[18:41] Okay, new state, turn right.
+[18:42] On every single frame, effectively, its brain is being wiped and it's making a new decision.
+[18:47] You get the idea, though.
+[18:48] And I saw this with the chess as well.
+[18:50] It's not meant for long-running jobs.
+[18:53] It's meant for making a quick decision on the fly or being part of some other long-running
+[18:58] jobs work.
+[18:58] They call out that this demo is, again, on structured state as a data structure with text, not on images.
+[19:04] Yet.
+[19:06] This is particularly exciting.
+[19:07] This model having image support will be super, super useful.
+[19:11] The model is also insane at wiki racing because it makes decisions so quick.
+[19:16] So when it has the condos of an HTML page and it knows where the links are on it,
+[19:20] it can choose which one to click and continue going much faster.
+[19:28] Yeah.
+[19:28] It is very, very fast.
+[19:32] Terra even had a hallucination during its run.
+[19:33] That's funny.
+[19:34] Let's take a look at what people are using the model for.
+[19:37] They claim you can't use it for generating text.
+[19:40] But if you give it the ability to respond by choosing which character it thinks makes the most sense,
+[19:46] you can kind of get it to do things.
+[19:49] Here's one that I think actually makes way more sense from Chris over at Vercel.
+[19:53] It's the idea of using JSON Render with Jev.
+[19:55] The point of JSON Render is to make it easy to create a component and use it for arbitrary JSON
+[20:02] so you can link the outputs of an LLM into your UI in a more visible and useful way.
+[20:08] But you have to wait for the LLM to generate the JSON before you can update the UI.
+[20:12] What if the model could do that comically faster?
+[20:17] That's a pretty big difference.
+[20:20] Yeah, it's insane.
+[20:21] And it responds with the whole thing at once because it's not streaming in text.
+[20:25] Everybody's been telling me Ryan's been cooking with it.
+[20:27] Let's see what he's done.
+[20:28] 1,500 of my own emails that I've exported from my email.
+[20:34] And we're going to run this classification model because I got access to it and see how well it runs the classification on.
+[20:43] We're going to do a batch of 100 emails just to start out with eight workers and we'll see how long it takes to do it.
+[20:49] So let's start.
+[20:50] Boom.
+[20:51] 100 emails done.
+[20:52] It doesn't tell me how long it took.
+[20:55] Average was 200 milliseconds, 200 milliseconds per email.
+[21:02] P95 was 240 milliseconds, and it did 38 per second, which is amazing.
+[21:07] So this is a much better example.
+[21:09] I already use LLMs to go through my email.
+[21:12] It's expensive, but it's fine.
+[21:14] This is a first pass to get the quick, low-effort spam things out of your way.
+[21:21] Super useful.
+[21:22] It's the things that are too cheap to justify running an LM for,
+[21:26] or the things that are run too often to wait that much time for.
+[21:29] Once this has image support, an example of something we can do with this
+[21:32] is take a bunch of frames for my video and ask it,
+[21:36] does this frame have sensitive data or PII on it?
+[21:39] Like, does it have an email address on it?
+[21:41] And to tell me where it is some amount,
+[21:43] so I can go find these and clean up our videos before we release them.
+[21:47] That type of thing is so nice.
+[21:49] I think computer use will also be way more compelling with it once it has the ability to see what's going on.
+[21:55] But it's already really good at navigating websites because it can just take the HTML and then decide what to do based on the current page content.
+[22:04] There's an example of it booking flights in under 7.1 seconds, right?
+[22:08] Yeah, that's crazy.
+[22:09] LM is doing this take so much longer.
+[22:12] I am scared to even make this video from being real, because if I increase excitement too much around this model, we're going to end up with some really, really dumb things.
+[22:22] For example, this tweet from Braintrust. Their goal is to increase observability for agents.
+[22:28] This is a really bad thing for them to tweet. It makes me not trust them.
+[22:32] Because they suggest that you should use Jev as a judge scorer in a tool like Braintrust to decide between outputs from LLMs.
+[22:39] They were genuinely suggesting that you replace an LLM that you use for judging for scoring agent responses with JEV.
+[22:45] And the reason is so that you don't need to spend time and resources prompting a general purpose model into an LLM judge.
+[22:52] What?
+[22:53] Those prompts take fucking 30 seconds to write, not even.
+[22:57] And like, if you just give it the examples from something like JEV, it's going to follow them.
+[23:01] This is hilarious.
+[23:02] On that note, there was another demo that I actually think is really cool conceptually.
+[23:06] conceptually, like it looks crazy and it helps show what capabilities this model has.
+[23:13] But if you actually think it's a good idea to use a non-reasoning classifier model for
+[23:18] compaction for your context, then I would plead that you never, ever, ever stray from the defaults
+[23:25] in those tools because you just fundamentally don't understand yet. And don't worry, you're
+[23:28] not the only one. I don't think anyone has to. Context compaction is a complex topic and it's
+[23:34] gotten more complex over the years. I will do my best to TLDR why this is a bad idea, but you should
+[23:40] just read my longer post if you're curious. First thing, compaction isn't a filter. We're not just
+[23:45] going through your history and selectively deleting lines from it. We are synthesizing a
+[23:50] summary based on everything that's happened so far. Jev also doesn't have enough context to even
+[23:55] know what it's deciding on. Then we just saw it doesn't have the tool call outputs and results.
+[23:58] It only has the inputs and a little bit of the context from the thread, and not that much of it
+[24:03] because it's 32K tokens of context.
+[24:04] So it doesn't have enough data to make a decision,
+[24:07] even separate from the fact
+[24:08] that it doesn't have access to the reasoning data at all,
+[24:11] because the reasoning data is never shared by the labs anymore.
+[24:14] When you call the Claude or Codex APIs,
+[24:16] you don't get back reasoning.
+[24:18] You might get back an encrypted payload
+[24:19] that they can then map to the reasoning on their end,
+[24:22] or you might get a summary if you're lucky,
+[24:23] but you don't know what the model was thinking
+[24:25] when it made a decision.
+[24:26] So any attempt to compact that
+[24:28] is not going to include those decisions.
+[24:31] This gets even worse when you remember
+[24:32] that Anthropic is making changes to how history preservation works, such that if you edit your
+[24:36] history, you lose all of the reasoning traces for that context. There's also the fact that models
+[24:41] are tuned on the way that they compact. They do this in training now. Models learn how to handle
+[24:46] compaction well, and they make adjustments to the weights and how this works through the process of
+[24:51] training through RL. The compaction that the models do is already pretty damn good, and changing what
+[24:57] history they have before they do it makes even less sense. Another important thing to recognize
+[25:01] is that cache writes are often,
+[25:03] if not always for agentic use cases,
+[25:05] much more expensive than cache reads end up being.
+[25:08] And when you remember how cache invalidation works,
+[25:09] you realize that this will probably break the cache
+[25:11] quite a bit if you run it actively enough.
+[25:13] Because if you have a history like one, two, three,
+[25:16] four, five, six, and then you delete number two,
+[25:18] everything three onwards has to be rewritten
+[25:21] because the history has to be prefixed.
+[25:24] Any changes early mean everything
+[25:26] past that point is invalidated.
+[25:27] The model's given weird instructions
+[25:29] as implementation too.
+[25:30] Things like whatever's not kept is permanently deleted, but the assistant can rerun a tool if needed.
+[25:35] Some tools are destructive. It's not that simple.
+[25:37] And you'll also get to a point if it's classifying in such a shallow way where it gets stuck in a loop
+[25:42] where it's already removed everything it thinks doesn't matter and it only has left what does.
+[25:47] No, and people have actually tried this and benched it. It doesn't perform well at all.
+[25:52] There is one benefit to this style of compaction.
+[25:55] It's so fast that it fits in the attention span of the average Twitter user.
+[25:59] so the video is guaranteed to go viral.
+[26:01] But you're not like the average Twitter user.
+[26:02] You've been watching this video for much longer
+[26:04] than the attention span of the average Twitter user,
+[26:07] and for that, I appreciate you.
+[26:08] If you haven't hit the sub button,
+[26:09] I would appreciate that as well,
+[26:10] because a lot of y'all haven't,
+[26:12] and it seems like you want this type of long-form content.
+[26:14] You should consider subscribing to signify that.
+[26:17] And as a Twitter user, trust me,
+[26:19] you don't want to be like us.
+[26:20] Avoid it to the best of your ability.
+[26:22] I do think there are ways that a tool like JEV
+[26:24] can be useful to things like agentic dev work.
+[26:26] not having it write code or compact by context or change anything that the harness is doing.
+[26:32] The harnesses are pretty dang good now. You should lean into the fact that billions upon
+[26:36] billions of dollars are being spent on that and not reinvent the wheel constantly. Don't get me
+[26:40] sorry on the people who think they can compact their history by taking their entire context and
+[26:44] then shoving it into a small image. Insanity. Anyways, a thing you can use this for is going
+[26:50] through large amounts of data. For example, all of your history using models. Here are my 1,118
+[26:58] T3 code chats that I did on this particular machine, categorized and classified using Jeff.
+[27:04] It classified 32,311 messages across 1118 threads. And doing all of that cost 37 cents. And it found
+[27:14] that nearly half of what I did was bug fixing and PR work, specifically reviewing and managing PRs
+[27:20] 20% of my threads. Remember that the results here are classifications, so they're usually scored.
+[27:26] It's not responding with a list of strings on what to tag. It's taking all of the values inside
+[27:31] of the body there and giving you a threshold on a scale of 0 to 1 for all of them. And you can change
+[27:38] what you want to count and not count. For example, here with the simple web app I made, I am changing
+[27:44] what bar we have set for each of the classifications.
+[27:48] So if we have it at an 80% confidence interval,
+[27:51] then 22% of my threads are expanding scope.
+[27:54] But if I bump that up to 90%, it's down to 6.8
+[27:57] because it was not sure in the rest of those cases,
+[28:00] or as sure, so to speak.
+[28:02] Funny enough, when I had Astra build this,
+[28:04] it did note some of the things that it wasn't great at,
+[28:06] particularly trying to identify which threads
+[28:09] could be used for content for me.
+[28:11] So one of the ideas it had was,
+[28:12] what if we can figure out which threads Theo should save to use in a video?
+[28:16] And it tried multiple times to revise the prompt to get better threads for that.
+[28:21] And it still concluded about half of my threads were worth using for content.
+[28:25] So it's not good at this.
+[28:28] It's not smart enough to do those types of complex reasoning things,
+[28:32] whereas to make a decision that requires thought.
+[28:35] It's like one last simple way to think of this.
+[28:38] How many seconds would it take for you to answer the question
+[28:41] once you've perceived all of the information.
+[28:43] If I show you a picture of a person wearing a shirt,
+[28:45] how many seconds does it take for you
+[28:47] to say what color it is?
+[28:48] If the answer is under 10 seconds,
+[28:49] this model's probably good for it.
+[28:51] If it's over 10 seconds,
+[28:52] this model's likely less good for it.
+[28:53] This is the point I'll end on,
+[28:54] and it's similar to the one I started on.
+[28:56] I really want to emphasize the system one point
+[28:58] because I'm tired of people not getting it.
+[29:02] If the task requires thinking,
+[29:04] this model is not right.
+[29:06] If the task requires classifying,
+[29:09] organizing, ranking,
+[29:10] real quick decision making. This model is incredible. It's a system one model. System
+[29:16] two is when you think about a thing. System one is when you react because your brain thought for
+[29:20] you. It's almost like the reflex. It's like when you tap your knee and your leg kicks out,
+[29:24] that kind of thing. This model is designed to work like that first part, to be really fast
+[29:29] and quick. If you're thinking of this model in terms of how it replaces the other ones you use,
+[29:34] you're probably not thinking about it correctly unless you're doing a lot of structured output
+[29:37] work. The value of this model is that it made so many things that weren't really realistic before
+[29:42] way cheaper and faster in a way that is actually kind of cool as a programmer. But you shouldn't
+[29:47] be viewing this as a tool you use in Codex or Claude or even your terminal. You should see this
+[29:52] like a new library you install or a function that you call. It is meant to be integrated in the tools
+[29:57] that we build, not used as an inference farm to generate code or text or all these other things.
+[30:03] Somebody in chat just said the only way this would replace an LM is if you're using them badly. I
+[30:06] mostly agree. There are a lot of use
+[30:09] case for structured output type stuff, and
+[30:11] this is where it is strongest.
+[30:13] I think this model is really cool, and I've been
+[30:15] enjoying it a lot. I have a feeling you will too, as
+[30:17] long as you go in with the right mindset.
+[30:19] Don't use this to replace fable or judge
+[30:21] between complex topics. Use
+[30:23] this like an if statement, and you'll have a lot of
+[30:25] fun with it. Let me know how y'all feel, and until
+[30:27] next time, peace nerds.

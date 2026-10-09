@@ -1,0 +1,700 @@
+0:00 Okay, so I almost never make videos about brand 
+new models, but this one was far too good to  
+0:04 not make a video about. So I want to go over a 
+model called Jev, named after Jevon's paradox,  
+0:09 what it is, and how we can combine it with agentic 
+coding tools like Claude Code and Codex to become  
+0:14 even better engineers. So if you already know 
+what Jev is by now, then you can skip to timestamp  
+0:18 shown on the screen right now. Otherwise, I'll 
+first go over what Jev is. So one of the simplest  
+0:22 to understand videos about what Jev is, is this 
+one over here. So for a normal LLM, you would  
+0:27 basically give it a prompt as well as some data. 
+So for example, is this invoice fraud alongside  
+0:32 the invoice itself? And then it would generate 
+you a sentence kind of like, hey, this appears  
+0:36 to be legitimate, token by token. And because of 
+the architecture of LLMs, this can take quite some  
+0:41 time. Whereas in the case of Jev, you can give it 
+the same prompt alongside the same data itself and  
+0:46 then also give it options as well. Okay, these 
+are the options you can pick from: fraud, clean,  
+0:52 or doesn't need human review. And then it would 
+score your options for you by probability. So for  
+0:57 example, in this case it says 88% probability 
+that this is clean. And you can kind of pass  
+1:02 this data into an if statement so you can quickly 
+make decisions about this. And because of the way  
+1:07 that the architecture works, it is really fast. So 
+often you can get a response in less than 200-300  
+1:13 milliseconds. So one way of thinking about it is 
+that Jev does not generate any text. You can give  
+1:17 it some text input like a prompt, and then it will 
+give you probabilities from a set of answers that  
+1:22 you provide it. So because you're then taking 
+these probabilities and then doing some action  
+1:26 based on them, you can imagine it as a really 
+smart switch statement. And as we will be seeing  
+1:31 later in the video, this has a whole bunch of use 
+cases. So you can make AI-powered workflows, make  
+1:36 decisions over massive amounts of data for really, 
+really cheap, unlock real-time applications like  
+1:41 real-time moderating, for example, and also build 
+really good verification systems for your agentic  
+1:46 coding setups. So on the website down below, there 
+is a waitlist, but once you're off the waitlist,  
+1:50 then you can go to console.typeSafeAI. And then go 
+over to Playground over here to kind of experiment  
+1:55 around with it. And then play around with the 
+three primitives inside of Jev. So I'll quickly go  
+2:00 over what exactly they are. Because even though we 
+will be using our agents to implement Jev for us,  
+2:04 and they will be using the skill over here, 
+it still helps to understand how exactly Jev  
+2:08 is working behind the scenes. So we basically 
+have the primitive of bool to evaluate how true  
+2:14 something is, a score so we can set up a rubric 
+to grade against, and then we have a choice,  
+2:18 so asking a multiple choice question. And each 
+of these comes back with probabilities. So we  
+2:23 are defining the answers upfront and then giving 
+it something to evaluate. So if I go for bool over  
+2:27 here, I can edit this part over here. So I can 
+say, is this invoice fraud? So is this invoice  
+2:33 fraud from earlier? Then in the left-hand side, 
+I can give it some unstructured data. So pasting  
+2:38 this in over here, this is basically a fraud 
+invoice that I made up. And if I then press a run  
+2:42 request, then it will say 85% true. Because when 
+you're reading through the invoice, it is kind of  
+2:47 sus. And pressing run request over and over again, 
+I will see that the probabilities are roughly the  
+2:52 same. So it varies by about 2-3%. Now I can 
+add something over here to change my criteria,  
+2:56 what is true. So it says matches the following 
+and then paste in some fraud signals. For example,  
+3:02 this one over here and then press run request. 
+And I can see that it's changed to 94% true and  
+3:07 running it over and over again, it'll roughly 
+hover around that figure. Now this is great  
+3:11 because in an application we can basically say 
+if the probability is greater than like 85-90%,  
+3:16 then then automatically rejected an invoice 
+or something. So the nice thing is that we  
+3:20 can define what true and false actually means 
+by adding additional information over here. And  
+3:24 also we're getting an answer really fast. 
+So often in about 100 milliseconds. That  
+3:28 is reliable because it's roughly the same every 
+time. Now if I go for a multiple choice option,  
+3:32 then I can pick one from here. So basically 
+add some instructions such as, we're evaluating  
+3:37 invoices for fraud. Fraud signals are this. Is 
+it fraud? And I can change these options to,  
+3:42 for example, like, human review, fraud, clean. And 
+then I can remove the descriptions because I think  
+3:49 the names are like self-explanatory. And now I 
+can see that after running it, I get 98% fraud in  
+3:54 less than 100 milliseconds with 2% human review 
+as well. So this is better than true or false  
+3:59 because now I can define multiple options that I 
+can pick from. And inside of the list over here,  
+4:03 I can provide up to 255 options. And when it comes 
+to score over here, you can basically imagine it  
+4:08 kind of like a spectrum. So for example, if I was 
+asking a question of how good is this inbound lead  
+4:14 for our sales team, I could have my own spectrum 
+defined that I can give to Jev. So for example,  
+4:19 I can say that 0 is a student or a hobbyist, 
+someone with no budget. Then we have a small team,  
+4:24 we have a company with a named problem and a 
+timeline, and then we would have some kind of  
+4:27 enterprise over here. So if I quickly define all 
+of this inside of Jev, then it will look something  
+4:32 kind of like this. So for example, this is 0, this 
+is 1, and then this is 2 and 3. And then I could  
+4:37 put a lead in on the left-hand side, which is a 
+pretty big enterprise lead, press a run request,  
+4:42 then it will give a score of 2.91. So basically 
+along the spectrum, it would sit kind of over  
+4:47 here. So it would be kind of like this over here. 
+So 2.91. And then when it comes to your own logic,  
+4:52 you can kind of define different things that would 
+happen. So greater than 2.5, the founder would  
+4:56 reply the same day. Between 1.5 and 2.5, a sales 
+rep would reply this week. Between 0.5 and 1.5,  
+5:03 for example, they'd get an automated reply. 
+And I could also define another rubric such  
+5:07 as how serious serious is this log line for an 
+on-call engineer. And number 0 would be basically  
+5:12 a routine request happening. And number 3 would 
+be like an outage, for example. And if I pasted  
+5:18 in something over here and press run request, then 
+it would be like 2.99, for example, because this  
+5:22 is a connection pool being exhausted. And if I 
+define it to be like greater than 2.5, would call  
+5:27 an on-call engineer immediately, then they'd 
+be pinged immediately. And if you wanted to,  
+5:31 because Jev is really cheap and also really fast 
+as well, you could have it monitoring a critical  
+5:36 system in almost real time, and then letting you 
+know if something bad happens. Now when scoring,  
+5:41 you can only define up to 11 rubrics, which 
+means you get a score between 0 and 10. So  
+5:47 you can't populate this list with like 255, but 
+when it comes to options, then you could populate  
+5:51 it with 255, for example. And if I wanted to, 
+then I can ask multiple questions at the same  
+5:56 time by pressing add question and choosing another 
+primitive. So I can paste in a bunch of questions  
+6:01 over here. So this is about 4 questions. So for 
+example, this is a state whereby I gave a coding  
+6:06 agent a task. It then gives me a diff back of 
+what changed. And then Jev can answer all of  
+6:10 these questions super quickly. So for example, it 
+says that it addresses a task, it hasn't weakened  
+6:15 a test. It tells me how strong the verification is 
+on a spectrum with a rubric that I've defined. And  
+6:21 then the risk surface area as well over here. And 
+if you are interested in what makes it so fast,  
+6:26 then this tweet kind of goes into it over here. I 
+won't bother explaining it 'cause the video will  
+6:30 get too long. So when deciding which primitive 
+to use, I think this is pretty handy. Basically,  
+6:34 is it a yes or a no question? If it is a yes or 
+no, then you can use bool. If you can sort it  
+6:38 along some kind of spectrum like I showed, then 
+you can use a score. If you can't, then you can  
+6:42 basically use choice instead. Okay, so now I want 
+to talk a bit about System 1 and System 2 thinking  
+6:48 and also how it applies to Jev. So TypeSafeAI, the 
+company, basically called JevAI a System 1 model,  
+6:54 a new class of front-end models built to make fast 
+structured decisions. And I guess that this is  
+6:58 inspired by the book Thinking Fast and Slow that 
+was published 15 years ago. Which basically says,  
+7:03 if you haven't already heard about it, you have 
+two distinct modes of cognitive processing.  
+7:08 System 1, which is the fast, automatic, and 
+reflexive thinking that operates with little  
+7:12 to no conscious effort. And then you have System 
+2, which is much more slow and deliberate. And  
+7:17 one of the important ideas here is that you can 
+move something from System 2 into System 1 through  
+7:22 practice and training. So for example, when you 
+were first learning to drive a car, that was a  
+7:26 very System 2 activity because you were checking 
+your mirror, signals, your gear, and stuff like  
+7:30 that all the time. And then with enough practice 
+on familiar roads, it became a system 1 activity.  
+7:36 Now this does not mean that driving is system 1 
+all the time. If you encounter an unfamiliar road,  
+7:41 then it may switch into a system 2 activity. But 
+essentially with enough practice, something can go  
+7:45 from being a system 2 into a system 1 activity. 
+And going back to this, we can kind of imagine  
+7:49 that Claude Fable 5.1 and GPT-6 Astra are system 
+2 models because they're slow and deliberate,  
+7:56 whereas Jev is more of a system 1 model because 
+of how fast it is, which means that you can have  
+8:00 it being always on and running continuously in 
+the background on some kind of task. Now where  
+8:05 this becomes really interesting is that if you 
+combine system 1 and system 2 models together. So  
+8:09 for example, if Jev is your system 1 model, then 
+it would be giving decisions with a whole bunch  
+8:14 of probabilities back. And then you can assign if 
+statements to the probabilities. So for example,  
+8:19 if it's greater than like 0.5, then this action 
+happens automatically. Kind of like what this guy  
+8:24 did over here, whereby he built a trading bot with 
+Jev. Of course, I don't think it's profitable, but  
+8:29 basically it can quickly decide whether to buy and 
+sell because it gives it probability and then you  
+8:33 quickly execute a function with an if statement. 
+So for example, that would look something kind of  
+8:37 like this over here. We have a state, then we have 
+the questions that we're giving, which is a simple  
+8:42 bool, as we talked about before. We send the 
+request over to Jev's servers with our API key.  
+8:47 And then depending on the probability that it gave 
+back, we would decide whether to place an order.  
+8:51 Now if we started recording all the decisions that 
+we made and the outcome as well, we could then set  
+8:55 up a regular process where a system 2 deep head 
+model would be thinking about like, hey, what is  
+9:01 the strategy we're doing here? Can we improve it 
+in some kind of way? And then it would basically  
+9:05 rewrite any of the criteria, the examples, or 
+the threshold for us. And then that would pass  
+9:10 back into the System 1 model. So for example, for 
+this wording over here, for the criteria or the  
+9:15 instructions, it could be rewriting that. Now, of 
+course, I don't think that you should be trading  
+9:19 with this, but given Jev is really fast, I think 
+it's a pretty good example of real-time AI. And  
+9:24 I actually thought that this was a much better 
+example where this guy basically asked Jev and  
+9:29 GPT-5.6 Astra to play Minecraft in real time. So 
+Jev would make quick decisions about what to do  
+9:34 next, and then Astra would plan ahead. And after 
+seeing this myself, I was like, wow, I gotta try  
+9:39 this as well. I don't think that I replicated his 
+exact setup, but essentially I asked Astra like,  
+9:44 hey, can you basically set a long-term objective 
+and monitor Jev's strategy whilst Jev actually  
+9:50 plays the game itself? So I can see that Jev 
+is playing Minecraft right now. I told it, hey,  
+9:54 can you go ahead and build a shelter? And then get 
+a diamond pickaxe. So Astra is planning the higher  
+9:59 level strategy and Jev is actually going ahead and 
+executing it. So this was running for about like  
+10:04 10-20 minutes and it's actually doing pretty well 
+from the very beginning. And I think this is very  
+10:09 similar to how many people play games, whereby 
+their System 1 is doing most of the work when it  
+10:13 comes to playing the game itself, and their System 
+2 often reflects on like, okay, what exactly  
+10:18 caused me to like fail that particular mission? 
+And then it's kind of retraining their System  
+10:23 1 to be better at the game itself. So I can see 
+that it now went ahead and made a door for itself,  
+10:27 and it's going to go back and actually put the 
+door on the shelter that it made. And essentially  
+10:31 what Jev does, anytime it requires any feedback 
+about what it should do next, it pauses the game  
+10:37 and then Astra is like, okay, let me assess the 
+situation and give Jev the next set of mini goals.  
+10:41 So it's saying over here that the house and roof 
+are complete and Jev has installed a door and  
+10:46 checking the entrance and then moving on to stone 
+tools and lighting. Towards an iron pickaxe and  
+10:51 eventually diamonds. So I will leave that running 
+in the background during the rest of the video and  
+10:54 then see how far it gets. So I'll have it continue 
+playing the game in the top right whilst I explain  
+10:58 what is happening. So I had it set an overall 
+goal, which was build a house and then obtain  
+11:02 a diamond pickaxe. So this is what I handled 
+over here. And then GPT-5.6 Astra is handling  
+11:07 the strategy, which is one level below. So it's 
+prioritizing shelter before nightfall and like  
+11:12 starting mining once food and tools are ready. So 
+that would be an example of something it decides  
+11:16 to do. And then Codex is reviewing every 2 minutes 
+and after significant setbacks and milestones. So  
+11:22 for example, if Jev died in the game Minecraft, 
+then Astra would be reviewing like, okay,  
+11:26 what exactly led to Jev dying and how can we make 
+this better for next time? Any immediate tasks Jev  
+11:32 is doing, such as gathering more wood, crafting a 
+furnace, or finishing a roof. And Jev is basically  
+11:37 choosing and switching tasks based on the state. 
+And Jev is also using local tactics. So it's like,  
+11:42 okay, use that tree over there, try a different 
+approach, stop mining and retreat because there is  
+11:46 like a creeper nearby. So any frequent decisions 
+from fresh observations, Jev is automatically  
+11:51 making. And then for the physical execution 
+itself, that's happening via a controller mod that  
+11:55 I have installed. So this would be one example 
+of the input that would actually be given to Jev  
+12:00 of like, hey, this is your intermediate goal. 
+So it has a goal over here, the current state,  
+12:05 so the health, the hunger and stuff like 
+that. The time of day, the mining progress,  
+12:09 a recent history of what exactly happened as 
+well, and then available tasks that it can pick  
+12:14 from. And then this is what it would look like in 
+JavaScript. So we have the objective over here,  
+12:18 the state, and then it's picking from all of these 
+with a multiple choice. You can see it's already  
+12:23 gotten a stone pickaxe. It made one for itself 
+right at the top. So I'll have Jev continue to  
+12:28 play Minecraft in the top right for the rest of 
+the video. But essentially this unlocks a bunch of  
+12:32 use cases. So for example, when you make a bunch 
+of skills, you usually know which skills are most  
+12:38 relevant because you made them. And during that 
+process of making them in your System 2, you kind  
+12:42 of trained your System 1 in a way. Now, one of 
+the problems that people have with Claude Code is  
+12:46 that when they use skills, they may have dozens of 
+skills inside of their projects and at their user  
+12:51 level. And essentially the skill description is 
+being fed into context window every single time,  
+12:56 and each of them are using tokens. So some 
+people who have a lot of skills installed,  
+13:00 like over 100 or 200, they have all these extra 
+tokens inside of their context window that they  
+13:06 don't really need. So what if Jev could look 
+at your prompt, look at the context so far,  
+13:11 and then automatically decide which skill is 
+most relevant for you right now? And this is what  
+13:15 they also mention in the official Jev Cookbook as 
+well. So they basically say for the Hermes agent,  
+13:20 Jev can pick the most relevant skill out of 182 
+skills that you may have installed inside of your  
+13:25 agent. So they have a whole example over here 
+of which skill is most relevant. And they find  
+13:29 that with the agent alone, it would load the wrong 
+skill 17% of the time. And with Jev suggesting it,  
+13:35 it would load the wrong skill 7.3% of the time. 
+And this is with Haiku 4.5, for example. So this  
+13:41 means that I can probably put all my skills 
+behind some kind of like proxy or behind Jev,  
+13:46 and then Jev would decide which skills are most 
+relevant. So I can then remove about 10,000 tokens  
+13:51 from my context window from all these skills 
+I have installed. Next up, we know a lot of  
+13:55 people mention that you should give your agent a 
+good feedback loop when it comes to writing code,  
+13:59 and your output will be 10x better. And just 
+as a quick aside, I will be talking even more  
+14:03 about giving your agents good feedback loops to 
+build even better software inside of my upcoming  
+14:08 Agent to Engineer cohorts. So essentially this 
+will be a 2-week cohort where we'll have about  
+14:14 200 lessons and it will be starting in around 11 
+days and the price will be increasing in about 7  
+14:19 days. So if you do want to get in before the price 
+increase, then there will be a link down below.  
+14:23 There will be around 230 free lessons with about 
+8 hours of live Q&A. So you can show up with your  
+14:30 own questions as well. And there will be 
+around-the-clock Q&A happening on Discord  
+14:33 as well. So if you do want to get in on the most 
+comprehensive agentic coding class that you will  
+14:38 find online, then the link will be down below. And 
+if you have any questions about it, then you can  
+14:42 also email me. My email will also be down below as 
+well. For my previous classes, engineers from some  
+14:46 of the world's biggest companies have taken this, 
+including many of your favorite engineers, and  
+14:51 have gotten a lot of value out of them. Anyways, 
+one of the ways of making our feedback loops even  
+14:55 faster for our agents is doing something kind 
+of like this. So for example, what they did is  
+15:00 they used browser use with Jev to basically find 
+flights in about 7 seconds and it costed about 0.4  
+15:06 of a single cent. So they basically talked a bit 
+about their approach and they open sourced it. It  
+15:10 will be down below, but you can kind of watch it 
+over here. It quickly finds a flight from Zurich  
+15:14 to London for a particular date. So this means 
+that if we have Jev running locally on our machine  
+15:19 doing some kind of browser use, then it can 
+quickly validate like hundreds of different user  
+15:24 flows for our application and quickly find all 
+the defective ones. So I guess you could describe  
+15:29 what we're seeing over here as a System 1 agent. 
+So a really fast agent built on a System 1 model  
+15:34 that would be navigating a website kind of like 
+you would navigate a website that you're already  
+15:38 familiar with. So when you go to a website that 
+you're not very familiar with, you may be using  
+15:42 your System 2 quite a lot, but on a website that 
+you're really familiar with, like Google Flights,  
+15:46 you would be using your System 1. Now this means 
+that you can build really tight and really fast  
+15:51 and cheap feedback loops that can take seconds and 
+cost fractions of a cent into your agentic coding  
+15:56 workflows so that as soon as a feature has been 
+implemented, for example, then it could quickly  
+16:01 verify if that feature works for really cheap. 
+So this means that if you're running Opus or  
+16:05 Fable to build out a feature, when it comes to 
+your verification step, you can quickly have it  
+16:10 hand it over to a browser user agent powered by 
+Jev. It'll quickly verify everything. Give the  
+16:14 feedback being like, hey, this is broken. And then 
+your main System 2 agent would actually go ahead  
+16:19 and fix it. And if the System 2 agent decides 
+like, oh, you know what, the choice that Jev  
+16:23 gave actually wasn't that useful. Maybe I should 
+add a bit more choices. Maybe I should change the  
+16:27 criteria in some kind of way. It can rebuild the 
+System 1 agent to give even better feedback to  
+16:32 the System 2 one. And if we take this Jev-based 
+browser use agent just a little bit further,  
+16:37 then we can do something very similar to these 
+guys whereby they said, Thanks to Jev, we now have  
+16:42 a massively parallel browser-based adversarial 
+testing suite that tries to break each release  
+16:47 and it costs pennies. So they have dozens of 
+browsers running in parallel over here, clicking  
+16:51 around through the website randomly, probably, or 
+behaving like a real user would, trying to notice  
+16:56 anything that they think is off in some kind 
+of way. So this means that for every single PR,  
+17:00 you could probably spin up dozens, hundreds, maybe 
+even thousands of agents in parallel, all based on  
+17:05 Jev, that are clicking around trying to break 
+your application in some kind of way. And with  
+17:09 the feedback that they can give back to Claude, 
+for example, it can quickly make all those fixes.  
+17:13 And then we can verify those fixes again. Now I 
+will be trying this myself over the coming week  
+17:18 and then sharing all my learnings in my upcoming 
+cohorts as well. That will be linked down below  
+17:22 if you are interested. Now this is really great 
+because it means that for my own applications,  
+17:26 I can do something like having massive amounts 
+of adversarial testing happening around the  
+17:31 clock trying to find bugs. And it would probably 
+cost like $5 or $10 every single day. For like  
+17:35 thousands or even tens of thousands of browser 
+sessions. And if you do something very similar,  
+17:39 then you will find that your limiting cost is 
+no longer your tokens, 'cause your tokens have  
+17:43 become really cheap, and instead your compute. 
+So if you're running your agents on sandboxes  
+17:47 and you want to save up to 90% of the cost on your 
+sandboxes, then my AgentStack sandboxing service  
+17:52 will be down below. It is 10 to 15 times cheaper 
+than other leading providers. Now another example  
+17:57 that I really liked over here is Jev is coming 
+for your garbage comments. So this guy basically  
+18:02 used Jev to like determine how accurate and how 
+useful are the code comments. So for example, this  
+18:08 is really accurate because it says multiply the 
+value by 2, which is exactly what is happening,  
+18:12 but it's not very useful because that is very 
+obvious from the code itself. So let's actually  
+18:16 go ahead and do this right now. So there will be 
+a link down below to the TypeSafeAI skill. So you  
+18:21 can just download the skill, but I'm just going to 
+quickly copy it over for the sake of this demo and  
+18:25 then go to a project which I know has a lot of 
+garbage comments. Because a lot of older models  
+18:29 had used this and then paste this in over here. 
+And then I will quickly get an API key. So I'm  
+18:34 just going to do test and this will not be working 
+by the time you're watching this. Paste it back  
+18:38 over here alongside the skill and then say, hey, 
+so my goal here is to improve the comments from my  
+18:42 entire codebase. Can you use Jev to identify 
+all of them based on criteria that you think  
+18:47 will be useful? Confirm with me before actually 
+going ahead with the criteria and then make a  
+18:52 shortlist of all the comments that you think are 
+worth improving. And then you can fan that out to  
+18:55 like Haiku agents, which will actually go ahead 
+and improve them. Do it on a small sample first  
+18:59 and then tell me how much it will cost for all the 
+comments in my codebase. So I can press enter over  
+19:03 here and then see what it comes up with. So whilst 
+we're waiting, I'm gonna check what Jev and Astra  
+19:07 are doing together. So basically they decided 
+to put Jev into a hole in the ground and wait  
+19:12 until daylight comes back to avoid the monsters. 
+And then it will like prioritize healing before  
+19:18 continuing on to a diamond pickaxe. So we managed 
+to do 150 comments in 9.3 seconds for about 1  
+19:24 cent. And it said that it can analyze all the 
+comments in the codebase for about 57 cents.  
+19:29 And it expects the shortlist to be about 1,700 
+comments that would need to be rewritten in some  
+19:34 way to make them better. Now this is actually 
+insane because it means that we can analyze  
+19:38 entire codebases really quickly for things that 
+we care about with a pretty smart classifier. So  
+19:44 one of the things that we can do here is because 
+Jev is a fast, cheap, and pretty smart classifier,  
+19:49 we can now make AI qualitative linters. So 
+instead of defining like really long linter  
+19:54 code that may not capture everything and can often 
+break in pretty complicated code, for example,  
+19:58 we can now define rules kind of like this instead. 
+So for example, a qualitative linter could be,  
+20:04 does the name describe everything this function 
+does, including the side effects? Or for example,  
+20:08 for all our logging inside of our codebase, we 
+could ask something like, what kind of value is  
+20:13 being logged? And if it is a secret or a financial 
+value, And then we would basically throw an error.  
+20:18 If it is personally identifiable information, then 
+we may want to add some kind of warning instead.  
+20:23 And then we could have these linters running on 
+basically every single PR for incredibly cheap.  
+20:27 Another really interesting example is I can have 
+Jev analyze my entire codebase for really cheap  
+20:32 and then identify all the code smells inside of 
+a codebase. So if you don't know of the idea of  
+20:36 code smells, then it's mentioned in the book 
+by Martin Fowler called Refactoring: Improving  
+20:41 the Design of Existing Code. And a quick example 
+over here would be something like duplicate code.  
+20:45 Another would be dead code, for example. Another 
+one would be having magic numbers and strings,  
+20:50 for example. You can basically look for 
+the entire list of code smells online,  
+20:53 but I could go over to Claude and then say 
+something like, hey, so can you use Jev to  
+20:58 basically find all of the code smells in my entire 
+codebase? Give me the strategy that you would  
+21:02 follow here. And then it will do a really fast and 
+cheap job at analyzing my entire codebase for code  
+21:07 smells and then basically pointing towards any 
+smelly code. Of course, there are certain types  
+21:11 of code smells that it would not be able to find 
+given the way that Jev works. But I think the meta  
+21:16 point stands whereby we can have things that we 
+want to enforce inside of our entire codebase,  
+21:21 whether they're invariants or like removing smelly 
+code, finding potential security vulnerabilities,  
+21:26 for example. And we can do it for really cheap as 
+well. So you can kind of imagine it like this. We  
+21:31 have Jev being the instant reflex, the system 
+one, where it looks at code and automatically  
+21:35 decides whether it's a code smell. We then create 
+a shortlist from the probability that Jev gave  
+21:39 back about that being a code smell. And then for 
+anything above the value, we would redirect it to  
+21:43 another model to basically give it more deliberate 
+thoughts. So actually, if I go back to Minecraft  
+21:47 over here, then I can see that Jev finally got his 
+hands on a diamond, which is really good. So it's  
+21:51 making good progress. And now when it comes to 
+code smells, I have a measure of my codebase right  
+21:55 over here. It then told me that I can use static 
+analysis for these code smells over here. And then  
+21:59 the questions that it would actually ask Jev are 
+these ones over here instead. So we have a bunch  
+22:04 of questions that would be asked to Jev. And it 
+said that during an exhaustive pass of the entire  
+22:09 codebase, would be 28 million input tokens and 
+only cost $1.19 for all those code smells that it  
+22:16 listed right over here that I can actually check. 
+Now, one of the things that we can do is have  
+22:21 System 2 train System 1 to do a small pass, then 
+look at the results, and then readjust and change  
+22:27 the criteria of System 2. So for example, Jev is 
+making hundreds of thousands of decisions for us,  
+22:32 really fast decisions. Look at the decisions that 
+we got back. Get a system 2 model to analyze it,  
+22:38 revise the criteria and the rules, and then 
+get Jev to continue until it does a better job  
+22:42 at identifying the things that we care about. 
+And what's interesting is that it led to some  
+22:46 people making Jev-based code review tools. So you 
+could have like 100 questions asked about a diff  
+22:52 for really cheap and then score all of them and 
+then pass the most important ones over to actual  
+22:57 coding agent to resolve and then maybe fix. And 
+after seeing that, I basically thought to myself,  
+23:02 If I made a Jev-based code review, how many tokens 
+would I actually save? So I passed that over to  
+23:07 my Slack agent running Opus 5, and it basically 
+said to me over here, whilst it cannot replace the  
+23:12 default code review tool built inside of Claude 
+Code, it can cut what it reads by 10 times. And  
+23:16 I previously had Claude analyze my past sessions 
+to see where my costs are going. And it basically  
+23:20 said, your output tokens are 10% of the cost. 
+So if I can reduce the amount of tokens for my  
+23:25 code review by 10 times, that is like a huge win 
+on cost alone. So I will be experimenting around  
+23:30 more with making a Jev-based code review tool, 
+and I will be sharing any of those learnings  
+23:34 inside of my Agent to Engineer cohort coming up 
+as well. So if you do wanna learn those as well,  
+23:38 then there will be a link down below. Okay, to see 
+how Jev is doing on Minecraft, this is really cool  
+23:42 because it now has a diamond pickaxe and it's 
+going all the way to nether. Now, random idea  
+23:47 that I just had on the spot right now is basically 
+getting your coding agent to build its own system  
+23:51 1 understanding of your code base. So basically 
+has a whole bunch of invariants that need to be  
+23:56 followed, any code smells, any rubrics and stuff 
+like that. And then for every PR, it automatically  
+24:01 checks your entire PR against a checklist of like 
+50, 100, or even 500 things. So basically have the  
+24:07 intuition of a senior engineer reviewing a similar 
+PR for the codebase of like, hey, I think this is  
+24:12 potentially a problem. And those problems would be 
+passed over to your main System 2 agent that could  
+24:17 make any fixes. So imagine a really fast gut-check 
+review from 100 or 1,000 different angles of any  
+24:23 PR that you have. And it could probably start off 
+with a pretty broad search at the very beginning.  
+24:28 Such as like security or compatibility or 
+something like that. And then your coding  
+24:31 agent can rank the severity and anything that are 
+severe goes to specialized agents instead. So for  
+24:37 example, anything security related could go to 
+GLM 5.3 because the Claude and the GPT models  
+24:42 right now refuse any security related thing. 
+Or you could probably do something very similar  
+24:46 whereby you have a broad search happening at the 
+very beginning and then you have additional asks  
+24:50 that are generated depending on which category 
+that it falls into. So if it's like security,  
+24:55 You could have like 100 more questions being asked 
+and then the things that are ranked the most high  
+25:00 get passed over to a specialized agent. So I guess 
+it could look something kind of like this. We have  
+25:04 really cheap screening happening across our entire 
+codebase, our entire diff. Then only the strongest  
+25:08 few require the most amount of attention from 
+System 2 models. So I guess from one lens,  
+25:13 we could give our System 2 coding agent like 
+Claude Code, really cheap System 1 reflexes  
+25:19 specialized to our particular codebase. With tons 
+of tiny questions from a really smart classifier.  
+25:24 And this can be running in the background the 
+entire time before the coding agent is about  
+25:27 to make some kind of grave mistake. And I think 
+that this Jev-based code review could be really  
+25:31 promising because of this tweet over here, whereby 
+one of the engineers at Sentry basically said,  
+25:37 "These are the results of using Jev on one of 
+our security pipelines." So they say that they  
+25:41 already use smaller LLMs to make it economical, 
+and this model does it over 5 times cheaper faster  
+25:47 and whilst maintaining a high accuracy. So they 
+basically showed a bunch of models over here,  
+25:51 including GPT-OSS 120B, and it is more accurate, 
+faster, and also cheaper as well. So that is  
+25:58 really surprising. I'm sure they'll probably 
+develop on it and build even better security  
+26:01 pipelines. But I think for code review pipelines, 
+it could be really powerful. Okay, so it seems  
+26:06 that Jev actually got all the way to the nether, 
+which is really impressive, and I could probably  
+26:10 get it to slay the Ender Dragon as well. So yeah, 
+honestly, this is super surprising. So yeah,  
+26:14 I haven't been this excited about a brand new 
+model in a really long time. I think the last time  
+26:18 I remember being this excited was when ChatGPT 
+was released for the first time 4 years ago.  
+26:23 But I really think this is going to be a pattern 
+that we see going forwards whereby we have System  
+26:27 1 models like Jev or maybe even others released 
+by OpenAI or Anthropic working alongside System  
+26:33 2 models like Claude Fable to achieve even better 
+outcomes when it comes to agentic coding. I think  
+26:38 that Jev has many use cases in the AI software 
+development lifecycle that I will be talking more  
+26:43 about in detail. Inside of my Agent to Engineer 
+cohort that will be starting in just over a week,  
+26:48 link down below if you're interested. But I 
+think that some of the ones we're already seeing  
+26:51 right now is even better and more robust security 
+pipelines, cheaper and better code review as well,  
+26:56 massive amounts of adversarial testing happening 
+around the clock, qualitative linters as well,  
+27:01 quickly analyzing our codebases to make them 
+even more agent-friendly, and maybe even giving  
+27:05 our System 2 agents reflexes as well. So imagine 
+that if this actually does work really well in  
+27:10 many benchmarks, then most coding agents going 
+forwards will be combination of system 2 models  
+27:15 and system 1 models. So yeah, that is pretty 
+much all for the video. And finally, I will be  
+27:19 sharing even more thoughts and learnings that I 
+have through my experimentations with Jev inside  
+27:23 of my Agentic Coding School newsletter. There 
+will be a link down below if you're interested.

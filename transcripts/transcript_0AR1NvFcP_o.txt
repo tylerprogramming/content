@@ -1,0 +1,278 @@
+0:00 Jev is the brand new AI model that
+0:02 everybody in their mom has been talking
+0:04 about. So, I thought I would dive into
+0:06 some of the use cases that I've seen to
+0:08 determine whether Jev is actually insane
+0:10 and awesome or if it's actually mostly
+0:12 just hype. So, this was the tweet that
+0:14 started it all. This is from Diego
+0:16 Almeida who is the co-inventor of
+0:18 Chattypt. So, he knows a thing or two
+0:21 about these AI models and he basically
+0:23 was asking himself this question. Why
+0:24 have superhuman chat models not led to
+0:27 AGI or artificial general intelligence?
+0:29 So he spent the last two years building
+0:31 Jev and he claims that it's 20 to 200
+0:34 times faster than the other frontier
+0:36 models like Astra or Fable or Opus or
+0:38 Terra and 40 to 400 times cheaper and
+0:42 the output tokens are free. So that does
+0:45 sound pretty awesome. in his video they
+0:47 run this little test between Typesafe
+0:49 and Terra and we can see that Typesafe
+0:52 is like significantly faster in how it
+0:54 returns results. So again, pretty cool.
+0:57 So today I want to talk about what Jev
+0:59 is and isn't and show you some of the
+1:01 use cases that I've seen to help you
+1:03 determine whether or not you should be
+1:04 using Jev in your workflows at all.
+1:06 Aside from being super fast, Jev is also
+1:09 incredibly cheap. It's only 4 cents for
+1:11 every million input tokens and again
+1:14 output tokens are absolutely free. So,
+1:16 it's 24 times cheaper than Haiku, which
+1:18 is Anthropic's cheapest model and 238
+1:21 times cheaper than Fable. But how are
+1:23 they able to do this? If you've been
+1:24 using Chatubt or Quad or Gemini, these
+1:27 are LLMs, a large language model, and
+1:29 you really need to understand these to
+1:31 understand why Jev even exists in the
+1:33 first place. So, basically, an LLM is a
+1:36 word guesser. Its whole job is to just
+1:38 predict the next word. But there are a
+1:41 couple problems with this one. It's
+1:42 slow. It guesses one word at a time. It
+1:45 costs tokens so it burns a lot of them
+1:47 and the context gets really bloated and
+1:49 that becomes very very expensive. So
+1:51 this is why Jev exists. But Jev
+1:54 functions fundamentally very very
+1:56 differently from an LLM and there's a
+1:58 reason for this. Jev is a classifier. It
+2:01 basically takes an input like a customer
+2:03 service question and decides where to
+2:06 route it to. So it determines is this a
+2:08 billing question, is this a technical
+2:10 question, is this an account question or
+2:11 does this belong somewhere else? And so
+2:13 the reason for this is that LLMs are
+2:15 designed for humans, for human in the
+2:17 loop interaction. It's a language that
+2:20 we as people understand. That's why we
+2:22 have these back and forth conversations.
+2:24 Jev was basically built for computers
+2:25 and agents to talk amongst themselves
+2:28 and work on their own problems without
+2:30 even needing us. So that in of itself is
+2:32 actually pretty cool. And arguably one
+2:34 of the most interesting parts is that
+2:35 this guy Dogo decided to come up with a
+2:38 brand new way for AI to interact with
+2:40 itself. So, there are a couple of things
+2:42 Jev can and can't do. And then we'll get
+2:44 into some of the use cases. So, it's
+2:46 really good at labeling things and
+2:48 routing things and rating it. So, it can
+2:50 actually give you a score that you can
+2:51 trust because it's based off of a very
+2:54 specific set of criteria. It answers
+2:57 super crazy fast and it costs almost
+2:59 nothing. So, that is awesome. What it
+3:01 can't do, it can't reply to you. It
+3:04 can't write any code. It can't tell you
+3:06 why it chose to do something. It can't
+3:08 see pictures, videos, or sound. It can't
+3:10 do any math, counting or dates. So, it
+3:12 can't actually do anything. Again, Jev
+3:15 is purely a classifier. So, rather than
+3:18 explaining that to you directly, I
+3:19 thought I would just play you this clip
+3:21 of Greg Eisenberg talking to Ryan Vogel,
+3:23 who was on the founding team of Open
+3:25 Code. Jeb is a classifier. At its truest
+3:28 being, that's what it is. I won't get
+3:29 into the architecture and stuff like
+3:30 that because honestly, I don't even
+3:32 understand it that well, but essentially
+3:35 you define an input. Let's say uh you
+3:38 have this iPhone as an input, right? And
+3:42 that's the input and then the output is
+3:44 a schema. So we could uh have the schema
+3:47 be what color is the iPhone is the
+3:49 question almost. And it has uh blue,
+3:53 orange, red, green, yellow as the output
+3:56 options for that question. And the
+3:58 classifier Jev then looks at this phone
+4:00 in a text uh format and says, "Hm, what
+4:04 uh is this orange? Is it Is it red? It
+4:08 could be red, but then it says, "Okay,
+4:11 this is about I'm pretty confident it's
+4:13 80% orange, but it could be 10% red, or
+4:18 it could be 10% blue, which adds up to
+4:21 100." And it's the probabilities of
+4:24 those choices. So, it's not just going
+4:26 to be a 100% affirmative. This is
+4:29 orange, this is blue, this is red. It's
+4:31 a hey, I'm 80% confident that this is
+4:35 orange or this is red.
+4:36 >> So that should make some sense to you.
+4:38 And I think there are some things that
+4:39 are really great about this. Again, the
+4:40 speed and the cost being the number one.
+4:43 But one of the biggest problems I see
+4:44 right here is in this idea of a schema.
+4:48 And the problem being is that you have
+4:49 to set this, right? The question is what
+4:51 color is this? Blue, orange, red, green,
+4:53 or yellow? And in this case, Ryan's
+4:55 iPhone was orange, which is great. It's
+4:57 one of these choices. But what if his
+4:58 iPhone was black or white or gray?
+5:02 Right? It doesn't appear in this schema.
+5:04 And so Jev is not going to know how to
+5:06 classify it or it's just going to get it
+5:08 wrong. And so the greater the number of
+5:10 options or edge cases there are for you
+5:12 to consider, the harder it's going to be
+5:14 for a person to develop these schemas.
+5:16 So the next use case that they talk
+5:18 about in this video is this idea of
+5:20 being able to sort your email, which is
+5:22 like a pretty okay use case. I think
+5:24 it's able to go through and classify, is
+5:26 this a sponsorship? Is this a new lead,
+5:28 a potential client? Is it spam? Right?
+5:30 And it can do it almost instantly and
+5:32 basically for free, which again, I think
+5:34 this is a cool use case, but like you
+5:36 would probably do this one time and you
+5:38 probably don't need to clean up your
+5:39 inbox ever again. And sure, you could
+5:42 classify every new incoming email, which
+5:44 is all good and well, but honestly, like
+5:46 it doesn't excite me all that much. I do
+5:48 think we are in the really early stages
+5:50 of this. And in this video, Nate Herk is
+5:52 showing off how he is able to classify
+5:54 his YouTube comments. Is it praise? Is
+5:56 it criticism? Is it a question? What is
+5:58 the user sentiment, right? Is it
+6:00 negative or neutral? Are there any new
+6:03 video ideas that could come from this?
+6:04 And so again, being able to classify
+6:06 things in and of itself is maybe not all
+6:09 that helpful, but what do you do with it
+6:12 next, I think, is almost the bigger
+6:14 question. And I think because Jeb is
+6:16 still so new, that's the part that we
+6:17 are all still kind of trying to figure
+6:18 out. So, for instance, Matthew Burman
+6:20 showed off this simulation where Jev is
+6:22 basically going through there are like
+6:24 150,000 different colored Skittles here.
+6:27 And Jev is literally going through
+6:29 grabbing a single Skittle with these two
+6:31 chopsticks, determining whether it's
+6:33 yellow, purple, green, red, and then
+6:36 sorting them. And okay, like again, like
+6:38 I don't really see the point of this. I
+6:40 think it's mostly just a demonstration
+6:41 to show off the speed because then he
+6:43 actually switches it to real time and we
+6:46 can see how Jev just absolutely cranks
+6:49 through this task. Like look at how fast
+6:51 it is sorting these different colored
+6:53 Skittles. So, okay, this is pretty
+6:55 impressive. But again, like what is
+6:57 really the value here? I'm not entirely
+7:00 sure. So, Jay from RoboNuggets did have
+7:02 one of the best use cases that I've
+7:03 seen. It's using Jev to determine which
+7:06 is the right model for the task. So
+7:09 basically you can set some criteria that
+7:11 determines like oh use fable for these
+7:13 really complex tasks or use haik coup
+7:15 for something really really simple. So
+7:16 Jev is going to be able to analyze
+7:18 whatever the task is really really
+7:20 quickly and then send it to the right
+7:22 model. So I like this use case because
+7:24 it saves you on time and it's going to
+7:25 save you a ton on tokens in the long
+7:27 run. This type of classification does
+7:29 seem to be the most beneficial for most
+7:31 like average like AI users. In this
+7:34 case, Jev is going to pick the right
+7:36 skill for the job. And so inside of all
+7:38 of your skills, if you've been building
+7:39 skills with Claude or with Chat GBT,
+7:42 there's like a little description of
+7:43 what that skill is. And so again, being
+7:45 able to give Jev the task and then
+7:47 having Jev determine really, really
+7:49 quickly and cheaply what skill is going
+7:51 to best execute the task for you, I do
+7:54 see as being beneficial, but again, like
+7:56 Jev isn't really like doing anything. It
+7:59 doesn't feel that special to me yet. So
+8:01 this is a really cool example that I
+8:02 saw, and then I'm going to show you the
+8:04 best use case that I've seen next. So
+8:06 this is an example of Jev playing Melee
+8:08 or like Super Smash style games, right?
+8:10 And the reason this is so powerful is
+8:12 because what Jev is doing is it is
+8:15 making like splitsecond decisions like
+8:17 however many like thousands or millions
+8:19 of times per second about how to move,
+8:22 how to react to the opponent, which
+8:24 attack to throw, how to dodge, all of
+8:26 these things, right? And so this is the
+8:28 speed of Jeb being able to classify all
+8:31 of these different moments and then
+8:33 determine what the best possible action
+8:35 to take is. So this is pretty cool. This
+8:37 speed of being able to do this is really
+8:39 impressive. Justin Schroer put out my
+8:42 favorite use case that I've seen is he
+8:44 used Astra or Fable, I can't remember,
+8:46 to build this kind of like Tesla
+8:48 self-driving world, but then he's using
+8:51 Jev to power all of the decisionmaking.
+8:54 So, how it fits between the lines, what
+8:56 it does when it approaches a stop sign,
+8:58 how it handles pedestrians, all of these
+9:01 things that a real full self-driving
+9:03 Tesla would be doing. And this to me is
+9:06 where Jev becomes really, really
+9:08 powerful where you have all of these
+9:10 machine learning algorithms that need to
+9:12 make millions of decisions a second in
+9:15 order to achieve some sort of desired
+9:18 outcome. And so, it's still really early
+9:20 days for Jev. you're just figuring out
+9:22 what this new form of AI can even do. I
+9:25 do think that for most normal people who
+9:27 are actually trying to build things with
+9:30 AI, using the anthropic or open AI
+9:33 models is going to be your best bet.
+9:35 You're not going to have to change your
+9:36 workflow at all. You're not going to
+9:38 have to bother trying to understand a
+9:40 new thing. So, I do think there are some
+9:42 really interesting things about Jev, but
+9:44 I do think currently it's a little bit
+9:46 overrated, a little bit hyped. But that
+9:49 being said, we don't know what the
+9:50 future holds for this. And I imagine
+9:52 that people building agents and doing
+9:54 this type of machine learning are going
+9:55 to find some pretty powerful use cases.
+9:58 If you like learning about all the
+9:59 coolest use cases for the newest models,
+10:01 check out this video I made with GPT6
+10:03 Astra showing off some of them right
+10:05 here. I'll see you over there.

@@ -1,0 +1,645 @@
+0:00 you need an Aentic OS, but it's not for
+0:02 the reasons you think. It's not because
+0:04 you need fancy dashboards like this or
+0:06 visual interfaces like this one, even
+0:09 though I'll show you how to create them.
+0:10 It's instead about building a custom
+0:13 system that takes the best of all the AI
+0:15 tools at your disposal, whether that's
+0:18 GPT6 Astra or Claude Opus 5.5 or Jev,
+0:23 and builds it around you and your work
+0:25 in a way you just can't get inside the
+0:26 terminal. That is what this Ontic OS
+0:29 does. And today, I'm going to show you
+0:31 not only how it works, but how you can
+0:33 build something like this for yourself.
+0:35 And along the way, I'm going to show you
+0:37 how to create a fully local voice
+0:38 system. How to integrate Jev as a
+0:40 virtually free, virtually instant model
+0:42 router, how to create a customized skill
+0:45 backbone that is built around how you
+0:48 actually work in your day-to-day. We'll
+0:49 also talk about how to use Obsidian as a
+0:51 memory layer that actually provides
+0:53 value. And at the end, I'll even show
+0:55 you how you can package something like
+0:57 this, not just for you, but for
+0:59 teammates and even sell to clients. This
+1:01 is going to be all about showing you how
+1:03 to create an Aentic OS that provides
+1:05 real value beyond the visual spectacle.
+1:08 So, let's get started. So, let's begin
+1:09 by talking about what an Aentic OS, what
+1:11 a clawed OS even is. So, it is a three
+1:14 layer system. And the first layer is the
+1:17 visual layer, and that's what we're
+1:18 looking at here. For me, this has a lot
+1:20 of stuff to do with my social media,
+1:22 what's going on on my different
+1:23 accounts. I have it hooked up to my
+1:25 calendar. I can look at all my different
+1:27 skills and automations and run them from
+1:29 here. And speaking of running it, I can
+1:31 run it either on Cloud Code or Codeex.
+1:33 Now, this is all happening inside of my
+1:35 browser. This is a web app, but there
+1:37 are no rules here. This doesn't have to
+1:39 be a web app. In fact, as you see here,
+1:41 I've ported it over to Obsidian. This is
+1:43 also an Obsidian plugin that just like
+1:45 you saw can run on cloud code or codeex,
+1:48 but I get all the advantages of being
+1:50 inside the Obsidian desktop app. I still
+1:53 have access to a terminal here. I can
+1:56 click on any of these buttons which are
+1:58 linked to different skills and
+1:59 automations. I have different tabs that
+2:01 dive deeper into what's going on with my
+2:03 audience, what's going on in AI in
+2:05 general, right? I have a whole research
+2:07 tab that takes a look at like the GitHub
+2:08 trending outliers on YouTube as well as
+2:11 things like Hacker News. The big thing
+2:12 with the visual side is this is
+2:14 ultimately 100% custom and you can edit
+2:17 this so it makes sense for you and your
+2:19 work or your team's work or your
+2:21 client's work. Now the second layer is
+2:22 the memory system and for that I use
+2:25 Obsidian and the value here is not these
+2:28 knowledge graphs. Like these knowledge
+2:29 graphs look cool but that's about where
+2:30 the functionality ends because this is
+2:32 not a rag system. What the memory layer
+2:35 is really about is creating a file and
+2:37 folder structure that makes sense for
+2:39 you the human being and for your AIOS so
+2:42 that you can get answers quickly and
+2:45 accurately even we're talking about
+2:47 thousands and thousands and thousands of
+2:48 files and this is going to be based on
+2:50 the Carpathy Obsidian rag system and we
+2:52 will dive into that in much more detail
+2:54 later. And last but not least for the
+2:56 third layer we have the skill
+2:58 architecture. This is the backbone of
+2:59 everything we do. If you get nothing
+3:01 else from this video, if you ignore the
+3:03 memory layer stuff, you ignore the
+3:04 visual layer stuff, I want you to listen
+3:07 to this section when we dive into it in
+3:09 more detail. And that is how do we go
+3:11 from somebody who just uses AI to sort
+3:13 of help us in our day-to-day task and
+3:15 offload virtually all of it to AI in a
+3:18 way that makes sense because you have
+3:20 things you do every single day, week to
+3:22 week in your life, in your business that
+3:24 we should not only be turning into
+3:25 skills, but then turning into
+3:27 automations. And from those automations
+3:29 and from those skills, we get certain
+3:31 deliverables and outputs. Those
+3:32 deliverables and outputs are what is fed
+3:35 back into the AIOS. All the reports you
+3:38 see here, all these graphics, all of
+3:39 these are driven by the different skills
+3:42 we run. So, not only understanding that
+3:44 in a theoretical sense, but having the
+3:46 practical know-how of how to create
+3:48 something like this from scratch is what
+3:50 we're going to talk about. But before we
+3:51 do that, a quick word from today's
+3:53 sponsor, me. So, inside of Chase AI
+3:55 plus, you not only can get my exact
+3:58 Claude OS setup, but you also get access
+4:00 to my Claude code and Codeex masterass.
+4:03 And these are the best and easiest way
+4:05 to go from zero to AI dev, no matter
+4:07 your technical background. We focus on
+4:10 real use cases. It gets updated every
+4:12 single week. So, if you want to get more
+4:14 serious about this stuff, definitely
+4:16 check us out. There is a link to it down
+4:18 in the pin comment. So, the Cloud OS has
+4:20 three layers: visual, memory, and
+4:22 skills. But how does this thing actually
+4:24 work? How do all these pieces come
+4:26 together? Well, let's go through the
+4:28 architecture. So, let's do some
+4:31 examples. So, let's say I tell my cla
+4:33 OS, which also works with voice, go
+4:36 ahead and bring up the morning intel
+4:37 brief,
+4:40 it instantly brings it up. But if I say
+4:43 something like, "What was the biggest
+4:46 news in AI today?"
+4:50 >> From today's morning brief, a model that
+4:53 can't write a sentence is beating models
+4:56 that can. Jev from type safer I went
+4:59 into early access step 15.
+5:02 >> We get a response like that and I cut it
+5:04 off. But now if I ask it for a more
+5:05 complex task, something like, can you
+5:08 create me some sort of report or
+5:10 explainer that kind of illustrates the
+5:13 difference between Jev, that new AI
+5:15 system everyone's talking about, and
+5:17 your standard large language models like
+5:19 Babel or Astra.
+5:23 >> Okay, I'll get to work.
+5:26 >> It'll do something like that. You will
+5:28 see with this more complex task, it
+5:30 actually pulled up the terminal. So what
+5:33 was actually going on under the hood
+5:34 there? And why did I show three
+5:36 different seemingly random examples?
+5:37 Well, it sort of illustrates how this
+5:39 AIOS routes your different requests to
+5:42 different models depending on the nature
+5:44 of your task. And this is where stuff
+5:46 like Jev kind of comes into play, which
+5:49 we see right here. So let's focus on
+5:50 that third example where I asked our cla
+5:52 OS, hey, come with like this visual
+5:54 explainer sort of illustrating the
+5:55 difference between Jev and stuff like
+5:57 Fable. Well, we started over here. I
+6:00 simply gave it an audio request. Now,
+6:03 this then went to our Obsidian plugin,
+6:05 but this just as easily could have gone
+6:07 to our Jarvis hood. Everything you just
+6:08 saw in that Obsidian plugin also works
+6:10 exactly the same here. This also is able
+6:12 to pull up a terminal. That request then
+6:15 went to the bridge. And the bridge does
+6:18 two things. One, it takes our request
+6:20 and it records all this inside of
+6:22 Obsidian. Two, it then starts engaging
+6:26 our local voice system. So all that
+6:29 speech you heard, all the transcription,
+6:30 all the actual audio is done locally on
+6:33 your machine. So we use an open- source
+6:36 program called Whisper, which
+6:38 essentially acts as the ears of our
+6:39 model. So when I said, "Hey, give me
+6:41 that explainer, you know, Jeb versus the
+6:43 LLM's," it took the audio and it
+6:45 transcribed that into text using
+6:47 whisper. Now the audio you heard back
+6:49 with that sort of like Jarvis voice that
+6:52 also was a local model that was Coakoro,
+6:55 totally open source. You could change
+6:56 that voice to be whatever you want. That
+6:58 transcription then got sent to Jev. And
+7:03 we'll do a little Jev explainer here in
+7:04 a second. Jev is amazing when it acts as
+7:08 a classifier. And what we want to do
+7:10 with Jev is we want it to sort our
+7:13 requests. And there's really three tiers
+7:14 of requests we can handle. Now, tier
+7:16 number one are for extremely simple
+7:18 requests that we want pretty much
+7:19 instant responses to. So when I asked it
+7:22 to bring up that morning report, that
+7:25 morning intel brief, this was a tier one
+7:27 request that Jev classified. AI isn't
+7:29 even brought into the system if it's
+7:31 tier one, which is why it's able to be
+7:32 so fast. We're talking about hundreds of
+7:34 a millisecond to bring up these things.
+7:35 And this could be something like you saw
+7:37 where I say, "Hey, bring up a report."
+7:38 Or these can even be commands inside of
+7:40 Obsidian itself where I say like, "Hey,
+7:42 bring up the terminal." Or something to
+7:43 that effect. Then we have tier number
+7:45 two. These are for non-complex
+7:48 tasks, but they aren't so simple that we
+7:50 put it into tier one. So when I ask it
+7:52 something like, hey, what was the
+7:54 biggest news in AI today? I want some
+7:56 thinking involved. So Jev then calls on
+8:00 the smallest models available to us.
+8:02 This is Haiku or Luna depending on if
+8:04 I'm using the Astra version or the cloud
+8:07 code version. This is cheap. This is
+8:08 fast. And if you really wanted to go
+8:10 into a full local setup, you could swap
+8:11 these out for something that's just
+8:12 running on your machine. And then third,
+8:14 we have more complex real work, which is
+8:17 what you saw when I asked it to like
+8:18 create that explainer. This is actually
+8:21 going to then pull up clawed code or
+8:23 codecs inside of your terminal like you
+8:26 just saw. This gives you the ability if
+8:28 you're inside whether the Obsidian
+8:30 plugin or the web app to actually
+8:32 interact with the terminal in those
+8:33 spaces if you want to. So the idea is
+8:36 your tasks require different models and
+8:38 Jev is really really good at classifying
+8:40 them appropriately. From there, all the
+8:42 deliverables, all the conversations,
+8:44 everything you do with your AIOS is then
+8:45 logged back in Obsidian. Now, a real
+8:47 quick explanation for why we have Jev in
+8:49 there if you're not familiar with how
+8:51 Jeb works because it's still new to a
+8:52 lot of people. And unfortunately, a lot
+8:54 of sort of the discourse around it is
+8:56 kind of confusing because it's an AI
+8:58 system, but it's not an LLM, but people
+9:00 are saying it's a replacement in some
+9:02 cases for cloud code or Codex, which is
+9:04 sort of true in certain situations, but
+9:06 in general is not true whatsoever. So
+9:07 this is like the 90second explanation
+9:10 for Jev and why it makes sense in our
+9:12 AIOS. So the big thing with Jev is it
+9:15 allows you to ask this AI model fuzzy
+9:18 questions and get specific numbers in
+9:21 response. Get probabilities in response.
+9:24 So here's an example. Imagine you are
+9:26 using this in some sort of customer
+9:28 service situation and you have a
+9:30 customer that says, "I canceled my
+9:31 subscription last month, but you charge
+9:33 me again." And you want to know which
+9:35 team should handle this. So, normally if
+9:38 we sent this to large language models
+9:39 and they can handle this just fine, it
+9:41 would say something like, "Hey, this is
+9:42 a billing issue. Route the sticks to
+9:44 billing." And that would be the correct
+9:45 answer. Jev also does something similar,
+9:48 but it doesn't give us a sentence in
+9:49 response. There's no back and forth with
+9:51 chat with Jeff. It instead gives us the
+9:54 probability that there's a 92% chance
+9:56 this should go to billing, which is also
+9:59 the correct answer. So, if we both get
+10:00 the correct answers, why the heck should
+10:02 we care? Well, we should care because
+10:04 Jev does this extremely quickly and way
+10:08 cheaper. We're talking like 200x, like
+10:11 faster and cheaper. That's why we love
+10:13 Jev. Cheap, fast, perfect for these
+10:15 situations where you're handling what
+10:17 should I do in this scenario where there
+10:20 are predefined choices like in our model
+10:24 routing scenario, right? What are the
+10:26 predefined choices? One, two, three.
+10:29 Could I put Haiku here? Could I put Luna
+10:31 here? Sure, but there's no point in
+10:33 doing that anymore with Jev, which is
+10:36 why it's been integrated. So, that is
+10:39 how all of this works from an
+10:41 architecture point of view. Now, let's
+10:44 dive a little bit deeper into each of
+10:45 those three layers, the visual, the
+10:46 memory, and the skills so you understand
+10:48 how you could create something like this
+10:50 on your own. So, let's go from the
+10:51 ground up, beginning with the skill
+10:53 backbone. This is the most important
+10:55 thing of the entire video. And if you do
+10:57 nothing else but what I'm about to show
+10:59 you here, you're going to be ahead of
+11:00 like 99% of the people who use Claude
+11:03 Code or Codeex. Now, the idea is simple.
+11:06 We are going to take all the tasks you
+11:08 do in your day-to-day in your week to
+11:10 week, whether it's in your personal life
+11:11 or your business, and turn them into
+11:13 skills. And if it makes sense, turn
+11:15 those skills into automations. The value
+11:17 of doing that seems obvious, yet most
+11:19 people don't do that at all. They do it
+11:21 with a few of the things they do in
+11:22 their day-to-day and they certainly
+11:23 don't systematically go through
+11:26 everything they do and break it down in
+11:28 this manner. Because while this looks
+11:30 kind of crazy, you probably have
+11:31 something similar if it was actually
+11:32 written out. You do things related to
+11:34 productivity research. Maybe it's not
+11:36 content in a community, but you
+11:37 certainly have stuff related to clients
+11:39 and sales and finance in some manner in
+11:42 your business life. So, why haven't we
+11:45 codified this into something Claude can
+11:47 help us with? And the answer is it just
+11:49 seems like too much damn work. It seems
+11:51 like it would take too much time and you
+11:52 don't even know where to begin. Well,
+11:54 luckily creating something like this,
+11:56 breaking them all down into skills, is
+11:57 actually relatively easy. And there's
+11:58 just two things you have to do. The
+12:00 first thing we're going to do is have
+12:02 your AI system of choice simply look at
+12:04 your logs. Claude Code and Codeex keep a
+12:07 written history of every single
+12:09 conversation you have with it over the
+12:11 last 30 plus days. So instead of us
+12:13 guessing about how Claude or CODC should
+12:16 help us in our day-to-day, why don't we
+12:18 just have them look at how we actually
+12:20 use them in reality and ask, "Hey, based
+12:23 on everything I've done over the last 30
+12:25 days, are there any skills we could
+12:28 create?" That is literally the entirety
+12:31 of the prompt you have to give it.
+12:32 There's no special thing. There's no
+12:33 crazy sort of workflow. It's literally
+12:35 just look at how I've used you for the
+12:37 last 30 days. Can we turn those into
+12:39 skills? The second thing we are going to
+12:42 do is we are going to sort of just take
+12:44 that idea a step further and instead of
+12:47 giving it a log, we are just going to
+12:49 sit in front of claw code, sit in front
+12:50 of codeex, open up our microphone and
+12:52 you are going to talk non-stop for like
+12:54 10 to 20 minutes and all you're going to
+12:56 do is you are going to explain what you
+12:57 do in your day-to-day or your week to
+12:59 week. After you dump all that
+13:00 information into claudin doesn't have to
+13:02 be coherent again stream of
+13:03 consciousness it can get through your
+13:05 inability to talk correctly. You are
+13:07 then going to ask it, hey, based on
+13:10 everything I just told you, what are
+13:12 some ways where we could create some
+13:14 skills or automations to take some work
+13:15 off my plate? How could we take all
+13:17 these tasks I've talked about and give
+13:19 them to you, this AI system, to execute
+13:22 in mystead? Simply by doing that, and
+13:25 neither of these scenarios require you
+13:27 to have the answers beforehand. you
+13:29 don't have to know what you want to turn
+13:30 into skills will get you pretty much 90%
+13:33 of the way here of creating these skills
+13:37 that will make your life infinitely
+13:39 better. Now the question of which ones
+13:41 should be turned into automations should
+13:42 be relatively straightforward and when
+13:44 it comes to turning them into
+13:45 automations you simply ask cla to do
+13:48 that. We can always do that manually
+13:49 through things like routines or schedule
+13:51 tasks inside of codeex but these systems
+13:53 also have the ability to turn those into
+13:55 automations that are triggered like by
+13:56 your machine itself. So, we have a lot
+13:58 of flexibility here. And again, like so
+14:00 many of these things, you don't even
+14:01 have to have the answer when you walk
+14:03 into the space. You just have to ask
+14:05 Claude or Codex to do it. Now, how does
+14:07 this whole skill backbone tie into the
+14:09 AIOS at large? Well, like I talked about
+14:12 earlier, the idea is we've created all
+14:14 these systems with the skills and with
+14:16 the automations to create things for us.
+14:18 Many times they are going to be reports
+14:20 and they're going to be deliverables.
+14:21 Instead of having them spread in a
+14:23 million different places, why don't we
+14:24 just consolidate them into one place?
+14:27 This is where a lot of the value from
+14:28 the dashboard and the visual side is
+14:31 actually harnessed. For me, that's
+14:32 metrics. That's a look at my schedule.
+14:34 That's breaking it down into tasks.
+14:36 That's the morning headlines. That's
+14:37 audience metrics. That's deeper research
+14:40 into things that are relevant for me.
+14:42 Again, this has to be 100% customized
+14:44 because you're not going to care about
+14:46 your YouTube subs, right? But you
+14:48 undoubtedly have a lot of metrics and a
+14:50 lot of deliverables that you would like
+14:51 all in one place that are easy to access
+14:53 and ask questions about and that sort of
+14:56 thing can be a little bit difficult to
+14:57 do even inside of the desktop
+15:00 applications and definitely kind of a
+15:01 pain inside of the terminal. Even if you
+15:03 want to argue about the value of having
+15:05 that all in one sort of visual dashboard
+15:07 that you can customize, I don't think
+15:09 there's any argument about creating some
+15:10 sort of skill backbone in your greater
+15:13 Clauder Codeex ecosystem like this. Now
+15:16 let's talk about the second layer of our
+15:18 system which is the Obsidian memory
+15:21 system. When we talked about the highle
+15:22 architecture, you could tell everything
+15:24 kind of touches this layer. Whatever
+15:26 goes in, whatever comes out gets
+15:28 recorded inside of our vault. Now, if
+15:30 you've never used Obsidian before, it is
+15:32 a completely free, simpletouse desktop
+15:35 application that gives you insights into
+15:38 your markdown files. Essentially helps
+15:40 with organization. Now, Obsidian and
+15:42 things like Claude Code and Codex are
+15:43 often used together to create what is
+15:45 called a second brain. And the second
+15:48 brain is the idea that there's all these
+15:49 files and folders that have to do with
+15:51 you or your business. We put them in
+15:54 these series of files that we have
+15:56 called the Obsidian Vault. We run Claude
+15:58 code inside of those folders and it has
+16:00 access to all this information about us.
+16:02 Now, this Obsidian second brain has kind
+16:04 of gotten a bad rap as of late because
+16:06 people have sort of overhyped what it is
+16:08 Obsidian does in the structure and like
+16:10 what the second brain even means. The
+16:12 reality is Obsidian isn't giving Claude
+16:14 Carter Codex any sort of like magic
+16:16 upgrade. Just because this AIOS system
+16:19 uses Obsidian, that doesn't mean it gets
+16:20 like a better memory jump or remembers
+16:23 things better. That's that's not what
+16:25 Obsidian does. The Obsidian desktop app
+16:27 just makes it very easy to navigate
+16:29 those files and folders that we have
+16:31 designated the vault. And that's a
+16:33 subtle but important difference because
+16:35 it means the power of an Obsidian second
+16:37 brain, the power of bringing Obsidian in
+16:39 the memory layer is not in Obsidian
+16:41 itself. The power [snorts] of the system
+16:43 depends 100% on simply how you organize
+16:45 your files and folders. Right? If I just
+16:48 have one folder called the vault and I
+16:50 put 10 million just random files in this
+16:52 one folder and it's completely
+16:53 unorganized but it's Obsidian, does that
+16:56 help me at all? The answer is no.
+16:57 Absolutely not. So what we have to do is
+16:59 we need to set up some sort of folder
+17:01 structure that makes sense and that's
+17:02 what you see here. This all comes from
+17:05 Carpathy. Carpathy is an AI researcher
+17:09 who works with anthropic now I believe
+17:11 and he sort of coined this structure
+17:12 with obsidian cloud code and this like
+17:14 obsidian rag idea. And the idea is
+17:16 relatively simple. You have this folder
+17:18 that you have designated as the vault in
+17:20 your system where everything's going to
+17:22 live. It's just a folder on your
+17:23 computer. Underneath that folder, we
+17:26 have three subfolders. We have raw, we
+17:29 have wiki, and we have outputs. And the
+17:31 idea is raw data goes in the raw folder.
+17:34 The wiki subfolder is where we sort of
+17:37 organize that raw data and create, you
+17:39 know, like Wikipedia style articles
+17:41 about them. And then three is the
+17:42 outputs. You know, let's say I wanted to
+17:44 make a slide deck about something that
+17:46 was a Wikipedia article. So, for
+17:49 example, let's say I wanted our AIOS to
+17:51 find information about AI agents, right?
+17:53 Do a bunch of research on AI agents. So,
+17:55 it does that and it creates a bunch of
+17:56 information or downloads a bunch of
+17:58 information about AI agents which goes
+18:00 in the raw folder. Then, let's imagine
+18:02 we have this AI agents folder in the raw
+18:05 section and I want to turn it into some
+18:06 sort of organized data. Well, then it
+18:09 creates an AI agent subfolder down here
+18:12 with all the information about AI
+18:14 agents, including things about
+18:15 autonomous coding and tool use patterns.
+18:18 And then let's say I told our cloud OS,
+18:22 create a PowerPoint slide deck about
+18:24 this. Well, then it makes the AI agents
+18:27 slide deck. Okay? And that would go into
+18:29 the outputs. Simple enough. That's sort
+18:32 of the idea. And the cell here is that
+18:35 because it's set up in this way where
+18:37 it's very organized and I know where
+18:38 everything goes. When I ask Claude
+18:41 something about anything that's inside
+18:44 of my vault, it has a clear map, a clear
+18:46 path of where to find that information.
+18:48 So, it finds it quickly and it finds it
+18:50 efficiently. You know, it doesn't have
+18:52 to go through 10 million folders and
+18:54 subfolders to get there. There's a clear
+18:55 path. And the other side of the equation
+18:56 is because it's organized in that way,
+18:58 it's easy for me, the human being, to
+19:00 find it if I want to. So with that being
+19:03 said, how should you set up your folder
+19:06 system with your AIOS, your cloud OS
+19:09 inside of Eva? Does it have to be like
+19:11 this where it's raw, where it's wiki,
+19:12 where it's outputs? The answer is
+19:14 absolutely not. You can kind of set it
+19:16 up any way you want to. It just needs to
+19:18 be organized in some manner that makes
+19:19 sense so that you, the human being, can
+19:21 navigate it and Claude or Codeex can
+19:26 navigate it. Now, like so many of these
+19:28 things, you don't need to have the
+19:29 answer. It is as simple as telling your
+19:32 AIOS, hey, this is the folder I'm using
+19:34 as my vault. Help me come up with some
+19:36 sort of organizational structure, and it
+19:38 will map it out and move files and
+19:39 folders as it sees fit. The only other
+19:42 thing I would add to this is in whatever
+19:44 folder you designate as the vault, I
+19:46 highly suggest, and whether it's a
+19:47 claw.md or agents MD, you tell it what
+19:50 the vault structure looks like. So, you
+19:52 give it instructions of how to add new
+19:54 files and content to your system so it
+19:57 never kind of gets out of whack or
+19:58 drifts. And that's really all there is
+20:00 to the memory layer. It just needs to be
+20:01 structured. It just needs to be
+20:03 organized. It just needs to make sense
+20:04 for you. And lastly, we have the visual
+20:07 piece, which we've kind of already hit
+20:08 on a lot here, where the big cell for
+20:10 the visual piece is all these skills
+20:12 have deliverables. We have a bunch of
+20:14 metrics that you need to be in charge
+20:15 of, and we're going to put them all in
+20:17 one dashboard that we customize. A lot
+20:19 of the value of sort of these custom
+20:21 dashboard setups as well though is seen
+20:24 when we bring different team members and
+20:25 clients into the equation because there
+20:28 definitely is a subset of people
+20:29 watching this who are like hey I could
+20:31 probably generate something like this
+20:32 myself even if it's some like you know
+20:35 mashed up thing inside of the desktop
+20:37 app. Why would I need to do this? Well,
+20:39 if you're someone who's working with
+20:40 team members or you're someone who wants
+20:41 to bring this to clients, it's not as
+20:43 easy to bring something you've built
+20:45 inside the terminal specifically to
+20:47 them. On the other hand, I can create
+20:50 something like this that is custommade
+20:51 for anybody and set it up extremely
+20:53 easily. On top of that, I can even port
+20:56 in a lot of my workflows, a lot of my
+20:59 skills, a lot of my automations. And if
+21:01 I put them inside of the dashboard like
+21:02 you see here, where they are simply a
+21:04 button one person has to press. Well,
+21:06 the way this works is in the background,
+21:08 it's simply calling a headless version
+21:10 of Cloud Coder Codeex to execute those
+21:12 tasks. So, I could have someone sit in
+21:14 this chair right here in front of my
+21:16 dashboard, whether that's the Obsidian
+21:17 plugin or the web app version, and I can
+21:20 start having them just running all sorts
+21:21 of skills that do a lot of work and
+21:23 they're pretty much harnessing 90 95% of
+21:26 the power of Cloud Coder Codeex without
+21:28 even knowing how to open it up. So, on
+21:30 top of all the information
+21:31 consolidation, when we talk about
+21:33 selling this and bringing other members
+21:35 of our team into the fold, the visual
+21:37 dashboard can actually help them a ton,
+21:39 which can't be undersold, even if you're
+21:42 someone who's technical enough to kind
+21:43 of do this on your own. And a lot of
+21:45 that has to do with the custom nature of
+21:47 it. This is not a one-sizefitsall thing,
+21:50 which is why it's so powerful. No matter
+21:52 what you need to be listed here, no
+21:54 matter what you need access to all in
+21:56 one place, you can build it that way.
+21:58 So, that's the rundown on this Claw OS.
+22:00 I hope I was able to give you a better
+22:02 understanding of how you could build
+22:03 something like this for yourself. If you
+22:05 want to get my exact setup, whether it's
+22:06 the web app version or the Obsidian
+22:08 plugin, you can find that inside of
+22:10 Chase AI Plus. I'll put a link to that
+22:12 down in the description. But besides
+22:14 that, I'll see you
