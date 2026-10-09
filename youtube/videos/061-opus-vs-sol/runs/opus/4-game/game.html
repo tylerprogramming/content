@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inbox Zero: Support Triage</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0f1419; color: #e6e6e6;
+    font: 15px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex; flex-direction: column; align-items: center; min-height: 100vh;
+  }
+  h1 { margin: 18px 0 4px; font-size: 22px; letter-spacing: .5px; }
+  #hud { display: flex; gap: 28px; margin: 8px 0 12px; font-size: 16px; }
+  #hud b { color: #fff; }
+  #lives { color: #ff5c5c; letter-spacing: 3px; }
+  #board {
+    position: relative; width: 960px; height: 440px; overflow: hidden;
+    background: linear-gradient(90deg, #3a1d1d 0, #1a2129 70px, #1a2129 100%);
+    border: 1px solid #2c3640; border-radius: 10px;
+  }
+  #deadline {
+    position: absolute; left: 70px; top: 0; bottom: 0; width: 2px;
+    background: repeating-linear-gradient(#ff5c5c 0 8px, transparent 8px 16px);
+  }
+  .email {
+    position: absolute; width: 330px; padding: 10px 12px;
+    background: #f7f7f2; color: #1b1b1b; border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.45); border-left: 5px solid #8a8f98;
+  }
+  .email.target { outline: 3px solid #ffd33d; border-left-color: #ffd33d; }
+  .email .from { font-size: 12px; color: #666; }
+  .email .subj { font-weight: 600; margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .email.good { background: #c8f7c5; transition: opacity .25s; opacity: 0; }
+  .email.bad  { background: #ffc9c9; transition: opacity .25s; opacity: 0; }
+  #keys { display: flex; gap: 12px; margin: 14px 0; }
+  .key { padding: 8px 14px; border-radius: 6px; background: #222b35; border: 1px solid #36424f; color: inherit; font: inherit; cursor: pointer; }
+  .key:hover, .key:focus-visible { border-color: #ffd33d; outline: 2px solid #ffd33d; outline-offset: 2px; }
+  .key kbd {
+    display: inline-block; min-width: 22px; text-align: center; margin-right: 6px;
+    background: #e6e6e6; color: #111; border-radius: 4px; font-weight: 700;
+  }
+  .key.flash-good { background: #1f5f2a; }
+  .key.flash-bad  { background: #6a1f1f; }
+  #overlay {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; background: rgba(10,14,18,.86);
+    text-align: center; z-index: 10;
+  }
+  #overlay h2 { margin: 0 0 10px; font-size: 28px; }
+  #overlay p { margin: 4px 0; color: #b8c0c8; }
+  #toast {
+    position: absolute; right: 14px; top: 10px; font-weight: 700; color: #ffd33d;
+    opacity: 0; transition: opacity .3s; z-index: 5;
+  }
+  #log { font-size: 13px; color: #8a949e; height: 20px; }
+  @media (max-width: 980px) {
+    #board { transform-origin: top center; }
+    #keys { flex-wrap: wrap; justify-content: center; padding: 0 10px; }
+    #hud { flex-wrap: wrap; justify-content: center; gap: 8px 22px; }
+  }
+</style>
+</head>
+<body>
+<h1>Inbox Zero: Support Triage</h1>
+<div id="hud">
+  <span>Score: <b id="score">0</b></span>
+  <span>Lives: <span id="lives"></span></span>
+  <span>Level: <b id="level">1</b></span>
+  <span>Best: <b id="best">0</b></span>
+</div>
+<div id="board">
+  <div id="deadline"></div>
+  <div id="toast"></div>
+  <div id="overlay">
+    <h2>Inbox Zero</h2>
+    <p>Emails slide in from the right. Label the highlighted one before it hits the red line.</p>
+    <p>1 Billing &nbsp; 2 Technical &nbsp; 3 Sales &nbsp; 4 Spam</p>
+    <p>Use the number keys or tap the labels below.</p>
+    <p>Wrong label or a missed email costs a life. Speed goes up every 10 correct.</p>
+    <p><b>Press Space to start</b></p>
+  </div>
+</div>
+<div id="keys">
+  <button class="key" type="button" data-k="1"><kbd>1</kbd>Billing</button>
+  <button class="key" type="button" data-k="2"><kbd>2</kbd>Technical</button>
+  <button class="key" type="button" data-k="3"><kbd>3</kbd>Sales</button>
+  <button class="key" type="button" data-k="4"><kbd>4</kbd>Spam</button>
+</div>
+<div id="log"></div>
+
+<script>
+(() => {
+  "use strict";
+
+  const LABELS = ["billing", "technical", "sales", "spam"];
+
+  // [subject, from, label]
+  const EMAILS = [
+    // billing
+    ["Charged twice for my March invoice", "dana.k@northwind.io", "billing"],
+    ["Refund request for order #48213", "m.alvarez@gmail.com", "billing"],
+    ["Update credit card on file before renewal", "ap@brightpath.co", "billing"],
+    ["Why did my monthly price go up?", "sam.t@outlook.com", "billing"],
+    ["Need a VAT invoice for our accounting team", "finance@kleinhaus.de", "billing"],
+    ["Card declined but subscription still active?", "jordan@lumenlabs.dev", "billing"],
+    ["Cancel auto-renew and prorate the remainder", "p.nguyen@yahoo.com", "billing"],
+    ["Receipt missing company name and tax ID", "billing@corvid.agency", "billing"],
+    ["Payment failed notice, but my bank shows it went through", "chris.w@fastmail.com", "billing"],
+    ["Downgrade to Starter plan, what happens to credit?", "ops@tinyharbor.com", "billing"],
+    ["Invoice #INV-2291 shows the wrong seat count", "ar@meridianhealth.org", "billing"],
+    ["Wire transfer reference for annual plan", "treasury@orbitfreight.com", "billing"],
+    // technical
+    ["Login page stuck in a redirect loop", "leo@quartzmedia.com", "technical"],
+    ["API returning 502 since this morning", "devops@stackforge.io", "technical"],
+    ["CSV export is missing the last 200 rows", "analyst@peakretail.com", "technical"],
+    ["Password reset email never arrives", "hannah.b@icloud.com", "technical"],
+    ["Webhook signatures failing verification", "eng@parcelpilot.dev", "technical"],
+    ["Mobile app crashes when I open Settings", "tom.r@gmail.com", "technical"],
+    ["SSO with Okta throws invalid_audience error", "it-admin@granitebank.com", "technical"],
+    ["Dashboard charts not loading in Safari 18", "ux@fernandco.design", "technical"],
+    ["Rate limit hit at 40 requests per minute, docs say 100", "backend@loopcart.io", "technical"],
+    ["2FA codes rejected after changing phones", "rachel.m@proton.me", "technical"],
+    ["Import from Zapier duplicating every contact", "ops@sundialfitness.com", "technical"],
+    ["Timezone wrong on all scheduled reports", "sre@nimbusgrid.net", "technical"],
+    // sales
+    ["Pricing for a 250-seat enterprise license", "procurement@atlasmfg.com", "sales"],
+    ["Can we book a demo for our team next week?", "head.of.ops@crestline.io", "sales"],
+    ["Do you offer nonprofit discounts?", "director@riverbendfoodbank.org", "sales"],
+    ["Security questionnaire and SOC 2 report before we buy", "vendor-risk@halcyonins.com", "sales"],
+    ["Interested in reselling your product in Canada", "partners@maplereach.ca", "sales"],
+    ["Quote needed for annual plan with SSO add-on", "it@bluepinelaw.com", "sales"],
+    ["Comparing you with a competitor, can we talk?", "cto@quillhq.com", "sales"],
+    ["Trial ending, want to upgrade the whole team", "maya@loomstudio.co", "sales"],
+    ["Volume pricing for 12 franchise locations", "owner@brewhausgroup.com", "sales"],
+    ["Is there an education plan for our university?", "it-purchasing@westvale.edu", "sales"],
+    ["Custom contract terms and an MSA review", "legal@ironcladlogistics.com", "sales"],
+    ["Add 30 more seats this quarter?", "cfo@glasswingtravel.com", "sales"],
+    // spam
+    ["URGENT: Your account will be suspended in 24h, verify now", "security@paypa1-alerts.net", "spam"],
+    ["You have won a $1,000 Amazon gift card!!!", "rewards@winner-notify.biz", "spam"],
+    ["Boost your SEO ranking to #1 on Google guaranteed", "growth@rank-rocket.xyz", "spam"],
+    ["Re: Re: Invoice attached (open ASAP).zip", "noreply@docs-share-secure.ru", "spam"],
+    ["Make $5,000 a week working from home", "jobs@easy-cash-now.info", "spam"],
+    ["Your package could not be delivered, click to reschedule", "track@usps-parcel-help.top", "spam"],
+    ["Hot singles in your area want to chat", "hello@meetnow-4u.club", "spam"],
+    ["Crypto opportunity: 300% returns in 30 days", "vip@bitprofit-club.io", "spam"],
+    ["Dear beneficiary, transfer of $4.7M funds", "barrister.james@consultant.com", "spam"],
+    ["Cheap Rolex watches, 90% off today only", "deals@luxury-replica.shop", "spam"],
+    ["Congratulations, you've been selected for a free iPhone 17", "promo@lucky-draw.win", "spam"],
+    ["Mailbox storage full, log in to keep receiving mail", "admin@mail-quota-update.co", "spam"],
+  ];
+
+  const $ = (id) => document.getElementById(id);
+  const board = $("board"), overlay = $("overlay");
+  const W = 960, H = 440, CARD_W = 330, DEADLINE_X = 70, CARD_H = 66;
+  const LANES = [18, 102, 186, 270, 354];
+
+  const state = {
+    running: false, score: 0, lives: 3, level: 1, correct: 0,
+    emails: [], spawnTimer: 0, nextId: 1, bag: [], last: 0,
+    best: Number(localStorage.getItem("inboxZeroBest") || 0),
+  };
+
+  function speed()    { return 45 + (state.level - 1) * 14; }            // px per second
+  function interval() { return Math.max(0.9, 3.0 - (state.level - 1) * 0.3); } // seconds between spawns
+
+  function drawEmail() {
+    if (state.bag.length === 0) {
+      state.bag = EMAILS.slice();
+      for (let i = state.bag.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [state.bag[i], state.bag[j]] = [state.bag[j], state.bag[i]];
+      }
+    }
+    return state.bag.pop();
+  }
+
+  function freeLane() {
+    // pick a lane whose rightmost card has cleared the spawn zone
+    const open = LANES.filter((y) =>
+      !state.emails.some((e) => !e.done && e.y === y && e.x > W - CARD_W - 20));
+    if (open.length === 0) return null;
+    return open[Math.floor(Math.random() * open.length)];
+  }
+
+  function spawn() {
+    const y = freeLane();
+    if (y === null) return false;
+    const [subject, from, label] = drawEmail();
+    const el = document.createElement("div");
+    el.className = "email";
+    el.dataset.id = state.nextId;
+    el.innerHTML = '<div class="from"></div><div class="subj"></div>';
+    el.querySelector(".from").textContent = from;
+    el.querySelector(".subj").textContent = subject;
+    board.appendChild(el);
+    state.emails.push({ id: state.nextId++, el, x: W, y, label, subject, done: false });
+    return true;
+  }
+
+  function target() {
+    // the live email closest to the deadline
+    let best = null;
+    for (const e of state.emails) if (!e.done && (!best || e.x < best.x)) best = e;
+    return best;
+  }
+
+  function remove(e, cls) {
+    e.done = true;
+    e.el.classList.remove("target");
+    e.el.classList.add(cls);
+    setTimeout(() => e.el.remove(), 260);
+    state.emails = state.emails.filter((x) => x !== e);
+  }
+
+  function toast(msg) {
+    const t = $("toast");
+    t.textContent = msg; t.style.opacity = 1;
+    clearTimeout(toast.h); toast.h = setTimeout(() => (t.style.opacity = 0), 1100);
+  }
+
+  function flashKey(k, good) {
+    const el = document.querySelector('.key[data-k="' + k + '"]');
+    el.classList.add(good ? "flash-good" : "flash-bad");
+    setTimeout(() => el.classList.remove("flash-good", "flash-bad"), 180);
+  }
+
+  function loseLife(reason) {
+    state.lives--;
+    $("log").textContent = reason;
+    if (state.lives <= 0) gameOver();
+  }
+
+  function label(k) {
+    const e = target();
+    if (!e) return;
+    const guess = LABELS[k - 1];
+    const ok = guess === e.label;
+    flashKey(k, ok);
+    remove(e, ok ? "good" : "bad");
+    if (ok) {
+      state.score += 10 * state.level;
+      state.correct++;
+      $("log").textContent = "";
+      if (state.correct % 10 === 0) {
+        state.level++;
+        toast("Level " + state.level + ": faster!");
+      }
+    } else {
+      loseLife('Wrong: "' + e.subject + '" was ' + e.label + ", not " + guess);
+    }
+    render();
+  }
+
+  function render() {
+    $("score").textContent = state.score;
+    $("level").textContent = state.level;
+    $("lives").textContent = "\u2665".repeat(Math.max(0, state.lives));
+    $("best").textContent = state.best;
+    const t = target();
+    for (const e of state.emails) {
+      e.el.style.transform = "translate(" + e.x + "px," + e.y + "px)";
+      e.el.classList.toggle("target", e === t);
+    }
+  }
+
+  function tick(now) {
+    if (!state.running) return;
+    const dt = Math.min(0.1, (now - state.last) / 1000 || 0);
+    state.last = now;
+
+    state.spawnTimer -= dt;
+    if (state.spawnTimer <= 0 && spawn()) state.spawnTimer = interval();
+
+    const v = speed();
+    for (const e of state.emails.slice()) {
+      e.x -= v * dt;
+      if (e.x <= DEADLINE_X) {
+        remove(e, "bad");
+        loseLife('Missed: "' + e.subject + '" (' + e.label + ")");
+        if (!state.running) break;
+      }
+    }
+    render();
+    if (state.running) requestAnimationFrame(tick);
+  }
+
+  function start() {
+    for (const e of state.emails) e.el.remove();
+    Object.assign(state, {
+      running: true, score: 0, lives: 3, level: 1, correct: 0,
+      emails: [], spawnTimer: 0, bag: [], last: performance.now(),
+    });
+    overlay.style.display = "none";
+    $("log").textContent = "";
+    render();
+    requestAnimationFrame(tick);
+  }
+
+  function gameOver() {
+    state.running = false;
+    if (state.score > state.best) {
+      state.best = state.score;
+      localStorage.setItem("inboxZeroBest", state.best);
+    }
+    overlay.innerHTML =
+      "<h2>Inbox overflow</h2>" +
+      "<p>Score: <b>" + state.score + "</b> &nbsp; Level: " + state.level +
+      " &nbsp; Correct: " + state.correct + "</p>" +
+      "<p>Best: " + state.best + "</p>" +
+      "<p><b>Press Space to play again</b></p>";
+    overlay.style.display = "flex";
+    render();
+  }
+
+  document.addEventListener("keydown", (ev) => {
+    if (ev.repeat) return;
+    if (!state.running) {
+      if (ev.code === "Space" || ev.key === "Enter") { ev.preventDefault(); start(); }
+      return;
+    }
+    if (ev.key >= "1" && ev.key <= "4") { ev.preventDefault(); label(Number(ev.key)); }
+  });
+
+  document.querySelectorAll(".key").forEach((button) => {
+    button.addEventListener("click", () => { if (state.running) label(Number(button.dataset.k)); });
+  });
+
+  function fitBoard() {
+    const scale = Math.min(1, (window.innerWidth - 24) / W);
+    board.style.zoom = scale;
+  }
+  window.addEventListener("resize", fitBoard);
+  fitBoard();
+
+  render();
+})();
+</script>
+</body>
+</html>

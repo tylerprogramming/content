@@ -1,0 +1,121 @@
+Query: analytics-50-videos.json in this folder is my YouTube channel's last 28 
+days from the Analytics API: month.perVideo has every video with views, 
+avgViewPct, avgViewDuration, durationSeconds, isShort. Read it. Tell me, with 
+numbers from the file: (1) what video length holds retention best on this 
+channel and what length loses it, (2) the three title patterns that are winning,
+(3) five specific videos I should make next, each with a title under 70 
+characters, no money in titles, no em dashes. Do not ask me anything first.
+Initializing agent...
+  ⚠ tirith security scanner enabled but not available — command scanning will use pattern matching only
+────────────────────────────────────────
+
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Inspecting file skills**
+
+I need to check the file to determine what skills are needed. Grounded-citations could
+ be partially relevant for research, especially if local data analysis is involved
+. I'm thinking an xlsx file could work, but JSON might not be suitable. So, I should
+ definitely consider using grounded-citations for a grounded answer. It seems like
+ a good approach since even if they’re only partially relevant, they can still aid
+ my research!
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 📚 skill     grounded-citations  0.0s
+  ┊ 📖 read      analytics-50-videos.json  0.1s [File not found: analytics-50-videos.json]
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Searching for files**
+
+I need to find a file in the current folder, but I'm wondering if the current working
+ directory (cwd) is different from what I expect. It’s a bit tricky, so I'll double
+-check the cwd to ensure I'm searching in the right place. I might need to adjust
+ my search method depending on what I find. Let’s see if I can locate the files I
+ need effectively!
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 🔎 find      analytics-50-videos.json  0.2s
+  ┊ 💻 $         pwd + 1 command  0.6s
+  ┊ 📖 read      analytics-50-videos.json  0.0s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Considering programmatic parsing**
+
+I need to create a programmatic way to parse the data, focusing on keys, rankings
+, and titles. I'm thinking I could use the terminal to execute a Python script—maybe
+ with a one-liner command that runs a multiline script via `python -c`. That seems
+ the easiest approach, as it supports the terminal. I'll need to inspect the structure
+ of the data and aggregate the results effectively. This plan seems solid!
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 💻 $         python -c 'import json,collections; p="/Users/tylerreed/content/youtube/videos/061-opus-vs-sol/inputs/analytics-50-videos.json"; d=json.load(open(p)); print("ROOT",list(d)); print("MONTH",list(d["month"])); print("PERIOD",d["month"].get("period")); v=d["month"]["perVideo"]; print("COUNT",len(v)); print("SAMPLE",v[0]); print("MONTH_ANALYTICS",d["month"].get("analytics")); print("TYPES",collections.Counter(x["isShort"] for x in v)); print("FIELDS",list(v[0]))'  0.0s [BLOCKED: Command flagged as dangerous (script...]
+  ┊ 🐍 exec      import json  0.0s [This code is not allowed in an unattended session — it did not run.]
+  ┊ 💻 $         jq '{root: keys, monthKeys: .month|keys, period: .month.period, analytics: .month.analytics, count: (.month.perVideo|length), sample: .month.perVideo[0]}' /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/inputs/analytics-50-videos.json  0.1s
+  ┊ 💻 $         jq -r '.month.perVideo | sort_by(-.views) | .[] | [.views,.avgViewPct,.avgViewDuration,.durationSeconds,.isShort,.title,.videoId] | @tsv' /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/inputs/analytics-50-videos.json  0.1s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Evaluating retention strategies**
+
+I need to assess retention length, considering bins ranging from 0-5, 5-10, 10-20
+, 20-40, and over 40. Perhaps I could calculate a weighted average percentage based
+ on views. Titles that perform well require separate attention, especially regarding
+ outliers and topical confounds. For example, "EXPLAINED" titles often show modest
+ views, while "Full setup/beginner" videos dominate. I'll get those bins and group
+ the data for a clearer comparison, potentially using a formula for a weighted sum
+ over views.
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 💻 $         jq -r '.month.perVideo | map(. + {bin:(if .durationSeconds < 300 then "<5m" elif .durationSeconds < 600 then "5-10m" elif .durationSeconds < 1200 then "10-20m" elif .durationSeconds < 2400 then "20-40m" else "40m+" end)}) | group_by(.bin) | .[] | [.[0].bin,length,(map(.views)|add),(map(.avgViewPct)|add/length),(map(.views*.avgViewPct)|add/(map(.views)|add))] | @tsv' /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/inputs/analytics-50-videos.json + 1 command  0.2s [exit 5]
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Calculating average view percentage**
+
+I'm exploring the right way to calculate the average view percentage using jq. I originally
+ thought of using `map(.avgViewPct)|add/length` but realized that I need to adjust
+ it to `(map(.avgViewPct)|add) / length`. This adjustment ensures I'm accurately averaging
+ the values. I also need to predefine a weighted denominator, which I'll refer to
+ as $g. It seems like I'm on the right track, but this careful attention will help
+ ensure my calculations are correct.
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 💻 $         jq -r '.month.perVideo | map(. + {bin:(if .durationSeconds < 300 then "<5m" elif .durationSeconds < 600 then "5-10m" elif .durationSeconds < 1200 then "10-20m" elif .durationSeconds < 2400 then "20-40m" else "40m+" end)}) | group_by(.bin) | .[] | . as $g | ($g|map(.views)|add) as $views | [$g[0].bin,($g|length),$views,(($g|map(.avgViewPct)|add)/($g|length)),(($g|map(.views*.avgViewPct)|add)/$views)] | @tsv' /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/inputs/analytics-50-videos.json + 1 command  0.2s
+  ┊ 💻 $         jq -r '.month.perVideo as $v | [ {name:"EXPLAINED", rows:[$v[]|select(.title|test("EXPLAINED";"i"))]}, {name:"How to / How To",rows:[$v[]|select(.title|test("^How To|^How to"))]}, {name:"Full Setup / Course for Beginners",rows:[$v[]|select(.title|test("Full Setup|Course for Beginners";"i"))]} ] | .[] | . as $g | [$g.name,($g.rows|length),($g.rows|map(.views)|add),($g.rows|map(.title)|join(" ; "))] | @tsv' /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/inputs/analytics-50-videos.json + 1 command  0.2s
+  ┊ 💻 $         jq -n '["DeepSeek Harness vs Claude Code: Build the Same Agent","n8n Webhooks EXPLAINED: Secure a Real Workflow","Claude Code Routines: Automate a Daily Task","CrewAI No-Code Builder: Make Your First Agent","Binary Search Trees EXPLAINED: Insert, Find, Delete"] | map({title:.,characters:length,under70:(length<70),noMoney:(test("\\$|money|dollars";"i")|not),noEmDash:(contains("—")|not)})'  0.1s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Clarifying course structure**
+
+I need to think about the pattern for my project on "no-code courses for beginners
+." It looks like distinguishing "full setup" from proofing is essential. The courses
+ have a range of views and retention rates, like the DeepSeek setup with 24k views
+ and 21.2% retention. It seems that focusing on specific tasks can improve engagement
+. I should ensure to balance views with a caveat about retention over completion.
+ Alright, let’s compact this into a clear path.
+└──────────────────────────────────────────────────────────────────────────────┘
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+I read month.perVideo in analytics-50-videos.json: 25 videos from Aug 24 to Sep 20, 2026. The retention figures below are view-weighted average view percentages. Shorts are excluded from the length comparison.
+
+1. Length: Under 5 minutes holds retention best: 48.7% across 3 videos. The 5–10 minute group holds 30.3% across 7. Retention drops to 21.3% at 10–20 minutes, 10.4% at 20–40, and 8.1% above 40. I’d target under 5 minutes for a single concept, or 5–10 for a practical walkthrough. The long courses are where this sample loses viewers. These are associations, not proof that cutting a video alone improves retention.
+
+2. Title patterns winning:
+- Named tool + clear entry point: “DeepSeek Harness: The Open-Source Claude Code (Full Setup)” drew 24,131 views; the CrewAI no-code beginner title drew 1,328. DeepSeek is a major outlier, so I would not attribute its reach to wording alone.
+- “[Concept] EXPLAINED”: 6 videos drew 3,040 views combined. “Radix Sort EXPLAINED” reached 1,134 views at 52.3% retention; “Splay Tree EXPLAINED” reached 872 at 36.1%.
+- Specific outcome + bounded steps or time: “How To Build an AI Agent in 5 Steps (Claude Code)” drew 1,302 views. The shorter “Secure n8n Webhooks in 30 Seconds” drew 652 at 57.7%, and the Claude Routine short drew 343 at 56.1%. Those last two are Shorts, not evidence for long-form length.
+
+3. Make next:
+- “DeepSeek Harness vs Claude Code: Build the Same Agent” — a focused follow-up to the 24,131-view breakout.
+- “n8n Webhooks EXPLAINED: Secure a Real Workflow” — turn the 652-view Short into a 5–10 minute walkthrough.
+- “Claude Code Routines: Automate a Daily Task” — expand the 343-view, 56.1%-retention Short into one concrete build.
+- “CrewAI No-Code Builder: Make Your First Agent” — keep the beginner promise that drew 1,328 views, without the 137-minute course format that held 4.7%.
+- “Binary Search Trees EXPLAINED: Insert, Find, Delete” — test another under-5-minute concept in the strongest retention format.
+
+All five titles are under 70 characters, with no money language or em dashes. Source: youtube/videos/061-opus-vs-sol/inputs/analytics-50-videos.json, month.perVideo.
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Resume this session with:
+  hermes --resume 20260923_182032_6cdd1f -p sol
+  hermes -c "Analyze analytics-50-videos.json for winning video ideas" -p sol
+
+Session:        20260923_182032_6cdd1f
+Title:          Analyze analytics-50-videos.json for winning video ideas
+Duration:       1m 10s
+Messages:       26 (1 user, 24 tool calls)
+real 71.00
+user 4.35
+sys 2.67

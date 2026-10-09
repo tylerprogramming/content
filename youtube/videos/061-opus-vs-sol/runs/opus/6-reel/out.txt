@@ -1,0 +1,354 @@
+Query: 057-final.mp4 in this folder is a 33-minute video; 
+transcript_057-hermes-agent.srt is its transcript. Cut a 45-second vertical 
+(9:16) reel from the section 28:20 to 31:20 where bots hand work to each other. 
+Use the hyperframes skills: a title card, burned-in captions from the SRT, one 
+lower-third. Run hyperframes check --strict and fix anything it flags, then 
+render to ./reel-opus.mp4. Report the check result and the render time.
+Initializing agent...
+────────────────────────────────────────
+
+⚠ Auxiliary title generation failed: HTTP 400: "thinking.type.disabled" is not supported for this model. Use "thinking.type.adaptive" and "output_config.effort" to control thinking behavior.
+  ┊ ⚡ preparing mcp__skill_view…
+  ┊ ⚡ preparing mcp__search_files…
+  ┊ 📚 skill     hyperframes  0.0s
+  ┊ 🔎 find      *057*  0.2s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         ls -la + 3 commands  0.3s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         cat out.txt + 1 command  0.1s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+The SRT is broken in this window: one line repeated every second. Checking how far that loop extends and whether any other transcript covers it.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         awk 'BEGIN{RS="";FS="\n"} {print $2" | "$3}' transcript_057-hermes-agent.srt + 12 commands  0.1s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         wc -c transcript_057-hermes-agent.txt + 7 commands  0.0s [BLOCKED: Command flagged as dangerous (script...]
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         wc -c transcript_057-hermes-agent.txt + 4 commands  0.1s [exit 1]
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+The .txt transcript is clean where the SRT loops. Reading the window.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         grep -n "^\[2[78]:\|^\[3[01]:" transcript_057-hermes-agent.txt + 1 command  0.1s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         mkdir -p work + 9 commands  0.6s [BLOCKED: Security scan — [MEDIUM] Package thr...]
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+npx hyperframes is blocked in this session by the package-threat check. Looking for a local hyperframes install instead.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         mkdir -p work + 11 commands  0.7s [exit 1]
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+Local hyperframes binary found at ~/.bun/bin. Checking frames and loading the core and CLI skills.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__vision_analyze…
+  ┊ ⚡ preparing mcp__skill_view…
+  ┊ 👁️  vision    Describe the layout: is there a facecam, where is it, and where is the main UI content (x ranges)? Which region is most important for a 9:16 crop?  0.1s
+  ┊ 👁️  vision    Describe the layout: facecam position, main content region (x ranges in this 960px-wide frame).  0.1s
+  ┊ 📚 skill     hyperframes-cli  0.1s
+  ┊ 📚 skill     hyperframes-core  0.1s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+The user asked for the render up front, so that counts as render approval. Reading the composition contract references now.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__skill_view…
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 📚 skill     hyperframes-core → references/minimal-composition.md  0.1s
+  ┊ 📚 skill     hyperframes-core → references/variables-and-media.md  0.1s
+  ┊ 📚 skill     hyperframes-cli → references/lint-validate-inspect.md  0.1s
+  ┊ 💻 $         hyperframes --version + 5 commands  0.9s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         ls ~/.cache/hyperframes/whisper + 4 commands  3.1s
+  ┊ ⚡ preparing mcp__execute_code…
+  ┊ 🐍 exec      import json  0.0s [This code is not allowed in an unattended session — it did not run.]
+  ┊ ⚡ preparing mcp__read_file…
+  ┊ 📖 read      transcript.json  0.0s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         jq -r '.[] | "\(.start|tostring) \(.text)"' transcript.json | paste -sd' ' - | fold -w 200  0.1s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         mkdir -p txa + 3 commands  1.9s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         mkdir -p reel/assets + 10 commands  5.0s
+  ┊ ⚡ preparing mcp__vision_analyze…
+  ┊ 👁️  vision    Is the face circle centered and fully inside this crop?  0.0s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         rm -f reel/assets/face.mp4 + 11 commands  6.3s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+The cut is 45.00s and word timestamps line up. Checking what project files check expects before I write the composition.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         ls + 5 commands  0.1s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+Writing the composition.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__write_file…
+  ┊ ✍️  write     /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html  0.1s
+  ┊ review diff
+a/reel/index.html → b/reel/index.html
+@@ -0,0 +1,381 @@
++<!doctype html>
++<html lang="en">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=1080, height=1920" />
++    <title>057 reel: bots hand off work</title>
++    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
++    <style>
++      body {
++        margin: 0;
++        background: #0b0d12;
++        color: #f5f6f8;
++        font-family: Inter, "Helvetica Neue", Arial, sans-serif;
++      }
++      #root {
++        position: relative;
++        width: 1080px;
++        height: 1920px;
++        overflow: hidden;
++      }
++      #bg {
++        position: absolute;
++        inset: 0;
++        background:
++          radial-gradient(1200px 700px at 50% 0%, #1f2340 0%, rgba(11, 13, 18, 0) 70%),
++          linear-gradient(180deg, #11131b 0%, #0b0d12 100%);
++      }
++
++      /* Footage */
++      #ui {
++        position: absolute;
++        left: 0;
++        top: 470px;
++        width: 1080px;
++        height: 712px;
++        object-fit: cover;
++      }
++      #frame {
++        position: absolute;
++        left: 0;
++        top: 470px;
++        width: 1080px;
++        height: 712px;
++        box-shadow:
++          inset 0 2px 0 rgba(255, 255, 255, 0.08),
++          inset 0 -2px 0 rgba(255, 255, 255, 0.08);
++        pointer-events: none;
++      }
++
++      /* Title card */
++      #title-card {
++        position: absolute;
++        inset: 0;
++      }
++      #title-card .scrim {
++        position: absolute;
++        inset: 0;
++        background: rgba(8, 9, 14, 0.9);
++      }
++      #title-wrap {
++        position: absolute;
++        left: 80px;
++        top: 640px;
++        width: 920px;
++      }
++      #title-kicker {
++        font-size: 34px;
++        font-weight: 700;
++        letter-spacing: 6px;
++        text-transform: uppercase;
++        color: #8fa2ff;
++        margin: 0 0 28px;
++      }
++      #title-main {
++        font-size: 124px;
++        line-height: 1.02;
++        font-weight: 800;
++        margin: 0;
+… omitted 303 diff line(s) across 1 additional file(s)/section(s)
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         hyperframes check --strict --snapshots  0.7s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+First check: 2 lint errors (missing hard-kill sets on the title card exit). Fixing those, and adding the same set on the lower-third exit.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__patch…
+  ┊ 🔧 patch     /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html  0.1s
+  ┊ review diff
+a//Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html → b//Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html
+@@ -347,6 +347,8 @@
+       tl.from("#title-sub", { y: 30, opacity: 0, duration: 0.4, ease: "power3.out" }, 0.7);
+       tl.to("#title-wrap", { y: -40, opacity: 0, duration: 0.3, ease: "power2.in" }, 2.45);
+       tl.to("#title-card .scrim", { opacity: 0, duration: 0.3, ease: "power2.in" }, 2.45);
++      tl.set("#title-wrap", { opacity: 0 }, 2.8);
++      tl.set("#title-card .scrim", { opacity: 0 }, 2.8);
+ 
+       // Header chain: nodes light up as each bot enters the handoff
+       tl.from("#header-kicker", { y: 20, opacity: 0, duration: 0.4, ease: "power3.out" }, 2.85);
+  ┊ 🔧 patch     /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html  0.1s
+  ┊ review diff
+a//Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html → b//Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html
+@@ -371,6 +371,7 @@
+       tl.from("#lt-panel", { x: -40, opacity: 0, duration: 0.4, ease: "power3.out" }, 3.3);
+       tl.from("#lt-name, #lt-role", { y: 16, opacity: 0, duration: 0.35, stagger: 0.1, ease: "power3.out" }, 3.4);
+       tl.to("#lower-third", { x: -60, opacity: 0, duration: 0.35, ease: "power2.in" }, 9.2);
++      tl.set("#lower-third", { opacity: 0 }, 9.6);
+ 
+       // Captions: short pop on each cue
+       CUES.forEach(([start], i) => {
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         hyperframes check --strict --snapshots + 1 command  13.8s
+  ┊ ⚡ preparing mcp__vision_analyze…
+  ┊ 👁️  vision    Check the chain row: are nodes and arrows overlapping? Anything clipped or crowded?  0.1s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+The arrows are squeezed under the nodes because "Researcher" is wider than its 210px box. Shrinking the node text and pinning the flex sizes.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__patch…
+  ┊ 🔧 patch     /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html  0.1s
+  ┊ review diff
+a//Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html → b//Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html
+@@ -118,20 +118,23 @@
+       }
+       .node {
+         display: block;
+-        width: 210px;
++        flex: 0 0 200px;
++        width: 200px;
+         height: 96px;
++        box-sizing: border-box;
+         border-radius: 20px;
+         border: 3px solid #3a3f55;
+         background: #161a26;
+         color: #9aa1b5;
+-        font-size: 32px;
++        font-size: 28px;
+         font-weight: 700;
+         line-height: 90px;
+         text-align: center;
+       }
+       .arrow {
+         display: block;
+-        width: 34px;
++        flex: 0 0 40px;
++        width: 40px;
+         height: 40px;
+         font-size: 36px;
+         line-height: 40px;
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+The scale pulse (1.08) would push nodes into the arrows now that the gaps are about 7px. Dropping it to 1.04.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__patch…
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 🔧 patch     /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html  0.2s
+  ┊ review diff
+a//Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html → b//Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel/index.html
+@@ -360,13 +360,13 @@
+       tl.to("#n-hermes", lit, 3.4);
+       tl.to("#n-packager", { borderColor: "#ffd166", color: "#ffd166", duration: 0.3 }, 7.9);
+       tl.to("#n-packager", { borderColor: "#ff6b6b", color: "#ff6b6b", duration: 0.3 }, 14.2);
+-      tl.to("#n-researcher", { ...lit, scale: 1.08, duration: 0.35, ease: "back.out(2)" }, 21.9);
++      tl.to("#n-researcher", { ...lit, scale: 1.04, duration: 0.35, ease: "back.out(2)" }, 21.9);
+       tl.to("#n-researcher", { scale: 1, duration: 0.3 }, 22.4);
+-      tl.to("#n-packager", { ...lit, scale: 1.08, duration: 0.35, ease: "back.out(2)" }, 32.3);
++      tl.to("#n-packager", { ...lit, scale: 1.04, duration: 0.35, ease: "back.out(2)" }, 32.3);
+       tl.to("#n-packager", { scale: 1, duration: 0.3 }, 32.8);
+-      tl.to("#n-coder", { ...lit, scale: 1.08, duration: 0.35, ease: "back.out(2)" }, 33.45);
++      tl.to("#n-coder", { ...lit, scale: 1.04, duration: 0.35, ease: "back.out(2)" }, 33.45);
+       tl.to("#n-coder", { scale: 1, duration: 0.3 }, 33.95);
+-      tl.to("#n-researcher", { scale: 1.08, duration: 0.35, ease: "back.out(2)" }, 41.9);
++      tl.to("#n-researcher", { scale: 1.04, duration: 0.35, ease: "back.out(2)" }, 41.9);
+       tl.to("#n-researcher", { scale: 1, duration: 0.3 }, 42.4);
+ 
+       // Lower third
+  ┊ 💻 $         sed -i '' 's/{ scale: 1.08, duration: 0.35/{ scale: 1.04, duration: 0.35/' index.html + 3 commands  0.0s [BLOCKED: Command flagged as dangerous (recurs...]
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         grep -c "1.08" index.html + 1 command  44.3s
+  (tip) That tool ran for a while. Use /verbose to cycle tool-progress display modes (all -> new -> off -> verbose). This tip only shows once.
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+Clean with --strict and --at-transitions (218 samples). Looking at the title card and lower-third frames before rendering.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         grep -n "1.08" index.html + 2 commands  10.9s
+  ┊ ⚡ preparing mcp__vision_analyze…
+  ┊ 👁️  vision    Review each frame: title card legibility, lower-third placement vs captions, chain row, captions. Any overlap, clipping, or broken layout?  0.1s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+Frames look right: title card, lower-third below captions, chain lighting up in order. Rendering.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         START=$(date +%s) + 7 commands  0.1s
+  ┊ ⚡ preparing mcp__tool_describe…
+🔧 Auto-repaired tool name: 'mcp__tool_describe' -> 'tool_describe'
+  ┊ ⚡ tool_desc   0.0s
+  ┊ ⚡ preparing mcp__tool_call…
+🔧 Auto-repaired tool name: 'mcp__tool_call' -> 'tool_call'
+  ┊ ⚙️  proc      wait proc_61ea8dd  12.9s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+Checking two frames from the rendered file to make sure the video isn't blank.
+╰──────────────────────────────────────────────────────────────────────────────╯
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ ⚡ preparing mcp__vision_analyze…
+  ┊ 💻 $         ffmpeg -v error -y -ss 1.5 -i reel-opus.mp4 -frames:v 1 -vf scale=360:-1 work/r1.png + 3 commands  0.5s
+  ┊ 👁️  vision    Do both rendered frames show footage, title/caption text, not blank or black?  0.0s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+The reel is rendered and hyperframes check --strict passes with no findings.
+
+Output: /Users/tylerreed/content/youtube/videos/061-opus-vs-sol/runs/opus/6-reel/reel-opus.mp4
+1080x1920, 30fps, H.264 + AAC, exactly 45.0s, 13.6 MB.
+
+Check result
+  Final run: hyperframes check --strict --at-transitions passed. Lint, runtime, motion, layout and contrast all came back clean: 0 layout issues across 218 samples, and 41/41 text checks meet the WCAG AA contrast standard.
+  It took two rounds of fixes:
+  1. 2 lint errors (gsap_exit_missing_hard_kill). The title card's exit animations had no hard stop at the 2.8s cut. I added the tl.set(..., {opacity:0}, 2.8) lines it asked for, and the same kind of line on the lower-third's exit.
+  2. 3 layout errors (text_occluded). The "Researcher" label was too wide for its box, so the boxes in the handoff graphic covered the arrows between them. I set fixed box widths, cut the font from 32 to 28px, and reduced the pulse on each box from 1.08x to 1.04x.
+
+Render time
+  Hyperframes reports 14.8s for 1,350 frames. Wall clock was 16s.
+
+The SRT is broken
+  From 19:16 to the end of the file, every cue reads "So you can see the things that you're doing." That is 867 cues, and it covers all of 28:20 to 31:20. The master copy in content/transcripts is the same file. The .txt transcript is fine. For the captions I ran hyperframes transcribe (whisper small.en) on the cut to get word timings, and I checked the wording against the .txt. So the captions are not taken from the SRT. You should regenerate that SRT before anything else uses it.
+
+What's in the reel
+  It's two pieces of the section joined together, with the Fable model-switch aside removed:
+  - 28:48.9 to 29:01.5
+  - 29:11.3 to 29:43.7
+  It starts at "Here it's already establishing what agents need..." and ends at "...a third agent, the research agent, to give us everything we need." That covers the packager refusing, Hermes bringing in the researcher, and the handoff going on to packager and coder.
+
+Layout, top to bottom:
+  - Header: a Hermes → Researcher → Packager → Coder graphic. Each box lights up when its bot comes up in the audio. Packager goes red when it refuses.
+  - Middle: the screen recording, cropped to the chat area with your facecam included.
+  - Bottom: the captions, with @packager and @coder highlighted.
+  - Title card, 0 to 2.8s: "One prompt. Three bots."
+  - Lower-third, 3.2 to 9.6s: "Tyler Reed / Multi-agent handoff in Hermes, video 057"
+
+Verified: the check passes, the file plays at the right size and length, the audio is present (mean -21.2 dB), and frames sampled from the render show footage, the title and captions.
+
+Not done: I haven't watched the whole thing through for caption sync, so give it one pass. I took the bots' names from the audio and the screen. If the title card should say "Three bots" differently, the text is in reel/index.html.
+
+The project is in the reel/ folder. The intermediate cuts, transcripts and render log are in work/.
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Resume this session with:
+  hermes --resume 20260923_184401_721ca5 -p opus
+  hermes -c "057-final.mp4 in this folder is a 33-minute…" -p opus
+
+Session:        20260923_184401_721ca5
+Title:          057-final.mp4 in this folder is a 33-minute…
+Duration:       6m 58s
+Messages:       80 (1 user, 78 tool calls)
+real 419.49
+user 127.69
+sys 26.16

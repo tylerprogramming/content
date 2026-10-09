@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attend: the CRM for Skool community owners</title>
+<meta name="description" content="Attend tracks your Skool members, DMs, churn risk, and course progress, then posts a morning brief to Slack with the people who need you today.">
+<meta name="theme-color" content="#16130f">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: oklch(0.16 0.008 60);
+    --surface: oklch(0.205 0.009 60);
+    --surface-2: oklch(0.24 0.01 60);
+    --line: oklch(0.3 0.01 60);
+    --ink: oklch(0.95 0.008 80);
+    --muted: oklch(0.74 0.014 75);
+    --faint: oklch(0.6 0.014 70);
+    --accent: oklch(0.83 0.15 75);
+    --accent-ink: oklch(0.2 0.03 60);
+    --risk: oklch(0.72 0.16 28);
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+    --pad: clamp(20px, 5vw, 40px);
+    --max: 1080px;
+    --radius: 10px;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.6 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; margin: 0; text-wrap: balance; }
+  p { margin: 0; text-wrap: pretty; }
+  a { color: inherit; }
+
+  .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+
+  header { padding: 22px 0; }
+  .brand { font: 600 21px/1 var(--serif); letter-spacing: 0.01em; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+  .brand-mark { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+
+  .cta {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 52px; padding: 0 28px;
+    background: var(--accent); color: var(--accent-ink);
+    font: 600 17px/1 var(--sans); text-decoration: none;
+    border-radius: 999px;
+    transition: transform .15s ease, background-color .15s ease;
+  }
+  .cta:hover { background: oklch(0.87 0.14 78); }
+  .cta:active { transform: translateY(1px); }
+  .cta:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .cta-note { color: var(--faint); font-size: 14px; }
+
+  .hero { padding-top: 28px; padding-bottom: 64px; display: grid; gap: 44px; }
+  .eyebrow { color: var(--accent); font: 600 13px/1 var(--sans); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 18px; }
+  .hero h1 { font-size: clamp(38px, 9vw, 64px); letter-spacing: -0.01em; }
+  .lede { color: var(--muted); font-size: clamp(17px, 2.4vw, 20px); margin-top: 20px; max-width: 34em; }
+  .hero-actions { margin-top: 30px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+
+  .brief {
+    margin: 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px;
+    font-size: 15px;
+    line-height: 1.5;
+    box-shadow: 0 30px 60px -30px oklch(0 0 0 / 0.6);
+  }
+  .brief-label { color: var(--faint); font: 500 12px/1 var(--mono); letter-spacing: 0.04em; margin-bottom: 14px; display: flex; justify-content: space-between; }
+  .msg { display: grid; grid-template-columns: 36px 1fr; gap: 12px; }
+  .avatar { width: 36px; height: 36px; border-radius: 8px; background: var(--accent); color: var(--accent-ink); font: 700 17px/36px var(--serif); text-align: center; }
+  .msg-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 8px; }
+  .msg-head b { font-weight: 700; }
+  .tag { font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: var(--muted); background: var(--surface-2); padding: 2px 4px; border-radius: 3px; }
+  .time { color: var(--faint); font-size: 12px; }
+  .msg-title { margin-top: 4px; font-weight: 700; }
+  .people { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 10px; }
+  .people li { background: var(--surface-2); border-radius: 6px; padding: 10px 12px; }
+  .people .name { font-weight: 700; }
+  .people .why { color: var(--muted); display: block; }
+  .pill { display: inline-block; font-size: 12px; font-weight: 600; margin-top: 6px; padding: 1px 8px; border-radius: 999px; border: 1px solid currentColor; }
+  .pill.high { color: var(--risk); }
+  .pill.dm { color: var(--accent); }
+  .pill.watch { color: var(--muted); }
+  .yesterday { margin-top: 12px; color: var(--muted); font-size: 14px; }
+
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+  .section-head { max-width: 36em; margin-bottom: 36px; }
+  .section-head h2 { font-size: clamp(30px, 6vw, 44px); }
+  .section-head p { color: var(--muted); margin-top: 14px; font-size: 18px; }
+
+  .tracks { margin: 0; display: grid; }
+  .track { padding: 22px 0; border-top: 1px solid var(--line); display: grid; gap: 8px; }
+  .track:last-child { border-bottom: 1px solid var(--line); }
+  .track dt { font: 600 24px/1.2 var(--serif); }
+  .track dt span { color: var(--faint); font: 500 13px/1 var(--mono); margin-right: 12px; vertical-align: 3px; }
+  .track dd { margin: 0; color: var(--muted); max-width: 38em; }
+
+  .brief-copy { display: grid; gap: 18px; max-width: 38em; }
+  .brief-copy p { color: var(--muted); font-size: 18px; }
+  .brief-copy p strong { color: var(--ink); font-weight: 600; }
+
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 28px; counter-reset: step; }
+  .steps li { counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
+  .steps li::before {
+    content: counter(step);
+    width: 44px; height: 44px; border-radius: 50%;
+    border: 1px solid var(--line);
+    display: grid; place-items: center;
+    font: 600 18px/1 var(--serif); color: var(--accent);
+  }
+  .steps h3 { font-size: 21px; margin-top: 8px; }
+  .steps p { color: var(--muted); margin-top: 6px; }
+
+  .closer { padding: 80px 0 88px; }
+  .closer h2 { font-size: clamp(32px, 7vw, 52px); max-width: 16em; }
+  .closer p { color: var(--muted); margin-top: 16px; font-size: 18px; max-width: 32em; }
+  .closer .hero-actions { margin-top: 32px; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--faint); font-size: 14px; }
+
+  @media (min-width: 760px) {
+    .track { grid-template-columns: minmax(200px, 1fr) 2fr; gap: 32px; padding: 28px 0; }
+    .steps { grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .steps li { grid-template-columns: 1fr; }
+    .brief-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: end; }
+    .brief-grid .section-head { margin-bottom: 0; }
+  }
+  @media (min-width: 960px) {
+    .hero { grid-template-columns: 1.05fr 1fr; align-items: center; gap: 56px; padding-top: 56px; padding-bottom: 96px; }
+    section { padding: 96px 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Attend home"><span class="brand-mark" aria-hidden="true"></span>Attend</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">The CRM for Skool community owners</p>
+      <h1>Know who is about to leave before they do.</h1>
+      <p class="lede">Attend keeps track of every member, every DM, and every lesson in your Skool community. Each morning it posts a brief to Slack naming the people who need you today, and why.</p>
+      <div class="hero-actions">
+        <a class="cta" href="/signup">Start free</a>
+        <span class="cta-note">Your first brief arrives the next morning.</span>
+      </div>
+    </div>
+
+    <figure class="brief" aria-label="Example of an Attend morning brief in Slack">
+      <div class="brief-label"><span>#community-ops</span><span>sample brief</span></div>
+      <div class="msg">
+        <div class="avatar" aria-hidden="true">A</div>
+        <div>
+          <div class="msg-head"><b>Attend</b><span class="tag">APP</span><span class="time">7:00 AM</span></div>
+          <p class="msg-title">Good morning. 3 members need you today.</p>
+          <ul class="people">
+            <li>
+              <span class="name">Dana R.</span>
+              <span class="why">No lessons opened in 12 days. Stopped at Module 4 of 6.</span>
+              <span class="pill high">High churn risk</span>
+            </li>
+            <li>
+              <span class="name">Marcus T.</span>
+              <span class="why">Sent you a DM on Sunday about the pricing call. Still unanswered.</span>
+              <span class="pill dm">Reply owed</span>
+            </li>
+            <li>
+              <span class="name">Priya S.</span>
+              <span class="why">Renews Friday. Posting every day, but hasn't finished a lesson this month.</span>
+              <span class="pill watch">Check in</span>
+            </li>
+          </ul>
+          <p class="yesterday">Yesterday: 4 joined, 1 cancelled, 27 lessons completed.</p>
+        </div>
+      </div>
+    </figure>
+  </div>
+
+  <section aria-labelledby="tracks-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="tracks-title">Everything Skool shows you in pieces, in one place.</h2>
+        <p>Your members, your conversations, and your course live in different tabs. Attend puts them on the same record so you can see the whole person.</p>
+      </div>
+      <dl class="tracks">
+        <div class="track">
+          <dt><span>01</span>Members</dt>
+          <dd>One list with join date, plan, last active, posts, and the notes you keep on each person. Filter to who is new this week, who has gone quiet, and who is paying.</dd>
+        </div>
+        <div class="track">
+          <dt><span>02</span>DMs</dt>
+          <dd>The conversations you owe. Attend flags messages you haven't answered and members you haven't spoken to since the day they joined.</dd>
+        </div>
+        <div class="track">
+          <dt><span>03</span>Churn risk</dt>
+          <dd>A risk level for every member, built from the signals that come before a cancel: fewer visits, a stalled course, silence in the feed, a renewal coming up. Each flag shows its reasons, so you know what to say.</dd>
+        </div>
+        <div class="track">
+          <dt><span>04</span>Course progress</dt>
+          <dd>Who started, who finished, and exactly which lesson people stop on. Find the module that loses your members, and the members stuck on it right now.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section aria-labelledby="brief-title">
+    <div class="wrap brief-grid">
+      <div class="section-head">
+        <h2 id="brief-title">Your day starts with a short list, not a dashboard.</h2>
+      </div>
+      <div class="brief-copy">
+        <p>Every morning Attend posts to the Slack channel you choose. It names the few members worth your time today, gives the reason for each, and links to their profile.</p>
+        <p><strong>Read it over coffee. Send three DMs.</strong> The members who were drifting hear from you while they are still deciding.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="start-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="start-title">Set up once. Get a brief every morning.</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <div>
+            <h3>Connect your Skool community</h3>
+            <p>Attend pulls in your members, their activity, and their course progress.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Pick a Slack channel</h3>
+            <p>Send the brief to a private channel, or to the one your team already works in.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Read your first brief tomorrow</h3>
+            <p>It lands before you start work. Act on it, or ignore the quiet days.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="closer" aria-labelledby="closer-title">
+    <div class="wrap">
+      <h2 id="closer-title">Your members tell you when they are leaving. Attend makes sure you notice.</h2>
+      <p>Built for owners who run paid communities and still answer their own DMs.</p>
+      <div class="hero-actions">
+        <a class="cta" href="/signup">Start free</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Attend</div>
+</footer>
+
+</body>
+</html>

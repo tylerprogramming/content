@@ -1,0 +1,120 @@
+Query: analytics-50-videos.json in this folder is my YouTube channel's last 28 
+days from the Analytics API: month.perVideo has every video with views, 
+avgViewPct, avgViewDuration, durationSeconds, isShort. Read it. Tell me, with 
+numbers from the file: (1) what video length holds retention best on this 
+channel and what length loses it, (2) the three title patterns that are winning,
+(3) five specific videos I should make next, each with a title under 70 
+characters, no money in titles, no em dashes. Do not ask me anything first.
+Initializing agent...
+  ⚠ tirith security scanner enabled but not available — command scanning will use pattern matching only
+────────────────────────────────────────
+
+⚠ Auxiliary title generation failed: HTTP 400: "thinking.type.disabled" is not supported for this model. Use "thinking.type.adaptive" and "output_config.effort" to control thinking behavior.
+  ┊ ⚡ preparing mcp__execute_code…
+  ┊ 🐍 exec      import json  0.0s [This code is not allowed in an unattended session — it did not run.]
+  ┊ ⚡ preparing mcp__read_file…
+  ┊ 📖 read      analytics-50-videos.json  0.1s [File not found: analytics-50-videos.json]
+  ┊ ⚡ preparing mcp__search_files…
+  ┊ 🔎 find      analytics-50*  0.1s
+  ┊ ⚡ preparing mcp__read_file…
+  ┊ 📖 read      analytics-50-videos.json  0.0s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         python3 -c " import json d=json.load(open('analytics-50-videos.json')) print(list(d.keys())) m=d['month'];print(list(m.keys()));print(m.get('period'),m.get('analytics')) pv=m['perVideo'];print(len(pv));print(pv[0].keys()) for v in sorted(pv,key=lambda v:-v['views']): print(v['views'],v.get('avgViewPct'),v.get('avgViewDuration'),v.get('durationSeconds'),v.get('isShort'),v.get('publishedAt','')[:10],v.get('title')) "  0.0s [BLOCKED: Command flagged as dangerous (script...]
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         jq -r '.month | (.period|tostring), (.analytics|tostring), (.perVideo|length), (.perVideo[0]|keys|tostring)' analytics-50-videos.json + 1 command  0.6s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         jq -r '.month.perVideo | map(select(.isShort==false)) | map(. + {b: (if .durationSeconds<300 then "a <5m" elif .durationSeconds<600 then "b 5-10m" elif .durationSeconds<1200 then "c 10-20m" elif .durationSeconds<2400 then "d 20-40m" else "e 40m+" end)}) | group_by(.b)[] | {b: .[0].b, n: length, views: (map(.views)|add), avgPct: ((map(.avgViewPct)|add)/length*10|round/10), wPct: ((map(.avgViewPct*.views)|add)/(map(.views)|add)*10|round/10), avgDurS: ((map(.avgViewDuration)|add)/length|round), subs: (map(.subsGained)|add)} | @json' analytics-50-videos.json + 5 commands  0.2s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         for t in "DeepSeek Harness + Ollama: Run the Open-Source Claude Code Locally" "Counting Sort EXPLAINED (The Secret Behind Radix Sort)" "CrewAI Full Setup in 15 Minutes (Claude Code Users Start Here)" "Hermes Agent Setup in 15 Minutes (Claude Code Users Start Here)" "Smolagents EXPLAINED: Build Your First AI Agent in 12 Minutes" + 2 commands  0.1s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+The file is at ~/content/youtube/videos/061-opus-vs-sol/inputs/analytics-50-videos.json, not in ~. Before the numbers, two things to know:
+- Despite the filename, month.perVideo has 25 videos, not 50. They cover 35,065 of the channel's 41,371 views for Aug 24 to Sep 20.
+- One video, DeepSeek Harness, has 24,131 views. That's 69% of the per-video views, so it drags any average it sits in. I've noted where it changes the answer.
+
+1) Video length and retention
+
+Long-form videos grouped by length (retention is weighted by views):
+
+  under 5 min   3 videos    1,491 views   48.7% retention   avg watch 97s    0 subs
+  5-10 min      7 videos    2,456 views   30.3%             139s             1 sub
+  10-20 min     7 videos   27,715 views   21.3%             185s             72 subs
+  20-40 min     2 videos      743 views   10.4%             219s             2 subs
+  40 min+       4 videos    1,665 views    8.1%             337s             6 subs
+
+Holds retention best: under 10 minutes. Radix Sort EXPLAINED is 3:04 and kept 52.3%. Merge Sort is 4:07 at 43.9%. Open-Closed Principle is 5:16 at 45.9%. The two Shorts sit at 57.7% and 56.1%. But those short videos brought in 0 subs combined.
+
+Best overall is 10 to 20 minutes. Retention holds around 20%, people watch about 3 minutes, and this group brought in 72 of the 81 subs from long-form. Leaving DeepSeek out, the other 6 videos still average 23.3% (Granola 26.9%, Ollama 34.6%, CrewAI No Code 20.4%).
+
+Loses retention: anything over 20 minutes. Retention falls to 8 to 10%.
+- CrewAI Full Course (2:16:59) kept 4.7%.
+- Firecrawl course (57:41) kept 8.5%.
+- Hermes setup (33:25) kept 8.5%.
+
+Viewers stop at about the same point no matter how long the video runs. A 40-minute-plus video gets 337s of watch time versus 185s for 10 to 20 minutes. The video runs 3 to 8 times longer for less than 2 times the watch time.
+
+2) Three title patterns that are winning
+
+A. "[Concept] EXPLAINED" for CS basics. Five titles, 2,845 views:
+- Radix Sort: 1,134 views, 52.3%
+- Splay Tree: 872 views, 36.1%
+- Skip Lists Insertion: 437 views, 25.4%
+- Skip Lists Searching: 222 views, 29.8%
+- Open-Closed: 180 views, 45.9%
+
+These are found through search. Radix sort is the top search term on the channel at 508 views, plus 51 for "radix sort algorithm". Splay tree searches total 427, and "skip list" has 106.
+
+B. Tool name first, then a hook that ties it to Claude Code. "DeepSeek Harness: The Open-Source Claude Code (Full Setup)" got 24,131 views at 21.2% and 56 subs, which is 61% of all long-form subs. "How To Build an AI Agent in 5 Steps (Claude Code)" got 1,302 at 19.2%. "I Connected Granola to Claude Code" kept 26.9%. The Hermes video used "(Claude Code Users Start Here)" and got 419 views, but its 33-minute length sank retention to 8.5%. The title worked; the length didn't.
+
+C. A time or step limit in the title: "in N Minutes", "in N Steps", "in 30 Seconds". Examples:
+- n8n Webhooks in 30 Seconds: 57.7%
+- Claude Routine in 2 Minutes: 56.1%
+- Merge Sort in 4 Minutes: 43.9%
+- 5 Steps (Claude Code): 19.2%
+- Autogen in 12 Minutes: 18.7%
+- Atomic Agents in 9 Minutes: 15.8%
+
+The one miss was Hermes "in 30 Minutes" at 8.5%, because the promised length was itself too long.
+
+What is losing: "Full Course" and "Full Beginner Course". Five of those titles:
+- CrewAI Full Course: 4.7%
+- Firecrawl: 8.5%
+- LlamaIndex: 10.2%
+- Smol: 12.8%
+- Crew AI Full Tutorial: 13.7%
+
+The weak retention in these goes with their 35 to 137 minute lengths.
+
+3) Five videos to make next
+
+1. DeepSeek Harness + Ollama: Run the Open-Source Claude Code Locally (66 chars)
+   Why: builds on the 24,131-view video. Search terms "deepseek harness" (283), "deepseek harness tutorial" (55) and the "deepseek harnes" typo (43) show demand. The Ollama crash course kept 34.6%. Aim for 12 to 16 minutes.
+
+2. Counting Sort EXPLAINED (The Secret Behind Radix Sort) (54 chars)
+   Why: radix sort is the top search term at 508, and the Radix video is the best long-form retainer at 52.3%. Keep it under 5 minutes, like Radix (3:04) and Merge Sort (4:07).
+
+3. CrewAI Full Setup in 15 Minutes (Claude Code Users Start Here) (62 chars)
+   Why: CrewAI search terms total 702 ("crewai" 389, "crewai tutorial" 144, "crew ai" 120, "crewai full course" 49). The 2-hour course holds only 4.7%, while the 17-minute CrewAI No Code video holds 20.4%. This replaces the course for search traffic.
+
+4. Hermes Agent Setup in 15 Minutes (Claude Code Users Start Here) (63 chars)
+   Why: a shorter remake of the 33-minute Hermes video (419 views, 8.5%). It keeps the title hook and fixes the length. "hermes agent setup" and "hermes agent" show up in the single-day search data.
+
+5. Smolagents EXPLAINED: Build Your First AI Agent in 12 Minutes (61 chars)
+   Why: "smolagents" has 112 search views, but the only video for it is a 35-minute course at 12.8%. This title combines patterns A and C with the 10 to 20 minute length.
+
+I checked the character counts with wc. None of the titles have money or em dashes.
+
+What I didn't do: compare these against video-ideas.md or status.md to see if any are already planned, and I haven't written anything to the repo.
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Resume this session with:
+  hermes --resume 20260923_182032_7bf7b4 -p opus
+  hermes -c "analytics-50-videos.json in this folder is my…" -p opus
+
+Session:        20260923_182032_7bf7b4
+Title:          analytics-50-videos.json in this folder is my…
+Duration:       1m 3s
+Messages:       18 (1 user, 16 tool calls)
+real 64.18
+user 2.95
+sys 1.33
