@@ -1,0 +1,259 @@
+[00:00] Cloudopus 5 just came out about a week ago, and so today what I'm going to do is benchmark it with several different tests that we're going to go over.
+[00:07] And I just want to give you my results from what we're actually going to see plus what I've been noticing.
+[00:11] Because to be honest, I have not gotten a lot of the negative reactions that people have gotten online if you read a lot.
+[00:18] You're going to go from this is absolutely insane to this is dog crap, why are we even using this, right?
+[00:23] Just go back to Paypal 5.
+[00:24] And I have not had the bad parts of it.
+[00:28] It's actually been very, very good for me.
+[00:30] But this also goes for what you're prompting.
+[00:32] You have guardrails, et cetera, right?
+[00:33] There's more involved with that.
+[00:35] It's different per person on what you're trying to do.
+[00:36] So that's why we're going to run six different tests today.
+[00:40] And so here's Anthropic from different benchmarks saying that generally Opus 5 has been performing.
+[00:46] Now, I have to say that when the first couple weeks when a new model comes out seems to be when it's at its best,
+[00:53] It could just be this empirical testing in a way, the way I'm using it.
+[00:59] But generally, this is supposed to be better, especially for half the cost, right?
+[01:01] It's supposed to be amazing.
+[01:02] So here's something that I will say I do agree with, just again, just the past couple days.
+[01:07] Qualiopus 5 is much stronger at verifying its work and iterating carefully until it succeeds.
+[01:13] In evaluations and early access testing, we and our users found many examples of Opus 5 agency and thoroughness.
+[01:19] Okay, this I do agree with.
+[01:21] what I've noticed is that it catches bugs. So we can either say that it's showing more bugs that
+[01:27] it's producing and then verifying that, oh, this is a bug. Let me fix this. Or it's actually just
+[01:32] causing more bugs. And then now it's realizing, oh, I'm just, I have a lot of these bugs. Now
+[01:37] I'm going to fix it. Whereas I will say it's not, hasn't been as verbose in just previous models.
+[01:44] That's just, again, just from what I've been noticing. So here's how the pricing works. So
+[01:49] Here's Claude Fable 5 at $10 per million tokens for input and output $50 per million tokens.
+[01:56] And here is Claude Opus 5 right here at $5.
+[01:59] So half the price for input and then half the price for the output tokens.
+[02:03] So we're going to have the same prompt for six different tests.
+[02:06] And we're actually going to look here.
+[02:08] We're going to use Opus 4.8, 5, and Fable 5.
+[02:10] Because I've kind of seen some people saying, oh, might as well just revert back to 4.8.
+[02:15] I don't really quite get that, but it is what it is.
+[02:17] And then at the end, we'll have a scorecard showing everything.
+[02:20] Okay, so here is kind of running down what we're going to go through.
+[02:24] So we're going to do this hexagon ball using Python.
+[02:27] We're going to have a 3JS solar system, a Suica merge game, just pure HTML, also with Flappy Bird, you know, whatever you think.
+[02:35] And then a design to code.
+[02:36] So we're going to do these bottom two live.
+[02:38] I've already done the other four, so it doesn't take forever.
+[02:41] But the other, we're going to design to code.
+[02:42] So basically a screenshot and then design a landing page and then a reasoning trio.
+[02:46] trio just a few questions that we're going to ask it and see how it see how it reacts okay and then
+[02:51] give my actual thoughts on how i've been using it because because some people say it's been
+[02:55] breaking their skills and it has not broken a single skill for me okay but i have had some
+[02:59] things wondering why it's doing what it's doing so we'll get to that later so first the hexagon ball
+[03:06] okay so i had to kind of put the windows because it decided to all three decided to use pygame
+[03:13] So the problem for this is write a Python program that shows a ball bouncing inside a spinning hexagon.
+[03:17] The ball should be affected by gravity and friction and must bounce off the rotating walls realistically.
+[03:21] And I just had to make sure that it fits all three so we can see them all side by side.
+[03:26] Okay, so left fable 5, the middle opus 4.8, and the right opus 5.
+[03:30] So opus 4.8, as I kind of thought, and I don't see what other people are actually thinking,
+[03:36] but when saying this is that it's, you know, look at that.
+[03:40] That's not super realistic. There's no other options.
+[03:42] It's not giving us any statistics at the top.
+[03:46] But Fable 5, there's an up and down, so we can have this spin quicker.
+[03:51] So up and down, spin quicker.
+[03:53] So we can have that kind of going.
+[03:55] And then Opus 5 on the right, we can actually have it spin and then adjust gravity as well.
+[04:01] So it's heavier or lighter.
+[04:02] So two things about this.
+[04:04] Let's look at the cost and everything.
+[04:06] So 4.8 was almost 10 cents.
+[04:09] It only took about 50 seconds to do this.
+[04:11] I was asking about that. We can read that in versus out tokens. So out tokens obviously is
+[04:16] the smallest amount of out tokens. So less code it wrote. Opus 5 was almost 30 cents and it took,
+[04:24] you know, over double the time, right? Actually closer to probably three times the amount of time.
+[04:30] And so let's say two minutes, but it also had a lot more output tokens. But Fable 5 was only a few
+[04:37] cents less it did it in less it did in less than half the time and it was also let's say just over
+[04:45] a third of what opus 5 was for as far as token usage now this is the thing it's half the cost
+[04:51] uh you know it's half the cost across the board so that's why even though opus 5 had way more had
+[04:56] almost tripled the tokens you know it was still about the same cost okay and and we can see there's
+[05:02] not a huge difference between the quality like we're seeing here you know on the right of the
+[05:06] Opus 5, but as you can see, a Fable 5, down here, maybe if I need to slow that down, but the ball
+[05:13] just, yeah, I don't know how realistic that was, but I think Opus 5 is generally more realistic
+[05:18] in this scenario. So of course, I'm going to give this to Opus 5, but a Fable 5 was kind of close,
+[05:25] 4.8, kind of not really too much in the picture. Although if we're just looking at the pure
+[05:29] simulation, you can't do much with it. It's close enough. All right, so the next one, number two,
+[05:34] is a 3.js solo system, meaning we're just going to use, it's going to create an HTML file loading
+[05:40] the 3.js JavaScript framework to create all of this, okay? And so again, we have three ways,
+[05:46] Opus 4.8, Opus 5, and then Fable 5. So if we look at these just from like statistics,
+[05:53] Opus 4.8, you know, it took almost a minute. Fable 5 took about two minutes. And then,
+[06:01] whatever 225 seconds is, it's triple four times Opus 4.8, a little less than double the time for
+[06:09] Fable 5. Also, Opus 5 used double the tokens in Fable 5, and obviously a lot, like four times
+[06:18] what Opus 4.8 did. But just looking at these, you can see that there's a difference. Opus 4.8,
+[06:24] It's kind of, yeah, you can pan, go up and down, zoom in and out, right?
+[06:31] So it's there.
+[06:32] Then we look at Opus 5.
+[06:35] At least things are labeled.
+[06:38] You see like shadows.
+[06:40] I guess they all may probably have the shadows probably properly aligned.
+[06:43] But at least I know which one's which.
+[06:44] There's a timescale, which I'm not exactly 100% what that would be for, just like the speed.
+[06:48] Okay.
+[06:50] Reset the view.
+[06:51] Turn off labels.
+[06:52] Orbits.
+[06:52] so we can do something like this.
+[06:54] Okay, great.
+[06:55] And then if we come over here to Pable 5,
+[06:58] you know, something similar.
+[06:59] It's kind of your flavor.
+[07:01] Some of these are based on what you like, right?
+[07:04] But generally, it did the job.
+[07:05] It did it well.
+[07:06] You can probably just prompt say,
+[07:07] hey, give me a label too.
+[07:08] My prompting wasn't the best,
+[07:09] but I wanted to see what it could do
+[07:10] with kind of a little,
+[07:12] just a little bit of prompts.
+[07:14] And, you know, it did okay, right?
+[07:16] But these are about the same cost.
+[07:19] Opus 5 used up more tokens.
+[07:21] Fable 5 did not and it did it in less amount of time, almost half, not quite.
+[07:27] So with this, you can either say Opus 5 or Fable 5 in this matter.
+[07:32] If you really like 4.8, you can.
+[07:34] But I will say for how relatively quick it did it, how much output code, little amount of output code, it's there.
+[07:44] You could probably prompt this better, and it could maybe produce a similar output.
+[07:50] you know so it these are just whenever we're doing all this just kind of think about okay if i actually
+[07:56] had a better prompt gave it better context maybe it would perform better right these are i'm just
+[08:02] these are just all one shot prompts just to see what it would do okay the next one is a suika
+[08:06] merge game basically uh let's just call this is a watermelon merge game so fruit's going to drop
+[08:13] from the top and they can merge together with the same color um so we're going to look at that and
+[08:17] see how this did that so this is similar this is basically what it is funnily enough in this one
+[08:23] which is interesting opus 5 did it quicker than fable 5 cost a lot less than fable 5 and actually
+[08:33] used less output tokens just thought that was thought that was relatively interesting um you
+[08:40] know of course it's double the cost but fable 5 was obviously cost more but let's we just kind of
+[08:47] play these real quick. Let's see if I can, ah, that sucks. There it goes. Like, so that's
+[08:52] kind of how that works, right? They kind of merge together. And this one, this one does
+[08:57] not have sound. Opus 4.8 doesn't have sound, I guess. Here's a little bit of sound, right?
+[09:04] Nothing, nothing crazy. Yeah. Okay. Kind of sucks. But then if we go over here to Fable
+[09:11] 5, you know, general game, right? You could, like the design, right? I'm actually probably
+[09:15] I like Fable 5's better.
+[09:18] You know, it has like, oh, look, here's like the combos
+[09:20] at the top, but yeah, it has a sound too, right?
+[09:26] So generally, you know, what do you think?
+[09:29] Actually, even though it was like a lot,
+[09:32] cost comparatively more, you know,
+[09:35] it did a pretty good job actually.
+[09:36] I like Fable, I kind of like Fable 5 in this one.
+[09:38] Okay, and you know, we're just gonna go ahead,
+[09:40] I'm just gonna show you Flappy Bird, right?
+[09:43] just vanilla JavaScript, no libraries,
+[09:46] so that we can view it inside the browser.
+[09:48] So if we come back here to Flappy Bird,
+[09:50] of course, we can just look at these stats real quick.
+[09:53] Now the thing with this Flappy Bird,
+[09:54] there's a lot of context out there already,
+[09:57] so the model already kind of knows how to do it.
+[10:00] So in some instances, you may say this is not a good example,
+[10:04] but we want to just see what it can do.
+[10:07] As far as token usage, Opus 5 took the most usual,
+[10:12] fable 5 and opus 4.8 were relatively close opus 5 generally is going has been taking longer uh but
+[10:18] you know in this they all kind of play they play well just want to like kind of get through i suck
+[10:25] at flappy bird but here we go they all kind of work right they all just generally work and you
+[10:32] know in this instance in something like this so whenever you're thinking about whatever it is
+[10:37] you're building, the more context you have, which the more this model, these models, I assume are
+[10:42] going to have more context about Flappy Bird in general and how to build it, that the model won't
+[10:48] matter as much, right? And plus, I mean, yes, the art design for Opus 5, actually, I kind of like,
+[10:55] I don't really like Opus 4.8, of course, but, you know, we could work with that and you could do
+[10:59] more, prompt it better. You can give it, maybe you have assets already, but this is just kind of,
+[11:05] just again show you examples of what it's doing what it's capable of now I want to show you how
+[11:11] I kind of did this I actually created a skill that does all of these benchmarks for me just
+[11:16] basically give it a prompt if it needs to use images or whatnot we will so the next one is for
+[11:20] design to code and also needs a live screenshot so let's look up a landing page designs so if we
+[11:29] go to images here let's just look up let's just get one of these maybe something that doesn't have
+[11:35] a lot of different like no like no one images like that let's go let's look at okay so i'm
+[11:43] going to take this landing page actually and i basically want to see what it can do with this
+[11:48] so i'm going to go back into so i'm going to come back in here and i create a skill called model
+[11:54] bench and i'm going to drag if i can open it i'm going to drag this into here so that's just the
+[12:04] image from from that and then give it the prompt copy this come back in here and then it's auto
+[12:13] going to do for all it's going to automatically do it for the three models and you can have access
+[12:17] to this as well and i'll give you access to like my report of what how i thought all these did based
+[12:24] on these different benchmarks okay so going back to the design the landing page here so on the left
+[12:30] is the one that we had copied online and the one on the right is what it tried to make.
+[12:34] So even if yeah so we can see that this is 4.8. I had to I had to kind of create the bird and just
+[12:40] hold try like had just library try to remove the background so you'll see it's kind of cut out it
+[12:45] didn't do a great job of actually creating the bird but let's just take that to side right
+[12:49] say the bird but to the background everything's kind of like up bigger the bluebird in the background
+[12:54] This is sort of okay.
+[12:56] This is 4.8.
+[12:57] Let's go ahead and look at Opus 5.
+[12:59] This is a little bit better.
+[13:00] At least it's down at the bottom.
+[13:02] Let me make this a little bigger.
+[13:05] It's a little better.
+[13:06] This one I like.
+[13:07] I actually tried...
+[13:08] These are custom emojis on the left in the original.
+[13:10] It tried to resemble that as much as possible.
+[13:13] The text in the background isn't as big.
+[13:15] But it tried to add some blur effects around it.
+[13:19] Again, the navigation on top is still...
+[13:21] The text, everything is a little bit bigger.
+[13:22] bigger, but besides the icons being different, which of course is expected without custom
+[13:25] having them generated by a nano banana or something, this didn't do too bad.
+[13:30] Then here, this is Fable 5. It's a different hue. It's like a gray, right? This one,
+[13:34] Opus is more closer to the original. This one, not so much. Let's see if I increase this. But
+[13:42] the spacing and everything, the layout is still good though. I still like the spacing and the
+[13:47] layout of everything. The text in the background is bigger. So, you know, between Fable 5 and Opus 5,
+[13:52] you know, depending on what your preference is of how you would like it, but if we look at the cost,
+[13:56] so if we come back up here to the cost, all right, so it cost 60 cents for 4.8. It took almost just
+[14:04] over a minute. Opus 5 was 30 cents. It took almost, you know, two minutes, and then Fable 5 was about
+[14:09] a minute and a half, and it cost a little more than Opus 5. Of course, we know that it costs more.
+[14:12] Again, Opus 5 is generally continually having the most output tokens required to actually build whatever it is.
+[14:19] We're going to go ahead with benchmark number 6, so the reasoning for you.
+[14:23] So the first question, how many Rs are in strawberry?
+[14:26] So they got to write the word straw.
+[14:29] Opus 4.8 got to write it as three Rs.
+[14:32] It isolated them.
+[14:33] Opus 5 just literally says three.
+[14:36] Five output tokens literally just says three.
+[14:38] Fable 5 explains it a little bit better.
+[14:41] This is interesting because I feel like sometimes Opus 5 can over-explain.
+[14:47] And one thing I've noticed, I just want to pause and say this.
+[14:50] One thing I've noticed with Opus 5 is that it seems to me that it catches errors.
+[14:54] Like it catches its own errors more.
+[14:57] And then instead of, like then it'll correct it, right?
+[15:00] So it catches errors while it's developing or coding something.
+[15:04] Then it fixes those.
+[15:05] So I don't know if that's good.
+[15:07] So that it catches more errors or is it producing more errors?
+[15:10] it's definitely more verbose about doing that than people fable five was okay so what's kind of the
+[15:18] conclusion and my thoughts so the narrative is you know obviously 4.8 is the cheapest in the past
+[15:22] of course that that's nothing that i wouldn't think of opus 5 over generates it opus 5 is doing the
+[15:30] critique here it's saying it's over generating on builds often two to four times the code
+[15:33] twice the cost but it's terse and cheap on reasoning fable 5 is consistently the priciest
+[15:39] but again, it's double the cost of the other two.
+[15:43] So that's a fair statement, I think.
+[15:47] Reasoning is fine for everything.
+[15:49] So what are my thoughts?
+[15:53] So using Opus 5, like I had mentioned,
+[15:56] it generally either is making more mistakes
+[15:59] or other models were making the mistakes
+[16:02] and just not recognizing that those were mistakes.
+[16:05] And Opus 5, with the same amount of mistakes,
+[16:09] It's recognizing that those are mistakes and then fixing them at the same time before, you know, while it's building, which is also why I tend to think that it's usage.
+[16:19] It has more usage for its tokens, as we can see here, just generally even these aren't huge projects and generally more usage of tokens.
+[16:26] But Fable 5, though, is quicker than Opus 5, right?
+[16:32] But again, if we're looking at cost, again, Fable is double the cost.
+[16:35] so that's those are thoughts on this uh i generally have been using opus 5 like i said i have not had
+[16:42] the negative effects generally what people are thinking sometimes it has it still hallucinates
+[16:47] a little bit it has told me i actually told me the day that i had a skill to prep for a video
+[16:53] that i didn't even have and i said are you sure about that i said you know oops my bad you're
+[16:57] right let me double check whatever you know whatever comedy thing it tries to say so generally
+[17:03] I still like Opus 5. I think it's doing a very good job. But the more guardrails, the more
+[17:10] prompting, and the more context you have, generally models are going to do better with
+[17:15] those things. So if you're just saying you're having no luck with it, it's worse, just recheck
+[17:22] what you're doing whenever you're calling something. Do you have some memory stored for
+[17:27] what it should be doing? Do you give some context? Do you plan first? Etc. There's just things that
+[17:31] you can do to help yourself. Okay. So again, all this will be in my free school community in the
+[17:37] link in the description below. Join. I'm going to help you learn everything you need to know about
+[17:41] AI. And then also here are, and here are some other videos about, and here's some other videos
+[17:52] about AI. And then go ahead and watch these videos right here.
+[17:57] And I want to know in the comment section how you've experienced Opus 5 or Fable 5, any of these models.
+[18:07] So I want to know your experience down in the comment section below.
+[18:09] And in the meantime, watch these videos.

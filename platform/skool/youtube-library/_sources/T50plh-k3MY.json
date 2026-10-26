@@ -1,0 +1,8 @@
+{
+ "id": "T50plh-k3MY",
+ "title": "I Automated My Life with Claude Routines",
+ "published": "2026-07-15",
+ "duration": "PT13M19S",
+ "views": "636",
+ "description": "All Skills Free: https://skool.com/the-ai-agency\n\nIn this video:\n- Two real Routines I run every week (email triage + Instagram competitor research)\n- Building a Routine from scratch in under 5 minutes\n- How to set up MCP connectors (Gmail, Slack, Apify, Drive, and more)\n- Claude Code vs Claude Routines - when to use each one\n- Creating Routines directly from the Claude Code CLI (the move nobody is teaching)\n- The challenge that will save you 210+ minutes a week with one automation\n\n0:00 - This ran while I was asleep\n0:35 - What is a Claude Routine?\n1:23 - Routine #1: Daily email summary\n3:02 - Routine #2: TikTok trend report\n4:54 - Build a Routine from scratch (live)\n6:26 - Adding MCP connectors\n6:55 - Test and edit your Routine\n8:06 - Routines from the Claude Code CLI\n8:57 - Creating a Routine with /schedule\n10:23 - Running it: Gmail scan to Slack\n11:27 - /loop vs Routines + more examples\n12:20 - Your one-automation challenge\n\nLinks:\n- Claude Routines: https://claude.ai\n- Claude Code: https://www.anthropic.com/claude-code"
+}

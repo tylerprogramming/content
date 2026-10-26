@@ -1,0 +1,153 @@
+[00:00] Reverse Engineer Everything, or REA, is an MCP that allows you to virtually rebuild any software
+[00:06] you want by actually decompiling the source app and then giving your AI agent a bunch of
+[00:11] instructions behind how to recreate and replicate those features. Pretty much everybody is talking
+[00:16] about it and doing cool demos like reverse engineering their Apple TV remote in around
+[00:20] 45 minutes. Or, like one person on X thinks, reproduce the entire suite of Photoshop apps.
+[00:27] In this video, I'm going to run you guys through how REA works, but also why I think a couple of people are missing the point.
+[00:34] And ultimately speaking, what this means for software more broadly.
+[00:38] So yeah, everybody on Planned Earth is making a big fuss right now about REA.
+[00:42] Matthew Berman said, reverse engineer anything, software is done.
+[00:46] You know, this fellow here said, software is dead, long live software.
+[00:49] MJAD, the Replit CEO, said, this is insane. Pretty much all software will soon be open source.
+[00:54] Jaden Williams says, God help us all.
+[00:57] You know, somebody that used to develop software, I can empathize with a lot of these concerns.
+[01:01] But there are a couple of things that I think you need to know about REA to really be able
+[01:04] to deduce whether or not that is A, true, and B, what you can do about it.
+[01:08] So first, the way reverse engineer anything actually works is you, a lowly human, will
+[01:13] ask your super smart squiggly AI agent, hey, how does this feature work?
+[01:18] Can you make me this app and reverse engineer it?
+[01:20] Your AI agent then sends a request to the REAMCP.
+[01:25] This then sends a request to a tool suite containing apps like Guidra, which I think was initially released in 2019, Hopper, which I believe is 2011, and even IDA, which I'm pretty sure was released in the 90s.
+[01:36] This REA library then allows your agent to seamlessly communicate with each of these tools.
+[01:42] It can then use Chrome DevTools and other services to help poke around the app and learn more about it
+[01:49] before finally giving you some sort of result.
+[01:51] That result usually includes some pseudocode, which just means not actually code,
+[01:55] but just high-level descriptions of what's going on, some proof of what's happening, and then any unknowns.
+[02:00] Your agent then picks that up, and then it just continues circling around and around like a fat merry-go-round
+[02:05] until your agent has effectively rebuilt the whole app.
+[02:08] It's pretty easy to get up and running with this stuff.
+[02:10] you literally just tell your agent,
+[02:12] hey, go download Reverse Engineer Anything, REA,
+[02:16] and let me know when you're done.
+[02:18] I'm using this inside of a cool terminal manager called Orca.
+[02:22] The reason I like Orca is because I just get to, you know,
+[02:24] really quickly and easily create a bunch of terminal subdivisions,
+[02:27] and then I can run Claude in one, Codex in another,
+[02:30] and so on and so forth.
+[02:31] You don't need to do that.
+[02:32] Obviously, you can do this in whatever freaking app you guys want.
+[02:35] I just, you know, I like this one
+[02:36] because it makes me feel all smart and big-brained.
+[02:38] As you guys could see the main agent here has already found REA and now we can go and we can try rebuilding something
+[02:44] All right now that it's all downloaded and installed. Thanks Claude
+[02:48] We can actually just start a new Claude session. So I'm gonna exit out of this. I'm gonna go Claude again
+[02:53] We were indeed bussin and I'm gonna say use REA to rebuild the preview app on my Mac
+[02:59] So for those of you guys that don't know preview is just like a little photo app
+[03:03] Looks just like this and in my case
+[03:05] I have this loaded up with a pretty badass looking picture of some scary Titan looking thing attacking some tiny human looking thing.
+[03:13] And, you know, there's a bunch of different functionality.
+[03:15] I have a little I button that I can click.
+[03:17] I will zoom out, zoom in.
+[03:19] This is this is an application, essentially.
+[03:21] And so I could, you know, rebuild my own, obviously.
+[03:24] But what if I really like the way that this was laid out, the way that it looked?
+[03:27] What if I wanted the ability to, I don't know, draw boxes or maybe do a little bit of handwriting on it?
+[03:33] Well, that's where something like REA would come in handy.
+[03:36] And so I just said, rebuild the preview app on my Mac.
+[03:39] And now I'm just going to sit around and wait and let's see what happens.
+[03:41] One tiny tweak.
+[03:43] While this is happening, I'm going to get Claude to try and rebuild the same app without using REA.
+[03:48] So I'm going to say without using REA, rebuild the Mac preview app, the photo viewer one, and then serve me the result.
+[03:58] You can do this in, I don't know, however you see fit.
+[04:02] let's see which one here i like more it's done some decompiling with gydra and i'd say we're
+[04:07] probably halfway done and it looks like these two are actually in a race to the finish trying to
+[04:11] create the preview app in their own independent ways okay and so the end result was first completed
+[04:19] by opus without any library as you guys could see here we have the the preview app does seem a little
+[04:24] bit laggy i think that may be because i'm currently developing the other app in the background but hey
+[04:29] we'll compare them more broadly in a moment. So it's been another, you know, three, four minutes
+[04:33] since still waiting for the one on the left, okay, the REA version to work. It's testing by opening
+[04:39] and closing a bunch of tabs, flashing alpha on my screen. I think it's actually going to launch now
+[04:44] with three files and show me the difference. Cool. And so here is the app that REA developed.
+[04:49] Okay. And then here is my preview app on my computer. And as you guys could see here,
+[04:53] it is virtually the same thing. If I just were to pull this open to approximately the same size as my
+[04:59] other computer as my other window. Let's see. We have what looks to be the title. This one is far
+[05:05] longer, which I think explains a big chunk of the difference. We do have the information. We can zoom
+[05:10] in, zoom out. We can share this. Looks like we can also draw on the page. And the drawing is occurring
+[05:17] far faster than the other app. Looks like we can also rotate as much as we want, stop the annotation,
+[05:23] and then ultimately save this file to my computer, which is neat. The issue is everybody's treating
+[05:27] this like it's a super new thing but i think like a lot of technological developments to be clear it
+[05:32] is not i mean gidra over here has been around since as mentioned 2019 it was actually released
+[05:37] by the freaking national security agency i don't know if you guys could tell but that is an american
+[05:42] ass looking eagle the hopper disassembler i don't know if it's clear was also not made any time
+[05:46] recently that website looks like it crawled out of the stone ages finally ida although a little
+[05:51] more modern was also released forever ago and so the point i'm trying to make here is nothing is
+[05:57] super new or special. All REA does is it just basically gives your AI agent access to these
+[06:02] tools and a really simple interface. And that is ultimately what allows it to do this reverse
+[06:06] engineering. But I want to make things really clear here. I've seen a lot of people talk about
+[06:10] how dope this thing is and how incredible this enables scientific and software advances to be.
+[06:16] But I haven't actually seen very good demos. And so I think this is one of those situations where
+[06:20] the internet has probably gotten a little bit ahead of itself. You know, there's a lot of
+[06:23] incentives on signal boosting cool developments like this. Obviously, a lot of people have also
+[06:28] been doing very dope things with games like, you know, Tony Hawk's Pro Skater in Halo 3 meets
+[06:34] Modern Warfare times RuneScape. You know, I myself, I had a reverse engineer moment a couple days ago
+[06:39] where I combined themes from Minecraft and then Attack on Titan and made a really dope game. And,
+[06:43] you know, I think it's more of like a memetic cultural moment than it is, genuinely speaking,
+[06:47] a new breakthrough. And part of the reason that I think you know this is because virtually every
+[06:51] video that talks about REA starts with a graph that looks something like this, which is just how
+[06:56] many GitHub stars it's gotten over the course of the last few days. You can see that it was, you
+[07:00] know, probably reasonably steady about a week ago, week and a half ago. But last few days in particular
+[07:05] have been pretty nuts. You know that when a video starts talking about how many GitHub stars a thing
+[07:11] has or how super trending it is, that it probably lacks something more interesting to show you
+[07:16] instead. Like if the only thing you could talk about are GitHub stars, and it's like, well,
+[07:20] why don't you just show me this super dope demo instead, right? Like, why are we talking about
+[07:24] people's perception to a thing as opposed to the actual value of the thing itself?
+[07:28] Anyway, that's just me being an old man. More broadly, you know, there are some really cool
+[07:32] reverse engineering applications. And I think as somebody that's been doing a fair amount of
+[07:36] this stuff myself over the course of the last little while, I should talk in generalities
+[07:40] about what this means for software. Most software is going to become open source. And that's because
+[07:45] what we've done is we've moved up an abstraction layer from specific software applications and how
+[07:50] they're done to a general intelligence, aka, you know, your clods, your codexes that can just
+[07:55] rebuild software on the fly. To that end, most of the front ends and back ends are also going to be
+[08:00] highly commoditized, if not already. I mean, we're seeing a bunch of really cool things happen,
+[08:04] this Cambrian explosion of opportunity and availability. But, you know, I always like to
+[08:09] think about things from a business perspective as, you know, a business owner and somebody that's
+[08:12] made a fair amount of money with this stuff. What new opportunity does this really open versus what
+[08:16] doors does this close? And this closes a lot of doors, not reverse engineer anything to be clear,
+[08:21] but just the trend of this technology more broadly over the course of the last few years up until
+[08:25] now. Virtually all of the wrapper apps that wrap around Claude and Codex and deliver some sort of
+[08:32] additional functionality like Sweet Visuals and hell, even my sexy explainer app that you guys
+[08:37] could see right over here. All this stuff is just swallowed up by the models themselves through
+[08:41] design updates, interactive explainer updates, the cool software games and stuff like that,
+[08:46] that you guys are developing, you know, the actual value ladder has moved. And so while I think you
+[08:51] could probably get some short term benefits out of reverse engineering your favorite app and trying
+[08:54] to sell it on Black Hat World or whatever, obviously you'd face severe intellectual property
+[08:58] restrictions. And so it's less we can make a dope business out of this and more the barrier for
+[09:04] recombining pre-existing ideas and turning into something kind of cool has gone down. And the
+[09:09] barrier to like hitting trending on X with a cool demo like this has also gone down. To be clear,
+[09:13] you don't need reverse engineer anything to reverse engineer an app. You could actually just
+[09:17] tell your agent, hey, I really like XYZ feature in XYZ app. Could you go and figure out how it
+[09:22] works and reverse engineer it for me? And you know what? It'll use its own little screenshot tool,
+[09:27] take screenshots of like an animation as it goes across the page or whatever the hell it is that
+[09:30] you want it to copy. It'll do it for you. You don't need a cool library or whatever. It'll
+[09:33] already know how to do that just through virtue of its own reasoning process alone.
+[09:38] Will it do so perfectly? Will it copy the exact functions of the app? Probably not.
+[09:42] but I wouldn't be surprised if a lot of those functions that it is attempting to replicate
+[09:46] actually end up being more efficient when written by AI than by humans alone. We saw this with a
+[09:50] recent Photoshop suite repurposing, and it's going to be pretty cool. You know, we can get pretty
+[09:55] close with just vanilla Claude code, and I want you guys to know that that's now. I mean, in like
+[10:01] a month or two, realistically, Claude code is going to have a lot of these reverse engineering
+[10:05] features not built directly in, but the post training that is continually occurring on it
+[10:09] will guide it towards being able to do most of this on your own.
+[10:12] We also don't know if we need all of the component apps there,
+[10:15] Gidra, for instance, or IDA.
+[10:17] Obviously, they did help replicate speed,
+[10:20] so I think that's pretty important.
+[10:21] We can produce the plausible visual
+[10:24] and back-end analog of any app with REA.
+[10:27] We can also do it visually in probably two-thirds of the time,
+[10:31] if not faster, just by using vanilla agents.
+[10:34] So while there is a little bit of a speed bump there,
+[10:36] I just want you guys to know that most of this
+[10:37] would probably be just captured by agents in general.
+[10:39] So get ready for the reverse engineer era. All right. Hopefully you guys appreciated the video
+[10:43] I had a lot of fun putting it together and I will catch all y'all in the next one

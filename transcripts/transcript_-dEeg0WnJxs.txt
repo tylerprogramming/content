@@ -1,0 +1,464 @@
+[00:00] I run a whole content business from Cloud Code.
+[00:02] And these are the 17 skills that I'm going to share with you today and how they work that helped me do that.
+[00:07] We're going to start off with the YouTube engine.
+[00:09] And basically what this does is it's going to find videos and or find the ideas from videos and then write the scripting, the titles, the thumbnail prompting, all of that for you so that you can get ready to actually create your content.
+[00:20] And so we're going to start off with YouTube search.
+[00:22] Then we're going to have something to transcribe the videos that you get from the search.
+[00:26] We're going to have packed that all together.
+[00:28] We're going to perform SEO on it so that we make sure we get the correct hooks, the intros, the titles, and structure for your video.
+[00:35] Then we're going to create thumbnails.
+[00:37] We're going to have analytics.
+[00:38] This is for after your YouTube videos are out there so it can see and judge how well your CTR is doing and how well your content is doing in general.
+[00:47] And then a reply.
+[00:48] This is so you can actually reply to comments, but that is optional.
+[00:51] And then we have distribution right here.
+[00:53] So what this means is we're going to have YouTube shorts, which is going to take a video and then tell you how to create reels from that.
+[00:59] And what's great about this is when you have reels, that's LinkedIn, Instagram, Facebook, TikTok.
+[01:05] I don't know, the blue sky and threads, maybe whatever can take a video that can be a reel or a short.
+[01:10] Right. And that's how we're going to repurpose these. And then social copy.
+[01:13] This is going to this is for how you're going to create things for other platforms.
+[01:17] So whether it's emails, captions for Instagram, like photos.
+[01:21] right you can have carousels etc we'll go over that with instagram writer a flash and then we
+[01:26] have flash video and this is again this is optional but you can take an image and you make it out of a
+[01:32] four second reel with music and so it can be like maybe two or three things on the actual image like
+[01:38] things that you want to say and then you know this is also optional right but i have a tick tock
+[01:41] replier and because tick tock is kind of finicky you can use claude and chrome to actually reply
+[01:46] to tick tock comments and then community and money okay so this is not saying that you're going to
+[01:51] make money necessarily from this but you know if you have a school community i have a very in-depth
+[01:57] on how to actually public like auto publish with with school uh funneling creating content etc
+[02:03] that's a little bit more advanced but i have it this helps me create create posts and engagement
+[02:09] for my community then i have an email so i use resend this is going to help me create emails
+[02:14] And then Resend, you can publish them through the MCP server and it can go out there and, you know, you just create these with the social copy.
+[02:21] They become emails and then you're ready to go.
+[02:23] So you take one video or one concept even of something that you've done.
+[02:27] And then that can become like three to four emails in a week.
+[02:29] And then Haru, you know, doing very well in school, making a lot of money.
+[02:34] I paid for him for a little bit one time.
+[02:36] And so he had a 21 hour video on what he does through his whole school journey and just basically content in general.
+[02:43] and this is basically a GPT of him, right?
+[02:46] This is, you can talk with it
+[02:47] and it can give you guidance on what you want to do.
+[02:49] And then journal, this is just to kind of keep up
+[02:51] with what I'm doing with all my content creation.
+[02:54] Okay, so let's go and get started
+[02:55] and go through all these starting with YouTube search.
+[02:58] And here are a list of some of the skills I have
+[03:00] that I brought into my skills folder,
+[03:02] but you can see here are, some of them are renamed, right?
+[03:05] So that makes sense.
+[03:06] So here are all the YouTube ones,
+[03:07] some TikTok ones, transcribe, et cetera, right?
+[03:10] There's a bunch here,
+[03:11] but you will have access to these so the first one is slash YouTube search okay so what's gonna do
+[03:17] is we want to give this keywords and or something like so for instance I want to talk about cloud
+[03:23] code so cloud code uh cloud course and whenever I do this it's going to search for those within
+[03:31] right here 30 days get the top 15 it's going to search for a total of 50 from the 30 days from
+[03:37] each of these kind of keywords that this is just like you would search in
+[03:41] YouTube grab the top 15 and then it's basically a comeback it's going to give
+[03:44] us it's gonna go ahead and give us like all the details from like the top four
+[03:48] in videos especially why they were why they did well it's also going to download
+[03:52] the thumbnails from those top videos and give you an analysis of why the
+[03:55] thumbnails have done well and just give you enough information to get started on
+[04:00] creating videos in your niche right I'm doing this it could be this can be any
+[04:04] niche right but this is also going to get the structure of how their videos and maybe why
+[04:08] they did well and what this is just doing just to let you know really quick is in the skills
+[04:13] for the youtube search there is a code this is youtube download player it's an amazing library
+[04:20] it's has so many stars it's like the most common things to do that you can do locally for free to
+[04:26] get all this data from youtube so while it's doing that here is an example that i did uh june 17th
+[04:34] right? I did Claude code skills, right? So then what it did, it actually grabbed 12 from like
+[04:39] whatever time frame I did it. And here are, here are those videos who, how many views it got.
+[04:45] This might be likes and then comments. This is the duration when they uploaded it. So now I have
+[04:51] like this information about the videos. So here's some details from, you know, from Austin and
+[04:57] just here's some more in-depth information. It even grabs the description, the thumbnail.
+[05:02] And so we save the thumbnail locally and here's from Nate. He has a couple of Tristan tech with Tim, right?
+[05:07] So it goes on it goes on and kind of just we store this information, right?
+[05:11] This is the first thing does it stores all the information that we actually did for the search.
+[05:15] Okay, so here are the 19 videos in the last 30 days.
+[05:19] So how to build agents a top one at 109,000 from AI masters another one from him Nate
+[05:25] Jason Shubham, yeah foundations could you know and tell me the likes duration, you know ranging from 22 minutes
+[05:32] eight minutes, three hours, six hours, et cetera, right?
+[05:36] Then it goes through the thumbnails,
+[05:37] why some of them did well,
+[05:39] directions that we could do, title patterns,
+[05:42] the gap worth taking, not one video,
+[05:44] is a working software engineer
+[05:44] showing cloud code on a real code base,
+[05:46] is entirely non-coders, vibe coders, et cetera.
+[05:49] Here, he actually has given me some five ideas
+[05:51] based on me, so it kind of,
+[05:53] it already understands me enough.
+[05:55] So here are some ideas that we could do,
+[05:58] where it saved them, okay?
+[06:00] And so what we would do then is we take these, we could take a few of these and decide what we want to do with them.
+[06:07] Okay.
+[06:07] So this would be, this means that we're going to now do the transcribe.
+[06:10] So moving on to the second one.
+[06:12] Now I don't want to do, it's suggesting Nate Hurric and Jason.
+[06:15] I'm not going to sit here and do six hour, the six hour one.
+[06:18] Transcribe number one and number five.
+[06:21] Okay.
+[06:21] So now that we can transcribe those, let's save these, but we're going to transcribe them to get the actual, what they said.
+[06:28] so we can understand the structure of how they basically did everything for their videos.
+[06:34] So now it's lower than transcribe skill.
+[06:35] And this is actually, you can use Whisper locally, free.
+[06:39] In this case, I am using, I'm going to be using OpenAI with an API key to do this
+[06:46] because it's pretty accurate.
+[06:47] And I get like the time frame, and it's easier for me to get that from there with the time frames.
+[06:52] So I know like what's intro, what was like each section of the video.
+[06:56] And again, you can see what it's doing.
+[07:00] So down here, you can see he's using a transcribed video Python file on those specific YouTube videos.
+[07:06] And so that's whenever we're done, it'll come back and we'll see what it says about.
+[07:10] Okay, so it transcribed them and put them on my local directory.
+[07:14] So here's the first one from AI master.
+[07:16] So what it's doing is giving you a structure.
+[07:17] So cold open was about 19 seconds, three levels of AI use.
+[07:21] Okay, he had a sponsor.
+[07:22] the three criteria for a real agent build a clod markdown planning mode etc so it kind of just goes
+[07:29] through this um it's here is the uncovered part for them up the two agency builds our research
+[07:34] agent and a reprint of what i'm doing and then here jason's again i called up where the intro
+[07:38] was matching uh you are watching was itself the output what the project is free path versus paid
+[07:44] schools at seven stages blah blah okay so it just kind of goes through as you can see and gives
+[07:48] everything that tells you everything about this okay so what what it says
+[07:53] what I take into your next state next package which comes to the next one
+[07:57] right so if we look at the next one right here we have YouTube package okay
+[08:01] so what we're gonna do is take either 22 minutes is the so it's been these are
+[08:05] the example titles that he give me above so if I scroll up it would get it would
+[08:09] say those the 22 both 22 minutes is the number of both when you're landing with
+[08:13] 30 seconds of each other okay so what we're gonna do it was what we're gonna
+[08:17] do is going to give me an example. Sharp rectangle from the two transcripts combined, I rebuilt my
+[08:21] entire content pipeline with 11 Cloud Code skills. Okay, so let's do, I want to say a slash YouTube
+[08:27] package for the skill, and let's go ahead and do that. Okay, so it's going to take, it knows now I
+[08:32] want to create this YouTube video based on what they've done, but it also knows me because I've
+[08:38] been working with Cloud Code. I have my own memory here on my computer, and it's going to go and
+[08:41] create this whole package. Now I'm going to go show you an example package of what it's done before.
+[08:46] So here's one I had done on another on a separate YouTube workflow.
+[08:49] So what it's done is it creates, I have an analysis, description, filming guide hooks,
+[08:54] scripts, titles, and then here's social for other things, right?
+[08:58] So here's Instagram, LinkedIn, Pinterest.
+[08:59] Now this still doesn't do that.
+[09:01] That comes later with social copy, but these are all markdown files.
+[09:05] So for instance, if I open up the titles, here are five titles that it had given to
+[09:09] me based on other videos that it had analyzed.
+[09:12] And so here I automated my entire YouTube workflow with Cloud Code.
+[09:16] This is actually the one I used and this video did pretty well, but here were other suggestions that you could use as backup.
+[09:21] Okay, so this is going to go ahead and create all of that for me.
+[09:25] It's actually asking me a question.
+[09:26] I'm just going to say recommended.
+[09:27] And then here's like the script, what I would kind of say.
+[09:30] Of course, this isn't hard code.
+[09:32] I don't say exactly this.
+[09:34] I just can't do that.
+[09:34] But this is a guideline of what I would say and what I can do during this process, right?
+[09:40] Because even this one, Nick Sariv and Network Chuck, because I had used this as an analysis for the video.
+[09:45] But you just kind of go through this and this is everything you do right that it kind of gives everything you need to say
+[09:51] Especially for somebody that just like talks on the screen
+[09:53] And then you can't like b-roll throughout your video and you have some sort of displays where you just read from that is
+[09:59] Perfect for you. Okay, then here was the analysis that I had done to come up with this video and this was
+[10:07] everything
+[10:08] Everything that it kind of gave me to tell me what like some suggestions what I should do
+[10:13] Now, I can even take this to do more, right?
+[10:16] And it has all the sort.
+[10:17] Everything is here for me to do.
+[10:19] I know this can seem like a lot, but just talk to Cloud Code, and it doesn't have to be that much.
+[10:24] Okay, so for the fourth one, what I want to do is I'll move on to SEO.
+[10:28] Now, the thing with this, these right here are after you have recorded.
+[10:33] So right in between here, right in between here, I'll say, let me put that right there.
+[10:39] These four down here are when you've recorded and at least edited the video, right?
+[10:44] And by the way, I have a video on how to use AI to editing, which will be in the description.
+[10:48] But these right here are for after that.
+[10:50] So we're going to perform SEO, thumbnail, analytics, and you can use a comment replier to see who has a YouTube SEO on a video that I've already done.
+[10:59] So actually, as I'm recording this, Opus 5 just came out, and tomorrow I am going to be releasing my take and some examples that I've done on it.
+[11:07] So, but I have, okay, so let's say I have this video done.
+[11:11] I actually did record this.
+[11:12] I'm going to release this tomorrow.
+[11:13] It's just not edited, but it'll be ready for tomorrow.
+[11:15] My take on the focus five, because it just came out.
+[11:17] So I'm actually recording this video before this will come out.
+[11:19] And what I'm going to do is I want to make sure that the titles and description, everything
+[11:23] I want for this YouTube video are going to be good.
+[11:26] So I'm going to do basically run some SEO specific research to make sure that what I
+[11:32] currently have in there is good.
+[11:33] And if it's not, it's going to help me decide how to improve it by doing all of this research.
+[11:39] You may be wondering why it's doing web search, right?
+[11:42] Well, we've already done the analysis by looking at YouTube videos.
+[11:46] So it already has all that information.
+[11:48] So it's also doing web search.
+[11:50] And it's going to compare it to what we've done with the YouTube analysis to come up to look for what can be better SEO titles and possibly thumbnails, description, tags, et cetera.
+[12:01] so here you can even see that uh well okay it just went away but it said that the first pass
+[12:07] was done four days ago whenever i did the initial research on it and then do my things look
+[12:12] competitor look at all these competitor titles right clawed opus 5 is insane absurd i mean this
+[12:18] is this is crazy uh anthropic cooked again uh fully tested what you need to know it it beats
+[12:25] fable and its numbers are legit insane a lot of us it's crazy right it's crazy actually what some
+[12:32] people say um i mean that insane and absurd anyways so what's it gonna do is it's going to
+[12:38] uh it's going to give me some other things of what i could do for instance titles or
+[12:43] suggestions of what i could do to improve this basically to get more views but to also not just
+[12:49] get views but i know i like the content that i created i'm going to show you guys you'll
+[12:53] but hopefully you already seen it by now
+[12:54] and how that's going to help you in deciding what to use.
+[12:58] So what it was going to ask me,
+[13:00] it recommends doing an A-B swap, A-B testing.
+[13:05] Okay, so let's just go, yes, do the recommended.
+[13:08] You can talk about this more.
+[13:09] I'm not saying I'm going to use this,
+[13:10] just kind of going through this as an example,
+[13:12] but I'm going to go through the recommended
+[13:13] and it's going to update all that for me.
+[13:14] So whenever I go to publish this,
+[13:17] I'm going to have all this information ready to use
+[13:19] to fill in when I go to upload with YouTube.
+[13:22] Okay, so for the next two, YouTube Analytics and Replier, I'm going to tell you two things about this.
+[13:28] One, the caveat is that you have to have a project created within Google with the APIs enabled,
+[13:34] and you have to download a token on your local machine so that it can be authorized in order to get analytics,
+[13:42] which is basically the data API version three, and then YouTube Replier.
+[13:47] I forget the exact API for that, but I think it's just YouTube data.
+[13:50] Maybe, I can't remember, but it doesn't matter.
+[13:52] Cloud can help you figure this out, but it takes like five, 10 minutes. So in Google,
+[13:55] Google Cloud console, you would create a project like this, and then you would basically just
+[14:01] enable the APIs. And then once you have that, then basically you're going to look, you're going to
+[14:06] get the replies for comments that you haven't replied to yet. And also look at the analytics
+[14:11] from your video. So you can see what's doing well and what's not doing well. And then you can,
+[14:15] that can help you A B test things or go from there. Right. So it's really, it's good to just
+[14:18] to track the data so that you can improve later on.
+[14:21] It's always about improving.
+[14:22] Okay.
+[14:23] Okay.
+[14:23] So now we're going to move on to the next section, the next six.
+[14:26] And this means that if you have a video that is recorded or you just had the idea of a
+[14:30] video that we had scripted out, like we already showed, then this means that you can also create
+[14:36] that, have that same idea, but maybe you want a couple LinkedIn posts.
+[14:39] Maybe you want to have Instagram carousel.
+[14:41] You can also use that image carousel for LinkedIn as well.
+[14:43] You know, you have Blue Sky Threads, Facebook, Pages, TikTok, you know, any other social media platform.
+[14:50] We can take that and set up scripts for other smaller, you know, portrait style reels that we can then also create and reuse for all these other platforms.
+[14:59] Right. So this is an idea. You can search for one video and then it can be distributed to other areas.
+[15:04] OK, so we're going to start out with is this one right here.
+[15:07] So this is YouTube Shorts right here. And then we also have a repurpose and we'll get to the other ones later in a little bit.
+[15:14] But for the YouTube Shorts and the repurpose, the difference is that YouTube Shorts is, let's say, forward looking.
+[15:21] This means that whenever we want to have an idea, like say we have an idea, but we haven't recorded yet.
+[15:27] Okay, well, let's go ahead and take that and develop reels and other various types of text, image, any kind of posting content you come up with, and then distribute that and get that ready to create for other platforms.
+[15:42] Whereas repurpose is if you have a video that you already created, it can take that video, understand what it is, and then create multiple videos or multiple text, image, and videos as well from that that you can record and then post on other platforms, just kind of like YouTube Shorts and repurpose.
+[15:57] So I separated them, but realistically, they could be somewhat similar.
+[16:02] So let's go and take a look at an example.
+[16:04] Okay, so I said YouTube Shorts on the most recent package we did.
+[16:08] So the most recent YouTube package, which was one of the skills that we had already went over.
+[16:13] So I'm going to take this one, actually this video right here, and use this as an example.
+[16:18] So it's going to basically write other scripts for videos that I can record.
+[16:24] This video specifically.
+[16:26] Okay, so it read the package that we had.
+[16:28] We had some existing ones already.
+[16:29] So it's grounded the research.
+[16:32] So three levels of using Claude code.
+[16:34] Most people never leave level one.
+[16:36] Build your first Claude skill in two minutes.
+[16:37] Everyone builds a fake business to sell you a course.
+[16:40] The script I'm reading right now was written by Claude.
+[16:42] I run my paid community from the terminal.
+[16:44] So then what it has is it has carousels here.
+[16:47] So three levels of Claude.
+[16:48] It gives me two types of carousels or two different ones that we could use.
+[16:53] And what it's going to do, it's going to write scripts, on-screen text, captions, and filming plan for all of these.
+[16:59] So these are reels based. So this means if I just create one, I can distribute it to five or six other, create all five.
+[17:06] Then that means I have not just five. I don't have just five pieces of content.
+[17:11] I think there's six other ones. So six other platforms, this could be used in total.
+[17:15] That means I have 30 pieces of content, not just five.
+[17:19] So then you can also schedule them and you can kind of be ahead of yourself.
+[17:23] And that's just if you record five and once you kind of get it down, it doesn't take it takes shorter and shorter amount of time to actually record things.
+[17:30] A little bit of preparation, but the more you do it, the better you just get at it.
+[17:34] Right. And the timing and feeling of everything.
+[17:36] But that's what this does.
+[17:37] So if I instead I were to do slash repurpose repurpose, if I can spell a video I have already recorded and I can't spell.
+[17:48] So what this is going to do is instead of forward thinking from an idea that, you know, I haven't actually edited or recorded, this is going to do the same thing, but it's going to take a video that we've already done.
+[17:59] We haven't done this for like maybe I just created something and it's going to get the transcript and create other various forms of content for me that I can use later on.
+[18:09] OK, and now we move on to the next one.
+[18:11] This is social copy.
+[18:14] So basically what that means, copywriting, something that I wasn't very familiar with long ago.
+[18:19] But copy just means what platform are you going to build if you're creating an email, right?
+[18:24] You want to create a copy for your email.
+[18:27] So you want to write out something based on how you say it.
+[18:31] And it could be based off of video or just an idea that you saw or maybe you wrote some notes down.
+[18:36] And AI can form that into a well-written copy.
+[18:39] to work so i'm going to type slash social copy and what he says here create platform ready social
+[18:45] media text posts and static visuals from a youtube video package or any topic right so
+[18:50] we're going to say the recent video package we have been working on so it's going to the same
+[18:56] one just as the example the same one which is actually this video it's going to create social
+[19:01] copy and i'm going to show you where it stores it locally because to show you again where all this
+[19:06] is at. So it's all stored locally. One is done. All these different text files. And this is here
+[19:13] for you. And also you can give it back to Claude that, hey, go ahead and do this. Go ahead. Like
+[19:18] if you have Gmail, right? That's how you send email. Well, you can just have it take that.
+[19:23] If you have Gmail connected, which only takes a couple of minutes or not even, not even really
+[19:26] a couple of minutes, then it can send that. It can go ahead and send those emails to whoever it is.
+[19:31] Okay. And it's kind of what it's just saying right here is that, you know, I haven't published this
+[19:34] video yet because I'm actually you're watching it you'll see it published but as I'm speaking and
+[19:40] actually recording I haven't yet so this is what's confirming but it's writing here's here's LinkedIn
+[19:45] here's x so it's going to go ahead and do this for all the platforms including email I personally
+[19:51] use resend for email but it's going to go ahead and do this and then we'll take a look at it
+[19:54] whenever it's done but actually what we can do in the meantime is this is the folder right so it
+[19:59] created a folder so mike so here i have like my content folder right this is i have a lot here
+[20:05] right that's some of the video package for youtube it puts under a videos folder and then if you scroll
+[20:09] down here here is this one so right now as of right now it's about 6 26 it's creating a social
+[20:15] folder so here's a youtube community community markdown files instagram linkedin school um this
+[20:21] is just the basic status to show whether we've done all this or not here's x um it's probably
+[20:25] here yeah here it's actually showing me the linkedin post so it already has a part of me
+[20:30] like i'm like you know no em dashes add like some nuances in here like how i would speak like us um
+[20:35] so it sounds human right and i and i kind of edited some of it anyways but here's x you know
+[20:41] here's my youtube community gives me a couple options uh instagram so two carousels written
+[20:46] as slides haven't hasn't rendered them yet um school has three different drafts i can choose
+[20:50] from um but yeah so then basically i have i have something separate to actually render two instagram
+[20:55] carousels that I created a studio for, but that's another thing we can take care of.
+[21:00] But what we can do then is just come in here, and whenever I'm ready to actually post more
+[21:05] of this content, I will have Claude Code kind of get ready to upload everything for me,
+[21:11] okay?
+[21:11] Because I'm using Bloatato, which is in the next video.
+[21:14] But if you have all of these ready to use within Bloatato to schedule all these posts,
+[21:20] right?
+[21:21] So for this X1, let's see what this X1 says.
+[21:23] open this up uh here we have so thread a most ad businesses are built for the demo tab closes
+[21:28] nothing keeps running i have here's something about 17 skills then it auto replies so here are
+[21:33] all the replies that would have for um for my post right and then like here's some standalone
+[21:40] tweets that it said i would go through these and say which ones i like and don't like um and but
+[21:44] yeah and here's all the checks it just has for all of my tweets okay so that's that's what that
+[21:51] does and that's really that's very powerful once you create something the thing is once you create
+[21:56] something that can go to so many different platforms and one piece of content right one
+[22:01] idea can become at least 10 pieces of content so in the youtube community post if you have a school
+[22:07] community you know don't worry about if you don't but that can also be a school community post as
+[22:11] well right and it's just wait it's absolutely amazing what we can do okay so these next three
+[22:17] are optional. What it actually does is there's a type of video you can use for like TikTok and
+[22:21] Instagram is if you have a static image and then you can turn it into a four second MP4
+[22:26] with some background music, right? You can upload it with like whatever music Instagram or TikTok
+[22:32] decides to do, right? And then TikTok replyer. TikTok is really strange about their APIs,
+[22:38] let alone getting. I'm actually trying the process of getting an app so that I can
+[22:42] have people use it right to do this with to actually you'll go into tiktok and post and all
+[22:48] that but for replying they don't really have anything native as far as i know for that so you
+[22:53] i've been using claude and chrome to kind of help me with this so this is kind of this is a little
+[22:57] bit more in depth specifically but these are just think of the type of skills that you can have
+[23:02] for helping run your content business okay so if we take a look at instagram writer let's go take
+[23:08] a look at this one let's clear let's clear all that hey by the way slash clear command just kind
+[23:11] of clears your session so now i'm kind of freed up so if i type slash instagram writer so this
+[23:17] says create high engagement instagram carousels using the proven like basic other designs that
+[23:22] i've done before oops writer let's say um the 17 claude skills video look at it and come up with
+[23:31] because if you're like maybe targeting and you're really trying to like hit the algorithm and trying
+[23:35] to you know get more following get more repo saves and you know just do all that get more outreach
+[23:41] Then you would build something like this and then continually improve upon it for instance
+[23:45] I had some things on there where I thought okay. I like this guy styles
+[23:48] He these posted really well you screenshot it send it to it and say hey
+[23:51] Let's come up some ideas what we can do for that
+[23:53] So what's doing right now is just looking at my video package at that the 17 clouds goes this video package basically and
+[23:59] Then it's going to create just come up with some carousels for me that I can use so now it's asking me what kind of angles I like so
+[24:05] 17
+[24:07] Run while I sleep not a demo anti-fake business. Yeah, let's try
+[24:11] what it does um yeah let's just do let's just do that yeah i'm not gonna get too much into exactly
+[24:16] what it does but you know it does have code this this does use code some things that you need to
+[24:20] have to install uh going on we'll come back to that i promise it's working right now but
+[24:25] just to kind of move on we have this next section next section called community and money okay so
+[24:33] these are uh some things like for it says money because if you have the school you can generate
+[24:39] monthly or annual income, however. So this slash school does actually a lot for me. I actually
+[24:46] started creating custom school CRMs, like a custom app for your brand. So I've done it for a couple
+[24:52] of communities right now that are generating over $150,000. So I create the custom apps for them.
+[24:58] So this slash school, what it does is it takes an idea also for my free community. If I have a
+[25:04] YouTube video, right? I can create like 10 different posts and through the app that I create for
+[25:08] school i schedule the posts and um create them tag people do all kinds of things with that so i have
+[25:15] this slash school one this is optional for you obviously if you don't have a school don't worry
+[25:19] about it but if you do then this is something a little bit more in depth but the slash email one
+[25:23] okay this one takes a little bit of setup right by the way this is this is what it's doing for
+[25:28] uh coming up with slides and text for um but we'll come back to this in a second actually i can
+[25:34] scratch that out and then so for the slash haru skill so i did this um i mentioned this about haru
+[25:39] in the very beginning so this is who he is i'll keep going back and forth this is haru right uh
+[25:43] i took his 21 hour 21 hour video insane insane amount of time i took that 21 hour course and
+[25:52] what i did was i created a skill for it and by the way the four carousels you know it created these
+[25:58] right and we can take a look at those but the slash haru skill what it does is i create basically
+[26:03] created a gpt for myself based on that and so i can i can ask it questions to help me with whatever
+[26:09] i'm doing i'm creating youtube video if i'm doing something for school how should i how should i um
+[26:14] monetize it well not just how should i monetize it but like should this be monetized what do i give
+[26:19] away what should be free you know how can i bring customers in based on whatever it is i'm doing
+[26:24] right and as a business this is that can really help you and you just basically ask ask him
+[26:28] questions, right? So, but he lives inside of here. And then finally, journal. This is personally for
+[26:34] me so that I can, like, just say how things went. Why did I not record today? What was going on?
+[26:40] Was I just really busy, you know, with kids, wife, and my actual software engineering job during the
+[26:45] day? So things can get busy. Anything can happen, especially with kids. Anything can happen. And,
+[26:50] you know, I want to journal what happened. You know, what went well? What's not going well?
+[26:54] what can I do? So I basically talk to Claude and say, how can I be more efficient in what I'm doing
+[26:59] in my life? You know, give it times that you're available. Give it times when you're not, right?
+[27:04] And then it can help you. So I can have like, yeah, I can have times when I need to record
+[27:08] and when I shouldn't record. I mean, what doesn't make sense? When am I more alert, right? Recording
+[27:12] at 1 a.m. doesn't make sense. But if there's an extreme case where it's the only time I have
+[27:16] that has happened before, it's not fun. I promise you it's not fun, especially when you have to get
+[27:22] up in four to five hours anyways because the kids get up regardless then you know that's what you
+[27:26] have to do right but these four skills will are really do help you in communities like especially
+[27:32] specifically school community but uh also with money and then like i said slash email so how
+[27:37] when i say make money right slash email is how do i make copies to bring people into my school
+[27:43] community even my free one right which eventually they can hopefully become then become you know
+[27:48] paid community members, right? So how do I do that? And that's what this is for. That's what
+[27:52] the HeruSkill is for. And then I just journal everything that I'm doing. Okay. But for instance,
+[27:57] this HeruSkill, right? So I finished this. I'm on a new computer, so I don't have everything
+[28:02] saved, but basically this is going to create them. Let me show you an example of one.
+[28:08] So for instance, this one, right? This is the one that I rendered myself. I used Kai AI to get this
+[28:13] initially, but then this is all rendered through just Python code, right? Here's, you know, this is
+[28:18] a carousel that I generated, right? Using, using a couple, you know, a couple of things with
+[28:24] Instagram writer, right? And then auto post it, auto post it with Plotator. Okay. So then what
+[28:29] the one important, the one here that I really want to show you is slash Haru and then on the YouTube
+[28:35] package, how should I send emails and what can I do to bring in people to community who then
+[28:43] become customers. So what this is going to do is it's going to look at the package, right? So here's
+[28:48] my Haru rag Python file. So it's performing, it's performing rag, and it's going to just kind of
+[28:54] give me some answers and I can talk, basically try and have a conversation with Haru. You can do the
+[28:59] same thing for Hormozy, Dan, other people, right? Anybody that, depending on what space you're in,
+[29:05] it doesn't matter, right? Find somebody. And then what I've done is I separate custom GPT basically
+[29:12] is what I made locally for this with this skill. But you can get this one for free specifically
+[29:17] for Haru from the video, right? When you get this from GitHub, you can have this one yourself.
+[29:21] But okay, so index is ready, a lot of chunks, and it's going to come up with an answer form.
+[29:27] Okay, so here's basically what it's, here's just what it's telling me, right? So give me a short
+[29:30] answer on YouTube, school signup, immediate attention, speed delete, turn on auto DMing
+[29:36] members, drive them, uh, drive them to your pinned post slash poll, auto DM template goal.
+[29:41] Um, okay. So yeah, it's just, this is just everything that, you know, this is everything
+[29:46] that it's telling me that could really help me out, uh, as far as building my community,
+[29:51] uh, driving in more members to my school community or just, or just being more interactive,
+[29:55] right. Or, and also, you know, we want to make money. We want to do things to save time,
+[29:59] make money, save time. So we can possibly make more money, but, and this is, and this is what
+[30:03] give me these answers right so i would look over these answers say okay let's and then just have
+[30:07] more conversations with this okay so these these essentially are the skills that i generally use
+[30:13] and then two things i'll need two things you have mapped in this slash email like i can have a day
+[30:17] zero to seven sequence of emails to help me out right so this is what i would talk to them about
+[30:22] what emails how should i word the emails right how long should they be what should i give away
+[30:27] at the end how do they apply right or how can i help them right so that's that's everything
+[30:32] That's everything that you can have with these skills.
+[30:35] Now, I will have all of these.
+[30:36] They might not all work for you.
+[30:38] There are some things that you have to install, but I would say, okay, let me do this.
+[30:42] For the YouTube engine, these four right here specifically.
+[30:45] And then for the distribution, these three right here.
+[30:49] And then I would say these three right here in the community and money.
+[30:53] Those are the ones that if I were you, after going through all of these with you and kind
+[30:59] thinking about it myself i would take these these are these are the most important ones out of these
+[31:04] that i would recommend the other ones are are definitely helpful but not as like those are just
+[31:09] extras to help you do certain things but this is uh these are ones that i would really recommend
+[31:15] okay and again again i have my school community here to if you join i can help you out um this
+[31:22] is free that you can get everything in my classroom right here for free there's a lot that you can get
+[31:27] here, right? Ask me questions, DM me, and I'm here to help you. But yes, if you want to go further,
+[31:34] then we can, we'll, we'll talk. And I have helped people in businesses help automate certain parts
+[31:41] that they hated doing the most, the, I will tell you one of the best unlocks that you can do,
+[31:48] right? This is honestly, you know, being in eight years as a software engineer,
+[31:51] creating agents for the last two years, and then kind of transferring over to Claude Code,
+[31:56] which skills and agents is the most boring things. The most monotonous things are typically the ones
+[32:02] that either save you lots of time to which get afford you more time to figure out how to make
+[32:07] more money, maybe some more sales, or they actually help you make money, right? Because
+[32:13] they take care of things that you don't like, or you don't want. And it's, and it, it does not have
+[32:18] to be complicated. A lot of times the simple things are the things that are really helpful.
+[32:24] And if you see, for instance, an N8Dent automation that has hundreds of nodes and it looks insane, that doesn't mean it actually helps you.
+[32:32] Actually, I'm not even going to get into the topic, but it can have a few nodes.
+[32:36] It can be a simple skill.
+[32:38] It can be a couple simple agents to help you do something over and over again.
+[32:42] Hey, great.
+[32:44] That's what we want.
+[32:45] We want those to help you.
+[32:46] Of course, there's always room for complexity.
+[32:49] These skills are here to help.
+[32:52] I promise you.
+[32:52] These will help you with content and not even just take these ideas for content.
+[32:56] Take them for anything that you're trying to do.
+[32:59] Okay.
+[32:59] And improve upon them yourself.
+[33:01] Okay.
+[33:02] So thank you for watching.
+[33:04] I really appreciate it.
+[33:05] So join my school community in the description below.
+[33:08] But I also have lots of other videos just like this to help you out.
+[33:12] Okay.

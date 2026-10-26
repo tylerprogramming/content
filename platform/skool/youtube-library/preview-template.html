@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><title>YouTube Library preview</title>
+<style>
+.wrap{display:flex;gap:16px;max-width:1100px;align-items:flex-start}
+.side{width:250px;flex:none;border:1px solid var(--border,#333);border-radius:10px;padding:12px;background:var(--card,transparent)}
+.side h3{margin:0 0 8px;font-size:15px}
+.side .row{padding:7px 8px;border-radius:6px;font-size:13px;color:var(--muted-foreground,#999);cursor:pointer}
+.side .row.on{background:var(--accent,#333);color:var(--foreground,#fff);font-weight:600}
+.side .row.todo{opacity:.55}
+.main{flex:1;border:1px solid var(--border,#333);border-radius:10px;padding:16px 20px;background:var(--card,transparent);min-width:0}
+.video{aspect-ratio:16/9;width:100%;border-radius:8px;border:0;margin:8px 0 14px}
+pre.lesson{font-family:var(--font-sans,inherit)}
+pre.lesson{white-space:pre-wrap;font:14px/1.55 inherit;font-family:inherit;margin:0}
+.tag{font-size:11px;color:var(--muted-foreground,#999);text-transform:uppercase;letter-spacing:.05em}
+</style></head><body>
+<div class="wrap">
+ <div class="side"><h3>YouTube Library</h3><div id="nav"></div></div>
+ <div class="main"><div class="tag">Lesson preview (what members would see)</div><h2 id="t" style="margin:6px 0 0"></h2>
+  <a id="vl" target="_blank"><img id="v" class="video" style="object-fit:cover;display:block"></a><pre class="lesson" id="body"></pre></div>
+</div>
+<script>
+const L = __LESSONS__;
+const todo = ["Give Claude access to every app you use","Claude Code + MCP for non-technical beginners","Run a YouTube channel with Claude Code","Automate your content workflow (17 skills)","Opus 5 vs the others: run the benchmark yourself"];
+function show(i){const x=L[i];document.getElementById('t').textContent=x.title;document.getElementById('v').src='https://img.youtube.com/vi/'+x.id+'/hqdefault.jpg';document.getElementById('vl').href='https://youtube.com/watch?v='+x.id;document.getElementById('body').textContent=x.body;[...document.querySelectorAll('.row')].forEach((r,j)=>r.classList.toggle('on',j===i));}
+const nav=document.getElementById('nav');
+L.forEach((x,i)=>{const d=document.createElement('div');d.className='row';d.textContent=(i+1)+'. '+x.title;d.onclick=()=>show(i);nav.appendChild(d);});
+todo.forEach((t,i)=>{const d=document.createElement('div');d.className='row todo';d.textContent=(L.length+i+1)+'. '+t+' (to write)';nav.appendChild(d);});
+show(0);
+</script></body></html>

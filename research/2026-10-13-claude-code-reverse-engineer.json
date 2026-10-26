@@ -1,0 +1,38 @@
+{
+  "query": "claude code reverse engineer",
+  "total_found": 2,
+  "long_form_found": 2,
+  "shorts_found": 0,
+  "days": 30,
+  "top_n": 15,
+  "short_max": 60,
+  "long_form": [
+    {
+      "title": "This GitHub Repo Lets AI Reverse Engineer Anything (REA Explained)",
+      "channel": "Kjubii",
+      "views": 45,
+      "likes": 0,
+      "comments": 0,
+      "upload_date": "20261010",
+      "duration": "5:54",
+      "duration_seconds": 354,
+      "url": "https://youtube.com/watch?v=eBc2Juk1LAI",
+      "description": "How do AI agents figure out what a program does without its source code? REA (Reverse Engineer Anything) is the open-source MCP tool that lets agents like Claude Code reverse engineer games and apps \u2014 here's how it works, explained visually.\n\n\u26a0\ufe0f DISCLAIMER: This video is for educational purposes onl",
+      "id": "eBc2Juk1LAI"
+    },
+    {
+      "title": "universal-modder: Point Claude at Any PC Game",
+      "channel": "Alex To Go Eng",
+      "views": 1,
+      "likes": 0,
+      "comments": 0,
+      "upload_date": "20261013",
+      "duration": "7:32",
+      "duration_seconds": 452,
+      "url": "https://youtube.com/watch?v=nsXMfsTMmMQ",
+      "description": "universal-modder: Point Claude at Any PC Game\n\nA structured MCP toolkit that lets Claude Code reverse-engineer, mod, and generate assets for PC games using the fal inference engine.\n\nArticle: https://dudarik.com/en/blog/universal-modder-mcp/\n\nDudarik: AI tools, agents, and infrastructure.",
+      "id": "nsXMfsTMmMQ"
+    }
+  ],
+  "shorts": []
+}

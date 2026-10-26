@@ -1,0 +1,104 @@
+Run your content business with 17 Claude Code skills: research, script, repurpose, email and community
+
+Video: https://youtube.com/watch?v=-dEeg0WnJxs (33 min)
+
+IN THIS LESSON
+You'll get the 17 Claude Code skills I use every week and see how they fit into three systems: a YouTube engine that researches and writes my videos, distribution skills that turn one video into 30+ pieces, and community and money skills for email and Skool.
+You don't need all 17. Start with a few, run them on your own topic, and add more as you go.
+
+GOOD TO KNOW
+- Time: about 10 minutes to download and drop in the skills. Each skill then runs in a few minutes. The Google setup for analytics and replies takes 5 to 10 minutes.
+- Cost: the skills are free. You need Claude Code. A few skills need a key of your own (OpenAI for transcripts, Google for analytics and replies, Resend for email).
+- Level: Beginner for the YouTube engine and distribution. /skool, /instagram-writer and /tiktok-replier are more advanced.
+- Honest caveat: they might not all work for you out of the box. Some need things installed first. The download's README says which ones up front.
+
+WHAT YOU NEED
+- Claude Code (the skills install into Claude Code, not claude.ai web or mobile): https://claude.com/claude-code
+- The 17 skills, free: https://free.tylerai.dev/content-automation
+- For /transcribe: an OpenAI API key (paid, I use it because it's accurate and gives timestamps) at https://platform.openai.com (returns 403 to bots, real sign-in page), or Whisper running locally for free: https://github.com/openai/whisper
+- For /yt-analytics and /yt-replier: a Google Cloud project with the YouTube Data API v3 turned on (free): https://console.cloud.google.com
+- For /email: a Resend account (I send through the Resend MCP server): https://resend.com
+- Optional, for scheduling posts: Blotato, https://www.blotato.com
+- Optional, for /tiktok-replier: Claude in Chrome, https://claude.com/chrome
+
+STEPS
+
+1. Get the skills into Claude Code (0:00)
+Download the kit from https://free.tylerai.dev/content-automation and put the skill folders in your Claude Code skills folder:
+~/.claude/skills
+Each skill is a folder with a text file in it. Here are the 17:
+- YouTube engine: /yt-search /transcribe /yt-package /yt-seo /yt-thumbnail /yt-analytics /yt-replier
+- Distribution: /yt-shorts /repurpose /social-copy /instagram-writer /flash-video /tiktok-replier
+- Community and money: /skool (called /skool-post in the kit) /email /harut /journal
+
+2. Find what's already working with /yt-search (2:58)
+Give it your keywords, the same way you'd search YouTube:
+/yt-search claude code
+It searches the last 30 days, pulls 50 videos per keyword, and keeps the top 15. It saves the views, likes, comments, length, descriptions and thumbnails locally, explains why the thumbnails and titles worked, finds the gap nobody covers, and gives you about five video ideas. It uses yt-dlp under the hood, which runs locally and is free.
+
+3. Study the winners with /transcribe (6:07)
+Pick the videos you want from the search results. I skipped the six hour one:
+Transcribe number one and number five.
+It saves the transcripts and breaks down each video's structure: how long the cold open was, each section, where the sponsor sat.
+
+4. Build the video plan with /yt-package (7:57)
+Run:
+/yt-package
+It uses the research plus what Claude Code already knows about you. When it asks questions, I just say:
+recommended
+You get a folder of text files: analysis, description, filming guide, hooks, script and titles (five options). I don't read the script word for word. It's my guideline.
+
+5. After you record: /yt-seo, then /yt-analytics and /yt-replier (10:26)
+Once the video is recorded and edited, run /yt-seo on it. It does web search on top of the YouTube research and checks your title, description, tags and thumbnail against competitors. Mine suggested an A/B title test, so I answered:
+yes, do the recommended
+After the video is live, /yt-analytics checks CTR and how it's performing, and /yt-replier finds comments you haven't replied to yet (13:22). Both need a Google Cloud project with the YouTube Data API v3 enabled and a token downloaded to your computer. Ask Claude to walk you through it.
+
+6. Turn one video into 30+ pieces: /yt-shorts and /repurpose (14:23)
+/yt-shorts looks forward. Use it on an idea or package you haven't recorded yet:
+/yt-shorts on the most recent package
+It writes scripts, on-screen text, captions and a filming plan for reels, plus carousel ideas. Five reels posted to six platforms is 30 pieces of content.
+/repurpose looks back. Use it on a video you already made. It reads the transcript and writes new reels, text and image posts from it.
+
+7. Write the posts and carousels: /social-copy and /instagram-writer (17:37)
+/social-copy the recent video package we have been working on
+It writes LinkedIn, X, Instagram, YouTube community, Skool and email drafts into a social folder next to the package, in your voice (I tell it no em dashes). From there Claude can send the emails if Gmail is connected, or I schedule the posts with Blotato.
+For carousels (23:06), clear the session first, then run:
+/clear
+/instagram-writer the 17 claude skills video
+It asks which angle you like, then writes the slides. Rendering them needs some extra code installed.
+Optional (22:15): /flash-video turns a static image into a 4 second reel with music. /tiktok-replier uses Claude in Chrome, because TikTok has no simple way to reply through an API.
+
+8. Community and money: /skool, /email, /harut, /journal (23:50)
+- /skool (the skool-post skill in the download) turns one video into several community posts. Skip it if you don't have a Skool community.
+- /email writes email copy (one video can become 3 or 4 emails in a week, or a day 0 to 7 welcome sequence). I send mine with Resend.
+- /harut (also on GitHub: https://github.com/tylerprogramming/claude-skills/tree/main/harut) is a searchable assistant built from Harut's 21 hour Skool course. Ask it business questions:
+/harut on the YouTube package, how should I send emails and what can I do to bring in people to community who then become customers
+You can build the same thing for any expert in your space.
+- /journal is where I log what went well, what didn't, and when I'm free to record.
+
+9. Pick your starting set (30:34)
+Don't start with all 17. These are the ten I'd take:
+- YouTube engine: /yt-search, /transcribe, /yt-package, /yt-seo
+- Distribution: /yt-shorts, /repurpose, /social-copy
+- Community and money: /email, /harut, /journal
+The rest are extras. Then improve them as you use them.
+
+FILES AND LINKS
+- All 17 skills, free: https://free.tylerai.dev/content-automation
+- Claude Code: https://claude.com/claude-code
+- yt-dlp (what /yt-search uses): https://github.com/yt-dlp/yt-dlp
+- Whisper (free local transcription): https://github.com/openai/whisper
+- Google Cloud console: https://console.cloud.google.com
+- Resend: https://resend.com
+- Blotato: https://www.blotato.com
+- The free community, ask setup questions here: https://www.skool.com/the-ai-agency
+
+IF IT BREAKS
+- A skill doesn't work out of the box: some need things installed or a key first. Check the README, or ask Claude Code what's missing.
+- /yt-analytics or /yt-replier can't get your data: you need the Google Cloud project, the YouTube Data API v3 enabled, and the token downloaded locally.
+- Transcripts cost money: switch /transcribe to Whisper running locally, which is free.
+- The session gets cluttered after a long run: type /clear before the next skill.
+- /skool does nothing useful for you: it's optional. Skip it if you don't run a Skool community.
+
+NEXT
+Set up Hermes Agent, your always-on agent

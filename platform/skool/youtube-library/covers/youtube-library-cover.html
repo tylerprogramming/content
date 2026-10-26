@@ -1,0 +1,53 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#efe7dc}
+  .card{position:relative;width:1460px;height:752px;overflow:hidden;
+    background-color:#efe6da;
+    background-image:
+      linear-gradient(rgba(120,100,80,.13) 1.5px, transparent 1.5px),
+      linear-gradient(90deg, rgba(120,100,80,.13) 1.5px, transparent 1.5px);
+    background-size:52px 52px;
+    font-family:'Poppins',sans-serif;}
+  .vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 45% 50%, rgba(255,255,255,.35) 0%, rgba(255,255,255,0) 55%, rgba(120,95,70,.18) 100%)}
+  svg.topo{position:absolute;right:-60px;top:-70px;width:520px;opacity:.35}
+  svg.topo2{position:absolute;left:-90px;bottom:-110px;width:460px;opacity:.28;transform:rotate(180deg)}
+  .type{position:absolute;left:96px;top:50%;transform:translateY(-50%);}
+  .l1{font-weight:900;font-size:158px;line-height:.92;letter-spacing:-2px;color:#fff;
+      text-shadow:0 6px 0 rgba(0,0,0,.10), 0 10px 24px rgba(60,40,20,.22);
+      -webkit-text-stroke:0;}
+  .box{display:inline-block;background:#E62117;color:#fff;font-weight:900;font-size:158px;line-height:1;
+      padding:4px 30px 12px;margin:14px 0 10px -8px;letter-spacing:-2px;box-shadow:0 10px 24px rgba(120,20,10,.25)}
+  .l3{font-weight:800;font-size:46px;color:#1a1a1a;letter-spacing:.5px;margin-top:6px}
+  .play{position:absolute;right:96px;top:50%;transform:translateY(-52%);width:300px;height:212px;border-radius:60px;
+        background:linear-gradient(180deg,#ff3b30 0%,#E62117 55%,#c4170f 100%);
+        box-shadow:0 30px 60px rgba(120,20,10,.35), inset 0 -10px 0 rgba(0,0,0,.12), inset 0 8px 0 rgba(255,255,255,.18)}
+  .play:after{content:"";position:absolute;left:118px;top:60px;border-style:solid;border-width:46px 0 46px 80px;border-color:transparent transparent transparent #fff;
+        filter:drop-shadow(0 4px 6px rgba(0,0,0,.15))}
+  .stack{position:absolute;right:118px;top:50%;transform:translateY(-52%) translate(-22px,-26px) rotate(-6deg);width:300px;height:212px;border-radius:60px;
+        background:#1a1a1a;opacity:.92}
+</style></head>
+<body>
+<div class="card">
+  <div class="vignette"></div>
+  <svg class="topo" viewBox="0 0 400 400" fill="none" stroke="#8a7560" stroke-width="2">
+    <path d="M200 40c90 0 160 60 160 150s-70 170-160 170S40 290 40 200 110 40 200 40z"/>
+    <path d="M200 75c70 0 125 50 125 120s-55 135-125 135S75 270 75 200s55-125 125-125z"/>
+    <path d="M205 110c50 0 90 38 90 88s-40 100-92 100-88-45-88-95 40-93 90-93z"/>
+    <path d="M208 145c32 0 58 25 58 56s-26 64-60 64-56-30-56-62 26-58 58-58z"/>
+  </svg>
+  <svg class="topo2" viewBox="0 0 400 400" fill="none" stroke="#8a7560" stroke-width="2">
+    <path d="M200 40c90 0 160 60 160 150s-70 170-160 170S40 290 40 200 110 40 200 40z"/>
+    <path d="M200 75c70 0 125 50 125 120s-55 135-125 135S75 270 75 200s55-125 125-125z"/>
+    <path d="M205 110c50 0 90 38 90 88s-40 100-92 100-88-45-88-95 40-93 90-93z"/>
+  </svg>
+  <div class="type">
+    <div class="l1">YOUTUBE</div>
+    <div class="box">LIBRARY</div>
+    <div class="l3">Every video. Every command.</div>
+  </div>
+  <div class="stack"></div>
+  <div class="play"></div>
+</div>
+</body></html>

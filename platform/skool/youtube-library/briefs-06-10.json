@@ -1,0 +1,42 @@
+{
+ "GJQCUcx4roA": {
+  "title": "YouTube Business That Runs Itself (9 Skills)",
+  "guide": "youtube-business-claude-code-guide.pdf",
+  "brief": "Run your YouTube channel with 9 Claude Code skills, from finding what's working to uploading the finished video.\n\nYou'll research, transcribe a winning video, build the full package (titles, hooks, script), make thumbnails, fix the SEO, plan Shorts and upload. You still film and edit, the rest runs in Claude Code.\n\nThe install commands and the order I run them in are in the guide under Resources.",
+  "links": [["Free YouTube skills", "https://free.tylerai.dev/youtube/"],
+            ["Skills repo (GitHub)", "https://github.com/tylerprogramming/claude-skills"],
+            ["YouTube Workflow doc", "https://docs.google.com/document/d/1JgGYBcrfcDhXowmYt6CRRkZATggf695ZL9umDb1ffFE/edit"],
+            ["Kie.ai (thumbnails)", "https://kie.ai"]]
+ },
+ "-dEeg0WnJxs": {
+  "title": "My 17 Claude Code Skills for Content",
+  "guide": "content-workflow-17-skills-guide.pdf",
+  "brief": "The 17 Claude Code skills I use every week, in three systems: a YouTube engine that researches and writes my videos, distribution that turns one video into 30+ pieces, and community and money skills for email and Skool.\n\nYou don't need all 17. The guide under Resources has the 10 I'd start with and what each one needs.",
+  "links": [["All 17 skills, free", "https://free.tylerai.dev/content-automation"],
+            ["Skills repo (GitHub)", "https://github.com/tylerprogramming/claude-skills"],
+            ["Resend (for /email)", "https://resend.com"]]
+ },
+ "J5lkE_jBEko": {
+  "title": "Opus 5 vs Opus 4.8 vs Fable 5: Run My Benchmark",
+  "guide": "opus-5-benchmark-guide.pdf",
+  "brief": "Run the same 6 tests I used on Opus 4.8, Opus 5 and Fable 5, on your own Claude plan with no API key. You get each model's output side by side with cost and time.\n\nThe exact prompts, the install commands and my full scorecard are in the guide under Resources.",
+  "links": [["model-bench skill (free)", "https://github.com/tylerprogramming/claude-skills/tree/main/model-bench"],
+            ["Anthropic's Opus 5 announcement", "https://www.anthropic.com/news/claude-opus-5"]]
+ },
+ "cdvi2ooarDc": {
+  "title": "Edit Videos by Talking to Claude Code",
+  "guide": "ai-video-editing-guide.pdf",
+  "brief": "Edit a video just by asking Claude Code: word-by-word captions, silence cuts, transitions and B-roll. It runs on HyperFrames, HeyGen's free open-source video tool.\n\nThe install command and the exact prompts I used are in the guide under Resources.",
+  "links": [["HyperFrames (GitHub)", "https://github.com/heygen-com/hyperframes"],
+            ["Caption style catalog", "https://hyperframes.heygen.com/catalog"],
+            ["HyperFrames quickstart", "https://hyperframes.heygen.com/quickstart"]]
+ },
+ "WJabXRVe8JQ": {
+  "title": "A Product Ad from One Photo (ElevenLabs Flows)",
+  "guide": "elevenlabs-video-ads-guide.pdf",
+  "brief": "Upload one product photo, paste one prompt, and the ElevenLabs Flows Agent builds the whole ad: images, video clips, voiceover, music and the final edit.\n\nThe full prompt and the permission settings that keep your credits in check are in the guide under Resources. This was a paid partnership, and the ElevenLabs link is my partner link.",
+  "links": [["ElevenLabs (my partner link)", "https://try.elevenlabs.io/8n9sgoi23fkk"],
+            ["ElevenCreative", "https://elevenlabs.io/creative"],
+            ["Pricing and credits", "https://elevenlabs.io/pricing"]]
+ }
+}

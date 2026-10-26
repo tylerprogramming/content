@@ -1,0 +1,280 @@
+[00:00] Today, I'm going to be comparing OpenAI's Dots and Meta's Muse on things like their features,
+[00:04] their functionality, and their feel. Also talk about pricing and where I think these apps are
+[00:08] headed so you can use your time wisely. And of course, I don't want to waste any more of your
+[00:12] time. So let's hop right in. Okay, so we have Meta's Muse, which quickly became the number one
+[00:17] app in the Apple App Store. And then of course, we have ChatGBT's Dots. Now, my immediate reaction
+[00:23] when I got in here and started playing around with Dots is that it felt like a bit of a rushed
+[00:28] project to try to catch up because they saw how Muse was taking over and they realized we have
+[00:33] a better model. And, you know, we already have a lot of people inside of our chat to be ecosystem.
+[00:37] Let's give them essentially what Muse is, but in our ecosystem. And it just feels super rushed.
+[00:42] You can see even during dev day yesterday when they announced this, you know, new product,
+[00:47] it literally failed. It, you know, she was trying to call it here and it just wasn't responding and
+[00:51] it was taking forever. And she ended up saying, you know, oh, I think Dottie or whatever the name
+[00:56] is it's having a slow day and they ended up like just kind of pushing past it but they like muted
+[01:00] it on the live stream so everyone that was there live in person saw the live demo they both have
+[01:05] the ability to name your little muse or your dots and you can customize it a little bit as you can
+[01:10] see same exact thing here inside of the chat gbt or the codex desktop app where i'm able to access
+[01:15] my dot right here now the first thing that surprised me was i was expecting dots to be more
+[01:19] of a grok bot feeling app where we would have a bunch of different bots that we could create and
+[01:24] We can have them talk to each other, but this is way more like Muse where it's kind of one
+[01:27] thread or one agent that you're talking to that kind of helps with everything on a personal level.
+[01:32] So we will look at the UI and we'll compare the differences and we'll talk about which one I like
+[01:36] more. But first, let's just talk about some of the foundational stuff. So background work. These are
+[01:42] both persistent cloud agents that can have schedules and you can have conversations with,
+[01:46] and they both have their own cloud computer. The model powering dots right now is GBD6 Astra,
+[01:51] and the model powering Muse is Muse Spark 1.3.
+[01:54] I'll talk a little bit more about the differences
+[01:55] between those models later in the video.
+[01:57] As far as the existing work setup,
+[01:59] you already have a direct connection in Dots
+[02:01] to ChatGPT work and codecs if you have the desktop app
+[02:04] and if you just allow access.
+[02:06] As far as Muse, it has its own computer and tools
+[02:08] and they both have a really good connector ecosystem.
+[02:11] So kind of like the super simple single sign-on,
+[02:14] just connect with a button
+[02:15] rather than having to do a bunch of API keys
+[02:17] and things like that.
+[02:18] And because they both have their own computers,
+[02:19] they still can run scripts
+[02:20] and you still could connect to APIs
+[02:22] that might not have a native connector quite yet.
+[02:24] They can both create documents, presentations,
+[02:27] interactive dashboards.
+[02:28] They can create all of that and keep them in the ecosystem.
+[02:30] As you can see here, if I go to my library inside of Muse,
+[02:34] I can see these different artifacts,
+[02:35] whether that be a document
+[02:36] or whether it be more of a live dashboard web artifact.
+[02:40] And then inside of my dots,
+[02:41] you can see that there's a bunch of ways
+[02:42] that we can see the outputs here,
+[02:43] whether those be markdown files
+[02:44] or dashboards and other things, of course,
+[02:47] especially because with dots,
+[02:48] your memory will start with your chat gbt memory and then it will start to develop its own context
+[02:52] and learn over time so right away my dot was connected to all my chat gbt memory and it was
+[02:56] saying oh you know you run this business and you use n8n every day and you do this and i was like
+[03:00] okay that's really old memory that's chat gbt memory let me plug you into my actual local files
+[03:04] and my codex memory so that you have more real-time data of what i'm actually doing and
+[03:08] what are my priorities but what i really like about muse is in here for the average person let's say
+[03:14] you're coming in here and you click on your muse mine is named charlie in this case there's a little
+[03:18] identity tab over here where we can see the soul file and the memory file. So the memory file,
+[03:23] we can actually like edit things. This is like facts and preferences and commitments like that.
+[03:27] And then if we go back over here and we go to the soul, this is like Muse's persona. So, you know,
+[03:32] if you have built a Hermes agent in the past or OpenClaw and you've kind of worked with these
+[03:35] memory and soul files, you will be familiar. But even if you're not, it just makes it super easy
+[03:40] and visual because you can just sort of see it from this interface. Whereas with dots,
+[03:44] it's a little bit more abstract as far as how it's understanding memory. And you don't have as
+[03:48] much to do with sort of like the profile. I don't know why that looks super pixelated right now,
+[03:53] but overall I'd say like the Muse interface is just a better experience, especially if you're
+[03:58] thinking of someone who's non-technical. By the way, guys, I've got this completely free SOP for
+[04:02] you about getting your first AI automation client. It's going to go over the exact steps that has
+[04:06] been proven for hundreds of our AIS Plus members to get their first paid gigs. It goes over the
+[04:11] one sentence service pitch that can get you started today, why your first client should cost
+[04:14] you money. The five minute video that answers, can this person actually deliver before you've
+[04:18] actually received any money? What to do when you have zero case studies. There's so many good things
+[04:22] in here that are going to help you out. Even if you already do have clients, I would recommend
+[04:26] grabbing this because like I said, it's yours completely free. So if you want to grab this,
+[04:30] there's a link for it down in the description. Let's get back to the video. Now here's another
+[04:33] difference with communication. You can obviously do this stuff from your phone. You can use the
+[04:36] app or the chat GPT app to talk to your dot or to your muse with the dots. You can instantly
+[04:42] integrate them into Slack, which is pretty cool. So this was literally like a three-click setup
+[04:45] where I added this app into my Slack. So now I could chat with my actual dot right here and it
+[04:50] would go ahead and respond. If I open up the desktop app real quick, you can see in here
+[04:54] that you can see that it's thinking. So you see the top, it says thinking, there's a little light
+[04:58] bulb. And then in my Slack, that's how it's going to respond. But then also inside of a channel,
+[05:03] I could have it talk to me in here by inviting it to a channel. So your team could actually
+[05:07] message your dot, which I think is pretty cool. And once again, you can respond in here and it
+[05:12] it will show in the app that it has received this message,
+[05:14] that it's thinking,
+[05:15] and that it's trying to reply inside of that thread.
+[05:18] And as you can see now, it is thinking,
+[05:19] and then it's going to shoot a message back
+[05:21] into the thread right there.
+[05:22] It said, hey, I'm here.
+[05:23] So that is pretty cool.
+[05:24] But with Muse, what you can do
+[05:25] is you have a bunch of different chats you can manage.
+[05:27] So you've got your main chat,
+[05:28] and then you can set up different side chats
+[05:29] for different topics.
+[05:30] And you also have a native WhatsApp connector,
+[05:33] which is pretty cool.
+[05:34] So on the app in Muse, this is view only.
+[05:37] So what I would do is inside of my WhatsApp,
+[05:38] whether I'm on my desktop or I'm on my phone,
+[05:41] I can just say, hey, how are you today?
+[05:44] And this obviously is Charlie,
+[05:47] my Muse responding in real time.
+[05:48] And then in the Muse app,
+[05:49] I would be able to see this interaction,
+[05:51] but not respond in here.
+[05:52] So it's a separate thread as far as my main chat,
+[05:55] my WhatsApp channel, and then these side chats.
+[05:57] And then what else is very interesting is the ecosystem.
+[05:59] So because Dots is already integrated
+[06:02] into Codex and ChatGPT,
+[06:03] if you are already living heavily in Codex and ChatGPT,
+[06:06] then Dots probably makes more sense at least right away
+[06:09] when you want to figure out what this feels like.
+[06:11] But with Muse, it has some of these,
+[06:13] you know, like the meta ecosystem.
+[06:15] So Instagram, Facebook, Facebook Marketplace,
+[06:17] and it just feels a little bit more,
+[06:18] you know, detached from like this coding stuff.
+[06:21] Anyways, that's just a very quick rundown.
+[06:22] We're going to dive into some more stuff here.
+[06:24] But overall, after playing with these each for about a day,
+[06:27] this is how I feel if I could just sum it up.
+[06:30] Dots fits your current work environment
+[06:31] if you're using CodexHTBT.
+[06:33] It can use local skills.
+[06:34] It doesn't feel like you're kind of starting over
+[06:36] explaining a lot of things like priorities
+[06:37] and things like that.
+[06:38] and it offers a direct route into Codex and Slack.
+[06:40] Whereas Muse is much easier to evaluate for free
+[06:44] because you can get started on this for free.
+[06:46] It's inexpensive paid entry, editable memory,
+[06:49] WhatsApp access, strong meta integration.
+[06:51] Overall, like if I wanted to have my parents
+[06:54] or people that I know that aren't technical at all,
+[06:56] I would probably recommend Muse.
+[06:58] It just has a better experience.
+[07:00] And when you talk about this actual pricing
+[07:01] on the Muse free,
+[07:02] you can get up to 100 million tokens a week
+[07:04] and you can get started.
+[07:05] Like I haven't yet paid for Muse
+[07:07] And then you can get on subscriptions and you can increase your tokens.
+[07:10] Whereas in ChatGPT with Dots, you have to be on a paid subscription in order to actually get access to building your first dot.
+[07:17] Now, there's something out about right now they're not actually attributing your dot usage to your weekly subscription.
+[07:22] But I think that's just to sort of build some, I guess, adoption inside.
+[07:25] And then they're definitely going to have that ding against your subscription.
+[07:28] Now, also right now, we talked about how Muse is powered by Spark and Dots is powered by Astra.
+[07:34] So let's talk a little bit about these models.
+[07:36] Here's some rough benchmarks. Astra is a little bit more intelligent, but when we think about like
+[07:41] professional work and knowledge work, Spark doesn't do bad at all. So creating some of these documents
+[07:46] and helping you with some of these routine tasks and figuring out how to unblock yourself, things
+[07:50] like that. Now, when it comes to building apps and software and automations, obviously, Astra is going
+[07:55] to be a bunch better. With coding, it's going to be a lot better, but Muse is also going to be a
+[07:58] little bit faster. So I guess what I'm trying to say here is if I was building a bunch of little
+[08:02] automations and scripts that I wanted to run and things like that and dashboards with one of these
+[08:06] tools, I'd probably choose dots. But like I said, for general knowledge work, and if I'm just using
+[08:10] this kind of as an assistant to help me keep on track, manage emails, remind me of things,
+[08:15] manage the team, I would probably be pretty comfortable using Spark. So let me just show
+[08:19] you, I've said quite a few times that I think the interface of Muse and the experience of Muse is
+[08:24] just better. Let me show you why. Inside of Muse, you obviously come in here and you create one
+[08:28] thread. So with GrokBot, it can be a little intimidating to people because there's the
+[08:31] ability to keep creating more bots. But here you just create one bot. Now, what you see right here
+[08:36] is you see today, you see things that have been worked on by date. You also click on this next
+[08:40] tab, which is approvals, if there's anything for you to approve. So super nice, easy interface to
+[08:44] approve things. If you've got a bunch of automations running, you have a schedule tab.
+[08:48] So you can see here are your reminders. You can see here are things that are running. You can even
+[08:51] check in on the heartbeat that runs every 30 minutes. And the heartbeat will proactively look
+[08:56] at your Google Docs and your email, and it will give you alerts about things. And it will even
+[09:00] give you reminders like, hey, use me, set this up. You know, like it just feels like it's more
+[09:05] user friendly there. And then of course you have the identity of looking at things like your soul
+[09:09] and memory. Now also you'll notice on the left-hand side, we can search. So we can search through a
+[09:13] bunch of different chats to figure out, oh, I was talking about this with Muse, where'd that go?
+[09:17] You can also look at your different chats like I talked about. You can manage them here, which I
+[09:20] really liked because it's not as overwhelming as having to build a bunch of different bots.
+[09:24] It's more like, oh, you can have a couple side chats if you have one very specific project that
+[09:27] you want my help with. Otherwise use the main chat and here's the channel that you've connected me to.
+[09:31] And this is plural. So what I'm assuming is they're going to start to add more, probably Slack,
+[09:35] probably Teams, Discord, things like that. A lot of times I hear from people, okay,
+[09:39] if I was to use AI, what would I even use it for? Well, Muse does a good job of like giving you
+[09:44] ideas. You can set goals, which I think is really cool. Optimize my sleep, health goals, relationship
+[09:49] goals, career goals, interest goals. You can come in here and look for ideas. It'll tell you what
+[09:53] it should be thinking about and how you should be kicking off like these different automations and
+[09:57] things like that, building artifacts. It's really, really cool. And then if you go to the feed,
+[10:02] you can see that you can actually customize what you want to see. You can see things about sleep
+[10:06] because I've been talking about sleep. You can look at open AI. You can look at all these different
+[10:10] things. And if you like this, you can discuss it and you can just shoot off a task to your muse
+[10:15] to say, Hey, can we dig into this a little bit more? Build me an artifact for this. Let's chat
+[10:19] about this, whatever. You can also like things, which is going to change the algorithm to give
+[10:22] you more things that are, you know, actually relevant to you in your feed. I think this is
+[10:26] a really cool experience. And then if I go to my artifacts, you can see that I have, you know,
+[10:30] all of these here documents or web. We can also create images, we can create videos, and then
+[10:34] you can create podcasts, which I think is really cool. So maybe you want to turn your feed daily
+[10:39] tech news into a morning podcast, a three minute morning podcast, or you want a weekly podcast on
+[10:44] what your team accomplished this week or how your workouts were this week. This is very,
+[10:49] very cool. And something that I think like average people getting into this whole AI stuff,
+[10:53] they'll think that this stuff is much cooler. Then if we go into dots, the interface just is
+[10:58] not good. It feels rushed. It feels very simple. The one thing I think that it has nice, which
+[11:03] Muse doesn't have is that you can call it. So you can call your dot, which is actually the thing
+[11:09] that I showed earlier, which failed during the actual dev day launch, but you can call it,
+[11:13] you can talk to it. It will respond in real time. It's pretty good voice. It's pretty like the
+[11:18] latency isn't bad at all. They both have their own computers, as you can see, and this saves
+[11:23] logins. So very similar to GrokBot where you can save logins. You can look at the actual sort of
+[11:27] like terminal and you can also create and save files in here as well. This is how you set up
+[11:32] that Slack connection. And then you can also review recent activity. It's not very easy to
+[11:36] manage your scheduled tasks inside of dots. As you can see, here's one, right? Plan tomorrow.
+[11:40] And this is a repeat daily task at 8 p.m. Central. We have some advanced settings as well.
+[11:44] but I was asking dots. I was like, how do I actually manage this stuff? And it was like,
+[11:48] oh, click on my profile and go to scheduled. There's no scheduled in here. I guess the way
+[11:53] you do it is you go to your scheduled tasks as if you were looking at like your codex scheduled
+[11:57] tasks or your chat to BT work scheduled tasks. And you can see them in here, but why would you
+[12:02] not be able to manage your scheduled tasks inside of the dots interface? I thought that was just a
+[12:07] little bit bizarre. And it also was telling me that it was really good at managing my codex
+[12:10] threads, which was cool, but it really doesn't do it. Here you can see, I was like, oh, okay.
+[12:14] So you're kicking off new threads and it's just appearing in my recents. It's not actually putting
+[12:17] it inside my Herc 2. So I obviously like to manage my threads right in here in my Herc 2 project,
+[12:22] but it would kick them off down here. So right here, you can see here's a thread that it kicked
+[12:26] off. Actually, no, not that one. This one, you can see that it was sent by Herc. So my dot is
+[12:30] basically kicking off these tasks, but it's not putting them inside of my Herc 2 project. So I'm
+[12:34] like losing the organization. So that's leading me to this point, which is like dots doesn't even
+[12:39] know how it works. I love when I can talk to Claude Code or Codex or GrokBot about how it works so I
+[12:45] can get a better understanding of how I should utilize it. But Dots will just tell me things
+[12:49] that's like, okay, that's not actually how you work. So how do I, you know, I start to lose trust
+[12:53] over what kind of knowledge it actually has. But hey, at least this little guy is cute and
+[12:58] customizable because ultimately people seem to care way more about that. Okay, so ultimately,
+[13:03] where do we sit now? Well, I think that I'm going to continue to play around with both of them. But
+[13:09] if I had to choose one, for me, I would be choosing Codex. I would be choosing Dots simply because I
+[13:16] live inside of Codex and Cloud Code. I don't care as much about this super polished and super nice
+[13:22] interface because I already have ideas and I already have goals set and I already have a lot
+[13:26] of the stuff set up already. But if I didn't, I would 100% want this because Muse's interface is
+[13:31] so much better. Their advantage there is meaningful. But what I think is interesting
+[13:35] is that Dots or OpenAI is probably getting so much feedback around Dots. And they've obviously
+[13:41] been looking at Muse and taking inspiration from it, which is why I'm so confused. I was expecting
+[13:45] Dots to come out and have a very similar style interface, but it's just like lacking so much.
+[13:51] But what they're going to do probably is they're going to go to Muse and be like, okay, cool. I
+[13:54] like this, you know, ideas tab. Let's put that inside of Dots. I like the way that these artifacts
+[13:59] are set up. And, you know, OpenAI also did announce their spaces thing, which is going to be cool.
+[14:03] But they're just going to take features of what people really like about Muse or what people
+[14:07] really like about GrokBot and just put it in there as well. So what I think is going to happen is
+[14:12] like Muse, GrokBot, Dots, they're probably going to all sort of blend into one sort of tool,
+[14:19] meaning they're all going to look functionally very, very similar. The differences will be
+[14:23] some of the native connections and the capabilities of integrating with what you already have.
+[14:27] And obviously the underlying model that powers the thing and then pricing, you know, like
+[14:31] the cheaper ones might be perceived as better to certain audiences.
+[14:35] And that was kind of my next point, which is I think Astra is just obviously a much
+[14:37] better model than Muse Spark.
+[14:39] So that is one advantage that it has right now.
+[14:42] I also think that GrokBot right now is a different organizing model because it has a bunch of
+[14:47] GrokBots that you use together rather than just kind of working with one thread.
+[14:51] And I think that there's pros and cons to each.
+[14:52] I think that the average user who is not deep into the world of AI will probably like the
+[14:57] interface of Muse and Dots more because it just seems more simple. Oh, I have one personal
+[15:02] assistant that I can talk to and delegate work to rather than trying to figure out how many bots I
+[15:06] should make inside of GrockBot. And then finally, just a little bit of disappointment here that Dots
+[15:10] feels so rushed. I mean, I was really excited when I heard that OpenAI was working on their
+[15:15] own sort of always on agents. I thought it was going to be like GrockBot. I thought that it was
+[15:18] going to be really, really crisp and slick, but it just feels very buggy. I actually tweeted this
+[15:23] last night and I said dots should have been called bugs because I was having so many issues. I was
+[15:27] going to make a video yesterday, but I was just getting so frustrated because nothing was working
+[15:31] and I was like, I couldn't get it on my phone and my desktop app wasn't working. And I was just a
+[15:35] little frustrated. It felt very buggy and it still does, but it does feel better today. But it's just
+[15:39] interesting how limited dots feels at the moment, especially when you had a very clear example like
+[15:45] Muse to pull from. So anyways, like I talked about earlier, I think it's really about understanding
+[15:49] what are the things that matter most to you? Are you already kind of ingrained in the ChatGBT codex
+[15:53] ecosystem? Or are you more ingrained in like Instagram and Facebook? And that kind of stuff
+[15:58] might be more useful for you right now. Would you rather be able to talk to this thing on WhatsApp?
+[16:01] Or would you rather be able to have this in Slack with your team? I mean, I think the ability for my
+[16:05] team to in Slack be able to talk to my essentially my codex, I think that that's a pretty cool
+[16:09] like functionality or for me to be able to assign my codex things from Slack and have it be sent
+[16:15] right back into Slack. I think that is super cool. And I'd like to see that come to other apps as
+[16:20] well, but that is going to do it for today. So if you guys enjoyed, you learned something new,
+[16:23] please give it a like. It helps me out a ton. And as always, I appreciate you guys making it
+[16:26] to the end of the video. I'll see you on the next one. Thanks everyone.

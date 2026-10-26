@@ -1,0 +1,138 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Connect Claude and your own agents to your real apps with Arcade (full MCP course)</title><style>
+@page { size: Letter; margin: 0.7in 0.75in; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color: #1a1a1a; font-size: 11.5pt; line-height: 1.5; }
+.top { border-left: 10px solid #E62117; padding: 4px 0 4px 18px; margin-bottom: 18px; }
+.eb { font-size: 9pt; font-weight: 700; letter-spacing: .18em; color: #E62117; }
+h1 { font-size: 21pt; line-height: 1.15; margin: 4px 0 6px; }
+.vid { font-size: 10pt; color: #555; }
+.vid a { color: #E62117; }
+h2 { font-size: 13pt; margin: 20px 0 6px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
+p { margin: 6px 0; }
+ul { margin: 4px 0 8px; padding-left: 20px; }
+li { margin: 2px 0; }
+strong { color: #000; }
+pre { background: #f4f4f5; border: 1px solid #e4e4e7; border-radius: 6px; padding: 9px 12px; font-size: 9.5pt;
+      white-space: pre-wrap; word-break: break-all; page-break-inside: avoid; margin: 6px 0 10px; }
+code { font-family: Menlo, Consolas, monospace; }
+blockquote { margin: 6px 0 10px; padding: 8px 12px; border-left: 4px solid #FFE03D; background: #fffbea; font-style: italic; }
+a { color: #1d4ed8; word-break: break-all; }
+.foot { margin-top: 26px; font-size: 9pt; color: #777; border-top: 1px solid #eee; padding-top: 8px; }
+</style></head><body>
+<div class="top"><div class="eb">THE AI AGENCY · YOUTUBE LIBRARY</div><h1>Connect Claude and your own agents to your real apps with Arcade (full MCP course)</h1>
+<div class="vid">Video: <a href="https://youtube.com/watch?v=1KsadAvYE8k">https://youtube.com/watch?v=1KsadAvYE8k</a> (56 min)</div></div>
+<h2>In this lesson</h2>
+<p>You'll connect your apps (ClickUp, Gmail, Google Calendar, Slack) once through Arcade.dev and use them in Claude Code, the Claude desktop app, your own Python agents (LangChain and CrewAI), and agents that run on a schedule.
+You'll also build your own MCP server without writing code, deploy it so it runs 24/7, and set up a morning briefing that runs every day at 7am. No passwords or tokens stored in a file.</p>
+<h2>Good to know</h2>
+<ul>
+<li>Time: 2 to 3 hours if you do every module. Steps 1 to 3 alone take about 20 minutes.</li>
+<li>Cost: Arcade is free to sign up. The Python agents need an OpenAI or Anthropic API key (paid per use). A Hostinger VPS is about $7 to $8 a month, and only if you want it running 24/7.</li>
+<li>Level: Beginner for steps 1, 2 and 8 (no code). Steps 3 to 7 use the terminal, but Claude writes the code and the course repo has it all.</li>
+<li>Honest caveat: Claude Routines don't run exactly at 7am. Mine finish a few minutes after.</li>
+</ul>
+<h2>What you need</h2>
+<ul>
+<li>Arcade account (sign in with Google), free: <a href="https://www.arcade.dev/">https://www.arcade.dev/</a></li>
+<li>Claude Code: <a href="https://claude.com/claude-code">https://claude.com/claude-code</a></li>
+<li>Claude desktop app (for steps 2 and 8)</li>
+<li>The free course code: <a href="https://github.com/tylerprogramming/arcade-course">https://github.com/tylerprogramming/arcade-course</a> (runs on uv, a Python tool step 5 installs)</li>
+<li>An OpenAI key (<a href="https://platform.openai.com">https://platform.openai.com</a>) or an Anthropic key (<a href="https://console.anthropic.com">https://console.anthropic.com</a>), for steps 5 to 7</li>
+<li>Accounts for the apps you connect. I used ClickUp, Gmail, Google Calendar, Slack and GitHub.</li>
+<li>Optional: a Hostinger VPS: <a href="https://www.hostinger.com">https://www.hostinger.com</a></li>
+</ul>
+<p><strong>1. Make your first MCP gateway and add it to Claude Code (0:56)</strong></p>
+<p>A gateway is just a bundle of tools from the apps you pick. In the Arcade dashboard, go to MCP Gateways, click Create MCP Gateway, name it (mine was ClickUp Assistant), search for ClickUp and tick it, choose "members of this project", then click Create. Pick Claude Code and copy the command Arcade gives you. Paste it in your terminal. The course repo writes it like this:</p>
+<pre><code>claude mcp add arcade --transport http &quot;https://api.arcade.dev/mcp/&lt;your-slug&gt;&quot;
+</code></pre>
+<p>Open Claude Code, switch to auto mode (Shift + Tab), then type:</p>
+<pre><code>/mcp
+</code></pre>
+<p>Pick your gateway and press Enter to authenticate. A browser window opens on Arcade. Click allow. Then try it:</p>
+<blockquote>
+<p>For my ClickUp assistant, can you get me all my in progress tasks?</p>
+</blockquote>
+<p>Writing works too. I asked it to add a comment to a task and it showed up in ClickUp.</p>
+<p><strong>2. Use the same gateway in the Claude desktop app (7:27)</strong></p>
+<p>In Arcade, open your gateway, click Connect, choose Claude desktop and copy the URL. In the Claude app go to Settings &gt; Connectors &gt; Add custom connector. Paste the URL, click Add, then Connect, and allow it on Arcade. You can set each tool to always allow or needs approval. Same tools, and you only connected once.</p>
+<p><strong>3. Build your own MCP server without writing code (11:21)</strong></p>
+<p>For a tool that's yours, like your own product. I asked Claude Code to do the install and setup for me. The two commands are:</p>
+<pre><code>uv tool install arcade-mcp
+arcade new my_server
+</code></pre>
+<p>It comes with example tools (greet, whisper secret, star a repo). Run it on your computer from the my_server/src/my_server folder:</p>
+<pre><code>uv run server.py
+</code></pre>
+<p>Ask Claude for the command to add this local server to Claude Code, exit Claude Code, paste it, open Claude again and type /mcp to see my_server and its tools. Test it:</p>
+<blockquote>
+<p>Use the greet tool from my_server with the name Tyler</p>
+</blockquote>
+<p>When it said there was no Arcade API key, I logged in from inside Claude Code (the ! runs a terminal command):</p>
+<pre><code>!arcade login
+</code></pre>
+<p><strong>4. Deploy your server so it runs 24/7 (18:03)</strong></p>
+<p>Running it locally means your computer has to stay on. From the top folder of the project (the one with pyproject.toml), run:</p>
+<pre><code>arcade deploy -e src/my_server/server.py
+</code></pre>
+<p>When it says the deployment is successful, it shows up in the Arcade dashboard under Servers (not MCP Gateways). Make a new gateway with just the tool you want (I picked star a repo), add it to Claude Code like step 1, and authenticate in /mcp. Disable the old local my_server in /mcp so Claude uses the hosted one.</p>
+<p><strong>5. Get the code and your keys ready (24:32)</strong></p>
+<p>In the Arcade dashboard, make an API key (Dashboard &gt; API Keys). Then install uv and set up the course code:</p>
+<pre><code>curl -LsSf https://astral.sh/uv/install.sh | sh
+git clone https://github.com/tylerprogramming/arcade-course.git
+cd arcade-course
+uv sync
+cp .env.example .env
+</code></pre>
+<p>Open .env and fill in ARCADE_API_KEY, OPENAI_API_KEY (or set LLM_PROVIDER=anthropic and add ANTHROPIC_API_KEY), and ARCADE_USER_ID (your email).</p>
+<p><strong>6. Run the same tools in LangChain and CrewAI (29:45)</strong></p>
+<p>The LangChain email agent chats with you and can read and send Gmail:</p>
+<pre><code>uv run 03-langchain/email_agent.py
+</code></pre>
+<p>I asked: What are the last three unread emails? Then the email and Slack agent, which gets the whole Slack server:</p>
+<pre><code>uv run 03-langchain/email_slack_agent.py
+</code></pre>
+<p>Can you summarize all emails from the last 24 hours and send a message in Slack to the #ai channel?
+The CrewAI version (34:16) runs on its own and lists your email address and three latest subjects:</p>
+<pre><code>uv run 04-crewai/main.py
+</code></pre>
+<p><strong>7. Build the morning planner and schedule it (38:19)</strong></p>
+<p>It reads today's ClickUp tasks and your Google Calendar and blocks out your day. First see your real tool names, then do a dry run that writes nothing, then let it write:</p>
+<pre><code>uv run 05-scheduled-agent/morning_planner.py --discover
+uv run 05-scheduled-agent/morning_planner.py
+uv run 05-scheduled-agent/morning_planner.py --apply
+</code></pre>
+<p>To schedule it, I didn't write the cron job myself. I asked Claude Code:</p>
+<blockquote>
+<p>Can you schedule the morning_planner.py with --apply on it every morning at 6 a.m. on my computer?</p>
+</blockquote>
+<p>For 24/7 without your computer on (44:17), get a Hostinger KVM VPS, open its terminal, run Claude Code there and set up the same agent. The repo's deploy/README.md has the cron steps.</p>
+<p><strong>8. Schedule a morning briefing with Claude Routines, no code (46:17)</strong></p>
+<p>In the Claude app go to Code &gt; Routines and describe it:</p>
+<blockquote>
+<p>I want to know all my tasks from ClickUp, what's on my calendar and a summary of my emails from the last 24 hours at 7 a.m. every morning.</p>
+</blockquote>
+<p>Click Draft routine, then Create. In Arcade, make a gateway called Morning Assistant with Gmail, Google Calendar and ClickUp. Add it in Claude under Settings &gt; Connectors &gt; Add custom connector, connect and allow. Edit the routine (pencil icon), remove the other connectors, add Morning Assistant, save, then click Run now to test. Turn on push notifications to get the summary on your phone.</p>
+<h2>Files and links</h2>
+<ul>
+<li>Course code, all modules: <a href="https://github.com/tylerprogramming/arcade-course">https://github.com/tylerprogramming/arcade-course</a></li>
+<li>Copy-paste setup guide: <a href="https://github.com/tylerprogramming/arcade-course/blob/main/INSTALL.md">https://github.com/tylerprogramming/arcade-course/blob/main/INSTALL.md</a></li>
+<li>VPS and cron guide: <a href="https://github.com/tylerprogramming/arcade-course/blob/main/deploy/README.md">https://github.com/tylerprogramming/arcade-course/blob/main/deploy/README.md</a></li>
+<li>Arcade: <a href="https://www.arcade.dev/">https://www.arcade.dev/</a></li>
+<li>Arcade MCP gateways: <a href="https://api.arcade.dev/dashboard/mcp-gateways">https://api.arcade.dev/dashboard/mcp-gateways</a></li>
+<li>Add Arcade to Claude Code, Desktop and Web: <a href="https://docs.arcade.dev/en/get-started/mcp-clients">https://docs.arcade.dev/en/get-started/mcp-clients</a></li>
+<li>Claude custom connectors: <a href="https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp">https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp</a></li>
+</ul>
+<h2>If it breaks</h2>
+<ul>
+<li>Gateway says "needs authentication": type /mcp, pick it, press Enter and allow it on Arcade.</li>
+<li>Claude uses the wrong ClickUp connection: name the gateway in your prompt ("for my ClickUp assistant").</li>
+<li>Custom server says no Arcade API key configured: run !arcade login inside Claude Code.</li>
+<li>Can't find your deployed server: it's under Servers in the dashboard, not MCP Gateways.</li>
+<li>Starring a repo failed because the Arcade GitHub connection wasn't allowed to star: add GitHub to the same gateway, save, then re-authenticate in /mcp.</li>
+<li>Old guides tell you to install langchain-arcade or crewai-arcade: don't. Install LangChain or CrewAI on their own plus the Arcade SDK. The repo already does this.</li>
+<li>The CrewAI agent errored on an empty page token with the OpenAI model: I pasted the error into Claude and it fixed it.</li>
+<li>The 6am job didn't run: your Mac was asleep. It runs when it wakes up, or keep it from sleeping, or use a VPS.</li>
+<li>Routine set to always allow: lock down tools that delete or trash things before you leave it running.</li>
+</ul>
+<h2>Next</h2>
+<p>Build an AI Agent in 5 Steps (Claude Code)</p>
+<div class="foot">Tyler Reed · skool.com/the-ai-agency</div></body></html>

@@ -1,0 +1,110 @@
+## In this lesson
+You'll install HeyGen's free HyperFrames skills into Claude Code, then edit a real clip just by asking: add word-by-word captions, cut the dead air, add transitions and B-roll.
+Then you'll open HyperFrames Studio and turn a single screenshot into an animated intro or graph.
+
+## Good to know
+- Time: about an hour for setup and your first caption job. Each render takes a few minutes, longer the first time.
+- Cost: HyperFrames is free and open source. Claude Code needs a paid Claude plan. Optional: I paid Seedance roughly 9 cents for one 3 second B-roll clip.
+- Level: Beginner. No editing software and no code. You type what you want in plain English.
+- Honest caveat: this is not one-click magic. The slick results you see online took back-and-forth to get right. Expect to have a conversation with it.
+
+## What you need
+- Claude Code (paid Claude plan): https://claude.com/claude-code
+- HyperFrames, free, on HeyGen's GitHub: https://github.com/heygen-com/hyperframes
+- Node.js 22 or newer, free (HyperFrames needs it): https://nodejs.org
+- FFmpeg, free (HyperFrames uses it to render): https://ffmpeg.org
+- A raw video clip. Mine was a 25 second HeyGen avatar clip with no captions, and a 3 minute talking clip with pauses.
+
+**1. Install the HyperFrames skills (0:40)**
+Go to the HyperFrames GitHub page, copy the install command and paste it into your terminal:
+
+```
+npx skills add heygen-com/hyperframes
+```
+
+It asks which agents to install to. Pick Claude Code. I got about 20 skills (hyperframes, figma, faceless explainer and more).
+
+**2. Open Claude Code and check the skill is there (1:59)**
+Update Claude Code first, start it, and turn auto mode on. Then type:
+
+```
+/hyperframes
+```
+
+If it shows up, you're ready.
+
+**3. Add captions to a clip (2:20)**
+Give it the path to your video and ask:
+
+```
+/hyperframes /path/to/your-video.mp4 can you add captions to this?
+```
+
+It transcribes your audio with Whisper so it knows the exact time of every word, then puts the captions on the video. It gave me style options and I picked one. Took a few minutes running in the background.
+
+**4. Swap in a different caption style from the catalog (4:07)**
+Open the catalog: https://hyperframes.heygen.com/catalog
+Pick a style (pill karaoke, matrix decode, neon accent, kinetic slam, highlight). Each one has an install command. I used highlight:
+
+```
+npx hyperframes add caption-highlight
+```
+
+Then ask Claude Code to redo the captions with it, in your own words, something like:
+
+> Recreate the captions on this video using the caption-highlight component I just installed.
+
+The catalog also has animated macOS windows, a YouTube lower third, transitions, app showcases, a US map with data and flowcharts. Every change renders a new MP4.
+
+**5. Cut out the dead air (7:33)**
+
+/hyperframes cut out silences from this video /path/to/your-video.mp4
+
+My 3 minute 1 second clip came back at 1 minute 50 seconds. On a 30 minute video, that can take you down to 15 or 20 minutes.
+
+**6. Add transitions, animations and B-roll (8:57)**
+This is what I typed after the silence cut:
+
+> Now add transitions, animations where it may be right to do so, with text such as software I mentioned like Gmail, Slack. Go through this, see where you think we need to add transitions and cuts, add B-roll and more.
+
+Then keep talking to it until you like it. I wasn't happy with one B-roll shot, so I made that 3 second clip in Seedance and Claude Code put it in.
+
+**7. Open HyperFrames Studio (10:40)**
+Start a new project from your terminal (or ask Claude Code to do it with /hyperframes init):
+
+```
+npx hyperframes init my-video
+```
+
+Then open the Studio in your browser:
+
+```
+npx hyperframes preview
+```
+
+In the Studio you can click every layer (the head, the arm) and move it yourself, or tell Claude Code what to fix.
+
+**8. Turn a screenshot into an animation (11:27)**
+Take a screenshot of anything you like, drag it into the terminal with Claude Code open, and ask. My two prompts:
+
+> Can you animate this with a guy waving in the intro to this video, please?
+
+Before the previous one we just did, can you add this where the graph is about YouTube views, adding zoom in and following the graph. Make it about four seconds. Just make it awesome.
+
+It built the full animation from one screenshot. The more you do this, the faster it learns your style.
+
+## Files and links
+- HyperFrames on GitHub: https://github.com/heygen-com/hyperframes
+- Style catalog: https://hyperframes.heygen.com/catalog
+- Highlight caption style (the one I installed): https://hyperframes.heygen.com/catalog/components/caption-highlight
+- HyperFrames quickstart: https://hyperframes.heygen.com/quickstart
+
+## If it breaks
+- /hyperframes doesn't show up: update Claude Code, then exit and open it again so it loads the new skills.
+- The first job seems stuck: the first run takes a few minutes. Let it work.
+- The result isn't what you wanted: that's normal. Tell it exactly what's wrong ("the captions are too small", "the hair's not quite right") and it re-renders.
+- Claude's B-roll looks off: generate that one shot with a video model like Seedance (small paid cost) and ask Claude Code to drop it in.
+- A render fails on the resolution setting: --resolution takes named presets like landscape or 1080p, not 1920x1080.
+
+## Next
+Build an AI agent in 5 steps with Claude Code

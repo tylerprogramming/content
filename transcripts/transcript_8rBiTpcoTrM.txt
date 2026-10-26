@@ -1,0 +1,257 @@
+[00:00] Reverse Engineering is a new viral app that can clone anything in minutes, saving you hundreds of dollars and making you more money.
+[00:07] I spent hours testing this and in this video, we're going to build three apps worth billions of dollars in minutes.
+[00:14] So you can see how to use it, what AI is actually capable of and the biggest mistake that is holding most people back.
+[00:21] So if you haven't already, grab that beautiful coffee and let's dive straight in.
+[00:24] Now, since reverse engineering has dropped, people have sent a crate load of Kleenex tissues to Adobe HQ because they need them.
+[00:31] Since this has dropped, guys, Photoshop, After Effects, Higgs field, Halo, Dell, DX, Apple, Whisperflow.
+[00:37] It is blowing up on YouTube.
+[00:38] It is blowing up on X because people are using AI to reverse engineer essentially any app.
+[00:43] The question is, how good is it really?
+[00:45] Turns out it's actually really good.
+[00:47] I tested it on Photoshop and Premiere Pro, the alternatives of it.
+[00:52] And guys, it is really impressive.
+[00:53] Now, how does Ria actually work?
+[00:56] Which we need to know before we actually use it to build something.
+[00:59] Effectively, it checks out the UI, it looks at the logic, and then checks out the data.
+[01:03] And using all of that, the idea is it can effectively recreate anything.
+[01:06] This individual rebuilt Terraria in 3D.
+[01:09] This guy right here replicated the entirety of Spider-Man.
+[01:11] But it isn't just games.
+[01:12] The main interesting use case, I think, is software that you're currently spending hundreds and hundreds of dollars for.
+[01:18] Now, the average person is spending around $219.
+[01:21] dollars let's see exactly if we can delete and remove our subscriptions and we're going to be
+[01:25] doing this guys across three softwares worth billions of dollars we're going to do calendly
+[01:30] typeform and trello and this is so easy to use we're going to build the entire thing inside base
+[01:36] 44 so we're going to have all the back end all the integrations who is also the sponsor today's
+[01:40] video so more on that later so let's go ahead and actually think about first of all what rear is
+[01:45] and how it works now i've used rear i've tested it and i found something quite controversial
+[01:50] Now, after lots of testing, one of the interesting things I realized about RIA is that RIA itself is 420,000 lines of TypeScript and code.
+[02:00] There are effectively 789 of them, which are pulled out specifically in this skill, which is all about the reverse engineering process.
+[02:07] And when you compare that with just doing it in Claude or ChatGPT, it ends up being faster.
+[02:12] So what I want you to do is come over here and grab this prompt.
+[02:16] I'll put it down, Blazor, come ahead and grab it.
+[02:17] And then the first thing we do is head straight over to base 44 because I'm using base 44 because I can just give it a screenshot, a prompt, and there's all the connections, all the back end, blah, blah, blah, and sort everything else out for me without needing to do anything else.
+[02:29] Then once I've done that, I want to go ahead and grab a screenshot of Calendly.
+[02:32] So I've got here, I can see I can click on different buttons.
+[02:34] And again, let's see how well this can actually do.
+[02:37] Go ahead and rebuild this for us.
+[02:38] So come straight back over and drop the screenshot in.
+[02:41] And then the only thing we need to do really is just give it a prompt.
+[02:43] Hey there, I want you to go ahead for me and recreate Calendly for me, the booking system,
+[02:48] based on the screenshot. I give it a different name, but I want to have all of the core functionality.
+[02:53] Thank you. And once you've done that, you can go ahead and just go down and click on build.
+[02:56] You can also do a plan mode in base 44 where you can plan it out a little bit more, which is handy,
+[03:00] but this is going to use all this backend databases, everything else like that,
+[03:03] and just manage all that sort of stuff for us, which is fantastic.
+[03:06] Now, the first thing that happens while it's building here, you can see it's thinking.
+[03:09] If it needs any clarification questions, it can just ask us.
+[03:12] And guys, this is what we got back.
+[03:14] So I'm going to go ahead and publish this so we can go ahead and play around with it and check it out.
+[03:17] Just so we can see in a brand new window.
+[03:19] Let's go ahead and open this app up and test it out.
+[03:22] Now, bear in mind, this is using those principles.
+[03:25] Let's see what we've got.
+[03:26] We're going to come down and open up a dashboard.
+[03:27] And, okay, we've got a random one here.
+[03:29] Let's go ahead and even create a login section, which is fantastic.
+[03:32] So let's go ahead and sign in with Google.
+[03:34] Once I've signed in, we're going to come down and open our dashboard here.
+[03:36] Now, the cool thing about doing something like this on Base44 is all the backends already auto-configured.
+[03:41] so we can rock and roll. And let's have a look at what we're dealing with here, guys. And I'm
+[03:45] giving my honest, raw, candid thoughts. First thing I've got here is availability on the right
+[03:49] hand side. I can pick this based on the day, click it, toggle it off and on. Pretty decent.
+[03:53] Let's go say I don't want to work Fridays or Tuesdays or Thursdays or even Wednesdays. I'm
+[03:58] just working. Actually, I work Mondays and Sundays. How about that? And I'll let people
+[04:02] book in for 15 minutes. Bear in mind, I've done, this is complete one shot, by the way.
+[04:06] Come down, click on save hours, which is fantastic. I can check out my 15 minute meeting link. I can
+[04:11] click this. And guys, this is actually outrageous. Okay. Let's go back one second. Let's add some
+[04:18] different things in here and let's save my hours and let's take a look at this and let's then
+[04:22] compare it with what we have here. So this is typical Calendly. This is ours. If I click on it,
+[04:28] what do I see? This is pretty outrageous. We have officially entered the era where you can
+[04:33] pretty much clone anything you want to click on next name, email, enter some stuff there,
+[04:38] enter some stuff there. Well, base 44 has even added pre-validation, which is pretty cool.
+[04:43] We'll give it a fake one here. Confirm that booking. Okay, great. And now it's done. I can
+[04:47] go ahead and book another time and come back. You're not actually going to believe this, but
+[04:51] it already auto-configured the email to me. So it is a fully functioning app that not only has
+[04:57] allowed me to recreate the entire interface, but has an actual download booking system based on
+[05:01] the Google account that I just created. I am genuinely really impressed with that. I genuinely
+[05:07] did not expect to have all those features live just from one prompt. Now this is locked down,
+[05:11] the core functionality, but if you come back to base 44, there's a few other things that you can
+[05:15] do like edit. So I wonder if it would let us go ahead and do that. I can check my availability,
+[05:19] I can manage it, but there's no editing section. So what we'd really need to do is go back over
+[05:23] to base 44 and then I can give a prompt like, Hey there, I would really like the ability to
+[05:27] edit the information on my own individual meetings and edit that. So I had like emojis and
+[05:33] basically dictate questions as and when they set those up, please.
+[05:37] I'm just drop that in the question bottom left.
+[05:38] And you just go back and forth to build these out.
+[05:40] Now, you could effectively list all the requirements if you want to.
+[05:43] And ounce and pretty is worth a pound in post.
+[05:45] And whilst it's working on the background, I can even copy the link of my meeting.
+[05:48] And let's put this into a brand new browser and see what it does.
+[05:50] I do this.
+[05:51] This is now something I can share with people to go ahead and book.
+[05:54] We have literally cloned the core features and anything else that's missing,
+[05:57] we can go ahead and change.
+[05:59] Now, this comes with an important caveat, which I'm going to get to in this video.
+[06:01] I want to make sure that you understand this.
+[06:02] And just like that, it's gone ahead and made the edits. I then open it up and now I have an edit
+[06:07] button. I can click on that. I can add a description. I can add emoji. I can do,
+[06:10] Hey there, how's it going? I can add questions like, you know, what is your annual revenue?
+[06:15] Whatever the thing is, make that required question, type that as a saved meeting. Awesome.
+[06:19] And then if I just open up that link, as you can see now, Hey there, and they say they want to come
+[06:24] down and book a meeting like so click on next. What is your annual revenue? And again, we get
+[06:28] all this information emailed to us. This can save you 10 to $20 instantaneously. Now this all sounds
+[06:32] like I'm speaking Spanish, I'm going to pull a link down below for my full Claude Argentic
+[06:36] masterclass that takes you from complete beginner to mastering things like this, building beautiful
+[06:41] websites, memory systems, how to build apps, everything you need to know, as well as full
+[06:45] access to my Argentic operating systems, my memory systems, how you connect all these
+[06:50] apps together into one beautiful system to get you light years ahead of everybody else.
+[06:54] I'll put a link down below so you can use that and absolutely crush it.
+[06:57] Now we've covered essentially how to build with Calendly and its core features. The next
+[07:01] test that I'm really curious to see if you can hit actually is effectively going to be typeform.
+[07:05] Now typeform is great because we need to use forms for lots of stuff, right? It's a subscription
+[07:09] that I've had for ages. I recommended and played around with things like paperform and typeform.
+[07:14] This one can be a little bit more tricky. So I'm really curious to see what can we actually do
+[07:18] with this one. So here we've got typeform so we can play around users templates, for instance,
+[07:22] and have a little play around with what that looks like. I'll sign up and show you exactly.
+[07:26] And to build it, once again, I'm going to come down here and just copy everything from this
+[07:29] notion documents. And again, I'll put a link down below for base 44. So you can click this and build
+[07:33] along with me, test this on a real thing. See if you can do it, pick any app that you're paying for
+[07:37] right now. And let's see if you can build it right now using one prompt. Again, I paste this in,
+[07:41] I come up and say, Hey, I want you to go ahead and build for me, please. Um, this version of
+[07:47] type form, I'm going to add to hatch a screenshot, see if you can recreate the functionality,
+[07:50] give me the ability to create forms so I can cancel my subscription and no longer have to
+[07:54] pay for it. Of course, give it a different name other than type form and make it a little bit
+[07:58] different in that sense. All right, guys. So this is type form. I don't let that mock a background
+[08:03] personally, but you can see how it works, right? I've got things on the left, tiles about yourself.
+[08:07] These are different questions that we're asking, which is cool. You know, it's okay. I mean, it's,
+[08:11] it's all right. I mean, this is type form, right? It's a fricking very, very successful business,
+[08:15] but you essentially get the idea. You can go ahead and build these different things into it.
+[08:18] Now let's see what base 44 did. I'm going to open this one up here and look at this guys.
+[08:23] Now let's go ahead and publish this so we can check it out. What is really cool is I can just
+[08:28] make this private because I don't want to go out to public. I can do a security scan. Don't need to
+[08:31] do that right now. Obviously we can pick, do you want it to be a mobile app? You know, again,
+[08:34] lots of different things. What is cool if we want to just create our own unique domain to make it
+[08:38] feel professional, that's a really cool thing that we can do. Now look at this. This is called
+[08:42] ask instead of type form. To be honest, guys, pretty sleek interface to get started. Let's go
+[08:47] and sign up with Google. Now immediately, one of the cool things that I'm finding out with using
+[08:50] base 44 is I'm not having to do any additional plumbing. I'm not having to think about databases
+[08:55] of things in the background. It is a blessing in that sense. It does manage all of that because
+[08:59] classically it's been a real pain in the backside having to like link at the email and like decide
+[09:02] who can configure the fact it can do it all is really helpful. Now I've got this welcome stream
+[09:06] and this is on title form. So let's begin. So we'll call this one the giant coffee questionnaire.
+[09:11] I've got welcome message. I'm just going to say, Hey, now let's go ahead and begin. I'm going to
+[09:15] add a question. So multiple choice, multiple choice. Great. I don't know. How many coffees
+[09:19] do you drink every day? All right. Whatever the thing is come down. Option one could be, I don't
+[09:23] know zero and then we could have maybe one but you get the idea here guys just come down to so on
+[09:29] and so forth we're gonna have short text which is like abc again we'll just call this one down here
+[09:34] blah blah blah and then a rating one to ten whatever it is how cool is coffee how cool is
+[09:40] coffee bam whatever it is let's save done i can move these up and down fantastic everyone to share
+[09:46] this i click on my share button public link is copied so let's see if this is actually true
+[09:50] I click on this like so. I open it up, the giant coffee questionnaire. I can begin like so. How
+[09:55] many coffees do I drink? I drink more than three, but you get the idea. ABC, ABC, how cool is coffee?
+[09:59] It's an eight out of 10. And just like that, all done. Thank you. So you get the idea that we've
+[10:03] basically gone ahead and recreated a form interface. And then I can come down to the
+[10:07] results and immediately see all of the results. This is mind blowing to me because you can spend
+[10:11] 40, a hundred dollars easily on form things. And the fact I can just have these up now,
+[10:16] share one link, publish it in one prompt and be ready to go as well. But this does bring them
+[10:20] to one of the first points I want to call out with this guys. And that's the fact that as with
+[10:24] always, it's a question of depth and complexity. Now I've recreated what I would probably consider
+[10:30] to be the 80%, the core things that it needs to do. It needs to let me be able to build questions,
+[10:36] change the kind of content category of those questions, and then collect results and share
+[10:41] with people. I'd say that's like 80%. Obviously when you come over to the website itself, you can
+[10:47] see there's more to it. There's a design section. There is mobile optimized. You can play, you can
+[10:53] do all these things. Now guys, I'm one prompt away from adding all that stuff in. So that's my point
+[10:57] to you. It's just a question of how many minutes can you wait before you get it? But all this stuff
+[11:01] guys, we could add in so easily. Like, I don't know, let's say for example, that you wanted to
+[11:05] create a preview mode. Let me show you how easy that is. Come down. Hey there, go ahead and add
+[11:09] for me a preview mode and add me one further question type. And the point that I'm really
+[11:13] making here guys is that you are essentially limited only to your imagination. We are officially
+[11:19] in the era of the designer. If you can think it, if you can say it, you can build it. This is the
+[11:25] golden era for building anything. I genuinely, genuinely, genuinely believe that there is chaos.
+[11:31] And in chaos, there is opportunity. Whatever I say, chaos is a ladder. Now I know that a lot of
+[11:35] people are going to think that, you know, all the IP lawyers are going to have the biggest bonuses
+[11:39] of their life this year because all these companies are like, what the hell is actually
+[11:43] going on? Everybody's building this incredible software. I'm going to talk about that in a
+[11:47] second. You need to listen to this. The point I'm making here is if you can imagine it,
+[11:50] you can actually build it with the right prompts, with the right systems. We're no longer limited
+[11:55] by effectively having to know how to code, you know, being trapped in a room with a Windows
+[12:00] laptop with 16 red balls. It isn't required anymore. We can yap to AI and it can build
+[12:04] things. And now guys, as you can see, it's now I did a further one, which is a yes, no question.
+[12:08] And on top of that, I can now go ahead and preview by pressing play.
+[12:11] All it needs is references and what you need, which leads on to the third level, which is
+[12:16] going to be Trello.
+[12:17] Now, Trello is a beautiful one.
+[12:19] It's a very, very highly valued company.
+[12:21] And you can see how Trello works here.
+[12:22] Look at this.
+[12:23] You can grab things, bring them over, have a play around and click into them, see different
+[12:27] things.
+[12:27] As you can imagine, all we're going to do is shoot back over to our notion document,
+[12:31] copy everything like so, then head over to base 44.
+[12:34] Now, this is exactly what it went ahead and built.
+[12:36] This one is pretty wild as well.
+[12:37] Let me show you what I mean so you can compare them side by side here.
+[12:40] We've got lanes right here.
+[12:41] Again, we'll sign in with Google.
+[12:42] Now, being frank, it is handy just that Google doesn't stand up like that.
+[12:45] Let's click on this demo board, for example, and look at this.
+[12:48] This is pretty crazy.
+[12:49] I think it's actually weirdly kind of, it's funny to me.
+[12:52] It's like, okay, it's been told, hey, there's green leaves in the background.
+[12:55] Go and copy that.
+[12:56] And then it's kind of done.
+[12:57] I'll do some green leaves.
+[12:58] I'll do that.
+[12:59] No problem.
+[12:59] So I can move things wrong pretty easily.
+[13:01] I can add cards like, hey, pet Dexter, who's my beautiful English spring Espanol.
+[13:05] And I've got that right now.
+[13:07] I can add a cover. Let's add this cover here. Make sure Dexter gets pets every single day.
+[13:12] Now, this has been stretched a little too far, in my opinion, but there's going to be little
+[13:15] things you need to play around with, right? We're not quite at the era of one shot everything,
+[13:20] but we're getting ever close every single time. So happy with that. Checklist is cool. Add an item.
+[13:25] Is he smiling? Question mark. Perfect. Come down. There's no save button. I'm assuming if I click
+[13:30] off, that'll be fine. As we can see, it's right there and I can move it from doing done. I now
+[13:34] have a full app, which is fantastic. Can I invite my team? If I click this invite link over here,
+[13:38] I can, which is great. So add in Hey at, in fact, I'll even add my email address here. So I've just
+[13:43] gone ahead and invited myself here. Let's see if something pops up. You guys believe it or not,
+[13:46] I now have an invite from lanes to go and join as a user. So let's open this one up. I open it up.
+[13:51] And would you believe that I'm now in and there's two individuals and we now have an app ready to
+[13:55] rock and roll. But this does bring me on to one of the big things that we have to talk about with
+[13:59] this reverse engineering process and what this means. Look at this really furniture, clicking
+[14:03] kind of logo changes. I think that's really cool. But let's talk about what this all means and why
+[14:06] they're so important. It got pretty close on one shot. Now, let's see what we've done. We've done
+[14:10] front end, we've done backend, we've done database, we've done logins, we've done hosting. And if we
+[14:15] wanted to, we've done payments in one app and one kind of prompt. I think that's pretty cool.
+[14:19] And we've demonstrated just how powerful this is using this strategy. We've talked about looking
+[14:24] at it as a user, writing down what it does, building it from fresh and then making it yourself.
+[14:28] But there's one thing that you don't want to do. You don't copy their code. You don't copy their
+[14:32] images, you don't copy their logo and necessarily the paid features. So there's a big difference
+[14:37] between taking inspiration from something and just copy and pasting it. You can't just copy
+[14:42] and paste things from these apps and websites. So then the question becomes, when should I build
+[14:46] something myself versus paying for them? Usually speaking now, because AI is getting cheaper
+[14:50] and more effective, it is sometimes more economical to build your own version of something
+[14:55] rather than pay, but not always. It depends on two factors. One is how complex is the software
+[15:02] that you're looking at and how hard is it to replace, number one. And the second one is how
+[15:06] much is your time worth? So for example, if there's an app that you're spending $200 a month on,
+[15:11] $1,000 a month on, and AI can replicate it for you in a day or two's work, not even replicate,
+[15:16] but just build a better version of it yourself, then that's something that's quite interesting,
+[15:21] right? Whereas like if it's something that you're spending 20, 30, a hundred dollars on a month,
+[15:25] but say for example, it's a lot cheaper and it would take a lot of times to reverse engineer,
+[15:29] bear in mind, you don't have a team of experts building and developing at the same time.
+[15:33] These are trade-offs that you have to think about. And increasingly now guys,
+[15:36] with the level of where AI is at, it's becoming more economical and more compelling for people to
+[15:41] build their own software. Hence why I think Adobe has been extremely alarmed and people are now
+[15:47] saying that IP as a mode no longer exists. Now, the key thing to reinforce is you can't copy
+[15:53] people's apps. You can't copy the source code. You can't copy their images or even they just
+[15:58] like scrape and just steal it yourself. You want to be building things originally. So the best way
+[16:02] I find person to do this is understand what the functionality is of a certain thing. Like what
+[16:09] is the thing that you want to do? And then go ahead and build it with your own unique brand
+[16:13] identity. So for example, the stuff that you build, you don't just want to hand it something
+[16:17] and say go and copy it realistically you want to say hey i want you to build me an app that does
+[16:21] abcdefg give it a feature list and then give it some beautiful ui inspiration and then that will
+[16:27] take you to a completely new level but then it does bring us on to one final question and that's
+[16:33] how do you actually get beautiful ui that does look gorgeous and does turn viewers into buyers
+[16:38] well it just so happens i covered all of that in detail with stuff i've never seen discussed
+[16:42] anywhere else inside this video right here. Grab that coffee. I'll catch you over there.

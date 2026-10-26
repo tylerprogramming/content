@@ -1,0 +1,63 @@
+[00:00] Photoshop and most of the Adobe suite went open source this week, but not from Adobe.
+[00:04] And right now the top trending repo on GitHub is a tool that lets your agent reverse engineer any app.
+[00:09] Pretty soon all software will be de facto open source. Let's talk about that.
+[00:18] So the project that went viral this week is called Artcraft from a developer named Brandon.
+[00:22] And in there you'll find Photograph, Vectorcraft, Filmcraft and pretty much all of the Adobe apps, but open source.
+[00:28] source. Brandon's reason for doing this is extremely relatable to anyone that's used Adobe.
+[00:32] He says he got bit by the dark pattern cancellation fee one too many times. I mean, I myself have paid
+[00:37] that cancellation price. But how did he actually make these apps? Well, according to him, these are
+[00:42] clean room rewrites. He says he built them from the public specs and watching how the apps work
+[00:47] with no Adobe code, shaders or assets. The PSD support, for example, is written from Adobe's
+[00:52] public file spec and tested against real files. If you look through the apps, though, you can
+[00:56] definitely see that it saw some screenshots of Adobe. It's proper copying their homework and
+[01:00] just changing the name, so hopefully the Adobe lawyers don't get in contact. Regardless of legal
+[01:05] issues though, he started posting these online and they went immediately viral, getting loads of
+[01:09] likes and people celebrating Adobe's downfall, but then people actually tried the apps. One person
+[01:15] on Hacker News who's worked in design and film opened a few simple layout projects and said
+[01:19] literally nothing works. The text selector was offset from the cursor, the font size slider
+[01:23] didn't change anything, the shortcut keys did nothing, and folders wouldn't collapse. In that
+[01:28] words, this is actual joke software. That is some pretty harsh words, but in Photocraft's defense,
+[01:33] that roadmap says as much. It has a section called Honesty Parity Assessment, and it says
+[01:38] real Photoshop parity is still well below 50%, but the 99% parity will take a while,
+[01:43] but it'll probably be measured in months and not years. Don't wait that long to subscribe,
+[01:47] by the way. I can see that 80% of you watching this aren't subscribed, so help us out and click
+[01:51] that subscribe button. So if we believe what Brandon's saying here, Artcraft was rebuilt
+[01:55] from the outside using the specs and the behavior, but now let's take a look at that number one
+[01:59] trending repo on GitHub. It's called reverse engineer anything, see a feature you like,
+[02:03] understand how it works down to the binary level, aka just steal it. It's actually just an MCP that
+[02:08] connects your agents to popular reverse engineering tools like Hopper, Deirdre and IDA, with some
+[02:13] skills on top to help them out. This means that it can handle native binaries, electron apps,
+[02:17] .NET apps, Android APKs, websites, and basically anything that you throw in. All you have to do is
+[02:23] ask something like understand how search works in the notes app, show me the evidence, and build a
+[02:27] similar feature for my project. They actually have showcases of using this to copy Notion's
+[02:32] clipboard feature and rebuilding a sound from an old game in C. I actually wanted to try this out
+[02:36] myself, but I must admit I didn't want to install all the tools and MCP servers that this one needed,
+[02:41] but that should be fine because Opus is actually pretty good at doing this on its own. All I did
+[02:46] was take the pinball space cadet game I loved as a kid, downloaded the EXE from Internet Archive,
+[02:50] and I simply asked Opus 5.5 to reverse engineer it, build it in Rust, and make it work on my Mac.
+[02:56] Opus got to work disassembling it by writing its own tools, and then it translated the game
+[03:00] function by function, tagging every Rust function with the address that it came from, and it split
+[03:04] this work across 15 sub-agents covering the physics, the flippers, and all 32 missions.
+[03:09] Two hours, 25 minutes later, I had 31,000 lines of Rust running natively on my Mac,
+[03:14] with 174 tests and zero dependencies. Then a fresh set of agents kicked off to check every single
+[03:20] function against the original and found almost nothing to fix. All in all, this was done for
+[03:24] roughly $140 at API prices, but I used my subscription and it barely made a dent in my
+[03:30] usage. Obviously, this one was a pretty simple example, but I didn't want it to take that long.
+[03:34] But the question is, is all software open source now? Well, kinda. With enough tokens and a
+[03:39] disregard for the law, you can probably clone most software to some extent. Agents have just
+[03:43] made code incredibly cheap and they can turn basically every closed app into a spec because
+[03:48] if the agent can watch it and inspect it, they can probably rebuild it. We've actually seen
+[03:52] something similar with projects like VinExt, which ported Next.js to V. If there's a test
+[03:56] suite they can follow, the agent will just keep working and working until it passes.
+[03:59] And we can see this with Theo's recent project where he ported the TypeScript compiler to Rust.
+[04:03] The agents just kept going, supposedly spending over $420,000 on API costs, but they did get the
+[04:10] job done. Agents are just incredibly good at writing code if that code can be verified,
+[04:14] and that's actually why some open source projects said they might private their tests,
+[04:17] although with how far AI has come, I think that's going to be a pretty useless measure now.
+[04:21] Overall, this is definitely a weird world that we're entering, but as someone who loves personal
+[04:25] software, I do find it quite exciting. I've built so many apps that sold my pain points with other
+[04:29] software, or just clean up my workflow, and I don't really care about that quality, since I'm
+[04:34] never going to make them public. I just care that they work for me. Let me know what you think about
+[04:38] all of this in the comments down below.
+[04:39] While you're there, subscribe.
+[04:40] And as always, see you in the next one.

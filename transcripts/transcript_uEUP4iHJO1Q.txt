@@ -1,0 +1,173 @@
+[00:00] Okay, so this is powered by Seven Min Applications through arcade.dev, and right now it just summarized an email of a partnership, it created a work document, moved into its own folder in Drive, then sent me a Slack message about it.
+[00:13] I touched six different applications, I only used one MCP server to add to Cloud Code, and I did it in just a few minutes.
+[00:21] So let me show you how to do that.
+[00:23] Now, you may be thinking, oh, I can add plugins or connectors or whatever to Cloud Code, and yes, you can.
+[00:28] And if it's just for you and just for like your local machine where you have cloud code or whatever ID you're using, then great.
+[00:35] You can do that.
+[00:37] But the minute that you want to have multiple users or you want to have agents running 24-7 without worrying about re-authenticating or any of those token issues, then Arcade.dev will handle that for you.
+[00:48] They ship agents and you don't have to worry about the auth infrastructure.
+[00:52] So basically you have the auth tools and governance all in one layer.
+[00:55] They have thousands of pre-built tools across all the apps you already use, and you get to customize that how many tools for as many MCP servers as you need.
+[01:04] So let's go ahead and get started creating our first MCP server this way to show you just how easy and simple this is.
+[01:10] Okay, so we're going to go ahead and sign in, and of course if this is your first time, go ahead and create an account to sign in.
+[01:15] Okay, so here we're going to be looking at the playground, and you might not see, you might not have all of this here,
+[01:20] but what we need to really worry about is on the left-hand side, there is an MCP gateway.
+[01:24] This is basically we're going to create our first MCP server.
+[01:27] So at the top right, click create MCP gateway.
+[01:29] Let's give this a name.
+[01:31] So we're going to create a simple one.
+[01:32] Let's just call this a calendar.
+[01:34] So calendar calendar, let's say Google Calendar Assistant.
+[01:38] Okay, so now what we need to do, once you have the name of it, we need to see what tools you want for this calendar.
+[01:44] So let's say we just want to read, like read messages and then write emails.
+[01:49] Okay, so I'm going to look up Gmail.
+[01:51] I'm going to then choose the tools.
+[01:53] And right here's all the tools. These are things that you don't typically see whenever you connect a plugin or something.
+[01:58] These are all the actual coded tools or functions that were created in the background for you to use that you don't have to worry about.
+[02:06] So let's say I want to get emails. I want to list emails. And I want to send emails.
+[02:13] OK, so maybe that should just be enough for now. We could just say all, but let's just select these three.
+[02:18] And we get to choose who we want to actually connect to this project or this MCP server.
+[02:23] So it's just members of this project that the MCP server is under, or we can choose external users where they sign in with a specific identity provider.
+[02:32] We're not going to get into that because it's just going to be me.
+[02:34] So I'm going to choose members of this project.
+[02:36] And then we'll simply choose create MCP gateway.
+[02:39] Now, you want to connect this gateway to your preferred client.
+[02:42] The client can be Cursor, it can be Claude Code, it can be Claude Desktop, the Desktop App Codex GPTL.
+[02:48] or you can have the basic MCP URL that you can give and attach to any agent anywhere.
+[02:53] But we're going to use Cloud Code to test this out, and it's going to tell us to run this in Terminal.
+[02:57] And don't worry, I know you can see this, but I'm going to delete it after we're done.
+[03:00] Now, with a fresh Terminal, I can just copy, simply copy and paste this.
+[03:03] It says added HTTP MCP server Google Calendar Assistant.
+[03:07] Now, I'm going to open Cloud.
+[03:08] I'm going to now type slash MCP, and right here it is, Google Calendar Assistant.
+[03:13] Now, it says it needs authentication, so I'm going to press Enter, authenticate.
+[03:16] Now, I'm going to sign in with my Google.
+[03:17] Okay, after I sign in with my Google account, it's now asking me to authorize access.
+[03:21] I'm going to click allow.
+[03:23] Authentication was successful.
+[03:24] And now we come back here.
+[03:26] I can start using this.
+[03:27] And just to make sure it's actually going to use this MCP server and not the Gmail one that I have connected,
+[03:31] I'm just asking it to list all my emails through this specific MCP server.
+[03:35] And just by the way, always have auto mode on now.
+[03:37] Don't ever, you never need to have like default manual mode on just to use auto.
+[03:41] And here it is.
+[03:42] Here are the 25 most recent messages from, he says, arcade Gmail tool.
+[03:47] Okay, so this is great. This is the list email function that we attached it to. And that was very simple. That took just a minute or two in real time. And here we go. It says pull the 25 most recent message out of a matching 201-ish. And it's going to just summarize everything for me.
+[04:03] And this is very simple when we're just creating what we want with Arcade.dev.
+[04:08] Now, with that said, let's create something a little bit more complex, but that doesn't mean the actual creation part of it is any harder.
+[04:15] It's just as simple as we can have a better and smarter MCP server.
+[04:22] So we're going to come back here to Arcade.dev, go to MCP gateways.
+[04:26] I want to create a new MCP gateway.
+[04:28] This one, I'm going to say multi-tool assistant.
+[04:31] So first off, what I want is I want Google Calendar. So I'm just going to check everything
+[04:35] off of Calendar. Now I also want Gmail. So I'm just going to save all of those for Gmail.
+[04:40] And I want Drive. So Google Drive. So I'm going to select all 17 tools there. And I want Slack.
+[04:45] So I'm going to select Slack as well. And then I also want to use Slack as well. Now, ideally,
+[04:51] I probably want to narrow the total amount of tools, but just to show you that it can do all
+[04:56] these things at once. So now we have a total of 65 tools across four servers, and these servers
+[05:02] are just basically the apps that have those tools. So Slack has 10 different tools. If you click it,
+[05:07] we can get messages, we can list users, we can send a message, list conversations, etc.
+[05:12] So now we're going to come back here. Again, I'm just going to do members of this project,
+[05:16] so just me. I'm going to go ahead and click create MCP gateway. Now with this, again,
+[05:21] I just want to use this as a cloud code, but I'm going to copy this. I'm going to come back here.
+[05:25] I'm just going to control C twice.
+[05:27] I'm going to paste that in or in this is the same thing.
+[05:31] So now we added HTTP MCP server, multi-tool assistant with the URL.
+[05:34] I'm going to come back into Cloud.
+[05:36] You can enable auto mode after.
+[05:37] So enable auto mode and I'm going to type slash MCP.
+[05:40] I'm going to come down to here it is the multi-tool assistant.
+[05:43] I'm going to press enter.
+[05:44] Need to authenticate.
+[05:45] It's going to do, we're going to go through the same process.
+[05:47] So I'm going to go ahead and authenticate with my Google account.
+[05:49] Okay.
+[05:50] And that was successful because I allowed it in that now authentication was successful.
+[05:54] So what I'm going to do now is actually disable my other one.
+[05:58] So I'm going to disable Gmail.
+[06:00] Let's see.
+[06:01] Disable.
+[06:02] I'm going to go down to Calendar.
+[06:03] Disable.
+[06:04] I'm going to go to Drive.
+[06:06] Disable.
+[06:07] And then I'm going to come down to Slack and disable as well.
+[06:11] But you see that the Multitool Assistant is connected.
+[06:14] So now I know that whenever I ask it to do anything related to those, that it will only use this Multitool Assistant.
+[06:20] So the first question is, can you read the last 10 emails I had
+[06:22] and then any specific calendar events I have for today?
+[06:25] I don't think I actually have any, but you can see it's calling multi-assistant two times
+[06:29] because it's going to be calling the list or read emails
+[06:31] and then probably list or read calendar events for today.
+[06:35] So it's going to just call a few different functions, and here we go already.
+[06:40] So here's what's your inbox and calendar.
+[06:41] Last 10 emails, located partnership thread.
+[06:45] Okay, great.
+[06:45] And then this is another invite.
+[06:48] that's fine nothing on my calendar today that's great but this was very simple and easy and I
+[06:53] mean it basically just did all this live and it's just been taking minutes to have all this ready
+[06:56] all right so basically at this point we're starting over where we started this demo okay so now what
+[07:02] I'm going to do for the demo is for something a little more complex is like really five steps
+[07:06] can you summarize my partnership loatato gmail create a word doc then save that to google drive
+[07:11] under full name loatato and then send me a slack message in ai channel so turn to owner to make
+[07:16] this happen because with the drive tool itself you can't write and create a document so we i also
+[07:22] added google docs you can create a doc that way and then save that into the folder or move a file
+[07:27] into that folder and then it's going to send me a message in the slack channel so this was very
+[07:33] simple it's very easy and the the great thing is generally you have to you know every seven days
+[07:38] anything google related every seven days unless it's a prod ready app you have to refresh your
+[07:44] authentication at you know every seven days which can be a problem so if you just want to let it run
+[07:48] and not really think about it you can't do that you have to refresh that connection so they handle
+[07:53] all of that for you and they as an arcade.dev whenever you create this you don't have to worry
+[07:57] about the authentication and you can add as you've seen you can add people to your project they can
+[08:01] separately authenticate or you can create your own your own like sign in provider that way those
+[08:07] people can whoever you have whoever have give access to that and they have the secret or that
+[08:12] that connection they can sign in as well and you don't have to worry about any of
+[08:15] that authentication which is not easy okay so they made this very simple for
+[08:20] you and as you can see it's gonna break this down the steps and it found the
+[08:22] emails it's going to build the Word document which is basically a summary of
+[08:26] that move that into Google Drive and then we're gonna see that in the slack
+[08:29] channel and I'm not gonna you know I'm not gonna show you the full summary you
+[08:34] know yeah so that's just because I here it is it has some size to it so we know
+[08:39] that it wrote some summary. I'm not going to actually go into it because it's a little personal,
+[08:43] but I'm not going to actually go into it. But then here is, and then here is the Plotato
+[08:49] Partnership. This is the actual summary of our conversation over the last couple of weeks.
+[08:54] Okay. And so now it is done. And one thing to note here, as I just kind of made the simple
+[08:59] mistake, whenever you add a tool after you've already created the MCP gateway, you need to
+[09:04] make sure that you re-authenticate after you do that. So once I did that, then it needed to create
+[09:10] the doc using the new Google Doc tools. It created it, moved it in the folder, and then created the
+[09:14] Slack message. So it got the summary from the emails, created a doc in Drive. So it created
+[09:20] the document, moved it to Drive, and then posted that to Slack. So we can see here in Blotato,
+[09:26] or in my Blotato folder I asked it to create in my Drive, it created the summary. We know it's
+[09:31] kilobytes so it has some text not meant not much but it's just a quick summary then i'm not going
+[09:35] to show the actual summary but right here is the thread over two weeks that i have been talking to
+[09:40] about this partnership so that's really awesome and that was very simple and again we can just
+[09:45] come back here you are more than welcome to click this connect button this is again going to tell
+[09:50] you how you want to connect to it with a simple url you can do this or you can add it so here in
+[09:56] the multi-tool i can connect this little pencil to edit this you see i have five different servers
+[10:02] here in this whole gateway i can go ahead and select another one maybe i want to click up
+[10:06] whoops i will need to make sure i click all and then i want to search for if i can spell it right
+[10:10] click up so i can just add a click up now as a way to store all of my tasks oops and click that
+[10:15] and then now i have that selected here and then i would come down here click save and then i would
+[10:22] come back here let me clear this type mcp go down to the multi-tool assistant re-authenticate it's
+[10:29] going to open back up so it asks me to allow this new uh allow basically new access essentially and
+[10:36] now i'm going to allow authentication successful and now we are done i now have access to click up
+[10:41] okay so now i just ask how many tasks do i have and here we go i have 10 tasks in progress that i
+[10:48] need to really get on so uh so yeah this is just this i just want to reiterate how easy this is to
+[10:55] create it and the best part is you don't have to worry about the authentication right especially
+[11:00] if it's per user so right here in my projects i told it that anybody within this project so i can
+[11:07] add people to this project right they can you can invite members that have pending invitations or
+[11:11] you can create your own authentication sign-in essentially that they'll have to go through and
+[11:16] And the only way they can do it is basically through that client ID secret combination.
+[11:22] They would have part of that.
+[11:23] And then once that is successful, they can also access this, but they'll be a separate
+[11:28] user.
+[11:28] And you don't have to worry about authenticating them.
+[11:31] They are doing it here for you.
+[11:33] This is absolutely amazing.
+[11:34] And by the way, in my school community, I will have all this for you in the classroom.
+[11:38] You can join here and you can get all this information.
+[11:40] And I do offer free meetings that I can help you on your way to learning how to scale, make money with AI.
+[11:49] And if you're a solopreneur or you're just an entrepreneur who's trying to figure out AI, I'm here to help you.
+[11:55] I have full guides here for you to watch.
+[11:56] In the meantime, thank you, and I will see you in the next video.

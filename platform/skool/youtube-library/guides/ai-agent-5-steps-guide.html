@@ -1,0 +1,82 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Build an AI agent in 5 steps with Claude Code</title><style>
+@page { size: Letter; margin: 0.7in 0.75in; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color: #1a1a1a; font-size: 11.5pt; line-height: 1.5; }
+.top { border-left: 10px solid #E62117; padding: 4px 0 4px 18px; margin-bottom: 18px; }
+.eb { font-size: 9pt; font-weight: 700; letter-spacing: .18em; color: #E62117; }
+h1 { font-size: 21pt; line-height: 1.15; margin: 4px 0 6px; }
+.vid { font-size: 10pt; color: #555; }
+.vid a { color: #E62117; }
+h2 { font-size: 13pt; margin: 20px 0 6px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
+p { margin: 6px 0; }
+ul { margin: 4px 0 8px; padding-left: 20px; }
+li { margin: 2px 0; }
+strong { color: #000; }
+pre { background: #f4f4f5; border: 1px solid #e4e4e7; border-radius: 6px; padding: 9px 12px; font-size: 9.5pt;
+      white-space: pre-wrap; word-break: break-all; page-break-inside: avoid; margin: 6px 0 10px; }
+code { font-family: Menlo, Consolas, monospace; }
+blockquote { margin: 6px 0 10px; padding: 8px 12px; border-left: 4px solid #FFE03D; background: #fffbea; font-style: italic; }
+a { color: #1d4ed8; word-break: break-all; }
+.foot { margin-top: 26px; font-size: 9pt; color: #777; border-top: 1px solid #eee; padding-top: 8px; }
+</style></head><body>
+<div class="top"><div class="eb">THE AI AGENCY · YOUTUBE LIBRARY</div><h1>Build an AI agent in 5 steps with Claude Code</h1>
+<div class="vid">Video: <a href="https://youtube.com/watch?v=WvxPxQ_XlcQ">https://youtube.com/watch?v=WvxPxQ_XlcQ</a> (15 min)</div></div>
+<h2>In this lesson</h2>
+<p>You'll build a research agent that pulls the top content on any topic from YouTube, Instagram, TikTok and X, reads what's working, and hands you a brief with ideas. Then you'll put it on a schedule so it runs without you.</p>
+<h2>Good to know</h2>
+<ul>
+<li>Time: 30 to 45 minutes</li>
+<li>Cost: Claude Pro or Max plan. Apify gives you $5 of free credit to start, then it's paid.</li>
+<li>Level: Beginner. No code. You describe the agent and Claude builds it.</li>
+</ul>
+<h2>What you need</h2>
+<ul>
+<li>Claude Pro or Max plan, with Claude Code installed: <a href="https://claude.com/claude-code">https://claude.com/claude-code</a></li>
+<li>Apify account (the tool that collects the social media data): <a href="https://apify.com">https://apify.com</a></li>
+<li>Matt Pocock's skills, for the "grilling" skill in step 4: <a href="https://github.com/mattpocock/skills">https://github.com/mattpocock/skills</a></li>
+</ul>
+<p><strong>1. Pick where to build it (0:22)</strong></p>
+<p>Claude on the web, the Claude desktop app, or Claude Code in the terminal. I use Claude Code. Make sure you're in auto mode.</p>
+<p><strong>2. Describe the agent (0:59)</strong></p>
+<p>Paste this into Claude Code (swap the topic and platforms for yours):</p>
+<blockquote>
+<p>Create a Claude Code skill called social-me. It takes a topic, researches it across multiple platforms using Apify, reads the top YouTube video transcripts, finds what's working and the content gaps, and gives me a brief with content ideas. Ground everything in real data. Never invent numbers.</p>
+</blockquote>
+<p>It creates a folder in ~/.claude/skills/social-me with a SKILL.md file. On a Mac, press Command + Shift + Period in Finder to see the hidden .claude folder.</p>
+<p><strong>3. Give it tools with the Apify MCP server (2:45)</strong></p>
+<ul>
+<li>Sign in at apify.com, then go to <a href="https://mcp.apify.com">https://mcp.apify.com</a></li>
+<li>Choose Claude Code, turn on "Add Apify token", and copy the command it gives you into your terminal</li>
+<li>In Claude Code type /mcp, pick Apify, and click Authenticate</li>
+<li>Exit Claude Code and open it again so it loads the new skill. Then type /social-me to run it.</li>
+</ul>
+<p><strong>4. Make it better with the grilling skill (8:00)</strong></p>
+<p>Install Matt Pocock's skills (it's an official Claude Code plugin now). Then type:</p>
+<pre><code>/grilling
+</code></pre>
+<p>Tell it: "I want to harden social-me." It asks you rounds of questions about what's weak and fixes the skill as you answer. Mine found that Instagram was returning hours-old posts with no engagement, and switched to a list of accounts to watch.</p>
+<p><strong>5. Put it on a schedule (12:11)</strong></p>
+<p>Two options:</p>
+<ul>
+<li>/loop runs it on your computer. Easy, but your computer has to stay on, and you set it up again after a restart.</li>
+<li>/schedule makes a Claude routine in the cloud that runs even when your computer is off. I used this one:</li>
+</ul>
+<pre><code>/schedule social-me every two days at 7am
+</code></pre>
+<p>Check it at claude.ai &gt; Routines. The time shows in UTC, so adjust it to your time zone.</p>
+<h2>Files and links</h2>
+<ul>
+<li>The finished skill: <a href="https://github.com/tylerprogramming/claude-skills/tree/main/social-me">https://github.com/tylerprogramming/claude-skills/tree/main/social-me</a></li>
+<li>Apify: <a href="https://apify.com">https://apify.com</a></li>
+<li>Apify MCP setup: <a href="https://mcp.apify.com">https://mcp.apify.com</a></li>
+<li>Matt Pocock's skills: <a href="https://github.com/mattpocock/skills">https://github.com/mattpocock/skills</a></li>
+</ul>
+<h2>If it breaks</h2>
+<ul>
+<li>/social-me doesn't show up: Claude Code only loads new skills when it starts. Exit and open it again.</li>
+<li>Apify shows "needs authentication": run /mcp, pick Apify, authenticate.</li>
+<li>The routine runs at the wrong hour: routines use UTC. Change the time at claude.ai &gt; Routines.</li>
+<li>The first version gives weak results: that's normal. That's what step 4 is for.</li>
+</ul>
+<h2>Next</h2>
+<p>Set Up Hermes Agent in 30 Minutes, if you want this running on its own machine 24/7.</p>
+<div class="foot">Tyler Reed · skool.com/the-ai-agency</div></body></html>

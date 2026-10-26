@@ -1,0 +1,114 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Run your YouTube channel with 9 Claude Code skills, from research to upload</title><style>
+@page { size: Letter; margin: 0.7in 0.75in; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color: #1a1a1a; font-size: 11.5pt; line-height: 1.5; }
+.top { border-left: 10px solid #E62117; padding: 4px 0 4px 18px; margin-bottom: 18px; }
+.eb { font-size: 9pt; font-weight: 700; letter-spacing: .18em; color: #E62117; }
+h1 { font-size: 21pt; line-height: 1.15; margin: 4px 0 6px; }
+.vid { font-size: 10pt; color: #555; }
+.vid a { color: #E62117; }
+h2 { font-size: 13pt; margin: 20px 0 6px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
+p { margin: 6px 0; }
+ul { margin: 4px 0 8px; padding-left: 20px; }
+li { margin: 2px 0; }
+strong { color: #000; }
+pre { background: #f4f4f5; border: 1px solid #e4e4e7; border-radius: 6px; padding: 9px 12px; font-size: 9.5pt;
+      white-space: pre-wrap; word-break: break-all; page-break-inside: avoid; margin: 6px 0 10px; }
+code { font-family: Menlo, Consolas, monospace; }
+blockquote { margin: 6px 0 10px; padding: 8px 12px; border-left: 4px solid #FFE03D; background: #fffbea; font-style: italic; }
+a { color: #1d4ed8; word-break: break-all; }
+.foot { margin-top: 26px; font-size: 9pt; color: #777; border-top: 1px solid #eee; padding-top: 8px; }
+</style></head><body>
+<div class="top"><div class="eb">THE AI AGENCY · YOUTUBE LIBRARY</div><h1>Run your YouTube channel with 9 Claude Code skills, from research to upload</h1>
+<div class="vid">Video: <a href="https://youtube.com/watch?v=GJQCUcx4roA">https://youtube.com/watch?v=GJQCUcx4roA</a> (20 min)</div></div>
+<h2>In this lesson</h2>
+<p>You'll run the nine skills I use for every video, in order: research what's working, transcribe a winning video, build the full package (titles, hooks, script), make thumbnails, fix the SEO, plan Shorts, write social posts, add chapters, and upload.
+By the end you can take one idea from research to a scheduled upload, all inside Claude Code.</p>
+<h2>Good to know</h2>
+<ul>
+<li>Time: about an hour for your first video package, plus a one-time 10 minute Google setup if you want to upload from Claude Code.</li>
+<li>Cost: Claude Code needs a paid Claude plan. Thumbnails run on Kie.ai, paid but cheap per image. Three thumbnails cost me $0.27. Transcribing uses the OpenAI Whisper API, paid per minute of audio.</li>
+<li>Level: Beginner. You type commands and answer questions. The skills do the rest.</li>
+<li>Honest caveat: the skills plan, package and publish. You still film and edit the video yourself.</li>
+</ul>
+<h2>What you need</h2>
+<ul>
+<li>Claude Code (paid Claude plan): <a href="https://claude.com/claude-code">https://claude.com/claude-code</a></li>
+<li>My free skills (GitHub repo): <a href="https://github.com/tylerprogramming/claude-skills">https://github.com/tylerprogramming/claude-skills</a></li>
+<li>yt-dlp, free, the tool the research and transcribe skills use to read YouTube: <a href="https://github.com/yt-dlp/yt-dlp">https://github.com/yt-dlp/yt-dlp</a></li>
+<li>OpenAI API key for Whisper transcription, paid (sign-in page): <a href="https://platform.openai.com/api-keys">https://platform.openai.com/api-keys</a></li>
+<li>Kie.ai account and API key for thumbnails, paid per image: <a href="https://kie.ai">https://kie.ai</a></li>
+<li>ffmpeg, free, for the chapters skill: <a href="https://ffmpeg.org">https://ffmpeg.org</a></li>
+<li>Optional, for uploading: a Google Cloud project with the YouTube Data API v3: <a href="https://console.cloud.google.com">https://console.cloud.google.com</a></li>
+</ul>
+<p><strong>1. Install the skills (0:29)</strong></p>
+<p>Everything you need is in the Google Doc and the GitHub repo. In your terminal:</p>
+<pre><code>git clone https://github.com/tylerprogramming/claude-skills.git ~/projects/tyler-skills
+cd ~/projects/tyler-skills &amp;&amp; ./setup.sh
+</code></pre>
+<p>Then open Claude Code and paste:</p>
+<blockquote>
+<p>Look at ~/projects/tyler-skills and import the yt-search, yt-deep-research, transcribe, yt-package, yt-seo, yt-thumbnail, yt-shorts, social-copy, yt-chapters and yt-upload skills into my ~/.claude/skills, then tell me what setup each one needs.</p>
+</blockquote>
+<p>A skill is just a text file that tells Claude how to do one job the same way every time. Some come with a Python file that does the heavy lifting.</p>
+<p><strong>2. Research what's working (1:16)</strong></p>
+<pre><code>/yt-search claude code
+</code></pre>
+<p>It searches YouTube for the last 30 days, pulls 50 videos, ranks the top 15, splits long form from Shorts, and downloads their thumbnails. You get the top videos, title and thumbnail patterns, and video ideas, saved on your computer. It takes a few minutes. Want a longer window? Ask for 90 days instead.</p>
+<pre><code>/yt-deep-research does the search and transcribes the top videos for you in one go. Use it once you know the process.
+</code></pre>
+<p><strong>3. Transcribe a winning video (4:02)</strong></p>
+<p>Pick the top video from your research. I typed:</p>
+<pre><code>/transcribe Nate's video
+</code></pre>
+<p>You don't need the slash. "Transcribe the number one video" works too, or paste a YouTube link. It saves the transcript and tells you why the video worked: the structure, the hook, the calls to action.</p>
+<p><strong>4. Build the full video package (6:16)</strong></p>
+<pre><code>/yt-package &lt;the transcript file it just saved&gt;
+</code></pre>
+<p>It does its own web research, then asks you questions: your angle, which of your own work to demo, who it's for. Answer them. This step takes the longest. It creates a folder with titles, hooks, the script, the description, tags, an analysis, and reference thumbnails. The script is a guide, not something to read word for word.</p>
+<p><strong>5. Make thumbnails with Kie.ai (10:58)</strong></p>
+<pre><code>/yt-thumbnail use this video's reference thumbnail to create three more
+</code></pre>
+<p>Nano Banana Pro is my favorite model on Kie.ai. The skill used a photo of my face as a reference. It made three concepts for $0.27. Treat them as ideas you can edit, not final art.</p>
+<p><strong>6. Fix the title and description (13:12)</strong></p>
+<pre><code>/yt-seo on this video package
+</code></pre>
+<p>It checks title patterns from your research and the web, gives you a title scorecard with options to A/B test, and updates the titles, description and tags in your package.</p>
+<p><strong>7. Plan Shorts and social posts (14:47)</strong></p>
+<pre><code>/yt-shorts get ideas from this video package
+</code></pre>
+<p>I got five Short ideas: two talking head, two screen recording, one mix. One Short can go to TikTok, YouTube Shorts, Instagram Reels, Facebook and Bluesky.
+After you record, run /social-copy on the video. It writes posts for X, LinkedIn, Instagram, YouTube Community and Skool.</p>
+<p><strong>8. Film, edit, then add real chapters (17:00)</strong></p>
+<p>Filming and editing are the human part. When the final video is done:</p>
+<pre><code>/yt-chapters /path/to/final-video.mp4
+</code></pre>
+<p>It pulls the audio, transcribes your video, and puts real timestamps in your package description.</p>
+<p><strong>9. Upload and schedule (18:50)</strong></p>
+<pre><code>/yt-upload uses the YouTube Data API v3 to upload and schedule. It needs a one-time setup first:
+</code></pre>
+<ul>
+<li>In Google Cloud Console, create a project and enable the YouTube Data API v3.</li>
+<li>Set up the OAuth consent screen and add your own email as a test user.</li>
+<li>Create an OAuth client (Desktop app), download the JSON, and save it as credentials.json in your home folder.</li>
+<li>Run /yt-upload once. A browser opens, you approve, and token.json is created. After that it's one command.</li>
+</ul>
+<h2>Files and links</h2>
+<ul>
+<li>Free skills and newsletter: <a href="https://free.tylerai.dev/youtube/">https://free.tylerai.dev/youtube/</a></li>
+<li>The skills repo: <a href="https://github.com/tylerprogramming/claude-skills">https://github.com/tylerprogramming/claude-skills</a></li>
+<li>The YouTube Workflow doc (the full flow and the upload setup): <a href="https://docs.google.com/document/d/1JgGYBcrfcDhXowmYt6CRRkZATggf695ZL9umDb1ffFE/edit">https://docs.google.com/document/d/1JgGYBcrfcDhXowmYt6CRRkZATggf695ZL9umDb1ffFE/edit</a></li>
+<li>Kie.ai: <a href="https://kie.ai">https://kie.ai</a></li>
+<li>Free community: <a href="https://www.skool.com/the-ai-agency">https://www.skool.com/the-ai-agency</a></li>
+</ul>
+<h2>If it breaks</h2>
+<ul>
+<li>/thumbnail does nothing: I renamed it. Use /yt-thumbnail.</li>
+<li>Research or transcribing seems stuck: it takes a few minutes. Let it finish.</li>
+<li>The chapters in your package description are wrong: they're placeholders until you run /yt-chapters on the finished video.</li>
+<li>/yt-search fails: check yt-dlp is installed with: yt-dlp --version</li>
+<li>Thumbnails fail with a 401 error: your KIE_API_KEY is missing or wrong. It goes in ~/.claude/.env.</li>
+<li>/yt-upload won't connect: you skipped the one-time Google setup in step 9.</li>
+</ul>
+<h2>Next</h2>
+<p>Build an AI agent in 5 steps with Claude Code</p>
+<div class="foot">Tyler Reed · skool.com/the-ai-agency</div></body></html>

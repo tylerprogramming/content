@@ -1,0 +1,96 @@
+## In this lesson
+You'll install my model-bench skill and run the same six prompts I used through Opus 4.8, Opus 5 and Fable 5. You get each model's output side by side with its cost and time, plus my full scorecard to compare against.
+
+## Good to know
+- Time: 10 minutes to set up. If you run all six tests, expect 35 to 40 minutes of waiting. The models run one after another.
+- Cost: it runs through Claude Code on your Claude plan, so there's no API key and no per-token bill. The cost column is what the same run would cost on the API.
+- Level: Intermediate. You'll paste a few commands into a terminal.
+- Prices: Opus 5 and Opus 4.8 are $5 per million input tokens and $25 per million output. Fable 5 is $10 and $50. So Opus 5 is half the price of Fable per token.
+- The catch: Opus 5 wrote 2 to 4 times more code than the others on builds. Half the price per token didn't always mean a cheaper job. In my runs 4.8 was the cheapest and fastest every time.
+- These are one-shot prompts with tools turned off, not a full agent session. The models are not deterministic, so your numbers will differ from mine.
+
+## What you need
+- Claude Pro or Max plan, with Claude Code installed and logged in: https://claude.com/claude-code
+- Plans and prices: https://claude.com/pricing
+- Python 3.9 or newer (free): https://www.python.org/downloads/
+- My model-bench skill (free): https://github.com/tylerprogramming/claude-skills/tree/main/model-bench
+
+**1. Install the model-bench skill (11:09)**
+Open a terminal and run these four lines:
+
+```
+mkdir -p ~/.claude/skills/model-bench && cd ~/.claude/skills/model-bench
+curl -O https://raw.githubusercontent.com/tylerprogramming/claude-skills/main/model-bench/SKILL.md
+curl -O https://raw.githubusercontent.com/tylerprogramming/claude-skills/main/model-bench/bench.py
+cd ~
+```
+
+Restart Claude Code so it loads the skill. Then type /model-bench and paste any prompt below. It runs that prompt on all three models for you. If you'd rather skip Claude Code, run the script yourself:
+
+```
+python3 ~/.claude/skills/model-bench/bench.py "<prompt>" --slug <name>
+```
+
+Results land in ~/content/research/benchmarks/<name>/ with a compare.html that opens side by side, plus results.md with tokens, cost and time.
+
+**2. Test 1: hexagon ball in Python (3:04)**
+python3 ~/.claude/skills/model-bench/bench.py "Write a Python program that shows a ball bouncing inside a spinning hexagon. The ball should be affected by gravity and friction, and it must bounce off the rotating walls realistically." --slug hexagon-ball
+
+Python files never run on their own. Open the folder and run each one, for example python3 opus-5.py. My result: Opus 5 was the most realistic and let me change gravity. 4.8 was plain.
+
+**3. Test 2: 3D solar system (5:33)**
+python3 ~/.claude/skills/model-bench/bench.py "Create a 3D solar system in a single self-contained HTML file using three.js loaded from a CDN. The sun at the center, planets orbiting at different speeds, and a camera you can orbit with the mouse. No build step, it should just run when the file is opened." --slug solar-system
+
+My result: Opus 5 added planet labels and a timescale. Fable 5 was close. A better prompt would close most of the gap.
+
+**4. Tests 3 and 4: Suika merge game and Flappy Bird (8:05)**
+python3 ~/.claude/skills/model-bench/bench.py "Build a complete, playable Suika (watermelon merge) game in a single self-contained HTML file, vanilla JavaScript and canvas, no libraries. Fruits drop from the top, same-size fruits merge into the next size with gravity and collisions, score goes up on each merge, and it is game over if the pile overflows the top. Make it fun to play." --slug suika-html
+
+python3 ~/.claude/skills/model-bench/bench.py "Build Flappy Bird as a single self-contained HTML file, vanilla JavaScript, no libraries. The bird flaps on spacebar or click with gravity, pipes scroll in from the right with gaps, collision detection, a score counter, and a game over screen with restart." --slug flappy-html
+
+My result: I liked Fable 5's Suika best, but it cost the most. All three Flappy Birds worked. The models already know that game well, so the model matters less.
+
+**5. Test 5: design to code with a screenshot (11:09)**
+Find a landing page design you like (I grabbed one from Google Images), save the screenshot, and swap its path in below:
+
+```
+python3 ~/.claude/skills/model-bench/bench.py "Here is a screenshot of a landing page design. Rebuild it as a working front end that matches the layout, spacing, colors, typography, and button styles as closely as you can. Clean semantic HTML and modern CSS (flexbox/grid), fully responsive down to mobile, no framework, one file." --image ~/Desktop/landing.png --slug design-to-code
+```
+
+In Claude Code you can just drag the image into /model-bench instead. My result: Opus 5 was closest to the original colors. Fable 5 had good layout but a gray tint.
+
+**6. Test 6: the reasoning trio (14:22)**
+Run each question as its own prompt, same command as above:
+
+> How many r's are in the word strawberry?
+> Alice has 3 brothers and 2 sisters. How many sisters does Alice's brother have?
+> A marble is put in a glass, the glass is turned upside down on a table, then the glass is picked up and put in the microwave. Where is the marble?
+
+All three models got all three right. Opus 5 answered strawberry with one word.
+
+**7. Score it and compare to mine (15:16)**
+Open each compare.html, play each build, and fill in the Runs? and Score columns in results.md. Cost and time are already filled in. My scorecard (equivalent API cost, 4.8 / Opus 5 / Fable 5):
+- Hexagon ball: $0.10 / $0.28 / $0.24
+- Solar system: $0.11 / $0.49 / $0.51
+- Suika: $0.34 / $0.70 / $1.71
+- Flappy Bird: $0.12 / $0.25 / $0.29
+- Design to code: $0.16 / $0.30 / $0.39 (I misread this as 60 cents on camera; the results file says 16 cents)
+- All 8 prompts: about $0.84 / $2.02 / $3.16
+Every build ran on all three models. My take: Opus 5 over-generates on builds but catches and fixes its own errors as it goes. Fable 5 is usually faster but always the priciest. 4.8 is the cheapest. I'm still using Opus 5 for my own work, and it hasn't broken a single skill for me.
+
+## Files and links
+- model-bench skill: https://github.com/tylerprogramming/claude-skills/tree/main/model-bench
+- Anthropic's Opus 5 announcement: https://www.anthropic.com/news/claude-opus-5
+- Opus 5 API pricing on OpenRouter: https://openrouter.ai/anthropic/claude-opus-5
+- Claude Code: https://claude.com/claude-code
+
+## If it breaks
+- /model-bench doesn't show up: Claude Code only loads new skills when it starts. Exit and open it again.
+- "claude CLI not found on PATH": the script calls Claude Code. Install it and log in, then try again.
+- A model's column says FAILED: that model isn't available on your plan, or it hit the time limit. Add --timeout 1800 for long builds like Suika.
+- The hexagon ball won't run: all three models wrote it with pygame, so you need pygame installed. To watch all three at once, I had to resize the windows so they fit side by side.
+- Opus 5 seems worse for you than for me: add context, plan first, and give it guardrails. One-shot prompts are the hardest test for any model.
+- It still hallucinates sometimes. It told me I had a skill I don't have. Ask "are you sure?" and it corrects itself.
+
+## Next
+Build an AI agent in 5 steps with Claude Code

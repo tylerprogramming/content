@@ -1,0 +1,264 @@
+[00:00] This morning before I even sat down an AI agent research my whole niche for me
+[00:04] It pulled top content across every platform and told me exactly what to make next
+[00:09] I built it in five steps and I'm gonna build with you right now
+[00:12] So this will be a real agent it connects to tools to pull in all the data and it'll do all the research and
+[00:18] Summarize it in a way that makes sense for you every morning
+[00:21] Okay, so let's get started with step one and this is just choosing how to get started
+[00:26] So there are three ways that you can do whether are there actually many ways that you can do it
+[00:30] But three ways I want you to choose from today
+[00:32] So we can either use Claude on the web
+[00:34] So just go to Claude AI and we can start creating that right here or we can use the desktop app
+[00:39] So we can come in here and go desktop app and do pretty much the same thing and give access to local folder
+[00:44] local files or folders on your machine or the way that we are gonna be doing it or how I'm gonna be doing it to show you
+[00:50] Today is through Claude code on the terminal. So here is where we are gonna be building it
+[00:54] So just make sure you have the subscription and open up Claude code and we're going to get started.
+[00:58] And now step two, we're going to describe what the agent is we're going to build.
+[01:02] And here is where the models have gotten so good this year.
+[01:04] You know, we don't really have to write the agent.
+[01:06] We can describe it to Claude and it's going to build the agent for us.
+[01:09] So I'm going to just copy paste this.
+[01:10] I will have a link for you can get this.
+[01:12] But I'll have Claude create a Claude code skill called Social Media.
+[01:16] It takes a topic, research it across multiple different platforms using Appify, which I will show you next.
+[01:20] And it reads the top YouTube video transcripts, find what's working, content gaps, gives me a brief with content ideas and ground everything in real data, never invent numbers.
+[01:28] Okay. So whenever we do this, it's going to, first off, make sure you're in auto mode.
+[01:34] And what it's going to do is it's going to just start understanding what the skill is and it's going to start creating that for us.
+[01:41] Okay. And as it does this, where is it actually building this?
+[01:44] So let's, while it's building it, let's just see it build in real time.
+[01:47] So we're going to open up Finder or from Mac, right?
+[01:49] I am going to go to my drive.
+[01:52] Then I'm going to use Command Shift Period on Mac at least to view hidden folders.
+[01:59] So we have a .cloud folder right here.
+[02:02] We're going to scroll down to the one that says Skills.
+[02:05] And then from here, here's actually all of your skills that you have locally on your machine.
+[02:12] So it's going to come up here.
+[02:14] It's going to create a new folder called Social-Me.
+[02:17] Right here it says confirmed on the new skill building it now. So right there it is
+[02:21] It literally just created the skill step, but what we need to have here is the skill dot markdown file
+[02:27] Which it is in the middle of creating and also while it's you know building these
+[02:31] They're not always perfect on the first try
+[02:32] Which is why we're going to iterate over it on in a couple steps
+[02:35] But don't worry about if it's not working the first time you know the thing is with the skill right now
+[02:40] It doesn't really do anything
+[02:41] It's trying to call a fight because I already have it installed
+[02:44] But now in the third step, we need to give it access to tools outside of what it knows.
+[02:50] The models themselves are only trained on the data that they know.
+[02:53] They don't innately have access to the outside world.
+[02:56] So in order to give access to all the social media platforms, we need to give it access to Appify.
+[03:01] So what is Appify?
+[03:03] Well, Appify is a way to have all these actors that can go out and scrape and do all these things for you that people have already created.
+[03:10] Now, you could do this yourself.
+[03:11] There are actually many ways now that you can do this, but this is just easy.
+[03:17] It is not free.
+[03:18] You do get, I think, five months or $5 for a month for free, but either way, this doesn't
+[03:23] make it easier, so you can sign up for free, get $5, and just try it out.
+[03:26] So what you do, sign into appify.com, and then you're going to go to mcp.appify.com.
+[03:32] You're going to come in here.
+[03:33] You're going to scroll down.
+[03:34] This is how we get the MCP server ready on Cloud Code.
+[03:37] So you're going to scroll down.
+[03:38] You can choose desktop if you wanted to use Cloud.
+[03:41] So you want to choose Claude Desktop, et cetera.
+[03:43] But I'm going to use Claude Code.
+[03:45] You'll click this to turn on the Add Appify Token here.
+[03:48] So it'll give you the bearer token.
+[03:49] You're going to copy that.
+[03:50] Well, I'm not going to show you the bearer token.
+[03:52] You would turn on the bearer token and then copy paste that.
+[03:54] And then it would say that the MCP server has been added.
+[03:57] And you're basically done with that, okay?
+[03:59] And just to verify, if you type slash MCP while you're in Claude Code, you can come down here right here.
+[04:06] See Appify?
+[04:06] So it says that Appify needs authentication.
+[04:09] So we're going to come here, go to authenticate it.
+[04:12] Yes, this is me.
+[04:13] I would say allow access.
+[04:15] Basically, we are good to go.
+[04:16] Come back here, press enter, and it says authentication successful connected to Claude.ai
+[04:22] Appify.
+[04:23] So we basically now have all the tools ready to have Claude, when we want to run this as
+[04:28] an agent, go out and retrieve all this information, summarize it, and give it to us in a structured
+[04:33] way that we want it.
+[04:34] So now if we look at this here, right?
+[04:36] Social media is built right here.
+[04:37] This is within the Claude skills.
+[04:39] So we have the skill markdown file, which we can just take a look at real quick.
+[04:43] Open with text edit.
+[04:44] The most important thing up here, right, we'll kind of zoom in a little bit, is the name and the description, right?
+[04:50] These are the two things that you have to have for a skill.
+[04:53] And then what is basically doing down here is all the instructions, right?
+[04:59] So here's loading first, pull each platform, rank with the script, not by an eye.
+[05:04] So it created the script for us automatically.
+[05:07] read the winners, find the patterns and gaps,
+[05:11] write a brief, and then hand it off
+[05:14] to other skills that I already have
+[05:15] because I was able to view other skills that I had.
+[05:18] But if you don't have those, that's fine.
+[05:19] And then if we look here, we have the scripts here.
+[05:22] We have a ranking script and a YouTube transcript script.
+[05:27] Here's a template it's going to brief me from.
+[05:29] So you can actually update this brief.
+[05:32] This is what's going to respond back to us
+[05:34] about all these things that it did.
+[05:36] Okay, so before we move on to step four, which is going to be using Matt Pocock's grilling skill to update this, let's actually just test this out.
+[05:46] But what you can see here is I tried typing it, and it didn't come up, social-me.
+[05:51] What we have to do is you actually have to reload your skills.
+[05:55] Okay, so now you can say social-reload-social-me.
+[06:00] Okay, so we have to go ahead and just exit out of Claude.
+[06:04] It's going to give you a way to resume. So it's going to copy paste this back in now
+[06:08] We're back in here. I can say slash social dash me there it is. Okay, so there's our skill
+[06:13] So I'm just gonna run it right because we have appify running we had the skill created it has a transcripts
+[06:19] So we're gonna see, you know, we're just gonna see if it works if it does work great
+[06:23] But these can always be improved. That's what we're gonna use Matt Pocock's skills next
+[06:29] What it's doing is it's actually asking me what it should do research on right because I could give it
+[06:33] keywords essentially like that you would type in but I'm just gonna say
+[06:36] Claude's goes Claude code skills and agents let's do all four so basically
+[06:43] all four platforms okay so now we'll come back this is going to take a few
+[06:47] minutes it's going to go and do all the research with Appify and then it will
+[06:51] give us a briefing of the output so what it did is it ran the topic it called
+[06:59] appify ran did several tool calls so i finally got the data and then it's writing the brief
+[07:04] so we had this brief right 104 items pulled 26 per platform three transcripts read raw json etc
+[07:11] so it's telling me make first i gave claude code five sub agents and measured what it actually
+[07:16] cost me the reason it's you know the topic is barely covered only three of 26 videos in the
+[07:21] pool have skill in the title um let's see sub-agent content is underperforming not unwanted
+[07:27] claude code just made feel obsolete did 30k on a 24k sub channel not the best agent team news
+[07:33] posted 162k on x and 40 agents run claw did 187 a on tick tock at 109x its follower count
+[07:44] um you should limits are the loudest complaint on all floor all four platforms you know the coding
+[07:48] slots did a video on that etc so it basically just gave me all of these things that i could do right
+[07:54] And we next want to do if we want to make this. How do we do that?
+[07:59] Matt Pocock here. He has a lot of skills that have become very popular recently.
+[08:04] Right here is the repo. It actually has 241 K stars, which whether you like it or not, that is that's a lot.
+[08:13] So these are very popular. And there's one in particular we're going to do.
+[08:17] And we are going to I think it's productivity and this one called grilling.
+[08:20] So it's basically going to be a round of questions asking us about the skill and what we can improve on.
+[08:27] Okay, this is what we're going to be using.
+[08:29] Now, we need to basically figure out how do we get this onto, you know, as a skill for our Cloud Code session.
+[08:36] I'll also have this for you, but you basically need to install the plug-in because it's now an official plug-in for Cloud, for Anthrop.
+[08:45] So that's pretty awesome.
+[08:46] But now, I already had it built in, so I didn't do anything.
+[08:49] but I'm going to type in slash grilling, right?
+[08:53] So we can do grill me.
+[08:54] I think grill me is an earlier version one.
+[08:56] This is a better version.
+[08:58] So type grilling.
+[09:00] Basically, we want to ask it about this skill
+[09:02] or what we just created to improve upon it.
+[09:05] So there are, it says it's asking me the subject.
+[09:08] So basically, I want to harden social me, okay?
+[09:11] So that's what we,
+[09:12] that's what I want to start asking me about.
+[09:14] Maybe you can tell me some suggestions,
+[09:16] what I actually really want to have for this,
+[09:19] maybe bring it, narrow it down
+[09:21] to specifically for my niche, what I wanted to do.
+[09:24] Just tell me that Instagram reach,
+[09:26] this is the skills real hold,
+[09:27] the hashtag route returns the recency feed.
+[09:29] So all 26 items came back hours old
+[09:31] with hardly any engagements.
+[09:34] Okay, so that's actually a problem, right?
+[09:36] We want something that's done much better than that.
+[09:39] Okay, so it's saying,
+[09:40] suggesting a two-stage thing,
+[09:42] hashtag pull for patterns,
+[09:43] and then a handle list.
+[09:46] So basically giving it accounts
+[09:49] and my niche and scrape those specifically every time.
+[09:52] So let's see.
+[09:53] A with B as cache.
+[09:54] Okay, two stage.
+[09:55] Yep, we could do that.
+[09:56] So there's basically now the transcript path.
+[09:59] It's suggesting C.
+[10:01] So Appify first, then attempt YouTube.
+[10:04] Okay, so we can try that.
+[10:05] The YouTube window, the actor's date filter
+[10:07] has no three month option
+[10:08] and oldest post dates forces sorting by newest,
+[10:11] which destroys the view ranking.
+[10:14] So I think 30 days is good.
+[10:17] And then social research collision.
+[10:19] I'm not so worried about that because I have a recent one.
+[10:22] And what counts as evidence on demand?
+[10:23] Okay, so basically these are a bunch of questions.
+[10:25] I'm going to go and answer these and we'll come back and see what it says.
+[10:28] So the whole point of this skill is to constantly grill you.
+[10:35] As you can see here, I mean, these are question two.
+[10:38] This is just a round of questions, right?
+[10:40] I've had multiple of these rounds of questions, which is great.
+[10:44] We want these.
+[10:44] And then so finally, after quite some time, it going through, digging, seeing what worked, what didn't work, how to improve, everything based on the answers that I've responded with.
+[10:53] Now it's saying it built it.
+[10:55] It verified against new live data.
+[10:58] What's now here?
+[10:59] So we have the rank, which we already had.
+[11:01] It updated it.
+[11:02] We create a subtopic script, a comment script, a reference to new actors that it found.
+[11:09] And then it created a watch list just from Instagram.
+[11:12] OK, you can also do this probably add YouTube specific watch list, you know, probably TikTok specific watch list.
+[11:17] You can do more with this. Right.
+[11:19] So here's what it found. Two things that had to correct.
+[11:22] And now it's a bigger briefing.
+[11:25] So now if we go back and find her, you know, we have the new scripts here. Right.
+[11:29] We have the new skill at the new brief. Right.
+[11:32] This is all just created.
+[11:35] And so now I completely updated this.
+[11:37] As you can see, we have quite a few, we have a few scripts that are going to help it.
+[11:41] So just because a skill just has a mark on the file, you can have a lot of accompanying code with that to help out.
+[11:49] You know, that's exactly what this is doing, especially if you're using something like Appify, where you need to go out and get things.
+[11:53] and actually it decode to retrieve all the data to then actually quickly put it into a way that the
+[12:02] brief can handle that data and then give us the output so that's exactly what this did now we have
+[12:06] a much better much better skill that we can use from here on out now the last step at step five
+[12:12] is we need to actually schedule this so while we're still here on the same screen this is easy
+[12:16] We're going to take slash schedule social me on every two days at 7 a.m.
+[12:23] I don't think I need it every day, but could if you want to.
+[12:27] This is a point where you could do it whenever you want.
+[12:30] I'm just going to have it run two days at 7 a.m.
+[12:33] And now it's all it's going to do.
+[12:35] It's going to go ahead and take care of this for me.
+[12:37] And then it will have a scheduled skill will run a specific time.
+[12:44] So there are some caveats to actually scheduling this, right?
+[12:48] So I did this.
+[12:49] This is going to be a cloud routine.
+[12:53] So that means that the routine on the cloud has to have access to this.
+[12:56] Right now, it's on my local computer.
+[12:58] I could do slash loop and then give it the skill and tell it, like, I want this to run at certain times of the day, every two days at 7 a.m.
+[13:06] But that means that it's only running on my computer, which is fine.
+[13:10] But it needs to be on and if you ever were to restart the computer
+[13:13] Just doing it this way then you need to re have you know
+[13:17] Reset up that loop again, so we would like this to be a cloud routine
+[13:22] The absolute best thing would be have this on the VPS and you would never have to worry about again
+[13:27] right because it's just up there in the cloud always running for you just the way you want it but
+[13:32] Because it's it's gonna be a cloud routine. It has to have access to that
+[13:36] So what it is doing is it needs a specific topic and the cron prompt and answered a couple questions, right?
+[13:42] So it knows it's going to do this every two days here.
+[13:44] This is basically the cron for me.
+[13:47] And it's just telling me what I need to do.
+[13:49] Okay.
+[13:50] This, if I were you, I would just do slash loop.
+[13:53] I am just doing slash schedule because I know that I've set up routines before.
+[13:58] Okay.
+[13:59] And so it's going ahead and the remote triggers basically mean it's creating that for me.
+[14:03] So if we go back to here, we're going to go into Claude on the web.
+[14:07] We can see here that right now, content mining is content mining.
+[14:12] This is essentially a scheduled routine.
+[14:16] It's working right now.
+[14:17] If I go into Claude.ai, look at routines right here, the social me cross platform search at 11 a.m. every two days.
+[14:24] It did UTC, so I'll update that to 7 a.m.
+[14:28] But it went ahead and created this for me.
+[14:30] Now it's going to be used everywhere, right?
+[14:32] This is exactly what I want.
+[14:34] It might say everywhere.
+[14:35] It's going to all the platforms I want, and I can access this anywhere, so on my phone or the desktop, laptop, wherever you're at, right, because this is now a routine within Cloud.
+[14:47] So that's it.
+[14:48] That's five steps.
+[14:49] We created a skill, updated the skill, attached a tool to it, really an MCP server with a bunch of tools.
+[14:55] Then we were able to grill it, update it, and then we scheduled it, right?
+[14:59] You can schedule it either on your just local machine with slash loop or slash schedule.
+[15:03] It creates the routine here in Claude's or Anthropics structure, but it will be on the web for you to use.
+[15:11] And so right here, this routine is going to run every two days for me.
+[15:14] Okay.
+[15:14] Again, I will have this in the school description in below, which is free.
+[15:19] You go ahead and join it.
+[15:20] I'm here to teach you whether you're building apps, automations, or whatever you're doing for your business or what you're trying to help other businesses out with.
+[15:28] I'm here to help you along the way okay so thank you for watching these videos in the meantime

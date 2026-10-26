@@ -1,0 +1,108 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Edit your videos by talking to Claude Code: captions, silence cuts and animations</title><style>
+@page { size: Letter; margin: 0.7in 0.75in; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color: #1a1a1a; font-size: 11.5pt; line-height: 1.5; }
+.top { border-left: 10px solid #E62117; padding: 4px 0 4px 18px; margin-bottom: 18px; }
+.eb { font-size: 9pt; font-weight: 700; letter-spacing: .18em; color: #E62117; }
+h1 { font-size: 21pt; line-height: 1.15; margin: 4px 0 6px; }
+.vid { font-size: 10pt; color: #555; }
+.vid a { color: #E62117; }
+h2 { font-size: 13pt; margin: 20px 0 6px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
+p { margin: 6px 0; }
+ul { margin: 4px 0 8px; padding-left: 20px; }
+li { margin: 2px 0; }
+strong { color: #000; }
+pre { background: #f4f4f5; border: 1px solid #e4e4e7; border-radius: 6px; padding: 9px 12px; font-size: 9.5pt;
+      white-space: pre-wrap; word-break: break-all; page-break-inside: avoid; margin: 6px 0 10px; }
+code { font-family: Menlo, Consolas, monospace; }
+blockquote { margin: 6px 0 10px; padding: 8px 12px; border-left: 4px solid #FFE03D; background: #fffbea; font-style: italic; }
+a { color: #1d4ed8; word-break: break-all; }
+.foot { margin-top: 26px; font-size: 9pt; color: #777; border-top: 1px solid #eee; padding-top: 8px; }
+</style></head><body>
+<div class="top"><div class="eb">THE AI AGENCY · YOUTUBE LIBRARY</div><h1>Edit your videos by talking to Claude Code: captions, silence cuts and animations</h1>
+<div class="vid">Video: <a href="https://youtube.com/watch?v=cdvi2ooarDc">https://youtube.com/watch?v=cdvi2ooarDc</a> (15 min)</div></div>
+<h2>In this lesson</h2>
+<p>You'll install HeyGen's free HyperFrames skills into Claude Code, then edit a real clip just by asking: add word-by-word captions, cut the dead air, add transitions and B-roll.
+Then you'll open HyperFrames Studio and turn a single screenshot into an animated intro or graph.</p>
+<h2>Good to know</h2>
+<ul>
+<li>Time: about an hour for setup and your first caption job. Each render takes a few minutes, longer the first time.</li>
+<li>Cost: HyperFrames is free and open source. Claude Code needs a paid Claude plan. Optional: I paid Seedance roughly 9 cents for one 3 second B-roll clip.</li>
+<li>Level: Beginner. No editing software and no code. You type what you want in plain English.</li>
+<li>Honest caveat: this is not one-click magic. The slick results you see online took back-and-forth to get right. Expect to have a conversation with it.</li>
+</ul>
+<h2>What you need</h2>
+<ul>
+<li>Claude Code (paid Claude plan): <a href="https://claude.com/claude-code">https://claude.com/claude-code</a></li>
+<li>HyperFrames, free, on HeyGen's GitHub: <a href="https://github.com/heygen-com/hyperframes">https://github.com/heygen-com/hyperframes</a></li>
+<li>Node.js 22 or newer, free (HyperFrames needs it): <a href="https://nodejs.org">https://nodejs.org</a></li>
+<li>FFmpeg, free (HyperFrames uses it to render): <a href="https://ffmpeg.org">https://ffmpeg.org</a></li>
+<li>A raw video clip. Mine was a 25 second HeyGen avatar clip with no captions, and a 3 minute talking clip with pauses.</li>
+</ul>
+<p><strong>1. Install the HyperFrames skills (0:40)</strong></p>
+<p>Go to the HyperFrames GitHub page, copy the install command and paste it into your terminal:</p>
+<pre><code>npx skills add heygen-com/hyperframes
+</code></pre>
+<p>It asks which agents to install to. Pick Claude Code. I got about 20 skills (hyperframes, figma, faceless explainer and more).</p>
+<p><strong>2. Open Claude Code and check the skill is there (1:59)</strong></p>
+<p>Update Claude Code first, start it, and turn auto mode on. Then type:</p>
+<pre><code>/hyperframes
+</code></pre>
+<p>If it shows up, you're ready.</p>
+<p><strong>3. Add captions to a clip (2:20)</strong></p>
+<p>Give it the path to your video and ask:</p>
+<pre><code>/hyperframes /path/to/your-video.mp4 can you add captions to this?
+</code></pre>
+<p>It transcribes your audio with Whisper so it knows the exact time of every word, then puts the captions on the video. It gave me style options and I picked one. Took a few minutes running in the background.</p>
+<p><strong>4. Swap in a different caption style from the catalog (4:07)</strong></p>
+<p>Open the catalog: <a href="https://hyperframes.heygen.com/catalog">https://hyperframes.heygen.com/catalog</a>
+Pick a style (pill karaoke, matrix decode, neon accent, kinetic slam, highlight). Each one has an install command. I used highlight:</p>
+<pre><code>npx hyperframes add caption-highlight
+</code></pre>
+<p>Then ask Claude Code to redo the captions with it, in your own words, something like:</p>
+<blockquote>
+<p>Recreate the captions on this video using the caption-highlight component I just installed.</p>
+</blockquote>
+<p>The catalog also has animated macOS windows, a YouTube lower third, transitions, app showcases, a US map with data and flowcharts. Every change renders a new MP4.</p>
+<p><strong>5. Cut out the dead air (7:33)</strong></p>
+<pre><code>/hyperframes cut out silences from this video /path/to/your-video.mp4
+</code></pre>
+<p>My 3 minute 1 second clip came back at 1 minute 50 seconds. On a 30 minute video, that can take you down to 15 or 20 minutes.</p>
+<p><strong>6. Add transitions, animations and B-roll (8:57)</strong></p>
+<p>This is what I typed after the silence cut:</p>
+<blockquote>
+<p>Now add transitions, animations where it may be right to do so, with text such as software I mentioned like Gmail, Slack. Go through this, see where you think we need to add transitions and cuts, add B-roll and more.</p>
+</blockquote>
+<p>Then keep talking to it until you like it. I wasn't happy with one B-roll shot, so I made that 3 second clip in Seedance and Claude Code put it in.</p>
+<p><strong>7. Open HyperFrames Studio (10:40)</strong></p>
+<p>Start a new project from your terminal (or ask Claude Code to do it with /hyperframes init):</p>
+<pre><code>npx hyperframes init my-video
+</code></pre>
+<p>Then open the Studio in your browser:</p>
+<pre><code>npx hyperframes preview
+</code></pre>
+<p>In the Studio you can click every layer (the head, the arm) and move it yourself, or tell Claude Code what to fix.</p>
+<p><strong>8. Turn a screenshot into an animation (11:27)</strong></p>
+<p>Take a screenshot of anything you like, drag it into the terminal with Claude Code open, and ask. My two prompts:</p>
+<blockquote>
+<p>Can you animate this with a guy waving in the intro to this video, please?</p>
+</blockquote>
+<p>Before the previous one we just did, can you add this where the graph is about YouTube views, adding zoom in and following the graph. Make it about four seconds. Just make it awesome.</p>
+<p>It built the full animation from one screenshot. The more you do this, the faster it learns your style.</p>
+<h2>Files and links</h2>
+<ul>
+<li>HyperFrames on GitHub: <a href="https://github.com/heygen-com/hyperframes">https://github.com/heygen-com/hyperframes</a></li>
+<li>Style catalog: <a href="https://hyperframes.heygen.com/catalog">https://hyperframes.heygen.com/catalog</a></li>
+<li>Highlight caption style (the one I installed): <a href="https://hyperframes.heygen.com/catalog/components/caption-highlight">https://hyperframes.heygen.com/catalog/components/caption-highlight</a></li>
+<li>HyperFrames quickstart: <a href="https://hyperframes.heygen.com/quickstart">https://hyperframes.heygen.com/quickstart</a></li>
+</ul>
+<h2>If it breaks</h2>
+<ul>
+<li>/hyperframes doesn't show up: update Claude Code, then exit and open it again so it loads the new skills.</li>
+<li>The first job seems stuck: the first run takes a few minutes. Let it work.</li>
+<li>The result isn't what you wanted: that's normal. Tell it exactly what's wrong ("the captions are too small", "the hair's not quite right") and it re-renders.</li>
+<li>Claude's B-roll looks off: generate that one shot with a video model like Seedance (small paid cost) and ask Claude Code to drop it in.</li>
+<li>A render fails on the resolution setting: --resolution takes named presets like landscape or 1080p, not 1920x1080.</li>
+</ul>
+<h2>Next</h2>
+<p>Build an AI agent in 5 steps with Claude Code</p>
+<div class="foot">Tyler Reed · skool.com/the-ai-agency</div></body></html>

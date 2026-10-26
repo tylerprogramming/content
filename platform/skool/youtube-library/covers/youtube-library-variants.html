@@ -1,0 +1,87 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#ddd}
+  .card{position:relative;width:1460px;height:752px;overflow:hidden;font-family:'Poppins',sans-serif;margin:0 0 40px 0}
+  .warm{background-color:#efe6da;
+    background-image:linear-gradient(rgba(120,100,80,.13) 1.5px,transparent 1.5px),linear-gradient(90deg,rgba(120,100,80,.13) 1.5px,transparent 1.5px);
+    background-size:52px 52px}
+  .white{background-color:#fbfbfb;
+    background-image:linear-gradient(rgba(0,0,0,.05) 1.5px,transparent 1.5px),linear-gradient(90deg,rgba(0,0,0,.05) 1.5px,transparent 1.5px);
+    background-size:52px 52px}
+  .vig{position:absolute;inset:0;background:radial-gradient(ellipse at 45% 50%,rgba(255,255,255,.35) 0%,rgba(255,255,255,0) 55%,rgba(120,95,70,.18) 100%)}
+  .topo{position:absolute;opacity:.35}
+  .play{position:absolute;border-radius:60px;background:linear-gradient(180deg,#ff3b30 0%,#E62117 55%,#c4170f 100%);
+        box-shadow:0 30px 60px rgba(120,20,10,.35),inset 0 -10px 0 rgba(0,0,0,.12),inset 0 8px 0 rgba(255,255,255,.18)}
+  .play i{position:absolute;left:50%;top:50%;transform:translate(-38%,-50%);border-style:solid;border-color:transparent transparent transparent #fff}
+  .caps{font-weight:900;letter-spacing:-2px;line-height:.92}
+  .sub{font-weight:800;color:#1a1a1a;letter-spacing:.5px}
+  /* A */
+  #A .type{position:absolute;left:96px;top:50%;transform:translateY(-50%)}
+  #A .l1{font-size:158px;color:#fff;text-shadow:0 6px 0 rgba(0,0,0,.10),0 10px 24px rgba(60,40,20,.22)}
+  #A .box{display:inline-block;background:#E62117;color:#fff;font-size:158px;line-height:1;padding:4px 30px 12px;margin:14px 0 10px -8px;box-shadow:0 10px 24px rgba(120,20,10,.25)}
+  #A .sub{font-size:46px}
+  /* B */
+  #B .type{position:absolute;left:90px;top:50%;transform:translateY(-50%)}
+  #B .l1{font-size:150px;color:#111}
+  #B .box{display:inline-block;background:#FFE03D;color:#111;font-size:150px;line-height:1;padding:2px 26px 10px;margin:10px 0 0 -6px}
+  #B .sub{font-size:40px;margin-top:22px}
+  #B .th{position:absolute;width:430px;border-radius:18px;border:7px solid #fff;box-shadow:0 22px 50px rgba(0,0,0,.28)}
+  /* C */
+  #C .wall{position:absolute;inset:-40px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;transform:rotate(-6deg) scale(1.12)}
+  #C .wall img{width:100%;border-radius:12px;display:block}
+  #C .shade{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(10,10,12,.72) 0%,rgba(10,10,12,.86) 70%)}
+  #C .type{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center}
+  #C .l1{font-size:170px;color:#fff}
+  #C .box{display:inline-block;background:#E62117;color:#fff;font-size:170px;line-height:1;padding:4px 34px 14px;margin-top:12px}
+  /* D */
+  #D .type{position:absolute;left:96px;top:96px}
+  #D .eb{font-weight:800;font-size:46px;color:#E62117;letter-spacing:.18em}
+  #D .l1{font-size:168px;color:#111;margin-top:6px}
+  #D .box{display:inline-block;background:#E62117;color:#fff;font-size:168px;line-height:1;padding:2px 28px 12px;margin:10px 0 0 -6px}
+  #D svg.path{position:absolute;left:0;top:0}
+</style></head>
+<body>
+
+<!-- A: warm grid, red box, play (currently uploaded) -->
+<div class="card warm" id="A">
+  <div class="vig"></div>
+  <svg class="topo" style="right:-60px;top:-70px;width:520px" viewBox="0 0 400 400" fill="none" stroke="#8a7560" stroke-width="2"><path d="M200 40c90 0 160 60 160 150s-70 170-160 170S40 290 40 200 110 40 200 40z"/><path d="M200 75c70 0 125 50 125 120s-55 135-125 135S75 270 75 200s55-125 125-125z"/><path d="M205 110c50 0 90 38 90 88s-40 100-92 100-88-45-88-95 40-93 90-93z"/><path d="M208 145c32 0 58 25 58 56s-26 64-60 64-56-30-56-62 26-58 58-58z"/></svg>
+  <div class="type"><div class="caps l1">YOUTUBE</div><div class="caps box">LIBRARY</div><div class="sub">Every video. Every command.</div></div>
+  <div style="position:absolute;right:118px;top:50%;transform:translateY(-52%) translate(-22px,-26px) rotate(-6deg);width:300px;height:212px;border-radius:60px;background:#1a1a1a;opacity:.92"></div>
+  <div class="play" style="right:96px;top:50%;transform:translateY(-52%);width:300px;height:212px"><i style="border-width:46px 0 46px 80px"></i></div>
+</div>
+
+<!-- B: white grid, yellow highlight, your real thumbnails fanned -->
+<div class="card white" id="B">
+  <div class="type"><div class="caps l1">YOUTUBE</div><div class="caps box">LIBRARY</div><div class="sub">Every video. Every command.</div></div>
+  <img class="th" src="thumbs/1KsadAvYE8k.jpg" style="right:70px;top:70px;transform:rotate(7deg)">
+  <img class="th" src="thumbs/3xprBcuJKDA.jpg" style="right:150px;top:250px;transform:rotate(-5deg)">
+  <img class="th" src="thumbs/MzwYKfSxToU.jpg" style="right:60px;top:420px;transform:rotate(4deg)">
+  <div class="play" style="right:560px;top:590px;width:150px;height:106px;border-radius:32px"><i style="border-width:23px 0 23px 40px"></i></div>
+</div>
+
+<!-- C: dark wall of your thumbnails -->
+<div class="card" id="C">
+  <div class="wall">
+    <img src="thumbs/MzwYKfSxToU.jpg"><img src="thumbs/3xprBcuJKDA.jpg"><img src="thumbs/WvxPxQ_XlcQ.jpg"><img src="thumbs/1KsadAvYE8k.jpg">
+    <img src="thumbs/uEUP4iHJO1Q.jpg"><img src="thumbs/GJQCUcx4roA.jpg"><img src="thumbs/-dEeg0WnJxs.jpg"><img src="thumbs/J5lkE_jBEko.jpg">
+    <img src="thumbs/cdvi2ooarDc.jpg"><img src="thumbs/WJabXRVe8JQ.jpg"><img src="thumbs/MzwYKfSxToU.jpg"><img src="thumbs/3xprBcuJKDA.jpg">
+    <img src="thumbs/WvxPxQ_XlcQ.jpg"><img src="thumbs/1KsadAvYE8k.jpg"><img src="thumbs/uEUP4iHJO1Q.jpg"><img src="thumbs/GJQCUcx4roA.jpg">
+  </div>
+  <div class="shade"></div>
+  <div class="type"><div class="caps l1">YOUTUBE</div><div class="caps box">LIBRARY</div></div>
+</div>
+
+<!-- D: white, eyebrow, dashed path to a play button (Start Here / n8n motif) -->
+<div class="card white" id="D">
+  <div class="type"><div class="eb">EVERY VIDEO</div><div class="caps l1">YOUTUBE</div><div class="caps box">LIBRARY</div></div>
+  <svg class="path" width="1460" height="752" viewBox="0 0 1460 752" fill="none">
+    <path d="M70 680 C 300 610, 520 700, 760 650 S 1000 560, 1040 600 S 1000 680, 1090 640 S 1190 540, 1230 470"
+          stroke="#111" stroke-width="7" stroke-dasharray="20 18" stroke-linecap="round"/>
+  </svg>
+  <div class="play" style="right:90px;top:200px;width:340px;height:240px;border-radius:70px"><i style="border-width:52px 0 52px 90px"></i></div>
+</div>
+
+</body></html>

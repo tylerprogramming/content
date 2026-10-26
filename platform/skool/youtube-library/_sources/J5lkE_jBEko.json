@@ -1,0 +1,8 @@
+{
+ "id": "J5lkE_jBEko",
+ "title": "Claude Opus 5 Cut My API Bill in Half — Here's the Catch",
+ "published": "2026-08-05",
+ "duration": "PT18M16S",
+ "views": "425",
+ "description": "Claude Opus 5 vs Opus 4.8 vs Fable 5, tested on real builds instead of benchmarks. I ran the same prompts through all three models across six tests, and since Opus 5 is half the price of Fable, I show you what each one costs and where each one wins.\n\nI have been running Opus 5 on my actual work and I did not get the negative reactions people report online. So instead of reading you the benchmarks, I ran six real one-shot tests on all three models: a bouncing-ball hexagon, a 3D solar system, a Suika merge game, Flappy Bird, a design turned straight into working code, and a reasoning trio. Cost, speed, and quality for each, then a scorecard and my honest take: Opus 5 over-generates on builds but catches its own errors, Fable is consistently the priciest, and 4.8 is the cheapest. Where Opus 5 is plenty, where Fable earns its price, and how it actually shakes out.\n\nCHAPTERS\n0:00 - Opus 5 is out: my real results\n1:48 - The pricing: half of Fable\n2:21 - The setup: 3 models, 6 tests\n3:04 - Test 1: hexagon ball (Python)\n5:33 - Test 2: 3D solar system\n8:05 - Test 3: Suika merge game\n9:41 - Test 4: Flappy Bird\n11:09 - Test 5: design to code (live)\n14:22 - Test 6: the reasoning trio\n15:16 - Scorecard + honest verdict\n17:33 - Get everything + wrap-up\n\nThe exact prompts, the model-bench skill, and my full scorecard are in my free community so you can run the same tests yourself:\nhttps://www.skool.com/the-ai-agency"
+}

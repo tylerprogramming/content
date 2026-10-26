@@ -1,0 +1,65 @@
+Build an AI agent in 5 steps with Claude Code
+
+Video: https://youtube.com/watch?v=WvxPxQ_XlcQ (15 min)
+
+IN THIS LESSON
+You'll build a research agent that pulls the top content on any topic from YouTube, Instagram, TikTok and X, reads what's working, and hands you a brief with ideas. Then you'll put it on a schedule so it runs without you.
+
+GOOD TO KNOW
+- Time: 30 to 45 minutes
+- Cost: Claude Pro or Max plan. Apify gives you $5 of free credit to start, then it's paid.
+- Level: Beginner. No code. You describe the agent and Claude builds it.
+
+WHAT YOU NEED
+- Claude Pro or Max plan, with Claude Code installed: https://claude.com/claude-code
+- Apify account (the tool that collects the social media data): https://apify.com
+- Matt Pocock's skills, for the "grilling" skill in step 4: https://github.com/mattpocock/skills
+
+STEPS
+
+1. Pick where to build it (0:22)
+Claude on the web, the Claude desktop app, or Claude Code in the terminal. I use Claude Code. Make sure you're in auto mode.
+
+2. Describe the agent (0:59)
+Paste this into Claude Code (swap the topic and platforms for yours):
+
+Create a Claude Code skill called social-me. It takes a topic, researches it across multiple platforms using Apify, reads the top YouTube video transcripts, finds what's working and the content gaps, and gives me a brief with content ideas. Ground everything in real data. Never invent numbers.
+
+It creates a folder in ~/.claude/skills/social-me with a SKILL.md file. On a Mac, press Command + Shift + Period in Finder to see the hidden .claude folder.
+
+3. Give it tools with the Apify MCP server (2:45)
+- Sign in at apify.com, then go to https://mcp.apify.com
+- Choose Claude Code, turn on "Add Apify token", and copy the command it gives you into your terminal
+- In Claude Code type /mcp, pick Apify, and click Authenticate
+- Exit Claude Code and open it again so it loads the new skill. Then type /social-me to run it.
+
+4. Make it better with the grilling skill (8:00)
+Install Matt Pocock's skills (it's an official Claude Code plugin now). Then type:
+
+/grilling
+
+Tell it: "I want to harden social-me." It asks you rounds of questions about what's weak and fixes the skill as you answer. Mine found that Instagram was returning hours-old posts with no engagement, and switched to a list of accounts to watch.
+
+5. Put it on a schedule (12:11)
+Two options:
+- /loop runs it on your computer. Easy, but your computer has to stay on, and you set it up again after a restart.
+- /schedule makes a Claude routine in the cloud that runs even when your computer is off. I used this one:
+
+/schedule social-me every two days at 7am
+
+Check it at claude.ai > Routines. The time shows in UTC, so adjust it to your time zone.
+
+FILES AND LINKS
+- The finished skill: https://github.com/tylerprogramming/claude-skills/tree/main/social-me
+- Apify: https://apify.com
+- Apify MCP setup: https://mcp.apify.com
+- Matt Pocock's skills: https://github.com/mattpocock/skills
+
+IF IT BREAKS
+- /social-me doesn't show up: Claude Code only loads new skills when it starts. Exit and open it again.
+- Apify shows "needs authentication": run /mcp, pick Apify, authenticate.
+- The routine runs at the wrong hour: routines use UTC. Change the time at claude.ai > Routines.
+- The first version gives weak results: that's normal. That's what step 4 is for.
+
+NEXT
+Set Up Hermes Agent in 30 Minutes, if you want this running on its own machine 24/7.

@@ -1,0 +1,101 @@
+[00:00] I set up OpenAI's new dot last week. Before I'd given it a single job, it had already gone through my email and found a payment problem I'd missed.
+[00:07] Helpful?
+[00:08] Honestly, yes. But I never told it to read my email. It just did because my Gmail was already connected to ChatGPT.
+[00:15] That's what a dot is, an AI that doesn't wait for you to ask.
+[00:18] And I already have something that works while I sleep, a Claude Code routine that's been running every morning since August.
+[00:24] So I gave both of them the same job and compared them on five things.
+[00:29] Plus one thing you should never hand to either of them.
+[00:31] A dot lives inside ChatGPT.
+[00:33] It runs on GPT-6 Astra, OpenAI's top model, and every dot gets its own computer in the cloud, its own browser, its own files.
+[00:42] You connect your apps, and OpenAI says it works with over 4,000.
+[00:45] Then you hand it a job, like keeping your client proposals up to date.
+[00:49] The new part is what it does between your requests.
+[00:51] It goes through your connected apps on its own and looks for things to help with.
+[00:56] OpenAI calls that proactive research.
+[00:58] So it's like a concierge who lives at the hotel.
+[01:00] You never ring the bell.
+[01:01] They saw your flight got moved and already rebooked the car.
+[01:05] Claude Code is more like a specialist with an alarm clock.
+[01:07] Great at the job, shows up exactly when you said, and then goes home.
+[01:11] So here's the job.
+[01:12] Every morning at 6, find the three most talked about AI stories for people building on their own.
+[01:17] And tell me why each one matters.
+[01:19] I named my dot scout and the first thing it did was ask me two questions.
+[01:23] What time zone?
+[01:24] And am I allowed to post this without asking you every day?
+[01:26] I like that.
+[01:27] I said yes to the brief and nothing else without asking.
+[01:30] You can actually open this computer and watch it and take over if you want.
+[01:34] My Cloud Routine does a bigger version of the same thing.
+[01:37] Every morning at 6 it pulls AI news from YouTube, Reddit, and a few sites into my Notion.
+[01:42] It's been doing that since August 2nd, pretty much every single morning.
+[01:46] So this morning, scout posted at 6 on the dot.
+[01:49] Three clean stories, each with a source and a short reason it matters.
+[01:52] Claude finished at 6.10.
+[01:53] 18 new items in my Notion, and it told me what broke.
+[01:56] All my X sources are down, and YouTube is blocking it from grabbing transcripts.
+[02:01] That part I really value.
+[02:02] It doesn't pretend everything went fine.
+[02:04] So the first difference is who starts the work.
+[02:06] A dot can start on its own.
+[02:08] You saw that with my email.
+[02:09] Claude waits for you.
+[02:10] Either you ask it, or you set up a routine, which is just a save job with a trigger.
+[02:15] Every weekday at 9.07, say.
+[02:17] Or whenever someone opens a pull request.
+[02:19] It's never once come to me with an idea.
+[02:21] It does the job I wrote down.
+[02:23] Memory is the second one.
+[02:24] A dot remembers.
+[02:25] It pulls in what ChatGPT already knows about you and keeps learning from your apps.
+[02:30] Funny thing though, two of Scout's three stories this morning were the same ones it
+[02:33] gave me yesterday, so remembering you isn't the same as remembering what it already told
+[02:37] you.
+[02:38] What bugs me is that, at launch, you can't open that memory and edit it line by line.
+[02:43] And if you disconnect an app, whatever it learned from it stays.
+[02:47] A Cloud Code routine wakes up blank every time.
+[02:49] Zero memory of yesterday's run.
+[02:52] Sounds bad, right?
+[02:53] But you just write what it needs into a file in your project and it reads that file every
+[02:57] run.
+[02:58] And you can open that file whenever you want and fix it.
+[03:00] I actually like that better.
+[03:01] I'd rather see exactly what my agent thinks it knows.
+[03:04] Third, a dot works on its own computer and you talk to it in ChatGPT or in Slack or Teams.
+[03:10] Cloud Code works inside your project, your files, your code.
+[03:14] To reach other apps it uses connectors, which is MCP, the hands thing from my last video,
+[03:20] and then price which is where most people will decide.
+[03:23] You can't get a dot on the free plan and not on the $20 plus plan either.
+[03:27] Your first one comes with ChatGPT Pro which starts at $100 a month.
+[03:32] And if you're in the UK, Switzerland, or the EU, Pro doesn't include it yet.
+[03:36] Cloud Code routines work on the $20 Cloud Pro plan.
+[03:39] eat into your normal usage so if you run big jobs you'll feel it and probably move up a plan,
+[03:44] but you can start for 20, last one control. With a dot you set rules for each kind of action. Just
+[03:50] do it, do it if I pre-approved it, ask me first, or give it back to me. And a couple of things it
+[03:55] always asks about no matter what, like changing a password or moving money, good. A cloud code
+[04:01] routine doesn't stop to ask, at all. Whatever connectors you leave on that routine it can use,
+[04:06] writing included. So the control happens before it runs, when you take off everything the job
+[04:11] doesn't need. If your day is mostly inbox and slack, and you want something that catches stuff
+[04:16] you'd miss, and a hundred a month doesn't hurt, get a dot. If you build things, and what you really
+[04:20] want is the same job done every night without you, Claude Code already does that for 20 bucks.
+[04:25] That's me. I don't need a concierge yet. Could that change? Sure. If the proactive part turns
+[04:30] out to be really good, I might pay for it. Ask me in a couple of months. Okay, the warning.
+[04:34] Here's the irony.
+[04:35] Scout's top story this morning was about OpenAI's own agents.
+[04:40] Researchers found them using public websites to talk to each other, websites nobody gave
+[04:44] them permission to use.
+[04:46] And remember my email, nothing bad happened.
+[04:49] But it went somewhere I never pointed it, just because the door was already open.
+[04:53] So whichever one you use, give it the smallest key that gets the job done.
+[04:57] Check what's already connected before you start.
+[04:59] One project folder, not your whole drive.
+[05:01] Read only if it only needs to read.
+[05:03] And anything involving money or passwords, keep that for yourself.
+[05:06] So, really fast, a dot starts on its own, and Claude Code waits for you.
+[05:11] The dot remembers you, but not always what it told you.
+[05:13] Claude Code forgets unless you write it down, which I like.
+[05:16] A dot is 100 a month, and Claude Code starts at 20.
+[05:19] And either way, small keys.
+[05:21] The one-page map is free on buildalone.co, and if you want to give Claude Code more to
+[05:25] work with first, my last video goes through the 5 connections I'd set up.
+[05:29] See you in the next one.

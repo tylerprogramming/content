@@ -1,0 +1,96 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Make a 30-second product ad with the ElevenLabs Flows Agent</title><style>
+@page { size: Letter; margin: 0.7in 0.75in; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color: #1a1a1a; font-size: 11.5pt; line-height: 1.5; }
+.top { border-left: 10px solid #E62117; padding: 4px 0 4px 18px; margin-bottom: 18px; }
+.eb { font-size: 9pt; font-weight: 700; letter-spacing: .18em; color: #E62117; }
+h1 { font-size: 21pt; line-height: 1.15; margin: 4px 0 6px; }
+.vid { font-size: 10pt; color: #555; }
+.vid a { color: #E62117; }
+h2 { font-size: 13pt; margin: 20px 0 6px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
+p { margin: 6px 0; }
+ul { margin: 4px 0 8px; padding-left: 20px; }
+li { margin: 2px 0; }
+strong { color: #000; }
+pre { background: #f4f4f5; border: 1px solid #e4e4e7; border-radius: 6px; padding: 9px 12px; font-size: 9.5pt;
+      white-space: pre-wrap; word-break: break-all; page-break-inside: avoid; margin: 6px 0 10px; }
+code { font-family: Menlo, Consolas, monospace; }
+blockquote { margin: 6px 0 10px; padding: 8px 12px; border-left: 4px solid #FFE03D; background: #fffbea; font-style: italic; }
+a { color: #1d4ed8; word-break: break-all; }
+.foot { margin-top: 26px; font-size: 9pt; color: #777; border-top: 1px solid #eee; padding-top: 8px; }
+</style></head><body>
+<div class="top"><div class="eb">THE AI AGENCY · YOUTUBE LIBRARY</div><h1>Make a 30-second product ad with the ElevenLabs Flows Agent</h1>
+<div class="vid">Video: <a href="https://youtube.com/watch?v=WJabXRVe8JQ">https://youtube.com/watch?v=WJabXRVe8JQ</a> (18 min)</div></div>
+<h2>In this lesson</h2>
+<p>You'll upload one product photo, paste one prompt, and let the Flows Agent in ElevenCreative build the whole ad pipeline: images, video clips, voiceover, music and the final edit.
+Then you'll change it by talking to the agent, and swap in a new product to reuse the same flow.</p>
+<h2>Good to know</h2>
+<ul>
+<li>Time: I built the coffee ad live during the recording. Plan on an hour for your first one so you can iterate.</li>
+<li>Cost: Paid. The Starter plan gives 30,000 credits a month, the Creator plan 121,000. My ad came to about 32,000 credits, so you really need Creator for this. The agent chat is billed on tokens and every generation uses credits, so each re-run costs you.</li>
+<li>Level: Beginner. No code. You talk to the agent and it builds the nodes.</li>
+<li>Flows is in alpha, so the screens may look a little different when you try it.</li>
+<li>It's not really one prompt. My Pepsi ad had a long conversation behind it. Expect to iterate.</li>
+<li>This is a paid partnership. I'm an ElevenLabs ambassador.</li>
+<li>Partner link: the ElevenLabs link below is my partner link. I get paid if you sign up through it.</li>
+</ul>
+<h2>What you need</h2>
+<ul>
+<li>An ElevenLabs account, Creator plan recommended (paid). My partner link: <a href="https://try.elevenlabs.io/8n9sgoi23fkk">https://try.elevenlabs.io/8n9sgoi23fkk</a></li>
+<li>Plans and credits: <a href="https://elevenlabs.io/pricing">https://elevenlabs.io/pricing</a></li>
+<li>One photo of your product, saved on your computer (a bag, can, bottle, whatever you sell)</li>
+</ul>
+<p><strong>1. Open Flows in ElevenCreative (0:33)</strong></p>
+<p>ElevenLabs has three areas: ElevenCreative, ElevenAgents and the API. Go to ElevenCreative, then Flows. Open one of the example flows first, like the luxury perfume ad, to see how image, video, voiceover and composition nodes connect.</p>
+<p><strong>2. Set the agent permissions before you spend (15:38)</strong></p>
+<p>At the bottom of the agent chat there are three modes:</p>
+<ul>
+<li>Auto run: it runs everything with no confirmation.</li>
+<li>Confirm edits: you approve each step.</li>
+<li>Auto under threshold: it runs anything under a credit limit and asks about the rest. This is the one they recommend. Mine was set to 300, so a 178 credit GPT Image 2 node just ran.</li>
+</ul>
+<p><strong>3. Start a new flow and paste the prompt (4:29)</strong></p>
+<p>Click Create new flow. You can build nodes by hand from the bottom bar, but I let the agent do it. Paste this into the agent chat (swap EMBER and the scenes for your product):</p>
+<blockquote>
+<p>I've uploaded my real product photo - a coffee bag for a small batch brand called EMBER. Use it as the style reference and generate 5 more images that MATCH its design, color palette, lighting, and mood, so they look like the same brand campaign, but showing different subjects: coffee beans on warm wood, a cozy coffee house interior, a person in a cozy sweater holding a mug in morning light, a close-up pour with steam rising, and a warm windowsill at sunrise. Keep all 5 consistent with my uploaded product's look. Then feed all 6 images into a video node as references and generate a 30 second cinematic ad from them, warm and unhurried, golden morning light. Add a warm voiceover with Eleven v3 reading exactly: 'Some mornings you wake up. Others, you rise. EMBER is slow roasted in small batches, for the cup that actually earns its place in your hands. Rich. Warm. Unhurried. EMBER. Mornings worth waking up for.' Add gentle warm instrumental music with a small lift at the end. Assemble everything into one 30 second ad in a Composition node.</p>
+</blockquote>
+<p>Then upload your product photo into the flow. I used a Tom Hanks coffee bag from a Google search. Make the brand name in the prompt match your photo. I didn't, and that's why my ad says Ember.</p>
+<p><strong>4. Pick a voice and let it build the nodes (6:25)</strong></p>
+<p>The agent offers a few voices to preview. I picked Frank. It lays out its plan (five campaign images, a 30 second ad, voiceover, music, composition) and then creates the nodes. Each node shows its model and credit cost. You can change the model, aspect ratio and resolution. I chose GPT Image 2 because it costs less than Nano Banana. Count the image nodes. Mine made three, so I typed:</p>
+<blockquote>
+<p>I only see three image generation nodes. I thought we were doing five.</p>
+</blockquote>
+<p><strong>5. Animate the clips (8:59)</strong></p>
+<p>The agent turns each image into a video clip. You can pick the video model and filter by realistic or upscaling. Most models only do set lengths, like 4, 6 and 8 seconds for Veo 3.1 Fast, or 2 second clips from a Runway model. Messy canvas? Select all the nodes, right click, and choose Tidy up.</p>
+<p><strong>6. Watch the composition (10:44)</strong></p>
+<p>Everything lands in the Composition node: one video track, plus audio tracks for voiceover and music. Download it and watch it.</p>
+<p><strong>7. Change it by talking (11:40)</strong></p>
+<p>My first cut never showed the word Ember on screen. So I typed:</p>
+<blockquote>
+<p>For the first and last video, we should have Ember cinematically onto the video as well as text.</p>
+</blockquote>
+<p>It regenerated those two images with two options each, then re-animated them. Check it didn't leave the old nodes behind. I had to ask it to remove the original two. Then rerun the Composition node (13:25) and download again. Rerunning the composition costs no credits.</p>
+<p><strong>8. Swap in a new product (14:47)</strong></p>
+<p>Replace the photo at the top of the flow and click Run from here. If it's a different kind of product, ask the agent to update the image, video and music prompts first, or your energy drink ad will sound like a cozy coffee shop:</p>
+<blockquote>
+<p>This is my new product. We need the prompts updated for this product now.</p>
+</blockquote>
+<h2>Files and links</h2>
+<ul>
+<li>ElevenLabs (my partner link): <a href="https://try.elevenlabs.io/8n9sgoi23fkk">https://try.elevenlabs.io/8n9sgoi23fkk</a></li>
+<li>ElevenCreative: <a href="https://elevenlabs.io/creative">https://elevenlabs.io/creative</a></li>
+<li>Flows (sign in first): <a href="https://elevenlabs.io/app/flows">https://elevenlabs.io/app/flows</a></li>
+<li>Pricing and credits: <a href="https://elevenlabs.io/pricing">https://elevenlabs.io/pricing</a></li>
+</ul>
+<h2>If it breaks</h2>
+<ul>
+<li>Fewer image nodes than it promised: tell it how many you see and how many you expected. It adds the rest.</li>
+<li>Your edit doesn't show up in the final ad: rerun the Composition node. It only picks up updated clips when you run it again. It's free.</li>
+<li>Old nodes still wired in after a change: ask the agent to remove the originals.</li>
+<li>You can't make a clip an exact length: video models have fixed durations. Pick a model whose lengths fit your script.</li>
+<li>Seedance says it's not available: it isn't offered in the US. Pick another video model.</li>
+<li>The cost estimate looks huge: mine said $450, which was not correct. Go by the credit number. Mine was about 32,000.</li>
+<li>The ad mentions the wrong brand: your prompt and your photo don't match. Ask the agent to redo the prompts based on your uploaded image.</li>
+</ul>
+<h2>Next</h2>
+<p>Build an AI agent in 5 steps with Claude Code</p>
+<div class="foot">Tyler Reed · skool.com/the-ai-agency</div></body></html>

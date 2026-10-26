@@ -1,0 +1,79 @@
+Connect Claude Code to Gmail, Calendar, Drive, Docs, Slack and ClickUp with one MCP server
+
+Video: https://youtube.com/watch?v=uEUP4iHJO1Q (12 min)
+
+IN THIS LESSON
+You'll build one MCP gateway in arcade.dev that gives Claude Code access to Gmail, Google Calendar, Google Drive, Google Docs, Slack and ClickUp. Then you'll give it one prompt that reads an email thread, writes a Google Doc, files it in Drive and posts to Slack.
+
+GOOD TO KNOW
+- Time: 15 to 20 minutes
+- Cost: arcade.dev has a free plan to start, with paid plans above that.
+- Level: Beginner. No code. You click tools in a web page and paste one command.
+- Why not just use Claude's own connectors? For you on your own machine, those are fine. Arcade is for when you want other people using it, or an agent running 24/7. Google makes you re-authenticate every seven days unless you're a production-ready app. Arcade handles that for you.
+
+WHAT YOU NEED
+- Claude Code installed: https://claude.com/claude-code
+- arcade.dev account (free to start): https://www.arcade.dev/
+- The accounts you want to connect: Google (Gmail, Calendar, Drive, Docs), Slack, ClickUp
+
+STEPS
+
+1. Sign in and create your first gateway (1:04)
+Sign in at arcade.dev, or create an account if it's your first time. On the left, click MCP Gateways. At the top right, click Create MCP Gateway. Give it a name. I called mine Google Calendar Assistant.
+
+2. Pick only the tools you need (1:41)
+Search for Gmail and click into its tools. These are the actual functions Claude will be able to call. I picked three: get emails, list emails, send emails. You can click All, but start small.
+
+3. Choose who can connect, then create it (2:18)
+Pick "Members of this project" if it's just you. The other option is external users who sign in with their own identity provider. Click Create MCP Gateway.
+
+4. Connect it to Claude Code and sign in (2:33)
+Arcade shows options for Cursor, Claude Code, Claude Desktop, Codex, or a plain MCP URL. Choose Claude Code and copy the command it gives you. Paste it into a fresh terminal. You should see "Added HTTP MCP server" with your gateway name. Don't share it. It's shown on screen in the video, and I deleted mine after recording.
+Open Claude Code and type:
+
+/mcp
+
+Pick your gateway. It says it needs authentication. Press Enter, sign in with Google, click Allow. Then test it:
+
+List all my emails through the Google Calendar Assistant MCP server.
+
+Naming the server makes sure it uses this one, not another Gmail connection you already have. Keep auto mode on.
+
+5. Build a bigger multi-tool gateway (4:06)
+Back in arcade.dev, go to MCP Gateways and create a new one. I called it Multi-Tool Assistant. I selected all tools for Google Calendar, Gmail, Google Drive (17 tools) and Slack. That came to 65 tools. Normally you'd narrow that down, but it shows it can do all of it at once. Pick Members of this project, create it, copy the Claude Code command, paste it in the terminal. Then in Claude Code, /mcp, pick Multi-Tool Assistant, authenticate.
+
+6. Turn off the servers you don't want it using (5:56)
+In /mcp, I disabled my other Gmail, Calendar, Drive and Slack connections. Now anything I ask about those apps goes through the Multi-Tool Assistant. Test it:
+
+Can you read the last 10 emails I had and then any specific calendar events I have for today?
+
+7. Run the five-step prompt (6:58)
+This is the one that touches four apps. Here's my prompt, cleaned up. Swap in your own email thread, folder and channel:
+
+Summarize my partnership emails with Blotato in Gmail, create a doc with that summary, save it to Google Drive in a folder named Blotato, and then send me a Slack message in the ai channel.
+
+Google Drive tools can't write a document on their own. I added Google Docs to the gateway so it could create the doc, then move it into the folder. Check Drive and Slack to see the results.
+
+8. Add a new app to a live gateway (9:52)
+In arcade.dev, open your gateway and click the pencil to edit. Search for ClickUp, click All, then Save. Back in Claude Code, type /mcp, pick the gateway, and re-authenticate. Allow the new access. Then:
+
+How many tasks do I have?
+
+9. Add your team (10:47)
+In your Arcade project you can invite members. Each one signs in separately as their own user. Or set up your own sign-in provider with a client ID and secret. Either way you don't handle their tokens.
+
+FILES AND LINKS
+- arcade.dev: https://www.arcade.dev/
+- arcade.dev pricing: https://www.arcade.dev/pricing
+- Claude Code + Arcade docs: https://docs.arcade.dev/en/get-started/mcp-clients/claude-code
+- Free content skills: https://free.tylerai.dev/content-automation
+
+IF IT BREAKS
+- Gateway shows "needs authentication" in /mcp: press Enter on it and sign in again.
+- You added a tool and Claude can't use it: any time you add tools to a gateway that already exists, re-authenticate in /mcp. I hit this with Google Docs.
+- It uses the wrong Gmail or Slack connection: disable the other servers in /mcp, or name the gateway in your prompt.
+- It can't create a doc in Drive: Drive tools alone can't write documents. Add Google Docs tools to the gateway, then re-authenticate.
+- Too many tools to pick from: select only what the job needs. 65 tools works, but fewer is cleaner.
+
+NEXT
+Give Claude the Keys to Every App You Own (the full MCP course)

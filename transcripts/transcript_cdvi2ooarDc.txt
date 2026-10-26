@@ -1,0 +1,187 @@
+[00:00] AI is simply amazing and what I'm going to show you today is how you can use AI with Claude in
+[00:05] order to basically edit your videos. I'm going to show you all the different ways that you can
+[00:10] do it. We're going to do this with Heijen's Hyperframes. Now there was a previous one called
+[00:16] Remotion. This is based off of that but it builds and does things a little differently. We'll get a
+[00:22] little bit into that but this is absolutely free and that's actually the amazing part about this
+[00:26] is that this is free and you can render videos from a simple recording to the silence cutting
+[00:32] add the animations the transitions and it can produce something absolutely amazing so what
+[00:37] this works and how well how this works is first off like i said it's from hey gen which is like
+[00:43] the ai avatar with their in the ai avatar avatar space and what we can do is basically add these
+[00:48] skills now this essentially does a clone of all this code of all of this code right but then also
+[00:55] creates Claude skills for you so we're gonna get right into it and first thing
+[01:00] do is basically just copy this just gonna open up a terminal just gonna paste
+[01:04] this in now I already did this so it's just gonna I'm just gonna like you're
+[01:09] just gonna be clone it and add the skills okay it's already done so what is
+[01:12] what's happened here I already had it I already had it cloned so that's why it
+[01:16] didn't take any time at all but there's 20 different skills you can see that
+[01:19] anything that I have like anti-gravity or Claude code it's installed to so that's
+[01:23] like dot agent skills hyperframes figma faceless explainer these are all the
+[01:28] different skills that it has basically given you that you can start using you
+[01:33] want to go through some of those today to kind of show you really the power
+[01:36] behind this what I first want you to listen to is this is actually created
+[01:40] from hey Jen so this is just 25 seconds of me explaining things no captions no
+[01:44] animations whatsoever just so you can see this okay so what is it called routine
+[01:48] it's called code but running in the cloud on anthropics machines not yours
+[01:52] Okay, so that goes on for 25 seconds. We don't need to go with that go in that but there's nothing add to this
+[01:57] This is just the raw video, right?
+[01:59] So now what I want to do is I'm first gonna start up Claude make sure you're always updating if you haven't already
+[02:05] Let's see you go to go to auto mode on and now once that's installed if you type slash
+[02:11] Yes, hello if you type slash hyper frames you see that now that we have the ability to do a lot of different things
+[02:20] Okay, so what I want to do is I just want to show you how to create captions.
+[02:24] So basically from like take the audio get the text and the time frame of when I said those things and then add the actual
+[02:32] captions on to the video
+[02:34] Recreating it in some style. Okay, I'm just gonna let it work and we'll come back to it whenever it's done. So how we do this
+[02:41] And I first gave it said slash hyperframes and you don't actually have to give it the specific seal
+[02:46] but I'm giving it the location of the source file, which is what we just saw.
+[02:51] And can you add captions to this?
+[02:56] What this is going to basically do is it's first going to use the whisper model
+[03:00] to go ahead and capture the exact time frame with that text so it knows how to add it.
+[03:08] And it's going to be hyper frame uses HTML, whereas if you've heard of remotion,
+[03:12] that uses React components.
+[03:14] I like this better if you use your emotion, you know, that's great
+[03:17] But I would have been trying this out and so we're gonna do I'm gonna let this work
+[03:21] This is gonna take a few minutes for the first time
+[03:23] But if this is you especially this is your first time it could take a few minutes, but it says this routes
+[03:26] This is the actual skill one of the 20 schools skills that downloaded
+[03:29] I already had the transcript, but it would first get the transcript from you with the with the text and everything and timeframes and let
+[03:35] This work. Okay, so this is the same video again
+[03:37] It gave me an option and I basically chose like Ali adults. Okay, so what is a cloud routine?
+[03:41] It's clock code, but running in the cloud on anthropics machines not yours. So your laptop's closed
+[03:47] Okay, so I mean that goes on for 25 seconds, right?
+[03:50] If we scroll to the end you can see that it's still there
+[03:52] So and that was amazing that just took a few minutes from Claude running in the background
+[03:56] I have it doing something else right now in the background, but it basically did all of that
+[04:00] For me and I didn't really have to do a whole lot now if you don't like that style
+[04:05] Let me show you how you can get more okay
+[04:07] So back here on their GitHub page, if we kind of scroll down a little bit, let's see, see, scroll down, scroll down, scroll down.
+[04:15] Where is this at?
+[04:16] Okay, here it is, the catalog.
+[04:18] So what this catalog does, which I'm going to go through this with you, is this is basically all different kinds of animations or styles that you can use for editing your video.
+[04:29] So for instance, that was, I think, pill karaoke.
+[04:32] Yep, see, that was, on the left side here, I chose pill karaoke.
+[04:36] This is kind of the style right so let's find it matrix
+[04:39] I can do this matrix decode neon accent, you know kinetic slam
+[04:45] Every starts with the single frame, you know, whatever we could do all of these different kind of things
+[04:49] So let's say I maybe wanted something different like this
+[04:54] Then basically I would just do this highlight one right here's a here's a good one
+[04:57] You see it says there's an install command here so I can basically just copy this
+[05:01] let me go back to my terminal i can i could also just open up a new terminal real quick
+[05:07] and i'm just going to simply come in here and paste that in that's all i'm going to do and
+[05:12] it's going to take a second and okay it's done perfect what i wanted to do now is actually use
+[05:17] this style to recreate it and again this is not perfect just like with anything we're doing
+[05:21] sometimes you need to have a conversation right you can kind of you can obviously i can prompt
+[05:25] better right as well but if it takes conversation then it does don't get fooled by all these
+[05:30] Instagram posts and these other videos where you just see the final product, they did a lot to get there at some points.
+[05:37] You see the final version, but there's a lot of conversations in between that to get there.
+[05:41] So just to let you know.
+[05:43] So what it's going to do is use the caption highlight registry component.
+[05:48] Don't get scared of that.
+[05:48] That's just what we installed.
+[05:50] So it's going to find that and then basically recreate it with that style.
+[05:55] And while that is actually going, if you scroll down here, there's so much more here that you can add.
+[05:59] This is just something that you can add on top at some point.
+[06:04] If you want to have something to show within an animated Mac OS, there's animated controls that you can have it use.
+[06:14] Here's some really cool stuff.
+[06:16] If you want a YouTube lower third, about a join.
+[06:20] Transitions.
+[06:22] It gives you an example of a transition.
+[06:25] You want to showcase an app.
+[06:28] Here's something that you can do.
+[06:29] here's a way to do that if you wanted data right so this is pretty cool so like if you'd like say
+[06:33] take the us map population density by state this is an animation that you can have as part of your
+[06:38] part of your video depending on what you're doing right but there's a bunch of other things we can
+[06:42] do so here's like a flow chart for instance that you can create uh that you know look we can see
+[06:49] here it can be interactive it's this kind of like diagram it's a flow chart except a lot that you
+[06:54] can do with that right but it's really cool on what all we're able to do and see right now what
+[06:59] what it's doing it kind of figured everything out that it wanted to do and now it's actually going
+[07:02] to go ahead and render this and then anytime it makes a change it's going to render a new what
+[07:07] they call composition and we'll see the mp4 okay and here it is just kind of show you the side by
+[07:11] side difference okay so what is a cloud routine it's cloud code but running in the cloud on
+[07:16] anthropics machines not yours so your laptop's closed you're asleep and it still runs okay so
+[07:21] obviously there'll be some things here i don't like that some of those small and whatever but
+[07:25] that's where you could modify right this is where it's up to you where you do have to have those
+[07:29] conversation so it's not perfect this was a little captioning now whenever
+[07:32] you're recording or you're doing anything you always wanted like silent
+[07:36] yeah silence cuts right there's a lot of parts that you just want to cut out all
+[07:40] the silence and then basically like transitions in between so how do we do
+[07:43] that well let's say you have a video so here's one that I have that's three
+[07:48] minutes long and in between here there are definitely parts where like I'm not
+[07:51] talking right this is from like a previous video I just took a part of it
+[07:55] so what I would want to do is basically say slash hyperframes cut out silences from this video and
+[08:04] then I would give it that video to actually look at and whenever you give it that video then it's
+[08:10] going to kick off a silence skill that gets rid of it so that one was originally how long was this
+[08:18] three minutes and one second so I'd already ran this to kind of show you to don't have to worry
+[08:22] about waiting. This then gets cut down to a minute and 50 seconds. So it went ahead and cut out all
+[08:28] of that in between where it was just dead air, right? So if you have like a 30-minute video,
+[08:33] you can easily cut it down to 15, 20 minutes just from dead air where you're going to be pausing in
+[08:38] between different sections of what you were saying. And so then what you can do, especially
+[08:43] on shorts for like Instagram, TikTok, or whatever, then what you want to do is you want to have some
+[08:48] animation right you don't want to just have captions i mean you could you definitely can but
+[08:53] a lot of people have different preferences right so if you want to add animations all you would
+[08:57] simply do is say now add transitions animations where it may be right to do so with with text
+[09:09] such as software I mentioned like Gmail Slack and we could say anything else like just go through
+[09:19] there you simply tell it go through this see where you think we need to add transitions and
+[09:23] cuts add b-roll add b-roll oops add b-roll and and more so you could absolutely just talk with
+[09:33] this this is not a problem you can start with this right what I did was I went through it that
+[09:39] same one I had used different captions and I had to do animations. This was the final result of that.
+[09:45] Okay, so what is a Cloud routine? It's Cloud code, but running in the cloud on Anthropics machines,
+[09:51] not yours. So your laptop's closed, you're asleep, and it still runs. You give it three things, a
+[09:55] prompt, a schedule, and a few connectors like Gmail or Slack. Then it just goes on its own on the time
+[10:01] you set. Here's the easiest way to think about it, right? A skill tells Cloud what... Okay, so a lot
+[10:06] of times you might use like something like sub magic or there's a lot of different software out
+[10:09] there that i have also used to kind of do this but this was created solely from here with i will say
+[10:15] the one caveat about the there was about the anthropic cloud i i kind of got frustrated with
+[10:21] what i was doing so i said i used c dance so for like nine cents or whatever that was for like three
+[10:27] seconds i think it might be a little bit more than nine cents but uh i i had this so that's from c
+[10:32] dance but everything else simply from talking and having conversation with us absolutely amazing
+[10:38] but let's say i didn't like that right let's say i wanted to do something else let me show you more
+[10:43] what you can do by maybe taking screenshots of something and then adding it to your composition
+[10:48] and what i want to get into next is hyper frames studio so this is what it looks like basically
+[10:54] you can there are several ways you can do this you can say slash hyper frames in it and this
+[11:00] So basically, you can say initialize here if you're with inside cloud, but there's actually
+[11:05] CLI commands and you can view them.
+[11:07] You can view all the commands.
+[11:10] Let's scroll up here a little bit.
+[11:12] So this helps add certain things like from the catalog that we had mentioned.
+[11:16] But if we scroll up a little bit more, here you can say Hyperframes init my video to create
+[11:21] a brand new Hyperframe Studio.
+[11:23] You can go into that and then we can do whatever we want with this, right?
+[11:27] So what I'm doing is I'd already started a project. So the earlier version, right? I took like, I think just 10 seconds of that. I basically just searched for, I think I just searched for animated introduction video or something like this. I went to images and I just searched for something on here. And basically it was something like this, right? Or actually this was the exact one. This was the exact one I searched for. I took a screenshot of this.
+[11:51] I went to terminal while I'm in this and I brought this over and let me just get rid of that.
+[12:00] I said, can you animate this with a guy waving in the intro to this video, please?
+[12:10] Whenever I did that, here we are.
+[12:13] This is that.
+[12:16] Now, I want to like, let me just play it.
+[12:19] Okay, there's no sound or anything with it yet.
+[12:20] I'd probably put it maybe in the overlay.
+[12:23] But what it did is it took that, right?
+[12:25] It took that video or that clip, the screenshot,
+[12:28] and what you can do within this,
+[12:30] you can actually edit this completely by yourself.
+[12:32] You can take every little thing on this, all the layers.
+[12:36] See, there's the head, the arm.
+[12:39] You can do all kinds of things with this.
+[12:41] Or you say, hey, the hair's not quite right.
+[12:44] What can I do?
+[12:46] You see, I can move all these around.
+[12:48] but what can I do to actually fix the hair right there's all different things we can do tell it
+[12:54] what you want but it did that and created it I did the same thing you can see a lot of those um
+[13:00] you see a lot of those animations for like the youtube graph or some graph like you're making
+[13:05] money is going up right so let's say a graph of money going up whatever we would say you can use
+[13:14] literally any of these you could go to another YouTube video take a screenshot
+[13:18] so that's what I did so I took a screenshot and I had said actually I
+[13:23] can think I can probably find out exactly what I said here now I had like
+[13:27] a really lame prompt for this and I said now before the previous one we just did
+[13:31] can you add this where the graph is about YouTube views adding zoom in and
+[13:34] following the graph make it about four seconds okay just make it awesome
+[13:37] because pleading will obviously make it better so whenever we come when I came
+[13:41] back to the studio it did that right here watch i mean that's that's amazing it did it made all
+[13:51] that animation just from a single screenshot that i had given it right and this is the really a lot
+[13:57] of the power the more you do this the more you play around with it the more you have like ways
+[14:02] um like your style and design the way you like these things the more the quicker it will be
+[14:07] become it will become right but try this out right again go to heygen there are good hyperframes is
+[14:14] their github just basically come down here copy paste this in very simple i will have this also
+[14:20] in the description below i will also teach this in my school community so you can join which will
+[14:25] also be in the description please try this out these are just some of the basic things that i
+[14:31] had mentioned that you can do with this you can go much much deeper into what you want to do anyways
+[14:36] thank you for watching and here are more courses free to watch on how to use AI

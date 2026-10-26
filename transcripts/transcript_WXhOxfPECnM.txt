@@ -1,0 +1,481 @@
+[00:00] I've been using Dot as my personal agent for seven days straight to do
+[00:04] administrative tasks, coding tasks, and many marketing tasks as well.
+[00:09] And every day I've used my Dot.
+[00:12] I've grown to enjoy it more and more, especially because of voice mode.
+[00:17] We've reached a point where I can go on a walk for 40 minutes with my
+[00:21] headphones in talking to Dot. And when I get back,
+[00:25] I've responded to all of my emails, Slack messages,
+[00:28] and even planned my content script for the day,
+[00:32] just by talking to Dot.
+[00:34] And using Dot on voice mode
+[00:36] is actually how I control codecs most of the time.
+[00:39] And I've been using Dot for the past week
+[00:42] and I've written down the nine tips
+[00:44] for getting the most out of Dot.
+[00:46] So let's pull this up.
+[00:49] One of the strongest bits is showing the walk.
+[00:51] Okay, thank you, thank you.
+[00:53] Okay, so we're talking about the nine tips
+[00:55] for using Dot effectively.
+[00:57] And the first thing that we actually need to do is we need to understand what dot is.
+[01:02] So if you go to your chat, GBT desktop app, or if you go to your iOS app, you will see
+[01:08] a new feature up here at the top called dots.
+[01:12] Once you've named your dot, it will show up as the name that you named your dot.
+[01:17] And mine is bluey.
+[01:19] So here is the iOS app for chat.
+[01:21] GBT.
+[01:22] Here is the desktop app for chat.
+[01:25] GBT.
+[01:25] You can see we have Bluey.
+[01:28] I can click on Bluey and here we can see our chat.
+[01:32] So the best way to conceptualize this is Bluey is Riley's or my personal agent with a virtual computer.
+[01:40] It has all my plugins.
+[01:42] It has all the skills that I've created in ChatGPT.
+[01:46] And it has a memory of the entire chat.
+[01:50] And it is powered by a frontier model.
+[01:54] And that is really important.
+[01:55] It is the first personal agent platform powered by a frontier model, one of the best models
+[02:01] in the world.
+[02:02] When you are using the desktop app, you can go up and click on Bluey and here you can
+[02:07] actually see your agent's computer.
+[02:10] This virtual computer right here is what allows it to basically do anything that a virtual
+[02:15] employee would do.
+[02:17] On this computer, you can download programs like Blender.
+[02:20] I have Bamboo Studio, which allows me to create 3D prints and I can actually print directly
+[02:25] from my 3d printer. So this is bluey and he lives on this computer that runs 24 seven.
+[02:33] And now that you have a basic understanding of what bluey is, I want to talk about the
+[02:38] first tip for using dots effectively, which is using it with voice chat. And so this feature
+[02:44] is the most useful when you use it on your phone. And that's why every single morning
+[02:49] when I wake up for about 45 minutes, I go out of the house, open up my iOS app, and
+[02:54] And then I press this little button right here, which is this little phone icon.
+[02:59] And this automatically calls your dot.
+[03:02] Hey, how can I help?
+[03:04] Bluey.
+[03:05] Hey, how's it going, Bluey?
+[03:07] I would love to kind of go over what I need to get done.
+[03:10] Can we talk about what's been going on in my Slack?
+[03:15] Sure thing.
+[03:16] Let me check that.
+[03:18] So for Slack, Emily's given Lucre the remaining Revolute fixes.
+[03:23] logo over QR layouts, remove the other logo uses, and keep the disclaimer readable for 10 seconds.
+[03:29] You promised another version tomorrow, so that's the next review before resubmitting.
+[03:33] That's the most time-sensitive one I see.
+[03:36] Amazing. Make sure Luker and Emily are told that good work on this in Slack. Please message that
+[03:42] in Slack, and then I will take a look at it tomorrow.
+[03:45] Okay. I'll send that in Slack. The message says, good work on this, Luker and Emily. Thank you.
+[03:50] I'll take a look at it tomorrow.
+[03:52] It's about to go on.
+[03:53] Thanks, Bluey.
+[03:54] You're welcome.
+[03:55] I'll confirm it one through.
+[03:57] Anytime, Riley.
+[03:58] And so if you go in the ChatGBT app on your phone or on the desktop app or the web app
+[04:03] and you go to your plugins, you can see all of the plugins that you've installed.
+[04:07] Every single installed plugin that can be used inside Codex or normal ChatGBT can also
+[04:12] be used with Bluey.
+[04:14] And you can imagine talking to a voice agent that has access to your plugins and a computer
+[04:21] is a completely different experience.
+[04:24] And so I'm able to ask something.
+[04:27] I can go to my bot in the morning.
+[04:29] I can wear my headphones on a walk and say something like, hey, Bluey, look at my email,
+[04:33] my Slack, my calendar, every single thing that you know about me and prioritize all
+[04:38] the things that I need to do.
+[04:40] A quick list of five.
+[04:41] I could say something like this.
+[04:43] And this prompt right here starts off my 45 minute session while I'm walking.
+[04:49] And I just talk through everything.
+[04:50] I'll be like, hey, didn't Jason say in the Slack thread that we shouldn't actually do
+[04:54] it and we should do it like this.
+[04:55] And then it's like, oh yeah, let me check that.
+[04:57] Yes, he did.
+[04:58] Okay.
+[04:58] And then you kind of just go back and forth and then you could just ask it to create a
+[05:02] document or ask it to send an email.
+[05:04] But I'll talk about that a little bit more in a future tip.
+[05:08] Okay, so now for the most powerful tip on this list, which is you can have DOT spin up codex sessions.
+[05:16] And so this morning, I was actually doing this from my phone.
+[05:20] But for this example, I'm going to show you how to do it on the computer.
+[05:23] So you can call your DOT on the computer.
+[05:27] Hey, Riley, what's up?
+[05:28] Yo, Bluey, I want to make some changes to one of my apps.
+[05:33] You know how in Native Note, my internal tool, and I have like an Excalibur clone in my internal tool, when I create these little rectangles, I want to be able to make the colors on this tool like a background gradient.
+[05:49] Like I want to be able to change the color to a background gradient.
+[05:52] Can you create a new codex session and then add that as a color option for when I'm using this app?
+[05:58] Okay, looking into that. Yeah, I'll start a codex task to add gradient fills to those rectangles and make sure they save and reload properly.
+[06:06] Thank you.
+[06:07] You got it. I've requested a separate task for that change. So the goal is you'll select a rectangle, choose a gradient fill, and save it with the board. I'm still waiting on that to kick off.
+[06:18] Amazing. Thank you.
+[06:20] Of course.
+[06:21] Okay, so right now, when I create one of these rectangles,
+[06:24] you can see here, this is my own version of Excalibur.
+[06:27] This is my app that I'm running.
+[06:29] In my internal tool, which I call Native Note,
+[06:32] I can actually go home, and this is my main dashboard.
+[06:37] This is my library.
+[06:39] We have an Excalibur clone.
+[06:41] I can tweet things out here.
+[06:43] I have all of my topic opportunities,
+[06:46] things that I can discuss, and then my YouTube analytics.
+[06:49] This is my own personal internal tool that I use for my company.
+[06:54] And I created this Excalibur board feature.
+[06:58] Quick update.
+[06:59] The task is running on your MacBook Pro.
+[07:01] It's adding the rectangle gradient option and testing, rendering, saving, and exports on a separate branch.
+[07:07] Bluey, amazing.
+[07:09] Thank you.
+[07:09] Can you just put a little summary of what is going on in that thread here in the chat?
+[07:14] Sure.
+[07:15] Just a sec.
+[07:16] Oh, Sid, it's a quick status note on the gradient option, editable colors and direction, and save and export checks.
+[07:23] Still in progress.
+[07:25] Okay, so let's talk about what we just did here.
+[07:28] What I just did is I called Bluey, and I just talked to him, and you can do this.
+[07:32] This is identical on the phone as it is on the computer.
+[07:35] I started talking to it.
+[07:36] I asked it to spin up a new codex session.
+[07:38] I wanted to change something so that if I were to add one of these rectangles, I want to be able to make a color gradient.
+[07:44] this isn't an actual feature I'd want to add but I just want to show you that I
+[07:48] can very easily just have it spin up a codex session to make the change and
+[07:51] it's gonna go do that and here you can see that it's working right here add
+[07:56] native note gradients if I were to click on this here is the codex session
+[08:01] normally if you click on it takes you directly to the chat this right here is
+[08:04] a codex chat this is very cool actually you can just click on it and see it
+[08:08] right here which is very nice I can click go to chat and here is the codex
+[08:13] session. So it was sent via Bluey. It has been working for two minutes, but instead of having
+[08:18] to go to all of that, I can just very easily just talk to Bluey and Bluey will handle the codex chats.
+[08:25] Reduction, rendering, saving, mobile, export checks all passed.
+[08:29] Amazing. So it's deployed. So you deployed it? It's done?
+[08:33] Yep. It's live in native node now.
+[08:36] All right. I'll give it a check.
+[08:39] Sounds good.
+[08:40] Wow, Bluey, this is pretty cool.
+[08:42] I just talked to you on the phone for a few minutes,
+[08:45] and now we have a working feature in our app.
+[08:49] And I can do this from my phone, which is really cool as well.
+[08:52] Yeah, pretty wild, right?
+[08:54] Feels like the kind of thing you wish existed,
+[08:57] and then suddenly it just does.
+[09:00] Ain't that the truth.
+[09:01] And so that is really fun.
+[09:03] It is really fun to be able to spin up Codex sessions.
+[09:06] And you can actually specify whether they're cloud sessions
+[09:09] or local sessions.
+[09:11] And you can run multiple codex sessions at the same time.
+[09:14] And if you don't know what I'm talking about
+[09:16] or you feel like this is actually pretty hard to code,
+[09:20] like you might not even be technical,
+[09:22] my advice to you is you should learn the basics of codex.
+[09:25] This will allow you to use dots even better
+[09:28] because you'll be able to very easily give dot instructions
+[09:31] to spin up these codex threads
+[09:33] that can do literally anything.
+[09:36] And they can even control my MacBook
+[09:37] that's running right here.
+[09:39] So in order to delegate with Dot, you should definitely learn how Codex works, at least at a surface level.
+[09:46] So my third tip for using Dot, especially with voice, is just to get things done.
+[09:54] And so the way that I go on my walks when I start talking to Dot and I'm using voice mode, what I do is I go through multiple steps.
+[10:02] I go through brainstorm steps and then I do a draft step where I say like, I have it brainstorm all of my priorities and then I'll pick one and I'll be like, I'll be talking in my headphones and be like, hey, what can we hammer out right now?
+[10:16] Like, what could we do right now from me talking to you?
+[10:18] And then it will suggest like, hey, I can do these three emails.
+[10:21] I'll say, good, let's do the first one.
+[10:22] And it will write an email draft.
+[10:25] And because it is connected to my plugins, it can actually send the emails.
+[10:30] And so the ones that are like little emails that are just like quick communications that need to get done.
+[10:36] The other morning I got 25 emails done just by walking around.
+[10:40] And like I try to get my steps in.
+[10:42] When I go for a walk, I think better.
+[10:44] I think everyone thinks better on a walk.
+[10:47] And you can just do your work while walking around, talking to your AirPods.
+[10:52] It's one of the coolest things ever.
+[10:54] And so I've been thinking about this a lot because I've actually been doing something like this for a long time, right?
+[11:00] I will go and I will brainstorm. And when I get back, I will actually have things done instead
+[11:06] of a plan. You know, back in 2025, you could talk to AI assistants and maybe they could have access
+[11:12] to your email. And when you got back to your desk, you just had a plan. Now, when you get back to
+[11:17] your desk, you will literally have like 10 emails done. You will have written important document,
+[11:23] or at least have a draft for an important document done. The other day I was talking to my agent and
+[11:29] I had like a 3D model created for this case
+[11:33] that I'm building for a Mac mini, that's gonna be sick.
+[11:35] And you could just do anything while talking to your dot.
+[11:40] It's truly the most insane experience I've ever had
+[11:43] while using an AI, especially while walking with AirPods in.
+[11:47] And so the next step actually involves getting things done.
+[11:50] And the fourth tip that I have for using dots
+[11:53] is while you're using voice chats,
+[11:55] ask for Dot to drop things in the chat.
+[11:59] Let me show you what I mean here.
+[12:00] So here I am talking to Bluey and watch what I do here.
+[12:05] What I'm going to do is I'm going to press this button
+[12:08] right here so I can actually see the thread
+[12:11] and then I can have Bluey drop links in the thread.
+[12:14] Check this out.
+[12:15] Yo, Bluey, I really want to buy a new stand
+[12:19] or for my MacBook, like a computer stand.
+[12:21] I wanna buy a really nice one
+[12:22] that kind of looks like Apple vibe.
+[12:24] Can you drop a few links on Amazon in the chat here?
+[12:28] Sure.
+[12:29] I'll find a few to drop in.
+[12:30] Let me chat real quick.
+[12:32] Thanks for waiting.
+[12:34] I dropped three Amazon links in chat.
+[12:36] For your MacBook, I picked the Silver Rain Design M stand.
+[12:39] It has that clean Apple look.
+[12:41] I also included an adjustable option, plus a separate stand for your studio display.
+[12:47] Wow.
+[12:48] This is good.
+[12:49] This is super useful.
+[12:50] Hey, can you actually just send these to Emily via email?
+[12:54] and just say, hey, can you buy one of these?
+[12:56] Sure, I'll take care of that.
+[12:57] Yeah, and then when you're done with the email,
+[12:59] just put what you said in the chat thread here
+[13:02] and send a link that I can view the email.
+[13:05] Yeah, I'll do that too.
+[13:06] I sent it to Emily.
+[13:07] I asked, can you buy one of these?
+[13:09] And included the three labeled options.
+[13:11] The full email and a link to view it are now in chat.
+[13:15] You're the best, Bluey.
+[13:16] Thank you.
+[13:17] Oh, I'm happy to help.
+[13:19] Tell me if you want different styles or something more minimal.
+[13:22] And so that one is a little bit smaller, right?
+[13:24] You can just have things dropped in the chat as you talk to it.
+[13:27] So it's kind of your little notepad, but you can also create much larger documents with
+[13:33] a new feature inside the chat GPT app, which we'll get to right now.
+[13:38] So the fifth tip for using dots is use pages and spaces.
+[13:45] So if you're inside the chat GPT desktop app and you come up here to the top and you click
+[13:49] space. This is OpenAI's new version of Google Drive, basically. OpenAI space or GPT space.
+[13:57] And I can very easily create a new page. So this is a document here. I can create a new document.
+[14:04] I can very easily save things here. And this is a lot like Notion in a way. And you can even create
+[14:11] these like inline diagrams, which is really cool. And it's just like a really cool note-taking app.
+[14:18] Well, Dot actually has access to this.
+[14:21] So I can go back to my Bluey or my Dot, and I can very easily unmute the microphone and say,
+[14:27] yo, OK, so I want to prepare for the next wave of new AI models.
+[14:31] And I want to come up with like five prompts that I could really test a new AI model to show off how powerful it is.
+[14:37] Can you please create a new page in GPT space called Viral Prompts?
+[14:42] And then, yeah, find hyperlinks to who used them and then include the entire prompt that I can very easily copy and add to an AI model I have access to.
+[14:51] Okay, hold on. Let me pull that together.
+[14:54] Yeah, if you could drop that link in the chat, I would love to open it up in the side view here while you work on it.
+[15:00] Sure thing. I'm putting that together now.
+[15:02] I'll use five source examples, each with a full copyable prompt and what to look for in the results.
+[15:08] I'll drop that page link here when it's ready.
+[15:10] Okay, so it just sent me this viral prompts.
+[15:12] I'm going to go ahead and click on it.
+[15:13] The page link is in chat now.
+[15:15] You can open viral prompts alongside our conversation.
+[15:19] The five prompts are there, and I'm still finishing the source checks.
+[15:22] Okay, so that's pretty cool.
+[15:24] For number one, I think you put it in code formatting.
+[15:27] Can you make it prompt formatting and put it beneath the code prompt?
+[15:30] Let me take a look.
+[15:32] Sure.
+[15:33] I'll add a prompt formatted copy beneath number one's code block.
+[15:37] That change is cued.
+[15:38] the full first prompt in a prompt block directly beneath its existing code block.
+[15:44] I'll confirm when it's saved.
+[15:45] Oh, there you go.
+[15:46] It created this prompt block.
+[15:49] And so now if I were to actually share this with someone,
+[15:53] I could easily share this link.
+[15:57] Done.
+[15:58] The first prompt now has a prompt formatted copy directly beneath the code block.
+[16:03] And I spot check that the text matches.
+[16:05] and then if I were to send this page link to someone,
+[16:10] I could very easily just click on this
+[16:12] and it would actually enter it into the prompt here.
+[16:16] And so it's very easy to copy and paste this into the prompt
+[16:20] because that's what prompt formatting does
+[16:22] is it immediately pastes it into the prompt.
+[16:25] Now I'm gonna stop this
+[16:26] because I don't wanna actually run this right now,
+[16:28] but that's what that does.
+[16:29] Can you please add a little bit more inline charts,
+[16:32] especially at the top, which describes the five prompts here. And then each one should have an
+[16:37] image from the internet. And then each one should have a little chart, which explains what it does.
+[16:43] And notice here, I actually fired a prompt to Bluey via text while on a voice call. It was
+[16:49] muted. You can do that. And Bluey, and it's a very seamless experience. You can have a voice call.
+[16:55] From your chat, you'd like more inline charts at the top describing the five prompts,
+[16:59] plus an internet image and a small what it does chart for each prompt.
+[17:03] I'm adding those visuals to the same page and keeping the prompts intact.
+[17:07] I'll update you when it's saved.
+[17:09] Thanks, Bluey.
+[17:09] Update me through voice, and I want you to update me in the chat as well when you're done.
+[17:14] Okay, will do.
+[17:15] Okay, so it's done.
+[17:16] It gave us a little update, and as you can see here, we now have images in the thread.
+[17:22] We have charts in the thread.
+[17:24] That's how easy it is to get DOT to create these shareable documents.
+[17:29] that gets saved in GPT space.
+[17:32] It's pretty dang cool.
+[17:33] And not only can you create pages,
+[17:35] you can also create sites.
+[17:38] Remember, GPT sites is their own vibe coding platform
+[17:42] kind of built in to chat GPT.
+[17:44] So inside chat GPT, if you go to space,
+[17:47] you can also click on sites.
+[17:50] And these are all of the sites that I've created
+[17:52] for various purposes.
+[17:55] And so these have a link, you can visit them.
+[17:58] so they're hosted, you can add a backend, a database,
+[18:01] and even authentication,
+[18:03] and you can very easily create these websites.
+[18:07] And so I've created a ton of these websites
+[18:09] that I've used for various landing pages,
+[18:12] for tracking things on the internet,
+[18:14] and here is a wait list for my Call of Duty game
+[18:17] that I created.
+[18:18] These are actually hosted on the internet,
+[18:20] and all you have to do when you are talking to Bluey
+[18:23] is tell it to create a site.
+[18:26] And I could very easily say, hey, that document right there, I actually want to put that in a site that's hosted on the Internet that's public.
+[18:33] Can you please do that?
+[18:34] And it will just do it.
+[18:36] Now, I don't want to wait for the agent to do this, but as you'll see here, Bluey will say, yep.
+[18:41] And when it's done, it'll literally send me a GPT sites link.
+[18:45] He said, yes, I'll turn viral prompts into a public website with the prompts, charts, images and source links, then send you the URL.
+[18:52] So it's very easily to create these websites.
+[18:55] and when they're done, they will actually show up in space
+[18:59] and in sites right here.
+[19:01] And Bluey, my dot, is actually working on it right now.
+[19:05] And you can see right here, it's not published yet,
+[19:07] but once it's done, I'll be able to see it.
+[19:09] Maybe I'm gonna open this up later in the video
+[19:11] once it's done.
+[19:12] And so for the seventh tip for using dots,
+[19:15] we have a daily brief.
+[19:19] So every morning I get this prompt
+[19:23] sent to my dot automatically. And this prompt is a daily brief prompt. And so what this prompt does
+[19:32] is this looks at all of my integrations and sends me a single document that analyzes everything.
+[19:39] And one of the important parts about this prompt is that it leads with the most important things.
+[19:44] So I see the most important things first. So I know exactly what I need to do every day. And so
+[19:50] So when you're using bluey, you can come up, you can start talking to bluey.
+[19:53] I'm going to go ahead and close this side panel for now in order to create an automation.
+[19:58] All you do is say, Hey, I want you to create an automation every day at noon to tell me
+[20:02] a funny joke.
+[20:04] And when you send this to bluey bluey, it will automatically create an automation that
+[20:09] will show up here into the schedule tab.
+[20:13] And then there's this bluey dropdown.
+[20:16] So you have your normal ones, but then you also have your bluey or your dots automations
+[20:23] as well.
+[20:24] And so here is my morning brief automation that my agent reads every single day at 9am
+[20:31] and then it sends me a brief based on all of my data.
+[20:34] I wish I could show you one of these briefs, but there's so much personal data I can't
+[20:38] actually show you in the description of the video.
+[20:41] I might put one down below that has one that like kind of crosses out all of the personal
+[20:46] information to show you how valuable it is.
+[20:48] But it's only valuable to me because it's about my business specifically.
+[20:52] And so I highly recommend getting your agent to analyze all of your plugins that you have
+[20:57] on ChatGPT and deliver you a daily morning brief.
+[21:00] And we can actually see here that that daily joke one was created and you can very easily
+[21:05] open it and you can edit it as well.
+[21:07] So that's how easy it is to create automation.
+[21:09] It's basically a prompt sent to the agent on a schedule.
+[21:13] And for tip number eight for using dots, we have creating heartbeat automations.
+[21:20] These are very similar to automations, but they're slightly different conceptually.
+[21:26] Okay, so what a heartbeat is, and it's a heartbeat is just an automation.
+[21:31] This became really popular during OpenClaw, where your agent would just kind of wake up
+[21:37] every 15 minutes or 30 minutes, whatever.
+[21:40] And it would just check in on things
+[21:41] and it would do things that are useful.
+[21:43] That's kind of what I wanted to do here.
+[21:45] So every hour, I found that if it does it
+[21:48] more than every hour, it's just not necessary,
+[21:50] but you can set it to like,
+[21:51] I think as little as every 30 minutes,
+[21:54] the agent will just wake up
+[21:55] and it basically just analyzes everything
+[21:57] that has to do with content.
+[21:59] And if there's something that I need to know about,
+[22:01] it'll just not do anything.
+[22:03] It'll just say nothing.
+[22:05] But if there is something important,
+[22:06] it will message me there, which is really cool.
+[22:10] I can kind of set up with all of my integrations,
+[22:13] this kind of this layer where every hour,
+[22:16] everything is checked and I get notified immediately.
+[22:19] And so that's what I mean by heartbeat.
+[22:21] And this is really useful for me,
+[22:22] whether I'm on the computer or on my phone,
+[22:25] especially because of the next tip that I have for you.
+[22:29] So the ninth and final update
+[22:32] It is creating a do not disturb bypass on your iPhone.
+[22:38] So one thing that's really cool about Bluey,
+[22:41] because I can set up this agent
+[22:42] that's like always checking for what's important,
+[22:46] I can have it send me messages.
+[22:48] However, for most of the day,
+[22:49] I have my phone on do not disturb.
+[22:51] Like right now I have my phone on do not disturb
+[22:53] because I'm making a video.
+[22:54] I do not want to be messaged,
+[22:55] but there are important things
+[22:57] that I do want to see right now.
+[22:59] And so on your iPhone,
+[23:00] you can actually set up a do not disturb bypass.
+[23:04] So if you go to settings on your iPhone,
+[23:06] and then if you just look up do not disturb
+[23:09] and click on it here,
+[23:11] what you can see here is you can actually set apps
+[23:15] to bypass the do not disturb.
+[23:17] So these people can message me while I'm on do not disturb
+[23:21] and I will get notifications.
+[23:22] And then these apps will give me notifications.
+[23:27] So when I'm on do not disturb,
+[23:28] the only app that sends me notifications
+[23:30] is ChatGPT.
+[23:31] So that means if something really important is happening,
+[23:34] only my dot messages me.
+[23:36] And I'm realizing that since it's connected
+[23:38] to all of my apps anyway,
+[23:39] I can basically just prompt what notifications I see.
+[23:43] If it's only ChatGPT and I only really use dot,
+[23:47] then I'll just get notifications from Bluey.
+[23:50] And so throughout the day,
+[23:51] I'll just get a little notification.
+[23:52] It shows Bluey at the top of the screen,
+[23:54] says this marketing thing,
+[23:56] you need to get this done in the next hour.
+[23:57] Super important things.
+[23:58] And then I get no other notifications.
+[24:01] And so I have found this to be incredibly useful
+[24:03] to basically set up automations
+[24:06] and be very clear with Bluey, right?
+[24:09] If you go to chat GPT desktop and you open up Bluey,
+[24:13] you can literally just tell it.
+[24:15] You can be like, from now on,
+[24:16] I only want notifications like this, that, or this.
+[24:19] And it will just message you the things in the chat
+[24:23] that are about very specific things.
+[24:25] And so in the AI era, you need to protect your attention.
+[24:28] And this is one really good way to do it.
+[24:30] You have an AI agent that has access to a computer,
+[24:33] all of your things,
+[24:34] and it can filter through all that information for you.
+[24:36] And it can only ping you with the really important things
+[24:39] if you tell Bluey exactly what types of notifications you want.
+[24:44] I've found that to be incredibly useful.
+[24:47] So those are the tips for the day.
+[24:48] We've talked about a voice chat with Dot, incredibly powerful.
+[24:52] It's the most realistic voice chat in the world.
+[24:54] You can have it spin up codex sections.
+[24:55] You can actually do things instead of plan things.
+[24:58] which is a completely different paradigm.
+[25:00] During voice chats, you can have it drop things in the chat,
+[25:02] super useful, especially with links.
+[25:04] You can have it create pages, the new OpenAI feature.
+[25:07] You can have it create sites.
+[25:08] You can have it do a daily brief through an automation.
+[25:11] You can set in automation heartbeats,
+[25:13] which are like check-ins.
+[25:14] You can also go to the do not disturb settings
+[25:18] and you can make it so Dot is one of the only apps
+[25:21] that can send you notifications.
+[25:23] And you can kind of create this filter
+[25:25] between the outside world of notifications
+[25:27] and you, and you can specify exactly what you want to see, which I find to be really useful.
+[25:33] Anyway, thank you guys so much for watching this video. I really have enjoyed using this platform
+[25:39] and every day I use it, I'm learning a thing or two. And so I think in a month or two,
+[25:45] I'll do another video on it because I anticipate it's going to get so much better in the next few
+[25:50] weeks. And I'm excited to make another video. So thank you guys so much for watching. I'll see
+[25:55] you here next time.

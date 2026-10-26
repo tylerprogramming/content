@@ -1,0 +1,8 @@
+{
+ "id": "cdvi2ooarDc",
+ "title": "I Don't Edit Videos Anymore, Claude Code Does",
+ "published": "2026-07-23",
+ "duration": "PT14M41S",
+ "views": "312",
+ "description": "Here's how I edit my videos with AI now - captions, silence cuts, and animations - all by talking to Claude Code. Everything I use is open-source and free: HeyGen's HyperFrames plus Claude Code.\n\nI'm not a video editor and I didn't build a tool. HyperFrames is HeyGen's free, open-source video framework, and it installs a set of Claude Code skills you drive with plain language. In this video I run the whole thing on real clips: add word-by-word captions from a catalog of styles (pill karaoke, matrix, kinetic slam, neon), cut the dead air out of a 3 minute clip so it drops to under 2 minutes, add transitions and B-roll, and animate a screenshot into an intro - all by asking Claude Code.\n\nI'm honest about it too. This is not one-click magic. The slick final versions you see online took real back-and-forth to get right. But once your styles are dialed in, it's faster and cheaper than the caption apps and silence removers I've paid for.\n\nCHAPTERS\n0:00 - Edit Your Videos With AI\n0:40 - Installing the HyperFrames Skills\n2:00 - Adding Captions to a Clip\n4:00 - Browsing the Style Catalog\n5:10 - Why It Takes Real Conversation\n5:44 - Beyond Captions: Animations & Data\n7:33 - Cutting Out the Dead Air\n9:00 - Adding Transitions & B-roll\n10:05 - Compared to SubMagic\n10:40 - Inside HyperFrames Studio\n11:56 - Animating Screenshots\n14:11 - Try It Yourself + Community\n\nTry it yourself - HyperFrames is on HeyGen's GitHub, free to install. I teach the full setup and drop the exact prompts in my free community:\nhttps://www.skool.com/the-ai-agency"
+}

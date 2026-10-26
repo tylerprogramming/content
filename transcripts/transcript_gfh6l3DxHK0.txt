@@ -1,0 +1,191 @@
+[00:00] ChatGPT just released Dots, and I think this might be the biggest update since the release of ChatGPT.
+[00:06] Basically, when we first got ChatGPT, that was to get answers, right?
+[00:10] You talk to AI, ChatGPT answered you in text format.
+[00:14] A couple of years later, we got ChatGPT codecs, we got ChatGPT work, and we started getting real work done with AI.
+[00:20] So you gave it a task, and it came back with finished reports, spreadsheets, and complete apps.
+[00:26] Well, now there is Dots.
+[00:28] A DOT is an always on AI agent that lives inside a chat GPT and it has its own computer.
+[00:34] It understands what matters to you and it takes initiative and it keeps working on your
+[00:40] behalf even when you're not in chat.
+[00:42] So it's not about giving it a prompt and getting a response.
+[00:45] What you do is you could give it a responsibility and it figures out what needs to do next to
+[00:51] get that done.
+[00:52] I was part of a group that had early access, so I've been testing it.
+[00:55] And I think this is the biggest change since the release of ChatGPT.
+[00:59] So in this video, I want to show you how it works.
+[01:01] I want to show you kind of the three-step process that I went through when I was testing it.
+[01:05] I want to show you how to set up your own dots and give it a real goal.
+[01:08] And I want to show you how it takes initiative, meaning it messages you.
+[01:12] You don't message it.
+[01:13] So it's a whole different type of AI than what you're used to so far.
+[01:17] And since I had early access, my team and I actually put together a free guide just for this video.
+[01:22] And this guide has different examples with your dots, so you could actually start using it right now.
+[01:27] And it has starter prompts that set off that responsibility for it.
+[01:31] And this is a completely free guide you could access.
+[01:33] I'll put a link in the description, and I'll put a QR code on the screen as well.
+[01:38] And by the way, dots are rolling out today, but gradually they're going to go to the pro plans first,
+[01:43] and they're going to start with the higher tier, so you have to pay the $200 a month plan.
+[01:47] And they also have a new $500 plan too, and it's also available in the business.
+[01:52] premium seats and enterprise if your enterprise has this turned on. And a couple other things
+[01:57] they mentioned on their website. This is powered by the new ChatGPT6 Astra. So it's going to have
+[02:02] the most powerful AI model available to it right now. And if you haven't used plugins before,
+[02:08] basically ChatGPT lets you connect to 4,000 different apps and they learn from your feedback
+[02:13] over time. So this is an agent that improves over time and they will work towards a goal 24-7. They
+[02:20] basically have their own computer right so you don't have to have your computer
+[02:23] running for them to be able to work now right now you have one primary dot in
+[02:27] your chat GPT account but the way they envision it is they want dots to work
+[02:31] together on your behalf so having different dots kind of going off there
+[02:35] as different agents with different tasks and different responsibilities and
+[02:38] getting work done for you and I'll also link this below so if you want to read
+[02:42] more about the safeguards that set up for this access and permissions they set up
+[02:46] for this and the review and approval process.
+[02:49] I'll link it below.
+[02:50] But I want to really dive in to my chat GPT account so I could show you this in action.
+[02:55] Okay, so inside of the new chat GPT app, you'll see a new section on their new chat.
+[03:00] It's called Your Dot.
+[03:01] And then when you name Your Dot, it actually changes the name over here.
+[03:04] Now, blurring a lot of this out just because this is actually using the context from my
+[03:10] own emails and Slack channels and Google Drive.
+[03:13] It has access to a ton of different things.
+[03:15] But it's really up to you how much access you want to give it. I'll explain that in a second.
+[03:19] And I'm going to reset mine here. The other thing I wanted to show you is a couple of new things you'll notice inside of the new ChatGPT app.
+[03:26] For example, there is a whole section called spaces here. I'll make a dedicated video, but it's a different way you could organize your files,
+[03:33] almost like your Google Drive, but inside of your ChatGPT account.
+[03:38] And in their demo right now, today was Dev Day. OpenAI showed a ton of different examples of things that are coming to the app.
+[03:43] But I want to make this video more focused on dots. So what I'm gonna do is I'm just gonna go over here
+[03:49] And I'm gonna go ahead and reset this so I could show you just from scratch
+[03:52] Now the first thing typically is gonna ask you to do is you need to give it access to stuff to make it useful
+[03:58] So the more context it has as much as you're comfortable with the more is going to be able to pull into chat the more
+[04:05] Retroactive is going to be able to message you about different things they find so so far when I was using it
+[04:09] It read my emails.
+[04:11] It actually read attachments in my emails like contracts.
+[04:15] It found issues in those contracts and it told me things that I need to point out.
+[04:19] It actually found things on my calendar.
+[04:21] It was able to find me flights.
+[04:23] It was able to pull in things from my Google Drive that needed an update.
+[04:26] So all those were already connected.
+[04:28] So if you have plugins connected in your ChatGPT account already,
+[04:32] it will be able to pull that in.
+[04:34] So you could see it looks like a text message thread here.
+[04:37] here and the first thing it's going to ask you is it's going to ask for a name and you could give it
+[04:42] a name now a couple other things you'll notice here is you could actually start a message at any
+[04:48] time with this little icon now this follows you around on different parts of the web too so it's
+[04:53] not just in the chat gpt account so if i go on a website for example you'll see it over here and
+[04:58] then you'll see this other icon this basically starts a voice conversation so you could send it
+[05:03] a voice command here and you could do this on the phone too.
+[05:07] Now while I was testing it out, it does a couple of different things.
+[05:10] One is if I don't say anything to it, it will say something to me.
+[05:14] So it will go through different things that it has access to and it will find different
+[05:19] things it could help me with.
+[05:20] Now let me show you how you do that.
+[05:22] So over here, you could give it access to your computer so you could allow access, but
+[05:27] by default, it does have its own computer.
+[05:29] But if you wanted to take actions on apps on your computer, you could give it access there too.
+[05:35] So I'm actually going to allow it access.
+[05:37] That way you could look inside of folders and things like that.
+[05:39] And if you go to the plugins tab right over here,
+[05:42] these are all the different plugins that ChatGPT has access to and therefore Dot could have access to.
+[05:48] So I give it access to a ton of different things here on mine.
+[05:51] But again, this is based on what you're comfortable with.
+[05:54] Now let me ask you a question here.
+[05:56] I'm going to ask it what you could help me with that ChatGPT work or Codex can't do.
+[06:00] So right now, this may get a little bit confusing, but hopefully I could clarify this.
+[06:05] You could chat with ChatGPT.
+[06:06] That's your regular ChatGPT where you get an answer, right?
+[06:09] That's good for a lot of different things.
+[06:11] And then you jump into ChatGPT work where you wanted to create things for you like a presentation or a spreadsheet.
+[06:17] And then Codex is for typically building different things.
+[06:20] So it could be video animation or entire websites or platforms or apps.
+[06:24] dots is different than all of that so let me see what kind of answer he gives me here and this is
+[06:29] what he told me there's a lot of overlap my main value is keeping track of things i'm following
+[06:33] through without you having to restart a task each time and it's also pulling some personal things
+[06:39] here from memory so it does have access to your chat gpt memory too so he's pulling some things
+[06:44] from that and he says i wouldn't claim those things are impossible the difference is having
+[06:49] one ongoing assistant across work and everyday life with access and approval control.
+[06:56] He also decided to create a personal scratch pad on its own to keep track of some things
+[07:00] that I have going on.
+[07:01] And it says this is a place for project and decision you want to move forward with.
+[07:05] So it could keep notes to itself this way.
+[07:08] And this is something, by the way, that's going to show up in spaces more and more.
+[07:12] So these are interesting.
+[07:13] But let me actually show you a demo here.
+[07:15] I want to give it a goal or a responsibility and then have it go to work
+[07:19] So I could show you some of the things that it does in the background here
+[07:22] And I want to actually do this with kind of a fake company
+[07:26] Otherwise it pulls in too much of my personal information. This was actually really hard to demo
+[07:30] So right now I'm gonna give it a goal to do a launch for a product
+[07:34] So this is kind of a fake product I made for this demo and I'm gonna give it a folder worth of documents here
+[07:41] So it has access to everything now
+[07:43] Now you could have this in your Google Drive and it has the connector or the plugin that
+[07:46] it goes and grabs those things.
+[07:48] You can't always just grab and drop it like this as you would inside of ChatGPT or ChatGPT
+[07:54] work too.
+[07:55] So it kind of works the same way there.
+[07:56] Now one thing that hopefully they improve on is right now it's actually working.
+[08:01] It did message me but it's not showing anything like thinking or working or anything like
+[08:05] that.
+[08:06] So sometimes I was a little confused if it was doing something but it is actually doing
+[08:10] something and it's working all the time.
+[08:12] It's actually on 24-7.
+[08:13] If you don't want it to be on, they do give you an option here.
+[08:16] You could pause it at any time here, and you could also reset it so it becomes a new dot.
+[08:21] Now, if I go back to my prompt, by the way, I asked for three custom rules.
+[08:25] Draft anything, but never send or post anything.
+[08:28] Never change the price, and anything that could move the launch date comes to me first.
+[08:34] And it went through, and it set off those rules.
+[08:37] It asked for my okay here, and it already found some issues here,
+[08:40] like a pricing mismatch between a couple of the different documents.
+[08:43] He asked me a follow-up question.
+[08:45] And now I'm going to actually not say anything and let it go to work
+[08:49] because I want to show you the best part of this so far from my testing,
+[08:53] which is when it takes initiative and it lets you know what needs to be done.
+[08:58] Okay, so about 10 minutes passed,
+[08:59] and he actually found something here that he could help me with.
+[09:03] It says, I'm also rewriting the three social posts drafts,
+[09:06] that he found some issues with those.
+[09:08] And I'm also reviewing and rewriting your email reflecting this new update.
+[09:14] And here is the Word doc that I rewrote here with those changes.
+[09:18] Now, while it's working on this task, which it will keep working on and it will keep messaging you,
+[09:23] over the weekend, for example, it messaged me a handful of times every single day.
+[09:28] And at the end of it, it asked if it wants me to get less messages and it could prioritize only the most critical
+[09:35] and then give me a summary of the rest.
+[09:37] I did reset it for this demo though.
+[09:39] So you can give it multiple responsibility as long as right now we have this one dot
+[09:43] that could do multiple different things.
+[09:45] So let me give it one other one.
+[09:46] This is the prompt I'm actually going to use this one.
+[09:48] So this will always have my next piece of content ready before I finish the one I'm
+[09:53] working on.
+[09:54] And this is from that dot resource, by the way.
+[09:56] So if you want these prompts or these use cases, they're linked below.
+[10:00] And I'm going to ask you to go check my Google Drive here for those scripts.
+[10:04] And you could also combine these type of prompts with ChatGPT skills.
+[10:07] So plug in skills and dots.
+[10:10] That's how you really get most of these type of workflows.
+[10:13] Now he found my five scripts here that I just mentioned.
+[10:16] He also found something about the video I'm recording right now.
+[10:19] So he did give me a note and a link for that.
+[10:22] And it looks like it's working still.
+[10:23] So he did find some news here, some meta announcement about MetaMuse, which is very similar to this
+[10:29] dot option that I'm recording right now, but it's from Meta.
+[10:34] This will keep working.
+[10:35] But the one thing I did notice is I thought over the weekend especially,
+[10:39] it was sending me too many messages.
+[10:40] It was finding too many things to do.
+[10:42] So you can actually guide it and tell it,
+[10:46] hey, just give me a recap once a day unless it's urgent.
+[10:49] Now I'm hoping soon they'll release this to more plans
+[10:52] so more people could use it that don't have the pro plan or higher.
+[10:55] But this is really the promise of AI.
+[10:58] This is when you have a real assistant that is proactive,
+[11:01] that is doing things for you, that takes a responsibility and runs with it,
+[11:05] and then just tells you what it's doing throughout the day and throughout the week.
+[11:08] And I'm working on more in-depth videos here.
+[11:10] On the day of the release, I wanted to introduce you to it
+[11:12] to show you a little bit of hands-on on what it's capable of.
+[11:15] But again, make sure you check out that resource that I mentioned
+[11:18] that has more about how this is all set up,
+[11:20] the different plans it comes with, and some use cases,
+[11:22] and we'll be adding to that as well.
+[11:24] Thanks so much for watching this one.
+[11:25] Let me know what you think of this update, and I'll see you on the next video.

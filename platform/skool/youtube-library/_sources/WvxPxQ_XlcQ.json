@@ -1,0 +1,8 @@
+{
+ "id": "WvxPxQ_XlcQ",
+ "title": "How To Build an AI Agent in 5 Steps (Claude Code)",
+ "published": "2026-09-08",
+ "duration": "PT15M34S",
+ "views": "3755",
+ "description": "Find all of this: skool.com/the-ai-agency\n\nI built a Claude Code skill that researches my whole niche before I sit down.\nIt pulls the top content across YouTube, Instagram, TikTok and X through one MCP\nserver, reads the winning transcripts, and hands me a ranked brief of what to\nmake next. Five steps, no framework code, and it runs on a schedule.\n\nEverything I use is linked below. The skill, the Apify MCP setup and the\ngrilling skill are all free to copy.\n\nChapters\n00:00 - Before I sat down\n00:22 - Step 1: Where to build it\n00:59 - Step 2: Describe the agent\n01:45 - Watching it write the skill\n02:45 - Step 3: Give it tools\n03:26 - Connecting the MCP server\n04:34 - Inside the skill file\n05:37 - First run and the research\n07:04 - Reading the brief\n08:00 - Step 4: The grilling skill\n10:54 - The hardened skill\n12:11 - Step 5: Schedule it\n14:04 - The routine in the cloud\n14:47 - Recap: the five steps\n\nPrompt + the full skill: https://github.com/tylerprogramming/ai/tree/main/claude_skill_social_me\n\nThe prompt as a Google Doc: https://docs.google.com/document/d/1wGwk8g_VABgXKscKE3nnoIj_aoJ6QK10fS6Sppm9nUk/edit\n\n- Apify (the MCP server that does the scraping): https://apify.com/\n- Matt Pocock's skills: https://github.com/mattpocock"
+}

@@ -1,0 +1,40 @@
+{
+ "07f6c691794843a0b5c4aaf989cea8d8": {
+  "guide": "hermes-agent-guide.pdf",
+  "brief": "Set up an AI agent that runs on its own machine, remembers you, and keeps working after you close your laptop.\n\nYou'll install it, connect your Claude or ChatGPT plan, turn a task into a skill, schedule a job that messages you on Slack, and run it free with Ollama.\n\nEvery command and setting is in the guide under Resources.",
+  "links": [["Hermes Agent", "https://hermes-agent.nousresearch.com"],
+            ["Hermes docs", "https://hermes-agent.nousresearch.com/docs/"],
+            ["Ollama (free local models)", "https://ollama.com"]]
+ },
+ "258056a4f91e4466ba55ceb9f83768a5": {
+  "guide": "deepseek-harness-guide.pdf",
+  "brief": "Install DeepSeek Harness with one command and connect a model through OpenRouter, or run it free on your own computer with Ollama.\n\nThen hand long jobs to the Claude Code plan you already pay for.\n\nEvery command, including the Ollama and sub-agent setup, is in the guide under Resources.",
+  "links": [["DeepSeek Harness on GitHub", "https://github.com/deepseek-ai/deepseek-harness"],
+            ["Quick start", "https://deepseek.com/harness/en/"],
+            ["OpenRouter", "https://openrouter.ai"],
+            ["Ollama (free local models)", "https://ollama.com"]]
+ },
+ "2855b39591944bcf8d35cfd217c96842": {
+  "guide": "ai-agent-5-steps-guide.pdf",
+  "brief": "Build a research agent in Claude Code that pulls the top content on any topic from YouTube, Instagram, TikTok and X, then put it on a schedule.\n\nNo code. The finished skill is free, and the exact prompt I used is in the guide under Resources.",
+  "links": [["The finished skill (social-me)", "https://github.com/tylerprogramming/claude-skills/tree/main/social-me"],
+            ["Apify", "https://apify.com"],
+            ["Apify MCP setup", "https://mcp.apify.com"],
+            ["Matt Pocock's skills (grilling)", "https://github.com/mattpocock/skills"]]
+ },
+ "858e2125dead4c04bdffdd502a8da48e": {
+  "guide": "arcade-mcp-course-guide.pdf",
+  "brief": "Connect your apps once through Arcade and use them everywhere: Claude Code, the Claude desktop app, your own Python agents, and a morning briefing that runs itself.\n\nThe course code is free. All 8 steps, with every command and prompt, are in the guide under Resources.",
+  "links": [["Course code (GitHub)", "https://github.com/tylerprogramming/arcade-course"],
+            ["Copy-paste setup guide", "https://github.com/tylerprogramming/arcade-course/blob/main/INSTALL.md"],
+            ["Arcade", "https://www.arcade.dev/"],
+            ["Add Arcade to Claude", "https://docs.arcade.dev/en/get-started/mcp-clients"]]
+ },
+ "2d96db61104349e4a7fed116b62a7684": {
+  "guide": "claude-mcp-beginners-guide.pdf",
+  "brief": "Connect Claude Code to Gmail, Calendar, Drive, Docs, Slack and ClickUp through one Arcade MCP server, then run one prompt that works across four of them.\n\nNo code. The steps and the prompts are in the guide under Resources.",
+  "links": [["Arcade", "https://www.arcade.dev/"],
+            ["Arcade + Claude Code docs", "https://docs.arcade.dev/en/get-started/mcp-clients/claude-code"],
+            ["Free content skills", "https://free.tylerai.dev/content-automation"]]
+ }
+}

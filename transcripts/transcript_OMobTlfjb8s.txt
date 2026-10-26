@@ -1,0 +1,138 @@
+[00:00] Okay, so there's a new open source repo that lets your code agent, that might be Cloud Code,
+[00:05] Cursor, Codex, whatever you use, look inside an app that it has no source code for, figure out
+[00:10] how a feature works, show you the evidence, and then build you a version. People are doing this
+[00:15] for games, for software, they're cracking desktop applications that have been closed source for the
+[00:21] last 20 years. So it's called REA, which stands for reverse engineer anything. And it's one of
+[00:26] of the fastest rising repos on GitHub right now. Something like seven or eight thousand stars in a
+[00:31] single day and growing by the minute. I'm Rob from Switch Dimension, 20 years as a software developer
+[00:35] and product manager and on this channel we build real stuff with AI agents. And I want to do two
+[00:40] things in this video. First, show you what Rhea actually does because most of the posts that I'm
+[00:45] seeing about this are getting it really wrong. And second, explain why I think it changes something
+[00:49] really big for anyone who ships software. And I'm going to actually show you working on some
+[00:54] source code that I built and threw away the key to see if we can actually get it back again. Is
+[00:57] this thing all hype or does it actually work? So here's the pitch from the readme and it's
+[01:01] basically this. You see a feature in an app that you want in your own product, you go and ask the
+[01:06] agent to investigate it and it can do that without the actual source code of the app. It's able to
+[01:11] look inside and break it down. Under the hood it's basically an MCP server and a CLI which you can
+[01:16] easily plug into cloud code, codex, cursor, whatever you want. Basically anything that speaks MCP and
+[01:21] that's a lot now. And this isn't just electron apps where we could see some of the source code
+[01:25] before. I'm talking about native binaries on Mac, Windows, and Linux. This is a huge chunk of the
+[01:31] desktop apps that you use every day. .NET, Android APKs, firmware, websites, even smart contract byte
+[01:37] code. Now here's where people are getting a little bit confused. It doesn't just hand you the original
+[01:42] source code. Nothing can do that. When an app is compiled, the original code is gone. What you're
+[01:47] going to get back from this investigation is pseudocode, assembly, module maps, call paths,
+[01:52] and network activity with some evidence attached to show you why the agent thinks it's built this
+[01:57] way. And the evidence gives you back is really interesting. Every finding comes back with where
+[02:01] it came from, how confident the model is, and what it couldn't figure out itself. This is the kind of
+[02:06] thing you would have spent an awful lot of money on and a huge amount of time to do previously.
+[02:10] So the architecture is really simple. So RIA itself isn't a decompiler. It's nothing revolutionary
+[02:16] or special. It's basically wrapping the serious tools reverse engineers already use, which is
+[02:21] things like Ghidorah, which is free and from the NSA, Hopper on the Mac, and IDA Pro, which is the
+[02:27] expensive industry standard. So all of this reverse engineering was possible before with enough time
+[02:33] and enough money. The difference now is the friction has been removed. So these tools are
+[02:37] all incredibly powerful and also notoriously hard to learn. What REA does is give your agent dozens
+[02:44] of plain text in 10 tools on top of them.
+[02:47] Things like open this binary, find the strings,
+[02:49] follow the function colors
+[02:50] so it can find its way through and understand the code.
+[02:53] Setup is super simple.
+[02:55] It's just npxrea-agent setup.
+[02:57] It shows you a plan of what it's going to change.
+[03:00] It backs up your config, adds the MCP server
+[03:03] and a skill that teaches your agent
+[03:05] how to do the investigation.
+[03:06] And then it asks before touching anything critical.
+[03:09] Coding agents often finish a session
+[03:10] telling you everything is working great.
+[03:12] but in reality there are multiple issues particularly when it hits production. This
+[03:16] video is sponsored by longtime friends Testbrite. It's an AI testing agent that writes end-to-end
+[03:21] tests and then runs them against your real running app. So an end-to-end test is exactly that,
+[03:26] not just a simple test, it's actually impersonating a user to see if the app really works. The bit I
+[03:32] like is it plugs straight into your coding agent. There's an open source CLI and an MCP server.
+[03:37] So in cloud code, I just say, hey, help me test the checkout flow.
+[03:41] It writes 12 tests.
+[03:42] It runs them in a real browser and in the cloud.
+[03:45] And I can set this up to run on a schedule.
+[03:46] Maybe a test fails, like the promo code isn't coming off the order total.
+[03:50] The failure comes back with the failing step.
+[03:52] It gives you a screenshot and the root cause.
+[03:55] So the agent fixes it, then reruns and we get 12 out of 12 passing tests.
+[03:58] And those tests are kept.
+[04:00] So they run on every single change.
+[04:02] You can try it for free.
+[04:03] Link in the description.
+[04:04] Install the CLI.
+[04:05] next time your agent finishes and says it's done get test right to prove it now as always I'm
+[04:10] totally holding my hands up here be so careful with this this is really powerful you're going
+[04:15] to be using this tool to inspect all these binaries and tools that you have no idea what's
+[04:20] inside of there could be hidden malicious instructions for your AI run this stuff in a
+[04:24] sandbox be very careful okay so let's actually use it and I wanted to do a fair test not a kind of a
+[04:29] you know trust me bro it worked so I built my own app for this I can't run this against an existing
+[04:34] proprietary app out there or I will get sued. So I just built my own one so you can see how this
+[04:38] works. Okay, so it's called a vault. You type in an unlock code and it either lets you in or it
+[04:43] doesn't. Somewhere inside, I've got a rule for what a valid code is. And then this hidden message
+[04:48] appears only when you get it right. Because it's my app, there's no license key to worry about.
+[04:53] And I've got the perfect answer key, the source code, which I am now going to put away. So I also
+[04:59] built this the way a real app ships, which is optimized with every function name stripped out.
+[05:03] So check unlock code is now just a function at this address, which is a lot more realistic.
+[05:09] Now for the agent.
+[05:09] I've got Ria set up in my agent here with Gidra beside it, the free one from the NSA.
+[05:15] So it opens up the binary and it gets back 242 plus functions.
+[05:19] Every one of them is just called fun and an address.
+[05:22] And then it starts to decompile, turning machine code back into something a bit like the language C.
+[05:27] So within a handful of calls, it's actually found the one that matters.
+[05:30] So the big question, does it actually work?
+[05:32] Well, it wrote me a little generator and gave me a code, A-G-N-T-1-0-0-1.
+[05:39] And I'm in.
+[05:40] The big thing people are missing here is it's not pulling out the source code.
+[05:43] It's basically generating itself or breaking it down and reverse engineering it.
+[05:48] It didn't copy the code.
+[05:49] It understood the logic and then wrote something completely new, a code generator, which my app doesn't even have.
+[05:54] So I guess the big thing for software development, for years there's been this kind of unspoken protection that software has been afforded.
+[06:02] sure you could always reverse engineer app it's not that this wasn't possible before but it was
+[06:07] slow specialized and really expensive so almost nobody ever bothered doing it that friction of
+[06:12] reverse engineering was the protection and rea and rea basically deletes all that friction now
+[06:18] i've seen a lot of people post about how planes are going to start falling out of the sky because
+[06:21] they can be reverse engineered and hacked i really don't think that is the case there are still so
+[06:25] many hurdles and layers that you need to get to before you can compromise many systems but in this
+[06:30] world, if you ship a desktop app, a browser extension, a game, a mobile app, or a big client
+[06:35] side JavaScript bundle, you should now assume that anyone's agent can map out how it works.
+[06:40] We're going to see some interesting GTA 6 mods coming up in the next few months. And look,
+[06:45] I don't think this is a disaster like so many people are saying on a lot of posts that I'm
+[06:50] seeing. I just think it's a bit of a correction. Code was never really the moat in the first place.
+[06:54] Well, not for most of us anyway. Your moat really is in your data, your users,
+[06:57] your cloud security, how fast you ship, your taste and the stuff that runs on your servers
+[07:02] where basically nobody else can inspect it. Good security flip side to this. You can point this at
+[07:07] apps on your own machine and ask what is this thing actually doing? What is it sending home?
+[07:12] There have been lots of cases where 3D printers and even coffee machines have been compromised
+[07:16] and are sending tons of data off your network back to some source that you were not aware of.
+[07:20] Okay so the important bits. Three things. One legal. I am not a lawyer. This isn't legal advice
+[07:26] But reverse engineering for interoperability had generally been protected.
+[07:30] So it's something you're kind of allowed to do.
+[07:32] But a lot of apps have terms of service that exclusively ban it.
+[07:36] And breaking DRM or encryption is a whole separate legal problem.
+[07:40] Your own apps, open source binaries, security challenges, and things you're authorized to test are the safe ground.
+[07:46] REA's own disclaimer says you are responsible.
+[07:49] Second thing is this isn't a sandbox.
+[07:51] If you run a target through its runtime capture, it runs with your permissions.
+[07:55] So don't point it at any random binary you downloaded off a forum and make sure you're keeping your agent's approval prompts switch on so you know what it's doing.
+[08:04] Who knows what kind of prompt injection could be in there?
+[08:07] And the other thing is this repo seems to be moving extremely fast.
+[08:10] Lots of breaking changes, amazing energy, but expected to change continuously.
+[08:14] So make sure you're updating it constantly.
+[08:16] So as a software engineer, things that I would find this really useful for.
+[08:19] So learning how great desktop apps handle things like offline sync, clipboards and search, and then go and build my own version.
+[08:26] I'd be using it to audit electron apps on my machine, which I have so many of now, and then recovering logic from my own bills where that source maybe has gone missing.
+[08:35] What I wouldn't do is just point this at a competitor and clone the product.
+[08:38] It's a legally risky thing to do and it misses the point.
+[08:41] What you want to do is understand the idea and build something better because you're never going to match that company's marketing anyway.
+[08:46] And now it's all about distribution.
+[08:47] So I'm curious if you could point this at one feature in one app, what would it be?
+[08:52] So tell me in the comments.
+[08:53] If you want to go deeper on building with agents, MCPs and things like this, that's
+[08:56] exactly what we do in Switch Dimension, the course and community.
+[08:59] It's closed at the moment.
+[09:00] The waitlist is open up and the link is in the description.
+[09:03] And if this is useful, hit subscribe.
+[09:04] I cover the agent tools that actually matter and skip the ones that don't.
+[09:07] Next, check this one out on skills.

@@ -1,0 +1,237 @@
+[00:00] One of the fastest growing repo in GitHub history.
+[00:04] This is called REA, reverse engineer anything.
+[00:08] Yesterday I decided to record a video and it had around 79,000 stars.
+[00:13] And just the day after today, October 11, I just saw that.
+[00:16] Wow, more than 100,000 stars on GitHub repo.
+[00:21] Reverse engineer anything, software is done.
+[00:24] God help us.
+[00:25] Someone just built an open source tool that lets AI agent reverse engineer almost any software.
+[00:31] Developer built on a tool that skyrocketed it to number one spot on GitHub in just one day.
+[00:37] Now, Cloudopus 5.5 plus this reverse engineering MCP just destroyed hundreds of software companies.
+[00:46] People are reverse engineering their own favorite games to mash up everything together.
+[00:50] We have Mario here in whole different games, in Minecraft, in GTA.
+[00:55] There are some legal considerations we're gonna get into that but literally you can now
+[00:59] reverse engineer and even closed source app. I have seen some features of photoshop getting
+[01:03] reverse engineered that works even better than the original one. Again, they're gonna be legal
+[01:07] considerations so don't take my advice but let's dig into that. You see a feature in an app and
+[01:12] you wonder how it works but you'll never see its source code. REA lets CloudCode look inside anyway
+[01:19] and show you the evidence.
+[01:21] Now, Cloud Code can already read code,
+[01:24] and even reverse engineer a bit.
+[01:26] So why do we need REA?
+[01:28] Because a shipped app isn't source code.
+[01:31] Names get stripped, and everything's crushed together.
+[01:34] GitHub Desktop's AI prompt sits 1.4 million characters
+[01:38] into one file.
+[01:39] Alone, Cloud Code greps blindly,
+[01:41] burns its context, and guesses.
+[01:45] That's what REA fixes.
+[01:47] Reverse engineer anything.
+[01:49] open source and over 100,000 stars since April.
+[01:52] It's an MCP server and a CLI,
+[01:55] so it plugs into CloudCode,
+[01:57] or almost any agent that speaks MCP.
+[02:00] And it's not just JavaScript apps like GitHub Desktop,
+[02:03] native binaries on Mac, Windows, and Linux,
+[02:07] .NET, Android apps, firmware, websites,
+[02:10] even smart contract bytecode.
+[02:13] Here's how it works.
+[02:14] You ask CloudCode in plain English.
+[02:16] CloudCode calls REA.
+[02:18] It inspects the app right on your machine and sends back findings with the evidence attached.
+[02:24] Now, Cloud Code isn't guessing.
+[02:26] It traces the real thing, then explains it or builds its own version.
+[02:31] Now, REA isn't a deep compiler.
+[02:33] It drives the classic ones, Ghidra, free from the NSA, Hopper on the Mac, and IDA Pro, the pricey industry standard.
+[02:43] These tools aren't new, and none of this needs AI.
+[02:46] They take an app's raw machine code, turn the bytes back into assembly, map every function
+[02:52] and who calls it, and rebuild it as rough, sea-like code a person can read.
+[02:57] Powerful, but brutal to learn.
+[03:00] So REA turns them into plain tools Claude Code can just call.
+[03:04] And here's what most people get wrong.
+[03:07] REA can't give you the original source.
+[03:10] Nothing can.
+[03:11] You get pseudocode, assembly, call paths, module maps, network activity, and the evidence behind every finding, plus what's still unknown.
+[03:20] Setup is one command. Pick your agents, review the plan, and approve.
+[03:25] It backs up your config, adds the MCP server and the investigation skill, then you restart your agent.
+[03:32] Three quick warnings. When it runs an app, it uses your permissions, so keep your approvals on.
+[03:38] Stick to your own apps, open source or things you're authorized to test.
+[03:43] And update often. It moves fast.
+[03:46] So here's the plan. I'll take my own app, WellView AI, compiled with no source code
+[03:52] and have Cloud Code rebuild its Today tab twice, once with REA and once without.
+[03:57] Then we put them side by side. Let's do it!
+[04:02] Now, I want to test this reverse engineering with and without cloud code to see if it truly helps to have this plugin or cloud code can reverse engineer anything for me.
+[04:12] Well, in order to make sure that I won't be in trouble and due to some legal considerations, I cannot just grab any closed source app and start to reverse engineer that in front of camera.
+[04:21] So what I did, I reverse engineering something I created.
+[04:24] So as you might know already, this has been the most impressive use case of AI, which is connecting AI to my body.
+[04:29] That's the product I have created.
+[04:31] And thanks to you and your feedback, it has been an amazing app so far.
+[04:34] It is an app store.
+[04:35] What it can do, so it technically connects the data from your smothering or Apple Watch
+[04:41] and analyze your body and discover the pattern that you could never discover by just your own investigation.
+[04:48] So, for example, it's now telling me that there's an issue to the timing that when I go to bed,
+[04:52] usually even if I sleep enough, but 12, 12.30 a.m. is the right timing for me to go to bed.
+[04:58] But otherwise, the deep stage of my sleep is not well.
+[05:02] And it has been truly helping me to just adjust my sleep time between the fixed hours.
+[05:06] Every single day, it discovers something for me, give me a sort of readiness score.
+[05:11] I don't want to go through all these features here.
+[05:13] But this is what I'm going to reverse engineer right now.
+[05:16] It also tells me, for instance, what's going to be my ideal schedule based on my brain peak hours.
+[05:21] So right now, I'm recording this video.
+[05:23] It's the best time because this is my peak hours.
+[05:25] So there are too many information here about your brain, your body, performance, your gym.
+[05:31] It's going to capture everything, your nutrition.
+[05:33] You can just take a picture.
+[05:34] It gives you the calories and protein.
+[05:36] And the best part that you have loved the most is being able to create an AI agent for your body.
+[05:42] So here I just, for example, say that every morning check my sleep and tell me if there's something wrong.
+[05:46] So I passively check my body every day based on the schedule or event based.
+[05:51] It's going to get triggered and notify me.
+[05:53] And of course, there are too many other agents if you want to try.
+[05:56] There are agents that optimize your day based on connecting to your schedule, your calendar, and your body.
+[06:01] There's a nutrition coach, body decoder, and wellness doing that give you what-if analysis.
+[06:06] What if you change or take something or change your lifestyle, take that tablet, supplement, what's going to happen to your body?
+[06:12] So, long story short, the app link is in the description below.
+[06:15] Check it out if you're interested.
+[06:16] You can totally start for free.
+[06:18] What I'm going to do, I'm going to just ask Cloud Code with and without this plugin,
+[06:23] to actually reverse engineer only the two day tab of this app without giving the source code we just
+[06:29] giving the compiled binary file of the app or dot app by itself and that's it by the way i have been
+[06:36] developing this app for more than seven months right now and i'm not expecting with just the
+[06:41] reverse engineering here one tab could be fully functional so i'm just prompting you to do with
+[06:46] very simulated fake data of my biometering information but just see the functionality
+[06:51] in closeness of this all these 3d designs and the ui and the functionality and again just to
+[06:56] the tab because it's gonna cost me a lot and again something that has been coded and vibe coded for
+[07:00] seven months cannot be truly reverse just right now in 10 minutes and i want to save some budget
+[07:05] by the way so just to start me today tap let's get into it okay so on the left side i want to use
+[07:10] this reverse engineering plugin so i'm gonna simply say that install this plugin so cloud code can
+[07:17] use it i have some minor typos which is fine so simply just paste your github link which is again
+[07:26] i'm going to add to the to the community as well with all sort of my lesson learned and some
+[07:31] context about what's going to be the best way and efficient to use this plugin to reverse engineering
+[07:35] and some considerations we discussed all of them are summarized and added as a source link to the
+[07:40] community as i talked but here it is it's installing now so as soon as it's ready this
+[07:44] is my question. I want to say that in this path, I have this VLVAI.app, no source code. There is no
+[07:51] code available. So this is the Compile iOS app. What I want to do, just go ahead and again reverse
+[07:57] engineer the Today tab, which is that first tab that I showed you, and just show me that rendered
+[08:02] simulated reverse engineer app in HTML file in a frame of a phone. So I just want to see what's
+[08:09] going to be the performance. Since this is installing it, I want to wait a little bit,
+[08:12] but I'm going to copy-paste the same thing with cloud code.
+[08:16] For this one, I'm going to say that use REA plugin you installed,
+[08:22] but this one, it won't use it if I don't say,
+[08:24] but just in case, I want to say that never ever use REA
+[08:28] or any reverse engineer plugin if it is installed.
+[08:36] All right, so this one is going to take a little bit of time.
+[08:38] As soon as they're ready, I'm going to hit both of them
+[08:40] at the same time to compare the timing.
+[08:42] the quality and the cost all right it is installed let's hit enter this one gonna does with reverse
+[08:48] engineering plugin this one without it so i'm gonna wait for it just sharing this very quickly
+[08:53] i recently launched my free community so i gotta gather all these youtube resources the codes the
+[08:58] skills plugins that i use on those youtube videos as you have been asking that share us the code
+[09:03] share the link so i thought about having them all in just one place so i will add the link of this
+[09:08] school which is mga.i.school in video description click on it you will come here in community section
+[09:14] like any other communities that you might have joined already you can actually post here check
+[09:17] out my latest announcement about the videos and i'm going to share the assets here let's say this
+[09:22] we are recording i added the link after the codes you can raise your questions if you are looking
+[09:27] for general discussion you need support you need help you're looking for job opportunities
+[09:31] that's the place for you and what i have done on the top if you go to the classroom you will see
+[09:35] lots of all again free courses that i have captured and bundled my ai videos you can start with the
+[09:42] seven day ai challenge you're going to be graduated with your capstone project there are a lot of
+[09:46] members you can start to connect with so the community is gradually getting started and with
+[09:51] the leaderboard as you get engaged to engage with other people you come and post raise questions
+[09:55] you get higher level of engagement and gonna unlock you for example chats you can also join
+[10:00] our live sessions which are going to schedule them shortly so you can bring your projects
+[10:05] ask questions or live we're going to talk about the topics and instead of the art technology
+[10:09] updates that has been happening in the field so i will add the link of that in the description below
+[10:13] check it out and we're looking forward to see you there now getting back to the video all right one
+[10:17] of the sessions is done cloud code without using this rea plugin is finished it took me around
+[10:24] 40 minutes that was pretty long it had a lot of hiccups it was getting blocked by policy which i
+[10:28] I don't know why, but it finished in around almost $12.
+[10:33] And let's see what's going to be the results.
+[10:36] Now, here's side by side.
+[10:38] My real app that is in production in App Store right now.
+[10:41] Again, the app link is in video description if you want to download.
+[10:44] And on the left side, it's the Revious Engine version without using this new plugin.
+[10:48] Just pure cloud code.
+[10:50] From the first glance, it's not that bad.
+[10:52] It tried its best to actually mimic even the background design,
+[10:56] which is not really that similar to what I have here.
+[10:59] It totally ignored that 3D rendering that I have here.
+[11:02] It just took me actually a lot of time to figure it out and code it and wipe coding and displayed here.
+[11:07] And I can see there's a wellness overview on the top, which I have it here.
+[11:12] So it didn't follow the sequence.
+[11:14] It's interesting.
+[11:15] And then that AI discovery part we have, which on the top here, we have design at the middle.
+[11:22] So if I click on more, it has some information.
+[11:26] I can deep dive with AI.
+[11:27] Again, these are all just simulated data.
+[11:28] It has also the bio wellness age, which I have it here as well.
+[11:33] There you go.
+[11:34] They don't look that similar.
+[11:35] And in my real app, I also show what is being used to calculate this, your body age, which
+[11:42] it's going to tell you if you're younger and older than your body.
+[11:46] And so again, a little bit different.
+[11:48] The caffeine window, the time that you have to start and stop taking coffee based on your body.
+[11:54] It has been calculated.
+[11:55] I have this chronotype version of mine that tells me if I'm the night old person, that I have my peak hours.
+[12:01] Totally ignored that.
+[12:03] Today energy map, similar to what I have here.
+[12:06] It doesn't have my, oh, it has also my schedule.
+[12:09] The same.
+[12:11] Interesting, the wellness age has been repeated here again, which I don't know why.
+[12:15] And highlights of the day.
+[12:17] There's no recommendation here.
+[12:18] no strikes here, sleep, HRV readiness, all these are gone.
+[12:23] Let me click on that if it shows here.
+[12:25] No, it doesn't even work.
+[12:27] Not that impressive.
+[12:28] Again, this cloud code and the other cloud code that is using REA, none of them has access to the source code.
+[12:34] None of them has even seen any codes that I developed with this mobile phone.
+[12:38] They just have the compiled file of this app, and they're trying their best to re-messenger that.
+[12:43] So again, pretty interesting results, but so far, not really what I'm going to call it a true reverse engineering version.
+[12:50] Now, let's see what the other one is going to show us with Cloud Code Plus reverse engineering plugin that we installed.
+[12:56] All right, finally, Vitaria plugin is done.
+[12:59] And check this out.
+[13:00] It cost me four times more $40, a lot more, almost around 1 hour and 12 minutes.
+[13:06] And both of them are using Opus 5.5 Max.
+[13:09] And let's see the result of it.
+[13:10] Well, this one also failed at 3D animated results.
+[13:15] I assume that's sort of a UI thing rather than a functional thing maybe on the backend,
+[13:19] but I don't know how to figure out to miss it or don't add it.
+[13:23] But this one, sort of the same.
+[13:25] This one looks much more similar to the exact what I show in the real app from sleep versus readiness.
+[13:32] Even the calls are the same.
+[13:34] The AI insights, again, the position could be on the top.
+[13:37] Oh, actually, no, the position is correct.
+[13:39] So this one got the sequence also correct.
+[13:42] Wellness age, not exactly the same, but the position of that is correct.
+[13:46] And there is no repetition.
+[13:48] This habit reminder, I think the previous version totally missed it.
+[13:51] This one have it.
+[13:52] Coronotype, the previous one missed it.
+[13:54] This one have it, but the UI looks different.
+[13:56] Today's energy map, it looks more similar to the real app, but not that beautiful as the real application.
+[14:02] Caffeine, the same.
+[14:03] Sleep, this one looks very similar.
+[14:06] I would say it followed all the functionalities.
+[14:08] this one has also Strix. So this is from a functionality perspective and components that
+[14:13] I have is much more closer to the real app. But the other one with Cloud Code, it tried to actually
+[14:19] mimic also the user interface, not just the functionality, but it failed on functionality.
+[14:24] So my takeaway is that RAA is great for cloning or reverse engineering functionality and features
+[14:31] of an app. But if you want your cloned version to look exactly the same like the original one,
+[14:37] I would say go beyond just RA.
+[14:39] Let RA do the cloning of the features and then use native cloud code to even see from your browser,
+[14:46] your screen, or taking a screenshot by itself at how the app or that feature looks like.
+[14:51] So combining these two together is going to be amazing.
+[14:54] So if you want to use RA, prompt it that, hey, from a UI perspective,
+[14:58] also check out how that feature, how that app works.
+[15:01] You have control of my browser, my screen.
+[15:04] It's going to do the work.
+[15:05] So make sure you add that extra secret sauce on the top.
+[15:09] Finally, your result is going to be both functionally well and also UILUX, the clone version.
+[15:13] That was all this video.
+[15:14] If you enjoyed, I'm very thankful if you can like and share your thoughts, questions, and comments down in section below.
+[15:20] And join the committee.
+[15:22] I will see you there with all the free resources I'm going to add about this video, my courses, heads up, prompts that I use, these details that I captured from this trial and test.
+[15:30] So I'm going to add them as a skill.
+[15:32] in community you go there and download and hopefully you can use it and enjoy
+[15:36] I'll see you in the next one thank you so much

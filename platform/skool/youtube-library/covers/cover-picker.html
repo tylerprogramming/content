@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  .wrap{display:flex;flex-direction:column;gap:22px;padding:4px 0}
+  .row{display:flex;gap:16px;flex-wrap:wrap}
+  .label{font-size:13px;color:var(--muted-foreground);margin:0 0 6px 2px}
+  .shelf{background:#1B1C1F;border-radius:12px;padding:16px;display:flex;gap:14px;flex-wrap:wrap}
+  .tile{width:252px;background:#2A2B2F;border-radius:10px;overflow:hidden;color:#e8e8e8;font-family:Roboto,Arial,sans-serif;cursor:pointer;
+        outline:2px solid transparent;transition:outline-color .15s}
+  .tile:hover{outline-color:var(--accent)}
+  .tile img{width:100%;display:block;aspect-ratio:1460/752;object-fit:cover}
+  .meta{padding:10px 12px 12px}
+  .t{font-weight:700;font-size:15px}
+  .d{font-size:12.5px;color:#aaa;margin:4px 0 10px;line-height:1.35}
+  .bar{height:16px;border-radius:8px;background:#3a3b40;font-size:9px;line-height:16px;padding-left:8px;color:#ccc;font-weight:700}
+  .tag{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:#E62117;border-radius:4px;padding:1px 7px;margin-right:6px}
+  .small .tile{width:186px}
+  .small .d{display:none}
+  .note{font-size:13px;color:var(--muted-foreground)}
+</style></head><body>
+<div class="wrap">
+  <div>
+    <div class="label">On your classroom shelf, desktop width (252px). Click one to pick it.</div>
+    <div class="shelf">
+      <div class="tile" data-hermes-send="Use cover A for the YouTube Library course"><img src="cover-A.png"><div class="meta"><div class="t"><span class="tag">A</span>YouTube Library</div><div class="d">Every video, with the commands, links and files.</div><div class="bar">0%</div></div></div>
+      <div class="tile" data-hermes-send="Use cover B for the YouTube Library course"><img src="cover-B.png"><div class="meta"><div class="t"><span class="tag">B</span>YouTube Library</div><div class="d">Every video, with the commands, links and files.</div><div class="bar">0%</div></div></div>
+      <div class="tile" data-hermes-send="Use cover C for the YouTube Library course"><img src="cover-C.png"><div class="meta"><div class="t"><span class="tag">C</span>YouTube Library</div><div class="d">Every video, with the commands, links and files.</div><div class="bar">0%</div></div></div>
+      <div class="tile" data-hermes-send="Use cover D for the YouTube Library course"><img src="cover-D.png"><div class="meta"><div class="t"><span class="tag">D</span>YouTube Library</div><div class="d">Every video, with the commands, links and files.</div><div class="bar">0%</div></div></div>
+    </div>
+  </div>
+  <div>
+    <div class="label">Narrow window (186px)</div>
+    <div class="shelf small">
+      <div class="tile"><img src="cover-A.png"><div class="meta"><div class="t">A</div></div></div>
+      <div class="tile"><img src="cover-B.png"><div class="meta"><div class="t">B</div></div></div>
+      <div class="tile"><img src="cover-C.png"><div class="meta"><div class="t">C</div></div></div>
+      <div class="tile"><img src="cover-D.png"><div class="meta"><div class="t">D</div></div></div>
+    </div>
+  </div>
+  <div>
+    <div class="label">Next to your existing tiles</div>
+    <div class="shelf">
+      <div class="tile"><img src="shelf/6.jpg"><div class="meta"><div class="t">Claude Code</div></div></div>
+      <div class="tile"><img src="shelf/8.jpg"><div class="meta"><div class="t">Monthly Live Builds</div></div></div>
+      <div class="tile"><img src="shelf/1.jpg"><div class="meta"><div class="t">Start Here</div></div></div>
+      <div class="tile"><img src="shelf/3.jpg"><div class="meta"><div class="t">Full Automation Course</div></div></div>
+    </div>
+  </div>
+</div>
+</body></html>

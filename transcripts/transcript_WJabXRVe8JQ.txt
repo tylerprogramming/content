@@ -1,0 +1,282 @@
+[00:00] That first crack. Ice cold. Bold. Pepsi. Refreshingly yours.
+[00:08] I typed one prompt and 11labs created the full video pipeline by itself. It picked the models,
+[00:14] created the nodes, and wired everything together. This is the flows agent in 11 Creative. So I'm
+[00:20] going to show you exactly what it does and we're going to go through an example of ourselves and
+[00:24] create something brand new. I'm going to share this Word document that goes through all the steps
+[00:27] so that you have this as well after we're done in the video, or you can follow along with this while I'm talking.
+[00:32] Let's go ahead and get into this.
+[00:33] Now, 11 Labs has evolved over time, and so now there are kind of three areas.
+[00:37] There's 11 Creative, 11 Agents, and 11 API.
+[00:40] We're going to be talking about 11 Creative, okay?
+[00:42] This is where we're going to really create and edit and do things with AI.
+[00:46] And specifically, there are flows, okay?
+[00:49] So if we click on flows, we can see here this is this Pepsi one that I just did the other day.
+[00:53] It was a short-form ad video that I had created,
+[00:56] and I talked to it with the agent on how to set it up.
+[01:00] But there are many others here, right?
+[01:01] So if we look at this luxury perfume one as an example,
+[01:06] you see here it creates two images, right?
+[01:08] It gives the prompts right here to create the images.
+[01:12] So there's two different ones.
+[01:14] And then it takes that, the person in image one holding image two,
+[01:18] and then it's basically combining those into another image.
+[01:22] So, which means that we could replace this, rerun it, and then this would be a different product shown in this image.
+[01:32] And then they take that to a video and they give the prompt to create a six-second video, which you can see right here.
+[01:42] And then they have the voiceover right here, which you can update as well.
+[01:46] That then gets put into a composition that you can then run.
+[01:51] You now have your full ad.
+[01:53] And the whole idea about this is it does this for you.
+[01:56] Then you can kind of swap and replace something in the beginning of the workflow and then run the whole thing.
+[02:02] Then you have your new video, right?
+[02:04] So if you kind of have like a format or like a style of how you like your ads, but you want to do for multiple products, this is a perfect way to do this.
+[02:11] And this is very robust.
+[02:13] And, you know, there's no based editing.
+[02:15] Isn't new, right?
+[02:17] But we are probably familiar.
+[02:18] We've seen these and again being one of the most popular.
+[02:20] You're probably making Zapier, but this is specifically for Eleven Labs, and it has been amazing.
+[02:26] And being able to just chat with it and the agent over here on the side panel has helped out so much.
+[02:32] Okay, let me show you what I did for this Pepsi one.
+[02:34] As you can see here, I've talked a lot here.
+[02:36] This is a lot of talking, right?
+[02:37] So whenever we're dealing with agents, I know that we all like to think we one prompt, or when you see the final product, it's all one prompt.
+[02:43] It's not just one prompt.
+[02:44] I was working with this, and I've done a lot with it.
+[02:46] Basically, all I started out here was this is just an image I got from Google Images.
+[02:51] This is also just another reference that they had as a default, so I just used it.
+[02:55] And it created, if we look at this, it's created from the Pepsi can.
+[03:00] It created two different kind of images here.
+[03:03] You can see what model you're using.
+[03:06] GPT Image 2 for these.
+[03:08] And then from there, I used Gen for Things for Runway.
+[03:11] Created two second clips.
+[03:12] And then similarly, with the character, it came down here from this image.
+[03:18] It created another image, right?
+[03:20] The thing is, it used the Pepsi Can plus this image.
+[03:23] If we scroll in now, now there's an image of him holding the Pepsi Can.
+[03:28] Okay, so it's obviously different.
+[03:29] And then we created two different videos of him with the Pepsi Can using video models.
+[03:34] And then basically all of those were put together into this video composition right here.
+[03:39] So what we have here, we have a voiceover.
+[03:41] We have music.
+[03:43] And then we have sound effects if we wanted them.
+[03:45] I talked with the agent and had it create all of these.
+[03:47] It connects all of this together.
+[03:50] And so then let me just show you the final product of this.
+[03:52] That first crack.
+[03:55] Ice cold.
+[03:56] Bold.
+[03:58] Pepsi.
+[03:59] Refreshingly yours.
+[04:01] So not bad, right?
+[04:03] I'm not saying that's what you're going to use for the product, right?
+[04:05] That was an example.
+[04:06] And you can do so much with this.
+[04:09] So let me show you an example of how we are going to create this today.
+[04:13] Oh, and here's the long form one.
+[04:14] Some moments are made to be remembered.
+[04:17] Noir, a fragrance that lingers long after you've gone.
+[04:20] Okay, pretty cool, right?
+[04:22] That was just a six second clip.
+[04:24] But, you know, the voiceover kind of match.
+[04:26] That was probably a little bit better version that they had created.
+[04:29] All right, let's go and do our own.
+[04:31] So what we're going to start here is go back to flows, back to flows.
+[04:34] and so under flows when you're here we're going to create new flow and the thing is you can
+[04:40] absolutely certainly do all this manual if you want to at the bottom here right you can do like
+[04:45] image generation video generation you can have these nodes you can you know connect these together
+[04:50] right you can absolutely do all that but you know i'm not going to do that so in here what we're
+[04:54] going to be building kind of like a 30 second coffee ad right for something right i don't know
+[05:00] exactly what yet but we're going to be doing something i don't know what it looks like we're
+[05:03] doing this together. So I have this prompt that you can, again, you, you have a link to this.
+[05:07] You can copy this exactly. So I'm going to put this in here, say generate. We're going to need
+[05:12] actual photo of some coffee. So I did a coffee bag search, right? I don't want to use like
+[05:17] Starbucks or anything like that. So I came down here. I didn't realize Tom Hanks has his own,
+[05:23] maybe you guys knew, but I did not. So I'm going to say this image locally.
+[05:26] tom hanks coffee okay great because we are going to upload that now in downloads and put that right
+[05:36] here so now it has this default file from tom hanks coffee bag so now it's going to kind of
+[05:43] figure out what we're going to do and of course with anything right we can edit this this doesn't
+[05:48] mean it's going to be perfect the first time we do it but we that's what editing is for and some
+[05:53] other amazing things you can do with this is actually can be b-roll creation for your videos
+[05:58] right if you have like i took a side picture of me right here and i said hey create five different
+[06:03] b-rolls to be put into my actual videos then you could have a pipeline to do that right there are
+[06:09] just so many things that you can do right and you can have music voiceover actually i have another
+[06:15] video where i'm going to show you how to use dubbing which is something else within 11 labs
+[06:19] that you can dub your videos to be all to be for any other language.
+[06:25] So now what's what we're doing is pick a voice for the Ember voiceover.
+[06:28] So we can, let's see, can I move this to the side here?
+[06:32] It looks deep Japanese.
+[06:35] Let's do Marcel.
+[06:38] I don't know.
+[06:41] Hey, so lovely to meet you.
+[06:44] Hi, I'm Frank, a confident narrator with a warm, deep, intimate voice.
+[06:49] Yeah, let's just do Frank.
+[06:51] Okay.
+[06:52] So here's what it's doing.
+[06:53] So that's the thing it does here, right?
+[06:54] I didn't really get to explain.
+[06:56] It's going to give you ideas and give you several different options to choose from.
+[07:01] So it's going to come up with five campaign images, a 30-second...
+[07:04] It wants a 30-second cinematic ad, voiceover, warm instrumental music with the lift at the end,
+[07:09] and then the composition is the one at the very end.
+[07:11] It's going to...
+[07:12] Yep, so here, create the first node.
+[07:14] It's going to now create all of these nodes for images.
+[07:17] so we can drag and drop them.
+[07:20] And then we're going to have it run all.
+[07:22] I think it's going to create multiple here.
+[07:24] And while it's doing that, it's doing the voiceover and the music bed,
+[07:27] which is just the actual music.
+[07:29] So that's these notes.
+[07:31] So if we scroll into here, some mornings you wake up, pause, others you write.
+[07:35] This is the voiceover that Frank is going to be doing for us.
+[07:39] And then this is a warm instrumental, acoustic, coffee shop, score,
+[07:43] finger-picked, acoustic guitar, soft upright bass.
+[07:45] So, you know, it came up with these prompts for the models itself.
+[07:49] And what you have here, right, so these models, so this is a voice model.
+[07:54] This is a music model.
+[07:56] You can choose which ones you want, right?
+[07:57] The same thing for the images over here, right?
+[08:01] You can choose which image model you want.
+[08:03] You know, we have Image 2, Nano Banana.
+[08:06] It gives you the amount of credits it costs, so choosing Image 2 because it costs less.
+[08:11] You can choose the aspect ratio, right?
+[08:14] So it's for any content form, like Instagram, anything, right?
+[08:21] You can do the resolution.
+[08:24] This is the quality.
+[08:25] And then you actually download them separately.
+[08:27] But it also gives you options, right?
+[08:29] Here are two options from that, just from those image generations.
+[08:34] But I do see it.
+[08:35] It says it's going to do five.
+[08:37] It only sees three.
+[08:37] So I'm going to say I only see three image generation nodes.
+[08:42] thought we were doing five. Okay, so here's all five of the image nodes. Okay, great. So now we
+[08:48] have all five image nodes, and then we have the voiceover and the sound effects. Now we need to
+[08:54] create the animated clips and assemble. Okay, so now it's going to take these images. It needs to
+[09:03] animate them, and again, you can choose the AI video models. Some of them have different time,
+[09:08] like some of the different lengths of time you can create so not all can just do per second right
+[09:13] you can't just say i want this one three seconds the next one five next one seven and so on right
+[09:17] they have set duration lengths typically five ten fifteen or like maybe four eight twelve there's
+[09:26] one from one way that's two second clips you can't have like specific time frame from each
+[09:31] from each video model you know and what's pretty cool is it does tell you as each one is being
+[09:35] generated how much help you know where it's at in the process again what i'm thinking is that i have
+[09:41] to refresh after this but that's okay um and then what it's going to do you can again here you can
+[09:46] choose which video model right you can filter it what's realistic what's upscaling uh some of these
+[09:53] are maybe better but not all of them you can use like this one the c dance one within 11 labs it
+[09:59] says it's not available in the u.s where i live just so you're aware of that also and this is what
+[10:05] I meant by the duration. Veo 3.1 Fast only has 4, 6, and 8. It doesn't have like 1, 2, 3, 5, 7,
+[10:11] right? So you have to be, by the way, two commands, V and H. So H and V let you select. So if I select
+[10:19] all these, let's say I move this one all the way out here. If I select all of them and then right
+[10:24] click and then tidy up, there you go. They're all kind of tidied up, sort of. Yeah, okay. So all five
+[10:30] done it says there the other one just popped up out of nowhere so what's cool on this editor right
+[10:35] you can see the actual video being created from this image right and you can kind of view it
+[10:39] coffee another coffee it's all kind of being put together into what's called a composition right
+[10:45] you can't edit this yourself too much i kind of just talked to the agent right but there's only
+[10:51] one track for video and you can have multiple audio so we have the voiceover and then the music
+[10:55] bit again it's just background music and it's actually putting this together so that then we
+[10:59] could download it and see what it sounds like, which we're going to do.
+[11:02] So I'm going to go ahead and download this.
+[11:05] And we're going to see what this sounds like together for the first time.
+[11:08] Some mornings you wake up.
+[11:11] Others you rise.
+[11:15] Ember is slow roasted in small batches for the cup that actually earns its place in your
+[11:22] hands.
+[11:24] Rich.
+[11:26] Warm.
+[11:27] Unhurried.
+[11:29] ember morning's worth waking up
+[11:33] pretty good right i mean that was just we did this completely within the video that we're
+[11:43] recording right so i didn't do a lot of extra with it but we could say like you know we want
+[11:49] ember the actual one thing i noticed is the actual words for ember were not in there um
+[11:56] So one thing we can edit and say, hey, for maybe the third and fifth or the first and last video, we want to have the text Ember cinematically be brought onto the screen.
+[12:10] Let's go and do that.
+[12:11] This is how you can iterate.
+[12:12] For the first and last video, we should have Ember cinematically onto the video as well as text.
+[12:26] I just wanted to see what it does through this.
+[12:28] But again, you need to iterate over these things, right?
+[12:31] Okay, so it's saying regenerate the image frames for clips with Ember text cinematically rendered into.
+[12:36] Then reanimate those uploaded.
+[12:39] So that's what it decided it should do.
+[12:41] But it's going to be generating now with two variants each.
+[12:44] I can pick each one that I like, and then it'll have the video clips and swap them in.
+[12:48] Just make sure we still only have five nodes for images.
+[12:55] That's great.
+[12:56] I actually had to ask it to remove the original two.
+[12:58] So now it rewired this into the first video clip up here.
+[13:03] And then this, which I know is not exactly in the right order, but it's the last one.
+[13:07] So I'm going to have it rerun those animations.
+[13:09] I also realized that I'm using Tom Hanks Coffee, but I had originally had the prompt as Ember.
+[13:16] So that's not going to be entirely accurate.
+[13:18] I could have it redo everything based on the image of Tom Hanks Coffee.
+[13:23] But we're getting the idea of how this works.
+[13:25] Okay, so it's done.
+[13:27] Anytime you do anything that's updating the composition,
+[13:30] so right here, let me scroll in a little bit,
+[13:33] clip one and clip five, which you can click on these,
+[13:36] because they updated, you have to rerun the composition with those updates
+[13:40] or else you're just going to have the original one before that
+[13:43] and it won't actually take in the updates.
+[13:44] It doesn't cost any credits to rerun a composition,
+[13:48] but just so you're aware.
+[13:50] Okay, so I don't want to run it from here.
+[13:52] I want to download this.
+[13:53] We're going to watch this whenever this is done.
+[13:56] Some mornings you wake up.
+[13:59] Others you rise.
+[14:04] Ember is slow roasted in small batches.
+[14:07] For the cup that actually earns its place in your hands.
+[14:12] Rich.
+[14:14] Warm.
+[14:16] Unhurried.
+[14:18] Ember.
+[14:20] Morning's worth waking up for.
+[14:23] That was a lot better. The text being on there definitely helped out a little bit. And then
+[14:29] right there in the middle, right, it said about being hands on, like, hands, warming your hands
+[14:36] or something. For the cup that actually earns its place in your hands. There you go. And it synced
+[14:43] that up very nicely. I thought that was a really, really nice touch. But this is the idea, right? So
+[14:48] what we can do is right even tells you even ask you do you want to replace this so if i replace
+[14:54] this with something with like you know with anything else then you can click run from here
+[15:01] right and it's going to rerun everything okay the thing about that is we need the prompts for
+[15:07] each of the image and the video generations to also be updated if it's a brand new product right
+[15:13] We don't want anything related to amber warmth.
+[15:17] What if we have Red Bull, some energy drink?
+[15:19] We don't want that kind of theming.
+[15:22] We don't want that kind of music.
+[15:23] So it fits with a similar product.
+[15:25] But we can update that with simply talking to the agent.
+[15:28] Say, hey, this is it.
+[15:30] We need prompts updated for this product now.
+[15:33] And that is exactly how you're going to edit everything together.
+[15:36] Now, something you can do, this is another feature.
+[15:38] When you click right down here, when you're talking to the agent,
+[15:40] so auto under threshold.
+[15:42] So there are three different agent permissions.
+[15:44] There's auto run without any confirmation, right?
+[15:47] It just does it without asking us anything.
+[15:49] Confirm edits are just helping us approve.
+[15:51] We can approve things, but it can auto run under something that costs a certain number
+[15:55] of credits.
+[15:56] This model of GPT image two, this costs 178 credits.
+[15:59] So that's under 300.
+[16:00] So it never asked me to make sure this is what I want.
+[16:03] It just did it because that was under the threshold.
+[16:06] And this is something that they recommend essentially.
+[16:08] So what about costs?
+[16:10] This $450 is insane. That is absolutely not correct. But it said it costs about 32,000 credits.
+[16:17] For the starter plan, you get 30,000 credits per month, right? And then for the creator plan,
+[16:23] you get 121,000. So if you're going to do something like this, you really need to have
+[16:26] the creator plan. But I will have a link for you that will help you out with the cost in the
+[16:32] description below with my affiliate link, okay? Who is this for? Well, this is for anybody that
+[16:38] is a content creator, like I said, if you have a product that you're trying to sell instead of,
+[16:42] you know, spending out so much on ads and, you know, trying to figure out who's going to do this,
+[16:47] some tryouts for, for like different creators, you can just do this yourself for so much cheaper,
+[16:53] right? And like I mentioned, if you want to create B-rolls, this is an awesome way to do it. You just
+[16:58] upload a single image of yourself, maybe a couple of different variation angles of like you typing
+[17:03] or something and then have it play that out right and create create a few second videos of you to be
+[17:08] used as b-roll i mean it's absolutely amazing what you can do and having this agent to do to build out
+[17:14] this for you and i can share this template with you as well which i have a link in the description
+[17:19] for but it's absolutely amazing um i really like 11 labs and they've been really helpful for me
+[17:26] So anyways, here are some more videos on what you can do with agents and flawed code skills
+[17:32] But I will have everything for this video and link in description so you can follow along. Okay. Thank you for watching
+[17:38] I'll see you next time
