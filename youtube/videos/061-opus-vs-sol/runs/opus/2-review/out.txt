@@ -1,0 +1,101 @@
+Query: Review the most recent commit on tylerprogramming/skoolos using the 
+code-review skill. Fetch it with gh. File and line for every finding, quote the 
+code. Lead with the one finding that matters. Do not post anything to GitHub.
+Initializing agent...
+────────────────────────────────────────
+
+⚠ Auxiliary title generation failed: HTTP 400: "thinking.type.disabled" is not supported for this model. Use "thinking.type.adaptive" and "output_config.effort" to control thinking behavior.
+  ┊ ⚡ preparing mcp__skill_view…
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 📚 skill     code-review  0.0s
+  ┊ 💻 $         gh api repos/tylerprogramming/skoolos/commits?per_page=1 --jq '.[0] | {sha, msg: .commit.message, author: .commit.author, date: .commit.author.date}'  0.8s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         gh api repos/tylerprogramming/skoolos/commits/a6a45479540014ef52e5364ecc9c36322daa06a1 --jq '.stats, (.files[] | "\(.filename) +\(.additions)/-\(.deletions)")' + 3 commands  1.6s
+  ┊ ⚡ preparing mcp__read_file…
+  ┊ 📖 read      skoolos_a6a4547.diff  0.0s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         S=a6a45479540014ef52e5364ecc9c36322daa06a1 + 4 commands  1.6s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         S=a6a45479540014ef52e5364ecc9c36322daa06a1 + 7 commands  1.2s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         sed -n 290,306p sk_db.py + 4 commands  0.7s
+  ┊ ⚡ preparing mcp__terminal…
+  ┊ 💻 $         S=a6a45479540014ef52e5364ecc9c36322daa06a1 + 5 commands  1.6s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+Commit a6a4547 on tylerprogramming/skoolos: "todos: a day's list belongs to that day"
++56/-12 across 3 files (app/dashboard/page.js, worker/seed_todos.py, scripts/shot.py)
+CI: GitHub reports no checks on this commit.
+Verdict: COMMENT
+
+The finding that matters
+
+worker/seed_todos.py:156 and :187 (Warning). A run that deletes rows can be logged as idle, so the delete may never show up in the runs log.
+
+    return {"unchanged": len(tasks), "expired": len(stale)} if stale else {"unchanged": len(tasks)}
+    ...
+    db.log_run(customer["id"], "seed_todos", "ok", str(res),
+               idle="wrote" not in res)
+
+On a quiet morning the tick expires yesterday's three rows and returns {"unchanged": 3, "expired": 3}. There is no "wrote" key, so the run is passed idle=True, and log_run can skip it if another idle run was logged in the last hour. The contract in db.log_run says "anything that acted always write." This commit adds a new way to act (deleting data), and the idle check wasn't updated to count it. That matters most on the one path that deletes rows.
+Fix: idle=not (res.get("wrote") or res.get("expired")).
+
+Other findings
+
+worker/seed_todos.py:131-133 and :150-151 (Warning). Select-then-delete-by-id has a race that can erase a tick.
+
+    stale = db.select("dashboard_todos", customer_id=f"eq.{cid}", source="eq.auto",
+                      done_at="is.null", created_at=f"lt.{start_utc}",
+                      select="id") or []
+    ...
+    for row in stale:
+        db.delete("dashboard_todos", id=f"eq.{row['id']}")
+
+The delete filters on id alone. Say the owner ticks yesterday's row after the select but before the delete. The delete then removes a done row, which the commit says is kept as history. The window is small, but the fix is simpler than the current code. Use one filtered delete that checks done_at again at delete time and returns the count:
+    expired = db.delete("dashboard_todos", customer_id=f"eq.{cid}", source="eq.auto",
+                        done_at="is.null", created_at=f"lt.{start_utc}")
+Keep the select only for the dry-run count. This also turns N round trips into one.
+
+app/dashboard/page.js:206-220 (Warning). Both checklist queries ignore errors, while the rest of the page does not.
+
+    const [{ data: openTodos }, { data: doneTodos }] = await Promise.all([
+    ...
+    const todoRows = [...(openTodos || []), ...(doneTodos || [])];
+
+Every other read on this page goes through readRow/readRows from @/lib/read, which surfaces failures. Here error is dropped, so a failed query renders as an empty or half-empty list that looks real. The old single query had the same gap. This commit rewrote the block and now has two queries that can fail this way.
+Fix: readRows(openRes, "your list") and readRows(doneRes, "your finished items").
+
+app/dashboard/page.js:212 (Suggestion). If the owner has more than 20 open rows, the oldest are hidden with no sign.
+
+      .is("done_at", null)
+      .order("created_at", { ascending: false })
+      .limit(20),
+
+The comment says open rows only grow when the owner types them, which is exactly the case where a hidden row is his own. Either drop the limit or render "and N more" from a count.
+
+scripts/shot.py:72-77 (Suggestion). If the button is missing, the script falls back to the old silent failure.
+
+    button = page.query_selector('form[method="post"] button[type="submit"]')
+    if button:
+        button.click()
+        page.wait_for_load_state("networkidle")
+
+If the confirm page markup changes, the script quietly screenshots the sign-in page again, which is the bug this commit fixes. Exit non-zero when the button is missing, or check page.url after the final goto and fail if it landed on sign-in.
+
+worker/seed_todos.py:131-151 (Suggestion). The expiry logic has no automated test. tests/todo_rules_test.py covers pick() only, and the commit's evidence is a manual run on the live box. A test that stubs db and asserts three things would pin it down: a stale auto row goes, a user row stays, and a done auto row stays.
+
+Summary
+The fix is right in both places. Expiring stale rows before the unchanged early return is the correct order, and splitting the dashboard read into open and last-3-done bounds the list. Nothing blocks. The idle-logging fix is one line and should land before the next dogfood run so expiry shows up in the runs log. Nothing was posted to GitHub.
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Resume this session with:
+  hermes --resume 20260923_193955_613af8 -p opus
+  hermes -c "Review the most recent commit on… #2" -p opus
+
+Session:        20260923_193955_613af8
+Title:          Review the most recent commit on… #2
+Duration:       1m 15s
+Messages:       17 (1 user, 15 tool calls)
+real 76.67
+user 3.47
+sys 1.39

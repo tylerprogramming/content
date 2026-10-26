@@ -1,86 +1,96 @@
-# Script — Set Up Hermes Agent in 10 Minutes (Claude Code Users Start Here)
+# Script, video 057
 
-Target: ~13 min. Conversational, short sentences. `[SHOW: ...]` = on screen. `[NOTE: ...]` = production.
+**Working title:** Set Up Hermes Agent in 30 Minutes (Claude Code Users Start Here)
+**Target runtime:** 30:00. Hard ceiling 33:00. See `titles.md` for why the ceiling is not negotiable.
+**Version:** v4, written 2026-09-15. Supersedes `_v3-13min/script.md`, which was a 13-minute cut with demos that no longer exist on this machine.
 
-**Structure change (v3, 2026-08-31):** the "what is it / why would I run this" section is BACK, and it is the segment that makes the rest land. v2 cut it and let the montage carry the differentiation; that was wrong. The same beat carried video 056 and it is what people searching a tool name actually need. Memory is also promoted from a 90-second feature to the hero, because it is the one thing Claude Code structurally cannot do, and the script already says so. Target moves ~10:30 → ~13:00, still less than half Tina's 29:40.
+Conventions: `[SHOW: ...]` is what is on screen. `[NOTE: ...]` is for you, not the mic. Spoken rhythm, short sentences.
 
-See `filming-guide.md` for record order: the montage is filmed LAST as cutaways.
+**Verified on this machine 2026-09-15 before writing.** Every number below was read off the install, not remembered:
 
----
+| Claim in the script | How it was checked |
+|---|---|
+| Hermes Agent v0.21.3 (2026.9.14) | `hermes --version` |
+| Four profiles: coder, coder-reviewer, packager, researcher | `ls ~/.hermes/profiles/` |
+| Two memory files, MEMORY.md and USER.md | `ls ~/.hermes/memories/` |
+| Local models `qwen3.8:27b-q8_0` and `gemma4:e4b` | `ollama list` |
+| Coder's routine ran `ok` at 21:05 on 09-14, next 08:00 on 09-15 | `hermes -p coder cron list` |
+| Two default-profile routines, both `ok` | `~/.hermes/cron/jobs.json` |
+| GitHub CLI authed as tylerprogramming | `gh auth status` |
 
-## [0:00 - 0:30] Hook (tight, get in fast)
-
-If you already use Claude Code, you are going to get this one fast. Hermes is the other half.
-
-[SHOW: Hermes running in a terminal + the desktop app, quick]
-
-It is a free, open-source agent from Nous Research. It runs on your own machine. It remembers everything. It writes its own skills as it works. And it keeps going while your laptop is closed.
-
-Here is the part nobody tells you though. Most people install this, poke at it for ten minutes, and never open it again. And it is almost always the same three things they skipped. Get those three right and it stops being a toy and starts being staff.
-
-Before I set it up, look at what that actually gets you.
-
-[NOTE: the three things = the three features (memory, a self-written skill, one cron on an always-on host). The outro already pays this off word for word - "if you set up just those three things." This line is what sets it up. Stakes framing borrowed from Tina's open, compressed to 12 seconds.]
-
-[NOTE: no channel intro. 20-25 seconds max, then hard cut to the montage]
+**Three things are NOT verified and the script marks each one.** See `filming-guide.md` section "Verify before you roll" and do not narrate them until you have.
 
 ---
 
-## [0:30 - 1:00] What it actually does (montage — FILM LAST, cutaways)
+## [0:00 - 0:40] Cold open
 
-[NOTE: this whole section is B-roll captured from your mature Hermes on the VPS AFTER the main take. Fast cuts, tight voiceover. Three real results.]
+[NOTE: pick a hook from `hooks.md`. Hook 1 is the recommendation and is reproduced here. No camera until roughly 0:25.]
 
-[SHOW: a morning brief in Telegram on your phone, ~7am - channel views + top video]
-Seven in the morning, this was already on my phone. My channel's numbers and my top video, pulled and sent while I slept.
+[SHOW: phone, Slack, this morning's cards. Do not scroll fast, let them read one.]
 
-[SHOW: a Discord channel or terminal - "12 new YouTube comments summarized" with draft replies listed]
-Overnight it read my new YouTube comments, summarized them, and drafted the replies. I just approve them.
+This landed on my phone at eight this morning. I was not awake for it.
 
-[SHOW: a phone notification - "Heads up: [competitor channel] just posted a new video"]
-And the moment a competitor I watch posted, it pinged me.
+That is one of my agents. It pulled my repos, read the newest commit, and posted what it found. The one below it is a different agent on a different schedule, telling me what to film next.
 
-[SHOW: quick shot of the VPS terminal, Hermes process running]
-No laptop babysitting. It runs on a five dollar server all day.
+[SHOW: cut to desktop, Bots tab, the roster with avatars]
 
-Here is the whole setup, and the three features that make it worth running.
+So this is the part I actually want to show you. These are named agents on one machine. Own memory, own skills, and they can hand work to each other. By the end of this video one of them opens a real pull request on my GitHub, and another one tells me about it in Slack, and I do not touch either step.
 
-[NOTE: this montage IS the sell. It replaces the old explainer. Keep it under 30 seconds, energy up]
+[SHOW: camera]
+
+This is Hermes Agent. Free, open source, from Nous Research. If you already use Claude Code you are going to get this fast. Thirty minutes, start to finish.
+
+[NOTE: that PR promise is the open loop. It pays off at 26:00. If the PR does not land on the day you film, cut the promise from the hook too. Do not leave it hanging.]
 
 ---
 
-## [1:00 - 2:30] What this actually is, and why you'd run one
+## [0:40 - 2:00] What it is, and why you would run one next to Claude Code
 
-Before we install anything, thirty seconds on what this thing is, because the category is new and the name does not tell you.
+So before we install anything, ninety seconds on what this actually is, because the name does not tell you.
 
 Hermes is not a chatbot and it is not a coding tool. It is a process that runs.
 
-[SHOW: a plain diagram - CLAUDE CODE = a session you open. HERMES = a process that stays running.]
+[SHOW: plain diagram, two boxes. CLAUDE CODE: a session you open. HERMES: a process that stays running.]
 
-And that one difference is the whole thing. Think about how you use Claude Code. You open it in a repo. It does the work. You close it. And when you open it again, it does not know you. Every session starts from nothing. That is not a flaw, that is the design. It is a specialist you call in.
+And that one difference is the whole video. Think about how you use Claude Code. You open it in a repo, it does the work, you close it. Open it tomorrow and it does not know you. Every session starts from nothing. That is not a flaw, that is the design. It is a specialist you call in.
 
-Hermes is the opposite shape. It starts once and it does not stop. Which buys you three things a session-based tool structurally cannot do.
+Hermes is the opposite shape. It starts once and it does not stop. Which buys you three things a session tool structurally cannot do.
 
-[SHOW: three items building on screen as you say them]
+[SHOW: three items building on screen]
 
-One, it remembers. Not context inside one conversation, actual memory on disk that survives across every session, forever.
+One, it remembers. Not context inside one conversation. Actual memory on disk that survives every session.
 
-Two, it runs when you are not there. Scheduled, on its own, at three in the morning, laptop closed.
+Two, it runs when you are not there. Scheduled, on its own, laptop closed.
 
-Three, it reaches you anywhere. Telegram, Discord, Slack, email. Same agent, same memory, on your phone.
+Three, it reaches you where you already are. Slack, Telegram, Discord, email. Same agent, same memory, on your phone.
 
 [SHOW: back to camera]
 
-So the honest answer to "why would I run this if I already have Claude Code" is that they are not for the same work. Claude Code is for the code. This is for everything around the code that you currently do by hand. Watching things. Checking things. Drafting things. Remembering things. The work that is not hard, it is just constant.
+So the honest answer to "why would I run this if I already have Claude Code" is that they are not for the same work. Claude Code is for the code. This is for everything around the code that you currently do by hand. Watching things, checking things, drafting things, remembering things. Work that is not hard, it is just constant.
 
-It is free, it is open source, it is from Nous Research, and it runs on your own machine or a five dollar server. There is one real cost and I will be straight about it up front: it only works while the machine it lives on is awake. We will deal with that later in the video.
+And one real cost, up front. It only works while the machine it lives on is awake. We will deal with that in a minute.
 
-[NOTE: 90 seconds, do not let it drift. If a read runs long, cut the "not a flaw, that is the design" line.]
+[NOTE: ninety seconds, do not let this drift. If a read runs long, cut "that is not a flaw, that is the design."]
 
 ---
 
-## [2:30 - 4:00] Install and pick a model (LIVE RECORDING STARTS HERE)
+## [2:00 - 2:30] Where it lives
 
-Let's install it. Two ways, pick whichever fits you.
+Thirty seconds on the host, because this is the one decision that matters later.
+
+I run mine on a Mac Studio that is on all day. That is it, that is the whole requirement. A machine that stays awake.
+
+An old laptop you leave open works. A five dollar cloud server works, and that is what I would do if I did not have a machine sitting here. Your daily laptop technically works, but you close the lid and it stops, so you will be disappointed.
+
+[NOTE: no hardware tour. Tina spends two minutes on four options here. We spend thirty seconds because our audience already owns a computer they leave on.]
+
+---
+
+## [2:30 - 5:00] Install, and say hi
+
+[NOTE: LIVE RECORDING STARTS HERE. Fresh instance. See the filming guide for the backup-and-restore move so this take is genuinely clean.]
+
+Let's install it. Two ways, pick whichever you like.
 
 [SHOW: hermes-agent.nousresearch.com]
 
@@ -90,309 +100,376 @@ If you like the terminal, one command.
 curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 ```
 
-[SHOW: paste into terminal, the onboarding sequence running]
+If you would rather have an app, download the desktop version. Mac, Windows, or Linux. Same agent underneath, and the desktop is what I use, so that is what I will show.
 
-If you would rather have an app, download the desktop version for Mac, Windows, or Linux. Same agent, nicer interface.
+[SHOW: the desktop app opening on a clean install]
 
-[SHOW: desktop app opening, clean chat interface]
+[NOTE: dead air filler while it installs. "Same install whether this is your laptop or a five dollar server, and that matters in about twenty minutes when we get to the scheduled jobs." Do not fill with the roadmap, you already said it.]
 
-Now the one choice that trips people up: the model. Hermes drives on anything. The easiest way to start is a frontier model through the Nous Portal, hundreds of models on one subscription.
+Now the one choice that trips people. The model.
 
-But you do not have to pay per token. At the very end I will show you how to run it on a model that lives on your own machine, completely free. For now, connect what you have and say hi.
+Hermes drives on anything. If you have an Anthropic or OpenAI key, use it. The easy path is the Nous Portal, which is one subscription for a few hundred models.
 
-[SHOW: sending "hi", the agent responding]
+[SHOW: the composer model picker, the provider list]
 
-[NOTE: dead-air filler while it installs - "same install whether this is your laptop or a five dollar VPS, and that VPS part matters in a few minutes"]
+But you do not have to pay per token at all. Around the twenty minute mark I will point this whole thing at a model running on my own machine for free, and honestly that is the setup I would want most people on.
+
+For now, connect what you have and say hi.
+
+[SHOW: type `hi`, the agent answers]
+
+That is it. That is your agent.
 
 ---
 
-## [4:00 - 6:15] Feature 1 (the big one) — It remembers everything
+## [5:00 - 8:30] Memory, tier one: the file you can open
 
-Think about the last time you opened Claude Code on a project you had not touched in a week.
+So here is the first thing everybody skips, and it is the thing that makes the rest of it work. Tell it about yourself.
 
-You spent the first two minutes re-explaining it. What the stack is, how you like things done, what you already tried. You do that every session. Every day. And none of it sticks, because the session ends and it is gone.
+[NOTE: open on the pain first, the audience has lived this one.]
 
-That is not a bug, that is what a session is. But it is the tax, and it is the thing this fixes.
+Think about the last time you opened Claude Code on a project you had not touched in a week. You spent the first two minutes re-explaining. What the stack is, how you like things done, what you already tried. You do that every session, every day, and none of it sticks.
 
-[NOTE: open on the pain, not on "this is the feature". The audience has lived this one.]
+That is not a bug. That is what a session is. But it is a tax, and this is the thing that stops paying it.
 
-So. First move, and the thing everyone skips: tell it about yourself.
+[SHOW: typing]
 
-[SHOW: typing the line below]
 ```
-Here's some stuff about me I want you to remember. I'm a software engineer, 8 years, now doing AI engineering. I run a YouTube channel called tylerreedai about Claude and AI automation. I already use Claude Code every day. When you write for me: short sentences, no em dashes.
+Here's some stuff about me I want you to remember. I'm a software engineer, 8 years, now doing AI engineering. I run a YouTube channel called tylerreedai about Claude Code and AI automation. I already use Claude Code every day. When you write for me: short sentences, no em dashes.
 ```
 
-[NOTE: every fact in that line is load-bearing later. The channel name pays off in the skills beat when it already knows whose channel to compare against. "Claude Code every day" pays off in the outro. The style rule pays off in the very next answer, on screen.]
+[NOTE: every fact in that line is load bearing later. The channel name pays off in section 7 when the skill already knows whose channel to compare. "Claude Code every day" pays off in section 11. The style rule pays off in the very next answer, on screen.]
 
-Watch the bottom. It says running memory. It just wrote that to disk.
+Watch the bottom of the composer. It says running memory. It just wrote that to disk.
 
-Now before I show you the file, watch this, because storing it is not the interesting part. Using it is.
+Now, storing it is not the interesting part. Using it is. Watch.
 
 [SHOW: type the follow-up]
+
 ```
 Given what you now know about me, what would you not bother explaining to me?
 ```
 
-[SHOW: it answers - it won't explain what an agent is, or how Claude Code works, and the answer itself is short]
+[SHOW: the answer. It skips what an agent is and what Claude Code is, and the answer itself is short.]
 
-Ten seconds in and it already talks to me differently. And notice it kept the answer short, because I told it to once.
+Ten seconds in and it already talks to me differently. And look, it kept the answer short, because I told it once.
 
-And here is what I want you to actually look at.
+Now here is what I actually want you to look at.
 
-[SHOW: ~/.hermes/memories/ in Finder, then USER.md open in a text editor]
+[SHOW: Finder, `~/.hermes/memories/`, then USER.md open in a text editor]
 
-That is a markdown file. On my machine. I can open it, read it, and see exactly what my agent believes about me, in plain English.
+That is a markdown file. On my machine. I can open it, read it, and see exactly what my agent believes about me in plain English.
 
-[SHOW: scroll the file slowly]
+[SHOW: scroll it slowly. Count the files on camera.]
 
-There are two of them. USER dot MD is about me. MEMORY dot MD is the agent's own notes, what it has figured out about my setup and what is in progress. And because they are just files, I can edit them. If it learned something wrong, I delete the line. If I want it to always know something, I type it in myself.
+There are two. USER dot MD is about me. MEMORY dot MD is the agent's own notes, what it has worked out about my setup and what is in progress. And because they are just files, I can edit them.
 
-[NOTE: VERIFY ON CAMERA. Docs say two bounded stores in ~/.hermes/memories/. Tina also mentions a SOUL.md persona file. Look in the folder before you narrate the count.]
+[SHOW: edit one line live, save, ask the agent something that proves it read the edit]
 
-[NOTE: land this. Compare to a black box on purpose.]
+If it learned something wrong, I delete the line. If I want it to always know something, I type it in myself. Try that with ChatGPT's memory. You can see a summary. You cannot open the file, and you cannot fix a line.
 
-Think about how different that is from every assistant you have used. ChatGPT has memory, but you cannot open it. You cannot read the file. You cannot fix a line. Here the memory is yours, it is text, and it is sitting in a folder.
+[NOTE: VERIFIED 2026-09-15. Two files, MEMORY.md and USER.md. There is no SOUL.md in the memories folder. Tina names three. SOUL.md exists but it lives at the profile root and it is the persona file, not a memory store. If you want to say that on camera, say it in one sentence and move on.]
 
-That is tier one. There are two more.
+---
 
-[SHOW: on-screen list building: 1 core files / 2 session history / 3 optional plugins]
+## [8:30 - 11:30] Memory, tier two, and the thing nobody explains
 
-Tier two is every conversation you have ever had with it. All of them get written to a database on disk and summarized, so it can search its own history. Watch.
+That was tier one. There is a second tier, and it is doing more work than you would think.
 
-[SHOW: brand new session, type below]
+[NOTE: SAY THE SEAM. Cut from the fresh install to the mature machine and tell the audience you did. Tina does this and it reads as honest rather than as a continuity error.]
+
+Right, I am switching machines. Everything you have seen so far was a clean install I did for this video. This one is my actual setup, and it has months on it, because the next demo needs a memory that is not empty.
+
+[SHOW: new session on the mature profile]
+
+Tier two is every conversation I have ever had with it. All of them get written to a database on disk and summarized, so it can search its own history. And here is the demo I want, because it is not the one you usually see.
+
+[SHOW: brand new session, type this, do not add context]
+
 ```
-Based on everything you know about how I work, draft the outline for my next video. Do not ask me any questions first.
+Based on everything you know about how I work, draft the outline for my next video. Don't ask me any questions first.
 ```
 
-[SHOW: it searches past sessions and produces an outline that is actually in his format]
+[SHOW: it searches past sessions, reads status.md and the package folder, and returns a numbered section table]
 
-[NOTE: deliberately NOT "remind me what we talked about." That recite-a-past-conversation demo is exactly what Tina does, same sentence shape, and it only proves storage. This one proves the memory is load bearing: it produces work, in his format, with zero context given.]
+Brand new session. One sentence. No context. And it did not ask me a single question, because it did not need to.
 
-Brand new session, one sentence, no context. And it did not ask me a single question, because it did not need to. It knows the channel, it knows how I structure these, it has seen the last dozen.
+[NOTE: this is deliberately NOT "remind me what we talked about." That demo proves storage, which is a database lookup. This one proves the memory is load bearing, because it produces work in his format from nothing. Do not swap it back.]
 
-That is the difference between an agent that stores things and an agent that uses them.
+[NOTE: the outline it produces IS this video's outline, `OUTLINE-v4.md`. Screenshot the session before it scrolls off. If you re-run it live and get something different, use the new one, do not fake the old one.]
 
-And here is the detail that makes the whole design click, which I have not seen anyone explain.
+Now here is the detail that makes the whole design click, and I have not seen anyone explain it.
 
-Those two files are capped. Hard limits, about twenty two hundred characters and about thirteen hundred. You cannot dump your life story in there even if you want to.
+Those two files from a minute ago are capped. Hard limits. About twenty two hundred characters for the agent's notes, about thirteen hundred for the profile. You cannot dump your life story in there even if you want to.
 
-[SHOW: the character counts, or the cap in the docs]
+[SHOW: the context meter, the memory slice of it]
 
-And that is not a limitation, that is the point. Those files get loaded into the system prompt at the start of every single session. Every one. So they have to stay small or you would be paying for your entire history on every message you send.
+And that is not a limitation, that is the point. Those files get loaded into the system prompt at the start of every single session. Every one. So they have to stay small, or you would be paying for your entire history on every message you send.
 
-So now the two tiers actually make sense as a design. A tiny profile that is always loaded, and an unlimited archive that gets searched only when it is needed. Small and always on, big and on demand. That is the whole memory model.
+So now the two tiers make sense as an architecture. A tiny profile that is always loaded, and an unlimited archive that gets searched only when it is needed. Small and always on, big and on demand.
 
-[NOTE: this is the "oh, that is why" beat. It reframes the cap from a limit into an architecture.]
+[NOTE: this is the "oh, that is why" beat. Nobody in the competitor set has it. Let it land, then move.]
 
-Now, two settings worth knowing, and neither one costs you an account.
+---
 
-First, it curates itself. There is a background review that runs after your turns and saves what it learned, on its own. And you can point that at a cheaper model than the one you are actually chatting with.
+## [11:30 - 13:30] Two settings I would actually change
 
-Here is how you change anything in this thing, by the way, because you do not have to go hunting for files.
+Two settings worth knowing. Neither one needs an account and neither one costs anything.
+
+First one. You can make it ask permission before it writes anything to memory.
 
 [SHOW: terminal]
-```
-hermes config
-```
 
-That prints your current settings. And to change one, you set it by key.
-
-[SHOW: terminal, typing each]
-```
-hermes config set auxiliary.background_review.enabled true
-hermes config set auxiliary.background_review.provider openrouter
-hermes config set auxiliary.background_review.model deepseek/deepseek-v4-flash
-```
-
-It figures out where each value belongs on its own. API keys go to your env file, everything else goes to the config. And if you would rather just see the whole thing, `hermes config edit` opens it in your editor.
-
-[SHOW: hermes config edit, the auxiliary block on screen]
-
-Now, about that model I just picked, because this is worth ten seconds.
-
-The docs suggest a Gemini Flash model as the cheap option. I looked it up. It is fifty cents per million in and three dollars per million out.
-
-[SHOW: on-screen price comparison]
-
-The DeepSeek Flash model is eight cents in and seventeen cents out. Same job, tool-capable, and it is roughly six times cheaper going in and seventeen times cheaper coming out. On a job that reviews every single turn you take, the output price is the one that gets you. So read the docs, then check the number.
-
-[NOTE: this is the engineer beat. Do not just repeat the docs example, price it.]
-
-Second setting, and this is the one I would actually turn on. You can make it ask permission before it writes anything to memory.
-
-[SHOW: terminal]
 ```
 hermes config set memory.write_approval true
 ```
 
-Flip that, and instead of writing straight to the file, it queues the change and you review it.
+Flip that and instead of writing straight to the file, it queues the change and you review it.
 
-[SHOW: run /memory pending, show a staged write]
+[SHOW: `/memory pending` with a staged write in it, approve one]
 
 So nothing goes into your agent's head without you seeing it first. That is memory with a code review step, and it is one command, not a service.
 
-And one more thing worth pointing out, since it has a terminal and it can edit files. You can just ask it. I said "turn on memory write approval for me and show me what you changed," and it went and did it.
+Second one, and this is already on here.
 
-[SHOW: asking the agent, it edits the config and reports the diff]
+[SHOW: terminal]
 
-That is not the documented way, so I would learn the config command first. But it is a good reminder of what you are actually running here. It can change itself.
+```
+hermes config get auxiliary.background_review
+```
 
-There is a ceiling above this, an external user-modeling service that spots patterns you never told it, or pointing the whole thing at an Obsidian vault. I am not setting those up here. The two tiers you just watched are the default, they need no accounts, and they are genuinely enough.
+[SHOW: the output: enabled, provider ollama-launch, model gemma4:e4b]
 
-[SHOW: back to camera]
+There is a review pass that runs after your turns and saves what it learned. And look at what it is pointed at. That is a model on this machine. So the thing that curates my agent's memory all day is running locally and costing me nothing.
 
-Here is why this matters more than it sounds. Every one of these tools starts a session from zero. So you spend the first two minutes of every session re-explaining your setup, your preferences, your project. Multiply that by every session, every day. This is the thing that stops.
+[NOTE: VERIFIED 2026-09-15, background_review is enabled and pointed at gemma4:e4b via ollama-launch. Re-run the `config get` on film day before you narrate it. If the value changed, read what is on screen, not what is written here.]
 
-And the compounding part: the longer it runs, the better it gets, because it knows more about you. A session-based tool is exactly as good on day two hundred as it was on day one. This one is not.
+There is a tier above this, an external service that models you from your patterns, and you can point the whole thing at an Obsidian vault as well. I am not setting either up here. The two tiers you just watched are the default, they need no signups, and they are genuinely enough.
 
-[NOTE: this is the hero beat now, ~2:15. Let the file on screen breathe. Do not rush the "I can edit it" moment.]
+[NOTE: this is the Honcho replacement. Tina spends about four and a half minutes on Honcho plus Obsidian, both third-party, one with paid credits. We spend two minutes on two config lines. That gap is the whole reason our cut is shorter without being thinner.]
 
 ---
 
-## [6:15 - 8:00] Feature 2 — It writes its own skills
+## [13:30 - 17:00] Skills, and the one for Claude Code users
 
-Second feature, and this is the one Claude Code users will feel at home with: skills.
+Second feature, and this is where Claude Code users are already at home. Skills.
 
-If you have built a Claude Code skill, you know the idea. A skill is an instruction manual for a task. Hermes ships with a bunch already.
+If you have written a Claude Code skill you know the shape. A skill is an instruction manual for a task, in markdown, that gets loaded when it is relevant.
 
-[SHOW: skills and tools panel, scroll the pre-built skills]
+[SHOW: Capabilities panel, Skills tab, scroll the bundled ones]
 
-But here is the magic. You do not have to write them. Watch me give it a real task, the kind of thing I actually want every week.
+That is Capabilities. Skills and Tools on one panel.
 
-[SHOW: type a real task]
+[NOTE: the panel was called "Skills and Tools" when Tina filmed. It is Capabilities now. Say the current name once so the video does not date.]
+
+Hermes ships with a pile of them. But the interesting part is that you do not have to write them. Watch me do a real task first.
+
+[SHOW: a chat that already happened, the title check across the last ten uploads]
+
+That is a job I actually wanted. Look at my last ten uploads, find the title pattern that is winning, give me five new ones scored out of ten. It did it. Now the move.
+
+[SHOW: type]
+
 ```
-Look at my last 20 YouTube uploads and the recent top videos from these three channels: [competitor 1], [competitor 2], [competitor 3]. Find the patterns in what is getting views, then give me 5 new video ideas I could film, each scored 1 to 10 with a one line reason.
-```
-
-It pulls the data, finds the patterns, and hands me scored ideas. Now the important part. I just say:
-
-[SHOW: type below]
-```
-Make this into a skill for finding my next video.
-```
-
-Done. Now let me show you what it actually did, because this is simpler than it sounds.
-
-[SHOW: open ~/.hermes/skills/next-video/SKILL.md in a text editor]
-
-That is the whole skill. A plain markdown file in a skills folder. A description of what it does, and step by step how it should do it next time. It wrote that itself, using a built-in skill tool. You never touched a config file.
-
-And now I can call it with a slash command forever.
-
-[SHOW: run it]
-```
-/next-video
+Make this into a skill for checking my titles.
 ```
 
-I did the exact same move to build a skill that drafts my Skool post from a new video, and a couple of others. That is the learning loop. It did the work once, wrote the how-to to disk, and kept it. Do this with everything you repeat, and the agent slowly turns into your setup.
+[SHOW: open the SKILL.md it wrote, in an editor]
+
+That is the whole skill. A markdown file. A description of when to use it, and step by step what to do. It wrote that itself. I never touched a config file.
+
+[SHOW: new chat, run `/title-check`]
+
+And now it is a slash command, forever.
+
+[NOTE: tell, show a real past example, then do one live. That is Tina's rhythm and it is the reusable part of her video. Do not demo this on empty state.]
+
+Now the beat for the Claude Code users specifically, because this is the question I would have.
+
+You already have skills. In `~/.claude/skills`. Do you have to rewrite them?
+
+No.
+
+[SHOW: the `claude-to-hermes-skill-porting` skill in the list, then run it on one real yt- skill]
+
+I built a skill whose whole job is porting my Claude Code skills over. So this one goes and gets one of mine and brings it across.
+
+[SHOW: the ported skill running in Hermes]
+
+Same markdown idea on both sides, which is why this works at all.
+
+And one honest thing while we are in this folder.
+
+[SHOW: the skills list, four jarvis-prefixed skills]
+
+Four skills for one project. It writes them as it goes, and it does drift. So every so often you go in and merge them. That is the maintenance cost, and it is real, and it is about ten minutes a month.
+
+[NOTE: one line. Do not turn this into a section. It buys credibility for everything else.]
 
 ---
 
-## [8:00 - 10:45] Feature 3 — It runs on a schedule, without you
+## [17:00 - 20:30] Routines: the jobs that run without you
 
-Third feature, and this is the one that turns it from a chatbot into an employee: cron jobs and gateways.
+Third feature, and this is the one that turns it from a chat window into staff.
 
-Hermes has a built-in scheduler. You describe a task in plain English, and it runs on its own.
+Hermes has a built-in scheduler. You describe the job in plain English and it runs on its own. In the desktop it is the Routines pane, next to the Bots tab.
 
-[SHOW: setting up a scheduled task]
+[SHOW: Routines pane, the two that are already running]
+
+These two are mine. One at eight in the morning, one at nine at night. Weeks of green.
+
+[SHOW: hover or open one so the last-run status is readable]
+
+A job is three parts and that is all. A schedule, a prompt, and where to deliver it. Here it is.
+
+[SHOW: terminal]
+
 ```
-Every hour, check these channels for new uploads: [competitor 1], [competitor 2]. The moment one posts, send me the title and link on Telegram.
+hermes -p coder cron list
 ```
 
-I asked in plain English, but watch what it actually created.
+[SHOW: the coder routine: `0 8 * * 1-5`, deliver slack, skills code-review, last run ok]
 
-[SHOW: run `hermes cron list` in the terminal, then open the new job]
+That one belongs to a different agent, which is the thing we get to at the end. Every weekday at eight it checks my repos, and it delivers to Slack. Let me just run it.
 
-A cron job is just three things: a schedule, a prompt, and where to deliver it. Here it is. Every hour, this exact prompt, delivered to Telegram. You can also make it by hand with one command if you want.
+```
+hermes -p coder cron run "coder: morning repo check"
+```
 
-[SHOW: hermes cron create "0 * * * *" "..." --name "competitor-watch" --deliver telegram]
+[SHOW: the run, then cut to Slack and the card landing]
 
-Two things worth knowing, because this is where people trip. Every scheduled run starts a fresh session. It has no memory of last time. So the instruction has to stand on its own. And before it ever runs, Hermes checks the job will actually work: the model key, the skills it needs, and that it can really reach your Telegram. If something is missing, it tells you now, instead of failing silently.
+That is the same card from the cold open. Not a mockup, that is the job.
 
-Let me trigger it once to prove it.
+Two things worth knowing, because this is where people trip.
 
-[SHOW: hermes cron run "competitor-watch", then a ping arriving on Telegram - "[competitor] just posted: <title> <link>"]
+Every scheduled run starts a fresh session. So the prompt has to stand on its own, you cannot write it like you are continuing a conversation. Newer versions can carry the last run forward if you turn that on, which is how a monitor stops telling you the same thing twice.
 
-And it can reach you anywhere. Telegram, Discord, Slack, WhatsApp, email. Same agent, same memory, on your phone.
+And keys. Any job that touches a service needs a credential, and you never paste one into the chat. One command.
 
-One setup note, because it is the step people fumble: keys. Any job that touches a service needs a credential, and you never paste it in the chat. You drop it in with one command.
+[SHOW: terminal, do NOT show a real token]
 
-[SHOW: hermes config set GITHUB_TOKEN <paste your token>]
+```
+hermes config set GITHUB_TOKEN <your token>
+```
 
-Now it lives in the .env file, not the conversation. Same move for any service, YouTube included.
+That puts it in the env file where it belongs.
 
-And as a software engineer, the cron I lean on most is a GitHub one. Every night it pulls my repos, runs the tests, and pings me on Telegram only if something broke. I wake up already knowing what is red. Alongside that, one summarizes my new YouTube comments and drafts the replies in Discord, and one sends my channel numbers every morning. But it only reads and drafts, it never posts. Publishing goes through my own scheduler. Same pattern every time: describe it once, it runs forever.
-
-Now one honest thing, because it matters. Hermes runs as a background process. It only keeps working while the machine it lives on is awake. So on your laptop, you close the lid, it sleeps. That is why you do not run it on your laptop for this.
-
-You put it on a host that is always on. That is either a machine you leave running, like a Mac mini in the corner, or a five dollar cloud server, a VPS, that is on twenty four seven by design. You install Hermes there once, and your laptop just becomes a remote you check in from.
-
-[SHOW: a terminal SSH'd into a cheap VPS with Hermes running, or the VPS provider dashboard]
-
-Now picture this. It is on that five dollar server, on twenty four seven. Overnight it runs your briefing, checks your systems, drafts your replies, and it is waiting for you in the morning, laptop closed the whole time. That is the piece Claude Code does not try to do.
-
-[NOTE: this is the "aha" - let it breathe. Being honest about the laptop limitation builds trust]
+[NOTE: use a dummy value on camera or blur it. Do not read a token out loud.]
 
 ---
 
-## [10:45 - 11:45] Bonus — Run it 100% local and free (desktop or terminal)
+## [20:30 - 23:00] Free and local
 
-One more, because I promised you free. You can run this entirely on your own machine, no API keys. I already have Ollama installed, so let me point Hermes at it. I will show you both ways, terminal and the desktop app.
-
-First, pull a model that can actually use tools. Not every model can, and an agent that cannot call tools is useless. I will grab a tool-capable one.
+Now the part I promised. You can run this entirely on your own machine.
 
 [SHOW: terminal]
-```
-ollama pull qwen3
-```
 
-Here is the one gotcha that trips everyone. Agents need a big context window, and Ollama does not report one, so you have to set it yourself. Restart Ollama with at least sixty four thousand.
-
-[SHOW: terminal]
 ```
-OLLAMA_CONTEXT_LENGTH=64000 ollama serve
+ollama list
 ```
 
-Now connect Hermes. The fast way is a single command.
+[SHOW: the two models, qwen3.8:27b-q8_0 and gemma4:e4b]
 
-[SHOW: terminal]
+Two rules for picking one. It has to be able to call tools, because an agent that cannot call tools is just a chat box. And you have to give it a real context window, because agents eat context and Ollama will not raise it for you.
+
+[SHOW: Settings, Providers, Local Models. Or the one-liner.]
+
 ```
 ollama launch hermes
 ```
 
-Or do it by hand: run the model picker, choose a custom endpoint, and point it at Ollama's local address, with a blank API key.
+[SHOW: point Hermes at the local model, then run a real task offline]
 
-[SHOW: terminal - `hermes model`, choose custom endpoint, enter http://127.0.0.1:11434/v1, leave key blank, confirm the model]
+And then always test that it uses tools, not just that it talks.
 
-Prefer the app? Same idea. In the desktop, open Settings, go to Models, click Edit models, Add provider, pick a custom OpenAI-compatible provider, paste that same local address, leave the key blank, and select your model.
+[SHOW: "list the files in this folder, read the README, and tell me what this project is"]
 
-[SHOW: desktop app - Settings > Models > Edit models > Add provider > custom endpoint http://127.0.0.1:11434/v1]
+[SHOW: it runs the tools and answers]
 
-Then always test that it actually uses tools, not just chats.
+That is local. Model on my machine, memory on my machine, nothing leaves.
 
-[SHOW: run a real task fully offline, e.g. "list the files here, read the README, and tell me the project name"]
-
-Now everything is private. The model is on your machine, the memory is on your machine, nothing leaves. For anyone who cares about privacy or cost, this is the setup.
+And here is the part that ties back. The background review you saw earlier, the one curating my memory all day, was already running on one of these. That has been free this whole time.
 
 ---
 
-## [11:45 - 13:00] Where it fits, and what's next
+## [23:00 - 29:00] Bots: the payoff
 
-So here is how I think about it as a software engineer. This is not Claude Code versus Hermes. I run both.
+Alright. This is the part I have been building to.
 
-Claude Code is my specialist. I open it in a repo when I am writing serious code. Hermes is my generalist. It is always on, it remembers, and it handles the background work all day.
+[SHOW: Bots tab, the roster]
 
-[SHOW: split - Claude Code in a repo on one side, Hermes running a scheduled task on the other]
+Every one of these is a separate agent. Its own memory, its own skills, its own model if you want, its own scheduled jobs. And underneath, a bot is just a profile, which is a folder. There is no new concept to learn.
 
-If you set up just those three things - memory, a self-written skill, and one cron job on a server that stays on - you already have something most people never get to.
+[SHOW: `ls ~/.hermes/profiles/`]
 
-Everything I showed you here is running on mine right now. The competitor watch, the comment drafts, the morning brief. That is not a demo I built for the video, that is the setup.
+That is them on disk. Let me make one from nothing so you see the whole thing.
 
-The next one is the multi-agent version, where several of these run at once and hand work to each other. If you want that, subscribe so you catch it.
+[SHOW: Bots tab, New Agent. Name, Title, Description.]
+
+Name, title, description. And the description matters more than it looks, because that is what the other bots read to decide who to hand something to. So write it like a job posting, not like a label.
+
+[SHOW: terminal equivalent]
+
+```
+hermes profile create packager --description "Turns research and a reference transcript into a full video package."
+```
+
+[SHOW: the new bot appearing in the roster with its avatar]
+
+Same thing, two surfaces.
+
+Now the handoff.
+
+[NOTE: THIS IS THE UNVERIFIED BEAT. See the filming guide. Do the end-to-end dry run the day before and again on the morning you film. If any link in the chain does not land, film the fallback and cut the hook promise. Do not fake a PR.]
+
+[SHOW: open Researcher's Bot Chat]
+
+I am going to ask my research bot to hand work to my packaging bot, and then have the coding bot ship it.
+
+[SHOW: type]
+
+```
+@packager build the package for video 058 from the research you already have. When it's done, ask @coder to open a PR with it on tylerprogramming/content and post the link to Slack.
+```
+
+[SHOW: the handoff firing, then cut away. Do not sit on a spinner.]
+
+[SHOW: Packager's Bot Chat, the files it wrote]
+
+[SHOW: GitHub, the actual pull request]
+
+[SHOW: phone, Slack, Coder's message with the link]
+
+So that is three surfaces and one story. I asked one bot, in a desktop chat. A second bot did the work. A third opened a pull request on GitHub. And it told me on my phone.
+
+[SHOW: camera]
+
+Now the honest limit, and you should know it before you go build your whole life on this.
+
+Desktop is where you talk to a bot. Slack is where bots talk to you. My Slack has one app in it, so if I type at-coder in Slack, nobody answers, because Coder is not a Slack user. Bots posting out to Slack works fine. Me talking to a specific bot from Slack needs a second app set up for that bot, and I did not do it for this video.
+
+[NOTE: this is true as of filming and it is the single most likely comment question. Say it plainly, once, and do not apologize for it.]
+
+---
+
+## [29:00 - 30:00] Where it fits, and the CTA
+
+So, how I actually think about this as an engineer. It is not Claude Code versus Hermes. I run both, every day.
+
+Claude Code is the specialist. I open it inside a repo when I am writing real code, and I close it when I am done.
+
+This one never closes. It remembers, it runs on a schedule, and it reaches me on my phone. It is the staff around the work, not the work.
+
+[SHOW: the Slack cards from the cold open again]
+
+And everything you saw today is what actually ran on my machine this morning. The eight a.m. check, the nine p.m. one, the pull request. That is not a demo I built for a video, that is the setup, and the video is just me pointing at it.
+
+If you set up the three things we did here, memory you can open, one skill it wrote itself, and one job on a machine that stays awake, you are further along than most people ever get.
+
+Setup notes and every command from this video are in the free community, one link below.
 
 [SHOW: end card]
 
-And if you want the setup notes and the commands from this video, they are in the free community, link below. See you in the next one.
+See you in the next one.
 
-[NOTE: CTA stays short, one destination]
+[NOTE: one destination in the CTA. Do not stack the community, the newsletter and the next video.]

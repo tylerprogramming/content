@@ -1,35 +1,57 @@
-# Thumbnail brief — Hermes Agent (Start Here)
+# Thumbnail brief, video 057 (v4)
 
-## Reference analyzed: Tina Huang, "Hermes Agent Fundamentals In 29 Minutes" (314k)
+Updated 2026-09-15 for the 30-minute cut. The v3 brief is still broadly right; what changed is that this is now a course-lane video asking for 30 minutes, and the ending is bots rather than a solo setup.
+
+## Reference: Tina Huang, "Hermes Agent Fundamentals In 29 Minutes" (313,962 views)
 `reference-thumbnails/tina-huang-fundamentals.jpg`
 
-- **Layout:** face right third, big 2-word overlay left ("It's So EASY"), terminal screenshot behind showing the Hermes ASCII banner + tool/skill list.
-- **Color:** dark terminal backdrop, white type, one blue highlight box on the payoff word ("EASY").
-- **Typography:** heavy sans, 2-3 words only, one word color-boxed. ~40% of frame width.
-- **Face:** present, big, smiling, pointing at the terminal.
-- **Why it clicks:** "so easy" lowers perceived effort (matches the ease-qualifier rule), the terminal proves it is a real tool, the face adds trust for a tutorial.
+- **Layout:** face in the right third, two-word overlay left ("It's So EASY"), terminal behind showing the ASCII banner and a tool list.
+- **Color:** dark terminal backdrop, white type, one blue box on the payoff word.
+- **Typography:** heavy sans, two to three words, one word color-boxed, about 40% of frame width.
+- **Face:** present, large, smiling, pointing at the screen.
+- **Why it clicks:** "so easy" lowers perceived effort, the terminal proves it is a real tool, the face buys trust for a tutorial.
 
-## Cross-check against packaging-rules.md
-- This is a tutorial/setup video asking for ~10 min, so the **face stays** (rules: keep the face when the video sells on trust). Use the Chase "OPUS 5" composition - huge type across the left two thirds, face in the right third.
-- 2 to 4 words only. Type fills 35-50% of width. One object. High contrast. Feed-check at 210px.
-- No course length on it. No logo grid. Not light-on-light thin type.
+## Against `packaging-rules.md`
 
-## Concept A — Reference-style (proven), RECOMMENDED
-Dark terminal backdrop showing the Hermes agent running (ASCII banner + skills list visible). Tyler in the right third, engaged expression, gesturing at the screen. Left two thirds reserved for 2-3 word overlay added in edit (e.g. "START HERE" or "IT REMEMBERS"). One blue or green highlight box on the payoff word.
-- Prompt (no text baked in): `A software developer on the right third of the frame, friendly confident expression, gesturing toward a dark computer terminal that fills the left two thirds, the terminal glowing with green and amber code and an ASCII logo, moody dark studio background with subtle blue rim light, high contrast, cinematic, leave the left two thirds visually clean for text overlay`
+- **Face stays.** The rule says keep the face when the video sells on trust or asks for 30+ minutes. This is both. Use the Chase "OPUS 5" composition: huge type across the left two thirds, face in the right third. Not the faceless split.
+- Two to four words. Type fills 35 to 50% of frame width. One object. High contrast.
+- **Do not put the runtime on it.** "30 MIN" is a reason not to click. The runtime belongs in the title, where it is doing search work, not on the image.
+- Feed check at 210px before you commit. Our documented 0.9% failure was light-on-light with thin grey type.
 
-## Concept B — Face + Claude Code wedge (differentiator)
-Split energy without a literal split: Tyler center-right, a subtle two-logo cue behind (a terminal on one side, a scheduling/clock or phone-with-message on the other) to imply "always on." Left third clean for "CLAUDE CODE CAN'T" style overlay.
-- Prompt: `A software developer center-right, arms slightly open, confident, behind him on the left a glowing code terminal and on the right a phone showing a chat notification and a small clock icon, dark tech background with blue and orange accent lighting, high contrast, cinematic, clean negative space upper left for text`
+## The thing most likely to be missing
 
-## Concept C — Faceless "it remembers" (test against A)
-No face. A single terminal window center frame on a dark desk, a soft glowing brain or memory-node motif faintly behind it, one object, lots of negative space top-left for a 2-word overlay ("NEVER FORGETS").
-- Prompt: `A single glowing computer terminal on a dark wooden desk, a faint translucent neural-memory motif glowing softly behind the monitor, dramatic dark background, one focal object, high contrast, cinematic product-shot lighting, generous empty space in the upper left`
+A before/after split. Six of eighteen top competitor thumbnails are a split, an arrow or a transformation, and zero of our last nine are. **This video has an honest one available:** one agent on the left, four named bots on the right. That is the only before/after here that is not invented, and it matches the ending.
 
-## Text overlay options (added in editor, 2-4 words, one caps payoff)
+## Concept A, reference style with the roster (RECOMMENDED)
+
+Dark screen backdrop showing the Bots roster with the avatar rows visible. Tyler in the right third, engaged, gesturing at the screen. Left two thirds clean for the overlay. One accent box on the payoff word.
+
+Prompt (no text baked in):
+`A software developer on the right third of the frame, friendly confident expression, gesturing toward a dark computer screen that fills the left two thirds, the screen showing a stacked list of glowing chat rows with small circular avatars, moody dark studio background with subtle blue rim light, high contrast, cinematic, leave the left two thirds visually clean for text overlay`
+
+## Concept B, the one-to-many split
+
+Left: a single terminal window, small, alone. Right: four glowing avatar rows. An arrow or a hard vertical seam between them. Tyler small in the lower right or absent. This is the rules-optimal swing and the one the brain says we never test.
+
+Prompt:
+`A dark split composition, on the left a single small glowing terminal window alone in empty space, on the right four stacked glowing chat rows with circular avatars, a hard vertical seam between the two halves, dramatic dark background, high contrast, cinematic, generous clean space in the upper left for text`
+
+## Concept C, faceless "it remembers"
+
+No face. One terminal window center frame on a dark desk, a faint memory motif behind it, lots of negative space top left. Test against A rather than replacing it.
+
+Prompt:
+`A single glowing computer terminal on a dark wooden desk, a faint translucent memory-node motif glowing softly behind the monitor, dramatic dark background, one focal object, high contrast, cinematic product-shot lighting, generous empty space in the upper left`
+
+## Overlay text options (added in the editor, two to four words)
+
 - START HERE
+- THEY TALK NOW
 - IT REMEMBERS
-- NEVER FORGETS
 - CLAUDE CODE CAN'T
 
-Cost note: ~$0.09/image at 2K on Nano Banana.
+`START HERE` matches the title's parenthetical and is the safe pick. `THEY TALK NOW` matches the ending and is the more interesting one, but only use it with Concept B, where the image explains it.
+
+## Cost
+
+About $0.09 per image at 2K. Ask before generating.

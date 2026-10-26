@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>057 reel: bots hand off work</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background: #0b0d12;
+        color: #f5f6f8;
+        font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+      }
+      #bg {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(1200px 700px at 50% 0%, #1f2340 0%, rgba(11, 13, 18, 0) 70%),
+          linear-gradient(180deg, #11131b 0%, #0b0d12 100%);
+      }
+
+      /* Footage */
+      #ui {
+        position: absolute;
+        left: 0;
+        top: 470px;
+        width: 1080px;
+        height: 712px;
+        object-fit: cover;
+      }
+      #frame {
+        position: absolute;
+        left: 0;
+        top: 470px;
+        width: 1080px;
+        height: 712px;
+        box-shadow:
+          inset 0 2px 0 rgba(255, 255, 255, 0.08),
+          inset 0 -2px 0 rgba(255, 255, 255, 0.08);
+        pointer-events: none;
+      }
+
+      /* Title card */
+      #title-card {
+        position: absolute;
+        inset: 0;
+      }
+      #title-card .scrim {
+        position: absolute;
+        inset: 0;
+        background: rgba(8, 9, 14, 0.9);
+      }
+      #title-wrap {
+        position: absolute;
+        left: 80px;
+        top: 640px;
+        width: 920px;
+      }
+      #title-kicker {
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: #8fa2ff;
+        margin: 0 0 28px;
+      }
+      #title-main {
+        font-size: 124px;
+        line-height: 1.02;
+        font-weight: 800;
+        margin: 0;
+      }
+      #title-main span {
+        display: block;
+      }
+      #title-sub {
+        font-size: 42px;
+        line-height: 1.3;
+        color: #c9cedb;
+        margin: 36px 0 0;
+      }
+
+      /* Header chain */
+      #header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 470px;
+      }
+      #header-kicker {
+        position: absolute;
+        left: 60px;
+        top: 150px;
+        width: 960px;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #8fa2ff;
+      }
+      #chain {
+        position: absolute;
+        left: 60px;
+        top: 220px;
+        width: 960px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .node {
+        display: block;
+        flex: 0 0 200px;
+        width: 200px;
+        height: 96px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border: 3px solid #3a3f55;
+        background: #161a26;
+        color: #9aa1b5;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 90px;
+        text-align: center;
+      }
+      .arrow {
+        display: block;
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        color: #6b7390;
+      }
+
+      /* Captions */
+      .cap {
+        position: absolute;
+        left: 60px;
+        top: 1250px;
+        width: 960px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cap p {
+        margin: 0;
+        width: 960px;
+        font-size: 66px;
+        line-height: 1.18;
+        font-weight: 800;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+      }
+      .cap .at {
+        color: #ffd166;
+      }
+
+      /* Lower third */
+      #lower-third {
+        position: absolute;
+        left: 60px;
+        top: 1620px;
+        width: 720px;
+        height: 150px;
+      }
+      #lt-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 12px;
+        height: 150px;
+        background: #ffd166;
+        border-radius: 6px;
+      }
+      #lt-panel {
+        position: absolute;
+        left: 28px;
+        top: 0;
+        width: 692px;
+        height: 150px;
+        background: #161a26;
+        border-radius: 16px;
+      }
+      #lt-name {
+        position: absolute;
+        left: 30px;
+        top: 22px;
+        width: 640px;
+        margin: 0;
+        font-size: 50px;
+        font-weight: 800;
+        color: #ffffff;
+      }
+      #lt-role {
+        position: absolute;
+        left: 30px;
+        top: 88px;
+        width: 640px;
+        margin: 0;
+        font-size: 32px;
+        font-weight: 500;
+        color: #c9cedb;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-width="1080"
+      data-height="1920"
+      data-duration="45"
+    >
+      <div id="bg"></div>
+
+      <video
+        id="ui"
+        class="clip"
+        src="assets/ui.mp4"
+        data-start="0"
+        data-duration="45"
+        data-track-index="0"
+        muted
+        playsinline
+      ></video>
+      <audio
+        id="vo"
+        src="assets/audio.m4a"
+        data-start="0"
+        data-duration="45"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+      <div id="frame" class="clip" data-start="0" data-duration="45" data-track-index="1"></div>
+
+      <section id="header" class="clip" data-start="2.8" data-duration="42.2" data-track-index="2">
+        <div id="header-kicker">One prompt. The bots pass it along.</div>
+        <div id="chain">
+          <div class="node" id="n-hermes">Hermes</div>
+          <div class="arrow">&#8594;</div>
+          <div class="node" id="n-researcher">Researcher</div>
+          <div class="arrow">&#8594;</div>
+          <div class="node" id="n-packager">Packager</div>
+          <div class="arrow">&#8594;</div>
+          <div class="node" id="n-coder">Coder</div>
+        </div>
+      </section>
+
+      <section id="title-card" class="clip" data-start="0" data-duration="2.8" data-track-index="3">
+        <div class="scrim"></div>
+        <div id="title-wrap">
+          <p id="title-kicker">Hermes Agent</p>
+          <h1 id="title-main"><span>One prompt.</span><span>Three bots.</span></h1>
+          <p id="title-sub">Watch the bots hand work to each other.</p>
+        </div>
+      </section>
+
+      <section id="lower-third" class="clip" data-start="3.2" data-duration="6.4" data-track-index="4">
+        <div id="lt-bar"></div>
+        <div id="lt-panel">
+          <p id="lt-name">Tyler Reed</p>
+          <p id="lt-role">Multi-agent handoff in Hermes, video 057</p>
+        </div>
+      </section>
+
+      <div id="captions"></div>
+    </div>
+
+    <script>
+      // Caption cues, reel timeline (seconds). Timing from whisper word stamps on the cut;
+      // text follows the full-video transcript. @mentions are highlighted.
+      const CUES = [
+        [0.17, "Here it's already establishing"],
+        [1.81, "what agents"],
+        [3.18, "need to take care of this,"],
+        [4.56, "and then so forth."],
+        [5.24, "And so what we're gonna see next,"],
+        [6.74, "yeah, right here,"],
+        [7.57, "awaiting a response from @packager."],
+        [9.68, "Once the package is built,"],
+        [10.61, "it will message @coder."],
+        [12.69, "Okay, so it's actually saying"],
+        [13.68, "@packager refused."],
+        [15.79, "So I just ran through this"],
+        [17.56, "and I said, yeah,"],
+        [18.28, "take the report that was created"],
+        [19.75, "and then maybe do some more research."],
+        [21.74, "So the researcher is now"],
+        [23.33, "going to refresh the hooks research"],
+        [25.28, "from the existing report,"],
+        [26.63, "produce a data file,"],
+        [27.82, "a reference transcript with a breakdown"],
+        [29.58, "and everything."],
+        [30.23, "And then when it lands,"],
+        [31.08, "it's going to give that to @packager"],
+        [32.89, "and then @coder."],
+        [34.05, "So it decided"],
+        [35.49, "it actually needed to go"],
+        [37.16, "to another agent first as well."],
+        [38.75, "I only gave it two agents,"],
+        [40.04, "but it decided we needed"],
+        [41.52, "a third agent, the research agent,"],
+        [43.08, "to give us everything we need."],
+      ];
+      const END = 45;
+      const host = document.getElementById("captions");
+      const root = document.getElementById("root");
+      CUES.forEach(([start, text], i) => {
+        const next = i + 1 < CUES.length ? CUES[i + 1][0] : END;
+        const dur = Math.round((next - start) * 100) / 100;
+        const el = document.createElement("div");
+        el.className = "cap clip";
+        el.id = "cap-" + i;
+        el.setAttribute("data-start", String(start));
+        el.setAttribute("data-duration", String(dur));
+        el.setAttribute("data-track-index", "5");
+        const p = document.createElement("p");
+        p.id = "cap-text-" + i;
+        text.split(" ").forEach((w, j) => {
+          if (j) p.appendChild(document.createTextNode(" "));
+          const s = document.createElement("span");
+          if (w.startsWith("@")) s.className = "at";
+          s.textContent = w;
+          p.appendChild(s);
+        });
+        el.appendChild(p);
+        root.appendChild(el);
+      });
+      host.remove();
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Title card
+      tl.from("#title-kicker", { y: 30, opacity: 0, duration: 0.4, ease: "power3.out" }, 0.1);
+      tl.from("#title-main span", { y: 60, opacity: 0, duration: 0.5, stagger: 0.18, ease: "power3.out" }, 0.2);
+      tl.from("#title-sub", { y: 30, opacity: 0, duration: 0.4, ease: "power3.out" }, 0.7);
+      tl.to("#title-wrap", { y: -40, opacity: 0, duration: 0.3, ease: "power2.in" }, 2.45);
+      tl.to("#title-card .scrim", { opacity: 0, duration: 0.3, ease: "power2.in" }, 2.45);
+      tl.set("#title-wrap", { opacity: 0 }, 2.8);
+      tl.set("#title-card .scrim", { opacity: 0 }, 2.8);
+
+      // Header chain: nodes light up as each bot enters the handoff
+      tl.from("#header-kicker", { y: 20, opacity: 0, duration: 0.4, ease: "power3.out" }, 2.85);
+      tl.from("#chain .node, #chain .arrow", { y: 24, opacity: 0, duration: 0.35, stagger: 0.06, ease: "power3.out" }, 2.95);
+      const lit = { borderColor: "#8fa2ff", backgroundColor: "#262c4a", color: "#ffffff", duration: 0.3 };
+      tl.to("#n-hermes", lit, 3.4);
+      tl.to("#n-packager", { borderColor: "#ffd166", color: "#ffd166", duration: 0.3 }, 7.9);
+      tl.to("#n-packager", { borderColor: "#ff6b6b", color: "#ff6b6b", duration: 0.3 }, 14.2);
+      tl.to("#n-researcher", { ...lit, scale: 1.04, duration: 0.35, ease: "back.out(2)" }, 21.9);
+      tl.to("#n-researcher", { scale: 1, duration: 0.3 }, 22.4);
+      tl.to("#n-packager", { ...lit, scale: 1.04, duration: 0.35, ease: "back.out(2)" }, 32.3);
+      tl.to("#n-packager", { scale: 1, duration: 0.3 }, 32.8);
+      tl.to("#n-coder", { ...lit, scale: 1.04, duration: 0.35, ease: "back.out(2)" }, 33.45);
+      tl.to("#n-coder", { scale: 1, duration: 0.3 }, 33.95);
+      tl.to("#n-researcher", { scale: 1.04, duration: 0.35, ease: "back.out(2)" }, 41.9);
+      tl.to("#n-researcher", { scale: 1, duration: 0.3 }, 42.4);
+
+      // Lower third
+      tl.from("#lt-bar", { scaleY: 0, transformOrigin: "50% 0%", duration: 0.3, ease: "power3.out" }, 3.2);
+      tl.from("#lt-panel", { x: -40, opacity: 0, duration: 0.4, ease: "power3.out" }, 3.3);
+      tl.from("#lt-name, #lt-role", { y: 16, opacity: 0, duration: 0.35, stagger: 0.1, ease: "power3.out" }, 3.4);
+      tl.to("#lower-third", { x: -60, opacity: 0, duration: 0.35, ease: "power2.in" }, 9.2);
+      tl.set("#lower-third", { opacity: 0 }, 9.6);
+
+      // Captions: short pop on each cue
+      CUES.forEach(([start], i) => {
+        tl.from("#cap-text-" + i, { y: 18, scale: 0.94, opacity: 0, duration: 0.18, ease: "power2.out" }, start);
+      });
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

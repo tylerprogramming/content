@@ -6,6 +6,16 @@
 
 ## Active Ideas
 
+### 0. Create Your First 24/7 AI Agent (Hostinger VPS)
+- **Status:** Idea, next after 058
+- **Priority:** High
+- **Topic:** Hermes Agent on a Hostinger VPS doing one real job on a schedule, unattended
+- **Angle:** Every Hostinger+Hermes video (Metics x3, ByteGrad, Tech With Tim) ends at "send your first message." This one ends 24 hours later with the phone showing every run. The install is the first third; the job is the video.
+- **Target Audience:** Claude Code / Hermes viewers from 057 who do not have a machine to leave on
+- **Research:** run /yt-search on `hermes agent hostinger` and `24/7 ai agent`; landscape notes in status.md row
+- **Notes:** Reuse 057's cron + Slack beats. New: Hostinger one-click deploy (Application Catalog, Docker), remote gateway from the desktop app, the next-day proof cut. No money in the title; price goes on the thumbnail.
+- **Date Added:** 2026-09-20
+
 ### 1. AntiGravity Beginner Tutorial
 - **Status:** In Progress
 - **Priority:** High

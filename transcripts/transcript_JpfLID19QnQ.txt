@@ -1,0 +1,452 @@
+0:00 In this video, you are going to learn
+0:01 everything you need to know as a
+0:02 developer about Type Safe's new Jeff
+0:05 model. So, let's dive into things. This
+0:07 has been making some waves and we
+0:09 finally have something happening in the
+0:12 AI industry that is super relevant for
+0:15 developers building AI applications.
+0:17 Because for the past year or so, all the
+0:20 focus has been on the coding agents, the
+0:22 better models. And of course, while
+0:24 those are amazing,
+0:26 when it comes to building LLM based
+0:28 systems, agentic systems, whatever you
+0:30 want to call it, we have pretty much
+0:31 been working with the same tools since
+0:33 function calling. For the past 2 years,
+0:36 while the models get better, we haven't
+0:37 had a new paradigm or a new model to
+0:40 really play with. Jeff is the first of
+0:43 its kind or system one is the model they
+0:44 call it is the first of its kind in this
+0:46 new category. So, I am going to walk you
+0:49 through a couple of practical examples
+0:51 in this repository that I have created
+0:53 for you. We're going to walk through
+0:54 some code examples and not just cover
+0:56 like the blog posts and the highlights
+0:58 that everyone else is covering, right?
+1:00 But show you in a code base how it works
+1:02 and how you can build AI applications
+1:04 around this. So, what should you know
+1:07 about this model? Well, the first thing
+1:09 is Jeff system one, it's a
+1:11 classification model. That is the
+1:12 starting point. So, you can ask it a
+1:15 question
+1:16 and it will classify your inputs and
+1:18 outputs either in a yes or no, or it
+1:20 will select from a series of options
+1:23 that you give it, or it can also give a
+1:25 distribution really of the confidence
+1:28 scores that it thinks the criteria has.
+1:30 So, this is super useful when you are
+1:33 building applications with AI. Because
+1:36 as you know, if you've been building
+1:38 with AI, with LLMs, what we've pretty
+1:40 much been doing in the past is we had
+1:43 these language models that could given,
+1:45 let's say, a user question,
+1:48 could give these like outputs in the
+1:50 form of text. So, this would be the
+1:52 response, right? So, early in 2023,
+1:55 something around that time, we figured
+1:58 that it would actually be very useful if
+2:01 we could do function calling using these
+2:04 LLMs and use structured output in the
+2:08 form of let's say JSON objects. Because
+2:11 when you are building programs and you
+2:13 ask it something you can get a JSON
+2:15 object back, that is when we can make
+2:17 decisions. That is what that when we can
+2:19 apply if else, we can route, we can do
+2:21 all kinds of cool things as programmers
+2:24 in order to do this. But the most
+2:25 important thing to understand about this
+2:27 is that LLMs were not trained or
+2:30 optimized to do this. It's kind of like
+2:32 a second property of the large language
+2:35 models. And what the team of Type Safe
+2:39 did is essentially they flipped that
+2:40 paradigm around and they said, "Look, we
+2:43 need something else. We need a way for
+2:46 these models to always give JSON output
+2:49 and to work with that." So, that's what
+2:50 they started building and essentially
+2:52 they took a large language model
+2:54 pre-trained language language model as
+2:56 the input, but they have an additional
+2:58 like other training layer at the end of
+3:01 it, on top of it, to make the model only
+3:04 be able to work like this. So, now with
+3:06 that interaction out of the way, let's
+3:07 make this a little bit more practical
+3:09 because you just need to see some code
+3:10 examples and play with it in order to
+3:13 get a feel for this. So, we are
+3:15 currently using the Python SDK and the
+3:18 link to these exact code files, it will
+3:20 be in the description. It's in my AI
+3:22 cookbook for you to follow along. So,
+3:24 what I'm going to do is I'm just going
+3:25 to walk through this and show you some
+3:27 of the examples and the data types and
+3:29 inputs and outputs that you can expect
+3:32 because I think this is all you need to
+3:33 know at this point, inputs, outputs, and
+3:36 the choices, and from there you can
+3:37 decide how to implement this into your
+3:40 applications and just let your AI agents
+3:42 build all of this. So, very simple, we
+3:45 got the Type Safe SDK, we have a client,
+3:48 we load our API key. If you go to the
+3:51 console, you can get the API key there.
+3:53 Currently, you need to sign up for the
+3:55 waitlist, but pretty much from everyone
+3:56 around me, you'll get access in a couple
+3:58 of hours, and you can play along with
+4:01 this. So, we have this client, and
+4:03 similar to how we work with chat GPT or
+4:06 Anthropic, you know, we understand how
+4:08 this works. We can call client, and then
+4:10 we call dot system one. Then we have our
+4:13 inputs, and then we can get a response.
+4:15 So, let's just first run through this
+4:17 and see what we got there, right? So, if
+4:19 I now print this, we get a response
+4:22 back, and that says billing. So, let's
+4:24 look at what's happening over here.
+4:26 So, first of all, you can see there is a
+4:27 state over here. So, I was charged
+4:29 twice. Please run refund the duplicate.
+4:32 So, this is the starting state that we
+4:34 want to know something about, right? And
+4:36 then we can ask a question. And we'll
+4:39 get into the data models and the options
+4:42 later in these other files, but for now,
+4:44 we just give it a question, and that is
+4:46 a choice. And that question is which
+4:47 team should handle this support ticket.
+4:49 And then we give it three options. It
+4:51 can be billing, technical, or other. So,
+4:53 we run this, and then you see billing.
+4:55 Okay. So, up until this point, if you've
+4:57 been working with LLMs and structured
+4:58 output, like
+5:00 this is it, right? This is structured
+5:01 output. It's very simple. There's
+5:02 nothing new that we can do here that we
+5:04 couldn't do before. So, then what's
+5:06 interesting about Jeff? Why is this all
+5:08 the hype? Well, first of all, because it
+5:11 is this new modeling paradigm, we get
+5:13 two extra properties. First of all, it's
+5:16 fast, and second, it's very cheap. Now,
+5:19 that is of course from an application
+5:21 and a programmer perspective, cheap and
+5:23 fast, that's what we want, right? That's
+5:26 that's great. So, that is the whole
+5:28 philosophy and the promise of Jeff that
+5:31 we use AI inside applications, and we
+5:34 can make decisions, smart if else
+5:36 statements, if you will, and we can now
+5:38 do that way faster and most importantly,
+5:41 way cheaper than we could with some of
+5:43 the other models, even if we use
+5:45 something like Claude Haiku, for
+5:47 example. It's about 20 times 25 times
+5:50 cheaper than Haiku and
+5:52 also faster. So, that's the introduction
+5:55 to Jeff. This is how you work with the
+5:57 SDK and how we can classify an input.
+6:00 So, let's now look at the different
+6:04 types of questions that you can ask,
+6:05 right? So, if I go over to the
+6:07 documentation over here, this is I think
+6:09 the most important thing to understand
+6:11 about this. You have choices, you have
+6:13 scores, and you have nulls. So, let's
+6:16 start with the choices. This is what I
+6:18 just showed in the most simple simple
+6:20 example, really the most easiest
+6:22 probably to understand. And that is you
+6:24 give it an input state, I was charged
+6:26 twice for this order, please refund the
+6:28 duplicate, and you give it a a list of
+6:30 criteria, and those are the categories
+6:32 that you can choose from. And your
+6:34 instructions is the input prompt. So,
+6:36 rather than thinking in system messages
+6:40 and system prompts and user messages and
+6:42 then structured output data models, the
+6:44 whole API and also the models are
+6:46 designed just for classification. So, I
+6:49 would say this is a like third property
+6:52 next to like the speed and and the cost
+6:55 really that make this a more interesting
+6:57 model. Also from like a programmatic
+6:59 perspective, the API and the model
+7:01 itself forces you to structure
+7:03 information simply in such a way where
+7:06 you don't really have to think about
+7:07 large system prompts and how to
+7:10 structure all of your information and in
+7:12 what format because the API is is very
+7:16 declarative in a way saying like, "Hey,
+7:17 here's here's what you need to input and
+7:19 here's what I can work with." And you
+7:21 don't have that much variety in there.
+7:23 So, if I run through this example over
+7:24 here, you can see that we import the
+7:26 choice from the type safe SDK. We create
+7:29 our input state, which is in this case
+7:31 just a string. Then we create the
+7:33 question and we set that equal to the
+7:35 choice with the instructions and the
+7:37 criteria. And then here we can actually
+7:39 call client.system1 again. We put the
+7:41 state in here and also the question
+7:44 which we can also give a name with
+7:45 another string and we can run that and
+7:47 we get again we get billing but now we
+7:49 can also see those probabilities and we
+7:51 can even get a confidence score. So,
+7:52 that's the choice. The second one is a
+7:55 score. This is similar to a choice but
+7:58 rather than providing it with
+8:01 a dictionary of categories and a
+8:03 description,
+8:04 we just give it a list. We just give it
+8:06 a list of inputs criteria, I should say,
+8:10 where it can choose from and rather than
+8:12 picking one, it will give a score for
+8:16 all of these different categories in it.
+8:18 So, here we input the score. We can put
+8:20 that into a question and then when we
+8:23 run this and we ask about these
+8:25 different criteria, you can see the
+8:26 probability distribution over these
+8:29 categories. So, you can see that the
+8:31 confidence score right now is one for
+8:33 frustrated but civil. So, this is an
+8:35 easy one for the model to classify but
+8:38 if we start to have more ambiguous
+8:41 messages or we have more categories in
+8:43 here, then you will see that the
+8:45 probability distribution is going to
+8:47 shift a little bit. Let's now go into
+8:49 the null which I'm not really sure why
+8:52 they took this name null. It might be
+8:54 coming from like a Bernoulli
+8:56 distribution but this is pretty much a
+8:58 Boolean. Yes or no, true or false and it
+9:01 will also give you a confidence score on
+9:05 this where the score that it will give
+9:08 you is the probability of it being yes.
+9:10 So, let me show you what that looks
+9:12 like. So, again we have the example I
+9:14 was charged twice for an order, please
+9:17 refund the duplicate. So, this is the
+9:18 ticket so we're going to use that as a
+9:20 state and then we have a null and the
+9:22 question is does the customer explicitly
+9:24 ask for money to be returned? So, this
+9:26 is a this is a yes or no question. Let's
+9:28 put that in here and let's run this and
+9:31 look at the response. So, here you can
+9:32 see we get the answer. So, the refund
+9:35 requested is a null answer type, and the
+9:37 null is 0.98.
+9:40 Meaning that is the 0.98 0.98
+9:43 probability that the model classifies
+9:45 this as a yes.
+9:47 And now, based on that, we can perform
+9:49 all kinds of logic if else statements,
+9:52 right? So, that is really the starting
+9:54 point for you to start thinking about
+9:56 this model. It is a classification
+9:58 model, and depending on whether you have
+10:00 different choices that you wanted to
+10:02 select from, a yes or no, or certain
+10:05 options where it needs to calculate a
+10:08 probability distribution over, that is
+10:10 what we can do with Jeff and with the
+10:12 system one model. Now, let's look at a
+10:14 quick speed comparison to see how fast
+10:18 this model really is right now, and
+10:19 let's compare it to some of the Entropic
+10:21 models. So, we do Haiku, we do Opus 5,
+10:23 and Fable 5.1. So, if I start running
+10:26 this here on the side, let's see. You
+10:28 can see the runs over here, and I am
+10:31 based in Europe. You can now get the
+10:34 fastest speed through the results really
+10:36 if you are on the in the US, because
+10:39 here you can see on average it will take
+10:41 about like 500 600 milliseconds for a
+10:43 request to complete. And if we compare
+10:46 that to Haiku, which is also a great
+10:49 model to perform classification steps
+10:51 like this, you can see it's not that
+10:53 much faster, right? So, I believe like
+10:55 if you go closer to the source and and
+10:58 and where where you actually run this
+11:00 model, I think it can be way faster.
+11:02 But, what is more interesting right now
+11:05 as a developer is probably the cost,
+11:07 right? So, if you go over to the pricing
+11:11 for Jeff, you can find the official
+11:13 model pricing on their website to figure
+11:15 out what this currently looks like. But,
+11:17 to give an example, if you perform one
+11:20 100,000 requests with about like 500
+11:22 input tokens, running Jeff that will
+11:24 cost you about $2, whereas with Haiku,
+11:27 which is already cheap model, that will
+11:29 cost you 50 bucks, right? So, that is a
+11:31 25X
+11:33 on cost. And the interesting thing about
+11:35 this is that this model is the the first
+11:38 of its kind, right? So, this price will
+11:40 go down significantly. And as developers
+11:43 building AI applications, I think this
+11:45 is one of the most interesting aspects
+11:48 of it that we now have new models
+11:50 specifically optimized to put them into
+11:53 your applications and to make fast and
+11:55 cheap decisions. So, what can you do
+11:58 with Jeff's system one and what you
+12:00 should use it for? Well, on their
+12:01 documentation, they also explain a
+12:03 couple of patterns that you can use
+12:05 along with like the benefits, right?
+12:07 But, if you've been building with LLMs
+12:09 and if you use structured output in the
+12:11 past, then this is a very natural
+12:13 extension of the work you've already
+12:15 been doing and you can probably identify
+12:17 where this makes sense, right? One of
+12:20 the cool things about the Jeff model,
+12:22 the system one model as well, is that
+12:24 you can also combine questions. So, the
+12:27 API supports this. So, let me show you
+12:29 what this looks like. So, here you can
+12:30 see we have a choice, we have a score,
+12:32 and we have a null. And then we start
+12:34 with a ticket, which is the input state.
+12:36 Then we just create a dictionary of all
+12:39 the types of questions. And then we can
+12:41 essentially make one API call and we
+12:44 have all of that information here
+12:46 available. So, it will decide, look,
+12:48 what is the category? What is the
+12:50 frustration level? And is there a refund
+12:52 request? And now, as you start to build
+12:54 bigger, more complex systems and you
+12:56 start to combine multiple choices,
+12:59 scores, whatever type of classification
+13:01 what you want to do. Whenever you stack
+13:03 more together, I think that's where a
+13:06 system like this is going to really
+13:09 outweigh the current options that we
+13:11 have available as developers when using
+13:14 large language models. So, not only is
+13:16 the API around it easier, so you will
+13:19 have less ambiguous code, right? Less
+13:22 like fake system prompts that people
+13:24 need to change and oversee. This is much
+13:27 more programmatic and because it's now
+13:30 faster and also getting cheaper, it will
+13:33 also start to make sense to just put
+13:35 more and more of those choices
+13:38 into one system and just for the sake of
+13:41 like being very certain, create all
+13:43 these conditions and branch out your
+13:45 applications or your workflows in a way
+13:48 where you can get really granular on if
+13:50 this happens
+13:52 combined with five other things that
+13:54 also needs to be true,
+13:56 that is when we do that is when we do
+13:58 this. And if you've been following my
+14:01 channel, this is pretty much what I've
+14:02 been advocating ever since we've been
+14:05 building with language models that the
+14:07 best way to build the most reliable
+14:08 applications is still to have these
+14:11 workflow patterns, to branch off, to
+14:13 have these routers, these if statements.
+14:15 And these patterns are just combinations
+14:18 of combining the choices, the nulls, and
+14:20 the scores in a way to get to the final
+14:24 decision, the leaf node really of your
+14:26 workflow to then make a decision,
+14:28 perform an action, call a function,
+14:30 whatever makes sense for your
+14:33 application. So, Type Safe's system one
+14:35 model, what's the verdict on it and
+14:37 should you use it? Well, I think this is
+14:39 one of those things where in a couple of
+14:41 years we're going to look back at this
+14:43 and see like, "Yeah, that was a pivotal
+14:44 moment in AI." But, for me it's very
+14:47 early, right? This is the first company,
+14:49 the first model of its type. It's a new
+14:51 company. For me, that's always tricky
+14:53 because I build AI solutions for clients
+14:56 and data privacy is always a big
+14:58 concern, right? So, I know they have
+15:00 their data policy here. So, I haven't
+15:03 really gone through this yet, but even
+15:05 if the policy says everything is fine,
+15:08 explaining to a client here in the
+15:10 Netherlands or Europe, for example, that
+15:12 you now also need to share your data
+15:13 with a new US company is always going to
+15:16 be a little bit trickier, right? So, we
+15:18 all have all of that covered in
+15:19 Microsoft Azure. We still use the models
+15:21 from OpenAI, you know, but that has been
+15:23 established now. So, I think over the
+15:26 next 3 months all of the big labs will
+15:29 have a similar version of what this has
+15:31 to offer. OpenAI, Anthropic, 3 months
+15:33 max, I think they have something
+15:35 similar. I think that's a good thing.
+15:37 So, that will probably drive down the
+15:39 cost even further, probably make it
+15:42 faster. Eventually, I hope that open
+15:44 source will catch up and that we can get
+15:47 smaller models that we can actually
+15:48 self-host. I mean, that would be so
+15:50 amazing, right? Where we can use the big
+15:52 models for reasoning and for the big
+15:54 task, but then have simple small open
+15:57 source models that perform this type of
+15:59 classification with very high precision.
+16:01 So, I think this is going to kick off a
+16:03 new trend. I think this is going to be
+16:05 amazing for computer use, for browser
+16:07 use, which is going to be really big
+16:10 over the next year and years to come.
+16:12 So, I think this is really exciting and
+16:14 I'm really curious to see what's going
+16:15 to happen with these developments over
+16:17 the next months. So, that's it for this
+16:19 video. Now, if you want to know what
+16:20 types of projects and solutions I build
+16:22 for my clients, you can check out the
+16:24 link in the description to check out my
+16:26 proposal system. It's completely for
+16:27 free. You'll get the template that I use
+16:29 to create proposals with one anonymized
+16:32 client proposal that we actually
+16:33 delivered. So, that gives you a chance
+16:35 to see what it's like to work as a
+16:37 freelancer to build with AI, which is
+16:39 one of the greatest things you can do as
+16:41 a developer right now next to your job.
+16:43 And with that, I am going to wrap up
+16:45 this video and show one video over here
+16:48 that I think you will like next.

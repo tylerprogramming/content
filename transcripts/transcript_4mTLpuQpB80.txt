@@ -1,0 +1,399 @@
+[00:00] Jev is here and it's a big deal. It was created by Diogo Almeida. Yes, that's the same guy whose
+[00:06] research built ChatGPT. Now it's such a big deal because it's a whole new way to do AI.
+[00:13] So I brought on my friend Ryan, who's on the founding team of OpenCode, to just come on and
+[00:17] clearly explain what Jev is, what are some insane use cases, and break down some startup ideas that
+[00:23] are now unlocked. As of publishing this, Jev is invite only, but good news. By the end of the
+[00:31] episode, you're going to see how you can get access today. So you're going to want to like,
+[00:36] comment and subscribe right now. So your algorithm knows to bring you content like this to get your
+[00:41] creative juices flowing in the future. Happy Jev day. And I'll see you at the end of the episode.
+[00:45] Ryan Vogel, welcome to the pod. By the end of the episode, what are people going to learn?
+[00:58] We're going to learn about a new type of AI, a type of AI that we haven't really seen before,
+[01:04] but I think it's good. It's Jev, and people are ready for this new type of classifier AI because
+[01:11] we've been so used to just learning and using these LLMs, which are slow, they stream. And I
+[01:19] think as we'll cover today, this AI is fundamentally different in so many different ways with quality,
+[01:27] speed, and price that there are so many different usage applications for it that
+[01:33] the possibilities are truly endless. And it just becomes on the humans again about how creative
+[01:39] you can be. Cool. And so I just have a few things I need from you because I haven't used Jev.
+[01:45] I want you to give me the simplest possible explanation to Jev. I want you to give me like,
+[01:52] you know, three or four insane use cases so that people can walk away from this episode with like
+[01:57] productivity, making money, just like even boring use cases that could become, you know,
+[02:03] $10 million businesses, $100 million businesses. And I just want you to put it all together,
+[02:08] They're wrapping it in a bow that people understand, you know, if they stick around to the end, that they'll be able to understand why should they care about it.
+[02:14] Can you commit to that, Ryan Vogel?
+[02:16] I can.
+[02:17] I can.
+[02:17] And I'll add one better.
+[02:19] I'll make it entertaining so that way you can actually get excited about it.
+[02:23] Because first up, I'm just going to start out with a demo.
+[02:27] This is my email.
+[02:28] I'm not afraid to share it.
+[02:30] I've been working with email.
+[02:32] If you know me at all, you know that I love email because it seems unsolved.
+[02:36] I mean, like, Greg, how many spam emails do you get every day?
+[02:40] Like, there's too many, right?
+[02:42] There's too many.
+[02:42] You can't reply to all of them.
+[02:44] And it's just so frustrating.
+[02:45] And some of the email algorithms that exist are good, but it's not the best.
+[02:50] But then some people are trying to, like, take, like, traditional AI where it's like they're having, like, a GPT 5.6 Luna, like, kind of read every email and then score it.
+[03:00] But that takes time.
+[03:01] And it's not, like, instant.
+[03:03] and it's just like, oh, I wish we could just have something that could like instantly categorize
+[03:08] all the emails. So this is that this is using Jev. And before I run it, I'm going to break down Jev
+[03:15] in a super simple example. Jev is a classifier at its truest being. That's what it is. I won't get
+[03:21] into the architecture and stuff like that because honestly, I don't even understand it that well.
+[03:25] But essentially you define an input. Let's say you have this iPhone as an input, right?
+[03:32] and that's the input and then the output is a schema so we could uh have the schema be
+[03:39] what color is the iphone is the question almost and it has uh blue orange red green yellow as the
+[03:47] output options for that question and the classifier jev then looks at this phone in a text uh format
+[03:54] and says, hmm, what, is this orange?
+[03:58] Is it red?
+[04:00] It could be red.
+[04:01] But then it says, okay, this is about, I'm pretty confident it's 80% orange,
+[04:06] but it could be 10% red or it could be 10% blue, which adds up to 100.
+[04:13] And it's the probabilities of those choices.
+[04:16] So it's not just going to be a 100% affirmative, this is orange, this is blue, this is red.
+[04:23] It's a, hey, I'm 80% confident that this is orange or this is red.
+[04:28] And the best way to illustrate that is with this email example.
+[04:32] So each one of these rows that you see on the table is a full email object.
+[04:37] It's got a subject.
+[04:38] It's got a description.
+[04:39] It's got a body.
+[04:40] It's got a sender, all the snazzy email jazz.
+[04:43] And what the input is, is that just entire email object.
+[04:47] There's no sugar coating or any special treatment.
+[04:49] It's just the email object.
+[04:50] And we have four outputs.
+[04:52] We've got a category, which is an option where basically it can say, is this shopping, work, marketing, finance, security, yada, yada, yada.
+[05:00] Then we've got a priority, which it can allow to select from, I think, five different options where it's like low priority, medium, high, important, or urgent, which is like, oh, no, you have a missed credit card payment or something like that.
+[05:12] That's obviously urgent.
+[05:13] You want to be able to nail that right on the head as soon as that comes in.
+[05:17] And then we have a spam score.
+[05:18] This is what I was talking about with those percentages.
+[05:20] Obviously, not every email is going to be a true or false when it comes to spam.
+[05:25] It's going to be a percentage.
+[05:26] It's a range, if you will.
+[05:29] So it's like some emails are more spammy, like this Kickstarter one.
+[05:33] It's obviously trying to sell me a bunch of stuff and junk.
+[05:36] I don't really care about that.
+[05:37] I signed up for that Kickstarter thing like two years ago.
+[05:39] Still haven't been able to unsubscribe from the list since.
+[05:42] And then we've got some like Mercury things.
+[05:44] Okay, this is just like a payment thing.
+[05:46] It's like, okay, Exxon Enterprise received $22 from Stripe.
+[05:50] That doesn't seem spammy. That seems just like it's informative. And it's just informing me that something happened. And then we've got the reply percentage. This is how much does this warrant your reply? So if we go back here and I'm not going to click on this because this is a real email, but 90% account violation possibility. This is a user saying, hey, my account seems to be violated somehow.
+[06:14] Jev identified, hey, this user seems to be having some trouble.
+[06:18] We should probably warrant a response on this.
+[06:21] Now, I've already got these all categorized, and there are 1,700 of these emails.
+[06:26] And this is where we come back where it's so sad because it just takes so much time to run all of these, and it's probably going to take like 10 hours to do.
+[06:39] And then I'm going to have to go through and probably pick out some of the data.
+[06:43] Oh, my God.
+[06:44] The price is going to be so expensive.
+[06:46] And, oh, it's done.
+[06:49] Oh, it cost 18 cents for 1,700 emails?
+[06:53] That is the power of JEV.
+[06:54] I can't explain it any better than that.
+[06:58] We had 4.2 million input tokens and 500,000 output tokens.
+[07:02] The entire cost was 18 cents for each one of those emails.
+[07:08] All categorized.
+[07:10] all, I mean, you can see here, they're all categorized. They're all ranked. They're all
+[07:15] given that score. So if you were to imagine, like, let's say.
+[07:20] Ryan, what I'm, here's what I'm hearing. I just want to make sure I have a good mental model for
+[07:26] what Jev is and correct me where I'm wrong. Okay. So Jev is basically like an AI decision maker.
+[07:33] Yes. So you give it some information. And in this case, you're giving it,
+[07:37] the contents of the email and a set of possible choices, like is it spam or not,
+[07:43] Jev's going to go ahead and look at that information and choose an answer. So for example,
+[07:48] is this email spam or urgent or normal? But you can also have it do things like,
+[07:57] is this customer likely to buy or unlikely to buy?
+[08:00] Right, exactly. You're almost there. That's like 90% correct. It makes a probability of a decision.
+[08:07] So the difference between it making a decision, because a decision would be you submit an API or something like that, and it tells you buy or not to buy.
+[08:19] Technically, what happens on the underside is that percentage.
+[08:22] So it would be like 83% buy, 17% no buy type of thing.
+[08:27] And obviously the answer that is the stronger percentage would win and that would get returned to you.
+[08:34] But it's not a 100 percent decisive action type of thing.
+[08:38] OK, so instead of asking chat, GPT, Claude, whatever, read this email and explain what I should do.
+[08:46] The new mental model is use ask Jeff.
+[08:49] I mean, you ask Jeff, like, you know, read this email and choose a set of actions.
+[08:56] So like reply or escalate.
+[08:59] And then you get like a choice from Jev and that gives you some sort of confidence score.
+[09:04] Is that the way to think about it?
+[09:06] It's kind of so we've been the the LLMs that we know nowadays have like corrupted our minds so much because there's an interesting point.
+[09:14] You said you said ask Jev.
+[09:16] You don't really ask Jev because Jev isn't a text model.
+[09:20] What's really interesting, if you look at the actual spec of Jev, it doesn't generate any text at all.
+[09:25] which are like, okay, that's kind of weird.
+[09:27] It obviously generated text because how did you get the data for this, right?
+[09:31] That was defined in the schema.
+[09:34] So let me see if I can pull up a little whiteboard here, a little whiteboard action.
+[09:40] I'm not too good at this.
+[09:41] So we've got our schema, right?
+[09:43] We'll call it, I don't know.
+[09:45] We'll have our email, right?
+[09:47] And this will be our email input.
+[09:49] And then we'll do a circle for Jev.
+[09:51] Jev seems like a circle guy, I would say.
+[09:54] jeff there's the entertainment you promised there we go exactly jeff seems like a circle
+[09:59] that's that's just the type of guy that jeff seems like okay maybe a tiny circle there we go
+[10:05] tiny circle because it's fast you know it's fast and cheap okay so we've got our email
+[10:09] and that goes in to jeff it doesn't get asked to jeff it doesn't you're not asking jeff hey what
+[10:16] should I do with this email? It's just an input, like a standard API. And you define a schema up
+[10:25] here. And we'll have a simple little schema and be like, is spam. And that can be what they call
+[10:35] a null, which is a true false, but it's a scale. So it could be a one to zero. Let me format this.
+[10:42] Yeah, I told you I wasn't good at whiteboards.
+[10:43] I don't know about this.
+[10:45] So it could be a one to zero, which means that it could be 0.31 or it could be, I don't know, like 90.
+[10:56] And that's that percentage.
+[10:58] So it's if it were to return is spam 0.90, that would be a 90% chance that it is spam type of thing.
+[11:05] So it doesn't give those definitive answers, but you can infer definitive answers from that sort of choice.
+[11:13] And then let me get rid of this. Why are we doing Jason?
+[11:16] And then we could have a choice like, let's see, category.
+[11:20] And that would be like marketing.
+[11:25] It could be finance. It could be spam.
+[11:29] And it doesn't generate the categories itself.
+[11:34] it looks at the categories that you've passed into it as like a model because like you pass all of
+[11:40] these this like essentially this output schema in and you say here's the email here's the output
+[11:45] schema i need you to generate the answer for me and by the way a schema is just a fancy word for
+[11:51] how a database is organized right it's just how the database is organized but not even the database
+[11:56] it's just how the output is organized it's just a fancy way which is why the develop why all the
+[12:01] developers love it because they're like, oh my gosh, it's actually type safe, which is a whole
+[12:06] other video on everything like that. But it just means that you can take the output that this Jev
+[12:12] model gives you and instantly use it in code because like this newel that it returns is a
+[12:18] number object. It's not like text that is a number or something weird that you would have to do some
+[12:24] additional data processing on. It just basically gives you this object, which is the structure
+[12:29] of the data. And so like, let's say we pass in this email and we have these two classification
+[12:35] categories. So then the model would just evaluate, okay, is this spam? And what's the category? And
+[12:41] it would just return the percentage and the category. So it's not exactly like generating
+[12:47] text, like in a traditional, like LLM, like chat GPT. It's not saying, hmm, well, I think this is
+[12:53] a spam email from Kickstarter, so I should probably rate it. Nope. It just says category spam is spam
+[13:00] 90% type of thing. There's no internal reasoning or anything like that, which is why people are
+[13:06] like, well, I don't know if I can trust it because the whole recent development with AI, as you've
+[13:12] probably seen, is the models are reasoning, which is basically just saying the models are speaking
+[13:19] out loud to identify possible issues in their sort of thought progression and jev doesn't do that at
+[13:25] all or it might do that but it might just do it like really fast on the server we don't really
+[13:30] know but from our point of view it doesn't reason it doesn't have any other text output it just
+[13:34] gives you the output so just shoots it back it just gives you a decision exactly that's the way
+[13:40] to think about it that's the way i'm starting to think it's a decision model and that's what i uh
+[13:44] I pointed it out like right here.
+[13:49] Like all of these are just decisions.
+[13:51] It's not because everyone has started to assimilate AI with LLMs, which is like that next token prediction where it's a conversational agent.
+[14:00] This isn't that at all.
+[14:01] This is still AI because it's like machine learning, but it's a decision model strictly.
+[14:06] You can't ask it to be like, hey, how are you doing today?
+[14:10] Or can you?
+[14:11] so i i like to i like to think around with these ideas a little bit and i was like okay
+[14:18] it's a decision model right well i'm a decision model when i'm typing on my keyboard i'm making
+[14:25] the decision to type each letter so like if i were to type hello i'm making the decision to type h
+[14:31] e l l o which is technically text but i'm also making the decision for each key so i'm like
+[14:39] what if I can apply that same principle to Jeff? So if we go back to our Excalibur whiteboard here,
+[14:46] let's say instead of this category, we just have all of the letters, A through Z, right? And each
+[14:53] one of those letters is a Newell. So the model can basically predict each letter and say, okay,
+[14:59] what's the percentage? What's the decision of this letter based on previous letters?
+[15:04] So if it types H-E-L-L, it's like, okay, my next best decision is to type O to complete the word hello.
+[15:12] And I didn't know how it would work, but this is how it worked.
+[15:16] So this is me asking at the prompt, what is bigger, a cat or an elephant?
+[15:23] And this is all real time, by the way, so it's very fast.
+[15:27] But obviously, it's not as trained in these sort of next letter completion stuff.
+[15:34] But it's still fun to see because it's just like, this is cool.
+[15:37] But it also shows this isn't a traditional type of LLM where it's like you can talk to it and it's a conversation.
+[15:43] It's a decision-based LLM, which we've kind of learned.
+[15:46] So I guess that begs the question around what should I use Jeb for?
+[15:51] Especially the person listening to this is someone who wants to build a business, who wants to invest in themselves, who could be a side hustle or their own thing.
+[16:03] And they see this and they're like, I notice that this is really interesting.
+[16:07] I believe Ryan when I hear him talk.
+[16:12] And I could see that this is a glimpse into the future, but I don't know how to use it.
+[16:15] Right. And there's something really interesting about this because this is the first model that's been that can cater to a lot of different applications, which I'll say in a second.
+[16:25] But it's also really fast and really cheap. So it's you don't have this high barrier to entry that we've seen with other AIs where it's like, OK, I've got to dedicate like a thousand dollars a month to this.
+[16:35] you could dedicate like $5.
+[16:37] Like when we got,
+[16:38] when our open code team got set up on this account,
+[16:40] we had like a $5,
+[16:42] like,
+[16:43] I guess like intro,
+[16:44] uh,
+[16:46] credit,
+[16:46] I guess on the account,
+[16:47] we were able to use that for two days without hitting it.
+[16:50] And we were using it like a ton,
+[16:52] like all of my demos and everything like that,
+[16:54] we were using it.
+[16:54] So it's extremely cheap.
+[16:56] So you could probably like load 10 bucks on it and be good for like maybe
+[16:58] three months.
+[17:00] But some cool things that you could probably use with this is,
+[17:04] I already got my girlfriend working on it because she runs a graphic design agency and she gets a lot of inbound and she needs to know if this inbound is high quality or just like if it's just maybe like solicitation spam because she has a contact form on her website.
+[17:21] So she's using Jev to essentially say, is this a good lead?
+[17:25] And it basically does that same sort of category where it's like is good lead and it ranks that on a percentage.
+[17:31] So it's like is good lead and it ranks it from one or zero to one.
+[17:37] So if it's like if you get a 98 percent lead, that's a pretty high lead and you're probably going to want to reply to that.
+[17:42] But then if you get someone who's like, hmm, yeah, I think I might want graphic design, but I'm not too sure.
+[17:48] They probably don't know what they want.
+[17:50] And that would probably require more effort from you as a business owner or her as the graphic designer to sort of feel out that client.
+[17:56] So you can use Jev to make a lot of the decisions in your business that you might have to do
+[18:01] yourself.
+[18:02] So like going through, I love the email example just because it's such an easy fix.
+[18:08] That way you can go through all your emails and all your historical emails and be like,
+[18:11] are there any leads I missed?
+[18:12] Are there any high value clients that I can maybe attack again to see if I can extract
+[18:16] more value for them and me.
+[18:19] And basically you can kind of think through your workflow and anything where you're looking
+[18:24] at some data.
+[18:26] It can be any type of data.
+[18:27] If you're looking at some data and thinking, hmm, I have to make a decision on this, you
+[18:32] should probably think about adding Jev at that layer.
+[18:35] Obviously not for like 100% of interactions and stuff like that.
+[18:38] It should be a very heavy advisory role.
+[18:41] But Jev is really good because it can make those split second interactions.
+[18:44] If you run a business that has a contact form or like for issue triage, let's say you get
+[18:51] a lot of support inquiries and someone comes in and ask you and they're like, hey, I need
+[18:56] need help with XYZ product.
+[18:57] Jev can do instant classification and say, okay, let's make the decision.
+[19:02] What product team does this need to get routed to?
+[19:04] Let me route it over here.
+[19:05] Let me route it over here.
+[19:07] And there's so many different things where if you say, hmm, this is a decision, maybe
+[19:11] I can use Jev here.
+[19:12] I guarantee you will have good results.
+[19:14] And it will be super cheap and fast because it takes around 200 milliseconds per query
+[19:19] to Jev no matter like what the input output structure is.
+[19:23] so that is something really shocking too because ai can take like up to like 30 seconds for some
+[19:29] things and you normally have to do like streaming where then you wait for the response to be done
+[19:34] and then you've got to like have a listener and it's all this complex stuff but with jev you can
+[19:38] just do like a boom boom like quick api call and it just works so jev is basically this you know ai
+[19:44] traffic cop so there's information that needs to come in and then jev is going to decide you know
+[19:52] where it should go and what should happen next.
+[19:55] So Jeb is basically going to pump out, you know, what is this information?
+[19:59] How important is it?
+[20:01] What should happen next?
+[20:02] And it's either going to go to a human being in the case of, you know, your girlfriend's
+[20:07] agency where it's like, oh my God, this is a lead that she needs to act on like right
+[20:11] now.
+[20:11] This is Coca-Cola.
+[20:12] It's the CMO of Coca-Cola.
+[20:15] But if it was, you know, the confidence score was lower, but also like, you know, local
+[20:19] business in Orlando, maybe it's you automate it or use an LLM to do something, draft something up
+[20:26] or send something. Or the confidence is so low that you just ignore it. So am I getting that
+[20:34] right? Yeah, that's like spot on where you basically think of anything that you would
+[20:39] have to make a decision that would need to be quick and fast and maybe like provide feedback
+[20:45] to a user and you can do it with that.
+[20:48] So where my brain goes with, you don't know me too well, but I'm all about startup ideas.
+[20:53] That's what this podcast is about.
+[20:54] Oh, me too.
+[20:55] My brain is always thinking the next way to do something like this.
+[20:59] So I'm kind of like, oh, wow.
+[21:01] So Jev now exists.
+[21:02] How do I find a business with an expensive queue of incoming information and then just
+[21:09] put Jev at the front of that queue?
+[21:11] What do I mean by that?
+[21:13] What do I mean by a queue?
+[21:14] I mean like –
+[21:16] You've got like a lot of inbound coming in where people need stuff from you and you need to get them routed to the correct person.
+[21:23] Exactly.
+[21:23] So something that immediately comes to mind, which would require a little bit of architecture, but let's say you run a services aggregation business, like a SaaS level on top of a lot of local services stuff in your area.
+[21:38] and you type in and you say, hey, I need my driveway power wash, right?
+[21:47] And Jev could take in that information and then it could take in a lot of the input stuff
+[21:52] of like all of the other businesses in the area and it could like return percentages
+[21:57] of which one would probably be the best fit for you.
+[22:00] So you type in a form and then you get an instant match with a company that's like near you.
+[22:04] It could require, it's obviously a little bit more complicated under that,
+[22:07] But Jev could do stuff like that where whenever you – you know the forms that you always see when you're trying to sign up for a website and it's like get an instant quote and it's never instant.
+[22:17] And it always is like, we'll email you by end of day.
+[22:21] Then a lot of that stuff can be put into like a classifier and it could genuinely be an instant quote that they could get to say, hey, this is a good match.
+[22:29] Hey, this isn't a good match.
+[22:30] And Jev could be used to do that.
+[22:32] And that's why the speed of Jev is nice, because then that client could see you're not wasting the client's time, which if that client does become your client in the future, that's an insane, insanely good virtue signals to say, hey, we're not trying to waste your time.
+[22:47] We're not trying to waste our time.
+[22:48] Let's get this done and work on it together.
+[22:51] So what other Jev use cases do you want to show?
+[22:54] Let me see.
+[22:55] I was messing around with this, and it doesn't seem to be doing well, but I wanted to see if I could hook Jev up to a Bitcoin signal.
+[23:03] So basically every minute it would run, and it would have this decision mix right here where it would tell me to buy, hold, or sell.
+[23:10] And it does not seem to be doing well, which shows that this model is great, but it does have some regressions.
+[23:17] I would not put this model in front of like your stock portfolio or Bitcoin or anything like that.
+[23:21] This is just for like routing or other sort of decisions like that where it doesn't need insane and model intelligence.
+[23:30] Like I did a test with this with GPT-6 Astra, the OpenAI's latest frontier model.
+[23:35] And it did a little bit better than this because it cross-referenced some news information and everything like that.
+[23:41] But it's completely – it's not apples to apples comparisons.
+[23:45] It's apples to oranges because it's just a different type of model.
+[23:48] So that's where it's like this is something that a classifier and decision maker could be used to do, but it's not the best in all of the situations and everything.
+[23:58] And I also – let me see if I can find it.
+[24:01] Yeah, right here.
+[24:03] So I made a little – I made a YouTube video here where everyone who makes content is aware of this issue where you make content and you make like a longer form YouTube video or something like that, but you want clips.
+[24:15] and the cool part about this is so this right here i'm dragging and dropping in a video file
+[24:22] and what this process is going to do and i'll explain it really quick is it's going to transcribe
+[24:27] the video and get a like word level transcript of it and then it's going to pass that entire
+[24:33] thing into jev with some different classifier decisions to find the best clips and we'll get
+[24:38] to see how quickly it works paste it in it prepares audio and scores 17 moments in around
+[24:43] like three seconds. And each of these moments are like one of the interesting parts of the video.
+[24:50] They're not like the filler text where I'm like, so I'm going to set this up. It's like,
+[24:53] let's go ahead and watch that. It's flying. It's absolutely flying. We've got 1.1 million tokens,
+[24:58] yada, yada, yada. So it allowed me in this demo to be able to find the best clips that I could
+[25:04] publish on short form content. So honestly, and I worked on this for maybe 10 minutes. So if you
+[25:09] worked on this and iterated on this to create your own startup with this type of idea, you could
+[25:13] probably get pretty far, especially if you combined it with other different AI agent types. So that
+[25:18] way you could have a really good clipping sort of feel on it. But there's so many different ideas
+[25:25] that you could come up with this. And honestly, the best way that I've thought about it is if you
+[25:31] just think about it for like a night in the morning, you'll be buzzing with ideas like, oh, I could do
+[25:36] this i could do this um i don't know if i already showed this one but the browser use uh for browser
+[25:40] control with jev is pretty insane too i'm gonna play this clip right here this is in real time
+[25:46] uh done by the browser control guys or the browser use guys where this is jev controlling this browser
+[25:52] to pick a flight from zurich to london in 7.1 seconds let's watch it
+[25:57] this is all real time by the way so selecting the dates
+[26:03] and it found a flight in 7.1 seconds.
+[26:08] If you asked any other sort of like browser use AI agent,
+[26:11] this probably would have taken a minute, two minutes,
+[26:13] even three minutes in the same type of regard.
+[26:16] Yeah, that's a big deal.
+[26:17] That's a really big deal.
+[26:19] If people want to get set up with Jev, how do they do it?
+[26:23] So Jev right now is on a wait list,
+[26:26] but by the time this video drops,
+[26:27] it might be out in general accessibility.
+[26:30] But if you want instant access to it,
+[26:32] you can go to the Vercel gateway and they have Jev available on it right away.
+[26:37] So you can just instantly start testing it out.
+[26:40] They've added some stuff into their AI package so you can start messing around with it.
+[26:44] But honestly, if you ask your AI agent and drop it, this link and the type safe AI to say,
+[26:49] hey, how can I start experimenting with Jev?
+[26:51] You can probably get started right away.
+[26:53] And that's a great way to get started too.
+[26:56] Any type of AI agent, you could talk to it about your business and with Jev and say,
+[27:01] hey, what sort of workflows do I do on the daily basis that could benefit from a decision maker like Jeff?
+[27:08] That's a huge tip.
+[27:09] I appreciate that.
+[27:10] I'll include the link in the show notes, in the description, where you can go in and play around with this.
+[27:18] I'll also include links for where you can follow Ryan.
+[27:20] He's got a criminally underfollowed YouTube channel.
+[27:22] I think it's like 1,000 subs.
+[27:23] I know.
+[27:24] It's crazy.
+[27:26] So I'll include that as well.
+[27:28] Ryan, thank you so much for coming on.
+[27:30] And you know what I'm doing after this.
+[27:31] I'm going to this first cell link.
+[27:33] I'm going to play with Jev.
+[27:34] I'm going to start classifying some stuff.
+[27:36] Let me caution you, though.
+[27:38] It is dangerously addictive.
+[27:43] Once you see the speed and once you see the price, you will just be like, holy cow.
+[27:47] And to all of you guys watching at home or listening, please just try it out.
+[27:51] It's so cheap.
+[27:52] You won't even notice.
+[27:53] It will be like one one thousandth of a cent type of thing to test it out.
+[27:57] It is so cheap.
+[27:58] Please test it out.
+[27:59] this is a new type of AI.
+[28:01] If you've ever done any sort of classification
+[28:03] or if you just want to build something
+[28:04] for your own email or other system,
+[28:07] try it out.
+[28:08] It's so fun to use
+[28:09] and the experience with it,
+[28:11] it's just going to be mind-blowing
+[28:13] because I don't think we've seen AI this fast
+[28:15] in a long time.
+[28:17] All right.
+[28:18] Can't wait to play with it.
+[28:19] Thanks everyone for your time.
+[28:20] Ryan, you're a legend
+[28:20] and I'll see you next time.
+[28:23] See ya.

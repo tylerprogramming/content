@@ -1,0 +1,116 @@
+Query: Review the most recent commit on tylerprogramming/skoolos using the 
+code-review skill. Fetch it with gh. File and line for every finding, quote the 
+code. Lead with the one finding that matters. Do not post anything to GitHub.
+Initializing agent...
+────────────────────────────────────────
+
+  ┊ 📚 skill     code-review  0.0s
+  ┊ 📚 skill     github  0.0s
+  ┊ 📚 skill     github → references/code-review.md  0.0s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Checking authentication status**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 💻 $         gh auth status + 1 command  1.0s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Fetching commit details**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 💻 $         gh api repos/tylerprogramming/skoolos/commits/a6a45479540014ef52e5364ecc9c36322daa06a1 --jq '{sha,stats,files:[.files[]|{filename,status,additions,deletions,patch}]}'  0.7s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Checking local repository**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 💻 $         pwd + 3 commands  0.2s [exit 128]
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Preparing repository contents**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 💻 $         gh repo clone tylerprogramming/skoolos /tmp/skoolos-review-a6a4547 -- --filter=blob:none + 2 commands  3.4s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Reading files and tests**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 📖 read      seed_todos.py  0.0s
+  ┊ 📖 read      page.js L145-314  0.0s
+  ┊ 📖 read      shot.py  0.0s
+  ┊ 🔎 grep      dashboard_todos|def delete\(|def select\(  0.1s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Checking markup and API**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 📖 read      db.py L100-154  0.0s
+  ┊ 📖 read      db.py L275-314  0.0s
+  ┊ 📖 read      route.js  0.0s
+  ┊ 🔎 grep      todoRows|auth/confirm|would_expire|seed_customer\(  0.0s
+  ┊ 🔎 find      *confirm*  0.0s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Checking shot_mock route**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 📖 read      route.js  0.0s
+  ┊ 📖 read      shot_mock.py  0.0s
+  ┊ 🔎 grep      function Checklist|export default function Checklist|initial.*done_at  0.0s
+  ┊ 📖 read      db.py L150-239  0.0s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Checking schema index**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 📖 read      checklist.js  0.0s
+  ┊ 🔎 grep      create table.*dashboard_todos|dashboard_todos.*index|dashboard_todos.*policy|source.*auto  0.1s
+  ┊ 🔎 grep      todo_rules|seed_todos|dashboard_todos  0.0s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Checking task visibility bug**
+
+**Checking index performance**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 💻 $         python3 -m unittest discover -s tests -p 'todo_rules_test.py' -v + 1 command  0.5s [exit 1]
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Rerunning commands, checking scripts**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 📖 read      confirm.test.mjs  0.0s
+  ┊ 📖 read      package.json  0.0s
+  ┊ 📖 read      todo_rules_test.py  0.0s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Checking PYTHONPATH/node alias-hook**
+└──────────────────────────────────────────────────────────────────────────────┘
+  ┊ 💻 $         PYTHONPATH=worker python3 -m unittest discover -s tests -p 'todo_rules_test.py' -v + 1 command  0.3s
+
+┌─ Reasoning ──────────────────────────────────────────────────────────────────┐
+**Checking stale-delete race**
+└──────────────────────────────────────────────────────────────────────────────┘
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+The main issue is that the new 20-row limit can hide unfinished tasks the owner added.
+
+Commit a6a4547, “todos: a day's list belongs to that day”
+https://github.com/tylerprogramming/skoolos/commit/a6a45479540014ef52e5364ecc9c36322daa06a1
+
+- app/dashboard/page.js:212 — Warning. The comment says open rows are “whatever is genuinely outstanding,” but the query stops at 20:
+  .order("created_at", { ascending: false }).limit(20)
+  An owner with more than 20 open items cannot see or act on the older ones from this checklist. Fix: paginate open items or provide another way to reach the rest.
+
+- worker/seed_todos.py:150-151 — Warning. The worker selects unticked stale rows, then deletes by ID alone:
+  for row in stale:
+      db.delete("dashboard_todos", id=f"eq.{row['id']}")
+  If the owner ticks one between the read and delete, the worker deletes a completed row that the change says should remain as history. Fix: make the delete conditional on done_at still being null, and use the affected-row count for expired.
+
+Verified: the 10 todo-rules tests and 5 auth-confirm tests pass locally. Neither test set covers the new deletion path. Nothing was posted to GitHub.
+
+REQUEST_CHANGES
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Resume this session with:
+  hermes --resume 20260923_192508_4d52e2 -p sol
+  hermes -c "Review latest tylerprogramming/skoolos commit #2" -p sol
+
+Session:        20260923_192508_4d52e2
+Title:          Review latest tylerprogramming/skoolos commit #2
+Duration:       1m 25s
+Messages:       44 (1 user, 42 tool calls)
+real 86.91
+user 3.83
+sys 2.00

@@ -1,224 +1,180 @@
-**⚠️ UPDATED 2026-08-31 (v3):** the script now runs ~13 min, not ~10. Two changes: a new **"what this actually is, and why you'd run one"** segment at 1:00-2:30 (it was cut in v2, it is back and it is what makes the rest land), and **memory promoted to the hero beat** at 4:00-6:15 with the editable markdown file as the money shot. Timings below may still read v2 - trust `script.md`.
+# Filming guide, video 057
 
-# Filming Guide — Set Up Hermes Agent in 10 Minutes
+The do-this, click-that version of `script.md`. You should be able to film from this without reading the script.
 
-The do-this / click-that version. Follow it top to bottom while recording. Target ~10 min finished.
+**Runtime target 30:00, hard ceiling 33:00.** The 35 to 60 minute band is the measured dead zone. If you are at 31 when you stop, you are fine. If you are at 36, you cut, you do not publish it long.
 
-This is the **Hermes** setup/explainer video - its own thing. Do NOT frame it as "Build Your First AI Agent in 5 Steps" (that is the format of video 050). Keep it clearly the Hermes video: hook + montage, then the 3 features (memory / skills / schedule), then local + where it fits.
+---
+
+## Verify before you roll
+
+Three things in the script are NOT verified on this machine. Check each one the morning you film. If it fails, use the fallback in the same row and cut the matching promise from the hook.
+
+| # | Unverified claim | Check it like this | Fallback if it fails |
+|---|---|---|---|
+| 1 | A bot-to-bot handoff completes end to end and the reply lands | From Researcher's Bot Chat, send a trivial handoff to @packager and wait for the reply to appear. STATE.md says "sent, reply landing not yet eyeballed" and that is still where it stands. | Show the handoff being sent and Packager's files appearing. Cut the PR and the Slack ping. |
+| 2 | Coder opens a real PR on tylerprogramming/content | Dry run it the day before against a scratch branch. `gh auth status` is good (tylerprogramming, ssh) but an agent opening a PR unattended has not been filmed. | Coder reviews the newest commit and posts the verdict to Slack. That is verified and it still lands the three-surface story, minus GitHub. |
+| 3 | The Slack ping arrives from Coder specifically | Run the dry run all the way to the phone. | Use the 8am card you already have. Say it is a scheduled job, not the handoff. |
+
+Also worth a look before you roll:
+
+- `hermes -p coder cron list` and confirm the last run still says `ok`. Yesterday it was `ok` at 21:05 and it was 15 minutes late on the morning run. If it is late again on camera, that is fine, say nothing.
+- `hermes config get auxiliary.background_review` and read what comes back. The script says gemma4:e4b. If it changed, narrate the screen, not the script.
+- `ollama list`. The script says `qwen3.8:27b-q8_0` and `gemma4:e4b`. Use the real tags.
+- **`coder-reviewer` is a fourth profile and it is a near-duplicate of `coder`.** Either delete it or hide it (right-click the row, Hide Bot) before you shoot the roster. Two bots with the same job in the roster is the kind of thing the comments will notice.
+
+---
 
 ## Pre-recording setup
-- [ ] **Fresh machine state.** Uninstall or move your existing `~/.hermes` folder aside so the install + first-run looks clean on camera (`mv ~/.hermes ~/.hermes.bak`). Restore after.
-- [ ] Have a **second, already-configured Hermes** ready (real memory, a couple skills, a cron job, a Discord/Telegram gateway) to cut to for the "remembers last week" and "daily brief arrives" moments - do not try to create weeks of history live. Tina does exactly this.
-- [ ] **Host that second Hermes on an always-on box** - ideally a cheap VPS you can SSH into on camera (or a Mac mini left on). This makes the "runs while the laptop is closed" claim real and gives you the VPS shot for Feature 3. Have the SSH session / provider dashboard ready in a tab.
-- [ ] **Wire the real workflows on that VPS Hermes so the cutaways are genuine, not staged.** Tyler is wiring the **YouTube Data API** (comments + analytics); `yt-dlp` also works read-only as a fallback. Have these running before you film:
-  1. Morning brief to Telegram: channel views + top video (YouTube Analytics/Data API, or yt-dlp view counts).
-  2. Summarize new YouTube comments each morning + draft replies to Discord (API to read; the LLM drafts).
-  3. **Competitor watch** (the LIVE cron demo): ping Telegram when a named channel uploads (API or `yt-dlp --flat-playlist`, diff against last seen).
-  4. **/next-video** skill: reads your last ~20 uploads + 2-3 competitors' recent top videos, returns 5 scored ideas (the Feature 2 build).
-  5. **/skool-post** skill: drafts a Skool post from a new video (show it in the skills list as "another one I made").
-  6. **github-tests cron** (the developer beat): nightly, pull your repos, run the tests, ping Telegram only on failure. Needs a `GITHUB_TOKEN` set via `hermes config set` and the repos reachable on the VPS.
-  If any one is not wired in time, cut that clip rather than faking it - honesty is the brand.
 
-**Posting boundary (state it plainly in the video):** Hermes only READS and DRAFTS here - it never posts. Publishing/scheduling goes through **Blotato**. Reading comments/analytics uses the YouTube Data API (or yt-dlp); actually posting a reply would need OAuth, and we deliberately keep that in Blotato.
-- [ ] Terminal font bumped up, clean prompt, window sized for 16:9.
-- [ ] Desktop app downloaded but NOT yet opened (film the first open).
-- [ ] A model key ready (Nous Portal or Anthropic/OpenAI) so first-run "say hi" works instantly.
-- [ ] Ollama installed with one small model already pulled (e.g. a Qwen or Llama) so the local demo is fast.
-- [ ] Browser tabs pre-opened: github.com/NousResearch/hermes-agent, hermes-agent.nousresearch.com, ollama.com.
-- [ ] Discord or Telegram open on your phone (or a phone frame on screen) for the gateway shot.
+1. **Clean instance for the install take.** `mv ~/.hermes ~/.hermes.real` before, and move it back after. Do not skip the move-back and do not film the mature machine first.
+2. Terminal font bumped, prompt cleaned up, 16:9 window.
+3. Browser tabs pre-opened: hermes-agent.nousresearch.com, the GitHub repo, ollama.com.
+4. Phone on the desk with Slack open, ready for two shots.
+5. Close anything with a key, a token or a client name in it.
+6. Screen recorder at the same resolution for every take so the seams cut clean.
+
+## Record order
+
+Film out of order. This is the order that works, not the order of the script.
+
+1. **Sections 3 through 5 first, on the clean instance.** Install, hi, memory tier one. This is the only part that needs a virgin machine and you only get one shot at it per reset.
+2. **Restore your real profile.** Then sections 6 through 10 on the mature machine, in script order.
+3. **Section 11 and the camera pieces.** Anywhere.
+4. **The cold open LAST.** You will know by then which of the three unverified beats actually landed, and the hook has to match.
+
+---
+
+## Step by step
+
+### Section 3, install (2:30 to 5:00)
+
+1. Open hermes-agent.nousresearch.com on the clean machine.
+2. Show the curl line on screen, do not run it if you are doing the desktop path.
+   ```
+   curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+   ```
+3. Download for macOS, open it, first launch on camera.
+4. Composer model picker. Show the provider list. Pick what you have.
+5. Type `hi`.
+
+> While it installs: "Same install whether this is your laptop or a five dollar server, and that matters in about twenty minutes when we get to the scheduled jobs."
+
+### Section 4, memory tier one (5:00 to 8:30)
+
+1. Paste the about-me line. It is in the script, use it word for word, every clause pays off later.
+2. Point at "running memory" in the composer.
+3. Type: `Given what you now know about me, what would you not bother explaining to me?`
+4. `open ~/.hermes/memories/` in Finder.
+5. Open USER.md in a text editor. **Count the files out loud on camera.** There are two.
+6. Edit one line, save, then ask the agent something that proves it read the edit.
+
+### Section 5, tier two (8:30 to 11:30)
+
+1. **Say the seam.** "I am switching machines, this one is my real setup." Do not hide the cut.
+2. New session. Type: `Based on everything you know about how I work, draft the outline for my next video. Don't ask me any questions first.`
+3. Let it search. Show the session_search call happening.
+4. Screenshot the result before it scrolls.
+5. Open the context meter and point at memory's share.
+6. Say the caps: about 2,200 characters and about 1,375.
+
+### Section 6, the two settings (11:30 to 13:30)
+
+```
+hermes config set memory.write_approval true
+/memory pending
+hermes config get auxiliary.background_review
+```
+
+Approve one staged write on camera so the queue is not theoretical.
+
+### Section 7, skills (13:30 to 17:00)
+
+1. Capabilities panel, Skills tab. Say "Capabilities" out loud once.
+2. Open the past title-check chat.
+3. Type: `Make this into a skill for checking my titles.`
+4. Open the SKILL.md it wrote, in an editor, and scroll it.
+5. New chat, `/title-check`.
+6. Show `claude-to-hermes-skill-porting`, run it on one real yt- skill from `~/.claude/skills`.
+7. Show the four jarvis skills. One line about drift. Move on.
+
+### Section 8, routines (17:00 to 20:30)
+
+1. Routines pane with the two green ones.
+2. ```
+   hermes -p coder cron list
+   ```
+3. ```
+   hermes -p coder cron run "coder: morning repo check"
+   ```
+4. Cut to Slack, the card landing.
+5. Say the two gotchas: fresh session per run, credentials by command not by chat.
+6. ```
+   hermes config set GITHUB_TOKEN <dummy>
+   ```
+   **Dummy value or blur it. Never a real token on screen.**
+
+### Section 9, local (20:30 to 23:00)
+
+```
+ollama list
+ollama launch hermes
+```
+
+Then the offline tool test: "list the files in this folder, read the README, and tell me what this project is." It has to call tools, not just talk.
+
+This is the first section to cut if you are running long.
+
+### Section 10, bots (23:00 to 29:00)
+
+1. Bots tab. Roster with avatars. (`coder-reviewer` hidden or deleted first.)
+2. `ls ~/.hermes/profiles/` so they see a bot is a folder.
+3. New Agent on camera. Name, Title, Description.
+4. CLI equivalent:
+   ```
+   hermes profile create packager --description "Turns research and a reference transcript into a full video package."
+   ```
+5. Open Researcher's Bot Chat. Send the handoff:
+   ```
+   @packager build the package for video 058 from the research you already have. When it's done, ask @coder to open a PR with it on tylerprogramming/content and post the link to Slack.
+   ```
+6. **Cut away while it works.** Do not film a spinner. Come back to: Packager's files, then the PR on GitHub, then the phone.
+7. Say the limit: desktop is where you talk to a bot, Slack is where bots talk to you.
+
+---
+
+## Dead-air fillers
+
+Have these ready, you will need them at least twice.
+
+- While the install runs: the same install works on a five dollar server, and that is the point of the scheduled jobs later.
+- While a model loads: why a tool-capable model matters, and that a chat-only model will look like it is working and then do nothing.
+- While the handoff runs: a bot is just a folder, so backing one up is copying a directory.
+- While a skill is being written: skills are markdown on both sides, which is why the port works at all.
 
 ## Timing cheat sheet
-| Section | Target | Running |
-|---|---:|---:|
-| Hook | 0:30 | 0:30 |
-| What it does (montage - FILM LAST) | 0:30 | 1:00 |
-| Install + model | 1:30 | 2:30 |
-| Feature 1: memory | 1:30 | 4:00 |
-| Feature 2: skills (+ show the SKILL.md file) | 1:45 | 5:45 |
-| Feature 3: cron + credentials + hosting (+ show the job) | 2:45 | 8:30 |
-| Local + free | 1:00 | 9:30 |
-| Fits with Claude Code + CTA | 1:00 | 10:30 |
 
-**Note:** now ~10:30. Still fine (the 10-35 min band is neutral), but if you want it under 10, trim the montage to 2 results or tighten the Local segment. Feature 3 is the densest section - consider letting it breathe and cutting elsewhere.
+| Section | In | Out | Budget | Cut first? |
+|---|---|---|---|---|
+| Cold open | 0:00 | 0:40 | 0:40 | no |
+| What it is | 0:40 | 2:00 | 1:20 | trim to 1:00 |
+| Host | 2:00 | 2:30 | 0:30 | no |
+| Install | 2:30 | 5:00 | 2:30 | no |
+| Memory tier 1 | 5:00 | 8:30 | 3:30 | no, this is the hero |
+| Memory tier 2 | 8:30 | 11:30 | 3:00 | no |
+| Two settings | 11:30 | 13:30 | 2:00 | trim to 1:30 |
+| Skills | 13:30 | 17:00 | 3:30 | no |
+| Routines | 17:00 | 20:30 | 3:30 | trim to 3:00 |
+| Local | 20:30 | 23:00 | 2:30 | **cut this one first** |
+| Bots | 23:00 | 29:00 | 6:00 | no, this is the payoff |
+| Close | 29:00 | 30:00 | 1:00 | no |
 
-## Record order (important)
-Do NOT film top to bottom. Film in two passes:
+If you are over at 33, the order to cut is: section 9 whole, then section 6 down to the one `write_approval` command, then the porting beat in section 7. Never cut section 5 or section 10.
 
-1. **Main take (record live, in order):** Install → Feature 1 → Feature 2 → Feature 3 → Local → Fits/CTA. This is the substance and it is where the camera actually rolls first. Record the hook voiceover too, but keep it loose - you can retime it after you see the montage.
-2. **Montage + cutaways (film LAST, from your mature Hermes on the VPS):** the three "look what it does" results - overnight brief on the phone, "what were we building last week" recall, one-prompt app build - plus any b-roll (the .hermes folder, the skill file being written, the VPS terminal). Assemble the 0:30-1:00 montage in the edit.
+## On camera
 
-Why: the montage needs a lived-in agent with real history, real skills, a real cron job, and a real gateway. You cannot fake weeks of memory during a clean install take, so capture those results separately and cut them into the cold open.
-
----
-
-## Step 1 — Hook (to 0:30)
-Talk to camera or over the screen. Show your working Hermes + the desktop app side by side.
-> "If you already use Claude Code, you are going to get this one fast. Hermes is the other half. Free, open source, runs on your own server, remembers everything, writes its own skills, keeps going while your laptop is closed. Before I set it up, look at what that actually gets you."
-Land the three-part promise, then hard cut to the montage. Under 30 seconds, no intro.
-
-## Step 2 — Montage: "look what it does" (to 1:00) — FILM LAST
-[NOTE] This is a b-roll montage cut in during the edit, captured AFTER the main take from your mature Hermes on the VPS. Three fast, real results, tight voiceover:
-- [SHOW] a morning brief in Telegram on your phone, ~7am - channel views + top video → "7am, already on my phone. My numbers and my top video, pulled while I slept."
-- [SHOW] a Discord channel / terminal showing new YouTube comments summarized with draft replies → "Overnight it read my new comments, summarized them, drafted the replies. I just approve."
-- [SHOW] a phone ping "Heads up: [competitor] just posted" → "The second a competitor I watch posted, it pinged me."
-- [SHOW] quick VPS terminal shot → "No laptop babysitting. Runs on a five dollar server all day."
-Close: "Here is the whole setup in ten minutes." Keep it under 30 seconds, energy up. The montage IS the sell.
-
-## Step 3 — Install (to 2:30) — LIVE RECORDING STARTS HERE
-Show BOTH paths quickly, let viewer pick.
-
-Terminal:
-```
-curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
-```
-> "One command. Paste it, walk through the onboarding."
-
-Desktop: download for your OS, open it (film the first open), clean chat UI.
-
-Then the model choice:
-> "It drives on anything. Best driver is a frontier model through Nous Portal, but you do not have to pay per token - I will point it at a free local model in a minute. For now, connect what you have and say hi."
-[SHOW] type `hi`, get a reply.
-
-**Dead-air filler while it installs:** "Same install whether this is your laptop or a five dollar VPS - that matters later when we make it run twenty four seven."
-
-## Step 4 — Feature 1: Memory (to 4:00)
-[SHOW] Type:
-```
-Here is a bit about me, please remember this: I'm a software engineer building AI content. Prefer concise answers.
-```
-Point out "running memory."
-[SHOW] Finder → the `.hermes` folder → open `memory/user.md` in a text editor. Plain markdown.
-> "You can literally read what your agent knows about you."
-[CUT to the pre-built Hermes] New session:
-```
-Remind me what we talked about earlier this week.
-```
-It runs session search, pulls it back.
-> "That is the thing Claude Code cannot do out of the box."
-
-## Step 5 — Feature 2: Skills (to 5:45)
-[SHOW] skills/tools panel, scroll pre-built skills.
-Give it a real task worth turning into a skill - the "what's working" idea finder:
-```
-Look at my last 20 YouTube uploads and the recent top videos from these three channels: [competitor 1], [competitor 2], [competitor 3]. Find the patterns in what is getting views, then give me 5 new video ideas I could film, each scored 1 to 10 with a one line reason.
-```
-Then:
-```
-Make this into a skill for finding my next video.
-```
-**Now SHOW the mechanism (this is the teaching beat).** Open the file it just wrote:
-```
-~/.hermes/skills/next-video/SKILL.md
-```
-[SHOW] the SKILL.md open in a text editor - point at the description + the step-by-step "how to use."
-> "That is the whole skill. A plain markdown file in a skills folder. It wrote it itself with a built-in skill tool. You never touched a config."
-[SHOW] call it:
-```
-/next-video
-```
-> "I did the same move to make a skill that drafts my Skool post from a new video, and a couple others. That is the learning loop - do this with everything you repeat."
-[NOTE] Pre-build the `/skool-post` skill too so it appears in the skills list as "another one I made." The /next-video skill needs read access to your uploads + the competitor channels (YouTube Data API or yt-dlp).
-
-[NOTE] Mechanism facts to keep accurate: skills live at `~/.hermes/skills/<name>/SKILL.md` (can have scripts/ references/ templates/ subfolders); the agent authors them via its `skill_manage` tool; `/learn` is the fast path to make one without doing the task first. Same open standard as Claude Code skills.
-
-## Step 6 — Feature 3: Cron + credentials + hosting (to 8:30)
-[SHOW] create a scheduled task in plain English (this is the LIVE demo - competitor watch):
-```
-Every hour, check these channels for new uploads: [competitor 1], [competitor 2]. The moment one posts, send me the title and link on Telegram.
-```
-**Now SHOW what it created (teaching beat).** List the jobs, open the new one:
-```
-hermes cron list
-```
-[SHOW] the job - point at the three parts: schedule, prompt, delivery target.
-> "A cron job is just three things: a schedule, a prompt, and where to deliver it. Every hour, this prompt, delivered to Telegram."
-Show it can be made by hand too:
-```
-hermes cron create "0 * * * *" "<self-contained prompt>" --name "competitor-watch" --deliver telegram
-```
-Say the two things people get wrong:
-> "Every run is a fresh session with no memory of last time, so the prompt has to stand on its own. And Hermes validates the job before it runs - the model key, the skills it needs, and that it can reach your Telegram - so it fails now, not silently."
-Trigger a test on camera so the payoff is live, not just claimed:
-```
-hermes cron run "competitor-watch"
-```
-[SHOW] a ping arriving on Telegram - "[competitor] just posted: <title> <link>".
-
-**Safe-credential beat (mirror Nate's GitHub move).** Any job that touches a service needs a key, and it never goes in the chat:
-```
-hermes config set GITHUB_TOKEN <paste your token>
-```
-> "You never paste keys in the chat. One command drops it into the .env instead. Same move for any service, YouTube included."
-Then the developer cron (leans your SWE authority):
-> "As a software engineer, the one I lean on most is a GitHub cron - every night it pulls my repos, runs the tests, and pings me on Telegram only if something broke. Alongside that, one summarizes my new YouTube comments and drafts replies in Discord, one sends my channel numbers each morning. It only reads and drafts, it never posts - publishing goes through Blotato."
-
-[NOTE] Mechanism facts to keep accurate: scheduler runs as a background process (`hermes cron start`), the gateway ticks it every 60s, jobs run in fresh isolated sessions, a lock at `~/.hermes/cron/.tick.lock` prevents double-runs, output saved to `~/.hermes/cron/output/` and delivered to the gateway target. Then do the honest hosting beat below.
-
-**Hosting honesty beat (still in this section):**
-
-Then be honest about hosting (this is the part people get wrong):
-> "One honest thing. Hermes runs as a background process, so it only works while the machine it lives on is awake. Close your laptop lid and it sleeps. So you do not run this on your laptop. You put it on a host that is always on."
-[SHOW] SSH into the cheap VPS (or the provider dashboard) with Hermes running there.
-> "A five dollar VPS, on twenty four seven by design. Install Hermes there once, and your laptop is just a remote. Overnight it briefs you, checks your systems, drafts replies, laptop closed the whole time. That is the piece Claude Code does not try to do."
-
-## Step 7 — Local + free (to 9:30) — show BOTH terminal and desktop
-Ollama is already installed. Show the flow both ways.
-
-**1. Pull a tool-capable model** (chat-only models can't run agents):
-```
-ollama pull qwen3
-```
-(Docs example is `gemma4:31b` but it's heavy - use a lighter tool-capable model like `qwen3` for a smooth on-camera demo; pick a size your machine can run.)
-
-**2. The gotcha everyone misses - set the context window** (Ollama doesn't report one; agents need >=64k):
-```
-OLLAMA_CONTEXT_LENGTH=64000 ollama serve
-```
-
-**3a. Connect - fast path** (one command, from Ollama's launch integrations):
-```
-ollama launch hermes --model qwen3.8
-```
-- `qwen3.8` = the Qwen3 8B model (small, fast - good first local run). Ollama offers the same `ollama launch <app> --model ...` for Claude Code, OpenCode, OpenClaw too; it just wires each tool to your local model + endpoint.
-- **Separate terminal?** Not for launch itself - the Ollama app runs the server in the background, and `ollama launch hermes ...` becomes your Hermes session in that one terminal. You only need a 2nd terminal if you set context the manual way (`OLLAMA_CONTEXT_LENGTH=64000 ollama serve` occupies its own terminal). Cleaner: set it persistently first so one terminal is enough:
-```
-launchctl setenv OLLAMA_CONTEXT_LENGTH 64000   # then quit + reopen the Ollama app
-ollama launch hermes --model qwen3.8
-```
-
-**3b. Connect - manual path** (terminal):
-```
-hermes model
-```
-> Choose **custom endpoint**, enter `http://127.0.0.1:11434/v1`, leave the API key **blank**, confirm the detected model.
-(Slow inference? add `HERMES_API_TIMEOUT=1800` to `~/.hermes/.env`.)
-
-**3c. Connect - desktop app** (so viewers can use the app too):
-[SHOW] Settings > Models > **Edit models** > **Add provider** > custom / OpenAI-compatible > base URL `http://127.0.0.1:11434/v1` > leave key blank > select your model.
-(Menu labels mirror the terminal config; exact wording may shift by version - this is the flow Tina uses in her walkthrough.)
-
-**4. Prove it uses tools, not just chats:**
-```
-hermes chat -q "List the files here, read README.md, and tell me the project name."
-```
-> "Model on your machine, memory on your machine, nothing leaves. Private and free."
-
-[NOTE] Keep port 11434 off the public internet. Bigger models = better tool use but need real RAM/VRAM (often well over 8GB).
-
-## Step 8 — Fits with Claude Code + CTA (to 10:30)
-[SHOW] split - Claude Code in a repo / Hermes running a scheduled task.
-> "This is not Hermes versus Claude Code. I run both. Claude Code is my specialist. Hermes is my always-on generalist."
-Tease the next two videos (how I use it daily / 100% private local). One CTA to the community for the setup notes + commands.
-
----
-
-## On-camera tips
-- If a command errors on camera, keep it - narrate the fix. "It remembers" and "it fixes itself" are the brand; a real recovery sells it.
-- Energy: calm and precise beats hype (Tyler's voice). Let the cron/gateway "aha" breathe.
-- Capture clean b-roll of: the `.hermes` folder, the skill file being written, the Discord brief landing. Those are the three screenshot moments.
-- Do not imply you are not a developer - lean into the engineer POV ("here is how I think about it as a software engineer").
-
-## Files to have open / ready
-- A throwaway business idea to evaluate (so Feature 2 is instant).
-- Your pre-built Hermes with visible memory + at least one prior session about a named topic to "remember."
-- A phone frame with Discord/Telegram for the brief.
+- "So" to open a thought is your normal speech, keep it.
+- Short sentences. You run long when you explain twice.
+- Hedge where you are unsure. The drift line in section 7 and the Slack limit in section 10 are the two places the video earns trust.
+- No em dashes means nothing on screen either, including slides and overlays.
+- You are a software engineer with eight years in. Nothing in this script should sound like an apology for that.

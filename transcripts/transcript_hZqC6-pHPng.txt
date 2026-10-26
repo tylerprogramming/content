@@ -1,0 +1,75 @@
+[00:00] Last night, I was asleep, but my AI agent was not. It went through my whole inbox, and it closed a $6,000 client by the time I woke up. I didn't have to
+[00:11] lift a finger. Here's how. I run two AI tools together, and on their own, each is just a tool. Clot Code is the best builder I've ever used. Hermes is the
+[00:22] best operator. But put them together and they stop being tools and start being a team that works while you sleep. That's the cheat code. And the real secret
+[00:33] isn't either one of these tools. It's that they share one brain. What I tell one, the other one just knows. One builds the machine, the other runs it forever. So in this video, I'll show you
+[00:46] the whole thing. How to think about it the exact way I use both across my real business. how to give them one shared memory so they work as a team and how
+[00:57] the whole thing gets better on its own. Let's get started. Here's the one idea that makes all of this click. These two tools do opposite jobs. Clot code is a
+[01:08] builder. It sits with you at your keyboard and it makes things an app or a script or an agent. It works in bursts while you drive it. Hermes is an
+[01:20] operator. It does not sit with you. It lives on a server or on your own machine. It runs on a schedule and you talk to it from your phone and it works
+[01:31] in the background forever. And I know what you're thinking. Clot code can do what Hermes does and Hermes can do what Clot Code does. And although yes, they can, but they're not designed to. The
+[01:45] builder is amazing at building the machine once, while the operator is amazing at running that machine every single day without you. That is the idea that I want you to take away from this
+[01:58] video. You build it once with clot code and you hand it to Hermes to run forever. The honest catch is that neither one is magical on their own. Well, they kind of are, but clot code
+[02:11] forgets about your project the moment you close it. And Hermes isn't as good a coder as it is an operator. However, both of them together are powerful. Let me show you right now. Okay, enough
+[02:24] theory. Let me just show you how I really use this. This is my actual business running on this exact setup right now. And the pattern is always the
+[02:34] same. I build the thing with cloud code, the the website, the backend, the whole infrastructure. Then I run the actual business on top of it with Hermes. One
+[02:45] quick note here on uh the builder part. I use cloth code because honestly I find it the best there is at coding. But if you already pay for say chachi pt, you
+[02:57] already have codeex and it does the same builder job. So you could run this entire stack on just codeex and Hermes and never pay for a single new thing. Cloth Code is my personal pick, but
+[03:10] Codeex is genuinely great as well. Use whichever one you already have. Okay, so let me show you three real examples from my business. The first one is my
+[03:20] personal website that I've just released this week, charbell.com. You can sign up in the description down below. This is where I'll be sharing all the prompts, all the links, all the
+[03:30] tools I share with you throughout every video. But back to what I was talking about. Clot code built the entire thing for me. But building it, some people
+[03:40] might say, was the easy part. The real work is everything that happens after that. And that is Hermes job. It watches my signups. It keeps an eye on my email
+[03:51] open rates. And the second a number starts slipping, it pings me and tells Clot Code exactly what to change. Clot Code built the site once. Hermes runs it
+[04:02] forever. The second one is my content. I had Claw Code build me a video editing skill. One that edits exactly the way I want a video edited. I mean, this video
+[04:13] you're watching right now is edited by that skill. But here's where it gets good. Hermes doesn't just run it. It watches how the video actually does. And
+[04:23] I mean, it really watches not just the the views. It looks at the retention second by second, where people dropped off, which cut lost them, where did I
+[04:34] drag on or yap too much. Some people might say I yap a little too much, but that's beside the point. And it doesn't stop at the editing either. It looks at how I talk, where I lost my energy,
+[04:45] where I rambled. Then it hands me a brief telling me exactly what to fix on the next video. And the best part about this is it feeds that same brief back to Cloth code. So the editing skill itself
+[04:58] gets better every single time. So I'm not just making one good video. Every video teaches the whole system how to make the next ones even better. And the
+[05:08] third one I want to show you. So I really paint this picture clear. My actual business. This is the big one. I use cloth code to build the services we sell. It builds the websites or the
+[05:20] systems or the whole product behind them. Like founderfunnel.com. That's the builder doing its job. And then Hermes helps me run the operations and stay on top of everything. It keeps
+[05:33] a pulse on every single client. It catches the stuff that would normally slip through the cracks. And it flags a problem before it ever becomes one. Cloth code builds the service. Hermes
+[05:45] keeps it alive and helps me keep every single client happy. Do you see the pattern yet? It's the same move every single time. Claude Code builds it.
+[05:55] Hermes runs it. That's the whole game. Oh, and the exact setup behind all of this, some of the prompts I use to build these agents, plus my full template. It's free. It's in the first link inside
+[06:07] the description below. It's the fastest way to skip the month this took me to figure it out. The honest catch is that none of these were perfect on day one. I built the first version. I let Hermes
+[06:19] run it. I watched what broke and fixed it. or rather asked it to fix itself. But that's beside the point. You don't set this up flawlessly overnight and just let it run forever. You start with
+[06:31] one and you add the next when the first one actually works. But there's still one piece I have not shown you yet. The thing that makes these two feel like one system instead of two tools I'm juggling
+[06:44] between. And it's the piece that took me way too long to figure out. All right, here's the piece that turns two separate tools into one system. Because by default, these two share nothing in
+[06:56] common. You tell Hermes something on your phone and Clot Code has no clue what you just talked to Hermes about. You explain a whole project to Clot Code and Hermes never gets to hear about it
+[07:07] because these two tools have two totally separate brains. So, how do you connect two separate brains? It's simple. You give them one. The fix is shared memory
+[07:19] layers. Picture one notebook both tools can write in and read from. Hermes can write something down. Clot code can then read it back later. And it works both
+[07:30] ways. And it's just a connector and it's additive, meaning it doesn't replace or break your clouds or your Hermes current memory. It adds on top of its existing
+[07:41] memory system. It's also easy to set up. You point both tools at the same memory account under the same ID and then you can connect it to clot code by clicking
+[07:52] on the little plus at the bottom left then on connectors then add connections or if you're in the terminal you can paste in these two prompts and you can connect it to Hermes by asking Hermes to
+[08:04] connect to it and handing it its API key. So, I personally use Memo because it's fast, it's free to start, and you can have it running easily, but it's not
+[08:15] the only option there is. I honestly picked it because it was the first one I saw and tried back when I was researching shared memory options. You can use Zep if you care about how facts
+[08:27] change over time. It doesn't just store what's true, it stores what was true and when. You have Leta if you want to see everything it remembers. The agent edits
+[08:37] its own memory out in the open, so every node is yours to audit. And you have super memory if you want dead simple and fully local memory. It runs on your own
+[08:48] machine, so nothing leaves your workspace. You just pick one, connect both tools, and give them the same ID. All right, watch what happens. I'm going
+[08:57] to tell Claude something none of them know. And then I'm going to ask Hermes to see if that information and that memory has carried over. So, my favorite food is I'm going to pick something
+[09:10] completely random, uh, just so you know, it can't just guess it out of nowhere, is fish and chips. And my second favorite is truffle pizza. I'm just
+[09:21] going to go with these. They're very random. I don't want Hermes to have the ability to just guess random food items. So, I gave it specific random food items. I'm going to let it compute, and
+[09:31] then I'm going to go over to Hermes. There you go. noted and saved to memory. Fish and chips first, truffle pizza second. All right. And now we're going to go to Hermes and ask it, "What are my
+[09:42] top two favorite foods?" Hermes is crazy. And that right there is the difference between two chat bots and one single team. They're not just passing
+[09:52] tasks back and forth anymore. They actually share what they know together. You just set up the shared memory system once and then you stop repeating yourself forever. And a shared memory is
+[10:04] exactly what makes this last beast work because once they both remember, they can both learn. This is the part that honestly feels a little bit alive. When
+[10:15] Hermes runs your system and something goes wrong, it doesn't just fail and move on. For example, if a client email slips or a page breaks or say a number
+[10:26] drops, it looks at what happened. It figures out why and it rewrites its own instructions. So every time you correct it, that correction becomes a permanent
+[10:37] skill. The system you're running in a month is way better than the one you launched today. And you didn't have to rebuild it. It improves itself over time. That's why I love pairing Hermes
+[10:49] so much in this setup. It's literally designed to improve on its own over time. And when a system finally needs a real upgrade or a new feature, you can go back to Clot Code, the builder, and
+[11:01] upgrade the machine and hand it right back to Hermes. That's the loop. You build with clot code, you run with Hermes. It corrects itself over time, and it keeps those lessons forever. All
+[11:13] right, before I let you go, let me hand you the stuff that took me way too long to learn. Those are the little moves that turn this from a cool idea into something you actually run your business
+[11:25] on. One, build with the expensive model and run with the cheap one. Use your best model in clot code to build the site, the the system, whatever it is.
+[11:36] Then let Hermes run it dayto-day on a cheap or even a local model. You pay for the genius once, not every single night. Number two, don't have cloth code build
+[11:47] the thing and then figure out the handoff later. Tell it to build so Hermes can run it from the start. Your handoff goes from an afternoon of fiddling to basically instant. Three,
+[11:58] make the system check its own work. Add one line to every job, something along the lines of verify the result before you call it done. That single line kills almost every silent failure I used to
+[12:10] get before. Four, put a gate on anything scary. Tell Hermes it can do anything on its own except, for example, send emails, spend money, or delete
+[12:22] something. For those three, for example, it asks you first. That one rule is what lets you actually trust it with your business while you sleep. And five, you can have Hermes call clot code itself.
+[12:34] So when your system actually needs new code built, your operator can wake up the builder on a schedule. That's when these things stop feeling like tools and
+[12:44] they start feeling like they can manage a business by themselves. If you want to run this and have a codec subscription or use any other models and absolutely want to only use Hermes alone, then I
+[12:56] recommend you set up a specific builder/coder agent or profile and plug your smartest model into that so that Hermes can call when it needs it. That being said, I
+[13:08] included every one of these as copypaste prompts that you can steal and I included all of them inside the free link in the description. So, here's when to reach for what. Building something at
+[13:21] your keyboard, that's cloth code. If you want something running without you, that's Hermes. And if you want real leverage, then you can use both and let them hand the work off to each other.
+[13:32] This is the highest leverage setup I have ever run. One system builds and the other operates and together they hand you an actual team. So, tell me in the
+[13:43] comments, what's the first thing you would hand off? That one job you'd never want to do yourself again. And as always, my full template is free in the description if you want to run mine. If
+[13:55] this video was valuable, then subscribe because I have a ton more content like this coming your way. Oh, and would you look at that? The algorithm gods have decided you're going to enjoy this video
+[14:06] as well. So, if you click it, I'll see you there.

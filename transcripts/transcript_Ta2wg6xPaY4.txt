@@ -1,0 +1,165 @@
+[00:00] Hermes Agent is one of the most powerful AI tools in the world right now, but it has one of the worst beginner problems. You install it, open it, and then
+[00:11] immediately realize you have no idea what you're actually supposed to do with it. Because Hermes does not behave like a normal chatbot. It can live on your
+[00:22] desktop, it can run through Telegram, it can remember how you work, create skills, use tools, schedule jobs, spin up different sub-agents. It can run
+[00:32] different specialist profiles and basically become this AI operating layer around your life and business. That sounds amazing until you are staring at
+[00:44] a blank chat box thinking, "Okay, what now?" So, in this video, I'm going to teach you 95% of what actually matters in Hermes Agent. I'm going to give you
+[00:56] the mental model, the setup, the model choices, the memory system, the skills system, the tools, the scheduled jobs, the sub-agents, the profiles, and the
+[01:08] real workflows people actually install Hermes for. By the end of this video, Hermes should stop feeling like a confusing AI toy and start feeling like a real assistant that can operate your
+[01:20] entire life. Let's get started. The easiest way to understand Hermes is this. ChatGPT is a place you go for answers. Claude, Code, and Codex are
+[01:31] agents usually point at a specific project. Hermes is trying to become the layer that connects AI to your actual work. That means instead of opening a
+[01:42] new chat every single time you need something, Hermes can sit across your tools. It can remember your preferences, use your files, run scheduled work, and talk to you from the places you already
+[01:55] live. For me, that means Telegram, Notion, my daily briefs, my memory wiki, and a bunch of internal business systems that I use every day. The important
+[02:06] thing is that Hermes is not valuable because it gives slightly better answers. Valuable because it can do repeatable work and improve every single time. That is the mental shift. If you
+[02:17] treat Hermes like a chatbot, you will ask it random questions and be disappointed. If you treat Hermes like an operating layer, you start giving it jobs. Research this topic for me every
+[02:29] morning. Turn this process into a skill. Draft responses every morning, but don't send anything until I approve. That is where Hermes starts to click. It is conversation plus memory plus tools plus
+[02:42] scheduling plus workflows. That combination is the product. The next thing that confuses people is where Hermes actually lives. Because there is
+[02:53] Hermes in the terminal. There is Hermes desktop. There is the dashboard. There's Telegram. There are other messaging platforms. And if you're new, that can make it feel like there are five
+[03:04] different products. But there are not. They are different surfaces for the same agent. Here's the simple way to think about it. Hermes desktop is the control
+[03:15] room. This is where I would start if you're new. You can see your sessions, switch models, manage profiles over here, and use Hermes in a way that feels
+[03:27] closer to a normal desktop app. Telegram is the daily assistant surface. Some people might even choose for this to be an iMessage and Discord and WhatsApp or
+[03:38] wherever. This is where Hermes starts feeling different from every other agent. You can send it a voice note while walking. You can message it from your phone. You can have scheduled jobs
+[03:49] show up as a Then the CLI and the dashboard are the power user layer. This is where you configure, inspect, debug, run more advanced workflows. This is where you
+[04:01] can create your own mission control, just like I have over here. You can use commands like Hermes setup, Hermes model, Hermes doctor, so on and so forth. The mistake is thinking you need
+[04:13] to master all of this on day one. You do not. Start with desktop, connect one model, connect Telegram or whatever messaging [music] platform you naturally
+[04:23] already use if you want the phone assistant experience, and run one workflow through that. Once that works, then you can care about the rest. Here
+[04:35] is how to set up Hermes very quickly. You can open Hermes's official website and just press on download. I'm on a Mac, so it shows me download for Mac OS.
+[04:47] For you, if you're on Windows, it should show you download for Windows, or you can even run the command locally inside your terminal. If you have a dedicated spare local machine or device, you can
+[04:58] go to the Hermes agent website, click install there, and download whichever version is compatible with your operating system. Open it and run its installation. Really, it's as simple as
+[05:10] that. If for any reason something doesn't work, you can open a terminal window on your machine and type in bash Hermes doctor. This tells you what is working, what is missing, and whether
+[05:23] your provider, tools, gateway, and environments are healthy. If you don't have a dedicated machine, then you can install Hermes on what we call a cloud server or a VPS. There are a ton of
+[05:36] Hermes VPS providers where you can choose a plan, and they have a one-click install Hermes through them. Then, the next big thing is you'd need to choose
+[05:47] one main model that Hermes would use. Do not overthink this. At the start, pick one strong model that can actually use tools well. We'll dive deeper into model selection in just a minute, so we can,
+[05:58] you know, talk more in depth about that. Then, I would open Hermes Desktop and make sure that I can start a session. Then, I would connect Telegram or whatever messaging platform you already
+[06:08] naturally use if I want Hermes on my phone. Then, I would run one stupidly simple test. Something like, "Create a short daily briefing template for me.
+[06:20] Ask me three questions about what I want included before you write it." That sounds basic, but it tests the most important thing. Can Hermes understand the task, ask for missing context,
+[06:31] create something useful, and preserve the decision trail? The beginner mistake is spending 2 hours on configuration before Hermes has done one useful job. Do not do that. Get one working path
+[06:44] first. One model, one surface, one workflow, then expand. Now, let us talk about the part people mess up constantly, models. Hermes can use a lot of different providers. It can use
+[06:57] OpenRouter, Anthropic, OpenAI, Codex, New Portal, Google, Deep Sea, Kimmy, Gwen, XAI, local endpoints, and so many more. Literally, the sky is the limit
+[07:10] here, or rather, your wallet is the limit here. That flexibility is powerful, but it also creates a trap. The trap is thinking there's one perfect
+[07:20] model for Hermes, because there is not. There are great cheap models if you're just exploring Hermes. There are great cheap models for background work that
+[07:30] Hermes does while you're away, and there are great affordable or expensive models for coding sessions. But, here is the model ladder that I would use. For
+[07:42] serious autonomous work, coding, tool use, and anything where you need reliability, I would start with the strongest model that you can afford. That usually means a top Claude, Sonnet,
+[07:56] or Opus model, a strong OpenAI GPT or Codex model, or whatever the current top agentic model is in your provider list. At the time I'm filming this video,
+[08:08] Hermes can route through providers like OpenAI, Codex, Anthropic, OpenRouter, New Portal, and the live model list changes constantly. So, I'm not going to pretend one model will be the winner
+[08:20] forever. The rule is more important than the name. Use your strongest model when Hermes is changing files, writing code, using tools across multiple steps, or
+[08:31] working on something where failure is expensive. Use cheaper models for summarizing, formatting, extraction, tagging, or routine background work. For example, if Hermes is summarizing a
+[08:43] transcript, I do not need the most expensive model on Earth. I would rather route to something like Gemini, Flash, Deep Sea, Quen, Haiku, GPT Mini, or
+[08:54] another cheap, fast model that is good enough for structured work. For long context research, I would look at models with very large context windows. Claude, GPT, Quen, Kimmi, Deep Sea, they all
+[09:06] have options here depending on your provider. For privacy or learning, local models through Ollama or LM Studio are useful, but you need to be honest about
+[09:16] the trade-off. Local models are great for simple private tasks, experimentations, and workflows where you do not want data leaving your machine. But, if you're asking Hermes to
+[09:27] run a messy, multi-step workflow, a weak local model can waste more time than it saves. So, my practical setup is this. One strong default model for important
+[09:40] work, one cheap fast model for background jobs, one long context model for giant documents and transcript work, one local model if privacy or cost
+[09:51] matters to you, and if you're running Hermes heavily, use fallback providers or credential pools so one account failure does not kill the whole system. Do not ask what is the best model, ask
+[10:03] what job is this model supposed to be good at doing. Two quick hacks I have here for you. Hack number one is there are a ton of subscription services like
+[10:14] ChatGPT's Codex subscription where for $20 a month or $100 a month, you can plug your AI subscription into Hermes. So you don't have to pay for anything
+[10:25] you weren't already paying for. And hack number two, you can literally tell Hermes, "Use this model when I'm doing heavy work like coding, tool calls, so on and so forth. Use this cheaper model
+[10:37] when doing cron jobs and background work." You can tell Hermes when you'd like to use which model, and it will do the setting up for you. There's no need for you to be or get technical anywhere.
+[10:49] Now, let's dive into memory. Now we get to the feature that makes Hermes feel different, memory. But I want to be very clear about something. Memory is not
+[11:00] magic, and memory is definitely not let the AI remember every random thing forever and hope it becomes smarter. This is how you create a haunted
+[11:10] assistant. Hermes has built-in memory that is intentionally small and curated. There are two core files Hermes uses for memory. user.md is for who you are,
+[11:23] preferences, communication style, expectations, things like the assistant should know about you. And memory.md is for the agent's notes, environment
+[11:33] facts, project conventions, lessons learned, workflows, things that help it operate better every day. These are injected into the system prompt at
+[11:43] the start of every session you have with Hermes, which means they are fast and always available. But, they are limited on purpose. That is good if everything
+[11:54] is memory, nothing is memory. The rule is simple. Memory should save facts that stop you from repeating yourself, not task progress, not temporary to-do list,
+[12:06] not every random conversation. Good memory is something like the following. User wants compact Telegram replies with proof first. Bad memory is on Tuesday,
+[12:18] we talked about maybe making a video someday and the user seemed interested. If it is a stable preference or environment fact, memory. If it is a procedure, skill. If it is a long
+[12:30] research note, memory wiki. If it is a past conversation, then session search. That distinction is what stops memory from becoming slot. Now, if you want to go beyond built-in memory, Hermes now
+[12:42] supports external memory providers. This is where things get interesting. Built-in memory stays active, but you can add on external provider for deeper recall, semantic search, knowledge
+[12:54] graphs, and cross-session context. The command you could run on your terminal is bash Hermes memory setup, or you can literally ask it inside your chat to
+[13:06] help you set that up. And you can check what is active, what isn't. Hermes supports providers like Honcho, Memo, Hindsight, Supermemory, and so many
+[13:17] more. Only one external provider can be active at any point in time, and it is additive. It does not replace the built-in memory, which is great. Here is how I would think about memory
+[13:29] providers. Memo is interesting if you want a dedicated memory layer for personalized AI agents. It focuses on extracting, storing, linking, and
+[13:39] retrieving memories efficiently. Their newer memory system uses entity linking, keyword search, and temporal reasoning, which is exactly the kind of thing you
+[13:49] want when an agent needs to remember people, projects, or and different changes over time. Honcho is interesting if you want user modeling and
+[14:00] multi-agent [music] alignment. Basically, the agent builds a richer model of you [music] and the relationship across sessions. Hindsight is interesting if you care about
+[14:12] knowledge graphs and entity relationships. That can be useful when you want the agent to connect people, projects, companies, and different decisions. And super memory and similar
+[14:23] engines are useful if you want a larger memory and context layer that can scale beyond a few curated notes. The important part here is not the
+[14:33] provider's name. The important part is the memory's architecture. I would use built-in memory for the tiny set of facts Hermes always needs. I would use
+[14:43] an external provider like Memo or Honcho for richer personal and project recall. I would use a wiki and notes for source material, long research,
+[14:54] scripts, and anything you want to inspect manually later on. And I would use the session search when I need to find something we discussed before, but I do not want it permanently injected
+[15:05] into every prompt. That is the memory stack: tiny curated memory, external semantic memory, searchable session history, and human-readable wiki. This
+[15:18] is how you make your Hermes actually compound. Now, let's get into something I personally love a lot, skills. The next piece of the puzzle is skills. This
+[15:30] is where Hermes gets really powerful and also where people completely misunderstand it. Memory is for facts, skills are for procedures. If I correct
+[15:41] Hermes one time and say do not write scripts like that, that might become memory. But if Hermes learns a repeatable process for writing scripts, researching competitors, creating a PDF,
+[15:54] that becomes a skill. A skill is basically an SOP, a standard operating procedure that the agent can load when the task matches. It includes
+[16:05] instructions, commands, pitfalls, templates, scripts, and examples. That means Hermes does not just remember that you like something, it remembers how to
+[16:15] do the thing. For example, my YouTube agent does not just know Charbel likes to make YouTube videos. It has a whole entire process. It checks posted,
+[16:28] rejected ideas, it checks VidIQ, it sees my rivals competitors transcripts, it studies my voice, writes, and figures out the SEO, and then it push his and
+[16:39] verified. That is not a memory, that is a skill. That is the difference between an AI assistant that gets corrected forever and an AI assistant that actually improves. If you want real
+[16:51] advantage with Hermes, do not just ask better prompts. Turn repeated work into skills. Now, let us talk about tools. Tools are how Hermes acts on the world.
+[17:03] Without tools, Hermes is mostly conversation. With tools, it can read files, write files, run terminal commands, inspect images, generate audio, and so much more. That is
+[17:16] powerful, but there's a line you need to respect. The goal is not to make Hermes reckless. The goal is to make Hermes useful. I want Hermes reading and preparing work all day. I do not want it
+[17:27] sending emails, posting tweets for me, spending my money, or changing important systems without my approval. That is how I think about safety. Low-risk internal
+[17:38] work can be fast. External or irreversible work needs a human checkpoint. For example, I'm totally fine with Hermes drafting five email replies. I'm not fine with it sending
+[17:50] those replies without me reviewing them first, at least until the point that I have trained it enough and I'm comfortable enough with its output repeatedly. That is not anti-automation.
+[18:03] That is how you keep automation useful. A good agent setup is not AI can do anything. A good agent setup is AI can do almost anything and all of the prep and it knows exactly
+[18:15] where to stop. Let's move on to scheduled jobs. Now, this is the feature that makes Hermes stop feeling like a chat app, scheduled job. A chatbot waits for you
+[18:27] to open it. A scheduled Hermes job shows up with work already done. That is a massive difference. Hermes has cron jobs and you can manage them with different
+[18:39] create, Hermes cron run. You can even ask it just in the chat like, "Hermes, what are my crons? What is the list of my crons? Hey Hermes, can you run this cron
+[18:50] manually right now? Can you pause this cron for me?" By the way, all the terminal commands I'm giving you throughout this video, you can also type inside a Hermes chat window using {slash} commands as well like {slash}
+[19:01] cron for example, or just plainly asking it, "What are my crons?" In practice, this lets you build things like a morning brief, a daily YouTube
+[19:11] opportunity scanner, a competitor monitor, a weekly content performance review. But, here's the thing people miss. Cron jobs run in fresh sessions. So, if you write a vague prompt like
+[19:23] check everything and tell me what matters, that is a bad job. A good scheduled job is self-contained. It says what to check, where to check, what
+[19:33] counts as important, what to ignore, and where to deliver that. For example, every morning at 8:00 a.m., check the last 24 hours of comments on my YouTube
+[19:45] my YouTube's performance and competitor uploads and return only three things, one urgent issue, one content opportunity, and one recommended action. Keep it under 12 bullet points. That is
+[19:57] much better because the rule is simple. Schedule things that help you make decisions faster and get more work done. Let's move on to sub-agents. Next up is sub-agents. Sub-agents are one of the
+[20:09] features that sound like science fiction until you understand their actual use case. Uh sub-agent is useful when the work can be split cleanly. For example,
+[20:20] if I'm researching a new video idea, I can have one sub-agent inspect competitor transcripts, one sub-agent check keyword demand, and one sub-agent
+[20:31] review my existing content pipeline. Then, Hermes combines those results and makes a decision using all of the things the sub-agents did. That is extremely
+[20:41] useful, but sub-agents are not magic employees. They do not automatically know everything. They need context. They need constraints. They need
+[20:51] verification. The mistake is spawning five agents with vague instructions and then trusting the output like it came from a senior employee. That is not how this works. The right way is to give
+[21:03] each sub-agent a narrow job. Something like read these three transcripts for me and extract the title promise hook structure and weak spots. That is where
+[21:14] sub agents shine parallel work narrow scopes clear outputs and verified by main agent if you will. If you use them like that they are incredibly useful. If
+[21:26] you use them like vague employees they become confusing. You can also ask Hermes to spawn sub agents for different tasks and if you use Hermes long enough you'll notice it will just spawn them
+[21:38] for you whenever it decides that it needs to. Profiles are one of the most underrated Hermes feature. A profile is basically a separate Hermes home. Each
+[21:50] profile can have its own configuration API keys memory cron jobs and personality. That means you can create specialist agents. You can create a coding profile a YouTube profile a
+[22:01] business profile. This matters because one assistant should not know or do everything. My YouTube agent for example should know my content style and filming
+[22:12] preferences. My coding agent should know my repos my coding standards and what are my deployment tools. Those should not all be the same brain. Profiles are
+[22:22] how Hermes stops being one generic assistant and starts becoming a small team. You can run a command here like Hermes profile create research if you
+[22:32] want to run it from the terminal or again ask it in the chat as simply as that. Then that profile gets its own alias. So if I create a profile called
+[22:43] researcher I can open that researcher profile. I can enable or disable anything I want and customize it to my liking. You can by the way also do this on Hermes desktop over here. I have all
+[22:56] of my different profiles and I can give each and every single agent its own different clean memory cleaner skills, cleaner permissions, and cleaner
+[23:07] behaviors. This section matters because this is where a lot of Hermes videos get weak. They show you a setup, they show you a few features, and then they say
+[23:17] something vague like, "Use it for your workflows." That is not very useful. This is why people install Hermes. People do not install Hermes because they want another chat app. They install
+[23:27] it because they want one of seven things. The first reason is phone delegation. I'm away from my laptop, but I can still give it a real task to my agent that has my files, my tools, my
+[23:39] memories, my skills, and my working environment. That is why so many Hermes videos are about Telegram, VPS setup, and 24/7 assistance. The second reason is long-running projects. With ChatGPT,
+[23:53] you have a conversation. With a coding agent, you can push one task through a repo. With Hermes, the interesting thing is that you can give it a larger objective, break it into stages, use
+[24:05] {slash} goal, assign sub-agents, and keep state as work moves forward. A useful skill for you to learn, by the way, here is the {slash} goal command.
+[24:15] It will make Hermes keep working at a job until it meets the goal you outlined. A pro tip here is you can ask Hermes to help you create the best {slash} goal possible by telling it, "I
+[24:27] want this done. Help me create the best {slash} goal possible." Literally that simple. The third reason people install Hermes is developer and ops work. This is one of the strongest Hermes use cases
+[24:38] because Hermes can live next to your repo. It can use your terminal tools, and it can report back through your own phone. If you're a developer, this is probably one of the first serious
+[24:48] workflows I would build. The fourth reason is exception monitoring. This is where scheduled jobs become genuinely useful. A lot of people hear cron job and immediately think of a a daily
+[25:00] brief. Daily briefs are fine. They're They can be useful, but they're not usually the highest leverage version of a cron job. The better version is only wake me up when something changed that
+[25:11] matters. For example, like if you have an online shop, you can schedule crons with Hermes that ping you when cost spikes, when app reviews land, when Stripe health declines, so on and so
+[25:23] forth. The point is not that Hermes sends you more notification. The point is that Hermes can monitor a boring system for you. It can stay quiet when nothing matters and only spend model
+[25:35] tokens when judgment is actually needed. The fifth reason people install Hermes is memory and knowledge systems. People are not just asking, "Does Hermes have memory?" They're asking whether that
+[25:47] memory is actually useful. The hierarchy I would use for Hermes memory is built-in memory for high-signal facts and external memory providers when retrieval or cost agent memory becomes a
+[25:59] bottleneck. The sixth reason is business operations. This is where you need to be careful because it can turn into fake AI employee nonsense really fast. But the
+[26:10] real version of this are genuinely useful. Think of inbox triage, lead research, client follow-ups, customer review summaries, content gap analysis, weekly reports. The line is simple.
+[26:23] Hermes should prepare work automatically, but humans should approve risky external actions first. So, the workflow is not let Hermes run your inbox. The workflow is every morning
+[26:35] Hermes reads my inbox, separates signal from noise, identifies leads or urgent replies, drafts responses in my voice, attaches that to chat, and waits for my
+[26:46] approval before sending. And finally, the seventh reason people install Hermes is content and market intelligence. Bad workflow here is if you're a content
+[26:56] creator, find me AI news, for example, depending on your niche, of course. A good workflow is these are my competitors. Check them out every day. Pull their videos that are still gaining
+[27:07] views. Read those transcripts. Compare them to my posted videos. Exclude what is already in my pipeline and recommend the one video that I should film next with your evidence as to why. That is
+[27:20] exactly the kind of thing Hermes is good at because it can combine search, browser work, transcript, memory, and a final recommendation. Those are genuinely Hermes' strengths. So, if
+[27:32] you're a creator, yes, Hermes can become a content intelligence system. That is the real pattern across all of these workflows. Do not install Hermes because
+[27:42] it has features. Install Hermes when you have work that needs context, tools, memory, repetition, and a safe handoff back to you. And that leads us directly
+[27:54] into the mistakes because the fastest way to ruin Hermes is to install it for the right reason and then set it up in the wrong order. Let's get started. Let
+[28:04] me save you from the mistakes that make Hermes feel worse than it is. Mistake number one, adding too many tools way too early. If Hermes has access to
+[28:14] everything before you know what you want it to do, you're just creating chaos. Start with the tools needed for your first workflow. Mistake number two,
+[28:24] saving everything to memory. Memory should be curated. It should not become a dumping ground of everything and anything. Mistake three, using the cheapest model for hard work. If a task
+[28:36] requires tool use, coding, or multiple steps, a weak model can waste more money in retries than a strong model would have cost you in the first place. Mistake number four, making every idea a
+[28:49] cron job. A scheduled job should have a clear decision and output. If it does not, it just becomes notification spam. And this will just make your life a living hell every single day. Mistake
+[29:02] five, trusting sub-agents without verification. Sub-agents are useful, but their summaries are still outputs that need checking. Mistake six, building profiles before workflows. Do not create
+[29:14] five specialist agents before you know what those specialist agents are actually here to do. Mistake number seven, treating Hermes like a magic employee. Hermes is powerful, but it is
+[29:25] still in need of systems, of good instructions, of good tools, good memory, good skills, good verification. That is the real game here. If you are starting today, here is the path I would
+[29:39] follow. Day one, you're going to install Hermes, connect one model, and use Hermes desktop. Day two, you're going to connect Telegram and run one useful task
+[29:50] from your phone. Day three, create one skill from a repeated task. Day four, create or connect, rather, one tool that actually matters for your work. Day
+[30:01] five, create one scheduled jobs that returns a decision, not some data dump. Day six, try one one's agent workflow for research and review. And day seven,
+[30:13] create your first specialist profile. That is enough. You do not need the perfect setup. One assistant that can do one real job, then another, then
+[30:24] another. That is how Hermes compounds. The reason Hermes is exciting is not that it has a desktop app or Telegram or memory. Those are just features. The
+[30:35] reason Hermes is exciting is that all of those parts that can connect into a single system. A system that remembers what matters. A A system that learns
+[30:45] from your workflows, that shows up before you even ask for it. That is the difference between using AI as a search box and using AI as an operating layer. If you are new, do not try to master
+[30:58] every feature today. Install it, connect one model, build one workflow, then turn the parts that repeat into skills, memories, schedule jobs, and profiles.
+[31:09] That is how you learn 95% of Hermes agent. And if you enjoyed this video, make sure to subscribe because I have a ton more content coming your way. And comment Hermes if you'd like more videos
+[31:22] about Hermes. Anyway, I hope you have a great day and I'll see you soon.
