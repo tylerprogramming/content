@@ -106,6 +106,21 @@ Do Not Disturb on. Slack notifications off.
 
 [Point at the tabs you see. Riley and Peter had Chat, Tasks, Make. Say the real ones.]
 
+[Make tab. Two creators found their older Claude artifacts already sitting here before they asked for anything. Check if yours are.]
+
+"And this is interesting. The Make tab already has stuff I made in Claude before Duet existed. So it can see my old work."
+
+[Window A, type:]
+
+Prompt A:
+```
+Look at the artifacts in my Make tab that I made in Claude before you. List them with the date. Tell me which ones look out of date, and which one would make the best free resource for my Skool community, and why. Do not change any of them.
+```
+
+[Read what it says. Is the list right? Is its pick one you'd actually use? Anthropic says it can read your work in Claude but not change it, so if you ask it to update one, it should make a new copy. Say what it actually does.]
+
+[If the Make tab is empty, cut Prompt A and keep moving.]
+
 ## 6. Its computer, or what you can see instead (2:40 to 3:20)
 
 [Camera, or Window A]
@@ -154,7 +169,21 @@ Do Not Disturb on. Slack notifications off.
 
 [Open the draft. Read two lines of the post.]
 
-"[Which video did it pick? Is it usable? What would you change?] And it didn't post anything. It's a draft. I post."
+"[Which video did it pick? Is it usable? What would you change?]"
+
+[Now fix the thing you'd change, by commenting on the artifact. Riley Brown showed this on his own deck (05:43); nobody did it on a real deliverable. Highlight the part you want changed, add a comment, for example:]
+
+```
+Cut this post to 80 words. Open with what the viewer will have at the end, and put the video link in the first line.
+```
+
+"With the Dot, I'd copy this out and fix it myself. Here I just comment on it, and the comment goes to Duet."
+
+[Wait for the edit to land in the artifact. Read the new first line.]
+
+"[Did it do it? All of it?] And it didn't post anything. It's a draft. I post."
+
+[If you can't find a comment tool on the artifact, type the same edit in chat instead and say that's how you did it.]
 
 ## 11. Memory (6:00 to 7:15)
 
