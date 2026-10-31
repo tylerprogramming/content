@@ -33,6 +33,7 @@ For pre-recording: **`~/content/research/youtube/strategy/2026-05-20-LEVERAGE-be
 
 ### "What am I recording next?"
 → `~/content/youtube/notes/status.md` (top section: NEXT RECORD)
+→ Filming now: [062 OpenAI Dots script](../youtube/videos/062-openai-dots/script.md)
 
 ### "Where is my script?"
 → `~/content/youtube/videos/NNN-<slug>/script.md` — one folder per video
