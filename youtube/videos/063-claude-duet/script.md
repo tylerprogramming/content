@@ -1,258 +1,207 @@
 # 063 script: I Gave Claude Duet 3 Real Jobs
 
-Duet only. No Hermes on screen. About 12 minutes.
-Version 1, 2026-10-27. Built from `research/2026-10-26-claude-duet.md` and the Peter Yang / Riley Brown breakdown. Same shape as the 062 script you filmed from.
+Same shape as 062 Dots, as filmed (`../062-openai-dots/AS-FILMED.md`). Same 3 jobs, same order, so 066 (Dots vs Duet vs Muse) can cut between them. About 10 to 11 minutes.
+Version 2, 2026-10-31. The dashboard version is kept as `script-v1-dashboard.md`.
 
-Lines in [brackets] are notes for you. Lines in quotes are what you say. Say what is actually on screen, even when it differs from these lines. Never read Duet's output off this page; it is not here on purpose.
+Lines in [brackets] are notes for you. Lines in quotes are what you say. Say what is actually on screen. Every Duet label below marked *(confirm)* comes from other creators' videos, not Anthropic's docs; say the label you actually see.
+
+## Tonight (Saturday), so tomorrow's hook is real
+
+1. Duet open on the web (claude.ai) and on your phone, same account.
+2. claude.ai Settings > Connectors: GitHub and Slack connected. GitHub needs the GitHub App grant for `tylerprogramming/content` (it's private).
+3. Paste the 3 job prompts below into Duet's main chat, one at a time. Confirm each schedule when it asks.
+4. Check Tasks tab > Scheduled *(confirm)* shows all 3.
+5. Test the approval once: ask Duet to `Send me a Slack DM that says "test from Duet".` Note whether a card appears and what it shows. If Slack can't send from Duet (the help center says Slack "works with limits"), try email instead.
+
+Tomorrow (Sunday): job 1 runs 7:45, but **job 2 is daily and job 3 is daily**, so all three run Sunday morning. Film after 10:15 once all three have landed.
+
+### The 3 job prompts (same as Dots, word for word except the platform words)
+
+Job 1, morning brief:
+```
+Every day at 7:45 AM Eastern, for the next 4 weeks, read youtube/notes/status.md, the newest file in youtube/analytics/daily/, youtube/ideas/video-ideas.md, and anything in research/ from the last 7 days in my tylerprogramming/content GitHub repo. Send me one Slack DM under 900 characters: what is filming next, yesterday's channel numbers, and 3 video openings with a one-line reason each. End with "Reply with a number." Do not post anywhere else and do not change any files. Confirm the schedule.
+```
+[Dots ran this weekdays only. Duet runs it daily so Sunday has a brief. Say that if you compare them.]
+
+Job 2, repo check:
+```
+Every day at 9 AM Eastern, check my GitHub repos under tylerprogramming. Look for open PRs with failing checks, issues with no reply for 7+ days, and dependencies flagged by Dependabot. Send me a Slack DM with at most 5 items, each with a link. Never open, close, merge, or comment on anything; if you think a PR or issue should be created, ask me first. Confirm the schedule.
+```
+
+Job 3, Skool prep:
+```
+Every day at 10 AM Eastern, check my YouTube channel tylerreedai for a video that went public in the last 24 hours. If there is one, get its transcript, then draft: a lesson title, two short paragraphs describing the video, 2 to 4 key links from the description, and a 120-word community post for my Skool group The AI Agency. Put the drafts in the Make tab and send me the link in Slack. Never post to Skool or anywhere public; I will post. Confirm the schedule. For the first run, use the newest public video on the channel even if it is older than 24 hours.
+```
+[The Dots video goes public Sunday. If it is live before 10:00, job 3's Sunday run drafts the lesson for the Dots video. Good beat.]
 
 ## Before you roll
 
 | Window | What's open |
 |---|---|
-| A | Browser tab 1: Claude Duet on the web, main thread, Chat tab |
-| B | Browser tab 2: YouTube Studio > Content, sorted by date, views column visible |
-| C | Browser tab 3: `https://github.com/tylerprogramming` (repositories, sorted by stars) |
-| D | Browser tab 4: `https://claude.com/resources/articles/claude-duet` (launch post) |
-| E | Slack, your own DM (or Gmail, if the approval beat runs on email; see filming-guide PRE-BUILD 6) |
-| F | Editor: `transcripts/transcript_<id>.txt` for the Skool deck's video, plus `receipts.md` in this folder |
-| G | Phone, Duet app, logged in, screen record ready (beat 9 only) |
+| A | Claude Duet on the web, main chat |
+| B | Slack, Duet's 3 DMs from this morning |
+| C | `https://claude.com/product/claude-duet` (launch page) |
+| D | `https://github.com/tylerprogramming/content/pulls` |
+| E | Phone, Duet app (only if you do the voice line in beat 7) |
 
-Do Not Disturb on. Slack and Duet notifications off on the Mac. Duet notifications ON on the phone (beat 9 needs one).
+Do Not Disturb on. Slack notifications off.
 
 ## Beat table
 
-| # | Creator does (time) | You do | Your exact prompt / click |
+| # | Dots did (time in 062) | You do in Duet | Your exact prompt / click |
 |---|---|---|---|
-| 1 | Peter Yang 0:00 to 0:45: promise list of 4 artifacts; Riley Brown 0:00 to 0:25: "10 hours, 9 things" | **0:00 to 0:35.** Open on Channel Pulse in the Make tab, refreshed this morning on its own. Timestamp visible. Then the three jobs. | Window A, Make tab > Channel Pulse. Then camera |
-| 2 | Peter Yang 0:48 to 1:49: onboarding, "already connected" | **0:35 to 1:35.** What Duet is, for someone who already uses Claude Code. What carried over, what did not. | Window D, scroll. Then Window A, Duet's connections view |
-| 3 | Riley Brown 10:27 to 11:10: pastes one long prompt, task spins up | **1:35 to 2:15.** Paste Job 2 (Repo Health) live. Open the task thread. Show its step list and the "working" state. Leave it running. | Prompt R below. Then Tasks tab > Active > Repo Health |
-| 4 | Peter Yang 9:03 to 10:14: YouTube report, judged by reading 2 insights | **2:15 to 4:00. Job 1, Channel Pulse.** Put YouTube Studio next to the dashboard. Count the rows that match. | Window A left, Window B right |
-| 5 | Peter Yang 4:46 to 5:42: scheduled check-in, "view history" | **4:00 to 4:45.** Tasks > Scheduled > the Channel Pulse refresh > its history. The 6:30 run from this morning. | Tasks tab > Scheduled > Channel Pulse refresh |
-| 6 | Brock 4:51 to 6:11: Supabase dashboard, "looks really solid" | **4:45 to 6:00. Job 2, the sheet.** Back to Repo Health, now ready for review. Three spot checks against GitHub. | Window A, Make tab > Repo Health. Window C |
-| 7 | Riley Brown 20:56 to 21:34: approvals described, never shown | **6:00 to 7:00.** Ask it to send you the top 3 rows. Hold on the approval card. Read what it shows. Approve. Show it land. | Prompt S below. Then the card. Then Window E |
-| 8 | Riley Brown 10:27 to 13:29: one-shot deck, "this is nice" | **7:00 to 8:30. Job 3, the Skool deck.** Open the deck. Put the transcript next to it. Count the prompts it quoted right. | Window A, Make tab > the deck. Window F |
-| 9 | Riley Brown 6:52 to 9:00: voice edit from a phone | **8:30 to 9:15.** One voice edit from the phone. Then the slide changes on the web. | Window G, voice message V below. Then Window A |
-| 10 | John Aspinall 6:14 to 6:42: "one shared pool", hard to see | **9:15 to 9:45.** Usage before and after the deck. One number. | Window A, claude.ai Settings > Usage (label to verify) |
-| 11 | Peter Yang reads, never checks; nobody shows times | **9:45 to 10:45.** Receipts table. | Window F, `receipts.md` |
-| 12 | Peter Yang 12:08 to 13:54: Uber failure; 13:54 ranking | **10:45 to 12:00.** What did not work. One line on Dots. The question. | Camera |
-
-### Prompts (paste as written)
-
-Prompt R, Job 2, Repo Health (pasted live in beat 3):
-
-```
-Make a spreadsheet called Repo Health. One row for every public repository under github.com/tylerprogramming. Columns: repo, stars, stars gained last 30 days, open issues, open PRs, age of oldest open PR in days, last commit date, checks on main (pass/fail/none), and "video candidate" with a one-line reason using the numbers. Sort by stars gained. Put it in Make and message me when it is ready. Do not open, close, comment on, or merge anything.
-```
-
-Prompt S, the send (beat 7; use the Slack line or the email line, whichever PRE-BUILD 6 proved works):
-
-```
-Send me the top 3 rows of Repo Health as a Slack DM, with the repo name, stars gained, and the video candidate reason for each.
-```
-
-```
-Email me the top 3 rows of Repo Health at [your address], with the repo name, stars gained, and the video candidate reason for each.
-```
-
-Voice message V (beat 9, spoken into the phone, do not read it like a script):
-
-```
-Hey, on the Skool deck, move each prompt onto its own slide so there's one prompt per slide, and cut the mistakes slide down to three bullets. Keep everything else.
-```
-
-Job 1 and Job 3 prompts ran before filming. They are in `filming-guide.md` PRE-BUILD 3 and 5.
+| 1 | 0:00 to 0:20: "All of this showed up in my Slack this morning" | Same open. Duet's 3 Slack messages from this morning. | Window B |
+| 2 | 0:05 to 0:25: the 3 jobs, "every other video says I'll get started on that" | Same promise, Duet's name | Camera |
+| 3 | 0:25 to 1:05: what a Dot is, price | What Duet is, price | Window C |
+| 4 | 1:05 to 2:05: plugins + 2 custom rules | Connectors. Then what Duet has instead of custom rules: built-in approvals | claude.ai Settings > Connectors |
+| 5 | 2:05 to 2:35: create, name, avatar | Open Duet. What it looks like | Window A |
+| 6 | 2:35 to 3:48: take over its computer | **Different:** you can't watch or take over Duet's browser. Say so, then show what you can see: the Tasks tab | Tasks tab *(confirm)* |
+| 7 | 3:48 to 4:55: the scheduled jobs, open one | Tasks > Scheduled, open job 1, show the prompt | Tasks > Scheduled *(confirm)* |
+| 8 | 4:55 to 5:20: brief in Slack | Job 1 output | Window B |
+| 9 | 5:20 to 5:50: repo check | Job 2 output | Window B |
+| 10 | 5:50 to 6:30: Skool draft artifact | Job 3 output, in the Make tab | Make tab *(confirm)* |
+| 11 | 6:30 to 7:58: memory, the stale Pfizer fact | Same prompt. Duet carries your Claude memory and past chats | Prompt M below |
+| 12 | 7:58 to 9:00: PR via Codex, rule asks, approve, merge | Live action that needs approval: the Slack send, approval card on camera | Prompt S below |
+| 13 | 9:00 to 10:45: plan barrier, comments question | Price is the opposite story: included on Pro | Camera |
 
 ---
 
-## 1. Hook (0:00 to 0:35)
+## 1. Hook (0:00 to 0:20)
 
-[Screen: Window A, Make tab, Channel Pulse open. Scroll to wherever the refresh time or "last updated" shows. No camera yet. If the refresh did not fire this morning, do not say it did; see filming-guide PRE-BUILD 3 for the fallback open.]
+[Window B. Duet's three messages from this morning. No camera.]
 
-"So this rebuilt itself at six thirty this morning. [Only if true: I was asleep.] I didn't open Claude. It's a dashboard for my channel and Claude Duet made it, and then it made it again on its own."
+"So all of this showed up in my Slack this morning. I didn't do anything. I didn't touch anything. This came from Claude Duet."
+
+## 2. The promise (0:20 to 0:45)
 
 [Camera]
 
-"So I gave Claude Duet three real jobs. A dashboard for my YouTube channel, a spreadsheet across my GitHub repos, and the lesson deck for my Skool community. All on my real stuff. And every Duet video I watched this week ends with the creator reading the output out loud and saying 'nice.' I wanted to put the output next to the source and count what it got right. So let's do that."
+"So I gave Anthropic's new Claude Duet the same three real jobs I gave OpenAI's Dot. A YouTube morning brief based on my channel, Skool video prep when a new video goes live, and a daily GitHub repository check. Every other Duet video I've watched is a tour. I want to see what actually comes back. So let's take a look."
 
-## 2. What Duet is, if you already use Claude (0:35 to 1:35)
+## 3. What Duet is, and the price (0:45 to 1:30)
 
-[Window D, scroll slowly]
+[Window C, scroll]
 
-"So quick version. Claude Duet is a separate app from Anthropic. Research preview, waitlist, US only, Pro and Max. It runs on its own computer in Anthropic's cloud, so it keeps working when you close the app. It has its own browser for sites that don't have a connector. And before it sends a message, pays for anything, signs, or deletes, it's supposed to stop and show you. We're going to make it do that."
+"So Duet came out October 21st. Research preview, there's a waitlist, US only. It's an agent you hand work to through messages, and it runs on its own computer in Anthropic's cloud, so it keeps working when you close the app. It runs on Opus 5.5. It uses your Claude account, so your memory, your skills, and your connectors carry over."
 
-[Window A. Open Duet's connections view. Point at GitHub and Slack. Say the real label you clicked; the researcher could not confirm it.]
+"And here's the big difference from Dots. It's included on Claude Pro and Max, no extra cost right now. Dots needed the hundred-dollar plan. The catch is Duet shares your usage limits, so the background work counts against the same pool as your chats and Claude Code."
 
-"If you already use Claude, here's what carried over for me. My connectors. My memory. And the Make tab already had my older artifacts in it before I asked for anything."
+[Say the plan you're on.]
 
-"What did not carry over. It can't see files on my Mac. It can't see my local Claude Code skills. It can't start a Claude Code session on this machine. So anything from my content repo has to come through GitHub. Keep that in mind, because it's the thing that bit me."
+## 4. Setup (1:30 to 2:15)
 
-[If the GitHub connector did not reach the private repo in the pre-build, say so here in one line and say what you did instead.]
+[claude.ai Settings > Connectors]
 
-## 3. Kick off the live one (1:35 to 2:15)
+"Setup is the connectors you already have in Claude. I need GitHub and Slack. If you don't have them, add them here. For GitHub, give it access to the repos you want it to read. Mine's private, so I had to grant that one."
 
-[Window A, Chat tab. Paste Prompt R. Send.]
+"Now, Dots had custom rules. Duet doesn't have a rules screen like that. Instead it has approvals built in. Before it sends a message, pays for anything, signs, or deletes, it's supposed to stop and show you exactly what it's about to do. We'll test that at the end."
 
-"So before we judge the two that already ran, I want one running live. This is job two. A spreadsheet. One row per public repo under my GitHub, stars, open PRs, age of the oldest one, checks on main, and a column that says which repo is a video candidate and why."
+[If you find a rules or permissions screen in Duet, show it instead and say so.]
 
-[Tasks tab > Active > click Repo Health. Show the step list and the state.]
+## 5. Meet Duet (2:15 to 2:40)
 
-"And this is what I like. It opens a task, and the task has its own thread, and you can see the steps it's planning. It says working. We'll come back to it."
+[Window A]
 
-[Dead-air filler if the task takes a second to appear: "Riley Brown's first deck took about ten minutes. So we're not waiting on this one."]
+"So this is it. It kind of looks like Claude, but it's its own app. Chat here, and then these tabs."
 
-## 4. Job 1: Channel Pulse, checked (2:15 to 4:00)
+[Point at the tabs you see. Riley and Peter had Chat, Tasks, Make. Say the real ones.]
 
-[Window A, Make tab > Channel Pulse, left half. Window B, YouTube Studio > Content, right half.]
+## 6. Its computer, or what you can see instead (2:40 to 3:20)
 
-"Job one. I asked for one page I can open every morning. Last ten uploads, views, views per hour since upload, and whether each one beat the median of the twenty before it. Plus what's filming next, from my status file, and three 'where to look' lines with the number behind each."
+[Camera, or Window A]
 
-"This is the dashboard. This is Studio. Same videos. Let's go row by row."
+"With Dots, I could take over its computer and drive it. With Duet you can't. Anthropic says you can't watch or take over its browser. It does the browsing, you see the result."
 
-[Go down the last 10 uploads. For each: does the view count match Studio within a day's drift? Say the count as you go. Do not round it up.]
+[Tasks tab]
 
-"So [N] of ten rows match. [Which ones were off, and by how much.]"
+"What you can see is this. Tasks. What it's working on, what's up next, what's scheduled, what's done."
 
-[Scroll to the "filming next" line.]
+[Read the sections you actually see.]
 
-"And the filming-next line. [Is it the right video? If it came from status.md, say that. If it guessed from the channel page, say that.]"
+## 7. The scheduled jobs (3:20 to 4:20)
 
-[Scroll to the three bullets.]
+[Tasks > Scheduled. Open job 1.]
 
-"[Read one bullet. Is the number behind it real? Is it something you would actually act on, or generic?]"
+"So here are my three jobs. This is the morning brief. Here's the prompt it's running, and here's when it runs."
 
-"[Your verdict, one line. Something like: the numbers I can check are mostly right, the advice is the part I'd push back on. Only if true.]"
+[Show whether you can edit it. If there's a history or "last run", show it.]
 
-## 5. The schedule (4:00 to 4:45)
+"[Can you edit the time, the prompt, the model? Say what's there. With Dots I could pick the model. Duet is Opus 5.5 only.]"
 
-[Tasks tab > Scheduled. Click the Channel Pulse refresh. Open its history. Say the labels you actually see; Peter Yang's were "Scheduled" and "view history".]
+## 8. Job 1: the brief (4:20 to 4:50)
 
-"So this is the part from the hook. I asked for a refresh every weekday at six thirty. It's in here under Scheduled, and this is the history. This morning's run, [the time it shows]."
+[Window B, the brief]
 
-"Peter Yang said you can schedule a refresh in his video and didn't do it. I wanted to see it in the list and see it fire. [Say if it fired every morning since you set it, or missed one.]"
+"And this is what it sent this morning."
 
-## 6. Job 2: the sheet, spot checked (4:45 to 6:00)
+[Read it. Did it name the right next video? Are the numbers real? Are the 3 ideas specific to your channel?]
 
-[Window A, Tasks > Active > Repo Health. If it is ready for review, open it in Make. If not, use the one from the pre-build run and say so.]
+"[One thing it got right, one thing it got wrong.]"
 
-"Okay, job two is back. [How long did it take, from the task thread.]"
+## 9. Job 2: the repo check (4:50 to 5:20)
 
-[Open the sheet. Window C on the right, your GitHub repos sorted by stars.]
+[Window B, the repo DM]
 
-"Three spot checks. [Pick the top row: stars right? open PRs right? last commit date right?] [Pick a middle row.] [Pick the stars-gained-in-30-days column anywhere.]"
+"Job two, the GitHub check."
 
-"[Stars gained in 30 days is not a GitHub API field. The researcher flagged it before I ran it. So if that column is wrong or blank, say that and say it's the column you expected to be wrong. If it's right, say you're surprised and ask it how it got the number.]"
+"[How many items, links or not, did it stay read-only. Was anything it flagged real?]"
 
-[Click the video candidate column.]
+## 10. Job 3: Skool prep (5:20 to 6:00)
 
-"[Read its top pick and reason. Would you make that video? One line.]"
+[Window B, then the link into the Make tab]
 
-## 7. The approval card (6:00 to 7:00)
+"And job three. It checks my channel every day, and when there's a new video, it drafts the Skool lesson and the community post."
 
-[Window A, Chat. Paste Prompt S, whichever version PRE-BUILD 6 proved. Send.]
+[Open the draft. Read two lines of the post.]
 
-"So now the thing nobody filmed. Anthropic says before it sends a message it stops and shows you the action, where it's going, what's in it, and every recipient. Let's see if that's true."
+"[Which video did it pick? Is it usable? What would you change?] And it didn't post anything. It's a draft. I post."
 
-[Hold on whatever comes up. Do not cut. Read the card out loud: what action, what destination, what content, who the recipients are. If it does not match the safety post's description, say what is missing.]
+## 11. Memory (6:00 to 7:15)
 
-"[What the card actually shows.]"
+[Window A, type:]
 
-[Tap Approve.]
+Prompt M:
+```
+What do you remember about me? List it, and tell me which parts came from my Claude memory or past Claude chats.
+```
 
-[Window E. The message lands.]
+"So with Dots there wasn't a memory screen for the Dot. Duet's a little different. It carries over your Claude memory, and it can search your past Claude chats."
 
-"And there it is. [Time stamp.] That's the loop. It built the thing, it asked, I said yes, it sent it. It did not send anything until I said yes."
+[Read it. Point at anything stale. On Dots it still had you applying to Pfizer.]
 
-[If no card appeared and it just sent: say so plainly, on camera. That is the bigger story. If it refused or said the connector could not send: show the message and say "so Slack is read-only here, and that's a result."]
+"[Is it more current than the Dot was? What's wrong in it?]"
 
-## 8. Job 3: the Skool deck, checked against the transcript (7:00 to 8:30)
+[If you can open and edit memory anywhere in Duet, show it. On Dots you couldn't.]
 
-[Window A, Make tab > the Skool deck. Window F, the transcript file, on the right.]
+## 12. Live action with an approval (7:15 to 8:30)
 
-"Job three. When I publish a video, I turn it into a lesson for my Skool community. A short deck, the steps, the exact prompts, the links, plus a community post. I gave Duet [which video] and the transcript from my repo and asked for six to eight slides and a hundred-and-twenty-word post. Drafted, not posted."
+[Window A, type:]
 
-[Click through the deck. Count slides out loud.]
+Prompt S:
+```
+Send me the top 3 items from this morning's repo check as a Slack DM, with the repo name and a link for each.
+```
 
-"[How many slides. Does it have the shape you asked for: what you'll have, three steps with a prompt each, links, mistakes.]"
+"So with Dots, I set a rule so it had to ask before opening a PR. Duet has approvals built in. Before it sends a message, it's supposed to stop and show me the action, where it's going, what's in it, and who gets it. Let's see."
 
-[Stop on a prompt slide. Find the same prompt in the transcript.]
+[Hold on whatever comes up. Read the card out loud: action, destination, content, recipients.]
 
-"So here's the check. This is the prompt on the slide. This is what I actually said in the video. [Match, close, or made up?]"
+"[What the card shows.]"
 
-[Do that for each prompt slide. Say the count: N of M prompts quoted right.]
+[Approve. Window B, the message lands.]
 
-[Open the community post.]
+"There it is. It didn't send anything until I said yes."
 
-"[Read two lines of the post. Does it sound like you? What would you cut?]"
+[If no card appeared and it just sent, say that plainly. If Slack can't send from Duet, use email: `Email me the top 3 items...` and say "Slack is read-only here, so I used email."]
 
-"And it didn't post it anywhere, because I told it not to. It's a draft. I post."
-
-## 9. The edit from the phone (8:30 to 9:15)
-
-[Window G, phone screen recording. Open Duet, main thread. Hold the voice button. Say voice message V in your own words.]
-
-"So I'm not at my desk for most of these. Let's fix the deck from the phone."
-
-[Send. Wait for the task to spin up. Cut to Window A on the web.]
-
-"[Did the slides change? Did it do both edits, one, or neither? How long?]"
-
-[Dead-air filler while it works: "John Aspinall's video says there's no voice call on the web version. So the phone is where voice lives. Riley Brown does a whole walk this way."]
-
-## 10. What it cost in usage (9:15 to 9:45)
-
-[Window A, claude.ai Settings > Usage, or wherever your usage meter is. Say the label you clicked.]
-
-"So Duet is included in Pro and Max right now, nothing extra. But it shares your limits. The morning refresh, the background work, all of it counts. I wrote the meter down before the deck and after."
-
-"[Before number. After number. The difference, as a percent of the weekly limit.] So that's what one deck costs me. [Does that worry you for a daily refresh? One line.]"
-
-## 11. Receipts (9:45 to 10:45)
-
-[Window F, `receipts.md`, full screen. Read row by row.]
-
-"So this is the table I wanted when I watched the other videos. Every time is from the task thread. Every count is from putting the output next to the source."
-
-[Read each row: job, when asked, when done, what came back, how many checks it passed, what it got wrong.]
-
-## 12. What didn't work, and the question (10:45 to 12:00)
+## 13. Close (8:30 to 9:45)
 
 [Camera]
 
-"So, what didn't work. [Pick the real ones from the pre-build, two or three: the GitHub connector and the private repo, the stars-gained column, the refresh that missed a morning, the approval that didn't look like the docs, the deck prompt it paraphrased. Only ones that actually happened.]"
+"So the big thing. Dots needed a hundred-dollar plan for one Dot. Duet's included on Pro. The trade-off is it shares my limits, and I can't watch its computer."
 
-"And a couple of things to know. There's no model picker. It's Opus 5.5 and it decides how hard to think. You can't watch its browser. And it can't see your local skills, which, if you've built a bunch of them in Claude Code like I have, is the one I'd want first."
+"[Which job did it do better than the Dot? Which worse?] [Your verdict, one line.]"
 
-"I filmed three jobs on ChatGPT's Dots a few days ago. That comparison is its own video if you want it. Tell me in the comments."
+"I'm going to put Dots, Duet, and Meta's Muse side by side in another video, same three jobs. So tell me in the comments: which one would you trust with your morning? I read every one."
 
-"Where I landed. [Which of the three would you keep running on Duet?] [Which one wouldn't you, and why?] For me the whole point is the dashboard rebuilt itself and I didn't touch it. The judgment on top of the numbers is still mine."
-
-"So tell me. Of these three jobs, which one would you hand to Duet first? I read every one."
-
-[End card]
-
----
-
-## receipts.md (fill in before you roll, from task threads and the files)
-
-```
-# Receipts, video 063
-
-Every time from the Duet task thread (hover or open the task). Every check from putting the artifact next to the source. "Did not run" and "could not check" are valid cells.
-
-| Job | Asked (date, time ET) | Ready (date, time ET) | What came back | Checked against | Right / checked | What it got wrong |
-|---|---|---|---|---|---|---|
-| 1 Channel Pulse, first build | 10-27 __:__ | __:__ | dashboard in Make | YouTube Studio, last 10 uploads | __ / 10 rows | |
-| 1 Channel Pulse, 6:30 refresh | scheduled 6:30 | 10-__ __:__ | refreshed on its own: yes / no | Tasks > Scheduled history | | |
-| 2 Repo Health | live, __:__ | __:__ | sheet, __ rows | github.com, 3 spot checks | __ / 3 | stars-gained column: |
-| 2 "Send me the top 3" | __:__ | card at __:__, landed __:__ | approval card: yes / no | Slack DM or email timestamp | | card showed: action / destination / content / recipients (circle what it showed) |
-| 3 Skool deck | 10-__ __:__ | __:__ | __ slides + post | transcript_<id>.txt | __ / __ prompts quoted right | |
-| 3 Voice edit from phone | __:__ | __:__ | slides changed: both / one / neither | the deck on web | | |
-
-Usage meter (Settings > Usage, or the label on your account):
-- before the deck: __
-- after the deck: __
-- weekly limit resets: __
-
-Connectors confirmed in Duet's connections view on filming morning: GitHub ( ), Slack ( ), Gmail ( )
-GitHub connector reached tylerprogramming/content (private): yes / no / fallback used: ______
-```
+[End card: the Dots video]
