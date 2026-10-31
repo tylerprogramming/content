@@ -1,0 +1,489 @@
+Searching YouTube for: n8n
+Fetching 150 most recent results...
+Fetching details for 40 candidates...
+Found 40 relevant videos in last 7 days (20 long-form, 20 Shorts). Returning top 15 long-form and top 15 Shorts.
+
+Report saved: research/2026-10-31-week-in-ai/n8n/2026-10-31-n8n.md
+Raw JSON saved: research/2026-10-31-week-in-ai/n8n/2026-10-31-n8n.json
+Downloaded 15 long-form + 15 Shorts thumbnails to research/2026-10-31-week-in-ai/n8n/2026-10-31-n8n-thumbnails
+
+# YouTube Search: "n8n"
+
+**Date:** 2026-10-31
+**Search query:** n8n
+**Videos found (last 7 days):** 40 (20 long-form, 20 Shorts)
+**Shorts cutoff:** videos at or under 180s are classed as Shorts
+
+---
+
+## Long-form (15)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [I Tried Building an n8n Workflow Using Only ChatGPT, Here Are the Results!](https://youtube.com/watch?v=r6xXhSt0Nhw) | Kristian Ekachandra | 16,867 | 203 | 26 | 23:12 | 2026-10-24 |
+| 2 | [I Built My Own AI OS with n8n + Claude (6 Layers)](https://youtube.com/watch?v=IaQsvDdQz7c) | Derek Cheung | AI Agents Automation | 14,909 | 10 | 8 | 12:36 | 2026-10-28 |
+| 3 | [Here is what I would learn instead of n8n in 2027](https://youtube.com/watch?v=NGKzAt7D6Og) | Naier Saidane | 11,532 | 114 | 9 | 8:35 | 2026-10-25 |
+| 4 | [N8n Tutorial 2026: How to Build AI Agents & Automate Workflows](https://youtube.com/watch?v=LzPbjWZjPVA) | Barbara AI Tech | 6,985 | 211 | 76 | 5:27 | 2026-10-26 |
+| 5 | [The Agent Left the Workflow: Building n8n Agents](https://youtube.com/watch?v=r5Rqrw6R150) | n8n | 6,550 | 100 | 7 | 49:50 | 2026-10-30 |
+| 6 | [Complete RAG Course in 90 Minutes | Build AI Agents with n8n](https://youtube.com/watch?v=jtRzCZdVnek) | Memuna Gul | 5,138 | 72 | 15 | 1:37:04 | 2026-10-27 |
+| 7 | [AI Couldn't Build My n8n Automation, So I Hired a Fiverr Pro](https://youtube.com/watch?v=YXyG72oFERg) | SaaS Master | 4,655 | 4 | 3 | 4:45 | 2026-10-27 |
+| 8 | [Claude Can Now Run and Build Your n8n Workflows](https://youtube.com/watch?v=_Xh_hl5qHds) | Teacher's Tech | 4,512 | 38 | 6 | 19:31 | 2026-10-26 |
+| 9 | [n8n AI Agent Tutorial: Build & Sell This for $200 (Free JSON)](https://youtube.com/watch?v=HXfX53nNklM) | Hasnain Hyder | 1,362 | 0 | 33 | 10:14 | 2026-10-24 |
+| 10 | [N8N Full Course in Hindi & Urdu 2026 — Day 1: What is N8N & N8N vs Zapier vs Make](https://youtube.com/watch?v=CpjRRobAMYI) | Musharaf Khan | 1,246 | 69 | 29 | 13:52 | 2026-10-27 |
+| 11 | [n8n on VPS: Complete Setup Guide + Build Your First AI Agent](https://youtube.com/watch?v=EMKOc4uS8sk) | Ai with Rajpalsinh  | 971 | 21 | 10 | 18:25 | 2026-10-29 |
+| 12 | [🔥(No-Code) AI Automation Masterclass || n8n for Beginners || Telugu (LIVE)](https://youtube.com/watch?v=3MR2QpieoWk) | AI Hub for Students || Telugu  | 939 | 42 | 7 | 1:13:46 | 2026-10-30 |
+| 13 | [n8n + Ollama: Build Local AI Agent with Qwen 3.8 27B (Free, Private)](https://youtube.com/watch?v=Njeshv3vwHo) | Laxmi Kant | KGP Talkie | 914 | 17 | 3 | 9:26 | 2026-10-26 |
+| 14 | [How to Build n8n Workflows with Joule Studio](https://youtube.com/watch?v=ne0u3-Y_M6Q) | SAP Community | 841 | 12 | 0 | 4:07 | 2026-10-25 |
+| 15 | [[N8N FREE] How To Install N8N in Google Cloud - AI Automation](https://youtube.com/watch?v=He3uW_t0y2I) | WebSensePro | 693 | 6 | 2 | 20:47 | 2026-10-27 |
+
+### Long-form details
+
+#### 1. I Tried Building an n8n Workflow Using Only ChatGPT, Here Are the Results!
+
+- **Channel:** Kristian Ekachandra
+- **Views:** 16,867
+- **Likes:** 203
+- **Comments:** 26
+- **Duration:** 23:12
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=r6xXhSt0Nhw
+- **Thumbnail:** long-01-r6xXhSt0Nhw.jpg
+- **Description:** Jalankan n8n dan WAHA 24/7 menggunakan VPS Hostinger.
+🔹 Hosting VPS: https://hostinger.com/ekan8n
+🎁 Diskon ekstra 10% dengan kode kupon: EKAN8N
+🔹 Prompt & Workflow n8n: https://docs.google.com/document/d/1l3d8hpAB4Pgv5n4zr0gE-dQ447D2XCe4/edit?usp=sharing&ouid=110154212755190185525&rtpof=true&sd=true...
+
+#### 2. I Built My Own AI OS with n8n + Claude (6 Layers)
+
+- **Channel:** Derek Cheung | AI Agents Automation
+- **Views:** 14,909
+- **Likes:** 10
+- **Comments:** 8
+- **Duration:** 12:36
+- **Uploaded:** 2026-10-28
+- **URL:** https://youtube.com/watch?v=IaQsvDdQz7c
+- **Thumbnail:** long-02-IaQsvDdQz7c.jpg
+- **Description:** Every few weeks there's a new frontier model, and your competitors get it the same afternoon. The edge now is the system around the model. In this video I break down the 6 layers of an AI operating system (tools + MCP, memory, skills, orchestration, observability, guardrails), then Claude builds my ...
+
+#### 3. Here is what I would learn instead of n8n in 2027
+
+- **Channel:** Naier Saidane
+- **Views:** 11,532
+- **Likes:** 114
+- **Comments:** 9
+- **Duration:** 8:35
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=NGKzAt7D6Og
+- **Thumbnail:** long-03-NGKzAt7D6Og.jpg
+- **Description:** 🎁 1er client IA en 7 jours (gratuit) - https://lm.laccelerateuria.com/gratuit?utm_source=youtube&utm_medium=video&utm_campaign=NGKzAt7D6Og
+
+💎 Travaillez avec moi - https://laccelerateuria.com/?utm_source=youtube&utm_campaign=NGKzAt7D6Og...
+
+#### 4. N8n Tutorial 2026: How to Build AI Agents & Automate Workflows
+
+- **Channel:** Barbara AI Tech
+- **Views:** 6,985
+- **Likes:** 211
+- **Comments:** 76
+- **Duration:** 5:27
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=LzPbjWZjPVA
+- **Thumbnail:** long-04-LzPbjWZjPVA.jpg
+- **Description:** Learn how to use n8n to build AI agents and automate workflows in 2026! In this tutorial, we explore how n8n workflow automation works and how you can connect different apps, use AI models, and create automated workflows with less manual effort.
+
+Whether you're a beginner exploring AI automation or ...
+
+#### 5. The Agent Left the Workflow: Building n8n Agents
+
+- **Channel:** n8n
+- **Views:** 6,550
+- **Likes:** 100
+- **Comments:** 7
+- **Duration:** 49:50
+- **Uploaded:** 2026-10-30
+- **URL:** https://youtube.com/watch?v=r5Rqrw6R150
+- **Thumbnail:** long-05-r5Rqrw6R150.jpg
+- **Description:** Agents in n8n used to live inside a workflow. Not anymore!
+
+On Thursday, Oct 29, Leo and Liam build an n8n Agent from scratch: a personal assistant that uses existing workflows as tools and answers in Slack.
+
+Along the way, they cover what makes Agents different from the AI Agent node, built-in memo...
+
+#### 6. Complete RAG Course in 90 Minutes | Build AI Agents with n8n
+
+- **Channel:** Memuna Gul
+- **Views:** 5,138
+- **Likes:** 72
+- **Comments:** 15
+- **Duration:** 1:37:04
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=jtRzCZdVnek
+- **Thumbnail:** long-06-jtRzCZdVnek.jpg
+- **Description:** Learn Retrieval-Augmented Generation (RAG) from scratch in this complete 90-minute course!  Understand RAG fundamentals, embeddings, vector databases, and build practical RAG AI Agents using n8n step by step.
+
+Perfect for beginners who want to learn AI agents, RAG workflows, and real-world AI automa...
+
+#### 7. AI Couldn't Build My n8n Automation, So I Hired a Fiverr Pro
+
+- **Channel:** SaaS Master
+- **Views:** 4,655
+- **Likes:** 4
+- **Comments:** 3
+- **Duration:** 4:45
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=YXyG72oFERg
+- **Thumbnail:** long-07-YXyG72oFERg.jpg
+- **Description:** Get 10% off Fiverr PRO: https://www.fiverr.com/ac/JORGE-10
+
+AI can write code, build apps, and generate basic workflows, but what happens when an automation gets too complex and AI prompts keep failing? After countless broken attempts trying to prompt an advanced n8n lead-generation workflow on my o...
+
+#### 8. Claude Can Now Run and Build Your n8n Workflows
+
+- **Channel:** Teacher's Tech
+- **Views:** 4,512
+- **Likes:** 38
+- **Comments:** 6
+- **Duration:** 19:31
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=_Xh_hl5qHds
+- **Thumbnail:** long-08-_Xh_hl5qHds.jpg
+- **Description:** Get your Hostinger VPS here and use code TEACHERS for an extra 10% off: https://www.hostinger.com/teachers
+ 
+Claude can now connect directly to your own n8n server, which means you can ask it to run your automations instead of opening them yourself. In this video I will show you how to set the whole...
+
+#### 9. n8n AI Agent Tutorial: Build & Sell This for $200 (Free JSON)
+
+- **Channel:** Hasnain Hyder
+- **Views:** 1,362
+- **Likes:** 0
+- **Comments:** 33
+- **Duration:** 10:14
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=HXfX53nNklM
+- **Thumbnail:** long-09-HXfX53nNklM.jpg
+- **Description:** n8n AI agent tutorial: sirf 4 nodes ka chota sa AI Agent banao aur clients ko $150–$200 me becho, zero coding ke sath, sirf 5 minute me!
+
+Is video me aap seekhenge how to build and sell AI agents using n8n automation aur Google Sheets. Maine chat me bas likha "850 petrol aur 1500 internet bill", aur...
+
+#### 10. N8N Full Course in Hindi & Urdu 2026 — Day 1: What is N8N & N8N vs Zapier vs Make
+
+- **Channel:** Musharaf Khan
+- **Views:** 1,246
+- **Likes:** 69
+- **Comments:** 29
+- **Duration:** 13:52
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=CpjRRobAMYI
+- **Thumbnail:** long-10-CpjRRobAMYI.jpg
+- **Description:** 📣 Want to learn N8N and start your own AI automation agency? This is Day 1 of the FREE N8N Full Course 2026 in Hindi & Urdu — the complete N8N AI Automation Course for beginners, from zero to real client projects.
+
+Welcome to Day 1! In this video you'll learn what automation is, what N8N is, and the...
+
+#### 11. n8n on VPS: Complete Setup Guide + Build Your First AI Agent
+
+- **Channel:** Ai with Rajpalsinh 
+- **Views:** 971
+- **Likes:** 21
+- **Comments:** 10
+- **Duration:** 18:25
+- **Uploaded:** 2026-10-29
+- **URL:** https://youtube.com/watch?v=EMKOc4uS8sk
+- **Thumbnail:** long-11-EMKOc4uS8sk.jpg
+- **Description:** 🔗 Get Hostinger VPS: https://www.hostinger.com/rajpalsinhn8n
+🏷️ Coupon Code: RAJPALSINH
+
+n8n's free trial expires in 15 days — and their cheapest paid plan starts at ₹2,100/month. But what if you could run n8n forever, with unlimited workflows, unlimited executions, and zero monthly fees? In this vi...
+
+#### 12. 🔥(No-Code) AI Automation Masterclass || n8n for Beginners || Telugu (LIVE)
+
+- **Channel:** AI Hub for Students || Telugu 
+- **Views:** 939
+- **Likes:** 42
+- **Comments:** 7
+- **Duration:** 1:13:46
+- **Uploaded:** 2026-10-30
+- **URL:** https://youtube.com/watch?v=3MR2QpieoWk
+- **Thumbnail:** long-12-3MR2QpieoWk.jpg
+- **Description:** 🚀 **FREE LIVE AI AUTOMATION MASTERCLASS IN TELUGU!** 🔥
+
+Want to learn AI Automation, AI Agents & n8n without writing a single line of code? 🤖
+
+In this FREE LIVE Masterclass, I'll explain AI Automation from absolute scratch in Telugu (తెలుగులో), with beginner-friendly explanations and practical examp...
+
+#### 13. n8n + Ollama: Build Local AI Agent with Qwen 3.8 27B (Free, Private)
+
+- **Channel:** Laxmi Kant | KGP Talkie
+- **Views:** 914
+- **Likes:** 17
+- **Comments:** 3
+- **Duration:** 9:26
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=Njeshv3vwHo
+- **Thumbnail:** long-13-Njeshv3vwHo.jpg
+- **Description:** Build your own AI agent on your own PC with n8n, Ollama and Qwen 3.8 27B. No API key, no monthly bill, and your data never leaves your computer. We install n8n with a few clicks in Docker Desktop, connect it to Ollama, build a chat agent with memory and a live weather tool, and then turn it into a m...
+
+#### 14. How to Build n8n Workflows with Joule Studio
+
+- **Channel:** SAP Community
+- **Views:** 841
+- **Likes:** 12
+- **Comments:** 0
+- **Duration:** 4:07
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=ne0u3-Y_M6Q
+- **Thumbnail:** long-14-ne0u3-Y_M6Q.jpg
+- **Description:** Agents are powerful on their own, but the real value comes when they're connected to your broader business processes. In this video, we show how to build n8n workflows inside Joule Studio, turning isolated automations into connected, agentic workflows that drive real outcomes. 
+ 
+Follow along as we ...
+
+#### 15. [N8N FREE] How To Install N8N in Google Cloud - AI Automation
+
+- **Channel:** WebSensePro
+- **Views:** 693
+- **Likes:** 6
+- **Comments:** 2
+- **Duration:** 20:47
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=He3uW_t0y2I
+- **Thumbnail:** long-15-He3uW_t0y2I.jpg
+- **Description:** Install N8N in Google Cloud - AI Automation
+
+Want to install the latest version of n8n on Google Cloud and run your AI automation workflows on your own server? In this step-by-step tutorial, I'll show you how to set up n8n using Google Cloud Compute Engine, Docker, Nginx, and a free SSL certificate....
+
+## Shorts (15)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [I Automated 5 Daily Tasks With AI - Here's What Happened! (Real n8n Test) | Aditi NextGen EP 02](https://youtube.com/watch?v=3LCd4gkXhVE) | Aditi | NextGen | 217 | 4 | 3 | 2:13 | 2026-10-26 |
+| 2 | [Build & Sell n8n AI Agents (8+ Hour Course, No Code)](https://youtube.com/watch?v=CJZ3HyaiWZQ) | Riaz Hatvi | 152 | 4 | 1 | 2:18 | 2026-10-26 |
+| 3 | [Milanote MCP server: automate Milanote with Claude, n8n, Make or Zapier](https://youtube.com/watch?v=dDJFHBXotvk) | Cotlet | 65 | 1 | 0 | 1:36 | 2026-10-24 |
+| 4 | [n8n Training (Video No. 22) - Introduction to n8n AI Agents – Understanding How They Work](https://youtube.com/watch?v=VtmJkusbAmM) | Monsieur Quatre-vingt Vingt | 58 | 0 | 0 | 2:05 | 2026-10-24 |
+| 5 | [Master SAP Automation with n8n and AI Online | AI Agents, MCP and S/4HANA | Logali](https://youtube.com/watch?v=BFXvfU5wUEw) | Logali Group | 55 | 1 | 0 | 1:26 | 2026-10-28 |
+| 6 | [I Built an AI Coding Helper with n8n + Ollama 🤖 | Local AI Agent](https://youtube.com/watch?v=2rsL0yvAsms) | AutomateWithBano | 32 | 3 | 1 | 1:02 | 2026-10-25 |
+| 7 | [How to Self-Host n8n on a VPS (24/7 Automation, No Per-Task Fees)](https://youtube.com/watch?v=oFOqIAQDb0U) | EUGameHost | 30 | 0 | 0 | 2:41 | 2026-10-27 |
+| 8 | [A research agent in n8n, paid per call — Nevermined Catalog × n8n](https://youtube.com/watch?v=DEHwDbTcw-Y) | Nevermined | 19 | 0 | 0 | 1:13 | 2026-10-27 |
+| 9 | [Telegram app with botfather for n8n](https://youtube.com/watch?v=z20egEbrx0Q) | AI Gurukool | 15 | 1 | 2 | 1:34 | 2026-10-30 |
+| 10 | [Pirate Ship MCP server: automate Pirate Ship with Claude, n8n, Make or Zapier](https://youtube.com/watch?v=vsempzEaJEg) | Cotlet | 14 | 1 | 0 | 1:24 | 2026-10-24 |
+| 11 | [I Built an AI Scam Detector with n8n + Groq | TruthCheck AI |My Small Project to Rebuild Confidence](https://youtube.com/watch?v=GRcewQJScGg) | AutomateWithBano | 13 | 3 | 1 | 55 | 2026-10-27 |
+| 12 | [Saving, Versioning, and Publishing n8n Workflows](https://youtube.com/watch?v=r5tuEqnmZtI) | The Tech Byte Professor | 12 | 0 | 0 | 2:23 | 2026-10-24 |
+| 13 | [AI Gmail Inbox Assistant: Auto-Triage, Draft Replies & Log Leads (n8n + OpenAI)](https://youtube.com/watch?v=uSP6dkfuzkI) | Automind Solutions | 11 | 2 | 2 | 39 | 2026-10-24 |
+| 14 | [What is n8n? Workflow automation for your apps and AI agents](https://youtube.com/watch?v=Rq5IK9PoyJA) | The AI Toolbox | 8 | 0 | 0 | 2:15 | 2026-10-29 |
+| 15 | [n8n AI Agent Error Handling: Self-Correct + Retry](https://youtube.com/watch?v=U5fyp_QSg2Q) | Autopilot Ops | 7 | 1 | 0 | 2:13 | 2026-10-25 |
+
+### Shorts details
+
+#### 1. I Automated 5 Daily Tasks With AI - Here's What Happened! (Real n8n Test) | Aditi NextGen EP 02
+
+- **Channel:** Aditi | NextGen
+- **Views:** 217
+- **Likes:** 4
+- **Comments:** 3
+- **Duration:** 2:13
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=3LCd4gkXhVE
+- **Thumbnail:** short-01-3LCd4gkXhVE.jpg
+- **Description:** What if AI could take care of your repetitive daily work? In this episode I test one n8n + Gemini workflow on five everyday tasks
+
+Demo uses fictional work data. Emails are drafts only - human review before sending. Presenter is AI-generated (altered/synthetic content: Yes).
+Which daily task would y...
+
+#### 2. Build & Sell n8n AI Agents (8+ Hour Course, No Code)
+
+- **Channel:** Riaz Hatvi
+- **Views:** 152
+- **Likes:** 4
+- **Comments:** 1
+- **Duration:** 2:18
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=CJZ3HyaiWZQ
+- **Thumbnail:** short-02-CJZ3HyaiWZQ.jpg
+- **Description:** n8n aur AI automation se real earning hoti hai? Is video mein apne 3 client projects ki jhalak dikha raha hoon, jinki combined project value $4,000 hai. Is n8n Worth Learning in 2026? 3 Projects Worth $4,000
+
+Somo ka sawaal simple hai: “Automation seekhne ka faida kya hai?” Jawab mein dekhein real c...
+
+#### 3. Milanote MCP server: automate Milanote with Claude, n8n, Make or Zapier
+
+- **Channel:** Cotlet
+- **Views:** 65
+- **Likes:** 1
+- **Comments:** 0
+- **Duration:** 1:36
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=dDJFHBXotvk
+- **Thumbnail:** short-03-dDJFHBXotvk.jpg
+- **Description:** Milanote has no public API and no official MCP server (October 2026). Here is how to automate Milanote with Claude, ChatGPT, n8n, Make or Zapier anyway: Cotlet is a hosted MCP server and REST API for apps with no API. Sign in to Milanote once in your own cloud browser, add Cotlet as a connector, and...
+
+#### 4. n8n Training (Video No. 22) - Introduction to n8n AI Agents – Understanding How They Work
+
+- **Channel:** Monsieur Quatre-vingt Vingt
+- **Views:** 58
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 2:05
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=VtmJkusbAmM
+- **Thumbnail:** short-04-VtmJkusbAmM.jpg
+- **Description:** Les Agents IA révolutionnent l'automatisation en permettant à une intelligence artificielle de raisonner, prendre des décisions et exécuter des actions de manière autonome. Dans cette vidéo, découvrez les bases des Agents IA dans n8n et comprenez pourquoi ils transforment la façon de créer des workf...
+
+#### 5. Master SAP Automation with n8n and AI Online | AI Agents, MCP and S/4HANA | Logali
+
+- **Channel:** Logali Group
+- **Views:** 55
+- **Likes:** 1
+- **Comments:** 0
+- **Duration:** 1:26
+- **Uploaded:** 2026-10-28
+- **URL:** https://youtube.com/watch?v=BFXvfU5wUEw
+- **Thumbnail:** short-05-BFXvfU5wUEw.jpg
+- **Description:** Aprende a automatizar e integrar SAP con n8n e inteligencia artificial, de cero a producción y sin saber programar, con el Máster Automatiza e Integra SAP con n8n e IA. Te lo cuenta tu docente, Iván Gaitero.
+
+👉 Inscríbete o consulta el temario: https://logaligroup.com/formacion/master-online/master-...
+
+#### 6. I Built an AI Coding Helper with n8n + Ollama 🤖 | Local AI Agent
+
+- **Channel:** AutomateWithBano
+- **Views:** 32
+- **Likes:** 3
+- **Comments:** 1
+- **Duration:** 1:02
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=2rsL0yvAsms
+- **Thumbnail:** short-06-2rsL0yvAsms.jpg
+- **Description:** What if beginners had an AI buddy to help them understand coding and machine learning problems? 🤖
+
+In this video, I’m demonstrating my AI Stuck-to-Solved Buddy, a beginner-friendly AI assistant built with n8n, Ollama, and the Qwen 2.5 language model.
+
+🚀 How it works:
+- Submit a problem through an n8...
+
+#### 7. How to Self-Host n8n on a VPS (24/7 Automation, No Per-Task Fees)
+
+- **Channel:** EUGameHost
+- **Views:** 30
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 2:41
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=oFOqIAQDb0U
+- **Thumbnail:** short-07-oFOqIAQDb0U.jpg
+- **Description:** Run n8n automations and AI agents 24/7 without paying per task. Here's what n8n is, why self-hosting on a VPS makes sense, and how to set it up with Docker.
+
+0:00 Intro
+0:16 What is n8n
+0:45 Why self-host
+1:09 Why a VPS
+1:27 The setup
+2:17 Your automation server
+
+The self-hosted community edition is...
+
+#### 8. A research agent in n8n, paid per call — Nevermined Catalog × n8n
+
+- **Channel:** Nevermined
+- **Views:** 19
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 1:13
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=DEHwDbTcw-Y
+- **Thumbnail:** short-08-DEHwDbTcw-Y.jpg
+- **Description:** I wanted a short weekly brief on agentic commerce, so I built one as an n8n workflow, gave it a budget, and let it pay for its own research through the Nevermined AI Services Catalog.
+
+It runs on a schedule, works out which services it needs, pays each one per call, and sends me the brief on Slack a...
+
+#### 9. Telegram app with botfather for n8n
+
+- **Channel:** AI Gurukool
+- **Views:** 15
+- **Likes:** 1
+- **Comments:** 2
+- **Duration:** 1:34
+- **Uploaded:** 2026-10-30
+- **URL:** https://youtube.com/watch?v=z20egEbrx0Q
+- **Thumbnail:** short-09-z20egEbrx0Q.jpg
+- **Description:** How to create app with telegram - botfather explained. This is to be coonected to the n8n workflow as described in the below video:
+
+Link: - https://youtu.be/hU4cNW4sJWA
+[Telegram with n8n - customer response AI bot]
+
+Join my whats app channel AI AUtomation ki ABC - tinyurl.com/WA-AIGurukool...
+
+#### 10. Pirate Ship MCP server: automate Pirate Ship with Claude, n8n, Make or Zapier
+
+- **Channel:** Cotlet
+- **Views:** 14
+- **Likes:** 1
+- **Comments:** 0
+- **Duration:** 1:24
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=vsempzEaJEg
+- **Thumbnail:** short-10-vsempzEaJEg.jpg
+- **Description:** Pirate Ship doesn't offer an API, and there is no official MCP server (October 2026). Here is how to automate Pirate Ship with Claude, ChatGPT, n8n, Make or Zapier anyway: Cotlet is a hosted MCP server and REST API for apps with no API. Sign in to Pirate Ship once in your own cloud browser, add Cotl...
+
+#### 11. I Built an AI Scam Detector with n8n + Groq | TruthCheck AI |My Small Project to Rebuild Confidence
+
+- **Channel:** AutomateWithBano
+- **Views:** 13
+- **Likes:** 3
+- **Comments:** 1
+- **Duration:** 55
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=GRcewQJScGg
+- **Thumbnail:** short-11-GRcewQJScGg.jpg
+- **Description:** I built TruthCheck AI — a small AI project with a real-world purpose!
+
+Yesterday, I spent almost 3 hours struggling with a bigger project and trying to solve the problems. It was frustrating, and I realized that sometimes we need to take a step back.
+
+So today, I decided to build a smaller project t...
+
+#### 12. Saving, Versioning, and Publishing n8n Workflows
+
+- **Channel:** The Tech Byte Professor
+- **Views:** 12
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 2:23
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=r5tuEqnmZtI
+- **Thumbnail:** short-12-r5tuEqnmZtI.jpg
+- **Description:** This video walks you through saving, versioning, and publishing n8n workflows and why you need to do it! As always refer to the n8n documentation for the latest details....
+
+#### 13. AI Gmail Inbox Assistant: Auto-Triage, Draft Replies & Log Leads (n8n + OpenAI)
+
+- **Channel:** Automind Solutions
+- **Views:** 11
+- **Likes:** 2
+- **Comments:** 2
+- **Duration:** 39
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=uSP6dkfuzkI
+- **Thumbnail:** short-13-uSP6dkfuzkI.jpg
+- **Description:** This n8n workflow watches your Gmail inbox and uses AI to classify every new email as urgent, support, sales, meeting, promotional or other. Every email is logged to Google Sheets. Urgent mail is labeled and sent to Slack instantly. Support, sales and meeting emails get an AI-drafted reply saved as ...
+
+#### 14. What is n8n? Workflow automation for your apps and AI agents
+
+- **Channel:** The AI Toolbox
+- **Views:** 8
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 2:15
+- **Uploaded:** 2026-10-29
+- **URL:** https://youtube.com/watch?v=Rq5IK9PoyJA
+- **Thumbnail:** short-14-Rq5IK9PoyJA.jpg
+- **Description:** n8n is a fair-code, source-available workflow automation tool from the company n8n: it connects your apps, AI models and code on a visual canvas, in n8n Cloud or on your own server.
+A trigger (a schedule, a webhook or an app event) starts each workflow, then nodes each do one job: call an app, ask a...
+
+#### 15. n8n AI Agent Error Handling: Self-Correct + Retry
+
+- **Channel:** Autopilot Ops
+- **Views:** 7
+- **Likes:** 1
+- **Comments:** 0
+- **Duration:** 2:13
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=U5fyp_QSg2Q
+- **Thumbnail:** short-15-U5fyp_QSg2Q.jpg
+- **Description:** Build a self-correcting AI agent in n8n that checks its own output, retries with the error when it's wrong, and alerts you instead of failing silently — no code.
+▶️ Grab the free starter template (name your price): https://mindfulpeace5.gumroad.com/l/vwkvwk
+🔔 New no-code AI agent every week — subscr...
+
