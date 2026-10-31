@@ -44,5 +44,5 @@ Caveat: a channel with a tiny median (under 1,000) makes small wins look huge. R
 | 1.1x | [The Agent Left the Workflow: Building n8n Agents](https://youtube.com/watch?v=r5Rqrw6R150) | n8n | 252,000 | 6,550 | 6,150 | 273 | 49:50 | Long | n8n |
 | 0.4x | [Claude Can Now Run and Build Your n8n Workflows](https://youtube.com/watch?v=_Xh_hl5qHds) | Teacher's Tech | 1,190,000 | 4,512 | 11,500 | 38 | 19:31 | Long | n8n |
 | 0.3x | [AI Couldn't Build My n8n Automation, So I Hired a Fiverr Pro](https://youtube.com/watch?v=YXyG72oFERg) | SaaS Master | 43,000 | 4,655 | 15,000 | 48 | 4:45 | Long | n8n |
-| 0.2x | [N8N Full Course in Hindi & Urdu 2026 — Day 1: What is N8N & N8N vs Zapier vs Make](https://youtube.com/watch?v=CpjRRobAMYI) | Musharaf Khan | 10,600 | 1,246 | 5,850 | 13 | 13:52 | Long | n8n |
+| 0.2x | [N8N Full Course in Hindi & Urdu 2026 - Day 1: What is N8N & N8N vs Zapier vs Make](https://youtube.com/watch?v=CpjRRobAMYI) | Musharaf Khan | 10,600 | 1,246 | 5,850 | 13 | 13:52 | Long | n8n |
 | 0.1x | [I Built My Own AI OS with n8n + Claude (6 Layers)](https://youtube.com/watch?v=IaQsvDdQz7c) | Derek Cheung / AI Agents Automation | 445,000 | 14,909 | 108,500 | 207 | 12:36 | Long | n8n |
