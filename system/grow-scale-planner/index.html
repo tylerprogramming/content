@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b0d14">
+<title>Grow &amp; Scale: 7-Day Planner</title>
+<style>
+  :root {
+    --bg: #0b0d14;
+    --bg2: #11141f;
+    --panel: #161a28;
+    --panel2: #1c2133;
+    --line: #262c40;
+    --fg: #eef0f7;
+    --muted: #8e95ad;
+    --accent: #7c5cff;
+    --accent2: #22d3ee;
+    --ok: #34d399;
+    --danger: #fb7185;
+    --c: var(--accent);
+    --glow: 124, 92, 255;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f4f5fb; --bg2: #ffffff; --panel: #ffffff; --panel2: #f1f3fa; --line: #e3e6f0; --fg: #171a2b; --muted: #68708a; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; min-height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    background-image:
+      radial-gradient(900px 500px at 10% -10%, rgba(124,92,255,.22), transparent 60%),
+      radial-gradient(700px 400px at 95% 0%, rgba(34,211,238,.16), transparent 60%),
+      radial-gradient(600px 400px at 50% 110%, rgba(244,114,182,.12), transparent 60%);
+    background-attachment: fixed;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .app { width: 100%; max-width: 760px; margin: 0 auto; padding: 18px 16px 80px; }
+  @media (min-width: 900px) { .app { padding-top: 32px; } }
+
+  header { margin-bottom: 14px; }
+  header .kicker { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent2); font-weight: 700; }
+  header h1 { font-size: 28px; line-height: 1.15; margin: 2px 0 4px; letter-spacing: -.3px;
+    background: linear-gradient(90deg, #a78bfa, #22d3ee 60%, #f472b6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  header .by { color: var(--muted); font-size: 13px; }
+  .progress { height: 10px; background: var(--line); border-radius: 999px; overflow: hidden; margin: 12px 0 6px; }
+  .progress > div { height: 100%; width: 0; border-radius: 999px; transition: width .35s ease;
+    background: linear-gradient(90deg, #7c5cff, #22d3ee, #34d399); background-size: 200% 100%; animation: shimmer 4s linear infinite; }
+  @keyframes shimmer { to { background-position: 200% 0; } }
+  .meta { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+
+  nav.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; margin-bottom: 10px; scrollbar-width: none; }
+  nav.tabs::-webkit-scrollbar { display: none; }
+  nav.tabs button {
+    --c: var(--accent);
+    flex: 0 0 auto; border: 1px solid var(--line); background: var(--panel); color: var(--fg);
+    border-radius: 999px; padding: 8px 14px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;
+    display: inline-flex; align-items: center; gap: 7px; transition: transform .12s, box-shadow .12s;
+  }
+  nav.tabs button:hover { transform: translateY(-1px); }
+  nav.tabs button.active { border-color: var(--c); background: color-mix(in srgb, var(--c) 18%, var(--panel)); color: var(--fg); box-shadow: 0 0 0 3px color-mix(in srgb, var(--c) 22%, transparent); }
+  nav.tabs button .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--line); border: 2px solid var(--c); }
+  nav.tabs button .dot.done { background: var(--c); }
+  nav.tabs button .dot.partial { background: color-mix(in srgb, var(--c) 45%, transparent); }
+
+  section.view { display: none; animation: fade .18s ease; }
+  section.view.active { display: block; }
+  @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+  .hero { --c: var(--accent); position: relative; overflow: hidden; border-radius: 18px; padding: 20px 20px 18px; margin-bottom: 14px; color: #fff;
+    background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 55%, #0b0d14)); box-shadow: 0 10px 30px -12px color-mix(in srgb, var(--c) 70%, transparent); }
+  .hero::after { content: attr(data-emoji); position: absolute; right: -6px; bottom: -14px; font-size: 76px; opacity: .22; transform: rotate(-8deg); }
+  .hero .num { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; opacity: .85; font-weight: 700; }
+  .hero h2 { font-size: 24px; margin: 2px 0 6px; line-height: 1.15; }
+  .hero .sub { color: rgba(255,255,255,.85); font-size: 13px; }
+  .hero .pct { position: absolute; right: 16px; top: 16px; font-size: 13px; font-weight: 700; background: rgba(255,255,255,.18); padding: 4px 10px; border-radius: 999px; }
+
+  .card { --c: var(--accent); background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; margin-bottom: 14px; position: relative; }
+  .card.tint { border-top: 3px solid var(--c); }
+  .card h2 { font-size: 18px; margin: 0 0 4px; }
+  .card h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .1em; color: var(--c); margin: 16px 0 8px; font-weight: 700; }
+  .card h3:first-child { margin-top: 0; }
+  .card p { margin: 6px 0; font-size: 14px; }
+  .sub { color: var(--muted); font-size: 13px; }
+  details summary { cursor: pointer; font-size: 14px; font-weight: 600; color: var(--muted); user-select: none; list-style: none; display: flex; align-items: center; gap: 8px; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: "▸"; color: var(--c); transition: transform .15s; }
+  details[open] summary::before { transform: rotate(90deg); }
+  details[open] summary { color: var(--fg); margin-bottom: 8px; }
+  .teach p { font-size: 14px; }
+  .teach p b { color: var(--c); }
+  .teach ul { margin: 4px 0 8px 18px; padding: 0; font-size: 14px; }
+  .teach li { margin: 3px 0; }
+  .fw { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+  @media (max-width: 640px) { .fw { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 400px) { .fw { grid-template-columns: 1fr; } }
+  .fw a { display: block; text-decoration: none; color: inherit; border-radius: 12px; padding: 10px 12px; border: 1px solid color-mix(in srgb, var(--fc) 45%, var(--line)); background: color-mix(in srgb, var(--fc) 12%, var(--panel)); transition: transform .1s; }
+  .fw a:hover { transform: translateY(-2px); }
+  .fw a.static { cursor: default; }
+  .fw a.static:hover { transform: none; }
+  .fw .n { font-size: 11px; font-weight: 800; letter-spacing: .1em; color: var(--fc); text-transform: uppercase; }
+  .fw .t { font-weight: 700; font-size: 14px; margin: 2px 0; }
+  .fw .q { font-size: 12px; color: var(--muted); }
+  .fw .d { display: inline-block; margin-top: 6px; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: var(--fc); color: #fff; }
+  .quote { border-left: 3px solid var(--c); padding: 6px 12px; margin: 10px 0; color: var(--muted); font-style: italic; background: var(--panel2); border-radius: 0 10px 10px 0; }
+
+  .check { display: flex; align-items: flex-start; gap: 12px; padding: 9px 10px; margin: 0 -10px; font-size: 14px; cursor: pointer; border-radius: 10px; transition: background .12s; }
+  .check:hover { background: var(--panel2); }
+  .check input { appearance: none; -webkit-appearance: none; width: 22px; height: 22px; margin: 0; border-radius: 7px; border: 2px solid var(--c); background: transparent; flex: 0 0 auto; cursor: pointer; position: relative; transition: background .12s; }
+  .check input:checked { background: var(--c); }
+  .check input:checked::after { content: "✓"; position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: 14px; font-weight: 800; }
+  .check.done span { color: var(--muted); text-decoration: line-through; }
+
+  label.field { display: block; margin: 12px 0; font-size: 13px; }
+  label.field > span { display: block; margin-bottom: 5px; color: var(--muted); font-weight: 500; }
+  textarea, input[type=text], input[type=date], input[type=time], select {
+    width: 100%; background: var(--bg2); color: var(--fg); border: 1px solid var(--line); border-radius: 10px;
+    padding: 10px 12px; font: inherit; font-size: 14px; outline: none; transition: border-color .12s, box-shadow .12s;
+  }
+  textarea { min-height: 72px; resize: vertical; }
+  textarea:focus, input:focus, select:focus { border-color: var(--c); box-shadow: 0 0 0 3px color-mix(in srgb, var(--c) 22%, transparent); }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .row { grid-template-columns: 1fr; } }
+
+  .rating { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; font-size: 14px; }
+  .rating + .rating { border-top: 1px solid var(--line); }
+  .pips { display: flex; gap: 5px; }
+  .pips button { width: 34px; height: 34px; border-radius: 9px; border: 1px solid var(--line); background: var(--bg2); color: var(--muted); cursor: pointer; font-size: 13px; font-weight: 600; transition: transform .1s; }
+  .pips button:hover { transform: scale(1.08); }
+  .pips button.on { background: var(--c); color: #fff; border-color: var(--c); }
+
+  .letter p { font-size: 14px; line-height: 2.1; }
+  .letter .blank { display: inline-block; min-width: 110px; max-width: 100%; border: 0; border-bottom: 2px solid var(--line); border-radius: 0; padding: 0 4px; margin: 0 2px; font-size: 14px; background: transparent; color: var(--accent2); font-weight: 600; box-shadow: none; }
+  .letter .blank::placeholder { color: var(--muted); opacity: .8; font-style: italic; font-weight: 400; }
+  .letter .blank:focus { border-bottom-color: var(--accent2); box-shadow: none; }
+  .letter h4 { font-size: 12px; text-transform: uppercase; letter-spacing: .1em; color: var(--c); margin: 18px 0 2px; }
+
+  .matrix { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 520px) { .matrix { grid-template-columns: 1fr; } }
+  .quad { border-radius: 12px; padding: 10px 12px; border: 1px solid color-mix(in srgb, var(--qc) 40%, var(--line)); background: color-mix(in srgb, var(--qc) 10%, var(--panel)); }
+  .quad b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--qc); }
+  .quad i { display: block; font-size: 11px; color: var(--muted); margin-bottom: 6px; font-style: normal; }
+  .quad textarea { min-height: 96px; border: 0; padding: 4px 0; background: transparent; }
+  .quad textarea:focus { box-shadow: none; }
+
+  table.tracker { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.tracker th, table.tracker td { padding: 7px 4px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle; }
+  table.tracker th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+  table.tracker input[type=checkbox] { width: 20px; height: 20px; accent-color: var(--ok); }
+  table.tracker input[type=text], table.tracker input[type=date] { padding: 5px 8px; font-size: 13px; }
+  table.tracker .del { background: none; border: 0; color: var(--muted); cursor: pointer; font-size: 18px; }
+
+  .btns { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  button.btn { border: 1px solid var(--line); background: var(--panel2); color: var(--fg); border-radius: 10px; padding: 9px 16px; font-size: 13px; font-weight: 600; cursor: pointer; transition: transform .1s, filter .1s; }
+  button.btn:hover { transform: translateY(-1px); filter: brightness(1.1); }
+  button.btn.primary { background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 60%, var(--accent2))); color: #fff; border-color: transparent; box-shadow: 0 6px 18px -8px var(--c); }
+  button.btn.danger { color: var(--danger); }
+  .output { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 12px; }
+
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }
+  .stat { border-radius: 14px; padding: 12px 14px; background: var(--panel); border: 1px solid var(--line); border-top: 3px solid var(--sc); }
+  .stat b { display: block; font-size: 24px; line-height: 1.1; color: var(--sc); }
+  .stat span { font-size: 12px; color: var(--muted); }
+
+  .timeline { position: relative; }
+  .plan-day { --c: var(--accent); display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 12px 0; position: relative; font-size: 14px; }
+  .plan-day + .plan-day { border-top: 1px solid var(--line); }
+  .plan-day .bubble { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; color: #fff; background: var(--c); box-shadow: 0 6px 16px -8px var(--c); font-size: 15px; }
+  .plan-day.complete .bubble { background: var(--ok); }
+  .plan-day .ttl { font-weight: 700; font-size: 15px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .plan-day .ttl .badge { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: var(--c); color: #fff; }
+  .plan-day .ttl .badge.today { background: var(--ok); color: #05261b; }
+  .plan-day .when { color: var(--muted); font-size: 12px; margin: 1px 0 4px; }
+  .plan-day ul { margin: 4px 0 0 16px; padding: 0; color: var(--muted); }
+  .plan-day li { margin: 2px 0; }
+  .plan-day .mini { height: 5px; background: var(--line); border-radius: 999px; overflow: hidden; margin-top: 8px; max-width: 220px; }
+  .plan-day .mini > div { height: 100%; background: var(--c); }
+  .signals { display: flex; flex-wrap: wrap; gap: 8px; }
+  .signals span { padding: 6px 12px; border-radius: 999px; font-size: 13px; background: color-mix(in srgb, var(--danger) 14%, var(--panel)); border: 1px solid color-mix(in srgb, var(--danger) 40%, var(--line)); }
+
+  .toast { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%) translateY(10px); background: linear-gradient(135deg, #7c5cff, #22d3ee); color: #fff; padding: 10px 18px; border-radius: 999px; font-size: 13px; font-weight: 700; opacity: 0; pointer-events: none; transition: all .2s; box-shadow: 0 10px 30px -10px #7c5cff; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .nextprev { display: flex; justify-content: space-between; margin-top: 8px; gap: 10px; }
+  .nextprev .btn { flex: 1; }
+  .nextprev .btn:first-child { text-align: left; }
+  .nextprev .btn:last-child { text-align: right; }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="kicker">7-day planner challenge</div>
+    <h1>Grow &amp; Scale</h1>
+    <div class="by">Evelyn Weiss framework · saves on this device as you type</div>
+  </header>
+  <div class="progress"><div id="bar"></div></div>
+  <div class="meta"><span id="metaLeft"></span><span id="metaRight"></span></div>
+  <nav class="tabs" id="tabs"></nav>
+  <main id="views"></main>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+// ---------- persistence ----------
+const KEY = 'gs7_v1';
+let S = load();
+function load() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } }
+function save() { localStorage.setItem(KEY, JSON.stringify(S)); refreshMeta(); }
+function get(k, d='') { return S[k] === undefined ? d : S[k]; }
+function set(k, v) { S[k] = v; save(); }
+function toast(t) { const el = document.getElementById('toast'); el.textContent = t; el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 1400); }
+
+// ---------- content ----------
+const DAYS = [
+  {
+    id: 'day0', n: 0, title: 'Vision Board Party', time: '45-90 min, split across 2 sittings if needed',
+    teaching: [
+      ['Why this comes first', 'Clarity on direction saves roughly a year of wandering. Days 1-7 assume you already know what world you are building and what topics define your path. This is where you decide that.'],
+      ['Strategic, not a highlight reel', 'A vision board is not a collage of nice things. It is a strategic picture of the world you are building, in 7 sections, that the rest of the planner executes against. Your Role Model Self is the North Star inside it and your internal mentor when you are lost.'],
+      ['Consumption reveals direction', 'What you watch, read, follow, and buy when nobody is assigning it to you is data. Your themes are already showing up in your consumption. Name them and decide which ones you create in, not just consume.'],
+      ['The sustainability problem', 'Most personal brands fail because the person cannot keep being the person the brand needs. Pick a direction you can show up for daily for three years, not one that only works at full energy.'],
+      ['Transformation is the advantage', 'The change you are in the middle of is the thing nobody can copy. Your from-to becomes your content, your offers, and your proof.'],
+      ['"Reconstructed from the workshop outline. Prompts are mine, not Evelyn\'s verbatim. Edit freely."'],
+    ],
+    actions: ['Write the 7 sections of the strategic vision board', 'Write your one-line North Star', 'Do the consumption audit', 'Name your 3-5 themes', 'Run the sustainability check', 'Write your from-to transformation'],
+    vision: [
+      ['v_identity', '1. Who I am becoming', 'Identity. The person at the center of the board. Borrow from your Role Model Self letter if you have started it.'],
+      ['v_world', '2. The world I am building', 'Mission. What is different in the world because this exists? Who is better off and how?'],
+      ['v_people', '3. The people I serve', 'Audience and community. Who they are, what they are stuck on, what they are trying to become.'],
+      ['v_work', '4. The work', 'Offers and business model. What I make, how it is delivered, what a normal week of producing it looks like.'],
+      ['v_money', '5. The money', 'Revenue, what it funds, what enough looks like. Numbers, not vibes.'],
+      ['v_life', '6. The life', 'Daily rhythm, health, environment, relationships. What the business must protect, not consume.'],
+      ['v_legacy', '7. The legacy', 'What outlasts me. The body of work, the people, the thing that keeps running.'],
+    ],
+    fields: [
+      ['v_northstar', 'My one-line North Star (the sentence the 7 sections point at)', 'text'],
+    ],
+    audit: [
+      ['t_watch', 'What I watched, read, and listened to in the last 30 days when no one assigned it', 'textarea'],
+      ['t_follow', 'Who I follow and actually open (5-10 names)', 'textarea'],
+      ['t_buy', 'What I keep buying, signing up for, or saving', 'textarea'],
+      ['t_make', 'What I already make without being asked (notes, code, videos, threads)', 'textarea'],
+    ],
+    lists: [ ['themes', 'My themes (3-5 topics that define my path)'] ],
+    fields2: [
+      ['t_create', 'Which of these themes do I create in, not just consume?', 'text'],
+      ['s_cant', 'Sustainability check: what about my current approach could I NOT keep doing for 3 years?', 'textarea'],
+      ['s_can', 'What could I do every day for 3 years without burning out?', 'textarea'],
+      ['x_from', 'My transformation: FROM', 'text'],
+      ['x_to', 'TO', 'text'],
+      ['x_proof', 'How this from-to becomes content, offers, and proof', 'textarea'],
+    ],
+    outputs: ['7-section strategic vision board written', 'One-line North Star written', 'Consumption audit done', '3-5 themes named', 'Sustainability check passed', 'From-to transformation written'],
+  },
+  {
+    id: 'day1', n: 1, title: 'My Planning Process', time: '10 min video + 10 min',
+    teaching: [
+      ['The missing piece', 'Most entrepreneurs cannot see the big picture while drowning in daily tasks. Efforts scatter. You cannot prioritize without knowing where you are headed: who you are becoming, what you are building, what offers you need, how people find you, what is blocking you.'],
+      ['The breakthrough tool', 'The Daily Self-Management Worksheet was THE main thing she did for three years. Big picture clarity first, then the daily worksheet executes against it.'],
+      ['The loop', 'Planner (clarity) → Daily Worksheet (action) → Debrief (learning) → back to Planner (adjustment). Nothing is done forever.'],
+    ],
+    framework: { type: 'table', rows: [
+      ['North Star Vision', 'What world am I building?', 'Pre-party'],
+      ['Role Model Self', 'Who am I becoming?', 'Day 2'],
+      ['Themes', 'What topics define my path?', 'Pre-party'],
+      ['Offers', 'What value do I create?', 'Day 3'],
+      ['Conversion Corridor', 'How do people find and buy?', 'Day 4'],
+      ['Bottlenecks', 'What is blocking my progress?', 'Day 5'],
+      ['Action Planning', 'What is my 90-day focus?', 'Day 6'],
+      ['Monthly/Weekly', 'How do I break it down?', 'Day 6'],
+      ['Daily Self-Management', 'What do I do TODAY?', 'Day 7'],
+    ]},
+    actions: ['Read through the 9-section framework', 'Understand how the planner and daily worksheet work together', 'Rate your current clarity 1-5 in each area'],
+    ratings: { label: 'My clarity rating (1 = foggy, 5 = crystal clear)', items: ['Who I am becoming', 'What I am building', 'My offers', 'How people find me', 'What is blocking me', 'My action plan', 'My daily practice'] },
+    fields: [
+      ['commit_goal', 'My biggest goal for this challenge', 'textarea'],
+      ['commit_why', 'Why I will commit to a full week', 'textarea'],
+    ],
+    outputs: ['Understanding of the 9-section system', 'Understanding of how planner + daily worksheet work together', 'Baseline clarity rating completed', 'Commitment to the 7-day process'],
+  },
+  {
+    id: 'day2', n: 2, title: 'Role Model Self', time: '10 min video + one letter section',
+    teaching: [
+      ['Who you are becoming', 'Your Role Model Self is the most actualized version of you. A working hypothesis, not a perfect picture. You need directional correctness, not clarity. Take action, then check: did this bring me closer? If yes, keep going. If no, readjust.'],
+      ['Destination and guide', 'Ask "What would my Role Model Self do?" and get an answer. You create this version when you are clear and conscious, so they can guide you when you are not.'],
+      ['Daily check-in', 'Look at your token (a physical object for your future self), read your letter, or read affirmations from it. Whatever is sustainable.'],
+    ],
+    actions: ['Complete ONE section of the letter today (pick the one that calls to you)', 'Set 2 dates this week to finish the rest', 'Pick or find a physical token for your future self'],
+    letter: true,
+    choice: ['d2_section', 'The section I chose to write today', ['Who I am and how I show up', 'My daily reality and ordinary Tuesday', 'My values and how I make decisions', 'My business and what I have built', 'My message to my current self']],
+    fields: [
+
+      ['d2_insight', 'One insight that emerged', 'textarea'],
+      ['d2_date1', 'Date 1 to finish the letter', 'date'],
+      ['d2_date2', 'Date 2 to finish the letter', 'date'],
+    ],
+    outputs: ['One section of your letter completed', 'Two dates scheduled to finish', 'Felt connection to your Role Model Self (felt, not just thought about)'],
+  },
+  {
+    id: 'day3', n: 3, title: 'Your Offers', time: '10 min video + 10 min audit',
+    teaching: [
+      ['Two types of offers', 'Audience-growing: free content, lead magnets, free communities, YouTube videos, self-liquidating offers ($7-$47). Purpose: surround your journey with people and offset growth costs. Money-making: paid community, cohorts, group programs, courses, done-for-you, VIP days, 1:1 ($97+). Purpose: revenue and deeper transformation.'],
+      ['The gap most people miss', 'People think they have a money problem when they have a people problem. If your audience is not growing significantly every single day, you do not have an effective audience-growing offer.'],
+      ['Shots on goal', 'Your first 30+ offers might flop. Aim for ONE aligned audience-growing offer and ONE aligned money-making offer that works. Everything else is experimentation. Where there is momentum, lean in.'],
+      ['The audit question', 'For every offer: does it align with who I am becoming? Does it support the bigger vision? Is it marketed in a way that reflects my values?'],
+    ],
+    actions: ['List current or potential audience-growing offers', 'List current or potential money-making offers', 'Pick which category needs attention now', 'Pick the NEXT offer to focus on'],
+    lists: [
+      ['ag', 'My audience-growing offers (free / $7-$47)'],
+      ['mm', 'My money-making offers ($97+)'],
+    ],
+    choice: ['d3_cat', 'Which category needs more attention right now?', ['Audience-growing', 'Money-making']],
+    fields: [
+      ['d3_next', 'My NEXT offer to focus on', 'text'],
+      ['d3_why', 'Why this one? (What would my Role Model Self say?)', 'textarea'],
+    ],
+    outputs: ['Offer audit completed (both columns)', 'Category needing attention identified', 'Next offer prioritized', 'Alignment with Role Model Self checked'],
+  },
+  {
+    id: 'day4', n: 4, title: 'Conversion Corridor', time: '10 min video + 10 min map',
+    teaching: [
+      ['The path people take', 'Stranger to customer: FIND you (visibility, reach) → TRUST you (nurture, value) → BUY from you (offer, conversion) → TRANSFORM with you (fulfillment, results, retention). Most people focus on the sale and forget the path.'],
+      ['Where are you leaking?', 'Not finding you: visibility problem. Find but do not engage: trust problem. Engage but do not buy: offer or conversion problem. Buy but no results: fulfillment problem.'],
+    ],
+    actions: ['Map all four stages of my corridor', 'Identify where it leaks', 'Pick one thing to patch the leak this week'],
+    fields: [
+      ['d4_find', 'How people FIND me', 'textarea'],
+      ['d4_trust', 'How I build TRUST', 'textarea'],
+      ['d4_buy', 'How people BUY', 'textarea'],
+      ['d4_transform', 'How they TRANSFORM', 'textarea'],
+    ],
+    choice: ['d4_leak', 'Where is my corridor leaking?', ['Find', 'Trust', 'Buy', 'Transform']],
+    fields2: [
+      ['d4_patch', 'One thing I could do this week to patch that leak', 'textarea'],
+    ],
+    outputs: ['Conversion corridor mapped', 'Leak identified', 'One action item for the week'],
+  },
+  {
+    id: 'day5', n: 5, title: 'Bottlenecks', time: '10 min video + 5 min rating',
+    teaching: [
+      ['The 5 bottleneck categories', 'CLARITY: you do not know what to do or where you are going. CAPACITY: not enough time, energy, or resources. CAPABILITY: you do not know HOW. CONFIDENCE: you know what to do but fear stops you. CONSISTENCY: you start but do not stick.'],
+      ['Different bottlenecks need different solutions', 'Clarity needs vision work. Capacity needs practice, boundaries, or delegation. Capability needs learning or hiring. Confidence needs action despite fear. Consistency needs systems and accountability.'],
+      ['Her line', '"When my effort is low, I think about what I am thinking about."'],
+    ],
+    actions: ['Rate each of the 5 areas', 'Name the biggest bottleneck', 'Match it to the solution type', 'Define one step for this week'],
+    ratings: { label: 'Rate each area (1 = major bottleneck, 5 = flowing)', items: ['Clarity', 'Capacity', 'Capability', 'Confidence', 'Consistency'] },
+    fields: [
+      ['d5_biggest', 'My biggest bottleneck right now', 'text'],
+      ['d5_solution', 'What type of solution does this need?', 'text'],
+      ['d5_step', 'One step I can take this week to address it', 'textarea'],
+    ],
+    outputs: ['Bottleneck areas rated', 'Primary bottleneck identified', 'Solution type understood', 'One action step defined'],
+  },
+  {
+    id: 'day6', n: 6, title: 'Action Planning', time: '10 min video + 15 min plan',
+    teaching: [
+      ['Vision without action is a dream', 'Translate vision into a plan: 6-month vision → 90-day priority → monthly focus → projects → tasks.'],
+      ['Projects vs tasks', 'A project is a body of work with a clear outcome ("Launch my course"). A task is a single action ("Write module 1 script"). Projects break into tasks. Tasks fill your daily worksheet.'],
+      ['ONE priority', 'Your 90-day focus is ONE main thing. Not three. Not five. One priority with 2-3 supporting goals.'],
+    ],
+    actions: ['Write the 6-month vision (2-3 sentences)', 'Pick the ONE 90-day priority', 'Set a focus for each of the next 3 months', 'List 2-3 Month 1 projects'],
+    fields: [
+      ['d6_vision', 'My 6-month vision (2-3 sentences)', 'textarea'],
+      ['d6_priority', 'My ONE 90-day priority', 'text'],
+      ['d6_m1', 'Month 1 focus', 'text'],
+      ['d6_m2', 'Month 2 focus', 'text'],
+      ['d6_m3', 'Month 3 focus', 'text'],
+    ],
+    lists: [ ['proj', 'Month 1 projects (2-3)'] ],
+    outputs: ['6-month vision defined', '90-day priority clarified (ONE thing)', '3-month overview created', 'Month 1 projects listed'],
+  },
+  {
+    id: 'day7', n: 7, title: 'Daily Self-Management', time: '10 min video + first morning practice',
+    teaching: [
+      ['THE breakthrough tool', 'This is it. "There was not a single day I did this in the morning and went off track." If you do nothing else from the week, use this worksheet.'],
+      ['Morning practice (10-15 min)', 'Brain dump everything. Ground and connect with your Role Model Self ("What do WE focus on today?"). Eisenhower sort. Find synergy: 5 more minutes thinking saves hours.'],
+      ['During the day', 'Track time as you complete tasks. This catches rabbit holes. Course correct when you notice.'],
+      ['Evening debrief (5-10 min)', 'Loom or journal. What went well? What did not? Where did I say yes when I should have said no? What patterns am I noticing? This is your content bank.'],
+    ],
+    actions: ['Brain dump everything on your mind', 'Connect with your Role Model Self (token, letter)', 'Sort using the Eisenhower Matrix below', 'Find one synergy opportunity', 'Commit to an evening debrief time'],
+    matrix: true,
+    fields: [
+      ['d7_dump', 'Brain dump (everything you think you need to do)', 'textarea'],
+      ['d7_synergy', 'One synergy opportunity (one action serving multiple purposes)', 'textarea'],
+      ['d7_debrief_time', 'My evening debrief time will be', 'time'],
+    ],
+    choice: ['d7_method', 'I will debrief using', ['Loom', 'Journal', 'Voice memo']],
+    outputs: ['First morning practice completed', 'Eisenhower Matrix used', 'Evening debrief scheduled', 'Daily self-management practice INSTALLED'],
+  },
+];
+
+const THEME = {
+  day0: ['#f97316', '🌅'], day1: ['#7c5cff', '🧭'], day2: ['#ec4899', '🪞'], day3: ['#f59e0b', '🎁'], day4: ['#22d3ee', '🛤️'],
+  day5: ['#ef4444', '🧱'], day6: ['#34d399', '🎯'], day7: ['#8b5cf6', '☀️'], plan: ['#7c5cff', '📅'], daily: ['#34d399', '🔁'],
+};
+const col = (id) => (THEME[id] || THEME.plan)[0];
+const emo = (id) => (THEME[id] || THEME.plan)[1];
+function todayDayN() {
+  const start = get('start_date'); if (!start) return -99;
+  const a = new Date(start + 'T00:00:00'); const b = new Date(); b.setHours(0,0,0,0);
+  return Math.floor((b - a) / 86400000) + 1;
+}
+
+// Letter templates: {hint} becomes an inline blank.
+const LETTER = [
+  ['Opening', [
+    "I'm writing this from {location/setting where you work and live} on a {typical day of the week}. It's {time of day} and I just finished {morning routine/activity}.",
+    "I wanted you to know that everything you're working toward becomes real. The person you're trying to become? I'm living as that person now.",
+  ]],
+  ['Who I am', [
+    "People know me as {how others describe you}. When they introduce me, they say {what people say when introducing you}.",
+    "My work focuses on {primary area of expertise}. I help {specific type of person} achieve {specific outcome} by {your unique approach}.",
+    "What makes me different is {your unique combination}. While others focus on {what competitors focus on}, I approach it through {your distinctive angle}.",
+  ]],
+  ['How I look and present myself', [
+    "When you see me now, the first thing you notice is {most obvious change}. I dress {style} because it reflects {what your style communicates}.",
+    "My energy is {calm, vibrant, focused} and people often comment that I seem {how others perceive you}. I take care of my body by {health routine} and it shows in {visible results}.",
+    "I carry myself {posture, confidence} because I know {belief that creates this presence}.",
+  ]],
+  ['My daily reality', [
+    "A typical day starts at {time} with {first activity}. This sets the tone because {why this matters}.",
+    "My work schedule is {structure}. I typically work with {types of clients} doing {activities}. The best part is {what energizes you}.",
+    "I stop working at {time} because {value this protects}. My evenings are for {evening activities}.",
+    "I live in {environment} that reflects {values}. My workspace is {description} because {how it supports you}.",
+  ]],
+  ['My relationships and social circle', [
+    "I'm surrounded by people who {qualities}. My closest relationships are with {types of people} who understand {what they get about you}.",
+    "In conversations, I'm known for {communication style}. People come to me when {what others seek from you}.",
+    "I've set boundaries around {what you no longer tolerate} and it's freed me to {what this enables}.",
+    "My family/partner sees me as {how loved ones view you now} which is different from before when they saw me as {how you used to be perceived}.",
+  ]],
+  ['My values in action', [
+    "Every decision I make is guided by {value #1}, {value #2}, and {value #3}.",
+    "When faced with difficult choices, I ask myself {decision criteria} and the answer always becomes clear.",
+    "I no longer {eliminated behavior} because it conflicts with {value}. Instead, when that situation arises, I {new behavior}.",
+    "The thing I'm most proud of is that I never compromise on {non-negotiable} even when {tempting situation}.",
+  ]],
+  ['My business and financial reality', [
+    "My business generates {revenue} primarily through {income sources}. What's most satisfying is that this money comes from {type of value creation}.",
+    "I price my work at {pricing level} because {belief about value}. Clients pay this gladly because {unique value}.",
+    "My business model is {structure} and it works perfectly for my lifestyle because {how it supports you}.",
+    "I work with {number} clients at a time doing {type of work}. They're typically {ideal client} facing {problem you solve}.",
+    "My marketing is simply {how you attract clients} because people can see {what's obvious about you}.",
+  ]],
+  ['My impact and legacy', [
+    "The change I'm creating in the world is {your impact}. People who work with me typically {common transformation}.",
+    "I'm building something that will outlast me: {legacy project}. It matters because {why this needs to exist}.",
+    "In my industry, I'm known for {reputation}. When people think of {your expertise}, my name comes up because {what you're recognized for}.",
+    "The stories people tell about me are {what kind of stories}.",
+  ]],
+  ['What I have learned', [
+    "The biggest insight I gained was {major realization}. This changed how I {what shifted}.",
+    "I wish I had known earlier that {wisdom}. It would have saved me from {struggle you could have avoided}.",
+    "The fear you're carrying about {current fear} turns out to be {how it resolves}. What actually happens is {reality vs fear}.",
+    "The thing you think is impossible, {current limitation}, becomes {how it unfolds}.",
+  ]],
+  ['My growth and evolution', [
+    "I'm still learning and growing in {areas of development}. Next, I'm working on {next level goals}.",
+    "What surprises people is that I {unexpected trait}. Even I'm amazed that I now {something that seems impossible now}.",
+    "The old version of me used to {old behavior} but now I {new behavior} because {what shifted}.",
+    "I measure success by {how you define winning} rather than {old metrics}.",
+  ]],
+  ['My message to you', [
+    "The journey from where you are to where I am happens through {process}. The most important thing is {key principle}.",
+    "Stop waiting for {thing you think you need}. You're ready now to {action you can take}.",
+    "Trust that {encouragement}. The person you're becoming is not only possible, it's inevitable if you {key commitment}.",
+    "Remember: every day you choose {daily choice}, you're choosing me. Every time you {specific behavior}, you're becoming who I am now.",
+  ]],
+  ['Your next steps', [
+    "This week, start by {immediate action}. It seems small, but it's actually {how it compounds}.",
+    "This month, commit to {monthly commitment}. This will {result}.",
+    "This quarter, the big shift to make is {quarterly goal}. When you do this, you'll notice {evidence}.",
+    "I'm proud of who you're becoming. Keep going. With love and certainty, Your Future Self, {signature/name}",
+  ]],
+];
+
+// ---------- helpers ----------
+const h = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function dayDate(n) {
+  const start = get('start_date');
+  if (!start) return '';
+  const d = new Date(start + 'T00:00:00'); d.setDate(d.getDate() + n - 1);
+  return d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+}
+function checkKey(dayId, group, i) { return `${dayId}.${group}.${i}`; }
+function dayStatus(d) {
+  const total = d.actions.length + d.outputs.length;
+  let done = 0;
+  d.actions.forEach((_, i) => { if (get(checkKey(d.id, 'a', i), false)) done++; });
+  d.outputs.forEach((_, i) => { if (get(checkKey(d.id, 'o', i), false)) done++; });
+  return { done, total };
+}
+
+// ---------- render pieces ----------
+function renderChecks(dayId, group, items) {
+  return items.map((t, i) => {
+    const k = checkKey(dayId, group, i); const on = !!get(k, false);
+    return `<label class="check ${on ? 'done' : ''}"><input type="checkbox" data-k="${k}" ${on ? 'checked' : ''}><span>${h(t)}</span></label>`;
+  }).join('');
+}
+function renderField([k, label, type]) {
+  const v = h(get(k));
+  if (type === 'textarea') return `<label class="field"><span>${h(label)}</span><textarea data-k="${k}">${v}</textarea></label>`;
+  return `<label class="field"><span>${h(label)}</span><input type="${type}" data-k="${k}" value="${v}"></label>`;
+}
+function renderRatings(dayId, r) {
+  return `<h3>${h(r.label)}</h3>` + r.items.map((it, i) => {
+    const k = `${dayId}.r.${i}`; const v = get(k, 0);
+    return `<div class="rating"><span>${h(it)}</span><div class="pips" data-k="${k}">${[1,2,3,4,5].map(n => `<button data-v="${n}" class="${v>=n?'on':''}">${n}</button>`).join('')}</div></div>`;
+  }).join('');
+}
+function renderList(dayId, [k, label]) {
+  const key = `${dayId}.list.${k}`;
+  const items = get(key, ['', '', '']);
+  return `<h3>${h(label)}</h3>` + items.map((v, i) =>
+    `<label class="field"><span>${i+1}.</span><input type="text" data-list="${key}" data-i="${i}" value="${h(v)}"></label>`).join('') +
+    `<button class="btn" data-addlist="${key}">+ Add line</button>`;
+}
+function renderChoice([k, label, opts]) {
+  const v = get(k);
+  return `<label class="field"><span>${h(label)}</span><select data-k="${k}"><option value="">Choose...</option>${opts.map(o => `<option ${o===v?'selected':''}>${h(o)}</option>`).join('')}</select></label>`;
+}
+function renderLetter() {
+  let idx = 0;
+  const blocks = LETTER.map(([title, paras]) => {
+    const ps = paras.map(p => '<p>' + p.replace(/\{([^}]+)\}/g, (_, hint) => {
+      const k = `letter.${idx++}`;
+      return `<input class="blank" data-k="${k}" placeholder="${h(hint)}" value="${h(get(k))}" size="${Math.min(40, Math.max(12, (get(k)||hint).length))}">`;
+    }) + '</p>').join('');
+    return `<h4>${h(title)}</h4>${ps}`;
+  }).join('');
+  return `<details><summary>Letter from your future Role Model Self (fill the blanks; one section today)</summary><div class="letter"><p><b>Dear Past Me,</b></p>${blocks}</div></details>`;
+}
+function renderMatrix() {
+  const q = [
+    ['m_iu', 'Important + Urgent', 'Do today', '#ef4444'],
+    ['m_inu', 'Important + Not urgent', 'Schedule it', '#34d399'],
+    ['m_uni', 'Urgent + Not important', 'Delegate / delete (people-pleasing lives here)', '#f59e0b'],
+    ['m_nn', 'Not important + Not urgent', 'Eliminate (shiny objects live here)', '#8e95ad'],
+  ];
+  return `<h3>Eisenhower matrix</h3><p class="sub">With your Role Model Self, ask: is this important? Is this urgent?</p><div class="matrix">` +
+    q.map(([k, b, i, c]) => `<div class="quad" style="--qc:${c}"><b>${b}</b><i>${i}</i><textarea data-k="${k}" placeholder="...">${h(get(k))}</textarea></div>`).join('') + '</div>';
+}
+
+function renderFramework(c) {
+  const map = { 'Pre-party': 'day0', 'Day 2': 'day2', 'Day 3': 'day3', 'Day 4': 'day4', 'Day 5': 'day5', 'Day 6': 'day6', 'Day 7': 'day7' };
+  const rows = DAYS.find(x => x.framework).framework.rows;
+  const cells = rows.map((r, i) => {
+    const id = map[r[2]]; const fc = id ? col(id) : '#8e95ad';
+    return `<a class="${id ? '' : 'static'}" style="--fc:${fc}" ${id ? `data-go="${id}" href="#"` : ''}><div class="n">${i+1}</div><div class="t">${h(r[0])}</div><div class="q">${h(r[1])}</div><span class="d">${h(r[2])}</span></a>`;
+  }).join('');
+  return `<div class="card tint" style="--c:${c}">
+    <h3>The 9-section system</h3>
+    <p class="sub">Nine sections, one system. Tap a section to jump to its day. "Pre-party" sections are the vision board (Day 0).</p>
+    <div class="fw">${cells}</div>
+    <p class="sub" style="margin-top:12px">Planner (clarity) → Daily worksheet (action) → Debrief (learning) → back to Planner (adjustment). Nothing is done forever.</p>
+  </div>`;
+}
+
+function renderDay(d) {
+  const st = dayStatus(d);
+  const date = dayDate(d.n);
+  const c = col(d.id);
+  const pct = Math.round(100 * st.done / st.total);
+  const isToday = todayDayN() === d.n;
+  return `
+  <div class="hero" style="--c:${c}" data-emoji="${emo(d.id)}">
+    <div class="num">${d.n === 0 ? 'Pre-party' : `Day ${d.n} of 7`}${isToday ? ' · today' : ''}</div>
+    <h2>${h(d.title)}</h2>
+    <div class="sub">${date ? date + ' · ' : ''}${h(d.time)}</div>
+    <div class="pct">${pct}%</div>
+  </div>
+  <div class="card tint" style="--c:${c}">
+    <details ${st.done === 0 ? 'open' : ''}><summary>The teaching</summary><div class="teach">
+      ${d.teaching.map(([t, body]) => (body === undefined ? `<div class="quote">${h(t)}</div>` : body.startsWith('"') ? `<div class="quote">${h(body)}</div>` : `<p><b>${h(t)}.</b> ${h(body)}</p>`)).join('')}
+    </div></details>
+  </div>
+  ${d.framework ? renderFramework(c) : ''}
+  <div class="card tint" style="--c:${c}">
+    <h3>The action</h3>
+    ${renderChecks(d.id, 'a', d.actions)}
+    ${d.vision ? '<h3>Strategic vision board</h3>' + d.vision.map(([k, t, hint]) => `<label class="field"><span><b style="color:var(--fg)">${h(t)}</b><br>${h(hint)}</span><textarea data-k="${k}">${h(get(k))}</textarea></label>`).join('') : ''}
+    ${d.vision && d.fields ? d.fields.map(renderField).join('') : ''}
+    ${d.audit ? '<h3>Consumption audit</h3>' + d.audit.map(renderField).join('') : ''}
+    ${d.ratings ? renderRatings(d.id, d.ratings) : ''}
+    ${d.letter ? renderLetter() : ''}
+    ${d.lists ? d.lists.map(l => renderList(d.id, l)).join('') : ''}
+    ${d.matrix ? renderMatrix() : ''}
+    ${d.fields && !d.vision ? '<h3>My reflection</h3>' + (d.letter && d.choice ? renderChoice(d.choice) : '') + d.fields.map(renderField).join('') : ''}
+    ${d.choice && !d.letter ? renderChoice(d.choice) : ''}
+    ${d.fields2 ? (d.vision ? '<h3>Themes, sustainability, transformation</h3>' : '') + d.fields2.map(renderField).join('') : ''}
+    <div class="output"><h3>Today's output</h3>${renderChecks(d.id, 'o', d.outputs)}</div>
+  </div>
+  ${d.n === 7 && st.done === st.total ? `<div class="hero" style="--c:#34d399" data-emoji="🏁"><div class="num">You did it</div><h2>Now show up. Every single day.</h2><div class="sub">Clarity on who you are becoming, offers mapped, corridor defined, bottlenecks named, 90-day plan set, daily practice installed. Head to the Daily tab.</div></div>` : ''}
+  <div class="nextprev" style="--c:${c}">
+    <button class="btn" data-go="${d.n === 0 ? 'plan' : 'day' + (d.n - 1)}">← ${d.n === 0 ? 'Plan' : d.n === 1 ? 'Day 0' : 'Day ' + (d.n - 1)}</button>
+    <button class="btn primary" data-go="${d.n === 7 ? 'daily' : 'day' + (d.n + 1)}">${d.n === 7 ? 'Ongoing practice' : 'Day ' + (d.n + 1)} →</button>
+  </div>`;
+}
+
+function renderPlan() {
+  const tn = todayDayN();
+  const daysDone = DAYS.filter(d => { const s = dayStatus(d); return s.done === s.total; }).length;
+  let done = 0, total = 0; DAYS.forEach(d => { const s = dayStatus(d); done += s.done; total += s.total; });
+  const tr = get('tracker', []);
+  const rows = DAYS.map(d => {
+    const st = dayStatus(d); const c = col(d.id); const complete = st.done === st.total;
+    const badge = complete ? '<span class="badge" style="background:var(--ok);color:#05261b">done</span>' : tn === d.n ? '<span class="badge today">today</span>' : '';
+    return `<div class="plan-day ${complete ? 'complete' : ''}" style="--c:${c}">
+      <div class="bubble">${complete ? '✓' : d.n === 0 ? '★' : d.n}</div>
+      <div>
+        <div class="ttl">${emo(d.id)} ${h(d.title)} ${badge}</div>
+        <div class="when">${dayDate(d.n) || 'Set a start date above'} · ${h(d.time)}</div>
+        <ul>${d.actions.map(a => `<li>${h(a)}</li>`).join('')}</ul>
+        <div class="mini"><div style="width:${Math.round(100*st.done/st.total)}%"></div></div>
+        <div class="btns" style="margin-top:8px"><button class="btn ${tn === d.n ? 'primary' : ''}" data-go="${d.id}">Open Day ${d.n}</button></div>
+      </div></div>`;
+  }).join('');
+  return `
+  <div class="stats">
+    <div class="stat" style="--sc:#7c5cff"><b>${daysDone}/${DAYS.length}</b><span>days complete</span></div>
+    <div class="stat" style="--sc:#22d3ee"><b>${Math.round(100*done/total)}%</b><span>of all items</span></div>
+    <div class="stat" style="--sc:#34d399"><b>${tr.filter(r => r.am).length}</b><span>mornings logged</span></div>
+  </div>
+  <div class="card tint" style="--c:#7c5cff">
+    <h3>How this works</h3>
+    <p>Day 0 is the vision board (North Star + Themes). Days 1-6 build clarity one piece at a time. Day 7 installs the daily self-management practice that makes the rest work. After Day 7, the daily practice takes 10-15 minutes and becomes the engine.</p>
+    <p class="sub">You need: this app, 10 minutes of focused time each day, and honesty with yourself.</p>
+    <div class="row">
+      <label class="field"><span>Start date (Day 1)</span><input type="date" data-k="start_date" value="${h(get('start_date'))}"></label>
+      <label class="field"><span>Daily time block</span><input type="time" data-k="daily_time" value="${h(get('daily_time'))}"></label>
+    </div>
+  </div>
+  <div class="card"><h3 style="color:#22d3ee">Day by day</h3><div class="timeline">${rows}</div></div>
+  <div class="card tint" style="--c:#fb7185">
+    <h3 style="color:#fb7185">Return signals</h3>
+    <p class="sub">When you notice these, go back to the planner and recalibrate.</p>
+    <div class="signals"><span>Feeling behind</span><span>Wanting to burn it all down</span><span>Wanting to start something new</span><span>Comparing yourself to others</span><span>Low energy or effort</span><span>Not feeling aligned</span></div>
+  </div>`;
+}
+
+function renderWeek() {
+  const w = get('week', { start: '', outcomes: ['', '', ''], tasks: ['', '', '', '', ''], review: '' });
+  const past = get('weeks', []);
+  const t = (k, i) => `<label class="field"><span>${i+1}.</span><input type="text" data-week="${k}" data-i="${i}" value="${h(w[k][i] || '')}"></label>`;
+  return `<div class="card tint" style="--c:#f59e0b">
+    <h3 style="color:#f59e0b">This week</h3>
+    <p class="sub">Break the Day 6 plan down. Month focus → projects → this week's 3 outcomes → tasks. Tasks feed your morning worksheet. ${past.length ? past.length + ' past week' + (past.length > 1 ? 's' : '') + ' archived.' : ''}</p>
+    <div class="row">
+      <label class="field"><span>Week of</span><input type="date" data-weekf="start" value="${h(w.start)}"></label>
+      <label class="field"><span>90-day priority (from Day 6)</span><input type="text" value="${h(get('d6_priority'))}" disabled></label>
+    </div>
+    <h3 style="color:#f59e0b">3 outcomes this week</h3>
+    ${[0,1,2].map(i => t('outcomes', i)).join('')}
+    <h3 style="color:#f59e0b">Tasks (from Month ${get('d6_m1') ? '1' : ''} projects)</h3>
+    ${w.tasks.map((_, i) => t('tasks', i)).join('')}
+    <div class="btns"><button class="btn" id="addTask">+ Add task</button></div>
+    <label class="field"><span>End-of-week review: what moved, what did not, what changes next week</span><textarea data-weekf="review">${h(w.review)}</textarea></label>
+    <div class="btns"><button class="btn primary" id="newWeek">Archive and start new week</button></div>
+  </div>`;
+}
+
+function renderDaily() {
+  const rows = get('tracker', []);
+  const tr = rows.map((r, i) => `<tr>
+    <td><input type="date" data-tr="${i}" data-f="date" value="${h(r.date||'')}" style="padding:4px 6px;font-size:13px"></td>
+    <td><input type="checkbox" data-tr="${i}" data-f="am" ${r.am?'checked':''}></td>
+    <td><input type="checkbox" data-tr="${i}" data-f="pm" ${r.pm?'checked':''}></td>
+    <td><input type="checkbox" data-tr="${i}" data-f="debrief" ${r.debrief?'checked':''}></td>
+    <td><input type="text" data-tr="${i}" data-f="insight" value="${h(r.insight||'')}" placeholder="key insight / content idea"></td>
+    <td><button class="del" data-deltr="${i}" title="Remove">×</button></td>
+  </tr>`).join('');
+  const streak = (() => { let s = 0; const sorted = [...rows].filter(r => r.date).sort((a,b) => b.date.localeCompare(a.date)); for (const r of sorted) { if (r.am) s++; else break; } return s; })();
+  return `
+  <div class="hero" style="--c:#34d399" data-emoji="🔁">
+    <div class="num">After day 7</div>
+    <h2>Your ongoing practice</h2>
+    <div class="sub">The challenge is the setup. The real work is showing up daily. 10-15 minutes total.</div>
+    <div class="pct">${streak}-day streak</div>
+  </div>
+  <div class="card tint" style="--c:#34d399">
+    <h3>Morning (10 min)</h3>
+    <ul class="teach"><li>Check in with your Role Model Self (1 min)</li><li>Brain dump (2 min)</li><li>Eisenhower sort (3 min)</li><li>Find synergy (2 min)</li><li>Set your focus: top 3 tasks (2 min)</li></ul>
+    <h3>During the day</h3><p>Track time as you work. Notice rabbit holes. Course correct.</p>
+    <h3>Evening (5 min)</h3><p>Debrief: what worked? What did not? What patterns do I notice? Where did I say yes when I should have said no?</p>
+    <div class="quote">"What you appreciate appreciates. Where you put your focus grows."</div>
+  </div>
+  ${renderWeek()}
+  <div class="card tint" style="--c:#22d3ee">
+    <h3>Becoming tracker · ${rows.filter(r=>r.am).length} mornings logged · ${streak}-day streak</h3>
+    <table class="tracker"><thead><tr><th>Date</th><th>AM</th><th>PM</th><th>Debrief</th><th>Insight</th><th></th></tr></thead><tbody>${tr || '<tr><td colspan="6" class="sub">No days logged yet.</td></tr>'}</tbody></table>
+    <div class="btns"><button class="btn primary" id="addToday">+ Log today</button></div>
+  </div>
+  <div class="card tint" style="--c:#8e95ad">
+    <h3 style="color:var(--muted)">Backup</h3>
+    <p class="sub">Everything lives in this browser's localStorage. Export to keep a copy or move it to another device.</p>
+    <div class="btns">
+      <button class="btn" id="exportMd">Copy as Markdown</button>
+      <button class="btn" id="exportJson">Download JSON</button>
+      <button class="btn" id="importJson">Import JSON</button>
+      <button class="btn danger" id="reset">Reset everything</button>
+    </div>
+    <input type="file" id="importFile" accept="application/json" style="display:none">
+  </div>`;
+}
+
+// ---------- export ----------
+function toMarkdown() {
+  const L = [];
+  L.push('# Grow & Scale 7-Day Planner (Evelyn Weiss)');
+  if (get('start_date')) L.push(`Start: ${get('start_date')}`);
+  L.push('');
+  DAYS.forEach(d => {
+    L.push(`## Day ${d.n}: ${d.title}`);
+    d.actions.forEach((a, i) => L.push(`- [${get(checkKey(d.id,'a',i),false)?'x':' '}] ${a}`));
+    if (d.vision) { L.push(''); d.vision.forEach(([k, t]) => { if (get(k)) L.push(`**${t}:** ${get(k)}`); }); }
+    if (d.audit) d.audit.forEach(([k, label]) => { if (get(k)) L.push(`**${label}:** ${get(k)}`); });
+    if (d.ratings) { L.push(''); L.push(`**${d.ratings.label}**`); d.ratings.items.forEach((it, i) => L.push(`- ${it}: ${get(`${d.id}.r.${i}`, 0) || '-'}`)); }
+    if (d.lists) d.lists.forEach(([k, label]) => { L.push(''); L.push(`**${label}**`); get(`${d.id}.list.${k}`, []).filter(Boolean).forEach((v, i) => L.push(`${i+1}. ${v}`)); });
+    if (d.matrix) { L.push(''); [['m_iu','Important + Urgent'],['m_inu','Important + Not urgent'],['m_uni','Urgent + Not important'],['m_nn','Not important + Not urgent']].forEach(([k,b]) => { if (get(k)) L.push(`**${b}:** ${get(k)}`); }); }
+    [...(d.fields||[]), ...(d.fields2||[])].forEach(([k, label]) => { if (get(k)) L.push(`**${label}:** ${get(k)}`); });
+    if (d.choice && get(d.choice[0])) L.push(`**${d.choice[1]}** ${get(d.choice[0])}`);
+    L.push(''); L.push("Today's output:");
+    d.outputs.forEach((o, i) => L.push(`- [${get(checkKey(d.id,'o',i),false)?'x':' '}] ${o}`));
+    L.push('');
+  });
+  let idx = 0; const letterLines = [];
+  LETTER.forEach(([title, paras]) => {
+    const out = paras.map(p => p.replace(/\{([^}]+)\}/g, (_, hint) => get(`letter.${idx++}`) || `[${hint}]`));
+    letterLines.push(`### ${title}`, ...out, '');
+  });
+  if (Object.keys(S).some(k => k.startsWith('letter.') && S[k])) { L.push('## Letter from my future Role Model Self', 'Dear Past Me,', '', ...letterLines); }
+  const allWeeks = [get('week', null), ...get('weeks', [])].filter(w => w && (w.start || w.outcomes.some(Boolean)));
+  if (allWeeks.length) { L.push('## Weekly plans'); allWeeks.forEach(w => { L.push(`### Week of ${w.start || '?'}`); w.outcomes.filter(Boolean).forEach(o => L.push(`- Outcome: ${o}`)); w.tasks.filter(Boolean).forEach(o => L.push(`- [ ] ${o}`)); if (w.review) L.push(`Review: ${w.review}`); L.push(''); }); }
+  const tr = get('tracker', []);
+  if (tr.length) { L.push('## Becoming tracker', '| Date | AM | PM | Debrief | Insight |', '|---|---|---|---|---|'); tr.forEach(r => L.push(`| ${r.date||''} | ${r.am?'x':''} | ${r.pm?'x':''} | ${r.debrief?'x':''} | ${r.insight||''} |`)); }
+  return L.join('\n');
+}
+function download(name, text, type) { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; a.click(); }
+
+// ---------- app shell ----------
+const VIEWS = [{ id: 'plan', label: '📅 Plan' }, ...DAYS.map(d => ({ id: d.id, label: d.n === 0 ? '🌅 Day 0' : `Day ${d.n}` })), { id: 'daily', label: '🔁 Daily' }];
+let current = get('_view', 'plan');
+
+function refreshMeta() {
+  let done = 0, total = 0;
+  DAYS.forEach(d => { const s = dayStatus(d); done += s.done; total += s.total; });
+  document.getElementById('bar').style.width = Math.round(100 * done / total) + '%';
+  document.getElementById('metaLeft').textContent = `${done}/${total} items · ${DAYS.filter(d => { const s = dayStatus(d); return s.done === s.total; }).length}/${DAYS.length} days complete`;
+  const tr = get('tracker', []);
+  document.getElementById('metaRight').textContent = tr.length ? `${tr.filter(r => r.am).length} mornings logged` : '';
+  document.querySelectorAll('#tabs button').forEach(b => {
+    const d = DAYS.find(x => x.id === b.dataset.view); if (!d) return;
+    const s = dayStatus(d); const dot = b.querySelector('.dot');
+    dot.className = 'dot ' + (s.done === s.total ? 'done' : s.done ? 'partial' : '');
+  });
+}
+
+function render() {
+  const tabs = document.getElementById('tabs');
+  tabs.innerHTML = VIEWS.map(v => `<button data-view="${v.id}" style="--c:${col(v.id)}" class="${v.id === current ? 'active' : ''}">${DAYS.some(d => d.id === v.id) ? '<span class="dot"></span>' : ''}${v.label}</button>`).join('');
+  const views = document.getElementById('views');
+  let html = '';
+  if (current === 'plan') html = renderPlan();
+  else if (current === 'daily') html = renderDaily();
+  else html = renderDay(DAYS.find(d => d.id === current));
+  views.innerHTML = `<section class="view active">${html}</section>`;
+  bind(); refreshMeta();
+  window.scrollTo(0, 0);
+}
+
+function go(id) { current = id; set('_view', id); render(); }
+
+function bind() {
+  document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => go(b.dataset.view));
+  document.querySelectorAll('[data-go]').forEach(b => b.onclick = (e) => { e.preventDefault(); go(b.dataset.go); });
+  document.querySelectorAll('input[type=checkbox][data-k]').forEach(c => c.onchange = () => {
+    set(c.dataset.k, c.checked); c.closest('.check').classList.toggle('done', c.checked);
+    const d = DAYS.find(x => x.id === current); if (d) { const s = dayStatus(d); if (s.done === s.total) { toast(`Day ${d.n} complete`); if (d.n === 7) { const y = window.scrollY; render(); window.scrollTo(0, y); } } }
+  });
+  document.querySelectorAll('textarea[data-k], input[data-k]:not([type=checkbox]), select[data-k]').forEach(el => {
+    el.oninput = () => { set(el.dataset.k, el.value); if (el.classList.contains('blank')) el.size = Math.min(40, Math.max(12, (el.value || el.placeholder).length)); };
+    if (el.dataset.k === 'start_date' || el.tagName === 'SELECT') el.onchange = () => { set(el.dataset.k, el.value); if (el.dataset.k === 'start_date') render(); };
+  });
+  document.querySelectorAll('.pips').forEach(p => p.querySelectorAll('button').forEach(b => b.onclick = () => {
+    set(p.dataset.k, +b.dataset.v); p.querySelectorAll('button').forEach(x => x.classList.toggle('on', +x.dataset.v <= +b.dataset.v));
+  }));
+  document.querySelectorAll('input[data-list]').forEach(el => el.oninput = () => { const arr = get(el.dataset.list, ['', '', '']); arr[+el.dataset.i] = el.value; set(el.dataset.list, arr); });
+  document.querySelectorAll('[data-addlist]').forEach(b => b.onclick = () => { const arr = get(b.dataset.addlist, ['', '', '']); arr.push(''); set(b.dataset.addlist, arr); render(); });
+  document.querySelectorAll('[data-tr]').forEach(el => {
+    const upd = () => { const tr = get('tracker', []); tr[+el.dataset.tr][el.dataset.f] = el.type === 'checkbox' ? el.checked : el.value; set('tracker', tr); };
+    el.type === 'checkbox' ? el.onchange = upd : el.oninput = upd;
+  });
+  document.querySelectorAll('[data-deltr]').forEach(b => b.onclick = () => { const tr = get('tracker', []); tr.splice(+b.dataset.deltr, 1); set('tracker', tr); render(); });
+  const wk = () => get('week', { start: '', outcomes: ['', '', ''], tasks: ['', '', '', '', ''], review: '' });
+  document.querySelectorAll('[data-week]').forEach(el => el.oninput = () => { const w = wk(); w[el.dataset.week][+el.dataset.i] = el.value; set('week', w); });
+  document.querySelectorAll('[data-weekf]').forEach(el => { const f = () => { const w = wk(); w[el.dataset.weekf] = el.value; set('week', w); }; el.oninput = f; el.onchange = f; });
+  const at = document.getElementById('addTask'); if (at) at.onclick = () => { const w = wk(); w.tasks.push(''); set('week', w); render(); };
+  const nw = document.getElementById('newWeek'); if (nw) nw.onclick = () => {
+    const w = wk(); if (!w.start && !w.outcomes.some(Boolean) && !w.tasks.some(Boolean)) { toast('Nothing to archive'); return; }
+    const past = get('weeks', []); past.unshift(w); set('weeks', past);
+    const next = new Date((w.start || new Date().toISOString().slice(0,10)) + 'T00:00:00'); next.setDate(next.getDate() + 7);
+    set('week', { start: next.toISOString().slice(0,10), outcomes: ['', '', ''], tasks: ['', '', '', '', ''], review: '' }); render(); toast('Week archived');
+  };
+  const addToday = document.getElementById('addToday');
+  if (addToday) addToday.onclick = () => {
+    const today = new Date(); const iso = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    const tr = get('tracker', []); if (tr.some(r => r.date === iso)) { toast('Today is already logged'); return; }
+    tr.unshift({ date: iso, am: true, pm: false, debrief: false, insight: '' }); set('tracker', tr); render(); toast('Logged ' + iso);
+  };
+  const ex = document.getElementById('exportMd'); if (ex) ex.onclick = async () => { const md = toMarkdown(); try { await navigator.clipboard.writeText(md); toast('Markdown copied'); } catch { download('grow-scale-planner.md', md, 'text/markdown'); } };
+  const ej = document.getElementById('exportJson'); if (ej) ej.onclick = () => download('grow-scale-planner.json', JSON.stringify(S, null, 2), 'application/json');
+  const ij = document.getElementById('importJson'); if (ij) ij.onclick = () => document.getElementById('importFile').click();
+  const f = document.getElementById('importFile'); if (f) f.onchange = () => { const r = new FileReader(); r.onload = () => { try { S = JSON.parse(r.result); save(); render(); toast('Imported'); } catch { toast('Bad file'); } }; r.readAsText(f.files[0]); };
+  const rs = document.getElementById('reset'); if (rs) rs.onclick = () => { if (confirm('Erase all answers and tracker rows?')) { S = {}; save(); go('plan'); } };
+}
+
+render();
+</script>
+</body>
+</html>

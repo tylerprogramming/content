@@ -1,0 +1,393 @@
+[00:00] Anthropic just released their GrokBot and ChatGBT Dots Killer.
+[00:05] It's called Claude Duet,
+[00:06] and it might just be the best personal AI agent out there.
+[00:10] In this video, I'm covering everything Claude Duet,
+[00:13] what it is, how it works, how to get stuff,
+[00:16] how to get access to it,
+[00:17] because not everyone get access to it,
+[00:19] and which AI agents you should be using.
+[00:22] This one is an exclusive banger.
+[00:25] Let's lock in and get into it.
+[00:27] So this is Claude Duet and the reason why it's so small on my screen here is currently it is mobile only.
+[00:33] It is only on the mobile Claude app.
+[00:35] It is in super early access.
+[00:36] Only a few people are getting into it.
+[00:38] Highly recommend signing up that wait list.
+[00:40] I put the link down below for that.
+[00:42] But let's get into what it is and what makes it different than the other AI agents out there.
+[00:47] And real quick before we do that, instantly becomes the number one name for an AI agent out there.
+[00:52] Here's your power rankings for best AI agent names.
+[00:54] Duet, Hermes at number two, great, great name.
+[00:57] Muse at number three, I like Muse a lot.
+[00:59] Grogbot at number four, solid name.
+[01:01] They just got a little lazy,
+[01:02] they just put bot at the end of the grok, that's fine.
+[01:04] Five open clock, Claudebot was significantly,
+[01:07] significantly better.
+[01:08] Six dots, terrible name, awful name.
+[01:10] That's the power rankings and names.
+[01:11] But now let's get into the actual app
+[01:13] and see which agent is better.
+[01:15] So Claude Duet, much like the other AI agents out there,
+[01:17] uses all your plugins, so it instantly connects
+[01:20] to your email, your calendar,
+[01:22] all the other services you use out there that you currently use with Claude.
+[01:26] So it knows everything about you. It has all your data.
+[01:29] It can take care of anything you need.
+[01:31] Here's what's really interesting about this and why I actually think this is the
+[01:35] best UI for an AI agent ever.
+[01:38] You basically have two sides of what an AI agent can be.
+[01:42] You have Grokbot, right? Grokbot is on one side,
+[01:45] which is just a long list of bots and agents and you choose which agent you
+[01:50] want to talk to.
+[01:50] They all have their own context and skills and everything.
+[01:53] And you choose one and you talk to it.
+[01:55] This is like the anti God thread, which I'll show you in a second.
+[01:59] It's a long list of agents. On the other hand,
+[02:02] you have like a dots for instance, which is more of a God thread, one thread.
+[02:06] You put everything into the one thread. It's a true personal agent.
+[02:10] Just one agent bot. Muses like this. Hermes is kind of like this,
+[02:15] but then they added like the bots moats. Now there's like 20 different modes.
+[02:18] open clause like this one God thread,
+[02:21] you just put everything into it.
+[02:22] There's upsides and downsides to each.
+[02:25] Upside of the kind of long list of bots like Rockbott is,
+[02:28] is you can have many different bots
+[02:30] with many different responsibilities
+[02:31] and the context don't get confusing or overlap
+[02:34] or anything like that.
+[02:35] You have bots for very specific tasks,
+[02:37] which makes those bots very good at those specific tasks.
+[02:41] On the other hand, you have the God thread,
+[02:42] which it's not quite as good at very specific tasks
+[02:45] Cause it doesn't just have the context of that one type of task,
+[02:50] but it makes it very easy to use cause you just go to one thread and you put
+[02:54] everything in that one thread.
+[02:55] So it's less of like a cognitive load cause you don't have to think about which
+[02:58] bot to use,
+[02:59] but it's not quite as good at like those individual tasks.
+[03:04] Just to give an example of like why a Grok bot with a long list of bots is like
+[03:09] a really good setup is cause I have Barry.
+[03:12] Barry's like my chief content officer.
+[03:14] When I can just go into Barry, give an idea and it knows, it knows I'm trying to give
+[03:18] it ideas about content.
+[03:20] So I can say, Hey, heard her newsletter.
+[03:21] And then just knows I'm trying to make a herder newsletter.
+[03:23] It can help me give an outline, schedule it for me, get the right audience in my email
+[03:28] newsletter tool, all that.
+[03:29] You go to the right bot.
+[03:31] It has the right context automatically.
+[03:33] And it does really good work.
+[03:34] God thread like dots.
+[03:35] I can't really do that because I do all my work in that one thread.
+[03:39] So I have to be a lot more clear about what I'm trying to do.
+[03:42] So what is Claude Duet?
+[03:43] Is Claude Duet more of a God thread type agent or is it more of a long list of bots type agent?
+[03:50] Well, it's actually the best of both worlds.
+[03:53] So Duet, you have one God thread, but as you give it tasks, as you give it specific tasks to do,
+[04:00] it actually takes those tasks and breaks it down by category for you.
+[04:05] So I'm giving it some tasks for an app I'm building called Henry.
+[04:08] So I brain dump a bunch of things I want to do and it figures out, okay,
+[04:11] they want this task done for Henry puts a hashtag Henry. Okay.
+[04:15] Alex wants this has done for his video game. So it does hashtag null district.
+[04:19] So it's one God thread, right? This one chat right here.
+[04:23] But when you give it tasks,
+[04:25] it breaks it down by what it calls channels.
+[04:28] It's actually called channels or categories creates tasks for each one of them,
+[04:32] puts it in the right channel,
+[04:34] the right category and keeps it neatly organized with the right context.
+[04:38] So it's actually the best of both worlds where it has the positive of the God thread, right, where you only need to put things into one thread.
+[04:47] You don't need to have this cognitive load.
+[04:49] Which bot do I talk to?
+[04:50] Let me go through my long list of 20 different bots.
+[04:52] You put it all in one thread, but then that one God thread decides which context that task should go to and breaks it down into these tasks for you.
+[05:02] I don't manage this list of tasks.
+[05:04] This list of tasks is all managed by the God thread chat.
+[05:08] So I don't need that cognitive load of like, which context should I be using?
+[05:13] Which bot should be doing this?
+[05:14] No, I just say, Hey, do this for me.
+[05:16] And it goes, okay, I'll give this over here.
+[05:18] We'll start doing this for Henry, start doing this for your game.
+[05:20] We'll start doing this for your content.
+[05:21] And it gives it the right skills, plugins in context.
+[05:25] So it's really the best of both worlds.
+[05:27] The simplicity of the God thread of like a dots, but also the power of the separated out contexts, like a grok bot.
+[05:36] What I really like about, and there's many other things I really like that we'll go through,
+[05:40] and I'll go through in a second which agent you should be using for which task.
+[05:44] I really like this plus button down here.
+[05:46] So if you click this plus button on the task screen, it's basically like a brain dump mode.
+[05:52] So if I go here, click on the keyboard, I can just brain dump everything that's on my mind,
+[05:57] and it will take all that, break it into individual tasks and just start work for me.
+[06:02] It really seems that Claude Duet, more than any other AI agent out there, was built to
+[06:09] lighten your cognitive load as much as humanly possible.
+[06:13] You just have ideas in your head, it takes those ideas, breaks it down to actionable
+[06:17] tasks and does those tasks really well.
+[06:20] So let me just show you what an idea of like a brain dump would be right here that it breaks
+[06:23] down into tasks for me.
+[06:25] So I just put in everything that's on my mind to this task creator.
+[06:28] I said, I want to write a newsletter on Herder.
+[06:30] I also want to start planning out multiplayer in null district and how that
+[06:33] would work. I also just got a second DGX spark.
+[06:36] I want to see what the best model are for that cluster.
+[06:38] And I'm just going to hit send and what now do what's going to do is it's going
+[06:42] to break those down into tasks, either save it for later.
+[06:46] I got to say start, start, start.
+[06:49] And then now let's look at my task list in my active and you can see all the
+[06:53] tasks that are waiting for my review. And if I scroll down,
+[06:56] you can see which ones need my input and which ones are doing work.
+[06:59] And now it's doing the multitasking of a GrokBot,
+[07:03] but it has the simplicity of a chat GPT dots God thread, right?
+[07:07] With like a chat GPT dots or like a Hermes,
+[07:10] if you're just using a God thread,
+[07:12] you can't just put a bunch of things in because it's not able to multitask quite
+[07:17] as well. You can in dots. If you say like, Hey, make a thread for this,
+[07:21] make a thread for this, make a thread for this, make a thread for this,
+[07:23] but you're kind of manually managing all of these threads with Claude Duet.
+[07:28] But again, you don't have to think about that.
+[07:31] You don't have to think about the multitasking.
+[07:33] You just say whatever's on your mind and it breaks it down into these tasks in the task
+[07:38] list and starts going.
+[07:40] My favorite invention of all time is full self-driving on my cyber truck.
+[07:44] The reason why it's my favorite invention of all time is I can go in my car, plug in
+[07:49] my destination and then I can just sit there and my car drives me an hour away to wherever
+[07:54] it is I'm going and my entire cognitive load is lightened up because I don't have to think
+[07:59] about driving. I don't have to be engaged in the driving. So I can use my brain to focus
+[08:03] on other things, to focus on other problems to solve. It makes driving so much nicer.
+[08:09] Claude Duet is kind of like the full self-driving of AI agents where your cognitive load is
+[08:16] lighting up so much because you don't have to think about the multitasking. You don't
+[08:18] have to think about which bot to go to. You just say what's on your mind. It breaks into
+[08:22] task and figures out how to do it and it just does it so I can lighten my load.
+[08:26] I was at the gym earlier today and I had some ideas of what I wanted to do that
+[08:30] day and I just sent it and it just broke up a task and start going.
+[08:34] But this goes further than just breaking up into tasks.
+[08:36] This isn't just a good bot and making tasks.
+[08:39] It also is incredibly good at being proactive with ideas.
+[08:44] Here's what I mean by that.
+[08:46] So I'm at the gym today.
+[08:47] I really want to work on Henry, move it forward.
+[08:50] here's my average conversation with Claude Duet.
+[08:53] I'll show you how simple this is to get a lot of work done.
+[08:58] Claude Duet is constantly making recommendations
+[09:02] on what you should build next without me even asking.
+[09:04] It just goes, hey, by the way,
+[09:05] I think we should work on these five things next.
+[09:07] Do you give me the go ahead?
+[09:08] Right, so I wake up today, I say, hey, let's work on Henry.
+[09:11] He goes, okay, here's what we should build out next.
+[09:13] It gives me really good recommendations of what to build.
+[09:16] A lot of times I'll go to AI agents,
+[09:18] I'll say, hey, what should we work on next?
+[09:19] and it gives me like total slop.
+[09:21] These are actually really good recommendations
+[09:23] on what I should be implementing next.
+[09:24] Then you can't see it here,
+[09:26] but it has like buttons it automatically creates
+[09:28] on with each one of these features in them.
+[09:30] I just hit the button and it starts working on it.
+[09:32] One of the buttons I hit was start the pipeline fixes.
+[09:34] Click the button, boom, it goes, it starts working.
+[09:37] It creates the PR.
+[09:38] Then it comes back a couple of minutes later.
+[09:40] It says, should I open the PR for you to review?
+[09:42] Then as a yes button or no button, I hit the yes button.
+[09:45] By the way, it's using Claude Code for all of this.
+[09:47] Right now, Claude Code with Opus 5.5 is the best coder out there, hands down, no question
+[09:52] about it.
+[09:53] So instantly, Claude Duet becomes the best coding personal agent out there.
+[09:57] So I say yes, open the PR.
+[09:59] It creates the PR.
+[10:00] Boom, it's good to go.
+[10:02] It's done.
+[10:02] Okay, what's next?
+[10:03] It gives me five more really, really good ideas on what to work on.
+[10:08] Gives me the buttons on which one I should do.
+[10:09] I click the button on which I want, creating the sign-in.
+[10:12] Boom, it's good to go.
+[10:13] Makes the PR.
+[10:14] Says, okay, you ready to go?
+[10:15] Want me to merge it?
+[10:16] I say yes.
+[10:16] What's next?
+[10:17] Gives you more ideas.
+[10:18] I click, okay, go.
+[10:19] This is like the way you work with Claude Duet, which I love, which is like, hear me
+[10:25] out now.
+[10:26] This is going to sound weird, but hear me out.
+[10:27] I believe the future of working with AI is you sit there and you have a button and you
+[10:34] just sit there and you press the button over and over and over again like this.
+[10:38] And as you're hitting the button, more things get done.
+[10:41] You get more productive.
+[10:42] You create more value.
+[10:43] You make more money.
+[10:44] I think that is the future of AI, not having to have this huge cognitive load on what to do and get work done.
+[10:50] You sit there, your agent knows you really well.
+[10:53] It's able to make incredible recommendations.
+[10:55] You just sit there, do it, do it, do it, do it, do it, do it, do it.
+[10:58] And boom, at the end of the day, your business is moving forward and you're making more money.
+[11:03] Duet is the closest I've seen to that vision of where I think AI agents are going out of any agent I've worked with.
+[11:10] I've literally spent the entire morning just saying, yes, do it. Yes, do it. Yes, do it. Yes,
+[11:14] do it. In my app, Henry has moved forward so much, which is incredible. So it is super proactive,
+[11:21] but it's proactive in this different way where it's not like, like for instance, dots, dots is
+[11:27] very proactive, but it's proactive in this way where it's like, I get an email. It reads the
+[11:31] email automatically and then recommends like a response at email. That's great. I like that.
+[11:37] but duets proactive in like a different kind of way where it's finding unknown unknowns,
+[11:43] uncovering those unknown unknowns and recommending them to you to get done.
+[11:48] I didn't think of any of these features to build out. It's like, Hey,
+[11:50] we should build these features next. So I like this type of proactivity a ton. It's really,
+[11:56] really cool. I've gotten a lot more work done with duet over the last day because of this
+[12:01] proactivity. Speaking of unknown unknowns, if you look down here, there's also a make section.
+[12:05] If we click on the make section, it has a bunch of templates for recommended tasks we can do next.
+[12:12] So again, this is where Duet really focused on, which was finding the unknown unknowns, finding things to do that you haven't thought of, lightening your cognitive load.
+[12:22] And all you need to do to get work done is clicking a single button.
+[12:26] It wants to make an ads plan for my Vibe Coding Academy.
+[12:28] By the way, Vibe Coding Academy, number one community and AI.
+[12:31] Link for that down below.
+[12:32] It wants to make a LinkedIn ads plan.
+[12:33] All right.
+[12:33] Sounds good to me.
+[12:34] Let's click that.
+[12:35] Let's get it popping.
+[12:35] Boom, it already made it for me.
+[12:37] I actually think it proactively made it.
+[12:39] That's incredible.
+[12:40] I didn't even generate it.
+[12:41] I clicked it, it automatically opened.
+[12:43] That's pretty amazing.
+[12:44] So that's done already.
+[12:45] It proactively made all of these documents for me,
+[12:49] which is incredible.
+[12:50] So again, it's just thinking of things to do
+[12:53] and proactively doing them.
+[12:54] But the important part here is those things it's thinking
+[12:57] of doing are actually great.
+[12:59] They're actually helpful.
+[13:00] They're not just AI slop.
+[13:02] There's a few other things here.
+[13:03] I'm gonna go through this few other things
+[13:05] then I'm going to go through weaknesses where it's behind all of the other
+[13:08] agents.
+[13:09] Then I'm going to give you a breakdown of power rankings of which AI agents you
+[13:12] should be using. But a couple other things to note,
+[13:15] if you click the hamburger menu icon up here, you have what's called channels.
+[13:20] So you do have a way if you want of breaking this down into kind of dedicated
+[13:25] side chats. But even when you do that,
+[13:28] you don't really have to worry about talking to the right one because it will
+[13:32] automatically assign tasks to the right channel.
+[13:35] If you just go to your God thread and give it a bunch of things to do,
+[13:38] it'll automatically assign to the right channel.
+[13:41] So the channels are more for just letting your agent know what are the different
+[13:45] areas of your life. So super proactive,
+[13:48] lightens your cognitive load more than any other AI agent,
+[13:52] but is this the best one ever? Well,
+[13:54] there are still some weaknesses to Claude Duet right now. It's just on mobile.
+[13:59] There's no desktop component. There's no desktop app.
+[14:02] I assume this is cause it's in super, super early access.
+[14:05] And I assume a desktop app will come soon. So that kind of stinks.
+[14:08] I wish I could kind of lock in on my computer and talk to my agent.
+[14:12] It is what it is too. And this might be the biggest weakness.
+[14:16] This might be a reason why I still use GrokBot a ton at the moment is that it
+[14:20] doesn't really have a computer of its own.
+[14:23] It can do cloud code cloud agents where it spins up cloud agents to write code
+[14:28] for you, but it doesn't have its own box.
+[14:31] it doesn't have its own computer.
+[14:33] So to give you an example of why that is a weakness,
+[14:36] I started a new GitHub organization for Henry.
+[14:39] So it's separate from my normal GitHub account.
+[14:41] So to commit code for Henry,
+[14:44] my agents now need to connect themselves
+[14:47] to a new GitHub account.
+[14:49] For Grotbot, that's super easy.
+[14:51] I say, hey, go and connect yourself
+[14:53] to the new GitHub account.
+[14:54] It goes on its own computer,
+[14:56] which is already logged into my GitHub,
+[14:58] and then just switches organizations
+[15:00] that adds itself by itself to that organization because it has its own
+[15:04] computer. It can do anything I can do. Claude Duet on the other hand,
+[15:07] though, doesn't have its own computer.
+[15:09] It just has access to all your plugins as well as Claude code cloud agents.
+[15:14] So it can't open its computer,
+[15:16] connect to a different service or anything like that.
+[15:19] So I had to personally and manually go and log into my GitHub and choose the
+[15:24] new account and connect it manually. And like,
+[15:27] that was a little bit extra work, which kind of stunk. Grok bot, it doesn't matter what you need
+[15:32] to do. You just say, no, Grok, you do it. And it will just figure out how to do it. Like I have my
+[15:38] fantasy football lineup. I need to set this weekend. I was on the go. There was an injury.
+[15:42] I had to switch out the injury. Saquon Barkley is now back in lineups. I needed to switch him in
+[15:47] Grok bot. I said, Hey, go. Can you put Saquon back in my lineup? It opened up its computer.
+[15:51] It's logged into my fantasy football account. It switched the lineup. Claude can't do that.
+[15:56] It doesn't have its own computer.
+[15:57] There's no Yahoo fantasy sports plugin.
+[16:00] So it's just something I had to do manually.
+[16:02] So not having a cloud computer is a weakness for some specific types of tasks.
+[16:09] I'm actually not a hundred percent confident they're going to give it its own computer.
+[16:13] Out of all the companies out there, Anthropic is definitely the most cognizant of safety,
+[16:19] cognizant of making sure their agents don't do anything crazy that can like hurt your security
+[16:24] or privacy or anything like that.
+[16:27] So I think giving these agents their own computer
+[16:29] opens up a lot of security concerns.
+[16:32] And so I think Anthropik's probably gonna be
+[16:35] super careful with that.
+[16:36] And I don't know if you get your own computer.
+[16:38] We'll see.
+[16:38] I hope they do.
+[16:39] I hope they err to the side of like,
+[16:41] hey, let the user do whatever the hell they want.
+[16:43] But I get it.
+[16:44] You don't want like people who don't know
+[16:47] what they're doing going on these cloud computers
+[16:49] and just putting all their credentials in
+[16:50] and maybe doing something not so secure.
+[16:52] But if you're someone who relies on your agent to absolutely everything,
+[16:56] it's a little bit of a weakness.
+[16:58] The fact that it doesn't have its own cloud computer.
+[17:00] So which agent should you be using?
+[17:02] Here's where I'm at currently and what I'm doing for pushing my coding projects forward.
+[17:06] I like Duet.
+[17:08] I think the access to cloud code in Opus five, five is unbeatable.
+[17:11] It's incredible.
+[17:12] The proactive thinking, the figuring out what to do next gives Duet a very distinct edge
+[17:18] for knowledge work, for going online, creating documents, doing different things, opening things
+[17:23] up in a browser, submitting the form here, then downloading that form, opening it up on your
+[17:27] third computer, taking it off the third computer, moving it over here. I like GrokBot. GrokBot,
+[17:33] A, has its own cloud computer. Beacon can control any of your computers. It's another thing Duet
+[17:37] can't do at the moment is actually control your computer, download files, things like that.
+[17:41] GrokBot can do all that. And because of that freedom and that flexibility of being able to
+[17:46] do things on a cloud computer, move it to your on-site computer, things like that.
+[17:51] Eileen Grock bought for those tasks.
+[17:53] Personal agent, I'm trying to figure out how to get an iPhone Duo tomorrow.
+[17:57] It comes out tomorrow.
+[17:58] My pre-order is for like the first week in November.
+[18:00] I want it tomorrow on launch day.
+[18:02] I'm having Muse go out and figure out how to do that.
+[18:04] Muse is super good at going on the internet, like figuring out how to buy things, reserve
+[18:09] things, things like that, kind of personal agent.
+[18:12] I like Muse for that.
+[18:13] And then open source, you got to have your open source agent, right?
+[18:15] So I have a second DGX spark I just got. I'm running like local models on there.
+[18:21] Hermes is powered by those local models because it's open source.
+[18:24] You can do whatever the hell you want.
+[18:25] So I'm using Hermes for more of my open source, free for all, doing experimental things.
+[18:30] Listen, all of these agents are spectacular. All of these agents are so good.
+[18:35] I'm just like an AI crazy person. So I use all of the agents.
+[18:39] But if you only had to choose one, you can get away with using any of these to do all your tasks, right?
+[18:45] You can get away with it.
+[18:46] So like you don't need to be like me where you use every AI agent.
+[18:49] You can choose just Muse and do everything or just Duet and do everything.
+[18:52] That's totally fine.
+[18:53] But if you're trying to hyper optimize like I am, this is what I'm using.
+[18:56] If you learned anything at all, leave a like down below.
+[18:58] Subscribe, turn notifications.
+[19:00] Which agent are you using?
+[19:01] Which agent would you like me to do more deep dives on?
+[19:04] Let me know in the chat down below.
+[19:06] I also got the number one newsletter on planet Earth.
+[19:09] Ship it weekly, completely free.
+[19:11] Link for that down below.
+[19:12] Hope this was helpful.
+[19:13] Turn on notifications.
+[19:14] We got some banger videos coming up.
+[19:16] Turn on that notification.
+[19:18] Some amazing videos coming.
+[19:19] Hope this is helpful.
+[19:20] See you in the next video.

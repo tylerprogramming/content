@@ -1,0 +1,173 @@
+[00:00] Anthropik just dropped Claude Duet, their brand new personal AI assistant,
+[00:04] and I'm going to be honest, I am not too sure how I feel about it yet.
+[00:07] I didn't get early access, but I did finally get access from the waitlist,
+[00:11] so in this video, I'm going to test it out live right here with you.
+[00:14] I'm going to break down exactly how it works, show you some of the things that I really love
+[00:18] about this, and some things that I do not like about it.
+[00:21] And then I'm going to give you my honest thoughts comparing this to GrokBot, which
+[00:25] I've been using every single day for the last two months to help me run my business,
+[00:28] And it's been my favorite AI tool that I've probably ever used.
+[00:32] So without further ado, let's dive right in.
+[00:35] All right.
+[00:35] So now this is what we're going to see inside of our dot.
+[00:38] If I click on our dot, there's a couple of things.
+[00:39] So you could see the different things it has access to.
+[00:43] So we have files and our documents.
+[00:45] We have our mail.
+[00:46] We have our calendar, team chat, payments.
+[00:48] Looks like it can't make payments yet, but we can actually add payment methods here as well.
+[00:54] So basically it says, hey, Brock, welcome.
+[00:56] Today's our first day working together.
+[00:58] I'm going to help you stay on top of your work and your life. Every day, I'll get to know you a
+[01:01] little bit better. Over time, I'll start spotting what you need before you ask. And that is a
+[01:06] proactive part of this Claude Duet that they talked about in the release article. So as you
+[01:12] can notice at the bottom right of my screen, we have this little voice icon. So let me go ahead
+[01:15] and test this out and see how we can actually speak with our duet agent. Hey, what's up,
+[01:20] Duet? How are you doing? Hey, Buck. I'm doing great, thanks. How's the Claude Duet video going?
+[01:26] It's going pretty well.
+[01:27] Could you do me a favor real quickly?
+[01:29] I want to test out in the video.
+[01:31] Like, I basically want to see what's on my calendar over the next couple of days.
+[01:35] Could you pull from my calendar and let me know?
+[01:37] Sure.
+[01:37] Let me check your calendar.
+[01:40] Today and Friday are wide open, Brock.
+[01:43] On Saturday, you fly home.
+[01:45] Lisbon to Washington at 12.20 p.m.
+[01:48] Then Washington to Dallas at 6 p.m.
+[01:50] Perfect.
+[01:51] Thank you so much.
+[01:52] All right.
+[01:52] So that is the voice mode.
+[01:53] It sounds really good, actually.
+[01:54] it's very quick. The latency is very quick. And then I want to take a tour throughout the rest of
+[01:59] the interface here. So I'm going to come over to the little three dots right here. So supposedly
+[02:04] we could have different channels and I'm going to break that down right now. So as you can see
+[02:09] right here, it says get focused with channels, give each topic its own place for messages, tasks,
+[02:13] and files. So I guess this is a way for us to segment different parts of our life or our business
+[02:18] inside of Claude Duet. So that way it's not all inside of one persistent conversation,
+[02:24] which I'd assume would then turn into a mess. So right here it says everything. Let's go ahead and
+[02:28] create a new channel. I'm going to call this one YouTube videos and then for purpose I'm just going
+[02:34] to say everything YouTube video related. I could change the icon so let's go ahead and maybe change
+[02:40] this to a play button. Change it to red so that way it signals that this is YouTube. I'm going to
+[02:45] click on create. All right here we go. We now have our channel which is called YouTube videos and this
+[02:51] seems very similar to Slack actually in terms of like having different channels. It has hashtag
+[02:55] YouTube videos at the top of our screen as you can see right here and it's also prompting me and
+[03:00] asking if I wanted to suggest tasks that it can do for me. So I'm just going to click yes and I'm
+[03:06] curious to see what it's going to pull up in terms of what it can do for me. Okay so package your
+[03:11] next video, title, thumbnail ideas, hook and ABC pics, etc. So what I'm going to do is I'm going
+[03:16] to actually have it go check my analytics. So I'm curious to see if it's able to pull from the back
+[03:20] and database inside of Supabase where I basically store all of my pre-existing YouTube videos as
+[03:26] well as some of the ideas I have. So I'm curious if it's going to be able to go and pull all this
+[03:30] context from my previous cloud code conversations and tasks that I've ran. Now this is pretty cool.
+[03:37] It shows that it's working on it with this little spinning icon here. I could click on this and then
+[03:41] now it pulls this up right here. You can see everything that it's working on, all the tasks
+[03:46] one by one. That's pretty cool. And then if I click on this tasks button at the bottom of my
+[03:51] screen, we could also see all of our active tasks as well as our up next tasks as well.
+[03:57] So while it's still working on this task, I want to come over here and test this out where it says
+[04:01] make on the bottom right of my screen. So right here, it looks like this is all of the documents
+[04:06] that I have. So any of my artifacts that I've created, PDF documents, CSV files, all of my
+[04:12] Claude docs, everything. So for example, if I come here, I could look at the Claude duet script that
+[04:17] I created for a short form video I was working on earlier. And I did this inside of Claude code,
+[04:22] actually, but I could see all of these little assets right here. So for example, I could
+[04:27] actually pull up all these different presentations that I've made with Claude presentations. So this
+[04:31] is pretty cool that we could access all this information. So the main point here is that it's
+[04:35] able to pull all this context from our previous Claude conversations in both Claude code, Claude
+[04:40] chat, cloud cowork, basically the entire ecosystem and all of the information throughout my account.
+[04:45] I can even come here, click on plus, and I could go and generate any of these media types as well.
+[04:51] So let's say I want to create a dashboard. I can just come here and click dashboard and then simply
+[04:55] just say, so I just said create a dashboard for my previous three short form videos. And it's going
+[05:00] to go and pull from Supabase where it's storing all this information. And it's going to generate
+[05:04] this for me. So I'm curious to see what the output is going to look like here. But so far, this
+[05:08] experience is pretty intuitive and I'm enjoying it. All right so if I go back to tasks you could
+[05:13] see where it says active there is one task that is ready for review. So I kind of like how it shows
+[05:18] this checklist of things that need my attention as well as things that it's working on as well.
+[05:22] So if I click on active it's going to pull this up. So you had a big month the last 28 days brought
+[05:27] in 1.35 million views. Really cool. So the main point here is it's able to go and pull from the
+[05:33] database that I set up inside of Cloud Code and that's really really cool and really neat.
+[05:38] All right, so going back to that dashboard that we created now inside of my agent right here,
+[05:43] it shows this little icon. So I'm going to click on shorts dashboard and it went ahead and created
+[05:48] this for me. So if I click on this, it's going to pull it up and it shows me a visual breakdown,
+[05:52] a visual layout of the last three shorts. So it shows these little cards here with each video,
+[05:57] it shows the amount of views, it's showing the likes and the engagement. I think that this looks
+[06:01] really solid. The fact that I had Claude generate this for me automatically and it sent it to me in
+[06:06] the chat. It's cool. It shows these little bars right here. I think this is a pretty intuitive way
+[06:11] to interact with Claude via Claude Duet. And then now what I could do is I could always come over
+[06:17] here and click on the make section and I could always see these different like artifacts, I guess
+[06:22] is what I'm going to call them, even though they're I'm not sure what Claude is wanting to call these.
+[06:27] I guess they are artifacts. So you could see all the artifacts right here, which is really cool.
+[06:31] any asset it generates, I'm able to see right here. And again, including previous ones from
+[06:37] inside of Claude Code or Claude previously up until this point. Now, one thing I wanted Claude
+[06:43] Duet to be able to do is pull my email marketing stats from Drip, which is the app that I use in
+[06:48] order to run my email marketing campaigns. So for example, I want to be able to ask how my last
+[06:53] email marketing campaign did right from my phone. But the problem is if I come over to the connectors
+[06:59] inside of Claude in search for drip, there's no drip connector. And as of right now, I'm not sure
+[07:04] if there's any way to add connectors inside of Claude Duet itself right now, but it does use the
+[07:09] same connectors that your Claude account has. So we could go ahead and set it up on our computer.
+[07:14] So in order to get around this, I'm going to use the Zapier MCP, which basically lets Claude or
+[07:19] any of your other AI agents connect to over 9,000 app connection. So in order to do this,
+[07:25] I'm going to come over to Zapier MCP. And if you want to use this, there will be a link in the
+[07:29] description to use it yourself. Then on the left hand side, once I'm inside of my account,
+[07:34] I'm going to click on MCP servers, which is where we set these up. And I'm going to click
+[07:39] create server. Next, it's going to ask which AI tool we want to connect. So you've got options
+[07:44] like Claude, Claude Code, ChatGPT, Cursor, and even GrokBot. So I'm just going to click on Claude
+[07:50] code for this instance. And then I'm going to click on finish connecting. Then all I need to
+[07:55] do is copy this prompt, paste it back into Claude code, and it's going to set up the entire thing
+[08:00] for me. Now, while that's running, I'm going to come over to apps, which is where we pick the
+[08:04] applications that we want Zapri to use. And I'm going to search for drip. And as you can see right
+[08:09] here, drip has seven different tools that Claude can use. So it can pull my stats and even do things
+[08:14] like tag subscribers or add someone to a campaign. So I'm just going to click on connect, sign into
+[08:20] my drip account and then that is it. And it's pretty much just as easy to do this with any of
+[08:24] the other apps that you use on a day-to-day basis. So now if I come over to Claude Duet on my phone,
+[08:29] I'm just going to ask it how my last email marketing campaign did. And I'm even going to
+[08:33] ask it to generate a dashboard to visualize all this data for me as well. Because I'm going to
+[08:38] come inside of here, inside of my email marketing thread that I just created inside of Claude Duet.
+[08:43] I'm simply just going to say, hey, I want you to go and pull the details from my email marketing
+[08:49] campaign for the last email that I sent. And I want you to actually turn this into a dashboard
+[08:53] and show me the output right here. Now, again, we could always see the task right here. So if I
+[08:58] want to click on this, it's then going to bring us over to our task and it shows exactly what it is,
+[09:02] what it's working on. And I could come over and click on tasks and it's going to show that as
+[09:05] well, along with all the tasks that are up next, which looks like we cleared all of those. All
+[09:10] right. And just like that, about like a minute later, we now have this message here. It pulled
+[09:14] up the statistics from our email marketing campaign in drip via the Zapier MCP. If I
+[09:18] click on this, it brings me to the dashboard that it created. All right. And just like that,
+[09:23] we now have this dashboard with all the statistics pulled from our drip account,
+[09:26] shows the open rate, shows the click through rate, shows the unsubscribe rate, delivery rate,
+[09:31] and even shows where the viewers or the readers dropped off. I think this is really cool.
+[09:35] And again, this wouldn't have been possible if we didn't connect this to drip via the Zapier MCP.
+[09:40] All right. So now that we've actually tested Claude Duet, I want to compare it to my experience
+[09:44] with GrokBot. I've been using GrokBot every single day and it's been my favorite AI tool
+[09:49] that I've probably ever used. So first of all, what I really like about GrokBot is that I could
+[09:54] have multiple different AI agents that actually communicate with each other. For example, I have
+[09:59] my main agent that I talk to most of the time and it basically works with my other agents like my
+[10:04] invoice agent and my YouTube agent so that way it has all the context from all of them. And I could
+[10:09] have as many bots as I want or just one main agent so it's very simple and doesn't feel cluttered at
+[10:15] all. I also think that the interface looks really cool and simple like all the different colors for
+[10:19] each of these different bots and it's very beginner friendly which is why I've been recommending this
+[10:23] tool for anyone. Now on the Claude Duet side one thing I really like is the make section where I
+[10:30] could see every artifact that it's generated like my presentations and all my different dashboards
+[10:35] And I think this is a big deal because Claude has been really good at building artifacts and that's something that I haven't really seen inside of GrokBot yet.
+[10:43] I also really like the tasks section right here because I could see what it's working on and what's up next at any given times.
+[10:50] And this even includes things that I didn't tell to do.
+[10:53] So for example, if I have an important email that comes in, it's going to see that and add it to the list of things that it needs to do for tomorrow.
+[11:00] I really do think this is an interesting touch for this interface,
+[11:03] and I think this could be a really cool experience the more I play around with it.
+[11:07] Now, the channels are interesting, but I'm not sure how I feel about them yet.
+[11:11] I do think that I prefer how Grokbot does it with separate agents.
+[11:14] I just think it's a cleaner experience.
+[11:16] But again, I've only used this for a couple of hours,
+[11:18] so maybe I just need to try it out a bit more before deciding.
+[11:21] And the last thing I want to talk about is I've only used Claude Duet on my phone so far,
+[11:25] so I'm really interested to see how it works on the computer
+[11:28] because it's probably where I'm going to use it most of the time unless I'm on the go.
+[11:31] All right, so that is my first look at Claude Duet and comparing it to my experience with
+[11:36] GrokBot.
+[11:36] I hope you enjoyed this video.
+[11:37] As of right now, you can sign up for the waitlist, but you do have to be in the US
+[11:41] in order to get access to it.
+[11:43] So you go ahead and sign up.
+[11:44] There's a link in the description.
+[11:45] And also let me know in the comments if you're going to switch from GrokBot to Claude Duet.
+[11:49] I'm really interested to see what you guys are going to use.
+[11:51] Anyways, thanks for saying the end and I'll see you in the next video.
+[11:54] Cheers.

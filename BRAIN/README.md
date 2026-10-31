@@ -8,6 +8,8 @@ BRAIN/
   instagram/brain.md   <- updated by /ig-research, read by /instagram-writer, /flash-video, /social-copy
   linkedin/brain.md    <- read by /linkedin-writer, /social-copy, /repurpose, /carousel
   linkedin/creatives.md <- what visual goes with the post + breakdown/tactical formats
+  skool/brain.md       <- engagement mindset, allies, rhythm; read before any Skool post
+  skool/post-templates.md <- 17 post templates (title/body/media) by category
   tiktok/              <- future: fold in /tiktok-analytics learnings
   youtube/             <- future: fold in youtube-channel-playbook learnings
 ```

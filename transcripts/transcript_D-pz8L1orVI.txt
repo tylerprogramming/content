@@ -1,0 +1,249 @@
+[00:00] Claude Duet, Anthropik's very own personal agent, is finally here.
+[00:04] I had early access, and it's one of the most proactive agents that I've tried,
+[00:08] with that distinctive Claude look that we all know and love.
+[00:12] In this video, I'm going to show you exactly how Duet works,
+[00:16] and walk through how I use it to create a morning brief, a YouTube report,
+[00:20] a sponsored dashboard, and even an AI explorer club for my kids to learn about AI.
+[00:26] I'll also be honest about where Duet falls short, like what happened when I tried to
+[00:31] get it to book an Uber for me.
+[00:34] And at the end, I'll share my updated take on how Cloud Duet stacks up against the competition,
+[00:41] including GrockBot, Muse, and ChatGPT Dots.
+[00:45] Alright, let me show you how Duet works.
+[00:48] Okay, so Duet has its own dedicated mobile app and its own interface on Cloud Web.
+[00:56] is positioning it as a 24-7 assistant that helps you get work done. And the best part about the
+[01:02] onboarding is that it's already connected to my cloud account, so I don't have to connect my email,
+[01:07] calendar, and other apps all over again. And Anthropik says that Duet is proactive by design,
+[01:13] and that's actually pretty true. Of all the personal agents that I've tried, Duet tries the
+[01:18] hardest to be proactive, and I'll tell you why later in this video. But let me show you my first
+[01:24] conversation with Duet here. Right off the bat, it read my email, calendar, and connected apps
+[01:29] to figure out how I work. I run behind the craft like a product. My calendar is full of podcast
+[01:36] recordings and sponsor calls, and I handle my newsletter customer support by myself with the
+[01:43] help of AI agents. Okay, then Duet suggested a few places where you can start helping, including
+[01:49] preparing for a sponsor call with diana prepping a podcast interview guide with kun my friend
+[01:56] and cleaning up some meetup entries now when i click on the interview guide duet will spin up
+[02:02] a new task and let's take a look at the task folder right now so a task is a thread inside
+[02:10] the main cloth thread that you see here and here's a bunch of tasks that i have going on
+[02:15] prepare Tuesday Call of Diana for sponsors, plan tutorial about Cloud, and find showtimes for
+[02:22] you can see everything, the movie, and so on and so forth. And you can see here that here are my
+[02:28] active tasks. There's a bunch of tasks coming up next. There's a bunch of scheduled tasks,
+[02:34] which are basically like scheduled routines and scheduled jobs that run every day or every week.
+[02:39] And then there's also a resolve tasks folder. So in many ways, this works a lot like Cloud
+[02:44] projects you have a main chat here with sub chats for each task on the right now let's take a look
+[02:51] at the left nav so unlike muse and grogbot you can't customize the main thread and what the
+[02:59] avatar here is it's basically just a dot that animates when you get to do stuff i guess anthropic
+[03:04] really want to keep that distinctive claw look but what you can do is you can create individual
+[03:09] channels so for example here i can make a new channel and let's just call it test channel
+[03:14] hit create and in the channel i can actually customize the icon of the channel so in this
+[03:23] screen i can customize the icon from a pencil for example to let's say home and also the color of
+[03:29] the icon now in my opinion this isn't as interesting or engaging as customize your own bot or like
+[03:36] Muse making your own animated avatars but I think Duet is very much designed for work use cases
+[03:43] so that's why I think they went with these icon styles and after you create the channel it's
+[03:49] going to suggest a few tasks that I can do here so let's see what it comes up with okay and it
+[03:53] read my email and calendar and came up with three different tasks draft interview guide for Nate who
+[03:58] is a anthropic designer write posts for the Duet launch and pull together a short prep guide for
+[04:06] in-person meetup with a friend of mine. So you can see how it is always trying to do work for you
+[04:11] and is always trying to be proactive. And over here, you can also create a new group. Let's call
+[04:18] it test group. And I can drag and drop my channels into different groups here. So pretty standard
+[04:24] stuff. Now, I think it's an interesting choice that Anthropic decided to make Duet a completely
+[04:29] separate app and experience from Claude. But I think this is pretty typical of Anthropic's playbook,
+[04:34] launch a research preview, iterate and prove that it works, and then probably in the future,
+[04:40] merge it back into the main cloud app, just like what they did with cowork and chat.
+[04:46] Okay, so I mentioned how Duet is the most proactive assistant that I've tried. And the reason is
+[04:52] actually pretty simple. It has a scheduled checking task that comes by default. If I go here and say
+[04:58] view history, you can see that this task basically runs every three hours from 9 a.m to 10 p.m.
+[05:05] And I'm sure it checks my email, calendar, and other connected apps to find work that it can do
+[05:11] for me. So here's an example. It says morning to you, Peter. Here's a sponsorship deal with Diana
+[05:16] that you're working on. And there's also a Mercury payroll video that you should launch. And you got
+[05:22] to prepare the Friday podcast recording with Nate. So basically, you know, just like a chief of staff,
+[05:27] it brings things to me but honestly i think five checkings a day is a little bit too much
+[05:31] i prefer maybe once in the morning and once in the afternoon but you can also just ask
+[05:37] claude and duet to change the schedule all right so that's a quick tour of the main screens and
+[05:42] the proactive checking that duet has but i think what really makes this product stand out
+[05:47] is the artifacts that it can create okay but first i want to give a quick shout out to the
+[05:53] sponsor of this video, Whisperflow. You know, I've been using Whisperflow for over a year to dictate
+[05:58] in Cloud, ChatGPT, and many other apps, and it's been a massive time saver for me. My kids also
+[06:05] love using it to build games and apps with AI, even though they don't know how to type. They just
+[06:10] voice dictate. And with the recent update of Whisperflow's voice dictation model, the dictation
+[06:15] is just way more accurate. So go try out Whisperflow. You can check out the link in my description
+[06:20] to get one month's free.
+[06:23] Awesome.
+[06:24] Now let's come back to Duet
+[06:25] and talk about the artifacts that I had it make.
+[06:29] So first of all, a hidden feature in Duet
+[06:30] is that if you type slash,
+[06:32] you can see all kinds of skills
+[06:34] that you can run inside this app.
+[06:36] And down here, there is a morning skill,
+[06:40] which basically renders the user's morning brief
+[06:42] as a styled HTML artifact.
+[06:45] So that's basically what I did.
+[06:46] I said, morning, let's try out the skill.
+[06:48] And then it rendered a morning brief.
+[06:50] Let's take a look.
+[06:50] and here we have it.
+[06:53] As you can see, it also has that Claude aesthetic.
+[06:56] I love how it says that I have two short calls
+[06:58] before nine o'clock and then the day is wide open.
+[07:01] You know, now that I'm independent,
+[07:03] I try to avoid meetings as much as possible
+[07:05] and Duet even added the sun here
+[07:07] to probably encourage me to touch grass
+[07:10] after my morning meetings are over.
+[07:12] If you have a job, you have a busy schedule,
+[07:14] you probably have a lot more meetings than me.
+[07:17] And down below, it has all the stuff
+[07:18] that I should address this morning
+[07:20] starting, for example, with the sponsor contract with Mercury, one of my partners.
+[07:26] Okay, so another skill that I ran right after Morning Brief is learn how I write.
+[07:33] You know, if you're going to have Duet reply to emails for you, draft documents for you,
+[07:36] it's important for it to learn your style.
+[07:39] So what it did was it read 33 emails that I sent, 89 Slack messages that I posted,
+[07:44] and 47 DMs, 11 docs that I wrote, and it came up with a writing guide for my style.
+[07:50] and the writing guide has you open with the point and skip the warm-up you turn any set of asks into
+[07:55] a number list you like to use lowercase for your team and polish writing with your partners so
+[08:01] basically it went off and it saved my writing style and now we can use this writing style skill
+[08:06] to help us draft emails and more okay so next i had duet build two more artifacts for me which
+[08:14] also come by default so there's a daily to-do list which is basically calls i have with folks
+[08:20] during the day and also stuff that I need to get done in a day. And there's also email triage
+[08:25] artifact that basically prioritizes the email that I should respond to. And as you can see on the left
+[08:31] with this artifact, I can just say, hey, for Freeman, let's decline. Can you send the reply?
+[08:36] For Nikhil, I recommended two colleagues from Roblox. Can you reply directly? And a bunch of
+[08:42] other comments. So basically with the writing skill and this artifact, I can rely on Claude
+[08:48] to reply to emails for me.
+[08:51] Now, important emails, I still want to review myself.
+[08:53] So down here, they actually drafted all the replies
+[08:56] and I can make edits to it before I hit send.
+[08:59] But some emails maybe just get Cloud to send for you.
+[09:03] Okay, I want to show you guys a more sophisticated artifact
+[09:06] that I had to make next,
+[09:08] which is an Alex report on my YouTube channel.
+[09:11] It basically looked at a year of my published videos
+[09:14] and their public data to come up with this report.
+[09:17] So we have subscribers and a number of videos published up here.
+[09:21] And what's more interesting is down here, we're sharing insights about my videos.
+[09:26] So for example, it found that personal AI agent videos are my breakout topic.
+[09:30] And actually, my solo videos are doing better than the guest, unless the guest has a practical demo or something to show.
+[09:37] If I scroll down even more, there is some pretty amazing charts.
+[09:40] So here is a chart that shows every video by publish date and how they performed.
+[09:44] and you can see here that my solo videos started doing better this year compared to my podcast
+[09:50] videos and if i scroll down more there is also keywords that perform personal ai agents model
+[09:56] showdowns cloud videos perform and also how long each video is by length and by the way to make
+[10:04] this awesome dashboard all i said was like hey can you make a dashboard and insights on my youtube
+[10:10] performance data and i linked my youtube channel so i didn't give any kind of fancy prompt that
+[10:14] was basically it and it found all this data for me now real quick let me show you another very
+[10:20] useful dashboard that it made for me and that is my sponsor revenue dashboard so like any other
+[10:26] creator sponsorship is a big revenue driver for me and by the way this is not real data this is
+[10:31] block data on my sponsorships but you know it has information on how much revenue i booked for 2026
+[10:36] revenue by sponsor conversations i need to follow up on you know sponsorship conversations are
+[10:42] waiting on me and stuff that's contracted out. And it has a bunch of insights here as well. So for
+[10:49] example, there's a lot of revenue ending in Q4, but I haven't already booked a ton of sponsors for
+[10:54] next year. And these three sponsors are the majority of revenue for 2026. You might have
+[11:01] a different type of business. You might be making revenue from subscriptions or something else,
+[11:05] but being able to build these dashboards is just extremely useful. And of course, I can also ask
+[11:10] Duet to set up scheduled tasks to keep these dashboards updated every week. Maybe email me
+[11:16] these dashboards so that I can take a look at them on my phone. Awesome. So another artifact
+[11:22] that I had Duet built with my kid is an AI Explorer club for her to pick up AI skills.
+[11:30] And if you know Opus, if you know Fable, you know that these models from Anthropic are extremely
+[11:34] good at motion design, animations, and such. So for this one, I decided to make it fun. We have
+[11:39] a little robot buddy here and animated text. Let's go ahead and click start the adventure
+[11:44] and that there is a adventure path and let's click one and this is the first lesson about
+[11:50] what a chatbot is and there is a prompt here that I can copy and paste to have my kid learn all about
+[11:57] LAMs. Now I think this is a little bit too text heavy for my tastes. I wish it was more interesting
+[12:02] but you know we can easily prompt Claude to make it more visually engaging. All right so artifacts
+[12:08] are awesome in Duet, but I also want to be honest about the shortcomings of this app. Now note that
+[12:13] this app is still research preview, so maybe some of the stuff will be failed. But one shortcoming
+[12:19] is, for example, I asked it to book an Uber ride because there's actually a default skill called
+[12:24] Uber ride in Duet. So if it's an Uber ride, there's also skills to book DoorDash and so on.
+[12:31] So when I type in the skill, it asks me, you know, where should a car pick you up? And is it right now?
+[12:36] and where is it going?
+[12:38] And I said, Palace of Fine Arts.
+[12:40] And unfortunately it was not able to do it
+[12:42] because Duet's browser required
+[12:44] verify your human check from Uber
+[12:46] and it was able to click through this.
+[12:50] So that required me to basically,
+[12:52] like the other personal agents,
+[12:54] actually open Duet's browser
+[12:55] and navigate this human check for it.
+[12:58] But unfortunately, at least right now,
+[13:01] Duet doesn't actually let me see its browser
+[13:03] or let me interact with this browser.
+[13:05] I couldn't find a single place in this app where I can actually engage.
+[13:09] Now, talking to the Duet PM, I know that he's hard at work on this feature, so I think it'll be coming eminently.
+[13:14] But I think being able to interact with the browser is absolutely critical for personal agents that live on a cloud computer
+[13:20] so that you can unblock the AI for things that still require a human to do, like capture checks or signing.
+[13:27] Another minor annoyance is that Duet in this skill library
+[13:31] can't actually see all the skills that I have on my local computer.
+[13:36] So I'm sure they're going to launch Duet in the cloud desktop app at some point too.
+[13:40] And this problem will be fixed as well.
+[13:42] But basically, right now, the two shortcomings, in my opinion,
+[13:46] is lack of ability to engage with Duet's cloud browser.
+[13:50] And also, I can't seem to add my own personal skills on my local computer.
+[13:54] okay so let's wrap up by comparing duet to all the other personal agents that i tested you know
+[14:01] i made videos on grogbot muse chatty dots and all these personal agents now so i want to give you
+[14:07] guys a brief recap on which one i think is the best so spoiler alert i think grogbot is still
+[14:14] my favorite agent right now basically i treat each bot as an employee and the free x integration
+[14:20] that GrokBot has is really awesome for market research.
+[14:25] The downside right now is that GrokBot's email
+[14:27] doesn't actually work that well.
+[14:28] If I tag it on his own email, it doesn't actually respond.
+[14:32] And GrokBot obviously is not free.
+[14:35] Now, if you want to give GrokBot a try,
+[14:37] I have some free coupons on behindthecraft.com
+[14:39] for paid subscribers.
+[14:42] The next one is Muse, which is free.
+[14:46] And Muse is also incredible.
+[14:48] I think it's super well-designed,
+[14:49] probably the most well-designed out of all the personal agents.
+[14:52] Maybe Duet comes close.
+[14:54] And it has a killer feature in that it can call US businesses for you.
+[14:59] So for example, here I'm calling Davy Tree, expert company,
+[15:03] to try to get them to remove a tree from my backyard.
+[15:06] And Muse is making a call.
+[15:08] I've also made calls before to negotiate cable bills and more.
+[15:12] And it's just a massive time saver.
+[15:14] The primary drawback of Muse is that it's not really using a frontier model
+[15:18] like Opus and Astra.
+[15:20] So sometimes it can make mistakes.
+[15:22] I think Muse Wonder is a good model,
+[15:24] but in my opinion, Opus, Astra, Fable is a better model.
+[15:28] Okay, next we have ChatGPT Dots,
+[15:31] which lives inside ChatGPT,
+[15:32] which is probably its biggest advantage.
+[15:35] Because it's part of ChatGPT,
+[15:37] it has access to ChatGPT memory,
+[15:39] ChatGPT threads, and more.
+[15:41] Now the problem with ChatGPT Dots is that,
+[15:44] honestly, it launched in a really buggy state
+[15:46] and they made a lot of improvements since then.
+[15:49] But personally, I still find it slower and less useful
+[15:52] than just using my own chief of staff thread
+[15:55] inside ChatGPT.
+[15:57] And last but not least, we have Cloud Duet,
+[16:01] which in my opinion is the most proactive out of the box.
+[16:05] I know Anthropik has been working on this for a while
+[16:06] and the product has also changed a lot.
+[16:09] And it's actually a pretty polished experience.
+[16:12] I love the Cloud look.
+[16:13] It's just missing some key features right now
+[16:15] that I'm sure they're going to add
+[16:16] once they exit research preview,
+[16:18] like being able to see what the browser is doing
+[16:20] and be able to add my own skills easily.
+[16:24] All right, so overall,
+[16:25] I would say I still prefer GrokBot as number one.
+[16:29] I still use it every day along with ChatGPT and Cloud
+[16:31] for individual work streams.
+[16:33] If Duet becomes more robust
+[16:35] after it exits research preview,
+[16:37] I can see myself using it a lot
+[16:39] because right now,
+[16:41] Cloud is my main harness and model
+[16:43] and just has a ton of memory about how I like to work.
+[16:46] So overall, I think this is generally a great start to a personal agent from Anthropic,
+[16:51] and I'm really excited to see them improve it.
+[16:53] Cloud Duet is available today as a research preview with a waitlist for Pro and Mac subscribers,
+[16:59] and I'm sure Anthropic is trying to launch it to as many people as possible very, very soon.
+[17:04] And again, my prediction is that Anthropic will improve Duet
+[17:07] and eventually make it a feature inside the main Cloud app, both on desktop, web, and mobile.
+[17:14] As always, if you enjoyed this breakdown, please like and subscribe for more practical AI tutorials, and I'll see you next time.

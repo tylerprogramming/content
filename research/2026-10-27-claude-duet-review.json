@@ -1,0 +1,25 @@
+{
+  "query": "Claude Duet review",
+  "total_found": 1,
+  "long_form_found": 1,
+  "shorts_found": 0,
+  "days": 30,
+  "top_n": 20,
+  "short_max": 180,
+  "long_form": [
+    {
+      "title": "Claude Duet Review: What Works and What Still Needs Work",
+      "channel": "John Aspinall",
+      "views": 75,
+      "likes": 0,
+      "comments": 0,
+      "upload_date": "20261022",
+      "duration": "11:43",
+      "duration_seconds": 703,
+      "url": "https://youtube.com/watch?v=JU0lX7y2Au0",
+      "description": "Claude Duet didn't automatically pick up the Claude Code context I expected it to have. I had to tell it to go and grab my existing system before it started working the way I normally do.\n\nI got access to the research preview and tested the web app with a YouTube analytics task. I walked through cha",
+      "id": "JU0lX7y2Au0"
+    }
+  ],
+  "shorts": []
+}

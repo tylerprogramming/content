@@ -1,0 +1,422 @@
+[00:00] You probably have already heard the news by now, but Anthropic just announced a brand new standalone app called Duet.
+[00:06] And it will directly rival Muse, GrokBot, and OpenAI's Dots.
+[00:10] And it will be fully powered by Opus 5.5.
+[00:13] And so I've spent around 10 hours using this app for my business, content, creating apps, and presentations.
+[00:19] And I've been writing down all my thoughts.
+[00:21] And I've distilled those thoughts down to nine things that you need to know about Duet.
+[00:25] The first thing that you need to know about Duet is that it is an iOS app and a web app,
+[00:32] and it is a standalone app.
+[00:34] OpenAI decided to put their agent platform Dots inside the ChatGPT app,
+[00:39] and you can either create a new chat or you can chat with your Dot,
+[00:43] but Anthropic went in a different direction.
+[00:45] As you can see here, I have my Claude app, and then I also have my Duet app,
+[00:51] and I can open this up, and this right here is the Claude Duet iOS app.
+[00:55] So let's go ahead and get the most annoying thing out of the way.
+[00:58] This app, Duet, by Anthropic, is in early access.
+[01:03] But rumor on the street, if you DM this guy, Richard Kim, CWRichardKim on X,
+[01:09] he might be able to give you access.
+[01:11] It worked for me. It might work for you.
+[01:13] Now I want to talk about the experience.
+[01:16] So the second thing that you need to know,
+[01:18] and this will probably be your first impression of the app,
+[01:21] is that it is incredibly snappy, easy to use,
+[01:24] And there's something new called Channels.
+[01:27] This here is the iOS app, and it feels a lot like the other agent apps that we've tried so far, like GrokBot, like Dots.
+[01:36] Except instead of having these bots, they have these things called Channels.
+[01:40] So Claude Duet isn't personified.
+[01:42] That's the first thing that I realized.
+[01:44] You know, GrokBot, your Dot, your Muse, like all of those have mascots.
+[01:49] Whereas Duet, it kind of has like musical themes.
+[01:52] And then it reminds me more of Slack where we have these channels.
+[01:56] And so, so far I've created like 10 different channels and I ended up deleting them because
+[02:01] it added clutter.
+[02:02] And so far I just have content finances and then artifacts, which I'll get to a little
+[02:07] bit later.
+[02:07] But the first thing that you realize is the app just is so snappy and it's really easy
+[02:13] to just get around and it's just a great interface and design for an app.
+[02:19] And I really like the voice dictation here.
+[02:23] And I could say something like,
+[02:25] hey, can you please add something at the end of the presentation
+[02:28] we were last working on in the content channel?
+[02:31] Add that I really like voice dictation,
+[02:33] just as a little bonus slide at the end.
+[02:35] And I can fire that prompt in.
+[02:37] And just like the other agent apps,
+[02:39] you can see that they're typing.
+[02:40] We have a little bit of animations here.
+[02:42] If I click on this, I can see all of my connections.
+[02:46] I said, hey, can you please add something?
+[02:47] it responded here in the content channel.
+[02:50] So I can click on the content channel
+[02:52] and here it takes me and says,
+[02:54] adding the voice dictation bonus slide
+[02:56] to the end of the duet deck.
+[02:59] Duet deck is a task that I can open up
+[03:02] and here we have a slide deck
+[03:04] and this slide deck is actually the slide deck
+[03:06] that I'm working on for this presentation.
+[03:09] And so it's adding something
+[03:10] to the end of this presentation.
+[03:11] And then all of this information is synced.
+[03:14] So this is real-time synced
+[03:15] with the web app right here and I can open this up right here so we can go to the end of the
+[03:21] presentation it added it to the end and so we are very easily able to go from the iOS app to the web
+[03:29] app you can see here it added this to this presentation right here we have the voice
+[03:34] dictation slide what I really like about this app down here at the bottom it has tasks and so it has
+[03:40] active up next and we have this make tab right here so if I click make here we
+[03:46] have all of the things that I've created this is another slide deck that I'm
+[03:51] working on and it's very easy to just see all of the presentations that I've
+[03:56] created so that's kind of the layout you have chat you have tasks and then you
+[04:00] have your artifacts or your make tab and then you have this one agent chat along
+[04:06] with sub channels that you can create. You can create a new channel by pressing this channel
+[04:12] and the channels that I've made are content, finances, and artifacts. And you can just talk
+[04:17] to your main agent. And if it's content related, it'll automatically delegate it to this content
+[04:22] tab. And that's how everything kind of stays organized. Quick break because this part of the
+[04:26] video is sponsored by Bluehost. AI agents can now work for hours on their own. Tools like Jev help
+[04:32] agents make decisions about what to do next, but those agents still need somewhere to run.
+[04:37] Agents write code, call APIs, and work through tasks while you're away.
+[04:42] But most of these agents are still running on our laptops.
+[04:45] And if your agent runs on your laptop, putting it to sleep can interrupt the work.
+[04:49] If an agent is supposed to work on its own, it needs its own computer.
+[04:54] So I gave mine one, a Bluehost VPS, basically a computer in the cloud that's always on.
+[05:01] I get full root access so I can install the software and dependencies my agent needs,
+[05:06] and it can run in the background around the clock.
+[05:10] The VPS gives my agent somewhere to keep running, even when my laptop is off.
+[05:15] If we're going to treat AI agents like digital workers,
+[05:18] we should start giving them their own computers.
+[05:21] Check out Bluehost with the link at the top of the description
+[05:24] to start building and running your own AI agents.
+[05:27] And the third thing that you need to know about Claude Duet
+[05:30] is that the experience of creating any sort of asset,
+[05:34] whether that is a slide deck,
+[05:36] whether that is a Figma style design mode mock-up,
+[05:40] it's really easy to add things.
+[05:41] They have, I forget what they call it.
+[05:43] It's called a comment tool.
+[05:44] So I could just comment on this
+[05:45] and I could just say,
+[05:46] make number three adding comments,
+[05:50] great artifact editing on web.
+[05:54] And I can add this comment and you can see here,
+[05:57] it automatically sends this to my duet.
+[05:59] And so Duet is now going to make the edits and it will show up here.
+[06:04] And then I could come here and just say, hey, can you make these super easy to comment?
+[06:08] And then add an image on this slide right here, which is the thing three details page, except crop out the little edge here.
+[06:17] And so the point I'm trying to get across for number three is that this like commenting and editing documents directly inside the web app is incredibly easy.
+[06:25] And it's as easy as their baked in design feature.
+[06:29] And look at that. It added that image to the board. And yeah, add two little bullets. Basically, super easy to create assets, great for presentations and baked straight into the web app and iOS app. And it should add these bullets here. But again, you can add these bullets directly. I don't have to do it through Duet. It's so fast when making edits.
+[06:52] And then the fourth thing that you need to know about Duet that is very similar to number three is that you can use voice mode to edit artifacts.
+[07:01] And this is actually my favorite way to create any sort of like digital deliverable, whether that is a presentation or a slide deck, is I actually take my phone for a walk and I'll open up the slide deck.
+[07:15] So I'll have my phone open and you can get to a slide deck that you created either through the make tab.
+[07:21] You have the nine things that you know about Claude Duet, or I can click on this right here,
+[07:26] and we have this slide deck open.
+[07:28] I can very easily zoom in on the slide deck.
+[07:31] But instead of typing my change here, you actually can't use voice.
+[07:35] What I'll do is I'll exit out, and I'll just turn on voice right here with this button.
+[07:40] Hey, I want you to make some changes to the presentation, and yeah, I want you to make
+[07:46] a good amount of changes.
+[07:48] On all the slides, that has nine things you need to know about Duet.
+[07:51] can you please make that like there should be a line break after need and then make the text a
+[07:56] little bit bigger for the voice mode above the little timeline we have at the bottom can you
+[08:00] please make a cool little graphic that's only gray that's just like very elegant and nice
+[08:06] and kind of brings attention to the middle and then add one little bullet there based on how um
+[08:12] how i've been using duet so far and then after slide 19 i want you to add a standalone slide
+[08:18] that just has text in the middle and have the text say i'm not sure how i feel about this one
+[08:25] and put this after slide number 19. okay so once i've done announcing all of my changes i can hit
+[08:31] the x it's been recording my voice the whole time and we can fire off that prompt and now it's going
+[08:36] to make all of those changes so this allows you to just get it to create version one of a slide deck
+[08:41] or anything and you can just turn on your voice and then just go through it saying what changes
+[08:46] you want on each one. And then now Duet is just going to go through with Opus 5.5 and make all
+[08:52] of the changes that I suggested in this paragraph right here, which is really cool. And so that's
+[08:56] how I've been using voice mode with artifacts. And so the fifth thing that you need to know
+[09:00] is that every task gets a thread. And just so you know, I'm not sure how I feel about this one,
+[09:06] because this one is a little bit different. So this is actually where I start to get lost in
+[09:12] the app a little bit because of all of the different levels. So when I first tried to
+[09:17] create a slide deck inside Claude Duet, in this main chat right here, like within this chat,
+[09:24] I asked it to create a slide deck. Claude then delegated that or sent a request inside the
+[09:31] content channel. And then after thinking for and working for about 10 minutes, it said your duet
+[09:36] deck is ready to look over. And so I saw this link and then I clicked on it. And then when I
+[09:41] clicked on it, I realized there's another chat thread. So anytime that you create a new task,
+[09:50] it actually creates a new thread for that task. And so every change that I've requested about
+[09:57] this document right here goes into this chat session right here. And so you have your main
+[10:05] session that can be put into a channel. And then if you start a task in any channel, it'll create
+[10:11] a new task thread. And so then in the task thread, then we have the doc. And so then you can chat in
+[10:20] the content channel about this document and that's how you make changes. So it's a little confusing.
+[10:27] Let's go through an example right now. Okay. So here in the main thread, I'm about to run this.
+[10:31] I'm going to say, Hey, I have a new task for you. I want you to create a slide deck,
+[10:34] which is a Q4 predictions. And I want them in the same format as the duet doc with the
+[10:41] grid and I want to do a let's do nine predictions for Q4 but before that we
+[10:48] need to have a where we are now section look at my previous videos and predict
+[10:58] what my predictions are and now it's going to create this so let's see what
+[11:04] it does here let's just kind of go through the flow all right so it's
+[11:08] starting off by going through my past videos.
+[11:11] And so look, it says Claude Duet added this task,
+[11:14] Q4 agent predictions deck.
+[11:16] So if we click on this, we can hit open task.
+[11:20] So this task opens up a sub thread.
+[11:24] And so now we have the main chat here
+[11:26] and the sub thread here.
+[11:28] And so that's kind of how this is organized.
+[11:30] You have your main chat,
+[11:32] you can chat with Duet in channels.
+[11:35] And whenever you create a task,
+[11:36] it'll spin out a new, this is a task session.
+[11:40] And then you can see here, we have ready for review.
+[11:43] We have working.
+[11:44] So right now we know that the Q4 AI agent prediction deck
+[11:48] is basically in progress.
+[11:50] It's currently working on it now.
+[11:52] And then you notice here, there's some more organizations.
+[11:54] So if there's a task going on inside content
+[11:57] or any of the different channels,
+[11:59] you'll see it under that tab.
+[12:02] So we have a content tab.
+[12:03] If there was something working on in finance,
+[12:05] it would show up under the finance heading right here.
+[12:09] And then I really like this view right here.
+[12:11] They really made it simple within like a task thread.
+[12:14] You can kind of see exactly what it's doing.
+[12:16] So you can see that it's studying Claude Duet's deck format.
+[12:19] It read through videos for past for Riley Brown's views,
+[12:23] research where AI agents stand now,
+[12:26] write the nine predictions,
+[12:27] and now it's building the deck.
+[12:29] And then let's say I didn't have this open.
+[12:31] It gives you little updates in your main chat thread.
+[12:35] so it's done and so anywhere anytime you see this little like this card right here this is an
+[12:42] artifact anytime it's like underlined like this that's this is the this is the task thread so
+[12:49] that's kind of the difference between those two links this is the actual artifact this will open
+[12:54] the artifact right here um and here it has the slide deck in the exact style that i really like
+[13:01] And here, ooh, this is kind of nice.
+[13:03] Added some graphics.
+[13:05] Ooh, see, like, look at how insane this is.
+[13:07] This is one shot.
+[13:10] Wow, wow.
+[13:11] And it's went through all of my context
+[13:13] because it has context over all my videos,
+[13:15] all my notes, everything.
+[13:17] So this is probably going to be pretty accurate.
+[13:18] Ooh, my God, this slide deck is nice.
+[13:22] Really nice.
+[13:23] So this is cool.
+[13:24] We just created this slide deck
+[13:25] and you can do all of this from your phone
+[13:27] and use your voice to edit it as well.
+[13:29] The sixth thing that you need to know about Duet is it is a lot like Claude Code projects.
+[13:37] So in the Claude desktop app, if you go up here to projects, this is currently how I've
+[13:41] been using Claude for a while.
+[13:43] I just pin projects at the top.
+[13:45] And so you have this master agent and you can delegate to threads.
+[13:50] So you have master agent and threads, and then you can kind of keep track of all of
+[13:55] your different tasks.
+[13:55] And one of the main reasons I like this app so much is from my phone.
+[14:01] If we go to my phone here, in the phone, what I can do here is I can say, hey, can you please create a resource based on the like create a new thread local on my computer?
+[14:14] So this is a new cloud code session locally on my computer, which creates a new artifact that people can download on the agent native website.
+[14:21] and it should have a way to download the PDF
+[14:26] for the artifact called nine things you need to know about Claude
+[14:29] and make the resource name that as well.
+[14:31] And so what this is going to do
+[14:32] is this will actually spin up a local session.
+[14:35] So I can go out into the world,
+[14:37] I can use voice and I can ask the Claude app
+[14:40] in Claude Projects to spin up a local session.
+[14:44] And again, this is not on Claude Duet,
+[14:46] this is on Claude Projects.
+[14:48] And if I click on this right here,
+[14:49] The first thing I'll see is this little computer icon.
+[14:53] So this is running on my computer.
+[14:55] And so this is where I keep all of my files so I can control Claude code running on my
+[14:59] computer from Claude projects.
+[15:02] However, as of right now, with Claude Duet, you cannot do this.
+[15:08] I can ask it to spin off a Claude code session in the cloud and it can do it, but you cannot
+[15:13] ask it to create a Claude code session in the Claude Duet app, which I really hope they add
+[15:20] that feature because there's a lot of files on my computer, especially for video editing stuff.
+[15:25] I would love to be able to access my Claude code locally on my computer. But that's really the only
+[15:31] limitation that I've seen so far with Claude Duet. It's very easy to coordinate and do different
+[15:37] tasks. And you can basically have Duet spin off different tasks to do different things. So that
+[15:45] allows you to do a bunch of things in parallel. And so I never really find myself, unless I'm
+[15:50] like editing something like a slide deck, leaving this main chat session. Hey, spin off a new task
+[15:55] right now that analyzes the trending topics right now on Twitter. If you use Composio, you should
+[16:03] have a GrokBot skill that you can use to scrape Twitter about the whole cybersecurity issue going
+[16:09] on right now and put this in an editable document. And it's just really easy to just talk to this
+[16:16] agent. Now it's going to delegate it. And so I can very easily continue on with a different task
+[16:23] that doesn't have to do with this, but I can kind of work on things in parallel.
+[16:29] And so that's kind of how I find it to be similar to Claude projects, which I use all the time.
+[16:36] But this one is more proactive, and I feel like they're going to merge these two features at some point because they're strikingly similar.
+[16:45] So the seventh thing that you should absolutely do inside Duet is you should create an artifacts channel or a tasks channel, which nudges you to go back to previous things that you've worked on.
+[16:56] So we can create a channel called Artifacts.
+[17:00] Really cool about channels is you can set up routines
+[17:04] that live inside the channel.
+[17:05] Let me show you what I mean.
+[17:06] So if you show the tasks, you can see your scheduled tasks
+[17:10] and you can see here that we have an artifact recap
+[17:14] right here and we can see that it's going to run
+[17:17] at 9 a.m. to 5 p.m.
+[17:19] And so I get a lot of ideas, right?
+[17:21] I'm a content creator.
+[17:23] I create a lot of these documents,
+[17:24] sometimes to send to my team, sometimes for myself.
+[17:28] And it's really useful to have a dedicated space
+[17:32] where all I do is get like,
+[17:34] I'll get reminded to work on things
+[17:36] that I've already created.
+[17:37] And so every day at 9 a.m. to 5 p.m.,
+[17:40] I get an artifacts recap.
+[17:42] And so it'll be like,
+[17:43] hey, you created this slide deck yesterday.
+[17:45] Do you wanna continue working on it?
+[17:47] And I'll be like, oh yeah, I forgot I created that.
+[17:49] I need to do that for my presentation or for my video.
+[17:52] It's really useful to have that
+[17:54] because oftentimes with AI,
+[17:55] since they work for 15 to 40 minutes at a time,
+[17:59] you wanna be able to work on multiple things at once
+[18:01] and it's easy to get lost.
+[18:02] So I have this dedicated channel,
+[18:04] which basically resurfaces all the things
+[18:06] that I'm working on.
+[18:07] And I find this to be incredibly useful.
+[18:09] And so the eighth thing that you need to know
+[18:11] about Anthropics new platform, Duet,
+[18:13] is their real-time voice feature.
+[18:17] So inside this Duet app,
+[18:19] I can press this button right here.
+[18:20] Hey, buddy, old pal, what's going on?
+[18:23] Can you give me just give me like a little like one sentence or two sentence summary of that?
+[18:29] Sure.
+[18:29] Okay.
+[18:29] Okay.
+[18:30] Can you send an email to emily at agentnative.inc giving her this little breakdown, please?
+[18:35] Sure.
+[18:35] Okay.
+[18:36] So the voice is not – it doesn't sound as human as the OpenAI Dots one.
+[18:41] And you also can't mute it, right?
+[18:43] Like there's nowhere to mute myself.
+[18:46] Like I can't really mute myself, which is kind of annoying.
+[18:48] One thing I do like about this is it starts immediately compared to dots where like if I were to call my dot, right, I have to like wait for it to dial.
+[18:59] And sometimes it takes up to like 20 seconds for it to answer, which is not the vibe.
+[19:03] Hey, anyway.
+[19:04] Okay, so it's very early in the stages here, clearly, because like it literally was just like, I don't know if it was sent.
+[19:11] And dot is an amazing experience when chatting with voice.
+[19:15] I've been talking about this a lot.
+[19:16] I've been going 45 minutes a day.
+[19:17] I just talked to an agent.
+[19:18] It does things for me, sends emails, all my Slack.
+[19:21] It'll just be like, yep, I sent it.
+[19:22] Or yep, I like, and I'll say like, hey, can you just, before you send it, can you read
+[19:26] it to me?
+[19:27] It'll read it to me.
+[19:27] And I'll be like, yep, send.
+[19:29] And then it'll just send.
+[19:30] And so I love real-time voice.
+[19:32] Absolutely love it.
+[19:33] But Claude seems to be far behind OpenAI on this one.
+[19:38] And I think it's really interesting to compare the features of all of these different personal
+[19:42] agent platforms, right?
+[19:43] We have Claude Duet.
+[19:44] We have OpenAI's Dot.
+[19:46] We have Gemini's Spark, which like kind of doesn't even exist.
+[19:49] We have GrokBot.
+[19:51] We have Hermes Agent, Instinct, Muse, and OpenClaw.
+[19:56] And we can see here that there's actually no desktop app for ClawDuet yet.
+[20:03] Because remember, Duet's still in early stages.
+[20:05] And my main thing so far, I really like that I have access to Opus 5.5 in ClawDuet.
+[20:11] That's my biggest benefit for using it.
+[20:13] I also think the interface is much easier and it's a standalone app compared to Dot, which is like built into chat GPT.
+[20:23] And one thing to note is I explained earlier that Claude Duet cannot spin up new Claude sessions, but it can read the local Claude session.
+[20:32] So if you've created Claude code sessions on your computer and it's on, you could ask it, hey, like Claude code session I ran two days ago, like, can you summarize that?
+[20:40] and it would be able to go back and do it.
+[20:42] It just can't create or type posts
+[20:45] inside of a Claude code session
+[20:47] that's local on your computer.
+[20:48] And that's different than dots
+[20:50] because dots can actually do that.
+[20:51] If I talk to my dot and I can spin up codex sessions,
+[20:54] you cannot do that with Duet.
+[20:56] One thing to note that I noticed
+[20:58] is there are some approval before important actions,
+[21:02] specifically when it wants to send a message,
+[21:03] it'll ask for your approval.
+[21:05] I want slightly less approvals in my Claude Duet.
+[21:09] I would prefer less approvals.
+[21:11] And then obviously payments.
+[21:12] This one's actually a good thing.
+[21:14] So before you try and make any sort of payments
+[21:16] or you're doing any signatures and any deletion.
+[21:19] So I noticed I was trying to remove a video
+[21:21] from an ocean database.
+[21:22] It asked me for approval,
+[21:23] which I thought was a little bit annoying,
+[21:25] but also I understand why it's useful to ask for approval
+[21:28] before it deletes anything in an app.
+[21:30] There are some points where you'll run into approvals.
+[21:34] Okay, so now for the ninth thing that you need to know,
+[21:36] and this one is multiple things,
+[21:38] And these are all the negatives about Claw Duet so far.
+[21:42] The first one I'll add that's not on this list
+[21:45] is I think the real-time voice is like 5% as good as Dots.
+[21:49] And even GrokBot's real-time voice is pretty good.
+[21:52] So that's the first one.
+[21:53] It's not on the list.
+[21:55] The first thing I will say is it's pretty easy to get lost
+[21:58] between channels, tasks, and threads.
+[22:02] I think having three types of chat threads
+[22:05] is a little bit confusing.
+[22:06] You have your main chat, you have your channel chats, and then your task chats.
+[22:12] And so it gets harder to explain the software.
+[22:16] The more levels you go, it gets infinitely harder to explain because like, are these
+[22:20] called chats or these threads?
+[22:21] Right here, you just have a chat.
+[22:23] You're chatting with an agent, right?
+[22:25] Now you're chatting with an agent in a channel.
+[22:26] Now you're chatting with a task chat inside a channel.
+[22:33] And so you can get lost.
+[22:34] That's all I'm trying to say here.
+[22:36] So be wary of that.
+[22:37] Another thing to note is that there is no model picker,
+[22:41] which might actually be okay
+[22:43] because it uses a great model, Opus 5.5,
+[22:45] but it also sets the effort level.
+[22:47] So you can't say, hey, use Opus 5.5 at max
+[22:51] or at the max thinking or medium thinking.
+[22:54] You can't do that.
+[22:55] And then you can't create quad code sessions.
+[22:58] You can see here, I created it with voice here.
+[23:00] So it added codex,
+[23:01] but you can't create local quad code sessions,
+[23:04] which I already brought up before,
+[23:06] that will be the biggest thing for me.
+[23:08] So the two biggest things I hope they add
+[23:10] within the next few weeks,
+[23:12] Anthropic, if you're listening,
+[23:13] is I hope they add real-time voice
+[23:15] that gives you better visibility in what it's doing.
+[23:18] So it can just spin off Cloud Code sessions.
+[23:20] It can spin up tasks to do your email.
+[23:24] And it's just like, yep, I'll get on it.
+[23:25] And then as soon as it's done,
+[23:27] like it'll be able to tell you exactly where it's at
+[23:29] in the process.
+[23:31] I noticed when I was talking
+[23:32] to the real-time voice agent inside Duet,
+[23:35] it wasn't really real-time aware of where the process was.
+[23:38] Where if you ask Dot, say like,
+[23:39] hey, like, I know you're doing research
+[23:41] before you send the email,
+[23:42] but like, where are you in the process?
+[23:44] And it'll tell you exactly where it's at,
+[23:45] whereas Claude Duet, it's not quite like that.
+[23:48] It doesn't feel as smart.
+[23:49] And then obviously I want to be able
+[23:50] to use Claude Code from it.
+[23:52] And so if I can use Claude Code,
+[23:53] because all my video editing workflows
+[23:54] are local on my computer.
+[23:56] And so I want to be like,
+[23:57] hey, spin up a Claude Code session.
+[23:59] You already have the footage that I filmed yesterday.
+[24:02] can you please create a video edit that's like this, like this, like this, and then upload it
+[24:07] to Google Drive. And that would be really cool in Duet to be able to spin up local Claude Code
+[24:12] sessions. I really hope they add it. I highly anticipate they will. And yeah, there you have it.
+[24:18] Thank you guys so much for watching. I will be making a much more in-depth tutorial on this
+[24:22] as it gets better.

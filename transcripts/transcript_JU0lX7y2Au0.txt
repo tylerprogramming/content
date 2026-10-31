@@ -1,0 +1,156 @@
+[00:00] In the race for personal AI agents, Claude comes through not first, but probably not last with Claude Duet.
+[00:07] So I just got access to Claude Duet.
+[00:10] And as you can see over here, it is in research preview by waitlist.
+[00:15] So you have to join the waitlist.
+[00:17] I clicked on the waitlist link and in a matter of, I don't know, maybe like two hours,
+[00:21] I got an email about test flight or whatever the kind of thing you have to download on your iPhone to get access to it.
+[00:27] but then I came to my computer and it was here as well so what I'm gonna do is walk you through a
+[00:32] little bit of what it looks like what I think of it and all that kind of stuff so I'm not showing
+[00:37] my iPhone app version I'm showing the web app version one thing to note it's not inside of the
+[00:43] desktop at least on the time of this record so it is kind of like a standalone which I don't know
+[00:49] if I love I kind of like everything being all-in-one or at least having a standalone thing
+[00:53] kind of like how GrokBot is but nonetheless this is Claude Duet right here. So as you can see it is
+[01:01] very similar to Muse the way that Muse has that god mode thread where it's one continuous thread
+[01:08] over here but then you can do what I kind of call like a slack channel it's not really a slack
+[01:14] channel but it's a channel that you can come over here and you can customize a new channel and new
+[01:20] group but you can make a new channel over here you can say whatever you want
+[01:23] to make of it so let's say I want to make one talking about I don't really
+[01:28] know YouTube so I can come over here and create YouTube and that's gonna be a new
+[01:32] channel you know we can focus on different tasks you want to suggest
+[01:35] tasks sure you can come over here as well and rename change icon add
+[01:41] instructions move it to a group so you can group channels together and do that
+[01:46] kind of cool stuff. So like YouTube, maybe I'll make it this, save it over here. Here's what I
+[01:52] can take on from here, turn your fathom calls to teaching moments, build a content plan, package,
+[01:57] this kind of stuff. Anyway, so it's able to go in and kind of understand that. And again, still
+[02:03] having that main thread over here for doing things. Now it's interesting because there is no
+[02:10] voice call feature. There's no, you can't change the name of it. So like on Muse or Rockbot or
+[02:19] these kinds of things, makes it feel a little bit more personal. This seems to be down to business,
+[02:25] just do business, just do what you need to get done. And that could be good for some folks and
+[02:29] bad for some folks. And if you notice over here, if I go to YouTube as a channel, I can click over
+[02:35] here and still do the same thing but I also have tasks so this is where when it's doing things it's
+[02:42] very very similar to if you use the new projects feature in cloud code where it's a main orchestrator
+[02:48] kind of cloud agent as a one thread and it's going to spin off other different threads or other
+[02:55] sub agents inside it's kind of the same idea over here so I can say a task in youtube is to
+[03:01] analyze YouTube analytics up next so save for later that's when I manually did so I can come
+[03:08] over here and I could say go into that session and it'll I'll just say analyze YouTube analytics
+[03:14] and again that's me making a task more often than not it's going to make its own tasks so it's
+[03:18] pulling your channel numbers from YouTube my channel numbers stink so you can see then it's
+[03:23] going to be up next so it's spinning up and then it would probably be active once it's actually
+[03:28] going which is weird why it's not going to active right now because it's actually doing stuff so
+[03:33] that should be inactive but then you'd have scheduled and resolved this is more like the
+[03:38] scheduled task kind of thing and then if i click over here this is artifacts so artifacts uh from
+[03:43] everything or artifact artifacts just in this channel um and then you can go over here and make
+[03:49] a document presentation design dashboard page all these kind of things emails to answer so i have a
+[03:56] lot of pre-made things inside of here. Like, so if I was, you could see this is a little weird
+[04:01] animation when it's working. I don't really love it. It's very anthropic. I will say that,
+[04:06] but for this it is active. So I don't know why it's not doing that, but now you'll see,
+[04:11] it'll say pulling your channel numbers and it'll go out and do its things. So, so you can see it's
+[04:17] going to go for analyze YouTube analytics, and then it's going to, it's still act. Um, so I guess
+[04:21] when it's actually needing something to be done,
+[04:24] that's going to say ready for review.
+[04:26] So this is the output over here,
+[04:28] and it's going to go through and do all this kind of stuff.
+[04:30] But again, it doesn't have voice.
+[04:33] So it does have the regular dictation inside of it,
+[04:36] but I can't pick up the thing, the call,
+[04:39] and just talk to it,
+[04:40] which I've been accustomed and I like doing.
+[04:43] So I can't do that.
+[04:45] One thing I noticed, too, is in that God Mode thread,
+[04:48] I run everything out of a GitHub repo
+[04:50] as like my life OS, my one source of truth.
+[04:53] And I thought that it carried everything over from Claude
+[04:58] and it kind of didn't, which I was shocked.
+[05:02] So it was doing things and I was like,
+[05:03] wait, that's not how I normally do it.
+[05:05] So I'm running this.
+[05:07] I said, I'm running a YouTube demo.
+[05:09] Please tell me how you can assist me
+[05:11] without revealing information.
+[05:12] And then I said, why do I want to make channels separate?
+[05:15] Same features, different focus.
+[05:17] A channel is just a separate chat.
+[05:18] The point is signal.
+[05:19] this main chat gets everything so busy week things get buried here fast channel keeps one area it's
+[05:26] fine but my concern is when i start to do these channels these things all this stuff in duet
+[05:35] and then if i open up claude code as an app where the hell else does that where does where does that
+[05:40] live right so if i have all this stuff segmented out in duet it's not cohesive inside of claude
+[05:46] code, at least as of right now. So then I wind up feeling like I'm working out of two different apps,
+[05:52] two different tools. That's where my mind starts to be like, eh, I don't know. I said, can I change
+[05:58] the model that I'm using here? Partly so it can switch the model for the background work that I
+[06:02] hand off, but the model running in the chat isn't something you can change. So it's Opus 5.5 here,
+[06:09] but you can't change it, but you can change the model for like the background work for the sub
+[06:14] agents and stuff which was interesting and then it says does duet usage i actually asked does duet
+[06:19] usage come out of my uh cloud code limits uh it's one shared pool it's actually interesting the way
+[06:24] that they said it um so heavy duet use leaves less for cloud code and the reverse and you're not able
+[06:31] to kind of see as easily like how much usage you're using where at least right now so it's
+[06:38] going to be hard to gauge and measure especially if you're on a smaller plan so the background work
+[06:42] accounts to the morning brief, the check-ins, anything, all that kind of stuff. But again,
+[06:47] on the mobile app, it's very similar to this, but I'm just not, I was watching a couple of videos
+[06:53] where people were talking about it and they're like, Oh, I love it. It's so polished. It's so
+[06:56] perfect. It's so this, I'm not impressed by it. I'll be honest with you because I've been so
+[07:02] used to the features that are coming out of like Brock bot and Oh, that's the other thing too.
+[07:07] So Duet is able to have its own computer, its virtual computer and stuff like that,
+[07:12] and use its own browser, but you can't control it, which I thought was weird because I could
+[07:18] do a lot of cool things in GrokBot by commandeering the browser and the computer and doing all
+[07:23] sorts of fun stuff.
+[07:25] But Claude Duet doesn't allow you to do that.
+[07:28] So there's nothing in here that allows you to pull up the browser or anything like that.
+[07:33] So I could say, hey, I want to install something on your terminal in the CLI terminal on your virtual computer.
+[07:43] How can I do that?
+[07:44] So like on GrokBot, I have Codex and Cloud Code installed in the terminal.
+[07:49] Just tell me what it is.
+[07:50] I'll install it.
+[07:50] You don't get a terminal of your own here, so I run quick commands from you.
+[07:54] The catch is it won't last.
+[07:55] The machine gets rebuilt after it sits idle, and each background task runs on a fresh one.
+[08:00] so when I run grokbot it's it might refresh but it's always going to retain whatever I load into
+[08:08] the terminal in that computer so that's not the same with you so on grokbot I actually load things
+[08:13] into the terminal and it stays even when it refreshes because it's on the terminal is that
+[08:19] not the case with you grokbot allows me to install things on the terminal even with a refresh it
+[08:27] stays does that not happen with you also can you tell me the risks of your virtual machine for ram
+[08:36] not quite like rock refreshing the app doesn't wipe anything the machine itself gets rebuilt
+[08:41] after it's idle there's one way around it your project has a shared folder specs right now 15
+[08:47] gigs around it's the same thing right pretty much the same thing as most of the other ones
+[08:52] so i mean is it cool if you use only claude code and that's it and you've been waiting for an agentic
+[09:00] style agent a personal agent for this kind of stuff sure but in the realm of grokbot in the
+[09:08] realm of you know chat gbt dot for folks that pay to play they're better in my opinion and even for
+[09:16] the more novice, not power user, you have Muse. And all three of those can do way more things
+[09:23] than I can get over here. So I'm just not sure why so many folks are just enamored by it.
+[09:29] Because for me, even though it's in a preview research mode, and it's anthropic, so they'll
+[09:35] release stuff at the speed of a startup and just start blasting it away. And they're probably going
+[09:39] to bring it into the app. So it's a holistic kind of thing. So it's probably too early for me to
+[09:45] start judging but i mean that's what the research is the preview is for me to judge it so if it was
+[09:51] in the app if it you know some folks like the fact that this is a god mode thread and you know just
+[09:57] different channels it's all about how you operate and some people operate better like this and some
+[10:02] people operate differently i like grok because i like different bots for different things they go
+[10:08] out and do things like again i can call them i can call a dot you know i can you know have them
+[10:14] have email addresses and yeah i can patch probably agent mail inside of here but it just feels very
+[10:20] like stripped down of an experience from what else has been out there what are the pros i mean hell
+[10:28] this is opus 55 and opus 55 is the best right now but to play devil's advocate go to grokbot
+[10:36] and they're cycling behind and you might be getting opus 55 right so i can go in grokbot and you know
+[10:41] mandate every cursor cloud agent to code on opus 55 so i'm able to get that over there plus all
+[10:48] those other perks so it's just too early for me to be like wowie you know even when you come to
+[10:54] the features over here it i do like that it has does have quiet hours that is kind of interesting
+[11:00] that a lot of other ones don't have that i have to manually do read it aloud i'm not doing that
+[11:06] right in my style.
+[11:08] Like, why would that even be an option
+[11:09] when I have my whole system in place for this?
+[11:13] I really don't know.
+[11:14] But the interesting thing too,
+[11:15] I'll just end with this,
+[11:16] was that it didn't have all the context
+[11:18] for my cloud code.
+[11:19] I had to like tell it,
+[11:21] go and grab that and then update.
+[11:23] So out of the box,
+[11:24] it was like doing stuff,
+[11:26] but nothing how I normally do it
+[11:28] until I told it very clearly,
+[11:30] go and grab it.
+[11:31] So just something to think about.
+[11:32] But again, still very new,
+[11:34] still very cool.
+[11:35] that they're in the race now in terms of this,
+[11:37] but I just think it needs to be way better.
+[11:40] But let me know what you guys think about it.

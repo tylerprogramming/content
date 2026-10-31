@@ -1,0 +1,51 @@
+{
+  "query": "Claude Duet vs Dots",
+  "total_found": 3,
+  "long_form_found": 3,
+  "shorts_found": 0,
+  "days": 30,
+  "top_n": 20,
+  "short_max": 180,
+  "long_form": [
+    {
+      "title": "Claude Duet vs Dots vs Grok Bot: Anthropic Came Last and Might Have Won",
+      "channel": "The Intelligence Desk",
+      "views": 469,
+      "likes": 3,
+      "comments": 1,
+      "upload_date": "20261022",
+      "duration": "6:04",
+      "duration_seconds": 364,
+      "url": "https://youtube.com/watch?v=LkEpkOWKCPA",
+      "description": "Anthropic shipped Claude Duet yesterday, its always-on agent, and the first people who used it next to their OpenAI dot already say Duet won. My take: Grok Bot does more stuff, Duet is the one I'd actually let into my inbox, and it's also the hardest one to get.\n\nIn this one: Dan Shipper's dot that ",
+      "id": "LkEpkOWKCPA"
+    },
+    {
+      "title": "I Interviewed 4 AI Agents for One Job. Only One Said No. | Claude Duet vs dots vs Muse vs Grok Bot",
+      "channel": "TechBrawl",
+      "views": 11,
+      "likes": 1,
+      "comments": 0,
+      "upload_date": "20261026",
+      "duration": "6:13",
+      "duration_seconds": 373,
+      "url": "https://youtube.com/watch?v=xTTo818Q8nU",
+      "description": "Claude Duet vs ChatGPT dots vs Meta Muse vs Grok Bot: which always-on AI agent should you trust with your life? I posted a job ad: personal assistant, works nights, no salary. Four always-on AI agents applied: Claude Duet (Anthropic), an OpenAI dot (ChatGPT), Meta Muse and Grok Bot (xAI). Same four ",
+      "id": "xTTo818Q8nU"
+    },
+    {
+      "title": "Claude Duet vs dots, Muse & Grok Bot: After You Log Off",
+      "channel": "BizPulse: Real-Time Global Business",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "upload_date": "20261022",
+      "duration": "6:39",
+      "duration_seconds": 399,
+      "url": "https://youtube.com/watch?v=iZFjKTiCp9M",
+      "description": "The next AI comparison is about what happens between conversations. Follow Claude Duet, OpenAI dots, Meta Muse and Grok Bot through notice, preparation, action and follow-through, with official product footage and interface examples.\n\nChapters\n00:00 What happens after you log off?\n00:38 Duet: attent",
+      "id": "iZFjKTiCp9M"
+    }
+  ],
+  "shorts": []
+}

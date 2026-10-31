@@ -1,0 +1,195 @@
+[00:00] I have good news and I have bad news. The good news is Anthropic just released a new personal
+[00:05] agent and it's really well designed. The bad news is I have personal agent fatigue. I am so tired
+[00:13] of new personal agents and while this one is super, super well designed and I'll go through
+[00:19] what I love about it, I just don't need another one. And so to compete for my attention, to compete
+[00:24] for being my number one personal agent. You have to be not good, not great. You have to be exceptional.
+[00:31] And we're going to see in today's episode if Claude Duet, their new personal agent,
+[00:35] makes the cut. Let's get to it. Okay, before we go into my experience with Claude Duet,
+[00:43] just a very, very quick walkthrough of what it is. It is a phone, iPhone, Android-based personal
+[00:49] agent that is synced up with Claude and does all the things that personal agents do. So it is
+[00:54] proactive, although I will go through how proactive it really is. It's proactive. It can
+[01:00] use all the tools and plugins that your Claude has access to. And they really position this as
+[01:07] being a personal agent for small business owners or busy professionals. So none of this, like your
+[01:12] mom's going to use it with Muse and none of this, like you have to be Lauren at cursor, who's going
+[01:18] to run like 50,000 agents and ship a gajillion PRs. This is like solid middle of the road,
+[01:24] business user, SMB, entrepreneur, busy PM, busy CEO, agent. The things that you would reach for
+[01:35] in co-work on your desktop, maybe you'll start asking Claude Duet for. Now you all know that
+[01:41] I really love OpenAI products. I use Codex all day, every day, but I will say one thing that
+[01:48] Anthropic did so, so, so well, that OpenAI's dots did so, so, so poorly, is the polish of the agent
+[01:59] design. This app is beautiful. It is well-designed. There are no sharp edges. It is clearly incredibly
+[02:09] well thought through from a design perspective. Everything from the very, very early test flight
+[02:14] versions that I got access to today has shown me that this is a exceptionally well polished
+[02:21] product. From the second you onboard, they're really thoughtful about walking you through
+[02:26] what Duet does, what it has access to and how to get onboarded. It looks really nice. It feels
+[02:33] really trusted. I had zero problems getting up and running out the gate. It was a really nice
+[02:39] onboarding. It was a little similar to my experience with Muse where it was very clear
+[02:43] upfront what it could do, very clear what it had access to, and then you got right into the product.
+[02:49] The product itself has some primitives, again, like Muse that I think you're going to really like.
+[02:54] Of course, it has plugins and connectors, so it inherits all your plugins from Claude. So if you
+[03:00] have your Gmail setup, your Google setup, your Figma setup, whatever, it's going to have access
+[03:05] to those. It also has task lists, which is something I really liked from Muse's agent design.
+[03:12] I like the idea of keeping track of what goals and tasks I'm doing and what goals and tasks the agent's doing.
+[03:18] So I think the task list view is something that's really nice here and something that we're going to come back to a lot.
+[03:23] And then what it has that, again, Muse has, but it does just a little bit more polished version of is artifacts.
+[03:30] So if you're used to artifacts in Cloud Code or in CoWork, if you're generating HTML artifacts, designs, slides, Anthropic has made those first class citizens in Duet so that whenever you're generating stuff in your little chat with your little Duet, it's going to create those artifacts.
+[03:50] and it actually already can read the artifacts existing on your Clot account.
+[03:53] So when I showed up here and looked at my Clot account,
+[03:56] it already had all those artifacts that I had generated over time in there,
+[04:01] and I had a really good sense of what I could do next.
+[04:04] Finally, the last thing I really love about Duet is the idea of channels.
+[04:09] So we're all trying to decide what the primitives of are for agents.
+[04:13] In Codex, you have all these threads in chat.
+[04:16] You have all these chats in Clot.
+[04:18] You have threads and chats and projects, all sorts of things.
+[04:21] In Muse, you have your main chat and side chats.
+[04:23] Everybody's trying to figure this out.
+[04:25] And Anthropic borrowed a little bit from Slack, which I feel like is everybody's favorite
+[04:29] collaboration service, which positions these sub chats, these sub threads, these like sub
+[04:34] places that you're going to work in as channels.
+[04:37] So now you can kind of think of your duet as a main thread, a main chat, but then you
+[04:44] can break off other chats into channels and have specific channels. Like here, I created a sales
+[04:50] channel for working on sales projects. And then I'll say my last little thing that I really like
+[04:55] that I did give the Anthropic team props on is the icon. It's abstract. It's definitely Anthropic
+[05:02] Claude E. It's cute, but I have no problem with this little, dare I say it, dot. It's just
+[05:09] adorable, not offensive, not weird. I like it. Yes, of course, I love my personalized muse
+[05:15] consumer agent, and that engenders a lot of joy with me. Of course, I love my little grok bots
+[05:20] and their little icons, but this is inoffensive, and I think it's just fine. And as somebody who
+[05:25] cares about design, I thought it was pretty good. Now, what are some things that I did not like
+[05:30] about Duet? Well, I will tell you for a proactive agent, it just wasn't that proactive. I don't know
+[05:36] if I forgot to turn on notifications or it's just not that annoying. But once I set up Duet a couple
+[05:42] days ago and did a first couple tasks, it never pushed or bothered me to do anything ever again.
+[05:49] It also doesn't show up in the desktop app. So it's a really disconnected experience.
+[05:54] And so while I felt like the initial experience was pretty good, I ended up not going back to it,
+[05:59] one, because I have a million other personal agents. And two, it really didn't pull me
+[06:04] back in with useful things. I think one of the things that these agent designers are really
+[06:08] going to have to grapple with is like, there are only so many three point morning briefings
+[06:13] that can pull me back into a product. I get them from dot all the time. They're not that exciting.
+[06:18] I get them from now duet. They're not that exciting. Like there's gotta be something
+[06:22] better than the morning briefing to engage agent users on why they would come back to the agent
+[06:27] over time. And right now I don't think any of these agents, except for maybe GrokBot and Muse
+[06:32] have really figured this out. So it's not as proactive as I want. The notifications aren't
+[06:37] noisy enough for me to remember it. You know, I've said it's elegant and well-designed and
+[06:42] subtle and not annoying, and those are all positives in some ways. But from a growth
+[06:46] hacking perspective and the ability to get me to re-engage with your product, that doesn't work.
+[06:52] I need you to be a little bit more annoying. I need you to be a little bit more proactive. I
+[06:55] need you to be a little bit more noisy, or I'm truly going to forget you in the ecosystem of
+[07:01] all my agents. So what were some things that I asked it to do and how well did it do it? Well,
+[07:06] the first thing I asked it to do was just this like basic kind of like go through my email,
+[07:11] go through my Slack, figure out what's going on. I would say it didn't do an exceptional
+[07:14] job at that. It did okay. It came up with a couple of things, but the priority didn't seem right.
+[07:19] The context didn't see right. So I do think there's a little work on the quality of the
+[07:24] interaction. I asked it to find me good Warriors tickets, you know, go dubs. I want to go see the
+[07:30] Warriors when they play the Pacers. It's a noon game. I can actually take my kids. And so I've
+[07:35] had all my agents try to shop for tickets for me, shop for shoes for me. I thought this was a good
+[07:39] eval. I had it go shop for me. And this is the second thing that I think is bad about it. So
+[07:44] if the first thing that I didn't love about Duet is that it is not that proactive. The second thing
+[07:50] that I don't love about it, and this has been my experience with Claude generally, is it's slow,
+[07:56] man. And I get so disengaged waiting for the models to finish. The killer feature of Muse
+[08:06] Meta is that it is fast. In fact, Codex with their GPT ultra fast models, it just keeps me engaged
+[08:12] because I am always moving to the next step, always getting something done. And so even though
+[08:17] I really love Opus 5.5 as a model, and even though it does really good work, the performance is so
+[08:24] slow and you really feel that in a personal agent. And it degrades my desire to work
+[08:31] synchronously with an agent. You know, one of the benefits I think of an AI agent is that it is like
+[08:37] a colleague, but a colleague who's up 24 hours a day and responds to immediately. But if that
+[08:42] colleague is slow, if that colleague goes to a meeting to get work done, like you kind of forget
+[08:47] and don't want to go to that colleague over your more responsive ones, even if the more responsive
+[08:52] ones do like 10% worse of a job. And so it was shopping for these warrior tickets for me as I
+[08:58] was like passenger princess and driving to dinner. And like, I kind of forgot that it did it because
+[09:02] it took so long. It didn't close the loop. And then by the time that I came back, I was off to
+[09:07] something else. And so even though it tracked it in this, you know, checklist of things that it was
+[09:12] doing, the performance was really frustrating. And I think this adds up, especially if you use
+[09:19] a single chat, single agent where you're firing off a bunch of tasks. Like you're saying, okay,
+[09:26] check my email and I need you to make a deck and I need you to make edits on this thing.
+[09:31] And let's figure out what we do for social. And in Claude Duet, those all kicked off individual
+[09:37] threads, but then they took so long. And I'm telling like 10 plus minutes to finish those
+[09:44] threads or come back to me or ask for permissions. And because it wasn't noisy, because it
+[09:49] wasn't, you know, like in my face, I actually forgot about all those threads. And so while like
+[09:55] foundationally, it's really well designed, the models are very good, the intelligence is there.
+[10:00] And like, I can't knock anything specific about the user experience. The reality is like the
+[10:08] latency and the inability to close loops meant that this particular agent product just really
+[10:16] fell to the bottom of my use list. I think the other thing that they're going to have to solve
+[10:23] ASAP, and again, this is in research preview. So it's an early access list. It's in beta. I'm sure
+[10:29] they will get there is a desktop app. The reality is I do not want to be on my phone during the day
+[10:37] when I'm doing work and sitting on meetings. I need a desktop app to engage with my agents. I
+[10:42] think that's why like GrokBot does so well is there's a desktop agent. It's cute little icon
+[10:48] is sitting there staring me in the face. I'm always chatting with it. Like it's Slack. Same
+[10:52] with Muse. You know, I started using it as a mobile app, but very quickly download the desktop app.
+[10:57] And that allows me to pull through all these tasks that maybe I kick off asynchronously on my phone
+[11:03] and want to finish when I'm doing work at my computer. And then even same with dots from
+[11:08] Codex, which I don't even use, but at least it's there. Like at least my dot bay is staring me at
+[11:13] the face in Codex, like with a little notification saying like, do something here, get something done.
+[11:19] And so what I would say about Duet is like, it's got all the makings of a great agent,
+[11:26] except for the ability to drive urgency for me to engage with it. Maybe that's intentional.
+[11:32] Maybe the design is to be calm and soothing and helpful, but in the background. But I do
+[11:38] think to compete for attention right now, it is not enough to have beautiful design, is not enough
+[11:45] to have exceptional models. It is not enough to have these artifacts, which is actually really
+[11:49] awesome and on the phone experience is quite zippy and felt really engaging. The agent itself
+[11:56] has to be super proactive. The agent itself has to be super fast and it has to get stuff done
+[12:02] quickly enough that you feel like you can close enough loops that it is a reliable coworker
+[12:08] for you. Okay, so that was a very long aside for buying more your tickets. A couple other things
+[12:13] that I had it do good, bad, left, right, you know, standard, I had it look at my sales pipeline,
+[12:21] nice things there was already connected to Slack was already connected to my email,
+[12:25] it was already connected to our CRM. So it was able to pull in that data pretty quickly.
+[12:31] I had it create a deck in Google Docs.
+[12:36] I have a really high bar for design.
+[12:38] And so I was disappointed that it didn't use Figma and really match our design in terms
+[12:44] of fonts and all that kind of stuff.
+[12:45] But the deck wasn't bad.
+[12:47] It was created in Google Docs and it was kicked off from my phone.
+[12:50] I think for like the kind of everyday business person who maybe is not as particular as me
+[12:57] with design, maybe really happy to create like little sales decks off a template, little documents,
+[13:03] et cetera, on your phone on the go with Duet. So I think that was like good, not great, but I have
+[13:08] a really high bar for that sort of thing. And then one other point of like friction and
+[13:12] disappointment, again, this is a me problem, not a Duet problem is I wanted to see if it can make
+[13:18] a launch video for me. I've been making all these launch videos in Claude. I've been spending a whole
+[13:21] bunch of time doing like chat PRD launch videos in Claude that look like this. They're super cool.
+[13:27] and I wanted to see if I could create those in Duet on my phone.
+[13:30] The reality is, unfortunately, Duet does not ingest all your local skills.
+[13:36] So I probably need to push these skills as plugins to Claude
+[13:39] and then it can have access.
+[13:40] But again, I think with all these product surface areas,
+[13:44] and this is not just an anthropic problem, this is an open A problem,
+[13:47] is like the shared context, the shared experience,
+[13:51] what ports over elegantly, what does not port over elegantly,
+[13:55] I think is going to be an open question for folks who want to really migrate to Claude Duet.
+[14:00] I'd say the final thing that's really missing is, look, we don't work alone. And Duet right now is
+[14:07] clearly a agent for single player use. In fact, like most of the Claude projects feel like very
+[14:14] good products for single player use. I just don't think even with Claude Tag, Claude and Slack,
+[14:19] all these things, I don't think they've quite cracked multiplayer. And I've been moving more
+[14:24] of my GrokBot usage to team agents
+[14:27] and deploying those in Slack.
+[14:29] So while Claude Duet with these channels
+[14:31] might feel like Slack,
+[14:33] it doesn't have that multiplayer sharing aspect of Slack
+[14:37] that has made me really effective
+[14:39] even as a small business owner, right?
+[14:41] Like I'm not running a team of 500 anymore.
+[14:43] I do not need like the full enterprise deployment,
+[14:46] but I am a small business owner.
+[14:47] So I should be the target for this product.
+[14:51] The problem is I have a small team.
+[14:54] So, you know, I have like five humans that I work with on a regular basis.
+[14:57] If I don't have a way to share my agents with them, I'm not sure if it's going to worm its way into my working stack.
+[15:05] So that is my very quick preview, early review, early thoughts on Claude Duet, Anthropics new personal agent.
+[15:13] I would definitely give it a try.
+[15:14] Again, I maybe have different use cases, different preferences, different desires than most people.
+[15:20] I think it is approximately 100 times more polished than Dots was when it came out.
+[15:25] So I think that's really nice.
+[15:26] I think it is quite elegant.
+[15:29] It does the job well.
+[15:31] I would just say there's like fit and finish things that they really need to work on if
+[15:36] they are going to compete for my agent business.
+[15:39] So give it a try.
+[15:41] Sign up for early access if you can.
+[15:44] Let me know what you think.
+[15:45] And let me know if Claude Duet becomes part of your stack because I'm just not sure it's
+[15:49] going to become part of mine.
+[15:50] Thanks for joining HowEyeAI.
+[15:53] Thanks so much for watching.
+[15:55] If you enjoyed the show, please like and subscribe here on YouTube,
+[15:58] or even better, leave us a comment with your thoughts.
+[16:01] You can also find this podcast on Apple Podcasts, Spotify, or your favorite podcast app.
+[16:07] Please consider leaving us a rating and review, which will help others find the show.
+[16:12] You can see all our episodes and learn more about the show at howEyeAIpod.com.
+[16:18] See you next time.
+[16:20] Thank you.

@@ -1,0 +1,25 @@
+{
+  "query": "Anthropic Duet",
+  "total_found": 1,
+  "long_form_found": 0,
+  "shorts_found": 1,
+  "days": 30,
+  "top_n": 20,
+  "short_max": 180,
+  "long_form": [],
+  "shorts": [
+    {
+      "title": "ANTHROPIC DUET APP REVIEW",
+      "channel": "mrhackio",
+      "views": 9,
+      "likes": 1,
+      "comments": 0,
+      "upload_date": "20261026",
+      "duration": "1:09",
+      "duration_seconds": 69,
+      "url": "https://youtube.com/watch?v=tzcrNHIQVJ0",
+      "description": "SUBSCRIBE TO THIS CHANNEL! \u25ba http://bit.ly/mrhackio\nBECOME A YOUTUBE MEMBER \u25ba https://bit.ly/join-mrhackio\nSUBSCRIBE TO MY 2ND CHANNEL \u25ba https://bit.ly/how_to_use_apps\nAPP DEALS \u25ba https://www.topappdeals.com\nhttps://linktr.ee/mrhackio\nVisit blog https://mrhack.io\nSHOP \u25ba https://bit.ly/mrhackio-shop\n",
+      "id": "tzcrNHIQVJ0"
+    }
+  ]
+}
