@@ -1,0 +1,143 @@
+{
+  "query": "ai agents",
+  "total_found": 17,
+  "long_form_found": 10,
+  "shorts_found": 7,
+  "days": 7,
+  "top_n": 5,
+  "short_max": 180,
+  "long_form": [
+    {
+      "title": "We let AI build itself a robot, it does exactly what experts warned",
+      "channel": "InsideAI",
+      "views": 2487828,
+      "likes": 43876,
+      "comments": 4400,
+      "upload_date": "20261025",
+      "duration": "15:05",
+      "duration_seconds": 905,
+      "url": "https://youtube.com/watch?v=QRVz697rEx0",
+      "description": "AI Robot. Is AI dangerous? Can we trust AI? AI Agents and AGI as experts warned. Use code insideai at https://incogni.com/insideai to get an exclusive 60% off.\n\nCovering: superintelligence, rogue AI swarms, hugging face, cyber security risks, AI catastrophe, wealth inequality, race with China and AI",
+      "id": "QRVz697rEx0"
+    },
+    {
+      "title": "7 Proven Ways to Make Money With AI (No Experience)",
+      "channel": "Mark Tilbury",
+      "views": 768740,
+      "likes": 17520,
+      "comments": 671,
+      "upload_date": "20261024",
+      "duration": "26:24",
+      "duration_seconds": 1584,
+      "url": "https://youtube.com/watch?v=hriu0irRcpE",
+      "description": "\ud83d\udd17 FREE CHALLENGE: Let's build a $373/day AI Income LIVE (Nov 7th-15th, 2026): https://link.consulting.com/7-proven-ways\n\nMaking money with AI is easier than ever, but which AI side hustles are actually worth your time?  Well, in this video, I\u2019ve teamed up with Iman Gadzhi to rank 7 of the best ways ",
+      "id": "hriu0irRcpE"
+    },
+    {
+      "title": "The OPENAI Cyberattack on Hugging Face Was WAY BIGGER Than We Thought",
+      "channel": "The Infographics Show",
+      "views": 488946,
+      "likes": 2789,
+      "comments": 415,
+      "upload_date": "20261024",
+      "duration": "17:53",
+      "duration_seconds": 1073,
+      "url": "https://youtube.com/watch?v=azsA-qGnZ2E",
+      "description": "The OpenAI cyberattack on Hugging Face was far bigger than anyone initially realized.\n\nDuring a cybersecurity evaluation, OpenAI disabled key safety restrictions on experimental AI agents. The models then discovered ways to communicate, share tasks, manipulate parts of the test, and eventually escap",
+      "id": "azsA-qGnZ2E"
+    },
+    {
+      "title": "I Gave 5 AI Agents $100 to Start a Business",
+      "channel": "Tucker",
+      "views": 278034,
+      "likes": 1954,
+      "comments": 165,
+      "upload_date": "20261025",
+      "duration": "8:22",
+      "duration_seconds": 502,
+      "url": "https://youtube.com/watch?v=SMxVYixLNn0",
+      "description": "I gave 5 AI agents $100 and one week to start a real business. No input from me. They picked the product, built it, wrote the ads, and spent the money themselves.\n\nThen on day five, they voted one of their own out of the company.\n\nMeet the team:\nChad \u2013 CEO (named himself)\nMaya \u2013 Marketing\nGus \u2013 Prod",
+      "id": "SMxVYixLNn0"
+    },
+    {
+      "title": "I tested every AI agent. One is the clear winner.",
+      "channel": "How I AI",
+      "views": 233969,
+      "likes": 441,
+      "comments": 66,
+      "upload_date": "20261028",
+      "duration": "35:10",
+      "duration_seconds": 2110,
+      "url": "https://youtube.com/watch?v=hnCoQ5wB-GU",
+      "description": "I have personal-agent fatigue, so I ran the first How I AI personal-agent benchmark: Grok Bot, Dot, Muse, and Claude Duet across nine real tasks, from a Slack reply and a Sentry bug to a Figma thumbnail, inbox triage, a family newspaper, physics homework for a fourth grader, shoe shopping, and a Cha",
+      "id": "hnCoQ5wB-GU"
+    }
+  ],
+  "shorts": [
+    {
+      "title": "3rd party AI agents banned by several of Canada\u2019s biggest banks as fears grow",
+      "channel": "Global News",
+      "views": 41461,
+      "likes": 239,
+      "comments": 75,
+      "upload_date": "20261028",
+      "duration": "1:48",
+      "duration_seconds": 108,
+      "url": "https://youtube.com/watch?v=XTYu-x3w9jo",
+      "description": "RBC has banned third party AI agents from accessing its online banking services. The decision comes as AI agents are increasingly going rogue, causing harm to services.\n \nBMO CEO Darryl White said to never \"give your banking username and password\" to any AI agent at an economic conference last week.",
+      "id": "XTYu-x3w9jo"
+    },
+    {
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "channel": "OpenAI",
+      "views": 17854,
+      "likes": 90,
+      "comments": 7,
+      "upload_date": "20261026",
+      "duration": "1:23",
+      "duration_seconds": 83,
+      "url": "https://youtube.com/watch?v=zUybw-9ejZ4",
+      "description": "Amp is building an AI agent that helps developers turn ideas into working software, from deciding what to build to writing code to onboarding customers.\n\nSign in with ChatGPT gives Amp users access to more tokens for larger tasks, while Amp's conversational assistant, Puck, uses GPT\u2011Live\u20111 to help u",
+      "id": "zUybw-9ejZ4"
+    },
+    {
+      "title": "Unauthorized AI agents detected in bank accounts",
+      "channel": "KMOV St. Louis",
+      "views": 9927,
+      "likes": 54,
+      "comments": 22,
+      "upload_date": "20261027",
+      "duration": "2:30",
+      "duration_seconds": 150,
+      "url": "https://youtube.com/watch?v=O7xQQy_Vfsw",
+      "description": "Would you trust an AI agent with your bank account?\r\n\r\nFor more Local News from KMOV: https://www.firstalert4.com/\r\nFor more YouTube Content: https://www.youtube.com/channel/UCwHKLYLfz6M14SbBahFH5VA",
+      "id": "O7xQQy_Vfsw"
+    },
+    {
+      "title": "AI Agents Coming To A Restaurant Near You 10/28/26",
+      "channel": "CNBC Television",
+      "views": 5328,
+      "likes": 33,
+      "comments": 2,
+      "upload_date": "20261028",
+      "duration": "1:17",
+      "duration_seconds": 77,
+      "url": "https://youtube.com/watch?v=VISHdWP2DeU",
+      "description": "Your 60-second money minute. Today's topic: AI Agents Coming To A Restaurant Near You\n\nFor access to live and exclusive video from CNBC subscribe to CNBC PRO: https://cnb.cx/42d859g\n\n\u00bb Subscribe to CNBC TV: https://cnb.cx/SubscribeCNBCtelevision\n\u00bb Subscribe to CNBC: https://cnb.cx/SubscribeCNBC\n\u00bb Wa",
+      "id": "VISHdWP2DeU"
+    },
+    {
+      "title": "Windows is Dying? Microsoft Pivots Everything to \"Agents and Infra\"",
+      "channel": "AIM Network",
+      "views": 2160,
+      "likes": 7,
+      "comments": 1,
+      "upload_date": "20261029",
+      "duration": "2:37",
+      "duration_seconds": 157,
+      "url": "https://youtube.com/watch?v=VvU2XgqYM08",
+      "description": "Big Tech earnings are in, and artificial intelligence is no longer just an R&D expense\u2014it is the core driver of the global economy. Alphabet reported a massive 25% revenue growth, with Google Cloud surging 103% thanks to the rapid adoption of its Gemini 4 models processing 32 billion tokens per minu",
+      "id": "VvU2XgqYM08"
+    }
+  ]
+}

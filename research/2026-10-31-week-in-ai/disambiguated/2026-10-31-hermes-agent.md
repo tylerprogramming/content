@@ -1,0 +1,376 @@
+# YouTube Search: "hermes agent"
+
+**Date:** 2026-10-31
+**Search query:** hermes agent
+**Videos found (last 7 days):** 30 (15 long-form, 15 Shorts)
+**Shorts cutoff:** videos at or under 180s are classed as Shorts
+
+---
+
+## Long-form (10)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [10 NEW Hermes Agent Skills You Need To Install This Week](https://youtube.com/watch?v=bfPTHS9r7gs) | Sharbel A. | 73,000 | 1,141 | 82 | 12:14 | 2026-10-25 |
+| 2 | [Hermes + Claude deveria ser PROIBIDO (de tão bom!)](https://youtube.com/watch?v=LXuOhAwWuLE) | Pedroca | 45,611 | 928 | 76 | 10:16 | 2026-10-26 |
+| 3 | [Everything New in Hermes Agent (Full Setup Guide)](https://youtube.com/watch?v=S8fc9na4pA8) | Tech With Tim | 45,065 | 594 | 34 | 42:10 | 2026-10-27 |
+| 4 | [Master Hermes Agent in 20 Minutes (Beginner Tutorial)](https://youtube.com/watch?v=q5RagIqBtjc) | Metics Media | 31,530 | 482 | 18 | 21:16 | 2026-10-28 |
+| 5 | [Full Hermes Agent Setup Tutorial: Step-by-Step Walkthrough](https://youtube.com/watch?v=knZBpQddnJc) | Metics Media | 29,652 | 267 | 16 | 19:40 | 2026-10-26 |
+| 6 | [How I Connect Multiple Agent Teams Together 🧠 Hermes Agent Bots](https://youtube.com/watch?v=nNxUtkQOSc4) | Wanderloots | 26,194 | 384 | 39 | 20:54 | 2026-10-24 |
+| 7 | [What Is Agent Model Routing? 🧠 Hermes Bots Advanced Delegation Guide](https://youtube.com/watch?v=CtnwJp6MyUc) | Wanderloots | 19,024 | 323 | 28 | 32:20 | 2026-10-30 |
+| 8 | [The Complete Hermes Agent Guide That Gets You Ahead Of 99% Of People](https://youtube.com/watch?v=fXHdRKK6DOg) | Sharbel A. | 18,463 | 347 | 47 | 20:38 | 2026-10-29 |
+| 9 | [How I Use Hermes Agent for 95% Cheaper (Feels Illegal)](https://youtube.com/watch?v=K7rooUY4-FQ) | The AI Architects | Tom Crawshaw | 16,607 | 221 | 13 | 18:56 | 2026-10-26 |
+| 10 | [Jev Cut My Hermes Agent Costs. Here’s How I Use It](https://youtube.com/watch?v=uI-8VnV8NL8) | Komputer Mechanic | 15,068 | 212 | 15 | 8:40 | 2026-10-26 |
+
+### Long-form details
+
+#### 1. 10 NEW Hermes Agent Skills You Need To Install This Week
+
+- **Channel:** Sharbel A.
+- **Views:** 73,000
+- **Likes:** 1,141
+- **Comments:** 82
+- **Duration:** 12:14
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=bfPTHS9r7gs
+- **Thumbnail:** long-01-bfPTHS9r7gs.jpg
+- **Description:** Get all 10 skills, repositories, install commands, and prompts here: https://sharbel.com/s/ptdyw
+
+These are 10 free Hermes Agent skills that turn it from a chatbot you talk to into an agent that actually does the work. One creates complete videos from a single prompt, another gives Hermes access to ...
+
+#### 2. Hermes + Claude deveria ser PROIBIDO (de tão bom!)
+
+- **Channel:** Pedroca
+- **Views:** 45,611
+- **Likes:** 928
+- **Comments:** 76
+- **Duration:** 10:16
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=LXuOhAwWuLE
+- **Thumbnail:** long-02-LXuOhAwWuLE.jpg
+- **Description:** Você usaria o Hermes com o Claude?
+Curta e comenta, não se esquece de se inscrever!
+
+---
+
+⏱️ LINHA DO TEMPO
+0:00 A IA que liberou 80 GB do meu PC
+0:30 Quem sou eu
+0:44 O que é o Claude Code e o Hermes
+1:21 Por que usar os dois juntos
+2:40 Como eu organizo meus agentes
+4:42 Onde o Hermes entra
+6:04 O...
+
+#### 3. Everything New in Hermes Agent (Full Setup Guide)
+
+- **Channel:** Tech With Tim
+- **Views:** 45,065
+- **Likes:** 594
+- **Comments:** 34
+- **Duration:** 42:10
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=S8fc9na4pA8
+- **Thumbnail:** long-03-S8fc9na4pA8.jpg
+- **Description:** Deploy Hermes agent with Hostinger and use code 'techwithtim' for 10% off: https://www.hostg.xyz/SHKIW
+
+This video will teach you 90% of Hermes Agent and everything you need to know. A lot has changed since my last videos, and Hermes has become even more powerful, so in about 42 minutes I set it up ...
+
+#### 4. Master Hermes Agent in 20 Minutes (Beginner Tutorial)
+
+- **Channel:** Metics Media
+- **Views:** 31,530
+- **Likes:** 482
+- **Comments:** 18
+- **Duration:** 21:16
+- **Uploaded:** 2026-10-28
+- **URL:** https://youtube.com/watch?v=q5RagIqBtjc
+- **Thumbnail:** long-04-q5RagIqBtjc.jpg
+- **Description:** By the end of this video, your own AI agent will run 24/7, check what you care about, and text you when something changes. This Hermes Agent tutorial for beginners gets you there in five steps, with no code.
+✅ Hostinger VPS (Exclusive 10% Discount): https://meticsmedia.com/hermes-RYB
+✅ Nous Portal (...
+
+#### 5. Full Hermes Agent Setup Tutorial: Step-by-Step Walkthrough
+
+- **Channel:** Metics Media
+- **Views:** 29,652
+- **Likes:** 267
+- **Comments:** 16
+- **Duration:** 19:40
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=knZBpQddnJc
+- **Thumbnail:** long-05-knZBpQddnJc.jpg
+- **Description:** Hermes Agent setup tutorial for beginners: put the free, open-source AI agent on your own server in one click, connect it to Telegram, and get a 24/7 AI assistant that messages you first, no coding required.
+✅ Hermes Agent VPS (Exclusive 10% Discount): https://meticsmedia.com/hermes-WPJ
+✅ Nous Porta...
+
+#### 6. How I Connect Multiple Agent Teams Together 🧠 Hermes Agent Bots
+
+- **Channel:** Wanderloots
+- **Views:** 26,194
+- **Likes:** 384
+- **Comments:** 39
+- **Duration:** 20:54
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=nNxUtkQOSc4
+- **Thumbnail:** long-06-nNxUtkQOSc4.jpg
+- **Description:** Can I use Hermes Agent bot teams across devices? In this video, I'll show you how to connect agent teams running on different devices in one command centre ✨ Try Consensus MCP Free: https://get.consensus.app/wanderloots26
+https://youtu.be/aUVC9BwoLPg
+
+I wanted to be able to run more powerful local m...
+
+#### 7. What Is Agent Model Routing? 🧠 Hermes Bots Advanced Delegation Guide
+
+- **Channel:** Wanderloots
+- **Views:** 19,024
+- **Likes:** 323
+- **Comments:** 28
+- **Duration:** 32:20
+- **Uploaded:** 2026-10-30
+- **URL:** https://youtube.com/watch?v=CtnwJp6MyUc
+- **Thumbnail:** long-07-CtnwJp6MyUc.jpg
+- **Description:** Why use one model for everything? Model routing lets us map models per each task, with local, cloud, or both. In today's video, I explore the different levels of agentic AI coordination using Hermes, from auxiliary models, to subagent model maps, to profile routing vs kanban graphs. ✨ Try Consensus ...
+
+#### 8. The Complete Hermes Agent Guide That Gets You Ahead Of 99% Of People
+
+- **Channel:** Sharbel A.
+- **Views:** 18,463
+- **Likes:** 347
+- **Comments:** 47
+- **Duration:** 20:38
+- **Uploaded:** 2026-10-29
+- **URL:** https://youtube.com/watch?v=fXHdRKK6DOg
+- **Thumbnail:** long-08-fXHdRKK6DOg.jpg
+- **Description:** Get $10 in Honcho credits with code SHARBEL: https://go.honcho.dev/sharbel
+
+Get every command and copy-paste prompt from this video here: https://sharbel.com/s/8sm2f
+
+This video is sponsored by Honcho.
+
+Hermes Agent is incredibly powerful, but setting it up is only the beginning. This complete Herme...
+
+#### 9. How I Use Hermes Agent for 95% Cheaper (Feels Illegal)
+
+- **Channel:** The AI Architects | Tom Crawshaw
+- **Views:** 16,607
+- **Likes:** 221
+- **Comments:** 13
+- **Duration:** 18:56
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=K7rooUY4-FQ
+- **Thumbnail:** long-09-K7rooUY4-FQ.jpg
+- **Description:** 🔗 Run Hermes 24/7 with Hostinger's managed setup, extra 10% off with code GROWTHLAB10 → https://www.hostg.xyz/SHK0a
+
+🔎 Get your FREE 30-min AI Audit here: https://theaiarchitects.com/yt/audit/hermes-cheaper
+
+🤖 Join the Mentorship & become AI Operator 👉 https://theaiarchitects.com/yt/mentorship/herme...
+
+#### 10. Jev Cut My Hermes Agent Costs. Here’s How I Use It
+
+- **Channel:** Komputer Mechanic
+- **Views:** 15,068
+- **Likes:** 212
+- **Comments:** 15
+- **Duration:** 8:40
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=uI-8VnV8NL8
+- **Thumbnail:** long-10-uI-8VnV8NL8.jpg
+- **Description:** How I use Jev, the AI model that decides instead of writes, to cut my Hermes Agent costs: five real uses from my own setup, and how to add it to your agents in two steps.
+
+ALL THE PROMPTS FROM THIS VIDEO (free): https://komputermechanic.com/tutorials/hermes-agent-jev?src=yt-jev
+MY ACCORDO PRO DASHBO...
+
+## Shorts (10)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [Inside the new Agent OS: Mission Control Dashboard](https://youtube.com/watch?v=SGkLbAiVkiE) | Julian Goldie Agency | 52 | 0 | 0 | 51 | 2026-10-24 |
+| 2 | [Herald OS: The Ultimate Hermes Agent UI Is Here](https://youtube.com/watch?v=PplYRdRhQc4) | Julian Goldie Agency | 51 | 0 | 0 | 34 | 2026-10-24 |
+| 3 | [How to Back Up Hermes Agent (Easy Guide 2026)](https://youtube.com/watch?v=Vcej3ec90tA) | Money Tools Academy | 39 | 0 | 0 | 2:18 | 2026-10-27 |
+| 4 | [Hermes Agent v0.22 update allows secure logins without sharing your passwords.](https://youtube.com/watch?v=djqa11jsPz0) | Julian Goldie Agency | 36 | 0 | 0 | 1:03 | 2026-10-26 |
+| 5 | [OpenClaw vs Hermes: Which Agent to Pick in 2026](https://youtube.com/watch?v=zTJX0pQdPo4) | MichMich and Michel Lieben 🧠  | 36 | 1 | 0 | 3:00 | 2026-10-27 |
+| 6 | [Hermes Agent v0.22: Run Local AI Without API Keys or Accounts.](https://youtube.com/watch?v=-qeFoBY3j6A) | Julian Goldie Agency | 27 | 0 | 0 | 1:32 | 2026-10-29 |
+| 7 | [Hermes Agent v0.22 is a game changer for local AI.](https://youtube.com/watch?v=fW7OYl5jma4) | Julian Goldie Agency | 23 | 0 | 0 | 1:02 | 2026-10-27 |
+| 8 | [How to Reset Hermes Agent Memory (Quick Guide 2026)](https://youtube.com/watch?v=iVV16SZZa9A) | Money Tools Academy | 23 | 0 | 0 | 2:30 | 2026-10-27 |
+| 9 | [How to Use Hermes Agent for Trading (Full Guide 2026)](https://youtube.com/watch?v=PBaNJm0Djf0) | Money Tools Academy | 22 | 0 | 0 | 2:50 | 2026-10-27 |
+| 10 | [How to Use Hermes Agent as a Personal Assistant (Step-by-Step 2026)](https://youtube.com/watch?v=MFBHCk5tbNw) | Money Tools Academy | 16 | 0 | 0 | 2:51 | 2026-10-27 |
+
+### Shorts details
+
+#### 1. Inside the new Agent OS: Mission Control Dashboard
+
+- **Channel:** Julian Goldie Agency
+- **Views:** 52
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 51
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=SGkLbAiVkiE
+- **Thumbnail:** short-01-SGkLbAiVkiE.jpg
+- **Description:** Want to make money and save time with AI? Join here: https://www.skool.com/ai-profit-lab-7462/about
+
+A deep dive into a custom-built Agentic Operating System. See how the redesigned Mission Control dashboard streamlines news tracking, SEO content management, and idea pipelines. This setup features a...
+
+#### 2. Herald OS: The Ultimate Hermes Agent UI Is Here
+
+- **Channel:** Julian Goldie Agency
+- **Views:** 51
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 34
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=PplYRdRhQc4
+- **Thumbnail:** short-02-PplYRdRhQc4.jpg
+- **Description:** Want to make money and save time with AI? Join here: https://www.skool.com/ai-profit-lab-7462/about
+
+Herald OS transforms how users interact with Hermes Agent by introducing a polished, open-source dashboard. This interface makes managing agent missions and browser control significantly more intuiti...
+
+#### 3. How to Back Up Hermes Agent (Easy Guide 2026)
+
+- **Channel:** Money Tools Academy
+- **Views:** 39
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 2:18
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=Vcej3ec90tA
+- **Thumbnail:** short-03-Vcej3ec90tA.jpg
+- **Description:** How to Back Up Hermes Agent (Easy Guide 2026)
+
+🤖 Hermes Agent:
+https://github.com/NousResearch/hermes-agent
+
+📚 Hermes Agent Documentation:
+https://hermes-agent.nousresearch.com/
+
+💻 GitHub:
+https://github.com/
+
+In This Step-By-Step Hermes Agent Tutorial, You’ll Learn How To Back Up Your Hermes Agent ...
+
+#### 4. Hermes Agent v0.22 update allows secure logins without sharing your passwords.
+
+- **Channel:** Julian Goldie Agency
+- **Views:** 36
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 1:03
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=djqa11jsPz0
+- **Thumbnail:** short-04-djqa11jsPz0.jpg
+- **Description:** Want to make money and save time with AI? Join here: https://www.skool.com/ai-profit-lab-7462/about
+
+The latest Hermes Agent v0.22 update completely changes how AI interacts with your private accounts. You no longer need to worry about manually logging into your ad dashboards, e-commerce stores, or ...
+
+#### 5. OpenClaw vs Hermes: Which Agent to Pick in 2026
+
+- **Channel:** MichMich and Michel Lieben 🧠 
+- **Views:** 36
+- **Likes:** 1
+- **Comments:** 0
+- **Duration:** 3:00
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=zTJX0pQdPo4
+- **Thumbnail:** short-05-zTJX0pQdPo4.jpg
+- **Description:** Turn Prompts into Revenue: https://go.coldiq.com/home
+
+Let us build your GTM engine for you: https://go.coldiq.com/implementation
+
+Limited time offer: Subscribe to the Scale plan ($499/month) to find leads, emails and phone numbers from 40+ data providers inside Claude Code, and get unlimited 1:1 co...
+
+#### 6. Hermes Agent v0.22: Run Local AI Without API Keys or Accounts.
+
+- **Channel:** Julian Goldie Agency
+- **Views:** 27
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 1:32
+- **Uploaded:** 2026-10-29
+- **URL:** https://youtube.com/watch?v=-qeFoBY3j6A
+- **Thumbnail:** short-06--qeFoBY3j6A.jpg
+- **Description:** Want to make money and save time with AI? Join here: https://www.skool.com/ai-profit-lab-7462/about
+
+The Hermes Agent v0.22 Threshold update transforms how agents handle complex, long-running tasks. By enabling continuous reasoning during pauses and implementing retry cycles for rate-limited provide...
+
+#### 7. Hermes Agent v0.22 is a game changer for local AI.
+
+- **Channel:** Julian Goldie Agency
+- **Views:** 23
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 1:02
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=fW7OYl5jma4
+- **Thumbnail:** short-07-fW7OYl5jma4.jpg
+- **Description:** Want to make money and save time with AI? Join here: https://www.skool.com/ai-profit-lab-7462/about
+
+Hermes Agent v0.22 Threshold update transforms local AI accessibility. This release streamlines the entire onboarding process, allowing users to run models directly on their own hardware without need...
+
+#### 8. How to Reset Hermes Agent Memory (Quick Guide 2026)
+
+- **Channel:** Money Tools Academy
+- **Views:** 23
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 2:30
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=iVV16SZZa9A
+- **Thumbnail:** short-08-iVV16SZZa9A.jpg
+- **Description:** How to Reset Hermes Agent Memory (Quick Guide 2026)
+
+🤖 Hermes Agent:
+https://github.com/NousResearch/hermes-agent
+
+📚 Hermes Agent Documentation:
+https://hermes-agent.nousresearch.com/
+
+💻 GitHub:
+https://github.com/
+
+In This Step-By-Step Hermes Agent Tutorial, You’ll Learn How To Reset Or Clear Relev...
+
+#### 9. How to Use Hermes Agent for Trading (Full Guide 2026)
+
+- **Channel:** Money Tools Academy
+- **Views:** 22
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 2:50
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=PBaNJm0Djf0
+- **Thumbnail:** short-09-PBaNJm0Djf0.jpg
+- **Description:** How to Use Hermes Agent for Trading (Full Guide 2026)
+
+🤖 Hermes Agent:
+https://github.com/NousResearch/hermes-agent
+
+📚 Hermes Agent Documentation:
+https://hermes-agent.nousresearch.com/
+
+📈 TradingView:
+https://www.tradingview.com/
+
+In This Step-By-Step Hermes Agent Tutorial, You’ll Learn How To Use ...
+
+#### 10. How to Use Hermes Agent as a Personal Assistant (Step-by-Step 2026)
+
+- **Channel:** Money Tools Academy
+- **Views:** 16
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 2:51
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=MFBHCk5tbNw
+- **Thumbnail:** short-10-MFBHCk5tbNw.jpg
+- **Description:** How to Use Hermes Agent as a Personal Assistant (Step-by-Step 2026)
+
+🤖 Hermes Agent:
+https://github.com/NousResearch/hermes-agent
+
+📚 Hermes Agent Documentation:
+https://hermes-agent.nousresearch.com/
+
+🧠 Nous Research:
+https://nousresearch.com/
+
+In This Step-By-Step Hermes Agent Tutorial, You’ll Lear...

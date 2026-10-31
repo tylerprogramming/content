@@ -1,0 +1,143 @@
+{
+  "query": "openai",
+  "total_found": 18,
+  "long_form_found": 10,
+  "shorts_found": 8,
+  "days": 7,
+  "top_n": 5,
+  "short_max": 180,
+  "long_form": [
+    {
+      "title": "Trump's Midterm Election Defeat? How OpenAI and Anthropic Are Fighting to Shape the Future of AI",
+      "channel": "Think School",
+      "views": 834714,
+      "likes": 10075,
+      "comments": 294,
+      "upload_date": "20261029",
+      "duration": "15:24",
+      "duration_seconds": 924,
+      "url": "https://youtube.com/watch?v=bQLQSraqOwk",
+      "description": "\u2b50\ufe0f Check out Wispr Flow: https://ref.wisprflow.ai/thinkschool/oct-yt\n\n\u2b50\ufe0f Check out the Substack link: https://substack.com/home/post/p-222638772\n\nIf you are a copyright owner and believe your work has been used improperly, please contact us at writers@thethinkschool.com for prompt removal or credit.",
+      "id": "bQLQSraqOwk"
+    },
+    {
+      "title": "The OPENAI Cyberattack on Hugging Face Was WAY BIGGER Than We Thought",
+      "channel": "The Infographics Show",
+      "views": 488946,
+      "likes": 2789,
+      "comments": 415,
+      "upload_date": "20261024",
+      "duration": "17:53",
+      "duration_seconds": 1073,
+      "url": "https://youtube.com/watch?v=azsA-qGnZ2E",
+      "description": "The OpenAI cyberattack on Hugging Face was far bigger than anyone initially realized.\n\nDuring a cybersecurity evaluation, OpenAI disabled key safety restrictions on experimental AI agents. The models then discovered ways to communicate, share tasks, manipulate parts of the test, and eventually escap",
+      "id": "azsA-qGnZ2E"
+    },
+    {
+      "title": "Odszed\u0142em z OpenAI i nie \u017ca\u0142uj\u0119 II PSYHO",
+      "channel": "didaskalia",
+      "views": 407565,
+      "likes": 4861,
+      "comments": 514,
+      "upload_date": "20261025",
+      "duration": "1:39:32",
+      "duration_seconds": 5972,
+      "url": "https://youtube.com/watch?v=9J30xtK5RL0",
+      "description": "- Czy stracimy kontrol\u0119 nad sztuczn\u0105 inteligencj\u0105?\n- Jak Polak pokona\u0142 model AI?\n- Dlaczego Psyho odszed\u0142 z OpenAI i nie \u017ca\u0142uje tej decyzji?\n- Czy dla zysku dobrowolnie oddamy algorytmom w\u0142adz\u0119?\n\nNa te i wiele innych pyta\u0144 odpowie Psyho, programista i by\u0142y pracownik OpenAI, kt\u00f3ry w 2025 roku pokona\u0142",
+      "id": "9J30xtK5RL0"
+    },
+    {
+      "title": "OpenAI Claims It Just Did The Impossible",
+      "channel": "Two Minute Papers",
+      "views": 347066,
+      "likes": 7068,
+      "comments": 549,
+      "upload_date": "20261030",
+      "duration": "7:21",
+      "duration_seconds": 441,
+      "url": "https://youtube.com/watch?v=CWdTBLsbaQs",
+      "description": "\u2764\ufe0f Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n\ud83d\udcdd OpenAI's paper is available here:\nhttps://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf\n\nOur paper with the cherry splash ray tracing simulation at 0:",
+      "id": "CWdTBLsbaQs"
+    },
+    {
+      "title": "OpenAI just broke physics...",
+      "channel": "Wes Roth",
+      "views": 324756,
+      "likes": 4859,
+      "comments": 1300,
+      "upload_date": "20261027",
+      "duration": "32:58",
+      "duration_seconds": 1978,
+      "url": "https://youtube.com/watch?v=lskEzJ7ixw0",
+      "description": "OpenAI says its AI has disproved the Exponential Time Hypothesis, challenging a barrier that shaped decades of computer science. Could there be shortcuts through problems we thought were impossibly hard? We unpack the connection to P versus NP, what a practical breakthrough could mean for encryption",
+      "id": "lskEzJ7ixw0"
+    }
+  ],
+  "shorts": [
+    {
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "channel": "OpenAI",
+      "views": 17854,
+      "likes": 90,
+      "comments": 7,
+      "upload_date": "20261026",
+      "duration": "1:23",
+      "duration_seconds": 83,
+      "url": "https://youtube.com/watch?v=zUybw-9ejZ4",
+      "description": "Amp is building an AI agent that helps developers turn ideas into working software, from deciding what to build to writing code to onboarding customers.\n\nSign in with ChatGPT gives Amp users access to more tokens for larger tasks, while Amp's conversational assistant, Puck, uses GPT\u2011Live\u20111 to help u",
+      "id": "zUybw-9ejZ4"
+    },
+    {
+      "title": "OpenAI sued over Seattle woman's death",
+      "channel": "KING 5 Seattle",
+      "views": 17773,
+      "likes": 178,
+      "comments": 142,
+      "upload_date": "20261028",
+      "duration": "1:39",
+      "duration_seconds": 99,
+      "url": "https://youtube.com/watch?v=erchHPka8gc",
+      "description": "The family of a 31-year-old woman who died after following ChatGPT's advice to stop taking her epilepsy medication is now suing OpenAI",
+      "id": "erchHPka8gc"
+    },
+    {
+      "title": "How Legora is transforming legal work with OpenAI",
+      "channel": "OpenAI",
+      "views": 17216,
+      "likes": 141,
+      "comments": 0,
+      "upload_date": "20261028",
+      "duration": "2:34",
+      "duration_seconds": 154,
+      "url": "https://youtube.com/watch?v=yJxZef1Ylok",
+      "description": "What can lawyers achieve when time is no longer the limit? Discover how Legora uses OpenAI models, ChatGPT and Codex to help legal teams review contracts faster, broaden their analysis and make more room for work that needs human judgment. Part of Intelligence at Work, a series exploring how busines",
+      "id": "yJxZef1Ylok"
+    },
+    {
+      "title": "Hebbia on Astra: Better research, better presentations | OpenAI",
+      "channel": "OpenAI",
+      "views": 13779,
+      "likes": 146,
+      "comments": 0,
+      "upload_date": "20261026",
+      "duration": "1:03",
+      "duration_seconds": 63,
+      "url": "https://youtube.com/watch?v=aNMZjoPGPOg",
+      "description": "\u201cWe see Astra actually show over double digit gains over any other model we've tested on two fronts.\u201d\n\nHebbia\u2019s Kavita Anand names the two: selecting the right sources and generating PowerPoint presentations.\n\nFor a banker or investor working through a data room with thousands of documents, both mat",
+      "id": "aNMZjoPGPOg"
+    },
+    {
+      "title": "How Sullivan & Cromwell builds legal tools with Codex | OpenAI",
+      "channel": "OpenAI",
+      "views": 11982,
+      "likes": 86,
+      "comments": 0,
+      "upload_date": "20261026",
+      "duration": "1:00",
+      "duration_seconds": 60,
+      "url": "https://youtube.com/watch?v=crEHJon4iD4",
+      "description": "At Sullivan & Cromwell LLP, John Savva uses Codex to build tools around the firm\u2019s legal expertise.\n\nAgreement Analyzer brings together a draft agreement, selected precedents, and playbooks reflecting the firm\u2019s and client\u2019s positions. It identifies potential issues and returns a memo and proposed t",
+      "id": "crEHJon4iD4"
+    }
+  ]
+}

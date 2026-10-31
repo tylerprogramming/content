@@ -1,0 +1,376 @@
+Searching YouTube for: meta muse
+Fetching 150 most recent results...
+Fetching details for 30 candidates...
+Found 30 relevant videos in last 7 days (15 long-form, 15 Shorts). Returning top 10 long-form and top 10 Shorts.
+
+Report saved: research/2026-10-31-week-in-ai/disambiguated/2026-10-31-meta-muse.md
+Raw JSON saved: research/2026-10-31-week-in-ai/disambiguated/2026-10-31-meta-muse.json
+Downloaded 10 long-form + 10 Shorts thumbnails to research/2026-10-31-week-in-ai/disambiguated/2026-10-31-meta-muse-thumbnails
+
+# YouTube Search: "meta muse"
+
+**Date:** 2026-10-31
+**Search query:** meta muse
+**Videos found (last 7 days):** 30 (15 long-form, 15 Shorts)
+**Shorts cutoff:** videos at or under 180s are classed as Shorts
+
+---
+
+## Long-form (10)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [Why Is Meta's Muse AI Free? The Bet on Transaction Fees](https://youtube.com/watch?v=N8B_6vAViv0) | Life × Create × AI (Shinano Matsumoto) | 83,156 | 0 | 22 | 9:26 | 2026-10-24 |
+| 2 | [Meta Muse AI Blocked from Amazon - AI Big Tech Bros Getting Mean](https://youtube.com/watch?v=qPNm-u-jJ48) | Eli the Computer Guy | 33,784 | 668 | 189 | 20:56 | 2026-10-26 |
+| 3 | [Muse AI Agent: 5 Real Things It Did For Me (Not Demos)](https://youtube.com/watch?v=tvMfMzoRJpQ) | Chad Sheppard | 33,505 | 368 | 201 | 12:13 | 2026-10-24 |
+| 4 | [[Free & Smartphone Only❗️] How to Make Money with Meta’s Newest AI "Muse" × Instagram: A Complete...](https://youtube.com/watch?v=OiCK7U9zNqw) | あべむつき【ラッキーマイン】 | 27,505 | 249 | 15 | 37:20 | 2026-10-28 |
+| 5 | [2 Gün Meta Muse Kullandım: Ajandamı, Konumumu, Her Şeyimi Biliyor! | Mahirle Metin](https://youtube.com/watch?v=pgJS7DVxeZM) | Metin YIKAR | 18,050 | 540 | 102 | 59:42 | 2026-10-28 |
+| 6 | [[AI Secretary] A Practical Guide to Using Meta Muse! An AI Agent That Acts as a Secretary in Near...](https://youtube.com/watch?v=sasO_6yPlRs) | AI共創イノベーション | 13,089 | 61 | 0 | 15:19 | 2026-10-24 |
+| 7 | [【完全攻略】Metaの新AI「Muse」の始め方・使い方8選・使う前の設定まで1本で｜無料・ひとりビジネスで使える](https://youtube.com/watch?v=M_FOk6yqykk) | まえだなつき | AI実践研究所 | 12,148 | 97 | 3 | 20:40 | 2026-10-30 |
+| 8 | [Meta Muse + TikTok Shop = Infinite Ai Videos ($100k/mo+)](https://youtube.com/watch?v=3I1PGccejD4) | David Margaryan | 9,713 | 292 | 28 | 11:04 | 2026-10-27 |
+| 9 | [Muse AI Voice and Calling: Here's What You Need to Know](https://youtube.com/watch?v=JMH1WvPVddM) | Chad Sheppard | 9,546 | 146 | 94 | 11:51 | 2026-10-29 |
+| 10 | [Meta Museの使い方10選、始め方・初期設定・招待コードまで16分で解説](https://youtube.com/watch?v=gLZfoXTPy_w) | AI速報ラジオ | 8,629 | 60 | 17 | 15:51 | 2026-10-27 |
+
+### Long-form details
+
+#### 1. Why Is Meta's Muse AI Free? The Bet on Transaction Fees
+
+- **Channel:** Life × Create × AI (Shinano Matsumoto)
+- **Views:** 83,156
+- **Likes:** 0
+- **Comments:** 22
+- **Duration:** 9:26
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=N8B_6vAViv0
+- **Thumbnail:** long-01-N8B_6vAViv0.jpg
+- **Description:** Meta's personal AI agent Muse can move beyond answering questions to carrying out tasks such as bookings and shopping. Why offer its basic features for free—and how could that become a business?
+
+This video explains the dedicated virtual machine behind Muse, its connections to external services, and...
+
+#### 2. Meta Muse AI Blocked from Amazon - AI Big Tech Bros Getting Mean
+
+- **Channel:** Eli the Computer Guy
+- **Views:** 33,784
+- **Likes:** 668
+- **Comments:** 189
+- **Duration:** 20:56
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=qPNm-u-jJ48
+- **Thumbnail:** long-02-qPNm-u-jJ48.jpg
+- **Description:** Spotify - https://open.spotify.com/show/1KkKuQe82tf1bW78ReQ0wM
+Apple Podcasts - https://podcasts.apple.com/us/podcast/eli-the-computer-guy/id1895967811
+
+LinkedIn at - https://www.linkedin.com/in/eli-etherton-a15362211/...
+
+#### 3. Muse AI Agent: 5 Real Things It Did For Me (Not Demos)
+
+- **Channel:** Chad Sheppard
+- **Views:** 33,505
+- **Likes:** 368
+- **Comments:** 201
+- **Duration:** 12:13
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=tvMfMzoRJpQ
+- **Thumbnail:** long-03-tvMfMzoRJpQ.jpg
+- **Description:** I stopped asking AI for help and started handing it real jobs. These are the 5 actual things I gave Muse, Meta's new AI agent, counted down from the little daily stuff to the moment it called my dentist for me.
+
+Free Muse invite codes (1 billion bonus tokens each): https://chadesheppard.com/free-mus...
+
+#### 4. [Free & Smartphone Only❗️] How to Make Money with Meta’s Newest AI "Muse" × Instagram: A Complete...
+
+- **Channel:** あべむつき【ラッキーマイン】
+- **Views:** 27,505
+- **Likes:** 249
+- **Comments:** 15
+- **Duration:** 37:20
+- **Uploaded:** 2026-10-28
+- **URL:** https://youtube.com/watch?v=OiCK7U9zNqw
+- **Thumbnail:** long-04-OiCK7U9zNqw.jpg
+- **Description:** *🎁10万部突破のベストセラー、無料で立ち読み版はコチラ‼️📖*
+👇️下記URLから専用のLINEに友だち追加して、無料立ち読み版をお受け取りください👇️https://ibosalon.com/abe99
+
+*❇️書籍『2ヶ月で月30万円を実現する 超初心者でも稼げるAI活用法』ご購入はコチラ‼️❇️*
+https://amzn.to/421Bp4p
+
+*⚠️今回の動画の特典‼️絶対に受け取ってください⚠️*
+Muse×Instagramで稼ぐための最初の一歩は「何を発信するか＝テーマ決め」です。
+インスタで稼げるかどうかは、ここで9割決まります（動画で話した"井戸を掘る場所"の話です）。
+...
+
+#### 5. 2 Gün Meta Muse Kullandım: Ajandamı, Konumumu, Her Şeyimi Biliyor! | Mahirle Metin
+
+- **Channel:** Metin YIKAR
+- **Views:** 18,050
+- **Likes:** 540
+- **Comments:** 102
+- **Duration:** 59:42
+- **Uploaded:** 2026-10-28
+- **URL:** https://youtube.com/watch?v=pgJS7DVxeZM
+- **Thumbnail:** long-05-pgJS7DVxeZM.jpg
+- **Description:** 2 gün boyunca Meta’nın yeni AI asistanı Muse’u kullandım. Ajandamı, konumumu, maillerimi ve neredeyse her şeyimi öğrendi.
+
+Mahir’le birlikte bu deneyimi, artılarını, eksilerini ve en kritik soruyu konuştuk: Yapay zeka bizi gerçekten daha üretken mi yapıyor, yoksa Parkinson Yasası yüzünden daha meşgu...
+
+#### 6. [AI Secretary] A Practical Guide to Using Meta Muse! An AI Agent That Acts as a Secretary in Near...
+
+- **Channel:** AI共創イノベーション
+- **Views:** 13,089
+- **Likes:** 61
+- **Comments:** 0
+- **Duration:** 15:19
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=sasO_6yPlRs
+- **Thumbnail:** long-06-sasO_6yPlRs.jpg
+- **Description:** 👇Meta Museで更に高品質な動画を生成する方法【応用編】
+https://youtu.be/YPl2PX0Xok0?si=vgJzwhsqk0SrhfFJ
+
+👇Meta Museで長編動画生成の裏技
+https://youtu.be/9Yie_oT4LYM
+
+👇ChatGPT dotsの解説はこちら
+https://youtu.be/iWmUuoaaIFw?si=8qKKJOZUsURiWnfu
+
+※以下のコードでMeta Museを登録していただけると、お互いにトークンがもらえるらしいので、よかったら使ってください☆
+
+コード: 4YCWOA
+https://muse.ai/join
+...
+
+#### 7. 【完全攻略】Metaの新AI「Muse」の始め方・使い方8選・使う前の設定まで1本で｜無料・ひとりビジネスで使える
+
+- **Channel:** まえだなつき | AI実践研究所
+- **Views:** 12,148
+- **Likes:** 97
+- **Comments:** 3
+- **Duration:** 20:40
+- **Uploaded:** 2026-10-30
+- **URL:** https://youtube.com/watch?v=M_FOk6yqykk
+- **Thumbnail:** long-07-M_FOk6yqykk.jpg
+- **Description:** 10月23日に日本で使えるようになった、MetaのAI「Muse（ミューズ）」。
+ひとりビジネスの仕事を8つ、実際に任せてみました。発信のネタ出し、ライバルの調査、YouTubeチャンネルの分析、お客さんへのメール、そして個別相談の案内ページまで。案内ページは、スマホで1行頼んで約5分でできました。
+一方で、私の画面では、話した内容がAIの改善に使われる設定が最初からオン。頼んでいないタスクも入っていました。使う前に見直す設定5つも、実際の画面でお見せします。
+
+━━━━━━━━━━━━━━━
+▼ LINE登録で受け取れる特典（無料）
+https://line-harness.natsugon...
+
+#### 8. Meta Muse + TikTok Shop = Infinite Ai Videos ($100k/mo+)
+
+- **Channel:** David Margaryan
+- **Views:** 9,713
+- **Likes:** 292
+- **Comments:** 28
+- **Duration:** 11:04
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=3I1PGccejD4
+- **Thumbnail:** long-08-3I1PGccejD4.jpg
+- **Description:** Apply to work with me 1:1 inside of my inner circle: https://linktw.in/hvulmf 
+
+Register for my 2 hour live class breaking down the ENTIRE business: https://linktw.in/ufdepx
+
+Free trial for the only AI tool I use: https://turbougc.com...
+
+#### 9. Muse AI Voice and Calling: Here's What You Need to Know
+
+- **Channel:** Chad Sheppard
+- **Views:** 9,546
+- **Likes:** 146
+- **Comments:** 94
+- **Duration:** 11:51
+- **Uploaded:** 2026-10-29
+- **URL:** https://youtube.com/watch?v=JMH1WvPVddM
+- **Thumbnail:** long-09-JMH1WvPVddM.jpg
+- **Description:** Meta's Muse AI can now pick up the phone and call a business for you. I had it call my hotel when our pull-out couch had no bedding, and it handled the whole thing. Then I tried it live on camera. That did not go the same way.
+
+Everything You Need From This Video: https://chadesheppard.com/muse-voic...
+
+#### 10. Meta Museの使い方10選、始め方・初期設定・招待コードまで16分で解説
+
+- **Channel:** AI速報ラジオ
+- **Views:** 8,629
+- **Likes:** 60
+- **Comments:** 17
+- **Duration:** 15:51
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=gLZfoXTPy_w
+- **Thumbnail:** long-10-gLZfoXTPy_w.jpg
+- **Description:** MetaのAIエージェント「Muse」の、始め方と使い方10選です。入れて5分で、学習オフ・承認・コネクターを安全側に整えてから、裏で集める・暮らしを回す・仕事を回す、の10個を出典つきで紹介します。頼むのは読む・集める・下書きまで。送る・払う・ログインは人が見る前提です。
+元記事: https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/
+
+■ 招待コード(使われると、投稿者にもトークンが入ります)
+Museの招待コード: 5N8Y3A
+アプリの共有文: 参加後48時間以内に[設定]で私のコー...
+
+## Shorts (10)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [Meta Muse, ChatGPT Dots, Claude Duet: What Actually Changed?](https://youtube.com/watch?v=efJ2RYqdEqU) | Gaurav (Nudgeable AI) | 222 | 4 | 2 | 2:06 | 2026-10-24 |
+| 2 | [Meta Muse AI: The Future of Personal AI Assistants Is Here! 🤯🤖 #kenfra #metamuse #meta #muse #ai](https://youtube.com/watch?v=lHQN5Mxbf7w) | Kenfra Research | 192 | 14 | 5 | 2:55 | 2026-10-26 |
+| 3 | [How To Get Meta Muse AI 1 Billion Tokens (Complete Guide)](https://youtube.com/watch?v=nq-ftU3YP4w) | StackWise | 188 | 0 | 0 | 1:24 | 2026-10-27 |
+| 4 | [How to Delete a Meta Muse AI Agent (Step-by-Step)](https://youtube.com/watch?v=D87u5smq6z8) | GUIDES & BEYOND | 126 | 0 | 0 | 1:24 | 2026-10-27 |
+| 5 | [How To Delete Account In Meta Muse | Step-By-Step](https://youtube.com/watch?v=GLY5iWqQ-VI) | Ned TECH | 97 | 0 | 1 | 1:08 | 2026-10-26 |
+| 6 | [How to Make Meta Muse Call People for You (Carly AI)](https://youtube.com/watch?v=lEur57H8g7c) | Carly AI | 79 | 2 | 0 | 1:05 | 2026-10-29 |
+| 7 | [How To Fix Meta Muse Not Working](https://youtube.com/watch?v=LB1tz9XtUzI) | Ned TECH | 74 | 0 | 0 | 1:11 | 2026-10-26 |
+| 8 | [Fix Meta Muse Disconnected Unavailable Error](https://youtube.com/watch?v=daFK-A9YhGg) | Fixyypedia | 68 | 0 | 0 | 58 | 2026-10-24 |
+| 9 | [I Tested OpenAI Dots vs Meta Muse. One Is Way More Useful | Which AI Agent Is More Useful in 2026?](https://youtube.com/watch?v=Legx9eApuHs) | AI at Work | 63 | 1 | 0 | 2:28 | 2026-10-30 |
+| 10 | [How to Connect Apps to Meta Muse Using Connectors (Step-by-Step)](https://youtube.com/watch?v=n07TVH0cgVs) | GUIDES & BEYOND | 42 | 1 | 1 | 1:47 | 2026-10-25 |
+
+### Shorts details
+
+#### 1. Meta Muse, ChatGPT Dots, Claude Duet: What Actually Changed?
+
+- **Channel:** Gaurav (Nudgeable AI)
+- **Views:** 222
+- **Likes:** 4
+- **Comments:** 2
+- **Duration:** 2:06
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=efJ2RYqdEqU
+- **Thumbnail:** short-01-efJ2RYqdEqU.jpg
+- **Description:** Why did Meta, OpenAI and Anthropic launch always-on AI agents within six weeks?
+
+Meta Muse, ChatGPT Dots and Claude Duet introduce a different way to work with AI. Their features vary, but they can keep working between conversations and contact you when something needs your attention.
+
+In this video...
+
+#### 2. Meta Muse AI: The Future of Personal AI Assistants Is Here! 🤯🤖 #kenfra #metamuse #meta #muse #ai
+
+- **Channel:** Kenfra Research
+- **Views:** 192
+- **Likes:** 14
+- **Comments:** 5
+- **Duration:** 2:55
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=lHQN5Mxbf7w
+- **Thumbnail:** short-02-lHQN5Mxbf7w.jpg
+- **Description:** Meta Muse AI is changing the way we think about personal AI assistants. 🤖
+
+In this video, we explore Meta Muse, a personal AI agent designed to go beyond simple chatbot conversations and help users plan tasks, organise projects, research information, and complete digital work.
+
+We’ll look at:
+🔹 What...
+
+#### 3. How To Get Meta Muse AI 1 Billion Tokens (Complete Guide)
+
+- **Channel:** StackWise
+- **Views:** 188
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 1:24
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=nq-ftU3YP4w
+- **Thumbnail:** short-03-nq-ftU3YP4w.jpg
+- **Description:** How to Get Meta Muse AI 1 Billion Tokens and understand the available usage limits for Meta’s AI tools. Learn how to access Meta AI, check your account’s available features, and understand token limits, usage quotas, and access restrictions. This tutorial also covers Meta Muse AI availability, accou...
+
+#### 4. How to Delete a Meta Muse AI Agent (Step-by-Step)
+
+- **Channel:** GUIDES & BEYOND
+- **Views:** 126
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 1:24
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=D87u5smq6z8
+- **Thumbnail:** short-04-D87u5smq6z8.jpg
+- **Description:** Learn how to delete a Meta Muse AI agent step by step. This tutorial shows you exactly how to remove your Meta Muse agent from your account, from Settings to Meta account and Manage account.
+
+In this quick guide, you will see how to open Muse, find your agent, and choose Delete instead of Deactivate...
+
+#### 5. How To Delete Account In Meta Muse | Step-By-Step
+
+- **Channel:** Ned TECH
+- **Views:** 97
+- **Likes:** 0
+- **Comments:** 1
+- **Duration:** 1:08
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=GLY5iWqQ-VI
+- **Thumbnail:** short-05-GLY5iWqQ-VI.jpg
+- **Description:** ✔️DON'T CLICK THIS: https://bit.ly/47EzhAd
+
+In this video I show you How To Delete Account In Meta Muse | Step-By-Step
+
+If this video was helpful don't forget to like it and consider subscribing to the channel!
+
+Disclaimer: The contents of this video do not contain financial advice, always consult w...
+
+#### 6. How to Make Meta Muse Call People for You (Carly AI)
+
+- **Channel:** Carly AI
+- **Views:** 79
+- **Likes:** 2
+- **Comments:** 0
+- **Duration:** 1:05
+- **Uploaded:** 2026-10-29
+- **URL:** https://youtube.com/watch?v=lEur57H8g7c
+- **Thumbnail:** short-06-lEur57H8g7c.jpg
+- **Description:** Give your AI its own phone number and email address here: https://www.usecarly.com/ai-phone-number-and-email/?utm_source=youtube&utm_medium=video&utm_campaign=2026-10-29-0926&utm_content=rb5
+
+Meta Muse can make phone calls now: inbound, outbound and texting on WhatsApp, all set up and controlled fro...
+
+#### 7. How To Fix Meta Muse Not Working
+
+- **Channel:** Ned TECH
+- **Views:** 74
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 1:11
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=LB1tz9XtUzI
+- **Thumbnail:** short-07-LB1tz9XtUzI.jpg
+- **Description:** ✔️DON'T CLICK THIS: https://bit.ly/47EzhAd
+
+In this video I show you How To Fix Meta Muse Not Working
+
+If this video was helpful don't forget to like it and consider subscribing to the channel!
+
+Disclaimer: The contents of this video do not contain financial advice, always consult with a licensed pr...
+
+#### 8. Fix Meta Muse Disconnected Unavailable Error
+
+- **Channel:** Fixyypedia
+- **Views:** 68
+- **Likes:** 0
+- **Comments:** 0
+- **Duration:** 58
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=daFK-A9YhGg
+- **Thumbnail:** short-08-daFK-A9YhGg.jpg
+- **Description:** Fix Meta Muse Disconnected Unavailable Error
+
+Resolving the Meta Muse disconnected unavailable error is crucial for seamless reservation bookings across devices. Users experiencing Meta Muse disconnected unavailable issues on their iPhone or Android often encounter authentication failures or tempora...
+
+#### 9. I Tested OpenAI Dots vs Meta Muse. One Is Way More Useful | Which AI Agent Is More Useful in 2026?
+
+- **Channel:** AI at Work
+- **Views:** 63
+- **Likes:** 1
+- **Comments:** 0
+- **Duration:** 2:28
+- **Uploaded:** 2026-10-30
+- **URL:** https://youtube.com/watch?v=Legx9eApuHs
+- **Thumbnail:** short-09-Legx9eApuHs.jpg
+- **Description:** Two AI agents. Two tech giants. One big question—which AI agent can actually make your life easier? 🚀
+
+In this video, we explore OpenAI Dots vs Meta Muse and compare their approaches to AI-powered productivity, task automation, connected apps, and everyday work.
+
+🤖 What You’ll Learn:
+
+✅ What is Open...
+
+#### 10. How to Connect Apps to Meta Muse Using Connectors (Step-by-Step)
+
+- **Channel:** GUIDES & BEYOND
+- **Views:** 42
+- **Likes:** 1
+- **Comments:** 1
+- **Duration:** 1:47
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=n07TVH0cgVs
+- **Thumbnail:** short-10-n07TVH0cgVs.jpg
+- **Description:** Learn how to connect apps to Meta Muse using Connectors, step by step, so Meta Muse can work with your accounts.
+This tutorial shows you how to open Meta Muse settings, find Connectors, and connect apps like Gmail.
+
+In this video, you will see how to open the Meta Muse app, open the menu, go to Sett...
+

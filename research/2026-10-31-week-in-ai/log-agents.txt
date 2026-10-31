@@ -1,0 +1,183 @@
+Searching YouTube for: agents
+Fetching 100 most recent results...
+Fetching details for 19 candidates...
+Found 19 relevant videos in last 7 days (10 long-form, 9 Shorts). Returning top 5 long-form and top 5 Shorts.
+
+Report saved: research/2026-10-27-week-in-ai/2026-10-31-agents.md
+Raw JSON saved: research/2026-10-27-week-in-ai/2026-10-31-agents.json
+Downloaded 5 long-form + 5 Shorts thumbnails to research/2026-10-27-week-in-ai/2026-10-31-agents-thumbnails
+
+# YouTube Search: "agents"
+
+**Date:** 2026-10-31
+**Search query:** agents
+**Videos found (last 7 days):** 19 (10 long-form, 9 Shorts)
+**Shorts cutoff:** videos at or under 180s are classed as Shorts
+
+---
+
+## Long-form (5)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [I Gave 5 AI Agents $100 to Start a Business](https://youtube.com/watch?v=SMxVYixLNn0) | Tucker | 278,034 | 1,954 | 165 | 8:22 | 2026-10-25 |
+| 2 | [I tested 4 AI agents on 9 real tasks. Here’s who won.](https://youtube.com/watch?v=hnCoQ5wB-GU) | How I AI | 233,969 | 441 | 66 | 35:10 | 2026-10-28 |
+| 3 | [Some FBI agents 'FEARFUL' they'll be asked to seize voting machines: Leonnig](https://youtube.com/watch?v=9pAZaK47BjI) | MS NOW | 221,911 | 1,482 | 431 | 10:56 | 2026-10-30 |
+| 4 | [Federal agents conduct raids at multiple Minnesota locations](https://youtube.com/watch?v=MSdB_J5byLI) | FOX 9 Minneapolis-St. Paul | 181,180 | 2,606 | 1,100 | 9:18 | 2026-10-29 |
+| 5 | [The Mom Who Mastered AI Agents: The Fastest Way To Become A Millionaire Using AI Agents (Claude)](https://youtube.com/watch?v=2ulXtLUDvdU) | The Calum Johnson Show and Morgan DeBaun | 153,983 | 3,099 | 211 | 1:26:41 | 2026-10-26 |
+
+### Long-form details
+
+#### 1. I Gave 5 AI Agents $100 to Start a Business
+
+- **Channel:** Tucker
+- **Views:** 278,034
+- **Likes:** 1,954
+- **Comments:** 165
+- **Duration:** 8:22
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=SMxVYixLNn0
+- **Thumbnail:** long-01-SMxVYixLNn0.jpg
+- **Description:** I gave 5 AI agents $100 and one week to start a real business. No input from me. They picked the product, built it, wrote the ads, and spent the money themselves.
+
+Then on day five, they voted one of their own out of the company.
+
+Meet the team:
+Chad – CEO (named himself)
+Maya – Marketing
+Gus – Prod...
+
+#### 2. I tested 4 AI agents on 9 real tasks. Here’s who won.
+
+- **Channel:** How I AI
+- **Views:** 233,969
+- **Likes:** 441
+- **Comments:** 66
+- **Duration:** 35:10
+- **Uploaded:** 2026-10-28
+- **URL:** https://youtube.com/watch?v=hnCoQ5wB-GU
+- **Thumbnail:** long-02-hnCoQ5wB-GU.jpg
+- **Description:** I have personal-agent fatigue, so I ran the first How I AI personal-agent benchmark: Grok Bot, Dot, Muse, and Claude Duet across nine real tasks, from a Slack reply and a Sentry bug to a Figma thumbnail, inbox triage, a family newspaper, physics homework for a fourth grader, shoe shopping, and a Cha...
+
+#### 3. Some FBI agents 'FEARFUL' they'll be asked to seize voting machines: Leonnig
+
+- **Channel:** MS NOW
+- **Views:** 221,911
+- **Likes:** 1,482
+- **Comments:** 431
+- **Duration:** 10:56
+- **Uploaded:** 2026-10-30
+- **URL:** https://youtube.com/watch?v=9pAZaK47BjI
+- **Thumbnail:** long-03-9pAZaK47BjI.jpg
+- **Description:** The Trump Justice Department has ramped up its investigations into alleged noncitizen voters. Also, some FBI agents told MS NOW they are fearful they will be ordered to seize voting machines on Election Day. MS NOW Senior Investigative Reporter Carol Leonnig, MS NOW Senior National Security Reporter...
+
+#### 4. Federal agents conduct raids at multiple Minnesota locations
+
+- **Channel:** FOX 9 Minneapolis-St. Paul
+- **Views:** 181,180
+- **Likes:** 2,606
+- **Comments:** 1,100
+- **Duration:** 9:18
+- **Uploaded:** 2026-10-29
+- **URL:** https://youtube.com/watch?v=MSdB_J5byLI
+- **Thumbnail:** long-04-MSdB_J5byLI.jpg
+- **Description:** Federal and state agents carried out court-authorized investigative operations at multiple locations across the Twin Cities on Thursday morning, including a Medicaid services provider in St. Louis Park. The FBI confirmed that several agencies are involved, including the IRS, Minnesota Bureau of Crim...
+
+#### 5. The Mom Who Mastered AI Agents: The Fastest Way To Become A Millionaire Using AI Agents (Claude)
+
+- **Channel:** The Calum Johnson Show and Morgan DeBaun
+- **Views:** 153,983
+- **Likes:** 3,099
+- **Comments:** 211
+- **Duration:** 1:26:41
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=2ulXtLUDvdU
+- **Thumbnail:** long-05-2ulXtLUDvdU.jpg
+- **Description:** Create your avatar for free on HeyGen at http://heygen.com/calum
+Build stunning presentations & pdf's with the new Gamma 5: https://gamma.app/?utm_source=youtube&utm_medium=influencer&utm_campaign=gammafive&utm_content=akg_TheCalumJohnsonShow
+
+Get Morgan’s House Manager dashboard built for you here:...
+
+## Shorts (5)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [FBI agents raid billionaire's mansion in Eric Swalwell investigation](https://youtube.com/watch?v=Qye0xBnJwuA) | Face the Nation | 71,921 | 760 | 119 | 2:24 | 2026-10-27 |
+| 2 | [ICE AGENTS EXPOSED  | D.C. Daily](https://youtube.com/watch?v=pJ3H4kaWIDc) | FOX 26 Houston | 47,460 | 555 | 522 | 1:25 | 2026-10-29 |
+| 3 | [3rd party AI agents banned by several of Canada’s biggest banks as fears grow](https://youtube.com/watch?v=XTYu-x3w9jo) | Global News | 41,461 | 239 | 75 | 1:48 | 2026-10-28 |
+| 4 | [Watch Moment: ICE Agents TAKE DOWN Wanted Haitian Migrant Drug Dealer!](https://youtube.com/watch?v=D1iThjWiUC8) | BlackConservative24  | 35,418 | 1,488 | 162 | 1:57 | 2026-10-26 |
+| 5 | [More Kiwis ditching real estate agents in favour of private sales | Stuff.co.nz](https://youtube.com/watch?v=5kP-IJlkRLo) | Stuff | 33,617 | 93 | 43 | 2:32 | 2026-10-28 |
+
+### Shorts details
+
+#### 1. FBI agents raid billionaire's mansion in Eric Swalwell investigation
+
+- **Channel:** Face the Nation
+- **Views:** 71,921
+- **Likes:** 760
+- **Comments:** 119
+- **Duration:** 2:24
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=Qye0xBnJwuA
+- **Thumbnail:** short-01-Qye0xBnJwuA.jpg
+- **Description:** FBI agents raided a Beverly Hills mansion as part of an investigation into Eric Swalwell. The former California representative dropped out of the governor's race in April and gave up his seat in Congress following sexual assault and misconduct allegations from a former staffer and three other women....
+
+#### 2. ICE AGENTS EXPOSED  | D.C. Daily
+
+- **Channel:** FOX 26 Houston
+- **Views:** 47,460
+- **Likes:** 555
+- **Comments:** 522
+- **Duration:** 1:25
+- **Uploaded:** 2026-10-29
+- **URL:** https://youtube.com/watch?v=pJ3H4kaWIDc
+- **Thumbnail:** short-02-pJ3H4kaWIDc.jpg
+- **Description:** Defense Secretary Pete Hegseth has dismissed the Pentagon’s top planning officer amid alleged leaks, as President Trump considers further strikes on Iran and Hegseth continues reshaping military leadership. Hackers reportedly leaked personal information on 40,000 ICE agents and officials online, pro...
+
+#### 3. 3rd party AI agents banned by several of Canada’s biggest banks as fears grow
+
+- **Channel:** Global News
+- **Views:** 41,461
+- **Likes:** 239
+- **Comments:** 75
+- **Duration:** 1:48
+- **Uploaded:** 2026-10-28
+- **URL:** https://youtube.com/watch?v=XTYu-x3w9jo
+- **Thumbnail:** short-03-XTYu-x3w9jo.jpg
+- **Description:** RBC has banned third party AI agents from accessing its online banking services. The decision comes as AI agents are increasingly going rogue, causing harm to services.
+ 
+BMO CEO Darryl White said to never "give your banking username and password" to any AI agent at an economic conference last week....
+
+#### 4. Watch Moment: ICE Agents TAKE DOWN Wanted Haitian Migrant Drug Dealer!
+
+- **Channel:** BlackConservative24 
+- **Views:** 35,418
+- **Likes:** 1,488
+- **Comments:** 162
+- **Duration:** 1:57
+- **Uploaded:** 2026-10-26
+- **URL:** https://youtube.com/watch?v=D1iThjWiUC8
+- **Thumbnail:** short-04-D1iThjWiUC8.jpg
+- **Description:** #ice #takedown #drugdealing #illegalimmigration 
+Watch ICE arrest a drug dealing criminal illegal alien from Haiti in Riviera Beach, Florida. 
+Subscribe to my Secondary channel: https://www.youtube.com/channel/UCvEPohtPdCW0pOUhbFi6WHQ
+
+COPYRIGHT DISCLAIMER Under Section 107 of the copyright act 1976...
+
+#### 5. More Kiwis ditching real estate agents in favour of private sales | Stuff.co.nz
+
+- **Channel:** Stuff
+- **Views:** 33,617
+- **Likes:** 93
+- **Comments:** 43
+- **Duration:** 2:32
+- **Uploaded:** 2026-10-28
+- **URL:** https://youtube.com/watch?v=5kP-IJlkRLo
+- **Thumbnail:** short-05-5kP-IJlkRLo.jpg
+- **Description:** Fresh data shows private home sales are becoming more popular, as more people choose not to use real estate agents. Stuff chief property correspondent Janika ter Ellen has more.
+
+For full coverage visit www.Stuff.co.nz
+Subscribe to our channel: https://bit.ly/2JPg8oB
+
+-------------------------------...
+

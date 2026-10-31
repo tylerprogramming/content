@@ -1,0 +1,167 @@
+Searching YouTube for: hermes
+Fetching 100 most recent results...
+Fetching details for 13 candidates...
+Found 13 relevant videos in last 7 days (10 long-form, 3 Shorts). Returning top 5 long-form and top 3 Shorts.
+
+Report saved: research/2026-10-27-week-in-ai/2026-10-31-hermes.md
+Raw JSON saved: research/2026-10-27-week-in-ai/2026-10-31-hermes.json
+Downloaded 5 long-form + 3 Shorts thumbnails to research/2026-10-27-week-in-ai/2026-10-31-hermes-thumbnails
+
+# YouTube Search: "hermes"
+
+**Date:** 2026-10-31
+**Search query:** hermes
+**Videos found (last 7 days):** 13 (10 long-form, 3 Shorts)
+**Shorts cutoff:** videos at or under 180s are classed as Shorts
+
+---
+
+## Long-form (5)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [Is the Hermes Birkin Investment Myth Collapsing? Resellers Stop Buying, Stock Price Plummets, and...](https://youtube.com/watch?v=auLQrTP5MJw) | Johan Ku 古又文 | 534,197 | 1,638 | 375 | 15:33 | 2026-10-27 |
+| 2 | [HERMES & RENATO AO VIVO: FELIPE TORRES, BRUNO SUTTER E MARCO ALVES | ISSO NÃO É UM TALK SHOW - 23/10](https://youtube.com/watch?v=y0dojuL6yMk) | Isso Não é um Talk Show | 100,507 | 2,168 | 63 | 1:12:19 | 2026-10-24 |
+| 3 | [10 NEW Hermes Agent Skills You Need To Install This Week](https://youtube.com/watch?v=bfPTHS9r7gs) | Sharbel A. | 73,000 | 1,141 | 82 | 12:14 | 2026-10-25 |
+| 4 | [Learn 90% of Hermes Agent in 40 Minutes](https://youtube.com/watch?v=S8fc9na4pA8) | Tech With Tim | 45,048 | 594 | 34 | 42:10 | 2026-10-27 |
+| 5 | [Master Hermes Agent in 20 Minutes (Beginner Tutorial)](https://youtube.com/watch?v=q5RagIqBtjc) | Metics Media | 31,506 | 482 | 18 | 21:16 | 2026-10-28 |
+
+### Long-form details
+
+#### 1. Is the Hermes Birkin Investment Myth Collapsing? Resellers Stop Buying, Stock Price Plummets, and...
+
+- **Channel:** Johan Ku 古又文
+- **Views:** 534,197
+- **Likes:** 1,638
+- **Comments:** 375
+- **Duration:** 15:33
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=auLQrTP5MJw
+- **Thumbnail:** long-01-auLQrTP5MJw.jpg
+- **Description:** 按讚訂閱 #JohanKu古又文 (www.youtube.com/@JohanKu-YT) YT 頻道
+❤點廣告進蝦皮，隨意買都能支持頻道喔😊
+
+#今日時尚焦點 #古又文 #JohanKu #愛馬仕 #Hermes #柏金包 #Birkin #凱莉包 #配貨制度 #奢侈品財報
+
+曾經比黃金還保值的愛馬仕柏金包，為何現在連二手商都踩剎車不敢囤貨了？
+
+頂奢王者愛馬仕 Hermès 面臨了前所未有的稀缺性神話危機！熱門的 Birkin 25 二手溢價從 2022 年的 2.6 倍雪崩至 1.7 倍，全球二手掛賣量更暴增至疫情前的 6 到 7 倍。當專櫃定價累計調漲 36.7%，過往撐起業績的配貨...
+
+#### 2. HERMES & RENATO AO VIVO: FELIPE TORRES, BRUNO SUTTER E MARCO ALVES | ISSO NÃO É UM TALK SHOW - 23/10
+
+- **Channel:** Isso Não é um Talk Show
+- **Views:** 100,507
+- **Likes:** 2,168
+- **Comments:** 63
+- **Duration:** 1:12:19
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=y0dojuL6yMk
+- **Thumbnail:** long-02-y0dojuL6yMk.jpg
+- **Description:** Se você achava que seu passado era vergonhoso, é porque não viu o Hermes & Renato trocando o "kit bronha" de banca por processo no Ministério Público! O grupo baixou no "Isso Não É Um Talk Show" desta sexta (23) com o puro suco da quinta série: teve farsa armada no Pânico com prótese suspeita, basti...
+
+#### 3. 10 NEW Hermes Agent Skills You Need To Install This Week
+
+- **Channel:** Sharbel A.
+- **Views:** 73,000
+- **Likes:** 1,141
+- **Comments:** 82
+- **Duration:** 12:14
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=bfPTHS9r7gs
+- **Thumbnail:** long-03-bfPTHS9r7gs.jpg
+- **Description:** Get all 10 skills, repositories, install commands, and prompts here: https://sharbel.com/s/ptdyw
+
+These are 10 free Hermes Agent skills that turn it from a chatbot you talk to into an agent that actually does the work. One creates complete videos from a single prompt, another gives Hermes access to ...
+
+#### 4. Learn 90% of Hermes Agent in 40 Minutes
+
+- **Channel:** Tech With Tim
+- **Views:** 45,048
+- **Likes:** 594
+- **Comments:** 34
+- **Duration:** 42:10
+- **Uploaded:** 2026-10-27
+- **URL:** https://youtube.com/watch?v=S8fc9na4pA8
+- **Thumbnail:** long-04-S8fc9na4pA8.jpg
+- **Description:** Deploy Hermes agent with Hostinger and use code 'techwithtim' for 10% off: https://www.hostg.xyz/SHKIW
+
+This video will teach you 90% of Hermes Agent and everything you need to know. A lot has changed since my last videos, and Hermes has become even more powerful, so in about 42 minutes I set it up ...
+
+#### 5. Master Hermes Agent in 20 Minutes (Beginner Tutorial)
+
+- **Channel:** Metics Media
+- **Views:** 31,506
+- **Likes:** 482
+- **Comments:** 18
+- **Duration:** 21:16
+- **Uploaded:** 2026-10-28
+- **URL:** https://youtube.com/watch?v=q5RagIqBtjc
+- **Thumbnail:** long-05-q5RagIqBtjc.jpg
+- **Description:** By the end of this video, your own AI agent will run 24/7, check what you care about, and text you when something changes. This Hermes Agent tutorial for beginners gets you there in five steps, with no code.
+✅ Hostinger VPS (Exclusive 10% Discount): https://meticsmedia.com/hermes-RYB
+✅ Nous Portal (...
+
+## Shorts (3)
+
+| # | Title | Channel | Views | Likes | Comments | Duration | Uploaded |
+|---|-------|---------|------:|------:|---------:|----------|----------|
+| 1 | [U.S.S. Hermes - Hermes Class - A Star Trek Fan Production](https://youtube.com/watch?v=hzIL-YxjuRs) | Lea Design Bureau | 9,495 | 498 | 55 | 1:16 | 2026-10-24 |
+| 2 | [[Hermes sings Children of the City]](https://youtube.com/watch?v=z5jBo8bbLHA) | Hermes Chan | 3,478 | 151 | 45 | 1:48 | 2026-10-25 |
+| 3 | [Eduardo Aparecido rides Hermes for 87.35 points | PBR Teams Highlight](https://youtube.com/watch?v=MYTWE3-fNsE) | PBR | 2,889 | 43 | 0 | 1:56 | 2026-10-25 |
+
+### Shorts details
+
+#### 1. U.S.S. Hermes - Hermes Class - A Star Trek Fan Production
+
+- **Channel:** Lea Design Bureau
+- **Views:** 9,495
+- **Likes:** 498
+- **Comments:** 55
+- **Duration:** 1:16
+- **Uploaded:** 2026-10-24
+- **URL:** https://youtube.com/watch?v=hzIL-YxjuRs
+- **Thumbnail:** short-01-hzIL-YxjuRs.jpg
+- **Description:** A closer look at the Hermes class, U.S.S. Hermes - NCC- 588 as featured in the Franz Joseph Technical Manual.
+
+This model has had a couple of features here:
+
+https://youtu.be/7qhikjM-ZfI
+
+https://youtu.be/4yldx4PRlt0
+
+All feedback welcome.
+
+Music: ‘Victor Lux’ by Scott Buckley – released under CC-BY...
+
+#### 2. [Hermes sings Children of the City]
+
+- **Channel:** Hermes Chan
+- **Views:** 3,478
+- **Likes:** 151
+- **Comments:** 45
+- **Duration:** 1:48
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=z5jBo8bbLHA
+- **Thumbnail:** short-02-z5jBo8bbLHA.jpg
+- **Description:** [I know, my voice is beautiful. Subscribe if you want a full version my proxies and proselytes!]
+
+[The original Children of the City is by Mili, one of the ONLY Index approved bands. You can find the link to the original song here: https://youtu.be/aHUVqV5CO6w]...
+
+#### 3. Eduardo Aparecido rides Hermes for 87.35 points | PBR Teams Highlight
+
+- **Channel:** PBR
+- **Views:** 2,889
+- **Likes:** 43
+- **Comments:** 0
+- **Duration:** 1:56
+- **Uploaded:** 2026-10-25
+- **URL:** https://youtube.com/watch?v=MYTWE3-fNsE
+- **Thumbnail:** short-03-MYTWE3-fNsE.jpg
+- **Description:** Eduardo Aparecido rides Hermes for 87.35 points in Game 3 on Day 3 of 2026 PBR Teams Outlaw Days in Kansas City, MO  
+
+#pbr #highlights #bullriding 
+
+🐂 Catch PBR at an Arena Near You: pbr.com/events
+🤠 Tickets to the PBR Teams Champions: https://pbrteamschampionship.com
+👕 Shop Official PBR gear: pbrs...
+
